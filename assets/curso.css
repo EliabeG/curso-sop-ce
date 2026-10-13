@@ -1,0 +1,2620 @@
+/* ==========================================================================
+   Curso SOP-CE 2026 · Engenharia Mecânica — design system
+   Temas: claro (padrão em :root), escuro (preferência do sistema ou escolha
+   explícita via data-theme) e impressão (sempre claro).
+   ========================================================================== */
+
+/* A dica de preenchimento precisa acompanhar as cores do tema, inclusive no modo escuro. */
+input::placeholder, textarea::placeholder {
+  color: var(--tinta-2);
+  opacity: 1;
+}
+
+/* ---------- Tokens: tema claro ---------- */
+:root {
+  color-scheme: light;
+  --papel: #F3F6F5;
+  --superficie: #FFFFFF;
+  --superficie-2: #E9EFEE;
+  --tinta: #13222A;
+  --tinta-2: #44565F;
+  --linha: #C9D5D4;
+  --linha-forte: #71868A;
+  --acento: #0A6376;
+  --acento-forte: #07495A;
+  --acento-suave: #DCEEF1;
+  --quente: #9A4600;
+  --quente-suave: #FCEBDC;
+  --lei: #3B4A8F;
+  --lei-suave: #E6E9F6;
+  --ok: #1A6B38;
+  --ok-suave: #DFF1E5;
+  --erro: #AE2A1F;
+  --erro-suave: #FBE3E0;
+  --foco: #A85200;
+  --sobre-cor: #FFFFFF;
+
+  /* Fontes estáticas do sistema: as variáveis (Segoe UI Variable, Bahnschrift) custavam centenas de ms na
+     primeira abertura e a cada peso usado pela primeira vez (ex.: o 1º selo "Sua resposta"). */
+  --f-display: "Segoe UI", system-ui, -apple-system, "Roboto", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-texto: "Segoe UI", system-ui, -apple-system, "Roboto", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "Cascadia Mono", "Cascadia Code", Consolas, "SF Mono", Menlo, "Roboto Mono", "Liberation Mono", monospace;
+
+  --t-xs: .8125rem;
+  --t-sm: .9375rem;
+  --t-base: 1.0625rem;
+  --t-md: 1.1875rem;
+  --t-lg: 1.375rem;
+  --t-xl: clamp(1.375rem, 1.1rem + 1.2vw, 1.75rem);
+  --t-2xl: clamp(1.875rem, 1.35rem + 2.2vw, 2.625rem);
+
+  --s1: .25rem;
+  --s2: .5rem;
+  --s3: .75rem;
+  --s4: 1rem;
+  --s5: 1.5rem;
+  --s6: 2rem;
+  --s7: 3rem;
+  --s8: 4rem;
+
+  --raio: 6px;
+  --raio-sm: 4px;
+  --medida: 40rem;
+  --medida-texto: 32em;
+  --largura-pagina: 76rem;
+  --sumario-l: 15.5rem;
+  --recuo-lista: 1.4rem;
+  --recuo-alternativas: 1.9rem;
+  --rotulo: 600 .75rem/1.25 var(--f-display);
+  --rotulo-espaco: .07em;
+  --rotulo-forte: 700 .75rem/1.25 var(--f-display);
+  --rotulo-forte-espaco: .09em;
+  --topo-h: 3.5rem;
+}
+
+/* ---------- Tokens: tema escuro (sistema) ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --papel: #0E1518;
+    --superficie: #151F23;
+    --superficie-2: #1C282D;
+    --tinta: #E4ECEC;
+    --tinta-2: #A9BABD;
+    --linha: #2B3A3F;
+    --linha-forte: #687F85;
+    --acento: #5EC4D6;
+    --acento-forte: #8AD7E4;
+    --acento-suave: #12343B;
+    --quente: #F0A457;
+    --quente-suave: #3A2612;
+    --lei: #A9B4F0;
+    --lei-suave: #1E2447;
+    --ok: #6CCB8C;
+    --ok-suave: #143222;
+    --erro: #FF8A80;
+    --erro-suave: #3D1916;
+    --foco: #F0A457;
+    --sobre-cor: #0E1518;
+  }
+}
+
+/* ---------- Tokens: tema escuro (escolha explícita) ---------- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --papel: #0E1518;
+  --superficie: #151F23;
+  --superficie-2: #1C282D;
+  --tinta: #E4ECEC;
+  --tinta-2: #A9BABD;
+  --linha: #2B3A3F;
+  --linha-forte: #687F85;
+  --acento: #5EC4D6;
+  --acento-forte: #8AD7E4;
+  --acento-suave: #12343B;
+  --quente: #F0A457;
+  --quente-suave: #3A2612;
+  --lei: #A9B4F0;
+  --lei-suave: #1E2447;
+  --ok: #6CCB8C;
+  --ok-suave: #143222;
+  --erro: #FF8A80;
+  --erro-suave: #3D1916;
+  --foco: #F0A457;
+  --sobre-cor: #0E1518;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--topo-h) + 1rem);
+}
+
+/* Sem rolagem suave nos saltos do sumário: com as seções em content-visibility, a animação mirava a posição
+   estimada da seção e, enquanto as seções do caminho ganhavam o tamanho real, parava milhares de pixels antes do
+   alvo. O salto instantâneo deixa a rolagem ancorada do navegador manter o alvo no lugar. O e2e (T13) confere o
+   salto sem movimento reduzido, como a maioria dos alunos navega.
+   Nota: a propriedade scroll-behavior fica no valor inicial (auto). */
+
+body {
+  margin: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font: 400 var(--t-base)/1.65 var(--f-texto);
+  font-feature-settings: "kern" 1;
+  overflow-wrap: break-word;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--acento);
+  text-decoration-thickness: 1px;
+  text-underline-offset: .18em;
+}
+
+a:hover {
+  color: var(--acento-forte);
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid var(--foco);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+strong,
+b {
+  font-weight: 650;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+  text-underline-offset: .2em;
+  cursor: help;
+}
+
+sub,
+sup {
+  font-size: .75em;
+  line-height: 0;
+}
+
+code,
+kbd,
+samp {
+  font-family: var(--f-mono);
+  font-size: .9em;
+}
+
+kbd {
+  padding: .05em .35em;
+  border: 1px solid var(--linha-forte);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  background: var(--superficie);
+  white-space: nowrap;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--linha);
+  margin: var(--s6) 0;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.pular {
+  position: absolute;
+  left: var(--s4);
+  top: -6rem;
+  z-index: 100;
+  padding: var(--s2) var(--s4);
+  background: var(--superficie);
+  color: var(--acento);
+  font-weight: 600;
+  border: 2px solid var(--acento);
+  border-radius: var(--raio-sm);
+}
+
+.pular:focus {
+  top: calc(env(safe-area-inset-top, 0px) + var(--s2));
+}
+
+/* ---------- Tipografia de conteúdo ---------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--f-display);
+  line-height: 1.2;
+  color: var(--tinta);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--t-2xl);
+  font-weight: 700;
+  letter-spacing: -.005em;
+  margin: 0 0 var(--s4);
+}
+
+h2 {
+  font-size: var(--t-xl);
+  font-weight: 600;
+  margin: var(--s7) 0 var(--s4);
+  padding-top: var(--s5);
+  border-top: 1.5px solid var(--tinta);
+}
+
+h3 {
+  font-size: var(--t-lg);
+  font-weight: 600;
+  margin: var(--s6) 0 var(--s3);
+}
+
+h4 {
+  font-size: var(--t-md);
+  font-weight: 600;
+  margin: var(--s5) 0 var(--s2);
+}
+
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote {
+  margin: 0 0 var(--s4);
+}
+
+ul,
+ol {
+  padding-left: var(--recuo-lista);
+}
+
+li + li {
+  margin-top: var(--s1);
+}
+
+li > ul,
+li > ol {
+  margin: var(--s1) 0 0;
+}
+
+.eyebrow {
+  margin: 0 0 var(--s2);
+  font: var(--rotulo-forte);
+  letter-spacing: var(--rotulo-forte-espaco);
+  text-transform: uppercase;
+  color: var(--acento);
+}
+
+/* Medida de leitura (VIS-05 da R1): até ~75 caracteres por linha no texto corrido. Em "em", a medida acompanha a fonte
+   de cada elemento (32em ≈ 74 caracteres em Segoe UI, nas notas menores e no lead maior); tabelas, figuras e caixas
+   continuam usando a coluna inteira, e rótulos com classe (eyebrow, título de caixa) seguem a coluna. O e2e (T02)
+   conta os caracteres de cada linha a 1024, 1440 e 1920 px. */
+main p:not([class]),
+main dd,
+.conteudo-modulo li,
+.pg-portal main li {
+  max-width: var(--medida-texto);
+}
+
+.q-alternativas > li,
+.pg-portal .lista-modulos > li {
+  max-width: none;
+}
+
+.lead {
+  font-size: var(--t-md);
+  line-height: 1.6;
+  color: var(--tinta-2);
+  max-width: var(--medida-texto);
+}
+
+.nota {
+  max-width: var(--medida-texto);
+  font-size: var(--t-sm);
+  color: var(--tinta-2);
+}
+
+.nota.aviso {
+  color: var(--quente);
+  font-weight: 600;
+}
+
+/* Links externos: seta "↗" colada à última palavra e, para leitores de tela, "(abre em nova aba)" — tudo por CSS,
+   sem tocar no DOM (inserir marcas em dezenas de links rediagramava as tabelas do guia na carga). Navegadores sem
+   texto alternativo em "content" ficam com a primeira declaração: só a seta. */
+a[target="_blank"]::after {
+  content: "\00a0\2197";
+  content: "\00a0\2197" / " (abre em nova aba)";
+  display: inline-block;
+  font-size: .85em;
+  text-decoration: none;
+}
+
+.ref-status {
+  color: var(--tinta-2);
+  font-size: .9em;
+}
+
+/* Visível só se o curso.css não carregar (pasta incompleta). */
+.aviso-sem-css {
+  display: none !important;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Barra superior ---------- */
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  min-height: var(--topo-h);
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-inline: max(var(--s4), env(safe-area-inset-left, 0px));
+  background: var(--superficie);
+  border-bottom: 1px solid var(--linha);
+}
+
+.marca {
+  display: inline-flex;
+  flex: 0 1 auto;
+  min-width: 0;
+  align-items: center;
+  gap: var(--s2);
+  min-height: 44px;
+  font: 600 var(--t-sm)/1.2 var(--f-display);
+  letter-spacing: .02em;
+  color: var(--tinta);
+  text-decoration: none;
+}
+
+.marca:hover {
+  color: var(--acento-forte);
+  text-decoration: none;
+}
+
+.marca-selo {
+  display: inline-grid;
+  place-items: center;
+  min-width: 2.6rem;
+  height: 1.9rem;
+  padding: 0 var(--s1);
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  font: var(--rotulo-forte);
+  letter-spacing: var(--rotulo-forte-espaco);
+}
+
+.marca-selo {
+  flex: 0 0 auto;
+}
+
+.marca-texto {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Em telas estreitas, o nome do curso fica só para leitores de tela; o selo "SOP" continua visível. */
+@media (max-width: 33.99rem) {
+  .marca-texto {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+}
+
+.topo-acoes {
+  flex: 0 1 auto;
+  min-width: 0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+}
+
+/* ---------- Botões ---------- */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  min-height: 44px;
+  padding: var(--s2) var(--s3);
+  font: 600 var(--t-sm)/1.2 var(--f-display);
+  letter-spacing: .02em;
+  color: var(--tinta);
+  background: var(--superficie);
+  border: 1px solid var(--linha-forte);
+  border-radius: var(--raio-sm);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.botao:hover:not(:disabled) {
+  border-color: var(--acento);
+  color: var(--acento-forte);
+  background: var(--acento-suave);
+}
+
+.botao:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.botao:disabled {
+  cursor: not-allowed;
+  color: var(--tinta-2);
+  background: var(--superficie-2);
+  border-color: var(--linha);
+  border-style: dashed;
+}
+
+.botao-primario {
+  color: var(--sobre-cor);
+  background: var(--acento);
+  border-color: var(--acento);
+}
+
+.botao-primario:hover:not(:disabled) {
+  color: var(--sobre-cor);
+  background: var(--acento-forte);
+  border-color: var(--acento-forte);
+}
+
+.botao-perigo,
+.botao-perigo:hover {
+  color: var(--erro);
+  border-color: var(--erro);
+  background: var(--erro-suave);
+}
+
+.botao-tema {
+  min-width: 0;
+  font-size: var(--t-xs);
+}
+
+/* ---------- Estrutura das páginas ---------- */
+.pagina {
+  max-width: var(--largura-pagina);
+  margin: 0 auto;
+  padding-inline: var(--s4);
+  padding-block: var(--s5) var(--s8);
+}
+
+/* Módulos: grade em que o sumário ocupa a coluna esquerda desde o topo e o título fica alinhado ao texto.
+   .layout é só um agrupamento semântico (display: contents); a grade é o próprio <main>. */
+.pg-modulo main.pagina {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "cab" "nav" "conteudo";
+  column-gap: var(--s7);
+  row-gap: var(--s5);
+}
+
+.pg-modulo .layout {
+  display: contents;
+}
+
+.pg-modulo .mod-cabecalho {
+  grid-area: cab;
+  margin-bottom: 0;
+}
+
+.pg-modulo .sumario {
+  grid-area: nav;
+}
+
+/* Numa coluna só (até 70rem), o sumário acompanha a largura do texto, em vez de ocupar a linha toda. */
+@media (max-width: 69.99rem) {
+  .pg-modulo .sumario {
+    max-width: var(--medida);
+  }
+}
+
+.pg-modulo .conteudo-modulo {
+  grid-area: conteudo;
+  min-width: 0;
+  max-width: var(--medida);
+}
+
+.conteudo-modulo > section:first-child > h2:first-child {
+  margin-top: 0;
+}
+
+/* Seções fora da tela não são estilizadas nem diagramadas até chegarem perto (content-visibility), como as
+   questões e os cartões: no guia, com dez tabelas, diagramar tudo antes da primeira pintura passava da meta de
+   abertura a frio (250 ms). O tamanho estimado vira o real depois da primeira vez (auto); a rolagem ancorada do
+   navegador segura a tela quando uma seção acima ganha o tamanho real. A contenção de pintura corta o que passar
+   da caixa: 6 px de folga em volta, com margem negativa, para o contorno de foco dos links na borda do texto. */
+.pg-modulo .conteudo-modulo > section {
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto 40rem;
+  padding-inline: 6px;
+  margin-inline: -6px;
+}
+
+/* Os complementos do E1 tornam algumas seções muito longas. Cada subtópico conserva seu texto e suas âncoras,
+   mas pode ser diagramado quando se aproxima da tela, em vez de calcular toda a seção na abertura da página. */
+[data-leitura="e1"] .bloco-aula {
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto 40rem;
+  padding-inline: 6px;
+  margin-inline: -6px;
+}
+
+/* Favoritos dos bancos conservam a renderização por blocos: a navegação e o preparo do banco-alvo
+   não devem forçar toda a teoria a ser diagramada, nem manter esse custo nas trocas de tema. */
+
+@media (min-width: 48rem) {
+  .pagina {
+    padding-inline: var(--s6);
+  }
+}
+
+@media (min-width: 70rem) {
+  .pg-modulo main.pagina {
+    grid-template-columns: var(--sumario-l) minmax(0, 1fr);
+    grid-template-areas: "nav cab" "nav conteudo";
+    align-items: start;
+  }
+}
+
+/* ---------- Sumário do módulo ---------- */
+.sumario {
+  font-size: var(--t-sm);
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  padding: var(--s4);
+}
+
+.sumario-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s2);
+  min-height: 44px;
+  margin: -.35rem 0;
+  font: var(--rotulo);
+  letter-spacing: var(--rotulo-espaco);
+  text-transform: uppercase;
+  color: var(--tinta-2);
+  list-style: none;
+  cursor: pointer;
+}
+
+.sumario-titulo::-webkit-details-marker {
+  display: none;
+}
+
+.sumario-titulo::after {
+  content: "";
+  flex: 0 0 auto;
+  width: .5rem;
+  height: .5rem;
+  margin-right: var(--s1);
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translate(-2px, -2px);
+}
+
+.sumario-caixa:not([open]) > .sumario-titulo::after {
+  transform: rotate(-45deg);
+}
+
+/* Com JavaScript, no celular o sumário aparece recolhido desde a primeira pintura: o curso.js só o
+   fecha no DOMContentLoaded, e sem esta regra a lista surgia aberta e o conteúdo saltava 450–650 px.
+   Sem JavaScript (classe .js ausente), o sumário continua aberto, como no HTML. */
+@media (max-width: 69.99rem) {
+  .js:not(.js-pronto) .sumario-caixa > :not(.sumario-titulo) {
+    display: none;
+  }
+
+  .js:not(.js-pronto) .sumario-caixa > .sumario-titulo::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.sumario-titulo:hover {
+  color: var(--acento-forte);
+}
+
+.sumario ol {
+  list-style: none;
+  margin: var(--s3) 0 0;
+  padding: 0;
+}
+
+.sumario li + li {
+  margin-top: 0;
+}
+
+.sumario a {
+  display: block;
+  padding: var(--s2) var(--s2);
+  border-radius: var(--raio-sm);
+  color: var(--tinta-2);
+  text-decoration: none;
+  line-height: 1.35;
+}
+
+.sumario a:hover {
+  color: var(--acento-forte);
+  background: var(--acento-suave);
+}
+
+.sumario a[aria-current="true"] {
+  color: var(--acento-forte);
+  background: var(--acento-suave);
+  box-shadow: inset 3px 0 0 var(--acento);
+}
+
+@media (min-width: 70rem) {
+  .sumario {
+    position: sticky;
+    top: calc(var(--topo-h) + var(--s4));
+    max-height: calc(100vh - var(--topo-h) - var(--s6));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+}
+
+/* ---------- Cabeçalho do módulo e carimbo ---------- */
+.mod-cabecalho {
+  margin-bottom: var(--s6);
+  max-width: var(--medida);
+}
+
+.carimbo {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 10.5rem), 1fr));
+  margin: var(--s5) 0 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--superficie);
+  border: 1.5px solid var(--tinta);
+}
+
+/* Linhas desenhadas por sombra de 1 px em cada célula: as da borda externa ficam cortadas pelo overflow. */
+.carimbo > div {
+  padding: var(--s2) var(--s3) var(--s2);
+  background: var(--superficie);
+  box-shadow: 1px 0 0 var(--linha-forte), 0 1px 0 var(--linha-forte);
+}
+
+.carimbo dt {
+  font: var(--rotulo);
+  letter-spacing: var(--rotulo-espaco);
+  text-transform: uppercase;
+  color: var(--tinta-2);
+}
+
+.carimbo dd {
+  margin: var(--s1) 0 0;
+  font-size: var(--t-sm);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* ---------- Chips ---------- */
+/* Sem nowrap: um chip mais longo que a linha quebra dentro dele em vez de alargar a página. */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .35em;
+  max-width: 100%;
+  min-width: 0;
+  padding: var(--s1) var(--s2);
+  font: var(--rotulo);
+  letter-spacing: var(--rotulo-espaco);
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  overflow-wrap: anywhere;
+}
+
+.chip-alta {
+  color: var(--quente);
+  background: var(--quente-suave);
+}
+
+.chip-media {
+  color: var(--acento-forte);
+  background: var(--acento-suave);
+}
+
+.chip-baixa {
+  color: var(--tinta-2);
+  background: var(--superficie-2);
+}
+
+.chip-status {
+  color: var(--tinta-2);
+  background: var(--superficie);
+  border-style: dashed;
+}
+
+.chip-projecao {
+  color: var(--lei);
+  background: var(--lei-suave);
+}
+
+.chip-erro {
+  color: var(--erro);
+  background: var(--erro-suave);
+}
+
+/* ---------- Caixas de nota (etiqueta sobre a borda, como nota de desenho técnico) ---------- */
+.box {
+  --box-cor: var(--acento);
+  --box-fundo: var(--acento-suave);
+  margin: var(--s6) 0 var(--s5);
+  padding: 0 var(--s4) var(--s3);
+  background: var(--box-fundo);
+  border: 1px solid var(--box-cor);
+  border-radius: var(--raio-sm);
+}
+
+/* Etiqueta sobre a borda, como nota de desenho técnico — no fluxo, para nunca cobrir o texto. */
+.box-titulo {
+  display: inline-block;
+  max-width: 100%;
+  margin: -.7rem 0 var(--s2);
+  padding: var(--s1) var(--s2);
+  font: var(--rotulo-forte);
+  letter-spacing: var(--rotulo-forte-espaco);
+  text-transform: uppercase;
+  color: var(--sobre-cor);
+  background: var(--box-cor);
+  border-radius: 2px;
+}
+
+.box > :last-child {
+  margin-bottom: 0;
+}
+
+.box-prova {
+  --box-cor: var(--acento);
+  --box-fundo: var(--acento-suave);
+}
+
+.box-pegadinha {
+  --box-cor: var(--quente);
+  --box-fundo: var(--quente-suave);
+}
+
+.box-decore {
+  --box-cor: var(--lei);
+  --box-fundo: var(--lei-suave);
+}
+
+.box-conferir {
+  --box-cor: var(--tinta-2);
+  --box-fundo: var(--superficie-2);
+  border-style: dashed;
+}
+
+.box-dica {
+  --box-cor: var(--ok);
+  --box-fundo: var(--ok-suave);
+}
+
+/* ---------- Texto de lei ---------- */
+blockquote.lei {
+  margin: var(--s5) 0;
+  padding: var(--s4);
+  background: var(--lei-suave);
+  border: 1px solid var(--lei);
+  border-radius: var(--raio-sm);
+}
+
+blockquote.lei p:last-of-type {
+  margin-bottom: var(--s2);
+}
+
+blockquote.lei footer {
+  font: var(--rotulo);
+  letter-spacing: var(--rotulo-espaco);
+  text-transform: uppercase;
+  color: var(--lei);
+}
+
+/* ---------- Exemplo resolvido e fórmulas ---------- */
+.exemplo {
+  margin: var(--s5) 0;
+  padding: var(--s4);
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.exemplo-titulo {
+  margin: 0 0 var(--s2);
+  font: var(--rotulo-forte);
+  letter-spacing: var(--rotulo-forte-espaco);
+  text-transform: uppercase;
+  color: var(--acento);
+}
+
+.exemplo > :last-child {
+  margin-bottom: 0;
+}
+
+.formula {
+  display: block;
+  margin: var(--s3) 0 var(--s4);
+  padding: var(--s2) var(--s3);
+  font-family: var(--f-mono);
+  font-size: .95rem;
+  line-height: 1.6;
+  background: var(--superficie-2);
+  border-radius: var(--raio-sm);
+}
+
+.resposta {
+  font-weight: 650;
+}
+
+/* MathML estático: fórmulas legíveis mesmo sem JavaScript ou acesso à rede.
+   A regra acompanha fórmulas E1 reutilizadas no simulado e nos cartões de revisão. */
+.matematica {
+  font-family: "Cambria Math", "STIX Two Math", "Latin Modern Math", math;
+  font-size: 1.04em;
+  color: inherit;
+  overflow-wrap: normal;
+}
+
+.formula-resolucao {
+  display: block;
+  max-width: 100%;
+  margin: .6rem 0;
+  padding: .35rem 0;
+  overflow-x: auto;
+}
+
+/* O MathML Core alinha tabelas por CSS: columnalign do MathML completo não é
+   implementado por todos os navegadores. Mantém os sinais de igualdade alinhados. */
+.matematica mtd:nth-child(odd) { text-align: right; }
+.matematica mtd:nth-child(even) { text-align: left; }
+
+/* Legendas locais das fórmulas E1; acompanham a questão/cartão quando reutilizados.
+   Todas ficam abertas, para o aluno ler os símbolos junto da expressão. */
+.legenda-formula {
+  margin: 1rem 0;
+  padding: .9rem 0 0;
+  border-top: 1px solid var(--linha);
+  font-size: .875rem;
+  line-height: 1.55;
+  break-inside: avoid;
+}
+
+.legenda-formula-titulo {
+  margin: 0 0 .75rem;
+  color: var(--tinta-2);
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.legenda-formula > dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: .8rem 1.25rem;
+  margin: 0;
+}
+
+.legenda-formula-item {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  align-items: baseline;
+  gap: .65rem;
+  min-width: 0;
+}
+
+.legenda-formula dt {
+  margin: 0;
+  min-width: 2rem;
+  color: var(--acento-forte);
+}
+
+.legenda-formula dd {
+  margin: 0;
+  min-width: 0;
+  color: var(--tinta);
+}
+
+.legenda-formula-unidade {
+  display: block;
+  margin-top: .15rem;
+  color: var(--tinta-2);
+  font-size: .8125rem;
+  line-height: 1.55;
+}
+
+.legenda-formula-compacta > dl { grid-template-columns: minmax(0, 1fr); }
+.legenda-formula-compacta { margin-bottom: 0; }
+.legenda-formula .simbolo-legenda { font-size: 1.1em; }
+.questao > .legenda-formula { margin-bottom: 1.25rem; }
+
+@media (min-width: 45rem) {
+  .questao > .legenda-formula > dl { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 39.99rem) {
+  .legenda-formula > dl { grid-template-columns: minmax(0, 1fr); }
+  .legenda-formula-item { gap: .6rem; }
+}
+
+@media print {
+  .legenda-formula { font-size: 9pt; }
+  .legenda-formula-unidade { font-size: 8.5pt; }
+  .legenda-formula-titulo { font-size: 9pt; }
+}
+
+/* E1 · composição editorial da aula de Termodinâmica */
+[data-leitura="e1"] {
+  --largura-pagina: 70rem;
+  --sumario-l: 14.5rem;
+  --medida: 44rem;
+}
+
+/* Notas em corpo menor conservam uma extensão confortável para leitura. */
+[data-leitura="e1"] .conteudo-modulo p { max-inline-size: 54ch; }
+
+[data-leitura="e1"] .conteudo-modulo > section > h3 {
+  margin-top: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+[data-leitura="e1"] .conteudo-modulo > section > h2 + h3 {
+  margin-top: 1.5rem;
+}
+
+[data-leitura="e1"] .equacao {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--linha);
+  border-left: 3px solid var(--acento);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  break-inside: avoid;
+}
+
+[data-leitura="e1"] .equacao-titulo {
+  margin: 0 0 .65rem;
+  color: var(--tinta-2);
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+[data-leitura="e1"] .equacao-linha {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: safe center;
+  gap: .9rem 1.5rem;
+  min-width: 0;
+  padding: .6rem .125rem;
+  overflow-x: auto;
+  font-size: 1.18rem;
+}
+
+[data-leitura="e1"] .equacao-linha > math {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+[data-leitura="e1"] .equacao-nota {
+  margin: .75rem 0 0;
+  max-inline-size: 60ch;
+  padding-top: .75rem;
+  border-top: 1px solid var(--linha);
+  color: var(--tinta-2);
+  font-size: .9375rem;
+  line-height: 1.6;
+}
+
+[data-leitura="e1"] .exemplo {
+  margin: 1.75rem 0;
+  padding: 1.5rem;
+}
+
+[data-leitura="e1"] .exemplo-titulo {
+  margin-bottom: 1rem;
+  font-size: .8125rem;
+  line-height: 1.5;
+  text-wrap: wrap;
+}
+
+[data-leitura="e1"] .etapas {
+  margin-top: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+[data-leitura="e1"] .etapas > li {
+  max-width: var(--medida-texto);
+  padding-left: .3rem;
+}
+
+[data-leitura="e1"] .etapas > li + li {
+  margin-top: 1.25rem;
+}
+
+[data-leitura="e1"] .etapas > li::marker {
+  color: var(--acento);
+  font-weight: 600;
+}
+
+[data-leitura="e1"] .etapas .equacao {
+  margin: .75rem 0;
+  padding: .75rem 1rem;
+  border-left-width: 1px;
+  background: var(--papel);
+}
+
+[data-leitura="e1"] .exemplo-resultado {
+  margin: 1.25rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--linha);
+  font-size: 1rem;
+}
+
+[data-leitura="e1"] .roteiro-estudo > li,
+[data-leitura="e1"] .sequencia-ciclo > li,
+[data-leitura="e1"] .revisao-checklist > li {
+  margin-top: .7rem;
+  padding-left: .2rem;
+}
+
+[data-leitura="e1"] .conceitos-chave {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--linha-forte);
+}
+
+[data-leitura="e1"] .conceitos-chave dt {
+  margin: 1rem 0 .35rem;
+  font-weight: 600;
+}
+
+[data-leitura="e1"] .conceitos-chave dd {
+  margin: 0;
+}
+
+[data-leitura="e1"] .guia-notacao {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+[data-leitura="e1"] .guia-notacao > summary {
+  cursor: pointer;
+  color: var(--acento);
+  font-weight: 600;
+}
+
+[data-leitura="e1"] .guia-notacao .tabela {
+  margin-bottom: 0;
+}
+
+[data-leitura="e1"] .tabela caption {
+  font-size: .9375rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+[data-leitura="e1"] .tabela td,
+[data-leitura="e1"] .tabela th {
+  line-height: 1.6;
+}
+
+[data-leitura="e1"] .q-enunciado .afirmacao {
+  display: block;
+  margin: .75rem 0;
+}
+
+[data-leitura="e1"] .q-justificativas {
+  list-style: none;
+  padding: 0;
+}
+
+[data-leitura="e1"] .q-justificativas > li {
+  position: relative;
+  max-width: none;
+  margin-top: .8rem;
+  padding-left: 2rem;
+}
+
+[data-leitura="e1"] .q-justificativas > li::before {
+  content: attr(data-letra) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+  color: var(--acento);
+}
+
+[data-leitura="e1"] .q-justificativas > li[data-item]::before {
+  content: attr(data-item) ".";
+}
+
+[data-leitura="e1"] .q-justificativas > li > p { margin-bottom: .35rem; }
+
+[data-leitura="e1"] .q-comentario > h4 {
+  margin: 1.5rem 0 .75rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+[data-leitura="e1"] .box {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--linha);
+  border-left: 3px solid var(--box-cor);
+}
+
+[data-leitura="e1"] .box-titulo {
+  display: block;
+  margin: 0 0 .65rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--box-cor);
+  font-size: 1rem;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (max-width: 39.99rem) {
+  [data-leitura="e1"] .equacao { padding: .9rem .8rem; }
+  [data-leitura="e1"] .equacao-linha { font-size: 1.05rem; }
+  [data-leitura="e1"] .exemplo { padding: 1rem; }
+  [data-leitura="e1"] .etapas { padding-left: 1.2rem; }
+  [data-leitura="e1"] .etapas .equacao { padding: .65rem .5rem; }
+  [data-leitura="e1"] .guia-notacao { padding: 1rem; }
+}
+
+@media print {
+  [data-leitura="e1"] main.pagina { display: block; }
+  [data-leitura="e1"] .layout { display: block; }
+  [data-leitura="e1"] .mod-cabecalho { margin-bottom: 2rem; }
+  [data-leitura="e1"] .conteudo-modulo > section { margin-inline: 0; padding-inline: 0; }
+  [data-leitura="e1"] .equacao,
+  [data-leitura="e1"] .exemplo,
+  [data-leitura="e1"] .guia-notacao { background: #fff; box-shadow: none; }
+  [data-leitura="e1"] .equacao { padding: .65rem .8rem; }
+  [data-leitura="e1"] .equacao-linha { overflow: visible; font-size: 1.05rem; }
+  [data-leitura="e1"] .exemplo { break-inside: auto; }
+  [data-leitura="e1"] .exemplo-titulo { break-after: avoid; }
+  [data-leitura="e1"] .etapas > li { break-inside: avoid; }
+  [data-leitura="e1"] .guia-notacao > summary { break-after: avoid; }
+  .formula-resolucao { overflow: visible; }
+}
+
+/* ---------- Tabelas ---------- */
+/* position: relative faz de cada contêiner com overflow o bloco de contenção dos textos só para leitor de tela
+   (.sr-only, posição absoluta): sem isso eles escapam do recorte e alargam a página no celular. */
+.tabela {
+  position: relative;
+  margin: var(--s5) 0;
+  scroll-margin-top: calc(var(--topo-h) + var(--s4));
+  overflow-x: auto;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-sm);
+}
+
+.tabela table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--t-sm);
+  line-height: 1.5;
+}
+
+.tabela caption {
+  caption-side: top;
+  padding: var(--s3) var(--s3);
+  text-align: left;
+  font: 600 var(--t-sm)/1.35 var(--f-display);
+  color: var(--tinta);
+  border-bottom: 1px solid var(--linha);
+}
+
+.tabela th,
+.tabela td {
+  padding: var(--s2) var(--s3);
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--linha);
+}
+
+.tabela thead th {
+  font: var(--rotulo);
+  letter-spacing: var(--rotulo-espaco);
+  text-transform: uppercase;
+  color: var(--tinta-2);
+  background: var(--superficie-2);
+}
+
+.tabela tbody th {
+  font-weight: 600;
+}
+
+.tabela tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.tabela .num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tabela a:focus-visible,
+.tabela button:focus-visible {
+  outline-offset: -3px;
+}
+
+/* Largura mínima das grades roláveis: cabe na coluna de texto do computador (40rem menos as bordas) e na
+   menor largura em que as tabelas ainda não viram cartões (40rem de tela menos as margens). */
+.tabela-larga table {
+  min-width: 37.5rem;
+}
+
+.tabela-dica {
+  margin: var(--s4) 0 calc(-1 * var(--s4));
+  font-size: var(--t-xs);
+  font-weight: 600;
+  color: var(--tinta-2);
+}
+
+.tabela-larga tbody th[scope="row"],
+.tabela-larga tfoot th[scope="row"] {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--superficie);
+}
+
+.tabela-larga thead th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.tabela.rola tbody th[scope="row"],
+.tabela.rola tfoot th[scope="row"],
+.tabela.rola thead th:first-child {
+  box-shadow: 1px 0 0 var(--linha-forte);
+}
+
+/* Celular: cada linha vira um cartão, com o cabeçalho da linha no topo e o nome da coluna (data-rotulo, que o
+   validador confere com o <thead>) antes de cada valor. Grades de números, que se comparam coluna a coluna,
+   levam .tabela-grade e continuam rolando para os lados. Como display: block tira a semântica de tabela em
+   alguns navegadores, o curso.js põe os papéis ARIA (table, row, cell...) de volta. */
+@media screen and (max-width: 39.99rem) {
+  .tabela:not(.tabela-grade) {
+    overflow: visible;
+    background: none;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .tabela:not(.tabela-grade) table,
+  .tabela:not(.tabela-grade) caption,
+  .tabela:not(.tabela-grade) tbody,
+  .tabela:not(.tabela-grade) tfoot,
+  .tabela:not(.tabela-grade) tr,
+  .tabela:not(.tabela-grade) th,
+  .tabela:not(.tabela-grade) td {
+    display: block;
+  }
+
+  .tabela-larga:not(.tabela-grade) table {
+    min-width: 0;
+  }
+
+  .tabela:not(.tabela-grade) caption {
+    padding: 0 0 var(--s2);
+    border-bottom: 0;
+  }
+
+  .tabela:not(.tabela-grade) thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .tabela:not(.tabela-grade) tr {
+    margin: 0 0 var(--s3);
+    background: var(--superficie);
+    border: 1px solid var(--linha);
+    border-radius: var(--raio-sm);
+  }
+
+  .tabela:not(.tabela-grade) th,
+  .tabela:not(.tabela-grade) td {
+    border-bottom: 0;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .tabela:not(.tabela-grade) tr > * + * {
+    border-top: 1px solid var(--linha);
+  }
+
+  .tabela:not(.tabela-grade) tbody th[scope="row"],
+  .tabela:not(.tabela-grade) tfoot th[scope="row"] {
+    position: static;
+    background: var(--superficie-2);
+    box-shadow: none;
+    border-radius: calc(var(--raio-sm) - 1px) calc(var(--raio-sm) - 1px) 0 0;
+  }
+
+  .tabela:not(.tabela-grade) th[data-rotulo]::before {
+    content: attr(data-rotulo) " ";
+  }
+
+  .tabela:not(.tabela-grade) td[data-rotulo]::before {
+    content: attr(data-rotulo);
+    content: attr(data-rotulo) / "";
+    display: block;
+    margin-bottom: var(--s1);
+    font: var(--rotulo);
+    letter-spacing: var(--rotulo-espaco);
+    text-transform: uppercase;
+    color: var(--tinta-2);
+  }
+
+  .tabela:not(.tabela-grade) td:empty {
+    display: none;
+  }
+
+  /* Números: nome da coluna e valor na mesma linha, o valor alinhado à direita. */
+  .tabela:not(.tabela-grade) td.num[data-rotulo] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0 var(--s3);
+  }
+
+  .tabela:not(.tabela-grade) td.num[data-rotulo]::before {
+    margin-bottom: 0;
+  }
+}
+
+/* ---------- Figuras ---------- */
+figure {
+  margin: var(--s5) 0;
+}
+
+.figura {
+  padding: var(--s4);
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.figura svg {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  margin-top: var(--s2);
+  font-size: var(--t-sm);
+  line-height: 1.5;
+  color: var(--tinta-2);
+}
+
+/* Classes utilitárias para SVG (cores sempre vindas dos tokens) */
+.sv-traco { fill: none; stroke: var(--tinta); stroke-width: 2; }
+.sv-fino { fill: none; stroke: var(--tinta-2); stroke-width: 1; }
+.sv-guia { fill: none; stroke: var(--linha-forte); stroke-width: 1; stroke-dasharray: 4 4; }
+.sv-acento { fill: none; stroke: var(--acento); stroke-width: 2.5; }
+.sv-quente { fill: none; stroke: var(--quente); stroke-width: 2.5; }
+.sv-lei { fill: none; stroke: var(--lei); stroke-width: 2.5; }
+.sv-fundo { fill: var(--superficie-2); stroke: var(--tinta-2); stroke-width: 1; }
+.sv-cheio { fill: var(--tinta); stroke: none; }
+.sv-cheio-acento { fill: var(--acento); stroke: none; }
+.sv-cheio-quente { fill: var(--quente); stroke: none; }
+.sv-texto { fill: var(--tinta); font-family: var(--f-texto); font-size: 14px; }
+.sv-texto-2 { fill: var(--tinta-2); font-family: var(--f-texto); font-size: 13px; }
+.sv-rotulo { fill: var(--tinta); font-family: var(--f-display); font-size: 13px; font-weight: 600; letter-spacing: .04em; }
+
+/* ---------- Glossário ---------- */
+.glossario {
+  display: grid;
+  gap: 0 var(--s4);
+  margin: 0;
+}
+
+.glossario dt {
+  font-family: var(--f-display);
+  font-weight: 600;
+  margin-top: var(--s3);
+  overflow-wrap: anywhere;
+}
+
+.glossario dd {
+  margin: 0;
+  color: var(--tinta-2);
+  overflow-wrap: anywhere;
+}
+
+.sem-quebra {
+  white-space: nowrap;
+}
+
+.lista-decore {
+  margin: 0;
+  padding-left: var(--recuo-lista);
+}
+
+@media (min-width: 40rem) {
+  .glossario {
+    grid-template-columns: minmax(9rem, 13rem) 1fr;
+  }
+
+  .glossario dt,
+  .glossario dd {
+    margin: 0;
+    padding: var(--s2) 0;
+    border-bottom: 1px solid var(--linha);
+  }
+}
+
+/* ---------- Listas de verificação ---------- */
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li + li {
+  margin-top: var(--s1);
+}
+
+.checklist label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  padding: var(--s2) var(--s2);
+  border-radius: var(--raio-sm);
+  cursor: pointer;
+}
+
+.checklist label:hover {
+  background: var(--acento-suave);
+}
+
+.checklist input[type="checkbox"] {
+  flex: 0 0 auto;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin: var(--s1) 0 0;
+  accent-color: var(--acento);
+}
+
+.checklist input[type="checkbox"]:checked + span {
+  color: var(--tinta-2);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+/* ---------- Modelo de documento ---------- */
+.modelo {
+  margin: var(--s5) 0;
+  padding: var(--s5);
+  background: var(--superficie);
+  border: 1px solid var(--linha-forte);
+  border-radius: var(--raio-sm);
+  font-size: var(--t-sm);
+}
+
+.modelo .campo {
+  font-family: var(--f-mono);
+  font-size: .9em;
+  color: var(--quente);
+}
+
+/* ---------- Questões ---------- */
+.questoes-intro {
+  color: var(--tinta-2);
+}
+
+.placar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3) var(--s5);
+  margin: var(--s5) 0;
+  padding: var(--s4);
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.placar-texto {
+  margin: 0;
+  font-weight: 600;
+}
+
+.placar-barra {
+  flex: 1 1 10rem;
+  height: .5rem;
+  overflow: hidden;
+  background: var(--superficie-2);
+  border-radius: 99px;
+  box-shadow: inset 0 0 0 1px var(--linha-forte);
+}
+
+.placar-barra > span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--acento);
+  transition: width .2s ease-out;
+}
+
+.placar-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+
+.placar-aviso {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: var(--t-sm);
+  font-weight: 600;
+  color: var(--quente);
+}
+
+.placar-texto:focus {
+  outline-offset: 4px;
+}
+
+.confirmar {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s3);
+  padding: var(--s3);
+  background: var(--erro-suave);
+  border: 1px solid var(--erro);
+  border-radius: var(--raio-sm);
+}
+
+.confirmar-texto {
+  flex-basis: 100%;
+  margin: 0;
+  font-weight: 600;
+}
+
+.sim-resultado {
+  flex-basis: 100%;
+}
+
+.sim-resultado-titulo {
+  margin: 0 0 var(--s2);
+  font: 700 var(--t-md)/1.3 var(--f-display);
+}
+
+/* content-visibility: fora da tela, questões e cartões não são estilizados nem diagramados — num
+   simulado de 80 questões, a carga no celular (CPU 4×) cai de ~470 ms de bloqueio para ~15 ms.
+   A contenção de pintura corta o que vazar da caixa: o e2e (T02) acusa conteúdo cortado. */
+.questao {
+  margin: var(--s5) 0;
+  padding: var(--s5) var(--s4) var(--s4);
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto 30rem;
+}
+
+.q-cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s3);
+  margin: 0 0 var(--s3);
+}
+
+.q-num,
+h3.q-num {
+  margin: 0;
+  font: var(--rotulo-forte);
+  letter-spacing: var(--rotulo-forte-espaco);
+  text-transform: uppercase;
+  color: var(--acento);
+}
+
+.q-tipo {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  padding: var(--s1) var(--s2);
+  font: var(--rotulo);
+  letter-spacing: var(--rotulo-espaco);
+  text-transform: uppercase;
+  color: var(--tinta-2);
+  border: 1px solid var(--linha-forte);
+  border-radius: 3px;
+}
+
+.q-enunciado > :last-child {
+  margin-bottom: var(--s3);
+}
+
+/* Itens julgados no enunciado (afirmativas I–IV, itens de V ou F): a numeração faz parte do texto, como na prova. */
+.q-itens {
+  list-style: none;
+  margin: 0 0 var(--s3);
+  padding-left: 0;
+}
+
+.q-itens > li + li {
+  margin-top: var(--s2);
+}
+
+.q-alternativas {
+  list-style: upper-alpha;
+  margin: 0 0 var(--s3);
+  padding-left: var(--recuo-alternativas);
+}
+
+.q-alternativas > li + li {
+  margin-top: var(--s2);
+}
+
+.q-alternativas.ativa {
+  list-style: none;
+  padding-left: 0;
+}
+
+.alt {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  width: 100%;
+  min-height: 44px;
+  padding: var(--s2) var(--s3);
+  font: inherit;
+  line-height: 1.5;
+  text-align: left;
+  color: var(--tinta);
+  background: var(--superficie);
+  border: 1px solid var(--linha-forte);
+  border-radius: var(--raio-sm);
+  cursor: pointer;
+}
+
+.alt:hover:not([aria-disabled="true"]) {
+  border-color: var(--acento);
+  background: var(--acento-suave);
+}
+
+.alt[aria-disabled="true"] {
+  cursor: default;
+}
+
+.alt-letra {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-top: -.1rem;
+  font: 700 var(--t-sm)/1 var(--f-display);
+  border: 1.5px solid var(--linha-forte);
+  border-radius: 50%;
+}
+
+.alt-texto {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.alt-selo {
+  flex: 0 0 auto;
+  align-self: center;
+  font: var(--rotulo);
+  letter-spacing: var(--rotulo-espaco);
+  text-transform: uppercase;
+}
+
+.alt-selo:empty {
+  display: none;
+}
+
+.alt.correta {
+  border-color: var(--ok);
+  background: var(--ok-suave);
+}
+
+.alt.correta .alt-letra {
+  color: var(--sobre-cor);
+  background: var(--ok);
+  border-color: var(--ok);
+}
+
+.alt.correta .alt-selo {
+  color: var(--ok);
+}
+
+.alt.errada {
+  border-color: var(--erro);
+  background: var(--erro-suave);
+}
+
+.alt.errada .alt-letra {
+  color: var(--sobre-cor);
+  background: var(--erro);
+  border-color: var(--erro);
+}
+
+.alt.errada .alt-selo {
+  color: var(--erro);
+}
+
+.alt.selecionada {
+  border-color: var(--acento);
+  border-width: 2px;
+  padding: calc(var(--s2) - 1px) calc(var(--s3) - 1px);
+  background: var(--acento-suave);
+}
+
+.alt.selecionada .alt-letra {
+  color: var(--sobre-cor);
+  background: var(--acento);
+  border-color: var(--acento);
+}
+
+.alt.selecionada .alt-selo {
+  color: var(--acento-forte);
+}
+
+.filtro-erros .questao:not(.ja-errou) {
+  display: none;
+}
+
+.modo-simulado:not(.corrigido) .q-resolucao {
+  display: none;
+}
+
+.q-feedback {
+  margin: 0 0 var(--s2);
+  font-weight: 650;
+}
+
+.q-feedback:empty {
+  margin: 0;
+}
+
+.q-feedback.ok {
+  color: var(--ok);
+}
+
+.q-feedback.erro {
+  color: var(--erro);
+}
+
+.q-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin: 0 0 var(--s2);
+}
+
+.q-resolucao {
+  margin-top: var(--s3);
+  padding-top: var(--s2);
+  border-top: 1px dashed var(--linha-forte);
+}
+
+.q-resolucao > summary {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  list-style: none;
+  min-height: 44px;
+  font: 600 var(--t-sm)/1.3 var(--f-display);
+  letter-spacing: .02em;
+  color: var(--acento);
+  cursor: pointer;
+}
+
+.q-resolucao > summary:hover {
+  color: var(--acento-forte);
+}
+
+.q-resolucao > summary::-webkit-details-marker {
+  display: none;
+}
+
+.q-resolucao > summary::before {
+  content: "";
+  flex: 0 0 auto;
+  width: .5rem;
+  height: .5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.q-resolucao[open] > summary::before {
+  transform: rotate(45deg) translate(-2px, -2px);
+}
+
+.q-gabarito {
+  margin: var(--s2) 0;
+  font-weight: 700;
+}
+
+.q-comentario > :last-child {
+  margin-bottom: 0;
+}
+
+.q-comentario ul {
+  padding-left: var(--recuo-lista);
+}
+
+/* ---------- Flashcards ---------- */
+.flash-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin: 0 0 var(--s4);
+}
+
+.flash-status {
+  margin: 0 0 var(--s3);
+  font-size: var(--t-sm);
+  color: var(--tinta-2);
+}
+
+.flash-status:empty {
+  margin: 0;
+}
+
+.flashcards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: var(--s3);
+  align-items: start;
+}
+
+.flashcard {
+  position: relative;
+  overflow: hidden;
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  content-visibility: auto;
+  contain-intrinsic-block-size: auto 3.5rem;
+}
+
+.flashcard > summary {
+  display: block;
+  padding: var(--s3) var(--s4);
+  font-weight: 600;
+  line-height: 1.45;
+  list-style: none;
+  cursor: pointer;
+}
+
+.flashcard > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* O resumo ocupa o cartão inteiro, e o cartão corta o que passa da sua caixa (overflow e content-visibility): o
+   contorno de foco vai para dentro, acompanhando os cantos do cartão (como nas grades roláveis). */
+.flashcard > summary:focus-visible {
+  outline-offset: -3px;
+  border-radius: calc(var(--raio) - 1px);
+}
+
+.flashcard > summary::after {
+  content: "Ver resposta";
+  display: block;
+  margin-top: var(--s2);
+  font: var(--rotulo);
+  letter-spacing: var(--rotulo-espaco);
+  text-transform: uppercase;
+  color: var(--acento);
+}
+
+.flashcard[open] > summary::after {
+  content: "Ocultar resposta";
+}
+
+.flashcard > summary:hover {
+  background: var(--acento-suave);
+  border-radius: calc(var(--raio) - 1px) calc(var(--raio) - 1px) 0 0;
+}
+
+.flashcard:not([open]) > summary:hover {
+  border-radius: calc(var(--raio) - 1px);
+}
+
+.flash-resposta {
+  padding: var(--s3) var(--s4) var(--s4);
+  border-top: 1px dashed var(--linha-forte);
+  color: var(--tinta-2);
+}
+
+.flash-resposta > :last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Resumo e fontes ---------- */
+.resumo-lista li::marker {
+  color: var(--acento);
+}
+
+.fontes {
+  font-size: var(--t-sm);
+}
+
+.fontes li {
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Rodapé ---------- */
+.rodape {
+  margin-top: var(--s7);
+  padding-block: var(--s5) calc(var(--s6) + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid var(--linha);
+  background: var(--superficie);
+  font-size: var(--t-sm);
+  color: var(--tinta-2);
+}
+
+.rodape-interno {
+  max-width: var(--largura-pagina);
+  margin: 0 auto;
+  padding-inline: var(--s4);
+  display: grid;
+  gap: var(--s4);
+}
+
+@media (min-width: 48rem) {
+  .rodape-interno {
+    padding-inline: var(--s6);
+  }
+}
+
+@media (min-width: 70rem) {
+  .pg-modulo .rodape-interno {
+    grid-template-columns: var(--sumario-l) minmax(0, var(--medida));
+    column-gap: var(--s7);
+  }
+
+  .pg-modulo .rodape-interno > * {
+    grid-column: 2;
+  }
+}
+
+.rodape-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s3);
+}
+
+.rodape-nav a {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Atalho flutuante para o sumário (telas estreitas; criado pelo curso.js). */
+.ir-sumario {
+  position: fixed;
+  right: max(var(--s4), env(safe-area-inset-right, 0px));
+  bottom: calc(var(--s4) + env(safe-area-inset-bottom, 0px));
+  z-index: 25;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: var(--s2) var(--s3);
+  font: 700 var(--t-sm)/1.2 var(--f-display);
+  letter-spacing: .03em;
+  color: var(--sobre-cor);
+  background: var(--acento);
+  border-radius: 99px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+  text-decoration: none;
+}
+
+.ir-sumario:hover {
+  color: var(--sobre-cor);
+  background: var(--acento-forte);
+}
+
+.rodape p {
+  margin: 0;
+}
+
+
+
+/* ---------- Portal ---------- */
+.portal-cabecalho {
+  padding-block: 0 var(--s4);
+}
+
+.portal-cabecalho h1 {
+  max-width: 30ch;
+}
+
+.continuar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s3);
+  margin: var(--s5) 0 0;
+  padding: var(--s3) var(--s4);
+  background: var(--acento-suave);
+  border: 1px solid var(--acento);
+  border-radius: var(--raio);
+}
+
+.continuar p {
+  margin: 0;
+}
+
+[data-continuar-detalhe]:empty {
+  display: none;
+}
+
+.passos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--s3);
+  margin: var(--s4) 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: passo;
+}
+
+@media (min-width: 40rem) {
+  .passos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 70rem) {
+  .passos {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.passos + .nota {
+  margin-top: var(--s4);
+}
+
+.passos li {
+  counter-increment: passo;
+  margin: 0;
+  padding: var(--s4);
+  background: var(--superficie);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+}
+
+.passos li::before {
+  content: "Passo " counter(passo);
+  display: block;
+  margin-bottom: var(--s1);
+  font: var(--rotulo-forte);
+  letter-spacing: var(--rotulo-forte-espaco);
+  text-transform: uppercase;
+  color: var(--acento);
+}
+
+.painel-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin: var(--s3) 0;
+}
+
+.painel-bloco {
+  display: grid;
+  gap: var(--s2);
+  margin: var(--s3) 0;
+}
+
+.painel-bloco label {
+  font-weight: 600;
+}
+
+.painel-texto {
+  width: 100%;
+  min-height: 6rem;
+  padding: var(--s2);
+  font: 400 var(--t-xs)/1.4 var(--f-mono);
+  color: var(--tinta);
+  background: var(--superficie);
+  border: 1px solid var(--linha-forte);
+  border-radius: var(--raio-sm);
+}
+
+.painel-status {
+  margin: var(--s2) 0 0;
+  font-weight: 600;
+}
+
+.painel-status:empty {
+  margin: 0;
+}
+
+.grupo-modulos {
+  margin-top: var(--s7);
+}
+
+.grupo-modulos > h2 {
+  margin-top: 0;
+}
+
+.grupo-descricao {
+  color: var(--tinta-2);
+  max-width: var(--medida-texto);
+}
+
+.lista-modulos {
+  list-style: none;
+  margin: var(--s4) 0 0;
+  padding: 0;
+  border-top: 1.5px solid var(--tinta);
+}
+
+.lista-modulos > li {
+  display: grid;
+  grid-template-columns: 3.4rem minmax(0, 1fr);
+  gap: var(--s1) var(--s3);
+  align-items: baseline;
+  margin: 0;
+  padding: var(--s3) var(--s1);
+  border-bottom: 1px solid var(--linha);
+}
+
+.mod-codigo {
+  font: 700 var(--t-md)/1.2 var(--f-display);
+  letter-spacing: .02em;
+  color: var(--acento);
+}
+
+.mod-corpo {
+  display: grid;
+  gap: var(--s1);
+  min-width: 0;
+}
+
+.mod-titulo {
+  margin: 0;
+  font: 600 var(--t-base)/1.35 var(--f-texto);
+}
+
+.mod-titulo a {
+  color: var(--tinta);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .2em;
+}
+
+.mod-titulo a:hover {
+  color: var(--acento-forte);
+  text-decoration: underline;
+}
+
+.mod-titulo .indisponivel {
+  color: var(--tinta-2);
+}
+
+/* Item aberto por um link (#modulo-x, vindo do cronograma ou do "Próximo" de um módulo): destacado e, se ainda
+   não saiu, com a explicação de "Em produção". Nos outros itens a explicação fica oculta (evita 30 repetições). */
+.mod-nota-producao {
+  display: none;
+  margin: 0;
+  font-size: var(--t-sm);
+  color: var(--tinta-2);
+}
+
+.lista-modulos > li:target {
+  background: var(--acento-suave);
+  box-shadow: inset 3px 0 0 var(--acento);
+}
+
+.lista-modulos > li:target .mod-nota-producao {
+  display: block;
+}
+
+.mod-detalhes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--t-xs);
+  color: var(--tinta-2);
+}
+
+.mod-detalhes li + li {
+  margin-top: 0;
+}
+
+.mod-progresso {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  font-size: var(--t-xs);
+  font-weight: 600;
+  color: var(--tinta-2);
+}
+
+.mod-progresso-barra {
+  width: 5rem;
+  height: .4rem;
+  overflow: hidden;
+  background: var(--superficie-2);
+  border-radius: 99px;
+  box-shadow: inset 0 0 0 1px var(--linha-forte);
+}
+
+.mod-progresso-barra > span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--acento);
+}
+
+@media (min-width: 48rem) {
+  .lista-modulos > li {
+    grid-template-columns: 4rem minmax(0, 1fr);
+    padding-inline: var(--s2);
+  }
+}
+
+/* ---------- Impressão (sempre tema claro) ---------- */
+@media print {
+  :root,
+  :root:not([data-theme="light"]),
+  :root[data-theme="dark"] {
+    color-scheme: light;
+    --papel: #FFFFFF;
+    --superficie: #FFFFFF;
+    --superficie-2: #F1F4F4;
+    --tinta: #000000;
+    --tinta-2: #333333;
+    --linha: #BBBBBB;
+    --linha-forte: #777777;
+    --acento: #0A5566;
+    --acento-forte: #073F4C;
+    --acento-suave: #EEF6F7;
+    --quente: #7A3800;
+    --quente-suave: #FDF3EA;
+    --lei: #2C386F;
+    --lei-suave: #F2F3FA;
+    --ok: #145A2E;
+    --ok-suave: #EEF8F1;
+    --erro: #8F1F16;
+    --erro-suave: #FCEFED;
+    --foco: #7A3800;
+    --sobre-cor: #FFFFFF;
+  }
+
+  body {
+    font-size: 10.5pt;
+    line-height: 1.5;
+  }
+
+  .topo,
+  .sumario,
+  .pular,
+  .q-acoes,
+  .placar,
+  .flash-acoes,
+  .flash-status,
+  .rodape-nav,
+  .continuar,
+  .ir-sumario,
+  .tabela-dica,
+  .painel-progresso,
+  .chip-erro {
+    display: none !important;
+  }
+
+  .questao,
+  .flashcard,
+  [data-leitura="e1"] .bloco-aula,
+  .pg-modulo .conteudo-modulo > section {
+    content-visibility: visible;
+  }
+
+  /* O gabarito já sai aberto no papel: o rótulo "Ver gabarito e comentário" não serve. */
+  .q-resolucao > summary {
+    display: none;
+  }
+
+  /* Sem JavaScript, o conteúdo de <details> fechado também sai no papel (Chrome, Edge e Firefox atuais; o T10 confere). */
+  details::details-content {
+    content-visibility: visible;
+    display: block;
+  }
+
+  tfoot {
+    display: table-row-group;
+  }
+
+  .modo-simulado:not(.corrigido) .q-resolucao {
+    display: block;
+  }
+
+  .tabela-larga tbody th[scope="row"],
+  .tabela-larga tfoot th[scope="row"],
+  .tabela-larga thead th:first-child {
+    position: static;
+  }
+
+  .pagina {
+    max-width: none;
+    padding: 0;
+  }
+
+  .layout {
+    display: block;
+  }
+
+  .layout > .conteudo-modulo {
+    max-width: none;
+  }
+
+  h2 {
+    break-after: avoid;
+  }
+
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+
+  .box,
+  .exemplo,
+  figure,
+  .flashcard,
+  blockquote.lei,
+  tr,
+  .q-alternativas {
+    break-inside: avoid;
+  }
+
+  /* O navegador não imprime fundos por padrão: rótulos e letras usam só cor e borda. */
+  .box-titulo {
+    color: var(--box-cor);
+    background: none;
+    border: 1px solid var(--box-cor);
+  }
+
+  .alt-letra,
+  .alt.correta .alt-letra,
+  .alt.errada .alt-letra,
+  .alt.selecionada .alt-letra {
+    color: var(--tinta);
+    background: none;
+  }
+
+  .alt.correta .alt-letra {
+    color: var(--ok);
+    border-color: var(--ok);
+  }
+
+  .alt.errada .alt-letra {
+    color: var(--erro);
+    border-color: var(--erro);
+  }
+
+  .chip {
+    background: none;
+  }
+
+  .tabela {
+    overflow: visible;
+  }
+
+  .tabela-larga table {
+    min-width: 0;
+  }
+
+  /* Endereços completos só na lista de fontes, uma vez cada. */
+  .fontes a[href^="http"]::after {
+    content: " <" attr(href) ">";
+    font-size: 8.5pt;
+    color: var(--tinta-2);
+    overflow-wrap: anywhere;
+  }
+
+  a[target="_blank"]::after {
+    content: none;
+  }
+
+  .flashcard > summary::after {
+    content: none;
+  }
+}
+
+/* ---------- Cores forçadas (alto contraste do sistema) ---------- */
+/* O sistema troca fundos e apaga sombras: o item-alvo do portal ganha contorno, e as barras de progresso ficam com
+   borda e preenchimento nas cores do sistema. */
+@media (forced-colors: active) {
+  .lista-modulos > li:target {
+    outline: 3px solid Highlight;
+    outline-offset: -3px;
+  }
+
+  .placar-barra,
+  .mod-progresso-barra {
+    border: 1px solid CanvasText;
+  }
+
+  .placar-barra > span,
+  .mod-progresso-barra > span {
+    forced-color-adjust: none;
+    background: Highlight;
+  }
+}
+
+/* ---------- Movimento reduzido ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+/* Banco de questões reais E1. Os controles e o placar não se misturam às questões autorais. */
+.banco-concursos .cr-controles {
+  margin: var(--s4) 0;
+  padding: var(--s4);
+  background: var(--superficie);
+  border: 1px solid var(--linha-forte);
+  border-radius: var(--raio);
+}
+.banco-concursos .cr-filtros {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s3);
+}
+.cr-filtros > label { display: grid; gap: var(--s1); font-weight: 600; }
+.cr-filtros select, .cr-filtros input[type="search"] {
+  width: 100%;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: var(--s2);
+  color: var(--tinta);
+  background: var(--superficie);
+  border: 1px solid var(--linha-forte);
+  border-radius: var(--raio-sm);
+  font: inherit;
+}
+.cr-filtros > .cr-pendentes { display: flex; align-items: center; gap: var(--s2); }
+.cr-pendentes input, .cr-alternativas input { width: 1.2rem; height: 1.2rem; accent-color: var(--acento); flex-shrink: 0; }
+#cr-placar, #av-placar { font-weight: 700; margin-bottom: var(--s1); }
+#cr-armazenamento, #av-armazenamento { color: var(--tinta-2); font-size: var(--t-sm); margin: 0; }
+.concurso-item, .avalia-item {
+  margin: var(--s4) 0;
+  padding: var(--s4);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  background: var(--superficie);
+  overflow-wrap: anywhere;
+}
+.concurso-item h3, .avalia-item h3 { margin: var(--s2) 0; }
+.cr-meta, .cr-assunto, .cr-fontes { color: var(--tinta-2); font-size: var(--t-sm); }
+.cr-meta { margin: 0; }
+.cr-enunciado { margin: var(--s4) 0; }
+.cr-afirmacao { padding-left: var(--s3); border-left: 3px solid var(--acento); }
+.cr-enunciado .cr-figura { margin: var(--s4) 0; padding: var(--s3); border: 1px solid var(--linha); border-radius: var(--raio-sm); background: #fff; color: #13222A; }
+.cr-figura img { display: block; width: auto; max-width: 100%; height: auto; max-height: 48rem; margin: 0 auto; object-fit: contain; }
+.cr-figura > a { display: block; }
+.cr-figura > a::after { display: none; }
+.cr-figura > a:focus-visible { outline-color: #005F70; }
+/* O contorno permanece dentro da caixa em seções com contenção de pintura. */
+.banco-concursos summary:focus-visible { outline-offset: -3px; }
+.cr-figura figcaption { margin-top: var(--s2); color: #44565F; font-size: var(--t-sm); }
+.cr-enunciado .cr-tabela { margin: var(--s4) 0; }
+.cr-alternativas { margin: var(--s3) 0; padding: 0; border: 0; min-width: 0; }
+.cr-alternativas legend { margin-bottom: var(--s2); font-weight: 600; }
+.cr-alternativas label {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s2);
+  padding: var(--s2);
+  margin: var(--s1) 0;
+  border: 1px solid var(--linha);
+  border-radius: var(--raio-sm);
+  min-height: 2.75rem;
+  cursor: pointer;
+}
+.cr-alternativas label:has(input:checked) { border-color: var(--acento); background: var(--acento-suave); }
+.cr-alternativas:disabled label { cursor: default; }
+.cr-acoes { display: flex; flex-wrap: wrap; gap: var(--s2); }
+.cr-feedback:empty { display: none; }
+.cr-feedback { font-weight: 600; }
+.concurso-item[data-cr-resultado="errado"] .cr-feedback, .avalia-item[data-cr-resultado="errado"] .cr-feedback { color: var(--erro); }
+.concurso-item[data-cr-resultado="certo"] .cr-feedback, .avalia-item[data-cr-resultado="certo"] .cr-feedback { color: var(--acento); }
+.cr-resolucao, .cr-referencias { margin-top: var(--s3); border-top: 1px solid var(--linha); padding-top: var(--s3); }
+.cr-resolucao summary, .cr-referencias summary { cursor: pointer; font-weight: 700; color: var(--acento); min-height: 2.75rem; }
+.cr-aprenda { padding: var(--s3); border-left: 3px solid var(--acento); background: var(--acento-suave); }
+.cr-fontes { margin-bottom: 0; }
+.banco-concursos [hidden] { display: none !important; }
+@media (max-width: 600px) {
+  .banco-concursos .cr-filtros { grid-template-columns: minmax(0, 1fr); }
+  .concurso-item, .avalia-item, .banco-concursos .cr-controles { padding: var(--s3); }
+}
+@media print {
+  .banco-concursos .cr-controles, .banco-concursos .cr-acoes,
+  .banco-concursos .cr-feedback, #cr-vazio, #av-vazio { display: none !important; }
+  .banco-concursos .concurso-item[hidden], .banco-concursos .avalia-item[hidden],
+  .banco-concursos .cr-lote[hidden] { display: block !important; }
+  .cr-alternativas input { display: none; }
+  .cr-alternativas label:has(input:checked) { background: transparent; border-color: var(--linha); }
+  .cr-resolucao > :not(summary) { display: block !important; }
+  .cr-resolucao { page-break-inside: avoid; }
+  .cr-figura { page-break-inside: avoid; }
+  .cr-figura img { max-height: 20cm; }
+}
