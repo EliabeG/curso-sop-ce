@@ -577,7 +577,7 @@ a[target="_blank"]::after {
 
 /* Os complementos do E1 tornam algumas seções muito longas. Cada subtópico conserva seu texto e suas âncoras,
    mas pode ser diagramado quando se aproxima da tela, em vez de calcular toda a seção na abertura da página. */
-[data-leitura="e1"] .bloco-aula {
+:is([data-leitura="e1"], [data-leitura="e2"]) .bloco-aula {
   content-visibility: auto;
   contain-intrinsic-block-size: auto 40rem;
   padding-inline: 6px;
@@ -994,26 +994,26 @@ blockquote.lei footer {
 }
 
 /* E1 · composição editorial da aula de Termodinâmica */
-[data-leitura="e1"] {
+:is([data-leitura="e1"], [data-leitura="e2"]) {
   --largura-pagina: 70rem;
   --sumario-l: 14.5rem;
   --medida: 44rem;
 }
 
 /* Notas em corpo menor conservam uma extensão confortável para leitura. */
-[data-leitura="e1"] .conteudo-modulo p { max-inline-size: 54ch; }
+:is([data-leitura="e1"], [data-leitura="e2"]) .conteudo-modulo p { max-inline-size: 54ch; }
 
-[data-leitura="e1"] .conteudo-modulo > section > h3 {
+:is([data-leitura="e1"], [data-leitura="e2"]) .conteudo-modulo > section > h3 {
   margin-top: 2.5rem;
   font-size: 1.25rem;
   line-height: 1.35;
 }
 
-[data-leitura="e1"] .conteudo-modulo > section > h2 + h3 {
+:is([data-leitura="e1"], [data-leitura="e2"]) .conteudo-modulo > section > h2 + h3 {
   margin-top: 1.5rem;
 }
 
-[data-leitura="e1"] .equacao {
+:is([data-leitura="e1"], [data-leitura="e2"]) .equacao {
   margin: 1.25rem 0;
   padding: 1rem 1.25rem;
   border: 1px solid var(--linha);
@@ -1023,7 +1023,7 @@ blockquote.lei footer {
   break-inside: avoid;
 }
 
-[data-leitura="e1"] .equacao-titulo {
+:is([data-leitura="e1"], [data-leitura="e2"]) .equacao-titulo {
   margin: 0 0 .65rem;
   color: var(--tinta-2);
   font-size: .875rem;
@@ -1031,7 +1031,7 @@ blockquote.lei footer {
   line-height: 1.45;
 }
 
-[data-leitura="e1"] .equacao-linha {
+:is([data-leitura="e1"], [data-leitura="e2"]) .equacao-linha {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1043,12 +1043,12 @@ blockquote.lei footer {
   font-size: 1.18rem;
 }
 
-[data-leitura="e1"] .equacao-linha > math {
+:is([data-leitura="e1"], [data-leitura="e2"]) .equacao-linha > math {
   margin: 0;
   flex: 0 0 auto;
 }
 
-[data-leitura="e1"] .equacao-nota {
+:is([data-leitura="e1"], [data-leitura="e2"]) .equacao-nota {
   margin: .75rem 0 0;
   max-inline-size: 60ch;
   padding-top: .75rem;
@@ -1058,74 +1058,74 @@ blockquote.lei footer {
   line-height: 1.6;
 }
 
-[data-leitura="e1"] .exemplo {
+:is([data-leitura="e1"], [data-leitura="e2"]) .exemplo {
   margin: 1.75rem 0;
   padding: 1.5rem;
 }
 
-[data-leitura="e1"] .exemplo-titulo {
+:is([data-leitura="e1"], [data-leitura="e2"]) .exemplo-titulo {
   margin-bottom: 1rem;
   font-size: .8125rem;
   line-height: 1.5;
   text-wrap: wrap;
 }
 
-[data-leitura="e1"] .etapas {
+:is([data-leitura="e1"], [data-leitura="e2"]) .etapas {
   margin-top: 1.25rem;
   padding-left: 1.5rem;
 }
 
-[data-leitura="e1"] .etapas > li {
+:is([data-leitura="e1"], [data-leitura="e2"]) .etapas > li {
   max-width: var(--medida-texto);
   padding-left: .3rem;
 }
 
-[data-leitura="e1"] .etapas > li + li {
+:is([data-leitura="e1"], [data-leitura="e2"]) .etapas > li + li {
   margin-top: 1.25rem;
 }
 
-[data-leitura="e1"] .etapas > li::marker {
+:is([data-leitura="e1"], [data-leitura="e2"]) .etapas > li::marker {
   color: var(--acento);
   font-weight: 600;
 }
 
-[data-leitura="e1"] .etapas .equacao {
+:is([data-leitura="e1"], [data-leitura="e2"]) .etapas .equacao {
   margin: .75rem 0;
   padding: .75rem 1rem;
   border-left-width: 1px;
   background: var(--papel);
 }
 
-[data-leitura="e1"] .exemplo-resultado {
+:is([data-leitura="e1"], [data-leitura="e2"]) .exemplo-resultado {
   margin: 1.25rem 0 0;
   padding-top: 1rem;
   border-top: 1px solid var(--linha);
   font-size: 1rem;
 }
 
-[data-leitura="e1"] .roteiro-estudo > li,
-[data-leitura="e1"] .sequencia-ciclo > li,
-[data-leitura="e1"] .revisao-checklist > li {
+:is([data-leitura="e1"], [data-leitura="e2"]) .roteiro-estudo > li,
+:is([data-leitura="e1"], [data-leitura="e2"]) .sequencia-ciclo > li,
+:is([data-leitura="e1"], [data-leitura="e2"]) .revisao-checklist > li {
   margin-top: .7rem;
   padding-left: .2rem;
 }
 
-[data-leitura="e1"] .conceitos-chave {
+:is([data-leitura="e1"], [data-leitura="e2"]) .conceitos-chave {
   margin: 1.5rem 0;
   padding-left: 1rem;
   border-left: 3px solid var(--linha-forte);
 }
 
-[data-leitura="e1"] .conceitos-chave dt {
+:is([data-leitura="e1"], [data-leitura="e2"]) .conceitos-chave dt {
   margin: 1rem 0 .35rem;
   font-weight: 600;
 }
 
-[data-leitura="e1"] .conceitos-chave dd {
+:is([data-leitura="e1"], [data-leitura="e2"]) .conceitos-chave dd {
   margin: 0;
 }
 
-[data-leitura="e1"] .guia-notacao {
+:is([data-leitura="e1"], [data-leitura="e2"]) .guia-notacao {
   margin: 1.5rem 0;
   padding: 1rem 1.25rem;
   background: var(--superficie);
@@ -1133,46 +1133,46 @@ blockquote.lei footer {
   border-radius: var(--raio);
 }
 
-[data-leitura="e1"] .guia-notacao > summary {
+:is([data-leitura="e1"], [data-leitura="e2"]) .guia-notacao > summary {
   cursor: pointer;
   color: var(--acento);
   font-weight: 600;
 }
 
-[data-leitura="e1"] .guia-notacao .tabela {
+:is([data-leitura="e1"], [data-leitura="e2"]) .guia-notacao .tabela {
   margin-bottom: 0;
 }
 
-[data-leitura="e1"] .tabela caption {
+:is([data-leitura="e1"], [data-leitura="e2"]) .tabela caption {
   font-size: .9375rem;
   font-weight: 600;
   text-transform: none;
   letter-spacing: 0;
 }
 
-[data-leitura="e1"] .tabela td,
-[data-leitura="e1"] .tabela th {
+:is([data-leitura="e1"], [data-leitura="e2"]) .tabela td,
+:is([data-leitura="e1"], [data-leitura="e2"]) .tabela th {
   line-height: 1.6;
 }
 
-[data-leitura="e1"] .q-enunciado .afirmacao {
+:is([data-leitura="e1"], [data-leitura="e2"]) .q-enunciado .afirmacao {
   display: block;
   margin: .75rem 0;
 }
 
-[data-leitura="e1"] .q-justificativas {
+:is([data-leitura="e1"], [data-leitura="e2"]) .q-justificativas {
   list-style: none;
   padding: 0;
 }
 
-[data-leitura="e1"] .q-justificativas > li {
+:is([data-leitura="e1"], [data-leitura="e2"]) .q-justificativas > li {
   position: relative;
   max-width: none;
   margin-top: .8rem;
   padding-left: 2rem;
 }
 
-[data-leitura="e1"] .q-justificativas > li::before {
+:is([data-leitura="e1"], [data-leitura="e2"]) .q-justificativas > li::before {
   content: attr(data-letra) ".";
   position: absolute;
   left: 0;
@@ -1180,25 +1180,25 @@ blockquote.lei footer {
   color: var(--acento);
 }
 
-[data-leitura="e1"] .q-justificativas > li[data-item]::before {
+:is([data-leitura="e1"], [data-leitura="e2"]) .q-justificativas > li[data-item]::before {
   content: attr(data-item) ".";
 }
 
-[data-leitura="e1"] .q-justificativas > li > p { margin-bottom: .35rem; }
+:is([data-leitura="e1"], [data-leitura="e2"]) .q-justificativas > li > p { margin-bottom: .35rem; }
 
-[data-leitura="e1"] .q-comentario > h4 {
+:is([data-leitura="e1"], [data-leitura="e2"]) .q-comentario > h4 {
   margin: 1.5rem 0 .75rem;
   font-size: 1rem;
   line-height: 1.4;
 }
 
-[data-leitura="e1"] .box {
+:is([data-leitura="e1"], [data-leitura="e2"]) .box {
   padding: 1rem 1.25rem;
   border: 1px solid var(--linha);
   border-left: 3px solid var(--box-cor);
 }
 
-[data-leitura="e1"] .box-titulo {
+:is([data-leitura="e1"], [data-leitura="e2"]) .box-titulo {
   display: block;
   margin: 0 0 .65rem;
   padding: 0;
@@ -1212,28 +1212,28 @@ blockquote.lei footer {
 }
 
 @media (max-width: 39.99rem) {
-  [data-leitura="e1"] .equacao { padding: .9rem .8rem; }
-  [data-leitura="e1"] .equacao-linha { font-size: 1.05rem; }
-  [data-leitura="e1"] .exemplo { padding: 1rem; }
-  [data-leitura="e1"] .etapas { padding-left: 1.2rem; }
-  [data-leitura="e1"] .etapas .equacao { padding: .65rem .5rem; }
-  [data-leitura="e1"] .guia-notacao { padding: 1rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .equacao { padding: .9rem .8rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .equacao-linha { font-size: 1.05rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .exemplo { padding: 1rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .etapas { padding-left: 1.2rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .etapas .equacao { padding: .65rem .5rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .guia-notacao { padding: 1rem; }
 }
 
 @media print {
-  [data-leitura="e1"] main.pagina { display: block; }
-  [data-leitura="e1"] .layout { display: block; }
-  [data-leitura="e1"] .mod-cabecalho { margin-bottom: 2rem; }
-  [data-leitura="e1"] .conteudo-modulo > section { margin-inline: 0; padding-inline: 0; }
-  [data-leitura="e1"] .equacao,
-  [data-leitura="e1"] .exemplo,
-  [data-leitura="e1"] .guia-notacao { background: #fff; box-shadow: none; }
-  [data-leitura="e1"] .equacao { padding: .65rem .8rem; }
-  [data-leitura="e1"] .equacao-linha { overflow: visible; font-size: 1.05rem; }
-  [data-leitura="e1"] .exemplo { break-inside: auto; }
-  [data-leitura="e1"] .exemplo-titulo { break-after: avoid; }
-  [data-leitura="e1"] .etapas > li { break-inside: avoid; }
-  [data-leitura="e1"] .guia-notacao > summary { break-after: avoid; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) main.pagina { display: block; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .layout { display: block; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .mod-cabecalho { margin-bottom: 2rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .conteudo-modulo > section { margin-inline: 0; padding-inline: 0; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .equacao,
+  :is([data-leitura="e1"], [data-leitura="e2"]) .exemplo,
+  :is([data-leitura="e1"], [data-leitura="e2"]) .guia-notacao { background: #fff; box-shadow: none; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .equacao { padding: .65rem .8rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .equacao-linha { overflow: visible; font-size: 1.05rem; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .exemplo { break-inside: auto; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .exemplo-titulo { break-after: avoid; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .etapas > li { break-inside: avoid; }
+  :is([data-leitura="e1"], [data-leitura="e2"]) .guia-notacao > summary { break-after: avoid; }
   .formula-resolucao { overflow: visible; }
 }
 
@@ -2380,7 +2380,7 @@ h3.q-num {
 
   .questao,
   .flashcard,
-  [data-leitura="e1"] .bloco-aula,
+  :is([data-leitura="e1"], [data-leitura="e2"]) .bloco-aula,
   .pg-modulo .conteudo-modulo > section {
     content-visibility: visible;
   }

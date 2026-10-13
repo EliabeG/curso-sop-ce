@@ -4,11 +4,17 @@ Material preparatório independente para a Superintendência de Obras Públicas 
 
 **Acessar o curso:** https://eliabeg.github.io/curso-sop-ce/
 
-O site contém 31 módulos, com teoria, exemplos resolvidos, questões comentadas, revisão e simulado. Termodinâmica inclui dois bancos adicionais de 80 questões cada e uma página com 100 fichas de fórmulas. Figuras e PDFs usados no curso estão incluídos neste repositório; as provas de origem e seus gabaritos têm referências no módulo e em `downloads/termodinamica/fontes.json`. As adaptações no estilo Avalia são autorais e estão identificadas como tal.
+O site contém 31 módulos, com teoria, exemplos resolvidos, questões comentadas, revisão e simulado. Termodinâmica inclui dois bancos adicionais de 80 questões cada e uma página com 100 fichas de fórmulas. Transferência de Calor inclui alicerces, roteiro de vídeo histórico, aprofundamento, 40 questões reais com resoluções e cadernos completos, 80 questões autorais no estilo Avalia, 20 diagnósticos e um formulário com 80 fichas. Os 30 exercícios e 21 flashcards anteriores do E2 foram preservados.
+
+**Transferência de Calor:** https://eliabeg.github.io/curso-sop-ce/modulos/e2-transferencia-de-calor.html
+
+**Fórmulas do E2:** https://eliabeg.github.io/curso-sop-ce/formulas/transferencia-de-calor.html
+
+Figuras e PDFs usados no curso estão incluídos neste repositório. As provas e seus gabaritos têm referências nos módulos e em `downloads/termodinamica/fontes.json` e `downloads/transferencia-de-calor/fontes.json`. No E2, 17 enunciados do caderno fornecido aparecem no módulo; os demais são lidos integralmente nos PDFs locais indicados, incluindo alternativas e figuras. As questões no estilo Avalia são autorais e estão identificadas como tal.
 
 ## Estudar
 
-Abra o site e comece pelo Guia da prova. O progresso fica salvo no navegador; o portal permite exportar e importar o progresso geral. Os dois bancos adicionais de Termodinâmica usam armazenamento próprio e não integram essa exportação.
+Abra o site e comece pelo Guia da prova. O progresso fica salvo no navegador; o portal permite exportar e importar o progresso geral. Os bancos adicionais de Termodinâmica e Transferência de Calor usam armazenamento próprio, separado por módulo, e não integram essa exportação.
 
 Para estudar sem internet, baixe o ZIP do repositório em **Code → Download ZIP**, descompacte e abra `index.html`. Mantenha as pastas juntas. As fontes externas precisam de conexão. Use Chrome, Edge ou Firefox atuais.
 

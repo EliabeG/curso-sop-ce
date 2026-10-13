@@ -1,9 +1,9 @@
 {
   "data": "2026-10-13",
-  "paginas": 33,
-  "referencias_locais": 2258,
-  "arquivos": 78,
-  "bytes": 21022024,
+  "paginas": 34,
+  "referencias_locais": 3086,
+  "arquivos": 106,
+  "bytes": 34644398,
   "erros": [],
   "manifesto": [
     {
@@ -23,18 +23,18 @@
     },
     {
       "arquivo": "assets/curso.css",
-      "bytes": 58742,
-      "sha256": "41454e572c60e43c7b9f2858c7361cd50dfa9461a724098f6e6cedd05bc0097d"
+      "bytes": 60276,
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
     },
     {
       "arquivo": "assets/curso.js",
-      "bytes": 105372,
-      "sha256": "ad38ddbddb04ff387b37e60de360c91cc6466d700e1b7079ec2a39209dc8fc7b"
+      "bytes": 105476,
+      "sha256": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899"
     },
     {
       "arquivo": "assets/formulario-e1.css",
-      "bytes": 6208,
-      "sha256": "440cd9ad7ae3a2c3761c30ff2e9568dfc4748446a5dbf7fbe6c927a37b800731"
+      "bytes": 6209,
+      "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629"
     },
     {
       "arquivo": "assets/formulario-e1.js",
@@ -227,9 +227,149 @@
       "sha256": "113a2ecb57a4524402697e14a42f647ba8a675b12c05d9ab90c41e6e2a104792"
     },
     {
+      "arquivo": "downloads/transferencia-de-calor/fontes.json",
+      "bytes": 16137,
+      "sha256": "2f8c141ceb5f1c6a82788d00e00cafeec70dbb71f98c1077b9806829f01685f4"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/cae-gabarito.pdf",
+      "bytes": 205552,
+      "sha256": "2cbc3da0947186e5e9e998151fb887b47852c46837a4c03a3e7a3cc547349456"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/inpe-gabarito.pdf",
+      "bytes": 482886,
+      "sha256": "52ff779aca0042f68c4f24f6a5ef615cb4c259c070962ae1bfbb8a9e55a1358b"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/p22m-gabarito.pdf",
+      "bytes": 48053,
+      "sha256": "8fdab842bcc3d8123e4b110c3e2f42b9a747239620f7dc15f802a32a05bf6ee0"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/p22p-gabarito.pdf",
+      "bytes": 47866,
+      "sha256": "62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/p23-gabarito.pdf",
+      "bytes": 35639,
+      "sha256": "e70aeafd5bc25bc37f6ac89bdce6c98bcdb88f76fc29cae094ca5f847b8a5eec"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/p24-gabarito.pdf",
+      "bytes": 48271,
+      "sha256": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/poa-gabarito.pdf",
+      "bytes": 442011,
+      "sha256": "f93f035ae5585a0eaaee11f1e10c2ea47b95b9763eb25e1c185394f4ba54acf5"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/sed-gabarito.pdf",
+      "bytes": 194691,
+      "sha256": "655f244d5e2ddc0c4660026aeae8cf952b641ca7b7ef56e57a87d09060101cb5"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/te-gabarito.pdf",
+      "bytes": 46816,
+      "sha256": "bae490f88a1e4a971b1992fe9f2d64730aac334423e4f0e657e2fb0d0020a9b3"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/to-gabarito.pdf",
+      "bytes": 47264,
+      "sha256": "680734f6b47d1381d312a1792ec4818d034812d02661ed1933f477697b399a78"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/trf-gabarito.pdf",
+      "bytes": 35342,
+      "sha256": "0b5abca04a6892f48c7541018106445f6619f5f5863e061f631f0249899795e3"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/gabaritos/tse-gabarito.pdf",
+      "bytes": 35159,
+      "sha256": "ab2116cb79da87ca206b7156c345d493d87032ee1f2fb8514137ced96e437baf"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/LEIA-ME.txt",
+      "bytes": 506,
+      "sha256": "156558f5ea2814d179e2f3da5251c2adb64423d04ec10e1735de10de99e5fcce"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/cae-prova.pdf",
+      "bytes": 651707,
+      "sha256": "84ae0602e23691a27529b1f96e7c58803ad82982550301724345cb0b5d690df5"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/inpe-prova.pdf",
+      "bytes": 398389,
+      "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/p22m-prova.pdf",
+      "bytes": 533050,
+      "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/p22p-prova.pdf",
+      "bytes": 213922,
+      "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/p23-prova.pdf",
+      "bytes": 656089,
+      "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/p24-prova.pdf",
+      "bytes": 344114,
+      "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/poa-prova.pdf",
+      "bytes": 628793,
+      "sha256": "1474df258136497203c1e331695e1c46a0799ad28a1bd56148c6433ac0b29c03"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/sed-prova.pdf",
+      "bytes": 353965,
+      "sha256": "0afb86777ee7552b31e7fc4848bdbf832a856e3b48504ef7374cc5a668828098"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/te-prova.pdf",
+      "bytes": 662369,
+      "sha256": "e05d5edf6dccbab398e3104cbf1254e09d29a01a519d03df2b3bc85d63270160"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/to-prova.pdf",
+      "bytes": 266640,
+      "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/trf-prova.pdf",
+      "bytes": 206182,
+      "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor/provas/tse-prova.pdf",
+      "bytes": 341512,
+      "sha256": "fae9b7159587bd52cfe63f1bffce4894bdd4b3419ae449740c70ff0b021c5ce6"
+    },
+    {
+      "arquivo": "downloads/transferencia-de-calor-pdfs.zip",
+      "bytes": 6057609,
+      "sha256": "3998ec2b6931f491f8db1dd09d86f8201e22cb37c848e70b1c81c468cf10a809"
+    },
+    {
       "arquivo": "formulas/termodinamica.html",
       "bytes": 224180,
       "sha256": "07e4b579c437c2ae0feefc8e2260607da827e335ca6694b1d583181632851e96"
+    },
+    {
+      "arquivo": "formulas/transferencia-de-calor.html",
+      "bytes": 136567,
+      "sha256": "bf3572983d331ce074b601608cf4320bc7949f8d7a2e13b89e8b5cd48be584e3"
     },
     {
       "arquivo": "index.html",
@@ -323,8 +463,8 @@
     },
     {
       "arquivo": "modulos/e2-transferencia-de-calor.html",
-      "bytes": 79494,
-      "sha256": "749e228d07ccd00553faa42d358a8e1d1561070ec029476dc8e6fc017ccd2001"
+      "bytes": 562375,
+      "sha256": "4d9704213a5caac4e55b4d0a21d60ea48553ad98d3941997d033ec3c19f7fe8f"
     },
     {
       "arquivo": "modulos/f-solidos-elementos.html",
@@ -393,8 +533,8 @@
     },
     {
       "arquivo": "README.md",
-      "bytes": 2222,
-      "sha256": "a6ddc9cd788d301109fcdac7b531c2fb2acfd81095b6e0938ab11fe4701db1fa"
+      "bytes": 2975,
+      "sha256": "94ac88c9d7d1e22bef61c0da4c96a8066bd41ae66542bd298aa394376e4628f8"
     }
   ]
 }

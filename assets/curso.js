@@ -449,7 +449,7 @@
   document.documentElement.classList.add('js');
   // Um favorito do banco precisa de seus controles primeiro. As seções anteriores conservam content-visibility:
   // auto; forçá-las a visible aqui diagramava toda a teoria e mantinha esse custo em cada troca de tema.
-  var entradaE1 = idModulo() === 'e1';
+  var entradaE1 = /^(e1|e2)$/.test(idModulo() || '');
 
   function sistemaEscuro() {
     return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -497,6 +497,10 @@
     var meta = document.querySelector('meta[name="curso:modulo"]');
     var valor = meta ? (meta.getAttribute('content') || '').trim() : '';
     return RE_MODULO.test(valor) ? valor : null;
+  }
+
+  function chaveBanco(tipo) {
+    return 'sopmec:' + tipo + ':v2:' + (idModulo() || 'e1');
   }
 
   var MODULO = null;
@@ -1160,8 +1164,8 @@
   // IDs e chaves próprios mantêm separados os placares de cada banco.
   var reveladoresBanco = Object.create(null);
   function iniciarBancoConcursos() {
-    iniciarBanco('questoes-reais', 'cr', 'sopmec:concursos:v2:e1');
-    iniciarBanco('treino-avalia', 'av', 'sopmec:avalia:v2:e1');
+    iniciarBanco('questoes-reais', 'cr', chaveBanco('concursos'));
+    iniciarBanco('treino-avalia', 'av', chaveBanco('avalia'));
   }
 
   function digitalDoBanco(item) {
@@ -2277,7 +2281,7 @@
     observadorEntrada.disconnect();
     preparandoEntrada = true;
     seguro('banco de entrada antecipado', function () {
-      iniciarBanco('questoes-reais', 'cr', 'sopmec:concursos:v2:e1');
+      iniciarBanco('questoes-reais', 'cr', chaveBanco('concursos'));
       bancoRealPreparado = banco;
     });
     emEtapas([
@@ -2322,8 +2326,8 @@
     // O banco e seu vizinho anterior ficam prontos antes do salto. As demais atividades entram em tarefas
     // posteriores; só os últimos blocos vizinhos precisam de medida para manter a âncora na primeira pintura.
     if (questoesAntecipadas && !ctxQuestoes) seguro('questões', iniciarQuestoes);
-    if (bancoAntecipado && !bancoRealPreparado) seguro('questões reais', function () { iniciarBanco('questoes-reais', 'cr', 'sopmec:concursos:v2:e1'); });
-    if (bancoAntecipado === 'treino-avalia') seguro('treino Avalia', function () { iniciarBanco('treino-avalia', 'av', 'sopmec:avalia:v2:e1'); });
+    if (bancoAntecipado && !bancoRealPreparado) seguro('questões reais', function () { iniciarBanco('questoes-reais', 'cr', chaveBanco('concursos')); });
+    if (bancoAntecipado === 'treino-avalia') seguro('treino Avalia', function () { iniciarBanco('treino-avalia', 'av', chaveBanco('avalia')); });
     if (bancoInicial && vizinhoPreparado !== bancoInicial) seguro('vizinho do banco', function () { estabilizarVizinhoBanco(bancoInicial); });
     if (flashcardsAntecipados) seguro('flashcards', iniciarFlashcards);
     seguro('sumário recolhível', ajustarSumarioALargura);
@@ -2335,8 +2339,8 @@
     document.documentElement.classList.add('js-pronto');
     // Fase 2: o resto, uma etapa por tarefa; js-completo marca o fim (é o que os testes esperam).
     emEtapas([
-      ['questões reais', function () { if (!bancoAntecipado && !bancoRealPreparado) iniciarBanco('questoes-reais', 'cr', 'sopmec:concursos:v2:e1'); }],
-      ['treino Avalia', function () { if (bancoAntecipado !== 'treino-avalia') iniciarBanco('treino-avalia', 'av', 'sopmec:avalia:v2:e1'); }],
+      ['questões reais', function () { if (!bancoAntecipado && !bancoRealPreparado) iniciarBanco('questoes-reais', 'cr', chaveBanco('concursos')); }],
+      ['treino Avalia', function () { if (bancoAntecipado !== 'treino-avalia') iniciarBanco('treino-avalia', 'av', chaveBanco('avalia')); }],
       ['questões', function () { if (!questoesAntecipadas && !ctxQuestoes) iniciarQuestoes(); }],
       ['flashcards', function () { if (!flashcardsAntecipados) iniciarFlashcards(); }],
       ['listas', iniciarChecklists],
