@@ -1,0 +1,371 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "CR56–CR60",
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "BLOCO_CONCLUIDO; cinco itens aprovados no domínio declarado; sem aprovação global",
+  "criterio": "Suficiência dos dados, consistência física, comando, unidades, restrições, demonstração da chave e oposição C/E; unicidade e arredondamento quando aplicável.",
+  "base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "extrato_anterior": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+    "metodo": "Parser canônico importado; leitura filtrada dos artigos atuais por ID, cotejo individual com o extrato anterior, derivação física e confronto com comentário."
+  },
+  "fontes_comuns_lidas_em_bloco_anterior": [
+    {
+      "referencia": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "alcance": "Papéis e padrão de aceite"
+    },
+    {
+      "referencia": "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+      "alcance": "Método BAN-07, cuidado com hipóteses apenas na resolução e os nove estudos críticos"
+    },
+    {
+      "referencia": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+      "alcance": "Definição do Brayton convencional, modelo de geração e relação entre calor, trabalho e eficiência; consulta efetiva em 2026-10-28 no bloco CR51–55"
+    }
+  ],
+  "registros": [
+    {
+      "id": "cr-e1-56",
+      "sha256_artigo": "0827dbbe91757cc711b1bc5541b5ef5033bf65d648faf25b5e6b57d62e12f347",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. Reconhecimento de aplicação corrente; nenhuma grandeza numérica é necessária.",
+      "demonstracao": "O conjunto compressor–câmara de combustão–turbina a gás, cujo modelo de referência é Brayton, pode fornecer trabalho de eixo líquido positivo Wt-Wc. Acoplá-lo a um gerador produz potência elétrica. Essa é uma aplicação estabelecida de usinas de turbina a gás, inclusive da parte a gás de um ciclo combinado; o segundo circuito a vapor não transforma o Brayton em Rankine.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "Reconhece a geração elétrica com turbina a gás, aplicação citada pela referência acadêmica e compatível com o trabalho líquido do ciclo."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Negaria uma aplicação estabelecida ou confundiria toda usina elétrica com ciclo a vapor; não há no enunciado exclusividade de aplicação nem exigência de ciclo combinado."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Explica o acoplamento ao gerador e distingue os dois circuitos do ciclo combinado.",
+      "criterios": {
+        "dados": "ATENDIDO — conceitual",
+        "consistencia_fisica": "ATENDIDO — trabalho de eixo e geração elétrica",
+        "comando": "ATENDIDO — afirmação de aplicação, sem exclusividade",
+        "unidades": "NAO_APLICAVEL — sem valores",
+        "restricoes": "ATENDIDO — não depende de idealizações adicionais para identificar a aplicação",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — confusão de aplicação Brayton/Rankine; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-56",
+          "alcance": "Artigo integral filtrado; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-comparar-ciclos",
+          "alcance": "Div completo lido neste bloco: equipamentos e ciclo combinado"
+        },
+        {
+          "referencia": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "alcance": "Fonte já lida: esquemas/modelo de turbina a gás para geração de potência; não é estatística de participação de mercado"
+        }
+      ],
+      "heranca": "Nenhuma prova documental anterior usada como demonstração científica.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-57",
+      "sha256_artigo": "4de64cfa27817be86c14aea29e1086c4269d4d69e281b4ce6685f176e6605f49",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C no Brayton ideal convencional ensinado na base",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO pela convenção de ciclo Brayton ideal convencional. A base Brayton, vinculada antes da tentativa, explicita gás ideal, k constante e quatro ramos ideais. A base Brayton real vinculada também limita a afirmação ao modelo ideal. Portanto o domínio não foi encontrado somente na resolução. A frase isolada não vale como lei universal para instalações reais.",
+      "demonstracao": "Escreva a=(k-1)/k>0 e eta=1-rp^(-a), para rp>1 no domínio motor e k constante. Então d eta/d rp=a*rp^(-a-1)>0. Isso demonstra C para o modelo convencional ensinado. Para T1,T3 fixadas, o domínio ideal termina antes de T2=T3: aproximar-se desse limite não produz uma usina de potência útil ilimitada.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA_NO_MODELO_CONVENCIONAL",
+          "justificativa": "A derivada é estritamente positiva no domínio ideal; a base que fornece esse domínio está acessível antes da resposta."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA_NO_MODELO_CONVENCIONAL",
+          "justificativa": "Negaria a monotonicidade demonstrada para k constante. É possível obter queda da eficiência em Brayton real, mas esse é outro modelo e não invalida a identificação convencional adotada aqui."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Declara hipóteses, define rp e k, delimita ciclo motor e adverte contra a extensão ilimitada à turbina real. A aceitação deste item depende da convenção didática ideal prévia, não da letra oficial.",
+      "verificacao_de_limite": {
+        "natureza": "Contraste calculado pelo revisor; não são dados da prova nem prova de uma restrição ausente na base",
+        "hipoteses": "Brayton com compressor e turbina adiabáticos irreversíveis, cp=1 kJ/(kg K), k=1,4, T1=300 K, T3=1200 K, eta_c=0,8, eta_t=0,85, sem perdas de pressão; R=0,285714 kJ/(kg K)",
+        "resultado": "Elevar rp de 12 para 20 reduz a eficiência real; os dois casos têm calor recebido e trabalho líquido positivos. Confirma que a conclusão precisa manter o domínio ideal.",
+        "casos": [
+          {
+            "rp": 12,
+            "T2_K": 687.7263786729116,
+            "T4_K": 681.4904567290856,
+            "qin_kJ_kg": 512.2736213270884,
+            "wliq_kJ_kg": 130.78316459800283,
+            "eta": 0.2552994320870903
+          },
+          {
+            "rp": 20,
+            "T2_K": 807.5800851188444,
+            "T4_K": 613.3884329018076,
+            "qin_kJ_kg": 392.4199148811556,
+            "wliq_kJ_kg": 79.03148197934797,
+            "eta": 0.2013951865905752
+          }
+        ]
+      },
+      "criterios": {
+        "dados": "ATENDIDO — basta o domínio ideal didático, sem valores numéricos",
+        "consistencia_fisica": "ATENDIDO sob as hipóteses da base; extensão real rejeitada",
+        "comando": "ATENDIDO como reconhecimento do modelo convencional; isolado do curso seria incompleto",
+        "unidades": "ATENDIDO — rp e k adimensionais; pressões absolutas na base; K e kJ/kg no contraste",
+        "restricoes": "ATENDIDO — gás ideal e k constante na base acessível antes da tentativa; julgamento explícito de legitimidade da convenção",
+        "unicidade": "ATENDIDO no domínio convencional — somente C",
+        "arredondamento": "NAO_APLICAVEL à chave; contraste não depende de arredondamento",
+        "oposicao": "ATENDIDO — confusão entre ciclo ideal e desempenho real; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-57",
+          "alcance": "Artigo completo, links anteriores à tentativa, comentário e chave"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-brayton",
+          "alcance": "Div completo lido neste bloco: quatro ramos, gás ideal, k constante, fórmula, pressões absolutas e variantes"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-brayton-real",
+          "alcance": "Div completo lido no bloco anterior: rendimento ideal crescente e proibição de extrapolação a instalação real"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#questoes-reais",
+          "alcance": "Instruções compartilhadas inspecionadas neste bloco; não foram usadas para inventar uma regra geral de idealização"
+        },
+        {
+          "referencia": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+          "consulta": "2026-10-28",
+          "alcance": "Fonte primária efetivamente aberta neste bloco; equações 3.9/3.10 e distinção eficiência/trabalho na limitação de temperatura máxima"
+        }
+      ],
+      "heranca": "Fontes estáveis já lidas atribuídas por alcance; nenhum parecer anterior tomado como aceite científico deste item.",
+      "achados": [
+        {
+          "tipo": "restricao_de_interpretacao",
+          "descricao": "C é sustentada pelo Brayton ideal convencional da base; a afirmação não deve ser generalizada a qualquer Brayton real.",
+          "novo_impeditivo": false
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-58",
+      "sha256_artigo": "ebb927a87245d7870f70f4daa59aa4b76fa312deefdfdee32b6a31de87850ffd",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. O contexto é a fase de compressão do alternativo em funcionamento normal; não se pede pressão final ou uma equação de estado precisa do gás natural.",
+      "demonstracao": "Após fechar a admissão, o pistão reduz o volume da massa aprisionada com a descarga ainda fechada. A pressão aumenta até vencer a pressão da linha e a resistência da válvula de descarga. Como contramodelo simples à negativa absoluta, um gás ideal comprimido isotermicamente satisfaz p2/p1=V1/V2>1. Essa idealização só ilustra a falsidade; a compressão usual do gás natural também eleva a pressão. Depois de abrir a descarga, pressão aproximadamente constante pode acompanhar a expulsão de massa, mas essa é outra fase.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Confunde a compressão da massa aprisionada com o patamar aproximado de descarga; há elevação de pressão durante a compressão propriamente dita."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "A frase nega precisamente o aumento que permite atingir a condição de abertura da descarga; o modelo isotérmico fornece ainda um contraexemplo explícito."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Identifica a subida de pressão até a descarga e rotula o exemplo isotérmico como modelo de gás ideal, sem alegar uma equação de estado exata para todo gás natural.",
+      "criterios": {
+        "dados": "ATENDIDO — proposição qualitativa",
+        "consistencia_fisica": "ATENDIDO — massa aprisionada e fases distinguidas",
+        "comando": "ATENDIDO — negação clara de elevação da pressão",
+        "unidades": "NAO_APLICAVEL — razões simbólicas adimensionais",
+        "restricoes": "ATENDIDO — funcionamento usual, sem impor gás ideal como dado original",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — confusão compressão/descarga; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-58",
+          "alcance": "Artigo integral filtrado; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-valvulas-compressor",
+          "alcance": "Div completo lido neste bloco: fases, massa aprisionada, subida de pressão e abertura de descarga"
+        }
+      ],
+      "heranca": "Nenhuma prova documental herdada; dedução física e leitura atual independentes.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-59",
+      "sha256_artigo": "e1068e2195cb3859bae9d9b3f1bf524ef05a0af60607b57b07fb19eeb2cd8175",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. A frase nomeia a compressão do alternativo; a orientação do desenho não é necessária para decidir o estado das válvulas.",
+      "demonstracao": "No intervalo de compressão, depois da admissão e antes da descarga, o gás precisa estar aprisionado. Com psuc<p_cil<pdesc, a admissão não abre para o cilindro de pressão maior e a descarga ainda não pode abrir para a linha de pressão maior: ambas estão fechadas. Ao atingir a condição de descarga, apenas a válvula de descarga abre; a admissão continua fechada. Portanto ambas abertas não descreve a compressão normal, nem a etapa seguinte de expulsão.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Duas válvulas abertas eliminariam a etapa de massa aprisionada e não correspondem ao ciclo normal de admissão/compressão/descarga."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "Na compressão propriamente dita ambas ficam fechadas. A possível descarga durante parte do mesmo curso do pistão não produz a combinação ambas abertas."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Distingue compressão propriamente dita de descarga e considera a resistência de abertura da válvula. Não equipara toda subida do pistão a uma única fase.",
+      "criterios": {
+        "dados": "ATENDIDO — funcionamento qualitativo convencional",
+        "consistencia_fisica": "ATENDIDO — diferença de pressão controla válvulas e massa aprisionada",
+        "comando": "ATENDIDO — estado das duas válvulas na compressão",
+        "unidades": "NAO_APLICAVEL — comparação simbólica de pressões na mesma referência",
+        "restricoes": "ATENDIDO — fase termodinâmica independe da orientação espacial",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — confusão entre curso do pistão e fases; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-59",
+          "alcance": "Artigo integral filtrado; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-valvulas-compressor",
+          "alcance": "Div completo lido neste bloco; sequência p–V e quadro de estados de ambas as válvulas, inclusive orientação variável"
+        }
+      ],
+      "heranca": "Nenhum aceite anterior usado como demonstração; análise das fases reproduzida pelo revisor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-60",
+      "sha256_artigo": "79f50d9f0b7801b9b4fa1cf9a70c1dd267bc6421fa72ca8cdfb431e971f6380f",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. O título prévio Vazão pulsante e a base vinculada fixam descarga como fornecimento instantâneo do alternativo, não como pressão aproximadamente constante durante a abertura da válvula.",
+      "demonstracao": "No cilindro alternativo usual, a válvula de descarga fica fechada durante admissão, compressão inicial e reexpansão: a vazão que sai por ela é zero nesses intervalos. Durante a descarga aberta, sai massa e essa vazão é positiva e dependente do movimento. Uma função com trechos zero e positivos não é constante ao longo do ciclo. Vários cilindros defasados e reservatórios reduzem a pulsação, mas não tornam essa uma característica inerente de descarga constante do compressor alternativo.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Confundiria vazão média em regime periódico ou fornecimento amortecido a jusante com vazão instantânea natural do cilindro."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "O mecanismo produz descarga por intervalos e, portanto, pulsações. O exemplo usual de um cilindro já refuta a constância geral declarada."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Explica o caráter pulsante, admite suavização por múltiplos cilindros e reservatórios e distingue vazão instantânea de média.",
+      "criterios": {
+        "dados": "ATENDIDO — nenhuma vazão numérica exigida",
+        "consistencia_fisica": "ATENDIDO — abertura intermitente da descarga",
+        "comando": "ATENDIDO — título e base delimitam vazão, não pressão",
+        "unidades": "NAO_APLICAVEL — sem valores; zero e fluxo positivo são comparados na mesma grandeza",
+        "restricoes": "ATENDIDO — cilindro usual, sem extrapolar para o fornecimento a jusante de um reservatório",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — confusão instantâneo/médio e cilindro/reservatório; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-60",
+          "alcance": "Artigo integral filtrado, inclusive título e base antes da resposta; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-valvulas-compressor",
+          "alcance": "Div completo lido neste bloco: intervalos de abertura da descarga, caráter pulsante e função de amortecimento do reservatório"
+        }
+      ],
+      "heranca": "Nenhum parecer anterior tomado como prova; demonstração a partir do ciclo reproduzida pelo revisor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    }
+  ],
+  "limitacoes": [
+    "Somente este bloco de cinco itens; sem aceite global ou classificação do curso.",
+    "Sem piloto, revisão humana ou certificação externa.",
+    "Produto, controle e checklist não editados; nove estudos críticos não estão neste bloco."
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "registrados": 5,
+    "ids": [
+      "cr-e1-56",
+      "cr-e1-57",
+      "cr-e1-58",
+      "cr-e1-59",
+      "cr-e1-60"
+    ],
+    "juizos_de_opcoes": 10,
+    "estudos_criticos_neste_bloco": 0
+  },
+  "achados_do_bloco": {
+    "novos_impeditivos": 0,
+    "restricoes_de_interpretacao_registradas": 1,
+    "ajustes_obrigatorios": 0
+  },
+  "decisao_proximo_ID": "NÃO LIBERADO: revisão parcial; nenhum ID seguinte nem BAN-07 integral aprovado.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "identidades": [
+      {
+        "id": "cr-e1-56",
+        "sha256_artigo": "0827dbbe91757cc711b1bc5541b5ef5033bf65d648faf25b5e6b57d62e12f347",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-57",
+        "sha256_artigo": "4de64cfa27817be86c14aea29e1086c4269d4d69e281b4ce6685f176e6605f49",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-58",
+        "sha256_artigo": "ebb927a87245d7870f70f4daa59aa4b76fa312deefdfdee32b6a31de87850ffd",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-59",
+        "sha256_artigo": "e1068e2195cb3859bae9d9b3f1bf524ef05a0af60607b57b07fb19eeb2cd8175",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-60",
+        "sha256_artigo": "79f50d9f0b7801b9b4fa1cf9a70c1dd267bc6421fa72ca8cdfb431e971f6380f",
+        "conferido": true
+      }
+    ],
+    "registros_unicos": 5,
+    "juizos_de_opcoes": 10,
+    "escopo_preservado": "Somente este parecer foi criado pelo revisor neste bloco. Nenhuma edição de produto, controle ou checklist."
+  }
+}

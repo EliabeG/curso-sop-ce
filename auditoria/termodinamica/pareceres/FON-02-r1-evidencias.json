@@ -1,0 +1,86 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "auditor": "Agente automatizado independente /root/auditor_aaa",
+  "veredito": "AJUSTES_OBRIGATORIOS",
+  "proximo_id_liberado": false,
+  "hashes": {
+    "auditoria/termodinamica/entregas/FON-02-r1.md": "9d5936596e2ada28e8e337bcf4c8084c2d361a2654cea92f886644f2268142de",
+    "auditoria/termodinamica/evidencias/FON-02/manifesto-r1.json": "25c420ff6f7650c982c402b3715c623ca7e68866f72e26bbbf0565fc6e065224",
+    "modulos/e1-termodinamica.html": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "auditoria/termodinamica/inventario/inventario-questoes.json": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+    "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+    "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r1.json": "ffeab0e9324624579772588dd010d2d70ad256e025290d06a0efb474fd5f9170"
+  },
+  "criterios": [
+    {
+      "criterio": "Exame individual integral dos 80 CR e classificação dos suplementos",
+      "resultado": "ATENDIDO",
+      "evidencia": "FON-02-leitura-base.json e FON-02-r1-cientifico.json: leitura própria completa, confrontada com todos os diagnósticos finais."
+    },
+    {
+      "criterio": "Separação entre original, derivação, comentário e suplemento autoral no produto",
+      "resultado": "ATENDIDO",
+      "evidencia": "21 esclarecimentos e 71 summaries de autoria, nove estudos críticos preservados; original oficial permanece intacto."
+    },
+    {
+      "criterio": "Justificação científica e procedência das constantes/propriedades/hipóteses relevantes",
+      "resultado": "ATENDIDO_NO_RECORTE",
+      "evidencia": "11 fontes primárias, sete alvos didáticos e cálculos independentes; FON09/BAN10/FON01 herdados somente por identidade."
+    },
+    {
+      "criterio": "Fidelidade e completude do registro documental de vínculos por item",
+      "resultado": "NAO_ATENDIDO",
+      "evidencia": "R1-A: 80 rótulos inexatos e 78 ocorrências omitidas em 50 itens."
+    },
+    {
+      "criterio": "Preservação de componentes oficiais, identidade de respostas, pontuação e escopo",
+      "resultado": "ATENDIDO",
+      "evidencia": "55 hashes, nove cópias, dois vínculos FON01; componentes oficiais/734 MathML/71+9/infraestrutura preservados."
+    },
+    {
+      "criterio": "Reprodução técnica, inventário e atribuição dos testes de navegador",
+      "resultado": "ATENDIDO_COM_LIMITE",
+      "evidencia": "205 verificações do autor reproduzidas; canônico197/29/1236 limpo. Testes de navegador atribuídos ao coordenador, sem repetição pelo Auditor; testes do autor não cobriam o campo defeituoso."
+    }
+  ],
+  "ajustes_obrigatorios": [
+    {
+      "id": "R1-A",
+      "natureza": "documental",
+      "arquivo": "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r1.json",
+      "campo": "registros[].fontes.ensino_e_fundamentos_ja_vinculados",
+      "evidencia": "FON-02-r1-tecnico.json, achado T1 e detalhes fontes; 158 ocorrências no baseline, apenas80 alvos documentados, 78 omitidos.",
+      "criterio_violado": "Rastreabilidade individual fiel que sustenta a identificação e a justificação dos suplementos; o artefato de evidência entregue não pode associar o corpo do artigo a uma âncora ou omitir fontes existentes.",
+      "correcao": "Reconstruir os 80 arrays a partir das âncoras reais da base declarada, preservando destinos e rótulos próprios; incluir as 158 ocorrências pertinentes internas e externas, mantendo a separação temporal de fontes já vinculadas e fontes acrescentadas nesta rodada. Atualizar derivados/manifesto/entrega necessários, sem alterar produto ou pacote r1.",
+      "aceite": "Comparação independente por item de todas as ocorrências (href, texto próprio e ordem), 80/80 listas completas, nenhuma contaminação por texto fora da âncora e cobertura das158 ocorrências; demonstrar identidade do restante da matriz, fontes novas, três produtos, infraestrutura e pacote r1."
+    }
+  ],
+  "observacoes": [
+    {
+      "id": "O1",
+      "natureza": "editorial_nao_bloqueante_por_si",
+      "texto": "Dois hashes da tabela da entrega contêm espaço interno. Removido o espaço, correspondem integralmente aos bytes e manifesto. Publicar na r2 os64 caracteres contíguos; não há divergência binária."
+    }
+  ],
+  "evidencias": {
+    "cientifica": {
+      "arquivo": "FON-02-r1-cientifico.json",
+      "sha256": "8976b0092ce62caaffff5579284a59c9a4d69a593cfbf49bc1a8200499b84dae"
+    },
+    "tecnica": {
+      "arquivo": "FON-02-r1-tecnico.json",
+      "sha256": "1c2f806e68fd9aead878b0d355f08d87e478e0d5ada4e37fa2a341f960fee63a"
+    },
+    "tecnica_md": {
+      "arquivo": "FON-02-r1-tecnico.md",
+      "sha256": "16299d489ce70806e66d4b70f2ef538b983d458d532c3796967f852ec6eb226a"
+    }
+  },
+  "limites": [
+    "Sem aceite global de curso avançado, BAN07/BAN08, FON03/FON10 ou novo ID.",
+    "Versão r1 permanece congelada. Auditor não alterou produto, inventário, controle, checklist ou pacote autoral.",
+    "A reapresentação pode herdar a ciência e os testes já atendidos se as identidades forem demonstradas; não requer nova leitura dos80 artigos ou fontes intactas."
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV16–AV20",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco alternativas e comentários; frações exatas e análise de arredondamento.",
+  "registros": [
+    {
+      "id": "av-e1-16",
+      "artigo_sha256": "48ae42d26499f4389ca87b570e9864234c58223277b8b4a16302f7ba808ebdee",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-16",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-umidade",
+          "#cr-e1-16"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "Umidade relativa entrada 60% e saída 45%, mesma temperatura e pressão de saturação.",
+      "solucao": "φ=pv/psat no modelo de pressão parcial; pv,s/pv,e=45/60=0,75; inversa 60/45=4/3≈1,33; diferença 0,60−0,45=0,15.",
+      "resultado": "E, 0,75.",
+      "comparacao": "A 1,00 supõe pressão parcial constante; B 1,33 é inversa arredondada; C 0,60 é entrada; D 0,15 é diferença; E 0,75 razão pedida.",
+      "tolerancia": "0,75 e 0,15 exatos nos dados nominais; 1,33 difere de 4/3 em 0,00333<0,005, arredondamento a centésimos.",
+      "limite": "Modelo simplificado de umidade por pressão parcial, mesma fase de saturação; não se infere quantidade de água removida.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-17",
+      "artigo_sha256": "440d7b7f9d75ef0adb436c16b01f0e82a4459d58d037f8ec914a0ae6653e7b7a",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-17",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-umidade",
+          "#cr-e1-17"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_FRACAO_EXATA",
+      "dados": "Umidade relativa 50%, temperatura da sala T, definição φ=pv/psat(T).",
+      "solucao": "pv=0,50 psat; a volume fixo e gás ideal, pv=nvRT/V varia com temperatura mesmo se nv fixo.",
+      "resultado": "D, metade da pressão de saturação.",
+      "comparacao": "A não é metade da pressão atmosférica; B quantidade fixa não garante pressão independente de T; C não é fração mássica; D metade de psat; E seria 100%.",
+      "tolerancia": "Fator 0,5 exato nos dados nominais; sem pressão de saturação numérica ou tolerância metrológica.",
+      "limite": "Relação simplificada de pressão parcial e mesma fase de referência; comentário B explicita volume fixo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-18",
+      "artigo_sha256": "5a61747eec81b5caadab8e61895235bd4cce053076ba3f9eed4a90ded57dea46",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-18",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "#cr-e1-18"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "p1=200 kPa abs, T1=300 K, T2=450 K, gás ideal rígido e fechado.",
+      "solucao": "p2=p1T2/T1=200×450/300=300 kPa; inversa 200×300/450=133,333… kPa; usando ΔT como denominador produz 600 kPa.",
+      "resultado": "C, 300 kPa abs.",
+      "comparacao": "A 600 usa ΔT no denominador; B 200 ignora aquecimento; C 300; D 450 repete T; E 133,3 usa razão invertida arredondada.",
+      "tolerancia": "300 e 600 exatos nos dados nominais; 133,3 arredonda 133,333… a 0,1 kPa, erro <0,05 kPa.",
+      "limite": "Pressões absolutas e temperaturas absolutas; n e V fixos.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-19",
+      "artigo_sha256": "13db446f2d53ba81a62449e2e82b81d5ddea5db59e27873088c024f9663794c3",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-19",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "#cr-e1-19"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "n=2 mol, R=0,082 atm L/(mol K), T=300 K, V=49,2 L.",
+      "solucao": "nRT=49,2 atm L e p=49,2/49,2=1 atm.",
+      "resultado": "A, 1,00 atm.",
+      "comparacao": "A correto; B omite 2 e dá 0,50; C erra fator dez; D converte apenas volume para m³ e obtém fator 1000; E multiplica novamente por 2.",
+      "tolerancia": "1,00, 0,50, 10, 1000 e 2 são comparações exatas aos dados nominais; sem incerteza informada.",
+      "limite": "R e volume devem usar unidades compatíveis; o erro C não determina mecanismo de erro específico além do fator dez.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-20",
+      "artigo_sha256": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-20",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-gas-modelo",
+          "#cr-e1-20"
+        ]
+      },
+      "aplicabilidade": "LIMITE_SIMBOLICO",
+      "dados": "Gás ideal, n fixo, p constante positiva, T→0+.",
+      "solucao": "V=nRT/p→0. Modelo ideal não garante gás real em fase gasosa a 0 K.",
+      "resultado": "E.",
+      "comparacao": "A infinito contradiz proporcionalidade; B volume negativo incompatível; C massa fixa não torna V constante; D acrescenta afirmação inválida sobre fase real; E expressa limite e restrição.",
+      "tolerancia": "Limite 0 é exato na extrapolação, sem valores medidos ou tolerância.",
+      "limite": "Gases reais podem mudar de fase antes de 0 K; não alegar validade do modelo em todo percurso.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; a questão de origem fornece contexto, não prova documental da alternativa autoral."
+  ]
+}

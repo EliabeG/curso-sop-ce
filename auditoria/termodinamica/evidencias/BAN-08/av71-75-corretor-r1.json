@@ -1,0 +1,114 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV71–AV75",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco alternativas e comentários; cálculos e unidades.",
+  "registros": [
+    {
+      "id": "av-e1-71",
+      "artigo_sha256": "a6822e633557838619c8a4c9fa1790c583776ef03830b6ca475f28ad6b25e2ff",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-71",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Ventilador movimenta ar e bomba movimenta água sobre superfícies.",
+      "solucao": "Equipamento externo impulsiona escoamento, caracterizando convecção forçada.",
+      "resultado": "C.",
+      "comparacao": "A condução exclusiva em sólido não descreve escoamento; B não é só radiação; C forçada; D não é exclusivamente natural; E troca pode ocorrer.",
+      "tolerancia": "Sem vazão ou temperatura não há taxa ou tolerância.",
+      "limite": "Empuxo pode coexistir, formando convecção mista, mas acionamento externo é forçado.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-72",
+      "artigo_sha256": "9b34292c52fddf0bbfff7573258e810e24f0d3ad6cc86dc0c1eaed9743754e7d",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-72",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "CONTAGEM_E_DESCRICAO",
+      "dados": "Duas correntes em tubos concêntricos; paralelo e contracorrente.",
+      "solucao": "Paralelo: entram pela mesma extremidade e seguem no mesmo sentido; contracorrente: entram em extremos opostos.",
+      "resultado": "B.",
+      "comparacao": "A inverte arranjos; B correta; C orientação influencia perfis; D ambos opostos erra paralelo; E ambos iguais erra contracorrente.",
+      "tolerancia": "Duas correntes, contagem exata; sem temperaturas ou taxa para cálculo e tolerância.",
+      "limite": "Orientação não informa automaticamente eficiência ou diferença média sem demais condições.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-73",
+      "artigo_sha256": "0726d64bef732bb8b75a4473a190e14e7b7359155533af25fd5fc6b6c5f0b34a",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-73",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Serpentina aletada com grande capacidade de troca em volume reduzido.",
+      "solucao": "Compactação é alta razão de área de troca por volume; aletas aumentam superfície disponível.",
+      "resultado": "A.",
+      "comparacao": "A alta A/V; B baixa A/V contradiz; C capacidade térmica não define compactação; D espessura maior aumenta resistência de condução para mesmo material e área; E aletas têm função térmica.",
+      "tolerancia": "A/V tem dimensão m⁻¹; sem áreas ou volumes numéricos, sem tolerância.",
+      "limite": "Maior área não assegura desempenho ilimitado ou ausência de perda de pressão.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-74",
+      "artigo_sha256": "e1cbd2e738cff1e20744251bba5ae94651ec5502fd9dc5808c1627f19b37b032",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-74",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "U1=500, U2=250 W/(m² K), A=10 m², ΔTm=20 K.",
+      "solucao": "Q̇1=500×10×20=100000 W=100 kW; Q̇2=250×10×20=50000 W=50 kW.",
+      "resultado": "B, 100→50 kW.",
+      "comparacao": "A 10→5 fator dez; B correta; C 100→200 inverte impacto; D 100→100 ignora redução; E 500→250 confunde U e potência.",
+      "tolerancia": "Exato com entradas nominais; sem incerteza de medição.",
+      "limite": "A e ΔTm mantidos para a comparação; não afirmar que ambas permaneçam constantes em toda operação real.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-75",
+      "artigo_sha256": "cf84420539a50440af16625535da0e7513c3d3de6362be04a830790f9eb9029c",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-75",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "k=10 W/(m K), dT/dx=−20 K/m, lei q″=−k dT/dx.",
+      "solucao": "q″=−10×(−20)=+200 W/m².",
+      "resultado": "B, +200 W/m².",
+      "comparacao": "A +200 W confunde fluxo por área com potência; B correto; C ignora gradiente; D perde sinal negativo; E 2 é quociente indevido, com dimensão também incorreta.",
+      "tolerancia": "Produto e sinal exatos para dados nominais; sem tolerância de medida.",
+      "limite": "Potência total exige área; k positiva e sinal de gradiente dados.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

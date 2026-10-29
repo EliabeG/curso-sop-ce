@@ -1,0 +1,37 @@
+{
+  "id": "FON-02",
+  "data": "2026-10-28",
+  "responsavel": "/root",
+  "tipo": "apoio de fontes e leitura de implementação; não é parecer de aprovação",
+  "base_html": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+  "implementacao": {
+    "arquivo": "assets/curso.js",
+    "trecho": "digitalDoBanco, linhas1171–1181 na versão corrente",
+    "conclusao": "A digital usa texto de .cr-enunciado, imagens com src/alt, alternativas e chave. Notas externas e resolução não entram nessa composição. Preservá-las fora desses componentes evita alteração da identidade; confirmar por comparação final, não somente por intenção."
+  },
+  "fontes": [
+    {
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes",
+      "localizacao": "nota9",
+      "metodo": "texto oficial aberto via web e trecho localizado/lido",
+      "conclusao": "Caloria termoquímica:4,184J exatamente. International Table:4,1868J. Não apresentar4,184como valor universal de toda caloria; identificar a convenção acrescentada em CR26."
+    },
+    {
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0",
+      "localizacao": "p.impressa133,PDFp.19",
+      "metodo": "texto do PDF oficial aberto via web; trecho do kelvin e Celsius localizado/lido; sem inspeção visual desta página",
+      "conclusao": "Deslocamento Celsius–kelvin273,15K é a referência da conversão. Ponto triplo termodinâmico da água passou a ser determinado experimentalmente após redefinição do kelvin;273,16K não é hoje sua definição exata. Distinguir valor didático adotado em leitura condicionada de CR24 de exatidão metrológica atual."
+    }
+  ],
+  "tentativas": [
+    {
+      "url": "https://goldbook.iupac.org/terms/view/C00784",
+      "resultado": "Resultado de busca encontrado, mas abertura retornou403. Não usado como leitura completa; NIST oficial suficiente para conversões."
+    }
+  ],
+  "limites": [
+    "Não confronta integralmente os80suplementos.",
+    "Não altera produto ou dados FON09.",
+    "Não aprova FON02 nem antecipa BAN07/BAN08."
+  ]
+}

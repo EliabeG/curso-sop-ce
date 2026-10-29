@@ -1,0 +1,15 @@
+# FON-01 — leitura independente anterior ao congelamento
+
+Auditor AAA — agente automatizado. Consulta em 28/10/2026. Este registro não é parecer de aprovação.
+
+A comparação da versão inicial foi concluída para os 80 itens CR, individualmente, nas 12 famílias oficiais. Foram lidos os enunciados e respectivos contextos, alternativas, figuras pertinentes, números, identificação dos cadernos e chaves definitivas. As sete figuras recriadas foram comparadas visualmente com a fonte, considerando as informações representadas; não se afirma identidade de pixels. Os 80 hashes do extrato usado coincidem com os artigos capturados independentemente no preflight. Não foi encontrada divergência documental nova nos itens selecionados.
+
+Evidência individual: [FON-01-leitura-baseline.json](FON-01-leitura-baseline.json), SHA-256 `f2f98df478f18e236ba8b0e045553bd6c7d3374440423a5fb1567a19e13166aa`. O arquivo vincula as observações aos artigos e às imagens efetivamente abertas pelo auditor. O HTML de referência é `41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917`.
+
+A prova CAESB atualizada, SHA-256 `767b22affb2fe53295ccf8a4f66dd9e4a4cae55ba36d1a49b1dc980dc7efa9b5`, foi examinada visualmente nas páginas 1 e 5. A questão 38 conserva o enunciado, as cinco alternativas, dimensões da figura e justificativa D=40 °C. A localização passou das páginas históricas 4–5 para a página 5. A API oficial associa a nova publicação ao cargo 9; a primeira folha isolada não declara esse cargo. A prova com justificativas preliminares não substitui a chave definitiva, conferida separadamente.
+
+A leitura dos oito atos Cebraspe nas seções pertinentes está em [FON-01-versoes-preliminar.json](FON-01-versoes-preliminar.json), SHA-256 `1117babdf0b1e48398e779fb996509cb99cba31add9d820cbe8c18f13939f3be`. Os históricos diretamente relevantes são CR56/TBG cargo 23 item 48 e CR67/Petrobras NM ênfase 7 item 84: ambos passaram E→C, e o produto já usa C. No contexto de CR68, a anulação oficial por kg/cm³ alcança os itens 82/83, sem anular o item 85 selecionado. O comunicado Itaipu de 02/02/2024 exige distinguir o caderno modelo divulgado de versões aplicadas cuja numeração variava e cujo tipo individual não foi explicitado.
+
+A pesquisa FGV confrontou o índice atual, a chave definitiva retificada em 02/08/2024 e a seção TG15 do preliminar: 25B, 30B, 33D, 35E coincidem. O comunicado de retificação de 02/08 refere-se ao TG29. Os comunicados posteriores examinados tratam de prova discursiva ou avaliação de títulos, sem alterar essas quatro respostas objetivas. As URLs, seções e limites estão no JSON de versões. A leitura dos atos foi por extração textual de PDFs oficiais na web; não é apresentada como inspeção visual desses atos.
+
+Pendente para o parecer: receber pacote congelado, confrontar sua matriz final e dados de versão com estas leituras, revisar o delta material e derivados, confirmar hashes/preservação e verificar os critérios documentais da entrega. Os registros preliminares não autorizam passagem de ID nem certificam o nível avançado do curso.

@@ -1,0 +1,78 @@
+{
+  "id": "BAN-08",
+  "estado": "PROPOSTAS_ISOLADAS_NAO_APLICADAS_SEM_APROVACAO",
+  "data": "2026-10-29",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "artigos": [
+    {
+      "item": "av-e1-42",
+      "digital_antes": "d0b32333",
+      "digital_candidata": "595a0614",
+      "sha_antes": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+      "sha_candidata": "81c755c3fbc510b3d5c1ff5678e5c14c548239a2563346a33b28bdedd650491e"
+    },
+    {
+      "item": "av-e1-45",
+      "digital_antes": "95231db6",
+      "digital_candidata": "10df36ad",
+      "sha_antes": "3babe8cb08138fd4ad42f7358c5208b70974370d17a62d30490075e7b5019b50",
+      "sha_candidata": "4999bebef5d3de5516753ad3390a1728be9b3ace5bf28d23037acb2783c661ba"
+    },
+    {
+      "item": "av-e1-52",
+      "digital_antes": "d95e6b2d",
+      "digital_candidata": "0619ab1f",
+      "sha_antes": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+      "sha_candidata": "f920b246bea3d4b5e3d4b63cbfb5a4dd24ae11cff17877aeec73decf278cfc97"
+    }
+  ],
+  "arquivos": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/AV42-candidata.html",
+      "sha256": "81c755c3fbc510b3d5c1ff5678e5c14c548239a2563346a33b28bdedd650491e"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/AV42-candidata.json",
+      "sha256": "cb8d8190b13a2bd7897478e042bd5920904d74e878603262fa41251c6e020f7f"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/AV45-candidata.html",
+      "sha256": "4999bebef5d3de5516753ad3390a1728be9b3ace5bf28d23037acb2783c661ba"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/AV45-candidata.json",
+      "sha256": "9ab927d3f64579061159a70a8174b6095a198617876eec0d80ed497930361f14"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/AV52-candidata.html",
+      "sha256": "f920b246bea3d4b5e3d4b63cbfb5a4dd24ae11cff17877aeec73decf278cfc97"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/AV52-candidata.json",
+      "sha256": "82307222806853f9c0fadfc8629d5fc9970acf065a1881907e8f237eaa318272"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/verificar-digitais.mjs",
+      "sha256": "0db5fe590ae5cda64a7162acdafbdb13983ec157f8ed1efc55387dcb5751eb81"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/verificar-delta.py",
+      "sha256": "9b7ac0fd8ec4aa651dc80ff44b8b2f98450d29253112e1c9ab1f64bf71943032"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/digitais-verificadas.json",
+      "sha256": "f8c0ed3a02df8d3c1715ef0d30cd897ab510828aa685feff81237a7cfef0a1aa"
+    }
+  ],
+  "versao_produto_base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+  },
+  "rastreabilidade_e_impactos": [
+    "BAN-07 r3 foi aprovado para outra versão; não se afirma que o aceite abranja automaticamente os novos artigos. Reabrir julgamento dos itens alterados e integridade do produto perante Auditor; preservar evidências e pareceres antigos.",
+    "Alteração do enunciado muda as digitais: antigas tentativas permanecem no armazenamento, mas não contam para os artigos novos; a verificação é derivada do código, sem teste de navegador.",
+    "Inventário JSON e Markdown e registros de BAN-08 para AV42/45/52 exigem revisão e hashes após eventual aprovação e aplicação; não sobrescrever provas históricas.",
+    "A comparação de colisões cobre o banco AV atual combinado e as digitais históricas BAN-07 conhecidas, não todas as versões eventualmente armazenadas em usuários.",
+    "Não se alterou produto nem controle; não se autoaprova nem se libera outro ID."
+  ]
+}

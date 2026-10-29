@@ -1,0 +1,519 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://curso-sop-ce.local/schemas/inventario-termodinamica-1.1.schema.json",
+  "title": "Inventário individual de avaliações E1 — BAN-02",
+  "description": "Estrutura verificável; validade científica, dificuldade e aprendizagem exigem revisão humana/independente separada.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.1"
+    },
+    "curso": {
+      "const": "E1"
+    },
+    "atualizado_em": {
+      "type": "string",
+      "format": "date"
+    },
+    "fonte": {
+      "type": "object",
+      "properties": {
+        "arquivo": {
+          "$ref": "#/$defs/caminho"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "snapshot": {
+          "$ref": "#/$defs/caminho"
+        }
+      },
+      "required": [
+        "arquivo",
+        "sha256",
+        "snapshot"
+      ],
+      "additionalProperties": false
+    },
+    "metodo": {
+      "type": "object",
+      "properties": {
+        "descricao": {
+          "$ref": "#/$defs/texto"
+        },
+        "limites": {
+          "$ref": "#/$defs/texto"
+        }
+      },
+      "required": [
+        "descricao",
+        "limites"
+      ],
+      "additionalProperties": false
+    },
+    "itens": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "curso",
+    "atualizado_em",
+    "fonte",
+    "metodo",
+    "itens"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "texto": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "caminho": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "lista_texto": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/texto"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "item": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]*$"
+        },
+        "banco": {
+          "type": "string",
+          "enum": [
+            "inicial",
+            "real",
+            "avalia",
+            "aberto",
+            "projeto"
+          ]
+        },
+        "titulo": {
+          "$ref": "#/$defs/texto"
+        },
+        "localizacao": {
+          "type": "object",
+          "properties": {
+            "arquivo": {
+              "$ref": "#/$defs/caminho"
+            },
+            "fragmento": {
+              "type": "string",
+              "pattern": "^[^#\\s]+$"
+            },
+            "sha256_artigo": {
+              "$ref": "#/$defs/sha256"
+            },
+            "recursos": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "arquivo": {
+                    "$ref": "#/$defs/caminho"
+                  },
+                  "sha256": {
+                    "$ref": "#/$defs/sha256"
+                  }
+                },
+                "required": [
+                  "arquivo",
+                  "sha256"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "arquivo",
+            "fragmento",
+            "sha256_artigo",
+            "recursos"
+          ],
+          "additionalProperties": false
+        },
+        "origem": {
+          "type": "object",
+          "properties": {
+            "tipo": {
+              "$ref": "#/$defs/texto"
+            },
+            "atribuicao": {
+              "$ref": "#/$defs/texto"
+            },
+            "identificadores": {
+              "$ref": "#/$defs/lista_texto"
+            },
+            "fontes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "rotulo": {
+                    "$ref": "#/$defs/texto"
+                  },
+                  "url": {
+                    "$ref": "#/$defs/texto"
+                  }
+                },
+                "required": [
+                  "rotulo",
+                  "url"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "conferencia_oficial": {
+              "type": "string",
+              "enum": [
+                "nao_realizada",
+                "nao_aplicavel",
+                "realizada"
+              ]
+            },
+            "evidencia_conferencia": {
+              "$ref": "#/$defs/evidencia"
+            }
+          },
+          "required": [
+            "tipo",
+            "atribuicao",
+            "identificadores",
+            "fontes",
+            "conferencia_oficial"
+          ],
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "conferencia_oficial": {
+                    "const": "realizada"
+                  }
+                },
+                "required": [
+                  "conferencia_oficial"
+                ]
+              },
+              "then": {
+                "required": [
+                  "evidencia_conferencia"
+                ]
+              }
+            }
+          ]
+        },
+        "formato": {
+          "type": "object",
+          "properties": {
+            "tipo": {
+              "type": "string",
+              "enum": [
+                "multipla_escolha",
+                "certo_errado",
+                "resposta_aberta",
+                "projeto"
+              ]
+            },
+            "comando": {
+              "$ref": "#/$defs/texto"
+            },
+            "numero_alternativas": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "tipo",
+            "comando",
+            "numero_alternativas"
+          ],
+          "additionalProperties": false
+        },
+        "competencias": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^C(?:0[1-9]|10)$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "vinculo_competencias": {
+          "type": "object",
+          "properties": {
+            "tipo": {
+              "type": "string",
+              "enum": [
+                "apoio_fundamental",
+                "avaliacao_parcial",
+                "avaliacao_integral"
+              ]
+            },
+            "alcance": {
+              "$ref": "#/$defs/texto"
+            }
+          },
+          "required": [
+            "tipo",
+            "alcance"
+          ],
+          "additionalProperties": false
+        },
+        "pre_requisitos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/texto"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "nivel": {
+          "type": "object",
+          "properties": {
+            "estimado": {
+              "type": "string",
+              "enum": [
+                "iniciante",
+                "intermediario",
+                "avancado",
+                "a_classificar"
+              ]
+            },
+            "justificativa": {
+              "$ref": "#/$defs/texto"
+            },
+            "validacao_empirica": {
+              "const": "nao_realizada"
+            }
+          },
+          "required": [
+            "estimado",
+            "justificativa",
+            "validacao_empirica"
+          ],
+          "additionalProperties": false
+        },
+        "raciocinio": {
+          "type": "object",
+          "properties": {
+            "categoria": {
+              "type": "string",
+              "enum": [
+                "reconhecimento",
+                "aplicacao_direta",
+                "integracao_etapas",
+                "julgamento_delimitado",
+                "modelagem_aberta"
+              ]
+            },
+            "etapas": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/texto"
+              },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "numero_etapas": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "required": [
+            "categoria",
+            "etapas",
+            "numero_etapas"
+          ],
+          "additionalProperties": false
+        },
+        "hipoteses": {
+          "type": "object",
+          "properties": {
+            "explicitadas": {
+              "$ref": "#/$defs/lista_texto"
+            },
+            "implicitas": {
+              "$ref": "#/$defs/lista_texto"
+            },
+            "limites": {
+              "$ref": "#/$defs/lista_texto"
+            }
+          },
+          "required": [
+            "explicitadas",
+            "implicitas",
+            "limites"
+          ],
+          "additionalProperties": false
+        },
+        "exposicao_previa": {
+          "type": "object",
+          "properties": {
+            "estado": {
+              "type": "string",
+              "enum": [
+                "relacao_identificada",
+                "desconhecida"
+              ]
+            },
+            "relacoes": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id_ou_ancora": {
+                    "$ref": "#/$defs/texto"
+                  },
+                  "tipo": {
+                    "type": "string",
+                    "enum": [
+                      "dados_repetidos",
+                      "mesma_transformacao",
+                      "reformulacao_conceitual",
+                      "relacao_tematica",
+                      "origem_declarada",
+                      "exemplo_reutilizado"
+                    ]
+                  },
+                  "evidencia": {
+                    "$ref": "#/$defs/texto"
+                  }
+                },
+                "required": [
+                  "id_ou_ancora",
+                  "tipo",
+                  "evidencia"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "limite_da_verificacao": {
+              "$ref": "#/$defs/texto"
+            }
+          },
+          "required": [
+            "estado",
+            "relacoes",
+            "limite_da_verificacao"
+          ],
+          "additionalProperties": false
+        },
+        "revisao": {
+          "type": "object",
+          "properties": {
+            "leitura": {
+              "const": "enunciado_alternativas_comentarios_e_notas"
+            },
+            "gabarito": {
+              "type": "string",
+              "enum": [
+                "nao_auditado_em_BAN02",
+                "pendente",
+                "verificado",
+                "ajustes_obrigatorios"
+              ]
+            },
+            "ambiguidades_conhecidas": {
+              "$ref": "#/$defs/lista_texto"
+            },
+            "encaminhamentos": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Z]{3}-[0-9]+$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "evidencia_gabarito": {
+              "$ref": "#/$defs/evidencia"
+            }
+          },
+          "required": [
+            "leitura",
+            "gabarito",
+            "ambiguidades_conhecidas",
+            "encaminhamentos"
+          ],
+          "additionalProperties": false,
+          "allOf": [
+            {
+              "if": {
+                "properties": {
+                  "gabarito": {
+                    "enum": [
+                      "verificado",
+                      "ajustes_obrigatorios"
+                    ]
+                  }
+                },
+                "required": [
+                  "gabarito"
+                ]
+              },
+              "then": {
+                "required": [
+                  "evidencia_gabarito"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "banco",
+        "titulo",
+        "localizacao",
+        "origem",
+        "formato",
+        "competencias",
+        "vinculo_competencias",
+        "pre_requisitos",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa",
+        "revisao"
+      ],
+      "additionalProperties": false
+    },
+    "evidencia": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$",
+      "allOf": [
+        {
+          "$ref": "#/$defs/texto"
+        }
+      ]
+    }
+  }
+}

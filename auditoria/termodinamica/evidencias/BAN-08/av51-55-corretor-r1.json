@@ -1,0 +1,139 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV51–AV55",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_COM_PENDENCIA_SEM_APROVACAO",
+  "metodo": "Leitura integral de opções e comentários; cálculos racionais e hipótese pendente explicitada.",
+  "registros": [
+    {
+      "id": "av-e1-51",
+      "artigo_sha256": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-51",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-brayton",
+          "#cr-e1-51"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "Brayton ideal convencional: três afirmações sobre suas etapas.",
+      "solucao": "Duas isentrópicas e duas isobáricas; I verdadeira, II verdadeira, III falsa: V–V–F.",
+      "resultado": "D.",
+      "comparacao": "A F–V–V erra I/III; B V–V–V aceita III; C F–F–V inverte todas; D V–V–F; E V–F–V erra II/III.",
+      "tolerancia": "Quatro etapas e sequência exatas, sem grandezas medidas ou tolerância.",
+      "limite": "Refere-se ao modelo convencional de etapas não degeneradas, não a modificações.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-52",
+      "artigo_sha256": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-52",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-brayton-real",
+          "#cr-e1-52",
+          "auditoria/termodinamica/pareceres/BAN-08-adjudicacao-av52-r1-independente.md"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_HIPOTESE_PENDENTE",
+      "dados": "Calor 200 kW, turbina 100 kW, compressor 40→50 kW; demais valores mantidos. Totalidade da entrada e ausência de auxiliares não explicitadas.",
+      "solucao": "Sob calor total 200 kW e sem outros consumos, potências líquidas 100−40=60 e 100−50=50 kW; eficiências 30%→25%.",
+      "resultado": "D sob hipóteses adicionais; suficiência pendente de correção.",
+      "comparacao": "A 30%→35% aumenta incorretamente potência; B 20%→25% são frações do compressor; C 70%→75% soma turbina e compressor; D 30%→25% no modelo; E 50%→50% omite compressor.",
+      "tolerancia": "Operações exatas nos valores nominais condicionados; sem incerteza de medição.",
+      "limite": "Auxiliar constante de 10 kW permite 25%→20%, ausente nas opções; entrada total também precisa ser fixada. Candidata isolada aguarda revisão e aplicação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "PENDENTE_CORRECAO_SUJEITA_A_REVISAO",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-53",
+      "artigo_sha256": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-53",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-brayton-real",
+          "#cr-e1-53"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Trabalho líquido fixo 90 kJ/ciclo; calor externo 300→240 kJ/ciclo.",
+      "solucao": "Redução 60 kJ e 60/300=20%; eficiências 90/300=30% e 90/240=37,5%.",
+      "resultado": "C, redução 20%.",
+      "comparacao": "A 37,5% é eficiência final; B 30% eficiência inicial; C 20% redução; D 25%=60/240 usa base final; E 80%=240/300 é valor final relativo.",
+      "tolerancia": "Todas as operações exatas para dados nominais; sem incerteza metrológica.",
+      "limite": "Percentual de redução usa base inicial; trabalho fixo é dado do exercício, não resultado do regenerador.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-54",
+      "artigo_sha256": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-54",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-tipos-compressores",
+          "#cr-e1-54"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "1 dinâmico e 2 deslocamento positivo; axial, centrífugo, pistão, parafuso.",
+      "solucao": "Axial e centrífugo são dinâmicos; pistão e parafuso são deslocamento positivo: 1–1–2–2.",
+      "resultado": "D.",
+      "comparacao": "A 1–2–1–2 erra centrífugo e pistão; B 2–2–1–1 inverte famílias; C 1–1–1–1 erra pistão e parafuso; D correto; E 2–1–2–1 erra axial/parafuso.",
+      "tolerancia": "Sequência classificatória exata; sem dados quantitativos ou tolerância.",
+      "limite": "Classificação de mecanismo não determina eficiência ou faixa universal de operação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-55",
+      "artigo_sha256": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-55",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-brayton",
+          "#cr-e1-55"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Brayton ideal convencional; pede alternativa incorreta.",
+      "solucao": "Compressão e expansão isentrópicas, adição e rejeição isobáricas; trabalho líquido é turbina menos compressor.",
+      "resultado": "B é incorreta.",
+      "comparacao": "A compressão isentrópica correta; B rejeição isocórica incorreta; C adição isobárica; D diferença de trabalho; E expansão isentrópica.",
+      "tolerancia": "Sem valores de estado nem tolerância numérica.",
+      "limite": "A descrição é do ciclo ideal, não uma propriedade universal de instalações reais.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [
+    "AV52: ausência de outros consumos e totalidade de calor não explicitadas."
+  ],
+  "limites": [
+    "Candidata isolada não aplicada nem aprovada; hipóteses não são retroatribuídas à versão atual.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "data": "2026-10-28",
+  "responsavel": "agente automatizado /root",
+  "metodo": "Leitura do script público oficial, identificação das rotas usadas pelo portal e GET público dos oito registros JSON. Não houve execução do script baixado, autenticação ou desativação de validação TLS.",
+  "script": {
+    "url": "https://www.cebraspe.org.br/concursos/static/js/main.4bdb8f79.chunk.js",
+    "arquivo": "main.4bdb8f79.chunk.js",
+    "sha256": "691d3d0d8815341654d4a5a16028307cbcde23b80aaa6f6b830af8aa5fc2f8eb",
+    "rotaEvento": "https://apis.cebraspe.org.br/cebraspe/eventos/{identificador}",
+    "rotaArquivo": "renderLink usa isGuid: raiz CDN se true; concursos/{id}/arquivos/{nomeArquivo} se false"
+  },
+  "consultas": [
+    {
+      "concurso": "tbg_23",
+      "url": "https://apis.cebraspe.org.br/cebraspe/eventos/tbg_23",
+      "consulta_utc": "2026-10-28T12:04:49.7787543Z",
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "bytes": 25174,
+      "sha256": "6644b16346dce6d729522833a443b43250ee26648d7ef7dc698bec40b325f23a"
+    },
+    {
+      "concurso": "trf6_24",
+      "url": "https://apis.cebraspe.org.br/cebraspe/eventos/trf6_24",
+      "consulta_utc": "2026-10-28T12:04:51.6599589Z",
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "bytes": 36279,
+      "sha256": "2906f310b59713e6810868b9b1eb32f098e60b431663629f0a582a51db6e62cf"
+    },
+    {
+      "concurso": "cpnuje_24",
+      "url": "https://apis.cebraspe.org.br/cebraspe/eventos/cpnuje_24",
+      "consulta_utc": "2026-10-28T12:04:50.9792166Z",
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "bytes": 86373,
+      "sha256": "88dedcfc12970c8bed91b4ccab7644388e7a3aa78bb103839530867d52ad7282"
+    },
+    {
+      "concurso": "caesb_24",
+      "url": "https://apis.cebraspe.org.br/cebraspe/eventos/caesb_24",
+      "consulta_utc": "2026-10-28T12:04:51.7006172Z",
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "bytes": 72173,
+      "sha256": "1fb4685b5ef148b0c228c28a76c6cd064be7199c99f36080f0ccbc4bf51004f3"
+    },
+    {
+      "concurso": "petrobras_21_ns",
+      "url": "https://apis.cebraspe.org.br/cebraspe/eventos/petrobras_21_ns",
+      "consulta_utc": "2026-10-28T12:04:50.8714400Z",
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "bytes": 37915,
+      "sha256": "aa54e38f82374738f67c5a9e8c31dec415ad31fce8d9bf90acde7ad629430741"
+    },
+    {
+      "concurso": "petrobras_23_nm",
+      "url": "https://apis.cebraspe.org.br/cebraspe/eventos/petrobras_23_nm",
+      "consulta_utc": "2026-10-28T12:04:51.6333791Z",
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "bytes": 20859,
+      "sha256": "0f54609510c26324b8b3fe85350183d0bd9816c2add2c71bb0b7b4e85a416ffe"
+    },
+    {
+      "concurso": "petrobras_23_ntj",
+      "url": "https://apis.cebraspe.org.br/cebraspe/eventos/petrobras_23_ntj",
+      "consulta_utc": "2026-10-28T12:04:50.8215612Z",
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "bytes": 33085,
+      "sha256": "2768fbde16074bf11cc8ef126257c7054f39c04614a40810d273ecd42c808003"
+    },
+    {
+      "concurso": "itaipu_23",
+      "url": "https://apis.cebraspe.org.br/cebraspe/eventos/itaipu_23",
+      "consulta_utc": "2026-10-28T12:04:51.6559715Z",
+      "status": 200,
+      "tipo": "application/json; charset=utf-8",
+      "bytes": 30662,
+      "sha256": "1bb41175cb11df16963003e8db60f94f7a7d0b5b5a0433f0c79aa39f7729f4d0"
+    }
+  ],
+  "comparacao": {
+    "documentosCebraspe": 22,
+    "presentesComNormalizacao": 22,
+    "URLsExatasDecodificadas": 20,
+    "duasDiferencas": "CAESB: apenas a extensão .PDF/.pdf nas URLs legadas; a igualdade dos bytes da variante publicada não foi presumida."
+  },
+  "atos": [
+    {
+      "concurso": "tbg_23",
+      "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/TBG_23_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_publicacao_como_no_portal": "16/11/2023 10:33",
+      "arquivo": "ato-tbg_23.pdf",
+      "copiaLocalDisponivel": false
+    },
+    {
+      "concurso": "trf6_24",
+      "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/TRF6_24_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_publicacao_como_no_portal": "24/02/2025 15:50",
+      "arquivo": "ato-trf6_24.pdf",
+      "copiaLocalDisponivel": false
+    },
+    {
+      "concurso": "cpnuje_24",
+      "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/CPNUJE_24_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO_ATUALIZADO.PDF",
+      "data_publicacao_como_no_portal": "31/01/2025 12:00",
+      "arquivo": "ato-cpnuje_24.pdf",
+      "copiaLocalDisponivel": true
+    },
+    {
+      "concurso": "caesb_24",
+      "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/CAESB_24_Justificativas_de_alterações_de_gabarito.pdf",
+      "data_publicacao_como_no_portal": "06/08/2025 16:55",
+      "arquivo": "ato-caesb_24.pdf",
+      "copiaLocalDisponivel": false
+    },
+    {
+      "concurso": "petrobras_21_ns",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/PETRO_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO_V_6_4.PDF",
+      "data_publicacao_como_no_portal": "06/04/2022 20:00",
+      "arquivo": "ato-petrobras_21_ns.pdf",
+      "copiaLocalDisponivel": false
+    },
+    {
+      "concurso": "petrobras_23_nm",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/PETROBRAS_23_NM_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_publicacao_como_no_portal": "31/05/2023 16:10",
+      "arquivo": "ato-petrobras_23_nm.pdf",
+      "copiaLocalDisponivel": true
+    },
+    {
+      "concurso": "petrobras_23_ntj",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/PETROBRAS_23_NTJ_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_publicacao_como_no_portal": "26/04/2024 12:00",
+      "arquivo": "ato-petrobras_23_ntj.pdf",
+      "copiaLocalDisponivel": true
+    },
+    {
+      "concurso": "itaipu_23",
+      "url": "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/ITAIPU_23_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_publicacao_como_no_portal": "26/02/2024 19:41",
+      "arquivo": "ato-itaipu_23.pdf",
+      "copiaLocalDisponivel": true
+    }
+  ],
+  "caesb": {
+    "urlAtualizada": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/905BAE8B8901D96A45D9CBF7F17341894AF8405A0E2D9122A552F640CAC8B9DB.pdf",
+    "publicacao": "11/05/2026 12:39",
+    "hashLegado": "84ae0602e23691a27529b1f96e7c58803ad82982550301724345cb0b5d690df5",
+    "hashAtualizado": "767b22affb2fe53295ccf8a4f66dd9e4a4cae55ba36d1a49b1dc980dc7efa9b5",
+    "bytesDiferentes": true,
+    "paginasAtualizadas": 16,
+    "leituraPropria": "Somente páginas físicas 1 e 5; registros e PNGs nesta pasta."
+  },
+  "limites": "A disponibilidade das listagens completas não demonstra inexistência absoluta de atos fora desses catálogos. A interpretação dos atos e a comparação integral dos itens são do Corretor e do Auditor. Quatro atos não foram obtidos em cópia local por falhas de conexão; URLs oficiais são acessíveis pelo leitor web. Não foi alegada navegação visual pelos portais, cujas tentativas CUA expiraram."
+}

@@ -1,0 +1,210 @@
+{
+  "id": "AV31-B",
+  "id_artigo": "av-e1-31",
+  "rodada_de_proposta": 2,
+  "autoria": "Agente automatizado Corretor; sem revisão independente",
+  "data_utc": "2026-10-29T16:38:43.794492+00:00",
+  "estado": "PROPOSTA_PRELIMINAR_NAO_APLICADA",
+  "escopo": "Troca isolada do texto da alternativa B e respectivo comentário; r1 congelado; sem modificar controle ou produto.",
+  "fontes_e_hashes": [
+    {
+      "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "sha256": "18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc"
+    },
+    {
+      "arquivo": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md",
+      "sha256": "961a6f038a5bdb0c168bd69ebe6c961fa91a24d82440396a0f7dce0f971ebaea"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-decisoes-av31-41-observacoes-av23-30-r1.json",
+      "sha256": "0cf76a7f74941f8f076055d59dd9140af5a40cb599517ab00dcd49d43388fa86"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av31-35-r1.json",
+      "sha256": "a0b0eb55bb1d2e718ebdf8d3c91ca2e723add053d769c2c42b95e30d7099c9f8"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-07-r1.md",
+      "sha256": "9dfa2059b10be96615bbdc0c42d596c756910bbbd2791636ad061870dd96a893"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/mapa-identidades-r1.json",
+      "sha256": "790a34f07318a3b8ee84b29e8ffb4afec723485141216a0bce4db661f5eab6c1"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5"
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/CONTROLE_AAA.json",
+      "sha256": "e7a45e43f9e5f1d493aeb4fffcef9ed60c0aecca8deffc339a38e4c4ca41fa28"
+    }
+  ],
+  "criterio": "BAN-07 exige suficiência, consistência, resposta única, justificativas e distratores plausíveis por erros identificáveis; plausibilidade teórica não é evidência de escolhas observadas.",
+  "artigo_base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "sha256_artigo": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+    "enunciado": "Na comparação de combustíveis para um gerador térmico, a diferença entre poder calorífico superior (PCS) e inferior (PCI) está associada principalmente",
+    "chave": "E",
+    "base": "#base-termoquimica",
+    "sha256_base": "515297af8decab92b2bfd8ce6aa9b5708458551997591e2d41bf12a418c4e6cb"
+  },
+  "alteracoes_propostas": {
+    "B": {
+      "antes": "à exclusão de toda a energia de combustão no PCS.",
+      "depois": "à diferença de calor sensível causada por temperaturas distintas de referência, mantendo a água no mesmo estado físico."
+    },
+    "comentario_B": {
+      "antes": "PCS inclui a energia de combustão e a recuperação adicional indicada.",
+      "depois": "A comparação usa a mesma temperatura de referência. A diferença considera a água líquida no PCS e vapor no PCI: é a parcela associada à condensação, não uma diferença de calor sensível por temperaturas de referência distintas."
+    }
+  },
+  "candidato_html": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-07/propostas-r2/AV31-candidata.html",
+    "sha256": "2b2015e4ce0ec1bbea95c3da375ec316239d427f44454cfa43ca007c777fff7a",
+    "bytes": 4014,
+    "natureza": "Fragmento isolado article; não aplicado."
+  },
+  "justificativa_modelos_limites": {
+    "mecanismo": "Confundir a diferença de entalpia entre referências de fases da água com calor sensível associado a temperaturas finais distintas. B atribui expressamente a diferença a temperaturas distintas e fixa a água na mesma fase; o mecanismo acompanha a redação literal.",
+    "demonstracao": "Na mesma base de combustível, para os mesmos demais produtos e mesma temperatura e pressão de referência, PCS e PCI distinguem água líquida e vapor. Se a quantidade de água formada for n, PCS − PCI = n [h_vapor(Tref,pref) − h_liquido(Tref,pref)] sob as convenções de referência da comparação. Essa diferença é a parcela de condensação; não é causada por diferenças de temperatura.",
+    "limite": "Expressão conceitual de referência sem exigir equilíbrio de fases à pressão total de mistura e sem importar dados adicionais ao comando. Se não houver água nos produtos, a parcela correspondente pode ser nula; não se afirma que a diferença seja positiva para todos combustíveis. Distrator teórico; sem piloto ou frequência observada."
+  },
+  "cinco_opcoes_solucao_unicidade": [
+    {
+      "letra": "A",
+      "texto": "à recuperação do calor de condensação somente no PCI.",
+      "correta": false,
+      "demonstracao": "Inverte os estados: a parcela de condensação é considerada no PCS, não somente no PCI.",
+      "mecanismo": "Troca das referências de fase."
+    },
+    {
+      "letra": "B",
+      "texto": "à diferença de calor sensível causada por temperaturas distintas de referência, mantendo a água no mesmo estado físico.",
+      "correta": false,
+      "demonstracao": "A comparação mantém a temperatura de referência comum e distingue a fase da água; diferenças de temperaturas e água na mesma fase não explicam PCS − PCI.",
+      "mecanismo": "Confusão entre calor sensível associado à temperatura e parcela associada à mudança de fase."
+    },
+    {
+      "letra": "C",
+      "texto": "à igualdade obrigatória entre PCS e PCI para qualquer combustível.",
+      "correta": false,
+      "demonstracao": "Para combustíveis formando água, a diferença pode incluir sua condensação. Um caso com parcela nula não sustenta igualdade universal.",
+      "mecanismo": "Generalizar o caso sem parcela de água ou supor um valor único independente da referência."
+    },
+    {
+      "letra": "D",
+      "texto": "à energia elétrica consumida pela bomba de combustível.",
+      "correta": false,
+      "demonstracao": "Consumo auxiliar afeta balanço da instalação, não a definição dos poderes caloríficos do combustível.",
+      "mecanismo": "Confundir poder calorífico inferior com rendimento líquido após auxiliares."
+    },
+    {
+      "letra": "E",
+      "texto": "à recuperação, no PCS, do calor de condensação da água formada na combustão.",
+      "correta": true,
+      "demonstracao": "PCS considera água líquida e PCI vapor na referência; a parcela de condensação explica a diferença quando pertinente.",
+      "mecanismo": null
+    }
+  ],
+  "solucao": {
+    "chave": "E",
+    "unicidade": "A inverte PCS e PCI; B troca fases por temperaturas; C impõe igualdade universal; D utiliza consumo auxiliar; somente E exprime o mecanismo de referência.",
+    "arredondamento": "Não aplicável: alternativas conceituais, sem valores numéricos."
+  },
+  "verificacoes_do_corretor": {
+    "verificador": "auditoria/termodinamica/evidencias/BAN-07/propostas-r2/verificar-AV31-candidata.mjs",
+    "sha256_verificador": "4f303103cfe9f0e623c6c1db2e314db378eeeeed77156d5fb286e5e79e4ac9e4",
+    "metodo": "parseHtml/sha256 canônicos, reversão exata dos dois literais; funções reais de digital extraídas de curso.js executadas em VM com adaptador restrito ao artigo textual.",
+    "resultado": {
+      "artigo_r1": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+      "candidato": "2b2015e4ce0ec1bbea95c3da375ec316239d427f44454cfa43ca007c777fff7a",
+      "bytes_candidato": 4014,
+      "digital_r1": "4538caee",
+      "digital_candidato": "9230a05d",
+      "produto": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+        },
+        {
+          "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+          "sha256": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+          "esperado": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7"
+        },
+        {
+          "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+          "sha256": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+          "esperado": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1"
+        },
+        {
+          "arquivo": "assets/curso.js",
+          "sha256": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+          "esperado": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13"
+        },
+        {
+          "arquivo": "assets/registro.js",
+          "sha256": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+          "esperado": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c"
+        }
+      ]
+    },
+    "limites": "Sem navegador, localStorage, teste com estudantes, prova empírica de escolha ou revisão independente; não foi testada colisão em banco completo."
+  },
+  "validade_progresso_fingerprint": {
+    "digital_r1": "4538caee",
+    "digital_candidata": "9230a05d",
+    "mudanca": true,
+    "metodo": "A digital inclui enunciado, alternativas e chave; comentário não entra. A digital r1 reproduz o mapa publicado.",
+    "consequencia_esperada": "Se aplicada, a tentativa antiga deve permanecer no histórico e deixar de pontuar para AV31 atual; resposta nova deverá ser registrada. Não migrar a letra antiga. Verificar colisões, armazenamento, aviso, resposta nova e recarga no produto efetivamente aplicado.",
+    "limite": "Nenhum armazenamento real foi acessado ou alterado; impacto é inferência de código e teste de digital isolada, não teste de persistência."
+  },
+  "roteiro_minimo_reapresentacao": [
+    "Encaminhar candidato e evidências ao Auditor independente, com r1 congelado.",
+    "Auditor deve julgar redação, mecanismo, as cinco opções e unicidade de E; não há autoaprovação.",
+    "Aplicar somente se e quando o coordenador autorizar; atualizar rastreabilidade afetada e hashes da versão real.",
+    "Testar estrutura, colisões de digitais, histórico, placar, aviso e persistência em cópia de teste; reapresentar versão efetiva ao Auditor."
+  ],
+  "pendencias": [
+    "Parecer integral BAN-07 r1.",
+    "Revisão independente da candidata literal e de sua prova.",
+    "Aplicação, inventário e testes do produto aplicado após eventual autorização."
+  ],
+  "preservacao_produto_r1_ao_fim": {
+    "metodo": "SHA-256 comparado à tabela dos cinco arquivos da entrega BAN-07 r1.",
+    "todos_preservados": true,
+    "arquivos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+        "esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+        "sha256": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+        "esperado": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "sha256": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+        "esperado": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1"
+      },
+      {
+        "arquivo": "assets/curso.js",
+        "sha256": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "esperado": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13"
+      },
+      {
+        "arquivo": "assets/registro.js",
+        "sha256": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+        "esperado": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c"
+      }
+    ]
+  }
+}

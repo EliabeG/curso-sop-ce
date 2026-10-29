@@ -1,0 +1,10 @@
+{
+  "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+  "sha256_antes": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+  "sha256_depois": "114b1a063cb2a88e505c9ecffd2b22c75f29b709419b24e9e533331fa7283b22",
+  "prefixo_caracteres": 11927,
+  "sufixo_caracteres": 8160,
+  "trecho_antes": "const doc = await document(filename);\n        if (doc && (doc.ids.get(fragment)?.length ?? 0) !== 1) fail(errors, where, `âncora ausente ou duplicada: ${filename}#${fragment}`);",
+  "trecho_depois": "if (/\\.pdf$/i.test(filename)) {\n          // PDF usa parâmetro de abertura, não ID HTML. A existência da página exige conferência documental.\n          if (!/^page=[1-9]\\d*$/.test(fragment) || !Number.isSafeInteger(Number(fragment.slice(5)))) {\n            fail(errors, where, `fragmento PDF inválido (esperado page=N inteiro positivo): ${filename}#${fragment}`);\n          }\n          if (!(await bytes(filename, where))) return null;\n        } else {\n          const doc = await document(filename);\n          if (doc && (doc.ids.get(fragment)?.length ?? 0) !== 1) fail(errors, where, `âncora ausente ou duplicada: ${filename}#${fragment}`);\n        }",
+  "limite": "Reconstrução integral: prefixo inalterado + trecho depois + sufixo inalterado. Apenas PDF page=N, sem validação da quantidade de páginas."
+}

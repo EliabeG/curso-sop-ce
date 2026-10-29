@@ -1,0 +1,164 @@
+{
+  "data": "2026-10-27",
+  "autor": "Coordenador automatizado /root",
+  "escopo": "P1/P3: cálculos próprios a partir dos enunciados, antes de ler soluções/código do Corretor. P2: rederivação após receber também resultados preliminares; não cega. Não é aceite do Auditor.",
+  "fonte_dados": "Mensagem do Corretor fixando dados de P1/P3 de FUN-02.",
+  "p1": {
+    "dados": {
+      "n_mol": 1,
+      "R_J_molK": 8.314,
+      "Cv_J_molK": 12.471,
+      "TA_K": 300,
+      "VA_m3": 0.01,
+      "TB_K": 450,
+      "VB_m3": 0.02,
+      "Tmin_K": 250,
+      "Tmax_K": 650
+    },
+    "pA_Pa": 249419.99999999997,
+    "pB_Pa": 187065,
+    "deltaU_J": 1870.65,
+    "rota_isobarica": {
+      "Tinter_K": 600,
+      "W_J": 2494.2,
+      "Q_J": 4364.85,
+      "trechos": [
+        {
+          "deltaU_J": 3741.3,
+          "W_J": 2494.2,
+          "Q_J": 6235.5
+        },
+        {
+          "deltaU_J": -1870.65,
+          "W_J": 0,
+          "Q_J": -1870.65
+        }
+      ]
+    },
+    "rota_isoterma300": {
+      "Tinter_K": 300,
+      "W_J": 1728.8476977526154,
+      "Q_J": 3599.4976977526157
+    },
+    "outra_rota_valida_isoV_mais_isoterma450": {
+      "W_J": 2593.2715466289233,
+      "Q_J": 4463.921546628923
+    },
+    "candidata_isoV_ate_pB": {
+      "Tinter_K": 225,
+      "W_J": 1870.65,
+      "Q_J": 3741.3,
+      "admissivel": false,
+      "motivo": "Temperatura intermediária 225 K inferior ao limite de 250 K."
+    },
+    "ciclo_referencia": {
+      "W_J": 765.3523022473844,
+      "Q_J": 765.3523022473844,
+      "deltaU_J": 0
+    },
+    "seis_combinacoes": [
+      {
+        "ordem": "isobárico pA → isocórico VB",
+        "Tinter_K": 600,
+        "Vinter_m3": 0.02,
+        "W_J": 2494.2,
+        "admissivel": true,
+        "Q_J": 4364.85
+      },
+      {
+        "ordem": "isocórico VA → isobárico pB",
+        "Tinter_K": 225,
+        "Vinter_m3": 0.01,
+        "W_J": 1870.65,
+        "admissivel": false,
+        "Q_J": 3741.3
+      },
+      {
+        "ordem": "isotérmico TA → isocórico VB",
+        "Tinter_K": 300,
+        "Vinter_m3": 0.02,
+        "W_J": 1728.8476977526154,
+        "admissivel": true,
+        "Q_J": 3599.4976977526157
+      },
+      {
+        "ordem": "isocórico VA → isotérmico TB",
+        "Tinter_K": 450,
+        "Vinter_m3": 0.01,
+        "W_J": 2593.2715466289233,
+        "admissivel": true,
+        "Q_J": 4463.921546628923
+      },
+      {
+        "ordem": "isobárico pA → isotérmico TB",
+        "Tinter_K": 450,
+        "Vinter_m3": 0.015,
+        "W_J": 2323.4049376638477,
+        "admissivel": true,
+        "Q_J": 4194.054937663848
+      },
+      {
+        "ordem": "isotérmico TA → isobárico pB",
+        "Tinter_K": 300,
+        "Vinter_m3": 0.013333333333333332,
+        "W_J": 1964.6366251092318,
+        "admissivel": true,
+        "Q_J": 3835.286625109232
+      }
+    ],
+    "observacao_rubrica": "A orientação do ciclo depende das rotas escolhidas: trocar ida/volta troca o sinal de Q e W. Rotas admissíveis alternativas devem receber crédito. As três famílias são monotônicas nos segmentos deste modelo, então a faixa pode ser conferida nos extremos dos trechos."
+  },
+  "p3": {
+    "dados": {
+      "n_mol": 1,
+      "R_J_molK": 8.314,
+      "Cv_J_molK": 12.471,
+      "TA_K": 300,
+      "VA_m3": 0.02,
+      "VB_m3": 0.005,
+      "expoente": 1.5
+    },
+    "pA_Pa": 124709.99999999999,
+    "TB_K": 600,
+    "pB_Pa": 997679.9999999999,
+    "W_J": -4988.4,
+    "deltaU_J": 3741.3,
+    "Q_J": -1247.1,
+    "C_caminho_J_K": -4.157,
+    "deltaS_J_K": -2.881412829587692,
+    "integral_dQrev_sobre_T_J_K": -2.8814128295876924,
+    "exatidao": {
+      "dQ_M": "n Cv",
+      "dQ_N": "n R T/V",
+      "derivada_M_em_V": "0",
+      "derivada_N_em_T": "n R/V",
+      "dQ_sobre_T_M": "n Cv/T",
+      "dQ_sobre_T_N": "n R/V",
+      "derivadas_cruzadas_apos_fator": "0 = 0 em T>0,V>0"
+    }
+  },
+  "p2": {
+    "dados": {
+      "Tref_K": 300,
+      "vref_m3_mol": 0.001,
+      "E0_J_mol": 100
+    },
+    "metodo": "Recebi junto ao modelo os resultados preliminares do autor. Reconstituí o potencial e as integrais por álgebra própria; esta conferência não é cega a esses resultados.",
+    "reconstrucao": "Integrando M em θ: E0(θ lnθ−θ+θ lnν)+g(ν). Ao comparar ∂Φ/∂ν com Nα, g′=E0(ν−1/ν), logo g=E0(ν²/2−lnν)+constante.",
+    "derivadas_cruzadas": {
+      "M_nu": "E0/ν",
+      "Nalpha_theta": "E0/ν",
+      "Nbeta_theta_menos_M_nu": "2 E0 κ (θ−2)/ν"
+    },
+    "ciclos": "Nos dois lados horizontais dν=0. No laço θ1..3, os termos extras dos lados verticais são E0 κ ln2 e −E0 κ ln2, que cancelam. No laço θ1..2, o lado θ2 vale zero e o lado θ1 vale −E0 κ ln2.",
+    "kappa_pelo_laco_menor": 0.2,
+    "laco_maior_beta_J_mol": 0,
+    "laco_menor_beta_J_mol": -13.862943611198906,
+    "parcial_T_em_2_2_J_molK": 0.46209812037329684,
+    "derivada_caminho_nu_theta_em_2_2_J_molK": 1.2954314537066303,
+    "deltaPhi_11_para_22_J_mol": 257.9441541679836,
+    "beta_percurso_horizontal_depois_vertical_11_22_J_mol": 257.9441541679836,
+    "beta_percurso_vertical_depois_horizontal_11_22_J_mol": 271.8070977791825,
+    "limites": "Modelo matemático com unidades, não prova de equação fundamental física nem de estabilidade. A identificação de κ assume a família βκ explicitamente especificada."
+  }
+}

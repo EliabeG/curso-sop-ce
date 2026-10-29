@@ -1,0 +1,2399 @@
+{
+  "versao": 1,
+  "data": "2026-10-27",
+  "escopo": "E1 Termodinâmica",
+  "protocolo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+  "fonte": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md",
+  "correcao_atual": "QA-09",
+  "agentes": {
+    "corretor": "/root/corretor_ban07_r2",
+    "auditor": "/root/auditor_ban07_final",
+    "apoio_auditor_av": "/root/auditor_av_continuacao",
+    "apoio_auditor_av_anterior": "/root/auditor_av",
+    "corretor_anterior": "/root/corretor_aaa"
+  },
+  "itens": [
+    {
+      "id": "GOV-01",
+      "prioridade": "P1",
+      "estado": "aprovado",
+      "rodada": 1,
+      "parecer": "auditoria/termodinamica/pareceres/GOV-01-r1.md",
+      "hashes_aprovados": {
+        "modulos/e1-termodinamica.html": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e"
+      }
+    },
+    {
+      "id": "GOV-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "GOV-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "GOV-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "GOV-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "GOV-06",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FUN-01",
+      "prioridade": "P1",
+      "estado": "aprovado",
+      "rodada": 2,
+      "parecer": "auditoria/termodinamica/pareceres/FUN-01-r2.md",
+      "hashes_aprovados": {
+        "modulos/e1-termodinamica.html": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+        "assets/termodinamica/fun01-dados-v1.json": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+        "assets/termodinamica/fun01-calculos-v1.mjs": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+        "auditoria/termodinamica/inventario/inventario-questoes.json": "4ead2e63ba59077cd89691dfef83e24a58fa58b5c8a4cde1c5420f9e3aad4def",
+        "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "b0223cb896015240284f1027a487308836252942a9503ce3a6eb9d084db0a15c"
+      }
+    },
+    {
+      "id": "FUN-02",
+      "prioridade": "P1",
+      "estado": "aprovado",
+      "rodada": 1,
+      "parecer": "auditoria/termodinamica/pareceres/FUN-02-r1.md",
+      "hashes_aprovados": {
+        "modulos/e1-termodinamica.html": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+        "assets/termodinamica/fun02-dados-v1.json": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+        "assets/termodinamica/fun02-calculos-v1.mjs": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+        "assets/termodinamica/fun02-caminhos-v1.svg": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+        "auditoria/termodinamica/inventario/inventario-questoes.json": "c577058429375c11196eb99ae6bd01a9020f5258d3981d72c58896829ed900a2",
+        "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "c650d94556d527725595dfc86b1feaa055a32a2d9060e9b4680f1a152e11cca4"
+      }
+    },
+    {
+      "id": "FUN-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FUN-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FUN-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FUN-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-07",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-08",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-09",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PROP-10",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENE-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENE-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENE-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENE-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENE-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENE-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENE-07",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENE-08",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENT-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENT-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENT-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENT-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENT-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENT-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ENT-07",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "EXE-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "EXE-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "EXE-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "EXE-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "EXE-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "EXE-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "EXE-07",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-07",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-08",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-09",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-10",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-11",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "CIC-12",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MIX-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MIX-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MIX-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QUI-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QUI-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QUI-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QUI-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QUI-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-07",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-08",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "MOD-09",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-07",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-08",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-09",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "DID-10",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-01",
+      "prioridade": "P0",
+      "estado": "aprovado",
+      "rodada": 2,
+      "parecer": "auditoria/termodinamica/pareceres/BAN-01-r2.md",
+      "hashes_aprovados": {
+        "modulos/e1-termodinamica.html": "a69846fbe1dd1bb8ef3ce3a685ffc2a308d6595a8f95a8637da523e77e231d1d",
+        "assets/registro.js": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+      }
+    },
+    {
+      "id": "BAN-02",
+      "prioridade": "P1",
+      "estado": "aprovado",
+      "rodada": 3,
+      "parecer": "auditoria/termodinamica/pareceres/BAN-02-r3.md",
+      "hashes_aprovados": {
+        "auditoria/termodinamica/inventario/inventario-questoes.json": "0b36157afab94ddb67ed3d0bec1a9984da8f7152f3fb246b5438fa0bc7ac7b58",
+        "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "50bf39f3ae92590099c8aa139c5df822157413e3ee88377a3fbe2150d7ac1046"
+      },
+      "validade_versao_atual": "revalidada_no_alcance_QA09_oficina",
+      "revalidacao_localizada": {
+        "parecer": "auditoria/termodinamica/pareceres/BAN-08-resumo-historico-auditoria-tecnica-r1.md",
+        "sha256": "bfec219bcd010c7d5d4dadc33a78ad5786a4a1f581926be7bae97c66bd027043"
+      },
+      "revalidacao_QA09": {
+        "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-oficina-auditoria-independente-r1.md",
+        "sha256": "376119f7a57af1b7079fc05406e79a2d57d144c44a4a30cf34ec00d585aa0b9e"
+      }
+    },
+    {
+      "id": "BAN-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-07",
+      "prioridade": "P0",
+      "estado": "aprovado",
+      "rodada": 3,
+      "parecer": "auditoria/termodinamica/pareceres/BAN-07-r3.md",
+      "entrega": "auditoria/termodinamica/entregas/BAN-07-r3.md",
+      "apontamentos_a_consolidar": [
+        {
+          "id": "AV04-E",
+          "estado": "confirmado_pelo_auditor_no_escopo_pontual",
+          "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-heranca-fun01-r1.json",
+          "sha256": "9614b1c1abb3837fc81e5dbb6bde9311ce22d5c54b874ce7d4cb8fef099a80b6"
+        },
+        {
+          "id": "AV31-B",
+          "estado": "confirmado_pelo_auditor_principal",
+          "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av31-35-r1.json",
+          "sha256": "a0b0eb55bb1d2e718ebdf8d3c91ca2e723add053d769c2c42b95e30d7099c9f8",
+          "adjudicacao": "auditoria/termodinamica/pareceres/BAN-07-auditor-decisoes-av31-41-observacoes-av23-30-r1.json",
+          "sha256_adjudicacao": "0cf76a7f74941f8f076055d59dd9140af5a40cb599517ab00dcd49d43388fa86"
+        },
+        {
+          "id": "AV41-E",
+          "estado": "ajuste_refutado_pelo_auditor_principal",
+          "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av41-45-r1.json",
+          "sha256": "56a6537e706c72676f7670e5bb3428bf9a0c09874fd916a80db73ca75a58ccbc",
+          "adjudicacao": "auditoria/termodinamica/pareceres/BAN-07-auditor-decisoes-av31-41-observacoes-av23-30-r1.json",
+          "sha256_adjudicacao": "0cf76a7f74941f8f076055d59dd9140af5a40cb599517ab00dcd49d43388fa86"
+        }
+      ],
+      "parecer_sha256": "009adc698bf2f88e28826b389a48e2526660efc9b7cc2ea3b598f0e06026d68b",
+      "entrega_sha256": "cd4ffc56d53f8c0a0ba429e1162c88ec10faead9bed82600a875076b5cdd95c1",
+      "estado_anterior_versao_r3": "aprovado",
+      "revalidacao_localizada": {
+        "parecer": "auditoria/termodinamica/pareceres/BAN-07-revalidacao-av42-av45-av52-r1-independente.md",
+        "sha256": "86e9edc229e31fa2c798ad5ae1b89d595ddf74b080652f9a435c515517380c08",
+        "escopo": "AV42/45/52 na versão aplicada de BAN-08"
+      },
+      "validade_versao_atual": "revalidada_no_alcance_QA09_oficina",
+      "revalidacao_QA09": {
+        "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-oficina-auditoria-independente-r1.md",
+        "sha256": "376119f7a57af1b7079fc05406e79a2d57d144c44a4a30cf34ec00d585aa0b9e"
+      }
+    },
+    {
+      "id": "BAN-08",
+      "prioridade": "P0",
+      "estado": "aprovado",
+      "rodada": 1,
+      "parecer": "auditoria/termodinamica/pareceres/BAN-08-r1.md",
+      "entrega": "auditoria/termodinamica/entregas/BAN-08-entrega-197-corretor-r3.md",
+      "entrega_sha256": "e2263923cdc7244ae032443c5c39a1d1d04e0a3ac9c3f4910e0a7548c50e15a6",
+      "parecer_sha256": "46d1b8dcc67cfe65a07f383f83dd01235d72f337be59c4696968ecee03c3a485",
+      "validade_versao_atual": "revalidada_no_alcance_QA09_oficina",
+      "revalidacao_QA09": {
+        "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-oficina-auditoria-independente-r1.md",
+        "sha256": "376119f7a57af1b7079fc05406e79a2d57d144c44a4a30cf34ec00d585aa0b9e"
+      }
+    },
+    {
+      "id": "BAN-09",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-10",
+      "prioridade": "P0",
+      "estado": "aprovado",
+      "rodada": 2,
+      "parecer": "auditoria/termodinamica/pareceres/BAN-10-r2.md",
+      "hashes_aprovados": {
+        "modulos/e1-termodinamica.html": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+        "assets/curso.js": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "auditoria/termodinamica/inventario/inventario-questoes.json": "8703e30d4dba156b83178a4b60f29f39fbdd6a75917b38b95cab0ffc1545a3d1",
+        "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745"
+      },
+      "estado_anterior_versao_r1": "aprovado",
+      "revalidacao_localizada": {
+        "parecer": "auditoria/termodinamica/pareceres/BAN-07-r3.md",
+        "sha256": "009adc698bf2f88e28826b389a48e2526660efc9b7cc2ea3b598f0e06026d68b",
+        "escopo": "CR06/26/45 na versão BAN-07 r3"
+      }
+    },
+    {
+      "id": "BAN-11",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-12",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-13",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "BAN-14",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PRJ-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PRJ-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PRJ-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PRJ-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PRJ-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PRJ-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PRJ-07",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "PRJ-08",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "AVA-01",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "AVA-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "AVA-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "AVA-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "AVA-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "AVA-06",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "AVA-07",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FOR-01",
+      "prioridade": "P0",
+      "estado": "aprovado",
+      "rodada": 2,
+      "parecer": "auditoria/termodinamica/pareceres/FOR-01-r2.md",
+      "hashes_aprovados": {
+        "formulas/termodinamica.html": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "modulos/e1-termodinamica.html": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+        "auditoria/termodinamica/inventario/inventario-questoes.json": "de401cb3f8c56a52db7da18eab7134584cd5d39912fdc797f86b5cc053bdda04"
+      }
+    },
+    {
+      "id": "FOR-02",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FOR-03",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FOR-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FOR-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FOR-06",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FON-01",
+      "prioridade": "P0",
+      "estado": "aprovado",
+      "rodada": 1,
+      "parecer": "auditoria/termodinamica/pareceres/FON-01-r1.md",
+      "hashes_aprovados": {
+        "modulos/e1-termodinamica.html": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+        "auditoria/termodinamica/inventario/inventario-questoes.json": "0bfd16901421a2135216518b8ff56f062b6c9901e4fb3101e7149a279758e8cb",
+        "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "964e35024daac2e2102f35f80587933225e51a7f8581cb2ab3843f16114c4e18"
+      },
+      "validade_versao_atual": "revalidada_no_alcance_afetado_por_BAN07_r3",
+      "revalidacao_localizada": {
+        "parecer": "auditoria/termodinamica/pareceres/BAN-07-r3.md",
+        "sha256": "009adc698bf2f88e28826b389a48e2526660efc9b7cc2ea3b598f0e06026d68b"
+      }
+    },
+    {
+      "id": "FON-02",
+      "prioridade": "P0",
+      "estado": "aprovado",
+      "rodada": 2,
+      "parecer": "auditoria/termodinamica/pareceres/FON-02-r2.md",
+      "hashes_aprovados": {
+        "modulos/e1-termodinamica.html": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "auditoria/termodinamica/inventario/inventario-questoes.json": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+        "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+        "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r2.json": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1",
+        "auditoria/termodinamica/evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r2.md": "81b610407bc2c04a187878d04013e6d42c93ca517158e5c8c82cca2d7986eda2"
+      },
+      "estado_anterior_versao_r1": "aprovado",
+      "revalidacao_localizada": {
+        "parecer": "auditoria/termodinamica/pareceres/BAN-07-r3.md",
+        "sha256": "009adc698bf2f88e28826b389a48e2526660efc9b7cc2ea3b598f0e06026d68b",
+        "escopo": "CR06/26/45 na versão BAN-07 r3"
+      }
+    },
+    {
+      "id": "FON-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FON-04",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FON-05",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FON-06",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FON-07",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FON-08",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "FON-09",
+      "prioridade": "P0",
+      "estado": "aprovado",
+      "rodada": 2,
+      "parecer": "auditoria/termodinamica/pareceres/FON-09-r2.md",
+      "hashes_aprovados": {
+        "modulos/e1-termodinamica.html": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+        "assets/termodinamica/fon09-cr68-dados-v1.json": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+        "auditoria/termodinamica/inventario/inventario-questoes.json": "af30160109fa7e9e007e6de74eb1836896194ff90888aec75e0f8a4a86675618",
+        "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "1505e80c437fdd6dbbea40973155446ec859ba2fb363752217346876a8fb43db",
+        "auditoria/termodinamica/inventario/validar-inventario.mjs": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5"
+      }
+    },
+    {
+      "id": "FON-10",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-01",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-02",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-03",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-04",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-05",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-06",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-07",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-08",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-09",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-10",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-11",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "UX-12",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-01",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-02",
+      "prioridade": "P0",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-03",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-04",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-05",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-06",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-07",
+      "prioridade": "P2",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-08",
+      "prioridade": "P1",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "QA-09",
+      "prioridade": "P0",
+      "estado": "em_correcao",
+      "rodada": 1,
+      "parecer": null
+    },
+    {
+      "id": "ESP-01",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-02",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-03",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-04",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-05",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-06",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-07",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-08",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-09",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ESP-10",
+      "prioridade": "E",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-01",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-02",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-03",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-04",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-05",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-06",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-07",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-08",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-09",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    },
+    {
+      "id": "ACE-10",
+      "prioridade": "",
+      "estado": "pendente",
+      "rodada": 0,
+      "parecer": null
+    }
+  ],
+  "historico": [
+    {
+      "evento": "protocolo_criado",
+      "id": "BAN-01",
+      "descricao": "Correções sequenciais com aprovação obrigatória do Auditor antes de cada próximo ID."
+    },
+    {
+      "evento": "auditoria_preparada",
+      "id": "BAN-01",
+      "descricao": "Auditor leu os 30 itens e identificou dependência de sincronização do registro E1. Próximo ID bloqueado até parecer final."
+    },
+    {
+      "evento": "entrega",
+      "id": "BAN-01",
+      "rodada": 1,
+      "arquivo": "auditoria/termodinamica/entregas/BAN-01-r1.md",
+      "descricao": "Entrega congelada para auditoria independente. Nenhum próximo ID liberado."
+    },
+    {
+      "evento": "reprovado_para_ajustes",
+      "id": "BAN-01",
+      "rodada": 1,
+      "parecer": "auditoria/termodinamica/pareceres/BAN-01-r1.md",
+      "descricao": "Q10 exige regime permanente explícito; Q12 exige magnitude positiva do trabalho de entrada. Corretor reativado para r2; próximo ID bloqueado."
+    },
+    {
+      "evento": "reapresentacao",
+      "id": "BAN-01",
+      "rodada": 2,
+      "arquivo": "auditoria/termodinamica/entregas/BAN-01-r2.md",
+      "descricao": "Dois enunciados esclarecidos; versões original e r1 preservadas. Auditor reativado; próximo ID bloqueado."
+    },
+    {
+      "evento": "aprovacao",
+      "id": "BAN-01",
+      "rodada": 2,
+      "parecer": "auditoria/termodinamica/pareceres/BAN-01-r2.md",
+      "descricao": "Aceite integral do Auditor; hashes confirmados pelo coordenador. Primeira correção concluída; GOV-01 é o próximo ID da fila."
+    },
+    {
+      "evento": "liberacao",
+      "id": "GOV-01",
+      "rodada": 1,
+      "descricao": "Usuário autorizou ativação e início da transformação. Corretor e Auditor reativados. Demais IDs bloqueados até parecer."
+    },
+    {
+      "evento": "entrega",
+      "id": "GOV-01",
+      "rodada": 1,
+      "arquivo": "auditoria/termodinamica/entregas/GOV-01-r1.md",
+      "descricao": "Auditor reativado para examinar promessa e capacidades atuais; nenhum próximo ID liberado."
+    },
+    {
+      "evento": "aceite_e_liberacao",
+      "id": "GOV-01",
+      "descricao": "GOV-01 r1 aprovado pelo Auditor; hash confirmado pelo coordenador e BAN-01 preservado. Liberado exclusivamente BAN-02 r1, inventário individual dos itens."
+    },
+    {
+      "evento": "retomada_apos_falha_de_conexao",
+      "id": "BAN-02",
+      "descricao": "Os dois agentes foram reativados após falha de conexão durante compactação. Fontes, classificações parciais e anotações independentes foram preservadas; nenhum aceite foi presumido e a rodada1 continua."
+    },
+    {
+      "evento": "entrega_congelada",
+      "id": "BAN-02",
+      "descricao": "Entrega r1 com190 registros e registro canônico SHA740792085cfede3b91131187ebf40ce614b943e296991e05af5d601498ca287f enviada ao Auditor. Corretor parado no gate."
+    },
+    {
+      "evento": "rejeicao_r1",
+      "id": "BAN-02",
+      "descricao": "Auditor registrou AJUSTES_OBRIGATORIOS em evidências r1, com quatro grupos R1-A..D. Liberada exclusivamente reapresentação r2 do mesmo ID; pacote-r1 imutável e nenhum próximo ID liberado. Parecer MD em conclusão."
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "BAN-02 r2 entregue e congelada para auditoria independente. Quatro achados respondidos, 80 pré-requisitos AV revistos; próximo ID permanece bloqueado.",
+      "entrega": "auditoria/termodinamica/entregas/BAN-02-r2.md",
+      "sha256": "d17e2fcf73f2dbbe72005fb70ee6b36d1cad60ef90a1618abaf080d8bfd79507"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "BAN-02 r2 rejeitada por R2-A: pré-requisito de validade física ausente em AV20. Liberada r3 exclusivamente para esse ajuste e evidências derivadas; demais 79 listas aceitas.",
+      "parecer": "auditoria/termodinamica/pareceres/BAN-02-r2.md"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "BAN-02 r3 entregue; alteração restrita ao pré-requisito físico de AV20. Aguardando parecer independente.",
+      "entrega": "auditoria/termodinamica/entregas/BAN-02-r3.md",
+      "sha256": "0b36157afab94ddb67ed3d0bec1a9984da8f7152f3fb246b5438fa0bc7ac7b58"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "BAN-02 r3 APROVADO com hash conferido. FUN-01 liberado: nova unidade independente com fontes e problemas próprios, sem reutilizar CR ambíguos ou tabela CR68. Preflight do Auditor confirmou ausência de dependência impeditiva; BAN-10/FON-09 e GOV-02 permanecem abertos.",
+      "parecer": "auditoria/termodinamica/pareceres/BAN-02-r3.md"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FUN-01 r1 entregue e congelada: nova unidade completa, quatro problemas abertos, cálculos e rubricas; inventário 194 itens. Aguardando auditoria independente.",
+      "entrega": "auditoria/termodinamica/entregas/FUN-01-r1.md",
+      "sha256_html": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FUN-01 r1 com AJUSTES_OBRIGATORIOS apenas em R1-A: dois títulos desatualizados no inventário. Liberada r2 restrita à sincronização documental e evidências derivadas; aula, dados e cálculos preservados.",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-01-r1.md"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FUN-01 r2 entregue e congelada: dois títulos sincronizados; nenhum arquivo da aula/dados/código alterado. Aguardando reauditoria restrita.",
+      "entrega": "auditoria/termodinamica/entregas/FUN-01-r2.md",
+      "sha256_inventario": "4ead2e63ba59077cd89691dfef83e24a58fa58b5c8a4cde1c5420f9e3aad4def"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FUN-01 r2 APROVADO pelo Auditor, hashes e cópias confirmados pelo coordenador. Liberado exclusivamente FUN-02 r1: diferenciais e caminhos, com material próprio. Preflight independente não identificou dependência impeditiva dos P0 legados; qualquer reutilização afetada exige tratá-los antes.",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-01-r2.md"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "Retomada de FUN-02 r1 após interrupção. Corretor e apoio reativados; materiais salvos preservados e nenhum aceite presumido."
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FUN-02 r1 entregue e congelada: unidade4.1, três problemas abertos/rubricas, figura e reprodução. Seis arquivos/cópias e hashes confirmados pelo coordenador; aguardando Auditor, sem próximo ID liberado.",
+      "entrega": "auditoria/termodinamica/entregas/FUN-02-r1.md",
+      "sha256_html": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FUN-02 r1 APROVADO pelo Auditor; seis hashes reconferidos. Liberado exclusivamente FON-09, P0 dos dados de apoio associados a CR68. Preflight independente confirma recorte isolado possível; BAN10/FON01 mais amplos continuam abertos.",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-02-r1.md"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FON-09 r1 entregue e congelada: dados corrigidos de CR68, origem documental e ajuste restrito do validador PDF. Coordenador confirmou31 arquivos/evidências e cinco cópias do pacote; aguardando parecer independente, próximo ID bloqueado.",
+      "entrega": "auditoria/termodinamica/entregas/FON-09-r1.md",
+      "sha256_html": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FON-09 r1 AJUSTES_OBRIGATORIOS por R1-A: parser aceita fragmentoPDF adicional após segundo #. Ciência/proveniência e demais critérios atendidos. Liberada r2 exclusivamente para parser, testes e documentos de integridade; pacote r1 preservado e próximoID bloqueado.",
+      "parecer": "auditoria/termodinamica/pareceres/FON-09-r1.md",
+      "sha256_parecer": "966b6509603883844cb10b5f71cd43a48c0a99ad7fe4d88cef3290352ab4d02b"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FON-09 r2 entregue e congelada: único delta de parser confirmado; quatro arquivos de conteúdo idênticos.12 hashes/evidências e cinco cópias conferidos pelo coordenador; aguardando reauditoria restrita deR1-A.",
+      "entrega": "auditoria/termodinamica/entregas/FON-09-r2.md",
+      "sha256_validador": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "FON-09 r2 APROVADO após correção R1-A e reauditoria independente; cinco hashes reconferidos pelo coordenador. Liberado exclusivamente BAN-10 r1, P0 de ambiguidades e gabarito oficial, incluindo busca dos demais casos. Parecer de dependência não identificou impedimento para o recorte; FON01/BAN08 gerais permanecem abertos.",
+      "parecer": "auditoria/termodinamica/pareceres/FON-09-r2.md",
+      "sha256_parecer": "efc7142890a7758e8e29cf31cda96e62b641a215d565f1a30c7d90669a84aa60"
+    },
+    {
+      "data": "2026-10-27",
+      "evento": "BAN-10 r1 entregue e congelada: 197 itens triados, 12 decisões, nove estudos críticos fora da pontuação. Coordenador conferiu 77 hashes e nove cópias; aguardando parecer independente. Nenhum próximo ID liberado.",
+      "entrega": "auditoria/termodinamica/entregas/BAN-10-r1.md",
+      "sha256_manifesto": "1fd879c048b08565e901055281545f44f65a39f21ca87b3901f0e8263077f7f7"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "BAN-10 r1 AJUSTES_OBRIGATORIOS, único R1-A em CR34: distinguir igualdade ΔU=Q e sinal ΔU>0, com justificativa cientificamente válida. Liberada r2 apenas para esse ponto e derivados; r1 imutável. Nenhum próximo ID liberado.",
+      "parecer": "auditoria/termodinamica/pareceres/BAN-10-r1.md",
+      "sha256_parecer": "25967ed12ac7ac162dd8180450d36e34cc51b64298fbb72bc60aa50b3f49dbc5"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "BAN-10 r2 entregue e congelada: único delta CR34 e derivados para R1-A; 26 hashes e nove cópias conferidos pelo coordenador. JS e marcadores intactos, 71/9 mantidos; aguardando reauditoria restrita, sem próximo ID liberado.",
+      "entrega": "auditoria/termodinamica/entregas/BAN-10-r2.md",
+      "sha256_manifesto": "9e7acb7fc3b6a3a8870aa7822d3ad97b947b93770dc4ccdc325cf10759b2dc95"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "BAN-10 r2 APROVADO pelo Auditor após atendimento integral R1-A; quatro hashes do produto reconferidos pelo coordenador. 197 itens triados, 12 decisões, nove estudos guiados/documentais fora da pontuação. Sem aceite global do curso; próximo ID ainda em seleção.",
+      "parecer": "auditoria/termodinamica/pareceres/BAN-10-r2.md",
+      "sha256_parecer": "f07e4534b4a4c42df78d771d0857cfc1399d3d4330a743297474ef9d69a47d9b"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Liberado exclusivamente FOR-01 r1 após aceite BAN-10 r2: auditoria individual das 100 fichas existentes, P0 de expressões, símbolos, unidades, hipóteses e ligação à aula. Priorizar correção do material existente antes de utilizá-lo no núcleo avançado; Corretor fará diagnóstico/plano e Auditor verificará dependências. Demais IDs bloqueados."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FOR-01 r1: plano e diagnóstico01–50 lidos; autorizados ajustes nas fichas e esclarecimentos mínimos nos alvos já existentes estritamente necessários ao critério de ligação à aula. Nenhum outro ID iniciado. Auditor reativado após falha de conexão na compactação; leituras/evidências preservadas e aceite independente continua obrigatório."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FOR-01 r1 entregue e congelada após preflight independente sem dependência impeditiva. 100 fichas lidas, 61 ajustadas, 39 intactas; 14 alvos existentes esclarecidos. Coordenador confirmou 45 hashes e nove cópias, 100 MathML e 197 artigos preservados; aguardando Auditor, próximo ID bloqueado.",
+      "entrega": "auditoria/termodinamica/entregas/FOR-01-r1.md",
+      "sha256_manifesto": "b8beebf1ee084ce8387f79c104194b44932e9af656889bcddadae94343ce2f5b",
+      "preparacao": "auditoria/termodinamica/pareceres/FOR-01-preparacao.md"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FOR-01 r1 AJUSTES_OBRIGATORIOS, único grupo R1-A: excluir todo trabalho não associado ao escoamento, inclusive elétrico, antes das reduções q=Δh ou hentrada≈hsaída. Liberada r2 somente nas fichas 23/46/79/84, três alvos existentes e derivados. 96 outras fichas, 191 MathML, 197 artigos/registros e infraestrutura devem permanecer intactos. Terminologia documental corrigida para 100 fichas / 191 elementos MathML; r1 imutável. Próximo ID bloqueado.",
+      "parecer": "auditoria/termodinamica/pareceres/FOR-01-r1.md",
+      "sha256_parecer": "363575e3c97b729560bce956a90902bdf2934f32025c6826a279be96a1d1519f"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FOR-01 r2 entregue e congelada: quatro condições/buscas e três alvos corrigem R1-A; coordenador confirmou23 entradas e nove cópias do manifesto, somente quatro fichas alteradas,191MathML/197artigos preservados e três substituições da aula integralmente reproduzidas. Busca e três links conferidos em navegador. Aguardando reauditoria restrita; próximo ID bloqueado.",
+      "entrega": "auditoria/termodinamica/entregas/FOR-01-r2.md",
+      "sha256_manifesto": "e45ac6743e82eccbb6fe30f33d64b6b23eec67574141f961cdabc77eafa72a04"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FOR-01 r2 APROVADO pelo Auditor após atendimento integral R1-A, parecer e três hashes correntes reconferidos. Revisão individual das100fichas aceita;191elementosMathML preservados. Sem classificação global do curso.",
+      "parecer": "auditoria/termodinamica/pareceres/FOR-01-r2.md",
+      "sha256_parecer": "14b2d2704d1d7e8e23ae92f019f5b734be868dc1d0961595c8a61d2d231887b3"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Liberado exclusivamente FON-01 r1: comparar individualmente as80questões oficiais com provas e gabaritos definitivos, identificação, página, cargo/tipo, data e retificações/anulações. Prioridade P0 de rastreabilidade antes da auditoria integral de enunciados e cálculos. FON-09/BAN-10 já aceitos fornecem verificações parciais reutilizáveis por identidade, sem presumir os80aceitos. Diagnóstico/plano e preflight independente antes de alterações materiais. OutrosIDs bloqueados."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-01 r1 em execução após preflight independente sem dependência curricular impeditiva. Leitura dividida40+40porfamílias, sem aceite presumido. Root confirmou24novosdownloads oficiais idênticos ao catálogo/local e paginações viaWinRT; pesquisa de atos e comparação efetiva continuam obrigatórias.",
+      "preparacao": "auditoria/termodinamica/pareceres/FON-01-preparacao.md",
+      "sha256_preparacao": "b42b7850003c2b838d064ef51d4864b7531dc28b1a7ba92e2d27904ddc13f183"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-01 r1 entregue e congelada: 80 comparações documentais, atos pertinentes e referências CAESB sincronizadas na questão e catálogo. Coordenador confirmou108 arquivos,10cópias e61hashes dos dois pacotes de fontes; três substituições reconstroem integralmente o HTML,196artigos eMathML preservados. Aguardando parecer independente; próximoID bloqueado.",
+      "entrega": "auditoria/termodinamica/entregas/FON-01-r1.md",
+      "sha256_entrega": "922845ea192373538665bc8e4dac608c7409a473954602b323102e0a834b4612",
+      "sha256_manifesto": "91684a6c5dcb945ff9c8841cb6cc02ca82b50c7eb285a2a2b18863eb413dc628"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-01 r1 APROVADO pelo Auditor, sem ajustes obrigatórios; parecer e três hashes de produto reconferidos.80 confrontos documentais, versões/atos e referências CAESB aceitos. Sem aceite científico global ou classificação avançada.",
+      "parecer": "auditoria/termodinamica/pareceres/FON-01-r1.md",
+      "sha256_parecer": "997313ef9d2e2137fe0ada9a028699ef29e536f75202780afbca961c0d39bf22"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Liberado exclusivamente FON-02 r1, P0 de rastreabilidade dos dados suplementares. Examinar todos os80CR e identificar constantes, propriedades e hipóteses que não constam do original, separando suplemento e comentário autoral da transcrição. Reutilizar confronto FON-01 por identidade; não alterar enunciados/chaves oficiais nem ampliar ciência para BAN07/BAN08. Corretor entrega diagnóstico/plano e Auditor preflight antes das alterações materiais. DemaisIDs bloqueados."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-02 r1 em execução após preflight independente sem dependência impeditiva. O exame cobre os 80 artigos completos, distinguindo dado original, valor derivado, convenção, relação de modelo, hipótese e exemplo autoral. Correções ficam restritas à separação, justificação e derivados pertinentes; produto oficial e aceites anteriores devem ser preservados.",
+      "preparacao": "auditoria/termodinamica/pareceres/FON-02-preparacao.md",
+      "sha256_preparacao": "7cab755bb6482d5eb02afb53ead5efe3a6cb8106b90074ccfe0705a53aa0fd5d"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-02 r1: diagnóstico integral dos 80 e plano lidos antes da edição material; fronteira confirmada pelo coordenador. Esclarecimentos de conteúdo restritos a CR06/16/17/24/26/27/28/29/30/33/36/37/40/42/44/45/50/57/65/79/80 e identificação autoral nos 71 resumos genéricos; nove resumos críticos e componentes oficiais preservados. Sem alteração prevista de JS, CSS, formulário ou outros módulos. Auditor realiza leitura independente da base, sem aceite antecipado.",
+      "plano": "auditoria/termodinamica/evidencias/FON-02/PLANO_DIAGNOSTICO-r1.md",
+      "sha256_plano": "33c0775e12ffb30696d115814dc9917980f7a94e8b91a420bb2d65d61f6a6a94",
+      "sha256_diagnostico": "798b6b603bd2e74a242ca1e52cf05d82f77625de1b6ce3a9f7d7c8711a1f2476"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-02 r1 entregue e congelada: 80 registros, 21 esclarecimentos locais e 71 resumos de autoria. Coordenador confirmou 55 arquivos, nove cópias finais e dois vínculos de herança FON-01. Delta integral reproduzido, 160 conjuntos de resposta e 734 MathML preservados; cinco resoluções verificadas em navegador, duas capturas salvas. Aguardando parecer independente; próximo ID bloqueado.",
+      "entrega": "auditoria/termodinamica/entregas/FON-02-r1.md",
+      "sha256_entrega": "9d5936596e2ada28e8e337bcf4c8084c2d361a2654cea92f886644f2268142de",
+      "sha256_manifesto": "25c420ff6f7650c982c402b3715c623ca7e68866f72e26bbbf0565fc6e065224"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-02 r1 AJUSTES_OBRIGATORIOS, único R1-A documental: reconstruir os 80 arrays de fontes antecedentes com 158 ocorrências, texto/href/ordem fiéis. Liberada r2 somente na matriz e derivados necessários, com verificação integral independente. Ciência dos suplementos, conteúdo HTML, inventário, resumo, fontes novas e navegador herdáveis por identidade. R1 imutável; observação O1 de hashes espaçados deve ser corrigida na nova entrega. Próximo ID permanece bloqueado.",
+      "parecer": "auditoria/termodinamica/pareceres/FON-02-r1.md",
+      "sha256_parecer": "6adee65b34459934c0c037bae3d9df0adfc8e8a69ba0f35ccbd1d52a878f03bf"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-02 r2 entregue e congelada para R1-A. Coordenador confirmou 19 entradas e cinco cópias finais, todos os 55 arquivos e nove cópias da r1 preservados. Confronto próprio dos 80 arrays e 158 ocorrências sem divergência; restante da matriz e três produtos idênticos. Aguardando reauditoria documental; próximo ID bloqueado.",
+      "entrega": "auditoria/termodinamica/entregas/FON-02-r2.md",
+      "sha256_entrega": "8b08a9e53b9478961484e33bd44a3d52ef66626ee08f8cc0013ad24ab1e8f256",
+      "sha256_manifesto": "da44635be39e5fac7151fac8f6975c0b42b70de8ad3ce15f3559c8b6de48391d"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "FON-02 r2 APROVADO após atendimento integral R1-A. Parecer e cinco hashes reconferidos pelo coordenador; 80 listas e 158 vínculos aceitos, com produto científico r1 preservado. Sem classificação global do curso.",
+      "parecer": "auditoria/termodinamica/pareceres/FON-02-r2.md",
+      "sha256_parecer": "569a99f0108696d845b08b5329628e51283c38b079bcbe7a533a9a57e15d08b4"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Liberado exclusivamente BAN-07 r1, P0 de enunciados, suficiência/consistência e alternativas. Conferir os 197 itens atuais do inventário, com demonstração do gabarito e justificativa de cada distrator aplicável, inclusive equivalências após arredondamento. Reaproveitar material já aprovado somente por identidade e alcance; estudos críticos documentais fora da pontuação exigem tratamento explícito, preservando fontes/chaves oficiais. FON-01/FON-02/FON-09/BAN-10 saneiam dependências documentais e críticas antes deste exame mais amplo. Corretor apresenta diagnóstico/plano e Auditor preflight antes de edição material. BAN-08 e demais IDs continuam bloqueados."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Retomada no chat01a1837f-d939-70e1-90fa-b60fc39348ce após falha do chatTERMODINÂMICA. Mandato humano recuperado: escopo exclusivoE1, Corretor/Auditor independentes e gate porID. BaseBAN-07 reconferida sem mudança de produto. Diagnósticos167 recuperados e30Q concluídos pelo coordenador; plano integrado197 precederá edição material. DemaisIDs continuam bloqueados.",
+      "diagnostico_coordenador": "auditoria/termodinamica/evidencias/BAN-07/diagnostico-30-q-coordenador-r1.json",
+      "sha256_diagnostico_coordenador": "cfc928ba696a27e22d6a711827fa61c438f0345bd8a447301133170811133644",
+      "baseline": "auditoria/termodinamica/evidencias/BAN-07/baseline-retomada-coordenador-r1.json"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "BAN-07 r1: diagnóstico integral de 197 itens e plano lidos; fronteira confirmada pelo coordenador após preflight independente sem dependência adicional. Liberadas mudanças em 25 artigos (10 Q e 15 AV), com 20 novas digitais e cinco ajustes somente de comentário. Cinco arquivos de produto permitidos conforme plano; preservação de CR/abertos, chaves, MathML, demais módulos e tentativas antigas. Auditor decide apenas sobre a versão final congelada; demais IDs bloqueados.",
+      "plano": "auditoria/termodinamica/evidencias/BAN-07/PLANO_DIAGNOSTICO-r1.md",
+      "sha256_plano": "e7179ac5dc885aa7aedf926aa884a89a2e3cd32f9d0c71178fc651fedf464552",
+      "diagnostico": "auditoria/termodinamica/evidencias/BAN-07/diagnostico-197-integrado-r1.json",
+      "sha256_diagnostico": "f7220fa6aa029f241f68df26a4117968099bd9c61e95866926a46fcc788f3354"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Duas falhas de transporte interromperam o Auditor antes de persistir a complementação de BAN-07. Papel reiniciado como /root/auditor_aaa_retomada com contexto reduzido. Reutilização limitada às provas efetivamente salvas e conferidas; leitura restante será refeita e persistida. Nenhum aceite ou avanço de ID."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "BAN-07 r1 entregue e congelada. Coordenador reconferiu 75 arquivos e nove cópias finais, sem divergência, e hashes da entrega/manifesto. 25 artigos corrigidos, 20 novas digitais, chaves preservadas. Apoios técnicos e teste real de navegador antes/depois incluídos com atribuição. Aguardando parecer independente por blocos persistidos devido a falhas de transporte; próximo ID bloqueado.",
+      "entrega": "auditoria/termodinamica/entregas/BAN-07-r1.md",
+      "sha256_entrega": "9dfa2059b10be96615bbdc0c42d596c756910bbbd2791636ad061870dd96a893",
+      "manifesto": "auditoria/termodinamica/evidencias/BAN-07/manifesto-r1.json",
+      "sha256_manifesto": "66c5f42489cf3c5903782d22a4777b72e111f4a239686e345088380b218745e8"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Checkpoint após quatro falhas de transporte do Auditor. Produto BAN-07 r1 e testes concluídos/preservados; aceite independente permanece pendente. Preparação reconferida cobre 80 itens; 117 ainda pendentes. Próximo ID continua bloqueado; nenhuma execução de auditoria foi declarada concluída sem registro."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Usuário determinou continuidade até avançado real. Meta contínua registrada no aplicativo. Retomada do aceite BAN-07 em blocos científicos menores e persistidos para resistir às falhas de transporte. Não há aceite ou mudança de classificação nesta ativação."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Recuperação da auditoria progrediu: CR51–55 revisados independentemente em turno curto, cinco itens/dez juízos C/E, sem ajuste obrigatório. Bloco e HTML congelado reconferidos. Auditor atual /root/auditor_ban07. BAN-07 permanece aguardando_auditoria.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr51-55-r1.json",
+      "sha256": "6a45b4ae8cacca1901ab3ddd834a4fbba15210cf5d50692e5783cda74b5a1bf5"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "CR56–60 concluídos pelo Auditor independente, cinco itens/dez juízos C/E, sem ajustes obrigatórios. CR57 aceita sob o modelo ideal disponível na base anterior à tentativa; limites e contramodelo real documentados. BAN-07 segue aguardando_auditoria, sem avanço de outro ID.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr56-60-r1.json",
+      "sha256": "dbc17613d4daeff8252603d5ae64e78272272f9c1a4f572e593c11485deae494"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "CR61–65 concluídos independentemente: cinco registros/dez juízos, incluindo CR62 como estudo crítico fora da nota. Nenhum ajuste obrigatório novo; CR65 teve domínio adiabático delimitado. Bloco e versão congelada reconferidos; BAN-07 global permanece pendente.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr61-65-r1.json",
+      "sha256": "b65a558d0fb28ed90d9bfda00b3a57ed52014d882dd58c56f2920b5d184ebd14"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "CR66–70 concluídos independentemente: cinco itens/dez juízos C/E, sem novos impedimentos. CR68 distingue demonstração de emissividade, dados históricos e conjunto FON-09 por identidade conferida. Bloco e versão congelada preservados; nenhum avanço de ID.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr66-70-r1.json",
+      "sha256": "8edaf1edf5e065fe9b7677b8cd26b48a466f29d25623c317029ff26a8cfe08f6"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Apoio científico independente /root/auditor_av ativado para o banco AV em blocos persistidos, no mesmo ID BAN-07. Auditor principal /root/auditor_ban07 permanece responsável pelo exame integral e parecer final, com distinção de autoria e alcance das evidências. Nenhuma implementação ou revisão de outro ID."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "CR71–75 concluídos pelo Auditor independente: cinco itens e dez juízos C/E, sem ajustes obrigatórios. Evidência persistida e hash conferido; BAN-07 continua aguardando_auditoria, sem avanço de ID.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr71-75-r1.json",
+      "sha256": "7a2febaae888460c4798ba01f089c35fa3df5c51a295fe884bb2302842d065f6"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Apoio independente concluiu AV01–05: cinco itens e 25 alternativas. Quatro aprovados no alcance; AV04E recebeu ajuste obrigatório por plausibilidade insuficiente, sujeito à decisão do Auditor principal. R1 permanece congelada para consolidar a revisão integral. Próximo ID bloqueado.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av01-05-r1.json",
+      "sha256": "213a688f21a8ebdf0933c978cd374190ad496418903eca93c2bd9bc018ac7d59"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "CR76–80 concluídos pelo Auditor independente: cinco registros e 19 juízos de opções, incluindo CR79/80 críticos fora da nota. Sem novo ajuste obrigatório. Todos os CR51–80 agora possuem revisão incremental persistida; BAN-07 global permanece pendente.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr76-80-r1.json",
+      "sha256": "c8af8d1c19f4a2fab42bf9164939305380025990553665c3dbe44124f8ff4848"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Apoio independente concluiu AV06–10, cinco itens e 25 alternativas, sem ajuste obrigatório. Deltas de AV08/10 examinados. AV04E permanece pendente de decisão do Auditor principal; BAN-07 continua aberto.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av06-10-r1.json",
+      "sha256": "f9871fce521b27846f99ec35c94888b6297b953dfa7312193914e9d27b95d17f"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Coordenador confirmou identidade dos sete abertos com os pacotes FUN-01 r2/FUN-02 r1: duas unidades completas, sete artigos e cinco recursos, 14 conferências sem divergência. Pareceres anteriores indexados por hash e alcance lido. Decisão de herança científica permanece do Auditor principal; não é nova resolução nem aceite BAN-07.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-07/heranca-abertos-coordenador-r1.json",
+      "sha256": "20a6ab1b1ee4feed968f5cf54a799257f40a4f4ab0edb8f8fa6c9c296b6b76f6"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV11–15 concluídos pelo apoio independente: cinco itens e 25 alternativas, sem ajustes obrigatórios. Hash reconferido; apoio segue AV16–20 no mesmo ID. BAN-07 permanece aguardando_auditoria.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av11-15-r1.json",
+      "sha256": "434f6b310613e19f62b85ed1f1207d6c50c04873610ed6bd2fd49969435eb7b5"
+    },
+    {
+      "data": "2026-10-28",
+      "marcador": "ressalvas_preparacao_oito_q",
+      "evento": "Conferência de alcance identificou oito Q inalterados com pontos_a_verificar ainda a decidir na preparação independente: Q04/08/11/12/17/22/23/27. Índice de cobertura agora expõe essas ressalvas; identidade do artigo não foi tomada como aceite. Auditor principal notificado para decisão explícita."
+    },
+    {
+      "data": "2026-10-28",
+      "marcador": "ressalvas_textuais_cr17_cr27",
+      "evento": "Conferência adicional de alcance identificou notas preliminares textuais em CR17 (suficiência/base de comparação) e CR27 (modelo convencional), fora do campo estruturado contado no índice. Auditor principal notificado para examinar todos os campos da preparação e decidir essas notas; não se afirmou erro nem aceite."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Q02/09/13/15/16 atuais concluídos pelo Auditor principal: cinco artigos e 25 opções, sem ajustes obrigatórios. Figura de Q09 e deltas por componente conferidos. Cobertura herdada não foi confundida com leitura de versão nova; prossegue o confronto dos cinco Q restantes.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-q02-09-13-15-16-r1.json",
+      "sha256": "b8826c3b766feabba75f4b205c11c55d3cabbfcb6673388aaa2fb745c2d1a1c3"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV16–20 concluídos pelo apoio independente: cinco itens e 25 alternativas, sem ajuste obrigatório. Comentários/deltas AV17/18 confrontados. Bloco e versão preservados. Apoio segue AV21–25; BAN-07 global continua pendente.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av16-20-r1.json",
+      "sha256": "530b0b795da338cae450e142a652b8c4b3c4c056516e0abe3c547aedc9cfa6eb"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV21–25 concluídos pelo apoio independente: cinco itens e 25 alternativas, sem ajustes obrigatórios no bloco. AV23 recebeu observação sobre texto alternativo da figura; Auditor principal deve examinar alcance e encaminhamento. Nenhuma aprovação global ou mudança em outro ID.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av21-25-r1.json",
+      "sha256": "1c3667b498bc3562ab0b6c00b3e876847d56deacabd0fa4340a3e66c14abb54a"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Q18/19/24/26/28 atuais concluídos pelo Auditor principal: cinco artigos e 25 alternativas, sem novos ajustes. Deltas e quatro ressalvas antecedentes confrontados com atribuição. Os dez Q modificados possuem agora revisão da versão atual. Segue exame de herança FUN-01 e decisão AV04.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-q18-19-24-26-28-r1.json",
+      "sha256": "be6bfad6feb27fecafe0f4d504e5baa47320cc613e33dfc50694237009317660"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Recuperação de transporte encerrada como impedimento atual: Auditor principal e apoio estão ativos e persistindo novos blocos. As falhas anteriores permanecem no histórico. O exame científico normal e os ajustes conhecidos continuam em BAN-07; nenhum ID foi liberado."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV26–30 concluídos pelo apoio independente: cinco itens e 25 alternativas, sem ajustes obrigatórios de BAN-07. AV30 recebeu observação de equivalência do texto alternativo. Apoio segue AV31–35; próximo ID continua bloqueado.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av26-30-r1.json",
+      "sha256": "97431c365fa7152fafe95eed92e8476ee9b38e9f3194e09fd36e74175a5b7e53"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Auditor /root/auditor_ban07 terminou com erro de compactação/transporte. Quatro registros FUN-01 persistidos foram copiados e identificados por hash; decisão AV04 ausente. Substituído por /root/auditor_ban07_final com contexto novo e tarefa de um item. Apoio AV permanece ativo; sem aceite global ou próximo ID.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-07/retomada-auditor-final-r1.json",
+      "sha256_parcial": "9614b1c1abb3837fc81e5dbb6bde9311ce22d5c54b874ce7d4cb8fef099a80b6"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "RETIFICAÇÃO da retomada: a leitura após o erro confirmou parecer de bloco COMPLETO, não parcial sem decisão. Quatro heranças FUN-01 foram aceitas e AV04-E teve ajuste confirmado por /root/auditor_ban07 antes da falha. Cópia salva já contém essa decisão. Novo Auditor informado para atribuição/confronto pontual; nenhum aceite global ou edição de produto.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-heranca-fun01-r1.json",
+      "sha256": "9614b1c1abb3837fc81e5dbb6bde9311ce22d5c54b874ce7d4cb8fef099a80b6"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV31–35 concluídos pelo apoio: cinco itens e 25 alternativas. AV31-B requer substituição por erro plausível e comentário coerente, mantendo E; AV32–35 sem bloqueio local, deltas AV33/35 conferidos. Apontamento AV31 pendente de adjudicação pelo Auditor principal.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av31-35-r1.json",
+      "sha256": "a0b0eb55bb1d2e718ebdf8d3c91ca2e723add053d769c2c42b95e30d7099c9f8"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Novo Auditor /root/auditor_ban07_final terminou com erro de transporte. Conferência posterior constatou ausência de seu arquivo de confronto AV04, enquanto a decisão anterior completa permanece preservada. Mesmo agente retomado em tarefa de gravação pontual com prova/atribuição já identificadas. Apoio AV36–40 continua ativo; objetivo e BAN-07 não foram encerrados."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Novo Auditor recuperou execução e gravou confronto pontual AV04, confirmando ajuste E e atribuindo revisões anteriores. D segue única; fonte/HTML/artigo conferidos. Parecer pontual e hash reconferidos pelo coordenador. Próximo escopo: herança FUN-02 e ressalvas CR17/27; nenhum aceite global.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-decisao-av04-r1.json",
+      "sha256": "38408ea51cea9b7b24ae86e5b66d6a341c6c0b681076fa7b4f36ae8f91ff2934"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV36–40 concluídos pelo apoio: cinco itens e 25 alternativas, sem ajustes obrigatórios. Deltas AV37/38 e condição de Carnot acessível antes da tentativa conferidos; limite de exposição a metadados AV38 declarado. Apoio segue AV41–45 no mesmo ID.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av36-40-r1.json",
+      "sha256": "8917096312e802c04673fe9b029ea131fb663ab5417c2b298734febe78fc94ae"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Três FUN-02 aceitos por herança científica atribuída e ressalvas CR17/27 fechadas pelo Auditor principal, nos modelos/bases indicados antes da tentativa. Cinco registros, sem novos ajustes. Todos os sete abertos têm agora aceite de alcance em BAN-07. Não é aprovação global; seguem oito Q com notas e banco AV restante.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-heranca-fun02-cr17-27-r1.json",
+      "sha256": "b9d6522223005d94ebd01127f3464fc4508afa081c0b0a32f74e38d924f12166"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Q04/08/11/12: quatro ressalvas decididas e 20 opções confrontadas pelo Auditor principal, sem novos ajustes obrigatórios. Ciência anterior atribuída; modelos e limites do comando/base registrados. Segue Q17/22/23/27.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+      "sha256": "bcb9e0c1ba4522c4a124b70af3a012994ade8863aaefc6a0704c41292dea3d96"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV41–45: cinco itens e 25 alternativas concluídos pelo apoio. AV41-E recebeu ajuste por plausibilidade, sujeito à adjudicação principal; AV42–45 aceitos localmente e delta AV45 conferido. Sem aprovação global.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av41-45-r1.json",
+      "sha256": "56a6537e706c72676f7670e5bb3428bf9a0c09874fd916a80db73ca75a58ccbc"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Apoio /root/auditor_av encerrou AV01–45 em blocos persistidos. Próxima faixa passa a /root/auditor_av_continuacao, contexto novo após tarefa concluída, para reduzir contexto acumulado diante das falhas de compactação já observadas no Auditor. Primeiro escopo AV46–50; limite futuro AV60. Execuções anteriores permanecem com autoria original, sem duplicação."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Corretor /root/corretor_aaa reativado para propostas preliminares e isoladas de AV04-E/AV31-B/AV41-E em evidencias/BAN-07/propostas-r2. Produto/inventário/JS e r1 permanecem congelados. AV31/41 dependem de adjudicação, e toda aplicação de r2 exige liberação posterior após o parecer. Trabalho no mesmo BAN-07, sem outro ID."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Q17/22/23/27: quatro ressalvas e 20 opções examinadas, sem novos ajustes. As oito notas Q estruturadas estão agora explicitamente decididas pelo Auditor principal, com herança atribuída/modelos/limites. Seguem adjudicação AV31/41, observações AV23/30 e restante da integração/AV.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+      "sha256": "f14253f817b5d59e034e2b9d49dfc60ee760627db37e253f499b69833fddb898"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV46–50: cinco artigos e 25 alternativas concluídos sem novos ajustes. AV48/50 tiveram deltas reconstruídos; suspeita AV47B descartada com mecanismo concreto de erro sobre massa fechada versus admissão/descarga. Limites/autoria declarados. Apoio segue AV51–55.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av46-50-r1.json",
+      "sha256": "aca8ba6a5a66c1560d51d756dfc039adf9d78d6b2d916d888be978d4f7dbf0b1"
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "Corretor /root/corretor_aaa terminou com erro de transporte. Conferência posterior: pasta de propostas ainda não existia; cinco arquivos de produto r1 permaneceram com hashes congelados. Substituído por /root/corretor_ban07_r2, contexto novo, primeiro candidato AV04 isolado e persistido cedo. AV31/41 aguardam etapas seguintes; nenhum ajuste aplicado ao produto."
+    },
+    {
+      "data": "2026-10-28",
+      "evento": "AV51–55 concluídos pelo apoio: cinco artigos, 25 alternativas e nenhum ajuste obrigatório. Soluções independentes D/D/C/D/B, produto/provas preservados. Apoio segue AV56–60.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av51-55-r1.json",
+      "sha256": "62872d4974d0730e2829d6e35cb90d7a082743aaaf776529e854208572cec263"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "AV56–60 concluídos pelo apoio sem ajustes obrigatórios; cinco artigos e 25 alternativas.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av56-60-r1.json",
+      "sha256": "251e3f226448ecae9a98d13b7b01ba928ef5e361295cff7226ed1bc42966b2ef"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Adjudicações pontuais: AV31-B confirmado; AV41-E não obrigatório; observações AV23/30 encaminhadas a UX-04.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-decisoes-av31-41-observacoes-av23-30-r1.json",
+      "sha256": "0cf76a7f74941f8f076055d59dd9140af5a40cb599517ab00dcd49d43388fa86"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Retomada após falha de transporte; cinco hashes r1 conferidos e preservados. Revisão AV61–80 distribuída a dois agentes automatizados independentes. Nenhum outro ID liberado."
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Reexecução inadvertidamente regravou evidência anterior",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-07/reexecucao-persistencia-q-2026-10-29.json",
+      "sha256": "33786c3ec2245c5d0402c3db49e5ecd0e48f6d6b49c529ef824a4bc3a9397016"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Evidência de persistência Q original recuperada com SHA-256 idêntico ao manifesto; reexecução preservada separadamente.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-07/reexecucao-persistencia-q-2026-10-29.json",
+      "sha256": "33786c3ec2245c5d0402c3db49e5ecd0e48f6d6b49c529ef824a4bc3a9397016"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "AV61–70: dez itens examinados; AV62-B e AV69-E propostos para adjudicação.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md",
+      "sha256": "74d470fd754fe98a2e88e8be9e0bf161b364859701b46f17378d7f0f853ae0c6"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "AV71–80: dez itens examinados, sem ajustes locais identificados.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md",
+      "sha256": "acd18d1f85338d9d74373a400f7df9a95f2703eed8341d79fbb11df45d43685d"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Parecer BAN-07 r1: AJUSTES_OBRIGATORIOS em AV04/31/62; AV69 não obrigatório; herança de 60 itens requer decisão e próximo ID permanece bloqueado.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-r1.md",
+      "sha256": "a7a5b0acb7bf5d8648e7403d15a947083d45dfa857e3250caf602ee6db0b60ef"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Doze Q herdados confrontados em revisão independente; sem ajustes obrigatórios locais. Restam 48 CR.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-heranca-preparacao-q12-r1.json",
+      "sha256": "820f858fee57c417fa8616413f215ffc12325dc302176e6bdaa1bbde7dfb6037"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor corrigiu no próprio parecer a referência e hash do índice dinâmico: snapshot estático recuperado; conclusão sem mudança.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-r1.md",
+      "sha256": "a7a5b0acb7bf5d8648e7403d15a947083d45dfa857e3250caf602ee6db0b60ef"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Revisão CR01–15 com vereditos locais; possível insuficiência em CR06 submetida à adjudicação, sem alteração do texto nem chave oficial.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr01-15-r1.md",
+      "sha256": "cd99d5ce497a865bdb34d6dd58a383c9c7937599d0a14eca357deedd482d53dc"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "CR36–50 confrontados; sem ajuste obrigatório local; CR45 sob segunda análise.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-heranca-cr36-50-r1.json",
+      "sha256": "a307cdf629f4b6173d8717bc473f0c455df17f0bc96b24b41ca4df86a22c09d8"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Três candidatos AV04/31/62 aprovados isoladamente pelo Auditor, sem aplicação ao produto nem aprovação global.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-candidatas-av04-av31-av62-r2-independente.md",
+      "sha256": "1059842bf92562ae98fe2fca6c15ab2fbee4b2975ad2578b97e5115bcb3af3b7"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Herança CR16–35 confrontada; CR26 requer ajuste, CR24/34/35 permanecem estudos críticos; observações CR30/33 para UX-04.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-heranca-cr16-35-r1.md",
+      "sha256": "91955b0a8dd0a10c61027de8e9715e666f78fa279c65c83d1b4d1aae8e42ca03"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor confirmou ajustes CR06, CR26 e CR45; CR25 sem ajuste em BAN-07. Texto e gabaritos oficiais devem ser preservados.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-decisoes-cr06-cr25-cr26-cr45-r1.md",
+      "sha256": "5a4fbc9454a651239d71fc0e0eacd676afcb1536c551440401797efc8b5b68f9"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Revisão isolada das candidatas CR: CR06/26 aceitas localmente; CR45 requer decisão sobre explicitar mesmo ciclo. Produto não aplicado.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-candidatas-cr06-cr26-cr45-r2-independente.md",
+      "sha256": "1113b02ee2174f144b3720dcf3ae69d2e6e4f393e116c6727c6fb96287e2ca0d"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Integração da revisão científica: decisões localizadas em todos os 197 artigos; seis ajustes confirmados exigem reapresentação e reauditoria.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-r1-adendo-cobertura.md",
+      "sha256": "265456b3e4d437afe08b351832784bd08473f5f13dde728dcc8ef1eb6aefc74d"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Candidata CR45 inicial exige esclarecer que os dois valores referem-se ao mesmo ciclo; variante r2b pendente de revisão.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-decisao-candidata-cr45-r2.md",
+      "sha256": "2b22e8f2c4a99b370f6d8058ed969e144a00670712d9ef3068ec24eb519e2de7"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "CR25: solução publicada sustenta exclusão das alternativas; feedback individual permanece para DID-07.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-cr25-justificativa-distratores-r1-independente.md",
+      "sha256": "07b58d3bfdfdc28cbdf1cbed200bedadab7318ca908df94eda94b84a33baac9d"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Análise de impacto r2: FON-02 e BAN-10 exigem revalidação pontual; BAN-02 precisa ser reexaminado; preservação FON-01 depende de confronto documental. Pendências referem-se à versão futura; produto r1 ainda congelado.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-r2-analise-impacto-aceites.md",
+      "sha256": "1cc3aff3b448a8f45f651cf739cc8dd7558ec9f5a3f38cf0e9a335dc0988a019"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Coordenador liberou aplicação r2 após três candidatas AV e três CR revistas; ensaio técnico aprovado com ressalva de sincronização Markdown CR06 incorporada ao pacote proposto. Reauditoria integral da versão aplicada permanece obrigatória.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-ensaio-r2-seis-tecnico-independente.md",
+      "sha256": "a22114328be064b3573badaacc5673ae8f914278c741ea3720d177f29d279547"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Após aplicação r2, reabertos para revalidação localizada FON-02 e BAN-10 nos três CR; FON-01 e BAN-02 marcados pendentes de conferência da versão atual. Exame ocorre dentro de BAN-07, sem liberar próximo ID."
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-07 r2 aplicada: seis ajustes e atualizações de inventário/registro complementares; verificação do Corretor passou. Versão encaminhada a auditores independentes; próximo ID bloqueado.",
+      "evidencia": "auditoria/termodinamica/entregas/BAN-07-r2.md",
+      "sha256": "c9b19afcf3c3ddb0f8033b6fd13090d31750d60e31c68751804159e5c9b44bee"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor rejeitou r2 por R2-A: dois campos do inventário de CR06 omitem a hipótese editorial das escalas. Correção pontual r3 liberada; próximo ID permanece bloqueado.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-r2.md",
+      "sha256": "06ee05437bf9b834ba6936b269c44b30da9f265fc51b73b24ee1beaa5b65cd2f"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-07 r3 reapresentada: dois campos do inventário de CR06 corrigidos; testes do Corretor passaram; auditoria técnica e científica independentes em curso.",
+      "evidencia": "auditoria/termodinamica/entregas/BAN-07-r3.md",
+      "sha256": "cd4ffc56d53f8c0a0ba429e1162c88ec10faead9bed82600a875076b5cdd95c1"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-07 r3 APROVADO pelo Auditor independente; coordenador confirmou seis hashes do parecer. FON-01/02 e BAN-02/10 revalidados no alcance afetado. Próximo ID sugerido BAN-08, ainda não liberado.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-r3.md",
+      "sha256": "009adc698bf2f88e28826b389a48e2526660efc9b7cc2ea3b598f0e06026d68b"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08 liberado após confirmação do parecer e hashes aprovados BAN-07. Prioridade P0 na etapa 0 da auditoria; QA-09 e todos os demais IDs permanecem pendentes."
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor definiu o escopo e critérios de BAN-08: 197 registros individuais, incluindo sete abertos e nove estudos críticos.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-preparacao.md",
+      "sha256": "67dabc5bf4ab84506f1ab1508c0ba48f043bcf675c8b02184414945b66650b6f"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Inventário inicial identifica 197 itens; todos pendentes, sem confundir extração com recálculo.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/inventario-numerico-197-r1.json",
+      "sha256": "5b56e8280d35d590bf11ddbff9b0e789faed257fafe1cad9c4854cc5ac5fd99f"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Mapeamento independente de fontes e evidências, com cautelas de reutilização e preservação.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-mapa-fontes-evidencias-independente.md",
+      "sha256": "8b02707834bfdbb550a5bb100965e055f5a5c2d155025f5da7b1a41b47594be7"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Plano operacional BAN-08 aceito como base de execução, não como aceite científico.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/PLANO_DIAGNOSTICO-r1.md",
+      "sha256": "2976b2f94c387cd02159c533e883a8bfb1f2d03114515f04673ba6bd36301b76"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Corretor registrou Q01–Q05, sujeitos a auditoria.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/q01-05-corretor-r1.json",
+      "sha256": "ce9886438b97ab9e88ea2dd43242908b8532b200067de73a6bc5304c3ab2c032"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Corretor registrou Q06–Q10, sujeitos a auditoria.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/q06-10-corretor-r1.json",
+      "sha256": "fabdefc7efef1edc638a6f22b6fc7601c7380e8d7f546a3495a09423c3ac2a41"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Coordenador produziu apoio numérico preliminar Q21–Q30, com chave conhecida; não é aceite global.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-coordenador-q21-30.json",
+      "sha256": "b473e175e28d19fbd39701766c1b7193c286573339edba8ffdc2cc08db77d099"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor preliminar Q01–Q10 terminou por falha de rede/compactação; nova revisora designada para recuperar eventual evidência e continuar sem atribuir trabalho não salvo."
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Corretor registrou 30 Q e verificador com frações exatas; não é aprovação independente integral.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/calculos-q01-30-r1.json",
+      "sha256": "20bd3b3f0465833f91c73eb05d714a6f922abf7062486f4ff08de078c818ec47"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Apoio independente de Q11–20 verificou contas, alternativas e critérios; sem conclusão global.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-q11-20-r1-independente.md",
+      "sha256": "6ec5c037dc3e6e9324ee95ec8dfa9a2ea29e4a7b7c45a862617367844349a947"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Apoio independente BAN-08 parcial; consultar escopo, autoria e limites no registro.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-q01-05-r1-independente.md",
+      "sha256": "0371769ed3ba5d417ada8449521e426ee79e1d2a96caef330085a491206473c0"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Apoio independente BAN-08 parcial; consultar escopo, autoria e limites no registro.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-q06-10-r1-independente.md",
+      "sha256": "42d0f815b20c327ab0644b7fd9702804e8006f7d37afe219e0c5036fb33cfd1a"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Apoio independente BAN-08 parcial; consultar escopo, autoria e limites no registro.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-confronto-q21-25-r1-independente.md",
+      "sha256": "19206715a8b5c13f2f111b91573ea26a519cc32e5c5e287b2ee6f68da2ecdfba"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Apoio independente BAN-08 parcial; consultar escopo, autoria e limites no registro.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-confronto-q26-30-r1-independente.md",
+      "sha256": "f040ad4b077d1da2632a2b515292e4c250170dd6b1b487fb5a2154f3de6330c1"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Apoio independente BAN-08 parcial; consultar escopo, autoria e limites no registro.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr01-10-r1.md",
+      "sha256": "a6ca472a5245a1a33e4110708f67dd8a4dfb0a2701d08d7b5b9eadfb4469396a"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial registrado; consultar escopo e autoria da evidência.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/cobertura-cr01-20-corretor-r1.json",
+      "sha256": "79b2f1c7418de7ff40407209c85a9f6f3dc7e6abb5d27aa3bdcff1560adedb33"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial registrado; consultar escopo e autoria da evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr11-20-r1.md",
+      "sha256": "a4cb8854e87d5486d7d6e53ee47d3fcd53b8358ff60b298b1aba2a1dff8d998d"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial registrado; consultar escopo e autoria da evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr21-25-r1-independente.md",
+      "sha256": "5503535db0c35d1c72c844f84305bd1582d9a5db881f5f96024d2055d43ad684"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial registrado; consultar escopo e autoria da evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr26-30-r1-independente.md",
+      "sha256": "572e09fde893f8dc25d4d694a5fef4064c3ce3785a79b2670cdd205a57e0d664"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial; consultar alcance, cálculos e atribuição na evidência.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/cobertura-cr21-40-corretor-r1.json",
+      "sha256": "2a4f3143bf97b2019603b08cd6dafb8a07916547a32f4b0156fcc2efa6bf0706"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial; consultar alcance, cálculos e atribuição na evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "sha256": "026d50300ff19667444130a5a77a7bf076b4b05d4798b4a1e43aa4480569d375"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial; consultar alcance, cálculos e atribuição na evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr41-45-r1-independente.md",
+      "sha256": "09e9064af147131ab6aeab5e0de74cf8ffd5e63a4d543d97bd27f8a5752c8e25"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial; consultar alcance, cálculos e atribuição na evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr46-50-r1-independente.md",
+      "sha256": "6aefd3e2dddfa124f1b3cfd1ff424aa497992418b0bb42fbb88eab6560cf5780"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "BAN-08: progresso parcial; consultar alcance, cálculos e atribuição na evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr51-60-r1.md",
+      "sha256": "41025436ce76b4eb7fb40b21f384974d3b760b56168acd098574236994f1953b"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; evidência com autoria e limitações.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/cobertura-cr41-60-corretor-r1.json",
+      "sha256": "f9c2a4f915fb3f7d43c73e518264b97d32060d821432f7cb672d70644da6e19c"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; evidência com autoria e limitações.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr61-70-r1.md",
+      "sha256": "b3b6426eb87c202ca136b94370b62503ae0a586558c2647593727b8a961f8511"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; evidência com autoria e limitações.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr71-75-r1-independente.md",
+      "sha256": "98500db7a4fee4d21290f78e0f68021c4f972312d4bbf40242676793e3df21b9"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; evidência com autoria e limitações.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr76-80-r1-independente.md",
+      "sha256": "2db027edf7385634a2bbb6261c884fe80e5649a372482ccc0ad1d0426516e365"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; consultar alcance, autoria e condições.",
+      "evidencia": "auditoria/termodinamica/evidencias/BAN-08/cobertura-cr61-80-corretor-r1.json",
+      "sha256": "db20a07f178bda763e7f7c3a65a2714827f0321123174f38b9be91de1c741555"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; consultar alcance, autoria e condições.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "sha256": "5cfce5aa5336bc0c999cad6a0555c833b1a501258afff019e0372e2dcb4bdaf3"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; consultar alcance, autoria e condições.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-av11-15-r1-independente.md",
+      "sha256": "0e4421bbfd8d4e7eb44e1280505e79e5a15a084832f77aff1af9e65afe200035"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; consultar alcance, autoria e condições.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-av16-20-r1-independente.md",
+      "sha256": "94de955e0ddc1fdb4e37433c106826f7c3c78682c9fb66963fc147b0d27e5a15"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Progresso parcial BAN-08 registrado; consultar alcance, autoria e condições.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av21-30-r1.md",
+      "sha256": "75a43425cec244e76159f024408021332cd70e7ec0a87a48831e1ead6754d2bc"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Durante BAN-08, Auditor identificou insuficiência de hipóteses prévias em AV42/AV45; reaberto alcance localizado de BAN-07, sem iniciar outro ID. Contas conferem sob o modelo usual; candidatas ainda não aplicadas.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-adjudicacao-av42-av45-r1-independente.md",
+      "sha256": "40135fea3ac4c3dc0695b731a436eea2f16832ff34fb2f453665d29882ce524f"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor identificou AV52: hipótese de ausência de outros consumos necessária à comparação; BAN-07 r3 reaberto também nesse alcance.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-adjudicacao-av52-r1-independente.md",
+      "sha256": "82e211ebb30e0e7e58460167429c47730137db9b8e332f1e1ac7d42aeae258fb"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Três candidatas AV42/45/52 foram revistas independentemente e sua aplicação integrada ao BAN-08 foi liberada pelo coordenador; versão aplicada exigirá nova auditoria, testes de persistência e revalidação localizada de BAN-07.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-candidatas-av42-av45-av52-revisao-independente-r1.md",
+      "sha256": "bbc9741641fa852b2c3535da99795edafdfe001bd63153b0e65aec6c439bd3b4"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Aplicados esclarecimentos AV42/45/52 e sincronizado inventário; hashes registrados. Revisão independente da versão e validação do histórico de tentativas pendentes; BAN-07 permanece reaberto.",
+      "evidencia": "auditoria/termodinamica/entregas/BAN-08-aplicacao-av42-av45-av52-r1.md",
+      "sha256": "a6de16359e7a07beeb19fa95f673e4ca1a807ae37660d85c0af07438897c1865"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor revalidou AV42/45/52 no alcance reaberto de BAN-07, com teste de produto aplicado e suporte técnico; BAN-08 continua em trabalho.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-revalidacao-av42-av45-av52-r1-independente.md",
+      "sha256": "86e9edc229e31fa2c798ad5ae1b89d595ddf74b080652f9a435c515517380c08"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor técnico confirmou sincronização de três estados/links, mas exigiu corrigir parágrafo histórico no resumo que parecia contradizer o estado atual. Coordenador liberou correção editorial pontual.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-atualizacao-inventario-pos-parecer-auditoria-tecnica-r1.md",
+      "sha256": "ca04865e63322ae3e341c06a47b9612e3e4a73c3178b3ad18b6991640d8a8e4f"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Entrega de BAN-08 para 197 itens, versão r3 de documentação, após correção em nova evidência de FUN02. Aguarda parecer independente; próximo ID bloqueado.",
+      "evidencia": "auditoria/termodinamica/entregas/BAN-08-entrega-197-corretor-r3.md",
+      "sha256": "e2263923cdc7244ae032443c5c39a1d1d04e0a3ac9c3f4910e0a7548c50e15a6"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Revisão técnica independente considerou coerente BAN-02 no alcance afetado e aceitou correção editorial do resumo histórico; sem aprovação global de BAN-08.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-resumo-historico-auditoria-tecnica-r1.md",
+      "sha256": "bfec219bcd010c7d5d4dadc33a78ad5786a4a1f581926be7bae97c66bd027043"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor aprovou BAN-08 para os 197 itens e versão identificada. Coordenador confirmou hashes. QA-09 permanece pendente, não confundido com BAN-08.",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-08-r1.md",
+      "sha256": "46d1b8dcc67cfe65a07f383f83dd01235d72f337be59c4696968ecee03c3a485"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09 liberado após aceite e confirmação dos hashes de BAN-08. Escopo é o restante do conteúdo numérico, sem iniciar outro ID em paralelo."
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: preparação e inventário estruturais; sem recálculo integral ou aprovação.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-preflight-independente-r1.md",
+      "sha256": "dca3ed8905619c455ed2f843e7983389fb4b94d4524d2b9d6269c825905683b6"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: preparação e inventário estruturais; sem recálculo integral ou aprovação.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-mapa-independente-r1.md",
+      "sha256": "3759f07bf85174994eed3327789e1b32a318b320e5ee7512222461ed85788c4a"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: preparação e inventário estruturais; sem recálculo integral ou aprovação.",
+      "evidencia": "auditoria/termodinamica/evidencias/QA-09/inventario-r2.json",
+      "sha256": "8f37801a8dfdc073c3ee37357b36126a5235b8bb1fc4ad1f09215236bd5753f4"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: revisão parcial/adjudicação; consultar escopo e autoria no parecer.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-01-05-independente-r1.md",
+      "sha256": "993e81a54a46771ff33bc03dc546cdadded091d706c7ab427571bb7c0ae32033"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: revisão parcial/adjudicação; consultar escopo e autoria no parecer.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-07-09-independente-r1.md",
+      "sha256": "9fc1f260835e3b520256994b5aea937fbd3fa9d1e6ee23464ebc6246da327324"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: revisão parcial/adjudicação; consultar escopo e autoria no parecer.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-diagnostico01-revisao-candidata-independente-r1.md",
+      "sha256": "5703126d921eb3dabce975331ac4b0047665fdb029da14181a4c6e763529f3ec"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: revisão parcial/adjudicação; consultar escopo e autoria no parecer.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-preparacao-diagnosticos-06-10-independente-r1.md",
+      "sha256": "1bc9f23447eaa333e269604310f6fbdb74c4752eab6341105207e408dceea91f"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditor revalidou aplicação diagnóstico 1 e não identificou impacto nos 197 itens. Mapa r2→r3 gerado para IDs deslocados, sujeito a revisão. Candidatas 6/9 revisadas foram liberadas para aplicação conjunta e nova auditoria.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-aplicacao-diagnostico01-auditoria-independente-r1.md",
+      "sha256": "6d44812dd299e65d28682fe0c0917d1d2166d6433b46afd7e7a5bc7f6f73b52a"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: revisão localizada e evidência atribuída; sem aprovação global.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-mapa-r2-r3-auditoria-independente-r1.md",
+      "sha256": "46d8fcb7de10dfe48b9f973f656c47b1a62cb5d547ccf83776cd515b71017544"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: revisão localizada e evidência atribuída; sem aprovação global.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-diagnosticos-06-09-revisao-candidatas-independente-r1.md",
+      "sha256": "d53f9666384928ba27edb7f23f35c24e96c2b2e2a2e81f4fc80a63e8850a22bf"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditoria independente confirmou aplicação dos diagnósticos 6/9 e mapa r3→r4; BAN-02/07/08 preservados no alcance alterado, QA-09 continua pendente.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-aplicacao-diagnosticos06-09-auditoria-independente-r1.md",
+      "sha256": "25d2ad2c4967876f0aa77184a4fd089bfb3984d0511ae83b8bd1ac081273d246"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Coordenador liberou e Corretor aplicou esclarecimentos aos diagnósticos 12/14/19/26/27/28 após revisão isolada independente. Verificações, mapa e auditoria da versão efetiva pendentes."
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: decisões e alterações parciais; consultar alcance e autoria na evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-12-14-19-independente-r1.md",
+      "sha256": "6d8fe05bbf2eab9697d0d331b8b19fa04b964e12d2de0fd07f194a197362d869"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: decisões e alterações parciais; consultar alcance e autoria na evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-26-28-independente-r1.md",
+      "sha256": "68869eb1cf952661bcc8d36c4e9f3ba2d96948d5b94337299f99e6a87ef5b3cb"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: decisões e alterações parciais; consultar alcance e autoria na evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-diagnosticos-12-14-19-revisao-candidatas-independente-r1.md",
+      "sha256": "f18ab2020d36cbaa7494b62e16aa2b12436e1bd370c83347c9ee343479670d01"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: decisões e alterações parciais; consultar alcance e autoria na evidência.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-diagnosticos-26-28-revisao-candidatas-independente-r1.md",
+      "sha256": "a05268e50dcb43fb4331b25ae3f217ce332df6c6a63dab0b504db925af51db95"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "QA-09: decisões e alterações parciais; consultar alcance e autoria na evidência.",
+      "evidencia": "auditoria/termodinamica/evidencias/QA-09/aplicacao-diagnosticos-seis-r1/entrega-r2.md",
+      "sha256": "e0e508a169cdada3aea943aff89752b060197044dc7baafb794595d3dd0fdcd9"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditoria independente conferiu seis diagnósticos aplicados, mapa r4→r5 e preservação do alcance BAN-02/07/08; QA-09 global continua pendente.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-aplicacao-diagnosticos-seis-auditoria-independente-r1.md",
+      "sha256": "bb4fd21a68dc6483328e21b40d86a410227a253ff5db10bd5991b0420e3bba41"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Oficina aplicada após retomada, com validação do Corretor; auditoria independente e revalidação dos aceites anteriores no alcance alterado estão pendentes.",
+      "evidencia": "auditoria/termodinamica/evidencias/QA-09/aplicacao-oficina-r1/entrega-r2.md",
+      "sha256": "eb7973ab2abe0ae098b9291c29e50710a08821447f05db2f5b4a52638207481f"
+    },
+    {
+      "data": "2026-10-29",
+      "evento": "Auditoria independente confirmou aplicação da oficina e mapa r5→r6; não encontrou impacto no alcance BAN-02/07/08. QA-09 permanece pendente.",
+      "evidencia": "auditoria/termodinamica/pareceres/QA-09-aplicacao-oficina-auditoria-independente-r1.md",
+      "sha256": "376119f7a57af1b7079fc05406e79a2d57d144c44a4a30cf34ec00d585aa0b9e"
+    }
+  ],
+  "proxima_correcao": null,
+  "estado_fluxo": "em_execucao",
+  "impedimento_atual": null,
+  "mandato_de_continuidade": {
+    "data": "2026-10-28",
+    "instrucao_usuario": "Não parar até atingir a meta de curso de Termodinâmica avançado real.",
+    "meta_registrada_no_chat": "01a1837f-d939-70e1-90fa-b60fc39348ce",
+    "escopo": "Exclusivamente E1; critérios obrigatórios e portas ACE da auditoria; extensões conforme promessa.",
+    "regra": "Prosseguir pelos IDs com Corretor e Auditor independente, sem reduzir critérios nem declarar evidências não realizadas."
+  },
+  "achados_transversais": [
+    {
+      "id": "BAN07-AV23-alt",
+      "origem": "BAN-07",
+      "destino_sugerido": "UX-04",
+      "estado": "registrado_para_exame_posterior_sem_aceite",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av21-25-r1.json",
+      "descricao": "Descrição alternativa não corresponde à figura ilustrativa de AV23. Apoio julgou não bloqueante em BAN-07 porque o comando fornece os dados necessários; decisão final de alcance pendente do Auditor principal. Descrever gás/membrana/vácuo/isolamento de acordo com a imagem."
+    },
+    {
+      "id": "BAN07-AV30-alt",
+      "origem": "BAN-07",
+      "destino_sugerido": "UX-04",
+      "estado": "registrado_para_exame_posterior_sem_aceite",
+      "evidencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av26-30-r1.json",
+      "descricao": "Texto alternativo de AV30 deve contemplar a equação e Delta U=0 presentes na figura, preservando a tarefa intelectual. Apoio julgou não bloqueante em BAN-07; alcance pendente de incorporação pelo Auditor principal."
+    }
+  ],
+  "andamento_atual": {
+    "data": "2026-10-29",
+    "fase": "preflight_QA09",
+    "estado": "em_execucao",
+    "em_exame": "QA-09: nove diagnósticos e quatro ajustes da oficina aplicados e auditados; candidatos EX011/013 revisados e não aplicados; recálculo do restante continua pendente.",
+    "proximo_ID": "Bloqueado até parecer APROVADO para QA-09 e liberação do coordenador."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "FON-02",
+  "data": "2026-10-28",
+  "responsavel": "/root",
+  "tipo": "leitura complementar de fonte e derivação própria, sem aprovação",
+  "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node17.html",
+  "localizacao": "§§2.4.1 e 2.4.2, texto e alternativas textuais das equações",
+  "metodo": "Página oficial efetivamente aberta e trechos lidos via web; não foi inspeção visual de PDF.",
+  "conteudo_lido": "O texto distingue calores específicos dependentes de T e aproximação constante. A derivação adiabática reversível usa trabalho p dv e integra −γ dv/v = dp/p, obtendo p v^γ constante.",
+  "inferencia_explicita": "Retirar γ da integral pressupõe γ constante. Para composição fixa e gás ideal com cp−cv=R, isso equivale a cp e cv constantes. Para massa fixa, v=V/m permite escrever p V^γ constante. Não generalizar a cv(T).",
+  "escopo": "Sustenta a identificação do modelo suplementar em CR36; não reaudita todos os gases ou o banco."
+}

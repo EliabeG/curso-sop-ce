@@ -1,0 +1,160 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR76–CR80",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral; cálculos decimais com regra de empate para cima; imagem CR80 examinada; estudos críticos sem nota.",
+  "registros": [
+    {
+      "id": "cr-e1-76",
+      "artigo_sha256": "d0c7cf75f2aedc3bca09119745417868f7ab2cc7e65239537a37397c7cc9a872",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-76",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-transferencia",
+          "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Transporte de energia por movimento de fluido e difusão térmica.",
+      "solucao": "Advecção refere-se ao transporte pelo movimento global; convecção inclui movimento e difusão, com condução na interface fluido-parede.",
+      "resultado": "E.",
+      "comparacao": "C troca os termos e seus mecanismos; E identifica inadequação.",
+      "tolerancia": "Sem grandezas ou operações numéricas na resolução; tolerância não aplicável.",
+      "limite": "Terminologia refere-se ao contexto de transferência térmica indicado; não implica ausência de difusão com escoamento.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-77",
+      "artigo_sha256": "3904164b53402e239cc2b0f3b9de5eb0d61467da12725310a882f4169c0bd661",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-77",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-refrigeracao",
+          "#base-eficiencia-cop",
+          "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_009_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_009_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Condensador e evaporador de ciclo de refrigeração por compressão de vapor.",
+      "solucao": "Condensador normalmente recebe vapor comprimido, rejeita calor e condensa; evaporador absorve calor do meio refrigerado e vaporiza.",
+      "resultado": "E.",
+      "comparacao": "C inverte calor e mudança de fase no condensador; E rejeita.",
+      "tolerancia": "Não há temperaturas, vazões ou calor calculável; tolerância não aplicável.",
+      "limite": "Estados detalhados dependem do ciclo; não afirmar que toda entrada de condensador é vapor puro em qualquer operação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-78",
+      "artigo_sha256": "bad6704eace3098a21eb19cab01cedc47792d60458e53adae923306116a58d90",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-78",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-calor-latente",
+          "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf#page=7",
+          "https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-inpe-tecnologista-retificado-02.08.pdf#page=4",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Escolha entre vantagens ou alegações de segurança e descarte da amônia; estados comparáveis.",
+      "solucao": "Alto calor latente propicia efeito de evaporação significativo por massa; desempenho global depende de compressor, condições e equipamento.",
+      "resultado": "B.",
+      "comparacao": "A não estabelece vantagem geral suficiente; C segurança em vazamento, D segurança em solda e E descarte no esgoto não são vantagens válidas. B descreve vantagem térmica com ressalva sobre eficiência global.",
+      "tolerancia": "Sem massa, estado de saturação, propriedade numérica ou COP; sem tolerância quantitativa.",
+      "limite": "O calor latente isolado não determina COP; nenhuma propriedade tabelada de amônia foi validada para estado não informado.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-79",
+      "artigo_sha256": "2ebd9eec55b732bd36a78f605d2d68bb156f3f33656cd4ebfe71f18eda6f4550",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-79",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-radiacao-vacuo",
+          "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0#page=19",
+          "https://physics.nist.gov/cuu/pdf/all.pdf#page=6",
+          "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+          "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf#page=8",
+          "https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-inpe-tecnologista-retificado-02.08.pdf#page=4",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "../downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf#page=8",
+          "../downloads/termodinamica/gabaritos/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_gabarito.pdf#page=4"
+        ]
+      },
+      "aplicabilidade": "ESTUDO_CRITICO_COM_NUMEROS_SEM_NOTA",
+      "dados": "Alto vácuo e parede por volta de −196 °C; exemplo editorial escolhe corpo 300 K, parede nominal 77,15 K, A=0,10 m², superfícies negras, vista integral, σ≈5,670374419×10⁻⁸ W/(m² K⁴), G=0,01 ou 0,50 W/K.",
+      "solucao": "Q̇rad=σA(300⁴−77,15⁴)=45,7291441171 W≈45,73 W; ΔT=222,85 K; Q̇cond=GΔT=2,2285 W≈2,23 W ou 111,425 W≈111,43 W. Assim 2,2285<45,7291<111,425: predomínio inverte.",
+      "resultado": "Chave documental B compatível com primeira montagem; estudo crítico sem nota.",
+      "comparacao": "A omite condução possível; B e C/D supõem predominância radiativa não demonstrada pelo original; E também não decorre genericamente. Alto vácuo não determina condutâncias nem geometria.",
+      "tolerancia": "Arredondamento de duas casas, meia unidade 0,005 W; 111,425 é empate arredondado para cima. −196 °C é nominal aproximado, não precisão de 0,01 K; coeficientes são escolhas didáticas.",
+      "limite": "A troca gasosa é desprezada no contramodelo, sem afirmar pressão nula; geometria, temperaturas e condutâncias são escolhas editoriais, não dados da prova.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-80",
+      "artigo_sha256": "5417c9d9ec6a1d853beee3dff2aa9f0c614813aab6436ae3052a55a1ee2e36f8",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-80",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-geracao-face",
+          "#base-transferencia",
+          "../assets/questoes-reais-e1/figura-9d73adf962aa.png",
+          "../downloads/termodinamica/provas/2025-06-22_caesb-engenheiro-mecanico_prova-com-justificativas.pdf#page=5",
+          "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+          "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/905BAE8B8901D96A45D9CBF7F17341894AF8405A0E2D9122A552F640CAC8B9DB.pdf#page=5",
+          "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/MATRIZ_039_CAESB_009_00_Com Justificativas_OK.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_009_00.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "../downloads/termodinamica/provas/2025-06-22_caesb-engenheiro-mecanico_prova-com-justificativas.pdf#page=4",
+          "../downloads/termodinamica/gabaritos/2025-06-22_caesb-engenheiro-mecanico_gabarito.pdf#page=1",
+          "assets/questoes-reais-e1/figura-9d73adf962aa.png"
+        ]
+      },
+      "aplicabilidade": "ESTUDO_CRITICO_COM_NUMEROS_SEM_NOTA",
+      "dados": "Figura recriada examinada: dimensões 2×2×1 m, face ABCD 2×2 m; geração 100 W/m³, h=10 W/(m² K), T∞=30 °C, cinco faces isoladas.",
+      "solucao": "V=4 m³; A=4 m²; geração 400 W; hA=40 W/K. Se somente convecção pela face, dU/dt=400−40(Ts−30) W. Sob dU/dt=0, Ts−30=10 K e Ts=40 °C. A Ts=30 °C balanço permite acumulação 400 W.",
+      "resultado": "Chave documental D sob ausência de acumulação e outras saídas; estudo crítico sem nota.",
+      "comparacao": "A 10, B 20, C 30, D 40, E 50 °C: apenas D resolve a hipótese adicional estacionária; uniformidade espacial não estabelece constância no tempo.",
+      "tolerancia": "Aritmética e comparação exatas sob dados nominais e modelo; sem tolerância experimental nem incerteza de regime.",
+      "limite": "Se existir radiação ou outra saída, somar ao balanço. A justificativa histórica oficial de D está documentada sem efeito; não converter prova histórica em versão vigente nem atribuir à banca hipótese não expressa no comando.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior; PDFs não reexaminados nesta execução."
+  ]
+}

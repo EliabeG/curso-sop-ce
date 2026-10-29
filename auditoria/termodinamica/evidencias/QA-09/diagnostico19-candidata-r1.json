@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-diagnostico-19",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_DECISAO_FORMAL_E_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "7541e7c4c8314922992e99e8b62b40342c2d938e6edeac67ef9f74b69f86c17c",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r4.json",
+    "sha256": "44d19642bcf39109edf620e7304580b7a8a686e7c42cfa7101fa3d118a79d054"
+  },
+  "apoio_preliminar": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-diagnosticos-16-20-apoio-independente-r1.md",
+    "estado": "Ressalva, não decisão formal"
+  },
+  "original_sha256_fragmento": "345887a5a233fa75a098ddabe3540edd95857c6fc0feea4c11b99fb64f44ea71",
+  "candidata_sha256_fragmento": "9bb600fe48c6e15ed78eb6c2cff4091af810e917a668f15834fa565203de488a",
+  "original_sha256_arquivo": "e7621d4de7c959d1221118ff39a1d31ea78da22394875c8ee626016b1e0f0940",
+  "candidata_sha256_arquivo": "5256dc8b5a3ebccc904b4f36edf41482424f713c5acb765563f11389ce23c89b",
+  "antes": "Em regime estacionário e bem misturado, qual vazão exterior é necessária?",
+  "depois": "Em regime estacionário e bem misturado, sem outras fontes de CO₂, remoção por outros mecanismos ou troca de ar com outras zonas, qual vazão exterior é necessária? Considere os volumes referidos às mesmas condições.",
+  "limite": "Preparação isolada com nova linha nos arquivos, nenhum produto alterado; aguardam-se decisão formal e revisão independente."
+}

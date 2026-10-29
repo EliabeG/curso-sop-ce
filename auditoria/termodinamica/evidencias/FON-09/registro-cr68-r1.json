@@ -1,0 +1,141 @@
+{
+  "id": "cr-e1-68",
+  "banco": "real",
+  "titulo": "68. Perda por radiação",
+  "localizacao": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "fragmento": "cr-e1-68",
+    "sha256_artigo": "7cca4d60d34457a5bccb41efe003b4e1012bdac03df25ebfb77458547af3e81a",
+    "recursos": [
+      {
+        "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+        "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456"
+      },
+      {
+        "arquivo": "assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+        "sha256": "b8d543e37fc85224e69507c5bf2aa35d6ac5aeb3eb5ae37879c4806e229f30b8"
+      },
+      {
+        "arquivo": "assets/questoes-reais-e1/caderno-fornecido.pdf",
+        "sha256": "bea6174ad3eee9a6880274597f444a7a20b05663dd4595d722d1a924532153b0"
+      },
+      {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3"
+      },
+      {
+        "arquivo": "downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf",
+        "sha256": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071"
+      }
+    ]
+  },
+  "origem": {
+    "tipo": "questao_real_atribuida",
+    "atribuicao": "Cebraspe · Petrobras · Técnico — Operação (2023.2) · aplicação 24/03/2024 · questão original 85",
+    "identificadores": [
+      "Cebraspe",
+      "Petrobras",
+      "Técnico — Operação (2023.2)",
+      "aplicação 24/03/2024",
+      "questão original 85"
+    ],
+    "fontes": [
+      {
+        "rotulo": "Prova original · p. 3",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=3"
+      },
+      {
+        "rotulo": "Gabarito definitivo",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1"
+      },
+      {
+        "rotulo": "Caderno fornecido (questão na p. 14)",
+        "url": "assets/questoes-reais-e1/caderno-fornecido.pdf"
+      },
+      {
+        "rotulo": "Dados corrigidos editoriais FON-09 v1.0, fontes e consultas",
+        "url": "assets/termodinamica/fon09-cr68-dados-v1.json"
+      }
+    ],
+    "conferencia_oficial": "realizada",
+    "evidencia_conferencia": "auditoria/termodinamica/evidencias/FON-09/conferencia-origem-r1.md"
+  },
+  "formato": {
+    "tipo": "certo_errado",
+    "comando": "Julgar uma afirmação como certa ou errada.",
+    "numero_alternativas": 2
+  },
+  "competencias": [
+    "C03",
+    "C09"
+  ],
+  "pre_requisitos": [
+    "Emissividade",
+    "Radiação térmica",
+    "Comparação controlada"
+  ],
+  "nivel": {
+    "estimado": "iniciante",
+    "justificativa": "O alvo é uma proporcionalidade conceitual; a longa tabela e a figura não elevam a complexidade desse julgamento.",
+    "validacao_empirica": "nao_realizada"
+  },
+  "raciocinio": {
+    "categoria": "reconhecimento",
+    "etapas": [
+      "Relacionar menor emissividade a menor perda radiativa com demais condições constantes"
+    ],
+    "numero_etapas": 1
+  },
+  "hipoteses": {
+    "explicitadas": [
+      "Superfície externa da fornalha",
+      "Revestimento de baixa emissividade",
+      "Dados de instalação e tabela mantidos como transcrição histórica; conjunto físico corrigido separado, com hipóteses e precisão próprias."
+    ],
+    "implicitas": [
+      "Mesmas temperaturas e geometria para comparar taxa",
+      "Superfície mais quente que ambiente"
+    ],
+    "limites": [
+      "Densidade literal1000kg/cm³ e13células da tabela incompatíveis com referências; já constam da prova oficial p.3 e do caderno p.14.",
+      "T100°C e vf0,00104m³/kg da primeira linha são arredondamentos compatíveis; não reutilizar tabela histórica como conjunto de cálculo.",
+      "Conjunto corrigido FON-09 v1.0 rastreia cinco pressões, dois volumes e temperatura; densidade1000kg/m³ é aproximação declarada.",
+      "Esses dados não entram no julgamento de emissividade.",
+      "Letra C do item85 conferida documentalmente no gabarito oficial; essa conferência restrita não conclui BAN-08/FON-01/BAN-10 gerais.",
+      "Figura da unidade é contextual para o julgamento da emissividade."
+    ]
+  },
+  "vinculo_competencias": {
+    "tipo": "apoio_fundamental",
+    "alcance": "Apoio delimitado a C03/C09: Relacionar menor emissividade a menor perda radiativa com demais condições constantes. Não avalia integralmente a formulação avançada dessas competências."
+  },
+  "exposicao_previa": {
+    "estado": "relacao_identificada",
+    "relacoes": [
+      {
+        "id_ou_ancora": "av-e1-68",
+        "tipo": "origem_declarada",
+        "evidencia": "O rodapé de AV-68 aponta explicitamente para CR-68 como questão de origem e declara transformação autoral."
+      },
+      {
+        "id_ou_ancora": "av-e1-68",
+        "tipo": "reformulacao_conceitual",
+        "evidencia": "Mesma figura geradora de vapor e efeito da emissividade. AV68 fornece ε0,80→0,20 e fórmula delimitada; não usa a tabela nem densidade defeituosas de CR68."
+      }
+    ],
+    "limite_da_verificacao": "Comparação local do banco e exemplos explicitamente identificados. Não há histórico individual do estudante; relações não listadas ou exposição externa permanecem desconhecidas. Não atribuir ineditismo à ausência de correspondência registrada."
+  },
+  "revisao": {
+    "leitura": "enunciado_alternativas_comentarios_e_notas",
+    "gabarito": "nao_auditado_em_BAN02",
+    "ambiguidades_conhecidas": [
+      "Dados defeituosos foram preservados apenas como transcrição histórica identificada, com conjunto corrigido separado. A intenção do autor original não é presumida; não foi identificada errata oficial."
+    ],
+    "encaminhamentos": [
+      "BAN-08",
+      "FON-01",
+      "BAN-10",
+      "FON-09"
+    ]
+  }
+}

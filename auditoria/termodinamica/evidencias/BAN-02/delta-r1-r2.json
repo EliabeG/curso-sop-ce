@@ -1,0 +1,1210 @@
+{
+  "id": "BAN-02",
+  "de": 1,
+  "para": 2,
+  "escopo_permitido": true,
+  "diferencas": [
+    {
+      "campo": "metodo.descricao",
+      "antes": "Leitura integral dos190 itens: enunciados, alternativas, comentários, notas, legendas e sete figuras locais. CR01–80 e AV01–80 classificados pelo Corretor; Q01–30 receberam insumo do coordenador, revisado e integrado pelo Corretor. Uma etapa é decisão, inferência ou transformação de modelo; operações aritméticas não são etapas adicionais. Reconhecimento, fórmula direta e juízos curtos com modelo dado são iniciantes; integração de relações distintas, leitura de diagrama com balanço ou exame condicionado de hipótese ausente são intermediários. Avançado exigiria modelagem autônoma integrada e justificativa de alternativas. Dificuldade é estimada, não medida. Os vínculos C01–C10 delimitam apoio, sem certificar formulação avançada integral. Relações CR/AV foram comparadas por pares, não deduzidas só do link de origem. Figuras contextuais são registradas e têm hash mesmo quando não necessárias ao raciocínio. SVG embutido integra hash do artigo. Este inventário registra o banco atual, não conclui BAN03/04/05/07/08 ou matriz completa de GOV02.",
+      "depois": "Leitura integral dos 190 itens: enunciados, alternativas, comentários, notas, legendas e sete figuras locais. CR01–80 e AV01–80 classificados pelo Corretor; Q01–30 receberam insumo do coordenador, revisado e integrado pelo Corretor. Na rodada 2, todos os 80 pré-requisitos AV foram revistos individualmente pela demanda efetiva, sem herança automática da CR de origem. Uma etapa é decisão, inferência ou transformação de modelo exigida pelo comando; operações aritméticas não são etapas adicionais. Reconhecimento, fórmula direta e juízos curtos com modelo dado são iniciantes; integração de relações distintas ou leitura de diagrama com balanço podem ser intermediárias. Crítica que o comentário/nota já fornece não é creditada como resposta exigida ou avaliada. Avançado exigiria modelagem autônoma integrada e justificativa de alternativas. Dificuldade é estimada, não medida. Vínculos C01–C10 delimitam apoio, sem certificar formulação avançada integral. Relações CR/AV foram comparadas por pares, não deduzidas só do link de origem. Figuras contextuais têm hash mesmo quando não necessárias. SVG embutido integra o hash do artigo. Este inventário registra o banco atual, sem concluir BAN-03/04/05/07/08 ou GOV-02."
+    },
+    {
+      "campo": "metodo.limites",
+      "antes": "Histórico de cada estudante e exposição externa desconhecidos. Ausência de relação registrada não significa ineditismo. Relações de dados só afirmadas com evidência local específica; famílias por tema não atestam independência avaliativa. Fontes oficiais são as URLs/identificadores disponíveis no HTML, sem nova conferência oficial dos documentos. Gabaritos não são certificados nesta entrega, embora BAN01 tenha aceite específico anterior. Os recursos locais carregados são sete PNGs autossuficientes, sem dependências transitivas; os PDFs de origem são referências bibliográficas, não dados necessários aos comandos atuais, e não foram revalidados. A contagem de etapas não mede automaticamente nível. Estado intermediário em CR09/24/79 refere-se ao exame das ressalvas de leitura, não transforma ambiguidade editorial em qualidade avançada. Qualquer alteração de fonte ou recurso exige releitura humana, além de atualizar hashes.",
+      "depois": "Histórico de cada estudante e exposição externa desconhecidos. Ausência de relação registrada não significa ineditismo. Relações de dados só afirmadas com evidência local específica; famílias por tema não atestam independência avaliativa. Fontes oficiais são as URLs/identificadores disponíveis no HTML, sem nova conferência oficial. Gabaritos não são certificados nesta entrega, embora BAN-01 tenha aceite específico anterior. Sete PNGs carregados são autossuficientes e não têm dependências transitivas; PDFs de origem são referências, não dados necessários aos comandos atuais, e não foram revalidados. Contagem de etapas não mede automaticamente nível. CR09/24/79 foram classificados pelo comando atual sob leitura condicionada esperada da prova. Suas ressalvas e hipóteses permanecem explícitas, mas a crítica já fornecida nas notas não é capacidade exigida/avaliada. Isso não valida a formulação nem o gabarito desses itens. Qualquer alteração de fonte/recurso exige releitura humana além da atualização de hashes."
+    },
+    {
+      "campo": "q-e1-16.exposicao_previa.relacoes",
+      "antes": [
+        {
+          "id_ou_ancora": "av-e1-45",
+          "tipo": "dados_repetidos",
+          "evidencia": "As temperaturas600K/300K são repetidas. Q16 pede limite50%; AV45 acrescenta QH1000J e pede mínimo rejeitado500J. Repetição parcial dos dados, com tarefa adicional."
+        }
+      ],
+      "depois": [
+        {
+          "id_ou_ancora": "av-e1-45",
+          "tipo": "dados_repetidos",
+          "evidencia": "As temperaturas600K/300K são repetidas. Q16 pede limite50%; AV45 acrescenta QH1000 kJ e pede mínimo rejeitado500 kJ. Repetição parcial dos dados, com tarefa adicional."
+        }
+      ]
+    },
+    {
+      "campo": "cr-e1-09.pre_requisitos",
+      "antes": [
+        "Temperatura termodinâmica e Celsius",
+        "Unidade SI versus unidade de base"
+      ],
+      "depois": [
+        "Kelvin como unidade de base de temperatura termodinâmica"
+      ]
+    },
+    {
+      "campo": "cr-e1-09.nivel.estimado",
+      "antes": "intermediario",
+      "depois": "iniciante"
+    },
+    {
+      "campo": "cr-e1-09.nivel.justificativa",
+      "antes": "O trabalho relevante é examinar a ambiguidade entre duas leituras, não apenas recordar K.",
+      "depois": "O comando exige somente C/E e, na leitura condicionada esperada, reconhecimento da unidade de base. A distinção crítica da redação é fornecida nas notas e não avaliada como resposta do aluno."
+    },
+    {
+      "campo": "cr-e1-09.raciocinio.categoria",
+      "antes": "julgamento_delimitado",
+      "depois": "reconhecimento"
+    },
+    {
+      "campo": "cr-e1-09.raciocinio.etapas",
+      "antes": [
+        "Distinguir a unidade de base da grandeza termodinâmica da unidade SI de temperatura Celsius",
+        "Identificar que a restrição necessária à interpretação do gabarito não está escrita"
+      ],
+      "depois": [
+        "Julgar a indicação de Celsius sob a interpretação esperada de que o comando se refere à unidade de base da temperatura termodinâmica, cuja referência é kelvin"
+      ]
+    },
+    {
+      "campo": "cr-e1-09.raciocinio.numero_etapas",
+      "antes": 2,
+      "depois": 1
+    },
+    {
+      "campo": "cr-e1-09.vinculo_competencias.alcance",
+      "antes": "Apoio delimitado a C08: Distinguir a unidade de base da grandeza termodinâmica da unidade SI de temperatura Celsius → Identificar que a restrição necessária à interpretação do gabarito não está escrita. Não avalia integralmente a formulação avançada dessas competências.",
+      "depois": "Na leitura condicionada esperada pela prova, apoio restrito a C08: Julgar a indicação de Celsius sob a interpretação esperada de que o comando se refere à unidade de base da temperatura termodinâmica, cuja referência é kelvin. As ressalvas fornecidas pelo material não são uma resposta crítica exigida ou avaliada pelo comando."
+    },
+    {
+      "campo": "cr-e1-24.competencias",
+      "antes": [
+        "C02",
+        "C09"
+      ],
+      "depois": [
+        "C02"
+      ]
+    },
+    {
+      "campo": "cr-e1-24.pre_requisitos",
+      "antes": [
+        "pV=nRT",
+        "Temperatura absoluta",
+        "Mesma substância versus referência térmica"
+      ],
+      "depois": [
+        "Equação do gás ideal para quantidade e volume constantes",
+        "Conversão de temperaturas Celsius para kelvin e comparação da razão com um"
+      ]
+    },
+    {
+      "campo": "cr-e1-24.nivel.estimado",
+      "antes": "intermediario",
+      "depois": "iniciante"
+    },
+    {
+      "campo": "cr-e1-24.nivel.justificativa",
+      "antes": "Exige identificar uma hipótese ausente antes de aplicar a razão simples; o gabarito relatado não é certificado.",
+      "depois": "Sob a leitura condicionada da prova, basta aplicar a proporcionalidade e marcar C/E. A análise de insuficiência da leitura literal está nas notas/resolução e não é uma etapa solicitada para resposta."
+    },
+    {
+      "campo": "cr-e1-24.raciocinio.categoria",
+      "antes": "julgamento_delimitado",
+      "depois": "aplicacao_direta"
+    },
+    {
+      "campo": "cr-e1-24.raciocinio.etapas",
+      "antes": [
+        "Separar leitura literal de pressão da água da leitura de termômetro com mesmo gás",
+        "Na leitura condicionada, comparar pressões pela razão de temperaturas absolutas"
+      ],
+      "depois": [
+        "Na interpretação esperada de mesmo gás com quantidade e volume constantes, aplicar p2/p1=T2/T1 às temperaturas absolutas e julgar se a razão é igual a um"
+      ]
+    },
+    {
+      "campo": "cr-e1-24.raciocinio.numero_etapas",
+      "antes": 2,
+      "depois": 1
+    },
+    {
+      "campo": "cr-e1-24.vinculo_competencias.alcance",
+      "antes": "Apoio delimitado a C02/C09: Separar leitura literal de pressão da água da leitura de termômetro com mesmo gás → Na leitura condicionada, comparar pressões pela razão de temperaturas absolutas. Não avalia integralmente a formulação avançada dessas competências.",
+      "depois": "Na leitura condicionada esperada pela prova, apoio restrito a C02: Na interpretação esperada de mesmo gás com quantidade e volume constantes, aplicar p2/p1=T2/T1 às temperaturas absolutas e julgar se a razão é igual a um. As ressalvas fornecidas pelo material não são uma resposta crítica exigida ou avaliada pelo comando."
+    },
+    {
+      "campo": "cr-e1-45.exposicao_previa.relacoes",
+      "antes": [
+        {
+          "id_ou_ancora": "av-e1-45",
+          "tipo": "origem_declarada",
+          "evidencia": "O rodapé de AV-45 aponta explicitamente para CR-45 como questão de origem e declara transformação autoral."
+        },
+        {
+          "id_ou_ancora": "av-e1-45",
+          "tipo": "mesma_transformacao",
+          "evidencia": "Ambas combinam limite de Carnot e balanço. CR45 usa900kJ,90kJ,477/27°C para julgar viabilidade; AV45 usa1000J,600/300K para calor mínimo rejeitado."
+        }
+      ],
+      "depois": [
+        {
+          "id_ou_ancora": "av-e1-45",
+          "tipo": "origem_declarada",
+          "evidencia": "O rodapé de AV-45 aponta explicitamente para CR-45 como questão de origem e declara transformação autoral."
+        },
+        {
+          "id_ou_ancora": "av-e1-45",
+          "tipo": "mesma_transformacao",
+          "evidencia": "Ambas combinam limite de Carnot e balanço. CR45 usa900kJ,90kJ,477/27°C para julgar viabilidade; AV45 usa1000 kJ,600/300K para calor mínimo rejeitado."
+        }
+      ]
+    },
+    {
+      "campo": "cr-e1-79.competencias",
+      "antes": [
+        "C03",
+        "C09"
+      ],
+      "depois": [
+        "C03"
+      ]
+    },
+    {
+      "campo": "cr-e1-79.pre_requisitos",
+      "antes": [
+        "Radiação no vácuo",
+        "Condução por contatos",
+        "Dados para comparação de mecanismos"
+      ],
+      "depois": [
+        "Radiação térmica no vácuo",
+        "Condução por contatos sólidos",
+        "Redução do transporte pelo gás em alto vácuo"
+      ]
+    },
+    {
+      "campo": "cr-e1-79.nivel.estimado",
+      "antes": "intermediario",
+      "depois": "iniciante"
+    },
+    {
+      "campo": "cr-e1-79.nivel.justificativa",
+      "antes": "O inventário registra julgamento condicionado porque a informação dada não prova a predominância incluída nas opções.",
+      "depois": "O comando solicita uma alternativa sobre mecanismos. Sob a predominância radiativa pressuposta, exige reconhecimento qualitativo; não pede ao aluno demonstrar insuficiência ou quantificar a predominância."
+    },
+    {
+      "campo": "cr-e1-79.raciocinio.categoria",
+      "antes": "julgamento_delimitado",
+      "depois": "reconhecimento"
+    },
+    {
+      "campo": "cr-e1-79.raciocinio.etapas",
+      "antes": [
+        "Identificar radiação e condução por sólidos presentes apesar do alto vácuo",
+        "Distinguir presença de mecanismos da predominância radiativa pressuposta pela prova"
+      ],
+      "depois": [
+        "Selecionar a associação esperada de radiação predominante e condução por contatos sólidos, adotando a predominância como pressuposto da leitura da prova"
+      ]
+    },
+    {
+      "campo": "cr-e1-79.raciocinio.numero_etapas",
+      "antes": 2,
+      "depois": 1
+    },
+    {
+      "campo": "cr-e1-79.vinculo_competencias.alcance",
+      "antes": "Apoio delimitado a C03/C09: Identificar radiação e condução por sólidos presentes apesar do alto vácuo → Distinguir presença de mecanismos da predominância radiativa pressuposta pela prova. Não avalia integralmente a formulação avançada dessas competências.",
+      "depois": "Na leitura condicionada esperada pela prova, apoio restrito a C03: Selecionar a associação esperada de radiação predominante e condução por contatos sólidos, adotando a predominância como pressuposto da leitura da prova. As ressalvas fornecidas pelo material não são uma resposta crítica exigida ou avaliada pelo comando."
+    },
+    {
+      "campo": "av-e1-01.pre_requisitos",
+      "antes": [
+        "Propriedade intensiva/extensiva",
+        "Estado homogêneo"
+      ],
+      "depois": [
+        "Distinção entre propriedades intensivas e extensivas",
+        "Significado de manter estado e composição ao dividir amostra homogênea"
+      ]
+    },
+    {
+      "campo": "av-e1-02.pre_requisitos",
+      "antes": [
+        "Propriedade de estado",
+        "Calor e trabalho como transferências"
+      ],
+      "depois": [
+        "Propriedade de estado versus dependência do caminho",
+        "Calor e trabalho como transferências de energia"
+      ]
+    },
+    {
+      "campo": "av-e1-03.pre_requisitos",
+      "antes": [
+        "Energia cinética microscópica",
+        "Estados físicos"
+      ],
+      "depois": [
+        "Movimento microscópico de partículas em sólidos, líquidos e gases",
+        "Relação entre movimento microscópico e energia cinética"
+      ]
+    },
+    {
+      "campo": "av-e1-04.pre_requisitos",
+      "antes": [
+        "Volume específico",
+        "Compressibilidade e dilatação"
+      ],
+      "depois": [
+        "Significado de volume específico e massa específica",
+        "Aproximação de volume específico constante no modelo incompressível"
+      ]
+    },
+    {
+      "campo": "av-e1-05.pre_requisitos",
+      "antes": [
+        "Unidades de base SI",
+        "Tempo e temperatura"
+      ],
+      "depois": [
+        "Correspondência entre tempo, temperatura termodinâmica e quantidade de matéria",
+        "Segundo, kelvin e mol como unidades de base do SI"
+      ]
+    },
+    {
+      "campo": "av-e1-06.pre_requisitos",
+      "antes": [
+        "Função afim",
+        "Escalas de temperatura"
+      ],
+      "depois": [
+        "Interpolação linear entre dois pontos",
+        "Identificação dos valores correspondentes nas escalas X e Y"
+      ]
+    },
+    {
+      "campo": "av-e1-07.pre_requisitos",
+      "antes": [
+        "Grandezas medidas",
+        "Princípio do manômetro Bourdon"
+      ],
+      "depois": [
+        "Pressão como grandeza medida por manômetro",
+        "Princípio qualitativo de deformação do tubo de Bourdon"
+      ]
+    },
+    {
+      "campo": "av-e1-08.pre_requisitos",
+      "antes": [
+        "Faixa e span",
+        "Intervalo versus temperatura absoluta"
+      ],
+      "depois": [
+        "Alcance ou span como diferença entre limites de medição",
+        "Soma do limite inferior e do intervalo na mesma unidade"
+      ]
+    },
+    {
+      "campo": "av-e1-09.pre_requisitos",
+      "antes": [
+        "Temperatura termodinâmica e Celsius",
+        "Unidade SI versus unidade de base"
+      ],
+      "depois": [
+        "Kelvin como unidade de base de temperatura termodinâmica",
+        "Diferença entre valor de temperatura e variação de temperatura",
+        "Relação Celsius–kelvin e igualdade dos tamanhos dos intervalos"
+      ]
+    },
+    {
+      "campo": "av-e1-10.pre_requisitos",
+      "antes": [
+        "Massa específica ρ=m/V",
+        "Intensividade"
+      ],
+      "depois": [
+        "Definição de massa específica como massa dividida por volume",
+        "Classificação de massa específica como propriedade intensiva"
+      ]
+    },
+    {
+      "campo": "av-e1-11.pre_requisitos",
+      "antes": [
+        "Unidades de temperatura",
+        "Unidades de potência e energia",
+        "Conversão Celsius–kelvin"
+      ],
+      "depois": [
+        "Leitura da relação de conversão Celsius–kelvin fornecida",
+        "Substituição numérica e adição com identificação da unidade final"
+      ]
+    },
+    {
+      "campo": "av-e1-12.pre_requisitos",
+      "antes": [
+        "Leis zero, primeira, segunda e terceira",
+        "Cristal perfeito"
+      ],
+      "depois": [
+        "Correspondência das leis zero, primeira, segunda e terceira com equilíbrio, conservação, limite de conversão e referência de entropia",
+        "Condição de cristal perfeito puro a zero kelvin na terceira lei"
+      ]
+    },
+    {
+      "campo": "av-e1-13.pre_requisitos",
+      "antes": [
+        "Modelo de gás ideal",
+        "u(T)",
+        "Calor específico cv",
+        "Energia total versus específica"
+      ],
+      "depois": [
+        "Energia interna de gás ideal como função da temperatura",
+        "Relação ΔU=mcvΔT com cv constante",
+        "Distinção entre energia total e específica"
+      ]
+    },
+    {
+      "campo": "av-e1-14.pre_requisitos",
+      "antes": [
+        "Comportamento macroscópico do gás"
+      ],
+      "depois": [
+        "Ocupação do volume acessível por gás em equilíbrio sem barreiras"
+      ]
+    },
+    {
+      "campo": "av-e1-15.pre_requisitos",
+      "antes": [
+        "Teoria cinética elementar",
+        "Colisão elástica"
+      ],
+      "depois": [
+        "Hipóteses da teoria cinética elementar de gás ideal",
+        "Colisão elástica como conservação da energia cinética total da colisão"
+      ]
+    },
+    {
+      "campo": "av-e1-16.pre_requisitos",
+      "antes": [
+        "Umidade relativa φ=pv/psat",
+        "Razão saída/entrada"
+      ],
+      "depois": [
+        "Umidade relativa como razão entre pressão parcial do vapor e pressão de saturação",
+        "Cancelamento da mesma pressão de saturação na razão saída/entrada"
+      ]
+    },
+    {
+      "campo": "av-e1-17.pre_requisitos",
+      "antes": [
+        "Umidade relativa",
+        "Proporcionalidade entre pressão parcial e quantidade de vapor"
+      ],
+      "depois": [
+        "Definição de umidade relativa φ=pv/psat na mesma temperatura",
+        "Interpretação de cinquenta por cento como metade da pressão de referência"
+      ]
+    },
+    {
+      "campo": "av-e1-18.pre_requisitos",
+      "antes": [
+        "Equação pV=nRT",
+        "Razões de estado"
+      ],
+      "depois": [
+        "Relação de gás ideal pV=nRT",
+        "Proporcionalidade p/T quando quantidade e volume permanecem constantes"
+      ]
+    },
+    {
+      "campo": "av-e1-19.pre_requisitos",
+      "antes": [
+        "Gás ideal",
+        "Compatibilidade de unidades de R"
+      ],
+      "depois": [
+        "Equação de estado pV=nRT e isolamento algébrico de p",
+        "Compatibilidade das unidades fornecidas de quantidade, volume, temperatura e R"
+      ]
+    },
+    {
+      "campo": "av-e1-20.pre_requisitos",
+      "antes": [
+        "Lei dos gases ideais",
+        "Extrapolação e limite do modelo"
+      ],
+      "depois": [
+        "Leitura de V=nRT/p com n e p constantes positivos",
+        "Limite de uma proporcionalidade direta quando T tende a zero"
+      ]
+    },
+    {
+      "campo": "av-e1-21.pre_requisitos",
+      "antes": [
+        "Equação de estado",
+        "Pressão, volume e temperatura"
+      ],
+      "depois": [
+        "Equação de estado pV=nRT para quantidade e composição fixas",
+        "Dependência entre p,V,T e isolamento de uma variável conhecidas as demais"
+      ]
+    },
+    {
+      "campo": "av-e1-22.pre_requisitos",
+      "antes": [
+        "Definição de Z",
+        "Modelo ideal"
+      ],
+      "depois": [
+        "Definição do fator de compressibilidade Z=pV/(nRT)",
+        "Valor Z=1 como referência de gás ideal"
+      ]
+    },
+    {
+      "campo": "av-e1-23.pre_requisitos",
+      "antes": [
+        "Densidade molecular",
+        "Limites do gás ideal"
+      ],
+      "depois": [
+        "Limites qualitativos de validade do modelo de gás ideal",
+        "Efeito de baixa densidade e afastamento da condensação sobre interações moleculares"
+      ]
+    },
+    {
+      "campo": "av-e1-24.pre_requisitos",
+      "antes": [
+        "pV=nRT",
+        "Temperatura absoluta",
+        "Mesma substância versus referência térmica"
+      ],
+      "depois": [
+        "Equação do gás ideal para massa e volume constantes",
+        "Proporcionalidade entre pressão e temperatura absoluta"
+      ]
+    },
+    {
+      "campo": "av-e1-25.pre_requisitos",
+      "antes": [
+        "Razões de gases ideais",
+        "Percentual de aumento"
+      ],
+      "depois": [
+        "Relação entre razões de estados pV/T para quantidade fixa de gás ideal",
+        "Conversão entre fator multiplicativo e aumento percentual"
+      ]
+    },
+    {
+      "campo": "av-e1-26.pre_requisitos",
+      "antes": [
+        "Primeira lei",
+        "Sinais de calor e trabalho",
+        "Conversão kcal/kJ"
+      ],
+      "depois": [
+        "Balanço de energia de sistema fechado com ΔEC e ΔEP desprezíveis",
+        "Sinais de energia recebida por trabalho de eixo e perdida por calor"
+      ]
+    },
+    {
+      "campo": "av-e1-27.pre_requisitos",
+      "antes": [
+        "Adiabaticidade",
+        "Trabalho de compressão",
+        "u(T)"
+      ],
+      "depois": [
+        "Adiabaticidade como calor externo nulo",
+        "Primeira lei de sistema fechado sob trabalho recebido",
+        "Aumento de energia interna e temperatura para gás ideal de composição fixa"
+      ]
+    },
+    {
+      "campo": "av-e1-28.pre_requisitos",
+      "antes": [
+        "Conversão cal/J",
+        "Primeira lei",
+        "Valor final versus variação"
+      ],
+      "depois": [
+        "Aplicação do fator de conversão cal/J fornecido",
+        "Primeira lei com calor recebido e trabalho produzido",
+        "Distinção entre variação de energia e energia interna final"
+      ]
+    },
+    {
+      "campo": "av-e1-29.pre_requisitos",
+      "antes": [
+        "Trabalho isobárico",
+        "Convenção de sinais",
+        "Primeira lei"
+      ],
+      "depois": [
+        "Trabalho de fronteira quase estático a pressão constante W=pΔV",
+        "Sinais de compressão e calor rejeitado",
+        "Primeira lei de sistema fechado e equivalência kPa·m³=kJ"
+      ]
+    },
+    {
+      "campo": "av-e1-30.pre_requisitos",
+      "antes": [
+        "Gás ideal u(T)",
+        "Isotermia",
+        "Primeira lei",
+        "Leitura p–V"
+      ],
+      "depois": [
+        "Isotermia como temperatura constante",
+        "Energia interna de gás ideal como função da temperatura",
+        "Primeira lei de sistema fechado com calor e trabalho de fronteira"
+      ]
+    },
+    {
+      "campo": "av-e1-31.pre_requisitos",
+      "antes": [
+        "Combustão",
+        "Energia liberada versus absorvida",
+        "PCS versus PCI"
+      ],
+      "depois": [
+        "Significado de poder calorífico superior e inferior",
+        "Papel da recuperação do calor de condensação da água dos produtos"
+      ]
+    },
+    {
+      "campo": "av-e1-32.pre_requisitos",
+      "antes": [
+        "Reação exotérmica/endotérmica",
+        "Entalpia de reação"
+      ],
+      "depois": [
+        "Entalpia como função de estado e inversão do sinal na reação inversa",
+        "Associação de ΔH positivo e negativo à classificação endo/exotérmica nas condições indicadas"
+      ]
+    },
+    {
+      "campo": "av-e1-33.pre_requisitos",
+      "antes": [
+        "Expansão livre",
+        "Primeira lei",
+        "u(T) do gás ideal"
+      ],
+      "depois": [
+        "Expansão livre contra vácuo sem trabalho de fronteira externo",
+        "Primeira lei de sistema fechado isolado",
+        "Energia interna de gás ideal como função da temperatura",
+        "Segunda lei e aumento de entropia na expansão livre irreversível de um sistema isolado",
+        "Distinção entre temperatura constante e entropia constante"
+      ]
+    },
+    {
+      "campo": "av-e1-34.pre_requisitos",
+      "antes": [
+        "Isocoria",
+        "Trabalho de fronteira",
+        "Primeira lei",
+        "Energia interna mcvΔT"
+      ],
+      "depois": [
+        "Volume constante e ausência de trabalho de fronteira no tanque rígido",
+        "Primeira lei de sistema fechado",
+        "Relação ΔU=mcvΔT para gás ideal com cv constante"
+      ]
+    },
+    {
+      "campo": "av-e1-35.pre_requisitos",
+      "antes": [
+        "Primeira lei",
+        "Convenção W produzido positivo"
+      ],
+      "depois": [
+        "Adiabaticidade como Q=0",
+        "Primeira lei de sistema fechado",
+        "Convenção de trabalho produzido positivo e variação de energia como final menos inicial"
+      ]
+    },
+    {
+      "campo": "av-e1-36.pre_requisitos",
+      "antes": [
+        "Calor versus trabalho",
+        "Adiabaticidade"
+      ],
+      "depois": [
+        "Distinção entre calor e trabalho em processo adiabático",
+        "Primeira lei e relação u(T) do gás ideal na expansão",
+        "Adiabático reversível como isentrópico"
+      ]
+    },
+    {
+      "campo": "av-e1-37.pre_requisitos",
+      "antes": [
+        "Irreversibilidade",
+        "Trabalho útil",
+        "Entropia gerada"
+      ],
+      "depois": [
+        "Identificação da temperatura ambiente e entropia gerada na relação fornecida",
+        "Multiplicação das grandezas e cancelamento de K em K·kJ/K"
+      ]
+    },
+    {
+      "campo": "av-e1-38.pre_requisitos",
+      "antes": [
+        "Teorema de Carnot",
+        "Reversibilidade"
+      ],
+      "depois": [
+        "Eficiência máxima de máquina entre duas fontes ηCarnot=1−TL/TH",
+        "Uso das temperaturas absolutas na razão"
+      ]
+    },
+    {
+      "campo": "av-e1-39.pre_requisitos",
+      "antes": [
+        "Conversão cal/J",
+        "Balanço de ciclo",
+        "Kelvin–Planck"
+      ],
+      "depois": [
+        "Balanço de energia de máquina cíclica",
+        "Enunciado de Kelvin–Planck e significado de único efeito e única fonte"
+      ]
+    },
+    {
+      "campo": "av-e1-40.pre_requisitos",
+      "antes": [
+        "Relação dh=Tds+vdp",
+        "Isentropia",
+        "Sinal de volume específico"
+      ],
+      "depois": [
+        "Isentropia como ds=0",
+        "Leitura e redução da identidade diferencial fornecida",
+        "Aproximação Δh≈vΔp para v constante e equivalência kPa·m³/kg=kJ/kg"
+      ]
+    },
+    {
+      "campo": "av-e1-41.pre_requisitos",
+      "antes": [
+        "Potencial químico",
+        "Equilíbrio de fases"
+      ],
+      "depois": [
+        "Potencial químico como critério de equilíbrio entre fases da mesma substância pura"
+      ]
+    },
+    {
+      "campo": "av-e1-42.pre_requisitos",
+      "antes": [
+        "Eficiência térmica W/QH",
+        "Percentuais"
+      ],
+      "depois": [
+        "Definição de eficiência térmica como trabalho líquido dividido pelo calor recebido",
+        "Conversão de razão adimensional em porcentagem"
+      ]
+    },
+    {
+      "campo": "av-e1-43.pre_requisitos",
+      "antes": [
+        "Entropia de sistema e vizinhança",
+        "Congelamento"
+      ],
+      "depois": [
+        "Entropia do conjunto como soma das entropias de suas partes",
+        "Critério da segunda lei ΔStotal≥0 para conjunto isolado"
+      ]
+    },
+    {
+      "campo": "av-e1-44.pre_requisitos",
+      "antes": [
+        "Processo versus ciclo",
+        "Adiabaticidade",
+        "Eficiência térmica"
+      ],
+      "depois": [
+        "Energia interna como propriedade de estado que retorna ao valor inicial em ciclo",
+        "Adiabaticidade como ausência de calor",
+        "Primeira lei de sistema fechado em um ciclo"
+      ]
+    },
+    {
+      "campo": "av-e1-45.pre_requisitos",
+      "antes": [
+        "Balanço energético do ciclo",
+        "Carnot",
+        "Conversão °C/K"
+      ],
+      "depois": [
+        "Limite de Carnot ηmáxima=1−TL/TH com temperaturas absolutas",
+        "Balanço energético cíclico QH=Wlíquido+QL e relação entre eficiência máxima e calor rejeitado mínimo"
+      ]
+    },
+    {
+      "campo": "av-e1-45.raciocinio.etapas",
+      "antes": [
+        "Determinar o limite de eficiência reversível entre 600 K e 300 K",
+        "Relacionar esse limite ao mínimo calor rejeitado para QH=1000 J"
+      ],
+      "depois": [
+        "Determinar o limite de eficiência reversível entre 600 K e 300 K",
+        "Relacionar esse limite ao mínimo calor rejeitado para QH=1000 kJ"
+      ]
+    },
+    {
+      "campo": "av-e1-45.hipoteses.explicitadas",
+      "antes": [
+        "Máquina entre reservatórios a 600 K e 300 K com calor recebido de 1000 J"
+      ],
+      "depois": [
+        "Máquina entre reservatórios a 600 K e 300 K com calor recebido de 1000 kJ"
+      ]
+    },
+    {
+      "campo": "av-e1-45.vinculo_competencias.alcance",
+      "antes": "Apoio delimitado a C04/C06/C09: Determinar o limite de eficiência reversível entre 600 K e 300 K → Relacionar esse limite ao mínimo calor rejeitado para QH=1000 J. Não avalia integralmente a formulação avançada dessas competências.",
+      "depois": "Apoio delimitado a C04/C06/C09: Determinar o limite de eficiência reversível entre 600 K e 300 K → Relacionar esse limite ao mínimo calor rejeitado para QH=1000 kJ. Não avalia integralmente a formulação avançada dessas competências."
+    },
+    {
+      "campo": "av-e1-45.exposicao_previa.relacoes",
+      "antes": [
+        {
+          "id_ou_ancora": "cr-e1-45",
+          "tipo": "origem_declarada",
+          "evidencia": "O rodapé de AV-45 aponta explicitamente para CR-45 como questão de origem e declara transformação autoral."
+        },
+        {
+          "id_ou_ancora": "cr-e1-45",
+          "tipo": "mesma_transformacao",
+          "evidencia": "Ambas combinam limite de Carnot e balanço. CR45 usa900kJ,90kJ,477/27°C para julgar viabilidade; AV45 usa1000J,600/300K para calor mínimo rejeitado."
+        }
+      ],
+      "depois": [
+        {
+          "id_ou_ancora": "cr-e1-45",
+          "tipo": "origem_declarada",
+          "evidencia": "O rodapé de AV-45 aponta explicitamente para CR-45 como questão de origem e declara transformação autoral."
+        },
+        {
+          "id_ou_ancora": "cr-e1-45",
+          "tipo": "mesma_transformacao",
+          "evidencia": "Ambas combinam limite de Carnot e balanço. CR45 usa900kJ,90kJ,477/27°C para julgar viabilidade; AV45 usa1000 kJ,600/300K para calor mínimo rejeitado."
+        }
+      ]
+    },
+    {
+      "campo": "av-e1-46.pre_requisitos",
+      "antes": [
+        "Transformações isotérmica e adiabática",
+        "Carnot"
+      ],
+      "depois": [
+        "Definições de transformações isotérmica e adiabática reversível",
+        "Composição do ciclo de Carnot por dois processos de cada tipo"
+      ]
+    },
+    {
+      "campo": "av-e1-47.pre_requisitos",
+      "antes": [
+        "Compressores dinâmicos e volumétricos",
+        "Vazão e pressão"
+      ],
+      "depois": [
+        "Princípios de compressores centrífugos e alternativos",
+        "Tendências usuais de aplicação quanto a vazão e razão de pressão"
+      ]
+    },
+    {
+      "campo": "av-e1-48.pre_requisitos",
+      "antes": [
+        "Regeneração",
+        "Diferença de temperatura",
+        "Contracorrente"
+      ],
+      "depois": [
+        "Finalidade de recuperar calor do escape para o ar comprimido em regenerador",
+        "Transferência espontânea de calor de maior para menor temperatura"
+      ]
+    },
+    {
+      "campo": "av-e1-49.pre_requisitos",
+      "antes": [
+        "Brayton ideal e real",
+        "Perda de pressão em escoamento"
+      ],
+      "depois": [
+        "Trocas de calor isobáricas no Brayton ideal",
+        "Perdas de pressão em componentes reais",
+        "Distinção entre rejeição passiva de calor e elevação de pressão por compressão"
+      ]
+    },
+    {
+      "campo": "av-e1-50.pre_requisitos",
+      "antes": [
+        "Eficiência isentrópica",
+        "Trabalho de compressor e turbina"
+      ],
+      "depois": [
+        "Efeito qualitativo das irreversibilidades sobre trabalho de compressor e turbina",
+        "Comparação real/isentrópica sob mesmas condições de entrada e pressão de saída"
+      ]
+    },
+    {
+      "campo": "av-e1-51.pre_requisitos",
+      "antes": [
+        "Processos do Brayton convencional"
+      ],
+      "depois": [
+        "Processos isentrópicos e isobáricos do Brayton ideal convencional",
+        "Distinção entre processo isentrópico e isotérmico"
+      ]
+    },
+    {
+      "campo": "av-e1-52.pre_requisitos",
+      "antes": [
+        "Wlíquido=Wt−Wc",
+        "Eficiência térmica"
+      ],
+      "depois": [
+        "Potência líquida como potência de turbina menos potência consumida pelo compressor",
+        "Eficiência térmica como potência líquida dividida pela taxa de calor recebida"
+      ]
+    },
+    {
+      "campo": "av-e1-53.pre_requisitos",
+      "antes": [
+        "Regeneração de Brayton",
+        "Recuperação de calor"
+      ],
+      "depois": [
+        "Redução percentual como diferença entre valor inicial e final dividida pelo inicial"
+      ]
+    },
+    {
+      "campo": "av-e1-54.pre_requisitos",
+      "antes": [
+        "Compressores de fluxo e volumétricos",
+        "Razão de pressão"
+      ],
+      "depois": [
+        "Princípio de compressores dinâmicos versus deslocamento positivo",
+        "Associação de axial e centrífugo à primeira família e pistão e parafuso à segunda"
+      ]
+    },
+    {
+      "campo": "av-e1-55.pre_requisitos",
+      "antes": [
+        "Brayton ideal",
+        "Isobaria versus isocoria"
+      ],
+      "depois": [
+        "Sequência de processos do Brayton ideal",
+        "Distinção entre transferência de calor isobárica e isocórica"
+      ]
+    },
+    {
+      "campo": "av-e1-56.pre_requisitos",
+      "antes": [
+        "Turbina a gás",
+        "Gerador",
+        "Brayton"
+      ],
+      "depois": [
+        "Associação de turbina a gás ao modelo Brayton",
+        "Associação do circuito de geração de vapor e turbina a vapor ao Rankine"
+      ]
+    },
+    {
+      "campo": "av-e1-57.pre_requisitos",
+      "antes": [
+        "Razão de pressões",
+        "Expressão ideal de eficiência Brayton"
+      ],
+      "depois": [
+        "Substituição do fator fornecido na expressão de rendimento",
+        "Operações com fração 1/2 e conversão para porcentagem"
+      ]
+    },
+    {
+      "campo": "av-e1-57.hipoteses.explicitadas",
+      "antes": [
+        "Fórmula de rendimento e valor do fator de pressão fornecidos"
+      ],
+      "depois": [
+        "Ciclo Brayton ideal",
+        "Calores específicos constantes",
+        "Fórmula η=1−1/rp^((k−1)/k) fornecida",
+        "Fator rp^((k−1)/k)=2 fornecido"
+      ]
+    },
+    {
+      "campo": "av-e1-58.pre_requisitos",
+      "antes": [
+        "Compressão de gás",
+        "Relação pressão-volume"
+      ],
+      "depois": [
+        "Relação de gás ideal pV constante em processo isotérmico de massa fixa",
+        "Rearranjo de p1V1=p2V2 para a pressão final"
+      ]
+    },
+    {
+      "campo": "av-e1-59.pre_requisitos",
+      "antes": [
+        "Fases do compressor alternativo",
+        "Válvulas de admissão e descarga"
+      ],
+      "depois": [
+        "Etapas de admissão, compressão e descarga do compressor alternativo",
+        "Abertura e fechamento de válvulas automáticas por diferença de pressão"
+      ]
+    },
+    {
+      "campo": "av-e1-60.pre_requisitos",
+      "antes": [
+        "Compressor alternativo",
+        "Vazão instantânea e média"
+      ],
+      "depois": [
+        "Caráter pulsante da descarga do compressor alternativo",
+        "Função qualitativa do reservatório em amortecer variações na linha"
+      ]
+    },
+    {
+      "campo": "av-e1-61.pre_requisitos",
+      "antes": [
+        "Eficiência volumétrica",
+        "Volume morto e reexpansão"
+      ],
+      "depois": [
+        "Identificação do numerador e denominador na definição de eficiência fornecida",
+        "Divisão de volumes na mesma unidade e conversão da razão para porcentagem"
+      ]
+    },
+    {
+      "campo": "av-e1-62.pre_requisitos",
+      "antes": [
+        "Admissão",
+        "Diferença de pressão",
+        "Válvulas"
+      ],
+      "depois": [
+        "Função das válvulas de admissão e descarga em compressor alternativo",
+        "Entrada de gás pela diferença de pressão na etapa de admissão"
+      ]
+    },
+    {
+      "campo": "av-e1-63.pre_requisitos",
+      "antes": [
+        "Brayton",
+        "Stirling",
+        "Ciclos de turbina a gás"
+      ],
+      "depois": [
+        "Associação da turbina a gás ao ciclo Brayton",
+        "Reconhecimento de duas isentrópicas e duas isobáricas no modelo ideal"
+      ]
+    },
+    {
+      "campo": "av-e1-64.pre_requisitos",
+      "antes": [
+        "Deslocamento positivo",
+        "Compressor parafuso e alternativo"
+      ],
+      "depois": [
+        "Princípio de deslocamento positivo por redução do volume aprisionado",
+        "Funcionamento qualitativo de compressores de pistão e parafuso"
+      ]
+    },
+    {
+      "campo": "av-e1-65.pre_requisitos",
+      "antes": [
+        "Turbina",
+        "Entalpia de escoamento",
+        "Adiabaticidade"
+      ],
+      "depois": [
+        "Balanço estacionário de energia de uma turbina adiabática com ΔEC e ΔEP desprezíveis",
+        "Relação entre vazão mássica, queda de entalpia específica e potência",
+        "Equivalência kJ/s=kW"
+      ]
+    },
+    {
+      "campo": "av-e1-66.pre_requisitos",
+      "antes": [
+        "Trocador casco e tubos",
+        "Convecção e condução",
+        "Contato direto"
+      ],
+      "depois": [
+        "Separação das correntes por parede de tubos em trocador casco e tubos",
+        "Condução na parede e convecção entre fluidos e parede"
+      ]
+    },
+    {
+      "campo": "av-e1-67.pre_requisitos",
+      "antes": [
+        "Dilatação térmica",
+        "Restrição mecânica"
+      ],
+      "depois": [
+        "Relação de dilatação linear livre ΔL=αLΔT",
+        "Conversão de metros em milímetros"
+      ]
+    },
+    {
+      "campo": "av-e1-68.pre_requisitos",
+      "antes": [
+        "Emissividade",
+        "Radiação térmica",
+        "Comparação controlada"
+      ],
+      "depois": [
+        "Leitura da proporcionalidade entre perda radiativa e emissividade na fórmula fornecida",
+        "Razão entre valor final e inicial e distinção entre fração remanescente e redução percentual"
+      ]
+    },
+    {
+      "campo": "av-e1-69.pre_requisitos",
+      "antes": [
+        "Convecção",
+        "Condução",
+        "Trocador casco-tubo"
+      ],
+      "depois": [
+        "Convecção na interface entre fluido e parede",
+        "Condução através da parede sólida que separa os fluidos"
+      ]
+    },
+    {
+      "campo": "av-e1-70.pre_requisitos",
+      "antes": [
+        "Sentido espontâneo de calor",
+        "Gradiente de temperatura"
+      ],
+      "depois": [
+        "Comparação de temperaturas na mesma escala",
+        "Sentido espontâneo da condução do quente para o frio"
+      ]
+    },
+    {
+      "campo": "av-e1-71.pre_requisitos",
+      "antes": [
+        "Convecção natural e forçada",
+        "Bombas e ventiladores"
+      ],
+      "depois": [
+        "Distinção entre movimento do fluido por acionamento externo e por empuxo",
+        "Convecção forçada associada a ventiladores e bombas"
+      ]
+    },
+    {
+      "campo": "av-e1-72.pre_requisitos",
+      "antes": [
+        "Escoamento paralelo e contracorrente"
+      ],
+      "depois": [
+        "Definições geométricas de escoamento paralelo e contracorrente em tubos concêntricos"
+      ]
+    },
+    {
+      "campo": "av-e1-73.pre_requisitos",
+      "antes": [
+        "Densidade de área",
+        "Trocador compacto"
+      ],
+      "depois": [
+        "Significado de área de transferência por unidade de volume",
+        "Compacidade como grande área térmica disponível em volume reduzido"
+      ]
+    },
+    {
+      "campo": "av-e1-74.pre_requisitos",
+      "antes": [
+        "Resistência térmica",
+        "Incrustação",
+        "Coeficiente global"
+      ],
+      "depois": [
+        "Relação de taxa térmica Q̇=UAΔTm com coeficiente global, área e diferença média fornecidos",
+        "Conversão de watts em quilowatts"
+      ]
+    },
+    {
+      "campo": "av-e1-75.pre_requisitos",
+      "antes": [
+        "Gradiente",
+        "Lei de Fourier",
+        "Sinal vetorial"
+      ],
+      "depois": [
+        "Leitura da componente de fluxo e do gradiente na lei unidimensional fornecida",
+        "Multiplicação de números com sinal",
+        "Distinção entre unidade de fluxo W/m² e potência W"
+      ]
+    },
+    {
+      "campo": "av-e1-76.pre_requisitos",
+      "antes": [
+        "Advecção",
+        "Convecção",
+        "Difusão térmica"
+      ],
+      "depois": [
+        "Advecção como transporte pelo movimento global do fluido",
+        "Convecção como combinação de transporte por movimento e difusão térmica",
+        "Condutividade térmica positiva e papel do sinal de Fourier no sentido do fluxo"
+      ]
+    },
+    {
+      "campo": "av-e1-77.pre_requisitos",
+      "antes": [
+        "Condensador e evaporador",
+        "Calor e mudança de fase"
+      ],
+      "depois": [
+        "Primeira lei aplicada ao ciclo de refrigeração em regime permanente",
+        "Identificação de calor retirado no evaporador, potência recebida e calor rejeitado no condensador"
+      ]
+    },
+    {
+      "campo": "av-e1-78.pre_requisitos",
+      "antes": [
+        "Calor latente",
+        "Refrigeração",
+        "Diferença entre propriedade e desempenho global"
+      ],
+      "depois": [
+        "Calor latente de vaporização como energia absorvida por unidade de massa evaporada"
+      ]
+    },
+    {
+      "campo": "av-e1-79.pre_requisitos",
+      "antes": [
+        "Radiação no vácuo",
+        "Condução por contatos",
+        "Dados para comparação de mecanismos"
+      ],
+      "depois": [
+        "Radiação como transferência possível sem meio material",
+        "Condução por suportes e cabos sólidos mesmo sob vácuo"
+      ]
+    },
+    {
+      "campo": "av-e1-80.pre_requisitos",
+      "antes": [
+        "Volume e área de paralelepípedo",
+        "Balanço estacionário",
+        "Convecção"
+      ],
+      "depois": [
+        "Volume de paralelepípedo e área da face exposta a partir de dimensões fornecidas",
+        "Conversão da geração por volume em potência total",
+        "Balanço estacionário sem acumulação e relação convectiva Q̇=hA(Ts−Tamb)"
+      ]
+    }
+  ]
+}

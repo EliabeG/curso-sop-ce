@@ -1,0 +1,5634 @@
+{
+  "natureza": "Auditoria técnica independente FON-09 r1; não é gate geral",
+  "achados": [
+    {
+      "id": "R1-A",
+      "causa": "reference.split(\"#\") descarta componentes posteriores ao primeiro fragmento antes de aplicar regex PDF",
+      "casos": [
+        {
+          "caso": "segundo hash com texto",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra",
+          "esperado_ok": false,
+          "observado_ok": true,
+          "passou": false,
+          "erros": []
+        },
+        {
+          "caso": "segundo hash vazio",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#",
+          "esperado_ok": false,
+          "observado_ok": true,
+          "passou": false,
+          "erros": []
+        }
+      ],
+      "impacto": "Aceita sintaxe fora do contrato declarado page=N inteiro positivo; extração do fragmento precisa preservar/verificar todo o sufixo após o primeiro #."
+    }
+  ],
+  "manifesto": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "bytes": 1270749,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/modulos/e1-termodinamica.html",
+      "sha256_observado": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "sha256_copia": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "confere": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "bytes": 11334,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256_observado": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "sha256_copia": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "af30160109fa7e9e007e6de74eb1836896194ff90888aec75e0f8a4a86675618",
+      "bytes": 748555,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256_observado": "af30160109fa7e9e007e6de74eb1836896194ff90888aec75e0f8a4a86675618",
+      "sha256_copia": "af30160109fa7e9e007e6de74eb1836896194ff90888aec75e0f8a4a86675618",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "1505e80c437fdd6dbbea40973155446ec859ba2fb363752217346876a8fb43db",
+      "bytes": 51262,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256_observado": "1505e80c437fdd6dbbea40973155446ec859ba2fb363752217346876a8fb43db",
+      "sha256_copia": "1505e80c437fdd6dbbea40973155446ec859ba2fb363752217346876a8fb43db",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "114b1a063cb2a88e505c9ecffd2b22c75f29b709419b24e9e533331fa7283b22",
+      "bytes": 20828,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256_observado": "114b1a063cb2a88e505c9ecffd2b22c75f29b709419b24e9e533331fa7283b22",
+      "sha256_copia": "114b1a063cb2a88e505c9ecffd2b22c75f29b709419b24e9e533331fa7283b22",
+      "confere": true
+    }
+  ],
+  "evidencias": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/apoio-dados-r1.md",
+      "sha256": "1b47e954f75aff62741702335cc33b0ceef8b1d826bc241648a4f061ca34fb47",
+      "bytes": 11777,
+      "sha256_observado": "1b47e954f75aff62741702335cc33b0ceef8b1d826bc241648a4f061ca34fb47",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-densidade-25c-101325.html",
+      "sha256": "7bc6b02309d877723dd721a9eab8f9f2ee817d8fa2008c7b4c7de12373f5a01e",
+      "bytes": 30847,
+      "sha256_observado": "7bc6b02309d877723dd721a9eab8f9f2ee817d8fa2008c7b4c7de12373f5a01e",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-saturacao-101325.html",
+      "sha256": "ccbfe0998477db30e1acd2c81acb035df65e5aea580dd8147accb5b6f4d88b34",
+      "bytes": 31888,
+      "sha256_observado": "ccbfe0998477db30e1acd2c81acb035df65e5aea580dd8147accb5b6f4d88b34",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/caderno-p14-r1.png",
+      "sha256": "d5b56a741accdfe775008dfda298ae7ccda16cc8d419633387fba8a665449696",
+      "bytes": 426922,
+      "sha256_observado": "d5b56a741accdfe775008dfda298ae7ccda16cc8d419633387fba8a665449696",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/conferencia-numerica-coordenador-r1.json",
+      "sha256": "b35294d63564a044736fc4340db0057265587ade85574a2378ffca1936710141",
+      "bytes": 5748,
+      "sha256_observado": "b35294d63564a044736fc4340db0057265587ade85574a2378ffca1936710141",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/conferencia-origem-r1.md",
+      "sha256": "23b6e6b4f4f2dcb378a1c9ea28d0eafd901b43722cb5fbbdcf765c03c789eede",
+      "bytes": 7691,
+      "sha256_observado": "23b6e6b4f4f2dcb378a1c9ea28d0eafd901b43722cb5fbbdcf765c03c789eede",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/conferencia-visual-coordenador-r1.json",
+      "sha256": "b18e7b2f297417821ffc83a9afcf4c2b19a627b55fa78251e88d0dbb2a704dd5",
+      "bytes": 3775,
+      "sha256_observado": "b18e7b2f297417821ffc83a9afcf4c2b19a627b55fa78251e88d0dbb2a704dd5",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/contrato-existente-r1.json",
+      "sha256": "c66b18e496f268e37538867bd627618df4bcad3b5e777ae7d305af1047e977e2",
+      "bytes": 10166,
+      "sha256_observado": "c66b18e496f268e37538867bd627618df4bcad3b5e777ae7d305af1047e977e2",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/cr68-antes.html",
+      "sha256": "db7da36b75e047ef81dc83ebbfe33ce499b6a2f4c97314ac9a4d5ab5fd9bdaaf",
+      "bytes": 6410,
+      "sha256_observado": "db7da36b75e047ef81dc83ebbfe33ce499b6a2f4c97314ac9a4d5ab5fd9bdaaf",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/cr68-r1.html",
+      "sha256": "7cca4d60d34457a5bccb41efe003b4e1012bdac03df25ebfb77458547af3e81a",
+      "bytes": 12458,
+      "sha256_observado": "7cca4d60d34457a5bccb41efe003b4e1012bdac03df25ebfb77458547af3e81a",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/delta-inventario-r1.json",
+      "sha256": "d930668c56605e89bbb4e2fd4e81218a907ac7efb1a6607175c5f8c2b1d77239",
+      "bytes": 10044,
+      "sha256_observado": "d930668c56605e89bbb4e2fd4e81218a907ac7efb1a6607175c5f8c2b1d77239",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/delta-validador-r1.json",
+      "sha256": "b5bf5dde9cb02d72c08480c65866fcc00b0a28936e749b2290cb703b75171f96",
+      "bytes": 1362,
+      "sha256_observado": "b5bf5dde9cb02d72c08480c65866fcc00b0a28936e749b2290cb703b75171f96",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/documentos-hashes-r1.json",
+      "sha256": "b97429f1bdf9156709accfa4fcbdb0c871e7d32620debd7dfed93b3783cd003b",
+      "bytes": 1015,
+      "sha256_observado": "b97429f1bdf9156709accfa4fcbdb0c871e7d32620debd7dfed93b3783cd003b",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/e1-termodinamica.r1.html",
+      "sha256": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "bytes": 1270749,
+      "sha256_observado": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/gabarito-oficial-obtido-r1.pdf",
+      "sha256": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071",
+      "bytes": 48271,
+      "sha256_observado": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/gabarito-oficial-p1-r1.png",
+      "sha256": "9041d06317afd51b76ccebbac1c5d5f6acd7b0e6bba8f4e074a2e041b6a78224",
+      "bytes": 189216,
+      "sha256_observado": "9041d06317afd51b76ccebbac1c5d5f6acd7b0e6bba8f4e074a2e041b6a78224",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/navegador-coordenador-r1.md",
+      "sha256": "475ec41af7284fce118794450a973bcaaa8549f616371902b3fffb4d6ca1a581",
+      "bytes": 2833,
+      "sha256_observado": "475ec41af7284fce118794450a973bcaaa8549f616371902b3fffb4d6ca1a581",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/prova-oficial-obtida-r1.pdf",
+      "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+      "bytes": 344114,
+      "sha256_observado": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/prova-oficial-p3-r1.png",
+      "sha256": "54cf6005c2eedd024baa16a95221e0a99062943cb7d80a415db78ee24614cbc8",
+      "bytes": 982636,
+      "sha256_observado": "54cf6005c2eedd024baa16a95221e0a99062943cb7d80a415db78ee24614cbc8",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/reexecutar-contrato-r1.mjs",
+      "sha256": "860d9154ede19c54c83c15664baae0caabf54575c8c44d1bfa8b3306f1496ce1",
+      "bytes": 29630,
+      "sha256_observado": "860d9154ede19c54c83c15664baae0caabf54575c8c44d1bfa8b3306f1496ce1",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/registro-cr68-r1.json",
+      "sha256": "1f9082aeb00709a3f3f0374e26df5e5284fa82dfb83f7be824300c1753d066a0",
+      "bytes": 5928,
+      "sha256_observado": "1f9082aeb00709a3f3f0374e26df5e5284fa82dfb83f7be824300c1753d066a0",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/testar-pdf-r1.mjs",
+      "sha256": "0ae575a2b2a22f79ed037b2b9f83da9fec00e5a000a99a629b7d0df311369dee",
+      "bytes": 1980,
+      "sha256_observado": "0ae575a2b2a22f79ed037b2b9f83da9fec00e5a000a99a629b7d0df311369dee",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/teste-pdf-r1.json",
+      "sha256": "d6aabd000be5c4f6a346c1b76abb72f16ce7a38fb1c9196fa3e6584ac0f9077f",
+      "bytes": 2499,
+      "sha256_observado": "d6aabd000be5c4f6a346c1b76abb72f16ce7a38fb1c9196fa3e6584ac0f9077f",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/validacao-inventario-r1.json",
+      "sha256": "9b4fe465df792bdb58ed94ecb3106585be0193b371106892c1c52838aa0749f8",
+      "bytes": 333,
+      "sha256_observado": "9b4fe465df792bdb58ed94ecb3106585be0193b371106892c1c52838aa0749f8",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/verificacao-r1.json",
+      "sha256": "114436a1509e3bddf9b73e9b9d34fd9a1814cd3c109e683df5ff8b2818383e63",
+      "bytes": 36428,
+      "sha256_observado": "114436a1509e3bddf9b73e9b9d34fd9a1814cd3c109e683df5ff8b2818383e63",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/verificar-fon09-r1.mjs",
+      "sha256": "dec7743ecde6c495e870957e9e6f868fad0936a6880459fe693ec8a28bfbba20",
+      "bytes": 8196,
+      "sha256_observado": "dec7743ecde6c495e870957e9e6f868fad0936a6880459fe693ec8a28bfbba20",
+      "confere": true
+    }
+  ],
+  "base": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "copia": "auditoria/termodinamica/evidencias/FON-09/antes/modulos/e1-termodinamica.html",
+      "sha256_observado": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "confere": true
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "copia": "auditoria/termodinamica/evidencias/FON-09/antes/assets/registro.js",
+      "sha256_observado": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "c577058429375c11196eb99ae6bd01a9020f5258d3981d72c58896829ed900a2",
+      "copia": "auditoria/termodinamica/evidencias/FON-09/antes/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256_observado": "c577058429375c11196eb99ae6bd01a9020f5258d3981d72c58896829ed900a2",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "c650d94556d527725595dfc86b1feaa055a32a2d9060e9b4680f1a152e11cca4",
+      "copia": "auditoria/termodinamica/evidencias/FON-09/antes/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256_observado": "c650d94556d527725595dfc86b1feaa055a32a2d9060e9b4680f1a152e11cca4",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+      "copia": "auditoria/termodinamica/evidencias/FON-09/antes/auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256_observado": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+      "confere": true
+    }
+  ],
+  "infraestrutura": [
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "confere": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "confere": true
+    },
+    {
+      "arquivo": "assets/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario.schema.json",
+      "sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/LEIA-ME.md",
+      "sha256": "cdcd7e965bdc4a998b6e2fa784a53f84f295abcf9ade2d06ce62fff71d072449",
+      "confere": true
+    }
+  ],
+  "artigos_preservados": [
+    {
+      "id": "q-e1-01",
+      "confere": true
+    },
+    {
+      "id": "q-e1-02",
+      "confere": true
+    },
+    {
+      "id": "q-e1-03",
+      "confere": true
+    },
+    {
+      "id": "q-e1-04",
+      "confere": true
+    },
+    {
+      "id": "q-e1-05",
+      "confere": true
+    },
+    {
+      "id": "q-e1-06",
+      "confere": true
+    },
+    {
+      "id": "q-e1-07",
+      "confere": true
+    },
+    {
+      "id": "q-e1-08",
+      "confere": true
+    },
+    {
+      "id": "q-e1-09",
+      "confere": true
+    },
+    {
+      "id": "q-e1-10",
+      "confere": true
+    },
+    {
+      "id": "q-e1-11",
+      "confere": true
+    },
+    {
+      "id": "q-e1-12",
+      "confere": true
+    },
+    {
+      "id": "q-e1-13",
+      "confere": true
+    },
+    {
+      "id": "q-e1-14",
+      "confere": true
+    },
+    {
+      "id": "q-e1-15",
+      "confere": true
+    },
+    {
+      "id": "q-e1-16",
+      "confere": true
+    },
+    {
+      "id": "q-e1-17",
+      "confere": true
+    },
+    {
+      "id": "q-e1-18",
+      "confere": true
+    },
+    {
+      "id": "q-e1-19",
+      "confere": true
+    },
+    {
+      "id": "q-e1-20",
+      "confere": true
+    },
+    {
+      "id": "q-e1-21",
+      "confere": true
+    },
+    {
+      "id": "q-e1-22",
+      "confere": true
+    },
+    {
+      "id": "q-e1-23",
+      "confere": true
+    },
+    {
+      "id": "q-e1-24",
+      "confere": true
+    },
+    {
+      "id": "q-e1-25",
+      "confere": true
+    },
+    {
+      "id": "q-e1-26",
+      "confere": true
+    },
+    {
+      "id": "q-e1-27",
+      "confere": true
+    },
+    {
+      "id": "q-e1-28",
+      "confere": true
+    },
+    {
+      "id": "q-e1-29",
+      "confere": true
+    },
+    {
+      "id": "q-e1-30",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-01",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-02",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-03",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-04",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-05",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-06",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-07",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-08",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-09",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-10",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-11",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-12",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-13",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-14",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-15",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-16",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-17",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-18",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-19",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-20",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-21",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-22",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-23",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-24",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-25",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-26",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-27",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-28",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-29",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-30",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-31",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-32",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-33",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-34",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-35",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-36",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-37",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-38",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-39",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-40",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-41",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-42",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-43",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-44",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-45",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-46",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-47",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-48",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-49",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-50",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-51",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-52",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-53",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-54",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-55",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-56",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-57",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-58",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-59",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-60",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-61",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-62",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-63",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-64",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-65",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-66",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-67",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-69",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-70",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-71",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-72",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-73",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-74",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-75",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-76",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-77",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-78",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-79",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-80",
+      "confere": true
+    },
+    {
+      "id": "av-e1-01",
+      "confere": true
+    },
+    {
+      "id": "av-e1-02",
+      "confere": true
+    },
+    {
+      "id": "av-e1-03",
+      "confere": true
+    },
+    {
+      "id": "av-e1-04",
+      "confere": true
+    },
+    {
+      "id": "av-e1-05",
+      "confere": true
+    },
+    {
+      "id": "av-e1-06",
+      "confere": true
+    },
+    {
+      "id": "av-e1-07",
+      "confere": true
+    },
+    {
+      "id": "av-e1-08",
+      "confere": true
+    },
+    {
+      "id": "av-e1-09",
+      "confere": true
+    },
+    {
+      "id": "av-e1-10",
+      "confere": true
+    },
+    {
+      "id": "av-e1-11",
+      "confere": true
+    },
+    {
+      "id": "av-e1-12",
+      "confere": true
+    },
+    {
+      "id": "av-e1-13",
+      "confere": true
+    },
+    {
+      "id": "av-e1-14",
+      "confere": true
+    },
+    {
+      "id": "av-e1-15",
+      "confere": true
+    },
+    {
+      "id": "av-e1-16",
+      "confere": true
+    },
+    {
+      "id": "av-e1-17",
+      "confere": true
+    },
+    {
+      "id": "av-e1-18",
+      "confere": true
+    },
+    {
+      "id": "av-e1-19",
+      "confere": true
+    },
+    {
+      "id": "av-e1-20",
+      "confere": true
+    },
+    {
+      "id": "av-e1-21",
+      "confere": true
+    },
+    {
+      "id": "av-e1-22",
+      "confere": true
+    },
+    {
+      "id": "av-e1-23",
+      "confere": true
+    },
+    {
+      "id": "av-e1-24",
+      "confere": true
+    },
+    {
+      "id": "av-e1-25",
+      "confere": true
+    },
+    {
+      "id": "av-e1-26",
+      "confere": true
+    },
+    {
+      "id": "av-e1-27",
+      "confere": true
+    },
+    {
+      "id": "av-e1-28",
+      "confere": true
+    },
+    {
+      "id": "av-e1-29",
+      "confere": true
+    },
+    {
+      "id": "av-e1-30",
+      "confere": true
+    },
+    {
+      "id": "av-e1-31",
+      "confere": true
+    },
+    {
+      "id": "av-e1-32",
+      "confere": true
+    },
+    {
+      "id": "av-e1-33",
+      "confere": true
+    },
+    {
+      "id": "av-e1-34",
+      "confere": true
+    },
+    {
+      "id": "av-e1-35",
+      "confere": true
+    },
+    {
+      "id": "av-e1-36",
+      "confere": true
+    },
+    {
+      "id": "av-e1-37",
+      "confere": true
+    },
+    {
+      "id": "av-e1-38",
+      "confere": true
+    },
+    {
+      "id": "av-e1-39",
+      "confere": true
+    },
+    {
+      "id": "av-e1-40",
+      "confere": true
+    },
+    {
+      "id": "av-e1-41",
+      "confere": true
+    },
+    {
+      "id": "av-e1-42",
+      "confere": true
+    },
+    {
+      "id": "av-e1-43",
+      "confere": true
+    },
+    {
+      "id": "av-e1-44",
+      "confere": true
+    },
+    {
+      "id": "av-e1-45",
+      "confere": true
+    },
+    {
+      "id": "av-e1-46",
+      "confere": true
+    },
+    {
+      "id": "av-e1-47",
+      "confere": true
+    },
+    {
+      "id": "av-e1-48",
+      "confere": true
+    },
+    {
+      "id": "av-e1-49",
+      "confere": true
+    },
+    {
+      "id": "av-e1-50",
+      "confere": true
+    },
+    {
+      "id": "av-e1-51",
+      "confere": true
+    },
+    {
+      "id": "av-e1-52",
+      "confere": true
+    },
+    {
+      "id": "av-e1-53",
+      "confere": true
+    },
+    {
+      "id": "av-e1-54",
+      "confere": true
+    },
+    {
+      "id": "av-e1-55",
+      "confere": true
+    },
+    {
+      "id": "av-e1-56",
+      "confere": true
+    },
+    {
+      "id": "av-e1-57",
+      "confere": true
+    },
+    {
+      "id": "av-e1-58",
+      "confere": true
+    },
+    {
+      "id": "av-e1-59",
+      "confere": true
+    },
+    {
+      "id": "av-e1-60",
+      "confere": true
+    },
+    {
+      "id": "av-e1-61",
+      "confere": true
+    },
+    {
+      "id": "av-e1-62",
+      "confere": true
+    },
+    {
+      "id": "av-e1-63",
+      "confere": true
+    },
+    {
+      "id": "av-e1-64",
+      "confere": true
+    },
+    {
+      "id": "av-e1-65",
+      "confere": true
+    },
+    {
+      "id": "av-e1-66",
+      "confere": true
+    },
+    {
+      "id": "av-e1-67",
+      "confere": true
+    },
+    {
+      "id": "av-e1-68",
+      "confere": true
+    },
+    {
+      "id": "av-e1-69",
+      "confere": true
+    },
+    {
+      "id": "av-e1-70",
+      "confere": true
+    },
+    {
+      "id": "av-e1-71",
+      "confere": true
+    },
+    {
+      "id": "av-e1-72",
+      "confere": true
+    },
+    {
+      "id": "av-e1-73",
+      "confere": true
+    },
+    {
+      "id": "av-e1-74",
+      "confere": true
+    },
+    {
+      "id": "av-e1-75",
+      "confere": true
+    },
+    {
+      "id": "av-e1-76",
+      "confere": true
+    },
+    {
+      "id": "av-e1-77",
+      "confere": true
+    },
+    {
+      "id": "av-e1-78",
+      "confere": true
+    },
+    {
+      "id": "av-e1-79",
+      "confere": true
+    },
+    {
+      "id": "av-e1-80",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-saturacao",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-caminhos",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-integrabilidade",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-calor-caminho",
+      "confere": true
+    }
+  ],
+  "registros_preservados": [
+    {
+      "id": "q-e1-01",
+      "confere": true
+    },
+    {
+      "id": "q-e1-02",
+      "confere": true
+    },
+    {
+      "id": "q-e1-03",
+      "confere": true
+    },
+    {
+      "id": "q-e1-04",
+      "confere": true
+    },
+    {
+      "id": "q-e1-05",
+      "confere": true
+    },
+    {
+      "id": "q-e1-06",
+      "confere": true
+    },
+    {
+      "id": "q-e1-07",
+      "confere": true
+    },
+    {
+      "id": "q-e1-08",
+      "confere": true
+    },
+    {
+      "id": "q-e1-09",
+      "confere": true
+    },
+    {
+      "id": "q-e1-10",
+      "confere": true
+    },
+    {
+      "id": "q-e1-11",
+      "confere": true
+    },
+    {
+      "id": "q-e1-12",
+      "confere": true
+    },
+    {
+      "id": "q-e1-13",
+      "confere": true
+    },
+    {
+      "id": "q-e1-14",
+      "confere": true
+    },
+    {
+      "id": "q-e1-15",
+      "confere": true
+    },
+    {
+      "id": "q-e1-16",
+      "confere": true
+    },
+    {
+      "id": "q-e1-17",
+      "confere": true
+    },
+    {
+      "id": "q-e1-18",
+      "confere": true
+    },
+    {
+      "id": "q-e1-19",
+      "confere": true
+    },
+    {
+      "id": "q-e1-20",
+      "confere": true
+    },
+    {
+      "id": "q-e1-21",
+      "confere": true
+    },
+    {
+      "id": "q-e1-22",
+      "confere": true
+    },
+    {
+      "id": "q-e1-23",
+      "confere": true
+    },
+    {
+      "id": "q-e1-24",
+      "confere": true
+    },
+    {
+      "id": "q-e1-25",
+      "confere": true
+    },
+    {
+      "id": "q-e1-26",
+      "confere": true
+    },
+    {
+      "id": "q-e1-27",
+      "confere": true
+    },
+    {
+      "id": "q-e1-28",
+      "confere": true
+    },
+    {
+      "id": "q-e1-29",
+      "confere": true
+    },
+    {
+      "id": "q-e1-30",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-01",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-02",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-03",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-04",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-05",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-06",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-07",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-08",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-09",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-10",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-11",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-12",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-13",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-14",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-15",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-16",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-17",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-18",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-19",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-20",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-21",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-22",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-23",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-24",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-25",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-26",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-27",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-28",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-29",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-30",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-31",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-32",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-33",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-34",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-35",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-36",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-37",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-38",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-39",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-40",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-41",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-42",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-43",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-44",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-45",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-46",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-47",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-48",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-49",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-50",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-51",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-52",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-53",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-54",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-55",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-56",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-57",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-58",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-59",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-60",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-61",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-62",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-63",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-64",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-65",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-66",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-67",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-69",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-70",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-71",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-72",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-73",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-74",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-75",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-76",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-77",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-78",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-79",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-80",
+      "confere": true
+    },
+    {
+      "id": "av-e1-01",
+      "confere": true
+    },
+    {
+      "id": "av-e1-02",
+      "confere": true
+    },
+    {
+      "id": "av-e1-03",
+      "confere": true
+    },
+    {
+      "id": "av-e1-04",
+      "confere": true
+    },
+    {
+      "id": "av-e1-05",
+      "confere": true
+    },
+    {
+      "id": "av-e1-06",
+      "confere": true
+    },
+    {
+      "id": "av-e1-07",
+      "confere": true
+    },
+    {
+      "id": "av-e1-08",
+      "confere": true
+    },
+    {
+      "id": "av-e1-09",
+      "confere": true
+    },
+    {
+      "id": "av-e1-10",
+      "confere": true
+    },
+    {
+      "id": "av-e1-11",
+      "confere": true
+    },
+    {
+      "id": "av-e1-12",
+      "confere": true
+    },
+    {
+      "id": "av-e1-13",
+      "confere": true
+    },
+    {
+      "id": "av-e1-14",
+      "confere": true
+    },
+    {
+      "id": "av-e1-15",
+      "confere": true
+    },
+    {
+      "id": "av-e1-16",
+      "confere": true
+    },
+    {
+      "id": "av-e1-17",
+      "confere": true
+    },
+    {
+      "id": "av-e1-18",
+      "confere": true
+    },
+    {
+      "id": "av-e1-19",
+      "confere": true
+    },
+    {
+      "id": "av-e1-20",
+      "confere": true
+    },
+    {
+      "id": "av-e1-21",
+      "confere": true
+    },
+    {
+      "id": "av-e1-22",
+      "confere": true
+    },
+    {
+      "id": "av-e1-23",
+      "confere": true
+    },
+    {
+      "id": "av-e1-24",
+      "confere": true
+    },
+    {
+      "id": "av-e1-25",
+      "confere": true
+    },
+    {
+      "id": "av-e1-26",
+      "confere": true
+    },
+    {
+      "id": "av-e1-27",
+      "confere": true
+    },
+    {
+      "id": "av-e1-28",
+      "confere": true
+    },
+    {
+      "id": "av-e1-29",
+      "confere": true
+    },
+    {
+      "id": "av-e1-30",
+      "confere": true
+    },
+    {
+      "id": "av-e1-31",
+      "confere": true
+    },
+    {
+      "id": "av-e1-32",
+      "confere": true
+    },
+    {
+      "id": "av-e1-33",
+      "confere": true
+    },
+    {
+      "id": "av-e1-34",
+      "confere": true
+    },
+    {
+      "id": "av-e1-35",
+      "confere": true
+    },
+    {
+      "id": "av-e1-36",
+      "confere": true
+    },
+    {
+      "id": "av-e1-37",
+      "confere": true
+    },
+    {
+      "id": "av-e1-38",
+      "confere": true
+    },
+    {
+      "id": "av-e1-39",
+      "confere": true
+    },
+    {
+      "id": "av-e1-40",
+      "confere": true
+    },
+    {
+      "id": "av-e1-41",
+      "confere": true
+    },
+    {
+      "id": "av-e1-42",
+      "confere": true
+    },
+    {
+      "id": "av-e1-43",
+      "confere": true
+    },
+    {
+      "id": "av-e1-44",
+      "confere": true
+    },
+    {
+      "id": "av-e1-45",
+      "confere": true
+    },
+    {
+      "id": "av-e1-46",
+      "confere": true
+    },
+    {
+      "id": "av-e1-47",
+      "confere": true
+    },
+    {
+      "id": "av-e1-48",
+      "confere": true
+    },
+    {
+      "id": "av-e1-49",
+      "confere": true
+    },
+    {
+      "id": "av-e1-50",
+      "confere": true
+    },
+    {
+      "id": "av-e1-51",
+      "confere": true
+    },
+    {
+      "id": "av-e1-52",
+      "confere": true
+    },
+    {
+      "id": "av-e1-53",
+      "confere": true
+    },
+    {
+      "id": "av-e1-54",
+      "confere": true
+    },
+    {
+      "id": "av-e1-55",
+      "confere": true
+    },
+    {
+      "id": "av-e1-56",
+      "confere": true
+    },
+    {
+      "id": "av-e1-57",
+      "confere": true
+    },
+    {
+      "id": "av-e1-58",
+      "confere": true
+    },
+    {
+      "id": "av-e1-59",
+      "confere": true
+    },
+    {
+      "id": "av-e1-60",
+      "confere": true
+    },
+    {
+      "id": "av-e1-61",
+      "confere": true
+    },
+    {
+      "id": "av-e1-62",
+      "confere": true
+    },
+    {
+      "id": "av-e1-63",
+      "confere": true
+    },
+    {
+      "id": "av-e1-64",
+      "confere": true
+    },
+    {
+      "id": "av-e1-65",
+      "confere": true
+    },
+    {
+      "id": "av-e1-66",
+      "confere": true
+    },
+    {
+      "id": "av-e1-67",
+      "confere": true
+    },
+    {
+      "id": "av-e1-68",
+      "confere": true
+    },
+    {
+      "id": "av-e1-69",
+      "confere": true
+    },
+    {
+      "id": "av-e1-70",
+      "confere": true
+    },
+    {
+      "id": "av-e1-71",
+      "confere": true
+    },
+    {
+      "id": "av-e1-72",
+      "confere": true
+    },
+    {
+      "id": "av-e1-73",
+      "confere": true
+    },
+    {
+      "id": "av-e1-74",
+      "confere": true
+    },
+    {
+      "id": "av-e1-75",
+      "confere": true
+    },
+    {
+      "id": "av-e1-76",
+      "confere": true
+    },
+    {
+      "id": "av-e1-77",
+      "confere": true
+    },
+    {
+      "id": "av-e1-78",
+      "confere": true
+    },
+    {
+      "id": "av-e1-79",
+      "confere": true
+    },
+    {
+      "id": "av-e1-80",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-saturacao",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-caminhos",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-integrabilidade",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-calor-caminho",
+      "confere": true
+    }
+  ],
+  "linhas_preservadas": [
+    {
+      "texto": "| [Questão 1](../../../modulos/e1-termodinamica.html#q-e1-01) | C01 | iniciante | 1 | Reconhece a classe de fronteira a partir de vedação e trocas já declaradas; não escolhe um modelo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 2](../../../modulos/e1-termodinamica.html#q-e1-02) | C02, C08 | iniciante | 1 | Uma conversão de referência de pressão, com ambas as parcelas fornecidas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 3](../../../modulos/e1-termodinamica.html#q-e1-03) | C02 | iniciante | 1 | Pede apenas reconhecer duas propriedades intensivas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 4](../../../modulos/e1-termodinamica.html#q-e1-04) | C02 | iniciante | 1 | Região e três entalpias já são dadas; basta isolar x, sem buscar tabela. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 5](../../../modulos/e1-termodinamica.html#q-e1-05) | C02 | iniciante | 1 | Reconhece o domínio de definição do título entre afirmações prontas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 6](../../../modulos/e1-termodinamica.html#q-e1-06) | C02, C08 | iniciante | 1 | Modelo, massa, volume, temperatura e R fornecidos; substituição única na equação de estado. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 7](../../../modulos/e1-termodinamica.html#q-e1-07) | C03 | iniciante | 1 | Balanço fechado com termos negligenciados já indicados e somente uma diferença de energias. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 8](../../../modulos/e1-termodinamica.html#q-e1-08) | C03, C08 | iniciante | 1 | Trajetória quase estática e pressão constante explicitadas; aplica W=pΔV. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 9](../../../modulos/e1-termodinamica.html#q-e1-09) | C03, C08 | intermediario | 2 | Integra leitura gráfica e sinal de uma integral de caminho, ainda em geometria retangular elementar. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 10](../../../modulos/e1-termodinamica.html#q-e1-10) | C03 | iniciante | 1 | Todas as hipóteses de redução do balanço estão fornecidas; reconhece diretamente a condição isoentálpica, sem escolher modelo ou obter propriedades. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 11](../../../modulos/e1-termodinamica.html#q-e1-11) | C03, C08 | iniciante | 1 | Entalpias, vazão e simplificações são fornecidas; cálculo direto de potência. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 12](../../../modulos/e1-termodinamica.html#q-e1-12) | C03, C02 | iniciante | 1 | Aplicação de vΔp com volume e aumento de pressão dados e sinal já delimitado. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 13](../../../modulos/e1-termodinamica.html#q-e1-13) | C02, C03 | iniciante | 3 | Três reconhecimentos conceituais independentes; número de afirmações não cria modelagem avançada. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 14](../../../modulos/e1-termodinamica.html#q-e1-14) | C04, C09 | iniciante | 1 | Escolhe o dispositivo permitido por enunciado da segunda lei em alternativas explícitas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 15](../../../modulos/e1-termodinamica.html#q-e1-15) | C03, C06 | iniciante | 1 | Aplica uma relação de eficiência com calor recebido e rejeitado dados; a subtração e a divisão não são decisões intelectuais independentes. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 16](../../../modulos/e1-termodinamica.html#q-e1-16) | C04, C06 | iniciante | 1 | Fontes em kelvin e reversibilidade já declaradas; aplica uma expressão conhecida. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 17](../../../modulos/e1-termodinamica.html#q-e1-17) | C03, C06 | iniciante | 2 | Solicita dois cálculos diretos com calor e trabalho informados, sem modelagem de estados. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 18](../../../modulos/e1-termodinamica.html#q-e1-18) | C04 | iniciante | 3 | Três juízos conceituais, sem calcular propriedades ou geração. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 19](../../../modulos/e1-termodinamica.html#q-e1-19) | C06 | iniciante | 1 | As duas quedas já estão prontas; basta escolher a ordem da razão. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 20](../../../modulos/e1-termodinamica.html#q-e1-20) | C06 | iniciante | 1 | Reconhece a ordem dos quatro equipamentos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 21](../../../modulos/e1-termodinamica.html#q-e1-21) | C06 | iniciante | 1 | Contrasta duas definições de ciclo, sem derivação nem cálculo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 22](../../../modulos/e1-termodinamica.html#q-e1-22) | C06, C03 | iniciante | 1 | Reconhece efeito qualitativo do intercooling sob modelo já ensinado; não otimiza nem calcula estágios. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 23](../../../modulos/e1-termodinamica.html#q-e1-23) | C03, C06 | intermediario | 2 | Relaciona estados a dois componentes e combina os respectivos balanços; propriedades continuam totalmente fornecidas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 24](../../../modulos/e1-termodinamica.html#q-e1-24) | C01, C06 | iniciante | 1 | Pergunta factual sobre qual corrente passa nos tubos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 25](../../../modulos/e1-termodinamica.html#q-e1-25) | C01, C03 | iniciante | 1 | A proposição incorreta é uma distinção conceitual entre tempo e espaço, sem cálculo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 26](../../../modulos/e1-termodinamica.html#q-e1-26) | C02, C08 | iniciante | 1 | Uma interpolação com pontos e valor-alvo fornecidos; repete o exemplo disponível. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 27](../../../modulos/e1-termodinamica.html#q-e1-27) | C03, C06 | iniciante | 1 | O enunciado já fornece razões iguais; resolve a relação algébrica, sem demonstrar o mínimo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 28](../../../modulos/e1-termodinamica.html#q-e1-28) | C06 | iniciante | 1 | Escolhe e aplica razão de diferenças de entalpia já dadas; dispensa obter estados. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 29](../../../modulos/e1-termodinamica.html#q-e1-29) | C01, C04 | intermediario | 2 | Reúne duas correntes e o balanço do conjunto; a prática repete os dados do exemplo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [Questão 30](../../../modulos/e1-termodinamica.html#q-e1-30) | C02, C04, C09 | iniciante | 1 | Reconhecimento da afirmação falsa sobre válvulas entre conceitos já expostos, sem modelagem independente. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [01. Quantidade de matéria](../../../modulos/e1-termodinamica.html#cr-e1-01) | C02 | iniciante | 1 | O julgamento usa a definição de intensividade sem cálculo ou escolha de modelo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [02. Estado e caminho](../../../modulos/e1-termodinamica.html#cr-e1-02) | C02, C03 | iniciante | 1 | Basta confrontar a afirmação com a distinção entre propriedades e transferências. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [03. Movimento molecular](../../../modulos/e1-termodinamica.html#cr-e1-03) | C02 | iniciante | 1 | É reconhecimento conceitual de movimento molecular, sem modelo quantitativo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [04. Líquido quase incompressível](../../../modulos/e1-termodinamica.html#cr-e1-04) | C02 | iniciante | 1 | A leitura esperada recupera uma aproximação usual; a falta de faixa impede elevar a generalidade do resultado. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [05. Unidades fundamentais](../../../modulos/e1-termodinamica.html#cr-e1-05) | C08 | iniciante | 1 | O item exige identificar unidades trocadas numa lista, não análise metrológica. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [06. Conversão de escalas](../../../modulos/e1-termodinamica.html#cr-e1-06) | C08 | iniciante | 1 | A hipótese linear já é dada e basta reconhecer TX=a+bTY. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [07. Bourdon ou termômetro?](../../../modulos/e1-termodinamica.html#cr-e1-07) | C08 | iniciante | 1 | Identifica atribuição incorreta do princípio de um instrumento. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [08. Faixa de um sensor](../../../modulos/e1-termodinamica.html#cr-e1-08) | C08 | iniciante | 1 | A definição de span leva a uma soma com dados fornecidos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [09. Unidade de temperatura](../../../modulos/e1-termodinamica.html#cr-e1-09) | C08 | iniciante | 1 | O comando exige somente C/E e, na leitura condicionada esperada, reconhecimento da unidade de base. A distinção crítica da redação é fornecida nas notas e não avaliada como resposta do aluno. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [10. Massa específica](../../../modulos/e1-termodinamica.html#cr-e1-10) | C02 | iniciante | 1 | A independência da quantidade resulta diretamente da razão m/V em amostra homogênea. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [11. Unidade termodinâmica](../../../modulos/e1-termodinamica.html#cr-e1-11) | C08 | iniciante | 1 | Recupera a unidade adequada entre cinco nomes conhecidos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [12. Identificação das quatro leis](../../../modulos/e1-termodinamica.html#cr-e1-12) | C03, C04 | iniciante | 1 | Exige cotejo conceitual de quatro afirmações, sem construir balanços. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [13. Energia interna do gás ideal](../../../modulos/e1-termodinamica.html#cr-e1-13) | C02 | iniciante | 1 | A propriedade funcional já pertence ao modelo explicitado; não há cálculo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [14. Ocupação do recipiente](../../../modulos/e1-termodinamica.html#cr-e1-14) | C02 | iniciante | 1 | É reconhecimento do comportamento usual de gases. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [15. Colisões moleculares](../../../modulos/e1-termodinamica.html#cr-e1-15) | C02 | iniciante | 1 | O julgamento recupera uma hipótese do modelo, sem balanço microscópico. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [16. Desumidificador: pressão parcial](../../../modulos/e1-termodinamica.html#cr-e1-16) | C07 | iniciante | 1 | A razão resulta diretamente das umidades dadas, sem determinar vazão ou composição. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [17. Significado de 50% de umidade](../../../modulos/e1-termodinamica.html#cr-e1-17) | C07 | iniciante | 1 | O item verifica significado de umidade relativa, não cálculo de mistura completa. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [18. Aumento de temperatura](../../../modulos/e1-termodinamica.html#cr-e1-18) | C02 | iniciante | 1 | Uma proporção do produto pV permite rejeitar a triplicação simultânea. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [19. Pressão pela equação de estado](../../../modulos/e1-termodinamica.html#cr-e1-19) | C02 | iniciante | 1 | É substituição direta da equação de estado com comparação final de um limiar. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [20. Extrapolação ao zero absoluto](../../../modulos/e1-termodinamica.html#cr-e1-20) | C02, C09 | iniciante | 1 | O item exige julgar uma extrapolação qualitativa e não calcular estados de gás real. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [21. Variáveis do gás](../../../modulos/e1-termodinamica.html#cr-e1-21) | C02 | iniciante | 1 | Reconhece variáveis de estado sem resolver um estado desconhecido. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [22. Fator de compressibilidade](../../../modulos/e1-termodinamica.html#cr-e1-22) | C02, C07 | iniciante | 1 | Julga a definição de um indicador já nomeado. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [23. Condições para idealidade](../../../modulos/e1-termodinamica.html#cr-e1-23) | C02, C09 | iniciante | 1 | Identifica a condição qualitativa errada sem determinar propriedades reais. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [24. Termômetro de gás](../../../modulos/e1-termodinamica.html#cr-e1-24) | C02 | iniciante | 1 | Sob a leitura condicionada da prova, basta aplicar a proporcionalidade e marcar C/E. A análise de insuficiência da leitura literal está nas notas/resolução e não é uma etapa solicitada para resposta. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [25. Temperatura relativa e aumento percentual](../../../modulos/e1-termodinamica.html#cr-e1-25) | C02, C08 | iniciante | 1 | Uma relação de estados com conversão de razão em percentual; não exige estado real ou modelagem aberta. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [26. Agitador e perda de calor](../../../modulos/e1-termodinamica.html#cr-e1-26) | C03, C08 | intermediario | 2 | Integra direção das transferências, conversão e balanço, com figura contextual. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [27. Compressão adiabática](../../../modulos/e1-termodinamica.html#cr-e1-27) | C03 | iniciante | 1 | A conclusão qualitativa usa hipóteses usuais, não resolve processo real. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [28. Energia final ou variação?](../../../modulos/e1-termodinamica.html#cr-e1-28) | C03, C08 | intermediario | 2 | Há dois alvos distintos, ΔU e Uf, após compatibilização das unidades. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [29. Compressão com resfriamento](../../../modulos/e1-termodinamica.html#cr-e1-29) | C03 | intermediario | 2 | Combina cálculo de trabalho e balanço energético com sinais físicos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [30. Expansão isotérmica](../../../modulos/e1-termodinamica.html#cr-e1-30) | C03 | intermediario | 2 | Exige integrar identificação gráfica do processo com balanço, sem cálculo de ciclo completo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [31. Poder calorífico](../../../modulos/e1-termodinamica.html#cr-e1-31) | C07 | iniciante | 1 | Reconhece o sentido da energia na definição. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [32. Reação e sentido inverso](../../../modulos/e1-termodinamica.html#cr-e1-32) | C07 | iniciante | 1 | A tarefa verifica sinais e definições, não composição ou equilíbrio reativo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [33. Expansão livre no vácuo](../../../modulos/e1-termodinamica.html#cr-e1-33) | C03, C04 | intermediario | 2 | Requer interpretar a fronteira/figura e encadear balanço com modelo da substância. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [34. Aquecimento isocórico](../../../modulos/e1-termodinamica.html#cr-e1-34) | C03 | iniciante | 1 | Aplica uma simplificação direta do balanço, com hipótese de trabalho explicitada apenas no comentário. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [35. Primeira lei adiabática](../../../modulos/e1-termodinamica.html#cr-e1-35) | C03 | iniciante | 1 | Uma única simplificação do balanço determina a relação. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [36. Adiabático não significa sem trabalho](../../../modulos/e1-termodinamica.html#cr-e1-36) | C03, C04 | iniciante | 1 | O comando testa a distinção entre dois modos de transferência. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [37. Custo das irreversibilidades](../../../modulos/e1-termodinamica.html#cr-e1-37) | C05 | iniciante | 1 | Embora trate de exergia, pede apenas o sentido do efeito e não um balanço. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [38. Limite de Carnot](../../../modulos/e1-termodinamica.html#cr-e1-38) | C04 | iniciante | 1 | Reconhecimento do teorema, sem calcular ou determinar estados. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [39. Máquina com rendimento total](../../../modulos/e1-termodinamica.html#cr-e1-39) | C03, C04, C09 | intermediario | 2 | Integra números, balanço e julgamento da segunda lei. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [40. Pressão e entalpia](../../../modulos/e1-termodinamica.html#cr-e1-40) | C02, C04 | iniciante | 1 | Usa um caso particular direto de relação fundamental; o nome Gibbs não torna a tarefa avançada. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [41. Equilíbrio entre fases](../../../modulos/e1-termodinamica.html#cr-e1-41) | C02, C07 | iniciante | 1 | Reconhece uma condição de equilíbrio; não calcula potencial químico ou composição. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [42. Eficiência calculada](../../../modulos/e1-termodinamica.html#cr-e1-42) | C06 | iniciante | 1 | Uma razão direta responde à pergunta; não é comparação completa de viabilidade. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [43. Congelamento e entropia](../../../modulos/e1-termodinamica.html#cr-e1-43) | C04 | iniciante | 1 | Testa delimitação conceitual do conjunto sujeito à segunda lei. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [44. Adiabático e rendimento](../../../modulos/e1-termodinamica.html#cr-e1-44) | C03, C04, C09 | iniciante | 1 | Um contraexemplo conceitual basta; não pede cálculo de estados. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [45. Máquina impossível](../../../modulos/e1-termodinamica.html#cr-e1-45) | C04, C06, C09 | intermediario | 3 | Acopla balanço de energia, limite da segunda lei e decisão. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [46. Transformações de Carnot](../../../modulos/e1-termodinamica.html#cr-e1-46) | C06 | iniciante | 1 | É identificação de processos, sem resolver suas relações de estado. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [47. Vazão e tipo de compressor](../../../modulos/e1-termodinamica.html#cr-e1-47) | C06 | iniciante | 1 | Solicita indicação geral de aplicação, não seleção de projeto. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [48. Regenerador em contracorrente](../../../modulos/e1-termodinamica.html#cr-e1-48) | C06 | iniciante | 1 | Reconhece arranjo e finalidade sob condição térmica usual. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [49. Pressão no Brayton real](../../../modulos/e1-termodinamica.html#cr-e1-49) | C06 | iniciante | 1 | A conclusão é qualitativa e recupera o sentido das perdas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [50. Consumo do compressor](../../../modulos/e1-termodinamica.html#cr-e1-50) | C06 | iniciante | 1 | Reconhecimento do efeito das perdas, sem recompor um ciclo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [51. Processos do Brayton](../../../modulos/e1-termodinamica.html#cr-e1-51) | C06 | iniciante | 1 | Basta identificar a sequência conhecida. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [52. Aumentar consumo melhora eficiência?](../../../modulos/e1-termodinamica.html#cr-e1-52) | C06, C09 | iniciante | 1 | Julga suficiência de uma condição por dependência direta do trabalho líquido. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [53. Recuperar calor da exaustão](../../../modulos/e1-termodinamica.html#cr-e1-53) | C06 | iniciante | 1 | Pergunta a finalidade do equipamento, não sua análise quantitativa. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [54. Aplicações de compressores](../../../modulos/e1-termodinamica.html#cr-e1-54) | C06 | iniciante | 1 | Compara definições e usos gerais sem dados de seleção. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [55. Rejeição de calor no Brayton](../../../modulos/e1-termodinamica.html#cr-e1-55) | C06 | iniciante | 1 | O erro decisivo é a natureza da rejeição de calor, uma identificação de modelo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [56. Geração de eletricidade](../../../modulos/e1-termodinamica.html#cr-e1-56) | C06 | iniciante | 1 | É associação entre ciclo e aplicação tecnológica. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [57. Razão de pressões e eficiência](../../../modulos/e1-termodinamica.html#cr-e1-57) | C06 | iniciante | 1 | A conclusão resulta do comportamento monotônico de uma relação ideal. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [58. Compressão e pressão](../../../modulos/e1-termodinamica.html#cr-e1-58) | C02, C06 | iniciante | 1 | Reconhece evolução qualitativa do ciclo do pistão. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [59. Válvulas na compressão](../../../modulos/e1-termodinamica.html#cr-e1-59) | C01, C06 | iniciante | 1 | Identifica condição das válvulas, sem análise de trabalho ou massa. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [60. Vazão pulsante](../../../modulos/e1-termodinamica.html#cr-e1-60) | C06 | iniciante | 1 | Distingue comportamento instantâneo de fornecimento suavizado. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [61. Eficiência volumétrica](../../../modulos/e1-termodinamica.html#cr-e1-61) | C06 | iniciante | 1 | Reconhecimento de efeito do espaço morto sem calcular admissão. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [62. Etapa de admissão](../../../modulos/e1-termodinamica.html#cr-e1-62) | C01, C06 | iniciante | 1 | A tarefa identifica fase e válvulas no modelo descrito. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [63. Ciclo da turbina a gás](../../../modulos/e1-termodinamica.html#cr-e1-63) | C06 | iniciante | 1 | A identificação de família de ciclo é suficiente. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [64. Deslocamento positivo](../../../modulos/e1-termodinamica.html#cr-e1-64) | C06 | iniciante | 1 | Compara mecanismo básico, sem dimensionamento. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [65. Turbina a vapor](../../../modulos/e1-termodinamica.html#cr-e1-65) | C03, C06 | iniciante | 1 | O comando pede reconhecer o processo e efeito, sem calcular potência. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [66. Casco e tubos: mistura?](../../../modulos/e1-termodinamica.html#cr-e1-66) | C01, C03 | iniciante | 1 | Reconhece fronteiras de correntes e mecanismo do equipamento. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [67. Dilatação em tubulações](../../../modulos/e1-termodinamica.html#cr-e1-67) | C02, C09 | iniciante | 1 | Identifica função do acessório em aplicação térmica. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [68. Perda por radiação](../../../modulos/e1-termodinamica.html#cr-e1-68) | C03, C09 | iniciante | 1 | O alvo é uma proporcionalidade conceitual; a longa tabela e a figura não elevam a complexidade desse julgamento. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [69. Caminho do calor no trocador](../../../modulos/e1-termodinamica.html#cr-e1-69) | C03 | iniciante | 1 | Reconhece mecanismos e fronteiras, sem resolver rede térmica. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [70. Sentido da condução](../../../modulos/e1-termodinamica.html#cr-e1-70) | C04 | iniciante | 1 | A direção do fenômeno decide o julgamento. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [71. Convecção forçada](../../../modulos/e1-termodinamica.html#cr-e1-71) | C03 | iniciante | 1 | É identificação de mecanismo de movimentação do fluido. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [72. Escoamento paralelo](../../../modulos/e1-termodinamica.html#cr-e1-72) | C03 | iniciante | 1 | Reconhece uma definição geométrica de arranjo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [73. Trocador compacto](../../../modulos/e1-termodinamica.html#cr-e1-73) | C03 | iniciante | 1 | A definição de grande área por volume permite avaliar a proposição. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [74. Incrustação e resistência térmica](../../../modulos/e1-termodinamica.html#cr-e1-74) | C03 | iniciante | 1 | Reconhecimento de fatores de influência sem previsão de desempenho. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [75. Sinal na lei de Fourier](../../../modulos/e1-termodinamica.html#cr-e1-75) | C04, C08 | iniciante | 1 | Interpreta o sinal de uma relação, sem solução de campo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [76. Advecção e convecção](../../../modulos/e1-termodinamica.html#cr-e1-76) | C03 | iniciante | 1 | É discriminação conceitual de mecanismos de transporte. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [77. Função do condensador](../../../modulos/e1-termodinamica.html#cr-e1-77) | C06 | iniciante | 1 | O item exige identificar função e direção da troca térmica. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [78. Vantagem térmica da amônia](../../../modulos/e1-termodinamica.html#cr-e1-78) | C02, C06 | iniciante | 1 | Seleciona vantagem térmica conceitual, sem calcular COP ou riscos de instalação. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [79. Calor em câmara de vácuo](../../../modulos/e1-termodinamica.html#cr-e1-79) | C03 | iniciante | 1 | O comando solicita uma alternativa sobre mecanismos. Sob a predominância radiativa pressuposta, exige reconhecimento qualitativo; não pede ao aluno demonstrar insuficiência ou quantificar a predominância. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [80. Geração interna e convecção](../../../modulos/e1-termodinamica.html#cr-e1-80) | C03, C08 | intermediario | 2 | Integra seleção geométrica da área correta e balanço térmico com geração. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-01. Quantidade de matéria](../../../modulos/e1-termodinamica.html#av-e1-01) | C02 | iniciante | 1 | A divisão está explicitada; pede apenas discriminar intensivas de totais. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-02. Estado e caminho](../../../modulos/e1-termodinamica.html#av-e1-02) | C02, C03 | iniciante | 1 | Cinco alternativas verificam uma mesma distinção conceitual, sem balanço quantitativo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-03. Movimento molecular](../../../modulos/e1-termodinamica.html#av-e1-03) | C02 | iniciante | 1 | É sequência V/F de conceitos básicos, não inferência de modelo molecular. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-04. Líquido quase incompressível](../../../modulos/e1-termodinamica.html#av-e1-04) | C02 | iniciante | 1 | A hipótese e seu domínio já são fornecidos; basta interpretar seu significado. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-05. Unidades fundamentais](../../../modulos/e1-termodinamica.html#av-e1-05) | C08 | iniciante | 1 | Uma associação de unidades conhecidas resolve a tarefa. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-06. Conversão de escalas](../../../modulos/e1-termodinamica.html#av-e1-06) | C08 | iniciante | 1 | É uma interpolação de um só intervalo conhecido; não exige analisar incerteza da calibração. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-07. Bourdon ou termômetro?](../../../modulos/e1-termodinamica.html#av-e1-07) | C08 | iniciante | 1 | O instrumento é nomeado e descrito, exigindo recuperação de sua função. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-08. Faixa de um sensor](../../../modulos/e1-termodinamica.html#av-e1-08) | C08 | iniciante | 1 | A definição de span leva a uma aplicação numérica direta. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-09. Unidade de temperatura](../../../modulos/e1-termodinamica.html#av-e1-09) | C08 | iniciante | 1 | O comando explicita a grandeza e pede discriminar conceitos elementares de escala. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-10. Massa específica](../../../modulos/e1-termodinamica.html#av-e1-10) | C02 | iniciante | 1 | Aplicação da definição de densidade com classificação conceitual simples. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-11. Unidade termodinâmica](../../../modulos/e1-termodinamica.html#av-e1-11) | C08 | iniciante | 1 | Só se substitui um número na relação fornecida. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-12. Identificação das quatro leis](../../../modulos/e1-termodinamica.html#av-e1-12) | C03, C04 | iniciante | 1 | Associação de definições; não se aplicam as quatro leis a um problema físico. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-13. Energia interna do gás ideal](../../../modulos/e1-termodinamica.html#av-e1-13) | C02 | iniciante | 1 | A massa e a propriedade são dadas, dispensando seleção de modelo ou integração. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-14. Ocupação do recipiente](../../../modulos/e1-termodinamica.html#av-e1-14) | C02 | iniciante | 1 | A pergunta é espacial/conceitual apesar do contexto de liberação. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-15. Colisões moleculares](../../../modulos/e1-termodinamica.html#av-e1-15) | C02 | iniciante | 1 | As hipóteses do modelo são o próprio objeto da sequência V/F. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-16. Desumidificador: pressão parcial](../../../modulos/e1-termodinamica.html#av-e1-16) | C07 | iniciante | 1 | Razão direta com hipóteses declaradas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-17. Significado de 50% de umidade](../../../modulos/e1-termodinamica.html#av-e1-17) | C07 | iniciante | 1 | Aplica o significado da indicação do higrômetro, não um balanço de mistura. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-18. Aumento de temperatura](../../../modulos/e1-termodinamica.html#av-e1-18) | C02 | iniciante | 1 | Uma relação proporcional de estados com restrições explícitas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-19. Pressão pela equação de estado](../../../modulos/e1-termodinamica.html#av-e1-19) | C02 | iniciante | 1 | A substituição direta determina 1 atm sem consulta de propriedades. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-20. Extrapolação ao zero absoluto](../../../modulos/e1-termodinamica.html#av-e1-20) | C02, C09 | iniciante | 1 | A relação já é dada; a tarefa seleciona conclusão e limite conceitual. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-21. Variáveis do gás](../../../modulos/e1-termodinamica.html#av-e1-21) | C02 | iniciante | 1 | Julga a dependência expressa por uma equação, sem determinar propriedades. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-22. Fator de compressibilidade](../../../modulos/e1-termodinamica.html#av-e1-22) | C02, C07 | iniciante | 1 | O enunciado já fornece os dois produtos; só requer uma razão e interpretação. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-23. Condições para idealidade](../../../modulos/e1-termodinamica.html#av-e1-23) | C02, C09 | iniciante | 1 | Reconhece condições gerais de uma aproximação. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-24. Termômetro de gás](../../../modulos/e1-termodinamica.html#av-e1-24) | C02, C09 | iniciante | 1 | Uma proporcionalidade direta responde sem comparar substâncias diferentes. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-25. Temperatura relativa e aumento percentual](../../../modulos/e1-termodinamica.html#av-e1-25) | C02, C08 | iniciante | 1 | Mesma relação e percentuais de CR25, sem nova decisão de modelo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-26. Agitador e perda de calor](../../../modulos/e1-termodinamica.html#av-e1-26) | C03, C08 | iniciante | 1 | Todas as hipóteses e unidades são dadas; aplica diretamente entradas menos saídas, sem conversão adicional. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-27. Compressão adiabática](../../../modulos/e1-termodinamica.html#av-e1-27) | C03 | iniciante | 1 | A inferência é qualitativa com restrições fornecidas, sem cálculo de estados. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-28. Energia final ou variação?](../../../modulos/e1-termodinamica.html#av-e1-28) | C03, C08 | intermediario | 2 | A distinção entre ΔU e Uf exige duas relações encadeadas, embora os dados sejam repetidos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-29. Compressão com resfriamento](../../../modulos/e1-termodinamica.html#av-e1-29) | C03 | intermediario | 2 | Integra trabalho pΔV e balanço de energia com sinais. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-30. Expansão isotérmica](../../../modulos/e1-termodinamica.html#av-e1-30) | C03 | iniciante | 1 | Uma simplificação direta do balanço dá o trabalho; não há integração de ciclo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-31. Poder calorífico](../../../modulos/e1-termodinamica.html#av-e1-31) | C07 | iniciante | 1 | Identifica a diferença entre duas definições. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-32. Reação e sentido inverso](../../../modulos/e1-termodinamica.html#av-e1-32) | C07 | iniciante | 1 | Uma inversão de sinal e sua interpretação conceitual, sem reação química a balancear. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-33. Expansão livre no vácuo](../../../modulos/e1-termodinamica.html#av-e1-33) | C03, C04 | intermediario | 2 | Integra primeira lei e entropia para distinguir temperatura constante de isentropia. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-34. Aquecimento isocórico](../../../modulos/e1-termodinamica.html#av-e1-34) | C03 | intermediario | 2 | Encadeia balanço de energia e relação de propriedade para uma incógnita térmica. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-35. Primeira lei adiabática](../../../modulos/e1-termodinamica.html#av-e1-35) | C03 | iniciante | 1 | Dados e convenção estão explícitos; uma relação direta determina o sinal. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-36. Adiabático não significa sem trabalho](../../../modulos/e1-termodinamica.html#av-e1-36) | C03, C04 | iniciante | 1 | A contradição conceitual sobre trabalho decide a seleção. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-37. Custo das irreversibilidades](../../../modulos/e1-termodinamica.html#av-e1-37) | C05 | iniciante | 1 | Multiplicação direta da relação explicitamente fornecida, apesar do tema exergia. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-38. Limite de Carnot](../../../modulos/e1-termodinamica.html#av-e1-38) | C04 | iniciante | 1 | Uma substituição em ηmax=1−TL/TH resolve. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-39. Máquina com rendimento total](../../../modulos/e1-termodinamica.html#av-e1-39) | C03, C04, C09 | intermediario | 2 | O julgamento distingue satisfação da primeira lei e violação da segunda, com cenário completamente delimitado. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-40. Pressão e entalpia](../../../modulos/e1-termodinamica.html#av-e1-40) | C02, C04 | iniciante | 1 | Relação e simplificações já são fornecidas; resta uma aplicação direta, não uma derivação avançada. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-41. Equilíbrio entre fases](../../../modulos/e1-termodinamica.html#av-e1-41) | C02, C07 | iniciante | 1 | Seleciona a condição de equilíbrio de fases já nomeada. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-42. Eficiência calculada](../../../modulos/e1-termodinamica.html#av-e1-42) | C06 | iniciante | 1 | Uma razão direta entre grandezas já fornecidas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-43. Congelamento e entropia](../../../modulos/e1-termodinamica.html#av-e1-43) | C04 | iniciante | 1 | Aplica diretamente o critério ao saldo +0,10 kJ/K. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-44. Adiabático e rendimento](../../../modulos/e1-termodinamica.html#av-e1-44) | C03, C04, C09 | iniciante | 1 | As três proposições usam diretamente definições de ciclo e primeira lei. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-45. Máquina impossível](../../../modulos/e1-termodinamica.html#av-e1-45) | C04, C06, C09 | intermediario | 2 | Integra limite da segunda lei ao balanço de energia do ciclo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-46. Transformações de Carnot](../../../modulos/e1-termodinamica.html#av-e1-46) | C06 | iniciante | 1 | Reconhece a sequência canônica de processos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-47. Vazão e tipo de compressor](../../../modulos/e1-termodinamica.html#av-e1-47) | C06 | iniciante | 1 | A resposta é uma tendência de classificação explicitamente preliminar. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-48. Regenerador em contracorrente](../../../modulos/e1-termodinamica.html#av-e1-48) | C06 | iniciante | 1 | Aplica a direção espontânea de transferência de calor. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-49. Pressão no Brayton real](../../../modulos/e1-termodinamica.html#av-e1-49) | C06 | iniciante | 1 | Distingue processos ideais e perda de pressão por conhecimento qualitativo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-50. Consumo do compressor](../../../modulos/e1-termodinamica.html#av-e1-50) | C06 | iniciante | 1 | Reconhece efeitos de eficiências isentrópicas numa comparação delimitada. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-51. Processos do Brayton](../../../modulos/e1-termodinamica.html#av-e1-51) | C06 | iniciante | 1 | Reconhecimento conjunto de processos isentrópicos e isobáricos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-52. Aumentar consumo melhora eficiência?](../../../modulos/e1-termodinamica.html#av-e1-52) | C06, C09 | intermediario | 2 | Encadeia balanço de potências e rendimento para duas condições. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-53. Recuperar calor da exaustão](../../../modulos/e1-termodinamica.html#av-e1-53) | C06 | iniciante | 1 | O comando pede somente variação percentual do calor fornecido. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-54. Aplicações de compressores](../../../modulos/e1-termodinamica.html#av-e1-54) | C06 | iniciante | 1 | Classifica quatro exemplos pela definição de família. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-55. Rejeição de calor no Brayton](../../../modulos/e1-termodinamica.html#av-e1-55) | C06 | iniciante | 1 | Seleciona processo incompatível com a descrição canônica. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-56. Geração de eletricidade](../../../modulos/e1-termodinamica.html#av-e1-56) | C06 | iniciante | 1 | Associa componentes aos ciclos nomeados. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-57. Razão de pressões e eficiência](../../../modulos/e1-termodinamica.html#av-e1-57) | C06 | iniciante | 1 | A expressão e sua parte difícil já estão fornecidas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-58. Compressão e pressão](../../../modulos/e1-termodinamica.html#av-e1-58) | C02, C06 | iniciante | 1 | Substituição direta na lei de Boyle. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-59. Válvulas na compressão](../../../modulos/e1-termodinamica.html#av-e1-59) | C01, C06 | iniciante | 1 | Reconhece sequência operacional e condição de abertura já delimitada. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-60. Vazão pulsante](../../../modulos/e1-termodinamica.html#av-e1-60) | C06 | iniciante | 1 | Diferencia efeitos locais e a jusante de um reservatório. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-61. Eficiência volumétrica](../../../modulos/e1-termodinamica.html#av-e1-61) | C06 | iniciante | 1 | Calcula diretamente a razão explicitamente definida. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-62. Etapa de admissão](../../../modulos/e1-termodinamica.html#av-e1-62) | C01, C06 | iniciante | 1 | Associa fluxo já estabelecido à posição das válvulas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-63. Ciclo da turbina a gás](../../../modulos/e1-termodinamica.html#av-e1-63) | C06 | iniciante | 1 | Reconhece equipamento e sequência padrão de processos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-64. Deslocamento positivo](../../../modulos/e1-termodinamica.html#av-e1-64) | C06 | iniciante | 1 | Classifica mecanismo de compressão. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-65. Turbina a vapor](../../../modulos/e1-termodinamica.html#av-e1-65) | C03, C06 | iniciante | 1 | O modelo reduzido está completamente delimitado e só exige aplicação direta. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-66. Casco e tubos: mistura?](../../../modulos/e1-termodinamica.html#av-e1-66) | C01, C03 | iniciante | 1 | Reconhece função da parede e mecanismos de troca. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-67. Dilatação em tubulações](../../../modulos/e1-termodinamica.html#av-e1-67) | C02, C09 | iniciante | 1 | Substituição na lei linear com conversão de unidade. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-68. Perda por radiação](../../../modulos/e1-termodinamica.html#av-e1-68) | C03, C09 | iniciante | 1 | Apenas emissividade varia em uma expressão fornecida. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-69. Caminho do calor no trocador](../../../modulos/e1-termodinamica.html#av-e1-69) | C03 | iniciante | 1 | Classifica mecanismos em interfaces e no sólido. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-70. Sentido da condução](../../../modulos/e1-termodinamica.html#av-e1-70) | C04 | iniciante | 1 | Compara duas temperaturas para determinar sentido físico. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-71. Convecção forçada](../../../modulos/e1-termodinamica.html#av-e1-71) | C03 | iniciante | 1 | Reconhece a origem externa do movimento. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-72. Escoamento paralelo](../../../modulos/e1-termodinamica.html#av-e1-72) | C03 | iniciante | 1 | Aplica definições geométricas das configurações. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-73. Trocador compacto](../../../modulos/e1-termodinamica.html#av-e1-73) | C03 | iniciante | 1 | Reconhece a finalidade básica de área elevada. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-74. Incrustação e resistência térmica](../../../modulos/e1-termodinamica.html#av-e1-74) | C03 | iniciante | 1 | Repete uma relação direta para dois coeficientes fornecidos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-75. Sinal na lei de Fourier](../../../modulos/e1-termodinamica.html#av-e1-75) | C04, C08 | iniciante | 1 | Aplicação direta de expressão com sinal explícito. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-76. Advecção e convecção](../../../modulos/e1-termodinamica.html#av-e1-76) | C03 | iniciante | 1 | Distingue definições e sinal físico do coeficiente. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-77. Função do condensador](../../../modulos/e1-termodinamica.html#av-e1-77) | C06 | iniciante | 1 | Aplica diretamente balanço de energia do ciclo completo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-78. Vantagem térmica da amônia](../../../modulos/e1-termodinamica.html#av-e1-78) | C02, C06 | iniciante | 1 | Interpreta significado de uma propriedade por unidade de massa. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-79. Calor em câmara de vácuo](../../../modulos/e1-termodinamica.html#av-e1-79) | C03, C09 | iniciante | 1 | As vias materiais e a hipótese do gás já estão dadas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [AV-80. Geração interna e convecção](../../../modulos/e1-termodinamica.html#av-e1-80) | C03, C08 | intermediario | 2 | Integra seleção geométrica de área e volume ao balanço com convecção. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [fun01-e1-saturacao](../../../modulos/e1-termodinamica.html#fun01-e1-saturacao) — Problema 1 — Um tanque, três informações e um conflito | intermediario | 4 | C01, C02, C08, C09, C10 | Integra identificação de redundância, inversão da relação de mistura, checagem por entalpia e intervalos; pede justificar informação independente e limites. Região, propriedades e modelo são fornecidos, o que restringe a seleção autônoma de modelo. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [fun01-e1-mistura](../../../modulos/e1-termodinamica.html#fun01-e1-mistura) — Problema 2 — Quatro lotes e uma hipótese bifásica | avancado | 5 | C01, C02, C07, C08, C09, C10 | Exige decidir e justificar modelos de uma ou duas fases para lotes distintos, rejeitar soluções algébricas inviáveis, fechar balanços e construir mais de um estado compatível quando z falta. A autonomia é local ao modelo ideal fornecido; não se infere domínio avançado de misturas reais. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [fun01-e1-supercritico](../../../modulos/e1-termodinamica.html#fun01-e1-supercritico) — Problema 3 — O rótulo “supercrítico” é sustentado pelos dados? | intermediario | 4 | C01, C02, C08, C09, C10 | Combina duas restrições estritas e limites de erro para avaliar leituras e melhorias, depois julga dados redundantes e qualidade. O critério e as referências críticas são fornecidos; não exige resolver uma equação de estado ou um problema inverso não linear. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [fun01-e1-equilibrio](../../../modulos/e1-termodinamica.html#fun01-e1-equilibrio) — Problema 4 — Diagnóstico de uma bancada multicâmara | avancado | 7 | C01, C02, C07, C08, C09, C10 | Integra diagnóstico de dados conflitantes, derivação por balanço de forças, comparação de potenciais com gravidade, determinação de estado final sob restrições seletivas e teste de estabilidade com conservação. Exige rejeitar igualdades indevidas e defender limites do modelo; não se resume a substituir dados na relação fornecida. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [fun02-e1-caminhos](../../../modulos/e1-termodinamica.html#fun02-e1-caminhos) — Problema 1 — Projetar caminhos dentro de uma janela de temperatura | avancado | 5 | C01, C02, C03, C08, C09, C10 | O aluno escolhe e constrói dois caminhos dentro de restrições, demonstra admissibilidade ao longo deles, rejeita uma alternativa e fecha ciclo com orientação escolhida. Não basta substituir números em um caminho pré-definido; a autonomia permanece limitada ao gás ideal e aos três controles fornecidos. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [fun02-e1-integrabilidade](../../../modulos/e1-termodinamica.html#fun02-e1-integrabilidade) — Problema 2 — Um registrador pode confundir percurso com propriedade? | avancado | 6 | C02, C08, C09, C10 | Exige diagnosticar uma falsa certificação com cancelamento não trivial de ciclo, identificar κ a partir de outro ensaio, construir contraexemplo entre rotas e distinguir derivada de caminho de parcial. A classificação depende dessas decisões integradas, não do uso isolado de derivadas. |",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "texto": "| [fun02-e1-calor-caminho](../../../modulos/e1-termodinamica.html#fun02-e1-calor-caminho) — Problema 3 — Aquecer a temperatura enquanto o gás perde calor | intermediario | 5 | C01, C02, C03, C08, C09, C10 | Integra relações distintas e exige crítica às interpretações, mas trajetória, modelo, coordenadas e hipóteses são fornecidos. A construção autônoma de um novo modelo não é necessária; os testes formais e fator1/T foram ensinados imediatamente antes. |",
+      "ocorrencias": 1,
+      "confere": true
+    }
+  ],
+  "restauracao_literal_html": true,
+  "delta_inventario_independente": [
+    {
+      "campo": "fonte.sha256",
+      "antes": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "depois": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625"
+    },
+    {
+      "campo": "fonte.snapshot",
+      "antes": "auditoria/termodinamica/evidencias/FUN-02/e1-termodinamica.r1.html",
+      "depois": "auditoria/termodinamica/evidencias/FON-09/e1-termodinamica.r1.html"
+    },
+    {
+      "campo": "metodo.descricao",
+      "antes": "Leitura integral dos 190 itens: enunciados, alternativas, comentários, notas, legendas e sete figuras locais. CR01–80 e AV01–80 classificados pelo Corretor; Q01–30 receberam insumo do coordenador, revisado e integrado pelo Corretor. Na rodada 2, todos os 80 pré-requisitos AV foram revistos individualmente pela demanda efetiva, sem herança automática da CR de origem. Uma etapa é decisão, inferência ou transformação de modelo exigida pelo comando; operações aritméticas não são etapas adicionais. Reconhecimento, fórmula direta e juízos curtos com modelo dado são iniciantes; integração de relações distintas ou leitura de diagrama com balanço podem ser intermediárias. Crítica que o comentário/nota já fornece não é creditada como resposta exigida ou avaliada. Avançado exigiria modelagem autônoma integrada e justificativa de alternativas. Dificuldade é estimada, não medida. Vínculos C01–C10 delimitam apoio, sem certificar formulação avançada integral. Relações CR/AV foram comparadas por pares, não deduzidas só do link de origem. Figuras contextuais têm hash mesmo quando não necessárias. SVG embutido integra o hash do artigo. Este inventário registra o banco atual, sem concluir BAN-03/04/05/07/08 ou GOV-02. Inclusão FUN-01: quatro problemas abertos lidos integralmente, incluindo dados, subcomandos, soluções e rubricas; em resposta aberta, a enumeração do campo leitura inclui as partes aplicáveis e não implica alternativas inexistentes. Inclusão FUN-02: três problemas abertos lidos integralmente, com modelo, comandos, soluções, rubricas, figura e pacote de dados/cálculo. O apoio_fun01 preparou P2 e sua recuperação; o Corretor revisou e integrou todos os registros. Classificações individuais distinguem construção/diagnóstico de modelo da integração de relações já fornecidas.",
+      "depois": "Leitura integral dos 190 itens: enunciados, alternativas, comentários, notas, legendas e sete figuras locais. CR01–80 e AV01–80 classificados pelo Corretor; Q01–30 receberam insumo do coordenador, revisado e integrado pelo Corretor. Na rodada 2, todos os 80 pré-requisitos AV foram revistos individualmente pela demanda efetiva, sem herança automática da CR de origem. Uma etapa é decisão, inferência ou transformação de modelo exigida pelo comando; operações aritméticas não são etapas adicionais. Reconhecimento, fórmula direta e juízos curtos com modelo dado são iniciantes; integração de relações distintas ou leitura de diagrama com balanço podem ser intermediárias. Crítica que o comentário/nota já fornece não é creditada como resposta exigida ou avaliada. Avançado exigiria modelagem autônoma integrada e justificativa de alternativas. Dificuldade é estimada, não medida. Vínculos C01–C10 delimitam apoio, sem certificar formulação avançada integral. Relações CR/AV foram comparadas por pares, não deduzidas só do link de origem. Figuras contextuais têm hash mesmo quando não necessárias. SVG embutido integra o hash do artigo. Este inventário registra o banco atual, sem concluir BAN-03/04/05/07/08 ou GOV-02. Inclusão FUN-01: quatro problemas abertos lidos integralmente, incluindo dados, subcomandos, soluções e rubricas; em resposta aberta, a enumeração do campo leitura inclui as partes aplicáveis e não implica alternativas inexistentes. Inclusão FUN-02: três problemas abertos lidos integralmente, com modelo, comandos, soluções, rubricas, figura e pacote de dados/cálculo. O apoio_fun01 preparou P2 e sua recuperação; o Corretor revisou e integrou todos os registros. Classificações individuais distinguem construção/diagnóstico de modelo da integração de relações já fornecidas. FON-09 r1: somente CR68 recebeu atualização documental e de recursos, após confronto integral da densidade/tabela entre prova oficial p.3, caderno p.14 e HTML, com conjunto físico corrigido separado. Sem reclassificação da demanda e sem encerramento das auditorias gerais do banco."
+    },
+    {
+      "campo": "cr-e1-68.localizacao.sha256_artigo",
+      "antes": "db7da36b75e047ef81dc83ebbfe33ce499b6a2f4c97314ac9a4d5ab5fd9bdaaf",
+      "depois": "7cca4d60d34457a5bccb41efe003b4e1012bdac03df25ebfb77458547af3e81a"
+    },
+    {
+      "campo": "cr-e1-68.localizacao.recursos",
+      "antes": [
+        {
+          "arquivo": "assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+          "sha256": "b8d543e37fc85224e69507c5bf2aa35d6ac5aeb3eb5ae37879c4806e229f30b8"
+        }
+      ],
+      "depois": [
+        {
+          "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+          "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456"
+        },
+        {
+          "arquivo": "assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+          "sha256": "b8d543e37fc85224e69507c5bf2aa35d6ac5aeb3eb5ae37879c4806e229f30b8"
+        },
+        {
+          "arquivo": "assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "sha256": "bea6174ad3eee9a6880274597f444a7a20b05663dd4595d722d1a924532153b0"
+        },
+        {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf",
+          "sha256": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071"
+        }
+      ]
+    },
+    {
+      "campo": "cr-e1-68.origem.fontes",
+      "antes": [
+        {
+          "rotulo": "Prova original · p. 3",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=3"
+        },
+        {
+          "rotulo": "Gabarito definitivo",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1"
+        },
+        {
+          "rotulo": "Caderno fornecido (questão na p. 14)",
+          "url": "assets/questoes-reais-e1/caderno-fornecido.pdf"
+        }
+      ],
+      "depois": [
+        {
+          "rotulo": "Prova original · p. 3",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=3"
+        },
+        {
+          "rotulo": "Gabarito definitivo",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1"
+        },
+        {
+          "rotulo": "Caderno fornecido (questão na p. 14)",
+          "url": "assets/questoes-reais-e1/caderno-fornecido.pdf"
+        },
+        {
+          "rotulo": "Dados corrigidos editoriais FON-09 v1.0, fontes e consultas",
+          "url": "assets/termodinamica/fon09-cr68-dados-v1.json"
+        }
+      ]
+    },
+    {
+      "campo": "cr-e1-68.origem.conferencia_oficial",
+      "antes": "nao_realizada",
+      "depois": "realizada"
+    },
+    {
+      "campo": "cr-e1-68.origem.evidencia_conferencia",
+      "depois": "auditoria/termodinamica/evidencias/FON-09/conferencia-origem-r1.md"
+    },
+    {
+      "campo": "cr-e1-68.hipoteses.explicitadas",
+      "antes": [
+        "Superfície externa da fornalha",
+        "Revestimento de baixa emissividade",
+        "Dados de instalação e tabela fornecidos"
+      ],
+      "depois": [
+        "Superfície externa da fornalha",
+        "Revestimento de baixa emissividade",
+        "Dados de instalação e tabela mantidos como transcrição histórica; conjunto físico corrigido separado, com hipóteses e precisão próprias."
+      ]
+    },
+    {
+      "campo": "cr-e1-68.hipoteses.limites",
+      "antes": [
+        "Densidade 1000 kg/cm³ e tabela de saturação têm erros documentados",
+        "Não usar esses dados para outras contas",
+        "Os dados defeituosos não entram no julgamento de emissividade",
+        "Gabarito oficial ainda não conferido neste inventário",
+        "Figura da unidade é contextual para o julgamento da emissividade."
+      ],
+      "depois": [
+        "Densidade literal1000kg/cm³ e13células da tabela incompatíveis com referências; já constam da prova oficial p.3 e do caderno p.14.",
+        "T100°C e vf0,00104m³/kg da primeira linha são arredondamentos compatíveis; não reutilizar tabela histórica como conjunto de cálculo.",
+        "Conjunto corrigido FON-09 v1.0 rastreia cinco pressões, dois volumes e temperatura; densidade1000kg/m³ é aproximação declarada.",
+        "Esses dados não entram no julgamento de emissividade.",
+        "Letra C do item85 conferida documentalmente no gabarito oficial; essa conferência restrita não conclui BAN-08/FON-01/BAN-10 gerais.",
+        "Figura da unidade é contextual para o julgamento da emissividade."
+      ]
+    },
+    {
+      "campo": "cr-e1-68.revisao.ambiguidades_conhecidas",
+      "antes": [
+        "Densidade indicada como1000kg/cm³ é defeituosa e valores da tabela de saturação demandam revisão. Não entram no juízo sobre emissividade e não devem fundamentar outras contas."
+      ],
+      "depois": [
+        "Dados defeituosos foram preservados apenas como transcrição histórica identificada, com conjunto corrigido separado. A intenção do autor original não é presumida; não foi identificada errata oficial."
+      ]
+    }
+  ],
+  "delta_validador": {
+    "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+    "sha256_antes": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+    "sha256_depois": "114b1a063cb2a88e505c9ecffd2b22c75f29b709419b24e9e533331fa7283b22",
+    "prefixo_caracteres": 11927,
+    "sufixo_caracteres": 8160,
+    "trecho_antes": "const doc = await document(filename);\n        if (doc && (doc.ids.get(fragment)?.length ?? 0) !== 1) fail(errors, where, `âncora ausente ou duplicada: ${filename}#${fragment}`);",
+    "trecho_depois": "if (/\\.pdf$/i.test(filename)) {\n          // PDF usa parâmetro de abertura, não ID HTML. A existência da página exige conferência documental.\n          if (!/^page=[1-9]\\d*$/.test(fragment) || !Number.isSafeInteger(Number(fragment.slice(5)))) {\n            fail(errors, where, `fragmento PDF inválido (esperado page=N inteiro positivo): ${filename}#${fragment}`);\n          }\n          if (!(await bytes(filename, where))) return null;\n        } else {\n          const doc = await document(filename);\n          if (doc && (doc.ids.get(fragment)?.length ?? 0) !== 1) fail(errors, where, `âncora ausente ou duplicada: ${filename}#${fragment}`);\n        }",
+    "limite": "Reconstrução integral: prefixo inalterado + trecho depois + sufixo inalterado. Apenas PDF page=N, sem validação da quantidade de páginas.",
+    "reconstrucao_confere": true
+  },
+  "digital_funcoes_reais": {
+    "antes": "f78a5342",
+    "depois": "f78a5342"
+  },
+  "recarga_respostas_funcoes_reais": [
+    {
+      "resposta_anterior": "C",
+      "resposta_recarregada": "C",
+      "preservada": true
+    },
+    {
+      "resposta_anterior": "E",
+      "resposta_recarregada": "E",
+      "preservada": true
+    }
+  ],
+  "testes_entregues": {
+    "verificador": {
+      "id": "FON-09",
+      "rodada": 1,
+      "ok": true,
+      "sha256_html": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "verificacoes": 470,
+      "checks": [
+        {
+          "nome": "somente CR68 mudou no HTML",
+          "ok": true
+        },
+        {
+          "nome": "197 artigos e IDs únicos",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun01-e1-saturacao",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun01-e1-mistura",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun01-e1-supercritico",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun01-e1-equilibrio",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun02-e1-caminhos",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun02-e1-integrabilidade",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun02-e1-calor-caminho",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-68",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "transcrição integral preservada",
+          "ok": true
+        },
+        {
+          "nome": "transcrição recolhida e identificada",
+          "ok": true
+        },
+        {
+          "nome": "alternativas preservadas",
+          "ok": true
+        },
+        {
+          "nome": "resolução preservada",
+          "ok": true
+        },
+        {
+          "nome": "afirmação ativa fora do histórico",
+          "ok": true
+        },
+        {
+          "nome": "gabarito C preservado",
+          "ok": true
+        },
+        {
+          "nome": "digitalDoBanco preservada",
+          "ok": true
+        },
+        {
+          "nome": "registro.js preservado",
+          "ok": true
+        },
+        {
+          "nome": "197 registros",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-68",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun01-e1-saturacao",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun01-e1-mistura",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun01-e1-supercritico",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun01-e1-equilibrio",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun02-e1-caminhos",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun02-e1-integrabilidade",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun02-e1-calor-caminho",
+          "ok": true
+        },
+        {
+          "nome": "campo cognitivo preservado titulo",
+          "ok": true
+        },
+        {
+          "nome": "campo cognitivo preservado formato",
+          "ok": true
+        },
+        {
+          "nome": "campo cognitivo preservado competencias",
+          "ok": true
+        },
+        {
+          "nome": "campo cognitivo preservado pre_requisitos",
+          "ok": true
+        },
+        {
+          "nome": "campo cognitivo preservado nivel",
+          "ok": true
+        },
+        {
+          "nome": "campo cognitivo preservado raciocinio",
+          "ok": true
+        },
+        {
+          "nome": "campo cognitivo preservado vinculo_competencias",
+          "ok": true
+        },
+        {
+          "nome": "campo cognitivo preservado exposicao_previa",
+          "ok": true
+        },
+        {
+          "nome": "197 linhas de resumo preservadas",
+          "ok": true
+        },
+        {
+          "nome": "cinco pressões e versão",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 101.325 T_C",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 101.325 vf_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 101.325 vg_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 101.325 p",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 101.325 T",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 101.325 vf",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 101.325 vg",
+          "ok": true
+        },
+        {
+          "nome": "conversões SI 150",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 150 T_C",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 150 vf_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 150 vg_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 150 p",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 150 T",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 150 vf",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 150 vg",
+          "ok": true
+        },
+        {
+          "nome": "conversões SI 200",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 200 T_C",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 200 vf_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 200 vg_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 200 p",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 200 T",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 200 vf",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 200 vg",
+          "ok": true
+        },
+        {
+          "nome": "conversões SI 250",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 250 T_C",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 250 vf_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 250 vg_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 250 p",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 250 T",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 250 vf",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 250 vg",
+          "ok": true
+        },
+        {
+          "nome": "conversões SI 300",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 300 T_C",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 300 vf_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "comparação de precisão 300 vg_m3kg",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 300 p",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 300 T",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 300 vf",
+          "ok": true
+        },
+        {
+          "nome": "valor publicado 300 vg",
+          "ok": true
+        },
+        {
+          "nome": "2 compatíveis e13 incompatíveis",
+          "ok": true
+        },
+        {
+          "nome": "conversão da densidade literal",
+          "ok": true
+        },
+        {
+          "nome": "desvio da aproximação de densidade",
+          "ok": true
+        },
+        {
+          "nome": "captura primária nist-webbook-saturacao",
+          "ok": true
+        },
+        {
+          "nome": "captura primária nist-webbook-densidade",
+          "ok": true
+        },
+        {
+          "nome": "PDF fonte prova",
+          "ok": true
+        },
+        {
+          "nome": "PDF fonte caderno",
+          "ok": true
+        },
+        {
+          "nome": "PDF fonte gabarito",
+          "ok": true
+        },
+        {
+          "nome": "valor na fonte WebBook 99.974296",
+          "ok": true
+        },
+        {
+          "nome": "valor na fonte WebBook 0.10132500",
+          "ok": true
+        },
+        {
+          "nome": "valor na fonte WebBook 0.0010434411",
+          "ok": true
+        },
+        {
+          "nome": "valor na fonte WebBook 1.6732012",
+          "ok": true
+        },
+        {
+          "nome": "densidade na condição consultada",
+          "ok": true
+        },
+        {
+          "nome": "infraestrutura preservada assets/curso.js",
+          "ok": true
+        },
+        {
+          "nome": "infraestrutura preservada assets/curso.css",
+          "ok": true
+        },
+        {
+          "nome": "infraestrutura preservada auditoria/termodinamica/inventario/inventario.schema.json",
+          "ok": true
+        },
+        {
+          "nome": "validador com ajuste PDF autorizado",
+          "ok": true
+        },
+        {
+          "nome": "inventário canônico",
+          "ok": true
+        }
+      ],
+      "digital_cr68": {
+        "antes": "f78a5342",
+        "depois": "f78a5342",
+        "registro_js": "inalterado; mapa das30questões iniciais"
+      },
+      "validacao": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 197,
+        "artigos_encontrados": 197,
+        "recursos_verificados": 15,
+        "links_locais_verificados": 1072,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      },
+      "alcance": "Estrutura, identidade, preservação e conversões. A conferência documental/científica está em relatórios separados; não é parecer independente."
+    },
+    "pdf": {
+      "ok": true,
+      "total": 8,
+      "resultados": [
+        {
+          "nome": "PDF com página positiva",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "nome": "PDF com página zero",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0"
+          ]
+        },
+        {
+          "nome": "PDF com página não numérica",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=tres"
+          ]
+        },
+        {
+          "nome": "PDF com fragmento arbitrário",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao"
+          ]
+        },
+        {
+          "nome": "Arquivo PDF ausente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: arquivo inacessível: downloads/termodinamica/provas/ausente-fon09.pdf (ENOENT: no such file or directory, open 'C:\\Users\\User\\Downloads\\SOP-CE\\downloads\\termodinamica\\provas\\ausente-fon09.pdf')"
+          ]
+        },
+        {
+          "nome": "Âncora HTML existente",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "nome": "Âncora HTML ausente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: âncora ausente ou duplicada: modulos/e1-termodinamica.html#ausente-fon09"
+          ]
+        },
+        {
+          "nome": "Outro recurso não recebe exceção PDF",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: âncora ausente ou duplicada: assets/termodinamica/fon09-cr68-dados-v1.json#page=3"
+          ]
+        }
+      ],
+      "limite": "PDF: sintaxe page=N inteiro positivo e arquivo existente; quantidade de páginas conferida documentalmente nos três PDFs, não por este validador. Nenhum fixture modifica o produto."
+    },
+    "contrato": {
+      "natureza": "reexecução técnica em FON-09 do contrato BAN-02, sem decisão de aceite",
+      "schema_version": "1.1",
+      "passou": true,
+      "total": 39,
+      "fixtures_temporarios": "C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-ga2qHA",
+      "resultados": [
+        {
+          "caso": "estado atual, ID longo, 3 opções, aberto e projeto",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "caso": "estados realizados/verificados com evidência Markdown existente",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "caso": "ajustes obrigatórios com evidência existente",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "caso": "ID duplicado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: ID duplicado no inventário"
+          ]
+        },
+        {
+          "caso": "artigo sem registro",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "projeto-e1-1: artigo da fonte sem registro no inventário"
+          ]
+        },
+        {
+          "caso": "registro extra inexistente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-999: localização precisa identificar um único article existente"
+          ]
+        },
+        {
+          "caso": "hash artigo alterado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: hash do artigo desatualizado; reler enunciado, alternativas, comentários, notas e recursos"
+          ]
+        },
+        {
+          "caso": "hash fonte alterado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.fonte.sha256: fonte atual modificada; revisão dos registros necessária",
+            "$.fonte.snapshot: snapshot difere do hash registrado da fonte"
+          ]
+        },
+        {
+          "caso": "recurso omitido",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: recurso usado sem hash no registro: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "recurso hash alterado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: recurso alterado: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "etapas divergentes",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: numero_etapas difere do tamanho de etapas"
+          ]
+        },
+        {
+          "caso": "nível sem justificativa",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].nivel.justificativa: não atende ao padrão \\S"
+          ]
+        },
+        {
+          "caso": "nível pendente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: item ainda não classificado; registro incompleto para BAN-02"
+          ]
+        },
+        {
+          "caso": "campo desconhecido",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0]: campo não previsto: errado"
+          ]
+        },
+        {
+          "caso": "alternativas divergentes",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: alternativas no HTML=3, registro=5"
+          ]
+        },
+        {
+          "caso": "competência inválida",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].competencias[0]: não atende ao padrão ^C(?:0[1-9]|10)$"
+          ]
+        },
+        {
+          "caso": "banco divergente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: banco diverge do prefixo ou data-banco do artigo"
+          ]
+        },
+        {
+          "caso": "relação inexistente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.exposicao_previa: âncora ausente ou duplicada: modulos/e1.html#ausente"
+          ]
+        },
+        {
+          "caso": "snapshot igual fonte",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.fonte.snapshot: snapshot deve ser uma cópia preservada distinta da fonte"
+          ]
+        },
+        {
+          "caso": "caminho fora raiz",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].localizacao.recursos[0].arquivo: não atende ao padrão ^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+          ]
+        },
+        {
+          "caso": "tipo formato inválido",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "aberto-e1-1: múltipla escolha exige pelo menos duas alternativas",
+            "aberto-e1-1: formato diverge do data-formato do artigo",
+            "aberto-e1-1: banco aberto exige resposta_aberta"
+          ]
+        },
+        {
+          "caso": "fonte local inexistente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.origem: arquivo inacessível: modulos/ausente.html (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-ga2qHA\\modulos\\ausente.html')"
+          ]
+        },
+        {
+          "caso": "data impossível",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.atualizado_em: data inválida; use AAAA-MM-DD"
+          ]
+        },
+        {
+          "caso": "realizada sem evidência",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem: campo obrigatório ausente: evidencia_conferencia"
+          ]
+        },
+        {
+          "caso": "verificado sem evidência",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].revisao: campo obrigatório ausente: evidencia_gabarito"
+          ]
+        },
+        {
+          "caso": "ajustes sem evidência",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].revisao: campo obrigatório ausente: evidencia_gabarito"
+          ]
+        },
+        {
+          "caso": "evidência vazia",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão \\S"
+          ]
+        },
+        {
+          "caso": "evidência arquivo ausente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.origem.evidencia_conferencia: arquivo inacessível: pareceres/ausente.md (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-ga2qHA\\pareceres\\ausente.md')"
+          ]
+        },
+        {
+          "caso": "evidência âncora ausente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.revisao.evidencia_gabarito: âncora ausente ou duplicada: pareceres/fixture.md#ausente"
+          ]
+        },
+        {
+          "caso": "evidência remota",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+          ]
+        },
+        {
+          "caso": "evidência somente fragmento",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+          ]
+        },
+        {
+          "caso": "estado não enumerado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.conferencia_oficial: fora dos valores permitidos: \"aprovado\""
+          ]
+        },
+        {
+          "caso": "versão antiga",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.schema_version: esperado \"1.1\""
+          ]
+        },
+        {
+          "caso": "evidência opcional inválida",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.origem.evidencia_conferencia: arquivo inacessível: pareceres/ausente.md (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-ga2qHA\\pareceres\\ausente.md')"
+          ]
+        },
+        {
+          "caso": "recurso em disco mudou sem tocar HTML",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: recurso alterado: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "item novo adicionado ao HTML",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.fonte.sha256: fonte atual modificada; revisão dos registros necessária",
+            "q-e1-101: artigo da fonte sem registro no inventário"
+          ]
+        },
+        {
+          "caso": "snapshot modificado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.fonte.snapshot: snapshot difere do hash registrado da fonte"
+          ]
+        },
+        {
+          "caso": "href local quebrado mesmo com hashes atualizados",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.link: âncora ausente ou duplicada: modulos/e1.html#ausente"
+          ]
+        },
+        {
+          "caso": "schema isolado rejeita evidência remota",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+          ]
+        }
+      ]
+    }
+  },
+  "testes_proprios_pdf": [
+    {
+      "caso": "página positiva",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "primeira página",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "página máxima segura sem conferir total",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740991",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "PDF maiúsculo",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.PDF#page=3",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "query antes do fragmento",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf?download=1#page=3",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "fragmento percent-encoded válido",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page%3D3",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "página zero",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0"
+      ]
+    },
+    {
+      "caso": "página negativa",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=-1",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=-1"
+      ]
+    },
+    {
+      "caso": "fração decimal",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1.5",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1.5"
+      ]
+    },
+    {
+      "caso": "notação exponencial",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1e2",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1e2"
+      ]
+    },
+    {
+      "caso": "sinal positivo explícito",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=+3",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=+3"
+      ]
+    },
+    {
+      "caso": "zero à esquerda",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=03",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=03"
+      ]
+    },
+    {
+      "caso": "número inseguro",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740992",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740992"
+      ]
+    },
+    {
+      "caso": "valor ausente",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page="
+      ]
+    },
+    {
+      "caso": "fragmento arbitrário",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao"
+      ]
+    },
+    {
+      "caso": "parâmetro extra ampersand",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3&zoom=100",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3&zoom=100"
+      ]
+    },
+    {
+      "caso": "segundo hash com texto",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra",
+      "esperado_ok": false,
+      "observado_ok": true,
+      "passou": false,
+      "erros": []
+    },
+    {
+      "caso": "segundo hash vazio",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#",
+      "esperado_ok": false,
+      "observado_ok": true,
+      "passou": false,
+      "erros": []
+    },
+    {
+      "caso": "hash adicional codificado",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3%23extra",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra"
+      ]
+    },
+    {
+      "caso": "fragmento com espaço",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3 ",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3 "
+      ]
+    },
+    {
+      "caso": "PDF ausente",
+      "referencia": "downloads/termodinamica/provas/ausente-auditor-fon09.pdf#page=3",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: arquivo inacessível: downloads/termodinamica/provas/ausente-auditor-fon09.pdf (ENOENT: no such file or directory, open 'C:\\Users\\User\\Downloads\\SOP-CE\\downloads\\termodinamica\\provas\\ausente-auditor-fon09.pdf')"
+      ]
+    },
+    {
+      "caso": "HTML âncora existente",
+      "referencia": "modulos/e1-termodinamica.html#fundamentos",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "HTML âncora ausente",
+      "referencia": "modulos/e1-termodinamica.html#ausente-auditor-fon09",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: âncora ausente ou duplicada: modulos/e1-termodinamica.html#ausente-auditor-fon09"
+      ]
+    },
+    {
+      "caso": "outro recurso sem exceção",
+      "referencia": "assets/termodinamica/fon09-cr68-dados-v1.json#page=3",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: âncora ausente ou duplicada: assets/termodinamica/fon09-cr68-dados-v1.json#page=3"
+      ]
+    }
+  ],
+  "coincidencia_resultados": {
+    "verificador": true,
+    "pdf": true,
+    "casos_contrato": false,
+    "casos_contrato_apos_normalizar_nome_diretorio_temporario": true,
+    "observacao_contrato": "A diferença bruta é somente o nome aleatório da fixture temporária nas mensagens ENOENT; os 39 resultados coincidem após normalizar esse nome."
+  },
+  "documentacao": {
+    "guia_inalterado": true,
+    "guia_pdf_nao_explicitado": true,
+    "resumo_aponta_entrega": true,
+    "limite_documentado_na_entrega": "Somente sintaxe e existência de arquivo; quantidade real de páginas fica na conferência documental.",
+    "avaliacao": "Melhoria de manutenção no guia seria útil; não tratada como causa autônoma de rejeição."
+  },
+  "limites": [
+    "Contrato reexecutado com 39 fixtures do Corretor; comparação confirmou que fixtures/expectativas BAN-02 não mudaram antes do epílogo exportado.",
+    "24 testes PDF próprios, 22 resultados esperados e duas falhas de mesma raiz R1-A.",
+    "Execução em Node REPL novo para não usar módulo anterior em cache; não executou Node CLI.",
+    "Digital/recarga testadas com funções reais extraídas de curso.js em VM e adaptador DOM, sem tocar localStorage do usuário; não é teste de navegador.",
+    "Não determina quantidade de páginas nem validade binária de PDF; isso continua documental.",
+    "Não reaudita ciência das células ou fontes físicas."
+  ]
+}

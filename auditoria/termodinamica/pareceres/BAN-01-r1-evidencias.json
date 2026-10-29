@@ -1,0 +1,455 @@
+{
+  "id": "BAN-01",
+  "rodada": 1,
+  "revisor": "agente automatizado Auditor AAA /root/auditor_aaa",
+  "tipo": "Estático e funções reais executadas em isolamento; sem navegador",
+  "hashes": {
+    "html": "d375695006edf96cbb709b7e85e7ebb84e94474333505768a3cccec0e94119a4",
+    "registro": "234cb179c3a7c81043d9d66ee65116b2f07503999aac6a45c433dccd51545055",
+    "curso_js": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899"
+  },
+  "itens": 30,
+  "alternativas": 150,
+  "justificativas_por_letra": 140,
+  "proposicoes_preservadas": 6,
+  "casos_de_correcao": 150,
+  "sequencia": "CBECCDEABEDCCEAADDAAECCCEBAECB",
+  "periodos_1_a_15": [],
+  "blocos_de_5": [
+    "CBECC",
+    "DEABE",
+    "DCCEA",
+    "ADDAA",
+    "ECCCE",
+    "BAECB"
+  ],
+  "escopo_preservado": true,
+  "estado": {
+    "antigo_aceitas": 0,
+    "novo_aceitas": 30,
+    "portal_novo_acertos": 30,
+    "associacao_incorreta_de_respostas_antigas": false
+  },
+  "mapeamento": [
+    {
+      "id": "q-e1-01",
+      "antes": "A",
+      "depois": "C",
+      "mapa": {
+        "A": "C",
+        "B": "D",
+        "C": "B",
+        "D": "A",
+        "E": "E"
+      },
+      "digital_antes": "9c435af5",
+      "digital_depois": "e930ca81"
+    },
+    {
+      "id": "q-e1-02",
+      "antes": "B",
+      "depois": "B",
+      "mapa": {
+        "A": "C",
+        "B": "B",
+        "C": "A",
+        "D": "D",
+        "E": "E"
+      },
+      "digital_antes": "d6d616ca",
+      "digital_depois": "6203aefa"
+    },
+    {
+      "id": "q-e1-03",
+      "antes": "C",
+      "depois": "E",
+      "mapa": {
+        "A": "C",
+        "B": "B",
+        "C": "E",
+        "D": "D",
+        "E": "A"
+      },
+      "digital_antes": "94446b94",
+      "digital_depois": "cf88eb64"
+    },
+    {
+      "id": "q-e1-04",
+      "antes": "D",
+      "depois": "C",
+      "mapa": {
+        "A": "D",
+        "B": "A",
+        "C": "B",
+        "D": "C",
+        "E": "E"
+      },
+      "digital_antes": "56d97b8f",
+      "digital_depois": "5536626e"
+    },
+    {
+      "id": "q-e1-05",
+      "antes": "E",
+      "depois": "C",
+      "mapa": {
+        "A": "B",
+        "B": "A",
+        "C": "E",
+        "D": "D",
+        "E": "C"
+      },
+      "digital_antes": "928b6a95",
+      "digital_depois": "73bfe299"
+    },
+    {
+      "id": "q-e1-06",
+      "antes": "A",
+      "depois": "D",
+      "mapa": {
+        "A": "D",
+        "B": "C",
+        "C": "B",
+        "D": "E",
+        "E": "A"
+      },
+      "digital_antes": "21fb80bb",
+      "digital_depois": "2928b00e"
+    },
+    {
+      "id": "q-e1-07",
+      "antes": "B",
+      "depois": "E",
+      "mapa": {
+        "A": "B",
+        "B": "E",
+        "C": "A",
+        "D": "D",
+        "E": "C"
+      },
+      "digital_antes": "8b844950",
+      "digital_depois": "68354c35"
+    },
+    {
+      "id": "q-e1-08",
+      "antes": "C",
+      "depois": "A",
+      "mapa": {
+        "A": "B",
+        "B": "E",
+        "C": "A",
+        "D": "C",
+        "E": "D"
+      },
+      "digital_antes": "a286a947",
+      "digital_depois": "00b407a9"
+    },
+    {
+      "id": "q-e1-09",
+      "antes": "D",
+      "depois": "B",
+      "mapa": {
+        "A": "E",
+        "B": "A",
+        "C": "D",
+        "D": "B",
+        "E": "C"
+      },
+      "digital_antes": "879797b0",
+      "digital_depois": "bcf0d5a6"
+    },
+    {
+      "id": "q-e1-10",
+      "antes": "E",
+      "depois": "E",
+      "mapa": {
+        "A": "D",
+        "B": "A",
+        "C": "C",
+        "D": "B",
+        "E": "E"
+      },
+      "digital_antes": "4b3f2b89",
+      "digital_depois": "1877b147"
+    },
+    {
+      "id": "q-e1-11",
+      "antes": "A",
+      "depois": "D",
+      "mapa": {
+        "A": "D",
+        "B": "E",
+        "C": "A",
+        "D": "C",
+        "E": "B"
+      },
+      "digital_antes": "56a88a08",
+      "digital_depois": "47b7c73d"
+    },
+    {
+      "id": "q-e1-12",
+      "antes": "B",
+      "depois": "C",
+      "mapa": {
+        "A": "E",
+        "B": "C",
+        "C": "A",
+        "D": "B",
+        "E": "D"
+      },
+      "digital_antes": "80ef91f5",
+      "digital_depois": "0e39d656"
+    },
+    {
+      "id": "q-e1-13",
+      "antes": "C",
+      "depois": "C",
+      "mapa": {
+        "A": "B",
+        "B": "E",
+        "C": "C",
+        "D": "D",
+        "E": "A"
+      },
+      "digital_antes": "ac48a584",
+      "digital_depois": "b4be7154"
+    },
+    {
+      "id": "q-e1-14",
+      "antes": "D",
+      "depois": "E",
+      "mapa": {
+        "A": "A",
+        "B": "B",
+        "C": "D",
+        "D": "E",
+        "E": "C"
+      },
+      "digital_antes": "c4870246",
+      "digital_depois": "52ba659f"
+    },
+    {
+      "id": "q-e1-15",
+      "antes": "E",
+      "depois": "A",
+      "mapa": {
+        "A": "E",
+        "B": "B",
+        "C": "D",
+        "D": "C",
+        "E": "A"
+      },
+      "digital_antes": "11d679e6",
+      "digital_depois": "b8785dda"
+    },
+    {
+      "id": "q-e1-16",
+      "antes": "A",
+      "depois": "A",
+      "mapa": {
+        "A": "A",
+        "B": "B",
+        "C": "E",
+        "D": "D",
+        "E": "C"
+      },
+      "digital_antes": "8b465f0b",
+      "digital_depois": "8e16cef7"
+    },
+    {
+      "id": "q-e1-17",
+      "antes": "B",
+      "depois": "D",
+      "mapa": {
+        "A": "E",
+        "B": "D",
+        "C": "C",
+        "D": "A",
+        "E": "B"
+      },
+      "digital_antes": "951df068",
+      "digital_depois": "331b7140"
+    },
+    {
+      "id": "q-e1-18",
+      "antes": "C",
+      "depois": "D",
+      "mapa": {
+        "A": "A",
+        "B": "B",
+        "C": "D",
+        "D": "C",
+        "E": "E"
+      },
+      "digital_antes": "3f71d32d",
+      "digital_depois": "4186c808"
+    },
+    {
+      "id": "q-e1-19",
+      "antes": "D",
+      "depois": "A",
+      "mapa": {
+        "A": "B",
+        "B": "D",
+        "C": "E",
+        "D": "A",
+        "E": "C"
+      },
+      "digital_antes": "f989789a",
+      "digital_depois": "eb5a52f1"
+    },
+    {
+      "id": "q-e1-20",
+      "antes": "E",
+      "depois": "A",
+      "mapa": {
+        "A": "D",
+        "B": "E",
+        "C": "C",
+        "D": "B",
+        "E": "A"
+      },
+      "digital_antes": "6fdcbf8d",
+      "digital_depois": "eaefd913"
+    },
+    {
+      "id": "q-e1-21",
+      "antes": "A",
+      "depois": "E",
+      "mapa": {
+        "A": "E",
+        "B": "B",
+        "C": "A",
+        "D": "D",
+        "E": "C"
+      },
+      "digital_antes": "819421c6",
+      "digital_depois": "2524d70e"
+    },
+    {
+      "id": "q-e1-22",
+      "antes": "B",
+      "depois": "C",
+      "mapa": {
+        "A": "E",
+        "B": "C",
+        "C": "D",
+        "D": "B",
+        "E": "A"
+      },
+      "digital_antes": "9beca0d7",
+      "digital_depois": "6354135c"
+    },
+    {
+      "id": "q-e1-23",
+      "antes": "C",
+      "depois": "C",
+      "mapa": {
+        "A": "E",
+        "B": "D",
+        "C": "C",
+        "D": "B",
+        "E": "A"
+      },
+      "digital_antes": "f556d213",
+      "digital_depois": "1a65c85f"
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "D",
+      "depois": "C",
+      "mapa": {
+        "A": "E",
+        "B": "B",
+        "C": "A",
+        "D": "C",
+        "E": "D"
+      },
+      "digital_antes": "f9cf3834",
+      "digital_depois": "0fb7f391"
+    },
+    {
+      "id": "q-e1-25",
+      "antes": "E",
+      "depois": "E",
+      "mapa": {
+        "A": "B",
+        "B": "A",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "digital_antes": "e7cfa723",
+      "digital_depois": "cf4982cb"
+    },
+    {
+      "id": "q-e1-26",
+      "antes": "A",
+      "depois": "B",
+      "mapa": {
+        "A": "B",
+        "B": "C",
+        "C": "D",
+        "D": "A",
+        "E": "E"
+      },
+      "digital_antes": "f879b4ab",
+      "digital_depois": "a20296a6"
+    },
+    {
+      "id": "q-e1-27",
+      "antes": "B",
+      "depois": "A",
+      "mapa": {
+        "A": "E",
+        "B": "A",
+        "C": "B",
+        "D": "D",
+        "E": "C"
+      },
+      "digital_antes": "b5f5b2bf",
+      "digital_depois": "9a57c870"
+    },
+    {
+      "id": "q-e1-28",
+      "antes": "C",
+      "depois": "E",
+      "mapa": {
+        "A": "A",
+        "B": "B",
+        "C": "E",
+        "D": "D",
+        "E": "C"
+      },
+      "digital_antes": "ca502796",
+      "digital_depois": "e121d324"
+    },
+    {
+      "id": "q-e1-29",
+      "antes": "D",
+      "depois": "C",
+      "mapa": {
+        "A": "E",
+        "B": "A",
+        "C": "D",
+        "D": "C",
+        "E": "B"
+      },
+      "digital_antes": "8a6d76e5",
+      "digital_depois": "56b391ea"
+    },
+    {
+      "id": "q-e1-30",
+      "antes": "E",
+      "depois": "B",
+      "mapa": {
+        "A": "C",
+        "B": "E",
+        "C": "D",
+        "D": "A",
+        "E": "B"
+      },
+      "digital_antes": "10cd4076",
+      "digital_depois": "66de2ee1"
+    }
+  ]
+}

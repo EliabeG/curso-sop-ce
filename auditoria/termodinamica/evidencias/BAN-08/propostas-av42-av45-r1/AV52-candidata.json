@@ -1,0 +1,39 @@
+{
+  "id": "BAN-08-52",
+  "item": "av-e1-52",
+  "autoria": "/root/inspect_repo, agente automatizado",
+  "estado": "CANDIDATA_ISOLADA_NAO_APLICADA_NAO_APROVADA",
+  "fonte_adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-08-adjudicacao-av52-r1-independente.md",
+    "sha256": "82e211ebb30e0e7e58460167429c47730137db9b8e332f1e1ac7d42aeae258fb"
+  },
+  "base": {
+    "produto": "modulos/e1-termodinamica.html",
+    "sha256_produto": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+    "sha256_artigo": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+    "digital": "d95e6b2d"
+  },
+  "candidata": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/AV52-candidata.html",
+    "sha256": "f920b246bea3d4b5e3d4b63cbfb5a4dd24ae11cff17877aeec73decf278cfc97",
+    "digital": "0619ab1f",
+    "chave": "D"
+  },
+  "alteracao": "Enunciado e duas ocorrências idênticas da resolução (resumo e comentário da chave); opções preservadas.",
+  "demonstracao": "Q̇total=200 kW; Ẇlíq inicial=100−40=60 kW e final=100−50=50 kW; η inicial=30%, final=25%.",
+  "cinco_opcoes": {
+    "A": "30%→35% supõe aumento em vez de redução do trabalho líquido.",
+    "B": "20%→25% são frações do consumo do compressor, não eficiências.",
+    "C": "70%→75% somam potência da turbina e consumo do compressor.",
+    "D": "30%→25% resulta dos balanços, única correta.",
+    "E": "50%→50% omite consumo do compressor."
+  },
+  "limites": "Outros consumos desprezíveis e calor total fixo são hipóteses explícitas, não propriedades de unidade física medida.",
+  "impacto": "Enunciado muda a digital, logo histórico anterior permanece armazenado como versão anterior e deixa de contar para item atual se adotada, conforme leitura do código; não foi executado teste de navegador. Revisar inventário JSON e Markdown, evidência numérica e aceites BAN-07 após eventual aplicação.",
+  "verificacao": "verificar-delta.py e verificar-digitais.mjs; sem colisão no banco AV atual candidato e digitais históricas conhecidas BAN-07 r1. Sem acesso ao armazenamento de usuários nem teste empírico de estudantes.",
+  "pendencias": [
+    "Revisão científica e editorial independente, sem autoaprovação.",
+    "Decisão do Auditor principal sobre versão e dependências de BAN-07/BAN-08.",
+    "Qualquer aplicação requer liberação do coordenador e verificação de colisões, persistência e inventário na versão efetivamente aplicada."
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "E1-FUN01",
+  "versao": "1.0",
+  "data": "2026-10-27",
+  "pressao": "absoluta em todos os casos",
+  "fontes": [
+    {
+      "id": "NIST1998",
+      "titulo": "NISTIR 5078, Table 2, Saturation (Pressure), 1998, páginas impressas 11–12",
+      "url": "https://www.nist.gov/document/nistir5078-tab2pdf",
+      "consulta": "2026-10-27",
+      "conversao": "Volume original em cm³/g multiplicado por 0,001 para m³/kg; pressão original MPa e entalpia kJ/kg preservadas. Recorte de linhas, sem interpolação."
+    },
+    {
+      "id": "IAPWS2012",
+      "titulo": "IAPWS R7-97(2012), §3, página 5",
+      "url": "https://iapws.org/technical-guidance/release/IF97-Rev.download",
+      "consulta": "2026-10-27"
+    }
+  ],
+  "agua_saturacao": [
+    {
+      "p_MPa": 0.1,
+      "T_C": 99.606,
+      "vf_m3kg": 0.00104315,
+      "vg_m3kg": 1.6939,
+      "hf_kJkg": 417.5,
+      "hg_kJkg": 2674.9
+    },
+    {
+      "p_MPa": 0.15,
+      "T_C": 111.349,
+      "vf_m3kg": 0.00105273,
+      "vg_m3kg": 1.1593,
+      "hf_kJkg": 467.13,
+      "hg_kJkg": 2693.1
+    },
+    {
+      "p_MPa": 0.2,
+      "T_C": 120.21,
+      "vf_m3kg": 0.00106052,
+      "vg_m3kg": 0.88568,
+      "hf_kJkg": 504.7,
+      "hg_kJkg": 2706.2
+    }
+  ],
+  "agua_critico": {
+    "T_K": 647.096,
+    "p_MPa": 22.064
+  },
+  "problema_saturacao": {
+    "origem": "Dados de operação autorais; propriedades NIST1998.",
+    "p_MPa": 0.2,
+    "T_C": 120.21,
+    "m_kg": 2,
+    "V_m3": 0.9,
+    "h_sensor_kJkg": 1800,
+    "limite_erro_sensor_kJkg": 2,
+    "tolerancia_editorial_hprev_kJkg": 1,
+    "limite": "m,V,p,T tratados exatos para a comparação didática; tolerância editorial não é incerteza certificada NIST."
+  },
+  "mistura": {
+    "origem": "Modelo didático autoral de componentes fictícios A/B; parâmetros postulados, sem pretensão de representar mistura real.",
+    "hipoteses": [
+      "não reativo",
+      "líquido ideal",
+      "vapor ideal",
+      "Raoult e Dalton",
+      "pressões de saturação positivas no T0 indicado",
+      "sem capilaridade ou gravidade relevante"
+    ],
+    "T_K": 350,
+    "pA_sat_kPa": 150,
+    "pB_sat_kPa": 50,
+    "lotes": [
+      {
+        "id": "I",
+        "p_kPa": 100,
+        "zA": 0.4
+      },
+      {
+        "id": "II",
+        "p_kPa": 80,
+        "zA": 0.4,
+        "n_mol": 10
+      },
+      {
+        "id": "III",
+        "p_kPa": 80,
+        "zA": 0.8
+      },
+      {
+        "id": "IV",
+        "p_kPa": 80,
+        "zA": null
+      }
+    ]
+  },
+  "supercritico": {
+    "origem": "Leituras e limites de erro autorais; referência crítica IAPWS2012. Intervalos determinísticos, não intervalos de confiança.",
+    "lotes": [
+      {
+        "id": "A",
+        "T_K": 650,
+        "erro_T_K": 5,
+        "p_MPa": 22.1,
+        "erro_p_MPa": 0.1
+      },
+      {
+        "id": "B",
+        "T_K": 640,
+        "erro_T_K": 1,
+        "p_MPa": 25,
+        "erro_p_MPa": 0.1
+      },
+      {
+        "id": "C",
+        "T_K": 700,
+        "erro_T_K": 1,
+        "p_MPa": 20,
+        "erro_p_MPa": 0.1
+      },
+      {
+        "id": "D",
+        "T_K": 700,
+        "erro_T_K": 0,
+        "p_MPa": 25,
+        "erro_p_MPa": 0,
+        "qualidade_reportada": 0.2
+      }
+    ],
+    "melhoria": {
+      "erro_T_K": 1,
+      "erro_p_MPa": 0.01
+    }
+  },
+  "equilibrio": {
+    "origem": "Modelo didático autoral FUN01-EQ-modelo-v1. Substância X fictícia; nenhum dado atribuído à água.",
+    "coluna": {
+      "T_K": 300,
+      "rho_kgm3": 1000,
+      "M_kgmol": 0.02,
+      "psat_Pa": 10000,
+      "H_m": 2,
+      "g_ms2": 9.81,
+      "T_fundo_H1_K": 302
+    },
+    "celulas": {
+      "T_K": 300,
+      "R_JmolK": 8.314,
+      "V_m3": 0.01,
+      "p0_Pa": 100000,
+      "yA_alpha": 0.8,
+      "yA_beta": 0.2,
+      "membrana": "Fixa, somente A permeável; B bloqueado, sem armazenamento ou potencial adicional; volumes iguais constantes."
+    }
+  }
+}

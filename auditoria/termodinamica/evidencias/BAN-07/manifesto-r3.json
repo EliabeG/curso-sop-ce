@@ -1,0 +1,100 @@
+{
+  "id": "BAN-07",
+  "rodada": 3,
+  "estado": "APLICADO_AGUARDANDO_AUDITORIA",
+  "ajuste": "R2-A",
+  "data_utc": "2026-10-29T17:18:30.754112+00:00",
+  "corretor": "Agente automatizado /root/inspect_repo",
+  "arquivo_alterado": {
+    "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+    "sha256_antes": "71ac07e042aa65675fc3d4b69d8d0ae11cb66df967d45e66b1a88f4f1350e074",
+    "sha256_depois": "486c53c5aa6c432831599c4eca170e4620d089b4eb15b480dbfb2cbfaf54c9ce"
+  },
+  "arquivos_preservados": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "35df191e2f7964adfb7b975668491e8ba39d983a5df93640a35d3d96ae142df8",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/e1-termodinamica.r2.html",
+      "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/revisao-fon02-complementar-r2.json",
+      "sha256": "42ce5afe33e0481562c7673daaf25b359b8580b30276d9df75a1965adaa68399",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/triagem-ban10-complementar-r2.json",
+      "sha256": "cc03d1fdf3a2401c93ea193ce99ed44d79c5a937d908e202ca03ee914b9d819d",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/confronto-fon01-cr-r2.json",
+      "sha256": "d7fb0464f2c33701da8396a400c489dcde5096fc66de8c7d3e4d143ee7def9e4",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/manifesto-r2.json",
+      "sha256": "471b222e81c17a257a008a38671eb617498720f0add1f1baf7343baa0b0b413d",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-07-r2.md",
+      "sha256": "c9b19afcf3c3ddb0f8033b6fd13090d31750d60e31c68751804159e5c9b44bee",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+      "preservado": true
+    }
+  ],
+  "evidencias": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/aplicacao-r3/inventario-r2-antes.json",
+      "sha256": "71ac07e042aa65675fc3d4b69d8d0ae11cb66df967d45e66b1a88f4f1350e074"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/aplicacao-r3/aplicar-r3.mjs",
+      "sha256": "eb71c10a6965b2cef2129af18dc4f5596dc552ae792eb29242aa711f9aa8aa44"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/aplicacao-r3/verificacao-r3.json",
+      "sha256": "f990f55066e42a10e1bf75867de271055ebb37255351ec933d7a5fcd4065387b"
+    }
+  ],
+  "parecer_r2": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-r2.md",
+    "sha256": "06ee05437bf9b834ba6936b269c44b30da9f265fc51b73b24ee1beaa5b65cd2f"
+  },
+  "validacao": {
+    "ok": true,
+    "registros": 197,
+    "artigos": 197,
+    "recursos": 29,
+    "links": 1261,
+    "erros": 0,
+    "avisos": 0
+  },
+  "controle_antes": "dda1b9a8b7a5fbfa9304244d57e5f630acb9f329610a5f5fe3fe2fcfcd816432",
+  "controle_depois": "dda1b9a8b7a5fbfa9304244d57e5f630acb9f329610a5f5fe3fe2fcfcd816432",
+  "libera_proximo_id": false,
+  "limites": [
+    "Alteração semântica de inventário, sem editar HTML, fonte, código ou digitais; não se declara novo teste de navegador, armazenamento ou alunos.",
+    "Resultados r2 de persistência são herdados por identidade de HTML e JS, sujeitos à avaliação independente da aplicabilidade.",
+    "Nenhum aceite prévio é transferido automaticamente; o próximo ID continua bloqueado."
+  ]
+}

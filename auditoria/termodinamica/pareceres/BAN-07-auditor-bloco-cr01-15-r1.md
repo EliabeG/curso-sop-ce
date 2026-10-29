@@ -1,0 +1,62 @@
+# BAN-07 r1 — parecer independente CR01–CR15
+
+Data: 29/10/2026. Revisor: agente automatizado `/root/auditoria_av61_70`. **Veredito parcial: AJUSTE OBRIGATÓRIO proposto em CR06, sujeito à adjudicação do Auditor principal.** Não é parecer global nem libera o próximo ID.
+
+## Escopo, método e atribuição
+
+BAN-07 exige dados suficientes, consistência, comando, unidades, restrições, resposta única, demonstração do gabarito e justificativa das alternativas. Em questões oficiais preserva-se o texto e a chave; estudos críticos separam o documento e a interpretação técnica, sem forçar certeza nem nota. Examinei 15 itens (13 C/E e duas múltipla escolha de cinco alternativas, 36 opções ao todo), seu texto, comentário, hipóteses e usos, e a pertinência da leitura anterior. O exame não é de conteúdo integral de E1.
+
+A preparação preliminar `BAN-07-leitura-base.json`, SHA-256 `d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913`, é trabalho de `/root/auditor_aaa`: houve leitura científica dos itens e oposição antes de nova consulta ao comentário, mas com conhecimento prévio obtido em FON-02; sem cegamento. O arquivo `BAN-07-auditor-heranca-preparacao-parte1-r1.json`, SHA-256 `6d27df5336b55fbd1598971376dfc8df7d128e8cc54fb62ab0338d1b7d8db318`, previa CR01–15, porém concluiu oito Q e deixava todos os CR deste bloco pendentes: não é aceite deles. Revisei as demonstrações e as condições em relação ao artigo corrente; a identidade sozinha não é aceite. As conclusões CR06 e os limites a seguir são meus; a preparação continua atribuída ao revisor anterior.
+
+HTML atual SHA-256 `de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80`, baseline `0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7`. Para cada artigo comparei o SHA-256 do texto bruto extraído e recodificado em UTF-8 com o registrado na preparação: os 15 coincidem. Examinei os artigos e as alternativas; reconferi hashes dos 14 PDFs locais de prova/chave e suas páginas com o registro FON-01 `563e70deab73fc10c6af355db9a267a5342243427529ef7a640436278d42`. Usei extração textual própria para localizar os itens e a chave em cada página, mas o PDF apresenta colunas e caracteres danificados na extração: **não reivindico nova leitura visual integral de todas as páginas**. A conferência visual integral anteriormente aprovada, com identificação, contexto, figura e versões documentadas, é atribuída ao parecer FON-01-r1 de `/root/auditor_aaa`, SHA-256 `997313ef9d2e2137fe0ada9a028699ef29e536f75202780afbca961c0d39bf22`. Atribuo a FON-02-r2 a separação documental entre suplementos editoriais e texto da prova; BAN-10-r2 já estabeleceu CR04/09 críticos e sem nota. Os limites da pesquisa de atos FON-01 são os índices/documentos capturados, não uma garantia sobre atos futuros.
+
+## Julgamentos individuais
+
+A referência entre parênteses é a família documental FON-01, número original, página física de prova, letra definitiva; a chave é p. 1 em todos os 15. O resultado abaixo diferencia aprovação pontual, crítica sem nota e pendência.
+
+1. **CR01 — C** (p22m, 51, p.1): no mesmo estado, dividir amostra homogênea altera massa extensiva sem alterar T, p ou densidade; C correta; E erra por confundir intensidade com quantidade total. A preparação e comentário concordam. A condição de mesmo estado é essencial, não se afirma que a propriedade seja constante entre estados. **Aprovado localmente.**
+2. **CR02 — E** (p22m, 52, p.1): propriedades são funções de estado; fixado o estado final, Q e W podem depender do processo sem mudar o valor da propriedade. E correta; C confunde transferências com propriedade. Comentário consistente. **Aprovado localmente.**
+3. **CR03 — E** (p22p, 51, p.1): líquidos também têm movimento microscópico e energia cinética; E correta e C aceita exclusividade falsa. Sem impor a mesma mobilidade ou energia para todas as fases. **Aprovado localmente.**
+4. **CR04 — chave documental C, estudo crítico fora da nota** (p22p, 68, p.1): para uma fase e pequenas variações dv/v=αdT−κT dp. Sem fixar estado e magnitudes das perturbações, não há ordenação direta de sensibilidades com unidades K⁻¹ e Pa⁻¹; comparar |αΔT| e |κTΔp|. A leitura usual qualitativa explica C sem provar uma desigualdade universal. As marcações C/E servem a confronto documental e não classificam justificativa; o roteiro publicado pede explicitamente as condições. Acolho tratamento crítico BAN-10 por exame de alcance, não por hash apenas. **Tratamento local adequado, sem declarar unicidade física.**
+5. **CR05 — E** (p23, 59, p.2): lista oficial de base usa segundo e kelvin, não minuto e grau Celsius; E correta, C confunde unidade aceita e derivada com unidade de base. Minuto é aceito com SI e °C é unidade SI derivada; comentário não os chama de proibidos. **Aprovado localmente.**
+6. **CR06 — chave documental C; pendência de suficiência** (p23, 75, p.4): a leitura anterior conclui relação afim **para escalas lineares**, e a resolução atual também inicia “Uma escala linear”. Examinei visualmente a figura oficial p23-prova-p4 e a recriação identificada: três alturas correspondentes e pontos de gelo/vapor, sem valores intermediários, não definem por si a linearidade numérica de ambas as escalas. Dilatação uniforme estabelece relação da coluna com uma temperatura de referência, mas, lida literalmente sem restrição adicional, não obriga cada escala arbitrária a ser função afim dessa coluna. Contramodelo: seja u a altura normalizada de 0 a 1, com expansão linear; X=100u e Y=100u² têm mesmos pontos de gelo/vapor e identificam a mesma posição intermediária, mas X=10√Y, não X=a+bY em todo o intervalo. Para escalas X e Y ambas lineares, a relação afim é válida e explica C. C e E não podem ser julgadas de modo único sem delimitar essa convenção; a figura e a hipótese literal não afastam o contramodelo. Chave oficial C e transcrição devem ser preservadas. **Proponho ajuste obrigatório ao Auditor principal:** tratar explicitamente a condição das escalas antes da tentativa, como suplemento editorial claramente distinto do original, ou adotar estudo crítico sem pontuação enquanto a escolha não estiver cientificamente justificada; em qualquer reapresentação rever comentário, uso e persistência, mantendo documento e chave. Não afirmo que a banca tenha anulado o item.
+7. **CR07 — E** (p24, 62, p.2): tubo de Bourdon usualmente metálico responde à diferença de pressão por deformação, e não é o líquido em vidro descrito. E correta; C incorpora a combinação equivocada de princípio e material. Um sistema termométrico pressurizado pode usar elemento Bourdon, portanto não se afirma que todo uso para temperatura seja impossível. **Aprovado localmente.**
+8. **CR08 — C** (p24, 65, p.2): alcance é diferença entre limites, de modo que superior=50 °C+100 °C de intervalo=150 °C. C correta; E confunde alcance com limite ou desloca indevidamente o intervalo ao converter escalas. A diferença 100 °C equivale a 100 K, sem tratar valores absolutos da mesma forma. **Aprovado localmente.**
+9. **CR09 — chave documental E, estudo crítico fora da nota** (tc, 39, p.1): kelvin é unidade de base de temperatura termodinâmica; grau Celsius é unidade SI de temperatura Celsius. A chave E é coerente sob leitura restrita da grandeza/base, que não está no texto, e a leitura literal tem alternativa plausível; o curso preserva ambas sem atribuir justificativa não documentada à banca. C/E são comparações documentais, sem nota de domínio. **Tratamento local adequado, sem declarar unicidade física.**
+10. **CR10 — C** (tm, 32, p.1): ρ=m/V não muda ao replicar uma amostra homogênea no mesmo estado; C correta, E confundiria densidade com quantidade total. Não segue que ρ seja constante sob mudança de temperatura/pressão. **Aprovado localmente.**
+11. **CR11 — B** (ita, 35, p.2): unidade de base da grandeza temperatura termodinâmica é kelvin. A Fahrenheit não é SI; B kelvin é correta; C grau Celsius é unidade SI de temperatura Celsius, não a unidade pedida de temperatura termodinâmica; D watt é potência; E joule é energia. Distinção explícita da grandeza evita importar a ambiguidade CR09. Comentário é breve, mas concorda no contexto. **Aprovado localmente.**
+12. **CR12 — B** (ita, 40, p.3): I atribui lei zero à primeira, falsa; II atribui direção espontânea à lei zero, falsa; III chama conservação de energia de segunda lei, falsa; IV corresponde à referência de terceira lei no limite para cristal puro perfeitamente ordenado. A (só II) falsa; B (só IV) correta; C (I e III), D (I e IV) e E (II e III) incluem proposições falsas. O original liga IV à ordem molecular máxima; não extrapolar zero de entropia para sólidos desordenados com entropia residual. **Aprovado localmente no alcance da interpretação indicada.**
+13. **CR13 — E** (p22m, 56, p.1): gás ideal de composição fixa tem u=u(T), du=cv(T)dT; pressão isolada não fixa T. Contraexemplo: dois estados a mesma p e temperaturas diferentes, ajustando v=RT/p, têm u distinta. E correta; C trata u como dependente só de p. Comentário menciona cv constante apenas para a expressão simplificada de Δu. **Aprovado localmente.**
+14. **CR14 — C** (p22p, 52, p.1): na descrição macroscópica usual, gás livremente acessível ocupa o recipiente e as moléculas se deslocam entre colisões. C correta nessa leitura; E confundiria colisão/interação com ausência de liberdade de translação. Não inferir que inexistam forças, gravidade, gradientes ou barreiras em qualquer contexto. **Aprovado localmente.**
+15. **CR15 — E** (p22p, 53, p.1): o modelo cinético elementar oferece colisões elásticas, de modo que a afirmação geral de inelasticidade não é uma propriedade geral dos gases. E correta; C universaliza perda cinética por colisão. A resposta não exige afirmar que toda colisão real seja elástica, inclusive quando há excitação interna ou reação. O comentário delimita modelo ideal. **Aprovado localmente.**
+
+## Critérios e decisão
+
+| Critério | Resultado localizado |
+|---|---|
+| Identidade e fonte | 15 artigos idênticos à preparação; 14 PDFs conferem por hash; fontes/páginas e chave atribuídas a FON-01 e conferidas por extração própria com limitação de layout. |
+| Demonstração e opções | Todos os 36 juízos abordados, incluindo combinação das opções CR11/12; CR04/09 são marcadores documentais sem pontuação. |
+| Suficiência, unicidade e comentários | Quatorze itens sem novo ajuste neste exame, contando os dois críticos adequadamente tratados; CR06 contém hipótese adicional que altera julgamento, sujeito a adjudicação. |
+| Valores e arredondamento | CR08 usa limites exatos declarados, sem duas alternativas numéricas concorrentes; os demais não dependem de arredondamento para resposta. |
+| Produto e controle | Não alterados. Nenhum teste novo com estudantes, revisão humana, certificação externa ou exame de outro bloco é alegado. |
+
+**Reapresentação CR06:** registrar a decisão do Auditor sobre a hipótese, preservar original e C, mostrar suplemento ou estudo crítico antes da escolha, comprovar estado de pontuação e histórico, e apresentar novo hash e exame das duas marcações. Não se presume a solução editorial específica de outro ID. Sem liberação de próximo ID: este parecer é apoio científico parcial ao Auditor principal.
+
+## Hashes dos 15 artigos
+
+- `cr-e1-01` — `1a461fa641228ea3bcf7631148fc40821c890b98d8ebd1a72b5b844af982806d`
+- `cr-e1-02` — `ccb20b9d4b9d5741d97a2d539cb48a3cbd1fbc7a8455fe4d58c294678ddd7a9d`
+- `cr-e1-03` — `89ca6a4710177476a8a2f88e8031c1fff598205e86bfac18ce179ad8e87bc3e7`
+- `cr-e1-04` — `616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12`
+- `cr-e1-05` — `bef4e1a13a4eba650e1c6b802957077eb38c26fa5c1660da8e09b694544cacf5`
+- `cr-e1-06` — `69c0e38652f6be60ce26064942c5df1ef936193d8f6c3b79bd6530c28e29f31e`
+- `cr-e1-07` — `c6e1989e4dc002b751cc23ab3e0c032df264bab82f79972bc059fa2799f072cc`
+- `cr-e1-08` — `62f6c64f663b2a2901ad832b08768de5304186911da068e4ac48bbe0d2aeae3a`
+- `cr-e1-09` — `a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780`
+- `cr-e1-10` — `abe9bc623cad60bc7f3c99fe1f57d2ceda566ce7fba6166afaac0df113ef66a2`
+- `cr-e1-11` — `d5f8ea44378cd659b600ca4d2b9d24b290fd12bb603390c1117cd9c24678e878`
+- `cr-e1-12` — `7c0ff74e35d297c99cae98007bda36ebd4cdca22e4e1fcfa45fc3492f4683c18`
+- `cr-e1-13` — `52c02867f253205868fb2da8741a6d7b8cad977367c1d5f1ec848670ff7f90b7`
+- `cr-e1-14` — `3d06154c3f10b1827e4950b76dcf570d842b054a62406fc2c61a604af4c8a0a6`
+- `cr-e1-15` — `51c2987cdbf270b2bf5c447741e91ed1390e7812ad40164aecbdfa6accd4282f`
+

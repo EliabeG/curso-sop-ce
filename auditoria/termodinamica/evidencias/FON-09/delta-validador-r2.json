@@ -1,0 +1,7 @@
+{
+  "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+  "antes": "      const [beforeHash, rawFragment] = reference.split('#');",
+  "depois": "      const hashIndex = reference.indexOf('#');\n      const beforeHash = hashIndex === -1 ? reference : reference.slice(0, hashIndex);\n      const rawFragment = hashIndex === -1 ? undefined : reference.slice(hashIndex + 1);",
+  "sha256_antes": "114b1a063cb2a88e505c9ecffd2b22c75f29b709419b24e9e533331fa7283b22",
+  "sha256_depois": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5"
+}

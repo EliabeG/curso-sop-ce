@@ -1,0 +1,21 @@
+{
+  "escopo": "iniciarBanco apenas, marcador estudo-critico condicionado a idModulo e1",
+  "edits": [
+    {
+      "antes": "    var respostas = Object.create(null);\n    var digitais = Object.create(null);",
+      "depois": "    // BAN-10: a exclusão é editorial, explícita e restrita ao E1; não altera a identidade da resposta.\n    function estudoCritico(item) {\n      return idModulo() === 'e1' && item.dataset.crAvaliacao === 'estudo-critico';\n    }\n    var temEstudosCriticos = itens.some(estudoCritico);\n    var respostas = Object.create(null);\n    var digitais = Object.create(null);"
+    },
+    {
+      "antes": "      item.dataset.crResultado = correta ? 'certo' : 'errado';\n      feedback.textContent = (correta ? 'Resposta correta.' : 'Resposta incorreta.') + ' Sua marcação: ' + valor + '. Gabarito: ' + item.dataset.crGabarito + '. Veja o raciocínio na resolução.';",
+      "depois": "      if (estudoCritico(item)) {\n        item.removeAttribute('data-cr-resultado');\n        feedback.textContent = 'Estudo crítico, sem pontuação. Sua marcação: ' + valor + (correta ? ' coincide' : ' não coincide') + ' com o gabarito oficial ' + item.dataset.crGabarito + '. Essa comparação não certifica validade técnica nem domínio. Leia a análise e seus limites.';\n      } else {\n        item.dataset.crResultado = correta ? 'certo' : 'errado';\n        feedback.textContent = (correta ? 'Resposta correta.' : 'Resposta incorreta.') + ' Sua marcação: ' + valor + '. Gabarito: ' + item.dataset.crGabarito + '. Veja o raciocínio na resolução.';\n      }"
+    },
+    {
+      "antes": "      var certas = 0;\n      itens.forEach(function (item) {\n        var valor = respostas[item.id];\n        if (valor) { respondidas += 1; if (valor === item.dataset.crGabarito) certas += 1; }",
+      "depois": "      var certas = 0;\n      var criticos = 0;\n      var criticosRespondidos = 0;\n      itens.forEach(function (item) {\n        var valor = respostas[item.id];\n        if (estudoCritico(item)) {\n          criticos += 1;\n          if (valor) criticosRespondidos += 1;\n        } else if (valor) { respondidas += 1; if (valor === item.dataset.crGabarito) certas += 1; }"
+    },
+    {
+      "antes": "      banco.querySelector('#' + prefixo + '-vazio').hidden = visiveis > 0;",
+      "depois": "      if (temEstudosCriticos) placar.textContent = visiveis + ' de ' + itens.length + ' questões exibidas · Treino pontuável: ' + respondidas + ' de ' + (itens.length - criticos) + ' respondidas, ' + pluralizar(certas, 'correta', 'corretas') + ' e ' + pluralizar(respondidas - certas, 'incorreta', 'incorretas') + ' · Estudos críticos: ' + criticosRespondidos + ' de ' + criticos + ' com marcação documental, fora da pontuação.';\n      banco.querySelector('#' + prefixo + '-vazio').hidden = visiveis > 0;"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "QA-09-oficina-balancos-compressor",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "49b0df4fe59dfd01913f4d41a5e6869705f4bf4d6ded251060f940cd5d12c91b",
+  "secao_sha256": "332973ea8904d02ceb2e6c54d8713924c517975ce0749f09ee9f1b8ba07d56c2",
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-oficina-8-1-adjudicacao-independente-r1.md",
+    "sha256": "36afd1dd5e12965a66bf2945871c4434771400bbd7a7728ff2eab55d7f3ac4e0"
+  },
+  "original_sha256_fragmento": "9dfddd65f621b05df619ec763ce6fdbffab23fecd60190739feda0871778834a",
+  "candidata_sha256_fragmento": "7b45170eba005fecfbd7b39dc6e96656fa8d294f07a93339e2f59a92945e2ae5",
+  "original_sha256_arquivo": "da80fd59fc64b2d8c05049e38499efddd66dd2cc3aa5a8ec0b63ede4afb9a2b1",
+  "candidata_sha256_arquivo": "0b65f6057c08fca38cd06acb9a46907acbdb385c78833b739f828686258b8ced",
+  "alteracoes": [
+    {
+      "antes": "Um compressor em regime permanente recebe 3 kg/s com h₁ = 250 e h₂ = 290 kJ/kg. Perde 15 kW de calor.",
+      "depois": "Um compressor em regime permanente, com uma entrada e uma saída, recebe 3 kg/s com h₁ = 250 e h₂ = 290 kJ/kg. Sua perda líquida de calor é de 15 kW e o trabalho de eixo é sua única transferência de trabalho."
+    }
+  ],
+  "limite": "Arquivos incluem nova linha final. Candidata não aplicada; requer revisão independente."
+}

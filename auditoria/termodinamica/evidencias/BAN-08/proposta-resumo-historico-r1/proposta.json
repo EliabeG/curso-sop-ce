@@ -1,0 +1,17 @@
+{
+  "id": "BAN-08",
+  "estado": "PROPOSTA_ISOLADA_AGUARDANDO_PARECER_FORMAL",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "alvo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+  "sha256_atual": "f0fb7899fbf628515de624873ad3ef253ae08f0a3c1ec8f1154c941b11d573e4",
+  "sha256_candidato": "1f5423eb4aa760a9ff70291b961a269ff45b54da4381f667a2029648edfb0035",
+  "alteracao": {
+    "antes": "O JSON registra as hipóteses atualizadas e a revisão do gabarito da versão efetiva como pendente.",
+    "depois": "Na entrega inicial de aplicação, o JSON registrava as hipóteses atualizadas e a revisão do gabarito da versão efetiva como pendente; o parágrafo seguinte registra a revalidação posterior."
+  },
+  "verificacao": "Reversão literal do único trecho reconstitui o texto atual integralmente; nenhuma aplicação nem alteração de produto.",
+  "limites": [
+    "Estado atual do JSON e parecer independente não foram modificados.",
+    "Aguarda parecer técnico formal e liberação para aplicação; não é aceite BAN-08."
+  ]
+}

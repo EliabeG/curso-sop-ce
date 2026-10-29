@@ -1,0 +1,892 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autor": "/root/auditor_av_continuacao",
+  "natureza": "Apoio científico automatizado independente do Corretor; não é revisão humana ou certificação externa.",
+  "escopo": "Somente AV56–AV60, cinco artigos/25 alternativas. Última faixa atribuída ao apoio; não antecipar AV61–80.",
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "html_examinado": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "criterios": {
+    "BAN_07": "Dados suficientes, consistência física, comando, unidades, restrições, resposta única, demonstração da chave, distratores teoricamente plausíveis por erros concretos e equivalências após arredondamento.",
+    "regra_comum": "Seção 3.2 lida. Aplicada à rastreabilidade, hipóteses e revisão no alcance da auditoria de itens existentes; não se exige artificialmente uma unidade curricular nova para cada alternativa.",
+    "protocolo": "PROTOCOLO_AAA.md lido. Apoio não implementa correções, não concede aceite global e não libera próximo ID."
+  },
+  "reutilizacao_propria": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av51-55-r1.json",
+    "sha256": "62872d4974d0730e2829d6e35cb90d7a082743aaaf776529e854208572cec263",
+    "autor": "/root/auditor_av_continuacao",
+    "alcance": "Protocolo/regra comum/critério já lidos; bases leitura matemática/Brayton/Brayton real reutilizadas após igualdade dos hashes e verificação de acesso antes dos artigos. Juízos de outros itens não contam como revisão destes cinco."
+  },
+  "metodo_exposicao": "Primeira extração por parseHtml omitiu data-cr-gabarito e details, exibindo comandos/opções, títulos, temas e links. Esses metadados temáticos são conhecidos; não se alega cegamento integral do ambiente. As respostas abaixo foram persistidas antes das chaves, comentários e deltas. Novas bases e figura foram examinadas para suficiência, sem chave de resposta.",
+  "resolucoes_pre_confronto": {
+    "registradas_em": "2026-10-28T23:18:26.585Z",
+    "AV56": {
+      "resposta": "E",
+      "prova": "Parte a gás em turbina: Brayton. Vapor gerado pela recuperação do escape aciona circuito de potência Rankine. Ordem gás/vapor resulta Brayton–Rankine."
+    },
+    "AV57": {
+      "resposta": "D",
+      "prova": "x=rp^((k−1)/k)=2. η=1−1/x=1−1/2=0,5=50%."
+    },
+    "AV58": {
+      "resposta": "A",
+      "prova": "Massa/composição fixa, ideal e isotérmica: p1V1=p2V2. p2=100×0,20/0,050=400 kPa absolutos. ∆p é 300 kPa, não a pressão final."
+    },
+    "AV59": {
+      "resposta": "C",
+      "prova": "I verdadeira: antes de abrir descarga, compressão propriamente dita com ambas válvulas fechadas. II verdadeira: descarga pode abrir pela diferença de pressão favorável suficiente. III falsa: admissão efetiva aberta e descarga fechada, evitando curto-circuito/retorno. Apenas I e II."
+    },
+    "AV60": {
+      "resposta": "A",
+      "prova": "Volume armazenado recebe descargas pulsantes e fornece à linha, amortecendo flutuações. Não muda o ciclo instantâneo do cilindro, não elimina o trabalho e não exige pressão atmosférica."
+    }
+  },
+  "bases_verificadas": [
+    {
+      "id": "base-comparar-ciclos",
+      "sha256_trecho": "56c93ece883a64cf14e175fd059fd5b340ef94898265bb5537ff4e7632855eca",
+      "leitura_nova": true,
+      "antes_AV56": true,
+      "em_details": false
+    },
+    {
+      "id": "base-rankine",
+      "sha256_trecho": "9e8ad6168f1e3b3c7510b23ff0cc623259244a8235b75ff8341edd4cd86123df",
+      "leitura_nova": true,
+      "antes_AV56": true,
+      "em_details": false
+    },
+    {
+      "id": "base-leitura-matematica",
+      "sha256_trecho": "80bcc3ac12c7736973274b63f835ca1330ecd1f562da30f416098c0635fb2956",
+      "herdada_por_identidade": true,
+      "antes_AV56": true,
+      "em_details": false
+    },
+    {
+      "id": "base-brayton",
+      "sha256_trecho": "5de557929e5287d248ed1a7e58046e4d1e3b837f22c4e46559c3df2dc226ad90",
+      "herdada_por_identidade": true,
+      "antes_AV56": true,
+      "em_details": false
+    },
+    {
+      "id": "base-brayton-real",
+      "sha256_trecho": "840ca605e8b6e949dd3a4f4daf4a386e0289ef9363d3aad0fbc4325e319d593b",
+      "herdada_por_identidade": true,
+      "antes_AV56": true,
+      "em_details": false
+    },
+    {
+      "id": "base-gas-modelo",
+      "sha256_trecho": "3bab0505ce44936fb4a79df77ac99f3ed04a41708f1f138e5c3090fffdfe081c",
+      "leitura_nova": true,
+      "antes_AV56": true,
+      "em_details": false
+    },
+    {
+      "id": "base-valvulas-compressor",
+      "sha256_trecho": "8b1c1adcbff1a25fee8a6bde4cfedb6f57c6e880cd9f0424a55cd8768892bcca",
+      "leitura_nova": true,
+      "antes_AV56": true,
+      "em_details": false
+    }
+  ],
+  "figura_compartilhada": {
+    "localizador": "modulos/e1-termodinamica.html — #base-valvulas-compressor, svg aria-labelledby fig-e1-valvulas-t fig-e1-valvulas-d",
+    "sha256_svg_original": "c6a119d5b2049302f76bd26426306a6c082afb8df8d1c353ed06313d18e0ca82",
+    "sha256_css": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+    "copia_renderizada": "auditoria/termodinamica/pareceres/BAN-07-av56-60-fig-valvulas-r1.png",
+    "sha256_png": "2cb31352d566ac595220397ef8a6ce9faf470e1bf0632a62dbcb79af7dc7e352",
+    "executor": "/root/auditor_av_continuacao",
+    "inspecao": "Código SVG, título/desc/legenda e PNG efetivamente vistos pelo revisor. Eixos p vertical e V horizontal, pdesc>psuc, volume mínimo não nulo, estados 1 à direita/baixo, 2 acima/à esquerda, 3 no mínimo de volume e 4 na sucção após reexpansão. Setas 1→2 para cima/esquerda, 2→3 para esquerda, 3→4 para baixo/direita, 4→1 para direita. Correspondem à tabela de válvulas e à descrição.",
+    "papel": "Esquema instrucional sem escala da base acessível antes de AV59/AV60; não fornece dados numéricos a calcular.",
+    "renderizacao_limites": "Renderização isolada via sharp, 2×, com classes de traço/texto da folha CSS e valores do tema claro. xmlns e capitalização viewBox normalizados apenas para o renderizador XML. Não foi captura de navegador nem teste assistivo/global de acessibilidade; o produto não foi alterado."
+  },
+  "itens": [
+    {
+      "item": "AV56",
+      "id_artigo": "av-e1-56",
+      "sha256_artigo": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+      "comando": "Uma usina de ciclo combinado utiliza a exaustão de uma turbina a gás para gerar vapor que aciona outra turbina. Os modelos termodinâmicos usualmente associados à parte a gás e à parte a vapor são, respectivamente,",
+      "demonstracao_independente": {
+        "ordem": "Associação Brayton–Rankine, resposta E, persistida antes das chaves/comentários e deltas.",
+        "passos": [
+          "A primeira unidade usa turbina a gás, cujo núcleo usual é representado por Brayton: compressão do gás, aquecimento e expansão em turbina.",
+          "O escape aquece água/gera vapor para outra turbina; o circuito usual de potência a vapor, com bomba/caldeira/turbina/condensação, corresponde ao Rankine.",
+          "A ordem solicitada é gás e depois vapor, portanto E. C contém os mesmos nomes em ordem inversa; A/B/D usam outras famílias."
+        ],
+        "resposta": "E",
+        "dados_modelos_suficiencia": "O comando descreve a recuperação da exaustão e a turbina a vapor, suficientes para identificar os modelos usuais. #base-comparar-ciclos distingue explicitamente as famílias e descreve o ciclo combinado, antes da resposta; #base-rankine desenvolve o circuito de vapor. Não se pede rendimento ou dimensionamento de planta.",
+        "unidades_sinais_dominio": "Identificação qualitativa, sem propriedade, número ou convenção de sinal necessária. “Usualmente associados” delimita os modelos convencionais, sem afirmar que toda turbina real execute processos ideais.",
+        "unicidade_arredondamento": "Somente E respeita simultaneamente as duas famílias e a ordem. Nenhuma outra alternativa é equivalente; arredondamento não aplicável.",
+        "bases_antes_tentativa": [
+          "base-comparar-ciclos",
+          "base-rankine"
+        ],
+        "figuras": "Artigo e duas bases vinculadas não contêm figura. A descrição textual do acoplamento fornece a informação exigida."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Stirling e Otto.",
+          "juizo": "par de modelos ou ordem incorretos",
+          "erro_plausivel": "Associar o reaproveitamento de calor à regeneração do Stirling, escolhendo a família pelo tipo de recuperação em vez da turbina a gás; na parte a vapor, tratar a caldeira de carcaça rígida como aquecimento isocórico e transferir o modelo Otto. São confusões concretas entre processo, recipiente e ciclo; não associação correta dos equipamentos descritos.",
+          "plausibilidade": "teórica: confusão de família, processo ou ordem explicitada; sem frequência empírica alegada"
+        },
+        {
+          "letra": "B",
+          "texto": "Carnot e Diesel.",
+          "juizo": "par de modelos ou ordem incorretos",
+          "erro_plausivel": "Tomar Carnot como nome de qualquer núcleo ideal/eficiente de turbina e identificar a parte a vapor como Diesel só porque há fornecimento de calor a pressão aproximadamente constante. Confunde referência limite com modelo de equipamento e uma etapa comum com a identidade do ciclo.",
+          "plausibilidade": "teórica: confusão de família, processo ou ordem explicitada; sem frequência empírica alegada"
+        },
+        {
+          "letra": "C",
+          "texto": "Rankine e Brayton.",
+          "juizo": "par de modelos ou ordem incorretos",
+          "erro_plausivel": "Reconhecer os dois nomes pertinentes, mas inverter a ordem gás/vapor pedida: atribui Rankine à turbina a gás e Brayton ao circuito de vapor.",
+          "plausibilidade": "teórica: confusão de família, processo ou ordem explicitada; sem frequência empírica alegada"
+        },
+        {
+          "letra": "D",
+          "texto": "Otto e Diesel.",
+          "juizo": "par de modelos ou ordem incorretos",
+          "erro_plausivel": "Tratar todo motor que recebe combustível como Otto e classificar o segundo circuito como Diesel pela adição de calor a pressão constante. Classifica pela combustão/etapa de aquecimento, sem distinguir motores alternativos de conjuntos turbina–compressor e vapor com mudança de fase.",
+          "plausibilidade": "teórica: confusão de família, processo ou ordem explicitada; sem frequência empírica alegada"
+        },
+        {
+          "letra": "E",
+          "texto": "Brayton e Rankine.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: os modelos usuais são Brayton na turbina a gás e Rankine no circuito de potência a vapor.",
+          "plausibilidade": "não se aplica à chave"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "E",
+        "concorda": true,
+        "comentarios": "A solução corresponde à identificação independente. C explica a inversão; D distingue motores alternativos. A/B trazem refutações curtas cientificamente corretas; a análise atual explicita percursos de confusão para além da mera falsidade.",
+        "identidade": {
+          "id": "av-e1-56",
+          "sha256_antes": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+          "sha256_atual": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+          "identico": true
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e bases acessíveis",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-56; #base-comparar-ciclos; #base-rankine"
+        },
+        {
+          "tipo": "fonte primária acadêmica",
+          "titulo": "MIT Unified Engineering — 8.7 Combined Cycles for Power Production",
+          "url": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node67.html",
+          "consulta": "2026-10-28",
+          "alcance": "Corrobora associação gás/Brayton e vapor/Rankine e recuperação da exaustão. Mecanismos de escolha errada são inferência deste revisor."
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "suspeita_descartada",
+          "descricao": "A/B/D são opções de reconhecimento elementar, mas sua facilidade não demonstra implausibilidade. Foram examinadas confusões sobre recuperação térmica, referência Carnot, calor isobárico/isocórico e tipo de máquina. Isso fundamenta plausibilidade teórica sem atribuir atratividade real a alunos."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV57",
+      "id_artigo": "av-e1-57",
+      "sha256_artigo": "64d1d119452a69f00cbae2a69c844bd047558d33064fcbd0a7ec7172e4c73f73",
+      "comando": "Para o Brayton ideal com calores específicos constantes, considere η = 1 − 1/rp^((k−1)/k), em que rp é a razão de pressões e k = cp/cv. Em um ponto de operação, rp^((k−1)/k) = 2. A eficiência ideal é",
+      "demonstracao_independente": {
+        "ordem": "η=0,50=50%, resposta D, persistida antes da chave, comentários e delta.",
+        "equacoes": [
+          "x=rp^((k−1)/k)=2",
+          "η=1−1/x=1−1/2=1/2"
+        ],
+        "resposta": "D",
+        "verificacao_numerica": {
+          "valor_intermediario": 2,
+          "fracao": 0.5,
+          "percentual": 50,
+          "percursos_distratores_percentuais": {
+            "A": 100,
+            "B": -100,
+            "C": 0.5,
+            "E": 200
+          }
+        },
+        "dados_modelos_suficiencia": "Fórmula completa, definição de rp e k, calores específicos constantes e valor da potência fracionária estão no comando, antes das alternativas. Não é necessário inferir k nem calcular rp. A base explicita gás ideal/k constante e razão de pressões absolutas do Brayton ideal.",
+        "unidades_sinais_dominio": "x, rp, k e η são adimensionais. Fração de 0,5 corresponde a 50%. Para o ciclo motor convencional de gás ideal estável, k>1 e rp>1; x=2 é compatível com esse domínio. Desempenho real exige condições adicionais e não é determinado por este resultado ideal.",
+        "unicidade_arredondamento": "Números exibidos: 100%, −100%, 0,50%, 50% e 200%, todos distintos. 0,50% não equivale a 0,50 adimensional: representa 0,005. Resultado 50% é exato para x=2; nenhuma colisão de arredondamento.",
+        "bases_antes_tentativa": [
+          "base-leitura-matematica",
+          "base-brayton",
+          "base-brayton-real"
+        ],
+        "figuras": "Nenhuma no artigo ou nos três trechos de base."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "100%.",
+          "juizo": "resultado incorreto para a expressão e unidade pedidas",
+          "erro_plausivel": "Omite o termo 1/x que precisa ser subtraído: usa η=1 e obtém 100%. Também pode decorrer da generalização ideal=sem rejeição; o termo 1/2 fornecido impede esse resultado.",
+          "plausibilidade": "teórica e reproduzida por operação/omissão concreta"
+        },
+        {
+          "letra": "B",
+          "texto": "−100%.",
+          "juizo": "resultado incorreto para a expressão e unidade pedidas",
+          "erro_plausivel": "Troca o inverso por x: 1−2=−1, convertido corretamente para −100%, porém a expressão usada é errada.",
+          "plausibilidade": "teórica e reproduzida por operação/omissão concreta"
+        },
+        {
+          "letra": "C",
+          "texto": "0,50%.",
+          "juizo": "resultado incorreto para a expressão e unidade pedidas",
+          "erro_plausivel": "Calcula a fração η=0,50, mas apenas anexa o símbolo %, sem multiplicar por 100. Assim escreve 0,50% em vez de 50%, diferença de fator 100.",
+          "plausibilidade": "teórica e reproduzida por operação/omissão concreta"
+        },
+        {
+          "letra": "D",
+          "texto": "50%.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: η=1−1/2=0,50=50%.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "E",
+          "texto": "200%.",
+          "juizo": "resultado incorreto para a expressão e unidade pedidas",
+          "erro_plausivel": "Toma o valor intermediário x=2 como se fosse a eficiência e multiplica por 100: 200%, omitindo inversão e subtração da expressão.",
+          "plausibilidade": "teórica e reproduzida por operação/omissão concreta"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "D",
+        "concorda": true,
+        "comentarios": "Solução obtém 1−1/2=0,50. A/B/E refutam as operações reproduzidas; C distingue explicitamente fração e porcentagem. O novo C é um erro identificável de representação, não uma divisão arbitrária sem motivo.",
+        "identidade": {
+          "id": "av-e1-57",
+          "sha256_antes": "0e7279567efbcd2caf5a82d8082573029f15570a1806b11a554d3ab30f96f1fa",
+          "sha256_atual": "64d1d119452a69f00cbae2a69c844bd047558d33064fcbd0a7ec7172e4c73f73",
+          "identico": false
+        },
+        "delta_direto": {
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/delta-artigos-r1.json",
+          "sha256": "9654b4c2a62d95776ec084b1d6c777d8551a0b81c5aea43fe1e71eb57126a6e4",
+          "autoria_do_delta": "/root/corretor_aaa",
+          "executor_do_confronto": "/root/auditor_av_continuacao",
+          "metodo_executado": "Artigo anterior e artigo atual extraídos por parseHtml; substituições aplicadas sequencialmente ao anterior e resultado comparado integralmente. Verificação executada diretamente antes do registro de AV56, depois do pre_confronto, nesta mesma execução.",
+          "html_anterior_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "sha256_artigo_antes": "0e7279567efbcd2caf5a82d8082573029f15570a1806b11a554d3ab30f96f1fa",
+          "sha256_artigo_depois": "64d1d119452a69f00cbae2a69c844bd047558d33064fcbd0a7ec7172e4c73f73",
+          "substituicoes": [
+            {
+              "antes": "<strong>C.</strong> 25%.</span>",
+              "depois": "<strong>C.</strong> 0,50%.</span>",
+              "ocorrencias_declaradas": 1,
+              "ocorrencias_antes_observadas": 1,
+              "ocorrencias_depois_observadas": 1
+            },
+            {
+              "antes": "<strong>C — Comentário:</strong> Aplica uma divisão adicional por 2 sem fundamento.</li>",
+              "depois": "<strong>C — Comentário:</strong> Escrever a fração 0,50 diretamente com o símbolo % esquece a multiplicação por 100. A fração 0,50 corresponde a 50%, não a 0,50%.</li>",
+              "ocorrencias_declaradas": 1,
+              "ocorrencias_antes_observadas": 1,
+              "ocorrencias_depois_observadas": 1
+            }
+          ],
+          "reconstrucao_integral_exata": true,
+          "alcance": "Somente opção C (25%→0,50%) e seu comentário foram alterados; comando, fórmula e chave D preservados."
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e bases acessíveis",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-57; #base-leitura-matematica; #base-brayton; #base-brayton-real"
+        },
+        {
+          "tipo": "fonte primária acadêmica corroboradora, leitura própria anterior",
+          "titulo": "MIT Unified Engineering — 3.7 Brayton Cycle",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+          "alcance": "Modelo ideal e relação de eficiência; consulta própria em 2026-10-28. Aritmética e confronto do delta executados para este artigo."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV58",
+      "id_artigo": "av-e1-58",
+      "sha256_artigo": "6a7534ee1978a5572870ce9206be5c77578e5c6f308255f9a4f9fef7230825b3",
+      "comando": "Durante uma idealização isotérmica da compressão de uma massa fixa de ar, a pressão absoluta inicial é 100 kPa e o volume passa de 0,20 m³ para 0,050 m³. Para gás ideal, a pressão absoluta final é",
+      "demonstracao_independente": {
+        "ordem": "p2=400 kPa absolutos, resposta A, persistida antes da chave, comentários e delta.",
+        "equacoes": [
+          "pV=mRT",
+          "m, R e T constantes ⇒ p1V1=p2V2",
+          "p2=p1(V1/V2)=100(0,20/0,050)=400 kPa"
+        ],
+        "resposta": "A",
+        "verificacao_numerica": {
+          "p1_absoluta_kPa": 100,
+          "V1_m3": 0.2,
+          "V2_m3": 0.05,
+          "razao_volumes": 4,
+          "p2_absoluta_kPa": 400,
+          "incremento_kPa": 300,
+          "pV_inicial_kJ": 20,
+          "pV_final_kJ": 20,
+          "operacoes_distratores_kPa": {
+            "B": 100,
+            "C": 25,
+            "D": 300,
+            "E": 200
+          }
+        },
+        "dados_modelos_suficiencia": "Massa fixa de ar, idealização isotérmica, gás ideal, volumes inicial/final e referência absoluta das pressões estão no comando. Composição constante é a do mesmo ar no modelo sem reação; não há troca de massa ou condição introduzida só na resolução. Temperatura e constante específica se cancelam, portanto valores numéricos dessas grandezas não são necessários.",
+        "condicoes_antes_tentativa": {
+          "presentes_no_comando": {
+            "massa_fixa": true,
+            "isotermia": true,
+            "gas_ideal": true,
+            "pressao_absoluta_inicial": true,
+            "pressao_absoluta_final": true
+          },
+          "comando_antes_do_primeiro_radio": true,
+          "comando_antes_de_details": true,
+          "sha256_trecho_p_comando": "783d9d4de20a6d7ae38701fe5e560bc6081e7fae9ecfa5ca4e52d4584b54a8b2",
+          "comando_baseline_textualmente_identico": true,
+          "sha256_trecho_p_baseline": "783d9d4de20a6d7ae38701fe5e560bc6081e7fae9ecfa5ca4e52d4584b54a8b2",
+          "alcance": "Verificação direta dos dois comandos e da posição atual antes da tentativa. As condições já estavam presentes no artigo anterior; o delta r1 não as acrescentou."
+        },
+        "unidades_sinais_dominio": "p em kPa absolutos e ambos os volumes em m³. V1/V2 é adimensional; compressão a T fixa eleva p positiva por fator quatro. kPa·m³=kJ confere pV constante de 20 kJ; nenhum trabalho ou calor foi calculado a partir de pV sozinho.",
+        "restricoes": "Processo declarado isotérmico de gás ideal e massa fixa; não é uma compressão adiabática genérica nem um cilindro aberto durante admissão/descarga. Não se usa pressão manométrica na equação de estado.",
+        "unicidade_arredondamento": "A=400, B=100, C=25, D=300, E=200 kPa são valores distintos, com separações grandes perante a precisão dos dados. Somente A é pressão final; D é variação. Nenhuma equivalência após arredondamento.",
+        "bases_antes_tentativa": [
+          "base-leitura-matematica",
+          "base-gas-modelo"
+        ],
+        "figuras": "Nenhuma no artigo ou nas duas bases ligadas. O cálculo usa dados textuais completos."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "400 kPa.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: pressão final absoluta de 400 kPa para V final igual a um quarto do inicial.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "B",
+          "texto": "100 kPa.",
+          "juizo": "pressão final incorreta ou grandeza diferente",
+          "erro_plausivel": "Mantém p2=p1=100 kPa, confundindo temperatura constante com pressão constante ou ignorando a redução de volume apesar de massa fixa.",
+          "plausibilidade": "teórica e reproduzida por erro de relação, quantidade ou composição de razões"
+        },
+        {
+          "letra": "C",
+          "texto": "25 kPa.",
+          "juizo": "pressão final incorreta ou grandeza diferente",
+          "erro_plausivel": "Inverte a razão: p2=p1·V2/V1=100×0,050/0,20=25 kPa. Trata p como proporcional a V, em vez de inversamente proporcional em T e massa fixas.",
+          "plausibilidade": "teórica e reproduzida por erro de relação, quantidade ou composição de razões"
+        },
+        {
+          "letra": "D",
+          "texto": "300 kPa.",
+          "juizo": "pressão final incorreta ou grandeza diferente",
+          "erro_plausivel": "Calcula o aumento, ∆p=p2−p1=400−100=300 kPa, e o responde como pressão absoluta final. Confunde valor final com variação. Sem pressão atmosférica especificada, 300 não é tratado como pressão manométrica calculada.",
+          "plausibilidade": "teórica e reproduzida por erro de relação, quantidade ou composição de razões"
+        },
+        {
+          "letra": "E",
+          "texto": "200 kPa.",
+          "juizo": "pressão final incorreta ou grandeza diferente",
+          "erro_plausivel": "Conta apenas uma das duas reduções pela metade: 0,20→0,10→0,050 m³, mas duplica a pressão somente uma vez e obtém 200 kPa. O erro concreto é reduzir a razão total de quatro a uma única duplicação.",
+          "plausibilidade": "teórica e reproduzida por erro de relação, quantidade ou composição de razões"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "A",
+        "concorda": true,
+        "comentarios": "Solução aplica Boyle corretamente para o modelo declarado. B/C/E correspondem às operações acima; D agora explica ∆p versus p2 absoluto e coincide com os 300 kPa reproduzidos. A frase final sobre válvulas é contexto de estudo, não condição oculta usada para obter a resposta.",
+        "identidade": {
+          "id": "av-e1-58",
+          "sha256_antes": "ed7991b384a31713d5cf3e2963b51f3e23c81e676a922f4a01264f86d678c46c",
+          "sha256_atual": "6a7534ee1978a5572870ce9206be5c77578e5c6f308255f9a4f9fef7230825b3",
+          "identico": false
+        },
+        "delta_direto": {
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/delta-artigos-r1.json",
+          "sha256": "9654b4c2a62d95776ec084b1d6c777d8551a0b81c5aea43fe1e71eb57126a6e4",
+          "autoria_do_delta": "/root/corretor_aaa",
+          "executor_do_confronto": "/root/auditor_av_continuacao",
+          "metodo_executado": "Artigos anterior/atual extraídos via parseHtml; substituições aplicadas ao anterior e comparação integral exata executada nesta mesma sessão antes do registro de AV56. Comando/posição inspecionados novamente para a exigência específica de condições antes da resposta.",
+          "html_anterior_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "sha256_artigo_antes": "ed7991b384a31713d5cf3e2963b51f3e23c81e676a922f4a01264f86d678c46c",
+          "sha256_artigo_depois": "6a7534ee1978a5572870ce9206be5c77578e5c6f308255f9a4f9fef7230825b3",
+          "substituicoes": [
+            {
+              "antes": "<strong>D.</strong> 800 kPa.</span>",
+              "depois": "<strong>D.</strong> 300 kPa.</span>",
+              "ocorrencias_declaradas": 1,
+              "ocorrencias_antes_observadas": 1,
+              "ocorrencias_depois_observadas": 1
+            },
+            {
+              "antes": "<strong>D — Comentário:</strong> Duplica indevidamente o resultado.</li>",
+              "depois": "<strong>D — Comentário:</strong> 300 kPa é o aumento p2 − p1 = 400 − 100. O comando pede a pressão absoluta final, 400 kPa, não o incremento de pressão.</li>",
+              "ocorrencias_declaradas": 1,
+              "ocorrencias_antes_observadas": 1,
+              "ocorrencias_depois_observadas": 1
+            }
+          ],
+          "reconstrucao_integral_exata": true,
+          "alcance": "Somente D 800→300 kPa e comentário D. Comando, condições anteriores à tentativa, demais alternativas e chave A preservados."
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e bases acessíveis",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-58; #base-leitura-matematica; #base-gas-modelo",
+          "alcance": "Equação de estado e conservação da quantidade/composição; prova algébrica e aritmética próprias do Auditor."
+        },
+        {
+          "tipo": "prova de versão",
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+          "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "localizador": "#av-e1-58, comando e substituições específicas"
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "suspeita_descartada",
+          "descricao": "A massa fixa necessária à relação entre estados não ficou escondida na solução: foi encontrada no comando antes do primeiro controle de resposta. A referência absoluta também é explícita. O delta r1 preserva essas condições, portanto não é apresentado como sua origem."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV59",
+      "id_artigo": "av-e1-59",
+      "sha256_artigo": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+      "comando": "Sobre as válvulas de um compressor alternativo, considere: I. Na compressão propriamente dita, antes da abertura da descarga, admissão e descarga ficam fechadas. II. A descarga pode abrir quando a pressão interna supera a pressão de descarga e a resistência de abertura da válvula. III. Na admissão, as duas válvulas devem ficar abertas para o gás atravessar livremente o cilindro. Está correto o que se afirma em",
+      "demonstracao_independente": {
+        "ordem": "I e II verdadeiras, III falsa, resposta C, persistidas antes de chave/comentários.",
+        "passos": [
+          "Durante a compressão propriamente dita anterior à descarga, o gás está aprisionado, V diminui e p sobe: ambas fechadas. I verdadeira.",
+          "Uma válvula automática pode abrir quando a força resultante da diferença de pressão supera resistência de abertura (e efeitos dinâmicos, conforme projeto). A condição de pressão interna superar pressão de descarga e resistência equivalente permite abrir: II verdadeira; “pode” não afirma abertura instantânea universal.",
+          "Na admissão efetiva, admissão aberta e descarga fechada isolam a alta pressão e permitem entrada fresca. Abrir ambas não é condição necessária de admissão e favoreceria retorno/curto-circuito: III falsa.",
+          "Somente a combinação I e II, alternativa C, representa as três decisões."
+        ],
+        "resposta": "C",
+        "dados_modelos_suficiencia": "O texto separa compressão antes de abrir descarga e admite resistência de válvula. A base disponível antes do item apresenta o ciclo usual com folga, válvulas e diferenciais de pressão; distingue reexpansão de admissão e o movimento do pistão da etapa física. Não exige dados de um mecanismo especial de descarregamento ou controle ativo.",
+        "unidades_sinais_dominio": "Proposições qualitativas. A resistência de abertura corresponde ao limiar de força/diferença de pressão da válvula; não se soma uma força numericamente a uma pressão. Nenhuma comparação numérica dessa grandeza é solicitada.",
+        "unicidade_arredondamento": "Vetor lógico V–V–F corresponde só a I e II. A=III, B=I/II/III, D=I e E=II/III não são combinações equivalentes. Arredondamento não aplicável.",
+        "bases_antes_tentativa": [
+          "base-valvulas-compressor"
+        ],
+        "figuras": {
+          "referencia": "figura_compartilhada",
+          "localizador": "#base-valvulas-compressor, ciclo p–V com folga",
+          "inspecao_item": "PNG e SVG vistos: 1→2 volume decrescente/pressão crescente com ambas fechadas; 2→3 descarga em p aproximadamente alta; 3→4 reexpansão com ambas fechadas; 4→1 admissão em p aproximadamente baixa. Setas, título, desc, legenda e tabela concordam.",
+          "papel": "Apoio esquemático conceitual, sem escala; sem dado numérico oculto ou leitura de dimensão exigida.",
+          "limite": "A linha de descarga aproximadamente isobárica do esquema não apaga a sobrepressão real da válvula: tabela explicita p próxima da descarga com perdas. A verificação visual foi da figura isolada, não teste de navegador ou leitor de tela."
+        }
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "III, apenas.",
+          "juizo": "seleção incorreta de afirmações",
+          "erro_plausivel": "Aplicar ao cilindro a imagem de um tubo com trânsito livre contínuo: rejeitar I porque ambas fechadas supostamente impediriam funcionar, rejeitar II por supor abertura ditada apenas pela posição/ligação mecânica e aceitar III porque duas abertas facilitariam atravessamento. É troca do modelo de aprisionamento pelo de simples passagem.",
+          "plausibilidade": "teórica; confusão de fase, tipo de dispositivo ou condição de abertura identificada"
+        },
+        {
+          "letra": "B",
+          "texto": "I, II e III.",
+          "juizo": "seleção incorreta de afirmações",
+          "erro_plausivel": "Conserva I e II corretas, mas estende a intuição de que abrir mais caminhos facilita qualquer enchimento e aceita também III; ignora que a linha de descarga a pressão maior deve ficar isolada na admissão.",
+          "plausibilidade": "teórica; confusão de fase, tipo de dispositivo ou condição de abertura identificada"
+        },
+        {
+          "letra": "C",
+          "texto": "I e II, apenas.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: somente I e II são verdadeiras.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "D",
+          "texto": "I, apenas.",
+          "juizo": "seleção incorreta de afirmações",
+          "erro_plausivel": "Reconhece ambas fechadas na compressão, mas idealiza abertura exatamente na igualdade de pressões, desprezando resistência de abertura, e rejeita II por mencionar superação da pressão da linha mais resistência. O erro é aplicar uma igualdade idealizada como proibição da sobrepressão que aciona a válvula real.",
+          "plausibilidade": "teórica; confusão de fase, tipo de dispositivo ou condição de abertura identificada"
+        },
+        {
+          "letra": "E",
+          "texto": "II e III, apenas.",
+          "juizo": "seleção incorreta de afirmações",
+          "erro_plausivel": "Mistura compressão propriamente dita com o curso inteiro que também inclui descarga, rejeitando I, e aceita a passagem simultânea por ambas na admissão, III. Preserva parcialmente o critério de abertura de II, mas não separa as fases nem a fronteira de admissão/descarga.",
+          "plausibilidade": "teórica; confusão de fase, tipo de dispositivo ou condição de abertura identificada"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "C",
+        "concorda": true,
+        "comentarios": "Solução exige aprisionamento e abertura por diferencial, e rejeita descarga aberta durante admissão. D afirma II também verdadeira; A/B/E rejeitam a seleção da III e/ou omissão da I. Concordam com a prova independente e a figura.",
+        "identidade": {
+          "id": "av-e1-59",
+          "sha256_antes": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+          "sha256_atual": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+          "identico": true
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e base com descrição/figura acessíveis",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-59; #base-valvulas-compressor; fig-e1-valvulas-t/fig-e1-valvulas-d"
+        },
+        {
+          "tipo": "evidência visual própria",
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-07-av56-60-fig-valvulas-r1.png",
+          "sha256": "2cb31352d566ac595220397ef8a6ce9faf470e1bf0632a62dbcb79af7dc7e352",
+          "alcance": "Renderização efetivamente vista pelo revisor; original e CSS identificados em figura_compartilhada."
+        },
+        {
+          "tipo": "fonte primária técnica",
+          "titulo": "ASHRAE Handbook 2016, Chapter 38 — Compressors",
+          "url": "https://handbook.ashrae.org/Handbooks/S16/IP/s16_ch38/s16_ch38_ip.aspx",
+          "localizador": "Reciprocating compressors; Suction and Discharge Valves; reexpansion.",
+          "consulta": "2026-10-28",
+          "alcance": "Corrobora papel das válvulas, temporização/perdas e reexpansão em compressores. Não usa propriedades de refrigerante como dados do ar; balanço de forças e julgamentos do item são próprios."
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "suspeita_descartada",
+          "descricao": "O traço idealizado de descarga a pressão aproximadamente constante poderia ser confundido com abertura sem resistência. O texto antes da tentativa e a tabela distinguem p próxima da linha/com perdas, e II diz pode abrir ao superar a resistência; não há contradição física bloqueante."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV60",
+      "id_artigo": "av-e1-60",
+      "sha256_artigo": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+      "comando": "Uma linha de ar comprimido apresenta pulsações decorrentes da descarga de um compressor alternativo. A função de um reservatório adequadamente dimensionado, nesse contexto, é",
+      "demonstracao_independente": {
+        "ordem": "Resposta A persistida antes das chaves e comentários.",
+        "passos": [
+          "O compressor alternativo descarrega em parte do ciclo, não continuamente; a sequência de válvulas e o diagrama da base mostram períodos sem descarga e a etapa 2→3 com saída.",
+          "Um reservatório conectado pode acumular massa quando a entrada excede a retirada e fornecer massa quando a retirada excede a entrada: dM/dt=ṁ_entrada−ṁ_saída. Sua capacidade de armazenar ar pressurizado ajuda a amortecer variações na linha.",
+          "Esse volume não muda as etapas do pistão nem as aberturas de válvulas para tornar constante a descarga instantânea do cilindro. Também não cria a energia de compressão nem impõe pressão atmosférica. A exprime a função correta, sem prometer constância perfeita."
+        ],
+        "resposta": "A",
+        "dados_modelos_suficiencia": "O comando já declara origem das pulsações e reservatório adequadamente dimensionado no contexto da linha. Pede função qualitativa, não volume necessário ou frequência residual; não faltam números para a resposta. A base antes do item explica recebimento/fornecimento pelo reservatório e separa o escoamento do cilindro da linha.",
+        "unidades_sinais_dominio": "Equação auxiliar de massa com M em kg, tempo em s e vazões mássicas em kg/s; acumulação positiva quando entrada supera saída. Não se assume temperatura constante para quantificar pressão, pois nenhum cálculo de pressão foi necessário.",
+        "restricoes": "Amortecimento depende do volume, conexão, regime e demanda; o enunciado o vincula a dimensionamento adequado. A não afirma eliminação completa de pulsos nem vazão instantânea constante em todo regime. Armazenamento pode alterar controle/operação e economizar energia, mas não elimina a necessidade física de comprimir.",
+        "unicidade_arredondamento": "Somente A distingue efeito na rede e pulsação na origem. B impede a finalidade de fornecimento, C apaga trabalho, D impõe referência inadequada e E promete controle universal dentro do cilindro. Sem dados numéricos ou equivalências de arredondamento.",
+        "bases_antes_tentativa": [
+          "base-valvulas-compressor"
+        ],
+        "figuras": {
+          "referencia": "figura_compartilhada",
+          "inspecao_item": "Figura p–V e descrição foram vistas. A existência separada de compressão/descarga/reexpansão/admissão confirma descarga por etapas. O desenho representa o cilindro; não contém tanque, rede ou dado de dimensionamento oculto.",
+          "papel": "Esquema instrucional que ajuda a reconhecer a origem pulsante. A função do reservatório é explicada em texto da mesma base.",
+          "limites": "Renderização isolada e inspeção de texto/código, sem teste de navegador/assistivo ou simulação acústica do sistema."
+        }
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "suavizar as flutuações de fornecimento, embora a descarga instantânea do cilindro continue pulsante.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: reconhece a diferença entre flutuação na linha após armazenamento e descarga instantânea ainda pulsante do cilindro.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "B",
+          "texto": "impedir toda entrada de gás na rede.",
+          "juizo": "função ou consequência física incorreta",
+          "erro_plausivel": "Modelar o reservatório como recipiente de uma entrada sem saída, que retém todo o ar, ou equiparar amortecer/bloquear pulsos a bloquear integralmente o fornecimento. Omite a conexão de saída do volume armazenador para a rede.",
+          "plausibilidade": "teórica; modelo de armazenamento, fronteira ou regime errado concretamente identificado"
+        },
+        {
+          "letra": "C",
+          "texto": "eliminar a necessidade de trabalho no compressor.",
+          "juizo": "função ou consequência física incorreta",
+          "erro_plausivel": "Observar que o tanque pode suprir demanda por algum tempo com o compressor desligado e extrapolar o armazenamento finito para uma fonte permanente de ar comprimido sem trabalho. Confunde energia previamente armazenada com geração de compressão.",
+          "plausibilidade": "teórica; modelo de armazenamento, fronteira ou regime errado concretamente identificado"
+        },
+        {
+          "letra": "D",
+          "texto": "tornar a pressão de descarga sempre igual à atmosférica.",
+          "juizo": "função ou consequência física incorreta",
+          "erro_plausivel": "Transferir a imagem de reservatório ventilado, como um tanque aberto, ao vaso de ar comprimido e impor pressão atmosférica. Confunde armazenamento pressurizado fechado com superfície livre aberta à atmosfera.",
+          "plausibilidade": "teórica; modelo de armazenamento, fronteira ou regime errado concretamente identificado"
+        },
+        {
+          "letra": "E",
+          "texto": "garantir vazão instantânea constante no cilindro em qualquer regime.",
+          "juizo": "função ou consequência física incorreta",
+          "erro_plausivel": "Confundir vazão média ou suavizada na rede com vazão instantânea na fronteira do cilindro e extrapolar a função do tanque para controle perfeito em qualquer regime. Ignora que as válvulas do cilindro abrem somente em certas fases.",
+          "plausibilidade": "teórica; modelo de armazenamento, fronteira ou regime errado concretamente identificado"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "A",
+        "concorda": true,
+        "comentarios": "Solução mantém descarga do cilindro pulsante e atribui redução das flutuações à armazenagem. B/C/D/E são refutados de modo cientificamente coerente; a análise atual oferece mecanismos explícitos para cada escolha, em vez de usar só sua falsidade.",
+        "identidade": {
+          "id": "av-e1-60",
+          "sha256_antes": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+          "sha256_atual": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+          "identico": true
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e base acessível com figura/descrição",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-60; #base-valvulas-compressor"
+        },
+        {
+          "tipo": "evidência visual própria",
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-07-av56-60-fig-valvulas-r1.png",
+          "sha256": "2cb31352d566ac595220397ef8a6ce9faf470e1bf0632a62dbcb79af7dc7e352",
+          "alcance": "Figura comum inspecionada por este agente; ver figura_compartilhada."
+        },
+        {
+          "tipo": "fonte primária técnica",
+          "titulo": "U.S. Department of Energy — Improving Compressed Air System Performance, 2nd ed.",
+          "url": "https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/compressed_air_sourcebook.pdf",
+          "localizador": "Air Receivers (seção 1) e Compressed Air Storage/receivers (seção 2).",
+          "consulta": "2026-10-28",
+          "alcance": "Corrobora armazenamento e amortecimento das pulsações após compressor alternativo. Balanço de massa e inferências de erro desta revisão são próprios."
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "suspeita_descartada",
+          "descricao": "B/C/D são facilmente rejeitáveis, mas há modelos de erro específicos: tanque sem saída, extrapolação de fornecimento temporário sem compressor e tanque ventilado. Não se exige substituí-los só por sua facilidade; atratividade real e discriminação não foram medidas."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    }
+  ],
+  "atualizado_em": "2026-10-28T23:42:32.755Z",
+  "identidades_baseline": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+    "sha256_html": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "alcance": "Somente AV56–60 extraídos para identidade e deltas; nenhum juízo anterior herdado.",
+    "artigos": [
+      {
+        "id": "av-e1-56",
+        "sha256_antes": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+        "sha256_atual": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+        "identico": true
+      },
+      {
+        "id": "av-e1-57",
+        "sha256_antes": "0e7279567efbcd2caf5a82d8082573029f15570a1806b11a554d3ab30f96f1fa",
+        "sha256_atual": "64d1d119452a69f00cbae2a69c844bd047558d33064fcbd0a7ec7172e4c73f73",
+        "identico": false
+      },
+      {
+        "id": "av-e1-58",
+        "sha256_antes": "ed7991b384a31713d5cf3e2963b51f3e23c81e676a922f4a01264f86d678c46c",
+        "sha256_atual": "6a7534ee1978a5572870ce9206be5c77578e5c6f308255f9a4f9fef7230825b3",
+        "identico": false
+      },
+      {
+        "id": "av-e1-59",
+        "sha256_antes": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+        "sha256_atual": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+        "identico": true
+      },
+      {
+        "id": "av-e1-60",
+        "sha256_antes": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+        "sha256_atual": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+        "identico": true
+      }
+    ]
+  },
+  "cobertura": {
+    "artigos": 5,
+    "alternativas": 25,
+    "ids": [
+      "av-e1-56",
+      "av-e1-57",
+      "av-e1-58",
+      "av-e1-59",
+      "av-e1-60"
+    ],
+    "solucoes_pre_confronto_persistidas": 5,
+    "confrontos_de_chave_e_comentarios": 5,
+    "itens_numericos_recalculados": [
+      "AV57",
+      "AV58"
+    ],
+    "deltas_diretos_reconstruidos": [
+      "AV57",
+      "AV58"
+    ],
+    "condicoes_antes_da_tentativa_AV58_conferidas": true,
+    "artigos_preservados": [
+      "AV56",
+      "AV59",
+      "AV60"
+    ],
+    "bases": 7,
+    "bases_novas_lidas": 4,
+    "bases_proprias_reutilizadas_por_identidade": 3,
+    "figuras_nos_artigos": 0,
+    "figuras_unicas_na_base": 1,
+    "figura_codigo_descricao_e_renderizacao_examinados": true,
+    "itens_que_usam_figura_compartilhada": [
+      "AV59",
+      "AV60"
+    ],
+    "ajustes_obrigatorios": 0,
+    "fora_do_escopo": "AV01–AV55 não reexecutados; AV61–AV80 não antecipados."
+  },
+  "verificacao_final": {
+    "executada_em": "2026-10-28T23:42:32.752Z",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "parser_arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+    "parser_sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+    "itens": [
+      {
+        "id": "av-e1-56",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "solucao_pre_confronto_coincide_chave": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      },
+      {
+        "id": "av-e1-57",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "solucao_pre_confronto_coincide_chave": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      },
+      {
+        "id": "av-e1-58",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "solucao_pre_confronto_coincide_chave": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      },
+      {
+        "id": "av-e1-59",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "solucao_pre_confronto_coincide_chave": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      },
+      {
+        "id": "av-e1-60",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "solucao_pre_confronto_coincide_chave": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      }
+    ],
+    "bases": [
+      {
+        "id": "base-comparar-ciclos",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false,
+        "figuras_svg": 0
+      },
+      {
+        "id": "base-rankine",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false,
+        "figuras_svg": 0
+      },
+      {
+        "id": "base-leitura-matematica",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false,
+        "figuras_svg": 0
+      },
+      {
+        "id": "base-brayton",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false,
+        "figuras_svg": 0
+      },
+      {
+        "id": "base-brayton-real",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false,
+        "figuras_svg": 0
+      },
+      {
+        "id": "base-gas-modelo",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false,
+        "figuras_svg": 0
+      },
+      {
+        "id": "base-valvulas-compressor",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false,
+        "figuras_svg": 1
+      }
+    ],
+    "svg_png_css_confirmados": true,
+    "pareceres_AV46_50_e_AV51_55_preservados": true
+  },
+  "limites_e_autoria": {
+    "executor": "/root/auditor_av_continuacao — apoio científico automatizado independente do Corretor",
+    "auditor_principal": "/root/auditor_ban07_final",
+    "coordenacao": "/root",
+    "autoria": "Cinco soluções, 25 juízos, plausibilidade teórica, inspeção da figura e confrontos de deltas foram executados por este agente. Os deltas são do Corretor e só foram aceitos como descrição da mudança após comparação direta.",
+    "trabalho_previo": "AV01–AV45 pertencem ao apoio anterior /root/auditor_av. AV46–AV55 são trabalho próprio anterior, preservado, reutilizado apenas para critérios/bases/fontes e por identidade. Nenhum deles foi atribuído como execução nova deste bloco.",
+    "exposicao": "Títulos, temas e links eram visíveis na primeira extração. Chaves/comentários/deltas foram consultados depois das conclusões persistidas. Não se alega cegamento total do ambiente.",
+    "evidencia": "Análise estática e termodinâmica, aritmética, hashes/reconstruções e inspeção visual efetiva de PNG derivado do SVG do produto. Plausibilidade dos distratores é teórica, com mecanismo de erro concreto, sem medir uso por alunos.",
+    "figura": "Um único esquema p–V da base foi visto e confrontado com título, desc, legenda/tabela e setas. É material sem escala. Renderização isolada com CSS claro identificado não equivale a captura de navegador, teste assistivo ou auditoria global de acessibilidade.",
+    "nao_executado": "Piloto, psicometria, revisão humana, navegador/persistência, simulação dinâmica de compressor/tanque, verificação de projeto industrial ou os outros 192 itens do banco.",
+    "escopo_dos_numeros": "AV57–AV58 recalculados; nenhuma conclusão global de BAN-08. AV56/59/60 são qualitativos. Não se exige dado de dimensionamento para comando que pede apenas identificação ou função.",
+    "decisao": "Cinco vereditos locais sobre BAN-07 e os hashes registrados. Não concede aceite global de BAN-07, classificação do curso ou liberação do próximo ID.",
+    "arquivos_gerados_ou_modificados": [
+      "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av56-60-r1.json",
+      "auditoria/termodinamica/pareceres/BAN-07-av56-60-fig-valvulas-r1.png"
+    ],
+    "preservacao": "Produto, controle, checklist, fontes imutáveis e pareceres anteriores não foram editados. A cópia PNG é evidência própria e não substitui o SVG do produto."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "cr-e1-34",
+  "banco": "real",
+  "titulo": "34. Aquecimento isocórico",
+  "localizacao": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "fragmento": "cr-e1-34",
+    "sha256_artigo": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+    "recursos": [
+      {
+        "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+        "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79"
+      },
+      {
+        "arquivo": "downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+        "sha256": "0b5abca04a6892f48c7541018106445f6619f5f5863e061f631f0249899795e3"
+      }
+    ]
+  },
+  "origem": {
+    "tipo": "questao_real_atribuida",
+    "atribuicao": "Cebraspe · TRF6 · Analista — Engenharia Mecânica · aplicação 19/01/2025 · questão original 53",
+    "identificadores": [
+      "Cebraspe",
+      "TRF6",
+      "Analista — Engenharia Mecânica",
+      "aplicação 19/01/2025",
+      "questão original 53"
+    ],
+    "fontes": [
+      {
+        "rotulo": "Prova original · p. 1",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF#page=1"
+      },
+      {
+        "rotulo": "Gabarito definitivo",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF#page=1"
+      },
+      {
+        "rotulo": "Caderno fornecido (questão na p. 29)",
+        "url": "assets/questoes-reais-e1/caderno-fornecido.pdf"
+      },
+      {
+        "rotulo": "BAN-10: documento local conferido, PDF p. 1",
+        "url": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf#page=1"
+      },
+      {
+        "rotulo": "BAN-10: documento local conferido, PDF p. 1",
+        "url": "downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf#page=1"
+      },
+      {
+        "rotulo": "MIT Unified, §2.1, balanço da energia total",
+        "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html"
+      },
+      {
+        "rotulo": "MIT Unified, §5.4, variação de entropia do gás ideal",
+        "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html"
+      },
+      {
+        "rotulo": "MIT Unified, §5.5, segunda lei e transferência de entropia",
+        "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html"
+      }
+    ],
+    "conferencia_oficial": "realizada",
+    "evidencia_conferencia": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r2.json"
+  },
+  "formato": {
+    "tipo": "certo_errado",
+    "comando": "Comparar a letra com a chave oficial sem nota; distinguir ΔU>0 de ΔU=Q, obter a condição exata da igualdade e acompanhar a demonstração de entropia para explicar por que trabalho arbitrário não refuta C.",
+    "numero_alternativas": 2
+  },
+  "competencias": [
+    "C03",
+    "C04"
+  ],
+  "pre_requisitos": [
+    "Massa fechada e composição fixa; estados de equilíbrio e propriedades do gás ideal simples",
+    "Convenção Q entrando e W saindo; energia total U+Ec+Ep e trabalho de expansão versus outros modos",
+    "Distinção lógica entre igualdade, desigualdade e condição suficiente",
+    "Balanço de entropia fechado, temperatura absoluta de fronteira positiva e geração não negativa",
+    "Relações du=cv(T)dT e ds=cv(T)dT/T+Rdv/v; sinal de integral com integrando positivo"
+  ],
+  "nivel": {
+    "estimado": "intermediario",
+    "justificativa": "Integra o balanço energético e a restrição de entropia para distinguir condição da igualdade e sinal de ΔU. As hipóteses e a demonstração são fornecidas na análise, e o roteiro pede acompanhá-las: é estudo intermediário guiado, sem construção independente de processo nem evidência de autonomia avançada.",
+    "validacao_empirica": "nao_realizada"
+  },
+  "raciocinio": {
+    "categoria": "julgamento_delimitado",
+    "etapas": [
+      "Identificar que o original afirma ΔU>0 e obter W+ΔEc+ΔEp=0 como condição exata para ΔU=Q, distinguindo-a de uma escolha suficiente de termos nulos.",
+      "Relacionar, na demonstração guiada, calor exclusivamente entrante a Tb positiva e geração não negativa a ΔS>0.",
+      "Combinar a relação de entropia do gás ideal no mesmo volume com cv(T)>0 para inferir T2>T1 e ΔU>0, explicando por que uma escolha arbitrária de W não é contramodelo físico."
+    ],
+    "numero_etapas": 3
+  },
+  "hipoteses": {
+    "explicitadas": [
+      "Gás ideal",
+      "Volume constante",
+      "Sistema recebe calor"
+    ],
+    "implicitas": [
+      "Leitura usual: massa e composição fixas de gás ideal simples, com estados inicial/final de equilíbrio",
+      "No argumento do sinal: mesmo volume inicial/final, cv(T)>0 e calor exclusivamente entrando em quantidade não nula a temperaturas de fronteira finitas positivas"
+    ],
+    "limites": [
+      "O original afirma aumento de U, não a igualdade ΔU=Q; a chave C não foi invalidada por ausência de restrições sobre outros trabalhos.",
+      "No balanço adotado, ΔU=Q equivale à soma W+ΔEc+ΔEp=0; anular cada parcela é apenas suficiente.",
+      "A demonstração guiada do sinal usa também a segunda lei. Não substituir calor exclusivamente entrante por mero calor líquido positivo quando houver entradas e saídas.",
+      "CR34 permanece sem pontuação como esclarecimento pedagógico de modelos; as marcações continuam documentais e não atestam execução da justificativa."
+    ]
+  },
+  "vinculo_competencias": {
+    "tipo": "apoio_fundamental",
+    "alcance": "Apoio delimitado a C03/C04: distinguir condições do balanço energético e usar uma demonstração fornecida de segunda lei para examinar viabilidade. Autocorreção guiada sem nota, sem certificar as competências integrais ou autonomia avançada."
+  },
+  "exposicao_previa": {
+    "estado": "relacao_identificada",
+    "relacoes": [
+      {
+        "id_ou_ancora": "av-e1-34",
+        "tipo": "origem_declarada",
+        "evidencia": "O rodapé de AV-34 aponta explicitamente para CR-34 como questão de origem e declara transformação autoral."
+      },
+      {
+        "id_ou_ancora": "av-e1-34",
+        "tipo": "reformulacao_conceitual",
+        "evidencia": "CR34 julga ΔU sob calor isocórico; AV34 adiciona2kg,cv=0,72,Q=144kJ para calcular ΔT, com ausência de outros trabalhos explícita."
+      }
+    ],
+    "limite_da_verificacao": "Comparação local do banco e exemplos explicitamente identificados. Não há histórico individual do estudante; relações não listadas ou exposição externa permanecem desconhecidas. Não atribuir ineditismo à ausência de correspondência registrada."
+  },
+  "revisao": {
+    "leitura": "enunciado_alternativas_comentarios_e_notas",
+    "gabarito": "nao_auditado_em_BAN02",
+    "ambiguidades_conhecidas": [],
+    "encaminhamentos": [
+      "BAN-08",
+      "FON-01"
+    ],
+    "evidencia_gabarito": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r2.json"
+  }
+}

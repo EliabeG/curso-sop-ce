@@ -1,0 +1,86 @@
+{
+  "id": "FON-09",
+  "rodada": 2,
+  "data": "2026-10-27",
+  "estado": "entrega_congelada_para_auditoria",
+  "correcao": "Somente R1-A: preservar e validar todo fragmento após o primeiro #.",
+  "historico": {
+    "manifesto": "auditoria/termodinamica/evidencias/FON-09/manifesto-r1.json",
+    "sha256": "d054c3eb9a8337c59959eed9e78c2028b9e2c68f36293e3ed8076a3c01fd2b4d",
+    "parecer": "auditoria/termodinamica/pareceres/FON-09-r1.md"
+  },
+  "arquivos": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "bytes": 1270749,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r2/modulos/e1-termodinamica.html",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "bytes": 11334,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r2/assets/termodinamica/fon09-cr68-dados-v1.json",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "af30160109fa7e9e007e6de74eb1836896194ff90888aec75e0f8a4a86675618",
+      "bytes": 748555,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r2/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "1505e80c437fdd6dbbea40973155446ec859ba2fb363752217346876a8fb43db",
+      "bytes": 51262,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r2/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+      "bytes": 20990,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r2/auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "alterado_desde_r1": true
+    }
+  ],
+  "evidencias": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/contrato-existente-r2.json",
+      "sha256": "1594aa40a45def7380417840e877bda1ea20cf7871aeac87484b83b194cd7835",
+      "bytes": 10166
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/delta-validador-r2.json",
+      "sha256": "3c5f6b401d113f5ebf2361d50c3dc78f59012e50bdd3f5e6987c443ddc8e91ee",
+      "bytes": 567
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/preservacao-r2.json",
+      "sha256": "dbe6a6093904367183b22c8f546c96cbea320a007f46947892a080b2c0cdd1db",
+      "bytes": 5953
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/testar-pdf-r2.mjs",
+      "sha256": "903ff7555c57ccb84b3bb5e15abb4f4c33c1d563b77d1333d253b8705e6d6f92",
+      "bytes": 3007
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/teste-pdf-r2.json",
+      "sha256": "c109b08c28f1e524960b7ec21e74fdb5665be6574d8cf873d592834329038ce9",
+      "bytes": 8024
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/validacao-inventario-r2.json",
+      "sha256": "9b4fe465df792bdb58ed94ecb3106585be0193b371106892c1c52838aa0749f8",
+      "bytes": 333
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/verificar-preservacao-r2.mjs",
+      "sha256": "e2771f8755a03ca880108654e472c93e311400e1925bd7103d06e9a7602533b6",
+      "bytes": 2234
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "id": "BAN-02",
+  "rodada": "suporte-tecnico-r1",
+  "data": "2026-10-27",
+  "natureza": "Registro de testes técnicos efetivamente executados pelo apoio do Corretor. Não é parecer do Auditor, aprovação ou classificação pedagógica.",
+  "escopo": "Somente schema, parser, contrato, cobertura automática, links, hashes e estados de revisão. Nenhum produto ou classificação do curso alterado por estes testes.",
+  "ambiente": {
+    "execucao": "Ferramenta Node REPL com Node.js; sem dependências npm",
+    "raiz_projeto": "C:/Users/User/Downloads/SOP-CE",
+    "fixtures_temporarios_executados": "C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-tGT9Zn",
+    "alteracoes_fixtures": "Somente no diretório temporário indicado; o curso não foi usado como destino de mutações."
+  },
+  "artefatos_atuais": [
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario.schema.json",
+      "bytes": 13126,
+      "sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "bytes": 20347,
+      "sha256": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/LEIA-ME.md",
+      "bytes": 11171,
+      "sha256": "cdcd7e965bdc4a998b6e2fa784a53f84f295abcf9ade2d06ce62fff71d072449"
+    }
+  ],
+  "versoes_testadas": {
+    "v1_0": {
+      "schema_sha256": "22a4c9db1a12e3bfc128115dddcb16354b292fbfdfbfb048403395e1f99b85b7",
+      "validador_sha256": "6115e3545968d86a93dbec79d640f6fcd57c7651014617017851c856b0e39a83",
+      "observacao": "Versão importada nos testes iniciais, anterior ao reforço de âncoras de recursos embutidos."
+    },
+    "v1_0_reforco_ancoras": {
+      "validador_sha256": "720957f94e92822ead5b4c809fa7e7aa1f69c2e1d788e5980a9c7f0df8aa9fe1",
+      "observacao": "Fixture positiva repetida após reforçar verificação de referências #ancora em recursos embutidos."
+    },
+    "v1_1_antes_reforco_regex": {
+      "schema_sha256": "9c2663c885682c4c8136cacfbf5909eacb6265e56e59db5ab40ec5f0a46306fa",
+      "validador_sha256": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+      "observacao": "Três cenários positivos, 11 negativos novos e 20 regressões anteriores executados. Evidência remota já era rejeitada pelo validador."
+    },
+    "v1_1_final": {
+      "schema_sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+      "validador_sha256": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+      "observacao": "Somente a regex de evidência foi reforçada para rejeitar qualquer protocolo no próprio JSON Schema. A rejeição de URL remota pelo schema isolado foi executada e passou; a bateria inteira não foi repetida após esse ajuste restrito."
+    }
+  },
+  "resultados_efetivamente_executados": {
+    "descoberta_html_real": {
+      "artigos_encontrados": 190,
+      "recortes_iguais_ao_regex_independente": 190,
+      "erros_parser": [],
+      "classificacao_conteudo": "não realizada por este suporte"
+    },
+    "fixture_positiva_v1_0": {
+      "caso": "q-e1-100 com três alternativas, resposta aberta e projeto com zero alternativas",
+      "resultado": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 3,
+        "artigos_encontrados": 3,
+        "recursos_verificados": 1,
+        "links_locais_verificados": 2,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      }
+    },
+    "negativos_v1_0": {
+      "rejeitados": 20,
+      "total": 20,
+      "casos": [
+        {
+          "caso": "ID duplicado",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: ID duplicado no inventário"
+          ]
+        },
+        {
+          "caso": "artigo sem registro",
+          "rejeitado": true,
+          "erros": [
+            "projeto-e1-1: artigo da fonte sem registro no inventário"
+          ]
+        },
+        {
+          "caso": "registro extra inexistente",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-999: localização precisa identificar um único article existente"
+          ]
+        },
+        {
+          "caso": "hash artigo alterado",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: hash do artigo desatualizado; reler enunciado, alternativas, comentários, notas e recursos"
+          ]
+        },
+        {
+          "caso": "hash fonte alterado",
+          "rejeitado": true,
+          "erros": [
+            "$.fonte.sha256: fonte atual modificada; revisão dos registros necessária",
+            "$.fonte.snapshot: snapshot difere do hash registrado da fonte"
+          ]
+        },
+        {
+          "caso": "recurso omitido",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: recurso usado sem hash no registro: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "recurso hash alterado",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: recurso alterado: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "etapas divergentes",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: numero_etapas difere do tamanho de etapas"
+          ]
+        },
+        {
+          "caso": "nível sem justificativa",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].nivel.justificativa: não atende ao padrão \\S"
+          ]
+        },
+        {
+          "caso": "nível pendente",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: item ainda não classificado; registro incompleto para BAN-02"
+          ]
+        },
+        {
+          "caso": "campo desconhecido",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0]: campo não previsto: errado"
+          ]
+        },
+        {
+          "caso": "alternativas divergentes",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: alternativas no HTML=3, registro=5"
+          ]
+        },
+        {
+          "caso": "competência inválida",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].competencias[0]: não atende ao padrão ^C(?:0[1-9]|10)$"
+          ]
+        },
+        {
+          "caso": "banco divergente",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: banco diverge do prefixo ou data-banco do artigo"
+          ]
+        },
+        {
+          "caso": "relação inexistente",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100.exposicao_previa: âncora ausente ou duplicada: modulos/e1.html#ausente"
+          ]
+        },
+        {
+          "caso": "snapshot igual fonte",
+          "rejeitado": true,
+          "erros": [
+            "$.fonte.snapshot: snapshot deve ser uma cópia preservada distinta da fonte"
+          ]
+        },
+        {
+          "caso": "caminho fora raiz",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].localizacao.recursos[0].arquivo: não atende ao padrão ^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+          ]
+        },
+        {
+          "caso": "tipo formato inválido",
+          "rejeitado": true,
+          "erros": [
+            "aberto-e1-1: múltipla escolha exige pelo menos duas alternativas",
+            "aberto-e1-1: formato diverge do data-formato do artigo"
+          ]
+        },
+        {
+          "caso": "fonte local inexistente",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100.origem: arquivo inacessível: modulos/ausente.html (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-tGT9Zn\\modulos\\ausente.html')"
+          ]
+        },
+        {
+          "caso": "data impossível",
+          "rejeitado": true,
+          "erros": [
+            "$.atualizado_em: data inválida; use AAAA-MM-DD"
+          ]
+        }
+      ]
+    },
+    "mutacoes_em_arquivos_v1_0": {
+      "rejeitados": 4,
+      "total": 4,
+      "casos": [
+        {
+          "caso": "recurso em disco mudou sem tocar HTML",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100: recurso alterado: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "item novo adicionado ao HTML",
+          "rejeitado": true,
+          "erros": [
+            "$.fonte.sha256: fonte atual modificada; revisão dos registros necessária",
+            "q-e1-101: artigo da fonte sem registro no inventário"
+          ]
+        },
+        {
+          "caso": "snapshot modificado",
+          "rejeitado": true,
+          "erros": [
+            "$.fonte.snapshot: snapshot difere do hash registrado da fonte"
+          ]
+        },
+        {
+          "caso": "href local quebrado com hashes atualizados",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100.link: âncora ausente ou duplicada: modulos/e1.html#ausente"
+          ]
+        }
+      ]
+    },
+    "fixture_positiva_v1_0_reforco_ancoras": {
+      "passou": true
+    },
+    "positivos_v1_1": [
+      {
+        "caso": "Estados atuais honestos: nao_aplicavel e nao_auditado_em_BAN02; ID longo e novos formatos",
+        "resultado": {
+          "ok": true,
+          "curso": "E1",
+          "itens_registrados": 3,
+          "artigos_encontrados": 3,
+          "recursos_verificados": 1,
+          "links_locais_verificados": 2,
+          "erros": [],
+          "avisos": [],
+          "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+        }
+      },
+      {
+        "caso": "Estados realizada/verificado com evidência existente e âncora Markdown válida em fixture",
+        "resultado": {
+          "ok": true,
+          "curso": "E1",
+          "itens_registrados": 3,
+          "artigos_encontrados": 3,
+          "recursos_verificados": 1,
+          "links_locais_verificados": 4,
+          "erros": [],
+          "avisos": [],
+          "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+        }
+      },
+      {
+        "caso": "Estado ajustes_obrigatorios com evidência existente em fixture",
+        "resultado": {
+          "ok": true,
+          "curso": "E1",
+          "itens_registrados": 3,
+          "artigos_encontrados": 3,
+          "recursos_verificados": 1,
+          "links_locais_verificados": 4,
+          "erros": [],
+          "avisos": [],
+          "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+        }
+      }
+    ],
+    "negativos_novos_v1_1": {
+      "rejeitados": 11,
+      "total": 11,
+      "casos": [
+        {
+          "caso": "realizada sem evidência",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].origem: campo obrigatório ausente: evidencia_conferencia"
+          ]
+        },
+        {
+          "caso": "verificado sem evidência",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].revisao: campo obrigatório ausente: evidencia_gabarito"
+          ]
+        },
+        {
+          "caso": "ajustes sem evidência",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].revisao: campo obrigatório ausente: evidencia_gabarito"
+          ]
+        },
+        {
+          "caso": "evidência vazia",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão \\S"
+          ]
+        },
+        {
+          "caso": "evidência arquivo ausente",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100.origem.evidencia_conferencia: arquivo inacessível: pareceres/ausente.md (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-tGT9Zn\\pareceres\\ausente.md')"
+          ]
+        },
+        {
+          "caso": "evidência âncora ausente",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100.revisao.evidencia_gabarito: âncora ausente ou duplicada: pareceres/fixture.md#ausente"
+          ]
+        },
+        {
+          "caso": "evidência remota",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100.origem.evidencia_conferencia: evidência exige caminho local não vazio, relativo à raiz, opcionalmente com #âncora"
+          ]
+        },
+        {
+          "caso": "evidência somente fragmento",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+          ]
+        },
+        {
+          "caso": "estado não enumerado",
+          "rejeitado": true,
+          "erros": [
+            "$.itens[0].origem.conferencia_oficial: fora dos valores permitidos: \"aprovado\""
+          ]
+        },
+        {
+          "caso": "versão antiga",
+          "rejeitado": true,
+          "erros": [
+            "$.schema_version: esperado \"1.1\""
+          ]
+        },
+        {
+          "caso": "evidência opcional inválida",
+          "rejeitado": true,
+          "erros": [
+            "q-e1-100.origem.evidencia_conferencia: arquivo inacessível: pareceres/ausente.md (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-tGT9Zn\\pareceres\\ausente.md')"
+          ]
+        }
+      ]
+    },
+    "regressoes_anteriores_v1_1": {
+      "rejeitados": 20,
+      "total": 20,
+      "nomes": [
+        "ID duplicado",
+        "artigo sem registro",
+        "registro extra inexistente",
+        "hash artigo alterado",
+        "hash fonte alterado",
+        "recurso omitido",
+        "recurso hash alterado",
+        "etapas divergentes",
+        "nível sem justificativa",
+        "nível pendente",
+        "campo desconhecido",
+        "alternativas divergentes",
+        "competência inválida",
+        "banco divergente",
+        "relação inexistente",
+        "snapshot igual fonte",
+        "caminho fora raiz",
+        "tipo formato inválido",
+        "fonte local inexistente",
+        "data impossível"
+      ]
+    },
+    "schema_final_isolado": {
+      "caso": "URL remota como evidencia_conferencia",
+      "rejeitado": true,
+      "erros": [
+        "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+      ]
+    }
+  },
+  "reproducao": {
+    "script": "auditoria/termodinamica/evidencias/BAN-02/testar-validador-r1.mjs",
+    "sha256": "e7892ba92777fecd4c3b5055ecf351a91452f8f13333c75cdaace6bf245ee527",
+    "comando": "node auditoria/termodinamica/evidencias/BAN-02/testar-validador-r1.mjs",
+    "casos_previstos": 39,
+    "script_executado_como_arquivo": false,
+    "origem": "Consolidação dos trechos efetivamente executados no Node REPL. A cópia consolidada em arquivo foi salva sem repetir as verificações, conforme orientação do Corretor.",
+    "efeitos": "Cria fixtures pequenos em diretório temporário e imprime JSON; não altera inventário, curso ou classificações."
+  },
+  "limitacoes": [
+    "Os testes utilizam metadados artificiais marcados como fixtures; não são classificações de questões reais.",
+    "Execução bem-sucedida demonstra comportamento técnico nos casos observados, sem substituir a auditoria independente.",
+    "O inventário canônico não foi validado nestes testes de suporte. A execução sobre ele integra a entrega do Corretor.",
+    "As mutações em arquivos foram executadas na implementação 1.0, e não repetidas na 1.1; o script consolidado permite reproduzi-las contra a versão atual.",
+    "A existência de evidência local e âncora não valida o mérito de um parecer nem autoriza marcar FON-01/BAN-08 ou outro item como aprovado.",
+    "Não houve teste com estudantes, validação empírica de dificuldade, auditoria de gabaritos, conferência oficial ou revisão científica pelo suporte."
+  ]
+}

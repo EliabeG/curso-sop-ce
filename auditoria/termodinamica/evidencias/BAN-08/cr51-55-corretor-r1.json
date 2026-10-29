@@ -1,0 +1,152 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR51–CR55",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos e interpretações editoriais; verificação de relações e contagem de etapas.",
+  "registros": [
+    {
+      "id": "cr-e1-51",
+      "artigo_sha256": "7e5dcdfa88bcadee0a8fc31599e350b92e33d0ff055dab57b879b9ceaf82bf23",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-51",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-brayton",
+          "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "../downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf#page=4",
+          "../downloads/termodinamica/gabaritos/2023-10-15_tbg-engenheiro-junior-operacoes_gabarito.pdf#page=1"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_EXATA",
+      "dados": "Ciclo Brayton ideal convencional, etapas não degeneradas; leitura editorial BAN-10 mantida no treino.",
+      "solucao": "São duas etapas isentrópicas e duas isobáricas; temperatura varia nas quatro em condições normais, não há etapa isotérmica.",
+      "resultado": "C na leitura do ciclo ideal convencional.",
+      "comparacao": "C reconhece processos do modelo; E pressuporia uma etapa isotérmica neste ciclo.",
+      "tolerancia": "2+2=4 etapas, contagem exata; sem valores medidos ou arredondamento.",
+      "limite": "Não generalizar a ciclos modificados com resfriamento intermediário ou outras idealizações; sem alegar justificativa da banca.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-52",
+      "artigo_sha256": "27afcb168f30452326940a382af7a5b8834ab4f8d0d8137efe80b65464e9de3f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-52",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-brayton-real",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Eficiência térmica η=Wlíq/Qin e Wlíq=Wt−Wc, com calor fornecido positivo.",
+      "solucao": "Se Wt e Qin forem fixos, aumentar Wc diminui η; alterar razão de pressão pode alterar simultaneamente outras grandezas.",
+      "resultado": "E; maior consumo do compressor não é suficiente para garantir aumento de eficiência.",
+      "comparacao": "C afirma suficiência universal; E é confirmado pela comparação com demais grandezas fixas.",
+      "tolerancia": "Sem valores de potência ou calor, não se calcula eficiência nem tolerância.",
+      "limite": "Comparação isolada é contraexemplo lógico condicionado; em projeto real as demais grandezas podem variar conjuntamente.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-53",
+      "artigo_sha256": "80ac5d12a11ec45683516e0c70a561d76d73d3408b4057bb733158542ba1dff0",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-53",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-brayton-real",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Brayton regenerativo com exaustão mais quente que ar comprimido que entra no regenerador.",
+      "solucao": "Transferência da exaustão para ar comprimido eleva temperatura na entrada da combustão e reduz calor adicional necessário, mantidos os objetivos e modelo de operação.",
+      "resultado": "C.",
+      "comparacao": "C reconhece pré-aquecimento do ar pela exaustão; E negaria.",
+      "tolerancia": "Sem temperaturas, energia ou vazões na solução; sem tolerância numérica.",
+      "limite": "A economia depende das temperaturas, eficácia e perdas de pressão; não garante ganho em toda condição real.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-54",
+      "artigo_sha256": "262063cf196b649e8c5dc1e33f3cae14ee1554424fabee4087ef6345deac3d3c",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-54",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-tipos-compressores",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=3",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Comparação geral de compressores dinâmicos axiais/radiais e volumétricos alternativos.",
+      "solucao": "Dinâmicos atendem usualmente grandes vazões; alternativos em estágios podem atingir razões de pressão elevadas em vazões menores.",
+      "resultado": "E.",
+      "comparacao": "C inverte a comparação geral; E a rejeita.",
+      "tolerancia": "Sem grandezas numéricas ou tolerância na resolução.",
+      "limite": "A indicação não substitui seleção concreta por mapas, pressão, gás, eficiência e faixa de operação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-55",
+      "artigo_sha256": "7f28f1504c5296dc0387a4a7b150a253c5f5385008d94cae86afe4e716eae4f3",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-55",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-brayton",
+          "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "../downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf#page=1",
+          "../downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf#page=1"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_REFERENCIA_NUMERICA",
+      "dados": "Brayton ideal convencional; prova original contém expressão pressão isentrópica e resfriamento a volume constante.",
+      "solucao": "São quatro processos: compressão e expansão isentrópicas e aquecimento e rejeição de calor isobáricos. Resfriamento isocórico não é etapa do modelo Brayton convencional.",
+      "resultado": "E; erro na rejeição isocórica basta para a resposta.",
+      "comparacao": "C aceitaria troca de etapa; E reconhece incompatibilidade sem adivinhar a intenção da frase pressão isentrópica.",
+      "tolerancia": "Quatro etapas e dois pares contam-se exatamente; sem números de estados ou tolerância.",
+      "limite": "Expressão defeituosa é preservada por constar na prova; não há errata oficial nem intenção da banca estabelecida.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior; PDFs não reexaminados nesta execução."
+  ]
+}

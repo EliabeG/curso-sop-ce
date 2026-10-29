@@ -1,0 +1,42 @@
+{
+  "id": "FON-02",
+  "data": "2026-10-28",
+  "responsavel": "/root",
+  "tipo": "fonte complementar e cálculo próprio, sem veredito",
+  "fonte": {
+    "url": "https://physics.nist.gov/cuu/pdf/all.pdf#page=6",
+    "titulo": "2022 CODATA adjustment — Fundamental Physical Constants, Extensive Listing",
+    "localizacao": "PDF p.6, linha Stefan–Boltzmann",
+    "metodo": "Texto da página oficial aberto e trecho localizado/lido via web; não é inspeção visual.",
+    "valor_da_fonte": "5.670374419… ×10^-8 W m^-2 K^-4",
+    "natureza": "Constante exata no SI; a expansão decimal apresentada é truncada, e o decimal finito usado no cálculo é aproximação."
+  },
+  "reproducao_propria": {
+    "sigma_usado_W_m2_K4": 5.670374419e-8,
+    "origem_outros_numeros": "Parâmetros didáticos explicitamente escolhidos no contramodelo CR79, não medições da prova.",
+    "equacao_radiacao": "sigma A (Tcorpo^4 − Tparede^4), corpos negros/grande vizinhança",
+    "Tcorpo_K": 300,
+    "Tparede_K": 77.15,
+    "area_m2": 0.1,
+    "Qrad_W": 45.729144117086804,
+    "G_W_K": [
+      0.01,
+      0.5
+    ],
+    "Qcond_W": [
+      2.2285,
+      111.425
+    ]
+  },
+  "tentativas_nao_usadas": [
+    {
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma",
+      "resultado": "Abertura por web retornou requisição malformada; não foi fonte lida válida."
+    },
+    {
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma%7Csearch_for=stefan+boltzmann",
+      "resultado": "Resultado de busca tinha valor, mas abertura retornou Invalid input characters; não foi fonte lida válida. PDF oficial usado em substituição."
+    }
+  ],
+  "limites": "A reprodução verifica números do contramodelo já publicado. Não é auditoria global de radiação nem certificação física de instalação real."
+}

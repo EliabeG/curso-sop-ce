@@ -1,0 +1,76 @@
+{
+  "id": "FON-02",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "auditor": "Agente automatizado independente /root/auditor_aaa",
+  "veredito": "APROVADO",
+  "ajustes_obrigatorios_restantes": [],
+  "gate_FON02_liberado": true,
+  "proximo_id": "A selecionar e liberar pelo coordenador; nenhum ID executado por este parecer.",
+  "hashes": {
+    "auditoria/termodinamica/entregas/FON-02-r2.md": "8b08a9e53b9478961484e33bd44a3d52ef66626ee08f8cc0013ad24ab1e8f256",
+    "auditoria/termodinamica/evidencias/FON-02/manifesto-r2.json": "da44635be39e5fac7151fac8f6975c0b42b70de8ad3ce15f3559c8b6de48391d",
+    "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r2.json": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1",
+    "auditoria/termodinamica/evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r2.md": "81b610407bc2c04a187878d04013e6d42c93ca517158e5c8c82cca2d7986eda2",
+    "modulos/e1-termodinamica.html": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "auditoria/termodinamica/inventario/inventario-questoes.json": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+    "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e"
+  },
+  "criterios": [
+    {
+      "criterio": "Identificação individual e justificação dos suplementos nos80CR",
+      "resultado": "ATENDIDO_POR_HERANCA",
+      "evidencia": "FON-02-r1.md e FON-02-r1-cientifico.json; comentários, dados, hipóteses e fontes novas preservados por identidade."
+    },
+    {
+      "criterio": "Separação do original e da contribuição autoral",
+      "resultado": "ATENDIDO_POR_HERANCA",
+      "evidencia": "HTML e componentes oficiais idênticos à r1."
+    },
+    {
+      "criterio": "Rastreabilidade individual do índice antecedente — R1-A",
+      "resultado": "ATENDIDO",
+      "evidencia": "80listas/158ocorrências iguais ao esperado independente salvo na r1, incluindo141internas/17externas; href/texto/ordem exatos, sem deduplicação."
+    },
+    {
+      "criterio": "Coerência do Markdown e das identidades documentais — O1",
+      "resultado": "ATENDIDO",
+      "evidencia": "80blocos/158vínculos coerentes;154links locais resolvem;sete hashes contíguos correspondem aos arquivos."
+    },
+    {
+      "criterio": "Preservação, escopo e evidências anteriores",
+      "resultado": "ATENDIDO",
+      "evidencia": "19entradas/5cópias r2;55arquivos/9cópias r1;apenas80arrays mudam;três produtos e catálogo intactos."
+    },
+    {
+      "criterio": "Reprodução verificável da correção",
+      "resultado": "ATENDIDO",
+      "evidencia": "HTMLParser Python reproduzido:87checks semfalhas,saída byte a byte idêntica;apoio técnico351checks semfalhas."
+    },
+    {
+      "criterio": "Inventário, pontuação, persistência e navegador",
+      "resultado": "ATENDIDO_POR_HERANCA",
+      "evidencia": "Canônico197/29/1236,71+9 e evidência de navegador r1 herdados por identidade;sem alegação de novos testes nesta rodada."
+    }
+  ],
+  "evidencias": {
+    "comparacao": {
+      "arquivo": "FON-02-r2-comparacao.json",
+      "sha256": "8d3c3e406b9d3b6d6b161780f54e775016f90d6a87c4064c950e523ad749f99a"
+    },
+    "tecnico": {
+      "arquivo": "FON-02-r2-tecnico.json",
+      "sha256": "1505af18d435d9ec0120a321ef3b61290e63c6b4ea93f5ade832cb0a62db0bbf"
+    },
+    "parecer_anterior": {
+      "arquivo": "FON-02-r1.md",
+      "sha256": "6adee65b34459934c0c037bae3d9df0adfc8e8a69ba0f35ccbd1d52a878f03bf"
+    }
+  },
+  "limites": [
+    "Aceite exclusivo FON-02, sem aprovação global de curso avançado, BAN07/BAN08 ou demais IDs.",
+    "Marcador rodada1 da matriz científica preservado deliberadamente; rodada2 documental explicitada em entrega,delta,resumo e manifesto.",
+    "Sem novas consultas às fontes,navegador,canônico ou ciência intactos;herança autorizada pelo parecer r1 e comprovada por identidade.",
+    "Nenhum produto,controle,checklist ou pacote autoral foi alterado pelo Auditor."
+  ]
+}

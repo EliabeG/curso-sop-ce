@@ -1,0 +1,175 @@
+{
+  "id": "BAN-07",
+  "data": "2026-10-28",
+  "responsavel": "/root, coordenador",
+  "metodo": "Execução em Node VM das funções reais extraídas de curso.js, com armazenamento controlado. Casos esperados independentes da implementação, sem acesso ao armazenamento do usuário.",
+  "sha256_curso_js": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+  "total": 15,
+  "falhas": [],
+  "testes": [
+    {
+      "nome": "E1 mantém resposta antiga válida",
+      "ok": true,
+      "obtido": {
+        "11111111": "C",
+        "22222222": "B"
+      }
+    },
+    {
+      "nome": "E1 mantém histórico de erros antigo",
+      "ok": true,
+      "obtido": {
+        "11111111": 1,
+        "22222222": 4
+      }
+    },
+    {
+      "nome": "E1 mantém marcação antiga do simulado",
+      "ok": true,
+      "obtido": {
+        "inicio": 10,
+        "fim": 20,
+        "corrigido": true,
+        "marcadas": {
+          "11111111": "C",
+          "22222222": "B"
+        }
+      }
+    },
+    {
+      "nome": "E1 não atribui resposta antiga à versão nova",
+      "ok": true,
+      "obtido": {
+        "11111111": "C",
+        "22222222": "B"
+      }
+    },
+    {
+      "nome": "E1 só conta respostas atuais",
+      "ok": true,
+      "obtido": {
+        "total": 2,
+        "respondidas": 1,
+        "acertos": 1,
+        "versao": "nova"
+      }
+    },
+    {
+      "nome": "E1 salva resposta nova junto da antiga",
+      "ok": true,
+      "obtido": {
+        "11111111": "C",
+        "22222222": "B",
+        "44444444": "D"
+      }
+    },
+    {
+      "nome": "E1 mantém erros e marcações antigos ao salvar outra resposta",
+      "ok": true,
+      "obtido": {
+        "v": 2,
+        "versao": "nova",
+        "respostas": {
+          "11111111": "C",
+          "22222222": "B",
+          "44444444": "D"
+        },
+        "erros": {
+          "11111111": 1,
+          "22222222": 4
+        },
+        "simulado": {
+          "inicio": 10,
+          "fim": 20,
+          "corrigido": true,
+          "marcadas": {
+            "11111111": "C",
+            "22222222": "B"
+          }
+        },
+        "resumo": {
+          "total": 2,
+          "respondidas": 2,
+          "acertos": 2,
+          "versao": "nova"
+        },
+        "atualizado": 1793291742082
+      }
+    },
+    {
+      "nome": "E1 resumo salvo só inclui versões atuais",
+      "ok": true,
+      "obtido": {
+        "total": 2,
+        "respondidas": 2,
+        "acertos": 2,
+        "versao": "nova"
+      }
+    },
+    {
+      "nome": "E1 rejeita letra e chave inválidas",
+      "ok": true,
+      "obtido": {
+        "11111111": "C",
+        "22222222": "B"
+      }
+    },
+    {
+      "nome": "E1 simulado só conta versões atuais",
+      "ok": true,
+      "obtido": {
+        "total": 2,
+        "respondidas": 1,
+        "acertos": 1,
+        "versao": "nova",
+        "corrigido": true
+      }
+    },
+    {
+      "nome": "E2 mantém filtro anterior de respostas",
+      "ok": true,
+      "obtido": {
+        "11111111": "C"
+      }
+    },
+    {
+      "nome": "E2 mantém filtro anterior de erros",
+      "ok": true,
+      "obtido": {
+        "11111111": 1
+      }
+    },
+    {
+      "nome": "E2 mantém filtro anterior de simulado",
+      "ok": true,
+      "obtido": {
+        "inicio": 10,
+        "fim": 20,
+        "corrigido": true,
+        "marcadas": {
+          "11111111": "C"
+        }
+      }
+    },
+    {
+      "nome": "E1 não sobrescreve JSON ilegível",
+      "ok": true,
+      "obtido": "{JSON ilegível"
+    },
+    {
+      "nome": "E1 retém nova tentativa na memória com JSON ilegível",
+      "ok": true,
+      "obtido": {
+        "respostas": {
+          "44444444": "D"
+        },
+        "erros": {},
+        "simulado": null
+      }
+    }
+  ],
+  "limites": [
+    "Não simula DOM nem falhas da camada real de localStorage.",
+    "Os cenários de erro, concorrência e armazenamento completo pertencem à suíte técnica do Corretor/Auditor."
+  ]
+}

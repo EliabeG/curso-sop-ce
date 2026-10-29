@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-diagnostico-06",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO_INDEPENDENTE",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "0de7342b99b9ebef8c1526f0b8eefb3544f000a4546d7b500558550d178285eb",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r3.json",
+    "sha256": "3074ab8fdf511d68dce73ec97bacca9dd9d5b0bbc3fe07a7d4ce329669b8b446"
+  },
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-06-08-independente-r1.md",
+    "sha256": "c3274ddb3173fcefc01df73991022bc57b08534f6cc43d3505117e9c16f7d7bc"
+  },
+  "original_sha256_fragmento": "d6834093a3d7ebc5c8058689cf3e6c9c9721d66da12b929051a411ef495e246f",
+  "candidata_sha256_fragmento": "c81bcd183b4118a4e1821542d5b71325f1bb44509c081143d3f89b9eb17e425c",
+  "original_sha256_arquivo": "470266ea5dd47ee9674f9bd1c4db8c3e6036f0b1e79db69579219110408f255a",
+  "candidata_sha256_arquivo": "7e4642e6323e1c01e799b535e1672bf4ec557f287e7d2d7022b594dc1b28654e",
+  "antes": "perde 30 kJ por calor. Se U inicial é 500 kJ e não há outras variações",
+  "depois": "perde 30 kJ por calor. Essas são as únicas transferências de energia pela fronteira. Se U inicial é 500 kJ e não há outras variações",
+  "nota": "Arquivos têm nova linha final; fragmentos não. Produto não alterado."
+}

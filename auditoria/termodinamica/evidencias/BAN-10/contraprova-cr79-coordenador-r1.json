@@ -1,0 +1,61 @@
+{
+  "data": "2026-10-27",
+  "autor": "Coordenador automatizado /root",
+  "tipo": "Contramodelos numéricos autorais, não dados da instalação ou da prova; apoio à decisão de validade do itemCR79.",
+  "objetivo": "Mostrar que alto vácuo e temperatura das paredes não determinam, isoladamente, a razão entre condução nos sólidos e radiação.",
+  "hipoteses": [
+    "Equipamento isotérmico mantido a 300 K por dissipação interna; esta temperatura não foi dada na questão.",
+    "Área externa de 0,10 m²; equipamento e envoltória negra isotérmica a 77,15 K, com fator de vista total igual a 1. Geometria escolhida para o contramodelo, sem atribuí-la à instalação real.",
+    "Gás residual desprezível no modelo de alto vácuo. A condução permanece pelos suportes e fios ligados ao reservatório frio.",
+    "G é a condutância efetiva positiva no intervalo de temperatura. São considerados dois projetos: G = 0,01 W/K e G = 0,50 W/K, ambos não excluídos pelos dados do enunciado.",
+    "Em cada projeto, a potência interna pode equilibrar Qrad + Qcond para manter 300 K. A questão não fixa essa potência."
+  ],
+  "constantes": {
+    "sigma_W_m2_K4": 5.670374419e-8,
+    "precisao": "Representação decimal arredondada de constante derivada exata no SI; resultados do modelo não são medições."
+  },
+  "formulas": {
+    "radiacao": "Qrad = sigma*A*(Te^4-Tw^4)",
+    "conducao": "Qcond = G*(Te-Tw)",
+    "fracao": "fracao_rad = Qrad/(Qrad+Qcond)"
+  },
+  "entradas": {
+    "Te_K": 300,
+    "Tw_K": 77.15,
+    "A_m2": 0.1
+  },
+  "resultados": [
+    {
+      "G_W_K": 0.01,
+      "Qrad_W": 45.729144117086804,
+      "Qcond_W": 2.2285,
+      "fracao_rad": 0.9535319125651961,
+      "predominante": "radiacao"
+    },
+    {
+      "G_W_K": 0.5,
+      "Qrad_W": 45.729144117086804,
+      "Qcond_W": 111.425,
+      "fracao_rad": 0.2909827441967841,
+      "predominante": "conducao"
+    }
+  ],
+  "conclusao": "Projetos compatíveis com os dados do enunciado podem apresentar predominâncias diferentes. O gabarito B depende da hipótese adicional de radiação predominante. Sua condição oficial permanece registrada, sem substituição por um novo gabarito neste contramodelo.",
+  "fontes": [
+    {
+      "url": "https://physics.nist.gov/cgi-bin/cuu/Value?sigma%7Csearch_for=stefan+boltzmann",
+      "papel": "Constante de Stefan–Boltzmann, CODATA2022, consultada por buscawebprimária."
+    },
+    {
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node136.html",
+      "papel": "Seção19.3, troca líquida de superfícies e exemplo de objeto negro em câmara negra. A aplicação numérica e os projetos são autorais."
+    },
+    {
+      "url": "https://www.nasa.gov/wp-content/uploads/2021/10/7.soa_thermal_2021_0.pdf",
+      "pagina_pdf": 7,
+      "pagina_impressa": 186,
+      "papel": "Seção7.2.1: condução e radiação no vácuo; seçõesseguintes descrevem contatos/straps como caminhos sólidos. Não atribuir àNASA os dois projetos numéricos."
+    }
+  ],
+  "limite": "Não comprova que a prova devesse aceitar outra alternativa específica; sustenta tratar a predominância não determinada como estudo crítico. Não é validação da instalação real nem teste empírico."
+}

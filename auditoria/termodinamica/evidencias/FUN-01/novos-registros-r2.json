@@ -1,0 +1,477 @@
+[
+  {
+    "id": "fun01-e1-saturacao",
+    "banco": "aberto",
+    "titulo": "Problema 1 — Um tanque, três informações e um conflito",
+    "localizacao": {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "fragmento": "fun01-e1-saturacao",
+      "sha256_artigo": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "recursos": [
+        {
+          "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+          "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+        }
+      ]
+    },
+    "origem": {
+      "tipo": "autoral_FUN01",
+      "atribuicao": "Problema autoral elaborado pelo Corretor para FUN-01. Fontes de propriedades e hipóteses identificadas separadamente do caso operacional fictício.",
+      "identificadores": [
+        "E1-FUN01 v1.0",
+        "2026-10-27",
+        "fun01-e1-saturacao"
+      ],
+      "fontes": [
+        {
+          "rotulo": "NISTIR 5078 (1998), tabela 2, pp 11–12",
+          "url": "https://www.nist.gov/document/nistir5078-tab2pdf"
+        },
+        {
+          "rotulo": "Pacote didático E 1-FUN 01 v 1.0",
+          "url": "assets/termodinamica/fun01-dados-v1.json"
+        }
+      ],
+      "conferencia_oficial": "nao_aplicavel"
+    },
+    "formato": {
+      "tipo": "resposta_aberta",
+      "comando": "Produzir solução escrita com decisões, memória de cálculo e limites, respondendo aos subcomandos; aplicar rubrica analítica de 10 pontos.",
+      "numero_alternativas": 0
+    },
+    "competencias": [
+      "C01",
+      "C02",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "vinculo_competencias": {
+      "tipo": "avaliacao_parcial",
+      "alcance": "Suficiência de propriedades e conflito de entalpia em uma região declarada, com proposta de verificação independente; parecer escrito parcial, sem consulta autônoma de tabelas completas."
+    },
+    "pre_requisitos": [
+      "Volume específico V/m e título mássico",
+      "Relações de mistura para v e h e dependência p/T em saturação pura",
+      "Diferença entre dado redundante, suficiente e incompatível",
+      "Comparação de intervalos determinísticos e limite de inferência causal",
+      "Estrutura de parecer ensinada em fun 01-parecer"
+    ],
+    "nivel": {
+      "estimado": "intermediario",
+      "justificativa": "Integra identificação de redundância, inversão da relação de mistura, checagem por entalpia e intervalos; pede justificar informação independente e limites. Região, propriedades e modelo são fornecidos, o que restringe a seleção autônoma de modelo.",
+      "validacao_empirica": "nao_realizada"
+    },
+    "raciocinio": {
+      "categoria": "integracao_etapas",
+      "etapas": [
+        "Classificar pares de propriedades quanto à independência e suficiência na região declarada, separando quantidade total de estado intensivo.",
+        "Inferir a proporção de fases a partir de volume e massa e obter a previsão de entalpia pela mesma distribuição.",
+        "Comparar faixas admissíveis e decidir incompatibilidade sem atribuir causa indevida a um instrumento.",
+        "Propor observação independente pertinente e explicitar como pureza ou equilíbrio alterariam o modelo, registrando conclusão rastreável."
+      ],
+      "numero_etapas": 4
+    },
+    "hipoteses": {
+      "explicitadas": [
+        "Água pura em equilíbrio líquido–vapor",
+        "p=0,20 MPa absoluta, T=120,210 °C, m=2 kg e V=0,900 m³ exatos para o exercício",
+        "Entalpia informada 1800±2 kJ/kg com limite de erro determinístico",
+        "Tolerância editorial da previsão ±1 kJ/kg, sem pretensão de incerteza NIST",
+        "Propriedades da linha NISTIR 5078 de 0,20 MPa"
+      ],
+      "implicitas": [],
+      "limites": [
+        "A região de fases é fornecida; a atividade não avalia determinação livre da região.",
+        "O conflito não identifica sozinho sensor culpado.",
+        "Trocar hipótese de pureza/equilíbrio exige outro modelo; não corrige valores por suposição.",
+        "Os valores de propriedades reaparecem no pacote de referência, mas o exemplo resolvido usa 0,10 MPa e x conhecido; não resolve este diagnóstico inverso."
+      ]
+    },
+    "exposicao_previa": {
+      "estado": "relacao_identificada",
+      "relacoes": [
+        {
+          "id_ou_ancora": "fun01-fases",
+          "tipo": "relacao_tematica",
+          "evidencia": "O exemplo usa água a 0,10 MPa e x=0,20 fornecido para obter v/h. Este item usa 0,20 MPa, infere x por V/m e exige rejeitar conflito entre intervalos e propor verificação; não é simples repetição numérica da sequência."
+        },
+        {
+          "id_ou_ancora": "fun01-dados",
+          "tipo": "dados_repetidos",
+          "evidencia": "A linha NIST de 0,20 MPa é a fonte didática comum explicitamente fornecida; repetição de dados de referência não equivale à repetição do caso resolvido."
+        }
+      ],
+      "limite_da_verificacao": "Confronto do problema completo com os exemplos publicados e com o banco E1 disponível; dados/modelos compartilhados e componentes de fixação foram identificados. Não há histórico do estudante nem busca universal de materiais externos. A independência local do caso não assegura ineditismo para todo leitor."
+    },
+    "revisao": {
+      "leitura": "enunciado_alternativas_comentarios_e_notas",
+      "gabarito": "pendente",
+      "ambiguidades_conhecidas": [],
+      "encaminhamentos": [
+        "FUN-01"
+      ]
+    }
+  },
+  {
+    "id": "fun01-e1-mistura",
+    "banco": "aberto",
+    "titulo": "Problema 2 — Quatro lotes e uma hipótese bifásica",
+    "localizacao": {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "fragmento": "fun01-e1-mistura",
+      "sha256_artigo": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "recursos": [
+        {
+          "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+          "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+        }
+      ]
+    },
+    "origem": {
+      "tipo": "autoral_FUN01",
+      "atribuicao": "Problema autoral elaborado pelo Corretor para FUN-01. Fontes de propriedades e hipóteses identificadas separadamente do caso operacional fictício.",
+      "identificadores": [
+        "E1-FUN01 v1.0",
+        "2026-10-27",
+        "fun01-e1-mistura"
+      ],
+      "fontes": [
+        {
+          "rotulo": "ASHRAE Fundamentals 2025 cap 2, propriedades e mistura zeotrópica",
+          "url": "https://handbook.ashrae.org/Handbooks/F25/IP/f25_ch02/f25_ch02_ip.aspx"
+        },
+        {
+          "rotulo": "Pacote didático E 1-FUN 01 v 1.0",
+          "url": "assets/termodinamica/fun01-dados-v1.json"
+        },
+        {
+          "rotulo": "University of Washington,CHEM452 Winter2023,§5.1,eq5.1(Raoult)",
+          "url": "https://faculty.washington.edu/jcv2/CHEM452_WI2023/html/ideal_solutions_and_colligative_properties.html"
+        }
+      ],
+      "conferencia_oficial": "nao_aplicavel"
+    },
+    "formato": {
+      "tipo": "resposta_aberta",
+      "comando": "Produzir solução escrita com decisões, memória de cálculo e limites, respondendo aos subcomandos; aplicar rubrica analítica de 10 pontos.",
+      "numero_alternativas": 0
+    },
+    "competencias": [
+      "C01",
+      "C02",
+      "C07",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "vinculo_competencias": {
+      "tipo": "avaliacao_parcial",
+      "alcance": "Seleção de regime em quatro lotes binários ideais, balanço molar e limites da suficiência de T,p,z; não avalia misturas reais, reações ou propriedades caloríficas."
+    },
+    "pre_requisitos": [
+      "Componente, fase, composição global e composição de cada fase",
+      "Lei de Raoult/Dalton ideal e bolha/orvalho ensinados na unidade",
+      "Balanço molar de componente e fração de fase β distinta do título mássico",
+      "Frações admissíveis, construção de contraexemplo e dados insuficientes",
+      "Regra de Gibbs e exclusão das quantidades de fases de sua contagem"
+    ],
+    "nivel": {
+      "estimado": "avancado",
+      "justificativa": "Exige decidir e justificar modelos de uma ou duas fases para lotes distintos, rejeitar soluções algébricas inviáveis, fechar balanços e construir mais de um estado compatível quando z falta. A autonomia é local ao modelo ideal fornecido; não se infere domínio avançado de misturas reais.",
+      "validacao_empirica": "nao_realizada"
+    },
+    "raciocinio": {
+      "categoria": "modelagem_aberta",
+      "etapas": [
+        "Delimitar regiões por bolha/orvalho para cada composição conhecida e selecionar o modelo de fase pertinente.",
+        "Testar a tentativa de coexistência nos lotes monofásicos e rejeitar β fora do domínio físico.",
+        "Resolver partição do lote bifásico e verificar os balanços total e de componente, distinguindo bases molares e mássicas.",
+        "Construir dois exemplos de composição global admissível para o lote sem z, distinguindo composições condicionais de uma prova de coexistência.",
+        "Reconciliar a contagem de Gibbs com quantidade de fases, julgar o dado β adicional e explicitar o que T,p,z e n determinam ou não."
+      ],
+      "numero_etapas": 5
+    },
+    "hipoteses": {
+      "explicitadas": [
+        "Mistura binária fictícia A/B não reativa a 350 K",
+        "Líquido ideal e vapor ideal obedecem Raoult e Dalton",
+        "Pressões de saturação postuladas 150 e 50 kPa",
+        "Sem gravidade/capilaridade relevantes",
+        "Dados dos quatro lotes; somente o loteII fornece 10 mol"
+      ],
+      "implicitas": [],
+      "limites": [
+        "Os parâmetros são didáticos autorais, não dados de uma mistura real.",
+        "T, p sem z não provam que o loteIV esteja bifásico; as composições calculadas são condicionais à coexistência.",
+        "β é molar; massa de vapor exige massas molares e composições.",
+        "Modelo determina regime/composições e partição aqui, mas h/v numéricos requerem relações de propriedades adicionais."
+      ]
+    },
+    "exposicao_previa": {
+      "estado": "relacao_identificada",
+      "relacoes": [
+        {
+          "id_ou_ancora": "fun01-fases",
+          "tipo": "relacao_tematica",
+          "evidencia": "O exemplo de bolha compara duas composições com Psat400/100kPa. Não seleciona regimes, resolve partição, rejeita β nem constrói estados com z desconhecido como este problema."
+        }
+      ],
+      "limite_da_verificacao": "Confronto do problema completo com os exemplos publicados e com o banco E1 disponível; dados/modelos compartilhados e componentes de fixação foram identificados. Não há histórico do estudante nem busca universal de materiais externos. A independência local do caso não assegura ineditismo para todo leitor."
+    },
+    "revisao": {
+      "leitura": "enunciado_alternativas_comentarios_e_notas",
+      "gabarito": "pendente",
+      "ambiguidades_conhecidas": [],
+      "encaminhamentos": [
+        "FUN-01"
+      ]
+    }
+  },
+  {
+    "id": "fun01-e1-supercritico",
+    "banco": "aberto",
+    "titulo": "Problema 3 — O rótulo “supercrítico” é sustentado pelos dados?",
+    "localizacao": {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "fragmento": "fun01-e1-supercritico",
+      "sha256_artigo": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "recursos": [
+        {
+          "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+          "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+        }
+      ]
+    },
+    "origem": {
+      "tipo": "autoral_FUN01",
+      "atribuicao": "Problema autoral elaborado pelo Corretor para FUN-01. Fontes de propriedades e hipóteses identificadas separadamente do caso operacional fictício.",
+      "identificadores": [
+        "E1-FUN01 v1.0",
+        "2026-10-27",
+        "fun01-e1-supercritico"
+      ],
+      "fontes": [
+        {
+          "rotulo": "IAPWS R 7-97(2012), §3, p 5",
+          "url": "https://iapws.org/technical-guidance/release/IF97-Rev.download"
+        },
+        {
+          "rotulo": "Pacote didático E 1-FUN 01 v 1.0",
+          "url": "assets/termodinamica/fun01-dados-v1.json"
+        }
+      ],
+      "conferencia_oficial": "nao_aplicavel"
+    },
+    "formato": {
+      "tipo": "resposta_aberta",
+      "comando": "Produzir solução escrita com decisões, memória de cálculo e limites, respondendo aos subcomandos; aplicar rubrica analítica de 10 pontos.",
+      "numero_alternativas": 0
+    },
+    "competencias": [
+      "C01",
+      "C02",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "vinculo_competencias": {
+      "tipo": "avaliacao_parcial",
+      "alcance": "Classificação por intervalos determinísticos e independência de propriedades da água; não calcula h/v/s com equação de estado real nem faz inferência estatística."
+    },
+    "pre_requisitos": [
+      "Temperatura e pressão absolutas e desigualdades estritas",
+      "Definição simultânea p>pc e T>Tc e ausência de título supercrítico",
+      "Intervalo de erro máximo e diferença entre garantia e estimativa central",
+      "Propriedades independentes e identidade ρ=1/v",
+      "Limites de modelo ideal e necessidade de relação constitutiva real"
+    ],
+    "nivel": {
+      "estimado": "intermediario",
+      "justificativa": "Combina duas restrições estritas e limites de erro para avaliar leituras e melhorias, depois julga dados redundantes e qualidade. O critério e as referências críticas são fornecidos; não exige resolver uma equação de estado ou um problema inverso não linear.",
+      "validacao_empirica": "nao_realizada"
+    },
+    "raciocinio": {
+      "categoria": "integracao_etapas",
+      "etapas": [
+        "Comparar as caixas admissíveis de T,p com os dois limiares, classificando cada registro e recusando o título supercrítico.",
+        "Testar melhorias isoladas e conjuntas e deduzir os limites estritos máximos que garantem a classificação.",
+        "Selecionar um par plausivelmente independente e distinguir redundância ρ/v de necessidade de EOS e de massa para propriedades totais.",
+        "Formular regra de validação e uma conclusão que não confunda limite determinístico com confiança estatística."
+      ],
+      "numero_etapas": 4
+    },
+    "hipoteses": {
+      "explicitadas": [
+        "Água pura em equilíbrio e pressões absolutas",
+        "Referências críticas IAPWS 647,096 K e 22,064 MPa",
+        "Intervalos determinísticos independentes paraT e p",
+        "Leituras A/B/C com erros máximos indicados; D exato com título alegado 0,20"
+      ],
+      "implicitas": [],
+      "limites": [
+        "Classificação do estado não calcula propriedades reais.",
+        "Ambos os limites inferiores devem exceder estritamente os críticos; igualdade não garante a região.",
+        "Não há distribuição de probabilidade nem intervalo de confiança.",
+        "Nenhuma atividade usa correlação de gás ideal para água supercrítica."
+      ]
+    },
+    "exposicao_previa": {
+      "estado": "relacao_identificada",
+      "relacoes": [
+        {
+          "id_ou_ancora": "fun01-supercritico-teoria",
+          "tipo": "relacao_tematica",
+          "evidencia": "A aula ensina o critério com erro limitado, mas não resolve estes quatro registros nem o projeto de melhoria de ambos os instrumentos."
+        },
+        {
+          "id_ou_ancora": "fun01-parecer",
+          "tipo": "reformulacao_conceitual",
+          "evidencia": "A subquestão sobre ρ e v retoma a redundância ensinada no mini parecer; esse componente de fixação não é anunciado como independente. O diagnóstico por caixas críticas é novo."
+        }
+      ],
+      "limite_da_verificacao": "Confronto do problema completo com os exemplos publicados e com o banco E1 disponível; dados/modelos compartilhados e componentes de fixação foram identificados. Não há histórico do estudante nem busca universal de materiais externos. A independência local do caso não assegura ineditismo para todo leitor."
+    },
+    "revisao": {
+      "leitura": "enunciado_alternativas_comentarios_e_notas",
+      "gabarito": "pendente",
+      "ambiguidades_conhecidas": [],
+      "encaminhamentos": [
+        "FUN-01"
+      ]
+    }
+  },
+  {
+    "id": "fun01-e1-equilibrio",
+    "banco": "aberto",
+    "titulo": "Problema 4 — Diagnóstico de uma bancada multicâmara",
+    "localizacao": {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "fragmento": "fun01-e1-equilibrio",
+      "sha256_artigo": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "recursos": [
+        {
+          "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+          "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+        }
+      ]
+    },
+    "origem": {
+      "tipo": "autoral_FUN01",
+      "atribuicao": "Problema autoral preparado pelo apoio_fun01 e integrado/revisado pelo Corretor. Dados fictícios explicitados; não adaptação de CR/AV.",
+      "identificadores": [
+        "E1-FUN01 v1.0",
+        "2026-10-27",
+        "fun01-e1-equilibrio"
+      ],
+      "fontes": [
+        {
+          "rotulo": "MIT 3.020 Spring 2021 aula 13, mistura ideal",
+          "url": "https://ocw.mit.edu/courses/3-020-thermodynamics-of-materials-spring-2021/mit3_020s21_l13.pdf"
+        },
+        {
+          "rotulo": "Cambridge, Tong,§4.4, potenciais",
+          "url": "https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S4.html#S4.SS4"
+        },
+        {
+          "rotulo": "OpenStax/Rice, University Physics 1,§14.1, hidrostática",
+          "url": "https://openstax.org/books/university-physics-volume-1/pages/14-1-fluids-density-and-pressure"
+        },
+        {
+          "rotulo": "Pacote didático E 1-FUN 01 v 1.0",
+          "url": "assets/termodinamica/fun01-dados-v1.json"
+        }
+      ],
+      "conferencia_oficial": "nao_aplicavel"
+    },
+    "formato": {
+      "tipo": "resposta_aberta",
+      "comando": "Produzir solução escrita com decisões, memória de cálculo e limites, respondendo aos subcomandos; aplicar rubrica analítica de 10 pontos.",
+      "numero_alternativas": 0
+    },
+    "competencias": [
+      "C01",
+      "C02",
+      "C07",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "vinculo_competencias": {
+      "tipo": "avaliacao_parcial",
+      "alcance": "Equilíbrio condicionado por fronteiras, hidrostática e transferência seletiva ideal; estabilidade apenas na coordenada permitida e parecer escrito. Não avalia cinética, membrana real, reação ou propriedade calorífica completa."
+    },
+    "pre_requisitos": [
+      "Pressão absoluta, força/peso e volume molar M/ρ",
+      "Conservação de cada espécie e frações molares",
+      "Gás ideal e pressão parcial n_iRT/V",
+      "Potencial químico molar da mesma espécie e referência comum",
+      "Logaritmo natural adimensional e regra da cadeia ensinada na preparação",
+      "Helmholtz a T, V fixos, estacionariedade e curvatura positiva",
+      "Potencial μ intrínseco versus μ+Mgz e integração com coeficiente constante",
+      "Distinção entre coexistência local, estado intensivo e escala extensiva"
+    ],
+    "nivel": {
+      "estimado": "avancado",
+      "justificativa": "Integra diagnóstico de dados conflitantes, derivação por balanço de forças, comparação de potenciais com gravidade, determinação de estado final sob restrições seletivas e teste de estabilidade com conservação. Exige rejeitar igualdades indevidas e defender limites do modelo; não se resume a substituir dados na relação fornecida.",
+      "validacao_empirica": "nao_realizada"
+    },
+    "raciocinio": {
+      "categoria": "modelagem_aberta",
+      "etapas": [
+        "Modelar fronteiras e selecionar os critérios de equilíbrio que correspondem às trocas realmente permitidas.",
+        "Julgar H1 e derivar perfil hidrostático H2, separando coexistência local e estado não homogêneo global.",
+        "Reconciliar o gradiente de potencial intrínseco com o potencial gravitacional total.",
+        "Determinar sentido de transferência seletiva pelo potencial adequado e fechar o estado final com conservação por espécie e condição de equilíbrio.",
+        "Testar a curvatura na coordenada de transferência e explicar por que pressões/composições distintas são admissíveis sob a membrana fixa.",
+        "Analisar a retirada da restrição de B e o novo estado compatível.",
+        "Classificar os conjuntos de dados do comando e produzir parecer com limitações e requisitos de validação experimental."
+      ],
+      "numero_etapas": 7
+    },
+    "hipoteses": {
+      "explicitadas": [
+        "Substância X fictícia incompressível comρ1000 kg/m³, M 0,0200 kg/mol; psat 10000 Pa a 300 K",
+        "Coluna H 2 m, gravidade 9,81 m/s², interface plana; sem capilaridade/cisalhamento/apoio vertical das paredes; vapor curto sem gradiente significativo",
+        "H 1 temperaturas 300/302 K e pressões 10000 Pa; H 2 isotérmico 300 K, valores exatos no modelo",
+        "Mistura gasosa A/B ideal não reativa sem condensação; gravidade desprezível nas células",
+        "Volumes iguais fixos 0,0100 m³, T 300 K, R 8,314; inicialmente 100 kPa comyA 0,8 e 0,2",
+        "Membrana fixa só deixa A passar, não armazena A nem introduz potencial extra; B bloqueado e suporte sustenta diferença de p",
+        "μ intrínseco exclui gravidade; comparação vertical usaμ+Mgz",
+        "Estabilidade examinada apenas para transferência A sobT e volumes fixos"
+      ],
+      "implicitas": [],
+      "limites": [
+        "Não informa psat 302 K nem autoriza inferi-lo; H 1 não é corrigido por incerteza inventada.",
+        "H 2 não possui uma pressão global única; saturação vale na interface.",
+        "Igualdade de μ é entre regiões para a mesma espécie transferível, não entre A e B.",
+        "Curvatura positiva na única coordenada não testa fenômenos excluídos.",
+        "Não há tempo de relaxação, dimensionamento de membrana ou validação experimental."
+      ]
+    },
+    "exposicao_previa": {
+      "estado": "relacao_identificada",
+      "relacoes": [
+        {
+          "id_ou_ancora": "fun01-preparacao-equilibrio",
+          "tipo": "relacao_tematica",
+          "evidencia": "A decisão resolvida compara potenciais em reservatórios com pressões parciais já fixadas. Este problema exige inventário finito, redistribuição sob membrana, estado final, estabilidade e coluna com gravidade; não repete o procedimento do exemplo."
+        },
+        {
+          "id_ou_ancora": "fun01-fases",
+          "tipo": "reformulacao_conceitual",
+          "evidencia": "As classificações finais de suficiência retomam os conceitos ensinados. A independência reivindicada está no diagnóstico integrado H/D, não em cada subquestão isolada."
+        }
+      ],
+      "limite_da_verificacao": "Confronto do problema completo com os exemplos publicados e com o banco E1 disponível; dados/modelos compartilhados e componentes de fixação foram identificados. Não há histórico do estudante nem busca universal de materiais externos. A independência local do caso não assegura ineditismo para todo leitor."
+    },
+    "revisao": {
+      "leitura": "enunciado_alternativas_comentarios_e_notas",
+      "gabarito": "pendente",
+      "ambiguidades_conhecidas": [],
+      "encaminhamentos": [
+        "FUN-01"
+      ]
+    }
+  }
+]

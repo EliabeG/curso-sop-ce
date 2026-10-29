@@ -1,0 +1,114 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV66–AV70",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco alternativas e comentários; frações exatas e unidades.",
+  "registros": [
+    {
+      "id": "av-e1-66",
+      "artigo_sha256": "414e4a69cb79528ed86dcb04c0172f1f99eba044f8975a08ca92bbf212601946",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-66",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Casco e tubos íntegro sem vazamento; pede incorreta.",
+      "solucao": "A parede separa as correntes; condução na parede e convecção em interfaces.",
+      "resultado": "A é incorreta.",
+      "comparacao": "A requer mistura indevida; B condução na parede; C fluido dentro dos tubos; D convecção nas interfaces; E fluido no casco.",
+      "tolerancia": "Duas correntes contadas; sem temperatura, área ou taxa, sem tolerância.",
+      "limite": "Troca de calor através da parede não exige mistura.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-67",
+      "artigo_sha256": "c234657d9d082fb9ca732f48724916a7c267b2048c8fca190ae934f62fb6ba84",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-67",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "L=20 m, ΔT=50 K, α=12×10⁻⁶ K⁻¹; dilatação livre uniforme.",
+      "solucao": "ΔL=αLΔT=0,012 m=12 mm.",
+      "resultado": "A, 12 mm.",
+      "comparacao": "A correto; B 12 m é 1000 vezes; C 120 mm é 10 vezes; D 1,2 mm é um décimo; E 0,012 mm usa metros como milímetros.",
+      "tolerancia": "Conversão m→mm e produto exatos nos dados nominais; não há incerteza fornecida.",
+      "limite": "Dilatação livre é modelo; restrição mecânica exigiria análise de tensões.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-68",
+      "artigo_sha256": "856b39ea9bb6e14936108cc8f0cc0633ac20f6777777c30320e28414e1f6207d",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-68",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "ε inicial 0,80 e final 0,20; superfície cinza pequena diante de grande ambiente negro, área/geometria e temperaturas constantes.",
+      "solucao": "Q̇f/Q̇i=0,20/0,80=0,25 e redução 1−0,25=0,75.",
+      "resultado": "D: 25% da perda, redução de 75%.",
+      "comparacao": "A inverte redução e remanescente; B usa ε final diretamente; C toma diferença ε=0,60 como fração remanescente; D correta; E inverte razão e fornece quatro vezes.",
+      "tolerancia": "Razões e porcentagens exatas no modelo nominal; sem incerteza de medição.",
+      "limite": "Somente parcela radiativa: não implica mesma redução da perda total. Figura é ilustrativa; água histórica de CR68 não entra na conta.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-69",
+      "artigo_sha256": "f1ade775126752789740119acdb33f04190299cc54d46883e4e0354d7c6e6fee",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-69",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "CONTAGEM_E_DESCRICAO",
+      "dados": "Fluidos quente e frio separados por parede metálica.",
+      "solucao": "Sequência: convecção quente-parede, condução pela parede, convecção parede-frio.",
+      "resultado": "A.",
+      "comparacao": "A sequência correta; B atribui convecção à parede; C impõe mistura e radiação; D supõe só radiação; E mistura contraria separação.",
+      "tolerancia": "Três etapas e duas correntes são contagens exatas; sem dados de taxa ou tolerância.",
+      "limite": "Modelo de convecção nas interfaces não exclui mecanismos adicionais quando contexto os exige.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-70",
+      "artigo_sha256": "aa3759b74d4479c6c2c7e76f4ad964b19344b6c1b13593c027dac0358a2600da",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-70",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_COMPARATIVO_EXATO",
+      "dados": "Parede condutora, faces a 80 °C e 20 °C, regime permanente sem geração.",
+      "solucao": "Condução espontânea vai 80→20 °C; diferença de 60 °C é 60 K de intervalo, e T=353,15 K e 293,15 K respectivamente.",
+      "resultado": "B, quente para frio.",
+      "comparacao": "A inverte sentido; B correto; C Celsius preserva ordenação; D posição não determina direção; E gradiente dá fluxo líquido não nulo na parede condutora.",
+      "tolerancia": "Conversões e diferença exatas nos valores nominais; sem condutividade, espessura ou fluxo para tolerância.",
+      "limite": "Não se infere taxa sem propriedades e geometria; temperatura em K não é necessária para comparar ordem.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

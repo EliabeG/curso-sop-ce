@@ -1,0 +1,37 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "estado": "diagnostico_pre_edicao",
+  "produto_modificado": false,
+  "achado": {
+    "arquivo": "assets/curso.js",
+    "funcoes": [
+      "lerEstadoModulo",
+      "alterarEstado",
+      "resumirEstado",
+      "digitalDoBanco",
+      "iniciarBanco"
+    ],
+    "q": "lerEstadoModulo filtra pelas digitais atuais; alterarEstado grava o objeto filtrado, podendo descartar respostas/erros de versões antigas na gravação seguinte.",
+    "av": "lerRespostas mantém todas as digitais sintaticamente válidas; atualizarRespostas seleciona só as atuais para mostrar/contar, e salvar reaproveita o mapa completo."
+  },
+  "proposta": {
+    "escopo": "Somente comportamento de E1. Os outros módulos mantêm exatamente sua regra vigente.",
+    "q": "Conservar no estado persistido de E1 respostas/erros e marcações legadas sintaticamente válidas; renderização, resumo e filtro de erros continuam percorrendo apenas a lista atual. Nunca copiar uma letra antiga para uma nova digital.",
+    "av": "Preservar o mecanismo já existente. Acrescentar aviso contextual de tentativas de versões anteriores, caso necessário, sem migrar letras.",
+    "aviso": "Quando houver tentativas antigas, informar que elas permanecem armazenadas e que versões revisadas precisam de nova tentativa para entrar no placar atual.",
+    "registro": "Sincronizar exclusivamente modulos.e1.questoes com as novas digitais dos Q efetivamente alterados; outros módulos byte/semanticamente preservados.",
+    "derivados": "Atualizar hashes e os metadados individuais realmente atingidos no inventário; conservar snapshot anterior e mapa antigo→novo por ID."
+  },
+  "testes_planejados": [
+    "Q E1 com tentativa antiga: carregar, responder outra questão e salvar conserva a entrada antiga mas não a conta.",
+    "Q E1 com resposta atual: recarga e erro/placar continuam corretos.",
+    "AV com opção/enunciado modificado: digital antiga preservada no mapa, sem marcar/contar a nova versão.",
+    "Correções só de comentário: digitais e tentativas atuais inalteradas.",
+    "Outro módulo: comportamento anterior da leitura, gravação e placar não muda.",
+    "Falha de armazenamento/carga inválida não autoriza apagar dados anteriores.",
+    "Por ID alterado: chave demonstrada, cinco alternativas distintas após arredondamento e comentários coerentes."
+  ],
+  "limites": "Não executado nesta fase; não é migração realizada nem aprovação de edição material. Não abre BAN-12, FON-07 ou QA globais."
+}

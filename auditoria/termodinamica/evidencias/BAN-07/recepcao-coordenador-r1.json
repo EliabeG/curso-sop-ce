@@ -1,0 +1,349 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "responsavel": "/root, coordenador",
+  "sha256_manifesto": "66c5f42489cf3c5903782d22a4777b72e111f4a239686e345088380b218745e8",
+  "arquivos": 75,
+  "copias": 9,
+  "verificacoes": 84,
+  "falhas": [],
+  "checks": [
+    {
+      "arquivo": "assets/curso.css",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/curso.css",
+      "ok": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/curso.js",
+      "ok": true
+    },
+    {
+      "arquivo": "assets/formulario-e1.css",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/formulario-e1.css",
+      "ok": true
+    },
+    {
+      "arquivo": "assets/formulario-e1.js",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/formulario-e1.js",
+      "ok": true
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/registro.js",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-07-r1.md",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/assets/curso.css",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/assets/curso.js",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/assets/formulario-e1.css",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/assets/formulario-e1.js",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/assets/registro.js",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/formulas/termodinamica.html",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/apoio/diagnostico-80-av-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/apoio/diagnostico-80-av-r1.md",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/baseline-retomada-coordenador-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/conferencia-coordenador-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/CONTRATO_DIAGNOSTICO-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/aplicar-artigos-r1.py",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/atualizar-inventario-r1.py",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/conferencia-recarga-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/conferir-recarga-r1.py",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/congelar-r1.py",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/delta-artigos-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/delta-produto-r1.patch",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/diagnostico-87-cr-abertos-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/diagnostico-persistencia-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/fontes-complementares-diagnostico-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/gerar-identidades-r1.mjs",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/heranca-abertos-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/heranca-cr-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/integrar-diagnostico-r1.py",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/propostas-materiais-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/testar-persistencia-r1.mjs",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/testes-persistencia-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/validacao-inventario-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/verificacao-cientifica-25-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/verificacao-produto-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/verificar-ciencia-r1.py",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/verificar-produto-r1.mjs",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/diagnostico-197-integrado-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/diagnostico-30-q-coordenador-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/diagnostico-pos-correcao-197-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/e1-termodinamica.r1.html",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/mapa-identidades-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/navegador-antes-coordenador-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/navegador-coordenador-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/navegador-coordenador-r1.md",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/navegador-q24-coordenador-r1.png",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/curso.css",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/curso.js",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/formulario-e1.css",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/formulario-e1.js",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/assets/registro.js",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/formulas/termodinamica.html",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/modulos/e1-termodinamica.html",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/persistencia-q-coordenador-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/persistencia-q-coordenador-r1.mjs",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/PLANO_DIAGNOSTICO-r1.md",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/reconstrucao-coordenador-r1.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/servidor-coordenador-r1.mjs",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/snapshot-antes.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/verificar-coordenador-r1.mjs",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-preparacao.md",
+      "ok": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "ok": true
+    },
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/formulas/termodinamica.html",
+      "ok": true
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ok": true
+    },
+    {
+      "copia": "auditoria/termodinamica/evidencias/BAN-07/pacote-r1/modulos/e1-termodinamica.html",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR66–CR70",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral e exame de fórmula, unidades e dados FON-09; conferência decimal das conversões e das 15 células históricas perante dados capturados.",
+  "registros": [
+    {
+      "id": "cr-e1-66",
+      "artigo_sha256": "3c495fe75122088861c7e8de6a39ceccefaf8486532bbaad7e755d48a7ec1850",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-66",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-trocadores",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/GAB_DEFINITIVO_822_PETROBRAS_23_007_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_DESCRICAO",
+      "dados": "Dois fluidos em trocador casco e tubos, separados por parede.",
+      "solucao": "Um fluido escoa no interior dos tubos e outro no casco; calor atravessa parede por condução e interfaces por convecção, sem mistura intencional.",
+      "resultado": "E.",
+      "comparacao": "C descreve mistura como princípio de casco/tubo; E a rejeita.",
+      "tolerancia": "Dois fluidos e parede separadora são contagem exata; sem dados de taxa ou tolerância.",
+      "limite": "Mistura por vazamento não é operação normal; há equipamentos de contato direto distintos.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-67",
+      "artigo_sha256": "ce6a14b96095bd3f2b7633028a51832b69ffbc9350cb7d81dfced776b51a6d56",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-67",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-dilatacao",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/GAB_DEFINITIVO_822_PETROBRAS_23_007_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Tubulação aquecida ou resfriada, com apoios, restrições e juntas.",
+      "solucao": "Mudança térmica induz tendência à variação de comprimento; restrições produzem esforços e juntas/flexibilidade acomodam movimento.",
+      "resultado": "C.",
+      "comparacao": "C identifica função de juntas; E a negaria.",
+      "tolerancia": "Sem comprimento, coeficiente ou temperaturas para calcular deslocamento ou tolerância.",
+      "limite": "Acomodação depende de limites de projeto, apoios e cargas; não garante integridade sob qualquer condição.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-68",
+      "artigo_sha256": "6cfcf2558f6d3651a9b87e8fd4b66b8e29561f17686b4e52b2f40d15ac42fcb8",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-68",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-radiacao-vacuo",
+          "#cr-e1-68-dados-corrigidos",
+          "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+          "https://www.nist.gov/document/nistir5078-tab2pdf#page=2",
+          "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+          "../assets/termodinamica/fon09-cr68-dados-v1.json",
+          "../assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+          "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=3",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf#page=14",
+          "../downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3",
+          "../downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf#page=1",
+          "assets/termodinamica/fon09-cr68-dados-v1.json",
+          "auditoria/termodinamica/pareceres/FON-09-r2.md",
+          "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-saturacao-101325.html",
+          "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-densidade-25c-101325.html",
+          "https://www.nist.gov/document/nistir5078-tab2pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_E_CONFERENCIA_DADOS_SUPLEMENTARES",
+      "dados": "Superfície cinzenta quente, grande vizinhança isotérmica, área/geometria e temperaturas fixas; conjunto FON-09 v1.0 e transcrição histórica separada.",
+      "solucao": "Q̇rad=εσA(Ts⁴−Tv⁴), K e W: ε menor reduz parcela radiativa para Ts>Tv. Separadamente: 1000 kg/cm³=10⁹ kg/m³; referência 997,04764 kg/m³ a 25 °C e 101,325 kPa, aproximação 1000 dá desvio +0,2961102%. Nas cinco linhas FON-09, 15 células comparadas à transcrição histórica: 2 compatíveis e 13 incompatíveis com meia unidade da casa impressa. Conversões 1 MPa=1000 kPa e 1 cm³/g=0,001 m³/kg exatas.",
+      "resultado": "C na leitura de possibilidade radiativa. Dados históricos inadequados para cálculos e substitutos são editoriais, não errata oficial.",
+      "comparacao": "C é coerente no modelo; E negaria possibilidade. Densidade e tabela não entram no julgamento de emissividade. Primeira linha 101,325 kPa: 99,974 °C, 0,00104344 e 1,6732 m³/kg; as quatro linhas seguintes são 111,349/0,00105273/1,1593; 120,210/0,00106052/0,88568; 127,411/0,00106722/0,71866; 133,522/0,00107317/0,60576.",
+      "tolerancia": "Referência WebBook 99,974296, 0,0010434411 e 1,6732012 arredondada a 0,001 °C, 10⁻⁸ e 10⁻⁴ m³/kg. FON-09 conserva precisão da NISTIR nas outras linhas; meia unidade da última casa impressa na comparação histórica não é incerteza metrológica.",
+      "limite": "Fontes e capturas FON-09 atribuídas; não houve nova consulta dinâmica ou reexame visual da prova. As condições de 25 °C e pressão atmosférica são referência da aproximação, não pressão assegurada nos pontos 1/2; não há dados para taxa de radiação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-69",
+      "artigo_sha256": "5fe27c3eaca7cf1d4f584a1720a66065312dcd074301366a59e6cc96387df14f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-69",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-trocadores",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_DESCRICAO",
+      "dados": "Trocador casco/tubos com fluidos quente e frio separados por parede.",
+      "solucao": "Calor passa por convecção quente→parede, condução na parede e convecção parede→fluido frio; incrustação acrescenta resistência.",
+      "resultado": "C.",
+      "comparacao": "C descreve mecanismos e escoamentos; E negaria.",
+      "tolerancia": "Dois fluidos e três etapas são contagens exatas; sem coeficientes, área ou temperaturas para cálculo e tolerância.",
+      "limite": "Depósitos podem reduzir desempenho; condições detalhadas requerem modelo e dados específicos.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-70",
+      "artigo_sha256": "9cf98a0db0efa097c58cac9de03b4212f1e3683f067a14688ae605350ac0ac52",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-70",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-transferencia",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=3",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_UNIDADES",
+      "dados": "Condução unidimensional em material com k>0.",
+      "solucao": "q″=−k dT/dx; k em W/(m K), gradiente em K/m, q″ em W/m². Fluxo se opõe ao gradiente.",
+      "resultado": "E; fluxo espontâneo vai de temperatura maior para menor.",
+      "comparacao": "C inverte o sentido da condução espontânea; E o rejeita.",
+      "tolerancia": "Sem k ou gradiente numéricos não há fluxo ou tolerância a calcular.",
+      "limite": "Direção refere-se à condução espontânea; outros mecanismos e trabalho externo têm análise própria.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "A consulta WebBook e exame documental são atribuídos a FON-09 e FON-01; não repetidos dinamicamente nesta execução."
+  ]
+}

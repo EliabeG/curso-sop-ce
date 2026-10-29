@@ -1,0 +1,185 @@
+[
+  {
+    "id": "fun02-e1-caminhos",
+    "competencias": [
+      "C01",
+      "C02",
+      "C03",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "alcance": "Construção e julgamento de trajetórias de gás ideal sob janela térmica, integração de trabalho, balanços por trecho e ciclo reversível; não cobre escoamentos, processos irreversíveis gerais ou ciclos de máquina reais.",
+    "pre": [
+      "Independência de coordenadas e pV=nRT com n fixo",
+      "Sinais Q recebido positivo e W realizado positivo",
+      "Derivadas/integrais de potências e de 1/V, log de razão adimensional",
+      "Modelos isobárico, isocórico e isotérmico e relações caloríficas declaradas",
+      "Diferença entre ΔU e transferências de processo; composição de trechos e inversão reversível"
+    ],
+    "nivel": "avancado",
+    "justificativa": "O aluno escolhe e constrói dois caminhos dentro de restrições, demonstra admissibilidade ao longo deles, rejeita uma alternativa e fecha ciclo com orientação escolhida. Não basta substituir números em um caminho pré-definido; a autonomia permanece limitada ao gás ideal e aos três controles fornecidos.",
+    "etapas": [
+      "Construir dois percursos com trabalhos distintos e determinar estados intermediários pelo controle escolhido e pela equação de estado.",
+      "Verificar condições de realização e janela térmica em todos os trechos, incluindo rejeição da proposta que passa por225 K.",
+      "Integrar as interações mecânicas, aplicar balanços por trecho e reconciliar a mesma variação de propriedade com transferências diferentes.",
+      "Construir o ciclo orientado pela volta inversa admissível, somar transferências e interpretar o fechamento de propriedade.",
+      "Avaliar a generalização sobre trabalho, distinguindo dependência geral de coincidências impostas pela restrição adiabática."
+    ],
+    "explicitadas": [
+      "Sistema fechado,1 mol de gás ideal de composição fixa, R8,314 J/(mol·K), cv,m=3R/2 constante",
+      "Estados A300 K e0,0100 m³; B450 K e0,0200 m³",
+      "Faixa250≤T≤650 K e no máximo dois trechos de controles listados",
+      "Somente trabalho de fronteira; ΔEC=ΔEP=0",
+      "Equilíbrio mecânico no limite, pistão sem atrito, p do gás conjugada a dV",
+      "Trocas térmicas reversíveis com sequência de reservatórios; inversão admissível no modelo"
+    ],
+    "limites": [
+      "As rotas válidas não são únicas; a rubrica aceita alternativas e sinais de ciclo coerentes com a ordem escolhida.",
+      "A figura está dentro da solução e apenas ilustra o par de referência; os dados necessários ao comando estão no texto.",
+      "As restrições dadas não prometem a existência de um caminho adiabático entre A/B.",
+      "Não se pode generalizar p interno dV a qualquer processo irreversível."
+    ],
+    "relacoes": [
+      {
+        "id_ou_ancora": "fun02-processos",
+        "tipo": "relacao_tematica",
+        "evidencia": "A aula ensina integrais por trecho e resolve um perfil linear de pressão; não constrói este par de caminhos com janela térmica e ciclo escolhido pelo aluno."
+      },
+      {
+        "id_ou_ancora": "q-e1-09",
+        "tipo": "relacao_tematica",
+        "evidencia": "Q09 fornece um ciclo retangular e pede trabalho; aqui a construção, admissibilidade e balanços por trechos precedem um ciclo com segmento curvo. Nenhum dado do ciclo Q09 é repetido."
+      },
+      {
+        "id_ou_ancora": "av-e1-30",
+        "tipo": "relacao_tematica",
+        "evidencia": "A igualdade Q=W em trecho isotérmico ideal é uma relação de apoio já praticada; o caso atual pede integrar e construir caminhos em vez de receber Q do trecho."
+      }
+    ],
+    "fontes": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "fun02-e1-integrabilidade",
+    "competencias": [
+      "C02",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "alcance": "Consistência matemática de uma propriedade candidata, diagnóstico de parâmetro por ciclos e correção da condição de derivada. Não atesta validade de equação fundamental ou propriedade de substância real.",
+    "pre": [
+      "Coordenadas adimensionais e volume molar versus específico por massa",
+      "Diferencial total, derivadas parciais e regra da cadeia ao longo de caminho",
+      "Integrais de ln e de 1/ν; constante de integração parcial",
+      "Exatidão global/local, regularidade C¹ e domínio aberto simplesmente conexo",
+      "Integrais por segmentos e sinal de orientação",
+      "Identificação de parâmetro condicionada à família de defeito assumida"
+    ],
+    "nivel": "avancado",
+    "justificativa": "Exige diagnosticar uma falsa certificação com cancelamento não trivial de ciclo, identificar κ a partir de outro ensaio, construir contraexemplo entre rotas e distinguir derivada de caminho de parcial. A classificação depende dessas decisões integradas, não do uso isolado de derivadas.",
+    "etapas": [
+      "Verificar bases/unidades, regularidade e domínio antes de aplicar o teste de exatidão.",
+      "Reconstruir e diferenciar o potencial de A com referência, explicitando a função livre da integração parcial.",
+      "Determinar a condição em κ para B e rejeitar uma certificação baseada apenas na linha θ=2, inclusive a conclusão local indevida.",
+      "Integrar os dois ciclos orientados, explicar o cancelamento largo e identificar κ condicionado à família declarada.",
+      "Comparar os dois caminhos abertos e relacionar sua diferença ao ciclo esquerdo sem inventar potencial de B.",
+      "Corrigir o rótulo da inclinação por regra da cadeia e conversão de θ para T, e decidir sobre correção do modelo versus dados preservados."
+    ],
+    "explicitadas": [
+      "Modelo matemático de registrador, sem equação constitutiva física completa",
+      "D={(θ,ν):θ>0,ν>0}; θ=T/300 K,ν=v_m/(0,001 m³/mol),E0=100 J/mol",
+      "Coeficientes das versões A e Bκ dados; κ constante desconhecido durante os ensaios",
+      "Ciclos anti-horários por segmentos e integrais exatas0 e−20ln2 J/mol",
+      "Trajetória ν=θ e ponto(2,2) para o potencial da versão A",
+      "Referência Φ(1,1)=0"
+    ],
+    "limites": [
+      "Um ciclo nulo ou igualdade cruzada em uma linha não prova exatidão global nem em vizinhança bidimensional.",
+      "κ é identificado só na família fornecida, não em modelos arbitrários.",
+      "κ=0 restaura o potencial mas deixa de reproduzir o ensaio esquerdo registrado; não é reparo silencioso dos mesmos dados.",
+      "Integrabilidade e unidade J/mol não tornam a forma automaticamente calor, trabalho ou energia interna real."
+    ],
+    "relacoes": [
+      {
+        "id_ou_ancora": "fun02-exatidao",
+        "tipo": "relacao_tematica",
+        "evidencia": "A teoria reconstrói uma forma polinomial simples e discute um ciclo retrilhado nulo. O registrador combina uma família logarítmica, calibração em linha, cancelamento de ciclo retangular e identificação de parâmetro; não é troca de coeficientes do exemplo."
+      },
+      {
+        "id_ou_ancora": "fun02-parciais",
+        "tipo": "relacao_tematica",
+        "evidencia": "A distinção parcial/direcional é ensinada por f=θν e ν=θ²; aqui exige diferenciar o potencial reconstruído e converter a base θ para kelvin."
+      }
+    ],
+    "fontes": [
+      2,
+      3
+    ]
+  },
+  {
+    "id": "fun02-e1-calor-caminho",
+    "competencias": [
+      "C01",
+      "C02",
+      "C03",
+      "C08",
+      "C09",
+      "C10"
+    ],
+    "alcance": "Integração e diagnóstico de calor/capacidade em compressão ideal definida, fator integrante e condições para relacionar calor e entropia. Não é avaliação integral de geração de entropia ou irreversibilidade.",
+    "pre": [
+      "Equação de estado de gás ideal e relação calorífica cv,m constante",
+      "Integração de potência e sinal de compressão",
+      "Derivada parcial com V,n fixos versus restrição pV^r constante",
+      "Capacidade total/molar e energia de propriedade versus calor de processo",
+      "Teste de exatidão em T,V positivos e reconstrução de potencial logarítmico",
+      "Reversibilidade interna versus externa e identificação da temperatura pertinente à fronteira"
+    ],
+    "nivel": "intermediario",
+    "justificativa": "Integra relações distintas e exige crítica às interpretações, mas trajetória, modelo, coordenadas e hipóteses são fornecidos. A construção autônoma de um novo modelo não é necessária; os testes formais e fator1/T foram ensinados imediatamente antes.",
+    "etapas": [
+      "Combinar a trajetória e a equação de estado para determinar estados e derivada com a condição mantida correta.",
+      "Integrar trabalho, fechar energia e explicar a coexistência de aumento de temperatura com perda de calor.",
+      "Derivar a capacidade do caminho e distingui-la de capacidades de propriedade e bases molares/totais.",
+      "Testar exatidão antes/depois do fator1/T e reconstruir/calcular a variação de entropia por duas rotas.",
+      "Julgar as alegações de adiabaticidade e de Q/T, delimitando as temperaturas/fronteiras e o efeito de irreversibilidade apenas externa versus interna."
+    ],
+    "explicitadas": [
+      "1 mol de gás ideal, R8,314 J/(mol·K),cv,m=3R/2 constante",
+      "T1=300 K,V1=0,0200 m³,V2=0,00500 m³; pV^(3/2)=K constante",
+      "Sistema fechado, somente pdV; ΔEC=ΔEP=0",
+      "Equilíbrio mecânico no limite e pistão sem atrito",
+      "Trocas térmicas reversíveis na trajetória de referência, por sequência de reservatórios",
+      "A mudança hipotética da vizinhança deve distinguir irreversibilidade externa e interna; não presume adiabaticidade"
+    ],
+    "limites": [
+      "C_caminho negativo não prova capacidade de propriedade negativa.",
+      "A coincidência de Q/ΔT com a razão diferencial resulta da constância demonstrada neste modelo.",
+      "Retirar reversibilidade apenas externa não torna automaticamente falsa a igualdade δQ/T_gás=dS para gás internamente reversível.",
+      "Se for mantido o caminho mecânico e o modelo, Q permanece imposto pela primeira lei; informação externa adicional é necessária para geração total de entropia.",
+      "Nenhuma propriedade real ou incerteza empírica foi estimada."
+    ],
+    "relacoes": [
+      {
+        "id_ou_ancora": "fun02-fator",
+        "tipo": "relacao_tematica",
+        "evidencia": "A teoria ensina capacidades e verifica genericamente o fator1/T; o problema exige aplicar a uma compressão não adiabática, derivar C_caminho e diagnosticar relatórios com restrições diferentes."
+      },
+      {
+        "id_ou_ancora": "cr-e1-36",
+        "tipo": "relacao_tematica",
+        "evidencia": "O item anterior distingue adiabaticidade de trabalho nulo em um julgamento; não fornece a trajetória, cálculos ou alegação sobre capacidade negativa deste problema."
+      }
+    ],
+    "fontes": [
+      0,
+      1,
+      4,
+      5
+    ]
+  }
+]

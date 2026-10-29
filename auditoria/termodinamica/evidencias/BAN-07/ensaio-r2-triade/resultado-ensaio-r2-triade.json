@@ -1,0 +1,85 @@
+{
+  "id": "BAN-07",
+  "estado": "ENSAIO_ISOLADO_NAO_APLICADO_NAO_APROVADO",
+  "stage": "C:\\Users\\User\\AppData\\Local\\Temp\\ban07-r2-ensaio-zHGaRt",
+  "produto_r1_preservado": true,
+  "controle_sha256": "3f5822a09f2d19ad442c739b61b181e2ea03d4443a8b81432c0648bfee65320d",
+  "escopo": [
+    "av-e1-04",
+    "av-e1-31",
+    "av-e1-62"
+  ],
+  "html_sha256": "90615b1f43956425d39be2784e5b652bdd74888a12bd2826751e6ff3003e6c52",
+  "snapshot": "auditoria/termodinamica/evidencias/BAN-07/e1-termodinamica.r2-ensaio.html",
+  "artigos_alterados": [
+    "av-e1-04",
+    "av-e1-31",
+    "av-e1-62"
+  ],
+  "fora_dos_artigos_identico": true,
+  "digitais": [
+    {
+      "id": "av-e1-04",
+      "antes": "8eaed3f8",
+      "depois": "cccc3a46",
+      "chave": "D"
+    },
+    {
+      "id": "av-e1-31",
+      "antes": "4538caee",
+      "depois": "9230a05d",
+      "chave": "E"
+    },
+    {
+      "id": "av-e1-62",
+      "antes": "ed91f6ac",
+      "depois": "e0ab3037",
+      "chave": "D"
+    }
+  ],
+  "colisoes": "Cada nova digital é única entre os 80 AV atuais e não existe nas 80 digitais r1; não cobre outros navegadores nem históricos desconhecidos.",
+  "persistencia": {
+    "metodo": "Funções reais AV em Node/VM com DOM e localStorage simulados; respostas r1 e um item inalterado, novas respostas e recarga de contexto.",
+    "historico_antigo_preservado": true,
+    "anteriores_nao_preenchem_versoes_novas": true,
+    "item_inalterado_preservado": true,
+    "aviso": true,
+    "novas_respostas_persistem_na_recarga": true,
+    "limite": "Sem navegador real, sem armazenamento pessoal, sem teste de placar ou falhas de escrita."
+  },
+  "inventario": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1261,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "arquivos_ensaio": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "90615b1f43956425d39be2784e5b652bdd74888a12bd2826751e6ff3003e6c52"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "693c67e07a0349716583078e865d1cc05b2b83b7bdab474fb95f7365920d5c53"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "1f830185b95eaa7622cff85696a21f15a63f26a003b009e043634b7c845c4808"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/e1-termodinamica.r2-ensaio.html",
+      "sha256": "90615b1f43956425d39be2784e5b652bdd74888a12bd2826751e6ff3003e6c52"
+    }
+  ],
+  "limites": [
+    "Apenas três candidatas; AV69 não aplicada.",
+    "Estágio provisório: CR06/26 e outros achados ainda podem acrescentar obrigações.",
+    "Não é aprovação independente, aplicação ao produto nem parecer integral BAN-07.",
+    "O diretório temporário permanece para inspeção; não contém armazenamento do usuário."
+  ]
+}

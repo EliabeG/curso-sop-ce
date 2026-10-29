@@ -1,0 +1,4790 @@
+{
+  "id": "BAN-10",
+  "rodada": 1,
+  "data": "2026-10-27",
+  "natureza": "Subauditoria técnica independente, agente automatizado; sem gate geral",
+  "versao": {
+    "estado": "congelada pelo Auditor principal",
+    "manifesto_sha256": "1fd879c048b08565e901055281545f44f65a39f21ca87b3901f0e8263077f7f7",
+    "html_sha256": "3839c7ba2e473ee9e5b3cdff80ea64242471b83b961eb117cee5a6918c884ae1",
+    "js_sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+  },
+  "achados_obrigatorios": [],
+  "criterios": [
+    {
+      "criterio": "Regra restrita a E1 e marcador exato estudo-critico",
+      "resultado": "atendido no escopo técnico",
+      "evidencia": "Leitura de iniciarBanco; testes diferenciais E2, metadado ausente, E1 sem marcador e marcador diferente contra JS anterior."
+    },
+    {
+      "criterio": "Nove críticos fora de numerador e denominador",
+      "resultado": "atendido no escopo técnico",
+      "evidencia": "Recarga das 80 respostas antigas concordantes/divergentes, com placar de 71 itens pontuáveis e nove marcas documentais."
+    },
+    {
+      "criterio": "Feedback sem classificação certo/errado dos críticos",
+      "resultado": "atendido no escopo técnico",
+      "evidencia": "Nove itens reais com alternativas concordantes/divergentes; ausência de data-cr-resultado e explicação de comparação oficial."
+    },
+    {
+      "criterio": "Persistência e recarga preservam identidade",
+      "resultado": "atendido no escopo técnico",
+      "evidencia": "160 digitais reais CR/AV; respostas v2 antigas e novas; manutenção literal de armazenamento v1; histórico não reconhecido preservado."
+    },
+    {
+      "criterio": "Filtros, refazer e sincronização",
+      "resultado": "atendido no escopo técnico",
+      "evidencia": "Assunto, banca, busca, pendentes, link direto, refazer crítico e evento storage."
+    },
+    {
+      "criterio": "Armazenamento indisponível",
+      "resultado": "atendido no escopo técnico",
+      "evidencia": "Falhas independentes de leitura e gravação preservam dados anteriores, exibem aviso e mantêm exclusão local."
+    },
+    {
+      "criterio": "Preservação Q/AV e outros módulos",
+      "resultado": "atendido no escopo técnico",
+      "evidencia": "30 Q e 80 AV literalmente iguais; iniciarQuestoes igual; diferenciais de fluxo AV e guarda E2/metadado ausente."
+    },
+    {
+      "criterio": "Integridade e reprodução da versão congelada",
+      "resultado": "atendido no escopo técnico",
+      "evidencia": "Manifesto, nove arquivos/cópias, seis snapshots, 61 evidências e entrega; 13 deltas HTML e quatro JS reconstroem os arquivos."
+    },
+    {
+      "criterio": "Mérito científico, 197 triagens e 12 decisões",
+      "resultado": "fora desta subauditoria",
+      "evidencia": "Responsabilidade do Auditor principal; cobertura técnica da triagem no verificador não certifica mérito."
+    },
+    {
+      "criterio": "Navegador, acessibilidade e aprendizagem",
+      "resultado": "fora desta subauditoria",
+      "evidencia": "Sem navegador de usuário; nenhum teste com alunos nem conclusão de auditoria global."
+    }
+  ],
+  "integridade": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "3839c7ba2e473ee9e5b3cdff80ea64242471b83b961eb117cee5a6918c884ae1",
+      "bytes": 1301577,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/modulos/e1-termodinamica.html",
+      "sha256_copia": "3839c7ba2e473ee9e5b3cdff80ea64242471b83b961eb117cee5a6918c884ae1",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+      "bytes": 106783,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/assets/curso.js",
+      "sha256_copia": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "d4a64b53747170f9d1d9cd0446d3f1de22110c73454c9f4fdf9359b005434641",
+      "bytes": 778600,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256_copia": "d4a64b53747170f9d1d9cd0446d3f1de22110c73454c9f4fdf9359b005434641",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "38a90361a7912dfc0839927ea50b044b6e87b0116eec2085b515573b648f3d68",
+      "bytes": 58642,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256_copia": "38a90361a7912dfc0839927ea50b044b6e87b0116eec2085b515573b648f3d68",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "bytes": 27032,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/assets/registro.js",
+      "sha256_copia": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "bytes": 60276,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/assets/curso.css",
+      "sha256_copia": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "bytes": 11334,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256_copia": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario.schema.json",
+      "sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+      "bytes": 13126,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/auditoria/termodinamica/inventario/inventario.schema.json",
+      "sha256_copia": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+      "bytes": 20990,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r1/auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256_copia": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/antes/INVENTARIO_QUESTOES.md",
+      "sha256": "1505e80c437fdd6dbbea40973155446ec859ba2fb363752217346876a8fb43db",
+      "bytes": 51262,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/antes/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "bytes": 60276,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/antes/curso.js",
+      "sha256": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "bytes": 105476,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/antes/e1-termodinamica.html",
+      "sha256": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "bytes": 1270749,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/antes/inventario-questoes.json",
+      "sha256": "af30160109fa7e9e007e6de74eb1836896194ff90888aec75e0f8a4a86675618",
+      "bytes": 748555,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/antes/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "bytes": 27032,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/LEITURA_DECISOES-r1.md",
+      "sha256": "1f26ce60ac11d05d13a285165d47d3eb19aa7f6a3c7f8d7db45329ecbe840fcb",
+      "bytes": 6529,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/atualizar-inventario-r1.mjs",
+      "sha256": "4fef2efe20f28a298d799744f19fa770538412a067a58f19d71837e51926fad0",
+      "bytes": 10612,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/comportamento-r1.json",
+      "sha256": "7094a7244f86f80b2942ceb03426a22a05e56225a54ac9a939abb5834e0cc92d",
+      "bytes": 1919,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/conferencia-visual-complementar-coordenador-r1.json",
+      "sha256": "5b8ca0b47b916a9107521dccd533ce4664645b32f10f4d3281b5470412d8a22a",
+      "bytes": 4747,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/conferencia-visual-coordenador-r1.json",
+      "sha256": "4c6abb4dca52189707053ae6dc55bb1f9e63a21e95dcd7d1127ba84e66654fc8",
+      "bytes": 8688,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/conferencia-visual-cr51-cr80-coordenador-r1.json",
+      "sha256": "b4d5deb7264a777b2f5249c25fd57809b796cc9608850e2b4aabe1be8a8371ae",
+      "bytes": 5534,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/contraprova-cr79-coordenador-r1.json",
+      "sha256": "10dbb1e1e55314a2598aad58d093814090f57097294289c62e2f859d5a2f37d0",
+      "bytes": 3250,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr04-gabarito-oficial-r1.pdf",
+      "sha256": "62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8",
+      "bytes": 47866,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr04-gabarito-p1-r1.png",
+      "sha256": "518a6ca7c92c4a9f1c1ab7ea9545282b27644725587d7ceb14e78a9775f44523",
+      "bytes": 200762,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr04-prova-oficial-r1.pdf",
+      "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+      "bytes": 213922,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr04-prova-p1-r1.png",
+      "sha256": "b14753c62db4280062df46f7c03d0397865b526ae18f132122e8b0bc17c77045",
+      "bytes": 961869,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr09-gabarito-oficial-r1.pdf",
+      "sha256": "7ec433277a8229d31c145b09fcefa3dacbc53c49bfcff4617e9782623241d45e",
+      "bytes": 47436,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr09-gabarito-p1-r1.png",
+      "sha256": "700f91c8bbed672a8d43b7a9377e6e8d0900e1d26b4bec4d7e921152b93796bc",
+      "bytes": 190870,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr09-prova-oficial-r1.pdf",
+      "sha256": "ff13fb949d16969fb9b5cff2802a04e00a7673425d61be5efb5252c4a7b64c6a",
+      "bytes": 294336,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr09-prova-p1-r1.png",
+      "sha256": "ec5bfac8c2232ba495bc592346ce475811adbba620528151855d2a35f2a32038",
+      "bytes": 876480,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr24-gabarito-oficial-r1.pdf",
+      "sha256": "0b5abca04a6892f48c7541018106445f6619f5f5863e061f631f0249899795e3",
+      "bytes": 35342,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr24-gabarito-p1-r1.png",
+      "sha256": "64233fb2c8516238cf95fb083f0f2c3b029c181c173d517990f7194d5a4e18f3",
+      "bytes": 257070,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr24-prova-oficial-r1.pdf",
+      "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79",
+      "bytes": 206182,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr24-prova-p1-r1.png",
+      "sha256": "5726776fa459fea543551975ba19390759804f9349db78d322d141ecf0b9940e",
+      "bytes": 955309,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr51-gabarito-oficial-r1.pdf",
+      "sha256": "680734f6b47d1381d312a1792ec4818d034812d02661ed1933f477697b399a78",
+      "bytes": 47264,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr51-gabarito-p1-r1.png",
+      "sha256": "5354d888433c07f5914d0ea4f5167444319b4ec9d60effa5b32990be304b96e1",
+      "bytes": 189044,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr51-prova-oficial-r1.pdf",
+      "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+      "bytes": 266640,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr51-prova-p4-r1.png",
+      "sha256": "172418c3980590a716b199e877afb4816a4bb8cfbf44cac48b2046bd95ff385a",
+      "bytes": 231545,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr55-gabarito-oficial-r1.pdf",
+      "sha256": "1ebd87b8d6d1cd8a679b575de3a0e901d1283c8b6b92e7a916e775d7cdeb9f7d",
+      "bytes": 47458,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr55-gabarito-p1-r1.png",
+      "sha256": "fa0e23196c92db5e96e8bcd2ae71f4a1ca4e59a1190d1125fd966ad5bfd952d0",
+      "bytes": 190135,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr55-prova-oficial-r1.pdf",
+      "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+      "bytes": 341400,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr55-prova-p1-r1.png",
+      "sha256": "6856acd6be7063fb436a35323eaa71b05a74514c988aba7a174d0b1f24aadfa5",
+      "bytes": 944556,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr79-gabarito-oficial-r1.pdf",
+      "sha256": "52ff779aca0042f68c4f24f6a5ef615cb4c259c070962ae1bfbb8a9e55a1358b",
+      "bytes": 482886,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr79-gabarito-p4-r1.png",
+      "sha256": "b57200adb4e746b3bd9b13dde31ddac323ebde4007ad3492dbe8cb071f7dcf96",
+      "bytes": 356220,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr79-prova-oficial-r1.pdf",
+      "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+      "bytes": 398389,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr79-prova-p8-r1.png",
+      "sha256": "9322ad945639ab65ce8bd9d36e140ecd873f09095e67d2a6643270b452946ff9",
+      "bytes": 500476,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr80-gabarito-oficial-r1.pdf",
+      "sha256": "2cbc3da0947186e5e9e998151fb887b47852c46837a4c03a3e7a3cc547349456",
+      "bytes": 205552,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr80-gabarito-p1-r1.png",
+      "sha256": "131a7d7937b3c7b84b88a1c15de35223c9e1b4e2364cb07ab5cb24e24e88e1c3",
+      "bytes": 315903,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr80-justificativa-p5-r1.png",
+      "sha256": "0202fce968712cf11b97eced7f30df173423722cd8e5e297975c550799ed6ce4",
+      "bytes": 1028003,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr80-prova-oficial-r1.pdf",
+      "sha256": "84ae0602e23691a27529b1f96e7c58803ad82982550301724345cb0b5d690df5",
+      "bytes": 651707,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/cr80-prova-p4-r1.png",
+      "sha256": "668dea18d93cd0d48d4e0f064026c059cb1938424f365775026699efbf2678ef",
+      "bytes": 1042350,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r1.json",
+      "sha256": "9624fa164d6cb564f5758a3af1b3ff3866710ddb0a26cea830ebcc3e8c1243f3",
+      "bytes": 32256,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/delta-html-r1.json",
+      "sha256": "ee27d3bc129a70536bb2794199ff8484fe53efc3318f983d13539a308afa68cd",
+      "bytes": 126394,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/delta-inventario-r1.json",
+      "sha256": "671de254d5b8d56dfeafb96fb66233d335ffb09e97a80d3a16272e7b4d02b9ec",
+      "bytes": 83253,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/delta-js-r1.json",
+      "sha256": "71e9222be83c04af7dbe9216ca90d15754533db461c7ba472ff4e48f60619008",
+      "bytes": 2860,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/documentos-coordenador-r1.json",
+      "sha256": "aa39e68bd3d8fc9f46105f860ea09340e167f2ed022bfe8cc73c2530f29e426c",
+      "bytes": 3388,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/documentos-cr04-coordenador-r1.json",
+      "sha256": "5197179a6ff2098d25cd6aa3cffe7d6d49ec48fe74b392e16ec3a546ed90ddcb",
+      "bytes": 876,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/documentos-cr51-cr80-coordenador-r1.json",
+      "sha256": "89f337d828ab42afd2d162e5af15fd5d22ba86b1ef965617eaddef38d82e0dd5",
+      "bytes": 1731,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/e1-termodinamica.r1.html",
+      "sha256": "3839c7ba2e473ee9e5b3cdff80ea64242471b83b961eb117cee5a6918c884ae1",
+      "bytes": 1301577,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/integrar-r1.mjs",
+      "sha256": "dbbdbcc8f3337aca2feb2558442f5eb30bcd0a79319ebc96c8f9ead9099ac7c4",
+      "bytes": 22753,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/metadados-criticos-apoio-r1.json",
+      "sha256": "d25c19a3fcc7302216df291a8533ed92e118ee86f9d6e658cd3263e45209969a",
+      "bytes": 19719,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/navegador-coordenador-r1.md",
+      "sha256": "e5566be6743d27dc2838222d5ebe2f285e95ac911d8076d1798efbd2773b8ae6",
+      "bytes": 4173,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/plano-r1.md",
+      "sha256": "090b3026bcc8c1f00cca424645ac266fc1e55a66bbfd65954bae204f5612c5eb",
+      "bytes": 2181,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/reconstrucao-deltas-r1.json",
+      "sha256": "0653ece7ad3b7db6162e7d777e6b384148a95face50f78a86eaf06505e2e313b",
+      "bytes": 643,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/registros-alterados-r1.json",
+      "sha256": "5af3a7ac1b485864cb857e9fe966e78e6b6dc5c383ad86f51d2ab67a751ff780",
+      "bytes": 78701,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/renderizacao-coordenador-r1.json",
+      "sha256": "d5436fbf84ba2b98ff91f2dad80029f2706676f01b1fcef9f6f5e42e47320d31",
+      "bytes": 2490,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/renderizacao-cr04-coordenador-r1.json",
+      "sha256": "ec2126d66147b2cbc61666121684e0262e64ff77bd2799187b3b80408d27e492",
+      "bytes": 628,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/renderizacao-cr51-cr80-coordenador-r1.json",
+      "sha256": "128776f38a72c4a8c2bab6dbeba6a0917785d86e763fe19cc02a00cb375a6475",
+      "bytes": 1249,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/renderizacao-cr80-justificativa-coordenador-r1.json",
+      "sha256": "1d21924c5ca9125f3d3622f2f72e6f6d41d51cec19c575c921f5da236ad507f2",
+      "bytes": 262,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/snapshot-antes.json",
+      "sha256": "9005ac48d5f5d65cac78cf12330aa828d6d2866ddf7dd9d3198e993eeacfaa99",
+      "bytes": 1336,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/testar-comportamento-r1.mjs",
+      "sha256": "ab02e7c497b2cbda081b1aa1ca845f6427a3f1143120b8ad0e7e41579dad09e9",
+      "bytes": 7511,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/triagem-apoio-r1.json",
+      "sha256": "919e7396768f604b3c2590dfe0193f1ebb3bd31b1cf2e1e9b610e58960b73099",
+      "bytes": 80223,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/triagem-apoio-r1.md",
+      "sha256": "62c46f6fa689c1d58f746faaa45b83b496cc97cb05f9f7bedb4199695d8b6d6b",
+      "bytes": 42742,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/validacao-inventario-r1.json",
+      "sha256": "e9c0b27c4fb03f378c89955d088604acb42ad2935f1cffbbb5ff2006e57bf4e7",
+      "bytes": 333,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/verificacao-r1.json",
+      "sha256": "41053d6994d33c98ba399223b7f769013094ab67592ba2e7b8e20712eeb5d937",
+      "bytes": 68908,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/verificar-r1.mjs",
+      "sha256": "807c9b4a7b5b228d3af8eec79710c8f43713c06cad5e58ea382fd472040a453e",
+      "bytes": 5705,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-10-r1.md",
+      "sha256": "9706823fa8c4555f045a53c3177725f4a77103ad302ef239774a2279b547a894",
+      "bytes": 5094,
+      "confere": true
+    }
+  ],
+  "execucao_entregue": {
+    "metodo": "Scripts verificar-r1.mjs e testar-comportamento-r1.mjs lidos antes da importação. Kernel Node REPL reiniciado. Nenhum script de integração/atualização de produto executado.",
+    "coincide_integralmente_com_evidencia_salva": true,
+    "resultado": {
+      "id": "BAN-10",
+      "rodada": 1,
+      "ok": true,
+      "verificacoes": 589,
+      "checks": [
+        {
+          "nome": "197 artigos/IDs e ausência de duplicação de IDs",
+          "ok": true
+        },
+        {
+          "nome": "triagem individual cobre exatamente197 da base",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun01-e1-saturacao",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun01-e1-mistura",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun01-e1-supercritico",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun01-e1-equilibrio",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun02-e1-caminhos",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun02-e1-integrabilidade",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado fun02-e1-calor-caminho",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado q-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-68",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado cr-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original cr-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-68",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-68",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "artigo preservado av-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "identidade semântica original av-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "nove exclusões e71 pontuáveis no CR",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "roteiro e autocorreção sem nota cr-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "retenção deliberada cr-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "retenção deliberada cr-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "retenção deliberada cr-e1-68",
+          "ok": true
+        },
+        {
+          "nome": "FON09 conteúdo integral preservado cr-e1-68-dados-corrigidos",
+          "ok": true
+        },
+        {
+          "nome": "FON09 conteúdo integral preservado cr-e1-68-transcricao",
+          "ok": true
+        },
+        {
+          "nome": "arquivo compartilhado intacto assets/registro.js",
+          "ok": true
+        },
+        {
+          "nome": "arquivo compartilhado intacto assets/curso.css",
+          "ok": true
+        },
+        {
+          "nome": "dados FON09 intactos",
+          "ok": true
+        },
+        {
+          "nome": "JS restrito a iniciarBanco",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado q-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado cr-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-01",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-02",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-03",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-05",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-06",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-07",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-08",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-10",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-11",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-12",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-13",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-14",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-15",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-16",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-17",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-18",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-19",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-20",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-21",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-22",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-23",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-25",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-26",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-27",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-28",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-29",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-30",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-31",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-32",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-33",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-36",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-37",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-38",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-40",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-41",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-42",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-43",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-44",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-45",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-46",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-47",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-48",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-49",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-50",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-52",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-53",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-54",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-56",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-57",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-58",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-59",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-60",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-61",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-63",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-64",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-65",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-66",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-67",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-68",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-69",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-70",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-71",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-72",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-73",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-74",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-75",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-76",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-77",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-78",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado av-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun01-e1-saturacao",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun01-e1-mistura",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun01-e1-supercritico",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun01-e1-equilibrio",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun02-e1-caminhos",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun02-e1-integrabilidade",
+          "ok": true
+        },
+        {
+          "nome": "registro preservado fun02-e1-calor-caminho",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-04",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-04 downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-04 downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-09",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-09 downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-09 downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-24",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-24 downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-24 downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-34",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-34 downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-34 downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-35",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-35 downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-35 downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-39",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-39 downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-39 downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-51",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-51 downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-51 downloads/termodinamica/gabaritos/2023-10-15_tbg-engenheiro-junior-operacoes_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-55",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-55 downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-55 downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-62",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-62 downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-62 downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-68",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-68 downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-68 downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-79",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-79 downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-79 downloads/termodinamica/gabaritos/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "hash da decisão sincronizado cr-e1-80",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-80 downloads/termodinamica/provas/2025-06-22_caesb-engenheiro-mecanico_prova-com-justificativas.pdf",
+          "ok": true
+        },
+        {
+          "nome": "documento conferido cr-e1-80 downloads/termodinamica/gabaritos/2025-06-22_caesb-engenheiro-mecanico_gabarito.pdf",
+          "ok": true
+        },
+        {
+          "nome": "validador canônico limpo",
+          "ok": true
+        },
+        {
+          "nome": "comportamento dinâmico",
+          "ok": true
+        }
+      ],
+      "identidades_bancos": [
+        {
+          "id": "cr-e1-01",
+          "digital_antes": "7b9e5b47",
+          "digital_depois": "7b9e5b47"
+        },
+        {
+          "id": "cr-e1-02",
+          "digital_antes": "292a9326",
+          "digital_depois": "292a9326"
+        },
+        {
+          "id": "cr-e1-03",
+          "digital_antes": "2a41d243",
+          "digital_depois": "2a41d243"
+        },
+        {
+          "id": "cr-e1-04",
+          "digital_antes": "c0741a43",
+          "digital_depois": "c0741a43"
+        },
+        {
+          "id": "cr-e1-05",
+          "digital_antes": "d43ba70e",
+          "digital_depois": "d43ba70e"
+        },
+        {
+          "id": "cr-e1-06",
+          "digital_antes": "01aa3697",
+          "digital_depois": "01aa3697"
+        },
+        {
+          "id": "cr-e1-07",
+          "digital_antes": "26f34f1b",
+          "digital_depois": "26f34f1b"
+        },
+        {
+          "id": "cr-e1-08",
+          "digital_antes": "252ec8b7",
+          "digital_depois": "252ec8b7"
+        },
+        {
+          "id": "cr-e1-09",
+          "digital_antes": "9e781405",
+          "digital_depois": "9e781405"
+        },
+        {
+          "id": "cr-e1-10",
+          "digital_antes": "bb5ae3bb",
+          "digital_depois": "bb5ae3bb"
+        },
+        {
+          "id": "cr-e1-11",
+          "digital_antes": "4667c66a",
+          "digital_depois": "4667c66a"
+        },
+        {
+          "id": "cr-e1-12",
+          "digital_antes": "42d8dd0f",
+          "digital_depois": "42d8dd0f"
+        },
+        {
+          "id": "cr-e1-13",
+          "digital_antes": "597b4f61",
+          "digital_depois": "597b4f61"
+        },
+        {
+          "id": "cr-e1-14",
+          "digital_antes": "5be8d995",
+          "digital_depois": "5be8d995"
+        },
+        {
+          "id": "cr-e1-15",
+          "digital_antes": "09fe87eb",
+          "digital_depois": "09fe87eb"
+        },
+        {
+          "id": "cr-e1-16",
+          "digital_antes": "d737f61f",
+          "digital_depois": "d737f61f"
+        },
+        {
+          "id": "cr-e1-17",
+          "digital_antes": "5f872e60",
+          "digital_depois": "5f872e60"
+        },
+        {
+          "id": "cr-e1-18",
+          "digital_antes": "d80afa6a",
+          "digital_depois": "d80afa6a"
+        },
+        {
+          "id": "cr-e1-19",
+          "digital_antes": "6ae45800",
+          "digital_depois": "6ae45800"
+        },
+        {
+          "id": "cr-e1-20",
+          "digital_antes": "0676dd32",
+          "digital_depois": "0676dd32"
+        },
+        {
+          "id": "cr-e1-21",
+          "digital_antes": "a83d55b1",
+          "digital_depois": "a83d55b1"
+        },
+        {
+          "id": "cr-e1-22",
+          "digital_antes": "88f92984",
+          "digital_depois": "88f92984"
+        },
+        {
+          "id": "cr-e1-23",
+          "digital_antes": "8d573f44",
+          "digital_depois": "8d573f44"
+        },
+        {
+          "id": "cr-e1-24",
+          "digital_antes": "14647883",
+          "digital_depois": "14647883"
+        },
+        {
+          "id": "cr-e1-25",
+          "digital_antes": "19566fe0",
+          "digital_depois": "19566fe0"
+        },
+        {
+          "id": "cr-e1-26",
+          "digital_antes": "988714ce",
+          "digital_depois": "988714ce"
+        },
+        {
+          "id": "cr-e1-27",
+          "digital_antes": "2a65b7dc",
+          "digital_depois": "2a65b7dc"
+        },
+        {
+          "id": "cr-e1-28",
+          "digital_antes": "e0eeb8d1",
+          "digital_depois": "e0eeb8d1"
+        },
+        {
+          "id": "cr-e1-29",
+          "digital_antes": "920c7469",
+          "digital_depois": "920c7469"
+        },
+        {
+          "id": "cr-e1-30",
+          "digital_antes": "45e3259b",
+          "digital_depois": "45e3259b"
+        },
+        {
+          "id": "cr-e1-31",
+          "digital_antes": "75a6fc17",
+          "digital_depois": "75a6fc17"
+        },
+        {
+          "id": "cr-e1-32",
+          "digital_antes": "aa41cb14",
+          "digital_depois": "aa41cb14"
+        },
+        {
+          "id": "cr-e1-33",
+          "digital_antes": "6bcf8baa",
+          "digital_depois": "6bcf8baa"
+        },
+        {
+          "id": "cr-e1-34",
+          "digital_antes": "9f650f2d",
+          "digital_depois": "9f650f2d"
+        },
+        {
+          "id": "cr-e1-35",
+          "digital_antes": "4da84a58",
+          "digital_depois": "4da84a58"
+        },
+        {
+          "id": "cr-e1-36",
+          "digital_antes": "9c9594d9",
+          "digital_depois": "9c9594d9"
+        },
+        {
+          "id": "cr-e1-37",
+          "digital_antes": "92bbdda7",
+          "digital_depois": "92bbdda7"
+        },
+        {
+          "id": "cr-e1-38",
+          "digital_antes": "2c2ecfd7",
+          "digital_depois": "2c2ecfd7"
+        },
+        {
+          "id": "cr-e1-39",
+          "digital_antes": "c85caeb2",
+          "digital_depois": "c85caeb2"
+        },
+        {
+          "id": "cr-e1-40",
+          "digital_antes": "4318e8ea",
+          "digital_depois": "4318e8ea"
+        },
+        {
+          "id": "cr-e1-41",
+          "digital_antes": "3dbc98e7",
+          "digital_depois": "3dbc98e7"
+        },
+        {
+          "id": "cr-e1-42",
+          "digital_antes": "08d305fe",
+          "digital_depois": "08d305fe"
+        },
+        {
+          "id": "cr-e1-43",
+          "digital_antes": "bcab3db5",
+          "digital_depois": "bcab3db5"
+        },
+        {
+          "id": "cr-e1-44",
+          "digital_antes": "60641e5c",
+          "digital_depois": "60641e5c"
+        },
+        {
+          "id": "cr-e1-45",
+          "digital_antes": "c084d78c",
+          "digital_depois": "c084d78c"
+        },
+        {
+          "id": "cr-e1-46",
+          "digital_antes": "34e6b8c4",
+          "digital_depois": "34e6b8c4"
+        },
+        {
+          "id": "cr-e1-47",
+          "digital_antes": "b9424092",
+          "digital_depois": "b9424092"
+        },
+        {
+          "id": "cr-e1-48",
+          "digital_antes": "5d2152e9",
+          "digital_depois": "5d2152e9"
+        },
+        {
+          "id": "cr-e1-49",
+          "digital_antes": "f7579983",
+          "digital_depois": "f7579983"
+        },
+        {
+          "id": "cr-e1-50",
+          "digital_antes": "2d521039",
+          "digital_depois": "2d521039"
+        },
+        {
+          "id": "cr-e1-51",
+          "digital_antes": "53f66207",
+          "digital_depois": "53f66207"
+        },
+        {
+          "id": "cr-e1-52",
+          "digital_antes": "12063740",
+          "digital_depois": "12063740"
+        },
+        {
+          "id": "cr-e1-53",
+          "digital_antes": "79d8c686",
+          "digital_depois": "79d8c686"
+        },
+        {
+          "id": "cr-e1-54",
+          "digital_antes": "bdc8bfce",
+          "digital_depois": "bdc8bfce"
+        },
+        {
+          "id": "cr-e1-55",
+          "digital_antes": "03f7a439",
+          "digital_depois": "03f7a439"
+        },
+        {
+          "id": "cr-e1-56",
+          "digital_antes": "48442042",
+          "digital_depois": "48442042"
+        },
+        {
+          "id": "cr-e1-57",
+          "digital_antes": "5e13d7f6",
+          "digital_depois": "5e13d7f6"
+        },
+        {
+          "id": "cr-e1-58",
+          "digital_antes": "77865bd0",
+          "digital_depois": "77865bd0"
+        },
+        {
+          "id": "cr-e1-59",
+          "digital_antes": "6b73af2b",
+          "digital_depois": "6b73af2b"
+        },
+        {
+          "id": "cr-e1-60",
+          "digital_antes": "d994670e",
+          "digital_depois": "d994670e"
+        },
+        {
+          "id": "cr-e1-61",
+          "digital_antes": "6312db0f",
+          "digital_depois": "6312db0f"
+        },
+        {
+          "id": "cr-e1-62",
+          "digital_antes": "852aa2be",
+          "digital_depois": "852aa2be"
+        },
+        {
+          "id": "cr-e1-63",
+          "digital_antes": "c8054f33",
+          "digital_depois": "c8054f33"
+        },
+        {
+          "id": "cr-e1-64",
+          "digital_antes": "c50500de",
+          "digital_depois": "c50500de"
+        },
+        {
+          "id": "cr-e1-65",
+          "digital_antes": "027ff3a7",
+          "digital_depois": "027ff3a7"
+        },
+        {
+          "id": "cr-e1-66",
+          "digital_antes": "b580499d",
+          "digital_depois": "b580499d"
+        },
+        {
+          "id": "cr-e1-67",
+          "digital_antes": "27513c71",
+          "digital_depois": "27513c71"
+        },
+        {
+          "id": "cr-e1-68",
+          "digital_antes": "f78a5342",
+          "digital_depois": "f78a5342"
+        },
+        {
+          "id": "cr-e1-69",
+          "digital_antes": "bff641e6",
+          "digital_depois": "bff641e6"
+        },
+        {
+          "id": "cr-e1-70",
+          "digital_antes": "ddc13353",
+          "digital_depois": "ddc13353"
+        },
+        {
+          "id": "cr-e1-71",
+          "digital_antes": "69a7bd4d",
+          "digital_depois": "69a7bd4d"
+        },
+        {
+          "id": "cr-e1-72",
+          "digital_antes": "32dcae11",
+          "digital_depois": "32dcae11"
+        },
+        {
+          "id": "cr-e1-73",
+          "digital_antes": "cea77433",
+          "digital_depois": "cea77433"
+        },
+        {
+          "id": "cr-e1-74",
+          "digital_antes": "0b143bc4",
+          "digital_depois": "0b143bc4"
+        },
+        {
+          "id": "cr-e1-75",
+          "digital_antes": "a5c8b572",
+          "digital_depois": "a5c8b572"
+        },
+        {
+          "id": "cr-e1-76",
+          "digital_antes": "fae21dd8",
+          "digital_depois": "fae21dd8"
+        },
+        {
+          "id": "cr-e1-77",
+          "digital_antes": "5385d05a",
+          "digital_depois": "5385d05a"
+        },
+        {
+          "id": "cr-e1-78",
+          "digital_antes": "7fe9b256",
+          "digital_depois": "7fe9b256"
+        },
+        {
+          "id": "cr-e1-79",
+          "digital_antes": "535af6d2",
+          "digital_depois": "535af6d2"
+        },
+        {
+          "id": "cr-e1-80",
+          "digital_antes": "16584b04",
+          "digital_depois": "16584b04"
+        },
+        {
+          "id": "av-e1-01",
+          "digital_antes": "878e5f74",
+          "digital_depois": "878e5f74"
+        },
+        {
+          "id": "av-e1-02",
+          "digital_antes": "7ab5dfb7",
+          "digital_depois": "7ab5dfb7"
+        },
+        {
+          "id": "av-e1-03",
+          "digital_antes": "5bd6a31f",
+          "digital_depois": "5bd6a31f"
+        },
+        {
+          "id": "av-e1-04",
+          "digital_antes": "8eaed3f8",
+          "digital_depois": "8eaed3f8"
+        },
+        {
+          "id": "av-e1-05",
+          "digital_antes": "3a84629d",
+          "digital_depois": "3a84629d"
+        },
+        {
+          "id": "av-e1-06",
+          "digital_antes": "5c7db566",
+          "digital_depois": "5c7db566"
+        },
+        {
+          "id": "av-e1-07",
+          "digital_antes": "069a2f6a",
+          "digital_depois": "069a2f6a"
+        },
+        {
+          "id": "av-e1-08",
+          "digital_antes": "c3fb6201",
+          "digital_depois": "c3fb6201"
+        },
+        {
+          "id": "av-e1-09",
+          "digital_antes": "f65fb55a",
+          "digital_depois": "f65fb55a"
+        },
+        {
+          "id": "av-e1-10",
+          "digital_antes": "608b889f",
+          "digital_depois": "608b889f"
+        },
+        {
+          "id": "av-e1-11",
+          "digital_antes": "845f69d8",
+          "digital_depois": "845f69d8"
+        },
+        {
+          "id": "av-e1-12",
+          "digital_antes": "28578c3f",
+          "digital_depois": "28578c3f"
+        },
+        {
+          "id": "av-e1-13",
+          "digital_antes": "8e99bf0d",
+          "digital_depois": "8e99bf0d"
+        },
+        {
+          "id": "av-e1-14",
+          "digital_antes": "a7d166c4",
+          "digital_depois": "a7d166c4"
+        },
+        {
+          "id": "av-e1-15",
+          "digital_antes": "23ab8c66",
+          "digital_depois": "23ab8c66"
+        },
+        {
+          "id": "av-e1-16",
+          "digital_antes": "42f58de8",
+          "digital_depois": "42f58de8"
+        },
+        {
+          "id": "av-e1-17",
+          "digital_antes": "c1bd3f6e",
+          "digital_depois": "c1bd3f6e"
+        },
+        {
+          "id": "av-e1-18",
+          "digital_antes": "64829dfa",
+          "digital_depois": "64829dfa"
+        },
+        {
+          "id": "av-e1-19",
+          "digital_antes": "aefb62c1",
+          "digital_depois": "aefb62c1"
+        },
+        {
+          "id": "av-e1-20",
+          "digital_antes": "45fb98f1",
+          "digital_depois": "45fb98f1"
+        },
+        {
+          "id": "av-e1-21",
+          "digital_antes": "dbfbff40",
+          "digital_depois": "dbfbff40"
+        },
+        {
+          "id": "av-e1-22",
+          "digital_antes": "faeb1457",
+          "digital_depois": "faeb1457"
+        },
+        {
+          "id": "av-e1-23",
+          "digital_antes": "fab6864c",
+          "digital_depois": "fab6864c"
+        },
+        {
+          "id": "av-e1-24",
+          "digital_antes": "76003cb8",
+          "digital_depois": "76003cb8"
+        },
+        {
+          "id": "av-e1-25",
+          "digital_antes": "45748f67",
+          "digital_depois": "45748f67"
+        },
+        {
+          "id": "av-e1-26",
+          "digital_antes": "3427b795",
+          "digital_depois": "3427b795"
+        },
+        {
+          "id": "av-e1-27",
+          "digital_antes": "2f0e77b6",
+          "digital_depois": "2f0e77b6"
+        },
+        {
+          "id": "av-e1-28",
+          "digital_antes": "70576824",
+          "digital_depois": "70576824"
+        },
+        {
+          "id": "av-e1-29",
+          "digital_antes": "7149ca82",
+          "digital_depois": "7149ca82"
+        },
+        {
+          "id": "av-e1-30",
+          "digital_antes": "730e9aaa",
+          "digital_depois": "730e9aaa"
+        },
+        {
+          "id": "av-e1-31",
+          "digital_antes": "4538caee",
+          "digital_depois": "4538caee"
+        },
+        {
+          "id": "av-e1-32",
+          "digital_antes": "66d3f018",
+          "digital_depois": "66d3f018"
+        },
+        {
+          "id": "av-e1-33",
+          "digital_antes": "e45e78ba",
+          "digital_depois": "e45e78ba"
+        },
+        {
+          "id": "av-e1-34",
+          "digital_antes": "eb584075",
+          "digital_depois": "eb584075"
+        },
+        {
+          "id": "av-e1-35",
+          "digital_antes": "37b563fd",
+          "digital_depois": "37b563fd"
+        },
+        {
+          "id": "av-e1-36",
+          "digital_antes": "85e3066f",
+          "digital_depois": "85e3066f"
+        },
+        {
+          "id": "av-e1-37",
+          "digital_antes": "00492381",
+          "digital_depois": "00492381"
+        },
+        {
+          "id": "av-e1-38",
+          "digital_antes": "2de9d3b5",
+          "digital_depois": "2de9d3b5"
+        },
+        {
+          "id": "av-e1-39",
+          "digital_antes": "a37c00fc",
+          "digital_depois": "a37c00fc"
+        },
+        {
+          "id": "av-e1-40",
+          "digital_antes": "9ded863f",
+          "digital_depois": "9ded863f"
+        },
+        {
+          "id": "av-e1-41",
+          "digital_antes": "d55e7169",
+          "digital_depois": "d55e7169"
+        },
+        {
+          "id": "av-e1-42",
+          "digital_antes": "d0b32333",
+          "digital_depois": "d0b32333"
+        },
+        {
+          "id": "av-e1-43",
+          "digital_antes": "7361a51e",
+          "digital_depois": "7361a51e"
+        },
+        {
+          "id": "av-e1-44",
+          "digital_antes": "9c08d4fc",
+          "digital_depois": "9c08d4fc"
+        },
+        {
+          "id": "av-e1-45",
+          "digital_antes": "33788e23",
+          "digital_depois": "33788e23"
+        },
+        {
+          "id": "av-e1-46",
+          "digital_antes": "870d6691",
+          "digital_depois": "870d6691"
+        },
+        {
+          "id": "av-e1-47",
+          "digital_antes": "5863db3a",
+          "digital_depois": "5863db3a"
+        },
+        {
+          "id": "av-e1-48",
+          "digital_antes": "333e4530",
+          "digital_depois": "333e4530"
+        },
+        {
+          "id": "av-e1-49",
+          "digital_antes": "b8a315a0",
+          "digital_depois": "b8a315a0"
+        },
+        {
+          "id": "av-e1-50",
+          "digital_antes": "9296b58f",
+          "digital_depois": "9296b58f"
+        },
+        {
+          "id": "av-e1-51",
+          "digital_antes": "ca8ab0d4",
+          "digital_depois": "ca8ab0d4"
+        },
+        {
+          "id": "av-e1-52",
+          "digital_antes": "d95e6b2d",
+          "digital_depois": "d95e6b2d"
+        },
+        {
+          "id": "av-e1-53",
+          "digital_antes": "2fa9b641",
+          "digital_depois": "2fa9b641"
+        },
+        {
+          "id": "av-e1-54",
+          "digital_antes": "35178434",
+          "digital_depois": "35178434"
+        },
+        {
+          "id": "av-e1-55",
+          "digital_antes": "e683a7b4",
+          "digital_depois": "e683a7b4"
+        },
+        {
+          "id": "av-e1-56",
+          "digital_antes": "c1a51dd5",
+          "digital_depois": "c1a51dd5"
+        },
+        {
+          "id": "av-e1-57",
+          "digital_antes": "b093b252",
+          "digital_depois": "b093b252"
+        },
+        {
+          "id": "av-e1-58",
+          "digital_antes": "efdf6680",
+          "digital_depois": "efdf6680"
+        },
+        {
+          "id": "av-e1-59",
+          "digital_antes": "4ec65c81",
+          "digital_depois": "4ec65c81"
+        },
+        {
+          "id": "av-e1-60",
+          "digital_antes": "cb7fec99",
+          "digital_depois": "cb7fec99"
+        },
+        {
+          "id": "av-e1-61",
+          "digital_antes": "b732f0fa",
+          "digital_depois": "b732f0fa"
+        },
+        {
+          "id": "av-e1-62",
+          "digital_antes": "ed91f6ac",
+          "digital_depois": "ed91f6ac"
+        },
+        {
+          "id": "av-e1-63",
+          "digital_antes": "ee6db666",
+          "digital_depois": "ee6db666"
+        },
+        {
+          "id": "av-e1-64",
+          "digital_antes": "eeb68857",
+          "digital_depois": "eeb68857"
+        },
+        {
+          "id": "av-e1-65",
+          "digital_antes": "a37123c3",
+          "digital_depois": "a37123c3"
+        },
+        {
+          "id": "av-e1-66",
+          "digital_antes": "5f7a8ab9",
+          "digital_depois": "5f7a8ab9"
+        },
+        {
+          "id": "av-e1-67",
+          "digital_antes": "54adae3c",
+          "digital_depois": "54adae3c"
+        },
+        {
+          "id": "av-e1-68",
+          "digital_antes": "7c48b21e",
+          "digital_depois": "7c48b21e"
+        },
+        {
+          "id": "av-e1-69",
+          "digital_antes": "13da8621",
+          "digital_depois": "13da8621"
+        },
+        {
+          "id": "av-e1-70",
+          "digital_antes": "c969142c",
+          "digital_depois": "c969142c"
+        },
+        {
+          "id": "av-e1-71",
+          "digital_antes": "0c91434f",
+          "digital_depois": "0c91434f"
+        },
+        {
+          "id": "av-e1-72",
+          "digital_antes": "190b458c",
+          "digital_depois": "190b458c"
+        },
+        {
+          "id": "av-e1-73",
+          "digital_antes": "64bb73f3",
+          "digital_depois": "64bb73f3"
+        },
+        {
+          "id": "av-e1-74",
+          "digital_antes": "d6173cb0",
+          "digital_depois": "d6173cb0"
+        },
+        {
+          "id": "av-e1-75",
+          "digital_antes": "0f1d94bd",
+          "digital_depois": "0f1d94bd"
+        },
+        {
+          "id": "av-e1-76",
+          "digital_antes": "bec97cf5",
+          "digital_depois": "bec97cf5"
+        },
+        {
+          "id": "av-e1-77",
+          "digital_antes": "9c0dee43",
+          "digital_depois": "9c0dee43"
+        },
+        {
+          "id": "av-e1-78",
+          "digital_antes": "18a15426",
+          "digital_depois": "18a15426"
+        },
+        {
+          "id": "av-e1-79",
+          "digital_antes": "f1f15b88",
+          "digital_depois": "f1f15b88"
+        },
+        {
+          "id": "av-e1-80",
+          "digital_antes": "e26e6614",
+          "digital_depois": "e26e6614"
+        }
+      ],
+      "validacao": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 197,
+        "artigos_encontrados": 197,
+        "recursos_verificados": 29,
+        "links_locais_verificados": 1166,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      },
+      "comportamento": {
+        "id": "BAN-10",
+        "rodada": 1,
+        "ok": true,
+        "verificacoes": 18,
+        "checks": [
+          {
+            "nome": "sem resposta: denominador exclui crítico",
+            "ok": true
+          },
+          {
+            "nome": "concordância crítica não vira acerto",
+            "ok": true
+          },
+          {
+            "nome": "feedback crítico concordante e neutro",
+            "ok": true
+          },
+          {
+            "nome": "crítico preserva marcação e abre análise",
+            "ok": true
+          },
+          {
+            "nome": "regular entra no numerador e denominador",
+            "ok": true
+          },
+          {
+            "nome": "feedback regular preservado",
+            "ok": true
+          },
+          {
+            "nome": "refazer crítico não apaga regular",
+            "ok": true
+          },
+          {
+            "nome": "divergência crítica não vira erro",
+            "ok": true
+          },
+          {
+            "nome": "filtro pendentes respeita ambas marcações",
+            "ok": true
+          },
+          {
+            "nome": "link direto revela crítico e limpa filtros",
+            "ok": true
+          },
+          {
+            "nome": "busca não altera agregados",
+            "ok": true
+          },
+          {
+            "nome": "resposta antiga crítica reclassificada ao carregar",
+            "ok": true
+          },
+          {
+            "nome": "resposta histórica não reconhecida preservada na gravação",
+            "ok": true
+          },
+          {
+            "nome": "sincronização outra aba aplica exclusão",
+            "ok": true
+          },
+          {
+            "nome": "armazenamento negado mantém exclusão local e aviso",
+            "ok": true
+          },
+          {
+            "nome": "banco só crítico não inventa denominador/percentual",
+            "ok": true
+          },
+          {
+            "nome": "outro módulo ignora marcador E1 e mantém resultado",
+            "ok": true
+          },
+          {
+            "nome": "E1 sem marcador mantém lógica anterior",
+            "ok": true
+          }
+        ],
+        "limites": "Execução da função iniciarBanco real em DOM e armazenamento controlados; digitais fornecidas como fixture. Preservação das digitais reais e navegador documentados separadamente."
+      },
+      "sha256": {
+        "html": "3839c7ba2e473ee9e5b3cdff80ea64242471b83b961eb117cee5a6918c884ae1",
+        "js": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+      },
+      "limites": "Integridade, identidades, contratos e função real com ambiente controlado. Triagem, fontes/científica e navegador têm evidências separadas; não certifica aprendizagem nem auditoria global BAN07/08/FON01."
+    }
+  },
+  "verificacoes_proprias": [
+    {
+      "nome": "80 digitais CR reais preservadas",
+      "ok": true,
+      "detalhe": 80
+    },
+    {
+      "nome": "somente nove CR recebem marcador exato",
+      "ok": true,
+      "detalhe": [
+        "cr-e1-04",
+        "cr-e1-09",
+        "cr-e1-24",
+        "cr-e1-34",
+        "cr-e1-35",
+        "cr-e1-39",
+        "cr-e1-62",
+        "cr-e1-79",
+        "cr-e1-80"
+      ]
+    },
+    {
+      "nome": "recarga das 80 respostas antigas mantém 71 acertos e nove marcas documentais",
+      "ok": true,
+      "detalhe": "80 de 80 questões exibidas · Treino pontuável: 71 de 71 respondidas, 71 corretas e 0 incorretas · Estudos críticos: 9 de 9 com marcação documental, fora da pontuação."
+    },
+    {
+      "nome": "nove feedbacks concordantes neutros, chave original e controles bloqueados",
+      "ok": true
+    },
+    {
+      "nome": "recarga de letras divergentes mantém nove críticos fora dos 71 erros",
+      "ok": true,
+      "detalhe": "80 de 80 questões exibidas · Treino pontuável: 71 de 71 respondidas, 0 corretas e 71 incorretas · Estudos críticos: 9 de 9 com marcação documental, fora da pontuação."
+    },
+    {
+      "nome": "refazer crítico exclui só sua marca, fecha análise e preserva histórico alheio",
+      "ok": true
+    },
+    {
+      "nome": "nova marca divergente de cinco opções persiste sem erro",
+      "ok": true
+    },
+    {
+      "nome": "recarregar marca nova mantém A e neutralidade",
+      "ok": true
+    },
+    {
+      "nome": "filtro de assunto mantém agregados e aplica só visibilidade",
+      "ok": true
+    },
+    {
+      "nome": "filtro de banca mantém agregados",
+      "ok": true
+    },
+    {
+      "nome": "busca vazia esconde todos os lotes sem alterar contagem de treino",
+      "ok": true
+    },
+    {
+      "nome": "link direto ao crítico limpa filtros e o revela",
+      "ok": true
+    },
+    {
+      "nome": "pendentes considera marca documental e refazer reabre crítico",
+      "ok": true
+    },
+    {
+      "nome": "legado v1 não vira pontuação e informa preservação",
+      "ok": true
+    },
+    {
+      "nome": "nova marca crítica mantém v1 literal e grava v2",
+      "ok": true
+    },
+    {
+      "nome": "armazenamento badRead mantém marca local neutra e não sobrescreve histórico",
+      "ok": true
+    },
+    {
+      "nome": "armazenamento badWrite mantém marca local neutra e não sobrescreve histórico",
+      "ok": true
+    },
+    {
+      "nome": "evento storage reclassifica crítico sem alterar 71 acertos",
+      "ok": true
+    },
+    {
+      "nome": "default anterior preservado: {\"modulo\":\"e2\"}",
+      "ok": true
+    },
+    {
+      "nome": "default anterior preservado: {\"modulo\":null}",
+      "ok": true
+    },
+    {
+      "nome": "default anterior preservado: {\"modulo\":\"e1\",\"markers\":false}",
+      "ok": true
+    },
+    {
+      "nome": "default anterior preservado: {\"modulo\":\"e1\",\"markerValue\":\"estudo_critico\"}",
+      "ok": true
+    },
+    {
+      "nome": "80 digitais AV reais preservadas",
+      "ok": true,
+      "detalhe": 80
+    },
+    {
+      "nome": "banco AV preserva feedback e contagem anteriores",
+      "ok": true
+    },
+    {
+      "nome": "30 Q e 80 AV preservados literalmente",
+      "ok": true
+    },
+    {
+      "nome": "iniciarQuestoes preservada literalmente",
+      "ok": true
+    },
+    {
+      "nome": "quatro edições declaradas reconstroem JS inteiro",
+      "ok": true,
+      "detalhe": 4
+    },
+    {
+      "nome": "13 deltas declarados reconstroem HTML inteiro",
+      "ok": true,
+      "detalhe": 13
+    }
+  ],
+  "identidades_reais_CR": [
+    {
+      "id": "cr-e1-01",
+      "antes": "7b9e5b47",
+      "depois": "7b9e5b47"
+    },
+    {
+      "id": "cr-e1-02",
+      "antes": "292a9326",
+      "depois": "292a9326"
+    },
+    {
+      "id": "cr-e1-03",
+      "antes": "2a41d243",
+      "depois": "2a41d243"
+    },
+    {
+      "id": "cr-e1-04",
+      "antes": "c0741a43",
+      "depois": "c0741a43"
+    },
+    {
+      "id": "cr-e1-05",
+      "antes": "d43ba70e",
+      "depois": "d43ba70e"
+    },
+    {
+      "id": "cr-e1-06",
+      "antes": "01aa3697",
+      "depois": "01aa3697"
+    },
+    {
+      "id": "cr-e1-07",
+      "antes": "26f34f1b",
+      "depois": "26f34f1b"
+    },
+    {
+      "id": "cr-e1-08",
+      "antes": "252ec8b7",
+      "depois": "252ec8b7"
+    },
+    {
+      "id": "cr-e1-09",
+      "antes": "9e781405",
+      "depois": "9e781405"
+    },
+    {
+      "id": "cr-e1-10",
+      "antes": "bb5ae3bb",
+      "depois": "bb5ae3bb"
+    },
+    {
+      "id": "cr-e1-11",
+      "antes": "4667c66a",
+      "depois": "4667c66a"
+    },
+    {
+      "id": "cr-e1-12",
+      "antes": "42d8dd0f",
+      "depois": "42d8dd0f"
+    },
+    {
+      "id": "cr-e1-13",
+      "antes": "597b4f61",
+      "depois": "597b4f61"
+    },
+    {
+      "id": "cr-e1-14",
+      "antes": "5be8d995",
+      "depois": "5be8d995"
+    },
+    {
+      "id": "cr-e1-15",
+      "antes": "09fe87eb",
+      "depois": "09fe87eb"
+    },
+    {
+      "id": "cr-e1-16",
+      "antes": "d737f61f",
+      "depois": "d737f61f"
+    },
+    {
+      "id": "cr-e1-17",
+      "antes": "5f872e60",
+      "depois": "5f872e60"
+    },
+    {
+      "id": "cr-e1-18",
+      "antes": "d80afa6a",
+      "depois": "d80afa6a"
+    },
+    {
+      "id": "cr-e1-19",
+      "antes": "6ae45800",
+      "depois": "6ae45800"
+    },
+    {
+      "id": "cr-e1-20",
+      "antes": "0676dd32",
+      "depois": "0676dd32"
+    },
+    {
+      "id": "cr-e1-21",
+      "antes": "a83d55b1",
+      "depois": "a83d55b1"
+    },
+    {
+      "id": "cr-e1-22",
+      "antes": "88f92984",
+      "depois": "88f92984"
+    },
+    {
+      "id": "cr-e1-23",
+      "antes": "8d573f44",
+      "depois": "8d573f44"
+    },
+    {
+      "id": "cr-e1-24",
+      "antes": "14647883",
+      "depois": "14647883"
+    },
+    {
+      "id": "cr-e1-25",
+      "antes": "19566fe0",
+      "depois": "19566fe0"
+    },
+    {
+      "id": "cr-e1-26",
+      "antes": "988714ce",
+      "depois": "988714ce"
+    },
+    {
+      "id": "cr-e1-27",
+      "antes": "2a65b7dc",
+      "depois": "2a65b7dc"
+    },
+    {
+      "id": "cr-e1-28",
+      "antes": "e0eeb8d1",
+      "depois": "e0eeb8d1"
+    },
+    {
+      "id": "cr-e1-29",
+      "antes": "920c7469",
+      "depois": "920c7469"
+    },
+    {
+      "id": "cr-e1-30",
+      "antes": "45e3259b",
+      "depois": "45e3259b"
+    },
+    {
+      "id": "cr-e1-31",
+      "antes": "75a6fc17",
+      "depois": "75a6fc17"
+    },
+    {
+      "id": "cr-e1-32",
+      "antes": "aa41cb14",
+      "depois": "aa41cb14"
+    },
+    {
+      "id": "cr-e1-33",
+      "antes": "6bcf8baa",
+      "depois": "6bcf8baa"
+    },
+    {
+      "id": "cr-e1-34",
+      "antes": "9f650f2d",
+      "depois": "9f650f2d"
+    },
+    {
+      "id": "cr-e1-35",
+      "antes": "4da84a58",
+      "depois": "4da84a58"
+    },
+    {
+      "id": "cr-e1-36",
+      "antes": "9c9594d9",
+      "depois": "9c9594d9"
+    },
+    {
+      "id": "cr-e1-37",
+      "antes": "92bbdda7",
+      "depois": "92bbdda7"
+    },
+    {
+      "id": "cr-e1-38",
+      "antes": "2c2ecfd7",
+      "depois": "2c2ecfd7"
+    },
+    {
+      "id": "cr-e1-39",
+      "antes": "c85caeb2",
+      "depois": "c85caeb2"
+    },
+    {
+      "id": "cr-e1-40",
+      "antes": "4318e8ea",
+      "depois": "4318e8ea"
+    },
+    {
+      "id": "cr-e1-41",
+      "antes": "3dbc98e7",
+      "depois": "3dbc98e7"
+    },
+    {
+      "id": "cr-e1-42",
+      "antes": "08d305fe",
+      "depois": "08d305fe"
+    },
+    {
+      "id": "cr-e1-43",
+      "antes": "bcab3db5",
+      "depois": "bcab3db5"
+    },
+    {
+      "id": "cr-e1-44",
+      "antes": "60641e5c",
+      "depois": "60641e5c"
+    },
+    {
+      "id": "cr-e1-45",
+      "antes": "c084d78c",
+      "depois": "c084d78c"
+    },
+    {
+      "id": "cr-e1-46",
+      "antes": "34e6b8c4",
+      "depois": "34e6b8c4"
+    },
+    {
+      "id": "cr-e1-47",
+      "antes": "b9424092",
+      "depois": "b9424092"
+    },
+    {
+      "id": "cr-e1-48",
+      "antes": "5d2152e9",
+      "depois": "5d2152e9"
+    },
+    {
+      "id": "cr-e1-49",
+      "antes": "f7579983",
+      "depois": "f7579983"
+    },
+    {
+      "id": "cr-e1-50",
+      "antes": "2d521039",
+      "depois": "2d521039"
+    },
+    {
+      "id": "cr-e1-51",
+      "antes": "53f66207",
+      "depois": "53f66207"
+    },
+    {
+      "id": "cr-e1-52",
+      "antes": "12063740",
+      "depois": "12063740"
+    },
+    {
+      "id": "cr-e1-53",
+      "antes": "79d8c686",
+      "depois": "79d8c686"
+    },
+    {
+      "id": "cr-e1-54",
+      "antes": "bdc8bfce",
+      "depois": "bdc8bfce"
+    },
+    {
+      "id": "cr-e1-55",
+      "antes": "03f7a439",
+      "depois": "03f7a439"
+    },
+    {
+      "id": "cr-e1-56",
+      "antes": "48442042",
+      "depois": "48442042"
+    },
+    {
+      "id": "cr-e1-57",
+      "antes": "5e13d7f6",
+      "depois": "5e13d7f6"
+    },
+    {
+      "id": "cr-e1-58",
+      "antes": "77865bd0",
+      "depois": "77865bd0"
+    },
+    {
+      "id": "cr-e1-59",
+      "antes": "6b73af2b",
+      "depois": "6b73af2b"
+    },
+    {
+      "id": "cr-e1-60",
+      "antes": "d994670e",
+      "depois": "d994670e"
+    },
+    {
+      "id": "cr-e1-61",
+      "antes": "6312db0f",
+      "depois": "6312db0f"
+    },
+    {
+      "id": "cr-e1-62",
+      "antes": "852aa2be",
+      "depois": "852aa2be"
+    },
+    {
+      "id": "cr-e1-63",
+      "antes": "c8054f33",
+      "depois": "c8054f33"
+    },
+    {
+      "id": "cr-e1-64",
+      "antes": "c50500de",
+      "depois": "c50500de"
+    },
+    {
+      "id": "cr-e1-65",
+      "antes": "027ff3a7",
+      "depois": "027ff3a7"
+    },
+    {
+      "id": "cr-e1-66",
+      "antes": "b580499d",
+      "depois": "b580499d"
+    },
+    {
+      "id": "cr-e1-67",
+      "antes": "27513c71",
+      "depois": "27513c71"
+    },
+    {
+      "id": "cr-e1-68",
+      "antes": "f78a5342",
+      "depois": "f78a5342"
+    },
+    {
+      "id": "cr-e1-69",
+      "antes": "bff641e6",
+      "depois": "bff641e6"
+    },
+    {
+      "id": "cr-e1-70",
+      "antes": "ddc13353",
+      "depois": "ddc13353"
+    },
+    {
+      "id": "cr-e1-71",
+      "antes": "69a7bd4d",
+      "depois": "69a7bd4d"
+    },
+    {
+      "id": "cr-e1-72",
+      "antes": "32dcae11",
+      "depois": "32dcae11"
+    },
+    {
+      "id": "cr-e1-73",
+      "antes": "cea77433",
+      "depois": "cea77433"
+    },
+    {
+      "id": "cr-e1-74",
+      "antes": "0b143bc4",
+      "depois": "0b143bc4"
+    },
+    {
+      "id": "cr-e1-75",
+      "antes": "a5c8b572",
+      "depois": "a5c8b572"
+    },
+    {
+      "id": "cr-e1-76",
+      "antes": "fae21dd8",
+      "depois": "fae21dd8"
+    },
+    {
+      "id": "cr-e1-77",
+      "antes": "5385d05a",
+      "depois": "5385d05a"
+    },
+    {
+      "id": "cr-e1-78",
+      "antes": "7fe9b256",
+      "depois": "7fe9b256"
+    },
+    {
+      "id": "cr-e1-79",
+      "antes": "535af6d2",
+      "depois": "535af6d2"
+    },
+    {
+      "id": "cr-e1-80",
+      "antes": "16584b04",
+      "depois": "16584b04"
+    }
+  ],
+  "identidades_reais_AV": [
+    {
+      "id": "av-e1-01",
+      "antes": "878e5f74",
+      "depois": "878e5f74"
+    },
+    {
+      "id": "av-e1-02",
+      "antes": "7ab5dfb7",
+      "depois": "7ab5dfb7"
+    },
+    {
+      "id": "av-e1-03",
+      "antes": "5bd6a31f",
+      "depois": "5bd6a31f"
+    },
+    {
+      "id": "av-e1-04",
+      "antes": "8eaed3f8",
+      "depois": "8eaed3f8"
+    },
+    {
+      "id": "av-e1-05",
+      "antes": "3a84629d",
+      "depois": "3a84629d"
+    },
+    {
+      "id": "av-e1-06",
+      "antes": "5c7db566",
+      "depois": "5c7db566"
+    },
+    {
+      "id": "av-e1-07",
+      "antes": "069a2f6a",
+      "depois": "069a2f6a"
+    },
+    {
+      "id": "av-e1-08",
+      "antes": "c3fb6201",
+      "depois": "c3fb6201"
+    },
+    {
+      "id": "av-e1-09",
+      "antes": "f65fb55a",
+      "depois": "f65fb55a"
+    },
+    {
+      "id": "av-e1-10",
+      "antes": "608b889f",
+      "depois": "608b889f"
+    },
+    {
+      "id": "av-e1-11",
+      "antes": "845f69d8",
+      "depois": "845f69d8"
+    },
+    {
+      "id": "av-e1-12",
+      "antes": "28578c3f",
+      "depois": "28578c3f"
+    },
+    {
+      "id": "av-e1-13",
+      "antes": "8e99bf0d",
+      "depois": "8e99bf0d"
+    },
+    {
+      "id": "av-e1-14",
+      "antes": "a7d166c4",
+      "depois": "a7d166c4"
+    },
+    {
+      "id": "av-e1-15",
+      "antes": "23ab8c66",
+      "depois": "23ab8c66"
+    },
+    {
+      "id": "av-e1-16",
+      "antes": "42f58de8",
+      "depois": "42f58de8"
+    },
+    {
+      "id": "av-e1-17",
+      "antes": "c1bd3f6e",
+      "depois": "c1bd3f6e"
+    },
+    {
+      "id": "av-e1-18",
+      "antes": "64829dfa",
+      "depois": "64829dfa"
+    },
+    {
+      "id": "av-e1-19",
+      "antes": "aefb62c1",
+      "depois": "aefb62c1"
+    },
+    {
+      "id": "av-e1-20",
+      "antes": "45fb98f1",
+      "depois": "45fb98f1"
+    },
+    {
+      "id": "av-e1-21",
+      "antes": "dbfbff40",
+      "depois": "dbfbff40"
+    },
+    {
+      "id": "av-e1-22",
+      "antes": "faeb1457",
+      "depois": "faeb1457"
+    },
+    {
+      "id": "av-e1-23",
+      "antes": "fab6864c",
+      "depois": "fab6864c"
+    },
+    {
+      "id": "av-e1-24",
+      "antes": "76003cb8",
+      "depois": "76003cb8"
+    },
+    {
+      "id": "av-e1-25",
+      "antes": "45748f67",
+      "depois": "45748f67"
+    },
+    {
+      "id": "av-e1-26",
+      "antes": "3427b795",
+      "depois": "3427b795"
+    },
+    {
+      "id": "av-e1-27",
+      "antes": "2f0e77b6",
+      "depois": "2f0e77b6"
+    },
+    {
+      "id": "av-e1-28",
+      "antes": "70576824",
+      "depois": "70576824"
+    },
+    {
+      "id": "av-e1-29",
+      "antes": "7149ca82",
+      "depois": "7149ca82"
+    },
+    {
+      "id": "av-e1-30",
+      "antes": "730e9aaa",
+      "depois": "730e9aaa"
+    },
+    {
+      "id": "av-e1-31",
+      "antes": "4538caee",
+      "depois": "4538caee"
+    },
+    {
+      "id": "av-e1-32",
+      "antes": "66d3f018",
+      "depois": "66d3f018"
+    },
+    {
+      "id": "av-e1-33",
+      "antes": "e45e78ba",
+      "depois": "e45e78ba"
+    },
+    {
+      "id": "av-e1-34",
+      "antes": "eb584075",
+      "depois": "eb584075"
+    },
+    {
+      "id": "av-e1-35",
+      "antes": "37b563fd",
+      "depois": "37b563fd"
+    },
+    {
+      "id": "av-e1-36",
+      "antes": "85e3066f",
+      "depois": "85e3066f"
+    },
+    {
+      "id": "av-e1-37",
+      "antes": "00492381",
+      "depois": "00492381"
+    },
+    {
+      "id": "av-e1-38",
+      "antes": "2de9d3b5",
+      "depois": "2de9d3b5"
+    },
+    {
+      "id": "av-e1-39",
+      "antes": "a37c00fc",
+      "depois": "a37c00fc"
+    },
+    {
+      "id": "av-e1-40",
+      "antes": "9ded863f",
+      "depois": "9ded863f"
+    },
+    {
+      "id": "av-e1-41",
+      "antes": "d55e7169",
+      "depois": "d55e7169"
+    },
+    {
+      "id": "av-e1-42",
+      "antes": "d0b32333",
+      "depois": "d0b32333"
+    },
+    {
+      "id": "av-e1-43",
+      "antes": "7361a51e",
+      "depois": "7361a51e"
+    },
+    {
+      "id": "av-e1-44",
+      "antes": "9c08d4fc",
+      "depois": "9c08d4fc"
+    },
+    {
+      "id": "av-e1-45",
+      "antes": "33788e23",
+      "depois": "33788e23"
+    },
+    {
+      "id": "av-e1-46",
+      "antes": "870d6691",
+      "depois": "870d6691"
+    },
+    {
+      "id": "av-e1-47",
+      "antes": "5863db3a",
+      "depois": "5863db3a"
+    },
+    {
+      "id": "av-e1-48",
+      "antes": "333e4530",
+      "depois": "333e4530"
+    },
+    {
+      "id": "av-e1-49",
+      "antes": "b8a315a0",
+      "depois": "b8a315a0"
+    },
+    {
+      "id": "av-e1-50",
+      "antes": "9296b58f",
+      "depois": "9296b58f"
+    },
+    {
+      "id": "av-e1-51",
+      "antes": "ca8ab0d4",
+      "depois": "ca8ab0d4"
+    },
+    {
+      "id": "av-e1-52",
+      "antes": "d95e6b2d",
+      "depois": "d95e6b2d"
+    },
+    {
+      "id": "av-e1-53",
+      "antes": "2fa9b641",
+      "depois": "2fa9b641"
+    },
+    {
+      "id": "av-e1-54",
+      "antes": "35178434",
+      "depois": "35178434"
+    },
+    {
+      "id": "av-e1-55",
+      "antes": "e683a7b4",
+      "depois": "e683a7b4"
+    },
+    {
+      "id": "av-e1-56",
+      "antes": "c1a51dd5",
+      "depois": "c1a51dd5"
+    },
+    {
+      "id": "av-e1-57",
+      "antes": "b093b252",
+      "depois": "b093b252"
+    },
+    {
+      "id": "av-e1-58",
+      "antes": "efdf6680",
+      "depois": "efdf6680"
+    },
+    {
+      "id": "av-e1-59",
+      "antes": "4ec65c81",
+      "depois": "4ec65c81"
+    },
+    {
+      "id": "av-e1-60",
+      "antes": "cb7fec99",
+      "depois": "cb7fec99"
+    },
+    {
+      "id": "av-e1-61",
+      "antes": "b732f0fa",
+      "depois": "b732f0fa"
+    },
+    {
+      "id": "av-e1-62",
+      "antes": "ed91f6ac",
+      "depois": "ed91f6ac"
+    },
+    {
+      "id": "av-e1-63",
+      "antes": "ee6db666",
+      "depois": "ee6db666"
+    },
+    {
+      "id": "av-e1-64",
+      "antes": "eeb68857",
+      "depois": "eeb68857"
+    },
+    {
+      "id": "av-e1-65",
+      "antes": "a37123c3",
+      "depois": "a37123c3"
+    },
+    {
+      "id": "av-e1-66",
+      "antes": "5f7a8ab9",
+      "depois": "5f7a8ab9"
+    },
+    {
+      "id": "av-e1-67",
+      "antes": "54adae3c",
+      "depois": "54adae3c"
+    },
+    {
+      "id": "av-e1-68",
+      "antes": "7c48b21e",
+      "depois": "7c48b21e"
+    },
+    {
+      "id": "av-e1-69",
+      "antes": "13da8621",
+      "depois": "13da8621"
+    },
+    {
+      "id": "av-e1-70",
+      "antes": "c969142c",
+      "depois": "c969142c"
+    },
+    {
+      "id": "av-e1-71",
+      "antes": "0c91434f",
+      "depois": "0c91434f"
+    },
+    {
+      "id": "av-e1-72",
+      "antes": "190b458c",
+      "depois": "190b458c"
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "64bb73f3",
+      "depois": "64bb73f3"
+    },
+    {
+      "id": "av-e1-74",
+      "antes": "d6173cb0",
+      "depois": "d6173cb0"
+    },
+    {
+      "id": "av-e1-75",
+      "antes": "0f1d94bd",
+      "depois": "0f1d94bd"
+    },
+    {
+      "id": "av-e1-76",
+      "antes": "bec97cf5",
+      "depois": "bec97cf5"
+    },
+    {
+      "id": "av-e1-77",
+      "antes": "9c0dee43",
+      "depois": "9c0dee43"
+    },
+    {
+      "id": "av-e1-78",
+      "antes": "18a15426",
+      "depois": "18a15426"
+    },
+    {
+      "id": "av-e1-79",
+      "antes": "f1f15b88",
+      "depois": "f1f15b88"
+    },
+    {
+      "id": "av-e1-80",
+      "antes": "e26e6614",
+      "depois": "e26e6614"
+    }
+  ],
+  "metodo_independente": {
+    "funcoes_reais": [
+      "paraArray",
+      "normalizarDigital",
+      "textoDaDigital",
+      "fnv1a",
+      "pluralizar",
+      "idModulo",
+      "chaveBanco",
+      "digitalDoBanco",
+      "iniciarBanco"
+    ],
+    "adaptador": "Artigos reais do HTML parseados; DOM controlado, controles e eventos em memória; agrupamento virtual em quatro itens. Funções reais extraídas de curso.js. Mapa simulado de localStorage. Função textoDaDigital preserva data-formula-original de MathML.",
+    "codigo_adaptador": "\nfunction functionSource(s,name) {\n const start=s.indexOf('  function '+name+'('); if(start<0)throw Error(name);\n return s.slice(start,s.indexOf('\\n  }',start)+4);\n}\nconst names=['paraArray','normalizarDigital','textoDaDigital','fnv1a','pluralizar','idModulo','chaveBanco','digitalDoBanco','iniciarBanco'];\nfunction match(e,s){\n return s.split(',').some(sel=>{\n  sel=sel.trim(); if(sel.endsWith(':not([hidden])')){if(e.hidden)return false;sel=sel.slice(0,-14);}\n  if(sel.endsWith(':checked')){if(!e.checked)return false;sel=sel.slice(0,-8);}\n  if(sel==='*')return true;\n  const m=sel.match(/^([a-z0-9-]+)?(?:\\.([\\w-]+))?(?:#([\\w-]+))?(?:\\[([\\w:-]+)(?:=\"([^\"]*)\")?\\])?$/);\n  if(!m)throw Error('seletor fora do adaptador: '+sel);\n  return (!m[1]||e.localName===m[1])&&(!m[2]||(e.attrs.class||'').split(/\\s+/).includes(m[2]))&&(!m[3]||e.id===m[3])&&(!m[4]||(Object.hasOwn(e.attrs,m[4])&&(m[5]===undefined||e.attrs[m[4]]===m[5])));\n });\n}\nfunction adapt(doc){\n const cache=new Map();\n function wrap(n){\n  if(cache.has(n))return cache.get(n);\n  const e={nodeType:1,localName:n.tag,attrs:{...n.attrs},dataset:{},id:n.attrs.id||'',value:n.attrs.value||'',hidden:Object.hasOwn(n.attrs,'hidden'),checked:false,disabled:false,open:false,events:{},focused:false,\n   getAttribute(k){return Object.hasOwn(this.attrs,k)?this.attrs[k]:null;},\n   hasAttribute(k){return Object.hasOwn(this.attrs,k);},\n   removeAttribute(k){delete this.attrs[k];if(k.startsWith('data-'))delete this.dataset[k.slice(5).replace(/-([a-z])/g,(_,c)=>c.toUpperCase())];},\n   addEventListener(k,f){this.events[k]=f;},focus(){this.focused=true;},\n   querySelectorAll(s){return doc.nodes.filter(c=>c.start>n.start&&c.end<n.end).map(wrap).filter(c=>match(c,s));},\n   querySelector(s){return this.querySelectorAll(s)[0]||null;},\n   closest(s){let x=this;while(x){if(match(x,s))return x;x=x.parentNode;}return null;},\n   contains(x){return x===this||this.querySelectorAll('*').includes(x);}\n  };cache.set(n,e);\n  for(const[k,v]of Object.entries(e.attrs))if(k.startsWith('data-'))e.dataset[k.slice(5).replace(/-([a-z])/g,(_,c)=>c.toUpperCase())]=v;\n  Object.defineProperty(e,'parentNode',{get:()=>n.parent?wrap(n.parent):null});\n  Object.defineProperty(e,'childNodes',{get:()=>{\n    const nodes=[];let cursor=n.openEnd;\n    for(const c of n.children){if(c.start>cursor)nodes.push({nodeType:3,nodeValue:validator.decodeHtml(doc.html.slice(cursor,c.start).replace(/<!--[\\s\\S]*?-->/g,''))});nodes.push(wrap(c));cursor=c.end;}\n    const close=doc.html.lastIndexOf('</'+n.tag+'>',n.end),stop=close>=n.openEnd?close:n.openEnd;\n    if(stop>cursor)nodes.push({nodeType:3,nodeValue:validator.decodeHtml(doc.html.slice(cursor,stop).replace(/<!--[\\s\\S]*?-->/g,''))});\n    return nodes;\n  }});\n  Object.defineProperty(e,'textContent',{get:()=>e._text??e.childNodes.map(c=>c.nodeType===3?c.nodeValue:c.textContent).join(''),set:v=>{e._text=String(v);}});\n  return e;\n }\n return {wrap,byId:id=>wrap(doc.ids.get(id)[0]),document:doc};\n}\nfunction session(content,source,{bank='cr',modulo='e1',store=new Map(),badRead=false,badWrite=false,markers=true,markerValue}={}){\n const d=validator.parseHtml(content),a=adapt(d),section=bank==='cr'?'questoes-reais':'treino-avalia',b=a.byId(section);\n const items=b.querySelectorAll('.concurso-item, .avalia-item'),groups=[];\n for(let i=0;i<items.length;i+=4){const subset=items.slice(i,i+4);groups.push({hidden:false,querySelector:()=>subset.find(e=>!e.hidden)||null});}\n const qs=b.querySelector.bind(b),qa=b.querySelectorAll.bind(b);\n b.querySelector=s=>s==='.cr-lote'?groups[0]:qs(s);\n b.querySelectorAll=s=>s==='.cr-lote'?groups:qa(s);\n b.contains=i=>items.includes(i);\n if(!markers)for(const item of items)delete item.dataset.crAvaliacao;\n if(markerValue!==undefined)for(const item of items)if(item.dataset.crAvaliacao)item.dataset.crAvaliacao=markerValue;\n const controls=Object.fromEntries(['assunto','banca','busca','pendentes','placar','armazenamento','vazio'].map(x=>[x,qs('#'+bank+'-'+x)]));\n for(const x of ['assunto','banca','busca'])controls[x].value='';\n const events={};const meta={getAttribute:()=>modulo||''};\n const window={localStorage:{getItem(k){if(badRead)throw Error('leitura indisponível');return store.get(k)??null;},setItem(k,v){if(badWrite)throw Error('gravação indisponível');store.set(k,v);}},addEventListener:(k,f)=>events[k]=f};\n const context={document:{getElementById:id=>id===section?b:null,querySelector:()=>modulo===null?null:meta},window,RE_MODULO:/^[a-z0-9-]{1,20}$/,SEPARADOR:'␞',reveladoresBanco:{}};\n vm.createContext(context);vm.runInContext(names.map(n=>functionSource(source,n)).join('\\n'),context);\n const key='sopmec:'+(bank==='cr'?'concursos':'avalia')+':v2:'+(modulo||'e1');\n context.iniciarBanco(section,bank,key);\n const answer=(id,value)=>{const item=items.find(i=>i.id===id);item.querySelectorAll('input[type=\"radio\"]').forEach(r=>r.checked=r.value===value);item.querySelector('[data-cr-acao=\"corrigir\"]').events.click();};\n const redo=id=>items.find(i=>i.id===id).querySelector('[data-cr-acao=\"refazer\"]').events.click();\n return {items,controls,groups,store,key,events,context,answer,redo,adapt:a,section};\n}\n",
+    "blocos_de_testes_REPL": [
+      "\nvar criticalIds=now.items.filter(i=>i.dataset.crAvaliacao==='estudo-critico').map(i=>i.id);\ncheck('somente nove CR recebem marcador exato',JSON.stringify(criticalIds)===JSON.stringify(['cr-e1-04','cr-e1-09','cr-e1-24','cr-e1-34','cr-e1-35','cr-e1-39','cr-e1-62','cr-e1-79','cr-e1-80']),criticalIds);\nvar storeBefore=new Map([[now.key,JSON.stringify({v:2,respostas:Object.fromEntries(before.items.map(i=>[before.context.digitalDoBanco(i),i.dataset.crGabarito]))})]]);\nvar loaded=session(html,js,{store:storeBefore});\ncheck('recarga das 80 respostas antigas mantém 71 acertos e nove marcas documentais',loaded.controls.placar.textContent.includes('71 de 71 respondidas, 71 corretas e 0 incorretas')&&loaded.controls.placar.textContent.includes('9 de 9 com marcação documental'),loaded.controls.placar.textContent);\ncheck('nove feedbacks concordantes neutros, chave original e controles bloqueados',loaded.items.filter(i=>criticalIds.includes(i.id)).every(i=>!i.dataset.crResultado&&i.querySelector('.cr-feedback').textContent.includes('coincide com o gabarito oficial '+i.dataset.crGabarito)&&i.querySelector('fieldset').disabled));\nvar mismatch=Object.fromEntries(before.items.map(i=>[before.context.digitalDoBanco(i),i.querySelectorAll('input[type=\"radio\"]').find(r=>r.value!==i.dataset.crGabarito).value]));\nvar opposite=session(html,js,{store:new Map([[now.key,JSON.stringify({v:2,respostas:mismatch})]])});\ncheck('recarga de letras divergentes mantém nove críticos fora dos 71 erros',opposite.controls.placar.textContent.includes('71 de 71 respondidas, 0 corretas e 71 incorretas')&&opposite.items.filter(i=>criticalIds.includes(i.id)).every(i=>!i.dataset.crResultado&&i.querySelector('.cr-feedback').textContent.includes('não coincide com o gabarito oficial')),opposite.controls.placar.textContent);\nvar extras=JSON.parse(loaded.store.get(loaded.key));extras.respostas.deadbeef='A';loaded.store.set(loaded.key,JSON.stringify(extras));\nloaded.redo('cr-e1-79');\ncheck('refazer crítico exclui só sua marca, fecha análise e preserva histórico alheio',loaded.controls.placar.textContent.includes('71 corretas e 0 incorretas')&&loaded.controls.placar.textContent.includes('8 de 9 com marcação documental')&&JSON.parse(loaded.store.get(loaded.key)).respostas.deadbeef==='A'&&!loaded.items.find(i=>i.id==='cr-e1-79').querySelector('.cr-resolucao').open);\nloaded.answer('cr-e1-79','A');\ncheck('nova marca divergente de cinco opções persiste sem erro',loaded.controls.placar.textContent.includes('71 corretas e 0 incorretas')&&loaded.controls.placar.textContent.includes('9 de 9 com marcação documental')&&JSON.parse(loaded.store.get(loaded.key)).respostas[identities.find(i=>i.id==='cr-e1-79').depois]==='A');\nvar reloaded=session(html,js,{store:loaded.store});\ncheck('recarregar marca nova mantém A e neutralidade',reloaded.items.find(i=>i.id==='cr-e1-79').querySelector('input:checked').value==='A'&&!reloaded.items.find(i=>i.id==='cr-e1-79').dataset.crResultado);\nnodeRepl.write({checks:own.length,failed:own.filter(x=>!x.ok),placar:reloaded.controls.placar.textContent});\n",
+      "\nvar aggregate=loaded.controls.placar.textContent.split(' · ').slice(1).join(' · ');\nloaded.controls.assunto.value='fundamentos';loaded.controls.assunto.events.change();\ncheck('filtro de assunto mantém agregados e aplica só visibilidade',loaded.items.every(i=>Boolean(i.hidden)===(i.dataset.crAssunto!=='fundamentos'))&&loaded.controls.placar.textContent.endsWith(aggregate));\nloaded.controls.assunto.value='';loaded.controls.banca.value='FGV';loaded.controls.banca.events.change();\ncheck('filtro de banca mantém agregados',loaded.items.every(i=>Boolean(i.hidden)===(i.dataset.crBanca!=='FGV'))&&loaded.controls.placar.textContent.endsWith(aggregate));\nloaded.controls.banca.value='';loaded.controls.busca.value='zz-ausente-no-banco-zz';loaded.controls.busca.events.input();\ncheck('busca vazia esconde todos os lotes sem alterar contagem de treino',loaded.items.every(i=>i.hidden)&&loaded.groups.every(g=>g.hidden)&&loaded.controls.placar.textContent.endsWith(aggregate));\nloaded.context.reveladoresBanco[loaded.section](loaded.items.find(i=>i.id==='cr-e1-79'));\ncheck('link direto ao crítico limpa filtros e o revela',loaded.controls.busca.value===''&&!loaded.items.find(i=>i.id==='cr-e1-79').hidden);\nloaded.redo('cr-e1-09');loaded.controls.pendentes.checked=true;loaded.controls.pendentes.events.change();\ncheck('pendentes considera marca documental e refazer reabre crítico',loaded.items.filter(i=>!i.hidden).map(i=>i.id).join(',')==='cr-e1-09'&&loaded.controls.placar.textContent.includes('71 corretas e 0 incorretas'));\nvar v1key=now.key.replace(':v2:',':v1:'),v1value=JSON.stringify({'cr-e1-09':'E'}),v1store=new Map([[v1key,v1value]]),v1=session(html,js,{store:v1store});\ncheck('legado v1 não vira pontuação e informa preservação',v1.controls.placar.textContent.includes('0 de 71 respondidas')&&v1.controls.armazenamento.textContent.includes('Há tentativas antigas'));\nv1.answer('cr-e1-09','E');\ncheck('nova marca crítica mantém v1 literal e grava v2',v1.store.get(v1key)===v1value&&JSON.parse(v1.store.get(v1.key)).respostas[identities.find(i=>i.id==='cr-e1-09').depois]==='E');\nfor(var mode of ['badRead','badWrite']){\n var protectedStore=new Map([[now.key,JSON.stringify({v:2,respostas:{deadbeef:'A'}})]]),protectedValue=protectedStore.get(now.key);\n var denied=session(html,js,{store:protectedStore,[mode]:true});denied.answer('cr-e1-09','E');\n check('armazenamento '+mode+' mantém marca local neutra e não sobrescreve histórico',protectedStore.get(now.key)===protectedValue&&denied.controls.placar.textContent.includes('0 corretas e 0 incorretas')&&denied.controls.placar.textContent.includes('1 de 9 com marcação documental')&&denied.controls.armazenamento.textContent.includes('não permitiu'));\n}\nvar originalState=JSON.parse(reloaded.store.get(reloaded.key));delete originalState.respostas[identities.find(i=>i.id==='cr-e1-09').depois];reloaded.store.set(reloaded.key,JSON.stringify(originalState));reloaded.events.storage({key:reloaded.key});\ncheck('evento storage reclassifica crítico sem alterar 71 acertos',reloaded.controls.placar.textContent.includes('8 de 9 com marcação documental')&&reloaded.controls.placar.textContent.includes('71 corretas e 0 incorretas'));\nnodeRepl.write({checks:own.length,failed:own.filter(x=>!x.ok)});\n",
+      "\nvar bankView=f=>({placar:f.controls.placar.textContent,respostas:f.items.map(i=>({id:i.id,resultado:i.dataset.crResultado,marcada:i.querySelector('input:checked')?.value,feedback:i.querySelector('.cr-feedback').textContent}))});\nfor(var options of [{modulo:'e2'},{modulo:null},{modulo:'e1',markers:false},{modulo:'e1',markerValue:'estudo_critico'}]){\n var oldSession=session(html,oldJs,options),newSession=session(html,js,options);\n oldSession.answer('cr-e1-09','C');newSession.answer('cr-e1-09','C');\n check('default anterior preservado: '+JSON.stringify(options),JSON.stringify(bankView(oldSession))===JSON.stringify(bankView(newSession)));\n}\nvar oldAv=session(oldHtml,oldJs,{bank:'av'}),newAv=session(html,js,{bank:'av'});\nvar avIdentities=newAv.items.map(i=>({id:i.id,antes:oldAv.context.digitalDoBanco(oldAv.items.find(x=>x.id===i.id)),depois:newAv.context.digitalDoBanco(i)}));\ncheck('80 digitais AV reais preservadas',avIdentities.every(x=>x.antes===x.depois),avIdentities.length);\noldAv.answer(oldAv.items[0].id,oldAv.items[0].dataset.crGabarito);newAv.answer(newAv.items[0].id,newAv.items[0].dataset.crGabarito);\ncheck('banco AV preserva feedback e contagem anteriores',JSON.stringify(bankView(oldAv))===JSON.stringify(bankView(newAv)));\nvar parsedOld=validator.parseHtml(oldHtml),parsedNow=validator.parseHtml(html),raw=(d,n)=>d.html.slice(n.start,n.end);\nvar qAvIds=parsedOld.nodes.filter(n=>/^q-e1-\\d+$|^av-e1-\\d+$/.test(n.attrs.id||'')).map(n=>n.attrs.id);\ncheck('30 Q e 80 AV preservados literalmente',qAvIds.length===110&&qAvIds.every(id=>raw(parsedOld,parsedOld.ids.get(id)[0])===raw(parsedNow,parsedNow.ids.get(id)[0])));\ncheck('iniciarQuestoes preservada literalmente',auditContext.functionSource(js,'iniciarQuestoes')===auditContext.functionSource(oldJs,'iniciarQuestoes'));\nvar deltaJs=JSON.parse(await fs.readFile(path.join(dir,'delta-js-r1.json'),'utf8')),reconstructedJs=oldJs,editsUnique=true;\nfor(var edit of deltaJs.edits){editsUnique=editsUnique&&reconstructedJs.split(edit.antes).length===2;reconstructedJs=reconstructedJs.replace(edit.antes,edit.depois);}\ncheck('quatro edições declaradas reconstroem JS inteiro',editsUnique&&reconstructedJs===js,deltaJs.edits.length);\nvar deltaHtml=JSON.parse(await fs.readFile(path.join(dir,'delta-html-r1.json'),'utf8')),reconstructedHtml=oldHtml,htmlUnique=true;\nfor(var edit of deltaHtml){htmlUnique=htmlUnique&&reconstructedHtml.split(edit.antes).length===2;reconstructedHtml=reconstructedHtml.replace(edit.antes,edit.depois);}\ncheck('13 deltas declarados reconstroem HTML inteiro',htmlUnique&&reconstructedHtml===html,deltaHtml.length);\nnodeRepl.write({checks:own.length,failed:own.filter(x=>!x.ok),qAvIds:qAvIds.length,deltaJs:deltaJs.edits.length,deltaHtml:deltaHtml.length});\n"
+    ],
+    "observacao": "As duas tentativas iniciais de instalar o adaptador falharam antes dos testes (delimitação do código e eval indisponível). A execução concluída usou vm.createContext/runInContext; todos os 28 resultados foram então produzidos. Nenhum erro inicial modificou produto."
+  },
+  "limites": [
+    "Não usa navegador nem armazenamento do usuário.",
+    "Adaptador não testa layout, CSS, criação física dos lotes ou semântica completa de DOM do navegador.",
+    "Não reaudita ciência, provas, gabaritos, 197 decisões de triagem ou aprendizagem.",
+    "Comparação E2 é teste diferencial do guarda com artigos controlados; não é navegação pelo módulo E2.",
+    "Reexecução do verificador e testes próprios são identificadas separadamente."
+  ],
+  "arquivos_permanentes_escritos": [
+    "auditoria/termodinamica/pareceres/BAN-10-r1-tecnico.md",
+    "auditoria/termodinamica/pareceres/BAN-10-r1-tecnico.json"
+  ]
+}

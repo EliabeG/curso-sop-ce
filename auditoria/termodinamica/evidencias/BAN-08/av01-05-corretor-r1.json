@@ -1,0 +1,136 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV01–AV05",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco alternativas e comentários; exame de hipóteses, classificações e relações.",
+  "registros": [
+    {
+      "id": "av-e1-01",
+      "artigo_sha256": "fef921d85b9f61c1e2a63b23fa1df1a9479973608dea0c768045e221f31390b5",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-01",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-propriedades",
+          "#base-medidas",
+          "#cr-e1-01"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_EXATO",
+      "dados": "Amostra homogênea dividida igualmente, T e p mantidas.",
+      "solucao": "Cada metade tem m/2 e V/2; ρ=(m/2)/(V/2)=m/V; T e ρ são intensivas.",
+      "resultado": "C.",
+      "comparacao": "A massa e volume caem; B energia interna total e massa caem; C T e ρ mantidas; D entalpia total e volume caem; E massa cai embora T se mantenha.",
+      "tolerancia": "Fator 1/2 e cancelamento exatos; sem incerteza de medição.",
+      "limite": "Homogeneidade, estado e composição fixos; propriedades totais extensivas no modelo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-02",
+      "artigo_sha256": "8b7328a79ca6b50995426770504df6de88f6bf37cf7a3038fef9709847d6bc20",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-02",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-propriedades",
+          "#base-balanco-fechado",
+          "#cr-e1-02"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Mesmo sistema e mesmos estados inicial/final, caminhos potencialmente diferentes; pede incorreta.",
+      "solucao": "Energia interna é propriedade de estado; calor e trabalho dependem do caminho como transferências.",
+      "resultado": "A é incorreta.",
+      "comparacao": "A atribui dependência do caminho a U final; B pressão é propriedade; C calor e trabalho são transferências; D trabalho pode diferir; E ΔU coincide para mesmos estados.",
+      "tolerancia": "Sem grandezas ou cálculos numéricos; tolerância não se aplica.",
+      "limite": "Sistema e estados extremos devem ser os mesmos; não atribuir Q e W como propriedades.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-03",
+      "artigo_sha256": "6e8bc6e49193f08a8c5f0ae6b4271720a23a29e7888ecfe6cf83faaa63ff85fa",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-03",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-molecular",
+          "#cr-e1-03"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "Três afirmações sobre movimento em líquido, vibração em sólido e energia cinética exclusivamente gasosa.",
+      "solucao": "I verdadeira, II verdadeira e III falsa; sequência V–V–F.",
+      "resultado": "B.",
+      "comparacao": "A V–F–V, C F–F–V, D V–V–V, E F–V–V incorretas; B coincide integralmente.",
+      "tolerancia": "Três juízos lógicos e sequência exatos; sem cálculo metrológico.",
+      "limite": "O movimento microscópico ocorre nas fases, sem alegar igualdade de movimento ou energia.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-04",
+      "artigo_sha256": "6ed8f664d46db759064d42ee073379bda2b8c1c7018ae3418d22774e14f72501",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-04",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-medidas",
+          "#cr-e1-04"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Água líquida longe da região crítica, faixa moderada, modelo de líquido aproximadamente incompressível.",
+      "solucao": "Volume específico pode ser aproximado por constante dentro da faixa; a hipótese não elimina fluxo nem impõe isotermia.",
+      "resultado": "D.",
+      "comparacao": "A massa no volume de controle pode variar; B bomba eleva pressão; C volume específico não é zero; D aproximadamente constante; E temperatura pode variar com mudança desprezível de volume específico.",
+      "tolerancia": "Sem dados quantitativos; não há tolerância para aproximação definida no enunciado.",
+      "limite": "Validade depende da faixa de temperatura e pressão; comentário E é versão r2 aprovada anteriormente, identidade não substitui exame próprio.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-05",
+      "artigo_sha256": "8860a27c54eebc598b479ab61197026acb81cf4d81a143876bfe55fea2a6fa4c",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-05",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-medidas",
+          "#cr-e1-05"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Unidades de base SI de tempo, temperatura termodinâmica e quantidade de matéria, respectivamente.",
+      "solucao": "Segundo, kelvin e mol são as unidades de base das três grandezas.",
+      "resultado": "B.",
+      "comparacao": "A minuto e Celsius não são bases; B segundo/kelvin/mol corretos; C joule é energia; D Fahrenheit não é base e quilograma é massa; E hora não é base e newton é força.",
+      "tolerancia": "Classificação das unidades sem valores para calcular; tolerância não aplicável.",
+      "limite": "Grau Celsius é unidade SI para temperatura Celsius, mas não unidade de base da temperatura termodinâmica.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; a questão de origem fornece contexto, não prova documental da alternativa autoral."
+  ]
+}

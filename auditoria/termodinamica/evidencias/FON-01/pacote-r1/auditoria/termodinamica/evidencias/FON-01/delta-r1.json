@@ -1,0 +1,30 @@
+{
+  "id": "FON-01",
+  "rodada": 1,
+  "html": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256_antes": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+    "sha256_depois": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+    "substituicoes": [
+      {
+        "antes": "<p class=\"cr-fontes\"><a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/MATRIZ_039_CAESB_009_00_Com Justificativas_OK.PDF#page=4\" rel=\"noopener noreferrer\" target=\"_blank\">Prova original · p. 4</a> · <a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_009_00.PDF#page=1\" rel=\"noopener noreferrer\" target=\"_blank\">Gabarito definitivo</a> · <a href=\"../assets/questoes-reais-e1/caderno-fornecido.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Caderno fornecido (questão na p. 31)</a></p>",
+        "depois": "<p class=\"cr-fontes\"><a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/905BAE8B8901D96A45D9CBF7F17341894AF8405A0E2D9122A552F640CAC8B9DB.pdf#page=5\" rel=\"noopener noreferrer\" target=\"_blank\">Prova oficial atualizada em 11/05/2026 · PDF p. 5</a> · <a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/MATRIZ_039_CAESB_009_00_Com Justificativas_OK.PDF#page=4\" rel=\"noopener noreferrer\" target=\"_blank\">Versão histórica (sem efeito) · PDF p. 4</a> · <a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_009_00.PDF#page=1\" rel=\"noopener noreferrer\" target=\"_blank\">Gabarito definitivo</a> · <a href=\"../assets/questoes-reais-e1/caderno-fornecido.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">Caderno fornecido (questão na p. 31)</a></p>"
+      },
+      {
+        "antes": "Prova local · item 38 · PDF p. 4",
+        "depois": "Prova local histórica (sem efeito) · item 38 · PDF p. 4"
+      },
+      {
+        "antes": "<li>CAESB · Engenheiro Mecânico · 22/06/2025 · 1 questões: <a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/MATRIZ_039_CAESB_009_00_Com Justificativas_OK.PDF\" rel=\"noopener noreferrer\" target=\"_blank\">caderno oficial</a> · <a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_009_00.PDF\" rel=\"noopener noreferrer\" target=\"_blank\">gabarito definitivo</a></li>",
+        "depois": "<li>CAESB · Engenheiro Mecânico · 22/06/2025 · 1 questão: <a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/905BAE8B8901D96A45D9CBF7F17341894AF8405A0E2D9122A552F640CAC8B9DB.pdf\" rel=\"noopener noreferrer\" target=\"_blank\">caderno oficial atualizado (11/05/2026)</a> · <a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/MATRIZ_039_CAESB_009_00_Com Justificativas_OK.PDF\" rel=\"noopener noreferrer\" target=\"_blank\">caderno histórico (sem efeito)</a> · <a href=\"https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_009_00.PDF\" rel=\"noopener noreferrer\" target=\"_blank\">gabarito definitivo</a></li>"
+      }
+    ]
+  },
+  "inventario": {
+    "origem_80": "conferencia_oficial=realizada e evidencia_conferencia aponta para a matriz 80; campos anteriores preservados no snapshot e, nos casos BAN-10/FON-09, referidos na matriz.",
+    "cr80": "Acrescentada fonte oficial atualizada; primeira fonte anterior identificada como histórica sem efeito. Hash do artigo atualizado somente pela referência documental. O rótulo da cópia local histórica no bloco BAN-10 também explicita sem efeito.",
+    "global": "fonte.sha256 e fonte.snapshot sincronizados; nenhuma classificação, etapa, hipótese, uso crítico, resposta ou recurso de cálculo alterado. A linha CAESB do catálogo de 12 provas também aponta a versão atual e identifica o histórico; singular de 1 questão corrigido nessa mesma linha."
+  },
+  "persistencia": "digitalDoBanco usa enunciado, imagens do enunciado, alternativas e chave; cr-fontes não participa. Preservação será conferida por componentes.",
+  "infraestrutura": "Nenhum JavaScript/CSS, registro de respostas, formulário ou outro módulo alterado."
+}

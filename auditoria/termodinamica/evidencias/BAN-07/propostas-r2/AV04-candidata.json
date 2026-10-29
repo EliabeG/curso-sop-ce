@@ -1,0 +1,281 @@
+{
+  "id": "AV04-E",
+  "id_artigo": "av-e1-04",
+  "rodada_de_proposta": 2,
+  "autoria": {
+    "agente": "/root/corretor_ban07_r2",
+    "natureza": "Corretor automatizado; proposta própria, sem revisão ou aprovação independente"
+  },
+  "data_utc": "2026-10-28T23:17:06.892Z",
+  "primeira_gravacao_utc": "2026-10-28T23:13:41.8414008Z",
+  "estado": "PROPOSTA_PRELIMINAR_NAO_APLICADA",
+  "escopo": "Somente substituição de E e sincronização do comentário de E em candidato isolado. BAN-07 r1 continua congelado e aguardando parecer integral; nenhum próximo ID liberado.",
+  "fontes_e_hashes": [
+    {
+      "arquivo": "auditoria/termodinamica/CONTROLE_AAA.json",
+      "sha256": "5cfb95bb013e4977d8b0f584173f6e7ba626ff853ded6bcf3a48dfb9ffcc4a3e",
+      "alcance": "Somente correção atual BAN-07, item BAN-07, agentes e andamento; snapshot de leitura, não arquivo de produto a congelar."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "sha256": "18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc",
+      "alcance": "Mandato, papéis, bloqueio, padrão de aprovação e continuidade."
+    },
+    {
+      "arquivo": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md",
+      "sha256": "961a6f038a5bdb0c168bd69ebe6c961fa91a24d82440396a0f7dce0f971ebaea",
+      "alcance": "Seção 8, critério BAN-07 integral; seção 3.2, regra comum pertinente. Não se abriu AV31/41."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-decisao-av04-r1.json",
+      "sha256": "38408ea51cea9b7b24ae86e5b66d6a341c6c0b681076fa7b4f36ae8f91ff2934",
+      "alcance": "Decisão pontual AV04-E do Auditor principal, fundamentos, cinco opções, direção admissível e obrigações objetivas."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-heranca-fun01-r1.json",
+      "sha256": "9614b1c1abb3837fc81e5dbb6bde9311ce22d5c54b874ce7d4cb8fef099a80b6",
+      "alcance": "Somente campo decisao_av04 e hash; demais heranças não examinadas."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+      "alcance": "Funções canônicas parseHtml, sha256 e decodeHtml usadas para extração, identidade e verificação estrutural."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-07-r1.md",
+      "sha256": "9dfa2059b10be96615bbdc0c42d596c756910bbbd2791636ad061870dd96a893",
+      "alcance": "Escopo r1, limites e tabela de hashes dos cinco arquivos de produto."
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+      "alcance": "Somente funções de digital de banco e persistência pertinente para avaliar impacto da futura mudança de E."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/mapa-identidades-r1.json",
+      "sha256": "790a34f07318a3b8ee84b29e8ffb4afec723485141216a0bce4db661f5eab6c1",
+      "alcance": "Somente registro de av-e1-04 e metadados do método; digital r1 8eaed3f8."
+    }
+  ],
+  "criterio": {
+    "id": "BAN-07",
+    "exigencia": "Conferir dados suficientes, consistência física, comando, unidades, restrições e resposta única, incluindo distratores plausíveis baseados em erros reais.",
+    "aceite": "Cada item tem demonstração do gabarito e justificativa dos distratores; detectar alternativas equivalentes após arredondamento.",
+    "aplicacao": "Este candidato atende somente à preparação de AV04-E para reapresentação. Não é conclusão ou aprovação de BAN-07."
+  },
+  "artigo_base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "id": "av-e1-04",
+    "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "sha256_artigo": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+    "enunciado_literal": "Em uma estimativa de bombeamento de água líquida, longe da região crítica e em uma faixa moderada de pressão e temperatura, adota-se o modelo de líquido incompressível. Essa hipótese significa que",
+    "chave": "D",
+    "fonte_vinculada": "#base-medidas",
+    "base_medidas": {
+      "sha256_do_bloco": "960921c8c51256131d11b7cf38722aaa7f8f9f3c0d843d82a193d50489b459d6",
+      "limite_do_bloco": "h3 #base-medidas até antes do próximo h1/h2/h3",
+      "conteudo_pertinente": "rho=m/V; v=V/m=1/rho. Longe do ponto crítico, variações moderadas de pressão alteram pouco v; a influência de T pode ser maior. O modelo aproxima v por constante na faixa estudada; não exige pressão constante e deve ser revisto para grandes mudanças de T, pressão ou fase."
+    }
+  },
+  "alteracoes_propostas": {
+    "E": {
+      "antes": "a temperatura do líquido deve ser igual a zero.",
+      "depois": "a temperatura do líquido deve permanecer necessariamente constante durante o bombeamento."
+    },
+    "comentario_E": {
+      "antes": "O modelo não exige temperatura nula.",
+      "depois": "Incompressibilidade permite aproximar o volume específico por uma constante; isotermia exige temperatura constante. O primeiro modelo não impõe o segundo: durante o bombeamento, pode haver pequena variação de temperatura compatível com variação desprezível de volume específico na faixa analisada."
+    }
+  },
+  "candidato_html": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-07/propostas-r2/AV04-candidata.html",
+    "natureza": "Fragmento article isolado; não aplicado ao módulo",
+    "sha256": "6ed8f664d46db759064d42ee073379bda2b8c1c7018ae3418d22774e14f72501",
+    "bytes": 4157
+  },
+  "justificativa_modelos_limites": {
+    "motivo_da_substituicao": "A redação anterior seleciona zero de temperatura sem escala ou operação que motive essa exigência. Sua falsidade não demonstra plausibilidade pedagógica.",
+    "mecanismo_do_novo_distrator": "Confundir incompressibilidade, que permite tratar v como aproximadamente constante na faixa, com isotermia, que mantém T constante. É uma confusão conceitual diretamente ligada à propriedade e ao processo do comando.",
+    "leitura_literal": "A alternativa exige que T permaneça necessariamente constante. A hipótese v aproximadamente constante, isoladamente, não fornece essa necessidade. Não se escreveu apenas que T pode permanecer constante, pois essa possibilidade seria verdadeira e ameaçaria a unicidade.",
+    "contramodelo_analitico": {
+      "hipoteses": "Modelo termodinâmico incompressível simples, v=v0>0 e c>0 constantes, água representada na faixa líquida moderada do comando; bomba adiabática em regime permanente, energias cinética e potencial desprezíveis; trabalho recebido positivo.",
+      "identidades": "du=c dT; h=u+pv; dh=c dT+v0 dp. Com dv=0, T ds=du+p dv implica ds=c dT/T.",
+      "escolha_admissivel": "Escolher Delta p>0 e trabalho recebido por unidade de massa w_in=v0 Delta p+epsilon, com epsilon>0 tão pequeno quanto necessário à faixa.",
+      "balanco_e_conclusao": "w_in=Delta h=c Delta T+v0 Delta p; portanto Delta T=epsilon/c>0, embora v permaneça constante no modelo. A geração específica de entropia é c ln(T2/T1)>0 para T1>0, compatível com a bomba adiabática irreversível.",
+      "limite": "Contramodelo teórico de necessidade; não é previsão numérica da temperatura de uma bomba real nem suplemento do enunciado. A água real tem pequenas variações de v aceitas pela aproximação."
+    },
+    "caso_isotermico_adicional": "Com hipóteses adicionais, T constante pode ocorrer. No modelo ideal incompressível, uma bomba adiabática reversível em regime permanente, com Delta ec e Delta ep desprezíveis, recebe w_in=v0 Delta p e tem Delta T=0. Esse caso particular não torna a isotermia consequência necessária da incompressibilidade.",
+    "preservacao_da_faixa": "O contramodelo permite escolher epsilon positivo arbitrariamente pequeno, mantendo líquido longe da região crítica e variações moderadas de pressão e temperatura. Não exige mudança de fase.",
+    "natureza_da_evidencia": "Plausibilidade teórica pela confusão identificável; sem alegação de erro observado em alunos, frequência de escolha, piloto, psicometria ou revisão humana."
+  },
+  "cinco_opcoes_solucao_unicidade": [
+    {
+      "letra": "A",
+      "texto": "a massa do líquido não pode variar em um volume de controle.",
+      "correta": false,
+      "demonstracao": "Incompressibilidade se refere a v, não ao inventário de massa de todo volume de controle. Em enchimento de um tanque, m_liq=rho V_liq cresce com V_liq, mesmo com rho aproximadamente constante. Isso refuta a proibição universal de variação de massa.",
+      "mecanismo_teorico": "Confusão entre propriedade do material e conservação de inventário de massa em sistema fechado ou regime permanente.",
+      "limite": "Em volume de controle fixo, totalmente ocupado por líquido de rho constante, a massa pode ser constante. Essa condição adicional não é a definição pedida."
+    },
+    {
+      "letra": "B",
+      "texto": "a pressão não pode variar ao atravessar uma bomba.",
+      "correta": false,
+      "demonstracao": "Uma bomba pode elevar pressão com mudança desprezível de v; o termo mecânico v0 Delta p admite Delta p>0. Densidade quase constante não proíbe aumento de pressão.",
+      "mecanismo_teorico": "Confundir incompressibilidade com processo isobárico."
+    },
+    {
+      "letra": "C",
+      "texto": "o volume específico é nulo.",
+      "correta": false,
+      "demonstracao": "Para rho finita e positiva, v=1/rho é finito e positivo. O modelo despreza a variação de v; não anula v.",
+      "mecanismo_teorico": "Trocar variação aproximadamente nula de uma grandeza por valor nulo da grandeza."
+    },
+    {
+      "letra": "D",
+      "texto": "o volume específico pode ser tratado como aproximadamente constante na faixa analisada.",
+      "correta": true,
+      "demonstracao": "Na faixa declarada, v pode ser aproximado por v0 finito e positivo. Essa é a definição operacional solicitada e coincide com a base ligada.",
+      "mecanismo_teorico": null
+    },
+    {
+      "letra": "E",
+      "texto": "a temperatura do líquido deve permanecer necessariamente constante durante o bombeamento.",
+      "correta": false,
+      "demonstracao": "v aproximadamente constante não fixa T. O contramodelo de bomba adiabática irreversível com w_in=v0 Delta p+epsilon tem Delta T=epsilon/c>0 e v constante no modelo, dentro da faixa delimitada.",
+      "mecanismo_teorico": "Confusão direta entre incompressibilidade e isotermia; o quantificador necessariamente é refutado por um processo permitido."
+    }
+  ],
+  "solucao": {
+    "chave": "D",
+    "derivacao": "v=1/rho aproximadamente constante é a aproximação pertinente. Não implica massa constante em todo volume de controle, pressão constante, v nulo ou T necessariamente constante.",
+    "unicidade": "Somente D expressa o significado do modelo nas condições do comando. A, B, C e E atribuem condições que o modelo não impõe.",
+    "arredondamento": "Não aplicável a item conceitual sem resultados numéricos ou alternativas numéricas; as cinco proposições são semanticamente distintas."
+  },
+  "verificacoes_do_corretor": {
+    "metodo": "Extração de AV04 e base-medidas com parseHtml/sha256 canônicos; comparação antes/depois em memória; funções reais de digital executadas em VM com adaptador restrito aos recortes sem imagens/MathML.",
+    "resultados": {
+      "html_r1_e_artigo_identicos_aos_hashes_esperados": true,
+      "decisao_auditor_hash_conferido": true,
+      "alteracoes_limitadas_a_dois_literais": true,
+      "reversao_dos_dois_literais_reproduz_artigo_r1": true,
+      "enunciado_attrs_ids_chave_preservados": true,
+      "opcoes_A_B_C_D_identicas": true,
+      "cinco_radios_A_a_E_e_D_unica_por_derivacao": true,
+      "candidato_parse_sem_erros": true,
+      "produto_r1_preservado_5_arquivos": true
+    },
+    "limites": "Comparação estrutural e análise científica do Corretor; sem navegador, localStorage, teste com alunos ou parecer independente."
+  },
+  "partes_futuramente_alteradas": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "local": "Somente texto de E e comentário de E em article#av-e1-04",
+      "condicao": "Após parecer integral r1 e liberação expressa do coordenador para a aplicação; reapresentação do produto alterado ao Auditor."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "local": "Somente registro de av-e1-04 e identidades derivadas pertinentes",
+      "condicao": "Conferir esquema/campos na fase autorizada; atualizar hashes de artigo/corpo de fonte e rastreabilidade realmente afetados, sem presumir campo ainda não lido."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "local": "Representação derivada correspondente, se afetada",
+      "condicao": "Regenerar apenas quando autorizado e verificar alcance."
+    },
+    {
+      "arquivo": "Futuras evidências/entrega BAN-07 r2",
+      "local": "Manifesto e prova da versão aplicada",
+      "condicao": "Novos artefatos; preservar pareceres, evidências e entrega r1. Nenhuma mudança de JS é necessária para esta redação pela análise atual."
+    }
+  ],
+  "validade_progresso_fingerprint": {
+    "estado": "DIGITAIS_CALCULADAS_EM_CANDIDATO_ISOLADO; COMPORTAMENTO_FINAL_A_VERIFICAR_NA_APLICACAO",
+    "digital_r1": "8eaed3f8",
+    "digital_candidata": "cccc3a46",
+    "mudanca_da_digital": true,
+    "funcao": "assets/curso.js digitalDoBanco: enunciado, imagens quando houver, letras/textos de alternativas e chave; comentário fica fora da digital.",
+    "prova_isolada": "Funções reais normalizarDigital/textoDaDigital/fnv1a/digitalDoBanco extraídas do JS r1 e executadas em VM com adaptador restrito a AV04. A digital r1 reproduz 8eaed3f8 do mapa-identidades-r1; nova E muda a digital. Não houve execução ou escrita de armazenamento.",
+    "consequencia_a_verificar": "Após aplicação, tentativa AV04 da digital antiga deve ser preservada no mapa histórico, mas não pontuar como resposta atual; AV04 revisada exige nova tentativa. As demais questões mantêm suas identidades. Não migrar letra antiga para a nova digital.",
+    "verificacoes_futuras": [
+      "Conferir digital e hash do artigo efetivamente aplicado contra este candidato ou justificar alteração posterior.",
+      "Conferir unicidade/ausência de colisão da nova digital no banco aplicado.",
+      "Testar armazenamento e aviso de tentativa anterior, nova resposta e persistência após recarga, preservando bytes/entradas antigas em cópia de teste.",
+      "Reexecutar validação canônica e conferir o alcance das atualizações do inventário."
+    ],
+    "limite": "Nenhum progresso real foi invalidado ou alterado nesta proposta; não se declara aprovação de persistência com base apenas na VM."
+  },
+  "observacao_AV04_A": {
+    "natureza": "Refinamento não bloqueante, fora do candidato obrigatório",
+    "registro": "Comentário A atual preservado. Entrada/saída não implica automaticamente variação de inventário; exemplo explícito de enchimento tornaria a explicação mais direta. A falsidade da proibição universal e sua plausibilidade já estão demonstradas nesta proposta.",
+    "acao": "Somente anotação; sem ampliar a alteração proposta."
+  },
+  "roteiro_minimo_reapresentacao": [
+    "Coordenador mantém r1 congelado até parecer integral; encaminha estes dois artefatos isolados ao Auditor com hashes e escopo AV04-E.",
+    "Auditor independente examina a redação literal, comentário, faixa, cinco opções, plausibilidade teórica e D única; o Corretor não aprova o candidato.",
+    "Se a aplicação for liberada pelo coordenador após a decisão pertinente, substituir somente os dois literais de AV04, sincronizar rastreabilidade estritamente afetada e registrar novos hashes.",
+    "Executar verificações de estrutura, digitais/progresso e persistência no produto aplicado, conforme campo específico; reapresentar o artigo efetivo e provas ao Auditor.",
+    "Aguardar parecer explícito sobre a versão examinada; não liberar próximo ID nem classificar E1 como avançado com este candidato."
+  ],
+  "pendencias": [
+    {
+      "id": "P1",
+      "descricao": "Parecer integral independente sobre BAN-07 r1 ainda pendente; esta proposta não o substitui."
+    },
+    {
+      "id": "P2",
+      "descricao": "Redação literal candidata e comentário ainda não examinados em nova versão pelo Auditor independente."
+    },
+    {
+      "id": "P3",
+      "descricao": "Aplicação ao produto não autorizada neste turno e não executada."
+    },
+    {
+      "id": "P4",
+      "descricao": "Rastreabilidade, colisão de digital, progresso e navegador do produto aplicado dependem de eventual autorização/aplicação futura."
+    }
+  ],
+  "preservacao_produto_r1_ao_fim": {
+    "data_utc": "2026-10-28T23:17:06.898Z",
+    "metodo": "SHA-256 canônico dos cinco arquivos da tabela de produto r1, comparados com a entrega congelada.",
+    "todos_preservados": true,
+    "arquivos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256_r1": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+        "sha256_ao_fim": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+        "preservado": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+        "sha256_r1": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+        "sha256_ao_fim": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+        "preservado": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "sha256_r1": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+        "sha256_ao_fim": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+        "preservado": true
+      },
+      {
+        "arquivo": "assets/curso.js",
+        "sha256_r1": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "sha256_ao_fim": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "preservado": true
+      },
+      {
+        "arquivo": "assets/registro.js",
+        "sha256_r1": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+        "sha256_ao_fim": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+        "preservado": true
+      }
+    ]
+  },
+  "decisoes_de_estado": {
+    "aprova_candidato": false,
+    "aprova_BAN07": false,
+    "libera_proximo_id": false,
+    "declara_E1_avancado": false
+  }
+}

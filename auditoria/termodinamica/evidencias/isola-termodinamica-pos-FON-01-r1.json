@@ -1,0 +1,38 @@
+{
+  "id": "FON-01",
+  "data": "2026-10-28",
+  "responsavel": "agente automatizado /root",
+  "base": "Manifesto histórico PUBLICACAO.json; não foi atualizado nem republicado.",
+  "arquivosComparados": 106,
+  "arquivosIdenticos": 102,
+  "diferencasHistoricas": [
+    {
+      "arquivo": "assets/curso.js",
+      "igual": false,
+      "sha256_atual": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "igual": false,
+      "sha256_atual": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+    },
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "igual": false,
+      "sha256_atual": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0"
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "igual": false,
+      "sha256_atual": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe"
+    }
+  ],
+  "notaDiferencas": "E1 e formulário pertencem ao curso; curso.js/registro.js já tinham alterações isoladas aprovadas em BAN-10/BAN-01 e permaneceram intactos em FON-01. Novos arquivos de evidência não fazem parte deste manifesto histórico.",
+  "diferencasForaEscopo": [],
+  "inventario": {
+    "total": 197,
+    "foraCR": 117,
+    "diferencasForaCR": []
+  },
+  "limite": "Comparação dos arquivos históricos listados; não é nova publicação nem certificação global do curso."
+}

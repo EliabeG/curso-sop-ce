@@ -1,0 +1,133 @@
+{
+  "id": "BAN-08",
+  "bloco": "Q06–Q10",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral de enunciado, alternativas e comentários na versão congelada; cálculos em Decimal para Q06–09 e análise simbólica de Q10. Q09 usa rótulos de SVG incluídos e descrição textual do próprio item.",
+  "registros": [
+    {
+      "id": "q-e1-06",
+      "artigo_sha256": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-06",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-gas-modelo",
+          "#base-leitura-matematica"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "m=1 kg, R=0,287 kJ/(kg·K), T=300 K, V=0,861 m³; gás ideal.",
+      "solucao": "p=mRT/V=1×0,287×300/0,861=86,1/0,861=100 kPa; kJ/m³=kPa.",
+      "resultado": "D=100 kPa.",
+      "comparacao": "A=0,287 é cópia de R; B=300 copia T; C=1 equivale a resultado dividido indevidamente por 100; E=86,1 é numerador sem dividir por V. Unidades dos erros não tornam esses valores resultados corretos.",
+      "tolerancia": "Resultado 100 é exato para os decimais fornecidos; sem empate por arredondamento.",
+      "limite": "R é dado, não validação de propriedade real do ar.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-07",
+      "artigo_sha256": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-07",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-primeira-lei",
+          "#base-balanco-fechado"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "Q recebido=500 kJ, W produzido=200 kJ; sistema fechado, ΔEc e ΔEp desprezíveis.",
+      "solucao": "ΔU=Q−W=500−200=300 kJ.",
+      "resultado": "E=300 kJ.",
+      "comparacao": "A=−300 inverte sinal; B=700 soma transferências em vez de subtrair trabalho produzido; C=500 ignora W; D=200 copia W.",
+      "tolerancia": "Valores inteiros exatos nos dados; alternativas distintas.",
+      "limite": "É variação de U, não energia interna final.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-08",
+      "artigo_sha256": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-08",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-trabalho-fronteira",
+          "#base-leitura-matematica"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "p=200 kPa, V1=0,1 m³, V2=0,3 m³; expansão quase estática isobárica.",
+      "solucao": "W=∫p dV=200×(0,3−0,1)=40 kPa·m³=40 kJ.",
+      "resultado": "A=40 kJ produzido.",
+      "comparacao": "B=200×0,3=60 usa Vf; C=−40 inverte sinal; D=0 confunde p constante com V constante; E=200×0,1=20 usa Vi.",
+      "tolerancia": "Dados decimais exatos no modelo; todas as escolhas diferem sem arredondamento.",
+      "limite": "A base declara p absoluta e trabalho de fronteira total; não é trabalho útil subtraído da atmosfera.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-09",
+      "artigo_sha256": "16501a81d69977300456240e97fcc15906ca07738d3bb91c6eae68a7e8d3e657",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-09",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-trabalho-fronteira",
+          "#base-balanco-fechado"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_FIGURA",
+      "dados": "Ciclo horário A(1,200), B(3,200), C(3,100), D(1,100), V em m³, p em kPa; pressão de fronteira e processo quase estático sem outros trabalhos.",
+      "solucao": "W_AB=200(3−1)=400 kJ; W_BC=0; W_CD=100(1−3)=−200 kJ; W_DA=0; W líquido=200 kJ produzido. Área (200−100)(3−1)=200 kJ; ΔU ciclo=0.",
+      "resultado": "B=200 kJ produzidos.",
+      "comparacao": "A=200×3=600 usa p alta vezes Vf; C=100 usa apenas diferença de pressão sem largura e a unidade foi atribuída indevidamente; D confunde ΔU=0 com W=0; E inverte sentido com magnitude 200.",
+      "tolerancia": "Geometria definida por valores exatos no diagrama esquemático; sem equivalência entre sentido produzido e consumido.",
+      "limite": "A unidade 100 kPa não é energia antes de multiplicar pela largura; a figura é esquemática e seus rótulos determinam o ciclo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-10",
+      "artigo_sha256": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-10",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-valvula-fase"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_RESULTADO_NUMERICO",
+      "dados": "Válvula estacionária, adiabática, sem trabalho, variações de velocidade e altura pequenas.",
+      "solucao": "Balanço h1+V1²/2+gz1≈h2+V2²/2+gz2 dá h1≈h2; h=u+pv.",
+      "resultado": "E: entalpias específicas aproximadamente iguais.",
+      "comparacao": "A isentropia não decorre de adiabaticidade; B u não é universalmente constante, pois pv pode mudar; C pressão pode cair; D T pode mudar em fluido real; E é condição geral aproximada no modelo.",
+      "tolerancia": "Não há valor numérico a comparar; ≈ representa termos cinéticos/potenciais pequenos, sem tolerância numérica especificada.",
+      "limite": "Para gás ideal h(T), T pode ser constante; não se generaliza a todos os fluidos.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem revisão independente, alunos ou fechamento BAN-08.",
+    "Q09 é esquema sem escala: rótulos, não distâncias geométricas, definem o cálculo."
+  ]
+}

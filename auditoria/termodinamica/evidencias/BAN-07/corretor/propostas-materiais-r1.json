@@ -1,0 +1,99 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "estado": "rascunho_pre_edicao",
+  "produto_modificado": false,
+  "deltas": [
+    {
+      "id": "q-e1-02",
+      "antes": "Um manômetro indica 200 kPa e a pressão atmosférica local é 100 kPa.",
+      "depois": "Um manômetro indica uma pressão manométrica de +200 kPa em relação à atmosfera local. A pressão atmosférica local é 100 kPa.",
+      "ocorrencias": 1,
+      "motivo": "Declarar a referência manométrica antes da tentativa."
+    },
+    {
+      "id": "q-e1-09",
+      "antes": "Na figura, o ciclo é A → B → C → D → A. Com pressão em kPa e volume em m³, qual é o trabalho líquido?",
+      "depois": "Um sistema fechado com fronteira móvel percorre o ciclo A → B → C → D → A. O processo ocorre no limite de equilíbrio mecânico, sem atrito e sem outros modos de trabalho; a pressão do gráfico é a pressão de fronteira conjugada à variação de volume. Com pressão em kPa e volume em m³, qual é o trabalho líquido realizado pelo sistema?",
+      "ocorrencias": 1,
+      "motivo": "Delimitar o trabalho de fronteira representado pela área orientada."
+    },
+    {
+      "id": "q-e1-15",
+      "antes": "<li data-letra=\"C\">135%.</li>",
+      "depois": "<li data-letra=\"C\">165%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Distrator reproduzível pela soma indevida dos fluxos."
+    },
+    {
+      "id": "q-e1-15",
+      "antes": "Somar os dois fluxos não calcula eficiência.",
+      "depois": "Somar os dois fluxos e dividir pelo calor recebido dá (1.000 + 650)/1.000 = 165%. O trabalho líquido é a diferença entre calor recebido e rejeitado, não a soma.",
+      "ocorrencias": 1,
+      "motivo": "Sincronizar a refutação com o valor da alternativa."
+    },
+    {
+      "id": "q-e1-16",
+      "antes": "<li data-letra=\"E\">25%.</li>",
+      "depois": "<li data-letra=\"E\">33,3%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Erro de normalização pela soma das temperaturas."
+    },
+    {
+      "id": "q-e1-16",
+      "antes": "A razão indicada não corresponde à expressão de Carnot.",
+      "depois": "Usar (600 − 300)/(600 + 300) dá aproximadamente 33,3%. O denominador do rendimento de Carnot é a temperatura absoluta da fonte quente, não a soma das temperaturas.",
+      "ocorrencias": 1,
+      "motivo": "Explicar o erro concreto de E."
+    },
+    {
+      "id": "q-e1-16",
+      "antes": "Inverte a razão entre as temperaturas.",
+      "depois": "A razão 600/300, escrita como porcentagem, dá 200%, mas omite o complemento 1 − Tfria/Tquente. Apenas inverter a razão dentro da fórmula daria −100%, não esta alternativa.",
+      "ocorrencias": 1,
+      "motivo": "Distinguir os erros que realmente produzem 200%."
+    },
+    {
+      "id": "q-e1-19",
+      "antes": "<li data-letra=\"C\">45%.</li>",
+      "depois": "<li data-letra=\"C\">44,4%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Distrator real/(real+ideal) calculável."
+    },
+    {
+      "id": "q-e1-19",
+      "antes": "Somar ou tirar média das quedas não calcula eficiência.",
+      "depois": "Dividir a queda real pela soma das quedas dá 400/(400 + 500) ≈ 44,4%. A eficiência da turbina compara queda real com queda isentrópica, sem somá-las no denominador.",
+      "ocorrencias": 1,
+      "motivo": "Relacionar alternativa e erro de definição."
+    },
+    {
+      "id": "q-e1-28",
+      "antes": "<li data-letra=\"B\">60%.</li>",
+      "depois": "<li data-letra=\"B\">68,75%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Razão de entalpias de estado confundida com razão de quedas."
+    },
+    {
+      "id": "q-e1-28",
+      "antes": "Não corresponde às diferenças de entalpia dadas.",
+      "depois": "A razão 2.200/3.200 = 68,75% usa a entalpia da saída isentrópica dividida pela de entrada. A eficiência compara quedas de entalpia; não usa essa razão de valores de estado.",
+      "ocorrencias": 1,
+      "motivo": "Explicar o distrator de entalpia de saída isentrópica."
+    },
+    {
+      "id": "q-e1-13",
+      "antes": "<ul class=\"q-justificativas\"><li data-item=\"1\"><p>I — Falsa: calor e trabalho dependem do caminho, não apenas dos estados inicial e final.</p></li><li data-item=\"2\"><p>II — Verdadeira: a soma <math class=\"matematica\" data-formula-original=\"u + pv\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>u</mi><mo>+</mo><mi>p</mi><mi>v</mi></mrow></semantics></math> define entalpia específica.</p></li><li data-item=\"3\"><p>III — Verdadeira: U é propriedade e retorna ao mesmo valor no ciclo.</p></li></ul>",
+      "depois": "<ul class=\"q-justificativas\"><li data-item=\"1\"><p>I — Falsa: calor e trabalho dependem do caminho, não apenas dos estados inicial e final.</p></li><li data-item=\"2\"><p>II — Verdadeira: a soma <math class=\"matematica\" data-formula-original=\"u + pv\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>u</mi><mo>+</mo><mi>p</mi><mi>v</mi></mrow></semantics></math> define entalpia específica.</p></li><li data-item=\"3\"><p>III — Verdadeira: U é propriedade e retorna ao mesmo valor no ciclo.</p></li></ul><h4>Conferência de cada alternativa</h4><ul class=\"q-justificativas\"><li data-letra=\"A\"><p>II é verdadeira, mas III também é; a alternativa omite uma afirmação correta.</p></li><li data-letra=\"B\"><p>I é falsa: calor e trabalho são transferências dependentes do caminho, não propriedades. Além disso, omite II e III.</p></li><li data-letra=\"C\"><p>II e III são verdadeiras e I é falsa. Esta é a combinação completa.</p></li><li data-letra=\"D\"><p>III é verdadeira, mas I é falsa; a alternativa também omite II.</p></li><li data-letra=\"E\"><p>II é verdadeira, mas I é falsa; a alternativa também omite III.</p></li></ul>",
+      "ocorrencias": 1,
+      "motivo": "Justificar individualmente as cinco combinações, conservando a análise das proposições."
+    },
+    {
+      "id": "q-e1-18",
+      "antes": "<ul class=\"q-justificativas\"><li data-item=\"1\"><p>I — Verdadeira: <math class=\"matematica\" data-formula-original=\"S_gerada\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mrow><mi mathvariant=\"normal\">g</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi></mrow></msub></mrow></semantics></math> positiva eleva a entropia do sistema isolado.</p></li><li data-item=\"2\"><p>II — Falsa: processo adiabático irreversível não é isentrópico.</p></li><li data-item=\"3\"><p>III — Verdadeira: a entropia pode sair de uma parte com transferência de calor.</p></li></ul>",
+      "depois": "<ul class=\"q-justificativas\"><li data-item=\"1\"><p>I — Verdadeira: <math class=\"matematica\" data-formula-original=\"S_gerada\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mrow><mi mathvariant=\"normal\">g</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi></mrow></msub></mrow></semantics></math> positiva eleva a entropia do sistema isolado.</p></li><li data-item=\"2\"><p>II — Falsa: processo adiabático irreversível não é isentrópico.</p></li><li data-item=\"3\"><p>III — Verdadeira: a entropia pode sair de uma parte com transferência de calor.</p></li></ul><h4>Conferência de cada alternativa</h4><ul class=\"q-justificativas\"><li data-letra=\"A\"><p>Erra II: adiabaticidade não elimina geração de entropia, portanto a segunda posição é F.</p></li><li data-letra=\"B\"><p>Erra I: a entropia pode aumentar em um sistema isolado irreversível, portanto a primeira posição é V.</p></li><li data-letra=\"C\"><p>Erra III: uma parte pode perder entropia ao rejeitar calor, portanto a terceira posição é V.</p></li><li data-letra=\"D\"><p>As três posições estão corretas: V, F, V. Isolamento permite geração, adiabaticidade não implica isentropia e uma parte pode perder entropia.</p></li><li data-letra=\"E\"><p>Erra as três posições: I permite aumento de entropia, II não é universalmente verdadeira e III descreve uma possibilidade válida.</p></li></ul>",
+      "ocorrencias": 1,
+      "motivo": "Justificar individualmente as cinco combinações, conservando a análise das proposições."
+    }
+  ]
+}

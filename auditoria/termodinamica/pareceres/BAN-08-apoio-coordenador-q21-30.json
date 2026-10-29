@@ -1,0 +1,119 @@
+{
+  "id": "BAN-08",
+  "data": "2026-10-29",
+  "natureza": "Apoio parcial de cálculo independente das propostas do Corretor; não representa cegamento.",
+  "html_sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+  "registros": [
+    {
+      "id_artigo": "q-e1-21",
+      "sha256_artigo": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "solucao": "Otto recebe calor a volume constante e Diesel a pressão constante; Carnot ideal combina 2 isotermas e 2 adiabáticas reversíveis.",
+      "resultado": "Relações conceituais; contagem exata 2+2=4 processos.",
+      "tolerancia": "Igualdade exata para contagem; conceitos sem tolerância numérica.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-22",
+      "sha256_artigo": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "solucao": "No modelo de dois estágios equivalentes, resfriamento intermediário reduz T e v na entrada do estágio e, para o mesmo aumento de pressão e modelo reversível ideal, reduz integral v dp.",
+      "resultado": "Comparação de trabalho sob hipóteses, sem dado para valor numérico.",
+      "tolerancia": "Desigualdade qualitativa; não há tolerância numérica aplicável.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-23",
+      "sha256_artigo": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "solucao": "h1-h4=400-250=150 kJ/kg; h2-h1=450-400=50 kJ/kg; COP_R=150/50=3 adimensional; COP_HP=(450-250)/50=4; inverso 1/3≈0,33.",
+      "resultado": "150 e 50 kJ/kg; COP_R=3, COP_HP=4; 1/3≈0,33.",
+      "tolerancia": "Aritmética exata para 3 e 4; 0,33 arredondado ao centésimo (1/3 na faixa [0,325;0,335)).",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-24",
+      "sha256_artigo": "6215c6a02392e33e0ac74907fea506a63ecb92d171eccb65502ebf8d5867db14",
+      "solucao": "Flamotubular: gases no interior dos tubos e água no exterior; aquatubular inverte a organização.",
+      "resultado": "Sem dados ou afirmações numéricas na resolução.",
+      "tolerancia": "Não aplicável: classificação geométrica.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-25",
+      "sha256_artigo": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "solucao": "Regime permanente elimina derivadas temporais locais, não gradientes espaciais; definição h=u+pv.",
+      "resultado": "Identidade exata h=u+pv; nenhuma grandeza é avaliada numericamente.",
+      "tolerancia": "Igualdade simbólica; tolerância numérica não aplicável.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-26",
+      "sha256_artigo": "df61bd3ca6a30a77fe477e04e50ba87b515c3fa89a652d33e3f8d2f5cb27ba86",
+      "solucao": "(230-200)/(300-200)=30/100=0,30; 2800+0,30(3000-2800)=2860 kJ/kg; opção 3060 decorre de 3000+0,30(200)=3060.",
+      "resultado": "Fração 0,30; incremento 60 kJ/kg; entalpia 2860 kJ/kg.",
+      "tolerancia": "Operações exatas com dados didáticos e interpolação linear definida; sem inferir precisão metrológica.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-27",
+      "sha256_artigo": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "solucao": "Razões iguais pi/1=16/pi implicam pi²=16 bar²; para pressão positiva pi=4 bar absolutos.",
+      "resultado": "4 bar; razões 4 e 4.",
+      "tolerancia": "Igualdade exata dentro do modelo e dados declarados.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-28",
+      "sha256_artigo": "15be288e8d94b47776947cc8a41b9005f054033334bfcb6fc611bc98dc06d7c9",
+      "solucao": "3200-2400=800; 3200-2200=1000 kJ/kg; η_t=800/1000=0,80=80%; opção inversa 1,25=125%; 2200/3200=0,6875=68,75%.",
+      "resultado": "800 e 1000 kJ/kg; eficiência 80%.",
+      "tolerancia": "Aritmética exata para dados didáticos; não supõe precisão experimental infinita.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-29",
+      "sha256_artigo": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "solucao": "ṁ1Δs1+ṁ2Δs2=1(-0,20)+1(0,30)=0,10 kJ/(s·K)=0,10 kW/K; soma de módulos 0,50 e sinal invertido -0,10.",
+      "resultado": "Geração 0,10 kW/K, positiva.",
+      "tolerancia": "Aritmética decimal exata com dados declarados; diferença de unidades invalida 0,10 kW.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    },
+    {
+      "id_artigo": "q-e1-30",
+      "sha256_artigo": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "solucao": "A segunda lei requer S_gen≥0; uma válvula adiabática pode ser irreversível e não é necessariamente isentrópica; modelo estacionário usual dá h_entrada≈h_saída.",
+      "resultado": "Desigualdade simbólica e identidade aproximada sob hipóteses; não há dados para cálculo numérico.",
+      "tolerancia": "Comparação com zero e relação simbólica; tolerância numérica não aplicável.",
+      "fonte": "Enunciado, comentários e bases vinculadas do artigo na versão do módulo identificada; dados dos exercícios são didáticos quando indicados.",
+      "revisor": "Coordenador /root, cálculo e leitura próprios após exposição às chaves e comentários",
+      "estado": "apoio_numerico_preliminar_sujeito_a_auditoria",
+      "limite": "Não é revisão da entrega BAN-08 nem aprovação independente global; avaliar insumos externos e dependências na revisão do registro final."
+    }
+  ],
+  "libera_proximo_id": false
+}

@@ -1,0 +1,138 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV11–AV15",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco alternativas e comentários; cálculos exatos e comparação das sequências.",
+  "registros": [
+    {
+      "id": "av-e1-11",
+      "artigo_sha256": "574b95a7bc7d26adf5ccc8a100cba3b30a3f5f34b9c76a670190cd7c43c5a165",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-11",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-absolutas",
+          "#base-medidas",
+          "#cr-e1-11"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "27 °C; o enunciado manda adotar T(K)=t(°C)+273.",
+      "solucao": "27+273=300 K pela aproximação prescrita.",
+      "resultado": "A, 300 K.",
+      "comparacao": "A 300 correta; B 27+300=327; C conserva 27; D 273 para 0 °C; E 273−27=246.",
+      "tolerancia": "Exato na convenção do exercício; conversão SI exata seria 300,15 K, não substituída neste cálculo.",
+      "limite": "273 é aproximação dada, não valor exato da diferença Celsius–kelvin.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-12",
+      "artigo_sha256": "6d4d741b3c2f0be508022e5f24ba0cdbb360c3f0c2ddbb72aca59aebf3efcd6f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-12",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-quatro-leis",
+          "#cr-e1-12"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "Quatro leis e quatro descrições: conservação, equilíbrio transitivo, limites de conversão em ciclo e entropia de cristal perfeito puro.",
+      "solucao": "Na numeração proposta, sequência 2–1–3–4. Terceira lei é referência S=0 a 0 K para cristal perfeito puro.",
+      "resultado": "C.",
+      "comparacao": "A troca segunda e terceira; B troca zero e primeira; C 2–1–3–4; D troca primeira e segunda; E troca zero e segunda nas descrições.",
+      "tolerancia": "Contagem e correspondência são exatas; 0 K e entropia zero são referência ideal, sem tolerância experimental.",
+      "limite": "Cristal puro perfeito é hipótese essencial; não extrapolar a sistemas com entropia residual.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-13",
+      "artigo_sha256": "67a3276e7a96d89fd1c93db9f3dad1f417bb62dff584b34c4e5df1a406651543",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-13",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-energia",
+          "#base-balanco-fechado",
+          "#cr-e1-13"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "m=2 kg, cv=0,72 kJ/(kg K) constante, 300→350 K, gás ideal.",
+      "solucao": "ΔT=50 K; Δu=cvΔT=36 kJ/kg; ΔU=mΔu=72 kJ.",
+      "resultado": "C, 72 kJ.",
+      "comparacao": "A 144 multiplica massa de novo; B −72 troca sinal; C 72; D 720 fator dez; E 36 confunde grandeza específica com total.",
+      "tolerancia": "Todos os resultados exatos para valores nominais; sem incerteza do cv.",
+      "limite": "cv constante ou valor médio válido no intervalo é hipótese da resolução; unidade específica e total diferem.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-14",
+      "artigo_sha256": "3c811cd41a5553c76a3d79539c529fc0700861c827165f1a490339f0a41b6fcd",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-14",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-molecular",
+          "#cr-e1-14"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Gás liberado em recipiente rígido evacuado, sem barreiras internas e variações gravitacionais relevantes.",
+      "solucao": "No equilíbrio o gás distribui-se por todo espaço disponível; moléculas seguem em movimento microscópico.",
+      "resultado": "B.",
+      "comparacao": "A metade inferior não é distribuição de gás neste modelo; B ocupa espaço acessível; C volume anterior não é obrigatório; D não fica restrito à entrada; E não está em repouso molecular.",
+      "tolerancia": "Sem volume, temperatura ou número a calcular; tolerância não se aplica.",
+      "limite": "Desprezam-se barreiras e gradientes externos relevantes; equilíbrio macroscópico não implica ausência de movimento.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-15",
+      "artigo_sha256": "aabe5d8c80218bb2762758349c567671cb06794100899eb42e6c2906cae487a9",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-15",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-molecular",
+          "#cr-e1-15"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "Modelo cinético elementar de gás ideal; três afirmações.",
+      "solucao": "Volume molecular desprezado e colisões elásticas: I verdadeira, II verdadeira, III falsa; V–V–F.",
+      "resultado": "E.",
+      "comparacao": "A F–V–F nega I; B F–F–V inverte todas; C V–V–V aceita III; D V–F–V erra II/III; E V–V–F correto.",
+      "tolerancia": "Três juízos lógicos, sem resultado medido ou tolerância.",
+      "limite": "Conservação de energia cinética total refere-se à colisão ideal, não à velocidade individual ou todos os encontros reais.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; a questão de origem fornece contexto, não prova documental da alternativa autoral."
+  ]
+}

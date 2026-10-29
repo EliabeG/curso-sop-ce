@@ -1,0 +1,1117 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "Q18, Q19, Q24, Q26, Q28 modificados",
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "BLOCO_CONCLUIDO; cinco artigos atuais aprovados somente no recorte BAN-07, sem aprovação global",
+  "criterio": "Comandos atuais e 25 opções, erros plausíveis, dados/modelos acessíveis antes da tentativa, unidades, sinais, restrições e equivalência após arredondamento. Delta por componente, sem transferir o hash antigo para o artigo modificado.",
+  "base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "extrato_preparacao": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+    "sha256_extrato": "9a29bd732b390dd2cb330278622144ced38ecf81937e28ddf887a1fde521e5bc",
+    "html_preparacao_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "metodo": "Parser canônico importado. Comandos, opções e legendas lidos antes dos comentários; chaves iniciais anunciadas em commentary. Nenhuma figura está presente nestes cinco comandos."
+  },
+  "preparacao_antiga_atribuida": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+    "sha256": "d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913",
+    "auditor_original": "/root/auditor_aaa, agente automatizado",
+    "data": "2026-10-28",
+    "alcance": "Leitura preliminar da base anterior, sem aceite final; notas específicas lidas neste bloco. As soluções e opções atuais foram reexaminadas por este auditor, que fecha cada nota por prova indicada no registro.",
+    "notas_por_item": {
+      "q-e1-18": {
+        "sha256_artigo": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+        "pontos_a_verificar": [],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "chave_derivada_original": "D"
+      },
+      "q-e1-19": {
+        "sha256_artigo": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+        "pontos_a_verificar": [
+          "A expressão queda isentrópica da turbina pressupõe a referência usual da definição; verificar que justificativa mantenha mesmos estados de entrada/pressões de saída."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "chave_derivada_original": "A"
+      },
+      "q-e1-24": {
+        "sha256_artigo": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+        "pontos_a_verificar": [
+          "Distratores A/B/D parecem pouco ligados à confusão técnica relevante. Solicitar demonstração da plausibilidade do erro representado ou substituição pertinente; não classificar plausibilidade como empiricamente validada."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "chave_derivada_original": "C"
+      },
+      "q-e1-26": {
+        "sha256_artigo": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+        "pontos_a_verificar": [
+          "A tarefa pede interpolação linear de tabela didática, portanto o resultado algorítmico não certifica um fluido físico; mesma pressão declarada."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "chave_derivada_original": "B"
+      },
+      "q-e1-28": {
+        "sha256_artigo": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+        "pontos_a_verificar": [
+          "Conferir justificativa concreta do distrator60%; demonstrar erro de operação correspondente se mantido como plausível."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "chave_derivada_original": "E"
+      }
+    }
+  },
+  "comparacao_componentes": {
+    "q-e1-18": {
+      "sha256_atual": "8db8ecd7e18c8f2d2fc68d28a568ba88c2f1645c2ca7473ea2ab745be4f29adb",
+      "sha256_anterior": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+      "artigo_inteiro_identico": false,
+      "abertura_identica": true,
+      "chave_atual": "D",
+      "chave_anterior": "D",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "f7cc167b0ce31bcc62bc17f9627f37a93b9c665840cc3cf73e8926f1d0e7963a",
+          "sha256_anterior": "f7cc167b0ce31bcc62bc17f9627f37a93b9c665840cc3cf73e8926f1d0e7963a",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "8c0647152bbccd80b9e12a90c6a8611d2f2c6dbc6bfb7968bc3cfb87e6245880",
+          "sha256_anterior": "8c0647152bbccd80b9e12a90c6a8611d2f2c6dbc6bfb7968bc3cfb87e6245880",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "fb5471634b4cb0fbb999c4ec059b7afa4ae67a73d5dfa193393255587fadac17",
+          "sha256_anterior": "fb5471634b4cb0fbb999c4ec059b7afa4ae67a73d5dfa193393255587fadac17",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "4895a7fa7fb6eaa547824bf3cbd4f02015b28b45217050dfc32e5daf8fdee583",
+          "sha256_anterior": "4895a7fa7fb6eaa547824bf3cbd4f02015b28b45217050dfc32e5daf8fdee583",
+          "identico": true
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "e82397ba1dfb0adbf84f6f7b2671c729e9f33567b2dd2238d644fe8475b32ca4",
+          "sha256_anterior": "0d15e45a0343716af8db6426066ce2f2eea7a9a066b83abc05d5c83c7c151ca2",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "947c1c0ffb3ee60a4e1ee68ef4f4e73b519a4ea741d12bcb5e7375cc90500727",
+          "sha256_anterior": "947c1c0ffb3ee60a4e1ee68ef4f4e73b519a4ea741d12bcb5e7375cc90500727",
+          "identica": true
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "ba6003f70de631102aefece69daf0bc5aacc981c3c86cc302b6fdef4e80a83cf",
+          "sha256_anterior": "ba6003f70de631102aefece69daf0bc5aacc981c3c86cc302b6fdef4e80a83cf",
+          "identica": true
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "3e68ff4e8a8081b6db2e7b84c74fe460dea90260cc7fb2e12e7cb93d9e06dabe",
+          "sha256_anterior": "3e68ff4e8a8081b6db2e7b84c74fe460dea90260cc7fb2e12e7cb93d9e06dabe",
+          "identica": true
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "fc4a3ac6085cf027593c13b2c7ff0201d5e86e968da3850a629fc5f875101aee",
+          "sha256_anterior": "fc4a3ac6085cf027593c13b2c7ff0201d5e86e968da3850a629fc5f875101aee",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "8198f811aeeb65d709279d3c8cbf3bd190d6236fa7a76718f43f4ef1136c85e4",
+          "sha256_anterior": "8198f811aeeb65d709279d3c8cbf3bd190d6236fa7a76718f43f4ef1136c85e4",
+          "identica": true
+        }
+      ]
+    },
+    "q-e1-19": {
+      "sha256_atual": "95ccddfe325cd576db6efa180c4141e6b4898a73683241e2961399cd973e39c9",
+      "sha256_anterior": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+      "artigo_inteiro_identico": false,
+      "abertura_identica": true,
+      "chave_atual": "A",
+      "chave_anterior": "A",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "5695a7a445611faa777af3964b485369d3cdd3acd1b76d7dbc0cdb7e7c28245d",
+          "sha256_anterior": "5695a7a445611faa777af3964b485369d3cdd3acd1b76d7dbc0cdb7e7c28245d",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "e01112213788687561e1b4bcc66cefe9a46ff4a252b8f41ffb52ee6113e7e61a",
+          "sha256_anterior": "e01112213788687561e1b4bcc66cefe9a46ff4a252b8f41ffb52ee6113e7e61a",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "d215a2dd8bb1a883c8839269b2eb00ec59a7a1b36573ddfab9e8e1ef4f4e2918",
+          "sha256_anterior": "d215a2dd8bb1a883c8839269b2eb00ec59a7a1b36573ddfab9e8e1ef4f4e2918",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "a0871602a8947e1f70267451a206178decf6d06951a1eef4e784d85c62aa85e7",
+          "sha256_anterior": "b25eaa1df949a55da45e04328db08800f6fa1af76171c07bb755e90ffa60fb8c",
+          "identico": false
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "ace2d3d6c625ed78786b4cb417d16c2147e1c3e75eda27372676ef24b536c929",
+          "sha256_anterior": "a1836dc565962e6819854f57ec4aff30a483cd14556e93c518b82168f491c99e",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "82d1c12f1208ba3192cc02e601086ff0d3f0d5103d42216d65f988294be32d52",
+          "sha256_anterior": "82d1c12f1208ba3192cc02e601086ff0d3f0d5103d42216d65f988294be32d52",
+          "identica": true
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "73a69f53c3e64e901d928bb306c1bcba609db3ef34dfda570533a1bf266fcd6a",
+          "sha256_anterior": "73a69f53c3e64e901d928bb306c1bcba609db3ef34dfda570533a1bf266fcd6a",
+          "identica": true
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "7a9d515eca3327a116f5ae8ff2546db3ba6477308fc2912943b783b8a59a9f2f",
+          "sha256_anterior": "d208f3c3a8248ddb6954de69d3cf9b3ae26f583e95097146401e2368485ca9c5",
+          "identica": false,
+          "texto_anterior": "45%",
+          "texto_atual": "44,4%"
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "cf8cbddbc2080e8e6682e7d295a0a19ab3b54be8bcfe13044f71384b4dce10cf",
+          "sha256_anterior": "cf8cbddbc2080e8e6682e7d295a0a19ab3b54be8bcfe13044f71384b4dce10cf",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "b32a4091e118961e6ce631d564b7c85d11e1188556761fce0b5ee698e3328657",
+          "sha256_anterior": "b32a4091e118961e6ce631d564b7c85d11e1188556761fce0b5ee698e3328657",
+          "identica": true
+        }
+      ]
+    },
+    "q-e1-24": {
+      "sha256_atual": "6215c6a02392e33e0ac74907fea506a63ecb92d171eccb65502ebf8d5867db14",
+      "sha256_anterior": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+      "artigo_inteiro_identico": false,
+      "abertura_identica": true,
+      "chave_atual": "C",
+      "chave_anterior": "C",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "50fa920f904d2dac37808b6e51407f393c5e3f3a1bacad3d24e4e82553a3fffc",
+          "sha256_anterior": "50fa920f904d2dac37808b6e51407f393c5e3f3a1bacad3d24e4e82553a3fffc",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "3b26c2848e849e02530fef468d4ef709ef70ef08e6d807dcf02ade384fe43caf",
+          "sha256_anterior": "3b26c2848e849e02530fef468d4ef709ef70ef08e6d807dcf02ade384fe43caf",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "0983b83508ad56ef356f33c7351bdacffea0197b66ab31d4fa6c10524921c00e",
+          "sha256_anterior": "0983b83508ad56ef356f33c7351bdacffea0197b66ab31d4fa6c10524921c00e",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "a344ca16aeb78c6b50759a2bf4e77010e0a1f7b9901eec2be7eb7f42cb675724",
+          "sha256_anterior": "25cfb1174d3762da23ade41e9557f023a47053885f6e6506f8380ed7f966826c",
+          "identico": false
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "5838acaac4c36129936d906f1fb52667091e190c4e5cd0c97da2343f22c86e3e",
+          "sha256_anterior": "dc45de34543a4c206228b2c3b96889402532e662887b73772c9e3c664b2e9990",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "f6f6732639740cbfa8bbc573cd65e3726b83548825649971c14b6f08e7b5504b",
+          "sha256_anterior": "da6cdef14534f1864546f80a5d6b03dde9a2b8105a77f39607b75be666ed1e53",
+          "identica": false,
+          "texto_anterior": "Refrigerante do evaporador",
+          "texto_atual": "Água líquida, aquecida pelos gases que passam por fora dos tubos"
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "040bc6798aa720ace8381b45600dec653ffa952c349c3baac4afe2b496016081",
+          "sha256_anterior": "e6ebdda41e6c40af1ce23b1a8635acf01b759d6311d8ab0d930a6f0aacb12f23",
+          "identica": false,
+          "texto_anterior": "Somente óleo lubrificante",
+          "texto_atual": "Apenas vapor produzido, pois esses tubos funcionam como superaquecedores"
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "ec24b9ce1ba7368e03719b1d939489921fbb696c1598d0b0e099c65c918c27c8",
+          "sha256_anterior": "ec24b9ce1ba7368e03719b1d939489921fbb696c1598d0b0e099c65c918c27c8",
+          "identica": true
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "c74a3bec4adea607eb8b61abc3a275c2ecda6030460436d560ab36c1ab9d20fa",
+          "sha256_anterior": "06b225eaa894575c5e9292ad5f7f4e5741ac605e78bf2b708189e4267af09780",
+          "identica": false,
+          "texto_anterior": "Ar medicinal purificado",
+          "texto_atual": "Mistura de água e gases de combustão em contato direto"
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "c326891560c0482331bc7490de4ef007b91bd4f534543775dd9bd7d4020b3321",
+          "sha256_anterior": "4ee90d97ed543774125aab7c3de0bea486e2cdee0e259a32680533f4096336cf",
+          "identica": false,
+          "texto_anterior": "Água e vapor necessariamente",
+          "texto_atual": "Combustível antes da queima, pois esses tubos alimentam os queimadores"
+        }
+      ]
+    },
+    "q-e1-26": {
+      "sha256_atual": "df61bd3ca6a30a77fe477e04e50ba87b515c3fa89a652d33e3f8d2f5cb27ba86",
+      "sha256_anterior": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+      "artigo_inteiro_identico": false,
+      "abertura_identica": true,
+      "chave_atual": "B",
+      "chave_anterior": "B",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "168bfbe751ee181f535235b668eafb8e23acbba9fc384fd27578c594fcb92cb8",
+          "sha256_anterior": "168bfbe751ee181f535235b668eafb8e23acbba9fc384fd27578c594fcb92cb8",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "9d25d1ce2773108fb34e3e1df770155d0e75c795ebf2b1fa3039b9568882bb0c",
+          "sha256_anterior": "9d25d1ce2773108fb34e3e1df770155d0e75c795ebf2b1fa3039b9568882bb0c",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "c845cce43cf2e3e4fe6c6c59c4432127c01f772062978fae39d4af27d2254cc0",
+          "sha256_anterior": "c845cce43cf2e3e4fe6c6c59c4432127c01f772062978fae39d4af27d2254cc0",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "legenda-formula legenda-formula-compacta",
+          "id": "e1-legenda-116",
+          "sha256_atual": "a02396d91cef3b0a90e3cf8103f2ae8d9a8eb838cdc7e10a9b1b9ee2a3f541c4",
+          "sha256_anterior": "a02396d91cef3b0a90e3cf8103f2ae8d9a8eb838cdc7e10a9b1b9ee2a3f541c4",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "f7a4049e9891d7f5d0740066a7e62bed3d6f49b673f755197e18c91e942b172b",
+          "sha256_anterior": "28a3b1a113afccb6aed70aa76bf9f9f575174128a6c11bdc3426792330a3de30",
+          "identico": false
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "12d6c198deb5b86d5b863d6a7dc1bef79a1920f06fe6c67544fff61c00bfa771",
+          "sha256_anterior": "ece758f7c824730bff6bbd1320d7163bff932735ac011656fa5696a98504bdcb",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "eabb76743eb99e519500a6afce4409f0c29d475b62c5c7e0582d06522797445a",
+          "sha256_anterior": "0c1d679788aa083ff8070fe340d01300afc8adc5378308bba781abde982901cd",
+          "identica": false,
+          "texto_anterior": "3.030 kJ/kg",
+          "texto_atual": "3.060 kJ/kg"
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "59838b81c51a47d410f2c3123ae6cff63250831ae9dd1be6f11e2aef2280cc50",
+          "sha256_anterior": "59838b81c51a47d410f2c3123ae6cff63250831ae9dd1be6f11e2aef2280cc50",
+          "identica": true
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "bc0aee1b660da9a90a66d4c066e2f81439cd0aebd5c819c4233da9d02c203f95",
+          "sha256_anterior": "bc0aee1b660da9a90a66d4c066e2f81439cd0aebd5c819c4233da9d02c203f95",
+          "identica": true
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "811610ca60125827b30acf6b0be683b0250ae3f06cff84e17c0856d6615241b0",
+          "sha256_anterior": "811610ca60125827b30acf6b0be683b0250ae3f06cff84e17c0856d6615241b0",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "14e84e34c5cb0f17579440a21ed00c8a56b7f0e4c5748468048c9b2194c5369c",
+          "sha256_anterior": "14e84e34c5cb0f17579440a21ed00c8a56b7f0e4c5748468048c9b2194c5369c",
+          "identica": true
+        }
+      ]
+    },
+    "q-e1-28": {
+      "sha256_atual": "15be288e8d94b47776947cc8a41b9005f054033334bfcb6fc611bc98dc06d7c9",
+      "sha256_anterior": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+      "artigo_inteiro_identico": false,
+      "abertura_identica": true,
+      "chave_atual": "E",
+      "chave_anterior": "E",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "d6e77d9e845addcbce4ac3ca52ac3942329610d00d16030f99f96f49b8a7e80f",
+          "sha256_anterior": "d6e77d9e845addcbce4ac3ca52ac3942329610d00d16030f99f96f49b8a7e80f",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "e01112213788687561e1b4bcc66cefe9a46ff4a252b8f41ffb52ee6113e7e61a",
+          "sha256_anterior": "e01112213788687561e1b4bcc66cefe9a46ff4a252b8f41ffb52ee6113e7e61a",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "98baac547ddad5cdf5d037d98a6c6ae60081a9b1e850f9e1e2d7d30be032193e",
+          "sha256_anterior": "98baac547ddad5cdf5d037d98a6c6ae60081a9b1e850f9e1e2d7d30be032193e",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "legenda-formula legenda-formula-compacta",
+          "id": "e1-legenda-119",
+          "sha256_atual": "2292b809ca1b024b8d224bf9786f95b47f367fe15493e49158ed28ed54235d90",
+          "sha256_anterior": "2292b809ca1b024b8d224bf9786f95b47f367fe15493e49158ed28ed54235d90",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "49da5f5059efd51def22c6869faa986d2e647f1402846b0a75511d4f38792095",
+          "sha256_anterior": "af4222ce9c7b74b944d0d1c0a4b6455cbb5e370faa360447a81a8b16a5681c0a",
+          "identico": false
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "1b09198af73a85d5d1e41af0bc942748f0fe05320bd0e1e21ea439f1efdcf25d",
+          "sha256_anterior": "f08b08e7ffe2c405ae856ef4805d1227b579c3eec485560fcdb64de6e0d0b913",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "3c4e5647ac4e88c6ee87cab6d5d35798f1f6399aedabebc8b990ff7b5ce23130",
+          "sha256_anterior": "3c4e5647ac4e88c6ee87cab6d5d35798f1f6399aedabebc8b990ff7b5ce23130",
+          "identica": true
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "f867e8141c0d8a05bc8bde0f411b4f95655eaaa67efcd7bbc187c52da2c33afe",
+          "sha256_anterior": "a6a29f4c1c28dc36c55ce53964d411bee06f7d4f65ba52f6309a3eb3cc01ee68",
+          "identica": false,
+          "texto_anterior": "60%",
+          "texto_atual": "68,75%"
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "a080acffd5a8e9bd768eb3434645feb0f140127c30606930699dcf71e49a4d8b",
+          "sha256_anterior": "a080acffd5a8e9bd768eb3434645feb0f140127c30606930699dcf71e49a4d8b",
+          "identica": true
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "2c1b7b4fe4528343c0a7bb416758ddc55642a588c1fc4a30f5741bf49b2fde05",
+          "sha256_anterior": "2c1b7b4fe4528343c0a7bb416758ddc55642a588c1fc4a30f5741bf49b2fde05",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "eff24d49847ef9c8674a64d2224ab5fbea7d9dfb91e884b3717a5f169a091e96",
+          "sha256_anterior": "eff24d49847ef9c8674a64d2224ab5fbea7d9dfb91e884b3717a5f169a091e96",
+          "identica": true
+        }
+      ]
+    }
+  },
+  "fontes_comuns_lidas": [
+    {
+      "referencia": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "alcance": "Papéis e padrão de aceite; leitura no bloco CR51–55"
+    },
+    {
+      "referencia": "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+      "alcance": "Critérios e limites de herança; leitura no bloco CR51–55"
+    }
+  ],
+  "registros": [
+    {
+      "id": "q-e1-18",
+      "sha256_artigo": "8db8ecd7e18c8f2d2fc68d28a568ba88c2f1645c2ca7473ea2ab745be4f29adb",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "D",
+      "chave_produto": "D",
+      "suficiencia": "ATENDIDO. Os qualificadores pode em I/III e todo em II permitem decidir as três proposições; as bases vinculadas antes da tentativa fornecem balanço de entropia e expansão livre.",
+      "demonstracao": "I é verdadeira: em sistema isolado, deltaS=Sger>=0; irreversibilidades permitem aumento. II é falsa: adiabático elimina transferência de calor, não a geração; a expansão livre de gás ideal em recipiente isolado rígido tem Q=W=0 e deltaS=mR*ln(V2/V1)>0. III é verdadeira: uma parte pode rejeitar calor e perder entropia se a transferência para fora superar a geração; uma compressão isotérmica reversível é exemplo, e a vizinhança recebe essa entropia. A sequência completa é V,F,V.",
+      "proposicoes": [
+        {
+          "id": "I",
+          "verdade": true,
+          "limite": "Pode aumentar, mas isolamento não exige aumento se o processo for reversível/sem geração."
+        },
+        {
+          "id": "II",
+          "verdade": false,
+          "limite": "Adiabaticidade mais reversibilidade levaria a isentropia; adiabaticidade isolada não basta."
+        },
+        {
+          "id": "III",
+          "verdade": true,
+          "limite": "Rejeitar calor pode permitir queda da entropia da parte, não garante essa queda se a geração interna for maior."
+        }
+      ],
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "V, V, V",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Erra somente II: equipara adiabático a isentrópico e esquece Sger."
+        },
+        {
+          "opcao": "B",
+          "texto": "F, F, V",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Erra somente I: toma isolamento como entropia obrigatoriamente constante, ignorando irreversibilidades internas."
+        },
+        {
+          "opcao": "C",
+          "texto": "V, F, F",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Erra somente III: aplica à parte não isolada a proibição de reduzir entropia do sistema isolado."
+        },
+        {
+          "opcao": "D",
+          "texto": "V, F, V",
+          "juizo": "CORRETA",
+          "demonstracao": "Confere com os três balanços e seus qualificadores."
+        },
+        {
+          "opcao": "E",
+          "texto": "F, V, F",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Inverte os três juízos: isolamento como constância, adiabaticidade como isentropia e proibição de a parte exportar entropia."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Analisa os três juízos e agora cada sequência; mantém transferência e geração separadas e não confunde uma parte com o universo isolado.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-18",
+        "conteudo_preservado": "Comando, cinco sequências, links/cabeçalho e chave D permanecem idênticos.",
+        "mudanca": "Somente a resolução foi ampliada com Conferência de cada alternativa, identificando a posição errada de A/B/C, a combinação correta D e as três inversões de E.",
+        "efeito": "Acrescenta oposição individual sem alterar fatos/pressupostos do comando."
+      },
+      "preparacao_anterior": {
+        "autor": "/root/auditor_aaa, agente automatizado",
+        "alcance": "Registro preliminar Q18 sem pontos_a_verificar; o artigo atual não é idêntico e foi reexaminado.",
+        "decisao": "Sem nova pendência; a sequência e as cinco opções foram demonstradas independentemente."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — proposições completas e fontes didáticas acessíveis",
+        "consistencia_fisica": "ATENDIDO — balanço de entropia, geração não negativa e contramodelo adiabático irreversível",
+        "comando": "ATENDIDO — possibilidade versus universalidade consideradas",
+        "unidades": "ATENDIDO — S e Sger em energia/K, Q/T usa temperatura absoluta; não há valores numéricos a converter",
+        "restricoes": "ATENDIDO — fronteira isolada ou parte com calor devidamente distinguidas",
+        "unicidade": "ATENDIDO — somente D",
+        "arredondamento": "NAO_APLICAVEL — cinco sequências semanticamente distintas",
+        "plausibilidade": "ATENDIDO — erros específicos de transferência/geração e fronteira em cada sequência; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-18",
+          "alcance": "Artigo atual, comando e opções antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-entropia",
+          "alcance": "Trecho efetivamente lido neste bloco: balanço fechado, transferência e geração, parte e sistema isolado"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-expansao-livre",
+          "alcance": "Trecho efetivamente lido neste bloco: fronteira rígida isolada e deltaS de gás ideal"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-18",
+          "alcance": "Comparação do artigo anterior por componentes; sem herança de aprovação"
+        },
+        {
+          "referencia": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+          "alcance": "Preparação preliminar atribuída ao auditor original, sem pendências específicas neste item"
+        }
+      ],
+      "heranca": "Nenhum aceite antigo presumido para o artigo novo; fontes e componentes preservados são identificados no alcance declarado.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-19",
+      "sha256_artigo": "95ccddfe325cd576db6efa180c4141e6b4898a73683241e2961399cd973e39c9",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "A",
+      "chave_produto": "A",
+      "suficiencia": "ATENDIDO no modelo usual de eficiência isentrópica entálpica da turbina. As duas quedas estão dadas na mesma base; a base vinculada antes da tentativa usa o mesmo h1 e define h2,s para a mesma pressão de saída. Essa referência não foi acrescentada só no comentário.",
+      "demonstracao": "Para a turbina, eta_t=(h1-h2,real)/(h1-h2,s)=queda_real/queda_isentropica. Assim eta_t=400/500=0,80=80%. Ambas as quedas são positivas e a real é menor que a de referência, coerente com o domínio convencional de irreversibilidade da comparação.",
+      "calculo_independente": {
+        "queda_real_kJ_kg": 400,
+        "queda_isentropica_kJ_kg": 500,
+        "eta": 0.8,
+        "operacoes_dos_erros_percentuais": {
+          "B": 125,
+          "C": 44.44444444444444,
+          "D": 20,
+          "E": 100
+        }
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "80%",
+          "juizo": "CORRETA",
+          "demonstracao": "400/500=0,80."
+        },
+        {
+          "opcao": "B",
+          "texto": "125%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Inverte a definição e usa 500/400, como se a referência de consumo de compressor se aplicasse à turbina."
+        },
+        {
+          "opcao": "C",
+          "texto": "44,4%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Normaliza a queda real pela soma das quedas: 400/(400+500)=44,444...%, em vez de comparar com a referência ideal."
+        },
+        {
+          "opcao": "D",
+          "texto": "20%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Calcula a perda relativa (500-400)/500=20%, que é 1-eta, e a informa como rendimento."
+        },
+        {
+          "opcao": "E",
+          "texto": "100%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Equipara processo real à referência isentrópica apesar das duas quedas diferentes."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Usa real/ideal e descreve cada erro; a nova explicação de C reproduz exatamente 44,4%. A afirmação sobre trabalho pertence ao modelo usual de eficiência de turbina ensinado na base, não a um escoamento adicional de alta energia cinética não especificado.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-19",
+        "enunciado_e_referencia": "Comando, base vinculada, cabeçalho, abertura e chave A preservados.",
+        "opcao_modificada": "Somente C mudou de 45% para 44,4%; as outras quatro opções permaneceram.",
+        "resolucao": "C passou a identificar expressamente a operação 400/(400+500), arredondada a 44,4%, e o denominador correto.",
+        "efeito": "Substitui um valor sem operação evidente por uma normalização equivocada reproduzível."
+      },
+      "preparacao_anterior": {
+        "autor": "/root/auditor_aaa, agente automatizado",
+        "nota": "Verificar que a definição mantém a mesma entrada e pressão de saída da referência.",
+        "prova_atual": "A base-isentropica acessível pelo link anterior à tentativa apresenta h1 comum e a legenda h2,s como saída isentrópica para a mesma pressão de saída.",
+        "decisao": "Nota fechada no alcance do modelo convencional entálpico; nenhuma pressão numérica extra é necessária para dividir as quedas fornecidas."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — quedas e base comparativa usuais disponíveis",
+        "consistencia_fisica": "ATENDIDO — 0<eta_t<1 e queda real menor que ideal",
+        "comando": "ATENDIDO — eficiência de turbina, não fração de perda",
+        "unidades": "ATENDIDO — kJ/kg dividido por kJ/kg é adimensional; multiplicação por 100 para %",
+        "restricoes": "ATENDIDO — mesma entrada e pressão de saída na base acessível antes da tentativa",
+        "unicidade": "ATENDIDO — somente A",
+        "arredondamento": "ATENDIDO — 80% nominal e alternativas 125%,44,4%,20%,100% distintas; C arredonda corretamente o erro calculado.",
+        "plausibilidade": "ATENDIDO — inversão, soma no denominador, fração perdida e idealização indevida são erros concretos; análise teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-19",
+          "alcance": "Comando e opções atuais lidos antes do comentário; cálculo próprio"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-isentropica",
+          "alcance": "Trecho efetivamente lido neste bloco: fórmula de turbina, h1 comum e referência de h2,s à mesma pressão de saída"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-19",
+          "alcance": "Opção C antiga e identidade dos componentes preservados"
+        },
+        {
+          "referencia": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+          "alcance": "Nota preliminar do autor original, examinada e fechada pela prova indicada; sem transferência de aceite"
+        }
+      ],
+      "heranca": "A nota original é atribuída ao seu autor; resultado atual e cinco operações foram recalculados por este auditor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-24",
+      "sha256_artigo": "6215c6a02392e33e0ac74907fea506a63ecb92d171eccb65502ebf8d5867db14",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. O tipo flamotubular nomeia a construção e o comando especifica tubos aquecedores; não são necessários desenho ou dados operacionais para identificar a corrente interna.",
+      "demonstracao": "Na construção flamotubular, os gases quentes da combustão percorrem os tubos e a água é aquecida ao redor deles, através da parede. Na aquatubular a corrente de água/vapor é interna aos tubos, com aquecimento externo. A questão pede os tubos aquecedores característicos da primeira construção, não tubulação de combustível nem um eventual componente distinto de superaquecimento.",
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "Água líquida, aquecida pelos gases que passam por fora dos tubos",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Inverte a posição das correntes, confundindo a geometria flamotubular com a aquatubular; é uma descrição técnica próxima, mas da família errada."
+        },
+        {
+          "opcao": "B",
+          "texto": "Apenas vapor produzido, pois esses tubos funcionam como superaquecedores",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Confunde os tubos atravessados pelos gases com um superaquecedor de vapor. A existência de superaquecimento em uma instalação não muda o fluido dos tubos aquecedores característicos perguntados."
+        },
+        {
+          "opcao": "C",
+          "texto": "Gases quentes da combustão",
+          "juizo": "CORRETA",
+          "demonstracao": "Corrente gasosa no interior; água externamente separada pela parede."
+        },
+        {
+          "opcao": "D",
+          "texto": "Mistura de água e gases de combustão em contato direto",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Interpreta aquecimento como mistura direta entre as correntes e elimina a função separadora da parede dos tubos."
+        },
+        {
+          "opcao": "E",
+          "texto": "Combustível antes da queima, pois esses tubos alimentam os queimadores",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Confunde a tubulação de alimentação dos queimadores com a superfície tubular de troca. O nome flamotubular não transforma os tubos aquecedores em linhas de combustível antes da queima."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Relaciona cada erro a uma geometria, componente ou mecanismo específico, mantém gases e água separados e não nega que uma instalação possa ter outros componentes além dos tubos perguntados.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-24",
+        "enunciado_e_chave": "Comando e chave C preservados; C continua Gases quentes da combustão.",
+        "alteracoes_opcoes": {
+          "A": "Refrigerante do evaporador → água dentro dos tubos com gases externos",
+          "B": "Somente óleo lubrificante → vapor em suposto superaquecedor",
+          "D": "Ar medicinal purificado → mistura direta água/gases",
+          "E": "Água e vapor necessariamente → combustível antes da queima/alimentação do queimador"
+        },
+        "resolucao": "As quatro justificativas foram sincronizadas com os novos mecanismos; o comentário da construção correta foi mantido em seu alcance.",
+        "efeito": "Retira respostas desconectadas do aparelho e as relaciona a confusões técnicas concretas, sem mudar a identidade da chave."
+      },
+      "preparacao_anterior": {
+        "autor": "/root/auditor_aaa, agente automatizado",
+        "nota": "A/B/D antigos tinham pouca ligação com a confusão técnica relevante; pedir demonstração de plausibilidade ou substituição.",
+        "prova_atual": "Os quatro distratores atuais foram lidos integralmente e associados, respectivamente, a construção aquatubular, superaquecedor, troca direta e alimentação de combustível.",
+        "decisao": "Nota fechada no nível teórico solicitado por BAN-07; não se afirma validação empírica de frequência dos erros."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — construção e componente identificados",
+        "consistencia_fisica": "ATENDIDO — gás interno, água externa e parede separadora",
+        "comando": "ATENDIDO — corrente nos tubos aquecedores, não todo tubo da instalação",
+        "unidades": "NAO_APLICAVEL — sem grandezas numéricas",
+        "restricoes": "ATENDIDO — construção convencional nomeada; componentes diferentes não são silenciosamente equiparados",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL — alternativas conceitualmente distintas; A/B não são sinônimos de C",
+        "plausibilidade": "ATENDIDO — quatro confusões específicas demonstradas, sem alegação de piloto ou de distração apenas por palavras aleatórias"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-24",
+          "alcance": "Comando e cinco opções atuais antes da leitura do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-vapor-industrial",
+          "alcance": "Trecho efetivamente lido neste bloco: tabela das duas construções; nenhum requisito legal/NR-13 foi usado nesta decisão"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-24",
+          "alcance": "Opções antigas e componentes preservados confrontados"
+        },
+        {
+          "referencia": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+          "alcance": "Nota preliminar atribuída ao auditor original, fechada por mecanismos atuais e não só por hashes"
+        }
+      ],
+      "heranca": "Nenhum aceite antigo foi presumido; plausibilidade dos distratores substitutos julgada neste bloco.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-26",
+      "sha256_artigo": "df61bd3ca6a30a77fe477e04e50ba87b515c3fa89a652d33e3f8d2f5cb27ba86",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "B",
+      "chave_produto": "B",
+      "suficiencia": "ATENDIDO. A pressão é fixa, os dois pontos e a temperatura-alvo estão dados e o comando pede expressamente interpolação linear de tabela didática. A base vinculada identifica esses mesmos dados como criados para treino em uma região de vapor superaquecido; não é uma consulta de propriedades reais da água.",
+      "demonstracao": "A fração é f=(230-200)/(300-200)=0,30. A entalpia deve partir de ha=2800 e receber f*(hb-ha)=0,30*200=60 kJ/kg, dando 2860 kJ/kg. A forma equivalente 0,70*2800+0,30*3000 fornece o mesmo resultado e garante valor dentro do intervalo dado.",
+      "calculo_independente": {
+        "Ta_C": 200,
+        "Tb_C": 300,
+        "Talvo_C": 230,
+        "ha_kJ_kg": 2800,
+        "hb_kJ_kg": 3000,
+        "fracao": 0.3,
+        "inclinacao_kJ_kg_K": 2,
+        "h_kJ_kg": 2860,
+        "pela_combinacao_convexa": 2860,
+        "operacoes_dos_erros_kJ_kg": {
+          "A": 3060,
+          "C": 2830,
+          "D": 2900,
+          "E": 840
+        }
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "3.060 kJ/kg",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Faz 3000+0,30*(3000-2800)=3060, usando a referência superior como base de um incremento medido desde o ponto inferior. Ultrapassa o intervalo apesar de f estar entre 0 e 1."
+        },
+        {
+          "opcao": "B",
+          "texto": "2.860 kJ/kg",
+          "juizo": "CORRETA",
+          "demonstracao": "2800+0,30*200=2860."
+        },
+        {
+          "opcao": "C",
+          "texto": "2.830 kJ/kg",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Soma 230-200=30 diretamente a 2800, omitindo a inclinação de 2 kJ/(kg K); confunde incremento de temperatura com incremento de entalpia."
+        },
+        {
+          "opcao": "D",
+          "texto": "2.900 kJ/kg",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Usa a média dos dois valores sem ponderar a posição; 2900 corresponde ao ponto médio de 250 °C, não a 230 °C."
+        },
+        {
+          "opcao": "E",
+          "texto": "840 kJ/kg",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Faz 0,30*2800=840: confunde a interpolação afim com uma proporção aplicada à entalpia inicial e omite a base/incremento corretos. Esse é um erro de regra de três, não um estado físico admissível da tabela."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Aplica a fração ao incremento, parte de 2800, mostra a operação incorreta de A e distingue pressão/região de fase. O resultado de treino não é apresentado como validação de uma tabela real ou de um fluido não identificado.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-26",
+        "enunciado_e_demais": "Comando didático em pressão fixa, legenda, base vinculada e chave B preservados.",
+        "opcao_modificada": "Somente A mudou de 3.030 para 3.060 kJ/kg; B/C/D/E mantiveram seus valores.",
+        "resolucao": "A análise de A identifica explicitamente 3000+0,30*(3000-2800)=3060 e corrige o ponto de partida para 2800.",
+        "efeito": "Valor atual e operação de erro agora concordam, sem mudar o cálculo correto."
+      },
+      "preparacao_anterior": {
+        "autor": "/root/auditor_aaa, agente automatizado",
+        "nota": "A interpolação de tabela didática é resultado algorítmico e não certifica propriedades de um fluido real; a pressão fixa está declarada.",
+        "prova_atual": "O comando usa tabela didática em pressão fixa e a base anterior à tentativa rotula os mesmos dados como criados para treino, não extraídos de tabela de água, dentro de uma mesma região de fase.",
+        "decisao": "Limite explicitamente preservado; não se demandou reconstrução de estado físico real para um exercício algorítmico nem se aprovou uma tabela física por extensão."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — extremos, alvo, pressão fixa e método fornecidos",
+        "consistencia_fisica": "ATENDIDO no domínio didático declarado; estimativa em mesma pressão/região, sem pretensão de validar água real",
+        "comando": "ATENDIDO — interpolação linear, sem extrapolação",
+        "unidades": "ATENDIDO — f adimensional; diferenças de °C têm o mesmo valor em K e a inclinação transforma temperatura em kJ/kg; legenda dá a unidade dos dois h",
+        "restricoes": "ATENDIDO — mesma pressão/região e origem didática disponíveis antes da resposta",
+        "unicidade": "ATENDIDO — somente B",
+        "arredondamento": "ATENDIDO — dados nominais de treino, não medidas com incerteza omitida; a conta linear dá 2860 exatamente com esses números. As cinco opções inteiras são distintas na exibição.",
+        "plausibilidade": "ATENDIDO — referência errada, inclinação omitida, ponto médio e proporcionalidade sem intercepto são erros concretos; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-26",
+          "alcance": "Comando/legenda e cinco opções antes do comentário; contas próprias"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-interpolacao",
+          "alcance": "Trecho efetivamente lido neste bloco: origem didática, mesma região/pressão, fórmula e exemplo com os mesmos pontos"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-26",
+          "alcance": "A anterior e componentes idênticos comparados"
+        },
+        {
+          "referencia": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+          "alcance": "Nota preliminar do autor original delimitada e fechada no escopo didático"
+        }
+      ],
+      "heranca": "Nenhuma tabela física ou aceite antigo herdado; algoritmo e cinco erros atuais examinados por este auditor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-28",
+      "sha256_artigo": "15be288e8d94b47776947cc8a41b9005f054033334bfcb6fc611bc98dc06d7c9",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. A turbina é adiabática; as três entalpias estão dadas na mesma unidade e a legenda anterior à tentativa define h2,s como referência isentrópica à mesma pressão de saída. A base vinculada fornece a eficiência entálpica com h1 comum.",
+      "demonstracao": "Queda real=h1-h2,real=3200-2400=800 kJ/kg; queda isentrópica=h1-h2,s=3200-2200=1000 kJ/kg. eta_t=800/1000=0,80=80%. h1>h2,real>h2,s é compatível com uma turbina real que aproveita queda menor que sua referência isentrópica. Razões das entalpias absolutas de estado não representam trabalho e mudariam com o zero arbitrário da entalpia, ao contrário das diferenças.",
+      "calculo_independente": {
+        "h1_kJ_kg": 3200,
+        "h2s_kJ_kg": 2200,
+        "h2real_kJ_kg": 2400,
+        "queda_real_kJ_kg": 800,
+        "queda_isentropica_kJ_kg": 1000,
+        "eta": 0.8,
+        "operacoes_dos_erros_percentuais": {
+          "A": 125,
+          "B": 68.75,
+          "C": 100,
+          "D": 75
+        }
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "125%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Faz 1000/800, invertendo real/ideal. É a troca da ordem adequada à turbina pela ordem associada a consumo em compressor."
+        },
+        {
+          "opcao": "B",
+          "texto": "68,75%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Faz 2200/3200, entalpia da saída isentrópica sobre a de entrada; omite ambas as diferenças exigidas para comparar o aproveitamento."
+        },
+        {
+          "opcao": "C",
+          "texto": "100%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Trata a turbina real como a referência reversível, ignorando h2,real diferente de h2,s e a redução de queda."
+        },
+        {
+          "opcao": "D",
+          "texto": "75%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Faz 2400/3200, a entalpia da saída real sobre a entrada; confunde energia remanescente de estado com fração de trabalho aproveitado."
+        },
+        {
+          "opcao": "E",
+          "texto": "80%",
+          "juizo": "CORRETA",
+          "demonstracao": "(3200-2400)/(3200-2200)=800/1000=0,80."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Identifica as quedas, usa a ordem real/ideal e individualiza a nova operação de B. A observação de compressor se inverte no sentido da definição de eficiência de consumo; não se reinterpreta o índice s como valor numérico de entropia.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-28",
+        "enunciado_e_demais": "Comando adiabático, legenda de referência, cabeçalho, base vinculada e chave E preservados.",
+        "opcao_modificada": "Somente B mudou de 60% para 68,75%; A/C/D/E permaneceram.",
+        "resolucao": "B agora demonstra 2200/3200=68,75% e distingue a razão de estados das quedas de entalpia.",
+        "efeito": "O valor antigo de 60% não é mantido como se tivesse sido justificado; o substituto atual tem operação concreta reproduzível."
+      },
+      "preparacao_anterior": {
+        "autor": "/root/auditor_aaa, agente automatizado",
+        "nota": "Exigir justificativa concreta do antigo distrator 60%, caso mantido.",
+        "prova_atual": "60% foi removido. O distrator atual de 68,75% deriva exatamente da razão 2200/3200; o texto e o comentário correspondem a essa operação.",
+        "decisao": "Nota fechada pela substituição e pelo cálculo independente atual, sem fabricar uma demonstração do valor abandonado."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — entalpias e referência para a mesma pressão de saída fornecidas",
+        "consistencia_fisica": "ATENDIDO — quedas positivas e real menor que ideal, eta_t entre 0 e 1",
+        "comando": "ATENDIDO — eficiência isentrópica de turbina no modelo entálpico indicado",
+        "unidades": "ATENDIDO — diferenças em kJ/kg e razão adimensional; entalpias de estado não são confundidas com trabalho",
+        "restricoes": "ATENDIDO — adiabaticidade e referência s antes da tentativa; mesma entrada na base",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "ATENDIDO — 80%,125%,68,75%,100%,75% são distintos; nenhuma alternativa se torna equivalente a E por arredondamento compatível com a exibição.",
+        "plausibilidade": "ATENDIDO — definição invertida, razões de estados isentrópico/real e idealização indevida são erros identificáveis; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-28",
+          "alcance": "Comando, legenda e cinco opções atuais antes da resolução; contas próprias"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-isentropica",
+          "alcance": "Trecho efetivamente lido neste bloco: fórmula de turbina, mesma entrada e saída isentrópica à mesma pressão"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-28",
+          "alcance": "B antigo e identidade dos componentes preservados confrontados"
+        },
+        {
+          "referencia": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+          "alcance": "Nota preliminar atribuída ao autor original e fechada pela operação da nova alternativa"
+        }
+      ],
+      "heranca": "Nenhuma aprovação científica antiga transferida; dado e chave do artigo novo foram reexaminados por este auditor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    }
+  ],
+  "limitacoes": [
+    "Sem aceite global ou liberação de outro ID; sem editar produto, controle ou checklist.",
+    "Identidade de componente não é aprovação científica automática nem cobre o artigo novo pelo hash antigo.",
+    "Plausibilidade é análise teórica dos mecanismos de erro, sem piloto ou comportamento observado de alunos.",
+    "Não há revisão humana ou certificação externa."
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "registrados": 5,
+    "ids": [
+      "q-e1-18",
+      "q-e1-19",
+      "q-e1-24",
+      "q-e1-26",
+      "q-e1-28"
+    ],
+    "opcoes_examinadas": 25,
+    "artigos_modificados_examinados": 5,
+    "notas_especificas_preparacao_decididas": 4
+  },
+  "achados_do_bloco": {
+    "novos_impeditivos": 0,
+    "ajustes_obrigatorios": 0
+  },
+  "decisao_proximo_ID": "NÃO LIBERADO: revisão parcial de BAN-07; não constitui aceite integral nem liberação de outro ID.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "preparacao_original_hashes_e_atribuicao_conferidos": true,
+    "artigos": [
+      {
+        "id": "q-e1-18",
+        "sha256_artigo": "8db8ecd7e18c8f2d2fc68d28a568ba88c2f1645c2ca7473ea2ab745be4f29adb",
+        "componentes_alterados": [
+          "q-resolucao"
+        ],
+        "opcoes_alteradas": [],
+        "opcoes_conferidas": 5
+      },
+      {
+        "id": "q-e1-19",
+        "sha256_artigo": "95ccddfe325cd576db6efa180c4141e6b4898a73683241e2961399cd973e39c9",
+        "componentes_alterados": [
+          "q-alternativas",
+          "q-resolucao"
+        ],
+        "opcoes_alteradas": [
+          "C"
+        ],
+        "opcoes_conferidas": 5
+      },
+      {
+        "id": "q-e1-24",
+        "sha256_artigo": "6215c6a02392e33e0ac74907fea506a63ecb92d171eccb65502ebf8d5867db14",
+        "componentes_alterados": [
+          "q-alternativas",
+          "q-resolucao"
+        ],
+        "opcoes_alteradas": [
+          "A",
+          "B",
+          "D",
+          "E"
+        ],
+        "opcoes_conferidas": 5
+      },
+      {
+        "id": "q-e1-26",
+        "sha256_artigo": "df61bd3ca6a30a77fe477e04e50ba87b515c3fa89a652d33e3f8d2f5cb27ba86",
+        "componentes_alterados": [
+          "q-alternativas",
+          "q-resolucao"
+        ],
+        "opcoes_alteradas": [
+          "A"
+        ],
+        "opcoes_conferidas": 5
+      },
+      {
+        "id": "q-e1-28",
+        "sha256_artigo": "15be288e8d94b47776947cc8a41b9005f054033334bfcb6fc611bc98dc06d7c9",
+        "componentes_alterados": [
+          "q-alternativas",
+          "q-resolucao"
+        ],
+        "opcoes_alteradas": [
+          "B"
+        ],
+        "opcoes_conferidas": 5
+      }
+    ],
+    "artigos_unicos": 5,
+    "opcoes_examinadas_e_conferidas": 25,
+    "notas_especificas_preparacao_decididas": 4,
+    "chaves_derivadas_conferem": true,
+    "escopo_preservado": "Somente este parecer foi criado pelo auditor no bloco; produto, controle e checklist não editados."
+  }
+}

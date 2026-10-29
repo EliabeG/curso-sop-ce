@@ -1,0 +1,64 @@
+# BAN-07 — parecer independente da rodada 1
+
+Data: 29/10/2026. Auditor: agente automatizado `/root/auditoria_av71_80`, independente do Corretor. **Veredito: AJUSTES_OBRIGATORIOS.** A r1 não está aprovada e o próximo ID não está liberado. Os defeitos confirmados são AV04-E, AV31-B e AV62-B. Há ainda uma pendência de decisão científica explícita para 60 leituras preliminares herdadas; a existência delas e a identidade dos artigos não constituem aceite. Este parecer é integral quanto à decisão da entrega r1, mas não afirma que a revisão científica dos 197 itens tenha sido concluída.
+
+## Critério e versão
+
+BAN-07 exige conferir dados suficientes, consistência física, comando, unidades, restrições e resposta única, incluindo distratores plausíveis baseados em erros reais; o aceite exige demonstração do gabarito e justificativa dos distratores, inclusive detecção de equivalência após arredondamento. A aplicação do Protocolo AAA inclui distinguir estudo crítico de item pontuável, soluções abertas de respostas únicas, e evidência estática de comportamento em navegador ou teste com estudantes. A plausibilidade aqui é teórica: não há alegação de frequência de erros em alunos.
+
+A entrega congelada [BAN-07-r1](../entregas/BAN-07-r1.md) e seu manifesto foram examinados. Os cinco arquivos de produto identificados pelo Corretor têm os seguintes SHA-256, idênticos aos do manifesto e das cópias congeladas:
+
+| Arquivo | SHA-256 |
+|---|---|
+| `modulos/e1-termodinamica.html` | `de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80` |
+| `auditoria/termodinamica/inventario/inventario-questoes.json` | `7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7` |
+| `auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md` | `dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1` |
+| `assets/curso.js` | `a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13` |
+| `assets/registro.js` | `46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c` |
+
+Manifesto SHA-256 `66c5f42489cf3c5903782d22a4777b72e111f4a239686e345088380b218745e8`; entrega `9dfa2059b10be96615bbdc0c42d596c756910bbbd2791636ad061870dd96a893`; protocolo `18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc`. Conferência própria dos 75 arquivos listados no manifesto: 75 hashes coincidentes, zero ausências ou divergências. Isso comprova identidade dos arquivos listados, não ciência, preservação de todos os demais arquivos ou comportamento executado por este Auditor.
+
+## Evidência e cobertura
+
+O índice do coordenador, preservado no [snapshot correspondente ao exame](../evidencias/BAN-07/cobertura-auditoria-parecer-r1.json), SHA-256 `70c96656a480325dbd21d879302de26fde7a57f9e8763b2a7fe4e2175fb5325f`, identifica 197 leituras, cada uma em ID único. Recalculei diretamente os hashes dos 197 trechos de artigo indexados na versão atual: 197 correspondem ao índice. O índice é mapa de identidade e referências, não aprovação de 197 itens. Sua contagem de 70 preparações idênticas é anterior a dez confrontos específicos: oito ressalvas Q e CR17/27 têm decisões separadas; 60 permanecem descritas expressamente como preparação sem aceite científico. A peça de herança parcial [BAN-07-auditor-heranca-preparacao-parte1-r1.json](BAN-07-auditor-heranca-preparacao-parte1-r1.json), SHA-256 `6d27df5336b55fbd1598971376dfc8df7d128e8cc54fb62ab0338d1b7d8db318`, conclui oito dos 35 registros previstos para aquela parte e explicita 27 pendentes. Não se transforma a leitura-base preliminar do agente `/root/auditor_aaa` em veredito meu ou do Auditor anterior. Ela está em [BAN-07-leitura-base.json](BAN-07-leitura-base.json), SHA-256 `d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913`.
+
+As 60 entradas sem decisão de alcance são exatamente:
+
+- Q01, Q03, Q05–Q07, Q10, Q14, Q20, Q21, Q25, Q29 e Q30.
+- CR01–CR16, CR18–CR26 e CR28–CR50. CR17 e CR27 têm confronto específico e não integram esta pendência.
+
+As leituras preliminares contêm demonstrações e limites, e a igualdade dos artigos permite reutilizá-las se o Auditor verificar alcance e eventuais dependências. Há estudos críticos entre elas, que requerem examinar a justificativa do roteiro e sua exclusão da nota, sem impor unicidade ao texto histórico. Uma decisão por item, com atribuição, identidade e limites, é necessária antes de afirmar cobertura científica integral; não é necessário refazer cálculos que já possam ser sustentadamente herdados. A pendência é de revisão e evidência, não uma afirmação de que os 60 itens estejam errados. Os outros registros também devem ser integrados com suas ressalvas e adjudicações ao exame final de uma reapresentação.
+
+Foram lidos os pareceres parciais AV61–70, SHA-256 `74d470fd754fe98a2e88e8be9e0bf161b364859701b46f17378d7f0f853ae0c6`, e AV71–80, SHA-256 `acd18d1f85338d9d74373a400f7df9a95f2703eed8341d79fbb11df45d43685d`. O primeiro pertence ao apoio automatizado `/root/auditoria_av61_70`; o segundo é execução própria anterior deste Auditor, com 50 alternativas e figura AV80 inspecionada. Atribuições dos blocos anteriores, os sete abertos herdados e as decisões Q e CR permanecem nas peças próprias; não os apresento como novos cálculos meus.
+
+Examinei também as decisões de AV04 e AV31/41, respectivamente SHA-256 `38408ea51cea9b7b24ae86e5b66d6a341c6c0b681076fa7b4f36ae8f91ff2934` e `0cf76a7f74941f8f076055d59dd9140af5a40cb599517ab00dcd49d43388fa86`. O alerta histórico AV41-E foi refutado pelo Auditor anterior com mecanismo teórico específico; não o reconverto em ajuste obrigatório pela existência do alerta no índice. Observações AV23 e AV30 foram encaminhadas por aquela decisão a UX-04, sem aprovação desse ID.
+
+As evidências técnicas do Corretor e do coordenador registram verificação estrutural, reconstrução de delta, validação de inventário e testes controlados de persistência; a evidência de navegador do coordenador registra casos delimitados. Examinei os resultados e conferi seus hashes pelo manifesto, mas não reexecutei esses testes neste parecer e não os atribuo a mim. Teste em DOM controlado não é teste de navegador; navegador em casos específicos não é auditoria global de acessibilidade nem teste com alunos. A mudança de alternativas deve voltar a ter seu impacto sobre digitais e tentativas verificado na versão reapresentada.
+
+O [parecer técnico independente](BAN-07-r1-tecnico-independente.md), SHA-256 `80d8f73fd29d4f51ea507b30c5ab33571a5136fa3b568b7ff328676327596643`, pertence a `/root/auditoria_av61_70`. Examinei seu texto e conferi seu hash. Ele relata reprodução sem escrita de quatro verificadores em cópias temporárias, 376 e 264 verificações estruturais e duas suítes de 15 casos com zero falhas; as suítes se sobrepõem. Também registra confronto das digitais anteriores e posteriores sem colisão nos conjuntos examinados e conferência da recuperação da evidência de persistência por hash. Essa reprodução pertence àquela revisora, não a mim; cobre o snapshot e cenários descritos, não prova ciência nem ausência de falhas em todo ambiente. Sua conclusão técnica localizada não afasta os defeitos científicos e a pendência de herança deste parecer.
+
+## Adjudicação dos defeitos da r1
+
+1. **AV04-E — confirmado.** O modelo de líquido aproximadamente incompressível significa volume específico aproximadamente constante no intervalo dado; D é única correta. E exige temperatura igual a zero, sem escala nem dado que motive esse valor. Confundir incompressibilidade com isotermia produz temperatura constante, não temperatura nula; acrescentar uma troca arbitrária de variação por valor não demonstra plausibilidade. O comentário apenas refuta a condição nula. A decisão pontual anterior examinou comando, cinco opções e base, e seu fundamento é mantido. **Ação:** substituir E por distrator falso ligado a confusão conceitual concreta e sincronizar comentário; demonstrar que D segue única e verificar identidade da resposta.
+2. **AV31-B — confirmado.** PCS e PCI incluem energia de combustão e diferem pela referência da água dos produtos; E é única na interpretação do item. B afirma excluir *toda* a energia de combustão no PCS. Inversão PCS/PCI, confusão entre calor sensível e latente ou rendimento líquido não geram essa exclusão integral. A decisão anterior especifica por que simples falsidade não demonstra plausibilidade. **Ação:** substituir B por erro conceitual concreto e atualizar comentário; conferir as cinco opções e preservar E como única correta.
+3. **AV62-B — confirmado após confronto próprio com o apoio.** O enunciado declara entrada pela sucção durante expansão; no modelo normal de válvulas automáticas, a diferença de pressão abre admissão e mantém descarga fechada; D é única. B diz que *válvulas estão ausentes porque não há diferença de pressão*. Confundir diferença favorável, válvula aberta ou fechada e direção do fluxo são erros pertinentes, mas não explicam diretamente que os componentes físicos não existam por não haver diferença; o comentário apenas contrapõe abertura/entrada. O argumento não se apoia em ser uma opção fácil nem exige piloto. **Ação:** substituir B por erro falso e identificável de funcionamento, pressão ou posição das válvulas, em conformidade com o comando, e sincronizar explicação. Verificar as cinco opções e preservar D única.
+
+Para cada correção, a reapresentação deve identificar arquivo, artigo e hash novos, mostrar a mudança, fundamentar o mecanismo da alternativa efetivamente escrita, demonstrar unicidade sob o modelo acessível antes da tentativa, sincronizar comentário e metadados atingidos, e testar proporcionalmente a identidade e histórico de respostas. Os exemplos de outras peças são direções possíveis, não propostas aqui aprovadas. Não examinei nem aprovo propostas isoladas do Corretor.
+
+**AV69-E — ajuste proposto pelo apoio não confirmado.** O comando especifica parede que separa correntes; no modelo convencional do material, A (convecção quente, condução na parede, convecção fria) é única correta. E afirma somente mistura das correntes. Concordo que contradiz a parede, mas há um mecanismo conceitual direto para a opção literal: transferir ao trocador de superfície o modelo de trocador de contato direto, no qual as correntes se encontram, confundindo equipamentos de contato direto e indireto. Isso explica a escolha de mistura como caminho, sem reinterpretar a frase como outro mecanismo. Contrariar condição explícita ou ser fácil, por si só, não elimina plausibilidade; a frequência do erro não foi medida. O comentário refuta corretamente E pela separação. O parecer de apoio permanece preservado com seu dissenso. A explicitação adicional de escoamento pode melhorar a redação, mas não foi estabelecida como ajuste obrigatório para o modelo convencional vinculado.
+
+## Quadro de critérios
+
+| Critério | Situação da r1 e evidência |
+|---|---|
+| Versão e integridade dos arquivos listados | Atendido no escopo de identidade: 75/75 hashes do manifesto conferidos, 197 IDs distintos e 197 hashes de artigo do índice coincidentes. |
+| Dados, enunciados, restrições, unidades e consistência científica de cada item | Não demonstrado integralmente: existem 60 leituras preliminares ainda sem adjudicação explícita de alcance; os outros registros possuem suas peças específicas, com limites próprios. |
+| Demonstração da chave e unicidade ou tratamento de estudo crítico/aberto | Não demonstrado integralmente pela pendência das 60 leituras. Nos itens AV04, AV31, AV62 e AV69 as chaves D, E, D e A são únicas nos modelos declarados ou vinculados. |
+| Distratores plausíveis e justificados por erros reais | Não atendido na r1: AV04-E, AV31-B e AV62-B confirmados. A revisão teórica de AV69-E foi adjudicada sem ajuste. |
+| Equivalência por arredondamento e contas pertinentes | Não demonstrado integralmente enquanto os 60 não forem adjudicados; avaliações parciais documentam contas e equivalência em seus alcances, sem fechar BAN-08. |
+| Figura, comentário, comportamento e regressão na extensão afetada | Há evidências e pareceres parciais atribuídos; AV80 foi visto e texto fornece geometria. As alterações futuras exigem nova regressão proporcional. UX-04 não foi aprovado. |
+| Escopo, autoria e verificação empírica | Atendidos neste parecer como atribuição e limitação: não se afirma piloto, psicometria, revisão humana, certificação externa ou novo teste de navegador. |
+
+## Decisão e próxima etapa
+
+A r1 **não é aprovada**. Os três ajustes exigem nova entrega e auditoria; as 60 leituras devem receber decisão científica fundamentada antes de qualquer aceite global. O coordenador pode distribuir a conclusão da revisão dentro de BAN-07 e encaminhar os defeitos ao Corretor, conforme o protocolo. **Não está autorizado liberar o próximo ID**, pois há ajustes e cobertura científica pendente. Este parecer não altera produto, checklist ou `CONTROLE_AAA.json`, nem declara curso avançado.

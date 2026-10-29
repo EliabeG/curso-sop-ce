@@ -1,0 +1,17 @@
+[
+  {
+    "ancora": "base-calor-latente",
+    "antes": "Em um vaporizador de escoamento permanente, sem trabalho de eixo e com essas variações desprezíveis, Q̇ = ṁh<sub>fg</sub>.",
+    "depois": "Em um vaporizador de escoamento permanente, sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico, e com essas variações desprezíveis, Q̇ = ṁh<sub>fg</sub>. O trabalho pv já está incluído em h. Se uma resistência elétrica está dentro da fronteira e recebe energia, essa redução não se aplica: o balanço é Q̇ − Ẇ<sub>não-fluxo</sub> = ṁh<sub>fg</sub>, com trabalho saindo positivo. Um vaporizador externamente adiabático pode ter Q̇ = 0 e Ẇ<sub>el,in</sub> = ṁh<sub>fg</sub>, pois Ẇ<sub>não-fluxo</sub> = −Ẇ<sub>el,in</sub>."
+  },
+  {
+    "ancora": "base-rankine",
+    "antes": "bomba/turbina adiabáticas e caldeira/condensador sem trabalho de eixo.",
+    "depois": "bomba/turbina adiabáticas e caldeira/condensador sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico. O trabalho pv já está incluído em h."
+  },
+  {
+    "ancora": "base-refrigeracao",
+    "antes": "O compressor é adiabático; evaporador e condensador não produzem trabalho; a válvula é adiabática sem trabalho e as ligações não trocam calor relevante.",
+    "depois": "Compressor e válvula são adiabáticos. Evaporador, condensador e válvula não recebem nem fornecem qualquer trabalho não associado ao escoamento, inclusive elétrico; o trabalho pv já está incluído em h. As ligações não trocam calor relevante."
+  }
+]

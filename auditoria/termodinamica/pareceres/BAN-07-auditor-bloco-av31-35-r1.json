@@ -1,0 +1,233 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "AV31–AV35",
+  "data": "2026-10-28",
+  "revisor": {"agente": "/root/auditor_av", "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07", "autor_corretor": false, "poder_de_aprovacao": "Somente vereditos locais; sem aceite global de BAN-07."},
+  "produto": {"arquivo": "modulos/e1-termodinamica.html", "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80", "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"},
+  "estado": "CONCLUIDO_COM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "escopo": {"previsto": ["AV31", "AV32", "AV33", "AV34", "AV35"], "examinado": ["AV31", "AV32", "AV33", "AV34", "AV35"], "opcoes_examinadas": 25, "fora_de_escopo": "Demais artigos, produto, controle/checklist e outros IDs; blocos anteriores preservados."},
+  "metodo": "Artigos atuais extraídos por parseHtml/decodeHtml do validador. Comando/figuras/bases e soluções próprias com cinco alternativas antes do comentário. Deltas de AV33/35 comparados diretamente. Fontes anteriores só reutilizadas por identidade do SHA global e alcance declarado. Plausibilidade teórica de cada erro, sem piloto.",
+  "criterio_original_BAN07": "Conferir dados suficientes, consistência física, comando, unidades, restrições e resposta única, incluindo distratores plausíveis baseados em erros reais. Aceite: cada item tem demonstração do gabarito e justificativa dos distratores; detectar alternativas equivalentes após arredondamento.",
+  "itens": [
+    {
+      "item": "AV31",
+      "id_artigo": "av-e1-31",
+      "sha256_artigo": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+      "comando": "Na comparação de combustíveis para gerador térmico, identificar a principal origem da diferença PCS/PCI.",
+      "trechos_confrontados": {"comando_atual": "Na comparação de combustíveis para um gerador térmico, a diferença entre poder calorífico superior (PCS) e inferior (PCI) está associada principalmente", "alternativa_B": "à exclusão de toda a energia de combustão no PCS.", "comentario_B": "PCS inclui a energia de combustão e a recuperação adicional indicada."},
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Definições, base e cinco opções julgadas antes da resolução; chave não impressa na extração inicial."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Questão conceitual sobre definição, sem necessidade de combustível ou valor numérico específico.",
+        "hipoteses": "Comparação na mesma base de quantidade e condições de referência, combustão completa; diferença relevante quando há água nos produtos. Não se afirma diferença positiva para combustível que não forme/introduza água.",
+        "unidades": "Poder calorífico é energia por quantidade de combustível, usualmente kJ/kg ou MJ/kg. Energia de auxiliares do equipamento não define a diferença intrínseca PCS/PCI.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-termoquimica"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "PCS e PCI descrevem energia de combustão por quantidade de combustível, alterando o estado de referência da água dos produtos. Ao terminar com água líquida, o PCS inclui a energia recuperável na condensação; o PCI mantém a água como vapor e não a inclui. Quando há água, PCS-PCI está associado a esse calor de mudança de fase. Logo E. Não se trata de excluir a energia da combustão inteira, de consumo elétrico auxiliar ou de igualdade universal.",
+        "chave_derivada": "E",
+        "unicidade": "E é a única definição correta. A inverte PCS/PCI; B remove a energia que define o próprio poder calorífico; C generaliza igualdade; D troca propriedade de combustível por consumo de equipamento. Sem arredondamentos."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "à recuperação do calor de condensação somente no PCI.", "correta": false, "demonstracao": "A recuperação caracteriza PCS, não PCI.", "erro_plausivel": "Inverter superior e inferior ou a fase de referência da água.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "à exclusão de toda a energia de combustão no PCS.", "correta": false, "demonstracao": "PCS é uma medida da energia liberada na combustão completa, incluindo a recuperação indicada; excluir toda essa energia elimina seu próprio conteúdo definidor.", "erro_plausivel": "Não identificado suficientemente. Não é mera troca PCS/PCI, calor sensível/latente ou fronteira de energia útil: a frase elimina integralmente a energia que ambas as definições medem.", "plausibilidade": "Não demonstrada; formulação artificial e extrema, refutada apenas pela negação."},
+        {"letra": "C", "texto": "à igualdade obrigatória entre PCS e PCI para qualquer combustível.", "correta": false, "demonstracao": "Combustíveis que geram água têm diferença de referência de fase, portanto a igualdade não é universal.", "erro_plausivel": "Tomar poder calorífico como número único sem dependência dos estados dos produtos, ou generalizar caso sem água.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "à energia elétrica consumida pela bomba de combustível.", "correta": false, "demonstracao": "Consumo auxiliar pertence ao balanço/rendimento de uma instalação e não à referência de água que distingue os poderes caloríficos.", "erro_plausivel": "Confundir PCI líquido/neto com energia útil do gerador após descontar auxiliares.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "à recuperação, no PCS, do calor de condensação da água formada na combustão.", "correta": true, "demonstracao": "Corresponde ao estado líquido no PCS e vapor no PCI.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Definições e todas as negativas são cientificamente corretas. Entretanto B apenas informa que PCS inclui a energia de combustão; não torna plausível o erro de excluí-la inteira. Chave correta não supre o critério de distratores plausíveis de BAN-07."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-31", "uso": "Comando/opções e, após derivação, resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-termoquimica", "uso": "Lida nesta execução: poder calorífico de combustão completa, estados da água e distinção de rendimento."},
+        {"tipo": "fonte_primaria_externa", "titulo": "U.S. EIA — Glossary: heat content", "url": "https://www.eia.gov/tools/glossary/index.php?id=heat_content", "acesso": "2026-10-28", "uso": "Definição de gross/higher e net/lower heating value pela inclusão/exclusão da energia ligada à água, não de toda a combustão."},
+        {"tipo": "criterio", "arquivo": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md", "local": "BAN-07", "uso": "Exigência de distratores plausíveis baseados em erros reais; não exige piloto empírico nesta revisão."}
+      ],
+      "achados": [{"id": "AV31-B", "natureza": "ajuste_obrigatorio", "descricao": "B não apresenta mecanismo plausível bem identificado para excluir toda a energia de combustão do PCS. A exigência é de plausibilidade teórica, não de comprovação estatística inexistente."}],
+      "ajustes_obrigatorios": [{"id": "AV31-B", "acao": "Substituir B por uma afirmação falsa que corresponda a erro reconhecível e atualizar o comentário. Exemplo: associar a diferença PCS/PCI ao calor sensível da água, sem relação com sua mudança de fase, para explorar a confusão sensível/latente.", "evidencia_reapresentacao": "Artigo e hash atualizados; nova conferência das cinco opções, da explicação do novo erro e da unicidade de E."}],
+      "veredito_item": "AJUSTES_OBRIGATORIOS"
+    },
+    {
+      "item": "AV32",
+      "id_artigo": "av-e1-32",
+      "sha256_artigo": "5d53de738a3e1b78ce907920d3ee56add57516359d4b4f36880aa2caa7d6e500",
+      "comando": "Reação tem Delta H=-80 kJ para a quantidade indicada; para a inversa entre os mesmos estados e condições, achar Delta H e classificação.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Diferença de entalpia, inversão e todas as opções julgadas antes do comentário."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Mesmos estados e condições especificam exatamente a inversão da diferença de entalpia, na mesma quantidade de reação.",
+        "hipoteses": "Entalpia é função de estado. Endotérmica/exotérmica é classificação termoquímica pelo sinal de Delta H; não se estende Q=Delta H a qualquer processo com outros trabalhos ou condições arbitrárias.",
+        "unidades": "kJ para a quantidade de reação dada; não há alteração estequiométrica ou duplicação autorizada.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-termoquimica"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Na direta, Delta H=Hprod-Hreag=-80 kJ. Na inversa, Delta Hinv=Hreag-Hprod=-Delta H=+80 kJ. Sinal positivo caracteriza reação endotérmica na referência termoquímica. Somar direta e inversa daria zero para o ciclo composto, mas o comando pede só a inversa.",
+        "chave_derivada": "E",
+        "unicidade": "Só E reúne +80 kJ e endotérmica. B repete o número correto com classificação falsa. As demais têm módulo/sinal errados ou anulam a diferença. Sem arredondamentos."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "−160 kJ; endotérmica.", "correta": false, "demonstracao": "-80+(-80)=-160 conta duas etapas com sinal direto; nenhum fator 2 foi pedido. Valor negativo também não corresponde ao rótulo endotérmica.", "erro_plausivel": "Confundir reação inversa com composição direta+inversa, manter indevidamente o mesmo sinal nas duas e inverter só o rótulo térmico.", "plausibilidade": "Teórica e mais fraca: combinação de erro de composição de etapas e inconsistência de sinal/classificação, ambos identificáveis."},
+        {"letra": "B", "texto": "+80 kJ; exotérmica.", "correta": false, "demonstracao": "Inverte corretamente Delta H, mas Delta H positivo corresponde ao caráter endotérmico.", "erro_plausivel": "Conservar a classificação da direta ao trocar apenas o sinal numérico, ou trocar os nomes exo/endo.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "C", "texto": "zero; sem troca energética.", "correta": false, "demonstracao": "Zero seria a soma da direta com a inversa, não a diferença da inversa isolada.", "erro_plausivel": "Confundir uma etapa inversa com o ciclo completo que retorna ao início.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "−80 kJ; exotérmica.", "correta": false, "demonstracao": "Repete a reação direta sem permutar os estados.", "erro_plausivel": "Tratar entalpia de reação como módulo fixo independente do sentido.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "+80 kJ; endotérmica.", "correta": true, "demonstracao": "Delta Hinv=-(-80)=+80 kJ.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Inversão e classificação corretas; A/B/C/D refutam módulo/sinal, rótulo térmico, anulação indevida e repetição da direta. A interpretação de absorção segue o contexto termoquímico da base."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-32", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-termoquimica", "uso": "Lida no AV31 desta execução; inversão de Delta H entre mesmos estados e condições para Q=Delta H, mesmo snapshot."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV33",
+      "id_artigo": "av-e1-33",
+      "sha256_artigo": "18647f755fc3deb6a9a4aafcb815851a9fcc1244ff0288b0117c8c0620349d1f",
+      "comando": "Gás ideal expande livremente após ruptura de membrana para compartimento evacuado, em recipiente externo rígido/fechado/isolado; sem outros trabalhos nem interação energética relevante com membrana, entre equilíbrios e com Delta EC/EP desprezíveis. Julgar Q=0, W=0, Tfinal=Tinicial e entropia constante.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Comando atual/anterior e bases lidos antes das resoluções. Imagem reutilizada de inspeção própria anterior após confirmação do SHA do recurso."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Q externo nulo, fronteira rígida, ausência de outros trabalhos e de energia relevante da membrana explicitamente delimitam o balanço idealizado. Vfinal>Vinicial por ocupação do compartimento antes evacuado; valores numéricos não são necessários.",
+        "hipoteses": "Gás ideal de massa/composição fixas, parede adiabática do modelo e membrana energeticamente desprezível. Comparação entre equilíbrios; não se atribui sequência quase estática ao transiente irreversível. Não aplicar pV elevado a k constante ou integral da pressão interna como trabalho real.",
+        "unidades": "Q/W/Delta U em energia, todos nulos no balanço. Delta S=mR ln(V2/V1) tem unidade kJ/K se R estiver em kJ/(kg·K); o logaritmo usa razão adimensional.",
+        "figuras": "Recurso com SHA idêntico ao inspecionado em AV23: tanque rígido/isolado, região de vácuo e gás confinado em membrana. O comando atual transcreve as condições relevantes; alt genérico menciona variáveis inexistentes, observação descritiva já registrada em AV23.",
+        "bases_acessiveis": ["#base-expansao-livre", "#base-entropia-gas"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "I verdadeira: parede adiabática impede calor externo. II verdadeira: fronteira externa imóvel e pressão de resistência no volume evacuado zero, sem outros trabalhos; W=0. Primeira lei dá Delta U=Q-W=0. Para gás ideal, U=U(T) com cv positivo, logo T2=T1 e III verdadeira. A entropia é função de estado; entre esses equilíbrios, Delta S=mR ln(V2/V1)>0 porque V2>V1, embora o caminho real seja adiabático. Assim IV falsa e conjunto {I,II,III}.",
+        "chave_derivada": "D",
+        "unicidade": "Só D contém exatamente I/II/III. Calor nulo não é sinônimo de entropia constante; nenhuma alternativa com IV é integralmente correta. Sem arredondamento ou valores ausentes para decidir os sinais."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "I e II, apenas.", "correta": false, "demonstracao": "I/II verdadeiras, mas III também decorre de Delta U=0 e idealidade.", "erro_plausivel": "Supor que toda expansão resfria ou importar efeito de gás real/Joule-Thomson sem respeitar o modelo.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "I, III e IV, apenas.", "correta": false, "demonstracao": "Omite II verdadeira e aceita IV falsa.", "erro_plausivel": "Confundir aumento de volume com trabalho inevitável e adiabático com isentrópico, sem integrar os dois balanços.", "plausibilidade": "Teórica: conjunto fragmentado de erros identificáveis."},
+        {"letra": "C", "texto": "I, II, III e IV.", "correta": false, "demonstracao": "Apenas IV é falsa: há geração de entropia por irreversibilidade.", "erro_plausivel": "Aplicar Delta S=Q/T ao calor real de um processo irreversível e concluir zero.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "I, II e III, apenas.", "correta": true, "demonstracao": "Q=W=Delta U=0, T2=T1 e Delta S>0.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "E", "texto": "II e IV, apenas.", "correta": false, "demonstracao": "II verdadeira, mas I/III também são verdadeiras e IV é falsa.", "erro_plausivel": "Reconhecer trabalho nulo contra vácuo, mas supor calor por haver expansão, resfriamento obrigatório e isentropia sem reversibilidade.", "plausibilidade": "Teórica: concepções fragmentadas sobre calor, temperatura e entropia."}
+      ],
+      "confronto": {"gabarito_publicado": "D", "coincide": true, "comentario": "Q/W/Delta U/T e aumento de entropia corretos, bem como cada refutação. Não se usa entropia de calor real para o processo irreversível nem relação adiabática reversível."},
+      "delta_conferido": {
+        "origem": "Comparação própria dos artigos atual/anterior por parseHtml/decodeHtml.",
+        "arquivo_anterior": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+        "sha256_artigo_anterior": "80f3f23218940626a28e00d2090cbfbc30f8ed21cacc9a4600451e0927ae1f12",
+        "sha256_artigo_atual": "18647f755fc3deb6a9a4aafcb815851a9fcc1244ff0288b0117c8c0620349d1f",
+        "alteracao_comando": "Acrescenta: Não há outros modos de trabalho nem interação energética relevante com a membrana. Substitui a retomada da ruptura por Após sua ruptura.",
+        "opcoes_comentario": "Proposições, cinco opções e resolução extraídas permanecem iguais.",
+        "resultado": "Hipóteses novas sustentam explicitamente Wtotal=0 e ausência de energia relevante da membrana; solução D continua coerente com a versão atual."
+      },
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-33", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "baseline_local", "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html", "ancora": "#av-e1-33", "uso": "Delta direto e hashes próprios."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-expansao-livre", "uso": "Lida nesta execução: balanço, idealidade, equilíbrios e irreversibilidade."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-entropia-gas", "uso": "Lida nesta execução: diferenças de entropia entre estados de gás ideal."},
+        {"tipo": "figura_local_reutilizada", "arquivo": "assets/questoes-reais-e1/figura-9d164690a624.png", "sha256": "9d164690a6243cb31b9ea0f734b9a85ad4c6570398b9d5ef9278e4f44332bcc2", "origem": "Inspeção visual própria no AV23; SHA dos bytes reconfirmado nesta execução.", "alcance_reutilizado": "Identificação do tanque, membrana, gás ideal e vácuo, sem herdar a solução deste item."},
+        {"tipo": "fonte_primaria_externa", "titulo": "MIT Thermodynamics and Propulsion — 4.2 Difference between Free Expansion and Reversible Isothermal Expansion", "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node33.html", "acesso": "2026-10-28", "uso": "Confirma a idealização de recinto isolado, Q=W=0 e igualdade das temperaturas inicial/final para gás ideal. A fórmula de entropia foi derivada com a base de propriedades, não atribuída a trecho externo que não a apresenta."}
+      ],
+      "achados": [{"id": "AV33-alt", "natureza": "observacao_nao_bloqueante", "descricao": "Mesmo recurso/alt genérico de AV23: a imagem não exibe variáveis termodinâmicas, apesar dessa frase no alt. O comando de AV33 contém membrana, vácuo e fronteira/isolamento relevantes; não falta dado necessário nem há segunda resposta.", "melhoria_objetiva": "Descrever os elementos efetivamente visíveis, sem afirmar variáveis indicadas. Alcance: apresentação acessível, sem impedir a validade científica em BAN-07."}],
+      "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV34",
+      "id_artigo": "av-e1-34",
+      "sha256_artigo": "3ae8bcce339a9cfb8899c0dda553455c5cc89fbd8cb6fd39b753b96f7cbcbc20",
+      "comando": "Tanque rígido fechado: m=2 kg de gás ideal, cv=0,72 kJ/(kg·K), recebe Q=144 kJ, sem outros trabalhos e sem Delta EC/EP; achar aumento de T.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Balanço, isolamento de Delta T e cinco opções julgados antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Rigidez anula trabalho de fronteira e o comando exclui outros modos. Q,m,cv bastam para Delta T; não são necessárias T inicial ou pressão.",
+        "hipoteses": "Gás ideal de massa/composição fixas com cv tratado constante no intervalo. Não se usa rigidez como exclusão automática de eixo/elétrico: isso foi declarado separadamente.",
+        "unidades": "m cv=1,44 kJ/K; 144 kJ dividido por esse produto dá 100 K. É intervalo de temperatura, também 100 °C de diferença, sem somar 273,15.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-balanco-fechado", "#base-gas-energia"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Wtotal=0 pelas duas restrições. Primeira lei: Delta U=Q=144 kJ. Para gás ideal com cv dado constante, Delta U=m cv Delta T. Logo Delta T=144/(2×0,72)=100 K, positivo.",
+        "chave_derivada": "B",
+        "unicidade": "Só B é 100 K. 50,200,144,0 K diferem por fatores/omissões e não coincidem por arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "50 K.", "correta": false, "demonstracao": "144/(2×2×0,72)=50 inclui m=2 duas vezes.", "erro_plausivel": "Duplicar a massa ao converter entre energia total e específica.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "100 K.", "correta": true, "demonstracao": "144/(2×0,72)=100.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "C", "texto": "200 K.", "correta": false, "demonstracao": "144/0,72=200 omite a massa.", "erro_plausivel": "Usar calor total diretamente com cv por kg como se a amostra tivesse 1 kg.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "D", "texto": "144 K.", "correta": false, "demonstracao": "Copia o valor de Q em kJ para Delta T em K sem dividir pela capacidade térmica.", "erro_plausivel": "Confundir energia fornecida com mudança de temperatura ou assumir capacidade total unitária sem dado.", "plausibilidade": "Plausível como erro de dimensão/leitura."},
+        {"letra": "E", "texto": "zero.", "correta": false, "demonstracao": "Q positivo com W=0 eleva U e T para cv positivo.", "erro_plausivel": "Confundir volume constante com temperatura constante ou ausência de trabalho com ausência de mudança de energia.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "B", "coincide": true, "comentario": "Cálculo e quatro mecanismos conferem. A afirmação W=0 é válida aqui pela ausência expressa de outros trabalhos; a bagagem final corretamente delimita rigidez versus eixo/elétrico."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-34", "uso": "Comando/opções e, após derivação, resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-balanco-fechado", "origem": "Leitura própria no AV02, mesmo SHA global congelado.", "alcance_reutilizado": "Rigidez, outros modos de trabalho e balanço fechado; nenhum julgamento de AV34 herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-energia", "origem": "Leitura própria no AV13, mesmo snapshot.", "alcance_reutilizado": "Delta U=m cv Delta T e cv constante."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Isolar incógnita, unidades e total versus específico."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV35",
+      "id_artigo": "av-e1-35",
+      "sha256_artigo": "17b85fe40845327cbdfba0bd7d354a5f394034351617d0f22d23e80af6eb4300",
+      "comando": "Sistema fechado adiabático reduz U em 120 kJ, sem Delta EC/EP; trabalho positivo realizado pelo sistema; achar trabalho líquido.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Versões atual/anterior das opções examinadas antes dos comentários; sinal e erros numéricos derivados previamente."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Q=0, Delta U=-120 kJ e descarte EC/EP determinam trabalho líquido total. A convenção positiva de saída é explícita; não precisa de processo ou tipo de trabalho.",
+        "hipoteses": "Sistema fechado, com todos os trabalhos agregados no trabalho líquido. Adiabático não significa impedimento de trabalho.",
+        "unidades": "Dado e alternativas em kJ; 120 não está em J. Divisão por 1000 mantendo kJ é conversão indevida.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-primeira-lei"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Delta U=Q-W. Adiabático dá Q=0, então W=-Delta U=-(-120)=+120 kJ. O sistema perde energia interna fornecendo trabalho ao exterior; nenhum fator de conversão é necessário.",
+        "chave_derivada": "B",
+        "unicidade": "B é a única opção +120 kJ. D tem o sinal oposto; A/E diferem por fator 1000 e por sinal em A; C negaria trabalho existente. Não são equivalentes por arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "−0,120 kJ.", "correta": false, "demonstracao": "-120/1000=-0,120 mantém o sinal de Delta U e divide indevidamente um dado já em kJ.", "erro_plausivel": "Somar erro de convenção de trabalho à conversão automática J→kJ sem ler a unidade do dado.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "+120 kJ.", "correta": true, "demonstracao": "0-(-120)=120 kJ.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "C", "texto": "zero.", "correta": false, "demonstracao": "Q=0 não implica W=0; Delta U não nula exige o trabalho de saída.", "erro_plausivel": "Confundir isolamento térmico com isolamento energético total.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "−120 kJ.", "correta": false, "demonstracao": "Copia o sinal de Delta U; trabalho negativo seria recebido e elevaria U com Q=0.", "erro_plausivel": "Igualar W a Delta U em lugar de -Delta U ou usar convenção recebida positiva sem adaptação.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "+0,120 kJ.", "correta": false, "demonstracao": "120/1000=0,120 aplica conversão de J para kJ ao valor que já era kJ.", "erro_plausivel": "Conversão automática por fator mil sem verificar a unidade de origem.", "plausibilidade": "Plausível e numericamente reproduzível."}
+      ],
+      "confronto": {"gabarito_publicado": "B", "coincide": true, "comentario": "Primeira lei e convenção corretas. A/E atuais explicam exatamente o fator 1000 das novas opções e A ainda trata o sinal; C/D também conferem."},
+      "delta_conferido": {
+        "origem": "Comparação direta própria por parseHtml/decodeHtml.",
+        "arquivo_anterior": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+        "sha256_artigo_anterior": "93e57e67f34546f1cf930966cb7afd71fc3a659850be1456bfdb78d22e54d337",
+        "sha256_artigo_atual": "17b85fe40845327cbdfba0bd7d354a5f394034351617d0f22d23e80af6eb4300",
+        "comando": "Preservado: Delta U reduz 120 kJ, adiabático, convenção W positivo realizado.",
+        "alteracao_opcoes": "A: -240→-0,120 kJ; E: +240→+0,120 kJ. B/C/D preservadas.",
+        "alteracao_comentarios": "A passa de erro genérico de sinal/módulo para divisão indevida por 1000 e sinal. E passa de duplicação sem motivo para conversão indevida de dado já em kJ.",
+        "resultado": "Novos valores correspondem ao erro de unidade declarado, e B permanece única correta."
+      },
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-35", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "baseline_local", "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html", "ancora": "#av-e1-35", "uso": "Delta direto e hashes próprios."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-primeira-lei", "origem": "Leitura própria no AV27, mesmo SHA global congelado.", "alcance_reutilizado": "Convenção Q entra/W sai e Delta U=Q-W; nenhum julgamento de AV35 herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Unidades e fatores de conversão."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    }
+  ],
+  "cobertura": {
+    "autoria": "Exame efetivo de /root/auditor_av; cinco derivações e 25 julgamentos próprios.",
+    "ids": ["AV31", "AV32", "AV33", "AV34", "AV35"],
+    "ids_artigo": ["av-e1-31", "av-e1-32", "av-e1-33", "av-e1-34", "av-e1-35"],
+    "itens": 5,
+    "juizos_de_alternativas": 25,
+    "alternativas_por_item": {"AV31": ["A","B","C","D","E"], "AV32": ["A","B","C","D","E"], "AV33": ["A","B","C","D","E"], "AV34": ["A","B","C","D","E"], "AV35": ["A","B","C","D","E"]},
+    "proposicoes_AV33_julgadas": ["I", "II", "III", "IV"],
+    "derivacoes_independentes": 5,
+    "confrontos_com_comentario": 5,
+    "dados_modelos_unidades_sinais_restricoes_suficiencia": 5,
+    "unicidade_e_arredondamentos": 5,
+    "deltas_conferidos_diretamente": ["AV33", "AV35"],
+    "figuras": "AV33 usa imagem previamente inspecionada no AV23, identidade por SHA reconfirmada e alcance declarado. Demais artigos sem figuras.",
+    "bases": "Leituras novas de termoquímica, expansão livre e entropia de gás; demais bases reutilizadas por identidade/alcance.",
+    "limitacao_cegamento": "Chaves omitidas na extração inicial e comentários lidos após cada derivação. Não se reivindica experimento formal de cegamento.",
+    "aprovacoes_locais": ["AV32", "AV33", "AV34", "AV35"],
+    "itens_com_ajuste_obrigatorio": ["AV31"],
+    "aceite_global_BAN07": false
+  },
+  "resumo": {
+    "veredito_bloco": "AJUSTES_OBRIGATORIOS",
+    "ajustes_obrigatorios": [{"item": "AV31", "id": "AV31-B", "resumo": "Substituir distrator que exclui toda a energia de combustão do PCS por erro conceitual plausível identificado, atualizar comentário e reapresentar as cinco opções com nova verificação da chave E."}],
+    "observacoes_nao_bloqueantes": ["AV33-alt: descrição genérica afirma variáveis que não aparecem. Dados relevantes estão no comando; observação de apresentação, sem insuficiência ou ambiguidade científica."],
+    "decisao_de_liberacao": "Sem liberação do próximo ID ou aceite global. Apontamento local sujeito à adjudicação independente pelo Auditor principal."
+  }
+}

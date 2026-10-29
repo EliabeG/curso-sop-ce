@@ -1,0 +1,141 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV36–AV40",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco opções e comentários; frações exatas, unidades e arredondamentos.",
+  "registros": [
+    {
+      "id": "av-e1-36",
+      "artigo_sha256": "6b740a5a219f82f11f8e03899fb670df2cc54663545c07731f48643f1edb7285",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-36",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-trabalho-fronteira",
+          "#base-entropia",
+          "#base-balanco-fechado",
+          "#cr-e1-36"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Expansão adiabática reversível de gás ideal fechado, só trabalho de fronteira e ΔEc/ΔEp desprezíveis; pede incorreta.",
+      "solucao": "Q=0; se W>0, ΔU=−W<0 e T diminui para cv>0; adiabática reversível tem ΔS=0.",
+      "resultado": "E é incorreta.",
+      "comparacao": "A Q=0 verdadeira; B U diminui com trabalho positivo; C T diminui; D entropia constante; E impõe W=0 indevidamente.",
+      "tolerancia": "Zeros e sinais simbólicos; sem magnitude ou tolerância numérica.",
+      "limite": "Sem troca de calor não significa ausência de trabalho; irreversibilidade tornaria conclusão de entropia diferente.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-37",
+      "artigo_sha256": "b741f7c26e317df09eaf7984e2065f881464ffc7367202fa2968b4ce30efe928",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-37",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-exergia",
+          "../assets/questoes-reais-e1/figura-222735fab01e.png",
+          "#cr-e1-37"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Sger=0,20 kJ/K, T0=300 K, Gouy–Stodola; análise independente dos valores das curvas ilustrativas.",
+      "solucao": "Wperdido=T0Sger=300×0,20=60 kJ; converter 300 K em 26,85 °C e multiplicar incorretamente fornece 5,37.",
+      "resultado": "C, 60 kJ.",
+      "comparacao": "A 0,20 confunde entropia e energia; B 5,37 usa Celsius em vez de K; C 60; D −60 troca sinal de perda; E 300 repete temperatura como energia.",
+      "tolerancia": "Resultados exatos para dados nominais e fator decimal; sem incerteza metrológica.",
+      "limite": "T0 absoluta e comparação com referência reversível apropriada; desenho não fornece valores usados na conta.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-38",
+      "artigo_sha256": "bde32c401ca98314f5217325508776fef07fca3eddb42b7a689a588fe973dfd4",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-38",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-limite-carnot",
+          "#cr-e1-38"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "Motor cíclico entre fontes a 500 K e 300 K.",
+      "solucao": "ηmáx=1−300/500=0,40=40%; razões alternativas: 300/500=60%, 200/300=66,666…%, 200/800=25%.",
+      "resultado": "E, 40%.",
+      "comparacao": "A 60% é razão fria/quente; B 100% viola limite; C 66,7% usa fria no denominador; D 25% soma temperaturas; E 40%.",
+      "tolerancia": "40, 60 e 25% exatos nominalmente; 66,7% difere de 200/3% por 0,0333 p.p.<0,05 p.p.; sem incerteza instrumental.",
+      "limite": "Limite de Carnot aplica-se a motor cíclico entre os mesmos reservatórios de temperatura constante.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-39",
+      "artigo_sha256": "42ffe7852ec1c612a414d4403674cecde23d4f79aea495c7e0feb68d7dd7cf6b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-39",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-segunda-lei",
+          "#base-balanco-fechado",
+          "#cr-e1-39"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "Motor cíclico, único efeito retirar 1000 kJ de fonte térmica e produzir 1000 kJ de trabalho.",
+      "solucao": "ΔE ciclo=0, Q−W=1000−1000=0; conversão integral de calor de única fonte em trabalho como único efeito é vedada por Kelvin–Planck.",
+      "resultado": "A.",
+      "comparacao": "A primeira lei fecha e segunda é violada; B unidade igual não prova possibilidade; C etapa adiabática não remove restrição; D conservação não é violada; E lei zero trata equilíbrio.",
+      "tolerancia": "Igualdade de energias exata nos dados nominais; sem incerteza de medição.",
+      "limite": "Condição de único efeito e operação cíclica excluem a ambiguidade de outras fronteiras ou trocas.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-40",
+      "artigo_sha256": "b0eea6e50cfc5d5c03befe2871587f01f350784667829c280e90723526ed7ef8",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-40",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gibbs",
+          "#cr-e1-40"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_APROXIMADO",
+      "dados": "Substância simples compressível isentrópica, v≈0,002 m³/kg e Δp=+500 kPa.",
+      "solucao": "dh=Tds+vdp; ds=0 e v aproximadamente constante: Δh≈vΔp=0,002×500=+1 kJ/kg.",
+      "resultado": "B, +1 kJ/kg.",
+      "comparacao": "A 250000 vem de divisão dimensionalmente incompatível; B +1 kJ/kg; C troca sinal; D +1 kJ não é específico; E ignora variação de pressão.",
+      "tolerancia": "Produto dos números nominais é exato; resultado físico é aproximado porque v é aproximadamente constante, erro não quantificável com dados.",
+      "limite": "A unidade de Δh é específica; B e D têm mesmo número mas diferem em unidade e não se distinguem por tolerância numérica isolada.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

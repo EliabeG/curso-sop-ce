@@ -1,0 +1,1716 @@
+{
+  "id": "BAN-07",
+  "responsavel": "/root, coordenador",
+  "tipo": "Índice de cobertura e identidade; não é parecer científico nem aprovação automática.",
+  "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+  "artigos": 197,
+  "preparacao_anterior_identica_ao_produto": 70,
+  "novos_registros_por_blocos": 137,
+  "total_com_leitura_de_versao_atual_disponivel": 197,
+  "pendentes_de_leitura_atual_ou_confronto": [],
+  "preparacao_anterior_que_exige_confronto": [
+    {
+      "id": "q-e1-02",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-09",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-13",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-15",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-16",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-18",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-19",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-24",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-26",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    },
+    {
+      "id": "q-e1-28",
+      "motivo": "Artigo mudou; leitura da versão anterior exige confronto específico."
+    }
+  ],
+  "ressalvas_da_preparacao_identica": [
+    {
+      "id": "q-e1-04",
+      "pontos_a_verificar": [
+        "Propriedades fornecidas tratadas como dados didáticos da mesma mistura saturada, sem inferir água real ou estado p/T não declarado."
+      ],
+      "estado": "Confronto posterior do Auditor disponível; consultar pontos decididos e veredito. O índice não substitui o parecer.",
+      "confronto_posterior": {
+        "arquivo": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+        "pontos_decididos": [
+          {
+            "ponto": "Propriedades fornecidas tratadas como dados didáticos da mesma mistura saturada, sem inferir água real ou estado p/T não declarado.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "O comando declara mistura saturada e fornece hf=500, hg=2500 e h=1000 kJ/kg para ela. Logo fornece as extremidades e a propriedade intermediária necessárias, com hf<h<hg e hg-hf>0. As bases definem f/g e a relação mássica na mesma saturação. Pressão, temperatura ou nome do fluido não são necessários para essa interpolação já parametrizada; inventá-los ou alegar água real ultrapassaria os dados.",
+            "limite": "São dados didáticos definidos no problema genérico. Não se atesta uma tabela, substância ou estado real, nem se infere p/T inexistente."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-08",
+      "pontos_a_verificar": [
+        "Pressão constante interpretada como absoluta na relação de fronteira; processo quase estático declarado."
+      ],
+      "estado": "Confronto posterior do Auditor disponível; consultar pontos decididos e veredito. O índice não substitui o parecer.",
+      "confronto_posterior": {
+        "arquivo": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+        "pontos_decididos": [
+          {
+            "ponto": "Pressão constante interpretada como absoluta na relação de fronteira; processo quase estático declarado.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "Quase-estática consta expressamente do comando. A base ligada define p como pressão absoluta antes da tentativa e descreve a pressão na fronteira como conjugada a dV. Portanto 200 kPa é usada diretamente em integral p dV; não se acrescenta pressão atmosférica inexistente nem se calcula somente trabalho contra uma carga manométrica.",
+            "limite": "A expressão usa o processo quase-estático declarado e o trabalho de fronteira total produzido. Não é trabalho útil subtraído do deslocamento da atmosfera nem licença para integrar uma pressão interna arbitrária em processo rápido irreversível."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-11",
+      "pontos_a_verificar": [
+        "A identificação da potência como trabalho líquido da turbina é coerente; se solução disser apenas potência de eixo, explicitar modelo sem outras modalidades relevantes conforme contexto didático."
+      ],
+      "estado": "Confronto posterior do Auditor disponível; consultar pontos decididos e veredito. O índice não substitui o parecer.",
+      "confronto_posterior": {
+        "arquivo": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+        "pontos_decididos": [
+          {
+            "ponto": "A identificação da potência como trabalho líquido da turbina é coerente; se solução disser apenas potência de eixo, explicitar modelo sem outras modalidades relevantes conforme contexto didático.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "Regime permanente, adiabaticidade e desprezo de DeltaEC/DeltaEP constam do próprio comando. Uma entrada/saída e vazão especificada permitem o balanço da potência líquida de trabalho da turbina, excluído o trabalho de escoamento já incorporado à entalpia. A solução atual diz Potência e potência produzida no contexto da base, sem afirmar que se isolou uma modalidade de eixo de um conjunto com outras modalidades relevantes desconhecidas.",
+            "modalidades": "O balanço determina Wdot_liq, soma algébrica das modalidades de trabalho não associadas ao escoamento. Identificá-la com eixo isolado exigiria ausência de outras modalidades relevantes; não há no item outra modalidade especificada para subtrair ou somar, e o comentário não faz a identificação exclusiva que a ressalva condicionava.",
+            "limite": "Não se converte adiabaticidade em isentropia nem se exige turbina ideal. Não se infere potência de um gerador ou eficiência elétrica. Se uma futura redação pedir potência de eixo com outras modalidades presentes, será necessário declará-las e separar o balanço."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-12",
+      "pontos_a_verificar": [
+        "Bomba ideal deve remeter ao modelo adiabático reversível/energias macroscópicas desprezadas já definido na aula; não inferir universalidade de vΔp."
+      ],
+      "estado": "Confronto posterior do Auditor disponível; consultar pontos decididos e veredito. O índice não substitui o parecer.",
+      "confronto_posterior": {
+        "arquivo": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+        "pontos_decididos": [
+          {
+            "ponto": "Bomba ideal deve remeter ao modelo adiabático reversível/energias macroscópicas desprezadas já definido na aula; não inferir universalidade de vΔp.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "A aula define explicitamente Bomba ideal com as hipóteses que a nota exigia. Q12 usa esse nome e fornece v e Delta p; suas bases prévias explicam quando a identidade de entalpia pode produzir v Delta p e separam energias de pressão, velocidade e altura. Logo não se depende somente do comentário para adotar regime permanente, adiabático reversível, v constante e DeltaEc/DeltaEp desprezíveis.",
+            "fechamento_cientifico": "No modelo adiabático reversível, ds=0. Integrar dh=v dp com v constante fornece Delta h≈v Delta p. Pelo balanço permanente sem energias macroscópicas relevantes e sem outros modos relevantes especificados, a magnitude líquida do trabalho de entrada é Delta h. Isto justifica win≈v Delta p; não se identifica toda pressurização real com essa fórmula.",
+            "limite": "Se houvesse velocidades, elevação, perdas, transferência de calor, rendimento não unitário ou outra modalidade relevante, seria necessário o balanço completo. Não se acrescentam esses termos inexistentes ao modelo ideal definido nem se calcula potência a partir de trabalho por kg."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-17",
+      "pontos_a_verificar": [
+        "Valores devem ser trocas na mesma base de operação/ciclo, sem armazenamento; termo refrigerador e definição COP sugerem modelo, mas comando não diz por ciclo."
+      ],
+      "estado": "Confronto posterior do Auditor disponível; consultar pontos decididos e veredito. O índice não substitui o parecer.",
+      "confronto_posterior": {
+        "arquivo": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+        "pontos_decididos": [
+          {
+            "ponto": "Valores devem ser trocas na mesma base de operação/ciclo, sem armazenamento; termo refrigerador e definição COP sugerem modelo, mas comando não diz por ciclo.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "O comando vincula retirada de 900 kJ ao consumo de 300 kJ da mesma operação do refrigerador. A base prévia define ambos QL e W em kJ por ciclo e exige mesmo ciclo/fronteiras; assim o contexto avaliativo é cíclico, sem acumulação líquida de energia. DeltaE_ciclo=0 fornece QH=QL+Win. Não foi preciso obter essa hipótese apenas do comentário posterior, embora o comando não repita as palavras por ciclo.",
+            "limite": "Não se calcula calor rejeitado de uma partida transiente com armazenamento desconhecido nem se combinam energias de ciclos/intervalos diferentes. O item é aprovado com a base cíclica ligada, sem afirmação de universalidade para qualquer transiente."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-22",
+      "pontos_a_verificar": [
+        "Conferir hipóteses no alvo existente: mesmo gás, condições de entrada e razão global, limites de perda de pressão/modelo; não prometer vantagem universal."
+      ],
+      "estado": "Confronto posterior do Auditor disponível; consultar pontos decididos e veredito. O índice não substitui o parecer.",
+      "confronto_posterior": {
+        "arquivo": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+        "pontos_decididos": [
+          {
+            "ponto": "Conferir hipóteses no alvo existente: mesmo gás, condições de entrada e razão global, limites de perda de pressão/modelo; não prometer vantagem universal.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "A base prévia declara mesmo gás ideal de composição fixa, cp/cv constantes, mesma vazão e eficiência isentrópica constante, compressores adiabáticos em regime permanente, energias macroscópicas desprezíveis e ausência de quedas de pressão, fase ou separação de massa. Resfriamento devolve a T1 e pressões globais são fixas. C contém expressamente nas hipóteses do modelo, portanto a comparação não promete vantagem para qualquer instalação.",
+            "limite": "Preservam-se gás, entrada inicial, vazão, razão global e modelo de estágios/eficiências. Perdas de pressão, consumo auxiliar, condensação, eficiência alterada ou outro objetivo do ciclo exigem reavaliação."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-23",
+      "pontos_a_verificar": [
+        "Modelo usual depende de compressor adiabático e trocas adequadas, trabalho/energias macroscópicas negligenciados onde pertinente; já sustentado no alvo, conferir alcance. Dados didáticos de entalpia não provam viabilidade de refrigerante real."
+      ],
+      "estado": "Confronto posterior do Auditor disponível; consultar pontos decididos e veredito. O índice não substitui o parecer.",
+      "confronto_posterior": {
+        "arquivo": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+        "pontos_decididos": [
+          {
+            "ponto": "Modelo usual depende de compressor adiabático e trocas adequadas, trabalho/energias macroscópicas negligenciados onde pertinente; já sustentado no alvo, conferir alcance. Dados didáticos de entalpia não provam viabilidade de refrigerante real.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "O comando fornece a posição de cada estado, as quatro entalpias e o modelo estacionário usual. A base ligada define explicitamente as hipóteses que reduzem os balanços a diferenças de entalpia e exclui trabalhos adicionais nos demais componentes. Assim qL/Win é determinado sem buscar hipóteses somente no comentário posterior.",
+            "coerencia": "h3=h4 fornecido é compatível com a válvula adiabática sem trabalho e sem mudança de energia macroscópica. Simbolicamente qH-qL=(h2-h3)-(h1-h4)=h2-h1=wc nessa igualdade; há fechamento energético, sem contar trabalho de escoamento duas vezes.",
+            "limite_dos_dados": "Entalpias são dados didáticos do problema autoral genérico, em referência comum; não identificam refrigerante, pressões, temperaturas, fases ou irreversibilidades. Aprovação do balanço e do COP calculado não atesta viabilidade de um refrigerante real nem segunda lei de um conjunto de estados não fornecido."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-27",
+      "pontos_a_verificar": [
+        "A igualdade de razões já determina pi; a afirmação de trabalho mínimo requer condições do modelo ideal com intercooling perfeito do alvo. Não supor mínimo universal para quaisquer capacidades/eficiências diferentes."
+      ],
+      "estado": "Confronto posterior do Auditor disponível; consultar pontos decididos e veredito. O índice não substitui o parecer.",
+      "confronto_posterior": {
+        "arquivo": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+        "pontos_decididos": [
+          {
+            "ponto": "A igualdade de razões já determina pi; a afirmação de trabalho mínimo requer condições do modelo ideal com intercooling perfeito do alvo. Não supor mínimo universal para quaisquer capacidades/eficiências diferentes.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "O comando declara compressão ideal, resfriamento perfeito e razões iguais; essa igualdade já determina a pressão intermediária. A base ligada antes das opções explicita as condições equivalentes e prova o mínimo do modelo. O comentário atual limita a conclusão a estágios equivalentes, sem prometer ótimo universal.",
+            "limite": "Eficiências ou temperaturas de entrada diferentes, propriedades variáveis, perdas de pressão e outros objetivos/consumos podem deslocar o ótimo. A igualdade de razões não é imposta a qualquer compressor industrial."
+          }
+        ]
+      }
+    }
+  ],
+  "blocos": [
+    {
+      "arquivo": "BAN-07-auditor-bloco-av01-05-r1.json",
+      "sha256": "213a688f21a8ebdf0933c978cd374190ad496418903eca93c2bd9bc018ac7d59",
+      "estado": "CONCLUIDO_COM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av06-10-r1.json",
+      "sha256": "f9871fce521b27846f99ec35c94888b6297b953dfa7312193914e9d27b95d17f",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av11-15-r1.json",
+      "sha256": "434f6b310613e19f62b85ed1f1207d6c50c04873610ed6bd2fd49969435eb7b5",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av16-20-r1.json",
+      "sha256": "530b0b795da338cae450e142a652b8c4b3c4c056516e0abe3c547aedc9cfa6eb",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av21-25-r1.json",
+      "sha256": "1c3667b498bc3562ab0b6c00b3e876847d56deacabd0fa4340a3e66c14abb54a",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av26-30-r1.json",
+      "sha256": "97431c365fa7152fafe95eed92e8476ee9b38e9f3194e09fd36e74175a5b7e53",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av31-35-r1.json",
+      "sha256": "a0b0eb55bb1d2e718ebdf8d3c91ca2e723add053d769c2c42b95e30d7099c9f8",
+      "estado": "CONCLUIDO_COM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av36-40-r1.json",
+      "sha256": "8917096312e802c04673fe9b029ea131fb663ab5417c2b298734febe78fc94ae",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av41-45-r1.json",
+      "sha256": "56a6537e706c72676f7670e5bb3428bf9a0c09874fd916a80db73ca75a58ccbc",
+      "estado": "CONCLUIDO_COM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av46-50-r1.json",
+      "sha256": "aca8ba6a5a66c1560d51d756dfc039adf9d78d6b2d916d888be978d4f7dbf0b1",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av51-55-r1.json",
+      "sha256": "62872d4974d0730e2829d6e35cb90d7a082743aaaf776529e854208572cec263",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av56-60-r1.json",
+      "sha256": "251e3f226448ecae9a98d13b7b01ba928ef5e361295cff7226ed1bc42966b2ef",
+      "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "sha256": "eb71ca77752fede3ea4b1e51c45c88266f4d660e256c4b7ae02644fa3c35d304",
+      "estado": "REFERENCIA_A_PARECER_PARCIAL",
+      "registros": 10
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "sha256": "9149a742966ceb3ed7c548a7cb25f9555abdfb160c06b9355a5a6b55e16b0309",
+      "estado": "REFERENCIA_A_PARECER_PARCIAL",
+      "registros": 10
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-cr51-55-r1.json",
+      "sha256": "6a45b4ae8cacca1901ab3ddd834a4fbba15210cf5d50692e5783cda74b5a1bf5",
+      "estado": "BLOCO_CONCLUIDO; cinco itens aprovados somente no escopo BAN-07; BAN-07 global não aprovado",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-cr56-60-r1.json",
+      "sha256": "dbc17613d4daeff8252603d5ae64e78272272f9c1a4f572e593c11485deae494",
+      "estado": "BLOCO_CONCLUIDO; cinco itens aprovados no domínio declarado; sem aprovação global",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-cr61-65-r1.json",
+      "sha256": "b65a558d0fb28ed90d9bfda00b3a57ed52014d882dd58c56f2920b5d184ebd14",
+      "estado": "BLOCO_CONCLUIDO; quatro itens pontuáveis e um estudo crítico aprovados em seus escopos; sem aprovação global",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-cr66-70-r1.json",
+      "sha256": "8edaf1edf5e065fe9b7677b8cd26b48a466f29d25623c317029ff26a8cfe08f6",
+      "estado": "BLOCO_CONCLUIDO; cinco itens aprovados em seus alcances; sem aprovação global",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-cr71-75-r1.json",
+      "sha256": "7a2febaae888460c4798ba01f089c35fa3df5c51a295fe884bb2302842d065f6",
+      "estado": "BLOCO_CONCLUIDO; cinco itens aprovados nos alcances examinados; sem aprovação global",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-cr76-80-r1.json",
+      "sha256": "c8af8d1c19f4a2fab42bf9164939305380025990553665c3dbe44124f8ff4848",
+      "estado": "BLOCO_CONCLUIDO; três itens pontuáveis e dois estudos críticos aprovados nos alcances declarados; sem aprovação global",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-heranca-fun01-r1.json",
+      "sha256": "9614b1c1abb3837fc81e5dbb6bde9311ce22d5c54b874ce7d4cb8fef099a80b6",
+      "estado": "CONCLUIDO_COM_HERANCA_FUN01_ACEITA_E_AJUSTE_OBRIGATORIO_AV04",
+      "registros": 4
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-heranca-fun02-cr17-27-r1.json",
+      "sha256": "b9d6522223005d94ebd01127f3464fc4508afa081c0b0a32f74e38d924f12166",
+      "estado": "CONCLUIDO_5_ITENS_SEM_NOVOS_AJUSTES_OBRIGATORIOS",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-q02-09-13-15-16-r1.json",
+      "sha256": "b8826c3b766feabba75f4b205c11c55d3cabbfcb6673388aaa2fb745c2d1a1c3",
+      "estado": "BLOCO_CONCLUIDO; cinco artigos atuais examinados e aprovados somente no escopo BAN-07; sem aprovação global",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-q18-19-24-26-28-r1.json",
+      "sha256": "be6bfad6feb27fecafe0f4d504e5baa47320cc613e33dfc50694237009317660",
+      "estado": "BLOCO_CONCLUIDO; cinco artigos atuais aprovados somente no recorte BAN-07, sem aprovação global",
+      "registros": 5
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+      "sha256": "bcb9e0c1ba4522c4a124b70af3a012994ade8863aaefc6a0704c41292dea3d96",
+      "estado": "CONCLUIDO_4_ITENS_SEM_NOVOS_AJUSTES_OBRIGATORIOS",
+      "registros": 4
+    },
+    {
+      "arquivo": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+      "sha256": "f14253f817b5d59e034e2b9d49dfc60ee760627db37e253f499b69833fddb898",
+      "estado": "CONCLUIDO_4_ITENS_SEM_NOVOS_AJUSTES_OBRIGATORIOS",
+      "registros": 4
+    }
+  ],
+  "alertas": [
+    {
+      "id": "av-e1-04",
+      "arquivo": "BAN-07-auditor-bloco-av01-05-r1.json",
+      "motivo": "Ajuste obrigatório do Auditor",
+      "ajuste": {
+        "id": "AV04-E",
+        "acao": "Substituir E por distrator falso baseado em confusão conceitual identificável e atualizar o comentário correspondente. Exemplo admissível: a temperatura permanece necessariamente constante durante o bombeamento, a ser refutado distinguindo incompressibilidade de isotermia.",
+        "evidencia_reapresentacao": "Artigo atualizado e hash; nova conferência das cinco alternativas e demonstração de que só D continua correta. Manter a faixa operacional e não converter hipótese de v constante em exigência de T constante."
+      }
+    },
+    {
+      "id": "av-e1-31",
+      "arquivo": "BAN-07-auditor-bloco-av31-35-r1.json",
+      "motivo": "Ajuste obrigatório do Auditor",
+      "ajuste": {
+        "id": "AV31-B",
+        "acao": "Substituir B por uma afirmação falsa que corresponda a erro reconhecível e atualizar o comentário. Exemplo: associar a diferença PCS/PCI ao calor sensível da água, sem relação com sua mudança de fase, para explorar a confusão sensível/latente.",
+        "evidencia_reapresentacao": "Artigo e hash atualizados; nova conferência das cinco opções, da explicação do novo erro e da unicidade de E."
+      }
+    },
+    {
+      "id": "av-e1-41",
+      "arquivo": "BAN-07-auditor-bloco-av41-45-r1.json",
+      "motivo": "Ajuste obrigatório do Auditor",
+      "ajuste": {
+        "id": "AV41-E",
+        "acao": "Substituir E por erro conceitual concreto e atualizar comentário. Exemplo: exigir ausência de evaporação e condensação no equilíbrio, para explorar ausência de fluxo líquido versus trocas moleculares iguais nos dois sentidos.",
+        "conferencia_da_proposta": "Exigir taxas individuais nulas é falso: coexistência em equilíbrio permite taxas iguais e positivas, com fluxo líquido zero. Assim a proposta não vira uma segunda condição necessária verdadeira e preserva D, a ser reconferida nas cinco alternativas finais.",
+        "evidencia_reapresentacao": "Artigo e hash novos; conferir novamente as cinco alternativas, justificativa do novo erro e preservação de D como única correta."
+      }
+    }
+  ],
+  "leituras": [
+    {
+      "id": "q-e1-01",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7"
+    },
+    {
+      "id": "q-e1-03",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616"
+    },
+    {
+      "id": "q-e1-04",
+      "fonte": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+      "origem": "heranca_atribuida_da_preparacao_com_confronto_proprio_de_suficiencia_e_distrator_B",
+      "sha256_artigo": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-05",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb"
+    },
+    {
+      "id": "q-e1-06",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892"
+    },
+    {
+      "id": "q-e1-07",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a"
+    },
+    {
+      "id": "q-e1-08",
+      "fonte": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+      "origem": "heranca_atribuida_da_derivacao_e_cinco_opcoes_com_confronto_proprio_da_pressao_e_processo",
+      "sha256_artigo": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-10",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0"
+    },
+    {
+      "id": "q-e1-11",
+      "fonte": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+      "origem": "heranca_atribuida_da_derivacao_e_cinco_opcoes_com_confronto_proprio_do_significado_de_potencia",
+      "sha256_artigo": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-12",
+      "fonte": "BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+      "origem": "heranca_atribuida_da_derivacao_com_confronto_proprio_do_modelo_de_bomba_ideal_e_opcoes",
+      "sha256_artigo": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-14",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0"
+    },
+    {
+      "id": "q-e1-17",
+      "fonte": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+      "origem": "heranca_atribuida_da_preparacao_com_confronto_proprio_da_base_ciclica_e_opcao_B",
+      "sha256_artigo": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-20",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6"
+    },
+    {
+      "id": "q-e1-21",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01"
+    },
+    {
+      "id": "q-e1-22",
+      "fonte": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+      "origem": "heranca_atribuida_da_conclusao_preliminar_com_prova_simbolica_propria_do_modelo_e_distratores",
+      "sha256_artigo": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-23",
+      "fonte": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+      "origem": "heranca_atribuida_das_contas_com_confronto_proprio_do_modelo_previo_e_opcao_B",
+      "sha256_artigo": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-25",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3"
+    },
+    {
+      "id": "q-e1-27",
+      "fonte": "BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+      "origem": "heranca_atribuida_da_igualdade_de_razoes_com_confronto_proprio_do_criterio_de_minimo",
+      "sha256_artigo": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-29",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245"
+    },
+    {
+      "id": "q-e1-30",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d"
+    },
+    {
+      "id": "cr-e1-01",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "1a461fa641228ea3bcf7631148fc40821c890b98d8ebd1a72b5b844af982806d"
+    },
+    {
+      "id": "cr-e1-02",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "ccb20b9d4b9d5741d97a2d539cb48a3cbd1fbc7a8455fe4d58c294678ddd7a9d"
+    },
+    {
+      "id": "cr-e1-03",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "89ca6a4710177476a8a2f88e8031c1fff598205e86bfac18ce179ad8e87bc3e7"
+    },
+    {
+      "id": "cr-e1-04",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12"
+    },
+    {
+      "id": "cr-e1-05",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "bef4e1a13a4eba650e1c6b802957077eb38c26fa5c1660da8e09b694544cacf5"
+    },
+    {
+      "id": "cr-e1-06",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "69c0e38652f6be60ce26064942c5df1ef936193d8f6c3b79bd6530c28e29f31e"
+    },
+    {
+      "id": "cr-e1-07",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "c6e1989e4dc002b751cc23ab3e0c032df264bab82f79972bc059fa2799f072cc"
+    },
+    {
+      "id": "cr-e1-08",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "62f6c64f663b2a2901ad832b08768de5304186911da068e4ac48bbe0d2aeae3a"
+    },
+    {
+      "id": "cr-e1-09",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780"
+    },
+    {
+      "id": "cr-e1-10",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "abe9bc623cad60bc7f3c99fe1f57d2ceda566ce7fba6166afaac0df113ef66a2"
+    },
+    {
+      "id": "cr-e1-11",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "d5f8ea44378cd659b600ca4d2b9d24b290fd12bb603390c1117cd9c24678e878"
+    },
+    {
+      "id": "cr-e1-12",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "7c0ff74e35d297c99cae98007bda36ebd4cdca22e4e1fcfa45fc3492f4683c18"
+    },
+    {
+      "id": "cr-e1-13",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "52c02867f253205868fb2da8741a6d7b8cad977367c1d5f1ec848670ff7f90b7"
+    },
+    {
+      "id": "cr-e1-14",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "3d06154c3f10b1827e4950b76dcf570d842b054a62406fc2c61a604af4c8a0a6"
+    },
+    {
+      "id": "cr-e1-15",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "51c2987cdbf270b2bf5c447741e91ed1390e7812ad40164aecbdfa6accd4282f"
+    },
+    {
+      "id": "cr-e1-16",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "80a328824d46255663e720f5850480ab96df22ccdba54dc04db4c0e6f205ee32"
+    },
+    {
+      "id": "cr-e1-17",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun02-cr17-27-r1.json",
+      "origem": "confronto_proprio_da_ressalva_preliminar_com_heranca_documental_atribuida",
+      "sha256_artigo": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-18",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "06b0dc953b5579ef19c44e8137895aaecd4e1d6245c44a6b49956cc7445fc6e1"
+    },
+    {
+      "id": "cr-e1-19",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "3871e235af09e1bdfedc606d42ae3922b3b02eea743895cd42cce446fc9a8a75"
+    },
+    {
+      "id": "cr-e1-20",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "2cb07dee73b66b77f5b0bb9b2e7cb494360a2fe28a500c14e2d3fbf709aa6a52"
+    },
+    {
+      "id": "cr-e1-21",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "5e112105b6213109cbaf04f2883ae27052a8c9027ed9d808a0fcd627a326784b"
+    },
+    {
+      "id": "cr-e1-22",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "a4cb5f18bafa792df4cdc4f632c585b8b49b63f20d7e719b36131dc44d34c944"
+    },
+    {
+      "id": "cr-e1-23",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "5be283e9eeaad31c39004231ee391654e3f476aaede45b5b81f74163628c3405"
+    },
+    {
+      "id": "cr-e1-24",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "7263887786f48bf00b02289fba4dcccfda7d655546d4c37da44e14a2d01ed438"
+    },
+    {
+      "id": "cr-e1-25",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "ad3f5a9cb6c50e2cacacb42b7e8d3a14a6c8cb13320c1048aea23cc599d50ed6"
+    },
+    {
+      "id": "cr-e1-26",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "4799e28ca9e9aa74d19aa5bac1560323e7d4d71e74a98e63561068afb3b802c8"
+    },
+    {
+      "id": "cr-e1-27",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun02-cr17-27-r1.json",
+      "origem": "confronto_proprio_da_ressalva_preliminar_com_heranca_documental_atribuida",
+      "sha256_artigo": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-28",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "3d6384bcf7120175aba311755ad0ad4f36ff896a0894161de88bc45cb8614365"
+    },
+    {
+      "id": "cr-e1-29",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "f7ba62e87eedc71077825e5be83a5fd8f4dacb08ba29e658a51e99d5fe42fdac"
+    },
+    {
+      "id": "cr-e1-30",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "6abb421dab137437146a58fdaeb64d35ec7f9a6161d142f0bd29c9e91ac53f8b"
+    },
+    {
+      "id": "cr-e1-31",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "1195cc79755f79294771716075f277cae296343160770608c81367b2c7272bc3"
+    },
+    {
+      "id": "cr-e1-32",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "91cacfbdd2254fd2ad8c183e18f65d94da3156c40a211242599f800a554f73d9"
+    },
+    {
+      "id": "cr-e1-33",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "06e5d8361e1d50448ff26839517404fe07244c5ec74c1594371c11da6536997a"
+    },
+    {
+      "id": "cr-e1-34",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5"
+    },
+    {
+      "id": "cr-e1-35",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa"
+    },
+    {
+      "id": "cr-e1-36",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e"
+    },
+    {
+      "id": "cr-e1-37",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73"
+    },
+    {
+      "id": "cr-e1-38",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402"
+    },
+    {
+      "id": "cr-e1-39",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54"
+    },
+    {
+      "id": "cr-e1-40",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909"
+    },
+    {
+      "id": "cr-e1-41",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "f4c503ea9b326caa519bbdd2cd70ae85279d9d03996adcfe8de703f77fd18e64"
+    },
+    {
+      "id": "cr-e1-42",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "a43aea2e5d81accad6559fadfeefb77adf5e5653628f674856c501e795ce48ea"
+    },
+    {
+      "id": "cr-e1-43",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "1a934a1bd574e1b535a5a922cb0814a17d58079a7640b3f4d4c5c493af29c17b"
+    },
+    {
+      "id": "cr-e1-44",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "73982b41be7659f3a23f320d7ae6414c019750db4778f91c75674c20e0d53875"
+    },
+    {
+      "id": "cr-e1-45",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "382306e2bd0381e3614cfefd799d12a1b90a06b3b78e1f2171bc5c9c67c4ba4d"
+    },
+    {
+      "id": "cr-e1-46",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "6db3ea19084b8ebc1743aabcf601f31f82cf56a2d5998e386e7504860cfff1b2"
+    },
+    {
+      "id": "cr-e1-47",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "8dbbd53e0111efaef76009a38b5c1c9ed437c6f6ecc471c0939147f903ec0786"
+    },
+    {
+      "id": "cr-e1-48",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "d39d25c7b5b9bafac081c3c1f00b129a54f07fceea77f5354bb4632dfd439fd6"
+    },
+    {
+      "id": "cr-e1-49",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "8f8f133eddab5ab062c9f3a35ff78b246fa6ccd357de225593890f15c910cf9f"
+    },
+    {
+      "id": "cr-e1-50",
+      "fonte": "BAN-07-leitura-base.json",
+      "origem": "preparação anterior; identidade não é aceite científico",
+      "sha256_artigo": "b0e25a75cd24dfa1ded90bae33f09ee36222fd5d305d00607be61e818d126d3f"
+    },
+    {
+      "id": "av-e1-01",
+      "fonte": "BAN-07-auditor-bloco-av01-05-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "fef921d85b9f61c1e2a63b23fa1df1a9479973608dea0c768045e221f31390b5",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-02",
+      "fonte": "BAN-07-auditor-bloco-av01-05-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "8b7328a79ca6b50995426770504df6de88f6bf37cf7a3038fef9709847d6bc20",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-03",
+      "fonte": "BAN-07-auditor-bloco-av01-05-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "6e8bc6e49193f08a8c5f0ae6b4271720a23a29e7888ecfe6cf83faaa63ff85fa",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-04",
+      "fonte": "BAN-07-auditor-bloco-av01-05-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+      "veredito_item": "AJUSTES_OBRIGATORIOS"
+    },
+    {
+      "id": "av-e1-05",
+      "fonte": "BAN-07-auditor-bloco-av01-05-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "8860a27c54eebc598b479ab61197026acb81cf4d81a143876bfe55fea2a6fa4c",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-06",
+      "fonte": "BAN-07-auditor-bloco-av06-10-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-07",
+      "fonte": "BAN-07-auditor-bloco-av06-10-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "f6c6439615c358a02d91c7dbc1450c5550f193cc38a4af0f5e8c8a2958804251",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-08",
+      "fonte": "BAN-07-auditor-bloco-av06-10-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "2cbb9953a0ca46eda6b4cf9144bd13b7d0849822d9ed02ecaa0c6d010f3b7d07",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-09",
+      "fonte": "BAN-07-auditor-bloco-av06-10-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "c132589fa0387abc5108633a2b130632334db4cebf0479b9442bc9158ae78f30",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-10",
+      "fonte": "BAN-07-auditor-bloco-av06-10-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "a4e565a479f34fa4e36835bcb186f5b99d0f3ce3000b500f458c4c1c1863032e",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-11",
+      "fonte": "BAN-07-auditor-bloco-av11-15-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "574b95a7bc7d26adf5ccc8a100cba3b30a3f5f34b9c76a670190cd7c43c5a165",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-12",
+      "fonte": "BAN-07-auditor-bloco-av11-15-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "6d4d741b3c2f0be508022e5f24ba0cdbb360c3f0c2ddbb72aca59aebf3efcd6f",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-13",
+      "fonte": "BAN-07-auditor-bloco-av11-15-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "67a3276e7a96d89fd1c93db9f3dad1f417bb62dff584b34c4e5df1a406651543",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-14",
+      "fonte": "BAN-07-auditor-bloco-av11-15-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "3c811cd41a5553c76a3d79539c529fc0700861c827165f1a490339f0a41b6fcd",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-15",
+      "fonte": "BAN-07-auditor-bloco-av11-15-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "aabe5d8c80218bb2762758349c567671cb06794100899eb42e6c2906cae487a9",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-16",
+      "fonte": "BAN-07-auditor-bloco-av16-20-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "48ae42d26499f4389ca87b570e9864234c58223277b8b4a16302f7ba808ebdee",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-17",
+      "fonte": "BAN-07-auditor-bloco-av16-20-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "440d7b7f9d75ef0adb436c16b01f0e82a4459d58d037f8ec914a0ae6653e7b7a",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-18",
+      "fonte": "BAN-07-auditor-bloco-av16-20-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "5a61747eec81b5caadab8e61895235bd4cce053076ba3f9eed4a90ded57dea46",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-19",
+      "fonte": "BAN-07-auditor-bloco-av16-20-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "13db446f2d53ba81a62449e2e82b81d5ddea5db59e27873088c024f9663794c3",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-20",
+      "fonte": "BAN-07-auditor-bloco-av16-20-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-21",
+      "fonte": "BAN-07-auditor-bloco-av21-25-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "d30c611664194c81700bc047dc72f6f1d9242c9552a394616ba605226c6aba73",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-22",
+      "fonte": "BAN-07-auditor-bloco-av21-25-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "a60b027d19ccee5b6445c7865ba43a1732ddb069c63592895d523ebb82738e36",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-23",
+      "fonte": "BAN-07-auditor-bloco-av21-25-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "52ce7c5b255380dd1c2d876058b8965c9ff3feaa6e373c57f6f8e46bd3db529b",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-24",
+      "fonte": "BAN-07-auditor-bloco-av21-25-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "8e27e9a89a7e9cd792555923bc8888441ac0ec412520da31a5b29b2379cf79c6",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-25",
+      "fonte": "BAN-07-auditor-bloco-av21-25-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "944eadc933945dd04024af4da9585627d9484f9e2095af98a0efb541c9ff8ba1",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-26",
+      "fonte": "BAN-07-auditor-bloco-av26-30-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "2d44c7a93a3d7cbe464d96fab7a2427fab1ee039ef3eeb272539d7eefe421a74",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-27",
+      "fonte": "BAN-07-auditor-bloco-av26-30-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "1cac59ad0421ba447b5d28ea97a5b47d99889dda7e6283c3d56d3a4eb05d5db1",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-28",
+      "fonte": "BAN-07-auditor-bloco-av26-30-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "5ba6b332f4915122f681d9e816a36d869ac678a9ce1921e5b5d22dac5bfa35ed",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-29",
+      "fonte": "BAN-07-auditor-bloco-av26-30-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "20636340c4eaf5d0230b128cbb6d530369b7b690ff55043e10c36ea77ef0b3a4",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-30",
+      "fonte": "BAN-07-auditor-bloco-av26-30-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-31",
+      "fonte": "BAN-07-auditor-bloco-av31-35-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+      "veredito_item": "AJUSTES_OBRIGATORIOS"
+    },
+    {
+      "id": "av-e1-32",
+      "fonte": "BAN-07-auditor-bloco-av31-35-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "5d53de738a3e1b78ce907920d3ee56add57516359d4b4f36880aa2caa7d6e500",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-33",
+      "fonte": "BAN-07-auditor-bloco-av31-35-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "18647f755fc3deb6a9a4aafcb815851a9fcc1244ff0288b0117c8c0620349d1f",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-34",
+      "fonte": "BAN-07-auditor-bloco-av31-35-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "3ae8bcce339a9cfb8899c0dda553455c5cc89fbd8cb6fd39b753b96f7cbcbc20",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-35",
+      "fonte": "BAN-07-auditor-bloco-av31-35-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "17b85fe40845327cbdfba0bd7d354a5f394034351617d0f22d23e80af6eb4300",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-36",
+      "fonte": "BAN-07-auditor-bloco-av36-40-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "6b740a5a219f82f11f8e03899fb670df2cc54663545c07731f48643f1edb7285",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-37",
+      "fonte": "BAN-07-auditor-bloco-av36-40-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "b741f7c26e317df09eaf7984e2065f881464ffc7367202fa2968b4ce30efe928",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-38",
+      "fonte": "BAN-07-auditor-bloco-av36-40-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "bde32c401ca98314f5217325508776fef07fca3eddb42b7a689a588fe973dfd4",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-39",
+      "fonte": "BAN-07-auditor-bloco-av36-40-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "42ffe7852ec1c612a414d4403674cecde23d4f79aea495c7e0feb68d7dd7cf6b",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-40",
+      "fonte": "BAN-07-auditor-bloco-av36-40-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "b0eea6e50cfc5d5c03befe2871587f01f350784667829c280e90723526ed7ef8",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-41",
+      "fonte": "BAN-07-auditor-bloco-av41-45-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "a8e35c751d06cd54ab69a365bf3e2e989296dd85b57c4bd8b5f57125f73d0bb9",
+      "veredito_item": "AJUSTES_OBRIGATORIOS"
+    },
+    {
+      "id": "av-e1-42",
+      "fonte": "BAN-07-auditor-bloco-av41-45-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-43",
+      "fonte": "BAN-07-auditor-bloco-av41-45-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "8d32bb5b9ad7673e2a58d15b3e6ea37751add3e2d9b7b3f3376a390cd3c6ba68",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-44",
+      "fonte": "BAN-07-auditor-bloco-av41-45-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "192525a6985a995bb6e73ab56148c54fd89b7e2ed2dd7315aaba7db5d56386b9",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-45",
+      "fonte": "BAN-07-auditor-bloco-av41-45-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "3babe8cb08138fd4ad42f7358c5208b70974370d17a62d30490075e7b5019b50",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "id": "av-e1-46",
+      "fonte": "BAN-07-auditor-bloco-av46-50-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "0c048ab1b4c1148d9a424b0a9b55a2ddb097ba7fc79dc6a22b04c6447538721b",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "id": "av-e1-47",
+      "fonte": "BAN-07-auditor-bloco-av46-50-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "id": "av-e1-48",
+      "fonte": "BAN-07-auditor-bloco-av46-50-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "810f21fc17823ad01aee37087182a58186ca27b6c46afcf0a1c12f3dabd26f87",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "id": "av-e1-49",
+      "fonte": "BAN-07-auditor-bloco-av46-50-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "ba294a58c27857ff270db5bc1300c7823b7bee36997791c77c678e9ecb04d7d1",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "id": "av-e1-50",
+      "fonte": "BAN-07-auditor-bloco-av46-50-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "a81b2fc4861de1cbe533079250396bc9c268ca3b02f3d2f7a9956b1434a4d8a3",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "id": "av-e1-51",
+      "fonte": "BAN-07-auditor-bloco-av51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445"
+    },
+    {
+      "id": "av-e1-52",
+      "fonte": "BAN-07-auditor-bloco-av51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8"
+    },
+    {
+      "id": "av-e1-53",
+      "fonte": "BAN-07-auditor-bloco-av51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b"
+    },
+    {
+      "id": "av-e1-54",
+      "fonte": "BAN-07-auditor-bloco-av51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897"
+    },
+    {
+      "id": "av-e1-55",
+      "fonte": "BAN-07-auditor-bloco-av51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817"
+    },
+    {
+      "id": "av-e1-56",
+      "fonte": "BAN-07-auditor-bloco-av56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881"
+    },
+    {
+      "id": "av-e1-57",
+      "fonte": "BAN-07-auditor-bloco-av56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "64d1d119452a69f00cbae2a69c844bd047558d33064fcbd0a7ec7172e4c73f73"
+    },
+    {
+      "id": "av-e1-58",
+      "fonte": "BAN-07-auditor-bloco-av56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "6a7534ee1978a5572870ce9206be5c77578e5c6f308255f9a4f9fef7230825b3"
+    },
+    {
+      "id": "av-e1-59",
+      "fonte": "BAN-07-auditor-bloco-av56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4"
+    },
+    {
+      "id": "av-e1-60",
+      "fonte": "BAN-07-auditor-bloco-av56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6"
+    },
+    {
+      "id": "av-e1-61",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "2ef609887b7c6e57a7b9a8f38f7760b69c0ffe4377c1c2b43d307101ffd1be86",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-62",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "3afa637b59ec0aa48e6885ab0877b0ed1bada0bcebe86c841d221e1559235148",
+      "veredito_item": "AJUSTE_PROPOSTO_AGUARDA_ADJUDICACAO"
+    },
+    {
+      "id": "av-e1-63",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "e5ee106ebb64b6a28b89d824d5ee934c4be36dcde18a147d6d65c94bac558c00",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-64",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "d7a2c29feee7ebd705e93fe6d8c6d222c7f365d15e9d5ffd75650f3f900c44df",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-65",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "5f993c3d09879d8de3fd56710cb38d657dd3415112868673a9bed285aa473000",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-66",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "414e4a69cb79528ed86dcb04c0172f1f99eba044f8975a08ca92bbf212601946",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-67",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "c234657d9d082fb9ca732f48724916a7c267b2048c8fca190ae934f62fb6ba84",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-68",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "856b39ea9bb6e14936108cc8f0cc0633ac20f6777777c30320e28414e1f6207d",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-69",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "f1ade775126752789740119acdb33f04190299cc54d46883e4e0354d7c6e6fee",
+      "veredito_item": "AJUSTE_PROPOSTO_AGUARDA_ADJUDICACAO"
+    },
+    {
+      "id": "av-e1-70",
+      "fonte": "BAN-07-auditor-bloco-av61-70-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av61-70-r1.md, autoria /root/auditoria_av61_70",
+      "sha256_artigo": "aa3759b74d4479c6c2c7e76f4ad964b19344b6c1b13593c027dac0358a2600da",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-71",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "a6822e633557838619c8a4c9fa1790c583776ef03830b6ca475f28ad6b25e2ff",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-72",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "9b34292c52fddf0bbfff7573258e810e24f0d3ad6cc86dc0c1eaed9743754e7d",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-73",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "0726d64bef732bb8b75a4473a190e14e7b7359155533af25fd5fc6b6c5f0b34a",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-74",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "e1cbd2e738cff1e20744251bba5ae94651ec5502fd9dc5808c1627f19b37b032",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-75",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "cf84420539a50440af16625535da0e7513c3d3de6362be04a830790f9eb9029c",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-76",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "1c62973843285a448a379f2b090961af88e38192c7728fb8d628fe4f7a4b48cb",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-77",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "ba4e9d281b7c90b87fa9f88e4d953020a002c8903045cd2fcc0e0e55430b2820",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-78",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "eb02ebe932d364e4cd46353e409c2c75a53ec06000a2f3d95929a1289b2af8e4",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-79",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "e1bcf99fdeeb7c91da73b8c89d96714294fd1c64234861d3ae7fb0b91cf78bcc",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "av-e1-80",
+      "fonte": "BAN-07-auditor-bloco-av71-80-r1.json",
+      "origem": "Parecer parcial auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av71-80-r1.md, autoria /root/auditoria_av71_80",
+      "sha256_artigo": "9586c1757d18d3ba88d59485b308d8e6c92a4dd5859ffe94ff3cd7e3e9ac9a71",
+      "veredito_item": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_BLOCO"
+    },
+    {
+      "id": "cr-e1-51",
+      "fonte": "BAN-07-auditor-bloco-cr51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "7e5dcdfa88bcadee0a8fc31599e350b92e33d0ff055dab57b879b9ceaf82bf23",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-52",
+      "fonte": "BAN-07-auditor-bloco-cr51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "27afcb168f30452326940a382af7a5b8834ab4f8d0d8137efe80b65464e9de3f",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-53",
+      "fonte": "BAN-07-auditor-bloco-cr51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "80ac5d12a11ec45683516e0c70a561d76d73d3408b4057bb733158542ba1dff0",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-54",
+      "fonte": "BAN-07-auditor-bloco-cr51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "262063cf196b649e8c5dc1e33f3cae14ee1554424fabee4087ef6345deac3d3c",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-55",
+      "fonte": "BAN-07-auditor-bloco-cr51-55-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "7f28f1504c5296dc0387a4a7b150a253c5f5385008d94cae86afe4e716eae4f3",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-56",
+      "fonte": "BAN-07-auditor-bloco-cr56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "0827dbbe91757cc711b1bc5541b5ef5033bf65d648faf25b5e6b57d62e12f347",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-57",
+      "fonte": "BAN-07-auditor-bloco-cr56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "4de64cfa27817be86c14aea29e1086c4269d4d69e281b4ce6685f176e6605f49",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-58",
+      "fonte": "BAN-07-auditor-bloco-cr56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "ebb927a87245d7870f70f4daa59aa4b76fa312deefdfdee32b6a31de87850ffd",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-59",
+      "fonte": "BAN-07-auditor-bloco-cr56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "e1068e2195cb3859bae9d9b3f1bf524ef05a0af60607b57b07fb19eeb2cd8175",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-60",
+      "fonte": "BAN-07-auditor-bloco-cr56-60-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "79f50d9f0b7801b9b4fa1cf9a70c1dd267bc6421fa72ca8cdfb431e971f6380f",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-61",
+      "fonte": "BAN-07-auditor-bloco-cr61-65-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "745cde3da24b14b573ac4b3fb6cca25d7e1cf90b099d9a8f05adcbd86bb86143",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-62",
+      "fonte": "BAN-07-auditor-bloco-cr61-65-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_COMO_ESTUDO_CRITICO_SEM_NOTA"
+    },
+    {
+      "id": "cr-e1-63",
+      "fonte": "BAN-07-auditor-bloco-cr61-65-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "777d85e75efa77ab3c17204d511d215d72be4519ee59f4b06e371c9d9bc30695",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-64",
+      "fonte": "BAN-07-auditor-bloco-cr61-65-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "5cb37f5064e8114789a60496810e7ebd847a164bcb798385e5c0f5b37fef7313",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-65",
+      "fonte": "BAN-07-auditor-bloco-cr61-65-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "9322946ef9f40d87e6ff05c7a9d49c484260044be286ecbe9153b3a05dedeeda",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-66",
+      "fonte": "BAN-07-auditor-bloco-cr66-70-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "3c495fe75122088861c7e8de6a39ceccefaf8486532bbaad7e755d48a7ec1850",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-67",
+      "fonte": "BAN-07-auditor-bloco-cr66-70-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "ce6a14b96095bd3f2b7633028a51832b69ffbc9350cb7d81dfced776b51a6d56",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-68",
+      "fonte": "BAN-07-auditor-bloco-cr66-70-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "6cfcf2558f6d3651a9b87e8fd4b66b8e29561f17686b4e52b2f40d15ac42fcb8",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-69",
+      "fonte": "BAN-07-auditor-bloco-cr66-70-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "5fe27c3eaca7cf1d4f584a1720a66065312dcd074301366a59e6cc96387df14f",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-70",
+      "fonte": "BAN-07-auditor-bloco-cr66-70-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "9cf98a0db0efa097c58cac9de03b4212f1e3683f067a14688ae605350ac0ac52",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-71",
+      "fonte": "BAN-07-auditor-bloco-cr71-75-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "e2bcbf820c2b4d9def629ac7407c88c182d0a6bd4f32f3c744c5d95e1fe6dee3",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-72",
+      "fonte": "BAN-07-auditor-bloco-cr71-75-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "e452baf8904d916bcc65de691be44b0d1343a527847b0e94f44fa2d4ff615ce4",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-73",
+      "fonte": "BAN-07-auditor-bloco-cr71-75-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "e0f92d950ca09e2beac1db4e1e2448e15f0d1ceb3590d41a4d9c4a9823211980",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-74",
+      "fonte": "BAN-07-auditor-bloco-cr71-75-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "6c9f14a73c2d633dfb45bc594b7815e9c9a8b0747272ba3deebb6adcc432c7ab",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-75",
+      "fonte": "BAN-07-auditor-bloco-cr71-75-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "c27f54317f1d4fa5d40d5eb82811cb626f44f7c0f5f3167c40dc53a0caa5b0ab",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-76",
+      "fonte": "BAN-07-auditor-bloco-cr76-80-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "d0c7cf75f2aedc3bca09119745417868f7ab2cc7e65239537a37397c7cc9a872",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-77",
+      "fonte": "BAN-07-auditor-bloco-cr76-80-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "3904164b53402e239cc2b0f3b9de5eb0d61467da12725310a882f4169c0bd661",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-78",
+      "fonte": "BAN-07-auditor-bloco-cr76-80-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "bad6704eace3098a21eb19cab01cedc47792d60458e53adae923306116a58d90",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-79",
+      "fonte": "BAN-07-auditor-bloco-cr76-80-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "2ebd9eec55b732bd36a78f605d2d68bb156f3f33656cd4ebfe71f18eda6f4550",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_COMO_ESTUDO_CRITICO_SEM_NOTA"
+    },
+    {
+      "id": "cr-e1-80",
+      "fonte": "BAN-07-auditor-bloco-cr76-80-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "5417c9d9ec6a1d853beee3dff2aa9f0c614813aab6436ae3052a55a1ee2e36f8",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_COMO_ESTUDO_CRITICO_SEM_NOTA"
+    },
+    {
+      "id": "fun01-e1-saturacao",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun01-r1.json",
+      "origem": "heranca_cientifica_por_identidade_e_alcance",
+      "sha256_artigo": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA"
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun01-r1.json",
+      "origem": "heranca_cientifica_por_identidade_e_alcance",
+      "sha256_artigo": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA"
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun01-r1.json",
+      "origem": "heranca_cientifica_por_identidade_e_alcance",
+      "sha256_artigo": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA"
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun01-r1.json",
+      "origem": "heranca_cientifica_por_identidade_e_alcance",
+      "sha256_artigo": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA"
+    },
+    {
+      "id": "fun02-e1-caminhos",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun02-cr17-27-r1.json",
+      "origem": "heranca_cientifica_atribuida_com_confronto_proprio_de_identidade_e_alcance",
+      "sha256_artigo": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "fun02-e1-integrabilidade",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun02-cr17-27-r1.json",
+      "origem": "heranca_cientifica_atribuida_com_confronto_proprio_de_identidade_e_alcance",
+      "sha256_artigo": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "fun02-e1-calor-caminho",
+      "fonte": "BAN-07-auditor-bloco-heranca-fun02-cr17-27-r1.json",
+      "origem": "heranca_cientifica_atribuida_com_confronto_proprio_de_identidade_e_alcance",
+      "sha256_artigo": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-02",
+      "fonte": "BAN-07-auditor-bloco-q02-09-13-15-16-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "c3ecee12ab0cbc10cefd6eb96a2c0272b7847413506e8add5ad21b453d846525",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-09",
+      "fonte": "BAN-07-auditor-bloco-q02-09-13-15-16-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "16501a81d69977300456240e97fcc15906ca07738d3bb91c6eae68a7e8d3e657",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-13",
+      "fonte": "BAN-07-auditor-bloco-q02-09-13-15-16-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "e25596232664c876ba489c4a81be704e052bcc84411f8279d1446ddece384824",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-15",
+      "fonte": "BAN-07-auditor-bloco-q02-09-13-15-16-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "d86c0c96e11141353e39bc7e0de5480482b69d077f72b9da92e76d81b04ca311",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-16",
+      "fonte": "BAN-07-auditor-bloco-q02-09-13-15-16-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "0abb8b399a04e4d326aecf0334de8de50be99883c3646216a91bfe894363ec5d",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-18",
+      "fonte": "BAN-07-auditor-bloco-q18-19-24-26-28-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "8db8ecd7e18c8f2d2fc68d28a568ba88c2f1645c2ca7473ea2ab745be4f29adb",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-19",
+      "fonte": "BAN-07-auditor-bloco-q18-19-24-26-28-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "95ccddfe325cd576db6efa180c4141e6b4898a73683241e2961399cd973e39c9",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-24",
+      "fonte": "BAN-07-auditor-bloco-q18-19-24-26-28-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "6215c6a02392e33e0ac74907fea506a63ecb92d171eccb65502ebf8d5867db14",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-26",
+      "fonte": "BAN-07-auditor-bloco-q18-19-24-26-28-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "df61bd3ca6a30a77fe477e04e50ba87b515c3fa89a652d33e3f8d2f5cb27ba86",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-28",
+      "fonte": "BAN-07-auditor-bloco-q18-19-24-26-28-r1.json",
+      "origem": "bloco incremental independente",
+      "sha256_artigo": "15be288e8d94b47776947cc8a41b9005f054033334bfcb6fc611bc98dc06d7c9",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    }
+  ],
+  "limites": [
+    "A presença de registro não demonstra sozinha o atendimento ao critério.",
+    "O Auditor deve confrontar a entrega congelada inteira e emitir parecer explícito."
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR11–CR15",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos e alternativas, verificação de propriedades, hipóteses, contagem e referências da resolução.",
+  "registros": [
+    {
+      "id": "cr-e1-11",
+      "artigo_sha256": "d5f8ea44378cd659b600ca4d2b9d24b290fd12bb603390c1117cd9c24678e878",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-11",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-absolutas",
+          "#base-medidas",
+          "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/924_ITAIPU_028_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/GAB_DEFINITIVO_924_ITAIPU_028_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Grandeza pedida: temperatura termodinâmica e unidade SI de base.",
+      "solucao": "Kelvin é a unidade de base da temperatura termodinâmica, símbolo K; °F é Fahrenheit, °C é unidade SI de temperatura Celsius, W é potência e J é energia.",
+      "resultado": "B, kelvin.",
+      "comparacao": "A Fahrenheit e C grau Celsius não são a unidade de base solicitada; D watt e E joule medem outras grandezas.",
+      "tolerancia": "Sem cálculo ou precisão numérica na resolução.",
+      "limite": "Celsius também é unidade SI, como reconhece CR09; a escolha depende de temperatura termodinâmica e unidade de base.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-12",
+      "artigo_sha256": "7c0ff74e35d297c99cae98007bda36ebd4cdca22e4e1fcfa45fc3492f4683c18",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-12",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-quatro-leis",
+          "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/924_ITAIPU_028_01.PDF#page=3",
+          "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/GAB_DEFINITIVO_924_ITAIPU_028_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_REFERENCIA_NUMERICA",
+      "dados": "Quatro enunciados sobre lei zero, primeira, segunda e terceira.",
+      "solucao": "I atribui lei zero à primeira: falso; II atribui segunda à zero: falso; III atribui primeira à segunda: falso; IV expressa referência da terceira para cristal perfeito puro: verdadeiro, entropia zero em 0 K.",
+      "resultado": "B, apenas IV; um item verdadeiro em quatro.",
+      "comparacao": "A apenas II, C I e III, D I e IV, E II e III contradizem a classificação F,F,F,V.",
+      "tolerancia": "Contagem 1 de 4 e referência 0 de entropia para cristal perfeito em 0 K são exatas no modelo.",
+      "limite": "A referência exige cristal perfeito puro sem degenerescência residual; formulação das leis e referência de entropia são hipóteses do modelo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-13",
+      "artigo_sha256": "52c02867f253205868fb2da8741a6d7b8cad977367c1d5f1ec848670ff7f90b7",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-13",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-energia",
+          "#base-balanco-fechado",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_014_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Gás ideal, mesma pressão em estados de temperaturas diferentes, calor específico cv constante apenas para a expressão simplificada.",
+      "solucao": "Para gás ideal u=u(T). Δu=∫cv(T)dT, e Δu=cvΔT se cv constante; pressão fixa não fixa T porque volume pode variar.",
+      "resultado": "E.",
+      "comparacao": "C atribui energia interna específica determinada apenas pela pressão; E rejeita a afirmação.",
+      "tolerancia": "Sem valores de cv ou ΔT; não há resultado numérico nem tolerância a calcular.",
+      "limite": "Fórmula linear exige cv constante e mesma composição; gases reais podem ter dependência adicional de estado.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-14",
+      "artigo_sha256": "3d06154c3f10b1827e4950b76dcf570d842b054a62406fc2c61a604af4c8a0a6",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-14",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-molecular",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Gás em recipiente com espaço disponível, sem barreira ou outro impedimento.",
+      "solucao": "Um gás livre se expande para ocupar o recipiente; moléculas se movem entre colisões; no modelo ideal despreza-se volume molecular próprio.",
+      "resultado": "C.",
+      "comparacao": "C condiz com o comportamento qualitativo no contexto; E o negaria.",
+      "tolerancia": "Sem valores ou resultado quantitativo na resolução.",
+      "limite": "Confinamento, gravidade, campos e outras barreiras podem gerar distribuição não uniforme; movimento livre não significa ausência de colisões.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-15",
+      "artigo_sha256": "51c2987cdbf270b2bf5c447741e91ed1390e7812ad40164aecbdfa6accd4282f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-15",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-molecular",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Afirmação de choques inelásticos entre partículas de gás; modelo cinético elementar ideal.",
+      "solucao": "No modelo, colisões moleculares e com paredes são elásticas e conservam energia cinética total do par em cada colisão. Velocidade alta não implica colisão inelástica.",
+      "resultado": "E.",
+      "comparacao": "C aceitaria a afirmação universal de choques inelásticos; E rejeita.",
+      "tolerancia": "Não há valores, contas ou tolerância na resolução.",
+      "limite": "Conclusão baseada no modelo ideal; gases reais e colisões com energia interna ou reações podem exigir descrição diferente.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem revisão independente desta entrega nem encerramento de BAN-08.",
+    "Fonte e chave oficiais são atribuídas à conferência documental anterior; PDFs não reexaminados nesta execução."
+  ]
+}

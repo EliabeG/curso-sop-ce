@@ -1,0 +1,37 @@
+{
+  "id": "FON-02",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "responsavel": "/root",
+  "tipo": "confronto próprio com esperado preservado antes de ler r2; sem substituir parecer independente",
+  "esperado": {
+    "arquivo": "auditoria/termodinamica/evidencias/FON-02/vinculos-base-coordenador-r2.json",
+    "sha256": "e604e7f8e831b14f39ffde3d69afd8bd9bf906c6d67e9c48773c1f0a393daf77"
+  },
+  "matriz": {
+    "arquivo": "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r2.json",
+    "sha256": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1"
+  },
+  "itens": 80,
+  "ocorrencias": 158,
+  "divergencias": [],
+  "restante_da_matriz_identico": true,
+  "produto": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+      "identico_r1": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+      "identico_r1": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+      "identico_r1": true
+    }
+  ],
+  "limites": "Confronto do JSON e identidade do produto. O Markdown, a reprodução Python e o manifesto serão examinados pelo Auditor; não se alega nova navegação."
+}

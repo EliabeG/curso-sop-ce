@@ -1,0 +1,17 @@
+{
+  "id": "QA-09-diagnostico-01",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_ADJUDICACAO_E_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+  "inventario_sha256": "8f37801a8dfdc073c3ee37357b36126a5235b8bb1fc4ad1f09215236bd5753f4",
+  "original_hash_fragmento": "38dfd58742e4dd620bced89730914ad6d3288e7856f0cadf312481c6c676ad25",
+  "candidata_hash_fragmento": "a3a7267bc9169ae0293ec449143d14f82144612793631c5a33537d7f71511896",
+  "original_arquivo_sha256": "80a22fe349ce210437582ddc0f06610a30e1259766d55c19d496e39276f62a29",
+  "candidata_arquivo_sha256": "105196333d9b8092d7f56401b296f86a6ed9ef7ad6796fe31a091cd7c6b2b506",
+  "alteracao": {
+    "antes": "em quatro partes nas mesmas condições",
+    "depois": "em quatro partes de massas iguais nas mesmas condições"
+  },
+  "observacao": "Arquivos isolados contêm um caractere de nova linha além do fragmento; por isso os hashes de arquivo e de fragmento diferem. Produto não alterado."
+}

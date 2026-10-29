@@ -1,0 +1,721 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autor": "/root/auditor_av_continuacao",
+  "natureza": "Apoio científico automatizado independente do Corretor; sem qualificação ou certificação humana.",
+  "escopo": "Somente AV51–AV55, cinco artigos e 25 alternativas. Sem aceite global ou liberação de ID.",
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "html_examinado": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "criterios": {
+    "BAN_07": "Dados suficientes, consistência física, comando, unidades, restrições, resposta única, demonstração da chave, distratores teoricamente plausíveis por erros concretos e equivalências após arredondamento.",
+    "regra_comum": "Seção 3.2 lida. Aplicada à rastreabilidade, hipóteses e revisão no alcance da auditoria de itens existentes; não se exige artificialmente uma unidade curricular nova para cada alternativa.",
+    "protocolo": "PROTOCOLO_AAA.md lido. Apoio não implementa correções, não concede aceite global e não libera próximo ID."
+  },
+  "reutilizacao_propria": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av46-50-r1.json",
+    "sha256": "aca8ba6a5a66c1560d51d756dfc039adf9d78d6b2d916d888be978d4f7dbf0b1",
+    "alcance": "Protocolo, regra comum e critério BAN-07 já lidos; textos das bases Brayton, Brayton real e tipos de compressores reutilizados somente após conferir identidade dos trechos e acesso antes da tentativa. Fontes primárias MIT/DOE já consultadas são corroboradoras nos limites indicados por item. Nenhuma conclusão sobre AV46–AV50 conta como exame de AV51–AV55.",
+    "autor_do_registro_reutilizado": "/root/auditor_av_continuacao"
+  },
+  "metodo_exposicao": "Primeira extração por parseHtml mostrou comandos/opções, títulos, temas e links, omitindo data-cr-gabarito e details. Metadados temáticos são conhecidos; não se alega cegamento total. As conclusões abaixo foram persistidas antes da leitura de chaves/comentários.",
+  "resolucoes_pre_confronto": {
+    "registradas_em": "2026-10-28T23:10:52.580Z",
+    "AV51": {
+      "resposta": "D",
+      "prova": "I verdadeira: compressão/expansão isentrópicas. II verdadeira: calor isobárico. III falsa: Brayton convencional não contém duas isotermas obrigatórias. Sequência V–V–F."
+    },
+    "AV52": {
+      "resposta": "D",
+      "prova": "η1=(100−40)/200=0,30; η2=(100−50)/200=0,25. Trabalho líquido de 60 para 50 kW; entrada por calor constante."
+    },
+    "AV53": {
+      "resposta": "C",
+      "prova": "Redução=300−240=60 kJ/ciclo. Referência é 300: 60/300=20%. 90/300 e 90/240 são eficiências (30% e 37,5%) e não a redução pedida."
+    },
+    "AV54": {
+      "resposta": "D",
+      "prova": "Axial e centrífugo são dinâmicos, código 1; pistão e parafuso são deslocamento positivo, código 2. Sequência 1–1–2–2."
+    },
+    "AV55": {
+      "resposta": "B",
+      "prova": "Rejeição de calor no Brayton ideal convencional é isobárica. B a torna isocórica e é a única INCORRETA; A/C/D/E são verdadeiras."
+    }
+  },
+  "bases_verificadas": [
+    {
+      "id": "base-brayton",
+      "sha256_trecho": "5de557929e5287d248ed1a7e58046e4d1e3b837f22c4e46559c3df2dc226ad90",
+      "leitura_propria_herdada_por_identidade": true,
+      "antes_AV51": true,
+      "em_details": false,
+      "figuras": 0
+    },
+    {
+      "id": "base-brayton-real",
+      "sha256_trecho": "840ca605e8b6e949dd3a4f4daf4a386e0289ef9363d3aad0fbc4325e319d593b",
+      "leitura_propria_herdada_por_identidade": true,
+      "antes_AV51": true,
+      "em_details": false,
+      "figuras": 0
+    },
+    {
+      "id": "base-tipos-compressores",
+      "sha256_trecho": "486a6d180603628f1e5c02d4a65968a818e36bc35c5784d47c31043ebd8a2cc3",
+      "leitura_propria_herdada_por_identidade": true,
+      "antes_AV51": true,
+      "em_details": false,
+      "figuras": 0
+    },
+    {
+      "id": "base-leitura-matematica",
+      "sha256_trecho": "80bcc3ac12c7736973274b63f835ca1330ecd1f562da30f416098c0635fb2956",
+      "leitura_nova": true,
+      "antes_AV51": true,
+      "em_details": false,
+      "figuras": 0,
+      "conteudo_pertinente": "Redução percentual tem denominador inicial; potência é energia/tempo; razões exigem unidades compatíveis; comando INCORRETA pede afirmação falsa; sequências V/F devem ser julgadas frase a frase."
+    }
+  ],
+  "itens": [
+    {
+      "item": "AV51",
+      "id_artigo": "av-e1-51",
+      "sha256_artigo": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+      "comando": "No ciclo Brayton ideal convencional, assinale a sequência correta. I. Compressão e expansão são isentrópicas. II. Adição e rejeição de calor são isobáricas. III. O ciclo contém obrigatoriamente duas etapas isotérmicas.",
+      "demonstracao_independente": {
+        "ordem": "D (V–V–F) foi persistida em resolucoes_pre_confronto antes da leitura da chave e dos comentários.",
+        "passos": [
+          "I é verdadeira: os componentes ideais de compressão e expansão do Brayton convencional são adiabáticos reversíveis, portanto isentrópicos.",
+          "II é verdadeira: o modelo ideal faz a adição e a rejeição de calor a pressão constante.",
+          "III é falsa: as quatro etapas descritas não incluem duas isotermas obrigatórias. Sequência V–V–F, alternativa D."
+        ],
+        "resposta": "D",
+        "dados_hipoteses_suficiencia": "O comando diz Brayton ideal convencional e fornece as três frases completas. Não é necessário inferir o modelo real, introduzir regeneração ou escolher propriedades do gás.",
+        "unidades_sinais_dominio": "Julgamento qualitativo sem números; isentrópico e isotérmico não são sinônimos. A reversibilidade não impõe temperatura constante.",
+        "unicidade_arredondamento": "As cinco sequências são distintas e somente D coincide com os três valores lógicos. Não há arredondamento ou equivalência numérica.",
+        "bases_antes_tentativa": [
+          "base-brayton"
+        ],
+        "figuras": "Nenhuma no artigo nem no trecho da base. A leitura da base foi reutilizada por hash e alcance explícitos."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "F – V – V.",
+          "juizo": "sequência incorreta",
+          "erro_plausivel": "Nega I e aceita III: substituir as duas etapas adiabáticas/isentrópicas por compressão e expansão isotérmicas, mantendo a imagem das duas trocas isobáricas. Um único erro de família/processo pode produzir F–V–V; não é preciso supor escolha aleatória de duas letras.",
+          "plausibilidade": "teórica; troca de processo/modelo ou generalização identificada"
+        },
+        {
+          "letra": "B",
+          "texto": "V – V – V.",
+          "juizo": "sequência incorreta",
+          "erro_plausivel": "Conserva I e II, mas acrescenta ao Brayton duas isotermas por transferir a estrutura de Carnot a qualquer ciclo ideal reversível. Confunde ideal/reversível com obrigatoriamente isotérmico.",
+          "plausibilidade": "teórica; troca de processo/modelo ou generalização identificada"
+        },
+        {
+          "letra": "C",
+          "texto": "F – F – V.",
+          "juizo": "sequência incorreta",
+          "erro_plausivel": "Escolher outro modelo mental, com compressão/expansão isotérmicas e etapas de volume constante, produz I falsa, II falsa e III verdadeira. É a troca da família do ciclo, que inverte os três julgamentos, em vez de três erros independentes sem ligação.",
+          "plausibilidade": "teórica; troca de processo/modelo ou generalização identificada"
+        },
+        {
+          "letra": "D",
+          "texto": "V – V – F.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: julgamentos independentes são V–V–F.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "E",
+          "texto": "V – F – V.",
+          "juizo": "sequência incorreta",
+          "erro_plausivel": "Transportar a estrutura de Carnot para o Brayton: preserva compressão/expansão isentrópicas, troca os trechos isobáricos por isotérmicos e obtém V–F–V.",
+          "plausibilidade": "teórica; troca de processo/modelo ou generalização identificada"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "D",
+        "concorda": true,
+        "comentarios": "O comentário central e D identificam duas isentrópicas e duas isobáricas. A/B/C/E indicam corretamente quais julgamentos falham. As justificativas de plausibilidade acima explicitam percursos de erro, além de repetir a falsidade.",
+        "identidade": {
+          "id": "av-e1-51",
+          "sha256_antes": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+          "sha256_atual": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+          "identico": true
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e base curricular examinados",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-51; #base-brayton"
+        },
+        {
+          "tipo": "fonte primária acadêmica corroboradora, consulta própria já realizada",
+          "titulo": "MIT Unified Engineering — 3.7 Brayton Cycle",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+          "alcance": "Estrutura convencional do Brayton; acesso em 2026-10-28 no trabalho próprio anterior. Não é uma nova execução atribuída a outro agente."
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "suspeita_descartada",
+          "descricao": "As sequências A e C têm mais de um julgamento errado, mas isso não demonstra implausibilidade: cada uma pode decorrer de uma única substituição da família/modelo de ciclo, como detalhado em opcoes. Não se exige desempenho empírico sem piloto."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV52",
+      "id_artigo": "av-e1-52",
+      "sha256_artigo": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+      "comando": "Uma unidade térmica recebe 200 kW por calor, e sua turbina produz 100 kW. Antes de uma alteração, o compressor consome 40 kW; depois, passa a consumir 50 kW, mantendo-se os outros valores. A eficiência térmica passa de",
+      "demonstracao_independente": {
+        "ordem": "Par 30%→25%, resposta D, persistido antes das chaves e comentários.",
+        "equacoes": [
+          "Ẇ_liq=Ẇ_t−Ẇ_c",
+          "η=Ẇ_liq/Q̇_entrada"
+        ],
+        "passos": [
+          "Antes: Ẇ_liq=100−40=60 kW; η=60/200=0,30=30%.",
+          "Depois: Ẇ_liq=100−50=50 kW; η=50/200=0,25=25%.",
+          "Aumento isolado de consumo de 10 kW diminui a eficiência em 10/200=0,05, isto é, 5 pontos percentuais."
+        ],
+        "resposta": "D",
+        "verificacao_numerica": {
+          "calor_kW": 200,
+          "turbina_kW": 100,
+          "compressor_kW": [
+            40,
+            50
+          ],
+          "liquido_kW": [
+            60,
+            50
+          ],
+          "eficiencia_percentual": [
+            30,
+            25
+          ],
+          "rejeicao_compativel_primeira_lei_kW": [
+            140,
+            150
+          ]
+        },
+        "dados_hipoteses_suficiencia": "As três potências e a condição de manter os demais valores estão no comando. A base ligada define a fronteira turbina–compressor e a desconsideração de outros consumos. Valores representam os dois pontos ou médias de operação do modelo declarado; não se extrapola que todas as variáveis de uma planta real ficariam invariáveis ao alterar compressor.",
+        "unidades_sinais_dominio": "Dados homogêneos em kW. kW/kW é adimensional; multiplicar por 100 produz %. Turbina gera e compressor recebe trabalho; suas magnitudes positivas entram com sinais opostos no saldo. Não se soma kW a kJ.",
+        "unicidade_arredondamento": "Os pares A=(30,35), B=(20,25), C=(70,75), D=(30,25), E=(50,50) são distintos. A primeira entrada de A e a segunda de B coincidem parcialmente com o resultado, mas somente D coincide no par completo. Valores são exatos para os dados; não há colisão de arredondamento.",
+        "bases_antes_tentativa": [
+          "base-leitura-matematica",
+          "base-brayton-real"
+        ],
+        "figuras": "Nenhuma no artigo ou nos trechos de base."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "30% para 35%.",
+          "juizo": "par numérico incorreto",
+          "erro_plausivel": "Acerta 30% inicialmente, mas soma ao rendimento o aumento do consumo: 30%+(50−40)/200×100%=35%. Troca o sinal da variação de trabalho líquido.",
+          "plausibilidade": "teórica e reproduzida por operação específica"
+        },
+        {
+          "letra": "B",
+          "texto": "20% para 25%.",
+          "juizo": "par numérico incorreto",
+          "erro_plausivel": "Calcula a fração de calor correspondente ao consumo do compressor: 40/200=20% e 50/200=25%. Substitui saída líquida por uma parcela consumida.",
+          "plausibilidade": "teórica e reproduzida por operação específica"
+        },
+        {
+          "letra": "C",
+          "texto": "70% para 75%.",
+          "juizo": "par numérico incorreto",
+          "erro_plausivel": "Soma as magnitudes dos trabalhos: (100+40)/200=70% e (100+50)/200=75%, tratando trabalho recebido pelo compressor como produção.",
+          "plausibilidade": "teórica e reproduzida por operação específica"
+        },
+        {
+          "letra": "D",
+          "texto": "30% para 25%.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: calcula (Wt−Wc)/Qin nos dois estados operacionais.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "E",
+          "texto": "50% para 50%.",
+          "juizo": "par numérico incorreto",
+          "erro_plausivel": "Usa apenas a potência bruta da turbina: 100/200=50% em ambas as situações. Ignora o consumo variável do compressor no limite do conjunto.",
+          "plausibilidade": "teórica e reproduzida por operação específica"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "D",
+        "concorda": true,
+        "comentarios": "As duas contas da solução coincidem com o cálculo independente. A explica sinal errado na variação, B fração consumida, C soma indevida e E potência bruta; os cinco comentários correspondem às operações efetivamente reproduzidas.",
+        "identidade": {
+          "id": "av-e1-52",
+          "sha256_antes": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+          "sha256_atual": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+          "identico": true
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e bases curriculares",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-52; #base-leitura-matematica; #base-brayton-real",
+          "alcance": "Definição de eficiência do conjunto, potências e sinais. Aritmética executada por este revisor, não herdada de diagnóstico."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV53",
+      "id_artigo": "av-e1-53",
+      "sha256_artigo": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+      "comando": "Após instalar um regenerador, uma unidade mantém trabalho líquido de 90 kJ por ciclo, mas o calor externo necessário cai de 300 kJ para 240 kJ. A redução percentual desse calor externo é",
+      "demonstracao_independente": {
+        "ordem": "Redução de 20%, resposta C, persistida antes da chave e dos comentários.",
+        "equacao": "redução_percentual=(Q_inicial−Q_final)/Q_inicial×100%",
+        "passos": [
+          "A economia por ciclo é 300−240=60 kJ.",
+          "A redução é referenciada ao valor anterior à instalação: 60/300=0,20, ou 20%.",
+          "O trabalho líquido mantido em 90 kJ/ciclo permite calcular 30% e 37,5% de eficiência, mas é dado contextual e não altera a redução do calor externo pedida."
+        ],
+        "resposta": "C",
+        "verificacao_numerica": {
+          "calor_inicial_kJ_ciclo": 300,
+          "calor_final_kJ_ciclo": 240,
+          "liquido_kJ_ciclo": 90,
+          "economia_kJ_ciclo": 60,
+          "reducao_percentual": 20,
+          "eficiencias_percentuais": [
+            30,
+            37.5
+          ],
+          "rejeicoes_compativeis_primeira_lei_kJ_ciclo": [
+            210,
+            150
+          ]
+        },
+        "dados_hipoteses_suficiencia": "Q inicial/final e trabalho constante estão explícitos. A pergunta é a redução percentual de uma entrada energética dada, não o dimensionamento do regenerador. Não são necessários vazões, área ou temperaturas para calcular esse percentual; tampouco os números provam viabilidade de um equipamento real sem estados e perdas.",
+        "unidades_sinais_dominio": "Todas as energias têm a mesma base por ciclo em kJ; as razões são adimensionais. A diminuição foi tomada positiva como Q_inicial−Q_final. Não há mistura de potência e energia, nem troca entre redução relativa e pontos percentuais de eficiência.",
+        "unicidade_arredondamento": "Alternativas numéricas 37,5%, 30%, 20%, 25% e 80% são distintas; a menor separação relevante é muito maior que o arredondamento exibido. Somente C coincide com 20% exatos. O incremento de eficiência 7,5 pontos percentuais e seu aumento relativo de 25% não são o comando.",
+        "bases_antes_tentativa": [
+          "base-leitura-matematica",
+          "base-brayton-real"
+        ],
+        "figuras": "Nenhuma no artigo ou nas bases pertinentes."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "37,5%.",
+          "juizo": "valor de outra razão ou referência incorreta",
+          "erro_plausivel": "Calcula η_final=90/240=37,5% e responde eficiência final em lugar da redução percentual do calor externo.",
+          "plausibilidade": "teórica; cada valor reproduzido por operação identificável"
+        },
+        {
+          "letra": "B",
+          "texto": "30%.",
+          "juizo": "valor de outra razão ou referência incorreta",
+          "erro_plausivel": "Calcula η_inicial=90/300=30%, trocando a grandeza pedida pela eficiência anterior.",
+          "plausibilidade": "teórica; cada valor reproduzido por operação identificável"
+        },
+        {
+          "letra": "C",
+          "texto": "20%.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: usa a diminuição de 60 kJ sobre o calor inicial de 300 kJ.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "D",
+          "texto": "25%.",
+          "juizo": "valor de outra razão ou referência incorreta",
+          "erro_plausivel": "Divide a diminuição pela referência final: (300−240)/240=25%, em vez do valor inicial. O mesmo número também seria o aumento relativo de eficiência, mas nenhuma dessas grandezas é a redução solicitada.",
+          "plausibilidade": "teórica; cada valor reproduzido por operação identificável"
+        },
+        {
+          "letra": "E",
+          "texto": "80%.",
+          "juizo": "valor de outra razão ou referência incorreta",
+          "erro_plausivel": "Calcula calor remanescente/inicial: 240/300=80%, sem tomar o complemento 1−0,80 para obter a redução.",
+          "plausibilidade": "teórica; cada valor reproduzido por operação identificável"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "C",
+        "concorda": true,
+        "comentarios": "A solução calcula 60/300=20%. Comentários A/B distinguem eficiência final/anterior; D explicita denominador errado; E identifica razão remanescente. Todos concordam com os cálculos independentes.",
+        "identidade": {
+          "id": "av-e1-53",
+          "sha256_antes": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+          "sha256_atual": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+          "identico": true
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e bases curriculares acessíveis",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-53; #base-leitura-matematica; #base-brayton-real",
+          "alcance": "Fórmula de redução em relação ao valor anterior e exemplo de regeneração com trabalho mantido; contas atuais executadas pelo Auditor."
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "suspeita_descartada",
+          "descricao": "Os 90 kJ/ciclo são dispensáveis para a razão solicitada. Sua presença não torna o comando insuficiente ou ambíguo: identifica o contexto e gera distratores concretos de eficiência. A falta de temperaturas não bloqueia esse cálculo condicional, que não certifica viabilidade de projeto."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV54",
+      "id_artigo": "av-e1-54",
+      "sha256_artigo": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+      "comando": "No cadastro de equipamentos de uma instalação, use 1 para compressores dinâmicos e 2 para compressores de deslocamento positivo. Classifique, nessa ordem: axial, centrífugo, alternativo de pistão e parafuso. A sequência correta é",
+      "demonstracao_independente": {
+        "ordem": "Sequência 1–1–2–2, alternativa D, persistida antes das chaves/comentários.",
+        "passos": [
+          "Compressores dinâmicos transferem energia ao escoamento pelas pás/rotor e obtêm elevação de pressão; axial e centrífugo pertencem a essa família, código 1.",
+          "Deslocamento positivo comprime por redução do volume de gás aprisionado. Alternativo de pistão e parafuso pertencem a essa família, código 2.",
+          "Respeitando a ordem axial, centrífugo, pistão e parafuso e os códigos declarados, a sequência é 1–1–2–2, D."
+        ],
+        "resposta": "D",
+        "dados_hipoteses_suficiencia": "Nomes, ordem e códigos estão explicitados. O objetivo é classificar princípios de compressão, sem selecionar fabricante, capacidade ou regime numérico. A base antes da tentativa distingue movimento rotativo/alternado do mecanismo positivo/dinâmico.",
+        "unidades_sinais_dominio": "1 e 2 são códigos de família, não grandezas, e sua inversão não é uma convenção livre porque o comando os define. Rotativo não é sinônimo de dinâmico: parafuso é rotativo de deslocamento positivo.",
+        "unicidade_arredondamento": "Cinco vetores distintos; somente D representa cada mecanismo e a ordem pedida. Não há número físico para arredondar nem alternativas semanticamente equivalentes.",
+        "bases_antes_tentativa": [
+          "base-tipos-compressores"
+        ],
+        "figuras": "Nenhuma no artigo ou na base; classificação é textual, sem presumir figura oculta."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "1 – 2 – 1 – 2.",
+          "juizo": "classificação ou codificação incorreta",
+          "erro_plausivel": "Classificar por direção/movimento aparente, em vez do mecanismo: associar “dinâmico” ao escoamento axial ou ao movimento longitudinal do pistão, e “deslocamento” ao ato de lançar o gás radialmente no centrífugo e aprisioná-lo no parafuso. Esse critério errado conserva axial/parafuso e troca centrífugo/pistão, produzindo 1–2–1–2.",
+          "plausibilidade": "teórica; critério errado de classificação/código reproduz a sequência"
+        },
+        {
+          "letra": "B",
+          "texto": "2 – 2 – 1 – 1.",
+          "juizo": "classificação ou codificação incorreta",
+          "erro_plausivel": "Reconhecer as duas famílias, mas inverter os códigos definidos no comando: usar 2 para dinâmicos e 1 para deslocamento positivo. Isso produz exatamente 2–2–1–1.",
+          "plausibilidade": "teórica; critério errado de classificação/código reproduz a sequência"
+        },
+        {
+          "letra": "C",
+          "texto": "1 – 1 – 1 – 1.",
+          "juizo": "classificação ou codificação incorreta",
+          "erro_plausivel": "Interpretar “dinâmico” no sentido cotidiano de haver movimento de um elemento ou do gás: como todos os quatro se movem, classificar todos como 1. Confunde o termo técnico com movimento genérico.",
+          "plausibilidade": "teórica; critério errado de classificação/código reproduz a sequência"
+        },
+        {
+          "letra": "D",
+          "texto": "1 – 1 – 2 – 2.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: axial e centrífugo são dinâmicos; pistão e parafuso deslocam volumes aprisionados.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "E",
+          "texto": "2 – 1 – 2 – 1.",
+          "juizo": "classificação ou codificação incorreta",
+          "erro_plausivel": "Agrupar pela imagem cinemática do nome: tomar “axial” como empurrar longitudinalmente, semelhante ao pistão, e tomar parafuso giratório como rotor dinâmico, semelhante ao centrífugo. Com a regra equivocada de que translação implica deslocamento positivo e rotação implica dinâmico, obtém 2–1–2–1. Ignora as pás do axial e os volumes aprisionados do parafuso.",
+          "plausibilidade": "teórica; critério errado de classificação/código reproduz a sequência"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "D",
+        "concorda": true,
+        "comentarios": "Solução descreve ação dinâmica das pás e redução de volumes aprisionados. A/B/C/E apontam os elementos trocados e concordam com a classificação independente; os mecanismos de erro acima são explicitação própria, não evidência de erro de alunos.",
+        "identidade": {
+          "id": "av-e1-54",
+          "sha256_antes": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+          "sha256_atual": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+          "identico": true
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e base curricular examinados",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-54; #base-tipos-compressores"
+        },
+        {
+          "tipo": "fonte primária técnica corroboradora, consulta própria anterior",
+          "titulo": "U.S. Department of Energy — Improving Compressed Air System Performance, 2nd ed.",
+          "url": "https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/compressed_air_sourcebook.pdf",
+          "localizador": "Seção 1, tipos de compressores e árvore de classificação, p. 3–8 impressas.",
+          "alcance": "Classificação técnica dinâmica/deslocamento positivo. Fonte consultada por este agente em 2026-10-28; os percursos errados A/E são inferências teóricas do revisor."
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "suspeita_descartada",
+          "descricao": "A/E não foram consideradas plausíveis apenas porque trocam duas posições. Foram examinados critérios equivocados concretos baseados em direção/movimento e nomes; B reproduz inversão explícita dos códigos e C amplia o significado cotidiano de dinâmico. A análise não mede atratividade real e não bloqueia BAN-07 pela falta de piloto."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV55",
+      "id_artigo": "av-e1-55",
+      "sha256_artigo": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+      "comando": "Quanto aos processos do ciclo Brayton ideal convencional, assinale a alternativa INCORRETA .",
+      "demonstracao_independente": {
+        "ordem": "B como única afirmação falsa persistida antes de ler chave/comentários.",
+        "passos": [
+          "Brayton ideal convencional tem compressão e expansão adiabáticas reversíveis/isentrópicas: A e E são verdadeiras.",
+          "A adição e a rejeição de calor são isobáricas. C é verdadeira; B é falsa ao impor volume constante à rejeição.",
+          "No conjunto turbina–compressor, produção líquida é produção da turbina menos consumo do compressor: D é verdadeira. O comando pede a única INCORRETA, portanto B."
+        ],
+        "resposta": "B",
+        "dados_hipoteses_suficiencia": "Ideal convencional delimita as etapas. A base diretamente ligada identifica os quatro processos; #base-brayton-real, também disponível antes do banco, expõe o saldo do conjunto para D. Nenhum dado numérico ou propriedade oculta é necessário.",
+        "unidades_sinais_dominio": "Afirmações qualitativas. “Diferença” em D usa consumo como magnitude positiva subtraída da produção. O resultado se refere ao conjunto e ao modelo ideal declarado.",
+        "unicidade_arredondamento": "A/C/D/E são proposições verdadeiras e, por isso, respostas erradas ao comando negativo. B é a única falsa. Não há números ou equivalências após arredondamento; isobárico e isocórico não são intercambiáveis.",
+        "bases_antes_tentativa": [
+          "base-brayton"
+        ],
+        "apoio_global_antes_tentativa": [
+          "base-brayton-real — expõe Ẇ_liq=Ẇ_t−Ẇ_c; disponível e não recolhido em details antes do banco, embora não seja o link direto do AV55"
+        ],
+        "figuras": "Nenhuma no artigo ou nos trechos de base pertinentes."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "A compressão ideal é isentrópica.",
+          "juizo": "afirmação verdadeira; resposta incorreta ao comando INCORRETA",
+          "erro_plausivel": "A afirmação é verdadeira no modelo ideal; escolhê-la como falsa pode decorrer de aplicar geração de entropia do compressor real à referência adiabática reversível, sem respeitar o adjetivo ideal.",
+          "plausibilidade": "teórica; confusão de domínio, família de ciclo ou fronteira identificada"
+        },
+        {
+          "letra": "B",
+          "texto": "A rejeição de calor é feita a volume constante.",
+          "juizo": "afirmação falsa; única resposta correta ao comando INCORRETA",
+          "erro_plausivel": "Não se aplica como distrator: é a falsa pedida. Sua confusão física é transportar ao Brayton a rejeição isocórica dos modelos Otto/Diesel em vez de manter a etapa isobárica convencional.",
+          "plausibilidade": "não se aplica como distrator; confusão física da frase explicitada"
+        },
+        {
+          "letra": "C",
+          "texto": "A adição de calor ocorre a pressão constante.",
+          "juizo": "afirmação verdadeira; resposta incorreta ao comando INCORRETA",
+          "erro_plausivel": "A afirmação é verdadeira. Rejeitá-la pode decorrer de trocar o modelo por aquecimento isocórico de Otto ou por troca isotérmica de Carnot, confundindo famílias de ciclo.",
+          "plausibilidade": "teórica; confusão de domínio, família de ciclo ou fronteira identificada"
+        },
+        {
+          "letra": "D",
+          "texto": "O trabalho líquido resulta da diferença entre trabalho da turbina e consumo do compressor.",
+          "juizo": "afirmação verdadeira; resposta incorreta ao comando INCORRETA",
+          "erro_plausivel": "A afirmação é verdadeira. Selecioná-la como falsa pode decorrer de contar apenas trabalho bruto da turbina ou de somar as magnitudes de turbina e compressor, tratando trabalho recebido pelo compressor como produção.",
+          "plausibilidade": "teórica; confusão de domínio, família de ciclo ou fronteira identificada"
+        },
+        {
+          "letra": "E",
+          "texto": "A expansão ideal é isentrópica.",
+          "juizo": "afirmação verdadeira; resposta incorreta ao comando INCORRETA",
+          "erro_plausivel": "A afirmação é verdadeira no modelo ideal. Selecioná-la pode decorrer de aplicar o aumento de entropia da expansão real à referência ideal ou tomar toda expansão com trabalho como necessariamente irreversível.",
+          "plausibilidade": "teórica; confusão de domínio, família de ciclo ou fronteira identificada"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "B",
+        "concorda": true,
+        "comentarios": "Solução identifica corretamente rejeição isobárica e o comando negativo. Comentários de A/C/D/E dizem que são verdadeiras. Não há contradição entre comando, valores lógicos, letra B e explicações.",
+        "identidade": {
+          "id": "av-e1-55",
+          "sha256_antes": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+          "sha256_atual": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+          "identico": true
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto e bases curriculares acessíveis",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "localizador": "#av-e1-55; #base-brayton; apoio #base-brayton-real"
+        },
+        {
+          "tipo": "fonte primária acadêmica corroboradora, consulta própria anterior",
+          "titulo": "MIT Unified Engineering — 3.7 Brayton Cycle",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+          "alcance": "Estrutura convencional do ciclo e parcela de trabalho da turbina consumida pelo compressor; acesso próprio em 2026-10-28."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+    }
+  ],
+  "atualizado_em": "2026-10-28T23:14:32.881Z",
+  "identidades_baseline": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+    "sha256_html": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "alcance": "Apenas cinco artigos AV51–55 extraídos para comparar identidades; não herda juízo científico do diagnóstico anterior.",
+    "artigos": [
+      {
+        "id": "av-e1-51",
+        "sha256_antes": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+        "sha256_atual": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+        "identico": true
+      },
+      {
+        "id": "av-e1-52",
+        "sha256_antes": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+        "sha256_atual": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+        "identico": true
+      },
+      {
+        "id": "av-e1-53",
+        "sha256_antes": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+        "sha256_atual": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+        "identico": true
+      },
+      {
+        "id": "av-e1-54",
+        "sha256_antes": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+        "sha256_atual": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+        "identico": true
+      },
+      {
+        "id": "av-e1-55",
+        "sha256_antes": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+        "sha256_atual": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+        "identico": true
+      }
+    ]
+  },
+  "cobertura": {
+    "artigos": 5,
+    "alternativas": 25,
+    "ids": [
+      "av-e1-51",
+      "av-e1-52",
+      "av-e1-53",
+      "av-e1-54",
+      "av-e1-55"
+    ],
+    "demonstracoes_antes_de_chave_persistidas": 5,
+    "confrontos_de_chave_e_comentarios": 5,
+    "itens_numericos_recalculados": [
+      "AV52",
+      "AV53"
+    ],
+    "artigos_preservados_por_identidade": 5,
+    "bases_verificadas": 4,
+    "figuras_nos_artigos_ou_trechos_de_base": 0,
+    "ajustes_obrigatorios": 0,
+    "suspeitas_descartadas_documentadas": [
+      "AV51 — múltiplos julgamentos podem decorrer de uma única troca de modelo",
+      "AV53 — dado contextual não cria ambiguidade nem obriga dimensionar regenerador",
+      "AV54 — sequências erradas confrontadas com critérios concretos de classificação"
+    ],
+    "alcance_excluido": "AV01–AV50 não reexecutados; AV56–AV80 não antecipados."
+  },
+  "verificacao_final": {
+    "executada_em": "2026-10-28T23:14:32.877Z",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "parser_arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+    "parser_sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+    "metodo": "Extração por parseHtml/sha256 apenas dos cinco artigos, textos de opções/comandos e bases necessárias; comparação com o parecer e com a identidade anterior.",
+    "itens": [
+      {
+        "id": "av-e1-51",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "chave_coincide_com_solucao_pre_confronto": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      },
+      {
+        "id": "av-e1-52",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "chave_coincide_com_solucao_pre_confronto": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      },
+      {
+        "id": "av-e1-53",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "chave_coincide_com_solucao_pre_confronto": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      },
+      {
+        "id": "av-e1-54",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "chave_coincide_com_solucao_pre_confronto": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      },
+      {
+        "id": "av-e1-55",
+        "hash_comando_cinco_opcoes_conferidos": true,
+        "chave_coincide_com_solucao_pre_confronto": true,
+        "figuras_no_artigo": 0,
+        "veredito": "APROVADO_NO_ESCOPO_BAN_07"
+      }
+    ],
+    "bases": [
+      {
+        "id": "base-brayton",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false
+      },
+      {
+        "id": "base-brayton-real",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false
+      },
+      {
+        "id": "base-tipos-compressores",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false
+      },
+      {
+        "id": "base-leitura-matematica",
+        "identidade_confirmada": true,
+        "antes_dos_cinco": true,
+        "em_details": false
+      }
+    ],
+    "parecer_AV46_50_preservado": true
+  },
+  "limites_e_autoria": {
+    "executor": "/root/auditor_av_continuacao — apoio científico automatizado independente",
+    "auditor_principal": "/root/auditor_ban07_final",
+    "coordenador": "/root",
+    "autoria_dos_juizos": "As cinco soluções, 25 juízos e mecanismos teóricos de distratores deste arquivo foram elaborados por este agente. Nenhum parecer do Corretor foi usado para conferir estes cinco itens.",
+    "reutilizacao": "Somente o próprio parecer AV46–AV50 e seus trechos/fontes pertinentes foram reutilizados nos limites e hashes indicados; isso não reexecuta a faixa anterior nem herda seu veredito para estes itens.",
+    "exposicao": "Títulos/temas/links eram visíveis na primeira extração. Chaves e comentários lidos depois do registro pre_confronto. Não se alega cegamento total do ambiente.",
+    "evidencia": "Inspeção estática, prova conceitual, aritmética independente e comparação de identidade. Plausibilidade teórica não demonstra frequência de erro ou discriminação observada.",
+    "nao_executado": "Piloto com estudantes, revisão humana, psicometria, navegador, persistência, auditoria global de figuras/acessibilidade ou outros 192 itens.",
+    "escopo_numerico": "AV52–AV53 tiveram contas e operações de todos os distratores reproduzidas. Este parecer não encerra BAN-08 numérico global.",
+    "decisao": "Cada veredito local se limita a BAN-07 e ao artigo com hash registrado. Não aprova BAN-07 globalmente, o curso, nem libera qualquer próximo ID.",
+    "arquivos_modificados": "Somente pareceres/BAN-07-auditor-bloco-av51-55-r1.json; produto, controle, checklist, outros IDs e provas anteriores preservados."
+  }
+}

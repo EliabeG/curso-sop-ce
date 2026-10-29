@@ -1,0 +1,154 @@
+{
+  "id": "GOV-01",
+  "rodada": 1,
+  "revisor": "Agente automatizado Auditor AAA /root/auditor_aaa",
+  "metodo": "Verificação estática independente; sem navegador",
+  "hashes": {
+    "html": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e",
+    "assets/registro.js": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+    "assets/curso.js": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+    "assets/curso.css": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
+  },
+  "artigos_preservados": 190,
+  "BAN01_preservado": true,
+  "ids": {
+    "anteriores": 1204,
+    "atuais": 1218,
+    "novos": [
+      "nivel-atual-e1",
+      "alcance-e1",
+      "resultados-aprendizagem-e1",
+      "competencia-c01",
+      "competencia-c02",
+      "competencia-c03",
+      "competencia-c04",
+      "competencia-c05",
+      "competencia-c06",
+      "competencia-c07",
+      "competencia-c08",
+      "competencia-c09",
+      "competencia-c10",
+      "percurso-atual-e1"
+    ],
+    "duplicados": 0
+  },
+  "links_validos": 43,
+  "linhas": [
+    {
+      "competencia": "C01",
+      "pares": [
+        [
+          "base-fronteira",
+          "q-e1-01"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C02",
+      "pares": [
+        [
+          "substancias",
+          "q-e1-04"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C03",
+      "pares": [
+        [
+          "base-primeira-lei",
+          "q-e1-07"
+        ],
+        [
+          "base-turbina-potencia",
+          "q-e1-11"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C04",
+      "pares": [
+        [
+          "base-entropia",
+          "q-e1-18"
+        ],
+        [
+          "base-entropia-escoamento",
+          "q-e1-29"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C05",
+      "pares": [
+        [
+          "base-exergia",
+          "av-e1-37"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C06",
+      "pares": [
+        [
+          "base-rankine",
+          "q-e1-20"
+        ],
+        [
+          "base-refrigeracao",
+          "q-e1-23"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C07",
+      "pares": [
+        [
+          "base-umidade",
+          "av-e1-16"
+        ],
+        [
+          "base-gas-modelo",
+          "av-e1-22"
+        ],
+        [
+          "base-termoquimica",
+          "av-e1-31"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C08",
+      "pares": [
+        [
+          "base-interpolacao",
+          "q-e1-26"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C09",
+      "pares": [
+        [
+          "base-segunda-lei",
+          "av-e1-39"
+        ]
+      ],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    },
+    {
+      "competencia": "C10",
+      "pares": [],
+      "estado_ensino_avaliacao_avancados": "em desenvolvimento"
+    }
+  ],
+  "conteudo_fora_do_escopo_preservado": true
+}

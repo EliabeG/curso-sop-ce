@@ -1,0 +1,23 @@
+{
+  "id": "QA-09-oficina-estado-exemplo",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "49b0df4fe59dfd01913f4d41a5e6869705f4bf4d6ded251060f940cd5d12c91b",
+  "secao_sha256": "332973ea8904d02ceb2e6c54d8713924c517975ce0749f09ee9f1b8ba07d56c2",
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-oficina-8-1-adjudicacao-independente-r1.md",
+    "sha256": "36afd1dd5e12965a66bf2945871c4434771400bbd7a7728ff2eab55d7f3ac4e0"
+  },
+  "original_sha256_fragmento": "ab5095512ce0582b481d1e94c74c0c7dbd7a3228c2016c3b17c7fd611823d84b",
+  "candidata_sha256_fragmento": "dec11b70113935a4f763cde64bc6b371159284b364e370c6519a6a4f1fc72af2",
+  "original_sha256_arquivo": "12788db236597a4e36c415e3d7a926dccc8da3461b959df87ba2faa39a06a3e2",
+  "candidata_sha256_arquivo": "62418797ab11205ff619196e60fcb65b22f4528d0afc912f63a15f5579886642",
+  "alteracoes": [
+    {
+      "antes": "A temperatura é a saturação correspondente à pressão, fornecida pela tabela.",
+      "depois": "A temperatura é a de saturação à pressão considerada; os dados não fornecem seu valor numérico."
+    }
+  ],
+  "limite": "Arquivos incluem nova linha final. Candidata não aplicada; requer revisão independente."
+}

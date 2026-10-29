@@ -1,0 +1,27 @@
+{
+  "id": "QA-09-oficina-trabalho-diagnostico",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "49b0df4fe59dfd01913f4d41a5e6869705f4bf4d6ded251060f940cd5d12c91b",
+  "secao_sha256": "332973ea8904d02ceb2e6c54d8713924c517975ce0749f09ee9f1b8ba07d56c2",
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-oficina-8-1-adjudicacao-independente-r1.md",
+    "sha256": "36afd1dd5e12965a66bf2945871c4434771400bbd7a7728ff2eab55d7f3ac4e0"
+  },
+  "original_sha256_fragmento": "bdfc904faec68456481748c2f0d18c46f00b5ab7e421c9e24145e55e1b1bf707",
+  "candidata_sha256_fragmento": "8b0baf719dc32ff52efba1a6968b8bef82804e1aad8f26f5949e9258fa50e841",
+  "original_sha256_arquivo": "149a29a0831ecc63de787ae6aa301ceff47c19e1ff0c4014bc56cf0700f6ff61",
+  "candidata_sha256_arquivo": "24ca90cb4d0e120a0c13f26e3fbbc9afca276c4d1a037f915b6d84fce46c24bc",
+  "alteracoes": [
+    {
+      "antes": "Um pistão comprime de 0,40 para 0,15 m³ contra 120 kPa constantes. Há saída de 10 kJ de calor.",
+      "depois": "Um gás em sistema fechado é comprimido por um pistão de 0,40 para 0,15 m³ contra 120 kPa constantes. O calor líquido é uma saída de 10 kJ e o trabalho de fronteira é a única transferência de trabalho."
+    },
+    {
+      "antes": "W = 120(0,15 − 0,40) = −30 kJ; Q = −10 kJ.",
+      "depois": "W de fronteira = 120(0,15 − 0,40) = −30 kJ; por ser o único trabalho, W total = −30 kJ. Q = −10 kJ."
+    }
+  ],
+  "limite": "Arquivos incluem nova linha final. Candidata não aplicada; requer revisão independente."
+}

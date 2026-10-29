@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-diagnostico-27",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO_INDEPENDENTE",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "7541e7c4c8314922992e99e8b62b40342c2d938e6edeac67ef9f74b69f86c17c",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r4.json",
+    "sha256": "44d19642bcf39109edf620e7304580b7a8a686e7c42cfa7101fa3d118a79d054"
+  },
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-26-28-independente-r1.md",
+    "sha256": "68869eb1cf952661bcc8d36c4e9f3ba2d96948d5b94337299f99e6a87ef5b3cb"
+  },
+  "original_sha256_fragmento": "94f05fbcee63dd51420d6fd57eb3023417cfd3b5b31148b9544fb7dd4ce57267",
+  "candidata_sha256_fragmento": "f464a072c29b5744c8fff6663d902628d84e5f8a28f51c68306f3a8a8e242962",
+  "original_sha256_arquivo": "fc6573b3ab11591cebe4f7c9a5861010db1a8acb1d26183ce2b577c5fcaca72c",
+  "candidata_sha256_arquivo": "ad1453bc4d440a752197f3294d53b0148002ce00fdbded58c4013af62f6015a1",
+  "antes": "Um estágio posterior recebe o restante e tem queda de 250 kJ/kg: qual potência produz?",
+  "depois": "Um estágio posterior de turbina em regime permanente, adiabático e com variações de energia cinética e potencial desprezíveis recebe o restante e tem queda de entalpia de 250 kJ/kg: qual potência produz?",
+  "limite": "Preparação isolada, arquivos têm nova linha final; sem edição do produto/controle ou aceite."
+}

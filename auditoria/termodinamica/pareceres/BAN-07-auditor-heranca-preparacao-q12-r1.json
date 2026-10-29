@@ -1,0 +1,606 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "tipo": "REVISAO_INDEPENDENTE_HERANCA_Q_12",
+  "data": "2026-10-29",
+  "revisor": "Agente automatizado /root/inspect_repo",
+  "escopo": "12 Q inalterados: 01,03,05,06,07,10,14,20,21,25,29,30. Não inclui candidatas de que este agente é autor; não é parecer global.",
+  "criterio": "Dados suficientes, consistência, comando, unidades, restrições, resposta única e demonstração dos distratores; plausibilidade teórica sem assumir resultados empíricos.",
+  "metodo": "Leitura direta dos 12 artigos r1, respectivos comentários e bases vinculadas pertinentes; confronto das demonstrações e 60 alternativas da preparação atribuída a /root/auditor_aaa. Chaves e comentários eram conhecidos; não se alega cegamento. Extração e identidade conferidas também com parseHtml e sha256 canônicos entre r1 e baseline; identidade não é aceite automático.",
+  "fontes_e_hashes": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+      "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+      "sha256": "d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-heranca-preparacao-parte1-r1.json",
+      "sha256": "6d27df5336b55fbd1598971376dfc8df7d128e8cc54fb62ab0338d1b7d8db318"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "sha256": "18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-07-r1.md",
+      "sha256": "9dfa2059b10be96615bbdc0c42d596c756910bbbd2791636ad061870dd96a893"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5"
+    }
+  ],
+  "registros": [
+    {
+      "id_artigo": "q-e1-01",
+      "sha256_r1": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "sha256_baseline": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "igual_preparacao_e_baseline": true,
+      "chave": "C",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "Fronteira vedada impede fluxo de massa; movimento e aquecimento permitem trabalho e calor.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A associa movimento de fronteira com fluxo de massa."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B afirma entrada de massa que não ocorre."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C é fechado e admite energia."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D exige ausência de troca de energia, incompatível com possibilidade de calor."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E impõe adiabaticidade apesar de calor permitido."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-fronteira"
+      ],
+      "limites_e_observacoes": "Fechado não significa isolado nem adiabático; a possibilidade de calor não afirma que ele necessariamente ocorrerá em todo processo.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "Recipiente vedado impede passagem de massa; calor e movimento do pistão admitem energia, logo fechado.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-03",
+      "sha256_r1": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "sha256_baseline": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "igual_preparacao_e_baseline": true,
+      "chave": "E",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "Pressão e temperatura não escalam com quantidade; massa, volume, energia e entalpia totais são extensivas para o sistema usual.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A usa entalpia e volume totais, ambos extensivos."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B inclui volume total extensivo."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C inclui massa extensiva."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D usa energia total e massa extensivas."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E contém temperatura e pressão intensivas."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-propriedades",
+        "base-medidas"
+      ],
+      "limites_e_observacoes": "Comparação supõe duplicação de amostra homogênea mantendo estado; não se confunde entalpia total com entalpia específica.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "Temperatura e pressão são intensivas; massa, volume total, entalpia/energia total são extensivas.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-05",
+      "sha256_r1": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "sha256_baseline": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "igual_preparacao_e_baseline": true,
+      "chave": "C",
+      "comando": "invertido: pede INCORRETA",
+      "prova_e_confronto_atual": "Em coexistência líquido–vapor, o título é fração mássica de vapor; ele não descreve o superaquecimento. O comando pede a incorreta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A é verdadeira na curva de saturação de substância pura."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B é verdadeira no equilíbrio bifásico."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C é falsa: título não se define como grau de superaquecimento."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D é verdadeira no limite de vapor saturado."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E é verdadeira no limite de líquido saturado."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "substancias",
+        "base-valvula-fase"
+      ],
+      "limites_e_observacoes": "Os limites de início de mudança de fase são entendidos nas condições de saturação e direção pertinente, não em qualquer trajetória ou região supercrítica.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "Título é fração mássica do vapor na coexistência líquido-vapor; não define grau de superaquecimento.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-06",
+      "sha256_r1": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "sha256_baseline": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "igual_preparacao_e_baseline": true,
+      "chave": "D",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "p=mRT/V=1×0,287×300/0,861=100 kPa; kJ/m³ equivale a kPa.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A copia R como pressão."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B copia T como pressão."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C dá 1 kPa, fator 100 abaixo do resultado; erro de escala ou divisão."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D aplica pV=mRT e unidades coerentes."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E usa 86,1=mRT sem dividir por V."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-gas-modelo",
+        "base-leitura-matematica"
+      ],
+      "limites_e_observacoes": "Ar ideal dado; R específica e T absoluta; não se afirma causa empírica específica para o erro de fator 100. Números distintos, sem empate por arredondamento.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "p=mRT/V=1*0,287*300/0,861=100 kPa.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-07",
+      "sha256_r1": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "sha256_baseline": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "igual_preparacao_e_baseline": true,
+      "chave": "E",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "Primeira lei para sistema fechado: ΔU=Q−W=500−200=300 kJ, com energia cinética e potencial desprezadas.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A inverte sinal de ΔU."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B soma trabalho produzido ao calor recebido."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C ignora trabalho que sai."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D toma trabalho por ΔU."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E efetua balanço e sinal corretos."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-primeira-lei",
+        "base-balanco-fechado"
+      ],
+      "limites_e_observacoes": "O trabalho realizado pelo sistema é saída; valor é variação de energia interna, não energia final absoluta. Sem equivalências de arredondamento.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "ΔU=Q-W=500-200=300 kJ, pois ΔEc=ΔEp=0.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-10",
+      "sha256_r1": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "sha256_baseline": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "igual_preparacao_e_baseline": true,
+      "chave": "E",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "Balanço estacionário de válvula adiabática sem trabalho e com mudanças cinética/potencial pequenas dá h1≈h2.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A impõe isentropia apesar da irreversibilidade."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B confunde h=u+pv com conservação universal de u."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C proíbe queda de pressão típica do estrangulamento."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D universaliza temperatura constante que só vale em casos/modelos particulares."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E expressa conservação aproximada de entalpia."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-valvula-fase"
+      ],
+      "limites_e_observacoes": "Válvula idealizada de uma corrente; não supor temperatura constante para fluido real, nem usar aproximação se energia cinética for relevante.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "Balanço estacionário adiabático sem trabalho: h1+v1²/2+gz1=h2+v2²/2+gz2; desprezados termos macroscópicos, h1≈h2.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-14",
+      "sha256_r1": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "sha256_baseline": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "igual_preparacao_e_baseline": true,
+      "chave": "E",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "Clausius proíbe transferência do frio ao quente como único efeito; trabalho externo dá outro efeito compatível.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A postula o efeito isolado proibido."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B é vedada por Kelvin–Planck, forma equivalente da segunda lei."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C ultrapassa eficiência reversível de Carnot entre as mesmas fontes."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D inverte o sentido espontâneo."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E usa trabalho para transferir calor do frio ao quente."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-segunda-lei"
+      ],
+      "limites_e_observacoes": "O consumo de trabalho torna a descrição compatível com Clausius; não prova que toda combinação quantitativa de calor e trabalho seja fisicamente possível. B e C são refutadas por consequências equivalentes da segunda lei.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "Clausius proíbe transferência cíclica do frio ao quente como único efeito; consumo de trabalho fornece o outro efeito requerido.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-20",
+      "sha256_r1": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "sha256_baseline": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "igual_preparacao_e_baseline": true,
+      "chave": "A",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "Rankine simples ideal: bomba pressuriza líquido, caldeira aquece, turbina expande e condensador devolve líquido.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A contém a sequência a partir da bomba."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B começa na turbina e liga-a à bomba antes do condensador."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C coloca bomba após caldeira, antes de condensar."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D põe condensador após bomba e turbina antes da caldeira."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E corresponde a compressão de vapor para refrigeração."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-rankine"
+      ],
+      "limites_e_observacoes": "Modelo Rankine simples sem extrações, conforme base; comentário B identifica ausência de condensação mesmo sem repetir que a sequência começa no componente errado.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "A bomba pressuriza líquido;caldeira adiciona calor;turbina expande;condensador devolve líquido à bomba.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-21",
+      "sha256_r1": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "sha256_baseline": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "igual_preparacao_e_baseline": true,
+      "chave": "E",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "Modelos ar-padrão: adição de calor Otto isocórica; Diesel isobárica.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A confunde etapas de adição de calor com isentrópicas."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B inverte os nomes dos processos de adição."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C atribui apenas isotermas ao Otto, que inclui compressão e expansão isentrópicas e adição/rejeição isocóricas."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D elimina rejeição de calor presente no Diesel ideal."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E identifica corretamente os processos."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. C é indireto; a solução geral e a base oferecem as etapas de Otto.",
+      "bases_vinculadas": [
+        "base-comparar-ciclos",
+        "ciclos"
+      ],
+      "limites_e_observacoes": "Comentários confrontados: explicação geral informa compressão/expansão isentrópicas; comentário C cita Carnot e é indireto para Otto, refinamento editorial possível. Comparação limitada ao modelo ideal de ar-padrão.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "No modelo ideal de ar padrão, Otto recebe calor a volume constante e Diesel a pressão constante.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-25",
+      "sha256_r1": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "sha256_baseline": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "igual_preparacao_e_baseline": true,
+      "chave": "E",
+      "comando": "invertido: pede INCORRETA",
+      "prova_e_confronto_atual": "Permanente significa independência temporal em posições fixas; não requer uniformidade espacial. O comando pede a incorreta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A descreve possibilidade de trabalho de turbina com queda de entalpia."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B descreve possibilidade de conversão de entalpia em energia cinética."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C é verdadeira pois h=u+pv inclui trabalho de escoamento."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D é possível em estrangulamento usual quase isoentálpico."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E é falsa porque confunde permanência com uniformidade espacial."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-balanco-transiente",
+        "base-bocal-difusor",
+        "base-valvula-fase"
+      ],
+      "limites_e_observacoes": "A/B/D dizem pode, não exigem que toda turbina/bocal/válvula satisfaça todas as hipóteses em qualquer instalação; comentários delimitam condições usuais.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "Regime permanente é invariância temporal em posições fixas, não uniformidade espacial; dispositivos podem ter diferenças de p/T.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-29",
+      "sha256_r1": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "sha256_baseline": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "igual_preparacao_e_baseline": true,
+      "chave": "C",
+      "comando": "selecionar resposta correta",
+      "prova_e_confronto_atual": "Balanço de entropia do conjunto adiabático estacionário: Sger=1(−0,20)+1(0,30)=0,10 kJ/(s·K)=0,10 kW/K.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A confunde adiabático externo com irreversibilidade zero."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B repete 0,10 mas usa kW e omite K⁻¹."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C tem valor e unidade corretos."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D soma os módulos 0,20+0,30."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E inverte sinal e implica geração negativa."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-entropia-escoamento"
+      ],
+      "limites_e_observacoes": "As duas vazões são iguais a 1 kg/s e as variações são saída menos entrada; não se avalia viabilidade de estados não fornecidos. O exemplo da base repete os dados e torna item de fixação; dupla pontuação :: é observação editorial. Valores e unidades distinguem as opções.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "Balanço de entropia do volume incluindo dois fluidos em regime permanente sem calor externo:Sgen=ΣṁΔs=1*(-0,20)+1*0,30=0,10 kW/K.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    },
+    {
+      "id_artigo": "q-e1-30",
+      "sha256_r1": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "sha256_baseline": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "igual_preparacao_e_baseline": true,
+      "chave": "B",
+      "comando": "invertido: pede INCORRETA",
+      "prova_e_confronto_atual": "Adiabático significa calor nulo, não geração de entropia nula; válvula de estrangulamento oferece contraexemplo. O comando pede a incorreta.",
+      "alternativas": [
+        {
+          "letra": "A",
+          "juizo_e_mecanismo": "A é verdadeira: fase condiciona interpolação."
+        },
+        {
+          "letra": "B",
+          "juizo_e_mecanismo": "B é falsa pela universalização isentrópica."
+        },
+        {
+          "letra": "C",
+          "juizo_e_mecanismo": "C é verdadeira para razão de pressão termodinâmica em escala absoluta."
+        },
+        {
+          "letra": "D",
+          "juizo_e_mecanismo": "D expressa Sger≥0 pela segunda lei."
+        },
+        {
+          "letra": "E",
+          "juizo_e_mecanismo": "E define calor como transferência de energia por diferença de temperatura."
+        }
+      ],
+      "comentarios": "Lidos no artigo r1 e confrontados com os cinco juízos. Os comentários sustentam a refutação ou explicação no modelo indicado.",
+      "bases_vinculadas": [
+        "base-valvula-fase",
+        "base-escolha-modelo"
+      ],
+      "limites_e_observacoes": "Entalpia aproximadamente constante só no modelo estacionário usual com termos pertinentes desprezíveis; a refutação de B não depende de toda válvula ser irreversível.",
+      "origem_preparacao": {
+        "revisor": "/root/auditor_aaa",
+        "demonstracao_atribuida": "Adiabaticidade exclui transferência de calor, não produção de entropia; estrangulamento com perda de carga pode ser irreversível.",
+        "estado_anterior": "preliminar; não é veredito da entrega"
+      },
+      "resultado_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NO_ESCOPO_EXAMINADO"
+    }
+  ],
+  "cobertura": {
+    "artigos": 12,
+    "alternativas_examinadas": 60,
+    "ressalvas": [
+      "Q21-C: explicação específica faz comparação indireta com Carnot; solução geral menciona etapas isentrópicas e base identifica Otto; aprimoramento editorial não bloqueante no alcance examinado.",
+      "Q29 replica exemplo prévio e é exercício de fixação; duplo sinal de dois-pontos é observação editorial, não altera cálculo."
+    ],
+    "ajustes_obrigatorios_identificados": []
+  },
+  "libera_proximo_id": false,
+  "limites": [
+    "Este agente preparou candidatas AV31, AV62 e AV69; nenhuma delas ou a candidata AV04 foi examinada nesta revisão.",
+    "Sem teste de alunos, psicometria, revisão humana, execução de navegador ou certificado externo.",
+    "Conclusões individuais locais não substituem parecer integral do Auditor principal nem alteram o estado do controle.",
+    "Produto, controle e pareceres anteriores não foram editados."
+  ],
+  "preservacao_produto_r1": {
+    "metodo": "Comparação SHA-256 à entrega r1",
+    "todos_preservados": true,
+    "arquivos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256_r1": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+        "sha256_ao_fim": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+        "preservado": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+        "sha256_r1": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+        "sha256_ao_fim": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+        "preservado": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "sha256_r1": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+        "sha256_ao_fim": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+        "preservado": true
+      },
+      {
+        "arquivo": "assets/curso.js",
+        "sha256_r1": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "sha256_ao_fim": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "preservado": true
+      },
+      {
+        "arquivo": "assets/registro.js",
+        "sha256_r1": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+        "sha256_ao_fim": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+        "preservado": true
+      }
+    ]
+  }
+}

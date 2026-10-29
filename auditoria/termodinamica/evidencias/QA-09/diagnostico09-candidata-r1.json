@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-diagnostico-09",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO_INDEPENDENTE",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "0de7342b99b9ebef8c1526f0b8eefb3544f000a4546d7b500558550d178285eb",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r3.json",
+    "sha256": "3074ab8fdf511d68dce73ec97bacca9dd9d5b0bbc3fe07a7d4ce329669b8b446"
+  },
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-07-09-independente-r1.md",
+    "sha256": "9fc1f260835e3b520256994b5aea937fbd3fa9d1e6ee23464ebc6246da327324"
+  },
+  "original_sha256_fragmento": "72a42e3735925949b6977964389d48aa363720f9cfadb69ecdebcad19f92bdc4",
+  "candidata_sha256_fragmento": "ea5b9c8b4c01bbc1846f6364b463f204c68a7c6d6ea799714b19a54100860d53",
+  "original_sha256_arquivo": "29dfa5aba6389f9d0b1b57b02344fb83ad9628a939e104a8aaaf2a601a9dfc8c",
+  "candidata_sha256_arquivo": "01dc8874860961ea2d8ee239fa00da8ab31a41f5b0e7e8587114bfa325e7d8e8",
+  "antes": "Uma máquina entre 900 K e 300 K recebe 900 kJ e rejeita só 100 kJ.",
+  "depois": "Uma máquina térmica opera em ciclos com trocas de calor apenas entre duas fontes a 900 K e 300 K. No mesmo ciclo, recebe ao todo 900 kJ da fonte quente e rejeita ao todo 100 kJ à fonte fria.",
+  "nota": "Arquivos têm nova linha final; fragmentos não. Produto não alterado."
+}

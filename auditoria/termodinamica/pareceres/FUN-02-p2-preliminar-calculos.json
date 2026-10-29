@@ -1,0 +1,65 @@
+{
+  "revisor": "Agente automatizado /root/auditor_aaa",
+  "estado": "Memória independente preliminar; sem aceite de FUN-02",
+  "fonteUnica": "auditoria/termodinamica/evidencias/FUN-02/enunciado-p2-r1.md",
+  "sha256Enunciado": "b9bed721d7732979261e6cab2ca79f5fb7df61696de78a4b172d0c17a88b0e2b",
+  "metodo": "Leitura somente do enunciado isolado; derivação própria antes de consultar qualquer solução ou evidência numérica do Corretor/coordenador.",
+  "resultados": {
+    "E0_Jmol": 100,
+    "Tref_K": 300,
+    "vref_m3mol": 0.001,
+    "kappa": 0.2,
+    "potencial": "Phi/E0 = theta*ln(theta) - theta + (theta-1)*ln(nu) + nu^2/2 + 1/2",
+    "derivadasCruzadas": {
+      "M_nu": "E0/nu",
+      "N_A_theta": "E0/nu",
+      "N_B_theta": "E0*(1+2*kappa*(theta-2))/nu"
+    },
+    "ciclos": {
+      "C_largo_A": 0,
+      "C_largo_B": 0,
+      "C_largo_B_perturbacao_direita": 13.862943611198906,
+      "C_largo_B_perturbacao_esquerda": -13.862943611198906,
+      "C_esquerdo_A": 0,
+      "C_esquerdo_B": -13.862943611198906
+    },
+    "caminhos": {
+      "A_HV": {
+        "horizontal": 38.62943611198906,
+        "vertical": 219.31471805599455,
+        "total": 257.9441541679836
+      },
+      "A_VH": {
+        "vertical": 150,
+        "horizontal": 107.94415416798357,
+        "total": 257.9441541679836
+      },
+      "B_HV": {
+        "perturbacao": 0,
+        "total": 257.9441541679836
+      },
+      "B_VH": {
+        "perturbacao": 13.862943611198906,
+        "total": 271.80709777918247
+      }
+    },
+    "derivadasS": {
+      "T_K": 600,
+      "vm_m3mol": 0.002,
+      "parcial_T_vm_JmolK": 0.46209812037329684,
+      "parcial_vm_T_Jm3": 250000,
+      "dvm_dT_gamma": 0.0000033333333333333333,
+      "parcela_cadeia_JmolK": 0.8333333333333333,
+      "derivada_caminho_JmolK": 1.2954314537066303,
+      "parcial_theta_nu_Jmol": 138.62943611198907,
+      "derivada_theta_caminho_Jmol": 388.6294361119891
+    },
+    "decisoes": {
+      "A": "Exata globalmente em D; potencial verificado, referência fixada.",
+      "B": "Exata em D apenas para kappa=0. Ensaios identificam kappa=0.2 na família assumida; logo não mede variação de propriedade global e não é localmente exata em vizinhança bidimensional de ponto da linha theta=2.",
+      "rotulo": "Valor numérico de s_gamma correto como derivada ao longo de nu=theta, incorreto como parcial a vm constante.",
+      "reparo": "kappa=0 corrige a expressão para exatidão, mas contradiz o ensaio esquerdo já registrado; exige versão/ensaio novo, não descarte arbitrário do registro.",
+      "alcance": "Somente consistência matemática do registrador; não confere admissibilidade, estabilidade ou identificação física como U/Q/W."
+    }
+  }
+}

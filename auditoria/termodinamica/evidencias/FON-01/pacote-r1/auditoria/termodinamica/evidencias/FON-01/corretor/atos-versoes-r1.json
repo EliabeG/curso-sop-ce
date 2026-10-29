@@ -1,0 +1,235 @@
+{
+  "id": "FON-01",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autoria": "/root/corretor_aaa",
+  "metodo": "Leitura textual dos atos oficiais e triagem dos títulos em listagens completas; não se afirma inspeção visual dos atos quando o método é textual. Provas/figuras/chaves dos 40 itens foram vistas nas imagens registradas em conferencia-40-r1.json.",
+  "atos": [
+    {
+      "familia": "tc",
+      "concurso": "tbg_23",
+      "bloco": "Cargo 19",
+      "pagina": null,
+      "resultado": "Não há bloco de alterações do Cargo 19 no ato de cinco páginas; os originais 39, 57 e 59 selecionados não são mencionados.",
+      "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/TBG_23_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_portal": "16/11/2023 10:33",
+      "metodo": "Texto extraído do PDF oficial por web.open/find; sem alegação de inspeção visual.",
+      "evidencia_indice": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/atos-selecionados.json"
+    },
+    {
+      "familia": "tm",
+      "concurso": "tbg_23",
+      "bloco": "Cargo 23",
+      "pagina": 5,
+      "resultado": "O original 48 (CR56) mudou E→C. Originais 31, 38, 46 e 53 foram anulados, fora dos 12 selecionados.",
+      "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/TBG_23_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_portal": "16/11/2023 10:33",
+      "metodo": "Texto extraído do PDF oficial por web.open/find; sem alegação de inspeção visual.",
+      "evidencia_indice": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/atos-selecionados.json"
+    },
+    {
+      "familia": "to",
+      "concurso": "tbg_23",
+      "bloco": "Cargo 17",
+      "pagina": 4,
+      "resultado": "O ato anula 38/50 e altera 65 C→E e 69 E→C; nenhum dos 14 selecionados pertence a esses números.",
+      "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/TBG_23_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_portal": "16/11/2023 10:33",
+      "metodo": "Texto extraído do PDF oficial por web.open/find; sem alegação de inspeção visual.",
+      "evidencia_indice": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/atos-selecionados.json"
+    },
+    {
+      "familia": "trf",
+      "concurso": "trf6_24",
+      "bloco": "Cargo 11",
+      "pagina": 4,
+      "resultado": "O ato anula o original 106, fora dos sete selecionados.",
+      "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/TRF6_24_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO.PDF",
+      "data_portal": "24/02/2025 15:50",
+      "metodo": "Texto extraído do PDF oficial por web.open/find; sem alegação de inspeção visual.",
+      "evidencia_indice": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/atos-selecionados.json"
+    },
+    {
+      "familia": "tse",
+      "concurso": "cpnuje_24",
+      "bloco": "Cargo 9",
+      "pagina": 4,
+      "resultado": "Versão ATUALIZADO: 79/82 E→C e 83 anulado; nenhum dos três selecionados (58, 70, 71) é atingido.",
+      "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/CPNUJE_24_JUSTIFICATIVAS_DE_ALTERAES_DE_GABARITO_ATUALIZADO.PDF",
+      "data_portal": "31/01/2025 12:00",
+      "metodo": "Extração local pypdf; trecho Cargo 9 lido.",
+      "evidencia_indice": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/atos-selecionados.json"
+    },
+    {
+      "familia": "cae",
+      "concurso": "caesb_24",
+      "bloco": "Cargo 9",
+      "pagina": null,
+      "resultado": "O ato de seis páginas não traz alteração de Cargo 9 (passa de Cargo 7 para Cargo 10 na p. 3). A anulação de questão 38 de Cargo 2 é distinta de CR80/Cargo 9.",
+      "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/CAESB_24_Justificativas_de_alterações_de_gabarito.pdf",
+      "data_portal": "06/08/2025 16:55",
+      "metodo": "Texto extraído do PDF oficial por web.open/find; sem alegação de inspeção visual.",
+      "evidencia_indice": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/atos-selecionados.json"
+    }
+  ],
+  "atos_complementares": [
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/Edital_20_2024_CPNUJE_Ret_Res_Final_Obj_Prov_Disc.pdf",
+      "titulo": "Edital nº 20 - Retificação do resultado final nas provas objetivas, divulgado no Edital nº 6",
+      "data_portal": "24/03/2025 09:00",
+      "paginas_fisicas": 1,
+      "metodo": "Texto oficial extraído por web.open e lido; não há cópia local nem inspeção visual reivindicada.",
+      "resultado": "Edital 20 de 20/03/2025: correção de transcrição de resposta individual ao item 88 de Cargo 18, sem alteração da chave de Cargo 9."
+    },
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/EDITAL_8_2024_CPNUJE_RETIFICACAO_EDITAL_6.PDF",
+      "titulo": "Edital nº 8 - Retificação de subitem referente ao resultado final nas provas objetivas e ao resultado provisório na prova discursiva do Edital nº 6",
+      "data_portal": "27/01/2025 18:20",
+      "paginas_fisicas": 1,
+      "metodo": "Texto oficial extraído por web.open e lido; não há cópia local nem inspeção visual reivindicada.",
+      "resultado": "Edital 8 de 23/01/2025: resultado de Cargo 11 Medicina Clínica; não modifica os itens Cargo 9."
+    },
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/EDITAL_9_2024_CPNUJE_RETIFICACAO_EDITAL_6.PDF",
+      "titulo": "Edital nº 9 - Retificação dos subitens 10.1 e 10.1.1 do Edital nº 6",
+      "data_portal": "30/01/2025 19:00",
+      "paginas_fisicas": 1,
+      "metodo": "Texto oficial extraído por web.open e lido; não há cópia local nem inspeção visual reivindicada.",
+      "resultado": "Edital 9 de 29/01/2025: cronograma da heteroidentificação, sem alteração de chave."
+    },
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/03FD577448499538F4376877F27236AA6260C9BFB98593BD23C53B1F7E5DC2E5.pdf",
+      "titulo": "Edital nº 41 – Retificação do Edital nº 32 – CPNUJE, de 23 de maio de 2025, e alterações, e do Edital nº 37 – CPNUJE, de 30 de junho de 2025, e alterações.",
+      "data_portal": "01/09/2025 09:15",
+      "paginas_fisicas": 1,
+      "metodo": "Texto oficial extraído por web.open e lido; não há cópia local nem inspeção visual reivindicada.",
+      "resultado": "Edital 41 de 26/08/2025: legenda de classificação, sem alteração de chave."
+    },
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/E1FAF627D3B784439E1A8BFB049F8155DC888F512871740F513E6A989B01CA80.pdf",
+      "titulo": "Edital nº 31 – Retificação do caput e do subitem 4.2 do Edital nº 22",
+      "data_portal": "22/06/2026 09:00",
+      "paginas_fisicas": 1,
+      "metodo": "Texto oficial extraído por web.open e lido; não há cópia local nem inspeção visual reivindicada.",
+      "resultado": "Edital 31 de 22/06/2026: homologação e validade de cargos de nível médio, sem alteração da chave de Cargo 9."
+    },
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/9EC56BA0D743A3A383CF7340248A03BB5650C49CD0188D2F337F78153F2A3C63.pdf",
+      "titulo": "Edital nº 15 – Retificação dos subitens 10.9.1 e 10.9.2 do Edital nº 1 – CAESB",
+      "data_portal": "30/09/2025 09:11",
+      "paginas_fisicas": "1–2",
+      "metodo": "Texto oficial extraído por web.open e lido; não há cópia local nem inspeção visual reivindicada.",
+      "resultado": "Edital 15 de 29/09/2025: quantitativos e critérios de convocação à discursiva, sem alteração da chave objetiva."
+    },
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/37DF5283A554E6C378E978E1F17E87FA5E76D274C046DF3B24A773268958E32A.pdf",
+      "titulo": "Comunicado",
+      "data_portal": "21/11/2025 17:16",
+      "paginas_fisicas": 1,
+      "metodo": "Texto oficial extraído por web.open e lido; não há cópia local nem inspeção visual reivindicada.",
+      "resultado": "Comunicado de 21/11/2025: data de resultado da prova discursiva de nível médio."
+    },
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/89AEA9D1C10FEB182C8113309B23D4D00D8C5E9E63F4180F7D0010C8058FEE0F.pdf",
+      "titulo": "Comunicado - Cargos de nível superior e cargo 27",
+      "data_portal": "27/11/2025 09:53",
+      "paginas_fisicas": 1,
+      "metodo": "Texto oficial extraído por web.open e lido; não há cópia local nem inspeção visual reivindicada.",
+      "resultado": "Comunicado de 27/11/2025: datas de etapas biopsicossocial/heteroidentificação e convocação discursiva."
+    },
+    {
+      "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/Ed_8_TRF6_24__Retificacao.pdf",
+      "titulo": "Edital nº 8 – Retificação do Edital nº 7",
+      "data_portal": "26/03/2025 15:00",
+      "paginas_fisicas": 1,
+      "metodo": "PDF obtido por Invoke-WebRequest; texto integral da única página extraído por pypdf e lido.",
+      "resultado": "Edital 8 de 25/03/2025: substitui o cabeçalho “Tribunal Eleitoral/localidade da vaga” por “região”; não muda questões nem chaves.",
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/trf6-edital8.pdf",
+      "sha256": "7b72953099a58dd182d9dcbc36639d7380e7c05832d5f9ff7d4bf72d3f155260",
+      "extracao": "auditoria/termodinamica/evidencias/FON-01/corretor/trf6-edital8-texto.json",
+      "obtencao": {
+        "status_http": 200,
+        "bytes": 114838,
+        "data": "2026-10-28",
+        "falha_anterior": "web.open devolveu Internal Error; obtenção posterior PowerShell funcionou."
+      }
+    }
+  ],
+  "fgv": {
+    "portal": "https://conhecimento.fgv.br/concursos/inpe23/1",
+    "copia": "auditoria/termodinamica/evidencias/FON-01/corretor/portal-inpe/portal-inpe.html",
+    "leitura_corretor": "Portal/listagem e comunicados TG29 de 02/08/2024 e recursos de 23/07/2024 lidos via texto oficial. TG29/questão 29 não é TG15; anúncio de respostas a recursos não altera chave por si.",
+    "documentos": [
+      {
+        "url": "https://conhecimento.fgv.br/concursos/inpe23/1",
+        "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\FON-01\\corretor\\portal-inpe\\portal-inpe.html",
+        "utc": "2026-10-28T12:26:58.0843738Z",
+        "status": 200,
+        "bytes": 139304,
+        "sha256": "8b76193ecf58cbb46b621d3dfa859b140408cc4c9b825e657c3d46e4b210f1af"
+      },
+      {
+        "url": "https://conhecimento.fgv.br/sites/default/files/concursos/comunicado-tg29.pdf",
+        "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\FON-01\\corretor\\portal-inpe\\comunicado-tg29.pdf",
+        "utc": "2026-10-28T12:26:58.4717013Z",
+        "status": 200,
+        "bytes": 135478,
+        "sha256": "94020c05f1babb6554220f5921224791eb9b4991bf781df6f8e36242248415a4"
+      },
+      {
+        "url": "https://conhecimento.fgv.br/sites/default/files/concursos/comunicado_16.pdf",
+        "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\FON-01\\corretor\\portal-inpe\\comunicado-recursos.pdf",
+        "utc": "2026-10-28T12:26:58.7900355Z",
+        "status": 200,
+        "bytes": 100032,
+        "sha256": "2f8fce5133bd2d6983f14f638f9a9e7d49dcf4711ad31d013a086d529e234a1a"
+      }
+    ],
+    "complemento_atribuido": {
+      "responsavel": "Auditor independente; evidência preliminar de leitura, não aceite da entrega.",
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/insumo-auditor-versoes-r1.json",
+      "sha256": "1117babdf0b1e48398e779fb996509cb99cba31add9d820cbe8c18f13939f3be",
+      "conclusoes": [
+        {
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/comunicado-tg29.pdf",
+          "resultado": "Lido integralmente: comunicado02/08/2024 retifica questão29 doTG29. Não éTG15 nem os quatro selecionados. Versão definitiva retificada02/08 do catálogo coincide com a atualmente publicada."
+        },
+        {
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/comunicado_16.pdf",
+          "resultado": "Lido integralmente: avisa disponibilização das respostas aos recursos em24/07/2024; não altera chave por si."
+        },
+        {
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/comunicado.correcao-da-discursiva.pdf",
+          "resultado": "Lido integralmente: comunicado05/11/2024 corrige notas individuais da prova discursiva; sem efeito na seleção objetiva TG15."
+        },
+        {
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/inpe-comunicado.pdf",
+          "resultado": "Lido integralmente: retificação da avaliação de títulos TG06 em abril/2025; sem mudança da chave objetiva TG15."
+        },
+        {
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/comunicado15.04_1.pdf",
+          "resultado": "Lido integralmente: decisão individual sub judice na avaliação de títulos TG34,16/04/2025; sem efeito em TG15."
+        },
+        {
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/comunicado-inpe_0.pdf",
+          "resultado": "Lido integralmente: retifica títulos TG05/TG35 em maio/2025; sem efeito em TG15."
+        },
+        {
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/26.08.comunicado_tecnologista_0.pdf",
+          "resultado": "Leitura após nova tentativa bem-sucedida: prazo de recursos da prova discursiva26–28/08/2024, sem mudança de chave objetiva."
+        },
+        {
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/inpe-tecnologista-gabaritopublicao.pdf",
+          "resultado": "Seção TG15, prova tipo1, página física15 do preliminar:25B,30B,33D,35E. Confrontada com definitivo retificado02/08, página física4 lida visualmente: quatro respostas idênticas, nenhuma anulação nesses quatro. Não se infere que todo TG15 permaneceu igual."
+        }
+      ],
+      "original": "auditoria/termodinamica/pareceres/FON-01-versoes-preliminar.json"
+    }
+  },
+  "limites": [
+    "Pesquisa delimitada aos índices oficiais capturados em 28/10/2026 e aos atos indicados. Não prova ausência universal de atos externos ou futuros.",
+    "Listas pessoais de classificação foram triadas por título/trechos pertinentes, sem leitura integral ou reprodução de dados pessoais.",
+    "Recurso individual de candidato protegido por autenticação não foi acessado.",
+    "Leituras complementares do coordenador e do auditor são atribuídas; a matriz 80 distingue quem confrontou cada item."
+  ]
+}

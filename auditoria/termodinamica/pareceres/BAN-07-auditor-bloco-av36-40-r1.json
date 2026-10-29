@@ -1,0 +1,232 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "AV36–AV40",
+  "data": "2026-10-28",
+  "revisor": {"agente": "/root/auditor_av", "natureza": "agente automatizado; apoio científico independente ao Auditor principal atual /root/auditor_ban07_final", "autor_corretor": false, "poder_de_aprovacao": "Somente vereditos locais; sem aceite global de BAN-07."},
+  "produto": {"arquivo": "modulos/e1-termodinamica.html", "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80", "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"},
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "escopo": {"previsto": ["AV36", "AV37", "AV38", "AV39", "AV40"], "examinado": ["AV36", "AV37", "AV38", "AV39", "AV40"], "opcoes_examinadas": 25, "fora_de_escopo": "Demais artigos, produto, controle/checklist e outros IDs; arquivos anteriores preservados."},
+  "metodo": "parseHtml/decodeHtml do validador para artigos atuais; comando, bases, figuras e soluções próprias com cinco julgamentos antes da resolução. Deltas de AV37/38 comparados diretamente. Fontes anteriores só por identidade do SHA global e alcance declarado. Plausibilidade teórica, sem piloto.",
+  "itens": [
+    {
+      "item": "AV36",
+      "id_artigo": "av-e1-36",
+      "sha256_artigo": "6b740a5a219f82f11f8e03899fb670df2cc54663545c07731f48643f1edb7285",
+      "comando": "Assinalar INCORRETA sobre expansão adiabática reversível de gás ideal fechado, só trabalho de fronteira, Delta EC/EP desprezíveis.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Sinais, U/T/S e cinco valores lógicos julgados antes da resolução; chave omitida na extração inicial."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Adiabático, reversível, gás ideal, fechamento, modo de trabalho e descarte de EC/EP são explícitos.",
+        "hipoteses": "Massa/composição fixas e cv positivo. Reversibilidade elimina geração; adiabaticidade elimina transferência de entropia por calor. Para a queda de T não se exige cv constante nem valor de k.",
+        "unidades": "Sem valores numéricos. Q/W/Delta U são energias; Delta S tem dimensão energia/temperatura, não se confunde com energia.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-trabalho-fronteira", "#base-entropia", "#base-balanco-fechado"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Adiabático dá Q=0 (A verdadeira). Primeira lei: Delta U=-W; se W>0, Delta U<0 (B verdadeira). Gás ideal com cv positivo tem u(T), portanto T diminui (C verdadeira). Delta S=integral(delta Q/Tb)+Sger=0+0 para adiabático reversível (D verdadeira). E é falsa: Q=0 não anula W; o trabalho pode consumir energia interna.",
+        "chave_derivada": "E",
+        "unicidade": "A–D são verdadeiras sob todas as hipóteses dadas; só E é falsa e atende INCORRETA. Sem arredondamentos."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "Não há transferência de energia por calor.", "correta": false, "valor_logico": "Verdadeira.", "demonstracao": "É a condição adiabática Q=0.", "erro_plausivel": "Selecioná-la pode refletir a ideia de que toda mudança de U/T exige calor, esquecendo trabalho.", "plausibilidade": "Distrator coerente com confusão calor/energia."},
+        {"letra": "B", "texto": "A energia interna diminui quando o gás realiza trabalho positivo.", "correta": false, "valor_logico": "Verdadeira.", "demonstracao": "Delta U=-W<0.", "erro_plausivel": "Selecioná-la pode resultar de convenção de trabalho trocada ou de pensar que trabalho produzido entra no sistema.", "plausibilidade": "Distrator coerente com erro de sinal."},
+        {"letra": "C", "texto": "A temperatura diminui quando o gás realiza trabalho positivo.", "correta": false, "valor_logico": "Verdadeira.", "demonstracao": "Queda de U implica queda de T para gás ideal com cv positivo.", "erro_plausivel": "Confundir adiabático com isotérmico ou desconhecer u(T).", "plausibilidade": "Distrator conceitualmente plausível."},
+        {"letra": "D", "texto": "A entropia permanece constante.", "correta": false, "valor_logico": "Verdadeira.", "demonstracao": "Sem transferência por calor e sem geração reversível, Delta S=0.", "erro_plausivel": "Generalizar que toda expansão aumenta entropia, omitindo reversibilidade e trabalho contra resistência.", "plausibilidade": "Distrator conceitualmente plausível."},
+        {"letra": "E", "texto": "O trabalho deve ser nulo porque não há troca de calor.", "correta": true, "valor_logico": "Falsa, conforme solicitado.", "demonstracao": "Q=0 permite W=-Delta U positivo.", "erro_plausivel": "Confundir adiabático com ausência de toda interação energética.", "plausibilidade": "Erro reconhecível; é a resposta solicitada."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Correto em sinal, idealidade e isentropia. Reconhece expressamente que A–D são verdadeiras e que o comando pede a falsa."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-36", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-entropia", "uso": "Lida nesta execução: transferência, geração e condição adiabático/internamente reversível."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-trabalho-fronteira", "origem": "Leitura própria no AV29, mesmo SHA global congelado.", "alcance_reutilizado": "Sinal de expansão e trabalho de fronteira; nenhum julgamento de AV36 herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-balanco-fechado", "origem": "Leitura própria no AV02, mesmo snapshot.", "alcance_reutilizado": "Primeira lei, sinais e comportamento adiabático do gás ideal."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV37",
+      "id_artigo": "av-e1-37",
+      "sha256_artigo": "b741f7c26e317df09eaf7984e2065f881464ffc7367202fa2968b4ce30efe928",
+      "comando": "Em análise independente dos valores do gráfico, Sger=0,20 kJ/K e T0=300 K; usar trabalho perdido=T0×Sger para achar perda de trabalho útil.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Comando/opções atuais e anteriores, figura e base examinados antes das resoluções; conta e erros derivados previamente."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "A relação é fornecida no comando, com entropia gerada e ambiente. As curvas não são fonte de dados numéricos para a conta, por declaração explícita anterior à tentativa.",
+        "hipoteses": "Ambiente de referência a T0 constante; perda medida contra comparação reversível apropriada sob mesmas restrições. Sger é geração total, não variação do sistema nem taxa. Destruição de exergia não é desaparecimento de energia nem promessa de recuperação técnica integral.",
+        "unidades": "K × kJ/K = kJ. T0 deve ser absoluta; substituir por número Celsius invalida o produto termodinâmico.",
+        "figuras": "Gráfico visualmente examinado: disponibilidade versus ângulo de manivela, início/fim de combustão, trabalho de compressão/expansão e parcelas de irreversibilidade. Sem escala numérica vertical. Alt descreve corretamente seu tema/eixo. Uso ilustrativo, não área p–V nem medição necessária.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-exergia"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Gouy–Stodola na referência declarada: Wperdido=T0 Sger=300×0,20=60 kJ. Como T0>0 e Sger>0, a perda é positiva. Para reproduzir B atual, (300-273,15)×0,20=26,85×0,20=5,37, mas esse número Celsius não pode substituir kelvin.",
+        "chave_derivada": "C",
+        "unicidade": "Só C é +60 kJ de perda. D tem sinal/interpretação contrários; 0,20/5,37/300 kJ são distintos. A diferença de arredondamento de 273,15 não aproxima 5,37 de 60."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "0,20 kJ.", "correta": false, "demonstracao": "Repete Sger sem multiplicar por T0 e muda kJ/K para kJ.", "erro_plausivel": "Confundir entropia gerada com exergia destruída e copiar seu valor numérico.", "plausibilidade": "Plausível conceitualmente e dimensionalmente identificável."},
+        {"letra": "B", "texto": "5,37 kJ.", "correta": false, "demonstracao": "(300-273,15)×0,20=5,37 usa Celsius.", "erro_plausivel": "Converter a temperatura ambiente para a escala cotidiana e usar o número deslocado em produto que exige escala absoluta.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "60 kJ.", "correta": true, "demonstracao": "300×0,20=60 kJ.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "D", "texto": "−60 kJ de perda, indicando aumento do trabalho útil.", "correta": false, "demonstracao": "T0 Sger é positivo; destruição reduz capacidade de trabalho, não a aumenta.", "erro_plausivel": "Confundir a queda de exergia do sistema com o sinal da magnitude destruída e inverter a interpretação física.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "300 kJ.", "correta": false, "demonstracao": "Repete T0 como energia e omite Sger.", "erro_plausivel": "Copiar a temperatura de referência ou implicitamente tomar Sger como 1 sem usar o dado.", "plausibilidade": "Plausível como erro de leitura/unidade."}
+      ],
+      "confronto": {"gabarito_publicado": "C", "coincide": true, "comentario": "Correto e dimensionalmente coerente. B atual demonstra exatamente o erro Celsius→produto. A/D/E refutam omissão de T0, sinal e cópia da temperatura."},
+      "delta_conferido": {
+        "origem": "Comparação direta própria com parseHtml/decodeHtml.",
+        "arquivo_anterior": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+        "sha256_artigo_anterior": "ccefde48db15ca2082dd9167469f4953d0ca0778b051d7e6eac6e886ab39e951",
+        "sha256_artigo_atual": "b741f7c26e317df09eaf7984e2065f881464ffc7367202fa2968b4ce30efe928",
+        "comando": "Preservado, inclusive independência dos valores das curvas.",
+        "alteracao_opcao": "B: 1,5 kJ→5,37 kJ.",
+        "alteracao_comentario": "B deixa de negar valor sem mecanismo correspondente e passa a reproduzir (300-273,15)×0,20=5,37, explicando exigência de kelvin.",
+        "resultado": "Novo distrator corresponde a erro concreto de escala; C permanece única correta."
+      },
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-37", "uso": "Dados/opções, depois resolução."},
+        {"tipo": "baseline_local", "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html", "ancora": "#av-e1-37", "uso": "Delta direto e hashes próprios."},
+        {"tipo": "figura_local", "arquivo": "assets/questoes-reais-e1/figura-222735fab01e.png", "sha256": "222735fab01e54a81e34f3bb54cfd7097a8cbc1391ebe6420d60df8b2513a9cb", "uso": "Inspeção visual direta; contexto qualitativo, sem escala vertical numérica."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-exergia", "uso": "Lida nesta execução: T0 Sger, referência reversível e limites da interpretação do gráfico."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo SHA global congelado.", "alcance_reutilizado": "Unidades, multiplicação e leitura dos eixos; nenhum julgamento de AV37 herdado."},
+        {"tipo": "fonte_primaria_externa", "titulo": "MIT Thermodynamics and Propulsion — 6.6 Entropy and Unavailable Energy", "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html", "acesso": "2026-10-28", "uso": "Relação entre trabalho perdido, entropia produzida e ambiente a temperatura constante; não atribui à energia uma perda de conservação."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV38",
+      "id_artigo": "av-e1-38",
+      "sha256_artigo": "bde32c401ca98314f5217325508776fef07fca3eddb42b7a689a588fe973dfd4",
+      "comando": "Máquina térmica entre fontes a 500 K e 300 K; determinar limite superior de eficiência térmica.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": true, "nota": "A extração inicial omitiu chave/comentário. Na inspeção estrutural posterior da condição prévia, os atributos do article exibiram E. Não se alega cegamento completo; a demonstração abaixo foi obtida da condição de ciclo e de Carnot antes das resoluções."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Temperaturas das fontes bastam para o limite entre dois reservatórios. A condição de ciclo e apenas dois reservatórios foi encontrada no conteúdo antes da tentativa, não somente no comentário.",
+        "hipoteses": "Máquina térmica cíclica trocando calor apenas com os dois reservatórios constantes, sem outros aportes energéticos usados para alterar a definição de eficiência. Limite atingido por processo reversível; máquinas irreversíveis têm eficiência menor. Não se exige gás ideal.",
+        "unidades": "Temperaturas já absolutas em K. Eta=1-300/500=0,40 é fração, equivalente a 40%, não 0,40%.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-limite-carnot"],
+        "condicao_antes_tentativa": {"local": "#cobertura99-limites, no bloco Conferir primeira e segunda leis juntas, anterior à seção #treino-avalia.", "trecho": "Uma máquina térmica cíclica recebe Q_H de fonte quente, rejeita Q_L e entrega W = Q_H − Q_L. Rendimento η = W/Q_H; para apenas dois reservatórios, o máximo reversível é 1 − T_L/T_H, com temperaturas absolutas.", "alcance": "Condição científica disponível no conteúdo antes do banco. Não se apresenta esse parágrafo como alteração do artigo nesta r1: o comando extraído de AV38 foi preservado."}
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Para ciclo entre duas fontes, W=QH-QL e a desigualdade de entropia exige QL/TL-QH/TH>=0. Portanto QL/QH>=TL/TH=300/500=0,60; eta=1-QL/QH<=0,40. Na referência reversível a igualdade é atingida: limite 40%.",
+        "chave_derivada": "E",
+        "unicidade": "Só E tem 40%. A=60% é razão de rejeição reversível, C=66,7% usa fonte fria como denominador, D=25% usa soma, B=100% ignora fonte fria positiva. As apresentações percentuais não se tornam equivalentes por arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "60%.", "correta": false, "demonstracao": "300/500=0,60 é QL/QH no reversível, não W/QH.", "erro_plausivel": "Omitir o complemento 1- da expressão de eficiência e responder fração rejeitada.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "100%.", "correta": false, "demonstracao": "Exigiria QL=0 com TL=300 K, incompatível com o limite entre essas fontes.", "erro_plausivel": "Confundir máquina reversível/ideal com conversão integral de todo calor em trabalho.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "C", "texto": "66,7%.", "correta": false, "demonstracao": "(500-300)/300=0,6667 usa TL no denominador.", "erro_plausivel": "Normalizar diferença térmica pela fonte fria em lugar da quente.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "D", "texto": "25%.", "correta": false, "demonstracao": "(500-300)/(500+300)=200/800=0,25.", "erro_plausivel": "Normalizar diferença pela soma das temperaturas em vez de TH.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "E", "texto": "40%.", "correta": true, "demonstracao": "1-300/500=0,40.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Correto e condicionado ao ciclo entre fontes; não depende apenas da palavra ideal. D atual calcula 25% pelo denominador errado e todas as demais refutações conferem."},
+      "delta_conferido": {
+        "origem": "Comparação direta própria atual/anterior por parseHtml/decodeHtml.",
+        "arquivo_anterior": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+        "sha256_artigo_anterior": "4be6c519786ca604598c0799748297d8487fc6b566a57276d02998979e071ffc",
+        "sha256_artigo_atual": "bde32c401ca98314f5217325508776fef07fca3eddb42b7a689a588fe973dfd4",
+        "comando": "Texto extraído preservado: fontes 500 K e 300 K, limite superior.",
+        "alteracao_opcao": "D: 20%→25%.",
+        "alteracao_comentario": "D deixa de negar divisão arbitrária por 1000 K e passa a reproduzir 200/(500+300)=25%, explicando denominador TH.",
+        "resultado": "Novo distrator tem mecanismo algébrico concreto; condição prévia atual foi verificada separadamente e E permanece única correta."
+      },
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-38", "uso": "Comando/opções e, depois da derivação, resolução."},
+        {"tipo": "baseline_local", "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html", "ancora": "#av-e1-38", "uso": "Delta direto e hashes próprios."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-limite-carnot", "uso": "Lida nesta execução: limite reversível e uso de kelvin."},
+        {"tipo": "condicao_previa", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#cobertura99-limites", "uso": "Parágrafo lido nesta execução e posição antes do banco confirmada pelo parser; condição cíclica com dois reservatórios, não apenas resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo SHA global congelado.", "alcance_reutilizado": "Razão e porcentagem; nenhum julgamento de AV38 herdado."},
+        {"tipo": "fonte_primaria_externa_reutilizada", "titulo": "MIT Thermodynamics and Propulsion — 6.6 Entropy and Unavailable Energy", "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html", "acesso": "2026-10-28", "origem": "Consulta própria no AV37 desta execução.", "alcance_reutilizado": "Expressão do máximo trabalho de Carnot entre reservatório quente e ambiente, linhas 5–6; a aplicação a AV38 foi derivada novamente."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV39",
+      "id_artigo": "av-e1-39",
+      "sha256_artigo": "42ffe7852ec1c612a414d4403674cecde23d4f79aea495c7e0feb68d7dd7cf6b",
+      "comando": "Motor cíclico teria como único efeito retirar 1000 kJ de uma única fonte e produzir 1000 kJ de trabalho, sem outro efeito na vizinhança; avaliar viabilidade.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Primeira/segunda leis e todas as cinco alternativas julgadas antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Ciclo, fonte única e único efeito são explícitos, impedindo confusão com etapa isotérmica ou consumo de outra forma de energia.",
+        "hipoteses": "Fonte térmica ordinária de temperatura positiva finita e sistema cíclico sem alteração líquida de estado ou efeito oculto no exterior. Não é necessário saber a temperatura numérica para Kelvin–Planck.",
+        "unidades": "Calor e trabalho ambos em kJ; compatibilidade de dimensão é necessária para balanço, mas não suficiente para viabilidade.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-segunda-lei", "#base-balanco-fechado"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "No ciclo Delta U=0 e Q-W=1000-1000=0: primeira lei fecha. A única fonte perderia entropia 1000/Tfonte, o motor retorna ao estado inicial e nenhum outro efeito compensa essa queda. Logo a segunda lei é violada, exatamente o enunciado de Kelvin–Planck. Uma etapa adiabática interna não altera esse balanço do ciclo/vizinhança.",
+        "chave_derivada": "A",
+        "unicidade": "Só A distingue corretamente balanço fechado de impossibilidade por Kelvin–Planck. B/C/E afirmam justificativas inválidas e D acusa a lei errada. Sem arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "fecha o balanço da primeira lei, mas viola o enunciado de Kelvin–Planck da segunda lei.", "correta": true, "demonstracao": "Delta Uciclo=Q-W=0, mas o único efeito proibido é conversão integral de calor de uma fonte em trabalho.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "B", "texto": "é viável porque calor e trabalho têm a mesma unidade.", "correta": false, "demonstracao": "Mesma dimensão permite o balanço, sem garantir a segunda lei.", "erro_plausivel": "Tomar checagem dimensional/primeira lei como prova de possibilidade física.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "C", "texto": "é viável se a etapa de compressão for adiabática.", "correta": false, "demonstracao": "Característica de uma etapa não remove a restrição sobre o único efeito do ciclo completo.", "erro_plausivel": "Confundir propriedade local de uma etapa com critério global de eficiência/viabilidade.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "viola apenas a conservação da energia.", "correta": false, "demonstracao": "Q=W não cria déficit ou excedente de energia no ciclo; o impedimento é entrópico.", "erro_plausivel": "Classificar todo motor impossível como violação da primeira lei e ignorar a segunda.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "é uma consequência da lei zero.", "correta": false, "demonstracao": "Lei zero trata de transitividade do equilíbrio térmico, não de conversão cíclica calor/trabalho.", "erro_plausivel": "Trocar a lei de equilíbrio/temperatura pela restrição de conversão da segunda lei.", "plausibilidade": "Plausível como erro de identificação das leis."}
+      ],
+      "confronto": {"gabarito_publicado": "A", "coincide": true, "comentario": "Correto em todas as opções. Preserva ciclo e único efeito e não confunde etapa adiabática com autorização de conversão total."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-39", "uso": "Comando/opções e, após derivação, resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-segunda-lei", "uso": "Lida nesta execução: Kelvin–Planck/Clausius, ciclo e único efeito."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-balanco-fechado", "origem": "Leitura própria no AV02, mesmo SHA global congelado.", "alcance_reutilizado": "Primeira lei e Delta Uciclo=0; nenhum julgamento de AV39 herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV40",
+      "id_artigo": "av-e1-40",
+      "sha256_artigo": "b0eea6e50cfc5d5c03befe2871587f01f350784667829c280e90723526ed7ef8",
+      "comando": "Estimativa isentrópica de substância simples compressível: dh=T ds+v dp, v aproximadamente constante em 0,002 m³/kg, pressão sobe 500 kPa; achar Delta h.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Identidade, integração aproximada, unidades e cinco opções julgadas antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Isentropia remove T ds, e v constante aproximado com Delta p fornecido permite integral v dp. Não se precisa de T, massa ou pressão inicial.",
+        "hipoteses": "Relação de propriedades de equilíbrio para substância simples compressível de composição fixa. Só na isentropia e com v aproximadamente constante se usa v Delta p; não se generaliza para gás de grande variação de v nem se identifica dh automaticamente com trabalho real.",
+        "unidades": "m³/kg × kPa = kJ/kg. Pressão aumenta, então Delta p=+500 kPa e v>0 dá Delta h positiva. O incremento de pressão independe de conhecer a referência absoluta inicial.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-gibbs"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Isentrópico significa ds=0 ao longo da estimativa. Logo dh=v dp e Delta h=integral(v dp)≈v Delta p=0,002×500=+1 kJ/kg. O termo T ds nulo não elimina v dp.",
+        "chave_derivada": "B",
+        "unicidade": "B reúne valor, sinal e unidade específica corretos. D repete +1 mas em kJ totais, sem massa para conversão; não é equivalente. A/C/E têm operação, sinal ou hipótese errados. Sem equivalência por arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "250.000 kJ/kg.", "correta": false, "demonstracao": "500/0,002=250000 divide por v; a unidade dessa operação não é kJ/kg.", "erro_plausivel": "Inverter produto v dp ou isolar incorretamente a relação, copiando depois a unidade esperada.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "+1 kJ/kg.", "correta": true, "demonstracao": "0,002×500=1 kJ/kg.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "C", "texto": "−1 kJ/kg.", "correta": false, "demonstracao": "Usa Delta p=-500 apesar de pressão aumentar, com v positivo.", "erro_plausivel": "Inverter a diferença final menos inicial ou transplantar indevidamente sinal de trabalho da compressão para dh.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "+1 kJ.", "correta": false, "demonstracao": "v está por kg, então o produto gera energia por kg. Total exigiria multiplicar por massa não fornecida.", "erro_plausivel": "Confundir entalpia específica h com total H e omitir kg do denominador.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "zero.", "correta": false, "demonstracao": "ds=0 elimina T ds, mas v dp continua positivo.", "erro_plausivel": "Confundir isentrópico com isoentálpico ou omitir o termo de pressão na identidade.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "B", "coincide": true, "comentario": "Correto em ds=0, aproximação, conversão kPa·m³=kJ e unidade específica. A/C/D/E apontam exatamente divisão, sinal, total/específico e isentrópico/isoentálpico."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-40", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gibbs", "uso": "Lida nesta execução: composição fixa, identidade entre propriedades e condições para v Delta p."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo SHA global congelado.", "alcance_reutilizado": "Unidade específica, produto kPa·m³ e sinais; nenhum julgamento de AV40 herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    }
+  ],
+  "cobertura": {
+    "autoria": "Exame efetivo de /root/auditor_av; cinco derivações e 25 julgamentos próprios, para consolidação por /root/auditor_ban07_final.",
+    "ids": ["AV36", "AV37", "AV38", "AV39", "AV40"],
+    "ids_artigo": ["av-e1-36", "av-e1-37", "av-e1-38", "av-e1-39", "av-e1-40"],
+    "itens": 5,
+    "juizos_de_alternativas": 25,
+    "alternativas_por_item": {"AV36": ["A","B","C","D","E"], "AV37": ["A","B","C","D","E"], "AV38": ["A","B","C","D","E"], "AV39": ["A","B","C","D","E"], "AV40": ["A","B","C","D","E"]},
+    "derivacoes_independentes": 5,
+    "confrontos_com_comentario": 5,
+    "dados_modelos_unidades_sinais_restricoes_suficiencia": 5,
+    "unicidade_e_arredondamentos": 5,
+    "deltas_conferidos_diretamente": ["AV37", "AV38"],
+    "condicao_previa_AV38": "Ciclo com apenas dois reservatórios confirmado em #cobertura99-limites antes do banco; base de Carnot também lida.",
+    "figuras": "AV37 inspecionada visualmente e hash registrado; demais artigos sem figuras.",
+    "bases": "Leituras novas apenas de entropia, exergia, Carnot, condição prévia de ciclo, segunda lei e Gibbs; reutilização de outras bases por identidade/alcance.",
+    "limitacao_cegamento": "Todas as resoluções lidas após derivação. Em AV38, chave E do metadado apareceu durante inspeção estrutural da condição prévia; declarado no item, sem alegação de cegamento completo. Demais chaves omitidas antes da solução.",
+    "aprovacoes_locais": ["AV36", "AV37", "AV38", "AV39", "AV40"],
+    "itens_com_ajuste_obrigatorio": [],
+    "aceite_global_BAN07": false
+  },
+  "resumo": {
+    "veredito_bloco": "APROVADO_NO_ESCOPO_BAN-07",
+    "ajustes_obrigatorios": [],
+    "observacoes": "Deltas de AV37/38 correspondem a erros concretos de escala Celsius e denominador de Carnot. Plausibilidade teórica sem piloto; condição de uso de Carnot verificada antes da resolução.",
+    "decisao_de_liberacao": "Sem liberação do próximo ID ou aceite global. Parecer científico parcial para o Auditor principal atual."
+  }
+}

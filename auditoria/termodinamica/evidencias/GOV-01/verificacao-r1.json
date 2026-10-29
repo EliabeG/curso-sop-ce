@@ -1,0 +1,54 @@
+{
+  "id": "GOV-01",
+  "rodada": 1,
+  "metodo": "Verificacao estatica integral; sem ensaio de navegador",
+  "sha256": {
+    "html_antes": "a69846fbe1dd1bb8ef3ce3a685ffc2a308d6595a8f95a8637da523e77e231d1d",
+    "html_depois": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e",
+    "registro": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+    "curso_js": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+    "curso_css": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
+  },
+  "escopo": "Duas ocorrencias do lead e uma introducao substituidas; demais bytes identicos",
+  "banco": {
+    "artigos_identicos": 190,
+    "BAN01_identico": true,
+    "gabarito": "CBECCDEABEDCCEAADDAAECCCEBAECB"
+  },
+  "ids": {
+    "antes": 1204,
+    "depois": 1218,
+    "adicionados": [
+      "nivel-atual-e1",
+      "alcance-e1",
+      "resultados-aprendizagem-e1",
+      "competencia-c01",
+      "competencia-c02",
+      "competencia-c03",
+      "competencia-c04",
+      "competencia-c05",
+      "competencia-c06",
+      "competencia-c07",
+      "competencia-c08",
+      "competencia-c09",
+      "competencia-c10",
+      "percurso-atual-e1"
+    ],
+    "duplicados": 0
+  },
+  "vinculos_introduzidos": 43,
+  "vinculos_sem_destino": 0,
+  "resultados_publicados": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10"
+  ],
+  "arquivos_compartilhados_inalterados": true
+}

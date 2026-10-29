@@ -1,0 +1,22 @@
+{
+  "id": "BAN-10",
+  "rodada": 1,
+  "ok": true,
+  "metodo": "Aplicar cada substituição antes→depois exatamente uma vez à cópia anterior; comparar integralmente com o produto entregue.",
+  "checks": [
+    {
+      "arquivo": "HTML",
+      "substituicoes": 13,
+      "ocorrencia_unica": true,
+      "reconstrucao_integral": true,
+      "sha256": "3839c7ba2e473ee9e5b3cdff80ea64242471b83b961eb117cee5a6918c884ae1"
+    },
+    {
+      "arquivo": "JS",
+      "substituicoes": 4,
+      "ocorrencia_unica": true,
+      "reconstrucao_integral": true,
+      "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+    }
+  ]
+}

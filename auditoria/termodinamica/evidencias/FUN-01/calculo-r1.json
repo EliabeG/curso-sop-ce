@@ -1,0 +1,147 @@
+{
+  "versao": "1.0",
+  "exemploAgua": {
+    "v_m3kg": 0.33961452,
+    "h_kJkg": 868.98
+  },
+  "saturacao": {
+    "v_m3kg": 0.45,
+    "x": 0.5074944539995886,
+    "m_vapor_kg": 1.0149889079991772,
+    "h_previsto_kJkg": 1621.9490404800943,
+    "intervalo_previsto": [
+      1620.9490404800943,
+      1622.9490404800943
+    ],
+    "intervalo_sensor": [
+      1798,
+      1802
+    ],
+    "residuo_central_kJkg": 178.05095951990575,
+    "separacao_minima_kJkg": 175.05095951990575
+  },
+  "mistura": [
+    {
+      "id": "I",
+      "p_bolha_kPa": 90,
+      "p_orvalho_kPa": 68.18181818181817,
+      "regime": "liquido",
+      "beta_forcada": -0.3999999999999999
+    },
+    {
+      "id": "II",
+      "p_bolha_kPa": 90,
+      "p_orvalho_kPa": 68.18181818181817,
+      "regime": "coexistencia",
+      "beta_forcada": 0.38095238095238104,
+      "xA": 0.3,
+      "yA": 0.5625,
+      "beta": 0.38095238095238104,
+      "nV_mol": 3.80952380952381,
+      "nL_mol": 6.19047619047619
+    },
+    {
+      "id": "III",
+      "p_bolha_kPa": 130,
+      "p_orvalho_kPa": 107.14285714285715,
+      "regime": "vapor",
+      "beta_forcada": 1.9047619047619047
+    },
+    {
+      "id": "IV",
+      "regime": "indeterminado sem composição global",
+      "coexistencia_se_imposta": {
+        "xA": 0.3,
+        "yA": 0.5625
+      },
+      "beta_para_z_035": 0.19047619047619044,
+      "beta_para_z_050": 0.7619047619047619
+    }
+  ],
+  "supercritico": {
+    "lotes": [
+      {
+        "id": "A",
+        "classe": "nao_garantido"
+      },
+      {
+        "id": "B",
+        "classe": "nao_supercritico"
+      },
+      {
+        "id": "C",
+        "classe": "nao_supercritico"
+      },
+      {
+        "id": "D",
+        "classe": "supercritico_garantido"
+      }
+    ],
+    "erro_T_deve_ser_menor_que_K": 2.9039999999999964,
+    "erro_p_deve_ser_menor_que_MPa": 0.036000000000001364,
+    "melhorar_so_T": "nao_garantido",
+    "melhorar_so_p": "nao_garantido",
+    "melhorar_ambos": "supercritico_garantido"
+  },
+  "equilibrio": {
+    "pressao_fundo_Pa": 29620,
+    "delta_mu_intrinseco_Jmol": 0.3924,
+    "delta_muA_inicial_Jmol": 3457.695395505231,
+    "transferencia_A_mol": 0.12027904738994469,
+    "inicial": {
+      "aA": 0.32074412637318583,
+      "bA": 0.08018603159329646,
+      "aB": 0.08018603159329644,
+      "bB": 0.32074412637318583
+    },
+    "final": {
+      "aA": 0.20046507898324115,
+      "bA": 0.20046507898324115,
+      "aB": 0.08018603159329644,
+      "bB": 0.32074412637318583
+    },
+    "p_alpha_Pa": 70000,
+    "p_beta_Pa": 130000.00000000001,
+    "yA_alpha": 0.7142857142857143,
+    "yA_beta": 0.3846153846153846,
+    "curvatura_F_Jmol2": 24884.134559999995,
+    "residuos": {
+      "A_mol": 0,
+      "B_mol": 0,
+      "pA_Pa": 0,
+      "eos_alpha_J": 0,
+      "eos_beta_J": 0,
+      "potencial_total_Jmol": 0
+    }
+  },
+  "testes": [
+    "ordem de propriedades em 0.1 MPa",
+    "ordem de propriedades em 0.15 MPa",
+    "ordem de propriedades em 0.2 MPa",
+    "linha de saturação existe e T coincide",
+    "qualidade interior",
+    "reconstituição do volume específico",
+    "intervalos de entalpia separados",
+    "pressões de saturação distintas positivas",
+    "Dalton/Raoult I",
+    "rejeição de duas fases I",
+    "Dalton/Raoult II",
+    "frações admissíveis II",
+    "balanço global A II",
+    "conservação molar II",
+    "conservação componente II",
+    "Dalton/Raoult III",
+    "rejeição de duas fases III",
+    "Dalton/Raoult IV",
+    "uma melhoria isolada não basta",
+    "melhoria conjunta garante ambos os limites",
+    "equilíbrio A_mol",
+    "equilíbrio B_mol",
+    "equilíbrio pA_Pa",
+    "equilíbrio eos_alpha_J",
+    "equilíbrio eos_beta_J",
+    "equilíbrio potencial_total_Jmol",
+    "estabilidade na transferência permitida",
+    "transferência α para β reduz F inicialmente"
+  ]
+}

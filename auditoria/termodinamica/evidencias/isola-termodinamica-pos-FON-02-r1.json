@@ -1,0 +1,33 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "responsavel": "/root",
+  "metodo": "Comparação de leitura dos 106 arquivos do PUBLICACAO.json histórico. Esse manifesto original não foi modificado e não indica nova publicação. Diferenças anteriores de curso.js/registro.js já pertencem a aceites prévios; nesta rodada os hashes foram comparados também com a base FON-02.",
+  "total": 106,
+  "identicos": 102,
+  "diferentes": [
+    {
+      "arquivo": "assets/curso.js",
+      "igual": false,
+      "sha256_atual": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "igual": false,
+      "sha256_atual": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+    },
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "igual": false,
+      "sha256_atual": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0"
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "igual": false,
+      "sha256_atual": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7"
+    }
+  ],
+  "inesperados": [],
+  "limites": "Comparação cobre arquivos históricos listados. Novos arquivos da auditoria são tratados pelo manifesto da entrega; não é inventário de arquivos de toda a máquina."
+}

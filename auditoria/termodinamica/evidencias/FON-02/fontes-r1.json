@@ -1,0 +1,289 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "fontes": [
+    {
+      "id": "nist_temperatura",
+      "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+      "localizador": "Temperature Conversion (Exact), tabela Celsius→Fahrenheit",
+      "metodo": "Consulta textual direta pelo Corretor via web em 28/10/2026.",
+      "uso": "CR06: 32 e 1,8 são conversão convencional do exemplo autoral."
+    },
+    {
+      "id": "bipm_celsius",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0",
+      "localizador": "9ª edição, V3.01 agosto/2024, p. impressa133 / física19; identidade informada pelo coordenador após abertura efetiva.",
+      "metodo": "Leitura textual atribuída ao coordenador, apoio-coordenador-unidades-r1.json e esclarecimento de edição recebido; não se confunde o parâmetro version=4.0 com a capa retornada.",
+      "uso": "CR24/45: deslocamento273,15; CR79: conversão nominal do −196°C fornecido."
+    },
+    {
+      "id": "nist_caloria",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes",
+      "localizador": "Nota9",
+      "metodo": "Leitura atribuída ao coordenador, evidência apoio-coordenador-unidades-r1.json.",
+      "uso": "CR26: escolha editorial da caloria termoquímica;1cal=4,184J exato, distinto da IT4,1868J."
+    },
+    {
+      "id": "mit_primeira_lei",
+      "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+      "localizador": "§2.1, eqs2.1–2.2 e condições da redução",
+      "metodo": "Consulta textual direta pelo Corretor viaweb em28/10/2026.",
+      "uso": "Balanços, sinais e condições de desprezo de energias macroscópicas."
+    },
+    {
+      "id": "mit_energia_ideal",
+      "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node17.html",
+      "localizador": "§§2.4.1–2.4.2",
+      "metodo": "Consulta textual direta pelo Corretor e apoio-coordenador-adiabatica-r1.json.",
+      "uso": "CR36: u(T), modelo de calores constantes e integração adiabática com k constante."
+    },
+    {
+      "id": "mit_cv",
+      "url": "https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html",
+      "localizador": "§§2.5.1–2.5.2",
+      "metodo": "Consulta textual direta pelo Corretor viaweb em28/10/2026.",
+      "uso": "CR50/65: uma entrada/saída, regime permanente, pv em h e separação do trabalho de eixo."
+    },
+    {
+      "id": "mit_brayton",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+      "localizador": "§§3.7–3.7.1, eq3.10",
+      "metodo": "Consulta textual direta pelo Corretor viaweb em28/10/2026.",
+      "uso": "CR57: condições e domínio da fórmula do ciclo ideal."
+    },
+    {
+      "id": "mit_gouy_stodola",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+      "localizador": "§6.6 Lost Work versus Reversible Work",
+      "metodo": "Consulta textual direta pelo Corretor viaweb em28/10/2026.",
+      "uso": "CR37: T0constante e referência reversível compatível com mesmas condições/restrições."
+    },
+    {
+      "id": "open_carnot",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+      "localizador": "§4.5, Carnot principle",
+      "metodo": "Consulta textual direta pelo Corretor viaweb em28/10/2026.",
+      "uso": "CR44/45: ciclo entre dois reservatórios e limite de eficiência."
+    },
+    {
+      "id": "ashrae_umidade",
+      "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+      "localizador": "Capítulo1, §§5–6, relações de gás perfeito e fator de intensificação",
+      "metodo": "Reuso da consulta primária FOR-01 por identidade; aula #base-umidade integralmente relida pelo apoio. Nova abertura pelo Corretor leu introdução; não se atribui nova inspeção integral.",
+      "uso": "CR16/17: aproximação de mistura ideal e fator de intensificação desprezado."
+    },
+    {
+      "id": "nist_sigma",
+      "url": "https://physics.nist.gov/cuu/pdf/all.pdf#page=6",
+      "localizador": "2022CODATA, linha Stefan–Boltzmann constant",
+      "metodo": "Leitura textual atribuída ao coordenador, apoio-coordenador-sigma-r1.json.",
+      "uso": "CR79: decimal aproximado5,670374419×10⁻⁸Wm⁻²K⁻⁴, sem alterar dados autorais/resultados publicados."
+    }
+  ],
+  "fontes_de_apoio_preservadas": {
+    "aula_instrumentos": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-instrumentos",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Escalas lineares, relação afim e dois pontos de calibração; não contém fonte primária específica Celsius–Fahrenheit."
+    },
+    "aula_gas_energia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-gas-energia",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "u/h de gás ideal e condição de calores específicos constantes."
+    },
+    "aula_molecular": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-molecular",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Modelo cinético elementar, volume molecular desprezível e colisões elásticas."
+    },
+    "aula_umidade": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-umidade",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Mistura ideal, fator de intensificação desprezado, φ=pv/psat e comparação no mesmo V,T."
+    },
+    "aula_gas_estado": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-gas-modelo",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Quantidade/composição fixas, equação de estado e limite formal a T→0."
+    },
+    "aula_balanco": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-balanco-fechado",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Sinais e balanço reduzido; condições de massa fixa, energias macroscópicas desprezíveis e trabalho de fronteira explicitadas na teoria."
+    },
+    "aula_primeira_lei": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-primeira-lei",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Balanço geral de sistema fechado e redução quando ΔEc/ΔEp são desprezíveis."
+    },
+    "aula_trabalho": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-trabalho-fronteira",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Trabalho com pressão de fronteira e condição quase estática."
+    },
+    "aula_termoquimica": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-termoquimica",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Pressão constante, apenas trabalho de expansão e estados correspondentes para sinais de ΔH."
+    },
+    "aula_exergia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-exergia",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Ambiente de referência, T0 constante, Sger e comparação sob mesmas restrições."
+    },
+    "aula_gibbs": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-gibbs",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Substância simples compressível de composição fixa entre estados de equilíbrio."
+    },
+    "aula_eficiencia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-eficiencia-cop",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "W líquido e QH total recebido na mesma base por ciclo."
+    },
+    "aula_radiacao": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-radiacao-vacuo",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Superfície pequena, grande entorno, temperaturas uniformes, visão do entorno e σ≈5,67×10⁻⁸ W/(m²·K⁴)."
+    },
+    "devoe_7_1": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://faculty.washington.edu/gdrobny/v5-screen.pdf#page=163",
+      "localizacao": "DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165",
+      "uso": "Fundamentação já publicada junto da análise CR04. Nesta rodada foi lido o artigo e sua citação; não houve nova abertura externa."
+    },
+    "ashrae_psicrometria": {
+      "tipo": "fonte_primaria_ja_vinculada",
+      "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+      "localizacao": "Capítulo 1, §§5–6, conforme link e descrição em #base-umidade",
+      "uso": "Referência existente para limites da aproximação psicrométrica. Texto da aula foi lido; fonte externa não reaberta."
+    },
+    "nist_cal": {
+      "tipo": "leitura_primaria_atribuida_ao_coordenador",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes",
+      "localizacao": "Nota 9",
+      "evidencia": "auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-unidades-r1.json",
+      "uso": "Caloria termoquímica=4,184 J exatamente; caloria International Table=4,1868 J. Evidência do coordenador lida nesta rodada; não é nova consulta própria."
+    },
+    "apoio_unidades": {
+      "tipo": "evidencia_local_lida",
+      "arquivo": "auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-unidades-r1.json",
+      "sha256": "28cfc65a1a790ea5250311e1c7a1e77959cf979e1783bff8919bdae46c29d9e0"
+    },
+    "bipm_celsius": {
+      "tipo": "leitura_primaria_atribuida_ao_coordenador",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0",
+      "localizacao": "p. impressa 133 / PDF p. 19, conforme apoio do coordenador",
+      "uso": "Deslocamento 273,15 K da conversão Celsius–kelvin; sem nova consulta externa própria."
+    },
+    "openstax_kelvin_planck": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+      "localizacao": "§4.4, Kelvin–Planck",
+      "uso": "Fundamento já citado na análise CR39; não reaberto nesta rodada."
+    },
+    "openstax_radiacao": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+      "localizacao": "§1.6, radiação líquida",
+      "uso": "Fundamento já citado na análise CR68; não reaberto nesta rodada."
+    },
+    "nasa_thermal": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+      "localizacao": "Thermal Control (07/05/2026), §§7.2.1 e 7.2.3, conforme citação local",
+      "uso": "Fundamento já citado na análise CR79 para mecanismos; não é origem dos valores didáticos de A,Tcorpo ou G e não foi reaberto nesta rodada."
+    },
+    "analise_autoral_ban10": {
+      "tipo": "autoria_didatica",
+      "arquivo": "modulos/e1-termodinamica.html#cr-e1-79",
+      "uso": "Dados escolhidos pelo curso, visivelmente rotulados como contramodelo. Não são medidos nem derivados da prova."
+    },
+    "fon09_dados": {
+      "tipo": "conjunto_aprovado_preservado",
+      "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "parecer": "auditoria/termodinamica/pareceres/FON-09-r2.md",
+      "uso": "Hash coincide com o parecer r2 lido. Reuso delimitado aos dados e sua proveniência; não repetição da auditoria científica."
+    },
+    "nist_densidade": {
+      "id": "nist-webbook-densidade",
+      "url": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+      "captura": "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-densidade-25c-101325.html",
+      "sha256_captura": "7bc6b02309d877723dd721a9eab8f9f2ee817d8fa2008c7b4c7de12373f5a01e",
+      "modelo": "IAPWS-95 citado pelo WebBook",
+      "condicao": "Líquido a25°C e0,101325MPa; Type=IsoTherm.",
+      "url_captura_html": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Load&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa%2As&STUnit=N%2Fm",
+      "data_consulta": "2026-10-27"
+    },
+    "nist_saturacao": {
+      "id": "nist-webbook-saturacao",
+      "url": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+      "captura": "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-saturacao-101325.html",
+      "sha256_captura": "ccbfe0998477db30e1acd2c81acb035df65e5aea580dd8147accb5b6f4d88b34",
+      "modelo": "IAPWS-95, Wagner e Pruss(2002), release2016 citada pelo WebBook",
+      "condicao": "Saturação à pressão0,101325MPa; duas fases listadas; Type=SatT na API.",
+      "url_captura_html": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Load&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa%2As&STUnit=N%2Fm",
+      "data_consulta": "2026-10-27"
+    },
+    "nistir5078": {
+      "id": "nistir5078-tabela2",
+      "url": "https://www.nist.gov/document/nistir5078-tab2pdf",
+      "titulo": "NISTIR5078 (1998), Table2, Saturation(Pressure)",
+      "paginas_impressas": [
+        11,
+        12
+      ],
+      "pagina_pdf_dados": 2,
+      "unidades_originais": {
+        "p": "MPa",
+        "T": "°C",
+        "v": "cm³/g"
+      }
+    }
+  },
+  "limites": [
+    "Fontes sustentam suplementos identificados; não são conferência oficial nem validação global de gabaritos.",
+    "Reuso de fontes e leituras atribuído explicitamente; não houve nova renderização de todos os PDFs."
+  ]
+}

@@ -1,0 +1,3302 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autor": "/root, agente automatizado coordenador; apoio ao Corretor, sem parecer de aprovação",
+  "metodo": "Releitura integral atual dos 30 artigos, comandos, alternativas, comentários e bases de modelo pertinentes. Demonstração própria da chave e refutação individual das opções. Anotações anteriores de preparação e propostas foram consultadas; não se alega cegamento nem independência perante o Auditor.",
+  "html_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+  "produto_modificado": false,
+  "cobertura": {
+    "itens": 30,
+    "alternativas": 150,
+    "demonstracoes_numericas": 18
+  },
+  "registros": [
+    {
+      "id": "q-e1-01",
+      "banco": "inicial",
+      "sha256_artigo": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Classificar fronteira vedada com pistão e calor.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Um recipiente vedado tem um pistão móvel e pode receber calor. Qual classificação corresponde à sua fronteira?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Um recipiente vedado tem um pistão móvel e pode receber calor. Qual classificação corresponde à sua fronteira?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Fronteira acompanha o recipiente e pistão; vedação e possibilidade de calor são suficientes."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Fronteira acompanha o recipiente e pistão; vedação e possibilidade de calor são suficientes."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Fronteira acompanha o recipiente e pistão; vedação e possibilidade de calor são suficientes.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Massa fixa e energia permitida caracterizam sistema fechado."
+        ],
+        "conclusao": "Massa fixa e energia permitida caracterizam sistema fechado.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Sistema aberto somente porque o pistão se move.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Movimento não transporta massa; confunde fronteira móvel com sistema aberto.",
+          "erro_representado_e_plausibilidade": "Movimento não transporta massa; confunde fronteira móvel com sistema aberto."
+        },
+        {
+          "opcao": "B",
+          "texto": "Volume de controle com entrada de massa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Vedação exclui entrada de massa; confunde recipiente com volume de controle de fluxo.",
+          "erro_representado_e_plausibilidade": "Vedação exclui entrada de massa; confunde recipiente com volume de controle de fluxo."
+        },
+        {
+          "opcao": "C",
+          "texto": "Sistema fechado, com possível troca de energia.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Fechado admite calor e trabalho mantendo a massa.",
+          "erro_representado_e_plausibilidade": "Fechado admite calor e trabalho mantendo a massa."
+        },
+        {
+          "opcao": "D",
+          "texto": "Sistema isolado.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Calor permitido exclui isolamento; confunde vedação com isolamento energético.",
+          "erro_representado_e_plausibilidade": "Calor permitido exclui isolamento; confunde vedação com isolamento energético."
+        },
+        {
+          "opcao": "E",
+          "texto": "Sistema adiabático necessariamente.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Calor permitido impede adiabaticidade necessária; confunde vedação com isolamento térmico.",
+          "erro_representado_e_plausibilidade": "Calor permitido impede adiabaticidade necessária; confunde vedação com isolamento térmico."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-01",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-fronteira",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-02",
+      "banco": "inicial",
+      "sha256_artigo": "ab8e322acf56c6c18183c82d5b8b0b2b8e895c134e6ea7581a0d0b8ccb4d5d4f",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "B",
+        "objetivo": "Obter pressão absoluta para a equação de gás.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Um manômetro indica 200 kPa e a pressão atmosférica local é 100 kPa. Qual pressão usar em pv = RT ?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Um manômetro indica 200 kPa e a pressão atmosférica local é 100 kPa. Qual pressão usar em pv = RT ?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "A base define pressão absoluta e manométrica, mas qualquer manômetro não mede necessariamente pressão relativa. Explicitar indicação manométrica positiva no comando."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [
+          "Referência da leitura não está inequívoca no comando."
+        ],
+        "conclusao": "A base define pressão absoluta e manométrica, mas qualquer manômetro não mede necessariamente pressão relativa. Explicitar indicação manométrica positiva no comando."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "A base define pressão absoluta e manométrica, mas qualquer manômetro não mede necessariamente pressão relativa. Explicitar indicação manométrica positiva no comando.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "Se a indicação é manométrica positiva: pabs=200+100=300 kPa."
+        ],
+        "conclusao": "Se a indicação é manométrica positiva: pabs=200+100=300 kPa.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-02",
+            "expressao": "200+100",
+            "obtido": 300,
+            "esperado": 300,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "100 kPa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "100 é só pressão atmosférica; ignora sobrepressão.",
+          "erro_representado_e_plausibilidade": "100 é só pressão atmosférica; ignora sobrepressão."
+        },
+        {
+          "opcao": "B",
+          "texto": "300 kPa.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "300 resulta da soma coerente das referências.",
+          "erro_representado_e_plausibilidade": "300 resulta da soma coerente das referências."
+        },
+        {
+          "opcao": "C",
+          "texto": "200 kPa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "200 usa diretamente pressão relativa.",
+          "erro_representado_e_plausibilidade": "200 usa diretamente pressão relativa."
+        },
+        {
+          "opcao": "D",
+          "texto": "2 kPa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "200/100=2 é razão adimensional indevidamente apresentada em kPa.",
+          "erro_representado_e_plausibilidade": "200/100=2 é razão adimensional indevidamente apresentada em kPa."
+        },
+        {
+          "opcao": "E",
+          "texto": "−100 kPa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "100−200=−100 subtrai as referências na ordem errada.",
+          "erro_representado_e_plausibilidade": "100−200=−100 subtrai as referências na ordem errada."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única no modelo a esclarecer",
+        "justificativa": "As cinco opções foram comparadas; somente B atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "Referência da leitura não está inequívoca no comando.",
+          "Comentário D não identifica a divisão indevida."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "esclarecer",
+        "achados": [
+          "Referência da leitura não está inequívoca no comando.",
+          "Comentário D não identifica a divisão indevida."
+        ],
+        "proposta_minima": "Usar proposta salva para comando manométrico e explicitar erro200/100 no comentário D.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-02",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-absolutas",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-gas-modelo",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-03",
+      "banco": "inicial",
+      "sha256_artigo": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "E",
+        "objetivo": "Selecionar par apenas intensivo.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Qual par contém somente propriedades intensivas?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Qual par contém somente propriedades intensivas?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Definição de propriedade e qualificadores totais suficientes."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Definição de propriedade e qualificadores totais suficientes."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Definição de propriedade e qualificadores totais suficientes.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Temperatura e pressão independem da quantidade; totais e massa são extensivos."
+        ],
+        "conclusao": "Temperatura e pressão independem da quantidade; totais e massa são extensivos.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Entalpia total e volume total.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Entalpia total e volume total são extensivos.",
+          "erro_representado_e_plausibilidade": "Entalpia total e volume total são extensivos."
+        },
+        {
+          "opcao": "B",
+          "texto": "Volume total e pressão.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Volume total é extensivo, embora pressão seja intensiva.",
+          "erro_representado_e_plausibilidade": "Volume total é extensivo, embora pressão seja intensiva."
+        },
+        {
+          "opcao": "C",
+          "texto": "Massa e temperatura.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Massa é extensiva, embora temperatura seja intensiva.",
+          "erro_representado_e_plausibilidade": "Massa é extensiva, embora temperatura seja intensiva."
+        },
+        {
+          "opcao": "D",
+          "texto": "Energia total e massa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Energia total e massa são extensivas.",
+          "erro_representado_e_plausibilidade": "Energia total e massa são extensivas."
+        },
+        {
+          "opcao": "E",
+          "texto": "Temperatura e pressão.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Temperatura e pressão são ambas intensivas.",
+          "erro_representado_e_plausibilidade": "Temperatura e pressão são ambas intensivas."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente E atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-03",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-propriedades",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-medidas",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-04",
+      "banco": "inicial",
+      "sha256_artigo": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Determinar fração mássica de vapor.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Para uma mistura saturada, h_f = 500 kJ/kg , h_g = 2.500 kJ/kg e h = 1.000 kJ/kg . Qual é o título?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Para uma mistura saturada, h_f = 500 kJ/kg , h_g = 2.500 kJ/kg e h = 1.000 kJ/kg . Qual é o título?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Mistura saturada e três propriedades didáticas fornecidas na mesma base; não é necessário presumir substância real ou buscar tabela externa."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Mistura saturada e três propriedades didáticas fornecidas na mesma base; não é necessário presumir substância real ou buscar tabela externa."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Mistura saturada e três propriedades didáticas fornecidas na mesma base; não é necessário presumir substância real ou buscar tabela externa.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "x=(1000−500)/(2500−500)=0,25, dentro de[0,1]."
+        ],
+        "conclusao": "x=(1000−500)/(2500−500)=0,25, dentro de[0,1].",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-04",
+            "expressao": "(1000-500)/(2500-500)",
+            "obtido": 0.25,
+            "esperado": 0.25,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "0,75.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,75 é1−x, fração líquida.",
+          "erro_representado_e_plausibilidade": "0,75 é1−x, fração líquida."
+        },
+        {
+          "opcao": "B",
+          "texto": "2,00.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "2,00=h/hf usa razão de entalpias de estado como título e viola0≤x≤1; não é fração mássica da mistura.",
+          "erro_representado_e_plausibilidade": "2,00=h/hf usa razão de entalpias de estado como título e viola0≤x≤1; não é fração mássica da mistura."
+        },
+        {
+          "opcao": "C",
+          "texto": "0,25.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "0,25 atende relação de mistura.",
+          "erro_representado_e_plausibilidade": "0,25 atende relação de mistura."
+        },
+        {
+          "opcao": "D",
+          "texto": "0,50.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,50=h/(hg−hf), omite hf no numerador.",
+          "erro_representado_e_plausibilidade": "0,50=h/(hg−hf), omite hf no numerador."
+        },
+        {
+          "opcao": "E",
+          "texto": "0,20.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,20=(h−hf)/hg, confunde hg e hfg.",
+          "erro_representado_e_plausibilidade": "0,20=(h−hf)/hg, confunde hg e hfg."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-04",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#substancias",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-valvula-fase",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-05",
+      "banco": "inicial",
+      "sha256_artigo": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Identificar afirmação INCORRETA sobre substância pura.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Sobre estados de uma substância pura, assinale a alternativa INCORRETA."
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Sobre estados de uma substância pura, assinale a alternativa INCORRETA."
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Contexto de saturação subcrítica na base limita o domínio; não confundir com equilíbrio supercrítico."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Contexto de saturação subcrítica na base limita o domínio; não confundir com equilíbrio supercrítico."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Contexto de saturação subcrítica na base limita o domínio; não confundir com equilíbrio supercrítico.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Título se aplica à coexistência líquido-vapor saturada, não a todo superaquecido."
+        ],
+        "conclusao": "Título se aplica à coexistência líquido-vapor saturada, não a todo superaquecido.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "A temperatura de saturação depende da pressão.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Tsat depende de psat no equilíbrio de fase; afirmação correta.",
+          "erro_representado_e_plausibilidade": "Tsat depende de psat no equilíbrio de fase; afirmação correta."
+        },
+        {
+          "opcao": "B",
+          "texto": "A mistura saturada pode conter líquido e vapor em equilíbrio.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Mistura saturada admite líquido e vapor em equilíbrio; correta.",
+          "erro_representado_e_plausibilidade": "Mistura saturada admite líquido e vapor em equilíbrio; correta."
+        },
+        {
+          "opcao": "C",
+          "texto": "O título é definido também para qualquer vapor superaquecido.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Extensão de título a qualquer vapor superaquecido é falsa, como pede INCORRETA.",
+          "erro_representado_e_plausibilidade": "Extensão de título a qualquer vapor superaquecido é falsa, como pede INCORRETA."
+        },
+        {
+          "opcao": "D",
+          "texto": "Vapor saturado corresponde ao limite de início da condensação.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Vapor saturado está no limite x=1 de início de condensação sob remoção de calor a pressão pertinente.",
+          "erro_representado_e_plausibilidade": "Vapor saturado está no limite x=1 de início de condensação sob remoção de calor a pressão pertinente."
+        },
+        {
+          "opcao": "E",
+          "texto": "Líquido saturado corresponde ao limite de início da vaporização.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Líquido saturado é limite x=0 de início de vaporização sob adição pertinente.",
+          "erro_representado_e_plausibilidade": "Líquido saturado é limite x=0 de início de vaporização sob adição pertinente."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-05",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#substancias",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-valvula-fase",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-06",
+      "banco": "inicial",
+      "sha256_artigo": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "D",
+        "objetivo": "Calcular pressão de ar ideal.",
+        "uso_atual": "pontuável",
+        "comando_lido": "1 kg de ar ideal ocupa 0,861 m³ a 300 K. Use R = 0,287 kJ/(kg·K) . Qual é a pressão absoluta?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "1 kg de ar ideal ocupa 0,861 m³ a 300 K. Use R = 0,287 kJ/(kg·K) . Qual é a pressão absoluta?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Gás ideal, massa, volume, T absoluta e R explícitos determinam p."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Gás ideal, massa, volume, T absoluta e R explícitos determinam p."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Gás ideal, massa, volume, T absoluta e R explícitos determinam p.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "p=mRT/V=1×0,287×300/0,861=100 kPa; kJ/m³=kPa."
+        ],
+        "conclusao": "p=mRT/V=1×0,287×300/0,861=100 kPa; kJ/m³=kPa.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-06",
+            "expressao": "1*.287*300/.861",
+            "obtido": 100,
+            "esperado": 100,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "0,287 kPa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,287 copiaR atribuindo unidade de pressão.",
+          "erro_representado_e_plausibilidade": "0,287 copiaR atribuindo unidade de pressão."
+        },
+        {
+          "opcao": "B",
+          "texto": "300 kPa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "300 copia temperatura sem balanço dimensional.",
+          "erro_representado_e_plausibilidade": "300 copia temperatura sem balanço dimensional."
+        },
+        {
+          "opcao": "C",
+          "texto": "1 kPa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "1 pode resultar de tratar0,861m³ como86,1 (escala100 indevida); erro de fator100.",
+          "erro_representado_e_plausibilidade": "1 pode resultar de tratar0,861m³ como86,1 (escala100 indevida); erro de fator100."
+        },
+        {
+          "opcao": "D",
+          "texto": "100 kPa.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "100 é pressão correta.",
+          "erro_representado_e_plausibilidade": "100 é pressão correta."
+        },
+        {
+          "opcao": "E",
+          "texto": "86,1 kPa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "86,1 é mRT em kJ; omite divisão pelo volume.",
+          "erro_representado_e_plausibilidade": "86,1 é mRT em kJ; omite divisão pelo volume."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente D atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-06",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-gas-modelo",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-leitura-matematica",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-07",
+      "banco": "inicial",
+      "sha256_artigo": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "E",
+        "objetivo": "Obter variação de energia interna.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Um sistema fechado recebe 500 kJ de calor e realiza 200 kJ de trabalho. Despreze ΔEC e ΔEP . Quanto vale ΔU ?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Um sistema fechado recebe 500 kJ de calor e realiza 200 kJ de trabalho. Despreze ΔEC e ΔEP . Quanto vale ΔU ?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Sistema fechado e variações macroscópicas desprezíveis dados; direções definem sinais."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Sistema fechado e variações macroscópicas desprezíveis dados; direções definem sinais."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Sistema fechado e variações macroscópicas desprezíveis dados; direções definem sinais.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "ΔU=Q−W=500−200=300kJ porΔEc=ΔEp=0."
+        ],
+        "conclusao": "ΔU=Q−W=500−200=300kJ porΔEc=ΔEp=0.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-07",
+            "expressao": "500-200",
+            "obtido": 300,
+            "esperado": 300,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "−300 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "−300 troca o sinal da variação líquida.",
+          "erro_representado_e_plausibilidade": "−300 troca o sinal da variação líquida."
+        },
+        {
+          "opcao": "B",
+          "texto": "700 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "700 soma trabalho produzido como se entrasse.",
+          "erro_representado_e_plausibilidade": "700 soma trabalho produzido como se entrasse."
+        },
+        {
+          "opcao": "C",
+          "texto": "500 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "500 ignora saída como trabalho.",
+          "erro_representado_e_plausibilidade": "500 ignora saída como trabalho."
+        },
+        {
+          "opcao": "D",
+          "texto": "200 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "200 confunde energia de trabalho com variação interna.",
+          "erro_representado_e_plausibilidade": "200 confunde energia de trabalho com variação interna."
+        },
+        {
+          "opcao": "E",
+          "texto": "300 kJ.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "300 respeita a primeira lei.",
+          "erro_representado_e_plausibilidade": "300 respeita a primeira lei."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente E atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-07",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-primeira-lei",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-balanco-fechado",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-08",
+      "banco": "inicial",
+      "sha256_artigo": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "A",
+        "objetivo": "Calcular trabalho de fronteira na expansão.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Um gás realiza expansão quase estática a pressão constante de 200 kPa de 0,1 para 0,3 m³. Qual trabalho de fronteira ele produz?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Um gás realiza expansão quase estática a pressão constante de 200 kPa de 0,1 para 0,3 m³. Qual trabalho de fronteira ele produz?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Expansão quase estática, p constante e volumes suficientes para trabalho de fronteira conjugado ao volume; base estabelece esse modelo."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Expansão quase estática, p constante e volumes suficientes para trabalho de fronteira conjugado ao volume; base estabelece esse modelo."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Expansão quase estática, p constante e volumes suficientes para trabalho de fronteira conjugado ao volume; base estabelece esse modelo.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Wfr=∫p dV=200×(0,3−0,1)=40kJ, positivo produzido."
+        ],
+        "conclusao": "Wfr=∫p dV=200×(0,3−0,1)=40kJ, positivo produzido.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-08",
+            "expressao": "200*(.3-.1)",
+            "obtido": 40,
+            "esperado": 40,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "40 kJ.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "40 área correta sob p constante.",
+          "erro_representado_e_plausibilidade": "40 área correta sob p constante."
+        },
+        {
+          "opcao": "B",
+          "texto": "60 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "60 usa pVfinal sem subtrair pVinicial.",
+          "erro_representado_e_plausibilidade": "60 usa pVfinal sem subtrair pVinicial."
+        },
+        {
+          "opcao": "C",
+          "texto": "−40 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "−40 inverte sinal de expansão.",
+          "erro_representado_e_plausibilidade": "−40 inverte sinal de expansão."
+        },
+        {
+          "opcao": "D",
+          "texto": "0 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0 confunde calor ausente do comando com trabalho nulo ou volume constante.",
+          "erro_representado_e_plausibilidade": "0 confunde calor ausente do comando com trabalho nulo ou volume constante."
+        },
+        {
+          "opcao": "E",
+          "texto": "20 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "20 usa pVinicial, não a variação.",
+          "erro_representado_e_plausibilidade": "20 usa pVinicial, não a variação."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente A atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-08",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-trabalho-fronteira",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-leitura-matematica",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-09",
+      "banco": "inicial",
+      "sha256_artigo": "0599ef026688971f3ddf099fd55133e22b51f6eaf2ac070acacdcf32f11e8732",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "B",
+        "objetivo": "Determinar trabalho líquido do ciclo representado.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Na figura, o ciclo é A → B → C → D → A. Com pressão em kPa e volume em m³, qual é o trabalho líquido? Ciclo horário no plano pressão-volume: A em 1 metro cúbico e 200 quilopascals, B em 3 e 200, C em 3 e 100, D em 1 e 100 p V A B C D 200 100 1 3 Pressão em kPa e volume em m³; desenho esquemático, sem escala. A → B → C → D → A."
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Na figura, o ciclo é A → B → C → D → A. Com pressão em kPa e volume em m³, qual é o trabalho líquido? Ciclo horário no plano pressão-volume: A em 1 metro cúbico e 200 quilopascals, B em 3 e 200, C em 3 e 100, D em 1 e 100 p V A B C D 200 100 1 3 Pressão em kPa e volume em m³; desenho esquemático, sem escala. A → B → C → D → A."
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "A figura fornece coordenadas e orientação, mas comando não explicita pressão conjugada de fronteira nem ausência de outro trabalho."
+        ],
+        "somente_na_resolucao": [
+          "Explicitar pressão conjugada de fronteira e exclusão de outros trabalhos antes da tentativa."
+        ],
+        "faltantes_relevantes": [
+          "Modelo para converter a área em trabalho líquido deve constar antes da resposta."
+        ],
+        "conclusao": "A figura fornece coordenadas e orientação, mas comando não explicita pressão conjugada de fronteira nem ausência de outro trabalho."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "A figura fornece coordenadas e orientação, mas comando não explicita pressão conjugada de fronteira nem ausência de outro trabalho.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "WAB=200×2=400; WCD=100×(−2)=−200; demais0; Wliq=200kJ produzido."
+        ],
+        "conclusao": "WAB=200×2=400; WCD=100×(−2)=−200; demais0; Wliq=200kJ produzido.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-09",
+            "expressao": "200*(3-1)+100*(1-3)",
+            "obtido": 200,
+            "esperado": 200,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "600 kJ produzidos.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "600 usa200×3, área de origem até canto e não área do ciclo.",
+          "erro_representado_e_plausibilidade": "600 usa200×3, área de origem até canto e não área do ciclo."
+        },
+        {
+          "opcao": "B",
+          "texto": "200 kJ produzidos.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "200 correto para pressão de fronteira e ausência de outro trabalho.",
+          "erro_representado_e_plausibilidade": "200 correto para pressão de fronteira e ausência de outro trabalho."
+        },
+        {
+          "opcao": "C",
+          "texto": "100 kJ produzidos.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "100 usa apenas diferença de pressão, com unidade inadequada antes de rotular kJ.",
+          "erro_representado_e_plausibilidade": "100 usa apenas diferença de pressão, com unidade inadequada antes de rotular kJ."
+        },
+        {
+          "opcao": "D",
+          "texto": "0 kJ, pois retorna ao estado inicial.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0 confunde função de estado U com integral de processo.",
+          "erro_representado_e_plausibilidade": "0 confunde função de estado U com integral de processo."
+        },
+        {
+          "opcao": "E",
+          "texto": "200 kJ consumidos.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "200consumidos inverte orientação horária.",
+          "erro_representado_e_plausibilidade": "200consumidos inverte orientação horária."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única no modelo a esclarecer",
+        "justificativa": "As cinco opções foram comparadas; somente B atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "Modelo para converter a área em trabalho líquido deve constar antes da resposta."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "esclarecer",
+        "achados": [
+          "Modelo para converter a área em trabalho líquido deve constar antes da resposta."
+        ],
+        "proposta_minima": "Adotar proposta salva para sistema fechado, equilíbrio mecânico/sem atrito, pressão de fronteira e sem outros trabalhos.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-09",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-trabalho-fronteira",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-balanco-fechado",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-10",
+      "banco": "inicial",
+      "sha256_artigo": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "E",
+        "objetivo": "Selecionar relação de válvula usual.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Uma válvula de estrangulamento opera em regime permanente, adiabaticamente, sem trabalho e com pequenas mudanças de velocidade e altura. Qual relação é adequada?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Uma válvula de estrangulamento opera em regime permanente, adiabaticamente, sem trabalho e com pequenas mudanças de velocidade e altura. Qual relação é adequada?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Todas condições da redução do balanço são explícitas."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Todas condições da redução do balanço são explícitas."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Todas condições da redução do balanço são explícitas.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Energia estacionária: h1≈h2 após desprezar calor,trabalho,Δec,Δep."
+        ],
+        "conclusao": "Energia estacionária: h1≈h2 após desprezar calor,trabalho,Δec,Δep.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "s₁ = s₂ necessariamente.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "s constante não é necessária: estrangulamento pode gerar entropia.",
+          "erro_representado_e_plausibilidade": "s constante não é necessária: estrangulamento pode gerar entropia."
+        },
+        {
+          "opcao": "B",
+          "texto": "u₁ = u₂ em qualquer fluido.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "u constante não é universal pois h=u+pv é conservada aproximadamente.",
+          "erro_representado_e_plausibilidade": "u constante não é universal pois h=u+pv é conservada aproximadamente."
+        },
+        {
+          "opcao": "C",
+          "texto": "p₁ = p₂ necessariamente.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "p constante contraria queda por estrangulamento.",
+          "erro_representado_e_plausibilidade": "p constante contraria queda por estrangulamento."
+        },
+        {
+          "opcao": "D",
+          "texto": "T₁ = T₂ em qualquer fluido.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "T constante só em casos/modelos particulares, não todo fluido.",
+          "erro_representado_e_plausibilidade": "T constante só em casos/modelos particulares, não todo fluido."
+        },
+        {
+          "opcao": "E",
+          "texto": "h₁ ≈ h₂ .",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "h1≈h2 correta no balanço fornecido.",
+          "erro_representado_e_plausibilidade": "h1≈h2 correta no balanço fornecido."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente E atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-10",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-valvula-fase",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-11",
+      "banco": "inicial",
+      "sha256_artigo": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "D",
+        "objetivo": "Calcular potência da turbina.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Uma turbina adiabática em regime permanente recebe 2 kg/s a h₁ = 3.100 kJ/kg e descarrega a h₂ = 2.700 kJ/kg . Desprezando variações de energia cinética e potencial, qual sua potência?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Uma turbina adiabática em regime permanente recebe 2 kg/s a h₁ = 3.100 kJ/kg e descarrega a h₂ = 2.700 kJ/kg . Desprezando variações de energia cinética e potencial, qual sua potência?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Adiabática, permanente, vazão e entalpias dados; Δec/ep desprezadas."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Adiabática, permanente, vazão e entalpias dados; Δec/ep desprezadas."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Adiabática, permanente, vazão e entalpias dados; Δec/ep desprezadas.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Wdot=mdot(h1−h2)=2×(3100−2700)=800kW."
+        ],
+        "conclusao": "Wdot=mdot(h1−h2)=2×(3100−2700)=800kW.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-11",
+            "expressao": "2*(3100-2700)",
+            "obtido": 800,
+            "esperado": 800,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "1.600 kW.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "1600 multiplica vazão duas vezes.",
+          "erro_representado_e_plausibilidade": "1600 multiplica vazão duas vezes."
+        },
+        {
+          "opcao": "B",
+          "texto": "11.600 kW.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "11600=2×(3100+2700), soma em vez de queda.",
+          "erro_representado_e_plausibilidade": "11600=2×(3100+2700), soma em vez de queda."
+        },
+        {
+          "opcao": "C",
+          "texto": "800 W.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "800W confunde kJ/s eJ/s, fator1000.",
+          "erro_representado_e_plausibilidade": "800W confunde kJ/s eJ/s, fator1000."
+        },
+        {
+          "opcao": "D",
+          "texto": "800 kW.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "800kW correto.",
+          "erro_representado_e_plausibilidade": "800kW correto."
+        },
+        {
+          "opcao": "E",
+          "texto": "400 kW.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "400kW usa trabalho específico400kJ/kg como potência, sem vazão.",
+          "erro_representado_e_plausibilidade": "400kW usa trabalho específico400kJ/kg como potência, sem vazão."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente D atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-11",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-turbina-potencia",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-leitura-matematica",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-12",
+      "banco": "inicial",
+      "sha256_artigo": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Calcular magnitude aproximada de trabalho da bomba ideal.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Uma bomba ideal pressuriza água de volume específico 0,001 m³/kg com Δp = 500 kPa . Qual é a magnitude aproximada do trabalho específico de entrada (consumido), adotada como positiva?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Uma bomba ideal pressuriza água de volume específico 0,001 m³/kg com Δp = 500 kPa . Qual é a magnitude aproximada do trabalho específico de entrada (consumido), adotada como positiva?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Bomba ideal remete à tabela prévia: permanente, adiabática reversível, líquido v≈constante e Δec/ep desprezadas. Modelo efetivamente acessível, não só no comentário."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Bomba ideal remete à tabela prévia: permanente, adiabática reversível, líquido v≈constante e Δec/ep desprezadas. Modelo efetivamente acessível, não só no comentário."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Bomba ideal remete à tabela prévia: permanente, adiabática reversível, líquido v≈constante e Δec/ep desprezadas. Modelo efetivamente acessível, não só no comentário.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "win≈vΔp=0,001×500=0,5kJ/kg>0."
+        ],
+        "conclusao": "win≈vΔp=0,001×500=0,5kJ/kg>0.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-12",
+            "expressao": ".001*500",
+            "obtido": 0.5,
+            "esperado": 0.5,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "5 kJ/kg.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "5 erro decimal fator10.",
+          "erro_representado_e_plausibilidade": "5 erro decimal fator10."
+        },
+        {
+          "opcao": "B",
+          "texto": "0,0005 kJ/kg.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,0005 divide por1000 embora kPa·m³ já dê kJ.",
+          "erro_representado_e_plausibilidade": "0,0005 divide por1000 embora kPa·m³ já dê kJ."
+        },
+        {
+          "opcao": "C",
+          "texto": "0,5 kJ/kg.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "0,5 correto.",
+          "erro_representado_e_plausibilidade": "0,5 correto."
+        },
+        {
+          "opcao": "D",
+          "texto": "−0,5 kJ/kg consumido.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "−0,5 usa sinal de trabalho produzido quando se pede magnitude consumida positiva.",
+          "erro_representado_e_plausibilidade": "−0,5 usa sinal de trabalho produzido quando se pede magnitude consumida positiva."
+        },
+        {
+          "opcao": "E",
+          "texto": "500 kJ/kg.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "500 ignora fatorv=0,001.",
+          "erro_representado_e_plausibilidade": "500 ignora fatorv=0,001."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-12",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-gibbs",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-bomba-integrada",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-13",
+      "banco": "inicial",
+      "sha256_artigo": "405d677239ba33e510f59cc11d22251c794fad0ba3f5ecd8c3c1d632c0b80a6f",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Combinar proposições sobre propriedades e ciclo.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Julgue: I — calor e trabalho são propriedades de estado; II — a entalpia específica é h = u + pv ; III — em um ciclo ΔU = 0 . Quais afirmações são corretas?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Julgue: I — calor e trabalho são propriedades de estado; II — a entalpia específica é h = u + pv ; III — em um ciclo ΔU = 0 . Quais afirmações são corretas?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Definições e retorno ao estado suficientes."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Definições e retorno ao estado suficientes."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Definições e retorno ao estado suficientes.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "I falsa porqueQ/W são transferências de caminho; IIh=u+pv definição; IIIΔU=0 no retorno ao estado. LogoIIeIII,C."
+        ],
+        "conclusao": "I falsa porqueQ/W são transferências de caminho; IIh=u+pv definição; IIIΔU=0 no retorno ao estado. LogoIIeIII,C.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Somente II.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "SomenteII omiteIII verdadeira.",
+          "erro_representado_e_plausibilidade": "SomenteII omiteIII verdadeira."
+        },
+        {
+          "opcao": "B",
+          "texto": "Somente I.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "SomenteI inclui falsa e omite duas verdadeiras.",
+          "erro_representado_e_plausibilidade": "SomenteI inclui falsa e omite duas verdadeiras."
+        },
+        {
+          "opcao": "C",
+          "texto": "II e III.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "IIeIII é combinação completa.",
+          "erro_representado_e_plausibilidade": "IIeIII é combinação completa."
+        },
+        {
+          "opcao": "D",
+          "texto": "I e III.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "IeIII incluiIfalsa e omiteII.",
+          "erro_representado_e_plausibilidade": "IeIII incluiIfalsa e omiteII."
+        },
+        {
+          "opcao": "E",
+          "texto": "I e II.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "IeII incluiIfalsa e omiteIII.",
+          "erro_representado_e_plausibilidade": "IeII incluiIfalsa e omiteIII."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "Há análise individual das proposições, porém falta justificar cada combinação A-E no produto."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "corrigir",
+        "achados": [
+          "Há análise individual das proposições, porém falta justificar cada combinação A-E no produto."
+        ],
+        "proposta_minima": "Acrescentar conferência das cinco alternativas preservando a lista de proposições.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-13",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-propriedades",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#energia",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-14",
+      "banco": "inicial",
+      "sha256_artigo": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "E",
+        "objetivo": "Selecionar dispositivo compatível com Clausius.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Qual dispositivo e efeito são compatíveis com o enunciado de Clausius?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Qual dispositivo e efeito são compatíveis com o enunciado de Clausius?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Sentidos, fontes e consumo declarados; usa equivalência dos enunciados da segunda lei."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Sentidos, fontes e consumo declarados; usa equivalência dos enunciados da segunda lei."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Sentidos, fontes e consumo declarados; usa equivalência dos enunciados da segunda lei.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Frio→quente é permitido com trabalho; proibido como único efeito."
+        ],
+        "conclusao": "Frio→quente é permitido com trabalho; proibido como único efeito.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Refrigerador que transfere calor do frio para o quente sem qualquer outro efeito.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Refrigerador sem outro efeito violaClausius.",
+          "erro_representado_e_plausibilidade": "Refrigerador sem outro efeito violaClausius."
+        },
+        {
+          "opcao": "B",
+          "texto": "Máquina cíclica que converte integralmente calor de uma única fonte em trabalho.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Conversão total cíclica de calor de única fonte violaKelvin–Planck, equivalente à segunda lei.",
+          "erro_representado_e_plausibilidade": "Conversão total cíclica de calor de única fonte violaKelvin–Planck, equivalente à segunda lei."
+        },
+        {
+          "opcao": "C",
+          "texto": "Máquina térmica real com eficiência maior que Carnot entre as mesmas fontes.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Eficiência acima deCarnot entre mesmas fontes viola segunda lei.",
+          "erro_representado_e_plausibilidade": "Eficiência acima deCarnot entre mesmas fontes viola segunda lei."
+        },
+        {
+          "opcao": "D",
+          "texto": "Calor fluindo espontaneamente sempre do frio para o quente.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Fluxo sempre espontâneo frio→quente viola direção natural.",
+          "erro_representado_e_plausibilidade": "Fluxo sempre espontâneo frio→quente viola direção natural."
+        },
+        {
+          "opcao": "E",
+          "texto": "Refrigerador que transfere calor do frio para o quente consumindo trabalho.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Refrigerador com trabalho é admissível.",
+          "erro_representado_e_plausibilidade": "Refrigerador com trabalho é admissível."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente E atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-14",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-segunda-lei",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-15",
+      "banco": "inicial",
+      "sha256_artigo": "67967ac19a16d6167266255da06d674c528b9ae5aaaf8209650fe58a28b1e6f7",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "A",
+        "objetivo": "Calcular eficiência térmica de máquina cíclica.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Uma máquina recebe 1.000 kJ e rejeita 650 kJ por ciclo. Qual eficiência térmica?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Uma máquina recebe 1.000 kJ e rejeita 650 kJ por ciclo. Qual eficiência térmica?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Ciclo e quantidades de calor suficientes; base define fluxo recebido/rejeitado e trabalho líquido."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Ciclo e quantidades de calor suficientes; base define fluxo recebido/rejeitado e trabalho líquido."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Ciclo e quantidades de calor suficientes; base define fluxo recebido/rejeitado e trabalho líquido.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "Wliq=1000−650=350kJ;η=350/1000=35%."
+        ],
+        "conclusao": "Wliq=1000−650=350kJ;η=350/1000=35%.",
+        "arredondamento_e_tolerancia": "B arredonda53,846% para54%; longe de35%. ApósC165 as cinco opções continuam distintas.",
+        "calculos": [
+          {
+            "id": "q-e1-15",
+            "expressao": "(1000-650)/1000",
+            "obtido": 0.35,
+            "esperado": 0.35,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "35%.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "35% correto.",
+          "erro_representado_e_plausibilidade": "35% correto."
+        },
+        {
+          "opcao": "B",
+          "texto": "54%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "54%≈350/650: calor rejeitado no denominador.",
+          "erro_representado_e_plausibilidade": "54%≈350/650: calor rejeitado no denominador."
+        },
+        {
+          "opcao": "C",
+          "texto": "135%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "135% não coincide com(1000+650)/1000=165%; comentário existente não gera135%.",
+          "erro_representado_e_plausibilidade": "135% não coincide com(1000+650)/1000=165%; comentário existente não gera135%."
+        },
+        {
+          "opcao": "D",
+          "texto": "100%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "100% ignora rejeição650.",
+          "erro_representado_e_plausibilidade": "100% ignora rejeição650."
+        },
+        {
+          "opcao": "E",
+          "texto": "65%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "65%=650/1000 é fração rejeitada.",
+          "erro_representado_e_plausibilidade": "65%=650/1000 é fração rejeitada."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente A atende ao comando, sob as condições indicadas. B arredonda53,846% para54%; longe de35%. ApósC165 as cinco opções continuam distintas.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "DistratorC135 e explicação de soma não correspondem."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "corrigir",
+        "achados": [
+          "DistratorC135 e explicação de soma não correspondem."
+        ],
+        "proposta_minima": "TrocarC por165% e justificar soma indevida(1000+650)/1000.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-15",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-eficiencia-cop",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-16",
+      "banco": "inicial",
+      "sha256_artigo": "25c2b67fc2b4b2021dbb5240ceea18631b5423417121e4e41ea83f56677867e4",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "A",
+        "objetivo": "Calcular limite reversível entre duas fontes.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Um motor reversível opera entre 600 K e 300 K. Qual limite de eficiência?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Um motor reversível opera entre 600 K e 300 K. Qual limite de eficiência?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Duas fontes em kelvin e reversibilidade determinam o limite."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Duas fontes em kelvin e reversibilidade determinam o limite."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Duas fontes em kelvin e reversibilidade determinam o limite.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "η=1−300/600=0,5=50%."
+        ],
+        "conclusao": "η=1−300/600=0,5=50%.",
+        "arredondamento_e_tolerancia": "33,3% arredonda1/3; nenhuma opção equivalente a50%.",
+        "calculos": [
+          {
+            "id": "q-e1-16",
+            "expressao": "1-300/600",
+            "obtido": 0.5,
+            "esperado": 0.5,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "50%.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "50% correto.",
+          "erro_representado_e_plausibilidade": "50% correto."
+        },
+        {
+          "opcao": "B",
+          "texto": "100%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "100% ignora fonte fria finita; equivaleTl=0.",
+          "erro_representado_e_plausibilidade": "100% ignora fonte fria finita; equivaleTl=0."
+        },
+        {
+          "opcao": "C",
+          "texto": "0%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0% trata fontes como iguais.",
+          "erro_representado_e_plausibilidade": "0% trata fontes como iguais."
+        },
+        {
+          "opcao": "D",
+          "texto": "200%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "200%=600/300×100 omite complemento; apenas inverter razão dentro1−Tq/Tf daria−100%.",
+          "erro_representado_e_plausibilidade": "200%=600/300×100 omite complemento; apenas inverter razão dentro1−Tq/Tf daria−100%."
+        },
+        {
+          "opcao": "E",
+          "texto": "25%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "25% não tem mecanismo indicado; substituir por33,3%=(600−300)/(600+300).",
+          "erro_representado_e_plausibilidade": "25% não tem mecanismo indicado; substituir por33,3%=(600−300)/(600+300)."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente A atende ao comando, sob as condições indicadas. 33,3% arredonda1/3; nenhuma opção equivalente a50%.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "Comentário D atribui 200% à inversão sem explicar a ausência do complemento.",
+          "Distrator E de 25% sem erro reproduzível identificado."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "corrigir",
+        "achados": [
+          "Comentário D atribui 200% à inversão sem explicar a ausência do complemento.",
+          "Distrator E de 25% sem erro reproduzível identificado."
+        ],
+        "proposta_minima": "Trocar E por 33,3% e explicar denominador Tq+Tf; corrigir comentário D.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-16",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-limite-carnot",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-17",
+      "banco": "inicial",
+      "sha256_artigo": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "D",
+        "objetivo": "Obter COP refrigerador e calor rejeitado.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Um refrigerador retira 900 kJ do recinto consumindo 300 kJ. Qual COP e calor rejeitado?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Um refrigerador retira 900 kJ do recinto consumindo 300 kJ. Qual COP e calor rejeitado?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "A base define o mesmo ciclo, fronteiras e magnitudes; os dados expressam calor retirado e trabalho consumido."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "A base define o mesmo ciclo, fronteiras e magnitudes; os dados expressam calor retirado e trabalho consumido."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "A base define o mesmo ciclo, fronteiras e magnitudes; os dados expressam calor retirado e trabalho consumido.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "COPR=900/300=3;QH=900+300=1200kJ."
+        ],
+        "conclusao": "COPR=900/300=3;QH=900+300=1200kJ.",
+        "arredondamento_e_tolerancia": "0,33 é aproximação de1/3, diferente de3; os pares são distintos.",
+        "calculos": [
+          {
+            "id": "q-e1-17",
+            "expressao": "900/300",
+            "obtido": 3,
+            "esperado": 3,
+            "tolerancia": 1e-10,
+            "ok": true
+          },
+          {
+            "id": "q-e1-17",
+            "expressao": "900+300",
+            "obtido": 1200,
+            "esperado": 1200,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "COP = 0,33 e rejeição = 900 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,33 inverte COP e 900 ignora o trabalho na rejeição.",
+          "erro_representado_e_plausibilidade": "0,33 inverte COP e 900 ignora o trabalho na rejeição."
+        },
+        {
+          "opcao": "B",
+          "texto": "COP = 1 e rejeição = 300 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "1 equipara calor útil e trabalho; 300 copia consumo como rejeição.",
+          "erro_representado_e_plausibilidade": "1 equipara calor útil e trabalho; 300 copia consumo como rejeição."
+        },
+        {
+          "opcao": "C",
+          "texto": "COP = 3 e rejeição = 600 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "COP 3 correto, mas 600 subtrai trabalho em vez de somar.",
+          "erro_representado_e_plausibilidade": "COP 3 correto, mas 600 subtrai trabalho em vez de somar."
+        },
+        {
+          "opcao": "D",
+          "texto": "COP = 3 e rejeição = 1.200 kJ.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "COP 3 e rejeição 1200 kJ corretos.",
+          "erro_representado_e_plausibilidade": "COP 3 e rejeição 1200 kJ corretos."
+        },
+        {
+          "opcao": "E",
+          "texto": "COP = 4 e rejeição = 1.200 kJ.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "4=QH/W é o COP da bomba de calor.",
+          "erro_representado_e_plausibilidade": "4=QH/W é o COP da bomba de calor."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente D atende ao comando, sob as condições indicadas. 0,33 é aproximação de1/3, diferente de3; os pares são distintos.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-17",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-eficiencia-cop",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-18",
+      "banco": "inicial",
+      "sha256_artigo": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "D",
+        "objetivo": "Julgar três afirmações sobre entropia.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Julgue: I — em sistema isolado a entropia pode aumentar; II — todo processo adiabático é isentrópico; III — a entropia de uma parte pode diminuir com rejeição de calor. Qual sequência é correta?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Julgue: I — em sistema isolado a entropia pode aumentar; II — todo processo adiabático é isentrópico; III — a entropia de uma parte pode diminuir com rejeição de calor. Qual sequência é correta?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Qualificadores pode, todo e parte distinguem os enunciados. A perda de entropia de um subsistema não implica violação no conjunto."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Qualificadores pode, todo e parte distinguem os enunciados. A perda de entropia de um subsistema não implica violação no conjunto."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Qualificadores pode, todo e parte distinguem os enunciados. A perda de entropia de um subsistema não implica violação no conjunto.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "I verdadeira: Sgen pode ser positiva em sistema isolado. II falsa: Q=0 não impõe Sgen=0. III verdadeira: uma parte pode perder entropia com rejeição de calor. Sequência V,F,V."
+        ],
+        "conclusao": "I verdadeira: Sgen pode ser positiva em sistema isolado. II falsa: Q=0 não impõe Sgen=0. III verdadeira: uma parte pode perder entropia com rejeição de calor. Sequência V,F,V.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "V, V, V.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "V,V,V erra II.",
+          "erro_representado_e_plausibilidade": "V,V,V erra II."
+        },
+        {
+          "opcao": "B",
+          "texto": "F, F, V.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "F,F,V erra I.",
+          "erro_representado_e_plausibilidade": "F,F,V erra I."
+        },
+        {
+          "opcao": "C",
+          "texto": "V, F, F.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "V,F,F erra III.",
+          "erro_representado_e_plausibilidade": "V,F,F erra III."
+        },
+        {
+          "opcao": "D",
+          "texto": "V, F, V.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "V,F,V correta.",
+          "erro_representado_e_plausibilidade": "V,F,V correta."
+        },
+        {
+          "opcao": "E",
+          "texto": "F, V, F.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "F,V,F erra todas.",
+          "erro_representado_e_plausibilidade": "F,V,F erra todas."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente D atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "Produto justifica proposições mas não as cinco combinações."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "corrigir",
+        "achados": [
+          "Produto justifica proposições mas não as cinco combinações."
+        ],
+        "proposta_minima": "Acrescentar análise específicaA-E preservando lista das proposições.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-18",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-entropia",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-expansao-livre",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-19",
+      "banco": "inicial",
+      "sha256_artigo": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "A",
+        "objetivo": "Calcular eficiência isentrópica de turbina.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Uma turbina teria queda isentrópica de entalpia de 500 kJ/kg e apresenta queda real de 400 kJ/kg. Qual eficiência isentrópica?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Uma turbina teria queda isentrópica de entalpia de 500 kJ/kg e apresenta queda real de 400 kJ/kg. Qual eficiência isentrópica?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "A definição de eficiência isentrópica na base compara a mesma entrada e pressão final; quedas fornecidas dispensam propriedades externas."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "A definição de eficiência isentrópica na base compara a mesma entrada e pressão final; quedas fornecidas dispensam propriedades externas."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "A definição de eficiência isentrópica na base compara a mesma entrada e pressão final; quedas fornecidas dispensam propriedades externas.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "ηt=Δhreal/Δhis=400/500=0,8."
+        ],
+        "conclusao": "ηt=Δhreal/Δhis=400/500=0,8.",
+        "arredondamento_e_tolerancia": "44,4% arredonda4/9; não coincide com80 nem demais.",
+        "calculos": [
+          {
+            "id": "q-e1-19",
+            "expressao": "400/500",
+            "obtido": 0.8,
+            "esperado": 0.8,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "80%.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "80% correto.",
+          "erro_representado_e_plausibilidade": "80% correto."
+        },
+        {
+          "opcao": "B",
+          "texto": "125%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "125%=500/400 inverte razão.",
+          "erro_representado_e_plausibilidade": "125%=500/400 inverte razão."
+        },
+        {
+          "opcao": "C",
+          "texto": "45%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "45% não é soma/média relevante; propor44,4%=400/(400+500).",
+          "erro_representado_e_plausibilidade": "45% não é soma/média relevante; propor44,4%=400/(400+500)."
+        },
+        {
+          "opcao": "D",
+          "texto": "20%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "20%=(500−400)/500 é fração de trabalho perdido.",
+          "erro_representado_e_plausibilidade": "20%=(500−400)/500 é fração de trabalho perdido."
+        },
+        {
+          "opcao": "E",
+          "texto": "100%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "100% ignora queda real menor.",
+          "erro_representado_e_plausibilidade": "100% ignora queda real menor."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente A atende ao comando, sob as condições indicadas. 44,4% arredonda4/9; não coincide com80 nem demais.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "C de 45% e justificativa atual não representam um erro calculável."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "corrigir",
+        "achados": [
+          "C de 45% e justificativa atual não representam um erro calculável."
+        ],
+        "proposta_minima": "Trocar C por 44,4% e explicar o denominador como soma indevida das quedas.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-19",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-isentropica",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-20",
+      "banco": "inicial",
+      "sha256_artigo": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "A",
+        "objetivo": "Ordenar equipamentos do Rankine ideal desde bomba.",
+        "uso_atual": "pontuável",
+        "comando_lido": "No ciclo Rankine ideal, qual sequência acompanha o fluido a partir da bomba?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "No ciclo Rankine ideal, qual sequência acompanha o fluido a partir da bomba?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "O ciclo Rankine ideal simples é nomeado e ensinado na base; as fases são coerentes."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "O ciclo Rankine ideal simples é nomeado e ensinado na base; as fases são coerentes."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "O ciclo Rankine ideal simples é nomeado e ensinado na base; as fases são coerentes.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "A bomba pressuriza líquido, a caldeira vaporiza, a turbina expande e o condensador liquefaz."
+        ],
+        "conclusao": "A bomba pressuriza líquido, a caldeira vaporiza, a turbina expande e o condensador liquefaz.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Bomba → caldeira → turbina → condensador.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Sequência correta.",
+          "erro_representado_e_plausibilidade": "Sequência correta."
+        },
+        {
+          "opcao": "B",
+          "texto": "Turbina → bomba → caldeira → condensador.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Turbina seguida de bomba sem condensação viola a entrada líquida exigida pela bomba.",
+          "erro_representado_e_plausibilidade": "Turbina seguida de bomba sem condensação viola a entrada líquida exigida pela bomba."
+        },
+        {
+          "opcao": "C",
+          "texto": "Caldeira → bomba → condensador → turbina.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Caldeira seguida de bomba envia fluido vaporizado para a bomba.",
+          "erro_representado_e_plausibilidade": "Caldeira seguida de bomba envia fluido vaporizado para a bomba."
+        },
+        {
+          "opcao": "D",
+          "texto": "Bomba → condensador → turbina → caldeira.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Bomba, condensador e turbina omitem geração de vapor antes da turbina.",
+          "erro_representado_e_plausibilidade": "Bomba, condensador e turbina omitem geração de vapor antes da turbina."
+        },
+        {
+          "opcao": "E",
+          "texto": "Compressor → condensador → válvula → evaporador.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Compressor, condensador, válvula e evaporador identificam refrigeração.",
+          "erro_representado_e_plausibilidade": "Compressor, condensador, válvula e evaporador identificam refrigeração."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente A atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-20",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-rankine",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-21",
+      "banco": "inicial",
+      "sha256_artigo": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "E",
+        "objetivo": "Distinguir adição de calor em Otto e Diesel ideais.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Qual descrição distingue os ciclos ideais Otto e Diesel?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Qual descrição distingue os ciclos ideais Otto e Diesel?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "A base ensina modelos ideais; esses processos não são impostos a todo motor real."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "A base ensina modelos ideais; esses processos não são impostos a todo motor real."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "A base ensina modelos ideais; esses processos não são impostos a todo motor real.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Nos modelos ar-padrão, Otto adiciona calor a volume constante e Diesel a pressão constante; compressão e expansão são isentrópicas."
+        ],
+        "conclusao": "Nos modelos ar-padrão, Otto adiciona calor a volume constante e Diesel a pressão constante; compressão e expansão são isentrópicas.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Ambos adicionam calor isentropicamente.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "A adição de calor não é isentrópica nesses modelos.",
+          "erro_representado_e_plausibilidade": "A adição de calor não é isentrópica nesses modelos."
+        },
+        {
+          "opcao": "B",
+          "texto": "Otto adiciona calor a pressão constante e Diesel a volume constante.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Inverte os modelos Otto e Diesel.",
+          "erro_representado_e_plausibilidade": "Inverte os modelos Otto e Diesel."
+        },
+        {
+          "opcao": "C",
+          "texto": "Otto tem somente processos isotérmicos.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Otto não é inteiramente isotérmico: contém isócoras e isentrópicas.",
+          "erro_representado_e_plausibilidade": "Otto não é inteiramente isotérmico: contém isócoras e isentrópicas."
+        },
+        {
+          "opcao": "D",
+          "texto": "Diesel não rejeita calor.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Diesel rejeita calor para fechar o ciclo.",
+          "erro_representado_e_plausibilidade": "Diesel rejeita calor para fechar o ciclo."
+        },
+        {
+          "opcao": "E",
+          "texto": "Otto adiciona calor a volume constante; Diesel, a pressão constante.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Diferença correta entre os modelos.",
+          "erro_representado_e_plausibilidade": "Diferença correta entre os modelos."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente E atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-21",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-comparar-ciclos",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#ciclos",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-22",
+      "banco": "inicial",
+      "sha256_artigo": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Reconhecer efeito de intercooling na compressão.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Qual efeito direto se espera do resfriamento intermediário entre estágios de compressão de ar?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Qual efeito direto se espera do resfriamento intermediário entre estágios de compressão de ar?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "A alternativa correta limita a conclusão às hipóteses do modelo. A base declara gás ideal, regime permanente, capacidades constantes, estágios equivalentes e ausência de perdas de pressão."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "A alternativa correta limita a conclusão às hipóteses do modelo. A base declara gás ideal, regime permanente, capacidades constantes, estágios equivalentes e ausência de perdas de pressão."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "A alternativa correta limita a conclusão às hipóteses do modelo. A base declara gás ideal, regime permanente, capacidades constantes, estágios equivalentes e ausência de perdas de pressão.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "No modelo vinculado, reduzir T na entrada do segundo estágio reduz o termo proporcional a cpT e o trabalho total para as mesmas pressões."
+        ],
+        "conclusao": "No modelo vinculado, reduzir T na entrada do segundo estágio reduz o termo proporcional a cpT e o trabalho total para as mesmas pressões.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Garantia de maior eficiência de qualquer ciclo térmico.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Reduzir trabalho no compressor não garante aumento de eficiência de todo ciclo térmico.",
+          "erro_representado_e_plausibilidade": "Reduzir trabalho no compressor não garante aumento de eficiência de todo ciclo térmico."
+        },
+        {
+          "opcao": "B",
+          "texto": "Transformação do compressor em turbina.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "O resfriamento não transforma compressor em produtor de trabalho.",
+          "erro_representado_e_plausibilidade": "O resfriamento não transforma compressor em produtor de trabalho."
+        },
+        {
+          "opcao": "C",
+          "texto": "Redução do trabalho de compressão para a mesma razão global, nas hipóteses do modelo.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Redução do trabalho nas hipóteses do modelo é correta.",
+          "erro_representado_e_plausibilidade": "Redução do trabalho nas hipóteses do modelo é correta."
+        },
+        {
+          "opcao": "D",
+          "texto": "Eliminação de toda irreversibilidade.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "O resfriamento não elimina todas as irreversibilidades reais.",
+          "erro_representado_e_plausibilidade": "O resfriamento não elimina todas as irreversibilidades reais."
+        },
+        {
+          "opcao": "E",
+          "texto": "Aumento inevitável do trabalho para a mesma razão global.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Aumento inevitável contraria a comparação ideal com perdas desprezadas.",
+          "erro_representado_e_plausibilidade": "Aumento inevitável contraria a comparação ideal com perdas desprezadas."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-22",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-compressao-estagios",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-23",
+      "banco": "inicial",
+      "sha256_artigo": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Calcular COP do ciclo de refrigeração.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Num ciclo de refrigeração por compressão de vapor, 1 é a entrada do compressor, 2 sua saída, 3 a saída do condensador e 4 a entrada do evaporador. No modelo estacionário usual, h₁ = 400 , h₂ = 450 , h₃ = 250 e h₄ = 250 kJ/kg. Qual COP_R ?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Num ciclo de refrigeração por compressão de vapor, 1 é a entrada do compressor, 2 sua saída, 3 a saída do condensador e 4 a entrada do evaporador. No modelo estacionário usual, h₁ = 400 , h₂ = 450 , h₃ = 250 e h₄ = 250 kJ/kg. Qual COP_R ?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "O modelo estacionário usual remete à base: compressor e válvula adiabáticos, mesma vazão, variações cinéticas/potenciais desprezíveis e sem outros trabalhos. Os dados bastam."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "O modelo estacionário usual remete à base: compressor e válvula adiabáticos, mesma vazão, variações cinéticas/potenciais desprezíveis e sem outros trabalhos. Os dados bastam."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "O modelo estacionário usual remete à base: compressor e válvula adiabáticos, mesma vazão, variações cinéticas/potenciais desprezíveis e sem outros trabalhos. Os dados bastam.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "qL=400−250=150;wc=450−400=50kJ/kg;COP=3;qh=200=150+50."
+        ],
+        "conclusao": "qL=400−250=150;wc=450−400=50kJ/kg;COP=3;qh=200=150+50.",
+        "arredondamento_e_tolerancia": "0,33 aproxima1/3. As demais razões inteiras3/4/8 não se equivalem.",
+        "calculos": [
+          {
+            "id": "q-e1-23",
+            "expressao": "(400-250)/(450-400)",
+            "obtido": 3,
+            "esperado": 3,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "8.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "8=400/50 usa entalpia de estado em vez de diferença.",
+          "erro_representado_e_plausibilidade": "8=400/50 usa entalpia de estado em vez de diferença."
+        },
+        {
+          "opcao": "B",
+          "texto": "1.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "1 supõe calor útil igual a trabalho sem balanço.",
+          "erro_representado_e_plausibilidade": "1 supõe calor útil igual a trabalho sem balanço."
+        },
+        {
+          "opcao": "C",
+          "texto": "3.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "3 correto.",
+          "erro_representado_e_plausibilidade": "3 correto."
+        },
+        {
+          "opcao": "D",
+          "texto": "0,33.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,33=50/150 inverte razão.",
+          "erro_representado_e_plausibilidade": "0,33=50/150 inverte razão."
+        },
+        {
+          "opcao": "E",
+          "texto": "4.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "4=200/50 éCOP de bomba de calor.",
+          "erro_representado_e_plausibilidade": "4=200/50 éCOP de bomba de calor."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. 0,33 aproxima1/3. As demais razões inteiras3/4/8 não se equivalem.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-23",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-refrigeracao",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-24",
+      "banco": "inicial",
+      "sha256_artigo": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Identificar fluido dentro tubos de caldeira flamotubular.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Em uma caldeira flamotubular, qual fluido circula dentro dos tubos aquecedores?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Em uma caldeira flamotubular, qual fluido circula dentro dos tubos aquecedores?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "A definição geométrica ensinada é suficiente; não depende de uma norma particular."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "A definição geométrica ensinada é suficiente; não depende de uma norma particular."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "A definição geométrica ensinada é suficiente; não depende de uma norma particular.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "Produtos quentes de combustão percorrem tubos; água recebe calor ao redor. ChaveC."
+        ],
+        "conclusao": "Produtos quentes de combustão percorrem tubos; água recebe calor ao redor. ChaveC.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Refrigerante do evaporador.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Refrigerante do evaporador desloca a questão para outro ciclo e não representa uma confusão próxima.",
+          "erro_representado_e_plausibilidade": "Refrigerante do evaporador desloca a questão para outro ciclo e não representa uma confusão próxima."
+        },
+        {
+          "opcao": "B",
+          "texto": "Somente óleo lubrificante.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Óleo lubrificante não é o fluido de troca descrito; distrator sem erro contextual plausível.",
+          "erro_representado_e_plausibilidade": "Óleo lubrificante não é o fluido de troca descrito; distrator sem erro contextual plausível."
+        },
+        {
+          "opcao": "C",
+          "texto": "Gases quentes da combustão.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Os gases quentes da combustão circulam dentro dos tubos, pela definição de flamotubular.",
+          "erro_representado_e_plausibilidade": "Os gases quentes da combustão circulam dentro dos tubos, pela definição de flamotubular."
+        },
+        {
+          "opcao": "D",
+          "texto": "Ar medicinal purificado.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Ar medicinal é estranho ao mecanismo e facilita o acerto sem domínio.",
+          "erro_representado_e_plausibilidade": "Ar medicinal é estranho ao mecanismo e facilita o acerto sem domínio."
+        },
+        {
+          "opcao": "E",
+          "texto": "Água e vapor necessariamente.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Água e vapor dentro dos tubos correspondem à aquatubular.",
+          "erro_representado_e_plausibilidade": "Água e vapor dentro dos tubos correspondem à aquatubular."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "A, B e D têm baixa plausibilidade contextual."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "corrigir",
+        "achados": [
+          "A, B e D têm baixa plausibilidade contextual."
+        ],
+        "proposta_minima": "Manter C. A: água líquida aquecida pelos gases externos (confusão com aquatubular). B: apenas vapor porque os tubos seriam superaquecedores. D: mistura de água e gases em contato direto. E: combustível antes da queima por confusão com alimentação do queimador. Explicar cada erro.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-24",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-vapor-industrial",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "url": "https://www.spiraxsarco.com/learn-about-steam/the-boiler-house/shell-boilers",
+          "metodo": "Texto oficial aberto e lido em 28/10/2026.",
+          "localizador": "Shell Boilers e Lancashire boiler",
+          "alcance": "Produtos de combustão dentro dos tubos, água ao redor; sustenta refutação geométrica."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-25",
+      "banco": "inicial",
+      "sha256_artigo": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "E",
+        "objetivo": "Identificar INCORRETA sobre permanente.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Sobre escoamentos estacionários, assinale a alternativa INCORRETA."
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Sobre escoamentos estacionários, assinale a alternativa INCORRETA."
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "As alternativas dizem pode e referem modelos usuais; não impõem o resultado a todo equipamento."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "As alternativas dizem pode e referem modelos usuais; não impõem o resultado a todo equipamento."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "As alternativas dizem pode e referem modelos usuais; não impõem o resultado a todo equipamento.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Regime permanente implica ausência de variação temporal em cada ponto, não uniformidade espacial. Logo E é incorreta."
+        ],
+        "conclusao": "Regime permanente implica ausência de variação temporal em cada ponto, não uniformidade espacial. Logo E é incorreta.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Uma turbina adiabática pode produzir trabalho com queda de entalpia.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Turbina adiabática pode converter queda de entalpia em trabalho: correta.",
+          "erro_representado_e_plausibilidade": "Turbina adiabática pode converter queda de entalpia em trabalho: correta."
+        },
+        {
+          "opcao": "B",
+          "texto": "Um bocal pode converter entalpia em energia cinética.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Bocal pode converter entalpia em energia cinética: correta.",
+          "erro_representado_e_plausibilidade": "Bocal pode converter entalpia em energia cinética: correta."
+        },
+        {
+          "opcao": "C",
+          "texto": "O trabalho de escoamento está incorporado na entalpia.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "h=u+pv incorpora trabalho de escoamento: correta.",
+          "erro_representado_e_plausibilidade": "h=u+pv incorpora trabalho de escoamento: correta."
+        },
+        {
+          "opcao": "D",
+          "texto": "Uma válvula pode reduzir pressão com entalpia aproximadamente constante.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Válvula pode manter h aproximadamente constante com queda de pressão: correta sob as hipóteses indicadas.",
+          "erro_representado_e_plausibilidade": "Válvula pode manter h aproximadamente constante com queda de pressão: correta sob as hipóteses indicadas."
+        },
+        {
+          "opcao": "E",
+          "texto": "Regime permanente significa que pressão e temperatura são iguais em todos os pontos.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Confunde ausência de variação temporal e uniformidade espacial: incorreta solicitada.",
+          "erro_representado_e_plausibilidade": "Confunde ausência de variação temporal e uniformidade espacial: incorreta solicitada."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente E atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-25",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-balanco-transiente",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-bocal-difusor",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-valvula-fase",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-26",
+      "banco": "inicial",
+      "sha256_artigo": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "B",
+        "objetivo": "Efetuar interpolação linear na tabela didática.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Uma tabela didática em pressão fixa dá h=2.800 a 200 °C e h=3.000 kJ/kg a 300 °C. Interpolação linear a 230 °C resulta em:"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Uma tabela didática em pressão fixa dá h=2.800 a 200 °C e h=3.000 kJ/kg a 300 °C. Interpolação linear a 230 °C resulta em:"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "O comando solicita interpolação linear em tabela didática a pressão fixa. A base alerta para permanecer na mesma região de fase. Não se afirma exatidão para todo fluido real."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "O comando solicita interpolação linear em tabela didática a pressão fixa. A base alerta para permanecer na mesma região de fase. Não se afirma exatidão para todo fluido real."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "O comando solicita interpolação linear em tabela didática a pressão fixa. A base alerta para permanecer na mesma região de fase. Não se afirma exatidão para todo fluido real.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "f=(230−200)/(300−200)=0,30;h=2800+0,30×200=2860kJ/kg."
+        ],
+        "conclusao": "f=(230−200)/(300−200)=0,30;h=2800+0,30×200=2860kJ/kg.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-26",
+            "expressao": "2800+(230-200)/(300-200)*(3000-2800)",
+            "obtido": 2860,
+            "esperado": 2860,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "3.030 kJ/kg.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "3030 não tem origem explicada; 3060=3000+0,30×200 representaria usar o valor final como referência.",
+          "erro_representado_e_plausibilidade": "3030 não tem origem explicada; 3060=3000+0,30×200 representaria usar o valor final como referência."
+        },
+        {
+          "opcao": "B",
+          "texto": "2.860 kJ/kg.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "2860 é a interpolação correta.",
+          "erro_representado_e_plausibilidade": "2860 é a interpolação correta."
+        },
+        {
+          "opcao": "C",
+          "texto": "2.830 kJ/kg.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "2830=2800+30 mistura incremento de temperatura e entalpia.",
+          "erro_representado_e_plausibilidade": "2830=2800+30 mistura incremento de temperatura e entalpia."
+        },
+        {
+          "opcao": "D",
+          "texto": "2.900 kJ/kg.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "2900 é a média dos extremos, adequada a 250°C e não a 230°C.",
+          "erro_representado_e_plausibilidade": "2900 é a média dos extremos, adequada a 250°C e não a 230°C."
+        },
+        {
+          "opcao": "E",
+          "texto": "840 kJ/kg.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "840=0,30×2800 omite o termo inicial e usa h1 no lugar do intervalo.",
+          "erro_representado_e_plausibilidade": "840=0,30×2800 omite o termo inicial e usa h1 no lugar do intervalo."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente B atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "Distrator A de 3030 sem mecanismo reproduzível indicado."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "corrigir",
+        "achados": [
+          "Distrator A de 3030 sem mecanismo reproduzível indicado."
+        ],
+        "proposta_minima": "Trocar A por 3060 kJ/kg e explicar o erro de partir de 3000, somando 0,30(3000−2800).",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-26",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-interpolacao",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-27",
+      "banco": "inicial",
+      "sha256_artigo": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "A",
+        "objetivo": "Determinar pressão intermediária de razões iguais.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Compressão ideal em dois estágios, resfriamento perfeito e razões iguais, de 1 a 16 bar absolutos: qual pressão intermediária minimiza o trabalho?"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Compressão ideal em dois estágios, resfriamento perfeito e razões iguais, de 1 a 16 bar absolutos: qual pressão intermediária minimiza o trabalho?"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Dois estágios ideais, resfriamento perfeito e razões iguais são dados. A base explica a equivalência dos estágios e as perdas desprezadas; o ótimo pertence a esse modelo."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Dois estágios ideais, resfriamento perfeito e razões iguais são dados. A base explica a equivalência dos estágios e as perdas desprezadas; o ótimo pertence a esse modelo."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Dois estágios ideais, resfriamento perfeito e razões iguais são dados. A base explica a equivalência dos estágios e as perdas desprezadas; o ótimo pertence a esse modelo.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "pi/1=16/pi implica pi²=16. A raiz positiva é pi=4 bar absolutos."
+        ],
+        "conclusao": "pi/1=16/pi implica pi²=16. A raiz positiva é pi=4 bar absolutos.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-27",
+            "expressao": "Math.sqrt(1*16)",
+            "obtido": 4,
+            "esperado": 4,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "4 bar absolutos.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "4 dá razão 4 nos dois estágios.",
+          "erro_representado_e_plausibilidade": "4 dá razão 4 nos dois estágios."
+        },
+        {
+          "opcao": "B",
+          "texto": "8,5 bar.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "8,5 é a média aritmética (1+16)/2, sem razões iguais.",
+          "erro_representado_e_plausibilidade": "8,5 é a média aritmética (1+16)/2, sem razões iguais."
+        },
+        {
+          "opcao": "C",
+          "texto": "2 bar.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "2 dá razões 2 e 8.",
+          "erro_representado_e_plausibilidade": "2 dá razões 2 e 8."
+        },
+        {
+          "opcao": "D",
+          "texto": "16 bar.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "16 deixa o segundo estágio com razão 1.",
+          "erro_representado_e_plausibilidade": "16 deixa o segundo estágio com razão 1."
+        },
+        {
+          "opcao": "E",
+          "texto": "8 bar.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "8 é metade da pressão final e dá razões 8 e 2.",
+          "erro_representado_e_plausibilidade": "8 é metade da pressão final e dá razões 8 e 2."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente A atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-27",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-compressao-estagios",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-28",
+      "banco": "inicial",
+      "sha256_artigo": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "E",
+        "objetivo": "Calcular eficiência de turbina pelas entalpias.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Turbina adiabática: h1=3.200 , h2_is=2.200 e h2_real=2.400 kJ/kg. A eficiência isentrópica é:"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Turbina adiabática: h1=3.200 , h2_is=2.200 e h2_real=2.400 kJ/kg. A eficiência isentrópica é:"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Turbina adiabática e mesmas condições de comparação são estabelecidas na base e nos símbolos; a pressão final comum da referência é identificada."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Turbina adiabática e mesmas condições de comparação são estabelecidas na base e nos símbolos; a pressão final comum da referência é identificada."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Turbina adiabática e mesmas condições de comparação são estabelecidas na base e nos símbolos; a pressão final comum da referência é identificada.",
+        "resultado": "Chave coerente sob o modelo identificado; ajustes específicos abaixo."
+      },
+      "demonstracao": {
+        "passos": [
+          "Δhr=3200−2400=800; Δhis=3200−2200=1000 kJ/kg; η=800/1000=0,8."
+        ],
+        "conclusao": "Δhr=3200−2400=800; Δhis=3200−2200=1000 kJ/kg; η=800/1000=0,8.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-28",
+            "expressao": "(3200-2400)/(3200-2200)",
+            "obtido": 0.8,
+            "esperado": 0.8,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "125%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "125%=1000/800 inverte a definição.",
+          "erro_representado_e_plausibilidade": "125%=1000/800 inverte a definição."
+        },
+        {
+          "opcao": "B",
+          "texto": "60%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "60% não corresponde a um erro identificado; 68,75%=2200/3200 representaria a razão de entalpias de estado.",
+          "erro_representado_e_plausibilidade": "60% não corresponde a um erro identificado; 68,75%=2200/3200 representaria a razão de entalpias de estado."
+        },
+        {
+          "opcao": "C",
+          "texto": "100%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "100% ignora a diferença entre processo real e referência.",
+          "erro_representado_e_plausibilidade": "100% ignora a diferença entre processo real e referência."
+        },
+        {
+          "opcao": "D",
+          "texto": "75%.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "75%=2400/3200 usa entalpias de estado no lugar das quedas.",
+          "erro_representado_e_plausibilidade": "75%=2400/3200 usa entalpias de estado no lugar das quedas."
+        },
+        {
+          "opcao": "E",
+          "texto": "80%.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "80% correto.",
+          "erro_representado_e_plausibilidade": "80% correto."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente E atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Chave coincide; lacunas individuais exigem ajuste.",
+        "lacunas": [
+          "B de 60% não tem erro específico sustentado pelo comentário."
+        ]
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "corrigir",
+        "achados": [
+          "B de 60% não tem erro específico sustentado pelo comentário."
+        ],
+        "proposta_minima": "Trocar B por 68,75% e explicar h2is/h1 em lugar de Δhr/Δhis.",
+        "impacto_identidade": "Alteração no comando ou alternativa muda digital Q; alteração só de comentário não muda. Conservar histórico anterior sem copiar letras para novas versões."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-28",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-isentropica",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-29",
+      "banco": "inicial",
+      "sha256_artigo": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "C",
+        "objetivo": "Calcular taxa de geração de entropia no trocador.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Dois fluidos de 1 kg/s cada atravessam, em regime permanente, um trocador sem calor para o ambiente. Variações específicas de entropia: −0,20 e +0,30 kJ/(kg·K). A geração é:"
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Dois fluidos de 1 kg/s cada atravessam, em regime permanente, um trocador sem calor para o ambiente. Variações específicas de entropia: −0,20 e +0,30 kJ/(kg·K). A geração é:"
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Duas vazões, variações específicas de entropia, regime permanente e ausência de calor externo bastam. Trabalho por si não transporta entropia."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Duas vazões, variações específicas de entropia, regime permanente e ausência de calor externo bastam. Trabalho por si não transporta entropia."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Duas vazões, variações específicas de entropia, regime permanente e ausência de calor externo bastam. Trabalho por si não transporta entropia.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "Sgendot=ΣmdotΔs=1(−0,20)+1(0,30)=0,10kW/K≥0."
+        ],
+        "conclusao": "Sgendot=ΣmdotΔs=1(−0,20)+1(0,30)=0,10kW/K≥0.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": [
+          {
+            "id": "q-e1-29",
+            "expressao": "1*(-.20)+1*(.30)",
+            "obtido": 0.09999999999999998,
+            "esperado": 0.1,
+            "tolerancia": 1e-10,
+            "ok": true
+          }
+        ]
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "0 kW/K.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0 confunde adiabaticidade externa e ausência de geração interna.",
+          "erro_representado_e_plausibilidade": "0 confunde adiabaticidade externa e ausência de geração interna."
+        },
+        {
+          "opcao": "B",
+          "texto": "0,10 kW.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,10 kW omite por kelvin e trata entropia como energia.",
+          "erro_representado_e_plausibilidade": "0,10 kW omite por kelvin e trata entropia como energia."
+        },
+        {
+          "opcao": "C",
+          "texto": "0,10 kW/K.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "0,10 kW/K respeita o balanço.",
+          "erro_representado_e_plausibilidade": "0,10 kW/K respeita o balanço."
+        },
+        {
+          "opcao": "D",
+          "texto": "0,50 kW/K.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "0,50 soma módulos e ignora o sinal de uma corrente.",
+          "erro_representado_e_plausibilidade": "0,50 soma módulos e ignora o sinal de uma corrente."
+        },
+        {
+          "opcao": "E",
+          "texto": "−0,10 kW/K.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "−0,10 inverte saída menos entrada e viola o balanço do conjunto.",
+          "erro_representado_e_plausibilidade": "−0,10 inverte saída menos entrada e viola o balanço do conjunto."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente C atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-29",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-entropia-escoamento",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    },
+    {
+      "id": "q-e1-30",
+      "banco": "inicial",
+      "sha256_artigo": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "autor_leitura": "/root",
+      "comando_e_uso": {
+        "tipo": "MC5",
+        "chave_atual": "B",
+        "objetivo": "SelecionarINCORRETA sobre modelos do laboratório.",
+        "uso_atual": "pontuável",
+        "comando_lido": "Assinale a INCORRETA sobre os modelos termodinâmicos usados no laboratório."
+      },
+      "suficiencia": {
+        "dados_e_condicoes_fornecidos": [
+          "Assinale a INCORRETA sobre os modelos termodinâmicos usados no laboratório."
+        ],
+        "convencoes_ou_modelos_justificados": [
+          "Os modelos e o contexto do laboratório são dados; bases vinculadas explicam as restrições."
+        ],
+        "somente_na_resolucao": [],
+        "faltantes_relevantes": [],
+        "conclusao": "Os modelos e o contexto do laboratório são dados; bases vinculadas explicam as restrições."
+      },
+      "consistencia": {
+        "unidades_e_bases": "Conferidas contra a demonstração e cada opção abaixo; bases homogêneas no resultado correto.",
+        "restricoes_fisicas": "Os modelos e o contexto do laboratório são dados; bases vinculadas explicam as restrições.",
+        "resultado": "Coerente com o modelo do enunciado e bases acessíveis."
+      },
+      "demonstracao": {
+        "passos": [
+          "A afirmação de que toda válvula adiabática é isentrópica é falsa: estrangulamento pode ser irreversível e gerar entropia. Chave B."
+        ],
+        "conclusao": "A afirmação de que toda válvula adiabática é isentrópica é falsa: estrangulamento pode ser irreversível e gerar entropia. Chave B.",
+        "arredondamento_e_tolerancia": "Não há arredondamento relevante.",
+        "calculos": []
+      },
+      "alternativas": [
+        {
+          "opcao": "A",
+          "texto": "Interpolação de propriedades requer cuidado com a região de fase.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Cuidado com a região de fase na interpolação é correto.",
+          "erro_representado_e_plausibilidade": "Cuidado com a região de fase na interpolação é correto."
+        },
+        {
+          "opcao": "B",
+          "texto": "Toda válvula adiabática é isentrópica.",
+          "valor_logico": "correta_para_o_comando",
+          "justificativa": "Adiabaticidade não garante geração nula: afirmação incorreta.",
+          "erro_representado_e_plausibilidade": "Adiabaticidade não garante geração nula: afirmação incorreta."
+        },
+        {
+          "opcao": "C",
+          "texto": "A razão de pressões do compressor utiliza pressão absoluta.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Razão termodinâmica de pressões usa valores absolutos: correta.",
+          "erro_representado_e_plausibilidade": "Razão termodinâmica de pressões usa valores absolutos: correta."
+        },
+        {
+          "opcao": "D",
+          "texto": "A geração de entropia não pode ser negativa.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Geração de entropia não negativa expressa a segunda lei: correta.",
+          "erro_representado_e_plausibilidade": "Geração de entropia não negativa expressa a segunda lei: correta."
+        },
+        {
+          "opcao": "E",
+          "texto": "Calor é transferência de energia por diferença de temperatura.",
+          "valor_logico": "incorreta_para_o_comando",
+          "justificativa": "Calor é transferência por diferença de temperatura, não propriedade armazenada: correta.",
+          "erro_representado_e_plausibilidade": "Calor é transferência por diferença de temperatura, não propriedade armazenada: correta."
+        }
+      ],
+      "unicidade": {
+        "situacao": "única",
+        "justificativa": "As cinco opções foram comparadas; somente B atende ao comando, sob as condições indicadas. Não há arredondamento relevante.",
+        "equivalencias_apos_arredondamento": []
+      },
+      "comentarios_existentes": {
+        "coerencia": "Solução e justificativas coerentes com a demonstração individual acima.",
+        "lacunas": []
+      },
+      "reuso": [],
+      "diagnostico": {
+        "decisao": "manter",
+        "achados": [],
+        "proposta_minima": "Preservar comando, opções e comentário.",
+        "impacto_identidade": "Nenhuma mudança de componentes de resposta proposta."
+      },
+      "fontes_e_evidencias": [
+        {
+          "arquivo": "modulos/e1-termodinamica.html#q-e1-30",
+          "alcance": "Artigo integral, hash acima."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-valvula-fase",
+          "alcance": "Base acessível vinculada antes da resolução."
+        },
+        {
+          "arquivo": "modulos/e1-termodinamica.html#base-escolha-modelo",
+          "alcance": "Base acessível vinculada antes da resolução."
+        }
+      ]
+    }
+  ],
+  "limites": [
+    "Plausibilidade dos distratores é teórica; nenhum piloto com estudantes.",
+    "Não é parecer do Auditor nem classificação global.",
+    "Cálculos pertinentes a esta resposta não encerram BAN-08."
+  ]
+}

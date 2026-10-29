@@ -1,0 +1,863 @@
+{
+  "id": "BAN-10",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "natureza": "Subauditoria técnica independente restrita a R1-A; sem gate geral",
+  "escopo": "Reprodução do verificador r2 e conferência de hashes, deltas e preservação r1. Ciência e adequação dos metadados ficam com o Auditor principal.",
+  "versao": {
+    "manifesto_sha256": "9e7acb7fc3b6a3a8870aa7822d3ad97b947b93770dc4ccdc325cf10759b2dc95",
+    "html": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+    "inventario": "8703e30d4dba156b83178a4b60f29f39fbdd6a75917b38b95cab0ffc1545a3d1",
+    "resumo": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+    "curso_js_sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+  },
+  "metodo": {
+    "importacao": "Kernel Node REPL reiniciado antes de qualquer importação; verificar-r2.mjs carregado pela URL canônica em sessão sem módulos r1 em cache.",
+    "seguranca": "Script lido integralmente antes da execução: somente leituras, comparações e validação; não foi executado aplicar-cr34-r2.mjs nem qualquer integração/mutação de produto.",
+    "repeticao_evitada": "Infraestrutura e comportamento JS r1 não foram reexecutados. A preservação foi conferida pelos hashes e pelos 99 checks r2."
+  },
+  "integridade": {
+    "entradas": 26,
+    "copias": 9,
+    "resultados": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+        "bytes": 1304318,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/modulos/e1-termodinamica.html",
+        "copia_confere": true,
+        "sha256_copia": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14"
+      },
+      {
+        "arquivo": "assets/curso.js",
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/assets/curso.js",
+        "copia_confere": true,
+        "sha256_copia": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+        "sha256": "8703e30d4dba156b83178a4b60f29f39fbdd6a75917b38b95cab0ffc1545a3d1",
+        "bytes": 780241,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/auditoria/termodinamica/inventario/inventario-questoes.json",
+        "copia_confere": true,
+        "sha256_copia": "8703e30d4dba156b83178a4b60f29f39fbdd6a75917b38b95cab0ffc1545a3d1"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "sha256": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+        "bytes": 59143,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "copia_confere": true,
+        "sha256_copia": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745"
+      },
+      {
+        "arquivo": "assets/registro.js",
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/assets/registro.js",
+        "copia_confere": true,
+        "sha256_copia": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+      },
+      {
+        "arquivo": "assets/curso.css",
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/assets/curso.css",
+        "copia_confere": true,
+        "sha256_copia": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
+      },
+      {
+        "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+        "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+        "bytes": 11334,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/assets/termodinamica/fon09-cr68-dados-v1.json",
+        "copia_confere": true,
+        "sha256_copia": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/inventario.schema.json",
+        "sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+        "bytes": 13126,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/auditoria/termodinamica/inventario/inventario.schema.json",
+        "copia_confere": true,
+        "sha256_copia": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+        "sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+        "bytes": 20990,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/auditoria/termodinamica/inventario/validar-inventario.mjs",
+        "copia_confere": true,
+        "sha256_copia": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/LEITURA_DECISOES-r2.md",
+        "sha256": "2215c39628dc1eea58290be6d42c1d4c36936ab2e44e3edb45aae3e7c3899283",
+        "bytes": 2300,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/aplicar-cr34-r2.mjs",
+        "sha256": "35b09fda4f31f6370200c79bcdee038ae86152bfc0cbc92ed3c8f2301f69de4b",
+        "bytes": 10467,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r2.json",
+        "sha256": "acecca284254bfa9d3567670bef62b0b30af03951d2b5fdac6153e94a6640765",
+        "bytes": 35220,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/delta-html-r1-r2.json",
+        "sha256": "e9acca8b182a7bc4794cdd40d1ba19ff2fdc8b0f62992aaeaee92082a7fb5195",
+        "bytes": 13715,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/delta-inventario-r1-r2.json",
+        "sha256": "98e7c16a3e2094997caba0445ac3dcd100c7559b59244ee224657ff1b5305969",
+        "bytes": 19302,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/delta-resumo-r1-r2.json",
+        "sha256": "9df33c1ac5d30630e518d25c8f1c15519852d3132c678f9be08c23fdf14435f3",
+        "bytes": 118481,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/e1-termodinamica.r2.html",
+        "sha256": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+        "bytes": 1304318,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/navegador-coordenador-r2.md",
+        "sha256": "7c5f2c8297a87174254c5f16ba111b3730e4bad31bb2f90a7aada93b24cccc48",
+        "bytes": 1640,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/redacao-cr34-r2.json",
+        "sha256": "10fab6a92bd368f1b3dcebcc18593cbb274991a474e39fafb43b6cee16141fd1",
+        "bytes": 4680,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/registro-cr34-r2.json",
+        "sha256": "1623a25819eb7beb0d21a8ecad0fb32ce3f9fe953fe06d614432ab34a54e80f9",
+        "bytes": 7099,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/revisao-cr34-apoio-r2.md",
+        "sha256": "e1fe17d0db766f3c628bb9281b338eee7393c49400c7072d0af03bf353eeefc2",
+        "bytes": 7839,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/triagem-r2.json",
+        "sha256": "b7e64034b3d1c6b31897948369c901a4a05648e53f30f91c6d553a7eb6d29147",
+        "bytes": 80471,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/triagem-r2.md",
+        "sha256": "c6cb2b280e8e76f1ecb38d3afa7f035c9c6eb24c3a0f4007f1d6afdc97513f3f",
+        "bytes": 1063,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/validacao-inventario-r2.json",
+        "sha256": "e9c0b27c4fb03f378c89955d088604acb42ad2935f1cffbbb5ff2006e57bf4e7",
+        "bytes": 333,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/verificacao-r2.json",
+        "sha256": "c25a668c9aa52a0f2188b0b4f8959275459785d78e3ee2ddfcd0f1a8be657209",
+        "bytes": 13162,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/BAN-10/verificar-r2.mjs",
+        "sha256": "4f32df4559a555a708fab8e3c4572f9dbac3bb79164721f7c7961fd0cefa6fb6",
+        "bytes": 5510,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/entregas/BAN-10-r2.md",
+        "sha256": "acae6a0883c30a9baf3426af2710e43553baae58e68219435b9b9d79dbb9dc36",
+        "bytes": 3211,
+        "confere": true
+      }
+    ]
+  },
+  "reexecucao": {
+    "coincide_integralmente_com_evidencia_entregue": true,
+    "resultado": {
+      "id": "BAN-10",
+      "rodada": 2,
+      "ok": true,
+      "verificacoes": 99,
+      "checks": [
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/entregas/BAN-10-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/antes/INVENTARIO_QUESTOES.md",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/antes/curso.css",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/antes/curso.js",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/antes/e1-termodinamica.html",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/antes/inventario-questoes.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/antes/registro.js",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/LEITURA_DECISOES-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/atualizar-inventario-r1.mjs",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/comportamento-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/conferencia-visual-complementar-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/conferencia-visual-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/conferencia-visual-cr51-cr80-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/contraprova-cr79-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr04-gabarito-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr04-gabarito-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr04-prova-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr04-prova-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr09-gabarito-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr09-gabarito-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr09-prova-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr09-prova-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr24-gabarito-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr24-gabarito-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr24-prova-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr24-prova-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr51-gabarito-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr51-gabarito-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr51-prova-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr51-prova-p4-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr55-gabarito-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr55-gabarito-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr55-prova-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr55-prova-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr79-gabarito-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr79-gabarito-p4-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr79-prova-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr79-prova-p8-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr80-gabarito-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr80-gabarito-p1-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr80-justificativa-p5-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr80-prova-oficial-r1.pdf",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/cr80-prova-p4-r1.png",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/decisoes-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/delta-html-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/delta-inventario-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/delta-js-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/documentos-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/documentos-cr04-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/documentos-cr51-cr80-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/e1-termodinamica.r1.html",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/integrar-r1.mjs",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/metadados-criticos-apoio-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/navegador-coordenador-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/plano-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/reconstrucao-deltas-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/registros-alterados-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/renderizacao-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/renderizacao-cr04-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/renderizacao-cr51-cr80-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/renderizacao-cr80-justificativa-coordenador-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/snapshot-antes.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/testar-comportamento-r1.mjs",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/triagem-apoio-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/triagem-apoio-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/validacao-inventario-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/verificacao-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "r1 imutável: auditoria/termodinamica/evidencias/BAN-10/verificar-r1.mjs",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/modulos/e1-termodinamica.html",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/assets/curso.js",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/assets/registro.js",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/assets/curso.css",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/assets/termodinamica/fon09-cr68-dados-v1.json",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/auditoria/termodinamica/inventario/inventario.schema.json",
+          "ok": true
+        },
+        {
+          "nome": "cópia r1 imutável: auditoria/termodinamica/evidencias/BAN-10/pacote-r1/auditoria/termodinamica/inventario/validar-inventario.mjs",
+          "ok": true
+        },
+        {
+          "nome": "manifesto r1 imutável",
+          "ok": true
+        },
+        {
+          "nome": "parecer r1 imutável",
+          "ok": true
+        },
+        {
+          "nome": "um único delta CR34 reconstrói todo HTML",
+          "ok": true
+        },
+        {
+          "nome": "197 artigos sem alteração de IDs",
+          "ok": true
+        },
+        {
+          "nome": "enunciado oficial intacto",
+          "ok": true
+        },
+        {
+          "nome": "alternativas e chave preservadas",
+          "ok": true
+        },
+        {
+          "nome": "marcadores e total críticos idênticos",
+          "ok": true
+        },
+        {
+          "nome": "dependência intacta: assets/curso.js",
+          "ok": true
+        },
+        {
+          "nome": "dependência intacta: assets/registro.js",
+          "ok": true
+        },
+        {
+          "nome": "dependência intacta: assets/curso.css",
+          "ok": true
+        },
+        {
+          "nome": "dependência intacta: assets/termodinamica/fon09-cr68-dados-v1.json",
+          "ok": true
+        },
+        {
+          "nome": "dependência intacta: auditoria/termodinamica/inventario/inventario.schema.json",
+          "ok": true
+        },
+        {
+          "nome": "dependência intacta: auditoria/termodinamica/inventario/validar-inventario.mjs",
+          "ok": true
+        },
+        {
+          "nome": "196 registros integralmente preservados",
+          "ok": true
+        },
+        {
+          "nome": "outras onze decisões idênticas",
+          "ok": true
+        },
+        {
+          "nome": "outras196 entradas de triagem idênticas",
+          "ok": true
+        },
+        {
+          "nome": "hash artigo sincronizado",
+          "ok": true
+        },
+        {
+          "nome": "registro derivado idêntico",
+          "ok": true
+        },
+        {
+          "nome": "snapshot r2 idêntico",
+          "ok": true
+        },
+        {
+          "nome": "estatísticas coerentes",
+          "ok": true
+        },
+        {
+          "nome": "comando, etapas e competências sincronizados",
+          "ok": true
+        },
+        {
+          "nome": "validação canônica limpa",
+          "ok": true
+        }
+      ],
+      "validacao": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 197,
+        "artigos_encontrados": 197,
+        "recursos_verificados": 29,
+        "links_locais_verificados": 1166,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      },
+      "estatisticas": {
+        "iniciante": 169,
+        "intermediario": 24,
+        "avancado": 4
+      },
+      "sha256": {
+        "html": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+        "inventario": "8703e30d4dba156b83178a4b60f29f39fbdd6a75917b38b95cab0ffc1545a3d1",
+        "resumo": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745"
+      },
+      "limites": "Verificação de delta/preservação e contrato. Testes funcionais r1 herdados pela identidade do JS e dos marcadores; não repetidos. Revisão científica e navegador possuem evidências separadas."
+    }
+  },
+  "deltas_independentes": {
+    "html": {
+      "ok": true,
+      "substituicoes": 1,
+      "id": "cr-e1-34"
+    },
+    "inventario": {
+      "ok": true,
+      "campos": 19,
+      "campos_CR34": 14,
+      "delta_independente": [
+        {
+          "campo": "$.atualizado_em",
+          "antes": "2026-10-27",
+          "depois": "2026-10-28"
+        },
+        {
+          "campo": "$.fonte.sha256",
+          "antes": "3839c7ba2e473ee9e5b3cdff80ea64242471b83b961eb117cee5a6918c884ae1",
+          "depois": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14"
+        },
+        {
+          "campo": "$.fonte.snapshot",
+          "antes": "auditoria/termodinamica/evidencias/BAN-10/e1-termodinamica.r1.html",
+          "depois": "auditoria/termodinamica/evidencias/BAN-10/e1-termodinamica.r2.html"
+        },
+        {
+          "campo": "$.metodo.descricao",
+          "antes": "Leitura integral dos 190 itens: enunciados, alternativas, comentários, notas, legendas e sete figuras locais. CR01–80 e AV01–80 classificados pelo Corretor; Q01–30 receberam insumo do coordenador, revisado e integrado pelo Corretor. Na rodada 2, todos os 80 pré-requisitos AV foram revistos individualmente pela demanda efetiva, sem herança automática da CR de origem. Uma etapa é decisão, inferência ou transformação de modelo exigida pelo comando; operações aritméticas não são etapas adicionais. Reconhecimento, fórmula direta e juízos curtos com modelo dado são iniciantes; integração de relações distintas ou leitura de diagrama com balanço podem ser intermediárias. Crítica que o comentário/nota já fornece não é creditada como resposta exigida ou avaliada. Avançado exigiria modelagem autônoma integrada e justificativa de alternativas. Dificuldade é estimada, não medida. Vínculos C01–C10 delimitam apoio, sem certificar formulação avançada integral. Relações CR/AV foram comparadas por pares, não deduzidas só do link de origem. Figuras contextuais têm hash mesmo quando não necessárias. SVG embutido integra o hash do artigo. Este inventário registra o banco atual, sem concluir BAN-03/04/05/07/08 ou GOV-02. Inclusão FUN-01: quatro problemas abertos lidos integralmente, incluindo dados, subcomandos, soluções e rubricas; em resposta aberta, a enumeração do campo leitura inclui as partes aplicáveis e não implica alternativas inexistentes. Inclusão FUN-02: três problemas abertos lidos integralmente, com modelo, comandos, soluções, rubricas, figura e pacote de dados/cálculo. O apoio_fun01 preparou P2 e sua recuperação; o Corretor revisou e integrou todos os registros. Classificações individuais distinguem construção/diagnóstico de modelo da integração de relações já fornecidas. FON-09 r1: somente CR68 recebeu atualização documental e de recursos, após confronto integral da densidade/tabela entre prova oficial p.3, caderno p.14 e HTML, com conjunto físico corrigido separado. Sem reclassificação da demanda e sem encerramento das auditorias gerais do banco. BAN-10 r1: triagem individual dos 197 artigos pelo apoio autoral, revista nos candidatos pelo Corretor; 12 decisões documentadas e nove roteiros críticos sem pontuação. Os roteiros agora solicitam justificativas com autocorreção; seus metadados foram relidos, com apoio identificado em metadados-criticos-apoio-r1.json. A demanda de CR79 passa a intermediária por construir dois casos contrastantes, sem validar autonomia avançada. Texto oficial, alternativas e chaves permanecem idênticos; os estudos críticos deixam o placar e mantêm marcação apenas documental. O código compartilhado usa condição explícita de módulo E1 e marcador por artigo.",
+          "depois": "Leitura integral dos 190 itens: enunciados, alternativas, comentários, notas, legendas e sete figuras locais. CR01–80 e AV01–80 classificados pelo Corretor; Q01–30 receberam insumo do coordenador, revisado e integrado pelo Corretor. Na rodada 2, todos os 80 pré-requisitos AV foram revistos individualmente pela demanda efetiva, sem herança automática da CR de origem. Uma etapa é decisão, inferência ou transformação de modelo exigida pelo comando; operações aritméticas não são etapas adicionais. Reconhecimento, fórmula direta e juízos curtos com modelo dado são iniciantes; integração de relações distintas ou leitura de diagrama com balanço podem ser intermediárias. Crítica que o comentário/nota já fornece não é creditada como resposta exigida ou avaliada. Avançado exigiria modelagem autônoma integrada e justificativa de alternativas. Dificuldade é estimada, não medida. Vínculos C01–C10 delimitam apoio, sem certificar formulação avançada integral. Relações CR/AV foram comparadas por pares, não deduzidas só do link de origem. Figuras contextuais têm hash mesmo quando não necessárias. SVG embutido integra o hash do artigo. Este inventário registra o banco atual, sem concluir BAN-03/04/05/07/08 ou GOV-02. Inclusão FUN-01: quatro problemas abertos lidos integralmente, incluindo dados, subcomandos, soluções e rubricas; em resposta aberta, a enumeração do campo leitura inclui as partes aplicáveis e não implica alternativas inexistentes. Inclusão FUN-02: três problemas abertos lidos integralmente, com modelo, comandos, soluções, rubricas, figura e pacote de dados/cálculo. O apoio_fun01 preparou P2 e sua recuperação; o Corretor revisou e integrou todos os registros. Classificações individuais distinguem construção/diagnóstico de modelo da integração de relações já fornecidas. FON-09 r1: somente CR68 recebeu atualização documental e de recursos, após confronto integral da densidade/tabela entre prova oficial p.3, caderno p.14 e HTML, com conjunto físico corrigido separado. Sem reclassificação da demanda e sem encerramento das auditorias gerais do banco. BAN-10 r1: triagem individual dos 197 artigos pelo apoio autoral, revista nos candidatos pelo Corretor; 12 decisões documentadas e nove roteiros críticos sem pontuação. Os roteiros agora solicitam justificativas com autocorreção; seus metadados foram relidos, com apoio identificado em metadados-criticos-apoio-r1.json. A demanda de CR79 passa a intermediária por construir dois casos contrastantes, sem validar autonomia avançada. Texto oficial, alternativas e chaves permanecem idênticos; os estudos críticos deixam o placar e mantêm marcação apenas documental. O código compartilhado usa condição explícita de módulo E1 e marcador por artigo. BAN-10 r2: somente CR34 e derivados foram revistos após R1-A. O roteiro diferencia o sinal de ΔU da igualdade ΔU=Q e integra, de modo guiado, primeira e segunda leis. Seu nível passa a intermediário pela combinação requerida; não há reivindicação de autonomia. O estudo permanece sem pontuação por decisão pedagógica de esclarecimento, sem ambiguidade invalidante de C demonstrada."
+        },
+        {
+          "campo": "$.metodo.limites",
+          "antes": "Histórico de cada estudante e exposição externa desconhecidos. Ausência de relação registrada não significa ineditismo. Relações de dados só afirmadas com evidência local específica; famílias por tema não atestam independência avaliativa. Fontes oficiais são as URLs/identificadores disponíveis no HTML, sem nova conferência oficial. Gabaritos não são certificados nesta entrega, embora BAN-01 tenha aceite específico anterior. Sete PNGs carregados são autossuficientes e não têm dependências transitivas; PDFs de origem são referências, não dados necessários aos comandos atuais, e não foram revalidados. Contagem de etapas não mede automaticamente nível. CR09/24/79 foram classificados pelo comando atual sob leitura condicionada esperada da prova. Suas ressalvas e hipóteses permanecem explícitas, mas a crítica já fornecida nas notas não é capacidade exigida/avaliada. Isso não valida a formulação nem o gabarito desses itens. Qualquer alteração de fonte/recurso exige releitura humana além da atualização de hashes. Atualização BAN-10: as limitações anteriores de não conferência documental são históricas de BAN-02. A conferência localizada de 12 casos está em decisoes-r1.json e relatórios do coordenador. Nos estudos críticos, o estado nao_auditado_em_BAN02 conserva a delimitação daquele inventário: não significa que a letra documental esteja desconhecida nem certifica uma resposta técnica universal. O uso avaliativo foi encerrado por exclusão editorial desses nove, sem exigir resolver a intenção não documentada da banca. Não há revisão numérica integral BAN08, aceite global de BAN07/FON01 ou certificação de domínio.",
+          "depois": "Histórico de cada estudante e exposição externa desconhecidos. Ausência de relação registrada não significa ineditismo. Relações de dados só afirmadas com evidência local específica; famílias por tema não atestam independência avaliativa. Fontes oficiais são as URLs/identificadores disponíveis no HTML, sem nova conferência oficial. Gabaritos não são certificados nesta entrega, embora BAN-01 tenha aceite específico anterior. Sete PNGs carregados são autossuficientes e não têm dependências transitivas; PDFs de origem são referências, não dados necessários aos comandos atuais, e não foram revalidados. Contagem de etapas não mede automaticamente nível. CR09/24/79 foram classificados pelo comando atual sob leitura condicionada esperada da prova. Suas ressalvas e hipóteses permanecem explícitas, mas a crítica já fornecida nas notas não é capacidade exigida/avaliada. Isso não valida a formulação nem o gabarito desses itens. Qualquer alteração de fonte/recurso exige releitura humana além da atualização de hashes. Atualização BAN-10: as limitações anteriores de não conferência documental são históricas de BAN-02. A conferência localizada de 12 casos está em decisoes-r1.json e relatórios do coordenador. Nos estudos críticos, o estado nao_auditado_em_BAN02 conserva a delimitação daquele inventário: não significa que a letra documental esteja desconhecida nem certifica uma resposta técnica universal. O uso avaliativo foi encerrado por exclusão editorial desses nove, sem exigir resolver a intenção não documentada da banca. Não há revisão numérica integral BAN08, aceite global de BAN07/FON01 ou certificação de domínio. A decisão atual de CR34 está em decisoes-r2.json; as outras onze decisões permanecem idênticas à r1. A fundamentação anterior de CR34 foi corrigida, sem usar trabalho arbitrário como contramodelo."
+        },
+        {
+          "campo": "$.itens[cr-e1-34].localizacao.sha256_artigo",
+          "antes": "8d5968b24cde31d6374c6ec7e1b29bd550aa198ff44ee76906eeaecf57c80170",
+          "depois": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5"
+        },
+        {
+          "campo": "$.itens[cr-e1-34].origem.fontes",
+          "antes": [
+            {
+              "rotulo": "Prova original · p. 1",
+              "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF#page=1"
+            },
+            {
+              "rotulo": "Gabarito definitivo",
+              "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF#page=1"
+            },
+            {
+              "rotulo": "Caderno fornecido (questão na p. 29)",
+              "url": "assets/questoes-reais-e1/caderno-fornecido.pdf"
+            },
+            {
+              "rotulo": "BAN-10: documento local conferido, PDF p. 1",
+              "url": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf#page=1"
+            },
+            {
+              "rotulo": "BAN-10: documento local conferido, PDF p. 1",
+              "url": "downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf#page=1"
+            },
+            {
+              "rotulo": "MIT Unified, §2.1, balanço da energia total",
+              "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html"
+            }
+          ],
+          "depois": [
+            {
+              "rotulo": "Prova original · p. 1",
+              "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF#page=1"
+            },
+            {
+              "rotulo": "Gabarito definitivo",
+              "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF#page=1"
+            },
+            {
+              "rotulo": "Caderno fornecido (questão na p. 29)",
+              "url": "assets/questoes-reais-e1/caderno-fornecido.pdf"
+            },
+            {
+              "rotulo": "BAN-10: documento local conferido, PDF p. 1",
+              "url": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf#page=1"
+            },
+            {
+              "rotulo": "BAN-10: documento local conferido, PDF p. 1",
+              "url": "downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf#page=1"
+            },
+            {
+              "rotulo": "MIT Unified, §2.1, balanço da energia total",
+              "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html"
+            },
+            {
+              "rotulo": "MIT Unified, §5.4, variação de entropia do gás ideal",
+              "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html"
+            },
+            {
+              "rotulo": "MIT Unified, §5.5, segunda lei e transferência de entropia",
+              "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html"
+            }
+          ]
+        },
+        {
+          "campo": "$.itens[cr-e1-34].origem.evidencia_conferencia",
+          "antes": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r1.json",
+          "depois": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r2.json"
+        },
+        {
+          "campo": "$.itens[cr-e1-34].formato.comando",
+          "antes": "Comparar C/E com a chave oficial sem nota; justificar qual parcela de trabalho é anulada pela isocoria e quais hipóteses adicionais permitem concluir ΔU=Q>0.",
+          "depois": "Comparar a letra com a chave oficial sem nota; distinguir ΔU>0 de ΔU=Q, obter a condição exata da igualdade e acompanhar a demonstração de entropia para explicar por que trabalho arbitrário não refuta C."
+        },
+        {
+          "campo": "$.itens[cr-e1-34].competencias",
+          "antes": [
+            "C03"
+          ],
+          "depois": [
+            "C03",
+            "C04"
+          ]
+        },
+        {
+          "campo": "$.itens[cr-e1-34].pre_requisitos",
+          "antes": [
+            "Sistema fechado e massa fixa",
+            "Trabalho de fronteira ∫p dV versus trabalho elétrico/de eixo",
+            "Primeira lei incluindo energia cinética e potencial e convenção de sinais"
+          ],
+          "depois": [
+            "Massa fechada e composição fixa; estados de equilíbrio e propriedades do gás ideal simples",
+            "Convenção Q entrando e W saindo; energia total U+Ec+Ep e trabalho de expansão versus outros modos",
+            "Distinção lógica entre igualdade, desigualdade e condição suficiente",
+            "Balanço de entropia fechado, temperatura absoluta de fronteira positiva e geração não negativa",
+            "Relações du=cv(T)dT e ds=cv(T)dT/T+Rdv/v; sinal de integral com integrando positivo"
+          ]
+        },
+        {
+          "campo": "$.itens[cr-e1-34].nivel.estimado",
+          "antes": "iniciante",
+          "depois": "intermediario"
+        },
+        {
+          "campo": "$.itens[cr-e1-34].nivel.justificativa",
+          "antes": "Identifica e condiciona uma simplificação do balanço seguindo perguntas que nomeiam o termo decisivo; não é solicitado projetar um processo novo ou medir sua validade. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "depois": "Integra o balanço energético e a restrição de entropia para distinguir condição da igualdade e sinal de ΔU. As hipóteses e a demonstração são fornecidas na análise, e o roteiro pede acompanhá-las: é estudo intermediário guiado, sem construção independente de processo nem evidência de autonomia avançada."
+        },
+        {
+          "campo": "$.itens[cr-e1-34].raciocinio.etapas",
+          "antes": [
+            "Anular somente o trabalho de fronteira pela constância do volume.",
+            "Partir do balanço total e declarar massa fixa, ausência de outros trabalhos e variações cinéticas/potenciais nulas.",
+            "Concluir ΔU=Q>0 sob essas restrições e separar a conclusão condicionada da afirmação irrestrita."
+          ],
+          "depois": [
+            "Identificar que o original afirma ΔU>0 e obter W+ΔEc+ΔEp=0 como condição exata para ΔU=Q, distinguindo-a de uma escolha suficiente de termos nulos.",
+            "Relacionar, na demonstração guiada, calor exclusivamente entrante a Tb positiva e geração não negativa a ΔS>0.",
+            "Combinar a relação de entropia do gás ideal no mesmo volume com cv(T)>0 para inferir T2>T1 e ΔU>0, explicando por que uma escolha arbitrária de W não é contramodelo físico."
+          ]
+        },
+        {
+          "campo": "$.itens[cr-e1-34].hipoteses.implicitas",
+          "antes": [
+            "Sem outros modos de trabalho",
+            "Sistema fechado",
+            "EC e EP desprezíveis"
+          ],
+          "depois": [
+            "Leitura usual: massa e composição fixas de gás ideal simples, com estados inicial/final de equilíbrio",
+            "No argumento do sinal: mesmo volume inicial/final, cv(T)>0 e calor exclusivamente entrando em quantidade não nula a temperaturas de fronteira finitas positivas"
+          ]
+        },
+        {
+          "campo": "$.itens[cr-e1-34].hipoteses.limites",
+          "antes": [
+            "Volume constante não anula trabalho elétrico ou de eixo em geral",
+            "BAN-10: Volume constante elimina trabalho de fronteira, mas não exclui outros trabalhos nem mudanças macroscópicas de energia.",
+            "Chave documental C conferida no item original 53; fonte e página em decisoes-r1.json. O roteiro autoral é estudo guiado para autocorreção sem nota. Marcações atuais e antigas não entram em acertos/erros ou denominador de treino."
+          ],
+          "depois": [
+            "O original afirma aumento de U, não a igualdade ΔU=Q; a chave C não foi invalidada por ausência de restrições sobre outros trabalhos.",
+            "No balanço adotado, ΔU=Q equivale à soma W+ΔEc+ΔEp=0; anular cada parcela é apenas suficiente.",
+            "A demonstração guiada do sinal usa também a segunda lei. Não substituir calor exclusivamente entrante por mero calor líquido positivo quando houver entradas e saídas.",
+            "CR34 permanece sem pontuação como esclarecimento pedagógico de modelos; as marcações continuam documentais e não atestam execução da justificativa."
+          ]
+        },
+        {
+          "campo": "$.itens[cr-e1-34].vinculo_competencias.alcance",
+          "antes": "Apoio delimitado a C03: distinguir termos de trabalho e explicitar as condições de redução de um balanço energético. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada.",
+          "depois": "Apoio delimitado a C03/C04: distinguir condições do balanço energético e usar uma demonstração fornecida de segunda lei para examinar viabilidade. Autocorreção guiada sem nota, sem certificar as competências integrais ou autonomia avançada."
+        },
+        {
+          "campo": "$.itens[cr-e1-34].revisao.ambiguidades_conhecidas",
+          "antes": [
+            "Volume constante elimina trabalho de fronteira, mas não exclui outros trabalhos nem mudanças macroscópicas de energia. Tratamento: estudo crítico retirado da pontuação; não é anulação oficial."
+          ],
+          "depois": []
+        },
+        {
+          "campo": "$.itens[cr-e1-34].revisao.evidencia_gabarito",
+          "antes": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r1.json",
+          "depois": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r2.json"
+        }
+      ]
+    },
+    "resumo": {
+      "ok": true,
+      "limite": "Comparação literal dos textos antes/depois declarados; mérito da redação e metadados pertence ao Auditor."
+    }
+  },
+  "preservacao_r1": {
+    "resultado": "Confirmada pelos checks reproduzidos: manifesto, parecer, entrega, 61 evidências, seis snapshots e nove cópias r1; dependências atuais intactas; 196 registros, onze decisões e 196 entradas de triagem preservados.",
+    "funcionalidade_herdada": "JS, marcadores, enunciado oficial, alternativas e chave de CR34 intactos; não foram repetidos testes funcionais."
+  },
+  "achados_obrigatorios": [],
+  "limites": [
+    "Sem ciência ou julgamento pedagógico dos metadados.",
+    "Sem navegador, aplicação com alunos ou acesso a armazenamento do usuário.",
+    "Não executado via Node CLI.",
+    "Não emite aceite geral nem libera próximo ID."
+  ],
+  "arquivos_permanentes_escritos": [
+    "auditoria/termodinamica/pareceres/BAN-10-r2-tecnico.json"
+  ]
+}

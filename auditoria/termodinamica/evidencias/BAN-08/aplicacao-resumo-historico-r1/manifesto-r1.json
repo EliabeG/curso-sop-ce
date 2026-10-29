@@ -1,0 +1,28 @@
+{
+  "id": "BAN-08",
+  "estado": "CORRECAO_EDITORIAL_APLICADA_SEM_ACEITE",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "alvo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+  "sha256_antes": "f0fb7899fbf628515de624873ad3ef253ae08f0a3c1ec8f1154c941b11d573e4",
+  "sha256_depois": "7824dcd17e20d14b54db2c339310e6100cebaf8e7df59051d636844c7dc3be7d",
+  "parecer_tecnico": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-08-atualizacao-inventario-pos-parecer-auditoria-tecnica-r1.md",
+    "sha256": "ca04865e63322ae3e341c06a47b9612e3e4a73c3178b3ad18b6991640d8a8e4f",
+    "autor": "/root/auditoria_av61_70"
+  },
+  "delta": [
+    {
+      "antes": "O JSON registra as hipóteses atualizadas e a revisão do gabarito da versão efetiva como pendente.",
+      "depois": "Na entrega inicial de aplicação, o JSON registrava as hipóteses atualizadas e a revisão do gabarito da versão efetiva como pendente; o parágrafo seguinte registra a revalidação posterior."
+    },
+    {
+      "antes": "Revisão independente da versão aplicada e testes de persistência são necessários.",
+      "depois": "Naquele momento, a revisão independente e os testes controlados de persistência da versão aplicada ainda eram necessários."
+    }
+  ],
+  "explicacao": "A candidata inicial qualificava apenas a primeira frase; a segunda ainda soava pendente após os testes. A correção abrange as duas frases identificadas pelo parecer, sem alterar o restante.",
+  "limites": [
+    "Revalidação estrutural e revisão independente da versão efetiva seguem pendentes.",
+    "Não altera HTML, JSON, controle ou evidências históricas."
+  ]
+}

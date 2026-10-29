@@ -1,0 +1,82 @@
+{
+  "id": "FON-01",
+  "data": "2026-10-28",
+  "responsavel": "agente automatizado /root",
+  "escopo": "Triagem de títulos posteriores nas quatro famílias Petrobras NS/NM/NTJ e Itaipu, com leitura dirigida.",
+  "catalogos": [
+    {
+      "concurso": "petrobras_21_ns",
+      "editaisDisponiveis": 65,
+      "dataChaveDefinitivaComoNoPortal": "23/03/2022 09:00",
+      "titulosPosterioresOuMesmoDia": 54,
+      "metodo": "Triagem de títulos/metadados do catálogo; leitura dirigida dos seis documentos listados. Não equivale a ler integralmente todos os atos."
+    },
+    {
+      "concurso": "petrobras_23_nm",
+      "editaisDisponiveis": 38,
+      "dataChaveDefinitivaComoNoPortal": "24/05/2023 15:30",
+      "titulosPosterioresOuMesmoDia": 30,
+      "metodo": "Triagem de títulos/metadados do catálogo; leitura dirigida dos seis documentos listados. Não equivale a ler integralmente todos os atos."
+    },
+    {
+      "concurso": "petrobras_23_ntj",
+      "editaisDisponiveis": 66,
+      "dataChaveDefinitivaComoNoPortal": "19/04/2024 20:40",
+      "titulosPosterioresOuMesmoDia": 52,
+      "metodo": "Triagem de títulos/metadados do catálogo; leitura dirigida dos seis documentos listados. Não equivale a ler integralmente todos os atos."
+    },
+    {
+      "concurso": "itaipu_23",
+      "editaisDisponiveis": 22,
+      "dataChaveDefinitivaComoNoPortal": "20/02/2024 11:30",
+      "titulosPosterioresOuMesmoDia": 11,
+      "metodo": "Triagem de títulos/metadados do catálogo; leitura dirigida dos seis documentos listados. Não equivale a ler integralmente todos os atos."
+    }
+  ],
+  "documentosLidos": [
+    {
+      "concurso": "petrobras_21_ns",
+      "documento": "Edital 13/2022",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/ED_13_PETROBRAS_PSP1_2021_RETIFICAO.PDF",
+      "trecho": "Página física 1, documento completo por extração textual web",
+      "conclusao": "Retifica o quadro de vagas das ênfases 11 e24; não modifica as chaves dos cargos 14/17 selecionados."
+    },
+    {
+      "concurso": "petrobras_23_nm",
+      "documento": "Edital 19/2024",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/ED_19_PETROBRAS_PSP_1_23_INC_SUB_JUDICE_HETERO_FINAL_PSS_ENF_11.PDF",
+      "trecho": "Página física 1, caput e títulos das seções por extração textual web",
+      "conclusao": "Inclusão e reclassificação na ênfase 11 por procedimento de heteroidentificação. Não altera a chave da ênfase 7 usada no curso; listas individuais não foram auditadas."
+    },
+    {
+      "concurso": "petrobras_23_ntj",
+      "documento": "Edital 39/2025",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/FD172FF5FCF01855B5F66A191DD7655101A0B4F8B9986F91FE296B425E463533.pdf",
+      "trecho": "Página física 1, documento completo por extração textual web",
+      "conclusao": "Corrige a identificação do procedimento de heteroidentificação no caput e item 1 do edital 35. Não anuncia alteração de questão ou chave."
+    },
+    {
+      "concurso": "petrobras_23_ntj",
+      "documento": "Edital 12/2024",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/ED_12_PETROBRAS_PSP_23_2_INC_BIO_HETERO_REPUBLICAO_FINAL_CONCURSO.PDF",
+      "trecho": "Página física 1, caput por extração textual web",
+      "conclusao": "Republica classificação em consequência de inclusões e compensação entre listas e explicita legenda. A triagem não examinou as 80páginas de listas; o caput não anuncia nova chave."
+    },
+    {
+      "concurso": "petrobras_23_ntj",
+      "documento": "Edital 6/2024",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/ED_6_PETROBRAS_PSP_23_2_RES_FINAL_OBJ_CONV_BIO_HETERO1.PDF",
+      "trecho": "Página física 1, caput; páginas 810–811, itens 6–7, por extração textual web",
+      "conclusao": "A retificação é da composição da equipe multiprofissional. O item 7 informa as justificativas de alterações/anulações em 26/04/2024, coerentes com o ato oficial já identificado. Não foram lidas as listas nominais das 811páginas."
+    },
+    {
+      "concurso": "itaipu_23",
+      "documento": "Comunicado de 2/2/2024, publicação 5/2/2024",
+      "url": "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/2023_ITAIPU_COMUNICADO.PDF",
+      "trecho": "Página física 1, documento completo por extração textual web",
+      "conclusao": "A chave corresponde ao caderno divulgado; houve versões aplicadas com numeração diversa e sem tipo explicitado por candidato. Distinguir modelo 924_ITAIPU_028_01 de tipo/cor individual não publicado."
+    }
+  ],
+  "conclusao": "Não foi identificada outra chave publicada para nossos cadernos nesses quatro catálogos. Os atos de justificativas de alterações são examinados separadamente pelo Corretor/Auditor; há alterações E→C já refletidas nas chaves definitivas. O comunicado Itaipu requer identificação cuidadosa de modelo/tipo.",
+  "limites": "A triagem não demonstra ausência absoluta de atos fora dos canais consultados. Não foram auditadas listas individuais nem decisões judiciais completas. Não houve inspeção visual dos pixels destes seis documentos; a extração textual foi suficiente para os trechos administrativos e de identificação aqui tratados. Nenhum produto foi alterado pelo root."
+}

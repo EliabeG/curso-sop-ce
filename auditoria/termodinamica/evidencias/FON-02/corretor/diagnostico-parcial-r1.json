@@ -1,0 +1,184 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "estado": "diagnostico_sem_edicao_de_produto",
+  "registros": [
+    {
+      "id": "cr-e1-09",
+      "adicoes": [
+        {
+          "classe": "conversao",
+          "conteudo": "T=t+273,15 K; igualdade dos intervalos de 1 °C e 1 K.",
+          "local": "resolução de referência e análise autoral",
+          "origem": "Não é dado do enunciado; relação entre escalas definida no SI.",
+          "justificativa": "Permite distinguir grandeza e unidade sem atribuir ao original a restrição de unidade de base.",
+          "fonte": "BIPM já vinculado; apoio-coordenador-unidades-r1.json confirma offset exato.",
+          "separacao": "Análise crítica e comentário explicitamente autorais; adequada."
+        },
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Interpretar unidade como unidade de base da temperatura termodinâmica.",
+          "local": "nota/roteiro/análise BAN-10",
+          "justificativa": "Apresentada como leitura condicionada da chave E, não como frase oficial.",
+          "separacao": "Adequada; já esclarece que a restrição não aparece no comando."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Original não recebeu dado numérico; o offset pertence à explicação."
+    },
+    {
+      "id": "cr-e1-10",
+      "adicoes": [
+        {
+          "classe": "exemplo_conceitual",
+          "conteudo": "Duplicar amostra homogênea no mesmo estado.",
+          "local": "resolução",
+          "justificativa": "Demonstra caráter intensivo de m/V; não fornece entrada extra a cálculo ou julgamento.",
+          "separacao": "Exemplo verbal explicitamente apresentado como duplicação, fora do original."
+        }
+      ],
+      "acao": "manter",
+      "nota": "A relação ρ=m/V é definição; duplicação é argumento autoral, não propriedade numérica acrescentada."
+    },
+    {
+      "id": "cr-e1-22",
+      "adicoes": [
+        {
+          "classe": "definicao_modelo",
+          "conteudo": "Z=pV/(nRT), p e T absolutos; Z=1 para gás ideal.",
+          "local": "resolução",
+          "justificativa": "Define o parâmetro usado pelo próprio original e delimita as variáveis; não acrescenta valores externos.",
+          "separacao": "Fórmula identificada como definição fora do enunciado."
+        }
+      ],
+      "acao": "manter",
+      "nota": "O número 1 já está no original; pV=ZnRT é rearranjo da definição, não dado suplementar."
+    },
+    {
+      "id": "cr-e1-23",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Baixa pressão, temperatura suficientemente alta e afastamento da condensação.",
+          "local": "resolução",
+          "justificativa": "Explica por que alta pressão não autoriza a generalização; não estabelece estado numérico novo.",
+          "separacao": "Texto de resolução, distinguível do comando/figura oficiais."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Não há constante/propriedade numérica suplementar. Vácuo/gás ideal da figura original não devem ser contados como adição."
+    },
+    {
+      "id": "cr-e1-24",
+      "adicoes": [
+        {
+          "classe": "conversao",
+          "conteudo": "100 °C→373,15 K e 0,01 °C→273,16 K; razão≈1,366.",
+          "local": "roteiro/análise/resolução",
+          "justificativa": "Temperaturas derivadas dos números originais pelo offset SI273,15; razão é cálculo, não propriedade pesquisada.",
+          "separacao": "Suplemento autoral explícito, mas convém tornar origem da conversão e valor adotado inequívocos.",
+          "fonte": "Apoio BIPM do coordenador; OpenStax2.1 já fundamenta equação de estado."
+        },
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Mesma amostra gasosa ideal, n/V constantes; ponto triplo apenas referência térmica, estados em equilíbrio térmico.",
+          "local": "suplemento autoral BAN-10",
+          "justificativa": "São condições da leitura termométrica, ausentes da leitura literal. O item já informa a insuficiência literal.",
+          "separacao": "Adequada, sem atribuição à banca."
+        }
+      ],
+      "acao": "precisar_conversao",
+      "nota": "Manter valores e crítica já aprovados. Acrescentar localizador BIPM e esclarecer que273,16 resulta do0,01°C adotado no original, não de definição exata atual."
+    },
+    {
+      "id": "cr-e1-33",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Ausência de outros trabalhos e variações macroscópicas cinética/potencial ao concluir ΔU=0.",
+          "local": "resolução após Q=0 e fronteira rígida",
+          "justificativa": "Rigidez elimina trabalho de fronteira; para reduzir o balanço total à energia interna, esses termos adicionais precisam ser explicitados.",
+          "separacao": "Não aparece explicitamente; suplemento de modelo da resolução deve ficar fora do original.",
+          "fonte": "MIT Unified primeira lei, já usada no curso e aprovada FOR-01."
+        }
+      ],
+      "acao": "explicitar_modelo_na_resolucao",
+      "nota": "Gás ideal/vácuo/rigidez/fechamento/isolamento são dados originais ou da figura, não suplementos. ΔT=0 e aumento de S são conclusões do modelo, não dados novos."
+    },
+    {
+      "id": "cr-e1-34",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Rota elementar: massa fixa, somente trabalho de expansão, ΔEc=ΔEp=0. Prova guiada: massa/composição fixas, gás ideal simples, estados de equilíbrio, mesmo V, cv(T)>0, calor exclusivamente entrando em quantidade não nula, Tb finita e positiva.",
+          "local": "resolução e análise crítica BAN-10r2",
+          "justificativa": "As condições suficientes da igualdade são separadas da prova do sinal; todas explicitadas como escolhas da análise autoral.",
+          "separacao": "Adequada e aprovada; não modificar."
+        },
+        {
+          "classe": "convencao",
+          "conteudo": "Q entrando positivo, W saindo positivo; Tb na fronteira; Sger≥0.",
+          "local": "análise autoral",
+          "justificativa": "Define termos das leis usadas; não acrescenta dado de prova ou valor arbitrário.",
+          "separacao": "Explícita."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Relações e integrais são demonstração guiada, não suplementos numéricos. Não reabrir distinção ΔU>0 versusΔU=Q."
+    },
+    {
+      "id": "cr-e1-35",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "ΔEc+ΔEp=0 para ΔU=−W; sistema em repouso/mesmaelevação como escolha suficiente.",
+          "local": "nota/análise autoral",
+          "justificativa": "A condição reduz balanço total; explicitada e não confundida com fechado/adiabático."
+        },
+        {
+          "classe": "exemplo_autoral",
+          "conteudo": "Levantamento ideal sem variação de velocidade/estado interno, trabalho recebido convertido em potencial.",
+          "local": "análise crítica",
+          "justificativa": "Contramodelo explicitamente denominado autoral, sem números ou pretensão de ser dado oficial."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sinal W produzido positivo já vem da redação original; não atribuir novamente como suplemento inventado. A análise deixa claro o alcance."
+    },
+    {
+      "id": "cr-e1-36",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Exemplo de pistão isolado e relação pV^k constante.",
+          "local": "resolução",
+          "justificativa": "A relação é suplementar: exige gás ideal e calores específicos constantes, k=cp/cv, além de expansão adiabática reversível do modelo simples.",
+          "separacao": "A redação diz apenas modelo ideal reversível, sem nomear gás/calores/k; precisa delimitação local.",
+          "fonte": "Aula gás ideal/adiabática e fonte primária do modelo a localizar na documentação já arquivada."
+        },
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Redução de U ao fornecer trabalho: massa fechada, demais energias/trabalhos excluídos.",
+          "local": "exemplo na resolução",
+          "justificativa": "A conclusão decorre do balanço reduzido; o contraexemplo à afirmação W=0 não exige universalizar esse balanço."
+        }
+      ],
+      "acao": "delimitar_exemplo_e_relacao",
+      "nota": "Não mudar original, chave E ou exigência de julgamento; fazer claro que a relação extra é ilustração, não dado fornecido pela prova."
+    },
+    {
+      "id": "cr-e1-43",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Vizinhança recebe calor; compensação no limite reversível e soma positiva no irreversível.",
+          "local": "resolução",
+          "justificativa": "Explicita a aplicação da segunda lei a sistema+vizinhança; nenhum parâmetro externo é usado.",
+          "separacao": "Limite reversível é declarado como ideal, fora do original."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Não há dado numérico nem hipótese silenciosa necessária a uma conta."
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "Herança científica dos quatro abertos FUN-01 e decisão separada AV04",
+  "data": "2026-10-28",
+  "revisor_atual": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "CONCLUIDO_COM_HERANCA_FUN01_ACEITA_E_AJUSTE_OBRIGATORIO_AV04",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "origem_cientifica": {
+    "revisor_original": "Agente automatizado /root/auditor_aaa",
+    "pareceres": [
+      {
+        "arquivo": "auditoria/termodinamica/pareceres/FUN-01-r1.md",
+        "sha256": "466e5b5430a50b638eb07922afd4a1f2f9bc1555093c420ca86cdc7beb7ae5e6"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/pareceres/FUN-01-r2.md",
+        "sha256": "568c562e923d46b60ea7d107638dd2a21f3152127c6e249b26601853cea26447"
+      }
+    ],
+    "sequencia_de_aceite": "FUN-01 r1 aceitou o conteúdo científico/pedagógico e exigiu somente R1-A documental; r2 APROVADO corrigiu dois títulos e confirmou a preservação integral de HTML/dados/cálculos e dos critérios científicos.",
+    "pacote_aprovado": "auditoria/termodinamica/evidencias/FUN-01/pacote-r2/modulos/e1-termodinamica.html",
+    "sha256_html_pacote": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+    "memorias": [
+      {
+        "arquivo": "auditoria/termodinamica/pareceres/FUN-01-r1-calculos-independentes.json",
+        "sha256": "4968e274bb9633b6d3925f5ded58d40f8a9aa95762f944e0483058be9cc84d6f",
+        "metodo_original": "Resolução própria de enunciados/JSON antes das soluções e script do Corretor; partes pertinentes lidas por item neste turno."
+      },
+      {
+        "arquivo": "auditoria/termodinamica/pareceres/FUN-01-r1-evidencias.json",
+        "sha256": "7163f6587365f4b3e1523de1825d0dbb1be04c298c0ebd1db3301aea7218cd2b",
+        "alcance": "Confrontos científicos, fontes e rubricas da revisão original; partes pertinentes lidas por item."
+      }
+    ]
+  },
+  "identidade_e_alcance": {
+    "apoio_coordenador": {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/heranca-abertos-coordenador-r1.json",
+      "sha256": "20a6ab1b1ee4feed968f5cf54a799257f40a4f4ab0edb8f8fa6c9c296b6b76f6",
+      "responsavel": "/root, coordenador",
+      "limite": "Índice técnico de identidade e alcance; não é prova científica independente por si só."
+    },
+    "verificacao_propria": "Comparação byte a byte dos nós da unidade inteira e quatro artigos, recursos e hashes dos pareceres contra o pacote r2; concorda com o índice.",
+    "componentes": [
+      {
+        "id": "fun01-estado-equilibrio",
+        "tipo": "unidade_completa",
+        "sha256_atual": "9a6a471eb920a0f4bdc811af5811d97ab4ecef8ed72038505ba9bbad288a6039",
+        "sha256_pacote_aprovado": "9a6a471eb920a0f4bdc811af5811d97ab4ecef8ed72038505ba9bbad288a6039",
+        "identico": true,
+        "indice_coordenador_confere": true
+      },
+      {
+        "id": "fun01-e1-saturacao",
+        "tipo": "problema_com_solucao_e_rubrica",
+        "sha256_atual": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+        "sha256_pacote_aprovado": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+        "identico": true,
+        "indice_coordenador_confere": true
+      },
+      {
+        "id": "fun01-e1-mistura",
+        "tipo": "problema_com_solucao_e_rubrica",
+        "sha256_atual": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+        "sha256_pacote_aprovado": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+        "identico": true,
+        "indice_coordenador_confere": true
+      },
+      {
+        "id": "fun01-e1-supercritico",
+        "tipo": "problema_com_solucao_e_rubrica",
+        "sha256_atual": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+        "sha256_pacote_aprovado": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+        "identico": true,
+        "indice_coordenador_confere": true
+      },
+      {
+        "id": "fun01-e1-equilibrio",
+        "tipo": "problema_com_solucao_e_rubrica",
+        "sha256_atual": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+        "sha256_pacote_aprovado": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+        "identico": true,
+        "indice_coordenador_confere": true
+      }
+    ],
+    "recursos": [
+      {
+        "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+        "sha256_atual": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+        "sha256_pacote": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+        "identico": true
+      },
+      {
+        "arquivo": "assets/termodinamica/fun01-calculos-v1.mjs",
+        "sha256_atual": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+        "sha256_pacote": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+        "identico": true
+      }
+    ],
+    "limite": "O HTML inteiro atual difere do HTML histórico; a herança é dos componentes íntegros e de seus recursos no alcance revisado, não da versão inteira do curso."
+  },
+  "metodo_atual": "Leitura dos comandos atuais, soluções/rubricas, pareceres e memórias pertinentes, com decisão de alcance. Nenhum script científico foi executado e nenhuma consulta primária foi repetida; resultados numéricos são herdados com atribuição. Hashes são verificação própria de identidade, não nova matemática.",
+  "registros": [
+    {
+      "id": "fun01-e1-saturacao",
+      "sha256_artigo": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "origem_revisao": "heranca_cientifica_por_identidade_e_alcance",
+      "revisor_atual": "Agente automatizado independente /root/auditor_ban07",
+      "revisor_cientifico_original": "Agente automatizado /root/auditor_aaa",
+      "comando_atual_conferido": "Tanque com água pura em coexistência, m=2,000 kg, V=0,900 m³, p=0,20 MPa absoluta, T=120,210 °C e h informado 1800±2 kJ/kg. Classificar conjuntos de dados, obter qualidade/massa/entalpia, confrontar intervalos e propor medição independente sem atribuir sensor defeituoso.",
+      "suficiencia_modelos": "ATENDIDO. Substância e equilíbrio líquido-vapor especificados; dados de operação tratados como exatos no exercício, linha NIST e tolerância editorial ±1 kJ/kg declaradas. Gravidade/capilaridade/parede desprezadas. A unidade idêntica fornece postulado, fase e propriedades.",
+      "resultado_herdado_atribuido": {
+        "fonte": "FUN-01-r1-calculos-independentes.json#resultados.saturacao, confrontado em FUN-01-r1-evidencias.json#calculos.saturacao",
+        "v_m3_kg": 0.45,
+        "x": 0.5074944539995886,
+        "mv_kg": 1.0149889079991772,
+        "h_kJ_kg": 1621.9490404800943,
+        "intervalo_previsto_kJ_kg": [
+          1620.9490404800943,
+          1622.9490404800943
+        ],
+        "intervalo_informado_kJ_kg": [
+          1798,
+          1802
+        ],
+        "menor_afastamento_kJ_kg": 175.05095951990575,
+        "nao_recalculado_neste_turno": true
+      },
+      "respostas_admissiveis": "p/T saturados são redundantes e insuficientes para qualidade; p/v e T/x são suficientes na região admissível e p/T/v contém redundância. A incompatibilidade é com o conjunto de hipóteses/tolerâncias, não prova de sensor h culpado. Várias medições adicionais são aceitas se identificarem variável independente e igualdade testada; composição/desequilíbrio requerem revisão do modelo.",
+      "rubrica_conferida": "10 pontos: classificação/condições 3, v/x/mv/h e unidades 3, intervalos/afastamento/causalidade 2, medição e revisão de hipótese 2. Tolerância de correção 0,1% preserva a decisão, separada da tolerância editorial e da incerteza NIST. Erros críticos explícitos: independência falsa p/T, x inviável, culpar sensor e atribuir incerteza oficial indevida.",
+      "fontes_e_alcance_aceitos": "A revisão original conferiu NISTIR5078 tabela 2, unidades e conversões; essa ciência é herdada porque artigo, unidade e dados são idênticos. Não se alega consulta NIST nova neste turno.",
+      "confronto_atual": "Comando, solução e rubrica atuais exigem as decisões cobertas pela revisão original, concordam com sua memória e conservam os limites de hipótese e causalidade. Nenhuma pendência científica original foi transferida como se aprovada: R1-A documental foi fechado na r2.",
+      "criterios": {
+        "dados_suficientes": "ATENDIDO no modelo explicitado",
+        "consistencia_fisica": "ATENDIDO por herança da revisão científica e sem nova contradição na leitura atual",
+        "unidades": "ATENDIDO — kg,m³,MPa absoluta,°C na tabela, kJ/kg e título adimensional",
+        "restricoes": "ATENDIDO — coexistência pura, tolerâncias e negligências prévias ao cálculo",
+        "familia_de_respostas": "ATENDIDO — múltiplas propostas independentes defensáveis, com justificativa observável",
+        "rubrica": "ATENDIDO — pontuação, tolerâncias e erros críticos proporcionais",
+        "arredondamento": "ATENDIDO no alcance original: arredondamentos aceitos devem preservar a decisão de intervalos separados"
+      },
+      "fontes_efetivamente_examinadas": [
+        "fun01-e1-saturacao no HTML atual",
+        "FUN-01-r1.md e FUN-01-r2.md",
+        "FUN-01-r1-calculos-independentes.json#resultados.saturacao",
+        "FUN-01-r1-evidencias.json#calculos.saturacao e fontes.saturacao",
+        "Pacote FUN-01 r2 e recursos: identidade verificada, sem executar cálculos"
+      ],
+      "limites": [
+        "A origem dos valores e a matemática são atribuídas ao revisor original; a leitura e a conferência de identidade/alcance são próprias deste turno.",
+        "Não há resposta única exigida para a proposta livre de nova medição."
+      ],
+      "obrigacoes_de_preservacao": [
+        "Manter dados/modelo, solução, rubrica e recursos vinculados à identidade examinada; alteração relevante reabre o alcance."
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA"
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "sha256_artigo": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "origem_revisao": "heranca_cientifica_por_identidade_e_alcance",
+      "revisor_atual": "Agente automatizado independente /root/auditor_ban07",
+      "revisor_cientifico_original": "Agente automatizado /root/auditor_aaa",
+      "comando_atual_conferido": "Quatro lotes fictícios A/B a 350 K, líquido/vapor ideais, Raoult/Dalton, psatA=150 kPa e psatB=50 kPa. Classificar fases, rejeitar a hipótese bifásica quando inviável, resolver lote II, construir a família de IV, discutir composição, regra das fases e suficiência.",
+      "suficiencia_modelos": "ATENDIDO no modelo didático explícito. Pressões absolutas, bases molares, composições conhecidas/desconhecidas e 10 mol apenas no lote II estão declarados. O modelo cobre seleção de fase e composições, não números de h/v ausentes de um modelo calorimétrico/volumétrico adicional.",
+      "resultado_herdado_atribuido": {
+        "fonte": "FUN-01-r1-calculos-independentes.json#resultados.mistura e FUN-01-r1-evidencias.json#calculos.mistura",
+        "regimes": "I líquido; II coexistência; III vapor; IV indeterminado sem composição ou observação de fases.",
+        "limites_p_kPa": {
+          "zA_04": [
+            68.18181818181817,
+            90
+          ],
+          "zA_08": [
+            107.14285714285714,
+            130
+          ]
+        },
+        "lote_II": {
+          "xA": 0.3,
+          "yA": 0.5625,
+          "beta": 0.38095238095238104,
+          "nl_mol": 6.19047619047619,
+          "nv_mol": 3.809523809523811
+        },
+        "hipoteses_bifasicas_inadmissiveis": {
+          "beta_I": -0.3999999999999999,
+          "beta_III": 1.9047619047619047
+        },
+        "familia_IV": "Se coexistência for imposta a 80 kPa, xA=0,30 e yA=0,5625; qualquer zA interior entre esses valores fixa proporção própria. Exemplos originais: zA=0,35 → beta=0,19047619; zA=0,50 → beta=0,76190476.",
+        "nao_recalculado_neste_turno": true
+      },
+      "respostas_admissiveis": "Não se pode declarar I/III impossíveis só porque uma tentativa bifásica falha. IV permite família de estados; os dois exemplos de zA não são as únicas escolhas admissíveis. Quantidade total altera escala, não coordenada intensiva. beta é fração molar de vapor, e convertê-la em título mássico exige massas molares e composições de fase. beta=0,50 no lote II é incompatível com zA=0,40, não redundância consistente.",
+      "rubrica_conferida": "10 pontos: envelopes/regimes e rejeição das raízes não físicas 3; lote II e balanços 2; família de IV e falta de prova de coexistência 2; regra das fases/suficiência e beta imposto 2; bases molar/mássica e hipóteses 1. Aceita 0,1% e arredondamento coerente; erros críticos de beta fora de domínio, p(T) da substância pura, equivalência molar/mássica e coexistência indevida explícitos.",
+      "fontes_e_alcance_aceitos": "As relações Raoult/Dalton e a delimitação de misturas foram confrontadas na revisão original com University of Washington CHEM452 Winter2023 §5.1 e ASHRAE 2025 cap.2. Parâmetros fictícios não são certificados como propriedades de mistura real. A atribuição é à ciência original preservada, sem novas consultas primárias neste turno.",
+      "confronto_atual": "Comando e solução/rubrica atuais conservam o mesmo problema aberto, dados e modelos das memórias lidas. A decisão de herdar cobre os quatro lotes, as raízes não admissíveis e a família de IV, além das justificativas de suficiência; não é mero cotejo do valor beta do lote II.",
+      "criterios": {
+        "dados_suficientes": "ATENDIDO para as decisões pedidas; insuficiência deliberada de IV é objeto de análise, não lacuna escondida",
+        "consistencia_fisica": "ATENDIDO por herança da revisão de envelopes, balanços e admissibilidade",
+        "unidades": "ATENDIDO — K,kPa absolutos,mol e frações molares; distinção explícita do título mássico",
+        "restricoes": "ATENDIDO — idealidade, ausência de reação, gravidade/capilaridade e origem didática anteriores ao cálculo",
+        "familia_de_respostas": "ATENDIDO — IV e escolha dos exemplos têm múltiplas respostas justificadas; não se impõe uma letra ou único par",
+        "rubrica": "ATENDIDO — pontua diagnóstico, balanço e limites, não só números",
+        "arredondamento": "ATENDIDO no alcance original: tolerância 0,1% não aceita frações de fase fora de [0,1]"
+      },
+      "fontes_efetivamente_examinadas": [
+        "fun01-e1-mistura no HTML atual, integralmente",
+        "FUN-01-r1.md e FUN-01-r2.md",
+        "FUN-01-r1-calculos-independentes.json#resultados.mistura",
+        "FUN-01-r1-evidencias.json#calculos.mistura e fontes.mistura",
+        "Unidade e dois recursos do pacote FUN-01 r2: identidade própria conferida"
+      ],
+      "limites": [
+        "Resultados numéricos são herdados e atribuídos ao autor original; a matemática não foi repetida neste turno.",
+        "Suficiência de (T,p,zA) é no conjunto de propriedades descritas pelo modelo; não entrega valores calorimétricos/volumétricos não modelados."
+      ],
+      "obrigacoes_de_preservacao": [
+        "Manter vínculo entre parâmetros fictícios, modelos, respostas admissíveis e rubrica; alteração relevante exige nova análise do alcance."
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA"
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "sha256_artigo": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "origem_revisao": "heranca_cientifica_por_identidade_e_alcance",
+      "revisor_atual": "Agente automatizado independente /root/auditor_ban07",
+      "revisor_cientifico_original": "Agente automatizado /root/auditor_aaa",
+      "comando_atual_conferido": "Validar quatro registros de água pura por T/p e erros máximos determinísticos, testar melhorias de precisão, rejeitar título fora de domínio, discutir independência de propriedades e necessidade de modelo real para h/v/s.",
+      "suficiencia_modelos": "ATENDIDO. Tc/pc, estados de equilíbrio, composição fixa, pressões absolutas e significado determinístico/independente dos erros estão prévios à tentativa. O pedido separa classificar região de calcular propriedades, que não são indevidamente deduzidas dos dois números críticos.",
+      "resultado_herdado_atribuido": {
+        "fonte": "FUN-01-r1-calculos-independentes.json#resultados.supercritico e FUN-01-r1-evidencias.json#calculos.supercritico",
+        "A": "Não garantido; caixa cruza os dois limites, embora o centro esteja acima.",
+        "B": "Seguramente não supercrítico pelo limite de T.",
+        "C": "Seguramente não supercrítico pelo limite de p.",
+        "D": "Estado supercrítico pelo par T/p; campo de título indefinido, sem convertê-lo em 1.",
+        "melhorias": "Apenas T não garante; apenas p não garante; ambos garantem.",
+        "limites_de_erro": "epsilonT<2,904 K e epsilonp<0,036 MPa, mantendo centros; limites estritos, não igualdade.",
+        "nao_recalculado_neste_turno": true
+      },
+      "respostas_admissiveis": "Pode-se manter T/p ou propor outro par independente com equação de estado real e verificação do ramo estável. rho e v=1/rho da mesma origem são uma identidade, não dois dados independentes. Regras de validação podem ter redações/ordem diferentes se distinguirem redundância, metadado inválido, falta de precisão e modelo de propriedades. Não se exige uma função universal de h/v/s a partir de Tc/pc.",
+      "rubrica_conferida": "10 pontos: classificação robusta dos quatro e título 3; melhorias e duas margens estritas 3; independência/par alternativo 2; regra e limitação da referência crítica 2. Arredondamentos não podem relaxar a garantia estrita; erros críticos de centro de A, critério só T/só p, título e contagem dupla rho/v explícitos.",
+      "fontes_e_alcance_aceitos": "IAPWS R7-97(2012) §3, Tc=647,096 K e pc=22,064 MPa, conferidos pela revisão original. Essa confirmação é herdada porque comando, unidade e dados permanecem idênticos; não houve nova consulta IAPWS nem recálculo das margens neste turno.",
+      "confronto_atual": "A solução/rubrica atual coincide com a classificação e os limites da memória original e preserva o sentido de erro determinístico, os operadores estritos e a separação entre estado válido e metadado de título inválido.",
+      "criterios": {
+        "dados_suficientes": "ATENDIDO — dados completos para decisão robusta; falta de modelo para h/v/s é objetivo explícito, não omissão disfarçada",
+        "consistencia_fisica": "ATENDIDO por herança da revisão do domínio crítico, independência e estados",
+        "unidades": "ATENDIDO — K,MPa absolutos e margens nas respectivas unidades; qualidade não é definida no estado supercrítico",
+        "restricoes": "ATENDIDO — composição fixa, equilíbrio e caixas determinísticas explícitas",
+        "familia_de_respostas": "ATENDIDO — pares e regras alternativas justificados admitidos; classificação dos quatro é determinada no domínio adotado",
+        "rubrica": "ATENDIDO — pontua defesa e limites, não só nome da região",
+        "arredondamento": "ATENDIDO no alcance original — deve preservar margem estritamente suficiente, sem aceitar igualdade no limiar"
+      },
+      "fontes_efetivamente_examinadas": [
+        "fun01-e1-supercritico no HTML atual, integralmente",
+        "FUN-01-r1.md e FUN-01-r2.md",
+        "FUN-01-r1-calculos-independentes.json#resultados.supercritico",
+        "FUN-01-r1-evidencias.json#calculos.supercritico e fontes.critico",
+        "Pacote FUN-01 r2 e recursos: identidade própria conferida"
+      ],
+      "limites": [
+        "Constantes, classificações e margens são herdadas com autoria, não apresentadas como matemática nova deste revisor.",
+        "Aceite de suficiência é para os pedidos delimitados, sem modelo completo de propriedades por extensão."
+      ],
+      "obrigacoes_de_preservacao": [
+        "Preservar as caixas determinísticas, definição simultânea T>Tc/p>pc e caráter estrito das margens; alteração de domínio/dados reabre o alcance."
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA"
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "sha256_artigo": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "origem_revisao": "heranca_cientifica_por_identidade_e_alcance",
+      "revisor_atual": "Agente automatizado independente /root/auditor_ban07",
+      "revisor_cientifico_original": "Agente automatizado /root/auditor_aaa",
+      "comando_atual_conferido": "Parecer integrado sobre coluna bifásica fictícia X sob gravidade e duas células ideais a volumes fixos, separadas por membrana permeável apenas a A. Exige fronteiras/restrições, diagnóstico local/global, hidrostática, potenciais, redistribuição finita, estabilidade permitida e classificação de dados.",
+      "suficiencia_modelos": "ATENDIDO. O comando fornece geometria, parâmetros fictícios, domínio de estabilidade de X, gravidade, convenção de potencial intrínseco/total, condições da interface e restrições mecânicas/térmicas/materiais das células. Fornece o modelo de gás ideal, pressões parciais e mu=mu°+RT ln(pi/p°), com F a T/V fixos; a preparação fornece logaritmo/derivada. Não há curva p_sat a 302 K nem se pede inventá-la.",
+      "resultado_herdado_atribuido": {
+        "fonte": "FUN-01-r1-calculos-independentes.json#resultados.equilibrio e FUN-01-r1-evidencias.json#calculos.equilibrio",
+        "H1": "Rejeitado como equilíbrio global por incompatibilidades térmica e mecânica; coexistência local na interface não prova equilíbrio em toda a coluna.",
+        "H2": {
+          "p_fundo_kPa_absoluta": 29.62,
+          "delta_mu_intrinseco_J_mol": 0.3924,
+          "delta_mu_total_fundo_menos_interface": 0,
+          "alcance": "Líquido comprimido no fundo; saturação na interface, não em toda a coluna."
+        },
+        "D": {
+          "delta_mu_A_inicial_J_mol": 3457.695395505231,
+          "sentido_inicial": "A de alpha para beta, com dF<0 na coordenada permitida.",
+          "nA_final_cada_mol": 0.20046507898324115,
+          "nB_final_alpha_beta_mol": [
+            0.08018603159329646,
+            0.32074412637318583
+          ],
+          "p_final_alpha_beta_kPa": [
+            70,
+            130
+          ],
+          "yA_final_alpha_beta": [
+            0.7142857142857143,
+            0.3846153846153846
+          ],
+          "transferencia_A_mol": 0.12027904738994469,
+          "Fsegunda_final_J_mol2": 24884.134559999995,
+          "apos_liberar_B": "100 kPa e yA=yB=0,5 em ambas as células; cada espécie dividida pela metade."
+        },
+        "nao_recalculado_neste_turno": true
+      },
+      "respostas_admissiveis": "Fronteiras podem ser desenhadas de formas equivalentes se mantiverem as trocas permitidas. É aceita outra convenção de mu se explícita e sem contar gravidade duas vezes. O equilíbrio seletivo não exige pressão total, composição ou mu de B iguais enquanto B não passa e o suporte impede deslocamento. A prova de mínimo é apenas frente à coordenada de transferência liberada. A classificação de dados deve separar qualidade ausente, coexistência incompatível, composição faltante e escala extensiva.",
+      "rubrica_conferida": "10 pontos: fronteiras/restrições 1,5; diagnóstico térmico/fases 1,5; balanço mecânico 1,5; mu/gravidade 1,5; transferência seletiva/estado final/estabilidade 2,5; suficiência e comunicação 1,5. Domínio exige >=8/10, sem erros críticos, e >=70% em cada um dos três eixos mecânico, mu/gravidade e transferência seletiva. Créditos parciais exigem raciocínio; um erro de modelo não é compensado por número coincidente.",
+      "fontes_e_alcance_aceitos": "A revisão original confrontou equilíbrio/restrições com MIT Unified, MIT3.020 aula13, Tong§4.4, Reall§1.14 e hidrostática OpenStax§14.1. A herança aceita deduções e estabilidade no modelo definido, sem declarar uma EOS calorífica completa de X ou prova de processos proibidos.",
+      "confronto_atual": "Comando, solução completa/rubrica e limites foram lidos neste turno. A memória original confirma sinais, unidades, conservação por espécie, inventários e curvatura positiva de F. Os limites preservados impedem inferir tempo de relaxação, curva de saturação não fornecida, capacidades térmicas ou validação de equipamento real.",
+      "criterios": {
+        "dados_suficientes": "ATENDIDO no domínio didático explícito e nas transferências permitidas",
+        "consistencia_fisica": "ATENDIDO por herança da revisão original de hidrostática, potenciais, balanços e estabilidade",
+        "unidades": "ATENDIDO — Pa/kPa absolutos, K,kg/m³,kg/mol,m³,mol,J/(mol K) e J/mol coerentes; Fsegunda em J/mol²",
+        "restricoes": "ATENDIDO — suporte/rigidez, seletividade, reservatório e gravidade explícitos; não se substitui por pistão livre nem se exige igualdade de potenciais de espécies diferentes.",
+        "familia_de_respostas": "ATENDIDO — diagramas/convenções/pareceres alternativos aceitos com justificativa e restrições preservadas",
+        "rubrica": "ATENDIDO — evidências observáveis, crédito parcial e erros críticos coerentes; sem alegar aplicação com alunos",
+        "arredondamento": "ATENDIDO no alcance original — comparar com valores sem arredondamento intermediário; sinais e decisões não podem ser invertidos"
+      },
+      "fontes_efetivamente_examinadas": [
+        "fun01-e1-equilibrio no HTML atual, comando e solução/rubrica completos em duas partes",
+        "FUN-01-r1.md e FUN-01-r2.md",
+        "FUN-01-r1-calculos-independentes.json#resultados.equilibrio",
+        "FUN-01-r1-evidencias.json#calculos.equilibrio, fontes.equilibrio e fontes.potenciais",
+        "Unidade e recursos do pacote FUN-01 r2: identidade própria conferida"
+      ],
+      "limites": [
+        "A matemática, revisão de fontes e os resultados são atribuídos ao auditor original; não foram repetidos ou executados de novo neste turno.",
+        "Os resultados só testam o modelo e as mudanças permitidas; validação experimental precisa de substância/modelos, sensores, incertezas, seletividade e estabilização adicionais.",
+        "O modelo X é fictício e local; seu testemunho de consistência não autoriza propriedades térmicas em outras temperaturas."
+      ],
+      "obrigacoes_de_preservacao": [
+        "Manter convenções de mu, pressão de saturação local, restrições da membrana e teste de estabilidade limitado à coordenada permitida; mudanças relevantes reabrem o alcance."
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA"
+    }
+  ],
+  "decisao_av04": {
+    "item": "AV04",
+    "id_artigo": "av-e1-04",
+    "sha256_artigo": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+    "origem_revisao": "confronto_proprio_de_achado_de_apoio_independente",
+    "revisor_decisor": "Agente automatizado independente /root/auditor_ban07",
+    "fonte_apoio": {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av01-05-r1.json",
+      "sha256": "213a688f21a8ebdf0933c978cd374190ad496418903eca93c2bd9bc018ac7d59",
+      "revisor": "/root/auditor_av",
+      "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07",
+      "sha256_artigo_examinado_pelo_apoio": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+      "veredito_original": "AJUSTES_OBRIGATORIOS",
+      "achado_original": "AV04-E; ajuste obrigatório por plausibilidade não demonstrada."
+    },
+    "identidade": "Hash do artigo atual conferido independentemente e idêntico à prova do apoio. Comando e cinco opções lidos antes do comentário e do achado detalhado do apoio; não há figura.",
+    "comando_atual": "Modelo de líquido incompressível para água líquida longe da região crítica em faixa moderada de pressão e temperatura; identificar o significado da hipótese.",
+    "derivacao_propria_de_contexto": "v=1/rho pode ser aproximado por constante na faixa analisada. Isso não impõe massa armazenada constante em um volume de controle, pressão constante na bomba ou volume específico zero, nem uma temperatura particular. Só D expressa a definição. A base-medidas acessível antes da resposta explica essa faixa e a distinção entre pressão variável e densidade quase constante.",
+    "opcoes_consideradas_no_confronto": [
+      {
+        "opcao": "A",
+        "juizo": "Falsa; confusão entre propriedade do material e inventário de massa do volume de controle. Um enchimento a densidade aproximadamente constante é contramodelo adequado."
+      },
+      {
+        "opcao": "B",
+        "juizo": "Falsa; pressão pode subir na bomba sem variação relevante de v."
+      },
+      {
+        "opcao": "C",
+        "juizo": "Falsa; confunde variação desprezível de v com v nulo."
+      },
+      {
+        "opcao": "D",
+        "juizo": "Correta; v aproximadamente constante na faixa é precisamente a aproximação pedida."
+      },
+      {
+        "opcao": "E",
+        "juizo": "Falsa, mas erro plausível da redação temperatura igual a zero não demonstrado."
+      }
+    ],
+    "criterio_aplicado": {
+      "referencia": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md, BAN-07; protocolo e preparação já lidos",
+      "exigencia": "Distratores plausíveis baseados em erros reais e justificativa de cada opção. Ser apenas falso não satisfaz automaticamente esse critério. Não se exige piloto empírico."
+    },
+    "analise_propria_da_plausibilidade_E": "A cadeia mais próxima identificável seria confundir incompressibilidade com isotermia, isto é, deltaT=0. A redação atual exige ainda trocar variação por valor de T e escolher um zero sem escala; nenhum dado, definição ou operação do comando/base/comentário sustenta essa passagem específica. Erros combinados não são proibidos, mas não basta imaginar uma cadeia arbitrária para declarar plausível um valor não motivado. O comentário atual somente refuta a condição nula e não oferece o mecanismo exigido. Não foi encontrada base concreta para refutar o apontamento do apoio.",
+    "decisao": "CONFIRMADO_AJUSTE_OBRIGATORIO_AV04_E",
+    "fundamento_da_decisao": "A chave D e sua unicidade são cientificamente sustentadas, porém a plausibilidade de E permanece não demonstrada na versão congelada. O achado do apoio foi examinado e aceito neste alcance, não convertido em execução própria das demais revisões AV01–05.",
+    "observacao_A": {
+      "origem": "AV04-A-precisao, apoio /root/auditor_av",
+      "decisao": "Mantida como observação não bloqueante neste confronto.",
+      "fundamento": "Entrada/saída por si só não implica variação de inventário; o feedback não afirma essa implicação universal. Um exemplo explícito de enchimento deixaria a refutação mais direta. A plausibilidade de A e sua falsidade já são demonstráveis pelo modelo, sem alterar a chave."
+    },
+    "ajustes_obrigatorios": [
+      {
+        "id": "AV04-E",
+        "acao": "Substituir E por alternativa falsa com confusão conceitual concreta ligada à incompressibilidade e sincronizar seu comentário.",
+        "exemplo_de_direcao_admissivel": "Confusão incompressibilidade/isotermia, como exigir temperatura necessariamente constante durante o bombeamento; é sugestão de mecanismo, não alteração implementada nem aceite de uma futura redação.",
+        "evidencia_necessaria": "Artigo reapresentado com novo hash; conferir comando/faixa operacional, todas as cinco alternativas, plausibilidade e comentário; demonstrar que apenas D continua correta.",
+        "limite": "Não substituir por outra afirmação arbitrária nem usar somente uma refutação para provar plausibilidade."
+      }
+    ],
+    "fontes_efetivamente_examinadas": [
+      {
+        "referencia": "modulos/e1-termodinamica.html#av-e1-04",
+        "alcance": "Comando, cinco opções e comentário atuais"
+      },
+      {
+        "referencia": "modulos/e1-termodinamica.html#base-medidas",
+        "alcance": "Trecho efetivamente lido neste turno: rho/v, faixa de incompressibilidade, pressão de bomba e temperatura"
+      },
+      {
+        "referencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av01-05-r1.json",
+        "alcance": "Somente registro AV04, autoria/metadados e prova do achado; demais itens não reexaminados neste turno"
+      }
+    ],
+    "limites": [
+      "Decisão de qualidade de distrator é teórica, sem alegar erro observado em alunos ou validação empírica.",
+      "AV04 pertence à cobertura do apoio AV01–05; esta decisão separada não acrescenta um segundo registro de cobertura para o mesmo artigo.",
+      "Nenhuma edição de produto foi feita e a r1 permanece congelada."
+    ]
+  },
+  "limites": [
+    "Sem revisão humana, piloto com estudantes ou certificação externa.",
+    "Herança não aprova BAN-07 integral nem o curso como avançado; demais IDs continuam bloqueados.",
+    "Sem alegar nova execução de matemática, navegador ou fontes primárias atribuídas à revisão original.",
+    "Produto, controle e checklist não editados."
+  ],
+  "cobertura": {
+    "fun01_previstos": 4,
+    "fun01_registrados": 4,
+    "ids_fun01": [
+      "fun01-e1-saturacao",
+      "fun01-e1-mistura",
+      "fun01-e1-supercritico",
+      "fun01-e1-equilibrio"
+    ],
+    "decisao_av04_registrada": true,
+    "av04_incluido_nos_registros_fun01": false,
+    "av04_cobertura_original": "Apoio AV01–05; nesta peça só se decide o achado, sem duplicação."
+  },
+  "resumo": {
+    "fun01_registros_aceitos_por_heranca": 4,
+    "matematica_nova_fun01_executada": false,
+    "ajustes_obrigatorios_fun01": 0,
+    "decisao_av04": "Confirmado AV04-E; substituição/comentário e nova auditoria da versão reapresentada necessários.",
+    "ajustes_obrigatorios_av04": [
+      "AV04-E"
+    ],
+    "aceite_global_BAN07": false,
+    "proximo_ID_liberado": false
+  },
+  "decisao_de_liberacao": "NÃO LIBERADO: bloco parcial; ajuste obrigatório AV04-E confirmado e demais itens/IDs continuam sob a fila do coordenador.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "quatro_registros_unicos_e_identicos_ao_pacote": true,
+    "unidade_inteira_e_dois_recursos_preservados": true,
+    "pareceres_e_memorias_hashes_reconfirmados": true,
+    "ancoras_internas_da_preparacao": [
+      {
+        "origem": "fun01-e1-equilibrio",
+        "alvo": "#fun01-preparacao-equilibrio",
+        "dentro_da_unidade": true
+      }
+    ],
+    "AV04_atual_identico_ao_apoio": true,
+    "AV04_sem_registro_duplicado": true,
+    "matematica_FUN01_nao_reexecutada": true,
+    "escopo_preservado": "Somente este parecer foi criado pelo auditor no turno; produto, controle e checklist não editados."
+  }
+}

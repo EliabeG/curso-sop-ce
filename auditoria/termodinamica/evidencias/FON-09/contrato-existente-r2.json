@@ -1,0 +1,358 @@
+{
+  "natureza": "reexecução técnica em FON-09 do contrato BAN-02, sem decisão de aceite",
+  "schema_version": "1.1",
+  "passou": true,
+  "total": 39,
+  "fixtures_temporarios": "C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-VhvRRr",
+  "resultados": [
+    {
+      "caso": "estado atual, ID longo, 3 opções, aberto e projeto",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "estados realizados/verificados com evidência Markdown existente",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "ajustes obrigatórios com evidência existente",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "caso": "ID duplicado",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: ID duplicado no inventário"
+      ]
+    },
+    {
+      "caso": "artigo sem registro",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "projeto-e1-1: artigo da fonte sem registro no inventário"
+      ]
+    },
+    {
+      "caso": "registro extra inexistente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-999: localização precisa identificar um único article existente"
+      ]
+    },
+    {
+      "caso": "hash artigo alterado",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: hash do artigo desatualizado; reler enunciado, alternativas, comentários, notas e recursos"
+      ]
+    },
+    {
+      "caso": "hash fonte alterado",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.fonte.sha256: fonte atual modificada; revisão dos registros necessária",
+        "$.fonte.snapshot: snapshot difere do hash registrado da fonte"
+      ]
+    },
+    {
+      "caso": "recurso omitido",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: recurso usado sem hash no registro: assets/a.svg"
+      ]
+    },
+    {
+      "caso": "recurso hash alterado",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: recurso alterado: assets/a.svg"
+      ]
+    },
+    {
+      "caso": "etapas divergentes",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: numero_etapas difere do tamanho de etapas"
+      ]
+    },
+    {
+      "caso": "nível sem justificativa",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].nivel.justificativa: não atende ao padrão \\S"
+      ]
+    },
+    {
+      "caso": "nível pendente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: item ainda não classificado; registro incompleto para BAN-02"
+      ]
+    },
+    {
+      "caso": "campo desconhecido",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0]: campo não previsto: errado"
+      ]
+    },
+    {
+      "caso": "alternativas divergentes",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: alternativas no HTML=3, registro=5"
+      ]
+    },
+    {
+      "caso": "competência inválida",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].competencias[0]: não atende ao padrão ^C(?:0[1-9]|10)$"
+      ]
+    },
+    {
+      "caso": "banco divergente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: banco diverge do prefixo ou data-banco do artigo"
+      ]
+    },
+    {
+      "caso": "relação inexistente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100.exposicao_previa: âncora ausente ou duplicada: modulos/e1.html#ausente"
+      ]
+    },
+    {
+      "caso": "snapshot igual fonte",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.fonte.snapshot: snapshot deve ser uma cópia preservada distinta da fonte"
+      ]
+    },
+    {
+      "caso": "caminho fora raiz",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].localizacao.recursos[0].arquivo: não atende ao padrão ^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+      ]
+    },
+    {
+      "caso": "tipo formato inválido",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "aberto-e1-1: múltipla escolha exige pelo menos duas alternativas",
+        "aberto-e1-1: formato diverge do data-formato do artigo",
+        "aberto-e1-1: banco aberto exige resposta_aberta"
+      ]
+    },
+    {
+      "caso": "fonte local inexistente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100.origem: arquivo inacessível: modulos/ausente.html (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-VhvRRr\\modulos\\ausente.html')"
+      ]
+    },
+    {
+      "caso": "data impossível",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.atualizado_em: data inválida; use AAAA-MM-DD"
+      ]
+    },
+    {
+      "caso": "realizada sem evidência",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].origem: campo obrigatório ausente: evidencia_conferencia"
+      ]
+    },
+    {
+      "caso": "verificado sem evidência",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].revisao: campo obrigatório ausente: evidencia_gabarito"
+      ]
+    },
+    {
+      "caso": "ajustes sem evidência",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].revisao: campo obrigatório ausente: evidencia_gabarito"
+      ]
+    },
+    {
+      "caso": "evidência vazia",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].origem.evidencia_conferencia: não atende ao padrão \\S"
+      ]
+    },
+    {
+      "caso": "evidência arquivo ausente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100.origem.evidencia_conferencia: arquivo inacessível: pareceres/ausente.md (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-VhvRRr\\pareceres\\ausente.md')"
+      ]
+    },
+    {
+      "caso": "evidência âncora ausente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100.revisao.evidencia_gabarito: âncora ausente ou duplicada: pareceres/fixture.md#ausente"
+      ]
+    },
+    {
+      "caso": "evidência remota",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+      ]
+    },
+    {
+      "caso": "evidência somente fragmento",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+      ]
+    },
+    {
+      "caso": "estado não enumerado",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].origem.conferencia_oficial: fora dos valores permitidos: \"aprovado\""
+      ]
+    },
+    {
+      "caso": "versão antiga",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.schema_version: esperado \"1.1\""
+      ]
+    },
+    {
+      "caso": "evidência opcional inválida",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100.origem.evidencia_conferencia: arquivo inacessível: pareceres/ausente.md (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-VhvRRr\\pareceres\\ausente.md')"
+      ]
+    },
+    {
+      "caso": "recurso em disco mudou sem tocar HTML",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100: recurso alterado: assets/a.svg"
+      ]
+    },
+    {
+      "caso": "item novo adicionado ao HTML",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.fonte.sha256: fonte atual modificada; revisão dos registros necessária",
+        "q-e1-101: artigo da fonte sem registro no inventário"
+      ]
+    },
+    {
+      "caso": "snapshot modificado",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.fonte.snapshot: snapshot difere do hash registrado da fonte"
+      ]
+    },
+    {
+      "caso": "href local quebrado mesmo com hashes atualizados",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "q-e1-100.link: âncora ausente ou duplicada: modulos/e1.html#ausente"
+      ]
+    },
+    {
+      "caso": "schema isolado rejeita evidência remota",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,540 @@
+{
+  "id": "BAN-01",
+  "rodada": 2,
+  "data": "2026-10-27",
+  "metodo": "Permutações Fisher–Yates independentes com crypto.randomInt, registradas explicitamente; rejeitados ordem identidade, períodos globais 1 a 15, repetição de blocos de cinco, quatro letras iguais seguidas e contagens fora de 3 a 9.",
+  "gabarito_anterior": "ABCDEABCDEABCDEABCDEABCDEABCDE",
+  "gabarito_novo": "CBECCDEABEDCCEAADDAAECCCEBAECB",
+  "itens": [
+    {
+      "id": "q-e1-01",
+      "ordem_antiga_nas_novas_posicoes": "DCABE",
+      "antiga_para_nova": {
+        "D": "A",
+        "C": "B",
+        "A": "C",
+        "B": "D",
+        "E": "E"
+      },
+      "gabarito_anterior": "A",
+      "gabarito_novo": "C",
+      "digital_anterior": "9c435af5",
+      "digital_nova": "e930ca81",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-02",
+      "ordem_antiga_nas_novas_posicoes": "CBADE",
+      "antiga_para_nova": {
+        "C": "A",
+        "B": "B",
+        "A": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "gabarito_anterior": "B",
+      "gabarito_novo": "B",
+      "digital_anterior": "d6d616ca",
+      "digital_nova": "6203aefa",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-03",
+      "ordem_antiga_nas_novas_posicoes": "EBADC",
+      "antiga_para_nova": {
+        "E": "A",
+        "B": "B",
+        "A": "C",
+        "D": "D",
+        "C": "E"
+      },
+      "gabarito_anterior": "C",
+      "gabarito_novo": "E",
+      "digital_anterior": "94446b94",
+      "digital_nova": "cf88eb64",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-04",
+      "ordem_antiga_nas_novas_posicoes": "BCDAE",
+      "antiga_para_nova": {
+        "B": "A",
+        "C": "B",
+        "D": "C",
+        "A": "D",
+        "E": "E"
+      },
+      "gabarito_anterior": "D",
+      "gabarito_novo": "C",
+      "digital_anterior": "56d97b8f",
+      "digital_nova": "5536626e",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-05",
+      "ordem_antiga_nas_novas_posicoes": "BAEDC",
+      "antiga_para_nova": {
+        "B": "A",
+        "A": "B",
+        "E": "C",
+        "D": "D",
+        "C": "E"
+      },
+      "gabarito_anterior": "E",
+      "gabarito_novo": "C",
+      "digital_anterior": "928b6a95",
+      "digital_nova": "73bfe299",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-06",
+      "ordem_antiga_nas_novas_posicoes": "ECBAD",
+      "antiga_para_nova": {
+        "E": "A",
+        "C": "B",
+        "B": "C",
+        "A": "D",
+        "D": "E"
+      },
+      "gabarito_anterior": "A",
+      "gabarito_novo": "D",
+      "digital_anterior": "21fb80bb",
+      "digital_nova": "2928b00e",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-07",
+      "ordem_antiga_nas_novas_posicoes": "CAEDB",
+      "antiga_para_nova": {
+        "C": "A",
+        "A": "B",
+        "E": "C",
+        "D": "D",
+        "B": "E"
+      },
+      "gabarito_anterior": "B",
+      "gabarito_novo": "E",
+      "digital_anterior": "8b844950",
+      "digital_nova": "68354c35",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-08",
+      "ordem_antiga_nas_novas_posicoes": "CADEB",
+      "antiga_para_nova": {
+        "C": "A",
+        "A": "B",
+        "D": "C",
+        "E": "D",
+        "B": "E"
+      },
+      "gabarito_anterior": "C",
+      "gabarito_novo": "A",
+      "digital_anterior": "a286a947",
+      "digital_nova": "00b407a9",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-09",
+      "ordem_antiga_nas_novas_posicoes": "BDECA",
+      "antiga_para_nova": {
+        "B": "A",
+        "D": "B",
+        "E": "C",
+        "C": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "D",
+      "gabarito_novo": "B",
+      "digital_anterior": "879797b0",
+      "digital_nova": "bcf0d5a6",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-10",
+      "ordem_antiga_nas_novas_posicoes": "BDCAE",
+      "antiga_para_nova": {
+        "B": "A",
+        "D": "B",
+        "C": "C",
+        "A": "D",
+        "E": "E"
+      },
+      "gabarito_anterior": "E",
+      "gabarito_novo": "E",
+      "digital_anterior": "4b3f2b89",
+      "digital_nova": "ab29d979",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false,
+      "digital_rodada1": "1877b147"
+    },
+    {
+      "id": "q-e1-11",
+      "ordem_antiga_nas_novas_posicoes": "CEDAB",
+      "antiga_para_nova": {
+        "C": "A",
+        "E": "B",
+        "D": "C",
+        "A": "D",
+        "B": "E"
+      },
+      "gabarito_anterior": "A",
+      "gabarito_novo": "D",
+      "digital_anterior": "56a88a08",
+      "digital_nova": "47b7c73d",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-12",
+      "ordem_antiga_nas_novas_posicoes": "CDBEA",
+      "antiga_para_nova": {
+        "C": "A",
+        "D": "B",
+        "B": "C",
+        "E": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "B",
+      "gabarito_novo": "C",
+      "digital_anterior": "80ef91f5",
+      "digital_nova": "83f286e2",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false,
+      "digital_rodada1": "0e39d656"
+    },
+    {
+      "id": "q-e1-13",
+      "ordem_antiga_nas_novas_posicoes": "EACDB",
+      "antiga_para_nova": {
+        "E": "A",
+        "A": "B",
+        "C": "C",
+        "D": "D",
+        "B": "E"
+      },
+      "gabarito_anterior": "C",
+      "gabarito_novo": "C",
+      "digital_anterior": "ac48a584",
+      "digital_nova": "b4be7154",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": true
+    },
+    {
+      "id": "q-e1-14",
+      "ordem_antiga_nas_novas_posicoes": "ABECD",
+      "antiga_para_nova": {
+        "A": "A",
+        "B": "B",
+        "E": "C",
+        "C": "D",
+        "D": "E"
+      },
+      "gabarito_anterior": "D",
+      "gabarito_novo": "E",
+      "digital_anterior": "c4870246",
+      "digital_nova": "52ba659f",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-15",
+      "ordem_antiga_nas_novas_posicoes": "EBDCA",
+      "antiga_para_nova": {
+        "E": "A",
+        "B": "B",
+        "D": "C",
+        "C": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "E",
+      "gabarito_novo": "A",
+      "digital_anterior": "11d679e6",
+      "digital_nova": "b8785dda",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-16",
+      "ordem_antiga_nas_novas_posicoes": "ABEDC",
+      "antiga_para_nova": {
+        "A": "A",
+        "B": "B",
+        "E": "C",
+        "D": "D",
+        "C": "E"
+      },
+      "gabarito_anterior": "A",
+      "gabarito_novo": "A",
+      "digital_anterior": "8b465f0b",
+      "digital_nova": "8e16cef7",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-17",
+      "ordem_antiga_nas_novas_posicoes": "DECBA",
+      "antiga_para_nova": {
+        "D": "A",
+        "E": "B",
+        "C": "C",
+        "B": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "B",
+      "gabarito_novo": "D",
+      "digital_anterior": "951df068",
+      "digital_nova": "331b7140",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-18",
+      "ordem_antiga_nas_novas_posicoes": "ABDCE",
+      "antiga_para_nova": {
+        "A": "A",
+        "B": "B",
+        "D": "C",
+        "C": "D",
+        "E": "E"
+      },
+      "gabarito_anterior": "C",
+      "gabarito_novo": "D",
+      "digital_anterior": "3f71d32d",
+      "digital_nova": "4186c808",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": true
+    },
+    {
+      "id": "q-e1-19",
+      "ordem_antiga_nas_novas_posicoes": "DAEBC",
+      "antiga_para_nova": {
+        "D": "A",
+        "A": "B",
+        "E": "C",
+        "B": "D",
+        "C": "E"
+      },
+      "gabarito_anterior": "D",
+      "gabarito_novo": "A",
+      "digital_anterior": "f989789a",
+      "digital_nova": "eb5a52f1",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-20",
+      "ordem_antiga_nas_novas_posicoes": "EDCAB",
+      "antiga_para_nova": {
+        "E": "A",
+        "D": "B",
+        "C": "C",
+        "A": "D",
+        "B": "E"
+      },
+      "gabarito_anterior": "E",
+      "gabarito_novo": "A",
+      "digital_anterior": "6fdcbf8d",
+      "digital_nova": "eaefd913",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-21",
+      "ordem_antiga_nas_novas_posicoes": "CBEDA",
+      "antiga_para_nova": {
+        "C": "A",
+        "B": "B",
+        "E": "C",
+        "D": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "A",
+      "gabarito_novo": "E",
+      "digital_anterior": "819421c6",
+      "digital_nova": "2524d70e",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-22",
+      "ordem_antiga_nas_novas_posicoes": "EDBCA",
+      "antiga_para_nova": {
+        "E": "A",
+        "D": "B",
+        "B": "C",
+        "C": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "B",
+      "gabarito_novo": "C",
+      "digital_anterior": "9beca0d7",
+      "digital_nova": "6354135c",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-23",
+      "ordem_antiga_nas_novas_posicoes": "EDCBA",
+      "antiga_para_nova": {
+        "E": "A",
+        "D": "B",
+        "C": "C",
+        "B": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "C",
+      "gabarito_novo": "C",
+      "digital_anterior": "f556d213",
+      "digital_nova": "1a65c85f",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-24",
+      "ordem_antiga_nas_novas_posicoes": "CBDEA",
+      "antiga_para_nova": {
+        "C": "A",
+        "B": "B",
+        "D": "C",
+        "E": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "D",
+      "gabarito_novo": "C",
+      "digital_anterior": "f9cf3834",
+      "digital_nova": "0fb7f391",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-25",
+      "ordem_antiga_nas_novas_posicoes": "BACDE",
+      "antiga_para_nova": {
+        "B": "A",
+        "A": "B",
+        "C": "C",
+        "D": "D",
+        "E": "E"
+      },
+      "gabarito_anterior": "E",
+      "gabarito_novo": "E",
+      "digital_anterior": "e7cfa723",
+      "digital_nova": "cf4982cb",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-26",
+      "ordem_antiga_nas_novas_posicoes": "DABCE",
+      "antiga_para_nova": {
+        "D": "A",
+        "A": "B",
+        "B": "C",
+        "C": "D",
+        "E": "E"
+      },
+      "gabarito_anterior": "A",
+      "gabarito_novo": "B",
+      "digital_anterior": "f879b4ab",
+      "digital_nova": "a20296a6",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-27",
+      "ordem_antiga_nas_novas_posicoes": "BCEDA",
+      "antiga_para_nova": {
+        "B": "A",
+        "C": "B",
+        "E": "C",
+        "D": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "B",
+      "gabarito_novo": "A",
+      "digital_anterior": "b5f5b2bf",
+      "digital_nova": "9a57c870",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-28",
+      "ordem_antiga_nas_novas_posicoes": "ABEDC",
+      "antiga_para_nova": {
+        "A": "A",
+        "B": "B",
+        "E": "C",
+        "D": "D",
+        "C": "E"
+      },
+      "gabarito_anterior": "C",
+      "gabarito_novo": "E",
+      "digital_anterior": "ca502796",
+      "digital_nova": "e121d324",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-29",
+      "ordem_antiga_nas_novas_posicoes": "BEDCA",
+      "antiga_para_nova": {
+        "B": "A",
+        "E": "B",
+        "D": "C",
+        "C": "D",
+        "A": "E"
+      },
+      "gabarito_anterior": "D",
+      "gabarito_novo": "C",
+      "digital_anterior": "8a6d76e5",
+      "digital_nova": "56b391ea",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    },
+    {
+      "id": "q-e1-30",
+      "ordem_antiga_nas_novas_posicoes": "DEACB",
+      "antiga_para_nova": {
+        "D": "A",
+        "E": "B",
+        "A": "C",
+        "C": "D",
+        "B": "E"
+      },
+      "gabarito_anterior": "E",
+      "gabarito_novo": "B",
+      "digital_anterior": "10cd4076",
+      "digital_nova": "66de2ee1",
+      "resposta_preservada": true,
+      "justificativas_por_proposicao": false
+    }
+  ],
+  "ajustes_semanticos": [
+    {
+      "id": "q-e1-10",
+      "exigencia": "R1-A",
+      "antes": "Uma válvula de estrangulamento opera adiabaticamente, sem trabalho e com pequenas mudanças de velocidade e altura.",
+      "depois": "Uma válvula de estrangulamento opera em regime permanente, adiabaticamente, sem trabalho e com pequenas mudanças de velocidade e altura.",
+      "digital_r1": "1877b147",
+      "digital_r2": "ab29d979"
+    },
+    {
+      "id": "q-e1-12",
+      "exigencia": "R1-B",
+      "antes": "Qual trabalho específico aproximado?",
+      "depois": "Qual é a magnitude aproximada do trabalho específico de entrada (consumido), adotada como positiva?",
+      "digital_r1": "0e39d656",
+      "digital_r2": "83f286e2"
+    }
+  ]
+}

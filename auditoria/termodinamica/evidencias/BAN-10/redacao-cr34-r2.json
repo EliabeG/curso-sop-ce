@@ -1,0 +1,26 @@
+{
+  "id": "cr-e1-34",
+  "motivo": "Estudo pedagógico de modelos: distinguir a desigualdade ΔU>0 afirmada pelo original da identidade adicional ΔU=Q. Não foi demonstrada invalidade da chave C pela presença de outros trabalhos.",
+  "nota": "O original afirma aumento da energia interna, não a igualdade ΔU = Q. A chave C é coerente com a leitura usual de aquecimento isocórico de uma massa fixa de gás ideal. Este item fica fora do placar por escolha pedagógica: esclarecer a diferença entre sinal, igualdade e hipóteses de modelo. Não se demonstrou que a simples presença de outro trabalho invalide C.",
+  "pergunta": "O original afirma ΔU > 0 ou ΔU = Q? Partindo do balanço de energia total, escreva a condição exata para ΔU = Q e uma escolha suficiente de termos nulos. Depois acompanhe a demonstração guiada de entropia na análise: por que escolher um trabalho arbitrário na primeira lei não basta para contrariar C?",
+  "analise": "<p><strong>Igualdade e condição suficiente.</strong> Para a massa fechada, com Q positivo entrando e W positivo saindo, ΔU + ΔE<sub>c</sub> + ΔE<sub>p</sub> = Q − W. Nesse balanço, ΔU = Q se e somente se W + ΔE<sub>c</sub> + ΔE<sub>p</sub> = 0. Anular cada termo separadamente é suficiente, não necessário: a condição é a soma nula. A isocoria anula o trabalho de expansão da fronteira simples, mas não todo trabalho possível. Isso limita a dedução da igualdade; não prova que o sinal de ΔU possa ser escolhido livremente.</p><p><strong>Demonstração guiada do sinal.</strong> Considere massa m e composição fixas de gás ideal simples, estados inicial e final de equilíbrio no mesmo volume e capacidade térmica específica c<sub>v</sub>(T) positiva. Interprete o aquecimento como calor exclusivamente entrando, com quantidade não nula, a temperaturas absolutas de fronteira T<sub>b</sub> finitas e positivas. O balanço de entropia é ΔS = ∫δQ/T<sub>b</sub> + S<sub>ger</sub>, com S<sub>ger</sub> ≥ 0; portanto ΔS > 0. T<sub>b</sub> é a temperatura no ponto de transferência da fronteira, não uma substituição automática pela temperatura uniforme do gás.</p><p>Entre os estados de equilíbrio, a relação do gás ideal é ΔS = m∫<sub>T₁</sub><sup>T₂</sup>[c<sub>v</sub>(T)/T] dT + mR ln(v₂/v₁). Como m e V são iguais nos dois estados, v₂ = v₁. O integrando é positivo: ΔS > 0 implica T₂ > T₁ e ΔU = m∫<sub>T₁</sub><sup>T₂</sup>c<sub>v</sub>(T) dT > 0. Essa inferência não exigiu W = 0 nem reversibilidade do caminho real.</p><p>Trabalho não transporta entropia. Um valor de W que produza ΔU ≤ 0 apenas por substituição na primeira lei não constitui processo admissível sob essas hipóteses: contrariaria a segunda lei e a relação de estado. Assim, o estudo esclarece os modelos sem atribuir ao texto oficial a igualdade que ele não afirma e sem apresentar um contramodelo inválido. A dedução acima é autoral a partir das relações citadas.</p>",
+  "criterio": "Distinguir ΔU>0 de ΔU=Q; escrever a soma W+ΔEc+ΔEp=0 como condição exata da igualdade e reconhecer que zerar cada parcela é apenas suficiente. Na demonstração guiada, identificar as hipóteses de massa/composição, estados, volume, calor exclusivamente entrante e temperaturas positivas; explicar ΔS>0 ⇒ T₂>T₁ ⇒ ΔU>0. Não tratar um W arbitrário como contraprova nem supor que o original declarou ΔU=Q.",
+  "resolucao": "<p><strong>Resolução elementar por condições suficientes:</strong> Para massa fixa, somente trabalho de expansão e variações cinética/potencial nulas, a isocoria dá W = 0; logo ΔU = Q > 0. Essa rota simples sustenta C, mas suas condições adicionais não são todas necessárias ao aumento de U. O argumento mais amplo de entropia abaixo separa o sinal da igualdade.</p><p class=\"cr-aprenda\"><strong>Leve para a prova:</strong> Isocórico elimina o trabalho de expansão. Distinguir ΔU > 0 de ΔU = Q evita transformar uma condição suficiente em necessária.</p>",
+  "fontes": [
+    {
+      "titulo": "MIT Unified, §2.1, balanço da energia total",
+      "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+      "consulta": "2026-10-28"
+    },
+    {
+      "titulo": "MIT Unified, §5.4, variação de entropia do gás ideal",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html",
+      "consulta": "2026-10-28"
+    },
+    {
+      "titulo": "MIT Unified, §5.5, segunda lei e transferência de entropia",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html",
+      "consulta": "2026-10-28"
+    }
+  ]
+}

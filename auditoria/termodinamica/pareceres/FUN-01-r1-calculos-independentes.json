@@ -1,0 +1,122 @@
+{
+  "auditor": "agente automatizado /root/auditor_aaa",
+  "metodo": "Resolução própria a partir de enunciados e JSON de dados, antes de ler as soluções e o script do Corretor.",
+  "resultados": {
+    "saturacao": {
+      "v": 0.45,
+      "x": 0.5074944539995886,
+      "mv": 1.0149889079991772,
+      "h": 1621.9490404800943,
+      "hprev": [
+        1620.9490404800943,
+        1622.9490404800943
+      ],
+      "hmedido": [
+        1798,
+        1802
+      ],
+      "gap": 175.05095951990575
+    },
+    "mistura": {
+      "z04": {
+        "pbolha": 90,
+        "porvalho": 68.18181818181817
+      },
+      "z08": {
+        "pbolha": 130,
+        "porvalho": 107.14285714285714
+      },
+      "I": {
+        "xA": 0.5,
+        "yA": 0.75,
+        "beta": -0.3999999999999999,
+        "fase": "liquido"
+      },
+      "II": {
+        "xA": 0.3,
+        "yA": 0.5625,
+        "beta": 0.38095238095238104,
+        "nl": 6.19047619047619,
+        "nv": 3.809523809523811
+      },
+      "III": {
+        "beta": 1.9047619047619047,
+        "fase": "vapor"
+      },
+      "IV": {
+        "xA": 0.3,
+        "yA": 0.5625,
+        "exemplos": [
+          {
+            "z": 0.35,
+            "beta": 0.19047619047619044
+          },
+          {
+            "z": 0.5,
+            "beta": 0.7619047619047619
+          }
+        ]
+      }
+    },
+    "supercritico": {
+      "A": "não garantido: caixa cruza ambos limites",
+      "B": "não supercritico: T abaixo",
+      "C": "não supercritico: p abaixo",
+      "D": "supercritico, x indefinido",
+      "maxErrosEstritos": {
+        "T": 2.9039999999999964,
+        "p": 0.036000000000001364
+      },
+      "melhoriaApenasT": false,
+      "melhoriaApenasP": false,
+      "melhoriaAmbos": true
+    },
+    "equilibrio": {
+      "pH2_fundo_Pa": 29620,
+      "dmu_Jmol": 0.3924,
+      "muTilde_fundo_menos_interface": 0,
+      "nTotalInicialCada": 0.4009301579664823,
+      "deltaMuAInicial": 3457.695395505231,
+      "A_inicial": [
+        0.32074412637318583,
+        0.08018603159329646
+      ],
+      "B_inicial": [
+        0.08018603159329646,
+        0.32074412637318583
+      ],
+      "A_final": [
+        0.20046507898324115,
+        0.20046507898324115
+      ],
+      "B_final": [
+        0.08018603159329646,
+        0.32074412637318583
+      ],
+      "pFinal_Pa": [
+        70000,
+        130000
+      ],
+      "yAFinal": [
+        0.7142857142857143,
+        0.3846153846153846
+      ],
+      "xi": 0.12027904738994469,
+      "FsegundaFinal": 24884.134559999995,
+      "aposBpermitido": {
+        "p": [
+          100000,
+          100000
+        ],
+        "yA": [
+          0.5,
+          0.5
+        ],
+        "especiesCada": [
+          0.20046507898324115,
+          0.20046507898324115
+        ]
+      }
+    }
+  }
+}

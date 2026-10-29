@@ -1,0 +1,63 @@
+{
+  "id": "BAN-07",
+  "data": "2026-10-28",
+  "comparacao": [
+    {
+      "id": "cr-e1-04",
+      "pacote": "BAN-10-r2",
+      "sha256_aceito": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+      "sha256_atual": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+      "identidade_artigo": true
+    },
+    {
+      "id": "cr-e1-34",
+      "pacote": "BAN-10-r2",
+      "sha256_aceito": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+      "sha256_atual": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+      "identidade_artigo": true
+    },
+    {
+      "id": "cr-e1-51",
+      "pacote": "BAN-10-r2",
+      "sha256_aceito": "fa9b521938d9944137be722345b961fe7f5d2b8aa8acf9ed2dfd2789d7d4256d",
+      "sha256_atual": "7e5dcdfa88bcadee0a8fc31599e350b92e33d0ff055dab57b879b9ceaf82bf23",
+      "identidade_artigo": false
+    },
+    {
+      "id": "cr-e1-55",
+      "pacote": "BAN-10-r2",
+      "sha256_aceito": "f32de84a31a24cebe70f9d4920a27997f64b170b7bee0723c7b2d01727950230",
+      "sha256_atual": "7f28f1504c5296dc0387a4a7b150a253c5f5385008d94cae86afe4e716eae4f3",
+      "identidade_artigo": false
+    },
+    {
+      "id": "cr-e1-68",
+      "pacote": "BAN-10-r2",
+      "sha256_aceito": "868e2438c1a4c020a75209fd26c9bcf0cd08c67fc4b4c7d037f90eff3d5c70f6",
+      "sha256_atual": "6cfcf2558f6d3651a9b87e8fd4b66b8e29561f17686b4e52b2f40d15ac42fcb8",
+      "identidade_artigo": false
+    },
+    {
+      "id": "cr-e1-79",
+      "pacote": "BAN-10-r2",
+      "sha256_aceito": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+      "sha256_atual": "2ebd9eec55b732bd36a78f605d2d68bb156f3f33656cd4ebfe71f18eda6f4550",
+      "identidade_artigo": false
+    },
+    {
+      "id": "cr-e1-80",
+      "pacote": "BAN-10-r2",
+      "sha256_aceito": "68280c9a67d95bdb9eed7cb3ad0ede1506723d88fd968babed76495e7d05e221",
+      "sha256_atual": "5417c9d9ec6a1d853beee3dff2aa9f0c614813aab6436ae3052a55a1ee2e36f8",
+      "identidade_artigo": false
+    },
+    {
+      "id": "cr-e1-68",
+      "pacote": "FON-09-r2",
+      "sha256_aceito": "7cca4d60d34457a5bccb41efe003b4e1012bdac03df25ebfb77458547af3e81a",
+      "sha256_atual": "6cfcf2558f6d3651a9b87e8fd4b66b8e29561f17686b4e52b2f40d15ac42fcb8",
+      "identidade_artigo": false
+    }
+  ],
+  "limite": "Hashes diferentes não foram tratados como identidade integral. Herda-se o alcance histórico declarado e faz-se releitura dos artigos atuais; FON-01/FON-02 registram alterações intermediárias."
+}

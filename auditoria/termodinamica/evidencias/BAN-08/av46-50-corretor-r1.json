@@ -1,0 +1,136 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV46–AV50",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das opções e comentários; exame de limites de modelo e contagem.",
+  "registros": [
+    {
+      "id": "av-e1-46",
+      "artigo_sha256": "0c048ab1b4c1148d9a424b0a9b55a2ddb097ba7fc79dc6a22b04c6447538721b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-46",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-carnot-prova",
+          "#cr-e1-46"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "Ciclo de Carnot reversível com duas fontes.",
+      "solucao": "Duas isotérmicas reversíveis trocam calor, duas adiabáticas reversíveis conectam temperaturas e são isentrópicas.",
+      "resultado": "B.",
+      "comparacao": "A isobáricas/isocóricas não caracterizam Carnot; B correta; C quatro isotérmicas na mesma T não conectam fontes; D troca isotérmicas por isocóricas; E supõe irreversibilidade.",
+      "tolerancia": "2+2=4 etapas, contagem exata; sem dados ou tolerância numérica.",
+      "limite": "As conexões são adiabáticas e reversíveis; adiabático por si só não garante isentropia.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-47",
+      "artigo_sha256": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-47",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-tipos-compressores",
+          "#cr-e1-47"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Seleção preliminar para vazão elevada e razão de pressão moderada.",
+      "solucao": "Centrífugos frequentemente atendem grandes vazões; alternativos podem atender vazões menores e maiores razões de pressão.",
+      "resultado": "A.",
+      "comparacao": "A orientação geral correta; B alternativo eleva pressão; C gás e faixa não podem ser ignorados; D centrífugo não é limitado a baixa vazão; E rendimento não é universal.",
+      "tolerancia": "Sem vazão ou pressão numéricas e sem cálculo ou tolerância.",
+      "limite": "Indicação preliminar não substitui curva, gás e ponto de operação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-48",
+      "artigo_sha256": "810f21fc17823ad01aee37087182a58186ca27b6c46afcf0a1c12f3dabd26f87",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-48",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-brayton",
+          "#base-trocadores",
+          "#cr-e1-48"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Regenerador que aquece ar comprimido com exaustão sem bomba de calor.",
+      "solucao": "A exaustão na entrada deve estar mais quente que ar comprimido na entrada para transferência passiva no sentido pretendido.",
+      "resultado": "A.",
+      "comparacao": "A condição necessária; B mistura não é obrigatória; C compressor ainda consome trabalho; D sentido térmico contrário; E temperaturas iguais não fornecem força motriz.",
+      "tolerancia": "Sem temperaturas, áreas ou coeficientes não há taxa ou tolerância a calcular.",
+      "limite": "A condição indicada é necessária, não suficiente para quantificar desempenho ou todo perfil térmico.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-49",
+      "artigo_sha256": "ba294a58c27857ff270db5bc1300c7823b7bee36997791c77c678e9ecb04d7d1",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-49",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-brayton-real",
+          "#cr-e1-49"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Comparação Brayton ideal e instalação real, pede afirmação incorreta.",
+      "solucao": "Ideal: adição e rejeição isobáricas; real apresenta possíveis perdas de pressão; trocador passivo não substitui trabalho do compressor.",
+      "resultado": "C é incorreta.",
+      "comparacao": "A e B descrevem isobáricas ideais; C supõe elevação necessária de pressão pela rejeição; D perdas são possíveis; E compressor recebe trabalho.",
+      "tolerancia": "Sem valores de pressão ou energia, não há cálculo nem tolerância.",
+      "limite": "A conclusão refere-se ao trocador passivo e ao ciclo convencional, não a qualquer sistema com equipamento auxiliar.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-50",
+      "artigo_sha256": "a81b2fc4861de1cbe533079250396bc9c268ca3b02f3d2f7a9956b1434a4d8a3",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-50",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-isentropica",
+          "#base-brayton-real",
+          "#cr-e1-50"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Equipamentos adiabáticos em regime permanente, ΔEc/ΔEp desprezíveis, mesma entrada e pressão de saída para cada comparação real/isentrópica.",
+      "solucao": "wc=h2−h1 e wt=h3−h4; saída real tem entalpia maior que a isentrópica, elevando consumo do compressor e reduzindo produção da turbina.",
+      "resultado": "C.",
+      "comparacao": "A não elimina consumo; B não impõe trabalhos iguais; C tendência correta; D inverte tendências; E não supera referência reversível comparável.",
+      "tolerancia": "Sem entalpias, trabalhos ou tolerância numérica.",
+      "limite": "Mesmo fluido, fronteiras e estados de entrada por componente; não se conclui limite irrestrito para compressor refrigerado.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

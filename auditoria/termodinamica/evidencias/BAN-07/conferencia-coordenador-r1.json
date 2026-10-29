@@ -1,0 +1,3202 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "responsavel": "/root, coordenador; conferência técnica de apoio, sem parecer de aprovação",
+  "arquivos_de_produto_alterados": [
+    "assets/curso.js",
+    "assets/registro.js",
+    "modulos/e1-termodinamica.html"
+  ],
+  "artigos_alterados": [
+    "q-e1-02",
+    "q-e1-09",
+    "q-e1-13",
+    "q-e1-15",
+    "q-e1-16",
+    "q-e1-18",
+    "q-e1-19",
+    "q-e1-24",
+    "q-e1-26",
+    "q-e1-28",
+    "av-e1-08",
+    "av-e1-10",
+    "av-e1-17",
+    "av-e1-18",
+    "av-e1-33",
+    "av-e1-35",
+    "av-e1-37",
+    "av-e1-38",
+    "av-e1-45",
+    "av-e1-48",
+    "av-e1-50",
+    "av-e1-57",
+    "av-e1-58",
+    "av-e1-64",
+    "av-e1-73"
+  ],
+  "identidades": [
+    {
+      "id": "q-e1-01",
+      "antes": "e930ca81",
+      "depois": "e930ca81"
+    },
+    {
+      "id": "q-e1-02",
+      "antes": "6203aefa",
+      "depois": "9156ec31"
+    },
+    {
+      "id": "q-e1-03",
+      "antes": "cf88eb64",
+      "depois": "cf88eb64"
+    },
+    {
+      "id": "q-e1-04",
+      "antes": "5536626e",
+      "depois": "5536626e"
+    },
+    {
+      "id": "q-e1-05",
+      "antes": "73bfe299",
+      "depois": "73bfe299"
+    },
+    {
+      "id": "q-e1-06",
+      "antes": "2928b00e",
+      "depois": "2928b00e"
+    },
+    {
+      "id": "q-e1-07",
+      "antes": "68354c35",
+      "depois": "68354c35"
+    },
+    {
+      "id": "q-e1-08",
+      "antes": "00b407a9",
+      "depois": "00b407a9"
+    },
+    {
+      "id": "q-e1-09",
+      "antes": "bcf0d5a6",
+      "depois": "8a55be1d"
+    },
+    {
+      "id": "q-e1-10",
+      "antes": "ab29d979",
+      "depois": "ab29d979"
+    },
+    {
+      "id": "q-e1-11",
+      "antes": "47b7c73d",
+      "depois": "47b7c73d"
+    },
+    {
+      "id": "q-e1-12",
+      "antes": "83f286e2",
+      "depois": "83f286e2"
+    },
+    {
+      "id": "q-e1-13",
+      "antes": "b4be7154",
+      "depois": "b4be7154"
+    },
+    {
+      "id": "q-e1-14",
+      "antes": "52ba659f",
+      "depois": "52ba659f"
+    },
+    {
+      "id": "q-e1-15",
+      "antes": "b8785dda",
+      "depois": "dce7611d"
+    },
+    {
+      "id": "q-e1-16",
+      "antes": "8e16cef7",
+      "depois": "d2b495f5"
+    },
+    {
+      "id": "q-e1-17",
+      "antes": "331b7140",
+      "depois": "331b7140"
+    },
+    {
+      "id": "q-e1-18",
+      "antes": "4186c808",
+      "depois": "4186c808"
+    },
+    {
+      "id": "q-e1-19",
+      "antes": "eb5a52f1",
+      "depois": "5b4584e0"
+    },
+    {
+      "id": "q-e1-20",
+      "antes": "eaefd913",
+      "depois": "eaefd913"
+    },
+    {
+      "id": "q-e1-21",
+      "antes": "2524d70e",
+      "depois": "2524d70e"
+    },
+    {
+      "id": "q-e1-22",
+      "antes": "6354135c",
+      "depois": "6354135c"
+    },
+    {
+      "id": "q-e1-23",
+      "antes": "1a65c85f",
+      "depois": "1a65c85f"
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "0fb7f391",
+      "depois": "96605211"
+    },
+    {
+      "id": "q-e1-25",
+      "antes": "cf4982cb",
+      "depois": "cf4982cb"
+    },
+    {
+      "id": "q-e1-26",
+      "antes": "a20296a6",
+      "depois": "ff452e59"
+    },
+    {
+      "id": "q-e1-27",
+      "antes": "9a57c870",
+      "depois": "9a57c870"
+    },
+    {
+      "id": "q-e1-28",
+      "antes": "e121d324",
+      "depois": "1aabb7d8"
+    },
+    {
+      "id": "q-e1-29",
+      "antes": "56b391ea",
+      "depois": "56b391ea"
+    },
+    {
+      "id": "q-e1-30",
+      "antes": "66de2ee1",
+      "depois": "66de2ee1"
+    },
+    {
+      "id": "cr-e1-01",
+      "antes": "7b9e5b47",
+      "depois": "7b9e5b47"
+    },
+    {
+      "id": "cr-e1-02",
+      "antes": "292a9326",
+      "depois": "292a9326"
+    },
+    {
+      "id": "cr-e1-03",
+      "antes": "2a41d243",
+      "depois": "2a41d243"
+    },
+    {
+      "id": "cr-e1-04",
+      "antes": "c0741a43",
+      "depois": "c0741a43"
+    },
+    {
+      "id": "cr-e1-05",
+      "antes": "d43ba70e",
+      "depois": "d43ba70e"
+    },
+    {
+      "id": "cr-e1-06",
+      "antes": "01aa3697",
+      "depois": "01aa3697"
+    },
+    {
+      "id": "cr-e1-07",
+      "antes": "26f34f1b",
+      "depois": "26f34f1b"
+    },
+    {
+      "id": "cr-e1-08",
+      "antes": "252ec8b7",
+      "depois": "252ec8b7"
+    },
+    {
+      "id": "cr-e1-09",
+      "antes": "9e781405",
+      "depois": "9e781405"
+    },
+    {
+      "id": "cr-e1-10",
+      "antes": "bb5ae3bb",
+      "depois": "bb5ae3bb"
+    },
+    {
+      "id": "cr-e1-11",
+      "antes": "4667c66a",
+      "depois": "4667c66a"
+    },
+    {
+      "id": "cr-e1-12",
+      "antes": "42d8dd0f",
+      "depois": "42d8dd0f"
+    },
+    {
+      "id": "cr-e1-13",
+      "antes": "597b4f61",
+      "depois": "597b4f61"
+    },
+    {
+      "id": "cr-e1-14",
+      "antes": "5be8d995",
+      "depois": "5be8d995"
+    },
+    {
+      "id": "cr-e1-15",
+      "antes": "09fe87eb",
+      "depois": "09fe87eb"
+    },
+    {
+      "id": "cr-e1-16",
+      "antes": "d737f61f",
+      "depois": "d737f61f"
+    },
+    {
+      "id": "cr-e1-17",
+      "antes": "5f872e60",
+      "depois": "5f872e60"
+    },
+    {
+      "id": "cr-e1-18",
+      "antes": "d80afa6a",
+      "depois": "d80afa6a"
+    },
+    {
+      "id": "cr-e1-19",
+      "antes": "6ae45800",
+      "depois": "6ae45800"
+    },
+    {
+      "id": "cr-e1-20",
+      "antes": "0676dd32",
+      "depois": "0676dd32"
+    },
+    {
+      "id": "cr-e1-21",
+      "antes": "a83d55b1",
+      "depois": "a83d55b1"
+    },
+    {
+      "id": "cr-e1-22",
+      "antes": "88f92984",
+      "depois": "88f92984"
+    },
+    {
+      "id": "cr-e1-23",
+      "antes": "8d573f44",
+      "depois": "8d573f44"
+    },
+    {
+      "id": "cr-e1-24",
+      "antes": "14647883",
+      "depois": "14647883"
+    },
+    {
+      "id": "cr-e1-25",
+      "antes": "19566fe0",
+      "depois": "19566fe0"
+    },
+    {
+      "id": "cr-e1-26",
+      "antes": "988714ce",
+      "depois": "988714ce"
+    },
+    {
+      "id": "cr-e1-27",
+      "antes": "2a65b7dc",
+      "depois": "2a65b7dc"
+    },
+    {
+      "id": "cr-e1-28",
+      "antes": "e0eeb8d1",
+      "depois": "e0eeb8d1"
+    },
+    {
+      "id": "cr-e1-29",
+      "antes": "920c7469",
+      "depois": "920c7469"
+    },
+    {
+      "id": "cr-e1-30",
+      "antes": "45e3259b",
+      "depois": "45e3259b"
+    },
+    {
+      "id": "cr-e1-31",
+      "antes": "75a6fc17",
+      "depois": "75a6fc17"
+    },
+    {
+      "id": "cr-e1-32",
+      "antes": "aa41cb14",
+      "depois": "aa41cb14"
+    },
+    {
+      "id": "cr-e1-33",
+      "antes": "6bcf8baa",
+      "depois": "6bcf8baa"
+    },
+    {
+      "id": "cr-e1-34",
+      "antes": "9f650f2d",
+      "depois": "9f650f2d"
+    },
+    {
+      "id": "cr-e1-35",
+      "antes": "4da84a58",
+      "depois": "4da84a58"
+    },
+    {
+      "id": "cr-e1-36",
+      "antes": "9c9594d9",
+      "depois": "9c9594d9"
+    },
+    {
+      "id": "cr-e1-37",
+      "antes": "92bbdda7",
+      "depois": "92bbdda7"
+    },
+    {
+      "id": "cr-e1-38",
+      "antes": "2c2ecfd7",
+      "depois": "2c2ecfd7"
+    },
+    {
+      "id": "cr-e1-39",
+      "antes": "c85caeb2",
+      "depois": "c85caeb2"
+    },
+    {
+      "id": "cr-e1-40",
+      "antes": "4318e8ea",
+      "depois": "4318e8ea"
+    },
+    {
+      "id": "cr-e1-41",
+      "antes": "3dbc98e7",
+      "depois": "3dbc98e7"
+    },
+    {
+      "id": "cr-e1-42",
+      "antes": "08d305fe",
+      "depois": "08d305fe"
+    },
+    {
+      "id": "cr-e1-43",
+      "antes": "bcab3db5",
+      "depois": "bcab3db5"
+    },
+    {
+      "id": "cr-e1-44",
+      "antes": "60641e5c",
+      "depois": "60641e5c"
+    },
+    {
+      "id": "cr-e1-45",
+      "antes": "c084d78c",
+      "depois": "c084d78c"
+    },
+    {
+      "id": "cr-e1-46",
+      "antes": "34e6b8c4",
+      "depois": "34e6b8c4"
+    },
+    {
+      "id": "cr-e1-47",
+      "antes": "b9424092",
+      "depois": "b9424092"
+    },
+    {
+      "id": "cr-e1-48",
+      "antes": "5d2152e9",
+      "depois": "5d2152e9"
+    },
+    {
+      "id": "cr-e1-49",
+      "antes": "f7579983",
+      "depois": "f7579983"
+    },
+    {
+      "id": "cr-e1-50",
+      "antes": "2d521039",
+      "depois": "2d521039"
+    },
+    {
+      "id": "cr-e1-51",
+      "antes": "53f66207",
+      "depois": "53f66207"
+    },
+    {
+      "id": "cr-e1-52",
+      "antes": "12063740",
+      "depois": "12063740"
+    },
+    {
+      "id": "cr-e1-53",
+      "antes": "79d8c686",
+      "depois": "79d8c686"
+    },
+    {
+      "id": "cr-e1-54",
+      "antes": "bdc8bfce",
+      "depois": "bdc8bfce"
+    },
+    {
+      "id": "cr-e1-55",
+      "antes": "03f7a439",
+      "depois": "03f7a439"
+    },
+    {
+      "id": "cr-e1-56",
+      "antes": "48442042",
+      "depois": "48442042"
+    },
+    {
+      "id": "cr-e1-57",
+      "antes": "5e13d7f6",
+      "depois": "5e13d7f6"
+    },
+    {
+      "id": "cr-e1-58",
+      "antes": "77865bd0",
+      "depois": "77865bd0"
+    },
+    {
+      "id": "cr-e1-59",
+      "antes": "6b73af2b",
+      "depois": "6b73af2b"
+    },
+    {
+      "id": "cr-e1-60",
+      "antes": "d994670e",
+      "depois": "d994670e"
+    },
+    {
+      "id": "cr-e1-61",
+      "antes": "6312db0f",
+      "depois": "6312db0f"
+    },
+    {
+      "id": "cr-e1-62",
+      "antes": "852aa2be",
+      "depois": "852aa2be"
+    },
+    {
+      "id": "cr-e1-63",
+      "antes": "c8054f33",
+      "depois": "c8054f33"
+    },
+    {
+      "id": "cr-e1-64",
+      "antes": "c50500de",
+      "depois": "c50500de"
+    },
+    {
+      "id": "cr-e1-65",
+      "antes": "027ff3a7",
+      "depois": "027ff3a7"
+    },
+    {
+      "id": "cr-e1-66",
+      "antes": "b580499d",
+      "depois": "b580499d"
+    },
+    {
+      "id": "cr-e1-67",
+      "antes": "27513c71",
+      "depois": "27513c71"
+    },
+    {
+      "id": "cr-e1-68",
+      "antes": "f78a5342",
+      "depois": "f78a5342"
+    },
+    {
+      "id": "cr-e1-69",
+      "antes": "bff641e6",
+      "depois": "bff641e6"
+    },
+    {
+      "id": "cr-e1-70",
+      "antes": "ddc13353",
+      "depois": "ddc13353"
+    },
+    {
+      "id": "cr-e1-71",
+      "antes": "69a7bd4d",
+      "depois": "69a7bd4d"
+    },
+    {
+      "id": "cr-e1-72",
+      "antes": "32dcae11",
+      "depois": "32dcae11"
+    },
+    {
+      "id": "cr-e1-73",
+      "antes": "cea77433",
+      "depois": "cea77433"
+    },
+    {
+      "id": "cr-e1-74",
+      "antes": "0b143bc4",
+      "depois": "0b143bc4"
+    },
+    {
+      "id": "cr-e1-75",
+      "antes": "a5c8b572",
+      "depois": "a5c8b572"
+    },
+    {
+      "id": "cr-e1-76",
+      "antes": "fae21dd8",
+      "depois": "fae21dd8"
+    },
+    {
+      "id": "cr-e1-77",
+      "antes": "5385d05a",
+      "depois": "5385d05a"
+    },
+    {
+      "id": "cr-e1-78",
+      "antes": "7fe9b256",
+      "depois": "7fe9b256"
+    },
+    {
+      "id": "cr-e1-79",
+      "antes": "535af6d2",
+      "depois": "535af6d2"
+    },
+    {
+      "id": "cr-e1-80",
+      "antes": "16584b04",
+      "depois": "16584b04"
+    },
+    {
+      "id": "av-e1-01",
+      "antes": "878e5f74",
+      "depois": "878e5f74"
+    },
+    {
+      "id": "av-e1-02",
+      "antes": "7ab5dfb7",
+      "depois": "7ab5dfb7"
+    },
+    {
+      "id": "av-e1-03",
+      "antes": "5bd6a31f",
+      "depois": "5bd6a31f"
+    },
+    {
+      "id": "av-e1-04",
+      "antes": "8eaed3f8",
+      "depois": "8eaed3f8"
+    },
+    {
+      "id": "av-e1-05",
+      "antes": "3a84629d",
+      "depois": "3a84629d"
+    },
+    {
+      "id": "av-e1-06",
+      "antes": "5c7db566",
+      "depois": "5c7db566"
+    },
+    {
+      "id": "av-e1-07",
+      "antes": "069a2f6a",
+      "depois": "069a2f6a"
+    },
+    {
+      "id": "av-e1-08",
+      "antes": "c3fb6201",
+      "depois": "c76e3143"
+    },
+    {
+      "id": "av-e1-09",
+      "antes": "f65fb55a",
+      "depois": "f65fb55a"
+    },
+    {
+      "id": "av-e1-10",
+      "antes": "608b889f",
+      "depois": "9a1995a9"
+    },
+    {
+      "id": "av-e1-11",
+      "antes": "845f69d8",
+      "depois": "845f69d8"
+    },
+    {
+      "id": "av-e1-12",
+      "antes": "28578c3f",
+      "depois": "28578c3f"
+    },
+    {
+      "id": "av-e1-13",
+      "antes": "8e99bf0d",
+      "depois": "8e99bf0d"
+    },
+    {
+      "id": "av-e1-14",
+      "antes": "a7d166c4",
+      "depois": "a7d166c4"
+    },
+    {
+      "id": "av-e1-15",
+      "antes": "23ab8c66",
+      "depois": "23ab8c66"
+    },
+    {
+      "id": "av-e1-16",
+      "antes": "42f58de8",
+      "depois": "42f58de8"
+    },
+    {
+      "id": "av-e1-17",
+      "antes": "c1bd3f6e",
+      "depois": "c1bd3f6e"
+    },
+    {
+      "id": "av-e1-18",
+      "antes": "64829dfa",
+      "depois": "64829dfa"
+    },
+    {
+      "id": "av-e1-19",
+      "antes": "aefb62c1",
+      "depois": "aefb62c1"
+    },
+    {
+      "id": "av-e1-20",
+      "antes": "45fb98f1",
+      "depois": "45fb98f1"
+    },
+    {
+      "id": "av-e1-21",
+      "antes": "dbfbff40",
+      "depois": "dbfbff40"
+    },
+    {
+      "id": "av-e1-22",
+      "antes": "faeb1457",
+      "depois": "faeb1457"
+    },
+    {
+      "id": "av-e1-23",
+      "antes": "fab6864c",
+      "depois": "fab6864c"
+    },
+    {
+      "id": "av-e1-24",
+      "antes": "76003cb8",
+      "depois": "76003cb8"
+    },
+    {
+      "id": "av-e1-25",
+      "antes": "45748f67",
+      "depois": "45748f67"
+    },
+    {
+      "id": "av-e1-26",
+      "antes": "3427b795",
+      "depois": "3427b795"
+    },
+    {
+      "id": "av-e1-27",
+      "antes": "2f0e77b6",
+      "depois": "2f0e77b6"
+    },
+    {
+      "id": "av-e1-28",
+      "antes": "70576824",
+      "depois": "70576824"
+    },
+    {
+      "id": "av-e1-29",
+      "antes": "7149ca82",
+      "depois": "7149ca82"
+    },
+    {
+      "id": "av-e1-30",
+      "antes": "730e9aaa",
+      "depois": "730e9aaa"
+    },
+    {
+      "id": "av-e1-31",
+      "antes": "4538caee",
+      "depois": "4538caee"
+    },
+    {
+      "id": "av-e1-32",
+      "antes": "66d3f018",
+      "depois": "66d3f018"
+    },
+    {
+      "id": "av-e1-33",
+      "antes": "e45e78ba",
+      "depois": "b72d419f"
+    },
+    {
+      "id": "av-e1-34",
+      "antes": "eb584075",
+      "depois": "eb584075"
+    },
+    {
+      "id": "av-e1-35",
+      "antes": "37b563fd",
+      "depois": "26fbffeb"
+    },
+    {
+      "id": "av-e1-36",
+      "antes": "85e3066f",
+      "depois": "85e3066f"
+    },
+    {
+      "id": "av-e1-37",
+      "antes": "00492381",
+      "depois": "b8fee79a"
+    },
+    {
+      "id": "av-e1-38",
+      "antes": "2de9d3b5",
+      "depois": "48ff7556"
+    },
+    {
+      "id": "av-e1-39",
+      "antes": "a37c00fc",
+      "depois": "a37c00fc"
+    },
+    {
+      "id": "av-e1-40",
+      "antes": "9ded863f",
+      "depois": "9ded863f"
+    },
+    {
+      "id": "av-e1-41",
+      "antes": "d55e7169",
+      "depois": "d55e7169"
+    },
+    {
+      "id": "av-e1-42",
+      "antes": "d0b32333",
+      "depois": "d0b32333"
+    },
+    {
+      "id": "av-e1-43",
+      "antes": "7361a51e",
+      "depois": "7361a51e"
+    },
+    {
+      "id": "av-e1-44",
+      "antes": "9c08d4fc",
+      "depois": "9c08d4fc"
+    },
+    {
+      "id": "av-e1-45",
+      "antes": "33788e23",
+      "depois": "95231db6"
+    },
+    {
+      "id": "av-e1-46",
+      "antes": "870d6691",
+      "depois": "870d6691"
+    },
+    {
+      "id": "av-e1-47",
+      "antes": "5863db3a",
+      "depois": "5863db3a"
+    },
+    {
+      "id": "av-e1-48",
+      "antes": "333e4530",
+      "depois": "300bcdeb"
+    },
+    {
+      "id": "av-e1-49",
+      "antes": "b8a315a0",
+      "depois": "b8a315a0"
+    },
+    {
+      "id": "av-e1-50",
+      "antes": "9296b58f",
+      "depois": "98878164"
+    },
+    {
+      "id": "av-e1-51",
+      "antes": "ca8ab0d4",
+      "depois": "ca8ab0d4"
+    },
+    {
+      "id": "av-e1-52",
+      "antes": "d95e6b2d",
+      "depois": "d95e6b2d"
+    },
+    {
+      "id": "av-e1-53",
+      "antes": "2fa9b641",
+      "depois": "2fa9b641"
+    },
+    {
+      "id": "av-e1-54",
+      "antes": "35178434",
+      "depois": "35178434"
+    },
+    {
+      "id": "av-e1-55",
+      "antes": "e683a7b4",
+      "depois": "e683a7b4"
+    },
+    {
+      "id": "av-e1-56",
+      "antes": "c1a51dd5",
+      "depois": "c1a51dd5"
+    },
+    {
+      "id": "av-e1-57",
+      "antes": "b093b252",
+      "depois": "2ba75312"
+    },
+    {
+      "id": "av-e1-58",
+      "antes": "efdf6680",
+      "depois": "5f51d263"
+    },
+    {
+      "id": "av-e1-59",
+      "antes": "4ec65c81",
+      "depois": "4ec65c81"
+    },
+    {
+      "id": "av-e1-60",
+      "antes": "cb7fec99",
+      "depois": "cb7fec99"
+    },
+    {
+      "id": "av-e1-61",
+      "antes": "b732f0fa",
+      "depois": "b732f0fa"
+    },
+    {
+      "id": "av-e1-62",
+      "antes": "ed91f6ac",
+      "depois": "ed91f6ac"
+    },
+    {
+      "id": "av-e1-63",
+      "antes": "ee6db666",
+      "depois": "ee6db666"
+    },
+    {
+      "id": "av-e1-64",
+      "antes": "eeb68857",
+      "depois": "eeb68857"
+    },
+    {
+      "id": "av-e1-65",
+      "antes": "a37123c3",
+      "depois": "a37123c3"
+    },
+    {
+      "id": "av-e1-66",
+      "antes": "5f7a8ab9",
+      "depois": "5f7a8ab9"
+    },
+    {
+      "id": "av-e1-67",
+      "antes": "54adae3c",
+      "depois": "54adae3c"
+    },
+    {
+      "id": "av-e1-68",
+      "antes": "7c48b21e",
+      "depois": "7c48b21e"
+    },
+    {
+      "id": "av-e1-69",
+      "antes": "13da8621",
+      "depois": "13da8621"
+    },
+    {
+      "id": "av-e1-70",
+      "antes": "c969142c",
+      "depois": "c969142c"
+    },
+    {
+      "id": "av-e1-71",
+      "antes": "0c91434f",
+      "depois": "0c91434f"
+    },
+    {
+      "id": "av-e1-72",
+      "antes": "190b458c",
+      "depois": "190b458c"
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "64bb73f3",
+      "depois": "5c5834b1"
+    },
+    {
+      "id": "av-e1-74",
+      "antes": "d6173cb0",
+      "depois": "d6173cb0"
+    },
+    {
+      "id": "av-e1-75",
+      "antes": "0f1d94bd",
+      "depois": "0f1d94bd"
+    },
+    {
+      "id": "av-e1-76",
+      "antes": "bec97cf5",
+      "depois": "bec97cf5"
+    },
+    {
+      "id": "av-e1-77",
+      "antes": "9c0dee43",
+      "depois": "9c0dee43"
+    },
+    {
+      "id": "av-e1-78",
+      "antes": "18a15426",
+      "depois": "18a15426"
+    },
+    {
+      "id": "av-e1-79",
+      "antes": "f1f15b88",
+      "depois": "f1f15b88"
+    },
+    {
+      "id": "av-e1-80",
+      "antes": "e26e6614",
+      "depois": "e26e6614"
+    }
+  ],
+  "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+  "verificacoes": 376,
+  "falhas": [],
+  "checks": [
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/curso.css",
+      "ok": true,
+      "detalhe": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/curso.js",
+      "ok": true,
+      "detalhe": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/formulario-e1.css",
+      "ok": true,
+      "detalhe": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/formulario-e1.js",
+      "ok": true,
+      "detalhe": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/icone.svg",
+      "ok": true,
+      "detalhe": "8d6bac01ecb44630e91bf533825ce38a24241f953907089602fc86464b8a1000"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/questoes-reais-e1/caderno-fornecido.pdf",
+      "ok": true,
+      "detalhe": "bea6174ad3eee9a6880274597f444a7a20b05663dd4595d722d1a924532153b0"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/questoes-reais-e1/figura-222735fab01e.png",
+      "ok": true,
+      "detalhe": "222735fab01e54a81e34f3bb54cfd7097a8cbc1391ebe6420d60df8b2513a9cb"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/questoes-reais-e1/figura-4c355dba6054.png",
+      "ok": true,
+      "detalhe": "4c355dba6054f57fc26e5872ffdc1b83738a52345f31b8f994c26486651c2995"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/questoes-reais-e1/figura-922604ee21ac.png",
+      "ok": true,
+      "detalhe": "922604ee21ac25fec713806a3102c7b775b9cd16ba2c77054cb45d976226b17e"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/questoes-reais-e1/figura-9d164690a624.png",
+      "ok": true,
+      "detalhe": "9d164690a6243cb31b9ea0f734b9a85ad4c6570398b9d5ef9278e4f44332bcc2"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/questoes-reais-e1/figura-9d73adf962aa.png",
+      "ok": true,
+      "detalhe": "9d73adf962aaabecba761c823d3faca4bb4dd463a7009033e7267242bce84cb2"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+      "ok": true,
+      "detalhe": "b8d543e37fc85224e69507c5bf2aa35d6ac5aeb3eb5ae37879c4806e229f30b8"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/questoes-reais-e1/figura-de4ee7b16ed4.png",
+      "ok": true,
+      "detalhe": "de4ee7b16ed42d37537a23bbcf6cf7aee66cb447e11bb950b3c783e3a859aa1b"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/registro.js",
+      "ok": true,
+      "detalhe": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/termodinamica/fon09-cr68-dados-v1.json",
+      "ok": true,
+      "detalhe": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/termodinamica/fun01-calculos-v1.mjs",
+      "ok": true,
+      "detalhe": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/termodinamica/fun01-dados-v1.json",
+      "ok": true,
+      "detalhe": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/termodinamica/fun02-calculos-v1.mjs",
+      "ok": true,
+      "detalhe": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/termodinamica/fun02-caminhos-v1.svg",
+      "ok": true,
+      "detalhe": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: assets/termodinamica/fun02-dados-v1.json",
+      "ok": true,
+      "detalhe": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: formulas/termodinamica.html",
+      "ok": true,
+      "detalhe": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: formulas/transferencia-de-calor.html",
+      "ok": true,
+      "detalhe": "38a622161c80c001e971dbf73a1e784e1e82c93cf15942ba85bacd6d45c87437"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/00-guia-da-prova.html",
+      "ok": true,
+      "detalhe": "2cc62425a65543575f82794c878c8274ec31ab805bac7cd6481a7c457ca384af"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/a1-psicrometria-carga-termica.html",
+      "ok": true,
+      "detalhe": "5f2a0747fd0b6485879bc698e65927b8bf55e09fee25e6f6b0d88f645153e906"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/a2-refrigeracao-sistemas.html",
+      "ok": true,
+      "detalhe": "dc591bd6dca1abc4a78548c01fc4e68b880da16a51789f7ff92605a71212991b"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/a3-distribuicao-ventilacao.html",
+      "ok": true,
+      "detalhe": "cf4e22520e3ced26334ec348e5c5be01af9a64f9f0d80d730e59e2a9bdb74685"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/a4-qai-pmoc-comissionamento.html",
+      "ok": true,
+      "detalhe": "30737db5381d04186499ee0f53951d056688a9b3d157546b7eabcd23a5c4dba6"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/ap1-administracao-publica.html",
+      "ok": true,
+      "detalhe": "3323651ef4adc590cdd87907993a484dd9fdebf24f312063ac9ff7466bedcd35"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/ap2-licitacoes-contratos.html",
+      "ok": true,
+      "detalhe": "0db92e84cde594f3958373d86eaaf0325e040e0032c6a67acab8fd0bf6c5a806"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/ap3-etica-integridade-servidor.html",
+      "ok": true,
+      "detalhe": "148e0f467d451db9b7a1e74eb98d2625c000ecc894e6ebd80405e915a4f4aa8d"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/ap4-legislacao-sop.html",
+      "ok": true,
+      "detalhe": "f8bf9d21b58aeb4147bda32d841c9adc82fd575941f649232e01a661347d62eb"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/b1-mecanica-dos-fluidos.html",
+      "ok": true,
+      "detalhe": "dd5336fc7de082a2d506a20699bf9a4a5e97fa47b70038ff2825530f8553580f"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/b2-bombas-hidraulica-predial.html",
+      "ok": true,
+      "detalhe": "0d405ee4c4650e93d01f66fceb95139f2fb370f3e7741e2e31491bb0f0209d28"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/b3-combate-a-incendio.html",
+      "ok": true,
+      "detalhe": "bc49a8a6d944c2c81bd91969cf1a293b0dc448c7f11082765907c085362d6f18"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/c-gases-transporte-vertical.html",
+      "ok": true,
+      "detalhe": "0b1e0dd371edfd5b26608f4e751f71b0b77355105cde158184ba309fcb8be88a"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/ce-ceara.html",
+      "ok": true,
+      "detalhe": "b04189fce3860f923e24985b82843569bb9ec54e672348df012c54962ba9cf75"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/d-acustica-vibracoes.html",
+      "ok": true,
+      "detalhe": "e44b41251df966d282b0a2d616604fe3502354be6567e1ab4ceaf63147fd1d22"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/disc-discursiva.html",
+      "ok": true,
+      "detalhe": "9de4cfa05c29c994f301920e305df50b182e62a11a788445a742708bcc496835"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/e1-termodinamica.html",
+      "ok": true,
+      "detalhe": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/e2-transferencia-de-calor.html",
+      "ok": true,
+      "detalhe": "fc4f05c6569aa7074811d1fe9f21e3b3641beba267f19125ce9f8d784ee53d14"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/f-solidos-elementos.html",
+      "ok": true,
+      "detalhe": "446ddb0a7b17b79c068165ef2b8ec63edd0ba170c51af33346b14da53af543d9"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/g-materiais-fabricacao.html",
+      "ok": true,
+      "detalhe": "aca5b9a302066a155860ce54a5192964cc47b23c2b342495df346551bd43c98e"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/h-manutencao.html",
+      "ok": true,
+      "detalhe": "7c46bb6a8a9152aa94749a6443bc4b8a3c83a9b5acd0ff1224951eb8349eee89"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/i1-projeto-orcamento.html",
+      "ok": true,
+      "detalhe": "f27570759469fba583ae15a9eee7231ca28ddbb46b9125b65e4b02095f661e78"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/i2-planejamento-fiscalizacao.html",
+      "ok": true,
+      "detalhe": "9006a723814fccfc5db207d4591d4c56e00634dfa73c357e12f77aa462c36fa6"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/inf-informatica.html",
+      "ok": true,
+      "detalhe": "77c9b04ec0a6fd699ca607131b23f98b26674aa2f2eee7bec0b87d7c85dc4837"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/ing-ingles-tecnico.html",
+      "ok": true,
+      "detalhe": "5f5afd9631a50c429ab0719f148e77cc495295a1c6fc7d546f1f06388b7f703f"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/j-profissional-seguranca-ambiente.html",
+      "ok": true,
+      "detalhe": "ec6c91cae643a569ba0b0fd4c0e53b9ebf0c022d2bbfa66d01440373b7f01758"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/lp1-leitura-texto-redacao.html",
+      "ok": true,
+      "detalhe": "0ee3ffcb38d0f95ec36a74c2e3ab43f9d98e15c92efd835045f50cf2650739ba"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/lp2-gramatica.html",
+      "ok": true,
+      "detalhe": "e9d8eb34fe59710b248000483426942ae9af2d21ca5a740de46d1493663bc895"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/rev-revisao-final.html",
+      "ok": true,
+      "detalhe": "a6382eab0993f6b1e830bb9ad9c1dcb3da22ffc7aabed67bf57505d0ea551f6b"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/rlm-raciocinio-logico.html",
+      "ok": true,
+      "detalhe": "ecad5dfc62c50d2acf4a91001b56174654596edbf137f8d173f2b0449d17d666"
+    },
+    {
+      "criterio": "arquivo preservado ou autorizado: modulos/sim-simulado.html",
+      "ok": true,
+      "detalhe": "1448937f80dcac7a940282487dcdd9f7ea787499e0f81dff50eb5a5ac3be1efa"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+      "ok": true,
+      "detalhe": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf",
+      "ok": true,
+      "detalhe": "62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8"
+    },
+    {
+      "criterio": "recurso preservado: assets/questoes-reais-e1/figura-922604ee21ac.png",
+      "ok": true,
+      "detalhe": "922604ee21ac25fec713806a3102c7b775b9cd16ba2c77054cb45d976226b17e"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf",
+      "ok": true,
+      "detalhe": "ff13fb949d16969fb9b5cff2802a04e00a7673425d61be5efb5252c4a7b64c6a"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_gabarito.pdf",
+      "ok": true,
+      "detalhe": "7ec433277a8229d31c145b09fcefa3dacbc53c49bfcff4617e9782623241d45e"
+    },
+    {
+      "criterio": "recurso preservado: assets/questoes-reais-e1/figura-9d164690a624.png",
+      "ok": true,
+      "detalhe": "9d164690a6243cb31b9ea0f734b9a85ad4c6570398b9d5ef9278e4f44332bcc2"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+      "ok": true,
+      "detalhe": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+      "ok": true,
+      "detalhe": "0b5abca04a6892f48c7541018106445f6619f5f5863e061f631f0249899795e3"
+    },
+    {
+      "criterio": "recurso preservado: assets/questoes-reais-e1/figura-4c355dba6054.png",
+      "ok": true,
+      "detalhe": "4c355dba6054f57fc26e5872ffdc1b83738a52345f31b8f994c26486651c2995"
+    },
+    {
+      "criterio": "recurso preservado: assets/questoes-reais-e1/figura-de4ee7b16ed4.png",
+      "ok": true,
+      "detalhe": "de4ee7b16ed42d37537a23bbcf6cf7aee66cb447e11bb950b3c783e3a859aa1b"
+    },
+    {
+      "criterio": "recurso preservado: assets/questoes-reais-e1/figura-222735fab01e.png",
+      "ok": true,
+      "detalhe": "222735fab01e54a81e34f3bb54cfd7097a8cbc1391ebe6420d60df8b2513a9cb"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+      "ok": true,
+      "detalhe": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/gabaritos/2023-10-15_tbg-engenheiro-junior-operacoes_gabarito.pdf",
+      "ok": true,
+      "detalhe": "680734f6b47d1381d312a1792ec4818d034812d02661ed1933f477697b399a78"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+      "ok": true,
+      "detalhe": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf",
+      "ok": true,
+      "detalhe": "1ebd87b8d6d1cd8a679b575de3a0e901d1283c8b6b92e7a916e775d7cdeb9f7d"
+    },
+    {
+      "criterio": "recurso preservado: assets/termodinamica/fon09-cr68-dados-v1.json",
+      "ok": true,
+      "detalhe": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456"
+    },
+    {
+      "criterio": "recurso preservado: assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+      "ok": true,
+      "detalhe": "b8d543e37fc85224e69507c5bf2aa35d6ac5aeb3eb5ae37879c4806e229f30b8"
+    },
+    {
+      "criterio": "recurso preservado: assets/questoes-reais-e1/caderno-fornecido.pdf",
+      "ok": true,
+      "detalhe": "bea6174ad3eee9a6880274597f444a7a20b05663dd4595d722d1a924532153b0"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+      "ok": true,
+      "detalhe": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf",
+      "ok": true,
+      "detalhe": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+      "ok": true,
+      "detalhe": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/gabaritos/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_gabarito.pdf",
+      "ok": true,
+      "detalhe": "52ff779aca0042f68c4f24f6a5ef615cb4c259c070962ae1bfbb8a9e55a1358b"
+    },
+    {
+      "criterio": "recurso preservado: assets/questoes-reais-e1/figura-9d73adf962aa.png",
+      "ok": true,
+      "detalhe": "9d73adf962aaabecba761c823d3faca4bb4dd463a7009033e7267242bce84cb2"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/provas/2025-06-22_caesb-engenheiro-mecanico_prova-com-justificativas.pdf",
+      "ok": true,
+      "detalhe": "84ae0602e23691a27529b1f96e7c58803ad82982550301724345cb0b5d690df5"
+    },
+    {
+      "criterio": "recurso preservado: downloads/termodinamica/gabaritos/2025-06-22_caesb-engenheiro-mecanico_gabarito.pdf",
+      "ok": true,
+      "detalhe": "2cbc3da0947186e5e9e998151fb887b47852c46837a4c03a3e7a3cc547349456"
+    },
+    {
+      "criterio": "recurso preservado: assets/termodinamica/fun01-dados-v1.json",
+      "ok": true,
+      "detalhe": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+    },
+    {
+      "criterio": "recurso preservado: assets/termodinamica/fun02-dados-v1.json",
+      "ok": true,
+      "detalhe": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319"
+    },
+    {
+      "criterio": "recurso preservado: assets/termodinamica/fun02-caminhos-v1.svg",
+      "ok": true,
+      "detalhe": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35"
+    },
+    {
+      "criterio": "recurso preservado: assets/termodinamica/fun02-calculos-v1.mjs",
+      "ok": true,
+      "detalhe": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70"
+    },
+    {
+      "criterio": "197 artigos antes e depois",
+      "ok": true,
+      "detalhe": [
+        197,
+        197
+      ]
+    },
+    {
+      "criterio": "IDs e ordem preservados",
+      "ok": true,
+      "detalhe": [
+        "fun01-e1-saturacao",
+        "fun01-e1-mistura",
+        "fun01-e1-supercritico",
+        "fun01-e1-equilibrio",
+        "fun02-e1-caminhos",
+        "fun02-e1-integrabilidade",
+        "fun02-e1-calor-caminho",
+        "q-e1-01",
+        "q-e1-02",
+        "q-e1-03",
+        "q-e1-04",
+        "q-e1-05",
+        "q-e1-06",
+        "q-e1-07",
+        "q-e1-08",
+        "q-e1-09",
+        "q-e1-10",
+        "q-e1-11",
+        "q-e1-12",
+        "q-e1-13",
+        "q-e1-14",
+        "q-e1-15",
+        "q-e1-16",
+        "q-e1-17",
+        "q-e1-18",
+        "q-e1-19",
+        "q-e1-20",
+        "q-e1-21",
+        "q-e1-22",
+        "q-e1-23",
+        "q-e1-24",
+        "q-e1-25",
+        "q-e1-26",
+        "q-e1-27",
+        "q-e1-28",
+        "q-e1-29",
+        "q-e1-30",
+        "cr-e1-01",
+        "cr-e1-02",
+        "cr-e1-03",
+        "cr-e1-04",
+        "cr-e1-05",
+        "cr-e1-06",
+        "cr-e1-07",
+        "cr-e1-08",
+        "cr-e1-09",
+        "cr-e1-10",
+        "cr-e1-11",
+        "cr-e1-12",
+        "cr-e1-13",
+        "cr-e1-14",
+        "cr-e1-15",
+        "cr-e1-16",
+        "cr-e1-17",
+        "cr-e1-18",
+        "cr-e1-19",
+        "cr-e1-20",
+        "cr-e1-21",
+        "cr-e1-22",
+        "cr-e1-23",
+        "cr-e1-24",
+        "cr-e1-25",
+        "cr-e1-26",
+        "cr-e1-27",
+        "cr-e1-28",
+        "cr-e1-29",
+        "cr-e1-30",
+        "cr-e1-31",
+        "cr-e1-32",
+        "cr-e1-33",
+        "cr-e1-34",
+        "cr-e1-35",
+        "cr-e1-36",
+        "cr-e1-37",
+        "cr-e1-38",
+        "cr-e1-39",
+        "cr-e1-40",
+        "cr-e1-41",
+        "cr-e1-42",
+        "cr-e1-43",
+        "cr-e1-44",
+        "cr-e1-45",
+        "cr-e1-46",
+        "cr-e1-47",
+        "cr-e1-48",
+        "cr-e1-49",
+        "cr-e1-50",
+        "cr-e1-51",
+        "cr-e1-52",
+        "cr-e1-53",
+        "cr-e1-54",
+        "cr-e1-55",
+        "cr-e1-56",
+        "cr-e1-57",
+        "cr-e1-58",
+        "cr-e1-59",
+        "cr-e1-60",
+        "cr-e1-61",
+        "cr-e1-62",
+        "cr-e1-63",
+        "cr-e1-64",
+        "cr-e1-65",
+        "cr-e1-66",
+        "cr-e1-67",
+        "cr-e1-68",
+        "cr-e1-69",
+        "cr-e1-70",
+        "cr-e1-71",
+        "cr-e1-72",
+        "cr-e1-73",
+        "cr-e1-74",
+        "cr-e1-75",
+        "cr-e1-76",
+        "cr-e1-77",
+        "cr-e1-78",
+        "cr-e1-79",
+        "cr-e1-80",
+        "av-e1-01",
+        "av-e1-02",
+        "av-e1-03",
+        "av-e1-04",
+        "av-e1-05",
+        "av-e1-06",
+        "av-e1-07",
+        "av-e1-08",
+        "av-e1-09",
+        "av-e1-10",
+        "av-e1-11",
+        "av-e1-12",
+        "av-e1-13",
+        "av-e1-14",
+        "av-e1-15",
+        "av-e1-16",
+        "av-e1-17",
+        "av-e1-18",
+        "av-e1-19",
+        "av-e1-20",
+        "av-e1-21",
+        "av-e1-22",
+        "av-e1-23",
+        "av-e1-24",
+        "av-e1-25",
+        "av-e1-26",
+        "av-e1-27",
+        "av-e1-28",
+        "av-e1-29",
+        "av-e1-30",
+        "av-e1-31",
+        "av-e1-32",
+        "av-e1-33",
+        "av-e1-34",
+        "av-e1-35",
+        "av-e1-36",
+        "av-e1-37",
+        "av-e1-38",
+        "av-e1-39",
+        "av-e1-40",
+        "av-e1-41",
+        "av-e1-42",
+        "av-e1-43",
+        "av-e1-44",
+        "av-e1-45",
+        "av-e1-46",
+        "av-e1-47",
+        "av-e1-48",
+        "av-e1-49",
+        "av-e1-50",
+        "av-e1-51",
+        "av-e1-52",
+        "av-e1-53",
+        "av-e1-54",
+        "av-e1-55",
+        "av-e1-56",
+        "av-e1-57",
+        "av-e1-58",
+        "av-e1-59",
+        "av-e1-60",
+        "av-e1-61",
+        "av-e1-62",
+        "av-e1-63",
+        "av-e1-64",
+        "av-e1-65",
+        "av-e1-66",
+        "av-e1-67",
+        "av-e1-68",
+        "av-e1-69",
+        "av-e1-70",
+        "av-e1-71",
+        "av-e1-72",
+        "av-e1-73",
+        "av-e1-74",
+        "av-e1-75",
+        "av-e1-76",
+        "av-e1-77",
+        "av-e1-78",
+        "av-e1-79",
+        "av-e1-80"
+      ]
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: fun01-e1-saturacao",
+      "ok": true,
+      "detalhe": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2"
+    },
+    {
+      "criterio": "chave preservada: fun01-e1-saturacao",
+      "ok": true,
+      "detalhe": "rubrica aberta"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: fun01-e1-mistura",
+      "ok": true,
+      "detalhe": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53"
+    },
+    {
+      "criterio": "chave preservada: fun01-e1-mistura",
+      "ok": true,
+      "detalhe": "rubrica aberta"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: fun01-e1-supercritico",
+      "ok": true,
+      "detalhe": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7"
+    },
+    {
+      "criterio": "chave preservada: fun01-e1-supercritico",
+      "ok": true,
+      "detalhe": "rubrica aberta"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: fun01-e1-equilibrio",
+      "ok": true,
+      "detalhe": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206"
+    },
+    {
+      "criterio": "chave preservada: fun01-e1-equilibrio",
+      "ok": true,
+      "detalhe": "rubrica aberta"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: fun02-e1-caminhos",
+      "ok": true,
+      "detalhe": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6"
+    },
+    {
+      "criterio": "chave preservada: fun02-e1-caminhos",
+      "ok": true,
+      "detalhe": "rubrica aberta"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: fun02-e1-integrabilidade",
+      "ok": true,
+      "detalhe": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2"
+    },
+    {
+      "criterio": "chave preservada: fun02-e1-integrabilidade",
+      "ok": true,
+      "detalhe": "rubrica aberta"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: fun02-e1-calor-caminho",
+      "ok": true,
+      "detalhe": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c"
+    },
+    {
+      "criterio": "chave preservada: fun02-e1-calor-caminho",
+      "ok": true,
+      "detalhe": "rubrica aberta"
+    },
+    {
+      "criterio": "chave preservada: q-e1-01",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-02",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: q-e1-03",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: q-e1-04",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-05",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-06",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: q-e1-07",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: q-e1-08",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: q-e1-09",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: q-e1-10",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: q-e1-11",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: q-e1-12",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-13",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-14",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: q-e1-15",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: q-e1-16",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: q-e1-17",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: q-e1-18",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: q-e1-19",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: q-e1-20",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: q-e1-21",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: q-e1-22",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-23",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-24",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-25",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: q-e1-26",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: q-e1-27",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: q-e1-28",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: q-e1-29",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: q-e1-30",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-01",
+      "ok": true,
+      "detalhe": "1a461fa641228ea3bcf7631148fc40821c890b98d8ebd1a72b5b844af982806d"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-01",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-02",
+      "ok": true,
+      "detalhe": "ccb20b9d4b9d5741d97a2d539cb48a3cbd1fbc7a8455fe4d58c294678ddd7a9d"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-02",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-03",
+      "ok": true,
+      "detalhe": "89ca6a4710177476a8a2f88e8031c1fff598205e86bfac18ce179ad8e87bc3e7"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-03",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-04",
+      "ok": true,
+      "detalhe": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-04",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-05",
+      "ok": true,
+      "detalhe": "bef4e1a13a4eba650e1c6b802957077eb38c26fa5c1660da8e09b694544cacf5"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-05",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-06",
+      "ok": true,
+      "detalhe": "69c0e38652f6be60ce26064942c5df1ef936193d8f6c3b79bd6530c28e29f31e"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-06",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-07",
+      "ok": true,
+      "detalhe": "c6e1989e4dc002b751cc23ab3e0c032df264bab82f79972bc059fa2799f072cc"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-07",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-08",
+      "ok": true,
+      "detalhe": "62f6c64f663b2a2901ad832b08768de5304186911da068e4ac48bbe0d2aeae3a"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-08",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-09",
+      "ok": true,
+      "detalhe": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-09",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-10",
+      "ok": true,
+      "detalhe": "abe9bc623cad60bc7f3c99fe1f57d2ceda566ce7fba6166afaac0df113ef66a2"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-10",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-11",
+      "ok": true,
+      "detalhe": "d5f8ea44378cd659b600ca4d2b9d24b290fd12bb603390c1117cd9c24678e878"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-11",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-12",
+      "ok": true,
+      "detalhe": "7c0ff74e35d297c99cae98007bda36ebd4cdca22e4e1fcfa45fc3492f4683c18"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-12",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-13",
+      "ok": true,
+      "detalhe": "52c02867f253205868fb2da8741a6d7b8cad977367c1d5f1ec848670ff7f90b7"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-13",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-14",
+      "ok": true,
+      "detalhe": "3d06154c3f10b1827e4950b76dcf570d842b054a62406fc2c61a604af4c8a0a6"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-14",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-15",
+      "ok": true,
+      "detalhe": "51c2987cdbf270b2bf5c447741e91ed1390e7812ad40164aecbdfa6accd4282f"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-15",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-16",
+      "ok": true,
+      "detalhe": "80a328824d46255663e720f5850480ab96df22ccdba54dc04db4c0e6f205ee32"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-16",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-17",
+      "ok": true,
+      "detalhe": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-17",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-18",
+      "ok": true,
+      "detalhe": "06b0dc953b5579ef19c44e8137895aaecd4e1d6245c44a6b49956cc7445fc6e1"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-18",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-19",
+      "ok": true,
+      "detalhe": "3871e235af09e1bdfedc606d42ae3922b3b02eea743895cd42cce446fc9a8a75"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-19",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-20",
+      "ok": true,
+      "detalhe": "2cb07dee73b66b77f5b0bb9b2e7cb494360a2fe28a500c14e2d3fbf709aa6a52"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-20",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-21",
+      "ok": true,
+      "detalhe": "5e112105b6213109cbaf04f2883ae27052a8c9027ed9d808a0fcd627a326784b"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-21",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-22",
+      "ok": true,
+      "detalhe": "a4cb5f18bafa792df4cdc4f632c585b8b49b63f20d7e719b36131dc44d34c944"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-22",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-23",
+      "ok": true,
+      "detalhe": "5be283e9eeaad31c39004231ee391654e3f476aaede45b5b81f74163628c3405"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-23",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-24",
+      "ok": true,
+      "detalhe": "7263887786f48bf00b02289fba4dcccfda7d655546d4c37da44e14a2d01ed438"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-24",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-25",
+      "ok": true,
+      "detalhe": "ad3f5a9cb6c50e2cacacb42b7e8d3a14a6c8cb13320c1048aea23cc599d50ed6"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-25",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-26",
+      "ok": true,
+      "detalhe": "4799e28ca9e9aa74d19aa5bac1560323e7d4d71e74a98e63561068afb3b802c8"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-26",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-27",
+      "ok": true,
+      "detalhe": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-27",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-28",
+      "ok": true,
+      "detalhe": "3d6384bcf7120175aba311755ad0ad4f36ff896a0894161de88bc45cb8614365"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-28",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-29",
+      "ok": true,
+      "detalhe": "f7ba62e87eedc71077825e5be83a5fd8f4dacb08ba29e658a51e99d5fe42fdac"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-29",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-30",
+      "ok": true,
+      "detalhe": "6abb421dab137437146a58fdaeb64d35ec7f9a6161d142f0bd29c9e91ac53f8b"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-30",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-31",
+      "ok": true,
+      "detalhe": "1195cc79755f79294771716075f277cae296343160770608c81367b2c7272bc3"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-31",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-32",
+      "ok": true,
+      "detalhe": "91cacfbdd2254fd2ad8c183e18f65d94da3156c40a211242599f800a554f73d9"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-32",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-33",
+      "ok": true,
+      "detalhe": "06e5d8361e1d50448ff26839517404fe07244c5ec74c1594371c11da6536997a"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-33",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-34",
+      "ok": true,
+      "detalhe": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-34",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-35",
+      "ok": true,
+      "detalhe": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-35",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-36",
+      "ok": true,
+      "detalhe": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-36",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-37",
+      "ok": true,
+      "detalhe": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-37",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-38",
+      "ok": true,
+      "detalhe": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-38",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-39",
+      "ok": true,
+      "detalhe": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-39",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-40",
+      "ok": true,
+      "detalhe": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-40",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-41",
+      "ok": true,
+      "detalhe": "f4c503ea9b326caa519bbdd2cd70ae85279d9d03996adcfe8de703f77fd18e64"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-41",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-42",
+      "ok": true,
+      "detalhe": "a43aea2e5d81accad6559fadfeefb77adf5e5653628f674856c501e795ce48ea"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-42",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-43",
+      "ok": true,
+      "detalhe": "1a934a1bd574e1b535a5a922cb0814a17d58079a7640b3f4d4c5c493af29c17b"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-43",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-44",
+      "ok": true,
+      "detalhe": "73982b41be7659f3a23f320d7ae6414c019750db4778f91c75674c20e0d53875"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-44",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-45",
+      "ok": true,
+      "detalhe": "382306e2bd0381e3614cfefd799d12a1b90a06b3b78e1f2171bc5c9c67c4ba4d"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-45",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-46",
+      "ok": true,
+      "detalhe": "6db3ea19084b8ebc1743aabcf601f31f82cf56a2d5998e386e7504860cfff1b2"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-46",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-47",
+      "ok": true,
+      "detalhe": "8dbbd53e0111efaef76009a38b5c1c9ed437c6f6ecc471c0939147f903ec0786"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-47",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-48",
+      "ok": true,
+      "detalhe": "d39d25c7b5b9bafac081c3c1f00b129a54f07fceea77f5354bb4632dfd439fd6"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-48",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-49",
+      "ok": true,
+      "detalhe": "8f8f133eddab5ab062c9f3a35ff78b246fa6ccd357de225593890f15c910cf9f"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-49",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-50",
+      "ok": true,
+      "detalhe": "b0e25a75cd24dfa1ded90bae33f09ee36222fd5d305d00607be61e818d126d3f"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-50",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-51",
+      "ok": true,
+      "detalhe": "7e5dcdfa88bcadee0a8fc31599e350b92e33d0ff055dab57b879b9ceaf82bf23"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-51",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-52",
+      "ok": true,
+      "detalhe": "27afcb168f30452326940a382af7a5b8834ab4f8d0d8137efe80b65464e9de3f"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-52",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-53",
+      "ok": true,
+      "detalhe": "80ac5d12a11ec45683516e0c70a561d76d73d3408b4057bb733158542ba1dff0"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-53",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-54",
+      "ok": true,
+      "detalhe": "262063cf196b649e8c5dc1e33f3cae14ee1554424fabee4087ef6345deac3d3c"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-54",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-55",
+      "ok": true,
+      "detalhe": "7f28f1504c5296dc0387a4a7b150a253c5f5385008d94cae86afe4e716eae4f3"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-55",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-56",
+      "ok": true,
+      "detalhe": "0827dbbe91757cc711b1bc5541b5ef5033bf65d648faf25b5e6b57d62e12f347"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-56",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-57",
+      "ok": true,
+      "detalhe": "4de64cfa27817be86c14aea29e1086c4269d4d69e281b4ce6685f176e6605f49"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-57",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-58",
+      "ok": true,
+      "detalhe": "ebb927a87245d7870f70f4daa59aa4b76fa312deefdfdee32b6a31de87850ffd"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-58",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-59",
+      "ok": true,
+      "detalhe": "e1068e2195cb3859bae9d9b3f1bf524ef05a0af60607b57b07fb19eeb2cd8175"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-59",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-60",
+      "ok": true,
+      "detalhe": "79f50d9f0b7801b9b4fa1cf9a70c1dd267bc6421fa72ca8cdfb431e971f6380f"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-60",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-61",
+      "ok": true,
+      "detalhe": "745cde3da24b14b573ac4b3fb6cca25d7e1cf90b099d9a8f05adcbd86bb86143"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-61",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-62",
+      "ok": true,
+      "detalhe": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-62",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-63",
+      "ok": true,
+      "detalhe": "777d85e75efa77ab3c17204d511d215d72be4519ee59f4b06e371c9d9bc30695"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-63",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-64",
+      "ok": true,
+      "detalhe": "5cb37f5064e8114789a60496810e7ebd847a164bcb798385e5c0f5b37fef7313"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-64",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-65",
+      "ok": true,
+      "detalhe": "9322946ef9f40d87e6ff05c7a9d49c484260044be286ecbe9153b3a05dedeeda"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-65",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-66",
+      "ok": true,
+      "detalhe": "3c495fe75122088861c7e8de6a39ceccefaf8486532bbaad7e755d48a7ec1850"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-66",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-67",
+      "ok": true,
+      "detalhe": "ce6a14b96095bd3f2b7633028a51832b69ffbc9350cb7d81dfced776b51a6d56"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-67",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-68",
+      "ok": true,
+      "detalhe": "6cfcf2558f6d3651a9b87e8fd4b66b8e29561f17686b4e52b2f40d15ac42fcb8"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-68",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-69",
+      "ok": true,
+      "detalhe": "5fe27c3eaca7cf1d4f584a1720a66065312dcd074301366a59e6cc96387df14f"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-69",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-70",
+      "ok": true,
+      "detalhe": "9cf98a0db0efa097c58cac9de03b4212f1e3683f067a14688ae605350ac0ac52"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-70",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-71",
+      "ok": true,
+      "detalhe": "e2bcbf820c2b4d9def629ac7407c88c182d0a6bd4f32f3c744c5d95e1fe6dee3"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-71",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-72",
+      "ok": true,
+      "detalhe": "e452baf8904d916bcc65de691be44b0d1343a527847b0e94f44fa2d4ff615ce4"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-72",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-73",
+      "ok": true,
+      "detalhe": "e0f92d950ca09e2beac1db4e1e2448e15f0d1ceb3590d41a4d9c4a9823211980"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-73",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-74",
+      "ok": true,
+      "detalhe": "6c9f14a73c2d633dfb45bc594b7815e9c9a8b0747272ba3deebb6adcc432c7ab"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-74",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-75",
+      "ok": true,
+      "detalhe": "c27f54317f1d4fa5d40d5eb82811cb626f44f7c0f5f3167c40dc53a0caa5b0ab"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-75",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-76",
+      "ok": true,
+      "detalhe": "d0c7cf75f2aedc3bca09119745417868f7ab2cc7e65239537a37397c7cc9a872"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-76",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-77",
+      "ok": true,
+      "detalhe": "3904164b53402e239cc2b0f3b9de5eb0d61467da12725310a882f4169c0bd661"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-77",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-78",
+      "ok": true,
+      "detalhe": "bad6704eace3098a21eb19cab01cedc47792d60458e53adae923306116a58d90"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-78",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-79",
+      "ok": true,
+      "detalhe": "2ebd9eec55b732bd36a78f605d2d68bb156f3f33656cd4ebfe71f18eda6f4550"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-79",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "artigo oficial/aberto preservado: cr-e1-80",
+      "ok": true,
+      "detalhe": "5417c9d9ec6a1d853beee3dff2aa9f0c614813aab6436ae3052a55a1ee2e36f8"
+    },
+    {
+      "criterio": "chave preservada: cr-e1-80",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-01",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-02",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-03",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-04",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-05",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-06",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-07",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-08",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-09",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-10",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-11",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-12",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-13",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-14",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-15",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-16",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-17",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-18",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-19",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-20",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-21",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-22",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-23",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-24",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-25",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-26",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-27",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-28",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-29",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-30",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-31",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-32",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-33",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-34",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-35",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-36",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-37",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-38",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-39",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-40",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-41",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-42",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-43",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-44",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-45",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-46",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-47",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-48",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-49",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-50",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-51",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-52",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-53",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-54",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-55",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-56",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-57",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-58",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-59",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-60",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-61",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-62",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-63",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-64",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-65",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-66",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-67",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-68",
+      "ok": true,
+      "detalhe": "D"
+    },
+    {
+      "criterio": "chave preservada: av-e1-69",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-70",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-71",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-72",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-73",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-74",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-75",
+      "ok": true,
+      "detalhe": "B"
+    },
+    {
+      "criterio": "chave preservada: av-e1-76",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-77",
+      "ok": true,
+      "detalhe": "C"
+    },
+    {
+      "criterio": "chave preservada: av-e1-78",
+      "ok": true,
+      "detalhe": "A"
+    },
+    {
+      "criterio": "chave preservada: av-e1-79",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "chave preservada: av-e1-80",
+      "ok": true,
+      "detalhe": "E"
+    },
+    {
+      "criterio": "exatamente os 25 artigos previstos no plano",
+      "ok": true,
+      "detalhe": [
+        "q-e1-02",
+        "q-e1-09",
+        "q-e1-13",
+        "q-e1-15",
+        "q-e1-16",
+        "q-e1-18",
+        "q-e1-19",
+        "q-e1-24",
+        "q-e1-26",
+        "q-e1-28",
+        "av-e1-08",
+        "av-e1-10",
+        "av-e1-17",
+        "av-e1-18",
+        "av-e1-33",
+        "av-e1-35",
+        "av-e1-37",
+        "av-e1-38",
+        "av-e1-45",
+        "av-e1-48",
+        "av-e1-50",
+        "av-e1-57",
+        "av-e1-58",
+        "av-e1-64",
+        "av-e1-73"
+      ]
+    },
+    {
+      "criterio": "HTML fora dos artigos preservado",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "criterio": "MathML preservado integralmente",
+      "ok": true,
+      "detalhe": [
+        734,
+        734
+      ]
+    },
+    {
+      "criterio": "digitais Q reproduzem o registro antes",
+      "ok": true,
+      "detalhe": {
+        "e930ca81": "C",
+        "6203aefa": "B",
+        "cf88eb64": "E",
+        "5536626e": "C",
+        "73bfe299": "C",
+        "2928b00e": "D",
+        "68354c35": "E",
+        "00b407a9": "A",
+        "bcf0d5a6": "B",
+        "ab29d979": "E",
+        "47b7c73d": "D",
+        "83f286e2": "C",
+        "b4be7154": "C",
+        "52ba659f": "E",
+        "b8785dda": "A",
+        "8e16cef7": "A",
+        "331b7140": "D",
+        "4186c808": "D",
+        "eb5a52f1": "A",
+        "eaefd913": "A",
+        "2524d70e": "E",
+        "6354135c": "C",
+        "1a65c85f": "C",
+        "0fb7f391": "C",
+        "cf4982cb": "E",
+        "a20296a6": "B",
+        "9a57c870": "A",
+        "e121d324": "E",
+        "56b391ea": "C",
+        "66de2ee1": "B"
+      }
+    },
+    {
+      "criterio": "digitais Q reproduzem o registro depois",
+      "ok": true,
+      "detalhe": {
+        "96605211": "C",
+        "e930ca81": "C",
+        "9156ec31": "B",
+        "cf88eb64": "E",
+        "5536626e": "C",
+        "73bfe299": "C",
+        "2928b00e": "D",
+        "68354c35": "E",
+        "00b407a9": "A",
+        "8a55be1d": "B",
+        "ab29d979": "E",
+        "47b7c73d": "D",
+        "83f286e2": "C",
+        "b4be7154": "C",
+        "52ba659f": "E",
+        "dce7611d": "A",
+        "d2b495f5": "A",
+        "331b7140": "D",
+        "4186c808": "D",
+        "5b4584e0": "A",
+        "eaefd913": "A",
+        "2524d70e": "E",
+        "6354135c": "C",
+        "1a65c85f": "C",
+        "cf4982cb": "E",
+        "ff452e59": "B",
+        "9a57c870": "A",
+        "1aabb7d8": "E",
+        "56b391ea": "C",
+        "66de2ee1": "B"
+      }
+    },
+    {
+      "criterio": "exatamente 20 novas digitais previstas",
+      "ok": true,
+      "detalhe": [
+        "av-e1-08",
+        "av-e1-10",
+        "av-e1-33",
+        "av-e1-35",
+        "av-e1-37",
+        "av-e1-38",
+        "av-e1-45",
+        "av-e1-48",
+        "av-e1-50",
+        "av-e1-57",
+        "av-e1-58",
+        "av-e1-73",
+        "q-e1-02",
+        "q-e1-09",
+        "q-e1-15",
+        "q-e1-16",
+        "q-e1-19",
+        "q-e1-24",
+        "q-e1-26",
+        "q-e1-28"
+      ]
+    },
+    {
+      "criterio": "registro fora das digitais Q de E1 preservado",
+      "ok": true,
+      "detalhe": null
+    },
+    {
+      "criterio": "validador canônico do inventário",
+      "ok": true,
+      "detalhe": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 197,
+        "artigos_encontrados": 197,
+        "recursos_verificados": 29,
+        "links_locais_verificados": 1261,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      }
+    }
+  ],
+  "limites": [
+    "A comparação estrutural não demonstra sozinha correção científica.",
+    "Não executa navegação, armazenamento real ou aplicação com estudantes."
+  ]
+}

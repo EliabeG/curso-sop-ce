@@ -1,0 +1,21 @@
+# QA-09 — Adjudicação independente dos diagnósticos 1 e 5, r1
+
+Data: 29/10/2026. Escopo limitado às duas ressalvas preliminares, sobre a versão do `modulos/e1-termodinamica.html` de SHA-256 `9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55`. Sem alteração do produto ou controle e sem decisão global de QA-09. Diagnósticos 1 e 5 correspondem a EX-051 e EX-055 do `QA-09-mapa-independente-r1.json`, SHA-256 `892b63067b87316009a89a8553e8288a9bc51c2c66929b33a4fd19d927d2ede9`; os fragmentos respectivos têm SHA-256 `38dfd58742e4dd620bced89730914ad6d3288e7856f0cadf312481c6c676ad25` e `d5ec3a9b054e4bfff87766699524a5650626779710e12b4e443aad5e01ced4e0`.
+
+## Diagnóstico 1 — ajuste necessário
+
+Enunciado: “Divida uma amostra homogênea em quatro partes nas mesmas condições. Como ficam massa, volume, densidade e temperatura?” A solução afirma que cada parte possui um quarto da massa e do volume, preservando densidade e temperatura, e identifica kelvin como unidade de base. A base previamente acessível `#base-medidas` explica que massa e volume diminuem na mesma proporção para uma amostra homogênea dividida nas mesmas condições; o exemplo de dividir em duas metades explicita metades, não impõe igualdade das quatro partes neste diagnóstico.
+
+A igualdade das partes não decorre de apenas haver quatro partes. Contraexemplo: dividir uma amostra homogênea em volumes de 10%, 20%, 30% e 40% do total, todos nas mesmas condições; por densidade uniforme, as massas também são respectivamente 10%, 20%, 30% e 40%, e cada parte conserva densidade e temperatura. Assim, a conclusão de um quarto não é única para o enunciado literal. A unidade kelvin está correta e independe dessa insuficiência.
+
+Decisão: **ajuste necessário** para alinhar premissa e resolução: por exemplo, especificar quatro partes de volumes iguais (ou de massas iguais, com homogeneidade), ou substituir a solução por uma resposta proporcional sem atribuir fração fixa. Esta decisão se restringe ao trecho examinado; não valida numericamente as demais ocorrências do bloco.
+
+## Diagnóstico 5 — base suficiente no modelo apresentado
+
+Enunciado: “À mesma temperatura, a umidade relativa passa de 75% para 30%. Qual é a razão entre pressões parciais final e inicial? Isso significa que 30% da massa do ar é água?” Resolução: `0,30/0,75 = 0,40`; rejeita a confusão com fração mássica. A aula anterior `#base-umidade`, acessível antes da tentativa, declara explicitamente a aproximação de mistura ideal de ar seco e vapor, desprezando o fator de intensificação, com referência de saturação na mesma temperatura e mesma fase, e apresenta `φ = pᵥ/pₛₐₜ(T)`. Ela fornece inclusive exemplo de razão a temperatura constante. O diagnóstico remete a essa mesma base para retomada, e o material orienta estudá-la antes do diagnóstico.
+
+Sob esse modelo e a mesma fase de referência, `pᵥ,2/pᵥ,1 = (0,30 pₛₐₜ(T))/(0,75 pₛₐₜ(T)) = 0,40`; a pressão parcial final é 40% da inicial, uma queda de 60%. Umidade relativa é razão de pressões no modelo, não fração de massa total. A resposta é correta nas hipóteses ensinadas; não há erro de arredondamento relevante aqui.
+
+O limite real foi considerado: conforme [ASHRAE Handbook, capítulo 1, §§5–6](https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx), o fator de intensificação depende de temperatura e pressão total e a aproximação de gás perfeito permite sua eliminação. Com modelo real em regime convencional, fases de referência iguais e pressões totais distintas, a razão teria a forma `0,40 × f(T,P₂)/f(T,P₁)` e não seria determinada somente pela temperatura. Esse contramodelo confirma o alcance limitado da fórmula, já declarado na própria base, mas não obriga uma hipótese extra de pressão total igual ao aplicar o modelo ideal escolhido. A formulação do diagnóstico pode repetir “no modelo ideal da aula” por clareza, mas **esse acréscimo não é condição necessária para aceitar a conta no contexto didático examinado**.
+
+Decisão: ressalva de insuficiência **não procedente dentro do modelo explicitamente estabelecido na base anterior**. A conclusão não vale como exatidão universal para ar úmido real ou mudança de fase de referência. Referência externa consultada em 29/10/2026; não foi capturada cópia local nem calculado hash da página remota.

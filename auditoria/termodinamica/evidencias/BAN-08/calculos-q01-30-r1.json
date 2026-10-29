@@ -1,0 +1,234 @@
+{
+  "id": "BAN-08",
+  "escopo": "Q01–Q30; cálculos principais e operações de distratores quando reproduzíveis",
+  "autor": "/root/inspect_repo, agente automatizado Corretor",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "contagem_registros": 30,
+  "ids_unicos": true,
+  "resultados_numericos_principais": 17,
+  "calculos": [
+    {
+      "id": "q-e1-02",
+      "metodo": "frações racionais exatas",
+      "derivacao": "p_abs=200+100 kPa",
+      "valores": {
+        "p": "300"
+      },
+      "verificacoes": 1,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-04",
+      "metodo": "frações racionais exatas",
+      "derivacao": "x=(1000−500)/(2500−500)",
+      "valores": {
+        "x": "1/4",
+        "liquido": "3/4",
+        "D": "1/2",
+        "E": "1/5"
+      },
+      "verificacoes": 4,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-06",
+      "metodo": "frações racionais exatas",
+      "derivacao": "p=1×0,287×300/0,861",
+      "valores": {
+        "numerador": "861/10",
+        "p": "100"
+      },
+      "verificacoes": 1,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-07",
+      "metodo": "frações racionais exatas",
+      "derivacao": "ΔU=500−200 kJ",
+      "valores": {
+        "deltaU": "300",
+        "soma_indevida": "700"
+      },
+      "verificacoes": 2,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-08",
+      "metodo": "frações racionais exatas",
+      "derivacao": "W=200(0,3−0,1) kJ",
+      "valores": {
+        "W": "40",
+        "pV2": "60",
+        "pV1": "20"
+      },
+      "verificacoes": 3,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-09",
+      "metodo": "frações racionais exatas",
+      "derivacao": "W=200(3−1)+100(1−3) kJ",
+      "valores": {
+        "W_AB": "400",
+        "W_CD": "-200",
+        "W_liquido": "200"
+      },
+      "verificacoes": 1,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-11",
+      "metodo": "frações racionais exatas",
+      "derivacao": "Wdot=2(3100−2700) kW",
+      "valores": {
+        "delta_h": "400",
+        "potencia": "800",
+        "soma_indevida": "11600"
+      },
+      "verificacoes": 2,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-12",
+      "metodo": "frações racionais exatas",
+      "derivacao": "w=0,001×500 kJ/kg",
+      "valores": {
+        "w": "1/2"
+      },
+      "verificacoes": 1,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-15",
+      "metodo": "frações racionais exatas",
+      "derivacao": "W=1000−650; η=W/1000; B=W/650",
+      "valores": {
+        "W": "350",
+        "eta": "7/20",
+        "B_percentual": "700/13",
+        "C_percentual": "165"
+      },
+      "verificacoes": 3,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-16",
+      "metodo": "frações racionais exatas",
+      "derivacao": "η=1−300/600; E=(600−300)/(600+300)",
+      "valores": {
+        "eta": "1/2",
+        "E_percentual": "100/3",
+        "inversao_percentual": "-100"
+      },
+      "verificacoes": 3,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-17",
+      "metodo": "frações racionais exatas",
+      "derivacao": "COP=900/300, QH=900+300",
+      "valores": {
+        "COP_R": "3",
+        "QH": "1200",
+        "COP_H": "4",
+        "inverso": "1/3"
+      },
+      "verificacoes": 4,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-19",
+      "metodo": "frações racionais exatas",
+      "derivacao": "η=400/500; C=400/(400+500)",
+      "valores": {
+        "eta": "4/5",
+        "C_percentual": "400/9",
+        "reducao": "1/5"
+      },
+      "verificacoes": 3,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-23",
+      "metodo": "frações racionais exatas",
+      "derivacao": "qL=400−250; wc=450−400",
+      "valores": {
+        "qL": "150",
+        "wc": "50",
+        "COP_R": "3",
+        "COP_H": "4"
+      },
+      "verificacoes": 3,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-26",
+      "metodo": "frações racionais exatas",
+      "derivacao": "h=2800+(30/100)×200",
+      "valores": {
+        "frac": "3/10",
+        "h": "2860",
+        "A": "3060",
+        "E": "840"
+      },
+      "verificacoes": 3,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-27",
+      "metodo": "frações racionais exatas",
+      "derivacao": "pi²=1×16, pi>0",
+      "valores": {
+        "pi": "4",
+        "razao1": "4",
+        "razao2": "4"
+      },
+      "verificacoes": 2,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-28",
+      "metodo": "frações racionais exatas",
+      "derivacao": "η=(3200−2400)/(3200−2200)",
+      "valores": {
+        "real": "800",
+        "ideal": "1000",
+        "eta": "4/5",
+        "B": "11/16",
+        "D": "3/4"
+      },
+      "verificacoes": 3,
+      "todas_passaram": true
+    },
+    {
+      "id": "q-e1-29",
+      "metodo": "frações racionais exatas",
+      "derivacao": "Sger=1(−0,20)+1(0,30)",
+      "valores": {
+        "Sger": "1/10",
+        "modulos": "1/2"
+      },
+      "verificacoes": 2,
+      "todas_passaram": true
+    }
+  ],
+  "apoios_atribuidos": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-q11-20-r1-independente.md",
+      "sha256": "6ec5c037dc3e6e9324ee95ec8dfa9a2ea29e4a7b7c45a862617367844349a947",
+      "autor": "/root/auditoria_av61_70",
+      "alcance": "Análise independente Q11–Q20, 10 hashes atuais confrontados; não é parecer final BAN-08."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-coordenador-q21-30.json",
+      "sha256": "b473e175e28d19fbd39701766c1b7193c286573339edba8ffdc2cc08db77d099",
+      "autor": "/root coordenador",
+      "alcance": "Apoio preliminar Q21–Q30, 10 hashes confrontados; não é parecer final BAN-08."
+    }
+  ],
+  "observacoes": [
+    "Q21 inclui contagem exata 2+2=4 de etapas Carnot no comentário, além do julgamento conceitual; registro individual complementado a partir do apoio do coordenador.",
+    "Classificação dos 30 e análise das alternativas constam nos seis blocos, não são substituídas por este arquivo de contas.",
+    "A execução não é auditoria independente nem fecha os demais 167 itens."
+  ]
+}

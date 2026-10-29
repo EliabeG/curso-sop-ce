@@ -1,0 +1,414 @@
+{
+  "estado": "diagnostico_individual_50_sem_alteracao_de_produto_fontes_em_consolidacao",
+  "data": "2026-10-28",
+  "colunas": [
+    "numero",
+    "decisao_preliminar",
+    "expressao",
+    "simbolos_unidades",
+    "hipoteses",
+    "vinculo_aula"
+  ],
+  "itens": [
+    [
+      1,
+      "manter",
+      "ΔX final menos inicial e rearranjo X2=X1+ΔX corretos.",
+      "Unidade de ΔX igual à de X; índices definidos.",
+      "Definição, sem hipótese de processo adicional.",
+      "A aula define ΔX, exemplifica sinal e distingue valor final."
+    ],
+    [
+      2,
+      "manter",
+      "Q/Δt e W/Δt representam médias; produto da taxa por duração coerente.",
+      "kJ/s=kW e intervalo em segundos definidos.",
+      "A condição já distingue médias de taxa constante; não foi lida como identidade instantânea.",
+      "A aula usa aquecedor constante e a conversão potência–energia."
+    ],
+    [
+      3,
+      "corrigir_vinculo",
+      "Fatores de mil, cubo, litro e caloria termoquímica corretos; não trocar 4,184 por outra definição de caloria.",
+      "J, kJ, W, kW, Pa, kPa, L, mm, cm³ compatíveis.",
+      "Mantida prioridade da aproximação dada pelo enunciado.",
+      "O alvo ensina SI/produtos, mas cal/kcal ficam em base-balanco-fechado; acrescentar vínculo específico para essa parte."
+    ],
+    [
+      4,
+      "manter",
+      "Deslocamento273,15 e igualdade de intervalos Celsius/Kelvin corretos.",
+      "T e t distinguem temperatura absoluta/Celsius.",
+      "Razões absolutas explicitadas.",
+      "A aula explica lei zero, conversão e exemplo10°C/283,15K."
+    ],
+    [
+      5,
+      "corrigir_vinculo",
+      "pabs=pman+patm e p=Fnormal/A corretos.",
+      "N/m²=Pa, alternativa kPa exige conversão; já uniforme/média.",
+      "Pressões na mesma unidade, força normal.",
+      "base-absolutas ensina referência; p=F/A é ensinado em base-leitura-matematica. Acrescentar esse vínculo."
+    ],
+    [
+      6,
+      "manter",
+      "ρ=m/V e v=V/m=1/ρ corretos.",
+      "kg/m³ e m³/kg explicitados.",
+      "Mesma amostra/estado; interpretação homogênea ensinada.",
+      "A aula divide amostra e confere invariância da densidade."
+    ],
+    [
+      7,
+      "manter",
+      "Divisão de U,H,S por massa correta.",
+      "kJ/kg e kJ/(kg K), massa emkg, totais definidos.",
+      "Propriedades específicas, sem hipótese de gás ideal.",
+      "A aula ensina divisão de extensiva por massa; cobre s pela regra geral mesmo sem linha separada."
+    ],
+    [
+      8,
+      "manter",
+      "Span=Lsup−Linf e rearranjo corretos.",
+      "Intervalo na mesma unidade, limites nomeados.",
+      "Span separado de limite superior.",
+      "A aula tem exemplo−10+120=110°C e definição explícita."
+    ],
+    [
+      9,
+      "corrigir_metadados",
+      "Interpolação afim e ganho b=(X2−X1)/(Y2−Y1) corretos para denominadores não nulos.",
+      "Faltam unidade de a (a de X) e b (unidade de X/unidade de Y).",
+      "Explicitar X2≠X1 e Y2≠Y1 para a forma fracionária; origens não precisam coincidir.",
+      "A aula deriva ganho/deslocamento e mostra exemplo; manter vínculo."
+    ],
+    [
+      10,
+      "manter",
+      "Aumento e redução relativos à referência positivos/negativos conforme orientação.",
+      "Razões adimensionais e porcentagem explicitadas.",
+      "X1 inicial positivo já evita divisão zero e referência inadequada.",
+      "A aula distingue140%final de40%aumento e escreve redução."
+    ],
+    [
+      11,
+      "corrigir_metadados",
+      "ppm×10⁻⁶ e soma de geração de fontes iguais corretos.",
+      "Definir G como vazão volumétrica total de CO2 e a taxa por pessoa, não só listar unidades.",
+      "Mesmas condições volumétricas já indicadas; N pessoas de mesma geração quando se usa produto.",
+      "base-balanco-co2 ensina fonte total, unidades e exemplo16pessoas; não apresenta valores como norma."
+    ],
+    [
+      12,
+      "manter",
+      "n=m/M, R=Ru/M e valores aproximados Ru corretos; número de Avogadro exato.",
+      "kg/mol com n emmol, R específica/JkgK e Ru por mol coerentes.",
+      "Compatibilidade de bases explicitada.",
+      "A aula demonstra mol, constante por massa/molar e conta atm·L."
+    ],
+    [
+      13,
+      "corrigir_metadados",
+      "pV=mRT=nRuT e pv=RT corretos.",
+      "Completar m emkg,V emm³,v emm³/kg,n emmol,R eRu nas bases energéticas compatíveis.",
+      "Modelo ideal e absolutos já declarados; composição define R.",
+      "base-gas-modelo deriva ambas bases; base-gas-energia também explicita unidades."
+    ],
+    [
+      14,
+      "corrigir_metadados",
+      "Razão combinada e produto das razões corretos.",
+      "Explicitar mesma unidade entre p1,p2 e entreV1,V2; T emK.",
+      "Mesma quantidade/composição ideal já explícita.",
+      "Aula dá derivação e aumento percentual composto."
+    ],
+    [
+      15,
+      "corrigir_metadados",
+      "Três reduções da equação de estado corretas.",
+      "Pressões absolutas e T emK; definir unidade coerente deV/pressões entre estados.",
+      "Quantidade fixa não basta se composição muda; explicitar composição fixa.",
+      "Aula exige quantidade/composição fixas e trata reação/vazamento."
+    ],
+    [
+      16,
+      "corrigir_metadados",
+      "Z=pV/(nRuT)=pv/(RT), Zideal=1 corretos.",
+      "Substituir remissão genérica por símbolos e unidades locais completos.",
+      "Z é definição para estados de gás real; Z=1 é modelo ideal, não critério universal suficiente de idealidade energética.",
+      "Aula calcula0,80 e separa desvio da equação de estado."
+    ],
+    [
+      17,
+      "manter",
+      "cp−cv=R para ideal e k=cp/cv corretos.",
+      "Mesma base J/kgK oukJ/kgK; k adimensional.",
+      "Diferença restrita a gás ideal e mesma T explícitas.",
+      "Aula apresenta relações e uso de k nas isentrópicas."
+    ],
+    [
+      18,
+      "corrigir_metadados",
+      "Δu=cvΔT, Δh=cpΔT e ΔU=mcvΔT corretos.",
+      "Totais/específicas e intervalo térmico claros.",
+      "Acrescentar massa fixa para a fórmula total; composição e capacidades constantes já explícitas.",
+      "Aula separa u/h(T) e aproximação de c constante; balanço-fechado mostra fator massa."
+    ],
+    [
+      19,
+      "manter",
+      "Média translacional3/2 kBT correta no modelo cinético clássico ideal.",
+      "J por molécula, kB J/K e T K.",
+      "Não confunde translação com toda U molecular; limite já explícito.",
+      "Aula discute rotação/vibração, elasticidade e média, sem moléculas todas à mesma velocidade."
+    ],
+    [
+      20,
+      "manter",
+      "Integrais cv(T) e cp(T) entreT1/T2 corretas.",
+      "kJ/kg resultante, c kJ/kgK, T K; composição fixa.",
+      "Idealidade explícita; não extrapola a gás real.",
+      "Aula integra cp linear196kJ/kg e compara aproximações."
+    ],
+    [
+      21,
+      "corrigir_metadados",
+      "x=mg/(mf+mg) e0≤x≤1 corretos.",
+      "Fração mássica adimensional; massas na mesma unidade.",
+      "Explicitar substância pura, equilíbrio L–V e excluir ponto crítico; endpoints são estados saturados limites.",
+      "Seção substancias ensina fração mássica e equilíbrio; FUN01 distingue mistura/supercrítico."
+    ],
+    [
+      22,
+      "corrigir_metadados",
+      "Média mássica e inversão parax corretas.",
+      "Completar unidades para v,u,h,s e x adimensional.",
+      "Substância pura em equilíbrio; propriedadesf/g no mesmo estado de saturação; inversão requer yg≠yf, não ponto crítico.",
+      "A seção explica propriedade específica e exemplo de h; não interpolar T/p com x."
+    ],
+    [
+      23,
+      "corrigir_modelo_e_aula",
+      "hfg=hg−hf e calor/vazão estão corretos somente com modelos reduzidos delimitados.",
+      "Definir hf/hg e a base específica, não apenas hfg.",
+      "Separar massa fechada isobárica/sótrabalho de fronteira e vaporizador estacionário sem trabalho de eixo, com ΔEc/ΔEp desprezíveis.",
+      "base-calor-latente usa hipóteses apropriadas sem enumerá-las; requer esclarecimento local do mesmo recorte."
+    ],
+    [
+      24,
+      "corrigir_metadados",
+      "Interpolação linear local correta.",
+      "Propriedade na sua unidade e T emmesmaescala.",
+      "Acrescentar Ta≠Tb e T entrelimites para interpolação; p/regiãofase constantes já explícitos.",
+      "Alvo amplo contém fórmula e exemplo230°C→2860kJ/kg, sem atravessar fase."
+    ],
+    [
+      25,
+      "corrigir_modelo_e_aula",
+      "φ=pv/psat e razão à mesma T são aproximação de mistura ideal, não definição geral de ar real.",
+      "Fração/percentual e pressões coerentes; definir psat de água pura.",
+      "Explicitar ar úmido ideal, fator de intensificação desprezado; razão requerφ1/pv1 nulos excluídos.",
+      "base-umidade apresenta a razão como definição; deve receber a mesma delimitação, sem implantar psicrometria real."
+    ],
+    [
+      26,
+      "manter",
+      "C=mc e Qsens=mcΔT corretos no modelo sensível delimitado.",
+      "Capacidade total J/K, específica J/kgK e massa kg distintas.",
+      "Uma fase, c constante, sólidos/líquidos e trabalho/efeitos de pressão desprezíveis já explícitos.",
+      "A aula delimita o modelo e calcula252kJ/157,5s sem trocar energia/potência."
+    ],
+    [
+      27,
+      "corrigir_metadados",
+      "BalançoΣCi(Tf−Ti)=0 e média ponderada corretos.",
+      "Ci=mici emJ/K e temperaturas na mesma escala; capacidades positivas.",
+      "Explicitar calor de mistura e variações cinética/potencial desprezíveis; não basta excluir reação.",
+      "Aula já ressalva entalpia de mistura no final e apresentaTf50°C; manter vínculo."
+    ],
+    [
+      28,
+      "corrigir_metadados",
+      "Parcela do recipiente somada uma vez e Eext=Qext−Wext corretos.",
+      "Completar Ci,Ti,Tf e sinaisQ/W localmente; não depender da ficha27.",
+      "Trazer hipóteses de calor sensível, capacidades constantes, sem fase/reação/calor de mistura, ΔEc/ΔEp desprezíveis.",
+      "Aula calcula44°C com recipiente e explica perda/agitador/entalpia de mistura."
+    ],
+    [
+      29,
+      "corrigir_metadados",
+      "|Qfase|=mℓ correta para calor latente nas condições adequadas; não é qualquerΔU.",
+      "Massa efetivamente transformada e ℓ emenergia/massa corretas.",
+      "Explicitar transição a pressão fixa, apenas trabalho de expansão e ΔEc/ΔEp desprezíveis; ℓpositivo.",
+      "Aula fixa pressão, separaetapas e exemplifica fusãoparcial; acrescentar condição local para que Qnão pareçaenergia genérica."
+    ],
+    [
+      30,
+      "corrigir_vinculo_aula",
+      "Diferenças m(vel2²−vel1²)/2 e mg(z2−z1) corretas para translação macroscópica.",
+      "kg,m/s,m/s²,m produzemJ; não misturar comkJ.",
+      "Massa fixa, gconstante e referência de altura comum; velocidade do conjunto/centro de massa.",
+      "base-primeira-lei nomeiaEc/Ep mas não mostra estas expressões; fornecer recapitulação delimitada no alvo ou apontar local existente após busca."
+    ],
+    [
+      31,
+      "manter",
+      "Balanço total fechado correto, sem apagarEC/EP.",
+      "Todos termos na mesma unidade deenergia.",
+      "Qentrante/Wsainte e trabalho recebido negativo explícitos.",
+      "Aula distingue balanço total da reduçãoΔU=Q−W; atendeP0."
+    ],
+    [
+      32,
+      "manter",
+      "ΔU=Q−W e U2=U1+Q−W coerentes.",
+      "Estados/transferênciasemJoukJ; não confundir variação/final.",
+      "Fechado e variaçõesEC/EP desprezíveis explícitos.",
+      "Aula mostra agitador e energiafinal, com conversões."
+    ],
+    [
+      33,
+      "corrigir_metadados",
+      "Q=0 e ΔU=−W corretos na redução indicada.",
+      "DefinirQcalor,ΔUvariação eWsaída positivos; listarunidadeJoukJ.",
+      "Títulojáfechado e condiçãoΔEC/EP desprezíveis; adiabáticonãoeliminatrabalho.",
+      "Aula tem balanço geral; base-absolutas ensinaadiabático. Acrescentar vínculo específico ou ligação interna que cubraQ0."
+    ],
+    [
+      34,
+      "corrigir_metadados",
+      "IntegralpdV correta para trabalho de fronteira na trajetória quaseestática indicada.",
+      "Wdeve ser definido como trabalho de fronteira, ppressão de fronteira emkPa, Vemm³.",
+      "Pressão absoluta/da fronteira e sinais expansão/compressão não são todos os trabalhos.",
+      "Aula ensina integral, área e convenção; FUN02 aprofunda sem precisaralterá-lo."
+    ],
+    [
+      35,
+      "corrigir_metadados",
+      "p(V2−V1) correto quando pressão de fronteira constante.",
+      "DefinirW como trabalho de fronteira; p emkPa,V m³produzemkJ.",
+      "Processoquaseestáticoisobárico explícito; pressãoabsoluta na fronteira.",
+      "Aula integra pressão constante e contrasta isoterma."
+    ],
+    [
+      36,
+      "corrigir_metadados",
+      "mRTln(V2/V1) eΔU0 corretos para idealisotérmico; Q=W requer único modo de trabalho.",
+      "RkJ/kgK,mkg,TK e razãovolumesadimensional adequados.",
+      "Explicitar massa/composição fixas, somente trabalho de fronteira eΔEC/EP desprezíveis; reversibilidadejáexigida.",
+      "Aula ensina expressão; balanço-fechado lista sófronteira para seusprocessos."
+    ],
+    [
+      37,
+      "corrigir_metadados",
+      "Qisocorico=mcvΔT eQisobarico=mcpΔT corretos.",
+      "CompletarWdeexpansãoemkJ,pabsoluta,Vvolume emunidadecoerente.",
+      "Explicitar massa/composição fixas e trajetóriaquaseestática para usarptrabalho; demaisrestriçõesjáexistem.",
+      "Aula derivaQp=ΔU+pΔV e tabela declara hipótesequaseestática."
+    ],
+    [
+      38,
+      "manter",
+      "ΔUciclo0 eQliq=Wliq corretos para retorno aoestado comenergia mecânicasemvariaçãolíquida.",
+      "Somas algébricas por ciclo emkJjádefinidas.",
+      "Não exige calor/trabalho de cadaetapa nulos; condiçãoexplicitaEC/EP.",
+      "Aula explica retorno depropriedade e ciclohorário."
+    ],
+    [
+      39,
+      "corrigir_modelo_e_aula",
+      "Expansão livreisolada ideal:Q=W=0,T2=T1 eΔS=mRln(V2/V1)=Sger corretos seΔEC/EP0.",
+      "CompletarQ,W,ΔU eTnosímbolos.",
+      "Explicitar variaçõesmacroscópicasEC/EPdesprezíveis entreestados; gravidade não pode alterarUbastaQ=W0.",
+      "Aula derivaΔU0 semnomearEC/EP; esclarecimento mínimo na hipótese inicial necessário."
+    ],
+    [
+      40,
+      "corrigir_metadados",
+      "Qp=ΔH e inversão de sinal da mesmareação/mesmosestados corretos.",
+      "Energia paraquantidadedereação indicada, não indevidamente por mol.",
+      "Acrescentar massa fechada e referência comum; pressãoconstante/sópV/ΔEC/EPjádelimitados.",
+      "Aula trataexotérmico/inversa e comparaPCS/PCI semmudarbase."
+    ],
+    [
+      41,
+      "manter",
+      "h=u+pv é a definição correta de entalpia específica; não depende de idealidade do gás.",
+      "u,hkJ/kg;p kPa,v m³/kg:pv kJ/kg.",
+      "Não exige gásideal ouregimepermanente para definirh; condiçãoatual apenasinterpretafluxo.",
+      "Blocoenergia explicaenthalpiaeescoamento e não reduzdefiniçãoasómáquina."
+    ],
+    [
+      42,
+      "corrigir_metadados",
+      "Balançoestacionárioq−w=Δh+Δvel²/2000+gΔz/1000 correto emkJ/kg.",
+      "Conversores2000/1000 corretos; definirqcalor ewnãoescoamento específico.",
+      "VCfixo, umaentrada/saída, escoamentosuniformesnasseções; wexcluipvjáemh.",
+      "Aula apresentaformaJ/kg e explica divisão1000; importante evitar somaJ/kgcomkJ/kg."
+    ],
+    [
+      43,
+      "manter",
+      "wt=h1−h2 e potência ṁΔh corretos.",
+      "kg/s×kJ/kg=kW; magnitudes produzidas declaradas.",
+      "Permanenteadiabática evariaçõesvelocidade/alturadesprezíveis.",
+      "Exemplo800kW fornece estados e convenções; não exige isentropia paraestaigualdade."
+    ],
+    [
+      44,
+      "manter",
+      "Consumo magnitude h2−h1 e potência correspondem àturbina com sinalinvertido.",
+      "kJ/kg,kg/s,kW completos.",
+      "Regimepermanenteadiabático e energiasmacroscópicasdesprezíveis explícitos.",
+      "Tabelanosalvos define magnitude consumida; não confunde eficiênciaisentrópica."
+    ],
+    [
+      45,
+      "corrigir_aula",
+      "wb,s≈vΔp e potência corretos paralíquido incompressível no caminhoisentrópico.",
+      "m³/kg×kPa=kJ/kg; magnitudesconsumidasclaras.",
+      "Fichajádeclara permanenteadiabáticoreversível,vconstante,ΔEC/EP0.",
+      "Tabela da aula sólista líquidoquaseincompressível sobBombaideal; tornar explícitas as hipóteses jácorretas da ficha noalvo."
+    ],
+    [
+      46,
+      "manter",
+      "h1≈h2 corretonaaproximação de estrangulamento delimitada.",
+      "h kJ/kg, nãorequerTconstante.",
+      "Permanente,Q/eixozero,ΔEC/EPdesprezíveis explícitos.",
+      "Tabelaensinaisentálpico ealertaTvariável; base-valvula-fase dá aplicaçãoadicional."
+    ],
+    [
+      47,
+      "manter",
+      "Energiaperdidaquente=ganhofrio correta para duas correntessemperdasexternas.",
+      "Cada ladokg/s×kJ/kg=kW; índicesq/f/in/outdefinidos.",
+      "Permanente,sóduascorrentes,semtrabalho/calor externo,ΔEC/EP0; conjuntoadiabático não isolaas correntesentre si.",
+      "Aula declara isolamentoexterno e compensaenergia, nãoimpoe ausência de trocainterna."
+    ],
+    [
+      48,
+      "corrigir_metadados",
+      "dmVC/dt=Σṁin−Σṁout corretoporconservaçãomassa.",
+      "kg/s dosdoislados, todosíndicesdefinidos.",
+      "ExplicitarVCfixo/vazõesrelativas àfronteira; permanenteimplicaacumulação0,nãorecíprocauniversal.",
+      "Aula tanqueenche separa rígido/adiabático/permanente e nãoanulaacumulação."
+    ],
+    [
+      49,
+      "corrigir_metadados",
+      "dUVC/dt=Q̇−Ẇ+Σṁh correto comEC/EPomitidos, não balanço universal.",
+      "kJ/s=kW; Ẇexcluiescoamentojáemh explícito.",
+      "ExplicitarVCfixo, valoresdas correntes representativoseQpositivoentrando; manterEC/EPdentroenas correntesdesprezíveis.",
+      "Aula delimitaEC/EP e trabalho, nãoensinasimplificaçãouniversal."
+    ],
+    [
+      50,
+      "corrigir_metadados",
+      "Integralcom hconstante por corrente resultaΣmh; massa é atravessadanointervalo.",
+      "TotaiskJ, massas kg e hkJ/kg compatíveis; definirQentrante/Wsainte.",
+      "VCfixo e mesmo recortede49; se hvariar integrarṁh, condiçãoconstantejáensinada.",
+      "Aula distingue massa inicialda atravessada e exigeintegração sehvariar."
+    ]
+  ]
+}

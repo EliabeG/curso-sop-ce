@@ -1,0 +1,526 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "AV06–AV10",
+  "data": "2026-10-28",
+  "revisor": {
+    "agente": "/root/auditor_av",
+    "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07",
+    "autor_corretor": false,
+    "poder_de_aprovacao": "somente veredito dos itens examinados; não aprova BAN-07 globalmente"
+  },
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "escopo": {
+    "previsto": [
+      "AV06",
+      "AV07",
+      "AV08",
+      "AV09",
+      "AV10"
+    ],
+    "examinado": [
+      "AV06",
+      "AV07",
+      "AV08",
+      "AV09",
+      "AV10"
+    ],
+    "opcoes_examinadas": 25,
+    "fora_de_escopo": "Demais itens, implementação, controle/checklist, BAN-08 e classificação global de nível avançado; bloco AV01–AV05 preservado."
+  },
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "metodo": "Artigos atuais extraídos por parseHtml/decodeHtml do validador. Comando, recursos e bases antes da resolução; derivação própria e julgamento das cinco opções antes do confronto. Plausibilidade teórica identificada por mecanismo de erro, sem piloto. Para AV08/AV10, comparação direta com artigo anterior, sem depender da narrativa do Corretor.",
+  "itens": [
+    {
+      "item": "AV06",
+      "id_artigo": "av-e1-06",
+      "sha256_artigo": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d",
+      "comando": "Escalas lineares: X=0 quando Y=20 e X=100 quando Y=70; achar X para Y=45.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": false,
+        "nota": "A extração desta rodada omitiu os atributos do article e parou antes de details. Não foi realizada inspeção prévia da chave deste item nesta execução."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Dois pares distintos e linearidade explícita determinam uma relação afim única. Y=45 fica entre 20 e 70; há interpolação.",
+        "hipoteses": "Resposta linear; não impor igualdade das origens nem ler distâncias gráficas como medidas quantitativas.",
+        "unidades": "Escalas abstratas X/Y; os valores permanecem nas respectivas unidades de escala. Não é necessário convertê-las a Celsius/kelvin.",
+        "figuras": "PNG examinado visualmente: dois eixos X/Y, referências de gelo/vapor e leitura intermediária genérica Tx/Ty. Não tem números de calibração. É esquema, não gráfico numérico em escala; o texto contém os dados necessários e acessíveis.",
+        "bases_acessiveis": [
+          "#base-leitura-matematica",
+          "#base-instrumentos"
+        ]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Para X=a+bY, b=(100−0)/(70−20)=2 e a=0−2×20=−40. Em Y=45: X=−40+2×45=50. Equivalentemente, Y percorreu (45−20)/(70−20)=1/2 do intervalo e X percorre 50 de 100.",
+        "chave_derivada": "C",
+        "unicidade": "50 aparece só em C. Os demais valores 45,70,90,25 são separados por no mínimo 5 unidades; nenhum arredondamento ou equivalência numérica os reúne. Os dados são inteiros exatos no modelo."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "45.",
+          "correta": false,
+          "demonstracao": "X não é igual a Y; X=2Y−40 fornece 50.",
+          "erro_plausivel": "Tratar os números de duas escalas diferentes como intercambiáveis.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "B",
+          "texto": "70.",
+          "correta": false,
+          "demonstracao": "70 é a leitura Y no extremo superior de calibração, não a leitura X para Y=45.",
+          "erro_plausivel": "Responder com o valor numérico de referência mais destacado, confundindo escala e ponto de calibração com incógnita.",
+          "plausibilidade": "Plausível como erro de leitura, mais fraco como erro de cálculo."
+        },
+        {
+          "letra": "C",
+          "texto": "50.",
+          "correta": true,
+          "demonstracao": "2(45−20)=50.",
+          "erro_plausivel": null,
+          "plausibilidade": "Resposta válida."
+        },
+        {
+          "letra": "D",
+          "texto": "90.",
+          "correta": false,
+          "demonstracao": "2×45=90 omite o intercepto −40.",
+          "erro_plausivel": "Reconhecer o ganho 2, mas fazer conversão proporcional apesar de origens diferentes.",
+          "plausibilidade": "Plausível e diretamente reproduzível."
+        },
+        {
+          "letra": "E",
+          "texto": "25.",
+          "correta": false,
+          "demonstracao": "45−20=25 é o intervalo em Y; falta multiplicar pelo ganho 2.",
+          "erro_plausivel": "Corrigir o deslocamento de origem e esquecer a razão entre os intervalos.",
+          "plausibilidade": "Plausível e diretamente reproduzível."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "C",
+        "coincide": true,
+        "comentario": "Relação afim e conta conferem. A,B,D,E refutam exatamente a igualdade das escalas, a troca pelo ponto superior de Y, a omissão do intercepto e a omissão do ganho."
+      },
+      "fontes_usadas": [
+        {
+          "tipo": "criterio",
+          "arquivo": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md",
+          "local": "BAN-07"
+        },
+        {
+          "tipo": "protocolo",
+          "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+          "local": "Revisão independente e alcance do parecer"
+        },
+        {
+          "tipo": "produto_atual",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-06",
+          "uso": "Comando e opções; comentário após a derivação."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-instrumentos",
+          "uso": "Calibração por dois pares e relação afim."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-leitura-matematica",
+          "uso": "Diferenças e leitura de figuras."
+        },
+        {
+          "tipo": "figura_local",
+          "arquivo": "assets/questoes-reais-e1/figura-922604ee21ac.png",
+          "sha256": "922604ee21ac25fec713806a3102c7b775b9cd16ba2c77054cb45d976226b17e",
+          "uso": "Inspeção visual direta: esquema genérico sem números; dados do texto prevalecem."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV07",
+      "id_artigo": "av-e1-07",
+      "sha256_artigo": "f6c6439615c358a02d91c7dbc1450c5550f193cc38a4af0f5e8c8a2958804251",
+      "comando": "Em linha de ar comprimido, tubo metálico curvo deformado pelo fluido aciona ponteiro; o manômetro Bourdon mede qual grandeza?",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": false,
+        "nota": "Extração limitada ao conteúdo anterior à resolução; chave não impressa antes da derivação."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "O enunciado identifica o instrumento como manômetro de Bourdon e descreve seu mecanismo. Suficiente para identificar pressão.",
+        "hipoteses": "Medição direta da pressão aplicada ao tubo, com calibração do mecanismo/ponteiro. Não se infere de toda utilização de tubo Bourdon uma impossibilidade de instrumento de temperatura: existem sistemas de bulbo/capilar que usam pressão interna, mas não correspondem à descrição/opção A.",
+        "unidades": "Item nominal, sem dados ou conversões. Não é necessário escolher pressão absoluta/manométrica para reconhecer a grandeza.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": [
+          "#base-instrumentos"
+        ]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "A pressão aplicada internamente altera a geometria/seção do tubo curvo e desloca sua extremidade. Uma transmissão transforma a deformação em movimento do ponteiro calibrado. O sinal mecânico responde à pressão do fluido. Não há coluna de mercúrio para temperatura, elemento absorvente para umidade ou rotor para vazão; tampouco o tubo fornece energia interna total. Logo E.",
+        "chave_derivada": "E",
+        "unicidade": "As opções representam grandezas e princípios distintos. Só pressão é compatível com o manômetro e o mecanismo declarados. Sem arredondamentos."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "temperatura por dilatação de mercúrio.",
+          "correta": false,
+          "demonstracao": "O mecanismo não é expansão de coluna de mercúrio; é deformação do tubo sob pressão.",
+          "erro_plausivel": "Confundir instrumentos analógicos térmicos pela existência de fluido e indicação visível.",
+          "plausibilidade": "Plausível como reconhecimento incorreto de instrumento."
+        },
+        {
+          "letra": "B",
+          "texto": "energia interna total do fluido.",
+          "correta": false,
+          "demonstracao": "O instrumento responde a pressão; determinar U requer sistema, quantidade e relação de propriedades adicionais.",
+          "erro_plausivel": "Confundir uma grandeza de estado medida com energia total do fluido, associando pressão/temperatura a conteúdo energético.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "C",
+          "texto": "umidade relativa por absorção.",
+          "correta": false,
+          "demonstracao": "Não há elemento higroscópico ou mecanismo de absorção na descrição.",
+          "erro_plausivel": "Trocar o princípio de manômetro pelo de higrômetro mecânico.",
+          "plausibilidade": "Plausível como confusão entre instrumentos de inspeção de ar."
+        },
+        {
+          "letra": "D",
+          "texto": "vazão por contagem de rotações.",
+          "correta": false,
+          "demonstracao": "O ponteiro resulta da deformação do tubo; não há rotor cujo número de rotações represente volume escoado.",
+          "erro_plausivel": "Confundir movimento do indicador com movimento de rotor de medidor de vazão.",
+          "plausibilidade": "Plausível como erro de associação entre mecanismo e grandeza."
+        },
+        {
+          "letra": "E",
+          "texto": "pressão.",
+          "correta": true,
+          "demonstracao": "É a grandeza que deforma o tubo e que a escala do manômetro indica.",
+          "erro_plausivel": null,
+          "plausibilidade": "Resposta válida."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "E",
+        "coincide": true,
+        "comentario": "Explica corretamente a cadeia pressão→deformação→indicador. As refutações A–D correspondem ao texto efetivo. A formulação sobre A é delimitada ao manômetro descrito."
+      },
+      "fontes_usadas": [
+        {
+          "tipo": "produto_atual",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-07",
+          "uso": "Comando e opções, depois resolução."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-instrumentos",
+          "uso": "Princípio de Bourdon e termômetro de líquido em vidro; lida no exame do AV06."
+        },
+        {
+          "tipo": "fonte_primaria_externa",
+          "titulo": "WIKA — Bourdon tube pressure gauge: operating principle",
+          "url": "https://blog.wika.com/en/knowhow/bourdon-tube-pressure-gauge-operating-principle/",
+          "acesso": "2026-10-28",
+          "uso": "Fonte do fabricante: deformação do tubo pela pressão e transmissão ao ponteiro."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV08",
+      "id_artigo": "av-e1-08",
+      "sha256_artigo": "2cbb9953a0ca46eda6b4cf9144bd13b7d0849822d9ed02ecaa0c6d010f3b7d07",
+      "comando": "Transmissor com limite inferior 20 °C e alcance (span) 80 °C; determinar limite superior.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": false,
+        "nota": "Comando/opções atuais e anteriores foram extraídos sem details; nenhuma chave foi impressa. As resoluções das duas versões foram lidas após a conta independente."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "O limite inferior e a diferença completa entre limites determinam o superior. O termo span e a base acessível eliminam ambiguidade entre alcance e extremo superior.",
+        "hipoteses": "Span é limite superior menos inferior; não é semiamplitude nem maior valor absoluto.",
+        "unidades": "20 °C é leitura de temperatura Celsius; 80 °C é intervalo, igual em magnitude a 80 K. Somar o intervalo ao limite é válido; não se soma 273,15 a um intervalo.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": [
+          "#base-leitura-matematica",
+          "#base-instrumentos"
+        ]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Se S=U−L, então U=L+S=20+80=100 °C. Conferência: 100−20=80 °C, exatamente o span fornecido.",
+        "chave_derivada": "C",
+        "unicidade": "Opções atuais 80,20,100,180,60 °C são diferentes e nenhuma conversão/arredondamento as equivale. C é a única com diferença 80 °C em relação ao inferior 20 °C."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "80 °C.",
+          "correta": false,
+          "demonstracao": "80−20=60 °C, não o span de 80 °C.",
+          "erro_plausivel": "Tomar span como o próprio limite superior.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "B",
+          "texto": "20 °C.",
+          "correta": false,
+          "demonstracao": "Repete o limite inferior, produzindo intervalo nulo.",
+          "erro_plausivel": "Trocar o limite pedido ou copiar a primeira leitura sem aplicar a diferença.",
+          "plausibilidade": "Plausível como erro de comando/leitura."
+        },
+        {
+          "letra": "C",
+          "texto": "100 °C.",
+          "correta": true,
+          "demonstracao": "20+80=100 °C; o intervalo final 100−20=80 °C confere.",
+          "erro_plausivel": null,
+          "plausibilidade": "Resposta válida."
+        },
+        {
+          "letra": "D",
+          "texto": "180 °C.",
+          "correta": false,
+          "demonstracao": "20+2×80=180 °C dobra indevidamente o intervalo; 180−20=160 °C.",
+          "erro_plausivel": "Tratar span como semiamplitude e duplicá-lo antes de somar ao limite inferior.",
+          "plausibilidade": "Plausível e reproduzível; a revisão tornou o valor compatível com esse procedimento errado completo."
+        },
+        {
+          "letra": "E",
+          "texto": "60 °C.",
+          "correta": false,
+          "demonstracao": "80−20=60 °C troca a operação exigida para recuperar o extremo superior.",
+          "erro_plausivel": "Subtrair o inferior do span, confundindo uma diferença já dada com limite superior.",
+          "plausibilidade": "Plausível e reproduzível."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "C",
+        "coincide": true,
+        "comentario": "Conta correta; A/B/E identificam precisamente os erros. O comentário atual D reproduz 20+2×80=180 °C e explica semiamplitude; não conserva justificativa incompatível com a opção revisada."
+      },
+      "delta_conferido": {
+        "origem": "Comparação própria dos artigos extraídos com parseHtml/decodeHtml, não herança da narrativa do Corretor.",
+        "arquivo_anterior": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+        "sha256_artigo_anterior": "5cfa5c0bb56e0ccc235b369110a5343cffd16dbc7d35de410a2d9432355a7d55",
+        "sha256_artigo_atual": "2cbb9953a0ca46eda6b4cf9144bd13b7d0849822d9ed02ecaa0c6d010f3b7d07",
+        "comando": "Preservado: inferior 20 °C, span 80 °C, superior pedido.",
+        "alteracao_opcao": "D: 160 °C → 180 °C.",
+        "alteracao_comentario": "D passou de não há fundamento para duplicar o alcance para explicitação de 20+2×80=180 °C e confusão do span com semiamplitude.",
+        "resultado": "A mudança efetiva é coerente com o erro declarado e preserva C como única correta."
+      },
+      "fontes_usadas": [
+        {
+          "tipo": "produto_atual",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-08",
+          "uso": "Comando/opções e, após a conta, resolução."
+        },
+        {
+          "tipo": "baseline_local",
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-08",
+          "uso": "Comparação direta antes/depois, com hashes próprios."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-instrumentos",
+          "uso": "Definição de span como superior−inferior; lida no AV06."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-leitura-matematica",
+          "uso": "Variações, unidades e comando; lida no AV06."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV09",
+      "id_artigo": "av-e1-09",
+      "sha256_artigo": "c132589fa0387abc5108633a2b130632334db4cebf0479b9442bc9158ae78f30",
+      "comando": "Julgar I: kelvin é unidade de base de temperatura termodinâmica; II: variação de 10 °C equivale a 10 K; III: temperatura de 10 °C corresponde a 10 K. Selecionar o conjunto correto.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": false,
+        "nota": "Chave e resolução omitidas na extração inicial; os três valores lógicos foram determinados antes do comentário."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "I especifica unidade de base e temperatura termodinâmica. II diz variação e III diz temperatura, distinguindo os objetos de conversão.",
+        "hipoteses": "Escalas Celsius e kelvin têm o mesmo tamanho de intervalo e origens deslocadas de 273,15.",
+        "unidades": "T/K=t/°C+273,15 para valores; Delta T/K=Delta t/°C para diferenças. Kelvin tem símbolo K, sem grau.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-absolutas", "#base-medidas"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "I é verdadeira pela classificação SI. Para II, Delta T=(t2+273,15)-(t1+273,15)=t2-t1; portanto uma variação de 10 °C equivale a 10 K. Para III, uma leitura de 10 °C dá T=10+273,15=283,15 K. Inversamente, 10 K corresponderiam a -263,15 °C. Apenas I e II são verdadeiras.",
+        "chave_derivada": "B",
+        "unicidade": "B é o único conjunto exatamente {I,II}. III difere por 273,15 K; nenhum arredondamento a torna verdadeira."
+      },
+      "opcoes": [
+        {
+          "letra": "A", "texto": "I, II e III.", "correta": false,
+          "demonstracao": "Aceita III, falsa: 10 °C são 283,15 K.",
+          "erro_plausivel": "Generalizar a igualdade dos intervalos para igualdade dos valores nas duas escalas.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "B", "texto": "I e II, apenas.", "correta": true,
+          "demonstracao": "Reúne exatamente as afirmações verdadeiras.",
+          "erro_plausivel": null, "plausibilidade": "Resposta válida."
+        },
+        {
+          "letra": "C", "texto": "I, apenas.", "correta": false,
+          "demonstracao": "Omite II, verdadeira, pois o deslocamento das origens se cancela na diferença.",
+          "erro_plausivel": "Aplicar a soma de 273,15 também à conversão de intervalos.",
+          "plausibilidade": "Plausível e diretamente explicável."
+        },
+        {
+          "letra": "D", "texto": "III, apenas.", "correta": false,
+          "demonstracao": "Aceita III falsa e omite I e II verdadeiras.",
+          "erro_plausivel": "Tratar as leituras Celsius/kelvin como intercambiáveis, confundir a escala cotidiana com unidade de base e aplicar deslocamento indevido às diferenças.",
+          "plausibilidade": "Teórica: concepções fragmentadas, mais fracas que A/C, mas com erros identificáveis sobre escala, unidade de base e intervalo."
+        },
+        {
+          "letra": "E", "texto": "II e III, apenas.", "correta": false,
+          "demonstracao": "II verdadeira; III falsa; I deveria estar incluída.",
+          "erro_plausivel": "Reconhecer a igualdade dos intervalos e extrapolá-la às leituras, tomando Celsius como unidade de base de temperatura.",
+          "plausibilidade": "Plausível conceitualmente."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "B", "coincide": true,
+        "comentario": "Derivação coincide. A/C/E apontam a proposição indevidamente aceita ou omitida. D identifica a falsidade de III; rejeitar essa única proposição já elimina a opção, embora I/II também estejam indevidamente omitidas."
+      },
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-09", "uso": "Proposições/opções e, após a derivação, resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-absolutas", "uso": "Relação Celsius/kelvin e distinção de valores e diferenças; lida nesta execução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-medidas", "origem": "Leitura própria no bloco AV01–AV05, mesmo HTML congelado.", "alcance_reutilizado": "Classificação da unidade e distinção de temperatura Celsius."},
+        {"tipo": "fonte_primaria_externa_reutilizada", "titulo": "BIPM — SI base units", "url": "https://www.bipm.org/en/measurement-units/si-base-units", "acesso": "2026-10-28", "origem": "Consulta própria de /root/auditor_av no AV05, registrada em BAN-07-auditor-bloco-av01-05-r1.json.", "alcance_reutilizado": "Somente a classificação kelvin como unidade de base; não herda o julgamento de AV09."},
+        {"tipo": "fonte_primaria_externa_reutilizada", "titulo": "BIPM — A concise summary of the International System of Units, SI", "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-concise-EN.pdf/2fda4656-e236-0fcb-3867-36ca74eea4e3?download=true&t=1682577856452&version=1.9", "acesso": "2026-10-28", "origem": "Consulta própria no AV05.", "alcance_reutilizado": "Página 3: relação Celsius/kelvin e tamanho da unidade; solução de AV09 derivada novamente."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV10",
+      "id_artigo": "av-e1-10",
+      "sha256_artigo": "a4e565a479f34fa4e36835bcb186f5b99d0f3ce3000b500f458c4c1c1863032e",
+      "comando": "Amostra de 12 kg ocupa 0,015 m³; determinar massa específica e classificação dessa propriedade.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": false,
+        "nota": "Comando e opções atuais/anteriores foram extraídos sem detalhes de resolução. Cálculo, unidade, classificação e alternativas foram julgados antes dos dois comentários."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Massa e volume bastam para a massa específica média da amostra. A classificação é a usual da densidade no modelo termodinâmico homogêneo, sem necessidade de gás ideal ou incompressibilidade.",
+        "hipoteses": "Comparar porções ou replicações no mesmo estado e composição; não alterar pressão/temperatura ao testar intensividade.",
+        "unidades": "kg/m³ para massa específica; m³/kg para volume específico. Multiplicar massa por volume produziria kg·m³. Os dados têm dois algarismos significativos e o resultado pode ser escrito 8,0×10² kg/m³.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-medidas", "#base-propriedades"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "rho=m/V=12/0,015=800 kg/m³. Sob escala de quantidade lambda, m'=lambda m e V'=lambda V, então rho'=m'/V'=rho: é intensiva. Já v=V/m=0,015/12=0,00125 m³/kg é a propriedade recíproca e não a massa específica solicitada.",
+        "chave_derivada": "B",
+        "unicidade": "B tem o valor, a dimensão e a classificação corretos. E repete 800, mas erra a classificação. A descreve a propriedade recíproca: informa o mesmo estado por outra propriedade, sem ser resposta equivalente ao comando. 80 e 0,18 não se tornam 800 por arredondamento; a menor discrepância numérica é fator dez."
+      },
+      "opcoes": [
+        {
+          "letra": "A", "texto": "0,00125 m³/kg e intensiva.", "correta": false,
+          "demonstracao": "0,015/12=0,00125 m³/kg é volume específico, não massa específica; a classificação intensiva isoladamente está correta.",
+          "erro_plausivel": "Inverter numerador e denominador ou confundir rho com v=1/rho.",
+          "plausibilidade": "Plausível e numericamente reproduzível."
+        },
+        {
+          "letra": "B", "texto": "800 kg/m³ e intensiva.", "correta": true,
+          "demonstracao": "12/0,015=800 kg/m³; a razão é invariável sob escala proporcional de massa e volume.",
+          "erro_plausivel": null, "plausibilidade": "Resposta válida."
+        },
+        {
+          "letra": "C", "texto": "80 kg/m³ e intensiva.", "correta": false,
+          "demonstracao": "12/0,15=80, mas o volume dado é 0,015 m³; há erro de fator dez.",
+          "erro_plausivel": "Deslocar a vírgula do denominador uma casa ou perder uma potência de dez na divisão.",
+          "plausibilidade": "Plausível e numericamente reproduzível."
+        },
+        {
+          "letra": "D", "texto": "0,18 kg/m³ e extensiva.", "correta": false,
+          "demonstracao": "12×0,015=0,18 é o produto errado, cuja unidade seria kg·m³. Escrever kg/m³ não corrige a operação. A densidade correta também não é extensiva.",
+          "erro_plausivel": "Multiplicar os dois dados em lugar de formar a razão, copiar a unidade esperada sem checagem dimensional e tratar a propriedade como extensiva por envolver massa/volume totais.",
+          "plausibilidade": "Plausível como combinação de erros operacionais e de classificação; a opção atual reproduz o produto."
+        },
+        {
+          "letra": "E", "texto": "800 kg/m³ e extensiva.", "correta": false,
+          "demonstracao": "O cálculo e a unidade estão certos, mas multiplicar a amostra por lambda não altera rho.",
+          "erro_plausivel": "Concluir que uma razão de grandezas extensivas permanece extensiva ou confundir densidade com massa total.",
+          "plausibilidade": "Plausível conceitualmente."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "B", "coincide": true,
+        "comentario": "Cálculo, classificação e todas as refutações conferem. O comentário D atual associa corretamente 0,18 a 12×0,015, denuncia a unidade do produto e rejeita separadamente a classificação extensiva. Não mantém a incompatibilidade numérica da versão anterior."
+      },
+      "delta_conferido": {
+        "origem": "Comparação própria dos artigos atuais/anteriores por parseHtml/decodeHtml, sem herdar o mérito do Corretor.",
+        "arquivo_anterior": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+        "sha256_artigo_anterior": "a19c2c5e9dbf69121d4cd0d182b8e7da45130ea405096ad53451e230c79d11a8",
+        "sha256_artigo_atual": "a4e565a479f34fa4e36835bcb186f5b99d0f3ce3000b500f458c4c1c1863032e",
+        "comando": "Preservado: m=12 kg, V=0,015 m³, pede massa específica e classificação.",
+        "alteracao_opcao": "D: 180 kg/m³ e extensiva → 0,18 kg/m³ e extensiva.",
+        "alteracao_comentario": "D agora explicita 12×0,015=0,18, unidade kg·m³ e falsidade da classificação extensiva; antes dizia apenas que multiplicava grandezas que deveriam ser divididas.",
+        "resultado": "O erro operacional declarado agora gera exatamente o número da alternativa atual. B permanece a única resposta integralmente correta."
+      },
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-10", "uso": "Comando/opções e, após derivação, resolução."},
+        {"tipo": "baseline_local", "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html", "ancora": "#av-e1-10", "uso": "Comparação direta do delta; hashes próprios."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "uso": "Unidades e potências de dez; leitura própria no AV06, mesmo snapshot."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-medidas", "origem": "Leitura própria no AV01–AV05, mesmo HTML congelado.", "alcance_reutilizado": "Definições rho=m/V e v=V/m e comparação de porções homogêneas."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-propriedades", "origem": "Leitura própria no AV01–AV05, mesmo HTML congelado.", "alcance_reutilizado": "Intensivas/extensivas; nenhum gabarito de AV10 foi herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    }
+  ],
+  "cobertura": {
+    "autoria": "Exame efetivamente realizado por /root/auditor_av. Derivações e 25 julgamentos próprios; nenhuma aprovação científica herdada do Corretor.",
+    "ids": ["AV06", "AV07", "AV08", "AV09", "AV10"],
+    "ids_artigo": ["av-e1-06", "av-e1-07", "av-e1-08", "av-e1-09", "av-e1-10"],
+    "itens": 5,
+    "juizos_de_alternativas": 25,
+    "alternativas_por_item": {"AV06": ["A","B","C","D","E"], "AV07": ["A","B","C","D","E"], "AV08": ["A","B","C","D","E"], "AV09": ["A","B","C","D","E"], "AV10": ["A","B","C","D","E"]},
+    "proposicoes_AV09_julgadas": ["I", "II", "III"],
+    "derivacoes_independentes": 5,
+    "confrontos_com_comentario": 5,
+    "dados_unidades_restricoes_suficiencia": 5,
+    "unicidade_e_arredondamentos": 5,
+    "deltas_conferidos_diretamente": ["AV08", "AV10"],
+    "figuras": "Figura AV06 inspecionada visualmente; demais artigos sem figuras.",
+    "limitacao_cegamento": "Nesta execução as chaves em metadados não foram impressas e as resoluções foram lidas após a derivação de cada item. Não se reivindica experimento formal de cegamento.",
+    "aprovacoes_locais": ["AV06", "AV07", "AV08", "AV09", "AV10"],
+    "itens_com_ajuste_obrigatorio": [],
+    "aceite_global_BAN07": false
+  },
+  "resumo": {
+    "veredito_bloco": "APROVADO_NO_ESCOPO_BAN-07",
+    "ajustes_obrigatorios": [],
+    "observacoes": "Plausibilidade dos distratores é teórica, sem dados de uso. O formato com figura de AV06 depende numericamente do texto, pois a imagem é esquema genérico.",
+    "decisao_de_liberacao": "Sem liberação do próximo ID ou aceite global. Este é apoio científico parcial para consolidação pelo Auditor principal."
+  }
+}

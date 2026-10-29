@@ -1,0 +1,75 @@
+{
+  "ok": true,
+  "total": 8,
+  "resultados": [
+    {
+      "nome": "PDF com página positiva",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "nome": "PDF com página zero",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0"
+      ]
+    },
+    {
+      "nome": "PDF com página não numérica",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=tres"
+      ]
+    },
+    {
+      "nome": "PDF com fragmento arbitrário",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao"
+      ]
+    },
+    {
+      "nome": "Arquivo PDF ausente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: arquivo inacessível: downloads/termodinamica/provas/ausente-fon09.pdf (ENOENT: no such file or directory, open 'C:\\Users\\User\\Downloads\\SOP-CE\\downloads\\termodinamica\\provas\\ausente-fon09.pdf')"
+      ]
+    },
+    {
+      "nome": "Âncora HTML existente",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": []
+    },
+    {
+      "nome": "Âncora HTML ausente",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: âncora ausente ou duplicada: modulos/e1-termodinamica.html#ausente-fon09"
+      ]
+    },
+    {
+      "nome": "Outro recurso não recebe exceção PDF",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: âncora ausente ou duplicada: assets/termodinamica/fon09-cr68-dados-v1.json#page=3"
+      ]
+    }
+  ],
+  "limite": "PDF: sintaxe page=N inteiro positivo e arquivo existente; quantidade de páginas conferida documentalmente nos três PDFs, não por este validador. Nenhum fixture modifica o produto."
+}

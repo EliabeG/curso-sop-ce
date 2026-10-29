@@ -1,0 +1,222 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV01–AV20",
+  "data": "2026-10-29",
+  "responsavel_integracao": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERIDO_COM_APOIO_INDEPENDENTE_SEM_DECISAO_FINAL",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+  },
+  "origem_registros": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/av01-05-corretor-r1.json",
+      "sha256": "07c0a9d6b84fa622657b4f0090074a77d9f64e674d7ede02f24c68f4ac6cc645"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/av06-10-corretor-r1.json",
+      "sha256": "112ce168c2823a32bab84ab641d1543535a34040cb416d9bc2293e33bffec0c5"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/av11-15-corretor-r1.json",
+      "sha256": "46edd6e852e3f2a64e172a148beeb1f5bed5b1793fcdc905607a4932824967c2"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/av16-20-corretor-r1.json",
+      "sha256": "422096efa970d86d78b45b478d1b7d8fe643292993e85fdc991ebfdd1cbea8c9"
+    }
+  ],
+  "apoios": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "sha256": "5cfce5aa5336bc0c999cad6a0555c833b1a501258afff019e0372e2dcb4bdaf3",
+      "autor": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-av11-15-r1-independente.md",
+      "sha256": "0e4421bbfd8d4e7eb44e1280505e79e5a15a084832f77aff1af9e65afe200035",
+      "autor": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-av16-20-r1-independente.md",
+      "sha256": "94de955e0ddc1fdb4e37433c106826f7c3c78682c9fb66963fc147b0d27e5a15",
+      "autor": "/root/auditor_ban08_novo, agente automatizado"
+    }
+  ],
+  "verificador": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/verificar-av01-20-r1.py",
+    "sha256": "d1749edbc6cb2ba0aa918f216b71a05133c12fe78ddfc42239e189dd8fcb444c",
+    "resultado": "20 IDs únicos, artigos conferidos contra HTML e inventário e referidos nos apoios; cálculos nominais exatos passam."
+  },
+  "registros": [
+    {
+      "id": "av-e1-01",
+      "artigo_sha256": "fef921d85b9f61c1e2a63b23fa1df1a9479973608dea0c768045e221f31390b5",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av01-05-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-02",
+      "artigo_sha256": "8b7328a79ca6b50995426770504df6de88f6bf37cf7a3038fef9709847d6bc20",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av01-05-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-03",
+      "artigo_sha256": "6e8bc6e49193f08a8c5f0ae6b4271720a23a29e7888ecfe6cf83faaa63ff85fa",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av01-05-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-04",
+      "artigo_sha256": "6ed8f664d46db759064d42ee073379bda2b8c1c7018ae3418d22774e14f72501",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av01-05-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-05",
+      "artigo_sha256": "8860a27c54eebc598b479ab61197026acb81cf4d81a143876bfe55fea2a6fa4c",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av01-05-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-06",
+      "artigo_sha256": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av06-10-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-07",
+      "artigo_sha256": "f6c6439615c358a02d91c7dbc1450c5550f193cc38a4af0f5e8c8a2958804251",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av06-10-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-08",
+      "artigo_sha256": "2cbb9953a0ca46eda6b4cf9144bd13b7d0849822d9ed02ecaa0c6d010f3b7d07",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av06-10-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-09",
+      "artigo_sha256": "c132589fa0387abc5108633a2b130632334db4cebf0479b9442bc9158ae78f30",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av06-10-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-10",
+      "artigo_sha256": "a4e565a479f34fa4e36835bcb186f5b99d0f3ce3000b500f458c4c1c1863032e",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av06-10-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av01-10-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-11",
+      "artigo_sha256": "574b95a7bc7d26adf5ccc8a100cba3b30a3f5f34b9c76a670190cd7c43c5a165",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av11-15-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av11-15-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-12",
+      "artigo_sha256": "6d4d741b3c2f0be508022e5f24ba0cdbb360c3f0c2ddbb72aca59aebf3efcd6f",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av11-15-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av11-15-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-13",
+      "artigo_sha256": "67a3276e7a96d89fd1c93db9f3dad1f417bb62dff584b34c4e5df1a406651543",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av11-15-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av11-15-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-14",
+      "artigo_sha256": "3c811cd41a5553c76a3d79539c529fc0700861c827165f1a490339f0a41b6fcd",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av11-15-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av11-15-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-15",
+      "artigo_sha256": "aabe5d8c80218bb2762758349c567671cb06794100899eb42e6c2906cae487a9",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av11-15-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av11-15-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-16",
+      "artigo_sha256": "48ae42d26499f4389ca87b570e9864234c58223277b8b4a16302f7ba808ebdee",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av16-20-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av16-20-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-17",
+      "artigo_sha256": "440d7b7f9d75ef0adb436c16b01f0e82a4459d58d037f8ec914a0ae6653e7b7a",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av16-20-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av16-20-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-18",
+      "artigo_sha256": "5a61747eec81b5caadab8e61895235bd4cce053076ba3f9eed4a90ded57dea46",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av16-20-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av16-20-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-19",
+      "artigo_sha256": "13db446f2d53ba81a62449e2e82b81d5ddea5db59e27873088c024f9663794c3",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av16-20-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av16-20-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "av-e1-20",
+      "artigo_sha256": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av16-20-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-av16-20-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio parcial sem cegamento; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    }
+  ],
+  "observacoes": [
+    "Itens são autorais; vínculo com questão CR de origem fornece contexto e não atribui à banca seus valores ou alternativas.",
+    "AV04 foi editado na entrega BAN-07 e sua identidade não substitui conferência científica atual; E distingue volume específico aproximadamente constante de isotermia.",
+    "AV06 figura genérica não fornece os pontos da calibração autoral; AV10 B e E têm o mesmo número 800 e se distinguem pela classificação intensiva/extensiva, logo tolerância apenas numérica não separa alternativas.",
+    "AV11 usa aproximação explícita 273, não deslocamento SI exato de 273,15; AV16 e AV18 apresentam distractores arredondados.",
+    "AV16 e AV17 dependem da aproximação de umidade relativa por pressão parcial da base e das condições indicadas; fator de intensificação real não foi determinado.",
+    "Revisões de mérito são atribuídas aos autores dos apoios; trabalhos prévios BAN-07 não são aceites numéricos automáticos. Todos os apoios foram feitos com conhecimento prévio da chave, como informado em cada parecer.",
+    "Sem divergências numéricas concretas localizadas nos vinte artigos; decisão final do Auditor responsável pendente. Não há incerteza instrumental para avaliar tolerância metrológica."
+  ]
+}

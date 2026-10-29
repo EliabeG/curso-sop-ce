@@ -1,0 +1,391 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "CR66–CR70",
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "BLOCO_CONCLUIDO; cinco itens aprovados em seus alcances; sem aprovação global",
+  "criterio": "Suficiência, consistência física, comando, unidades, restrições e demonstração da chave e oposição C/E. CR68: separar documento histórico, julgamento de emissividade e dados editoriais corrigidos FON-09.",
+  "base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "extrato_anterior": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+    "metodo": "Parser canônico importado. Enunciados, opções e dados anteriores à cr-resolucao lidos primeiro; chaves independentes anunciadas antes do confronto com comentários. Hashes dos artigos comparados com o extrato anterior."
+  },
+  "fontes_comuns_lidas": [
+    {
+      "referencia": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "alcance": "Papéis e padrão de aprovação; lido no bloco CR51–55"
+    },
+    {
+      "referencia": "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+      "alcance": "Critérios e limites de herança; lido no bloco CR51–55"
+    }
+  ],
+  "registros": [
+    {
+      "id": "cr-e1-66",
+      "sha256_artigo": "3c495fe75122088861c7e8de6a39ceccefaf8486532bbaad7e755d48a7ec1850",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. A construção casco/tubos identifica um trocador indireto de correntes separadas; nenhum dado quantitativo é necessário.",
+      "demonstracao": "Uma corrente escoa dentro dos tubos e outra no casco, do lado externo. A diferença de temperatura promove calor da corrente quente à fria por convecção em cada lado e condução na parede. A parede separa as massas; a mistura não é o princípio de funcionamento. Contato direto é outra configuração, e vazamento não redefine a operação normal do casco/tubos.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Atribui ao trocador indireto um mecanismo de mistura entre correntes, confundindo-o com contato direto."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "As correntes normais permanecem separadas pela parede dos tubos enquanto trocam calor."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Identifica os caminhos separados e os mecanismos; trata mistura como contato direto ou vazamento, sem pressupor que as saídas atinjam uma temperatura única.",
+      "criterios": {
+        "dados": "ATENDIDO — definição de equipamento",
+        "consistencia_fisica": "ATENDIDO — troca de energia sem mistura de massa",
+        "comando": "ATENDIDO — mecanismo de funcionamento inequívoco",
+        "unidades": "NAO_APLICAVEL",
+        "restricoes": "ATENDIDO — funcionamento normal, sem vazamento",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — mistura versus troca indireta; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-66",
+          "alcance": "Artigo atual: enunciado/opções primeiro e comentário depois; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-trocadores",
+          "alcance": "Div lido neste bloco: separação de correntes e sequência convecção–condução–convecção"
+        }
+      ],
+      "heranca": "Nenhum aceite científico herdado; mecanismo rederivado pelo revisor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-67",
+      "sha256_artigo": "ce6a14b96095bd3f2b7633028a51832b69ffbc9350cb7d81dfced776b51a6d56",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. Pede a finalidade de juntas de expansão, não seu dimensionamento nem uma garantia para deslocamentos ilimitados.",
+      "demonstracao": "Na aproximação linear, o movimento térmico livre é deltaL=alpha*L0*deltaT. Se o deslocamento for impedido, surgem tensões e reações em apoios e conexões; em restrição axial ideal completa, a tensão térmica tem módulo E*alpha*|deltaT|. A junta fornece flexibilidade para acomodar movimentos previstos e reduzir esforços danosos. Expansão e contração são os sinais opostos desse deslocamento, dentro da capacidade de projeto.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "Corresponde à função de acomodar movimentos térmicos e proteger tubulação, apoios e equipamentos associados."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Negaria a função de flexibilidade térmica ou confundiria permitir movimento com impedir a dilatação do material."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Explica movimento impedido, esforços transmitidos e limites de projeto. Não apresenta juntas como proteção incondicional contra qualquer carregamento.",
+      "criterios": {
+        "dados": "ATENDIDO — finalidade conceitual, sem dimensionamento",
+        "consistencia_fisica": "ATENDIDO — dilatação livre e reação por restrição distinguidas",
+        "comando": "ATENDIDO — função do acessório",
+        "unidades": "ATENDIDO — alpha em K^-1, L em m e deltaT em K dão deltaL em m; tensão em mesma unidade de E",
+        "restricoes": "ATENDIDO — operação nos limites de projeto; fórmulas ilustrativas com aquecimento uniforme e elasticidade linear",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — permitir acomodação versus eliminar dilatação; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-67",
+          "alcance": "Enunciado/opções antes do comentário; artigo atual por hash"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-dilatacao",
+          "alcance": "Trecho lido neste bloco: dilatação linear livre, esforço por restrição, seleção com pressão/temperatura/ancoragem/deslocamento; a expressão de tensão foi derivada da restrição uniaxial pelo revisor"
+        }
+      ],
+      "heranca": "Nenhuma prova anterior tomada como demonstração científica.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-68",
+      "sha256_artigo": "6cfcf2558f6d3651a9b87e8fd4b66b8e29561f17686b4e52b2f40d15ac42fcb8",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_documental_produto": "C",
+      "chave_derivada": "C para a possibilidade expressa e as condições previamente declaradas",
+      "suficiencia": "ATENDIDO. O aviso anterior à tentativa fixa superfície mais quente, temperaturas, área e geometria comparáveis. O verbo possibilita exige uma situação física admissível, não garantia universal em qualquer balanço térmico acoplado. As propriedades da água são explicitamente dispensadas do julgamento.",
+      "demonstracao": "Para uma superfície cinzenta diante de grande vizinhança isotérmica, a perda líquida para fora é Qdot_rad=epsilon*sigma*A*(Ts^4-Tv^4). Com Ts>Tv e A>0, a derivada em relação a epsilon é positiva. Reduzir epsilon, mantendo as demais condições do modelo, reduz essa parcela; se as outras parcelas forem iguais, reduz também a soma das perdas. Em uma instalação real Ts e convecção podem mudar, mas a afirmação não promete uma redução incondicional ou a eliminação dos outros mecanismos.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA_NO_ALCANCE_DA_POSSIBILIDADE",
+          "justificativa": "Há um modelo físico explícito anterior à resposta em que baixar emissividade reduz a perda radiativa, demonstrando a possibilidade declarada."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Negaria essa possibilidade, confundindo emissividade com todos os mecanismos de calor ou exigindo universalidade que a proposição não contém."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Usa temperaturas absolutas, proporcionalidade apenas com condições comparáveis e não transforma emissividade baixa em isolamento de condução/convecção. A interpretação BAN-10 preserva os limites de uma superfície em grande vizinhança.",
+      "separacao_de_finalidades": {
+        "afirmacao_julgada": "Possibilidade de revestimento de baixa emissividade reduzir perda térmica; tecnicamente demonstrada acima.",
+        "documento_historico": "Texto e tabela defeituosos recolhidos em bloco de transcrição, inadequados para cálculo. A chave documental C não é usada como prova científica.",
+        "conjunto_corrigido": "FON-09 v1.0 é correção editorial de dados de água para consulta/estudo; não altera comando ou chave, não é errata oficial e não presume intenção da banca.",
+        "dados_que_nao_entram_na_chave": [
+          "Densidade a 25 °C",
+          "Pressões e volumes de saturação",
+          "Altura de 5 m, elevação de pressão da bomba e pontos 1–3"
+        ],
+        "figura": "Esquema recriado inspecionado visualmente neste bloco; reservatório/bomba/fornalha/vapor. Não fornece nem exige valor radiativo para este julgamento."
+      },
+      "heranca_fon09": {
+        "tipo": "Herança científica/documental atribuída, condicionada a identidade verificada; não são novas consultas NIST pelo revisor deste bloco.",
+        "revisor_original": "Agente automatizado /root/auditor_aaa; FON-09 r1 ciência, ratificada por identidade no FON-09 r2 APROVADO",
+        "parecer_cientifico": "auditoria/termodinamica/pareceres/FON-09-r1-ciencia.json",
+        "sha256_parecer_cientifico": "12b6e6375947803b5696ab1e818c1a67852b478424540425f32e31b6a001b904",
+        "parecer_aceite": "auditoria/termodinamica/pareceres/FON-09-r2.md",
+        "sha256_parecer_aceite": "efc7142890a7758e8e29cf31cda96e62b641a215d565f1a30c7d90669a84aa60",
+        "alcance": "Origem dos defeitos no documento/caderno, chave oficial C, figura recriada, 15 células, consultas NIST e densidade. O bloqueio técnico R1-A da r1 foi resolvido no r2; não se herda aprovação global de outros IDs.",
+        "identidades_conferidas": [
+          {
+            "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+            "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+            "identico_ao_hash_aprovado_fon09_r2": true
+          },
+          {
+            "bloco": "cr-e1-68-dados-corrigidos",
+            "sha256_atual_e_pacote_fon09_r2": "a6469a8db469f5cb83f6cf0cee05ab9013ea53fc900610c29573353f793d8df1",
+            "identico": true
+          },
+          {
+            "bloco": "cr-e1-68-transcricao",
+            "sha256_atual_e_pacote_fon09_r2": "0e3ff514d6e3114f1bf1db0deb75f6c23941ff9b1b1d4bb3c514e6d1458c5808",
+            "identico": true
+          }
+        ],
+        "verificacoes_proprias": "Cinco linhas atuais de pressão/T/vf/vg exibidas conferem com exibicao do JSON; cinco conjuntos corretos conferem numericamente com referências independentes do parecer científico original. Conversões kg/cm³→kg/m³, MPa→kPa e cm³/g→m³/kg confrontadas. Densidade aproximada 1000 fica 0,2961102% acima de 997,04764 na condição declarada; não se transfere essa condição de referência aos pontos 1/2."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — dados radiativos conceituais suficientes e águas auxiliares dispensadas",
+        "consistencia_fisica": "ATENDIDO — perda radiativa derivada; separação de estados líquidos a 25 °C e saturados preservada",
+        "comando": "ATENDIDO — possibilidade, sem universalidade",
+        "unidades": "ATENDIDO — sigma em W/(m² K^4), área em m² e T em K dão W; tabelas corrigidas em kPa absolutos e m³/kg; 1000 kg/cm³=10^9 kg/m³ é rejeitado como água nas condições descritas",
+        "restricoes": "ATENDIDO — Ts>Tv e condições comparáveis antes da tentativa; modelo cinzento/grande vizinhança declarado",
+        "unicidade": "ATENDIDO — somente C no alcance explícito; item continua no treino, não foi convertido em estudo crítico sem nota",
+        "arredondamento": "ATENDIDO — nenhuma escolha numérica na afirmação; cinco linhas auxiliares exibidas conferem com a precisão do JSON e da evidência herdada",
+        "oposicao": "ATENDIDO — radiação versus total de mecanismos; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-68",
+          "alcance": "Artigo completo, inclusive dados/opções antes da cr-resolucao; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-radiacao-vacuo",
+          "alcance": "Base lida neste bloco: modelo, unidades e limites da proporcionalidade"
+        },
+        {
+          "referencia": "assets/termodinamica/fon09-cr68-dados-v1.json",
+          "alcance": "Dados locais efetivamente lidos e comparados por identidade/valores; não nova execução da equação IAPWS"
+        },
+        {
+          "referencia": "auditoria/termodinamica/pareceres/FON-09-r1-ciencia.json",
+          "alcance": "Campos de origem, 15 células, referências e densidade lidos e atribuídos ao auditor original"
+        },
+        {
+          "referencia": "auditoria/termodinamica/pareceres/FON-09-r2.md",
+          "alcance": "Parecer lido; herança científica por identidade e aceite após correção R1-A"
+        },
+        {
+          "referencia": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+          "consulta": "2026-10-28",
+          "alcance": "Fonte acadêmica primária consultada neste bloco: emissividade, Stefan–Boltzmann e troca líquida. A demonstração usa sinal positivo para perda para fora."
+        },
+        {
+          "referencia": "assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+          "sha256": "b8d543e37fc85224e69507c5bf2aa35d6ac5aeb3eb5ae37879c4806e229f30b8",
+          "alcance": "Inspeção visual própria do esquema; não nova comparação com prova oficial"
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "dados históricos inválidos já tratados",
+          "descricao": "Densidade/unidades e tabela histórica permanecem documentalmente preservadas, com proibição de cálculo e conjunto corrigido separado. Não afetam a chave de emissividade.",
+          "novo_impeditivo": false
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-69",
+      "sha256_artigo": "5fe27c3eaca7cf1d4f584a1720a66065312dcd074301366a59e6cc96387df14f",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. É uma descrição construtiva e dos mecanismos; não requer especificar qual corrente é a quente, vazões, área ou coeficientes para calcular uma taxa.",
+      "demonstracao": "As correntes percorrem dois domínios: interior dos tubos e espaço do casco ao redor deles. A parede metálica separa as massas e conduz energia. O calor entre cada corrente em movimento e sua face da parede é representado por convecção. No modelo usual, as resistências das duas películas e da parede atuam em série; a sequência independe de qual corrente esteja dentro dos tubos. Portanto a descrição condução–convecção e o arranjo estão corretos.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "Reúne corretamente os dois caminhos de escoamento separados e os mecanismos de calor em cada trecho."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Negaria a combinação de mecanismos, confundiria a parede sólida com um escoamento de massa ou exigiria um único mecanismo para todo o equipamento."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Especifica convecção–condução–convecção, resistências em série e resistência adicional por depósitos, sem afirmar mistura.",
+      "criterios": {
+        "dados": "ATENDIDO — descrição qualitativa",
+        "consistencia_fisica": "ATENDIDO — caminhos separados, películas e parede",
+        "comando": "ATENDIDO — arranjo e mecanismos identificáveis",
+        "unidades": "NAO_APLICAVEL — nenhuma taxa ou resistência numérica pedida",
+        "restricoes": "ATENDIDO — operação normal; corrente quente pode estar em qualquer lado",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — falsa exclusividade de mecanismo ou confusão de correntes; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-69",
+          "alcance": "Artigo atual; comando/opções lidos antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-trocadores",
+          "alcance": "Base lida neste bloco: arranjo e resistências em série, com distinção entre geometrias plana e cilíndrica"
+        }
+      ],
+      "heranca": "Nenhuma prova científica herdada; não se estendeu o aceite de CR66 automaticamente a este artigo.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-70",
+      "sha256_artigo": "9cf98a0db0efa097c58cac9de03b4212f1e3683f067a14688ae605350ac0ac52",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. A condução passiva ordinária tem sentido líquido determinado pelo gradiente; não exige material, comprimento ou diferença numérica de temperatura.",
+      "demonstracao": "Na condução unidimensional com condutividade positiva, qx=-k*dT/dx. Se a temperatura cai ao avançar em x, o gradiente é negativo e qx positivo: o calor vai da região quente à fria. Trocar a orientação do eixo muda o sinal das componentes, não esse sentido físico. A afirmação inverte o sentido espontâneo da condução.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Confunde o sentido do gradiente, que aponta para temperatura crescente, com o fluxo de calor, que tem sinal oposto no modelo usual."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "A condução passiva transporta calor líquido no sentido de temperatura decrescente, conforme Fourier e a produção não negativa de entropia."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Identifica fluxo por área, condutividade e o sinal negativo da lei de Fourier; não confunde mudança de eixo com inversão do calor físico.",
+      "criterios": {
+        "dados": "ATENDIDO — proposição conceitual",
+        "consistencia_fisica": "ATENDIDO — Fourier com k positivo e sentido espontâneo",
+        "comando": "ATENDIDO — direção do transporte líquido",
+        "unidades": "ATENDIDO — W/(m K) vezes K/m dá W/m² para fluxo; nenhuma taxa total numérica pedida",
+        "restricoes": "ATENDIDO — condução passiva usual; bombeamento térmico com trabalho externo não é contraexemplo à lei local de condução",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — gradiente versus fluxo e sinal negativo; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-70",
+          "alcance": "Artigo atual: comando/opções antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-transferencia",
+          "alcance": "Trecho lido neste bloco: lei de Fourier, unidades, exemplo de sinal e orientação do eixo; não foi alegada leitura integral de todos os conteúdos E2"
+        }
+      ],
+      "heranca": "Nenhuma prova científica herdada; direção derivada pela lei constitutiva.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    }
+  ],
+  "limitacoes": [
+    "Bloco parcial de cinco itens; sem aprovação global ou liberação de próximo ID.",
+    "Sem piloto, revisão humana ou certificação externa.",
+    "Fontes oficiais não foram novamente cotejadas neste bloco; as letras documentais atribuídas ao produto são confrontadas com demonstração técnica própria.",
+    "Produto, controle e checklist não editados."
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "registrados": 5,
+    "ids": [
+      "cr-e1-66",
+      "cr-e1-67",
+      "cr-e1-68",
+      "cr-e1-69",
+      "cr-e1-70"
+    ],
+    "juizos_de_opcoes": 10,
+    "estudos_criticos_sem_nota": 0,
+    "dados_fon09_conferidos_por_identidade": 1
+  },
+  "achados_do_bloco": {
+    "novos_impeditivos": 0,
+    "dados_historicos_invalidos_cr68_com_tratamento_preservado": 1,
+    "ajustes_obrigatorios": 0
+  },
+  "decisao_proximo_ID": "NÃO LIBERADO: bloco parcial não constitui aceite integral de BAN-07 nem liberação de outro ID.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "identidades": [
+      {
+        "id": "cr-e1-66",
+        "sha256_artigo": "3c495fe75122088861c7e8de6a39ceccefaf8486532bbaad7e755d48a7ec1850",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-67",
+        "sha256_artigo": "ce6a14b96095bd3f2b7633028a51832b69ffbc9350cb7d81dfced776b51a6d56",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-68",
+        "sha256_artigo": "6cfcf2558f6d3651a9b87e8fd4b66b8e29561f17686b4e52b2f40d15ac42fcb8",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-69",
+        "sha256_artigo": "5fe27c3eaca7cf1d4f584a1720a66065312dcd074301366a59e6cc96387df14f",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-70",
+        "sha256_artigo": "9cf98a0db0efa097c58cac9de03b4212f1e3683f067a14688ae605350ac0ac52",
+        "conferido": true
+      }
+    ],
+    "registros_unicos": 5,
+    "juizos_de_opcoes": 10,
+    "dados_fon09_hash_reconfirmado": true,
+    "conversoes_tabela_fon09_recalculadas": 12,
+    "tolerancia_conversoes": "Somente erro de representação binária até 4 eps de máquina; não é tolerância física ou editorial.",
+    "escopo_preservado": "Apenas este parecer foi criado pelo auditor no bloco; produto, controle e checklist não editados."
+  }
+}

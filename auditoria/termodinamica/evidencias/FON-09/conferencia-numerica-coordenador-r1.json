@@ -1,0 +1,206 @@
+{
+  "data_local": "2026-10-27",
+  "revisor": "Coordenador automatizado /root",
+  "escopo": "Conferência numérica dos15campos dependentes e densidade; não é parecer do Auditor.",
+  "fontes": [
+    {
+      "p": 101.325,
+      "T": 99.974296,
+      "vf": 0.0010434411,
+      "vg": 1.6732012,
+      "fonte": "NIST WebBook SRD69: respostas HTML capturadas pelo apoio, lidas pelo coordenador."
+    },
+    {
+      "p": 150,
+      "T": 111.349,
+      "vf": 0.00105273,
+      "vg": 1.1593,
+      "fonte": "NISTIR5078 tabela2 p12, lida diretamente pela ferramenta web; volumes originais cm³/g convertidos×0.001."
+    },
+    {
+      "p": 200,
+      "T": 120.21,
+      "vf": 0.00106052,
+      "vg": 0.88568,
+      "fonte": "NISTIR5078 tabela2 p12"
+    },
+    {
+      "p": 250,
+      "T": 127.411,
+      "vf": 0.00106722,
+      "vg": 0.71866,
+      "fonte": "NISTIR5078 tabela2 p12"
+    },
+    {
+      "p": 300,
+      "T": 133.522,
+      "vf": 0.00107317,
+      "vg": 0.60576,
+      "fonte": "NISTIR5078 tabela2 p12"
+    }
+  ],
+  "celulas": [
+    {
+      "p_kPa": 101.325,
+      "campo": "T",
+      "valor_impresso": "100",
+      "referencia": 99.974296,
+      "casas_decimais": 0,
+      "meio_passo": 0.5,
+      "diferenca": 0.025704000000004612,
+      "compativel_com_arredondamento": true
+    },
+    {
+      "p_kPa": 101.325,
+      "campo": "vf",
+      "valor_impresso": "0.00104",
+      "referencia": 0.0010434411,
+      "casas_decimais": 5,
+      "meio_passo": 0.000005,
+      "diferenca": -0.0000034411000000001118,
+      "compativel_com_arredondamento": true
+    },
+    {
+      "p_kPa": 101.325,
+      "campo": "vg",
+      "valor_impresso": "1.695",
+      "referencia": 1.6732012,
+      "casas_decimais": 3,
+      "meio_passo": 0.0005,
+      "diferenca": 0.021798800000000007,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 150,
+      "campo": "T",
+      "valor_impresso": "114",
+      "referencia": 111.349,
+      "casas_decimais": 0,
+      "meio_passo": 0.5,
+      "diferenca": 2.6509999999999962,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 150,
+      "campo": "vf",
+      "valor_impresso": "0.00108",
+      "referencia": 0.00105273,
+      "casas_decimais": 5,
+      "meio_passo": 0.000005,
+      "diferenca": 0.00002727000000000003,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 150,
+      "campo": "vg",
+      "valor_impresso": "0.354",
+      "referencia": 1.1593,
+      "casas_decimais": 3,
+      "meio_passo": 0.0005,
+      "diferenca": -0.8053,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 200,
+      "campo": "T",
+      "valor_impresso": "128",
+      "referencia": 120.21,
+      "casas_decimais": 0,
+      "meio_passo": 0.5,
+      "diferenca": 7.790000000000006,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 200,
+      "campo": "vf",
+      "valor_impresso": "0.00110",
+      "referencia": 0.00106052,
+      "casas_decimais": 5,
+      "meio_passo": 0.000005,
+      "diferenca": 0.00003948000000000016,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 200,
+      "campo": "vg",
+      "valor_impresso": "0.206",
+      "referencia": 0.88568,
+      "casas_decimais": 3,
+      "meio_passo": 0.0005,
+      "diferenca": -0.6796800000000001,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 250,
+      "campo": "T",
+      "valor_impresso": "138",
+      "referencia": 127.411,
+      "casas_decimais": 0,
+      "meio_passo": 0.5,
+      "diferenca": 10.588999999999999,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 250,
+      "campo": "vf",
+      "valor_impresso": "0.0012",
+      "referencia": 0.00106722,
+      "casas_decimais": 4,
+      "meio_passo": 0.00005,
+      "diferenca": 0.00013277999999999988,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 250,
+      "campo": "vg",
+      "valor_impresso": "0.138",
+      "referencia": 0.71866,
+      "casas_decimais": 3,
+      "meio_passo": 0.0005,
+      "diferenca": -0.58066,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 300,
+      "campo": "T",
+      "valor_impresso": "147",
+      "referencia": 133.522,
+      "casas_decimais": 0,
+      "meio_passo": 0.5,
+      "diferenca": 13.478000000000009,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 300,
+      "campo": "vf",
+      "valor_impresso": "0.00114",
+      "referencia": 0.00107317,
+      "casas_decimais": 5,
+      "meio_passo": 0.000005,
+      "diferenca": 0.00006682999999999993,
+      "compativel_com_arredondamento": false
+    },
+    {
+      "p_kPa": 300,
+      "campo": "vg",
+      "valor_impresso": "0.100",
+      "referencia": 0.60576,
+      "casas_decimais": 3,
+      "meio_passo": 0.0005,
+      "diferenca": -0.50576,
+      "compativel_com_arredondamento": false
+    }
+  ],
+  "resumo": {
+    "compativeis": 2,
+    "incompativeis": 13
+  },
+  "densidade": {
+    "conversao_literal_kg_m3": 1000000000,
+    "referencia_25C_101325kPa_kg_m3": 997.04764,
+    "aproximacao_editorial_kg_m3": 1000,
+    "erro_relativo_aproximacao_percentual": 0.29611022398087206,
+    "limite": "1000kg/m³ é aproximação editorial identificada, não prova da intenção do elaborador nem valor exato do modelo real."
+  },
+  "limites": "As15células comparadas são T,vf,vg; as5pressões são entradas mantidas. Arredondamento é avaliado na precisão impressa, sem inventar incerteza experimental. A linha101.325não está literalmente na tabela2 NISTIR; sua referência é WebBook. A tentativa web de abrir consultas CGI longas falhou nesta ferramenta; a leitura da linhaWebBook usou a resposta HTML primária já capturada, não uma nova obtenção independente."
+}

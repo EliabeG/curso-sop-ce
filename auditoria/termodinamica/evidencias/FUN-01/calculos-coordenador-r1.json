@@ -1,0 +1,106 @@
+{
+  "id": "FUN-01",
+  "rodada": 1,
+  "data": "2026-10-27",
+  "revisor": "Coordenador automatizado /root; apoio numérico, não parecer do Auditor",
+  "metodo": "Contas independentes em JavaScript pelas equações indicadas, calculadas antes de ler/executar o módulo autoral. Em seguida comparação com saída do módulo publicado.",
+  "referenciasIndependentes": {
+    "saturacao": {
+      "v": 0.45,
+      "x": 0.5074944539995886,
+      "h": 1621.9490404800943,
+      "deltaH": 178.05095951990575,
+      "intervalosSeparados": [
+        1620.9490404800943,
+        1622.9490404800943,
+        1798,
+        1802
+      ],
+      "menorSeparacao": 175.05095951990575
+    },
+    "mistura": {
+      "bolha_z04": 90,
+      "orvalho_z04": 68.18181818181817,
+      "bolha_z08": 130,
+      "orvalho_z08": 107.14285714285714,
+      "xA_p80": 0.3,
+      "yA_p80": 0.5625,
+      "betaII": 0.38095238095238104,
+      "nLII": 6.19047619047619,
+      "nVII": 3.809523809523811,
+      "betaI_forcada": -0.3999999999999999,
+      "betaIII_forcada": 1.9047619047619047
+    },
+    "margensSupercriticoA": {
+      "temperatura": 2.9039999999999964,
+      "pressao": 0.036000000000001364
+    },
+    "equilibrio": {
+      "hidro": {
+        "pFundo_Pa": 29620,
+        "deltaMuIntrinseco_Jmol": 0.3924,
+        "compensacaoGrav_Jmol": 0.3924
+      },
+      "membrana": {
+        "nInicial": {
+          "Aa": 0.3207441263731858,
+          "Ab": 0.08018603159329644,
+          "Ba": 0.08018603159329644,
+          "Bb": 0.3207441263731858
+        },
+        "nFinal": {
+          "Aa": 0.20046507898324112,
+          "Ab": 0.20046507898324112,
+          "Ba": 0.08018603159329644,
+          "Bb": 0.3207441263731858
+        },
+        "deltaMuAInicial_Jmol": 3457.695395505231,
+        "transferenciaA_mol": 0.12027904738994467,
+        "pFinais_Pa": [
+          70000,
+          130000
+        ],
+        "yAFinais": [
+          0.7142857142857143,
+          0.38461538461538464
+        ],
+        "d2FFinal_Jmol2": 24884.13456
+      }
+    }
+  },
+  "moduloAutoral": {
+    "checksExecutados": 28,
+    "diferencasContraContasIndependentes": {
+      "h": 0,
+      "x": 0,
+      "menorSeparacao": 0,
+      "beta": 0,
+      "deltaMu": 0,
+      "transferencia": 1.3877787807814457e-17,
+      "pressaoFundo": 0
+    },
+    "residuos": {
+      "A_mol": 0,
+      "B_mol": 0,
+      "pA_Pa": 0,
+      "eos_alpha_J": 0,
+      "eos_beta_J": 0,
+      "potencial_total_Jmol": 0
+    }
+  },
+  "arquivos": [
+    {
+      "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+      "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-calculos-v1.mjs",
+      "sha256": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88"
+    }
+  ],
+  "limites": [
+    "Cálculo dos casos fornecidos; não certifica um solucionador geral ou propriedades de fluidos reais além das linhas NIST usadas.",
+    "Sem experimento, piloto com alunos ou decisão de aceite do ID.",
+    "Não abrange interface nem exposição prévia; esses pontos têm verificações próprias."
+  ]
+}

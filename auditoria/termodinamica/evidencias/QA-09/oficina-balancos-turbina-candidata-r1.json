@@ -1,0 +1,23 @@
+{
+  "id": "QA-09-oficina-balancos-turbina",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "49b0df4fe59dfd01913f4d41a5e6869705f4bf4d6ded251060f940cd5d12c91b",
+  "secao_sha256": "332973ea8904d02ceb2e6c54d8713924c517975ce0749f09ee9f1b8ba07d56c2",
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-oficina-8-1-adjudicacao-independente-r1.md",
+    "sha256": "36afd1dd5e12965a66bf2945871c4434771400bbd7a7728ff2eab55d7f3ac4e0"
+  },
+  "original_sha256_fragmento": "80a44fade53998980ceb1c75d07a023798b126ea4ca8f30835bfc1de6745b75d",
+  "candidata_sha256_fragmento": "ddbee308b1684a4eb8d5884a17a056582016563cc61ba735105eb0d433fe6acd",
+  "original_sha256_arquivo": "46468cd8371165dee66c8f4418b5f08ff959608543718f818f34c55252c6590c",
+  "candidata_sha256_arquivo": "9f662cf7872e5dddb5cad0d7ba3fc10b795db3ffb53002f7f20cd46b32bf8247",
+  "alteracoes": [
+    {
+      "antes": "ṁ = 2 kg/s; h₁ = 3.200 e h₂ = 2.800 kJ/kg; perda térmica de 50 kW; EC/EP desprezíveis.",
+      "depois": "Turbina em regime permanente, com uma entrada e uma saída, e trabalho de eixo como única transferência de trabalho: ṁ = 2 kg/s; h₁ = 3.200 e h₂ = 2.800 kJ/kg; perda térmica líquida de 50 kW; EC/EP desprezíveis."
+    }
+  ],
+  "limite": "Arquivos incluem nova linha final. Candidata não aplicada; requer revisão independente."
+}

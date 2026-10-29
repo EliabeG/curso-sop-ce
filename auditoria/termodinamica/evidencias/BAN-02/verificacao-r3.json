@@ -1,0 +1,115 @@
+{
+  "id": "BAN-02",
+  "rodada": 3,
+  "delta": {
+    "id": "BAN-02",
+    "rodada": 3,
+    "achado": "R2-A",
+    "fonte_sha256_artigo": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+    "justificativa": "As alternativas D e E têm o mesmo limite matemático zero e diferem na afirmação de validade física para um gás real até 0 K. A distinção é necessária para escolher a alternativa, além dos dois requisitos matemáticos preservados.",
+    "delta_restrito": true,
+    "diferencas": [
+      {
+        "id": "av-e1-20",
+        "campo": "pre_requisitos",
+        "antes": [
+          "Leitura de V=nRT/p com n e p constantes positivos",
+          "Limite de uma proporcionalidade direta quando T tende a zero"
+        ],
+        "depois": [
+          "Leitura de V=nRT/p com n e p constantes positivos",
+          "Limite de uma proporcionalidade direta quando T tende a zero",
+          "Distinção entre extrapolação matemática do modelo ideal e domínio físico de um gás real, incluindo possível mudança de fase ou desvio da idealidade antes de 0 K"
+        ]
+      }
+    ]
+  },
+  "validacao": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 190,
+    "artigos_encontrados": 190,
+    "recursos_verificados": 7,
+    "links_locais_verificados": 1022,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "evidencias_r2": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/delta-r1-r2.json",
+      "sha256": "293c41cbaffe65935c3b2edb7b78a9af8b44679b0668b69ebabc6f38c0763eef",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/pre-requisitos-r2.json",
+      "sha256": "eff0eacae654184030d822cc819f223e242060b83a7595e6f7804a1796ab1616",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/relacoes-cr-av-r2.json",
+      "sha256": "07e3f3208cfb96f91f53ac7a565fdffbee282dca4504693d65e1b5b29f29304b",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/verificacao-r2.json",
+      "sha256": "59db7bcdd593e8964e277de2e703307ff476bbc88b8ab48dad54d24f9f3588da",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/verificar-r2.mjs",
+      "sha256": "096e5064794a58b52cdcb543a3292714c4302bf77fe7350621ff23cfa992e8e6",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/pacote-r2/inventario-questoes.json",
+      "sha256": "d17e2fcf73f2dbbe72005fb70ee6b36d1cad60ef90a1618abaf080d8bfd79507",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/pacote-r2/inventario.schema.json",
+      "sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/pacote-r2/validar-inventario.mjs",
+      "sha256": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/pacote-r2/LEIA-ME.md",
+      "sha256": "cdcd7e965bdc4a998b6e2fa784a53f84f295abcf9ade2d06ce62fff71d072449",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-02/pacote-r2/INVENTARIO_QUESTOES.md",
+      "sha256": "2d82fbde8502a1f5096373f10cf0c57d2c23e7730f3a134dc2d0d7755e4b7590",
+      "preservado": true
+    }
+  ],
+  "produto": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "preservado": true
+    }
+  ],
+  "ok": true,
+  "limites": "Verificação restrita do Corretor. Aceite reservado ao Auditor. Sem repetição da infraestrutura preservada.",
+  "demais_campos_integralmente_preservados": true
+}

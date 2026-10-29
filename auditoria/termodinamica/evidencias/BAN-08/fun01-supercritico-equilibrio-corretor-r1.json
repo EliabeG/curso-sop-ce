@@ -1,0 +1,65 @@
+{
+  "id": "BAN-08",
+  "bloco": "FUN01 supercrítico e equilíbrio",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_SEM_APROVACAO",
+  "metodo": "Leitura integral dos dois enunciados, soluções e rubricas; contas racionais e cálculo numérico de logaritmo; apoio independente atribuído.",
+  "registros": [
+    {
+      "id": "fun01-e1-supercritico",
+      "aplicabilidade": "NUMERICO_CAIXAS_E_CRITERIOS_ABERTO",
+      "dados": "Água pura Tc=647,096 K, pc=22,064 MPa; A 650±5 K, 22,10±0,10 MPa; B 640±1 K, 25±0,1 MPa; C 700±1 K, 20±0,1 MPa; D 700 K,25 MPa, x=0,20.",
+      "solucao": "A caixas [645,655] K e [22,00,22,20] MPa cruzam limites, sem garantia. B T≤641 K<Tc; C p≤20,1 MPa<pc. D excede ambos, mas título é metadado inválido.",
+      "resultado": "Só melhorar T em A para ±1 K ou p para ±0,01 MPa não garante; ambas garantem. Margens estritas εT<2,904 K e εp<0,036 MPa. ρ e v=1/ρ do mesmo sensor são redundantes.",
+      "comparacao": "Rubrica 3+3+2+2=10 pontos; T,p bastam para estado intensivo de fase única no modelo com relação real válida, mas Tc/pc não calculam h,v,s.",
+      "tolerancia": "Desigualdades estritas preservadas sob arredondamento; erros máximos são determinísticos, não intervalos de confiança.",
+      "limite": "Não assumir gás ideal ou validar título fora da coexistência; massa fixa escala extensiva.",
+      "artigo_sha256": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+        "dados": "assets/termodinamica/fun01-dados-v1.json",
+        "sha256_dados": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+      },
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA"
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "aplicabilidade": "NUMERICO_MULTIMODELO_ABERTO",
+      "dados": "Coluna X fictícia: H=2 m, ρ=1000 kg/m³, M=.0200 kg/mol, g=9,81 m/s², T=300 K, ps=10 kPa. Células ideais rígidas: V=.0100 m³, R=8,314 J/(mol K), T=300 K, p inicial=100 kPa; yAα=.8, yAβ=.2; só A atravessa.",
+      "solucao": "H-1 não está em equilíbrio térmico nem mecânico; H-2: p(0)=29,620 kPa, V̄=2×10⁻⁵ m³/mol, Δμintrínseco=.3924 J/mol compensado por MgH=.3924 J/mol. n0=0,400930158 mol por célula; ΔμA=RT ln4≈3457,695 J/mol, A flui α→β.",
+      "resultado": "Final pA=50 kPa em ambos; pBα=20 e pBβ=80 kPa, pressões totais 70 e 130 kPa, yAα=5/7, yAβ=5/13, transferência A=.3n0≈0,120279047 mol. F″=RT(1/nAα+1/nAβ)>0. Se B liberado, ele flui β→α e cada célula chega pA=pB=50 kPa, ptotal=100 kPa.",
+      "comparacao": "T,p de substância pura em coexistência não fixa título; 300 K,12 kPa incompatível com coexistência do modelo; mistura T,p precisa composição; T,p,y fixa intensivo, n ou V fixa escala. Rubrica 1,5+1,5+1,5+1,5+2,5+1,5=10, limiar 8/10 e 70% em três critérios.",
+      "tolerancia": "Aritmética exata nos dados racionais e ln4 numérico arredondado à última casa; limites de rubrica são 1,05/1,5 e 1,75/2,5, não incerteza instrumental.",
+      "limite": "Coexistência vale na interface, não por toda coluna; X é fictício e curva em 302 K não fornecida. Suporte permite pressão desigual; mínimo é apenas sob transferência permitida.",
+      "artigo_sha256": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+        "dados": "assets/termodinamica/fun01-dados-v1.json",
+        "sha256_dados": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+      },
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA"
+    }
+  ],
+  "apoios": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun01-supercritico-r1-independente.md",
+      "autor": "/root/auditor_ban08_novo",
+      "sha256": "64edcb1f41d1ee0e07140d59da5411a234af35798ec61fc0c8c330b9cd4106a0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun01-equilibrio-r1-independente.md",
+      "autor": "/root/auditor_ban08_novo",
+      "sha256": "ce82f24d04122f571a136a91d4c7673c165d725a884c6c77b407e0f16ae3badf"
+    }
+  ],
+  "limites": [
+    "Os apoios examinaram o HTML anterior; verificar a identidade dos artigos.",
+    "Sem revisão global, teste de estudantes ou medição experimental."
+  ]
+}

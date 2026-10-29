@@ -1,0 +1,266 @@
+{
+  "id": "FUN-01",
+  "rodada": 1,
+  "data": "2026-10-27",
+  "revisor": "Agente automatizado /root/auditor_aaa",
+  "veredito": "AJUSTES_OBRIGATORIOS",
+  "hashes": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+      "bytes": 1194376,
+      "hashCorresponde": true,
+      "copiaIdentica": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+      "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+      "bytes": 3895,
+      "hashCorresponde": true,
+      "copiaIdentica": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-calculos-v1.mjs",
+      "sha256": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+      "bytes": 5485,
+      "hashCorresponde": true,
+      "copiaIdentica": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "4b18b397b68b9a46aae4db4c526d7bc2e4712df0e65b33359ba414fc6112e4df",
+      "bytes": 725639,
+      "hashCorresponde": true,
+      "copiaIdentica": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "5242d53447dc9441109586d448793c324596745e2017546a19cb39ff5b854725",
+      "bytes": 46506,
+      "hashCorresponde": true,
+      "copiaIdentica": true
+    }
+  ],
+  "escopoLeitura": [
+    "Objetivos, entrada e recuperação",
+    "Teoria de equilíbrio, independência, composição e graus de liberdade",
+    "Preparação de potencial químico, gravidade, Helmholtz e estabilidade",
+    "4/4 enunciados e soluções/rubricas",
+    "4/4 metadados individuais novos",
+    "6/6 linhas alteradas C01,C02,C07,C08,C09,C10"
+  ],
+  "resolucaoIndependente": "FUN-01-r1-calculos-independentes.json",
+  "calculos": {
+    "saturacao": {
+      "v": 0.45,
+      "x": 0.5074944539995886,
+      "mv": 1.0149889079991772,
+      "h": 1621.9490404800943,
+      "hprev": [
+        1620.9490404800943,
+        1622.9490404800943
+      ],
+      "hmedido": [
+        1798,
+        1802
+      ],
+      "gap": 175.05095951990575
+    },
+    "mistura": {
+      "z04": {
+        "pbolha": 90,
+        "porvalho": 68.18181818181817
+      },
+      "z08": {
+        "pbolha": 130,
+        "porvalho": 107.14285714285714
+      },
+      "I": {
+        "xA": 0.5,
+        "yA": 0.75,
+        "beta": -0.3999999999999999,
+        "fase": "liquido"
+      },
+      "II": {
+        "xA": 0.3,
+        "yA": 0.5625,
+        "beta": 0.38095238095238104,
+        "nl": 6.19047619047619,
+        "nv": 3.809523809523811
+      },
+      "III": {
+        "beta": 1.9047619047619047,
+        "fase": "vapor"
+      },
+      "IV": {
+        "xA": 0.3,
+        "yA": 0.5625,
+        "exemplos": [
+          {
+            "z": 0.35,
+            "beta": 0.19047619047619044
+          },
+          {
+            "z": 0.5,
+            "beta": 0.7619047619047619
+          }
+        ]
+      }
+    },
+    "supercritico": {
+      "A": "não garantido: caixa cruza ambos limites",
+      "B": "não supercritico: T abaixo",
+      "C": "não supercritico: p abaixo",
+      "D": "supercritico, x indefinido",
+      "maxErrosEstritos": {
+        "T": 2.9039999999999964,
+        "p": 0.036000000000001364
+      },
+      "melhoriaApenasT": false,
+      "melhoriaApenasP": false,
+      "melhoriaAmbos": true
+    },
+    "equilibrio": {
+      "pH2_fundo_Pa": 29620,
+      "dmu_Jmol": 0.3924,
+      "muTilde_fundo_menos_interface": 0,
+      "nTotalInicialCada": 0.4009301579664823,
+      "deltaMuAInicial": 3457.695395505231,
+      "A_inicial": [
+        0.32074412637318583,
+        0.08018603159329646
+      ],
+      "B_inicial": [
+        0.08018603159329646,
+        0.32074412637318583
+      ],
+      "A_final": [
+        0.20046507898324115,
+        0.20046507898324115
+      ],
+      "B_final": [
+        0.08018603159329646,
+        0.32074412637318583
+      ],
+      "pFinal_Pa": [
+        70000,
+        130000
+      ],
+      "yAFinal": [
+        0.7142857142857143,
+        0.3846153846153846
+      ],
+      "xi": 0.12027904738994469,
+      "FsegundaFinal": 24884.134559999995,
+      "aposBpermitido": {
+        "p": [
+          100000,
+          100000
+        ],
+        "yA": [
+          0.5,
+          0.5
+        ],
+        "especiesCada": [
+          0.20046507898324115,
+          0.20046507898324115
+        ]
+      }
+    }
+  },
+  "originalidadeLocal": {
+    "comparacaoSemantica": "Casos completos novos em relação ao banco E1 lido na BAN-02 e aos exemplos de FUN-01; o parecer não infere novidade universal. A inversão e diagnóstico em 1, seleção de fase e família em 2, projeto de melhoria em 3 e redistribuição finita/estabilidade em 4 excedem a simples troca de números dos exemplos.",
+    "comparacaoLiteral": [
+      {
+        "id": "fun01-e1-saturacao",
+        "tokens": 278,
+        "coincidencias12Palavras": []
+      },
+      {
+        "id": "fun01-e1-mistura",
+        "tokens": 314,
+        "coincidencias12Palavras": []
+      },
+      {
+        "id": "fun01-e1-supercritico",
+        "tokens": 303,
+        "coincidencias12Palavras": []
+      },
+      {
+        "id": "fun01-e1-equilibrio",
+        "tokens": 1195,
+        "coincidencias12Palavras": []
+      }
+    ],
+    "limite": "Ausência de 12 palavras consecutivas comuns não prova independência, foi usada somente como verificação auxiliar."
+  },
+  "fontes": {
+    "saturacao": "NISTIR5078 tabela2 pp11-12: três linhas conferidas incluindo conversão cm³/g→m³/kg.",
+    "critico": "IAPWS R7-97(2012) §3 p5: Tc647.096K, pc22.064MPa conferidos.",
+    "postulado": "Purdue ME200 Spring2023 cap1 p15; composição e relações limitadas como ensinadas.",
+    "equilibrio": "MIT16Unified SPRING/node10 §1.2 confirmado; diferente da numeração FALL/node11.",
+    "fases": "MIT2.43 Spring2024 aula9 transcrição e slides09.16–18/25: liberdade de estados de fases não quantidades.",
+    "mistura": "University of Washington CHEM452 Winter2023 §5.1 eq5.1 e ASHRAE2025 cap2: Raoult e saturação/zeotropia.",
+    "potenciais": "MIT3.020 Spring2021 aula13 pp2–3; Tong§4.4 eq4.174–175; material de Reall§1.14; hidrostática OpenStax§14.1.",
+    "iupac": "Abertura direta de C01023/C01032 retornou403; conteúdo das mesmas páginas recuperado por busca oficial e coerente com MIT3.020. Não tratado como defeito do produto."
+  },
+  "pedagogia": {
+    "competencias": "Alcance parcial de C01,C02,C07,C08,C09,C10 sustentado pelos comandos. Sem ensino/avaliação global alegada.",
+    "preRequisitos": "Recuperação específica/molar/unidades/intervalos; logaritmo e derivada de log ensinados para bancada; relações de modelo e restrições fornecidas.",
+    "rubricas": "Quatro somas de10 pontos, regras de progressão e erros críticos coerentes; problema4 inclui pisos nos três eixos centrais.",
+    "niveis": "Dois intermediários e dois avançados estimados são defensáveis dentro do modelo ideal delimitado; autonomia local e ausência de piloto explícitas.",
+    "exposicao": "Retomadas de rho/v e classificações finais registradas como fixação; independência do caso integrado não atribuída a cada subitem."
+  },
+  "apoioTecnico": "FUN-01-r1-tecnico.md e FUN-01-r1-tecnico-evidencias.json, lidos e integrados pelo auditor responsável",
+  "resultadosTecnicos": {
+    "documentais": 239,
+    "numericos": 28,
+    "registros": 194,
+    "artigos": 194,
+    "recursos": 8,
+    "referenciasLocais": 1042,
+    "erros": 0,
+    "avisos": 0,
+    "artigosPreservados": 190,
+    "registrosPreservados": 190
+  },
+  "ajustesObrigatorios": [
+    {
+      "id": "R1-A",
+      "criterio": "Coerência da identificação documental e manutenção do inventário afetado",
+      "descricao": "Sincronizar dois títulos antigos com os títulos atuais dos artigos no canônico e resumo vigentes; reapresentar extrato/manifesto e cópias versionados. Não alterar históricos r1 nem conteúdo científico.",
+      "divergencias": [
+        {
+          "id": "fun01-e1-mistura",
+          "inventario": "Problema 2 — A mesma temperatura não determina o lote",
+          "publicado": "Problema 2 — Quatro lotes e uma hipótese bifásica"
+        },
+        {
+          "id": "fun01-e1-supercritico",
+          "inventario": "Problema 3 — Quando a leitura garante condição supercrítica?",
+          "publicado": "Problema 3 — O rótulo “supercrítico” é sustentado pelos dados?"
+        }
+      ],
+      "gravidade": "documental restrita; IDs, vínculos e conteúdo técnico permanecem corretos; não é falha automática do schema"
+    }
+  ],
+  "liberacaoProximoId": false,
+  "limites": [
+    "Nenhum teste de navegador executado pelo Auditor ou apoio técnico; evidência do coordenador é separada.",
+    "Nenhum piloto ou certificação externa; aprovação curricular global fora do escopo.",
+    "Nenhum produto ou controle editado nesta auditoria."
+  ],
+  "navegadorCoordenador": {
+    "evidencia": "auditoria/termodinamica/evidencias/FUN-01/navegador-coordenador-r1.md",
+    "shaHTML": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+    "leituraPeloAuditor": true,
+    "executadoPeloAuditor": false,
+    "resultado": "Navegação, quatro soluções, teclado no problema3 e recarga do último parágrafo confirmados; não é auditoria ampla de acessibilidade."
+  },
+  "preflightProximoId": {
+    "candidato": "FUN-02",
+    "bloqueioP0ObrigatorioIdentificado": false,
+    "condicoes": "Só após fechamento FUN-01; conteúdo, fontes e problemas próprios, sem usar CR09/24/68/79 como comprovação. P0 bloqueia antes de eventual reutilização afetada.",
+    "liberado": false
+  }
+}

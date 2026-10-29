@@ -1,0 +1,35 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import {parseHtml, sha256, decodeHtml} from '../../../inventario/validar-inventario.mjs';
+const base='auditoria/termodinamica/evidencias/BAN-07/propostas-r2/';
+const source=fs.readFileSync('modulos/e1-termodinamica.html','utf8');
+const candidate=fs.readFileSync(base+'AV31-candidata.html','utf8');
+const doc=parseHtml(source); const node=doc.ids.get('av-e1-31')[0];
+const original=source.slice(node.start,node.end);
+const old='à exclusão de toda a energia de combustão no PCS.';
+const replacement='à diferença de calor sensível causada por temperaturas distintas de referência, mantendo a água no mesmo estado físico.';
+const oldComment='PCS inclui a energia de combustão e a recuperação adicional indicada.';
+const newComment='A comparação usa a mesma temperatura de referência. A diferença considera a água líquida no PCS e vapor no PCI: é a parcela associada à condensação, não uma diferença de calor sensível por temperaturas de referência distintas.';
+if (candidate.replace(replacement,old).replace(newComment,oldComment)!==original) throw Error('Delta fora dos dois textos');
+const js=fs.readFileSync('assets/curso.js','utf8');
+const names=['normalizarDigital','textoDaDigital','fnv1a','digitalDoBanco'];
+const code=names.map(n=>{const x=js.match(new RegExp('  function '+n+'\\([^]*?\\n  \\}')); if(!x)throw Error(n);return x[0]}).join('\n');
+const context={SEPARADOR:'␞',paraArray:x=>Array.from(x)};
+vm.createContext(context); vm.runInContext(code+'\nthis.digitalDoBanco=digitalDoBanco;',context);
+function item(html){
+ const parsed=parseHtml(html); if(parsed.errors.length)throw Error(parsed.errors.join(';'));
+ const article=parsed.ids.get('av-e1-31')[0];
+ const text=n=>decodeHtml(html.slice(n.openEnd,n.end).replace(/<[^>]*>/g,''));
+ const entry=parsed.ids.get('av-e1-31-enunciado')[0];
+ const nodeText=t=>({nodeType:3,nodeValue:t});
+ const en={nodeType:1,localName:'div',childNodes:[nodeText(text(entry))],querySelectorAll:()=>[]};
+ const radios=['A','B','C','D','E'].map(letter=>{const input=parsed.ids.get('av-e1-31-'+letter)[0]; const label=input.parent; return {value:input.attrs.value,closest:()=>({nodeType:1,localName:'label',childNodes:[nodeText(text(label))]})}});
+ return {dataset:{crGabarito:article.attrs['data-cr-gabarito']},querySelector:()=>en,querySelectorAll:()=>radios};
+}
+const before=context.digitalDoBanco(item(original)),after=context.digitalDoBanco(item(candidate));
+if(before!=='4538caee'||before===after)throw Error('Digital não coincide ou não mudou');
+const sources=['modulos/e1-termodinamica.html','auditoria/termodinamica/inventario/inventario-questoes.json','auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md','assets/curso.js','assets/registro.js'];
+const expected=['de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80','7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7','dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1','a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13','46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c'];
+const files=sources.map((arquivo,i)=>({arquivo,sha256:sha256(fs.readFileSync(arquivo)),esperado:expected[i]||null}));
+if(files.some(x=>x.esperado&&x.sha256!==x.esperado))throw Error('Produto r1 alterado');
+console.log(JSON.stringify({artigo_r1:sha256(original),candidato:sha256(candidate),bytes_candidato:Buffer.byteLength(candidate),digital_r1:before,digital_candidato:after,produto:files},null,2));

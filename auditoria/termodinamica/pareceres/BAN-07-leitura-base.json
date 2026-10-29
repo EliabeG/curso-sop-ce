@@ -1,0 +1,1060 @@
+{
+  "id": "BAN-07",
+  "data": "2026-10-28",
+  "auditor": "/root/auditor_aaa, agente automatizado",
+  "html_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+  "metodo": "Resolução própria a partir de comando/opções antes de nova consulta ao comentário. CR já haviam sido lidos integralmente para FON02, portanto não se alega cegamento ou desconhecimento prévio de suas soluções. Sem aceite antecipado; leituras e heranças ainda serão confrontadas à entrega congelada.",
+  "cobertura": {
+    "registrados": 80,
+    "total_banco": 197,
+    "por_banco": {
+      "Q": 30,
+      "CR": 50
+    }
+  },
+  "registros": [
+    {
+      "id": "q-e1-01",
+      "sha256_artigo": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "Recipiente vedado impede passagem de massa; calor e movimento do pistão admitem energia, logo fechado.",
+      "alternativas": [
+        "A: movimento da fronteira não é transporte de massa.",
+        "B: não há entrada de massa indicada.",
+        "C: corresponde à fronteira vedada e troca de energia.",
+        "D: calor permitido exclui isolamento necessário.",
+        "E: calor permitido exclui adiabaticidade necessária."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-02",
+      "sha256_artigo": "ab8e322acf56c6c18183c82d5b8b0b2b8e895c134e6ea7581a0d0b8ccb4d5d4f",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "B",
+      "demonstracao": "Se a indicação é manométrica positiva, pabs=200+100=300 kPa.",
+      "alternativas": [
+        "A: confunde pressão atmosférica com pressão do gás.",
+        "B: soma referência atmosférica à indicação manométrica.",
+        "C: usa indicação relativa diretamente.",
+        "D: conversão dimensional incorreta.",
+        "E: subtração de referências/sinal incompatível."
+      ],
+      "pontos_a_verificar": [
+        "O comando diz apenas manômetro indica; verificar se a pressão relativa é uma convenção suficientemente estabelecida ou se precisa ser explicitada. Não assumir que qualquer manômetro necessariamente mede pressão relativa."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-03",
+      "sha256_artigo": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "E",
+      "demonstracao": "Temperatura e pressão são intensivas; massa, volume total, entalpia/energia total são extensivas.",
+      "alternativas": [
+        "A: ambas totais extensivas.",
+        "B: volume total extensivo.",
+        "C: massa extensiva.",
+        "D: ambas extensivas.",
+        "E: ambas intensivas."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-04",
+      "sha256_artigo": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "x=(h-hf)/(hg-hf)=500/2000=0,25, admissível entre0e1.",
+      "alternativas": [
+        "A: fração de líquido 1-x.",
+        "B: título fora de[0,1], inversão de razão.",
+        "C: relação de mistura bifásica com propriedades na mesma saturação.",
+        "D: razão h/(hg-hf), omite hf.",
+        "E: razão(h-hf)/hg, confunde hg com hfg."
+      ],
+      "pontos_a_verificar": [
+        "Propriedades fornecidas tratadas como dados didáticos da mesma mistura saturada, sem inferir água real ou estado p/T não declarado."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-05",
+      "sha256_artigo": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "Título é fração mássica do vapor na coexistência líquido-vapor; não define grau de superaquecimento.",
+      "alternativas": [
+        "A: dependência psat-Tsat no equilíbrio de substância pura.",
+        "B: definição da mistura bifásica saturada.",
+        "C: única incorreta; título não se estende a qualquer vapor superaquecido.",
+        "D: ponto de vapor saturado é a fronteira do domínio de condensação.",
+        "E: líquido saturado é a fronteira do domínio de vaporização."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-06",
+      "sha256_artigo": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "D",
+      "demonstracao": "p=mRT/V=1*0,287*300/0,861=100 kPa.",
+      "alternativas": [
+        "A: copia o valor de R sem operações/unidades.",
+        "B: copia T como pressão.",
+        "C: conversão de escala errada por fator100.",
+        "D: equação ideal e unidade kJ/m³=kPa.",
+        "E: mRT sem divisão por V."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-07",
+      "sha256_artigo": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "E",
+      "demonstracao": "ΔU=Q-W=500-200=300 kJ, pois ΔEc=ΔEp=0.",
+      "alternativas": [
+        "A: troca sinal da variação.",
+        "B: soma trabalho feito pelo sistema como recebido.",
+        "C: ignora trabalho.",
+        "D: confunde trabalho com ΔU.",
+        "E: primeira lei com sinais declarados pela direção das trocas."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-08",
+      "sha256_artigo": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "A",
+      "demonstracao": "Wfr=∫p dV=200*(0,3-0,1)=40 kJ; expansão fornece trabalho positivo na convenção produzida.",
+      "alternativas": [
+        "A: área correta.",
+        "B: pVfinal, sem descontar inicial.",
+        "C: sinal de compressão.",
+        "D: confunde pressão constante com trabalho nulo.",
+        "E: pVinicial ou intervalo incorreto."
+      ],
+      "pontos_a_verificar": [
+        "Pressão constante interpretada como absoluta na relação de fronteira; processo quase estático declarado."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-09",
+      "sha256_artigo": "0599ef026688971f3ddf099fd55133e22b51f6eaf2ac070acacdcf32f11e8732",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "B",
+      "demonstracao": "Para trabalho de fronteira no ciclo p-V quase estático, Whorário=(200-100)*(3-1)=200 kJ produzidos.",
+      "alternativas": [
+        "A: pmax*Vmax, área retangular referida à origem.",
+        "B: área orientada correta do ciclo.",
+        "C: área parcial/intervalo de volume omitido.",
+        "D: confunde propriedade de estado com trabalho de caminho.",
+        "E: troca orientação do ciclo."
+      ],
+      "pontos_a_verificar": [
+        "O comando pede trabalho líquido e mostra ciclo p-V; verificar suficiência da interpretação como trabalho de fronteira de processo quase estático e ausência de outras modalidades de trabalho. Conferência visual da figura não alegada nesta leitura textual."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-10",
+      "sha256_artigo": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "E",
+      "demonstracao": "Balanço estacionário adiabático sem trabalho: h1+v1²/2+gz1=h2+v2²/2+gz2; desprezados termos macroscópicos, h1≈h2.",
+      "alternativas": [
+        "A: estrangulamento não exige isentropia.",
+        "B: pv varia e h=u+pv; u não se conserva em qualquer fluido.",
+        "C: válvula pode produzir queda de pressão.",
+        "D: temperatura só conserva em modelos/casos particulares, não todo fluido.",
+        "E: conservação aproximada de entalpia sob hipóteses fornecidas."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+    },
+    {
+      "id": "q-e1-11",
+      "sha256_artigo": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "D",
+      "demonstracao": "Escoamento estacionário adiabático com ΔEc/ΔEp desprezados: potência líquida=2*(3100-2700)=800 kW.",
+      "alternativas": [
+        "A: dobra novamente a vazão.",
+        "B: soma entalpias de entrada e saída em vez da diferença.",
+        "C: confunde kW com W por fator1000.",
+        "D: balanço de energia correto.",
+        "E: omite a vazão e toma queda específica como potência."
+      ],
+      "pontos_a_verificar": [
+        "A identificação da potência como trabalho líquido da turbina é coerente; se solução disser apenas potência de eixo, explicitar modelo sem outras modalidades relevantes conforme contexto didático."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-12",
+      "sha256_artigo": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "No modelo de bomba ideal com líquido incompressível, win≈vΔp=0,001*500=0,5 kJ/kg, magnitude positiva.",
+      "alternativas": [
+        "A: fator10 indevido.",
+        "B: fator1000 indevido.",
+        "C: produto de volume específico e incremento de pressão.",
+        "D: contraria magnitude positiva pedida.",
+        "E: omite fator v."
+      ],
+      "pontos_a_verificar": [
+        "Bomba ideal deve remeter ao modelo adiabático reversível/energias macroscópicas desprezadas já definido na aula; não inferir universalidade de vΔp."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-13",
+      "sha256_artigo": "405d677239ba33e510f59cc11d22251c794fad0ba3f5ecd8c3c1d632c0b80a6f",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "I falsa(calor e trabalho são transferências dependentes de caminho);II verdadeira(definição h=u+pv);III verdadeira(U é estado e retorna no ciclo).",
+      "alternativas": [
+        "A: omite III verdadeira.",
+        "B: seleciona I falsa.",
+        "C: exatamente II e III.",
+        "D: inclui I falsa e omite II.",
+        "E: inclui I falsa e omite III."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-14",
+      "sha256_artigo": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "E",
+      "demonstracao": "Clausius proíbe transferência cíclica do frio ao quente como único efeito; consumo de trabalho fornece o outro efeito requerido.",
+      "alternativas": [
+        "A: forma diretamente proibida por Clausius.",
+        "B: máquina cíclica de fonte única viola Kelvin–Planck, equivalente à segunda lei.",
+        "C: supera limite reversível sob mesmas fontes.",
+        "D: direção espontânea universal invertida, contrariando Clausius.",
+        "E: refrigerador com trabalho é compatível."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-15",
+      "sha256_artigo": "67967ac19a16d6167266255da06d674c528b9ae5aaaf8209650fe58a28b1e6f7",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "A",
+      "demonstracao": "No balanço de máquina térmica cíclica com calor recebido1000 e rejeitado650, W=350 kJ eη=350/1000=0,35.",
+      "alternativas": [
+        "A: rendimento correto.",
+        "B: usa W/QL≈0,538 em vez de W/QH.",
+        "C: soma1 à fração útil.",
+        "D: ignora rejeição.",
+        "E: usa QL/QH=0,65."
+      ],
+      "pontos_a_verificar": [
+        "Comando usa recebe/rejeita sem palavra calor no trecho; contexto máquina térmica/eficiência estabelece o papel. Conferir descrição local sem inventar intercâmbio extra.",
+        "Distrator135%: comentário menciona soma de dois fluxos, mas(1000+650)/1000=165%, não135%; verificar associação concreta do erro ao valor da opção."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-16",
+      "sha256_artigo": "25c2b67fc2b4b2021dbb5240ceea18631b5423417121e4e41ea83f56677867e4",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "A",
+      "demonstracao": "Entre dois reservatórios600K e300K,ηrev=1-300/600=0,5.",
+      "alternativas": [
+        "A: Carnot correto.",
+        "B: desconsidera fonte fria finita positiva.",
+        "C: indevida igualdade de temperaturas.",
+        "D: inverte razão TH/TC.",
+        "E: usa quadrado da razão ou fator2 indevido."
+      ],
+      "pontos_a_verificar": [
+        "Interpretar temperaturas como fontes térmicas constantes do motor reversível; não confundir extremos do fluido em ciclo geral."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-17",
+      "sha256_artigo": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "D",
+      "demonstracao": "Refrigerador cíclico: COP_R=QL/Win=900/300=3;QH=QL+Win=1200 kJ.",
+      "alternativas": [
+        "A: inverte COP e ignora trabalho na rejeição.",
+        "B: confunde grandezas e razão.",
+        "C: subtrai trabalho do calor retirado.",
+        "D: duas grandezas corretas.",
+        "E: COP da bomba de calor(QH/Win=4), não do refrigerador."
+      ],
+      "pontos_a_verificar": [
+        "Valores devem ser trocas na mesma base de operação/ciclo, sem armazenamento; termo refrigerador e definição COP sugerem modelo, mas comando não diz por ciclo."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-18",
+      "sha256_artigo": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "D",
+      "demonstracao": "I verdadeira(S pode crescer no isolado com irreversibilidade);II falsa(adiabático não garante Sgen=0);III verdadeira(S de uma parte pode cair exportando entropia via calor).",
+      "alternativas": [
+        "A: torna II verdadeira indevidamente.",
+        "B: nega I possível.",
+        "C: nega III possível.",
+        "D: V,F,V.",
+        "E: três juízos incorretos."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-19",
+      "sha256_artigo": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "A",
+      "demonstracao": "ηt=queda real/queda isentrópica=400/500=0,8, para referência de mesma entrada/pressão de saída.",
+      "alternativas": [
+        "A: definição da eficiência da turbina.",
+        "B: inverte quociente, usa125%.",
+        "C: usa400/(400+500)≈44,4% sem base de eficiência.",
+        "D: fração da queda perdida100/500=20%.",
+        "E: ignora queda real menor."
+      ],
+      "pontos_a_verificar": [
+        "A expressão queda isentrópica da turbina pressupõe a referência usual da definição; verificar que justificativa mantenha mesmos estados de entrada/pressões de saída."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-20",
+      "sha256_artigo": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "A",
+      "demonstracao": "A bomba pressuriza líquido;caldeira adiciona calor;turbina expande;condensador devolve líquido à bomba.",
+      "alternativas": [
+        "A: ordem padrão Rankine simples ideal partindo da bomba.",
+        "B: liga saída da turbina diretamente à bomba sem condensação e ignora ponto de partida.",
+        "C: bomba colocada após aquecimento antes de condensação e ordem incompatível.",
+        "D: condensador após bomba e turbina antes da caldeira.",
+        "E: descreve refrigeração por compressão de vapor, não Rankine motor."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+    },
+    {
+      "id": "q-e1-21",
+      "sha256_artigo": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "E",
+      "demonstracao": "No modelo ideal de ar padrão, Otto recebe calor a volume constante e Diesel a pressão constante.",
+      "alternativas": [
+        "A: recebimento de calor não é a etapa isentrópica dos ciclos descritos.",
+        "B: troca definições de Otto e Diesel.",
+        "C: Otto ideal inclui etapas isentrópicas e isocóricas, não só isotermas.",
+        "D: fechamento do ciclo exige rejeição de calor no modelo.",
+        "E: correspondência correta."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-22",
+      "sha256_artigo": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "No modelo de compressão ideal comparável, resfriar entrada do estágio posterior reduz seu trabalho para mesma razão, sob condições mantidas no modelo.",
+      "alternativas": [
+        "A: redução de trabalho não garante eficiência de qualquer ciclo completo.",
+        "B: resfriamento não inverte função de compressão.",
+        "C: efeito correto com ressalva explícita do modelo.",
+        "D: não elimina automaticamente irreversibilidades.",
+        "E: tendência inevitável invertida."
+      ],
+      "pontos_a_verificar": [
+        "Conferir hipóteses no alvo existente: mesmo gás, condições de entrada e razão global, limites de perda de pressão/modelo; não prometer vantagem universal."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-23",
+      "sha256_artigo": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "No modelo estacionário usual de compressão de vapor, qL=h1-h4=150 kJ/kg ewin=h2-h1=50 kJ/kg;COP_R=3.",
+      "alternativas": [
+        "A: usa h1/win=8 e ignora entalpia de entrada do evaporador.",
+        "B: razão indevidamente unitária.",
+        "C: efeito frigorífico sobre trabalho.",
+        "D: inverte razão=1/3.",
+        "E: usa calor rejeitado(h2-h3)=200 sobre trabalho, COP da bomba de calor."
+      ],
+      "pontos_a_verificar": [
+        "Modelo usual depende de compressor adiabático e trocas adequadas, trabalho/energias macroscópicas negligenciados onde pertinente; já sustentado no alvo, conferir alcance. Dados didáticos de entalpia não provam viabilidade de refrigerante real."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-24",
+      "sha256_artigo": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "Flamotubular identifica gases quentes nos tubos e água externamente; aquatubular inverte a disposição.",
+      "alternativas": [
+        "A: refrigerante de evaporador pertence a outra instalação, não aos tubos aquecedores dessa caldeira.",
+        "B: óleo lubrificante não é o gás que transporta calor de combustão.",
+        "C: gases quentes da combustão.",
+        "D: ar medicinal não define fluido dos tubos aquecedores.",
+        "E: confunde flamotubular com aquatubular."
+      ],
+      "pontos_a_verificar": [
+        "Distratores A/B/D parecem pouco ligados à confusão técnica relevante. Solicitar demonstração da plausibilidade do erro representado ou substituição pertinente; não classificar plausibilidade como empiricamente validada."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-25",
+      "sha256_artigo": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "E",
+      "demonstracao": "Regime permanente é invariância temporal em posições fixas, não uniformidade espacial; dispositivos podem ter diferenças de p/T.",
+      "alternativas": [
+        "A: balanço admite trabalho com queda h.",
+        "B: bocal admite conversão h→energia cinética.",
+        "C: h=u+pv incorpora trabalho de escoamento.",
+        "D: estrangulamento usual pode reduzir p com h aproximadamente constante.",
+        "E: confunde permanente com uniforme, única incorreta."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-26",
+      "sha256_artigo": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "B",
+      "demonstracao": "h230=2800+(230-200)/(300-200)*(3000-2800)=2860 kJ/kg.",
+      "alternativas": [
+        "A: soma ΔT30 ao valor superior3000.",
+        "B: interpolação30% do intervalo de entalpia.",
+        "C: soma30°C diretamente à entalpia inferior.",
+        "D: assume ponto médio250°C.",
+        "E: 0,30*2800 sem referência/incremento correto."
+      ],
+      "pontos_a_verificar": [
+        "A tarefa pede interpolação linear de tabela didática, portanto o resultado algorítmico não certifica um fluido físico; mesma pressão declarada."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-27",
+      "sha256_artigo": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "A",
+      "demonstracao": "Razões iguais:pi/p1=p2/pi,logo pi²=1*16 e pi=4bar absoluto; raiz negativa inadmissível.",
+      "alternativas": [
+        "A: média geométrica/razões4e4.",
+        "B: média aritmética das pressões.",
+        "C: divide indevidamente raiz ou usa razão incorreta.",
+        "D: sem repartição da compressão em dois estágios.",
+        "E: metade da pressão final, não mesma razão."
+      ],
+      "pontos_a_verificar": [
+        "A igualdade de razões já determina pi; a afirmação de trabalho mínimo requer condições do modelo ideal com intercooling perfeito do alvo. Não supor mínimo universal para quaisquer capacidades/eficiências diferentes."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-28",
+      "sha256_artigo": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "E",
+      "demonstracao": "ηt=(3200-2400)/(3200-2200)=800/1000=0,8, mesma entrada e saída isentrópica na pressão final definida.",
+      "alternativas": [
+        "A: inverte queda ideal/real=1,25.",
+        "B: diferença de quedas ou manipulação sem definição.",
+        "C: desconsidera irreversibilidade indicada.",
+        "D: usa hreal/hentrada=2400/3200=0,75 em vez de quedas.",
+        "E: razão correta."
+      ],
+      "pontos_a_verificar": [
+        "Conferir justificativa concreta do distrator60%; demonstrar erro de operação correspondente se mantido como plausível."
+      ],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-29",
+      "sha256_artigo": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "C",
+      "demonstracao": "Balanço de entropia do volume incluindo dois fluidos em regime permanente sem calor externo:Sgen=ΣṁΔs=1*(-0,20)+1*0,30=0,10 kW/K.",
+      "alternativas": [
+        "A: confunde adiabaticidade com geração nula.",
+        "B: valor correto com unidade de energia/tempo em vez de entropia/tempo.",
+        "C: soma algébrica correta com unidade.",
+        "D: soma módulos0,20+0,30, ignora sinal.",
+        "E: inverte balanço/permitiria geração negativa."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "q-e1-30",
+      "sha256_artigo": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+      "chave_derivada": "B",
+      "demonstracao": "Adiabaticidade exclui transferência de calor, não produção de entropia; estrangulamento com perda de carga pode ser irreversível.",
+      "alternativas": [
+        "A: interpolação deve respeitar região de fase e modelo.",
+        "B: universalização falsa; válvula adiabática não implica isentropia.",
+        "C: razão termodinâmica de pressões usa escala absoluta.",
+        "D: segunda lei exige Sgen≥0.",
+        "E: calor é transferência por diferença de temperatura."
+      ],
+      "pontos_a_verificar": [],
+      "estado": "preliminar; não é veredito da entrega",
+      "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+    },
+    {
+      "id": "cr-e1-01",
+      "sha256_artigo": "1a461fa641228ea3bcf7631148fc40821c890b98d8ebd1a72b5b844af982806d",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "A propriedade intensiva não escala com a quantidade de matéria quando o estado é mantido; extensivas como massa/volume total escalam.",
+      "oposicao_ou_limite": "E confundiria magnitude intensiva com propriedade extensiva.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-02",
+      "sha256_artigo": "ccb20b9d4b9d5741d97a2d539cb48a3cbd1fbc7a8455fe4d58c294678ddd7a9d",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Uma propriedade de estado tem valor unívoco no estado; caminhos distintos podem mudar Q/W, não a propriedade final fixada.",
+      "oposicao_ou_limite": "C atribui dependência de trajetória a função de estado.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-03",
+      "sha256_artigo": "89ca6a4710177476a8a2f88e8031c1fff598205e86bfac18ce179ad8e87bc3e7",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Partículas de líquidos também possuem movimento térmico/energia cinética; não é critério exclusivo da fase gasosa.",
+      "oposicao_ou_limite": "C nega movimento/energia cinética no líquido.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-04",
+      "sha256_artigo": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "estudo_critico",
+      "demonstracao": "dv/v=αdT−κTdp; comparar sensibilidades requer unidades/perturbações definidas. ChaveC oficial mantida como aproximação qualitativa, sem prova universal pelo enunciado.",
+      "oposicao_ou_limite": "Não impor valor lógico pontuável ao texto sem faixa/escala. Herdar análise BAN10 por identidade.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-05",
+      "sha256_artigo": "bef4e1a13a4eba650e1c6b802957077eb38c26fa5c1660da8e09b694544cacf5",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Unidades de base são m,kg,s,A,K,mol,cd. Minuto e grauCelsius são permitidos/unidadeSI derivada, mas não unidades de base.",
+      "oposicao_ou_limite": "C confunde usos aceitos com lista de unidades de base.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-06",
+      "sha256_artigo": "69c0e38652f6be60ce26064942c5df1ef936193d8f6c3b79bd6530c28e29f31e",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "Expansão uniforme do indicador e escalas lineares levam a TX=a+bTY; a é deslocamento e b razão dos intervalos.",
+      "oposicao_ou_limite": "E desconsidera relação afim; origem comum não é exigida. Figura previamente conferida emFON01, herança a confirmar.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-07",
+      "sha256_artigo": "c6e1989e4dc002b751cc23ab3e0c032df264bab82f79972bc059fa2799f072cc",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Descrição mistura termômetro de líquido em vidro com tuboBourdon; elementoBourdon responde a diferença de pressão por deformação e é usualmente metálico.",
+      "oposicao_ou_limite": "Não concluir que Bourdon jamais possa compor sistema termométrico de fluido pressurizado; falsidade do original vem da descrição/princípio/material.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-08",
+      "sha256_artigo": "62f6c64f663b2a2901ad832b08768de5304186911da068e4ac48bbe0d2aeae3a",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "Span=limite superior−inferior;LS=50+100=150°C.",
+      "oposicao_ou_limite": "E confundiria alcance com limite superior ou aplicaria offset de escala a intervalo.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-09",
+      "sha256_artigo": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "estudo_critico",
+      "demonstracao": "Kelvin é unidade de base de temperatura termodinâmica;grauCelsius é unidadeSI de temperaturaCelsius. ChaveE é coerente com leitura restrita à grandeza/base, mas literal não especifica isso.",
+      "oposicao_ou_limite": "Não ensinar que°C está fora doSI; preservar duas leituras e exclusão da nota.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido e confrontado; fundamento/chave coerentes com derivação, ressalvado tratamento crítico já registrado. Sem novo bloqueio afirmado nesta leitura."
+    },
+    {
+      "id": "cr-e1-10",
+      "sha256_artigo": "abe9bc623cad60bc7f3c99fe1f57d2ceda566ce7fba6166afaac0df113ef66a2",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa de FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "ρ=m/V;escala simultânea de massa e volume no mesmo estado deixaρinvariante.",
+      "oposicao_ou_limite": "E confundiria densidade com massa total; não significaρconstante quando estado muda.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-11",
+      "sha256_artigo": "d5f8ea44378cd659b600ca4d2b9d24b290fd12bb603390c1117cd9c24678e878",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "B",
+      "demonstracao": "Temperatura termodinâmica usa kelvin; Celsius designa temperatura Celsius, Fahrenheit não é unidadeSI, watt é potência e joule energia.",
+      "oposicao_ou_limite": "Alternativas A/C confundem grandeza ou escala;D/E confundem dimensões.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-12",
+      "sha256_artigo": "7c0ff74e35d297c99cae98007bda36ebd4cdca22e4e1fcfa45fc3492f4683c18",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "B",
+      "demonstracao": "I descreve lei zero, não primeira;II atribui direção à lei zero em vez da segunda;III atribui conservação à segunda em vez da primeira;IV é a formulação de referência da terceira lei para cristal ordenado/perfeito no limite0K.",
+      "oposicao_ou_limite": "A seleciona II falsa;B seleciona IV;C inclui I/III falsas;D inclui I falsa;E inclui II/III falsas. Ressalvar estado cristalino perfeitamente ordenado, não presumir ausência de entropia residual em qualquer sólido.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-13",
+      "sha256_artigo": "52c02867f253205868fb2da8741a6d7b8cad977367c1d5f1ec848670ff7f90b7",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Para gás perfeito de composição fixa,u=u(T),du=cv(T)dT;pressão sozinha não fixaT/u.",
+      "oposicao_ou_limite": "Dois estados com mesma pressão e temperaturas diferentes, ajustando volume, têm energias internas distintas.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-14",
+      "sha256_artigo": "3d06154c3f10b1827e4950b76dcf570d842b054a62406fc2c61a604af4c8a0a6",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "No modelo macroscópico usual, gás se distribui pelo recipiente disponível e partículas têm movimento translacional, diferentemente de volume próprio rígido.",
+      "oposicao_ou_limite": "Livre não significa ausência de colisões/forças em toda condição;não impor liberdade absoluta.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-15",
+      "sha256_artigo": "51c2987cdbf270b2bf5c447741e91ed1390e7812ad40164aecbdfa6accd4282f",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "No modelo cinético elementar de gás ideal, colisões são elásticas; afirmar inelasticidade como característica geral não é correto.",
+      "oposicao_ou_limite": "Não estender elasticidade a toda colisão de gás real com graus internos/reação. Conferir que comentário preserve domínio.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-16",
+      "sha256_artigo": "80a328824d46255663e720f5850480ab96df22ccdba54dc04db4c0e6f205ee32",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "À mesmaT/p,psat/referência é a mesma;na aproximação usual,pv2/pv1=φ2/φ1=0,40/0,50=0,8, não1,25.",
+      "oposicao_ou_limite": "O valor1,25 é o quociente invertido;fator de intensificação deve ser tratado consistentemente.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-17",
+      "sha256_artigo": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C_condicionado_ao_modelo",
+      "demonstracao": "Na comparação de mesmo volume e temperatura, gás ideal implica quantidade de vapor proporcional a pv;φ=0,5 representa metade da quantidade de saturação nessa base.",
+      "oposicao_ou_limite": "Não é fração mássica total nem igualdade exata de W/Wsat por massa de ar seco. Conferir se base de comparação fica suficientemente disponível antes da resposta;modelo só no comentário não é universalidade.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-18",
+      "sha256_artigo": "06b0dc953b5579ef19c44e8137895aaecd4e1d6245c44a6b49956cc7445fc6e1",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Com nfixo,pV∝T;T2/T1=4. Se p e V triplicassem,p2V2/p1V1=9,contraditório.",
+      "oposicao_ou_limite": "Não se determinam individualmente p2 e V2 sem outra restrição, mas isso não impede refutar o par declarado.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-19",
+      "sha256_artigo": "3871e235af09e1bdfedc606d42ae3922b3b02eea743895cd42cce446fc9a8a75",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "p=nRT/V=3*0,082*330/85,4=0,95058548 atm, maior que0,94atm.",
+      "oposicao_ou_limite": "Resultado arredondado0,95 mantém comparação;usar dados como fornecidos, sem inventar incertezas não especificadas.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo lido; chaves coincidem nas condições registradas. CR17 permanece como ponto de suficiência/base de comparação a justificar, sem invalidade presumida."
+    },
+    {
+      "id": "cr-e1-20",
+      "sha256_artigo": "2cb07dee73b66b77f5b0bb9b2e7cb494360a2fe28a500c14e2d3fbf709aa6a52",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Na extrapolação ideal a pfixa positiva,V=nRT/p→0 quandoT→0,não infinito. A fase/modelo real falha antes desse limite.",
+      "oposicao_ou_limite": "Não ensinar volume físico nulo no zero absoluto como previsão real;original falaqualquerpressão e a direção está incorreta.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-21",
+      "sha256_artigo": "5e112105b6213109cbaf04f2883ae27052a8c9027ed9d808a0fcd627a326784b",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "p,V,T são variáveis macroscópicas usuais para gases; a frase não diz que sejam sempre independentes ou suficientes sem composição/quantidade.",
+      "oposicao_ou_limite": "E imporia negação de descrição comum; não confundir com postulado de duas propriedades.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-22",
+      "sha256_artigo": "a4cb5f18bafa792df4cdc4f632c585b8b49b63f20d7e719b36131dc44d34c944",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "Z=pv/(RT) ou pV/(nRT); valor significativamente diferente de1 indica desvio volumétrico da equação ideal.",
+      "oposicao_ou_limite": "Z≈1 não certifica todas as propriedades caloríficas nem ausência universal de interações.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-23",
+      "sha256_artigo": "5be283e9eeaad31c39004231ee391654e3f476aaede45b5b81f74163628c3405",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Alta pressão pode tornar densidade/volume excluído importantes;altaT não fornece garantia geral de idealidade quando a pressão também é alta. Regime diluído é a referência usual.",
+      "oposicao_ou_limite": "Não afirmar que toda alta pressão necessariamente exclui aproximação ideal, nem ignorar competição de escalas reduzidas.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-24",
+      "sha256_artigo": "7263887786f48bf00b02289fba4dcccfda7d655546d4c37da44e14a2d01ed438",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "estudo_critico",
+      "demonstracao": "Leitura literal compara pressão de gás com pressão de água no ponto triplo; n/V falta para o numerador. Outra leitura mesmaamostra dá373,15/273,16≈1,366, não1.",
+      "oposicao_ou_limite": "Preservar comparação literal/alternativa e chave oficialE sem usar quociente de temperaturas para demonstrar proposição diferente.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-25",
+      "sha256_artigo": "ad3f5a9cb6c50e2cacacb42b7e8d3a14a6c8cb13320c1048aea23cc599d50ed6",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "D",
+      "demonstracao": "n fixo e gásideal:T2/T1=(p2/p1)(V2/V1)=2*1,5=3; aumento percentual=(3−1)*100=200%.",
+      "oposicao_ou_limite": "A inverte/fatorvolume;B ignora mudanças;C usa sóvolume;D correta;E confunde valorfinal300% com aumento300%. Terminologia original deVC fechado não muda nfixo explícito.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-26",
+      "sha256_artigo": "4799e28ca9e9aa74d19aa5bac1560323e7d4d71e74a98e63561068afb3b802c8",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Balanço fechado usual,sem ΔEc/ΔEp:ΔU=1400−400/4,184≈1304,40kcal, muito abaixo de5500.",
+      "oposicao_ou_limite": "Unidades devem ser convertidas e calor saindo negativo. Modelo do curso/fonte da caloria separados do original; variações razoáveis de convenção calórica não alteram decisão.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-27",
+      "sha256_artigo": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C_no_modelo_convencional",
+      "demonstracao": "Para massa/composição fixas de gásideal, compressão adiabática dáΔs≥0 e∫cv/T dT=Δs−Rln(v2/v1)>0, logoT2>T1 comcv>0.",
+      "oposicao_ou_limite": "Idealidade não está nomeada nooriginal; conclusão convencional deve ser delimitada. Sem contramodelo admissível demonstrado, não presumir invalidade deC; não inventar extrações arbitrárias violando segunda lei.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-28",
+      "sha256_artigo": "3d6384bcf7120175aba311755ad0ad4f36ff896a0894161de88bc45cb8614365",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Q=200*4,2=840J;ΔU=840−350=490J;Uf=Ui+ΔU=100+490=590J.",
+      "oposicao_ou_limite": "490J é variação e não energia interna final; hipótese usual de balanço e energia macroscópica negligenciável explicitada no comentário.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-29",
+      "sha256_artigo": "f7ba62e87eedc71077825e5be83a5fd8f4dacb08ba29e658a51e99d5fe42fdac",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Wfr=pΔV=1000*(−0,1)=−100J;Q=−1000J;ΔU=Q−W=−900J, não superior a+900J.",
+      "oposicao_ou_limite": "Perda de energia interna/signs;mesmo magnitude900 não seria superior a900. Requer pressão de fronteira e modelo quaseestático declarado como resolução.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário completo confrontado. Chaves e cálculos coincidem sob condições declaradas; CR24 segue crítico e CR27 demanda delimitação convencional registrada."
+    },
+    {
+      "id": "cr-e1-30",
+      "sha256_artigo": "6abb421dab137437146a58fdaeb64d35ec7f9a6161d142f0bd29c9e91ac53f8b",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "A→B é isotérmica de gásideal de massa fixa;ΔU=0. Sob balanço usual comΔEc/ΔEp desprezados,Q=W;expansão produz trabalho e exige calor.",
+      "oposicao_ou_limite": "Não generalizar Q=W a toda transformação nem à transiçãoadiabática A→C;figuras/tabela fornecem processo.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-31",
+      "sha256_artigo": "1195cc79755f79294771716075f277cae296343160770608c81367b2c7272bc3",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Poder calorífico corresponde ao calor liberado na combustão completa sob condições definidas, não à absorção de calor pelo combustível.",
+      "oposicao_ou_limite": "C inverte sinal/processo; PCS/PCI dependem do estado da água nos produtos.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-32",
+      "sha256_artigo": "91cacfbdd2254fd2ad8c183e18f65d94da3156c40a211242599f800a554f73d9",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "Inverter a mesma reação entre os mesmos estados inverte ΔH; no modelo termoquímico de calor sob condições definidas, exotérmica libera e endotérmica absorve.",
+      "oposicao_ou_limite": "Reversibilidade química não significa automaticamente ausência de geração de entropia em realização real. Não mudar T/fases/estados ao inverter.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-33",
+      "sha256_artigo": "06e5d8361e1d50448ff26839517404fe07244c5ec74c1594371c11da6536997a",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Expansão livre no recipiente rígido/fechado/isolado:Q=0 e trabalho externo0,ΔU=0 nos equilíbrios sem variação macroscópica;gásideal implicaTfinal=Tinicial.",
+      "oposicao_ou_limite": "Volume cresce mas pressão externa no vácuo não produz trabalho; processo irreversível gera entropia.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-34",
+      "sha256_artigo": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "estudo_critico",
+      "demonstracao": "Afirmação original éΔU>0, nãoΔU=Q. Na massa fixa ideal ao mesmoV, calor exclusivamente entrando aTb>0 implicaΔS>0;ΔS=m∫cv/TdT impõeT/U maiores. IgualdadeΔU=Q exigeW+ΔEc+ΔEp=0.",
+      "oposicao_ou_limite": "Não invalidar C por trabalho arbitrário sem segunda lei; manter motivo pedagógico e condições fortes explícitas como BAN10r2.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-35",
+      "sha256_artigo": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "estudo_critico",
+      "demonstracao": "Primeira lei adiabática fechada:ΔU=−W−ΔEc−ΔEp; igualdade proposta necessita soma macroscópica nula. Elevar rigidamente sistema adiabático pode converter trabalho em potencial mantendoU.",
+      "oposicao_ou_limite": "ChaveC sob redução usual, mas não universal a qualquer sistema fechado adiabático; hipótese omitida afeta igualdade exata.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-36",
+      "sha256_artigo": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Contraexemplo admissível: expansão reversível adiabática ideal num pistão comV2>V1 temW=∫pdV>0 eT/U caem. Q=0 não éW=0.",
+      "oposicao_ou_limite": "Não é preciso presumircp/cv constantes para demonstrar existência; se usar pV^k constante, declarar capacidades constantes e modelo ideal.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-37",
+      "sha256_artigo": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "E",
+      "demonstracao": "Para mesma mudança de estado/referência ambiental e comparação de trabalho útil produzido, geração de entropia destrói exergia:Wperdido=T0Sgen≥0.",
+      "oposicao_ou_limite": "Contexto motor distingue trabalho produzido de consumo de compressor; não comparar processos com entradas/restrições diferentes sem qualificação.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-38",
+      "sha256_artigo": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C",
+      "demonstracao": "Pelo teorema deCarnot, nenhuma máquina entre duas fontes constantes excede rendimento reversível1−TL/TH. Carnot realiza esse limite.",
+      "oposicao_ou_limite": "Não é exclusividade de um único fluido ou único desenho; todas reversíveis nas mesmas fontes têm igual rendimento.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-39",
+      "sha256_artigo": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "estudo_critico",
+      "demonstracao": "350cal*4,2=1470J. Em máquina térmica fechada cíclica, apenasQH eWlíquido,η=1 exigeQL=0, contrariandoKelvin–Planck entre fontes finitas.",
+      "oposicao_ou_limite": "Motor de combustão com fronteira aberta/outrosfluxos não se reduz silenciosamente a essa máquina; manter alcance condicionado e análise autoral.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-40",
+      "sha256_artigo": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909",
+      "etapa": "derivacao_sem_nova_consulta_ao_comentario; leitura previa FON02 conhecida",
+      "chave_derivada": "C_no_modelo_simples",
+      "demonstracao": "dh=Tds+vdp;ds=0 e v>0 ⇒dh=vdp>0 para aumento de pressão ao longo de estados de equilíbrio de substância simples compressível/composição fixa.",
+      "oposicao_ou_limite": "Não tratar relação simples como universal com reação ou campos/trabalhos adicionais de estado; condição do modelo está identificada na resolução.",
+      "estado": "preliminar; sem parecer",
+      "confronto_comentario": "Comentário/roteiro completo confrontado. Prova e limites são coerentes; CR34/35/39 preservam distinções já aceitas, sem converter chave documental em universalidade."
+    },
+    {
+      "id": "cr-e1-41",
+      "sha256_artigo": "f4c503ea9b326caa519bbdd2cd70ae85279d9d03996adcfe8de703f77fd18e64",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "C_no_equilibrio_completo",
+      "demonstracao": "Condição química é μ_i^α=μ_i^β para cada componente transferível, junto do equilíbrio térmico e mecânico.",
+      "oposicao_ou_limite": "Não exigir μ de componentes diferentes iguais nem tratar uma igualdade isolada como suficiente sob T/p distintos. Comentário faz as distinções.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-42",
+      "sha256_artigo": "a43aea2e5d81accad6559fadfeefb77adf5e5653628f674856c501e795ce48ea",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "C",
+      "demonstracao": "Na base térmica usual,η=Wliq/QH=1000/3000=0,3333<0,35.",
+      "oposicao_ou_limite": "750K é dado desnecessário paraηefetiva;semTL não calcular Carnot. Papel de trabalho líquido/calor total delimitado.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-43",
+      "sha256_artigo": "1a934a1bd574e1b535a5a922cb0814a17d58079a7640b3f4d4c5c493af29c17b",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "C",
+      "demonstracao": "Congelamento libera calor;ΔSágua<0 pode ser compensado por aumento da vizinhança, com Sgen≥0 no conjunto.",
+      "oposicao_ou_limite": "Segunda lei não impõeΔS≥0 a qualquer subsistema aberto à transferência de entropia.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-44",
+      "sha256_artigo": "73982b41be7659f3a23f320d7ae6414c019750db4778f91c75674c20e0d53875",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "E",
+      "demonstracao": "Uma etapaQ=0 não garanteηciclo1. Ciclo fechado inteiramente adiabático e energia total retornando temWliq=0;ηtérmica comQH=0 não se torna100%.",
+      "oposicao_ou_limite": "Distinguir etapa de ciclo e energia transferida de rendimento;não afirmarη=0 quando definição dá0/0.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-45",
+      "sha256_artigo": "382306e2bd0381e3614cfefd799d12a1b90a06b3b78e1f2171bc5c9c67c4ba4d",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "C",
+      "demonstracao": "ηproposta=(900−90)/900=0,9;ηCarnot=1−300,15/750,15≈0,59988. Equivalentemente90/300,15−900/750,15<0 viola entropia total.",
+      "oposicao_ou_limite": "Dados incompatíveis com máquina térmica entre essas duas fontes. UsarK e mesma base de ciclo.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-46",
+      "sha256_artigo": "6db3ea19084b8ebc1743aabcf601f31f82cf56a2d5998e386e7504860cfff1b2",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "E",
+      "demonstracao": "Carnot combina duas isotermas reversíveis para troca com fontes e duas adiabáticas reversíveis entre temperaturas.",
+      "oposicao_ou_limite": "A substitui adiabáticas porisobáricas;B nãotemisotermas/adiabáticas;C éparestípicoBrayton;D substitui adiabáticas porisocóricas;E correta.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-47",
+      "sha256_artigo": "8dbbd53e0111efaef76009a38b5c1c9ed437c6f6ecc471c0939147f903ec0786",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "C_como_tendencia",
+      "demonstracao": "Seleção preliminar favorece centrífugo para maiores vazões e alternativo para menores vazões/maiores razões de pressão;há sobreposição e projeto depende de gás/ponto operacional.",
+      "oposicao_ou_limite": "Não interpretar pressão de descarga baixa como limite absoluto ou seleção garantida sem pressão de sucção. Corroboração primária deCAGI/fabricante registrada separadamente.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-48",
+      "sha256_artigo": "d39d25c7b5b9bafac081c3c1f00b129a54f07fceea77f5354bb4632dfd439fd6",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "C",
+      "demonstracao": "Exaustão de turbina mais quente pode aquecer arcomprimido antes da combustão em recuperador contracorrente;opção é fisicamente realizável.",
+      "oposicao_ou_limite": "Pode não significa sempre:quandoTexaustão≤Tcompressor não há aquecimento útil comessa fonte.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-49",
+      "sha256_artigo": "8f8f133eddab5ab062c9f3a35ff78b246fa6ccd357de225593890f15c910cf9f",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "E",
+      "demonstracao": "Na representação Brayton real convencional, perdas reduzem pressão nos equipamentos de adição/rejeição de calor;rejeição não é etapa de compressão.",
+      "oposicao_ou_limite": "Não estender regra de pressão a todos escoamentos variáveis/efeitoRayleigh;contexto é modelodeperdas doBrayton simples.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    },
+    {
+      "id": "cr-e1-50",
+      "sha256_artigo": "b0e25a75cd24dfa1ded90bae33f09ee36222fd5d305d00607be61e818d126d3f",
+      "etapa": "enunciado examinado e derivado; comentario consultado antes desta gravacao, sem alegacao de cegamento",
+      "chave_derivada": "E_no_modelo_convencional",
+      "demonstracao": "Mesma entrada e pressão de saída;atpfixoΔs>0 implica maiorhout em processo real estável. Compressor pede mais trabalho;turbinaproduz menos, elevando fração consumida sob comparação equivalente.",
+      "oposicao_ou_limite": "Não igualar entalpias/temperaturas de saída;comparação de ciclo requer condições de entrada/razões equivalentes. Brayton nomeado sustenta leitura convencional sem afirmar universalidade para todo arranjo.",
+      "confronto_comentario": "Confrontado integralmente; demonstração e ressalvas compatíveis com o comentário, limites anotados por item.",
+      "estado": "preliminar; sem parecer"
+    }
+  ]
+}

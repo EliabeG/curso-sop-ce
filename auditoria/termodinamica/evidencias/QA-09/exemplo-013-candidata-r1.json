@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-EX-013",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "dd47dc9dbc5c22f6f74a4fa67bd28b495cff775ff8ca04cec2c76c405dfefd1a",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r6.json",
+    "sha256": "a38b60799c23cf88fb0085e7c9bd82b4f22f58a4c7f89b6b418f8b3f5ae5d1aa"
+  },
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-exemplos-011-013-independente-r1.md",
+    "sha256": "b367184a6a866928efeaa0e9a25dc91599ff0624b6bd0e9b0cedd018533bb3d7"
+  },
+  "original_sha256_fragmento": "d8fc4f1313b7ac9a73c7b256aabf31ab2df4ba8026f6fd9fae89ccfd9bee1cac",
+  "candidata_sha256_fragmento": "7438f121e00f4c757b695c3de6f881d295128696b48bad8f5d387b0e6547dfea",
+  "original_sha256_arquivo": "893c5249e349e796bfcbc406b5da245b93bce0d83ec487e05ab7f681d0d0aaae",
+  "candidata_sha256_arquivo": "ca430dc39f10636fa585ab8f9ac59335f28310db28799637e5eb68c6609232ae",
+  "antes": "então W = −4 kJ. Se Q = −7 kJ,",
+  "depois": "então o trabalho de fronteira é W = −4 kJ, sem outras transferências de trabalho. Se o calor líquido é Q = −7 kJ,",
+  "limite": "Arquivos incluem nova linha; isolada, sem aplicação ou aceite."
+}

@@ -1,0 +1,140 @@
+{
+  "autoria": "Agente automatizado /root/inspect_repo, Corretor BAN-07; sem aprovação da própria proposta",
+  "data_utc": "2026-10-29T16:54:56.110217+00:00",
+  "estado": "PROPOSTA_PRELIMINAR_NAO_APLICADA",
+  "adjudicacao": "Insuficiências confirmadas em BAN-07-auditor-decisoes-cr06-cr25-cr26-cr45-r1.md; as candidatas literais ainda requerem revisão independente e liberação para aplicação.",
+  "separacao_do_original": "Um parágrafo próprio, explicitamente editorial e não integrante do texto oficial, é colocado dentro do contêiner cr-enunciado, imediatamente depois do texto/figura oficiais e antes da marcação. Essa posição torna a condição visível previamente e a inclui na digital. O original e sua estrutura são preservados; não se atribui a hipótese à banca.",
+  "fontes_e_hashes": [
+    {
+      "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "sha256": "18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-decisoes-cr06-cr25-cr26-cr45-r1.md",
+      "sha256": "5a4fbc9454a651239d71fc0e0eacd676afcb1536c551440401797efc8b5b68f9"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr01-15-r1.md",
+      "sha256": "cd99d5ce497a865bdb34d6dd58a383c9c7937599d0a14eca357deedd482d53dc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-heranca-cr16-35-r1.md",
+      "sha256": "91955b0a8dd0a10c61027de8e9715e666f78fa279c65c83d1b4d1aae8e42ca03"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-heranca-cr36-50-r1.json",
+      "sha256": "a307cdf629f4b6173d8717bc473f0c455df17f0bc96b24b41ca4df86a22c09d8"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r2.json",
+      "sha256": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r1.json",
+      "sha256": "9624fa164d6cb564f5758a3af1b3ff3866710ddb0a26cea830ebcc3e8c1243f3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-10-r2.md",
+      "sha256": "acae6a0883c30a9baf3426af2710e43553baae58e68219435b9b9d79dbb9dc36"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/mapa-identidades-r1.json",
+      "sha256": "790a34f07318a3b8ee84b29e8ffb4afec723485141216a0bce4db661f5eab6c1"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-07-r1.md",
+      "sha256": "9dfa2059b10be96615bbdc0c42d596c756910bbbd2791636ad061870dd96a893"
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13"
+    }
+  ],
+  "validacao": {
+    "verificador": "auditoria/termodinamica/evidencias/BAN-07/propostas-r2/verificar-CR06-26-45-candidatas.mjs",
+    "sha256_verificador": "5cfcbe14a24a7c1f18a046a32f616776e72ac87f820100ce3bc2ebe57ad7b6ed",
+    "metodo": "parseHtml/sha256 canônicos; remover o único parágrafo editorial restaura byte a byte o artigo r1, inclusive enunciado, figura, alternativas, chave e solução. Funções reais digitalDoBanco, normalização e FNV-1a em VM sobre adaptador DOM. Digital antiga confrontada com mapa r1; novas sem colisão com 80 CR r1 ou entre três propostas.",
+    "limites": "Não testado em navegador, placar, localStorage, histórico real ou versões históricas desconhecidas. Não é auditoria independente."
+  },
+  "progresso": "A digital muda porque o suplemento está no enunciado usado pela função do banco CR; comentários não entram. Após eventual aplicação, tentativas com a digital antiga devem ser preservadas como histórico sem preencher nem pontuar a versão nova; não migrar letras. Testar explicitamente aviso, nova tentativa, placar e recarga no banco de questões reais, em armazenamento de teste; não foi executado aqui. O produto e armazenamento real não foram alterados.",
+  "inventario_futuro": "Quando autorizado, atualizar hash da fonte e snapshot, hash e hipótese editorial do respectivo registro, com rastreio à proposta e decisão; refletir mudanças no índice e diagnóstico/evidências, preservando origem e chave oficiais. Não classificar a hipótese como parte da prova; revalidar estrutura e referências. Verificar se o nível/raciocínio efetivo mudou e justificar qualquer alteração, em vez de presumir. Não modificar inventário nesta proposta.",
+  "roteiro": [
+    "Encaminhar os fragmentos literais e demonstrações ao Auditor; receber julgamento da versão.",
+    "Aguardar conclusão de r1 e liberação do coordenador para aplicação conjunta; preservar texto, figura e chave originais.",
+    "Recalcular hashes/digitais, verificar colisões conhecidas e atualizar inventário, snapshot e evidências.",
+    "Testar em cópia de armazenamento o histórico CR, aviso, nota, nova tentativa e recarga, e reapresentar artigo efetivo e provas ao Auditor."
+  ],
+  "preservacao_produto_r1": {
+    "todos_preservados": true,
+    "arquivos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+        "original": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+        "sha256": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+        "original": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7"
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "sha256": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+        "original": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1"
+      },
+      {
+        "arquivo": "assets/curso.js",
+        "sha256": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "original": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13"
+      },
+      {
+        "arquivo": "assets/registro.js",
+        "sha256": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+        "original": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c"
+      }
+    ]
+  },
+  "pendencias": [
+    "Revisão independente das três redações e modelos.",
+    "Parecer integral r1 e liberação de aplicação conjunta pelo coordenador.",
+    "Testes funcionais, inventário e evidências do produto efetivamente aplicado."
+  ],
+  "enunciado_suplemento": "Para esta análise, considere o tanque e o fluido como um sistema fechado, sem passagem de massa, com variações de energia cinética e potencial desprezíveis e sem outras transferências de energia além das indicadas. Adote a quilocaloria termoquímica: 1 kcal = 4,184 kJ.",
+  "demonstracao": "Calor recebido positivo e trabalho produzido positivo: Q=−400/4,184≈−95,60 kcal; trabalho de agitador recebido W=−1400 kcal. ΔU=Q−W≈1304,40 kcal <5500 kcal. O valor alegado como superior é falso; chave E.",
+  "juizos": [
+    {
+      "opcao": "C",
+      "correta": false,
+      "prova": "A desigualdade ΔU>5500 kcal é incompatível com a soma −95,60+1400≈1304,40."
+    },
+    {
+      "opcao": "E",
+      "correta": true,
+      "prova": "O cálculo do balanço fechado refuta a desigualdade afirmada."
+    }
+  ],
+  "comentario": "A resolução r1 já define fechamento, sinais, energia macroscópica desprezível, trocas exclusivas e caloria termoquímica; a candidata as antecipa em parágrafo editorial e mantém comentário intacto.",
+  "limite": "No balanço aberto, energia transportada por massa não consta no texto oficial; uma entrada líquida adicional de entalpia integrada 5000 kcal pode gerar ΔU≈6304,4 kcal. O exemplo é contramodelo, não afirmação de operação da instalação.",
+  "id": "CR26",
+  "id_artigo": "cr-e1-26",
+  "chave_oficial": "E",
+  "artigo_base_sha256": "4799e28ca9e9aa74d19aa5bac1560323e7d4d71e74a98e63561068afb3b802c8",
+  "candidato_html": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-07/propostas-r2/CR26-candidata.html",
+    "sha256": "7c0ed44062bd50045076b2379e2449d24ef23da635ffe8a4d751ae37fb85303f",
+    "bytes": 4231
+  },
+  "suplemento_html": "<p class=\"cr-suplemento\"><strong>Hipótese editorial do curso para esta análise (não integra o texto oficial):</strong> Para esta análise, considere o tanque e o fluido como um sistema fechado, sem passagem de massa, com variações de energia cinética e potencial desprezíveis e sem outras transferências de energia além das indicadas. Adote a quilocaloria termoquímica: 1 kcal = 4,184 kJ.</p>",
+  "digital_r1": "988714ce",
+  "digital_candidata": "1c9fcf05",
+  "colisoes": "Sem colisão com 80 CR r1 nem entre três candidatas; históricos desconhecidos não foram examinados.",
+  "dependencias_e_reauditoria": {
+    "regra": "Uma alteração posterior pode afetar alcance ou invalidar parecer anterior: nenhum aceite é presumido automaticamente válido. Identificar as dependências e submeter a versão efetiva ao responsável pela revisão.",
+    "FON-01": "As cópias de transcrição, figura e chave oficiais permanecem byte a byte no fragmento; isso limita o risco documental mas não substitui revalidar sua vinculação e fonte na versão aplicada. O julgamento prévio de fonte não é convertido automaticamente em aceite da nova versão.",
+    "FON-02": "O suplemento é adição autoral claramente rotulada e fora dos parágrafos da prova, embora dentro do contêiner do enunciado para participar da digital. Relacionar a adição à sua origem editorial, registrar texto/posição no inventário de suplementos e reexaminar a separação do material oficial e a fundamentação da hipótese no artigo aplicado; o parecer FON-02 anterior examinou outro hash.",
+    "BAN-10": "Os três artigos propostos mantêm seus marcadores e status r1 de itens pontuáveis e não alteram a chave. Avaliar na revisão independente se a hipótese editorial justifica esse tratamento ou se o item deve virar estudo crítico, e conferir a preservação dos nove estudos críticos existentes e seu comportamento; nenhuma pontuação é declarada testada.",
+    "BAN-02_e_inventario": "Atualizar hash de fonte/snapshot e artigos, hipóteses explicitadas claramente como editoriais, rastreio, eventuais classificações afetadas e índice; confrontar se os campos origem e chave oficiais permanecem exatos. Rodar validador e reapresentar a revisão atingida, sem presumir que as classificações antigas se mantêm.",
+    "BAN-07_e_relacoes": "A mudança de julgamento e de digital requer revisão integral da solução, alternativas, escopo combinado e demais efeitos exigidos em BAN-07; identificar outras dependências por conteúdo e não estender aceite r1 automaticamente ao r2.",
+    "historico": "A mudança da digital no banco CR deve preservar a entrada anterior sem contá-la na versão revisada; verificar colisões históricas conhecidas, aviso, placar, nova marcação e recarga em cópia de teste; não se afirma teste real nesta proposta."
+  }
+}

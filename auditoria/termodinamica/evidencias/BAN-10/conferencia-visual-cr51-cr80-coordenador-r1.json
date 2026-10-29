@@ -1,0 +1,102 @@
+{
+  "data": "2026-10-27",
+  "revisor": "Coordenador automatizado /root",
+  "metodo": "Quatro PDFs obtidos diretamente da banca, renderizados por Windows.Data.Pdf. Cinco PNGs foram efetivamente abertos com view_image em resolução original, incluindo a continuação da justificativa oficial de CR80.",
+  "documentos": [
+    {
+      "nome": "cr80-prova",
+      "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/MATRIZ_039_CAESB_009_00_Com%20Justificativas_OK.PDF",
+      "pagina": 4,
+      "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr80-prova-oficial-r1.pdf",
+      "bytes": 651707,
+      "sha256": "84ae0602e23691a27529b1f96e7c58803ad82982550301724345cb0b5d690df5"
+    },
+    {
+      "nome": "cr80-gabarito",
+      "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_009_00.PDF",
+      "pagina": 1,
+      "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr80-gabarito-oficial-r1.pdf",
+      "bytes": 205552,
+      "sha256": "2cbc3da0947186e5e9e998151fb887b47852c46837a4c03a3e7a3cc547349456"
+    },
+    {
+      "nome": "cr51-prova",
+      "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+      "pagina": 4,
+      "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr51-prova-oficial-r1.pdf",
+      "bytes": 266640,
+      "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356"
+    },
+    {
+      "nome": "cr51-gabarito",
+      "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF",
+      "pagina": 1,
+      "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr51-gabarito-oficial-r1.pdf",
+      "bytes": 47264,
+      "sha256": "680734f6b47d1381d312a1792ec4818d034812d02661ed1933f477697b399a78"
+    }
+  ],
+  "renderizacoes": [
+    {
+      "paginas": 16,
+      "pagina": 4,
+      "imagem": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr80-prova-p4-r1.png",
+      "sha256": "668dea18d93cd0d48d4e0f064026c059cb1938424f365775026699efbf2678ef",
+      "nome": "cr80-prova"
+    },
+    {
+      "paginas": 1,
+      "pagina": 1,
+      "imagem": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr80-gabarito-p1-r1.png",
+      "sha256": "131a7d7937b3c7b84b88a1c15de35223c9e1b4e2364cb07ab5cb24e24e88e1c3",
+      "nome": "cr80-gabarito"
+    },
+    {
+      "paginas": 4,
+      "pagina": 4,
+      "imagem": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr51-prova-p4-r1.png",
+      "sha256": "172418c3980590a716b199e877afb4816a4bb8cfbf44cac48b2046bd95ff385a",
+      "nome": "cr51-prova"
+    },
+    {
+      "paginas": 1,
+      "pagina": 1,
+      "imagem": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr51-gabarito-p1-r1.png",
+      "sha256": "5354d888433c07f5914d0ea4f5167444319b4ec9d60effa5b32990be304b96e1",
+      "nome": "cr51-gabarito"
+    },
+    {
+      "paginas": 16,
+      "pagina": 5,
+      "imagem": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr80-justificativa-p5-r1.png",
+      "sha256": "0202fce968712cf11b97eced7f30df173423722cd8e5e297975c550799ed6ce4"
+    }
+  ],
+  "itens": [
+    {
+      "id": "cr-e1-51",
+      "codigo": "888_TBG_017_01",
+      "item_original": 98,
+      "pagina_prova_pdf": 4,
+      "pagina_gabarito_pdf": 1,
+      "gabarito": "C",
+      "conferencia": "Original afirma ausência de processo isotérmico dentro do ciclo Brayton. O comando imediato nomeia o ciclo Brayton, sem dizer explicitamente ideal; os itens 96 e 97, separadamente, qualificam ciclo real. O fundamento para manter o item precisa explicitar reconhecimento do modelo convencional nomeado, sem atribuir uma restrição ideal escrita no original. Gabarito definitivo 98 = C, cargo 17 — Engenheiro Júnior, Operações e aplicação 15/10/2023 confirmados."
+    },
+    {
+      "id": "cr-e1-80",
+      "codigo": "MATRIZ_039_CAESB_009_00",
+      "item_original": 38,
+      "pagina_prova_pdf": 4,
+      "pagina_gabarito_pdf": 1,
+      "pagina_justificativa_pdf": 5,
+      "gabarito": "D",
+      "conferencia": "O original na página 4 declara cinco faces isoladas, ambiente a 30 °C, geração volumétrica uniforme de 100 W/m³, h = 10 W/(m² K) e temperatura uniforme na face ABCD. Não explicita regime permanente nem armazenamento nulo. O desenho indica dimensões 2 m, 1 m e 2 m; ABCD é a face de 2 m por 2 m. As cinco alternativas são 10, 20, 30, 40 e 50 °C. O gabarito definitivo confirma 38 = D e aplicação 22/06/2025, cargo 9 — Engenheiro Mecânico.",
+      "justificativa_oficial": "Na página 5, a justificativa de D calcula volume de 4 m³ e geração de 400 W, iguala essa potência a h A (Ts − 30) usando A = 4 m², e conclui Ts = 40 °C. Isso documenta o balanço sem acumulação utilizado pela banca, mas a justificativa não afirma que uniformidade espacial implica permanência temporal. A análise crítica do curso deve identificar a hipótese adicional, sem apagar o resultado oficial."
+    }
+  ],
+  "limites": [
+    "Não é conferência integral dos demais itens ou justificativas presentes nesses PDFs.",
+    "Não foi examinada aqui a versão recriada da figura no caderno fornecido. A conclusão sobre dimensões refere-se ao desenho oficial.",
+    "Não encerra BAN-10 nem FON-01."
+  ]
+}

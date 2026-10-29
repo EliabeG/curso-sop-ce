@@ -1,0 +1,30 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+import {parseHtml,isInventoryArticle,decodeHtml,sha256} from '../../inventario/validar-inventario.mjs';
+const here=path.dirname(fileURLToPath(import.meta.url)),root=path.resolve(here,'../../../..');
+const read=async f=>fs.readFile(path.join(root,f)),digest=async f=>sha256(await read(f));
+const htmlFile='modulos/e1-termodinamica.html',invFile='auditoria/termodinamica/inventario/inventario-questoes.json';
+const htmlBuffer=await read(htmlFile), html=htmlBuffer.toString('utf8'), inventory=JSON.parse((await read(invFile)).toString('utf8'));
+assert.equal(sha256(htmlBuffer),'80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0');assert.equal(await digest(invFile),'486c53c5aa6c432831599c4eca170e4620d089b4eb15b480dbfb2cbfaf54c9ce');
+const doc=parseHtml(html),articles=doc.nodes.filter(isInventoryArticle);assert.equal(articles.length,197);assert.equal(inventory.itens.length,197);
+const nchild=(a,n)=>n.start>=a.start&&n.end<=a.end&&n!==a;
+const cls=(n,c)=>(n.attrs.class??'').split(/\s+/).includes(c);
+function text(raw){return decodeHtml(raw.replace(/<math\b[^>]*data-formula-original="([^"]*)"[^>]*>[\s\S]*?<\/math>/g,' $1 ').replace(/<math\b[^>]*>[\s\S]*?<\/math>/g,' [MathML: ver original] ').replace(/<[^>]+>/g,' ')).replace(/\s+/g,' ').trim()}
+const records=[];
+for(const a of articles){
+ const id=a.attrs.id,item=inventory.itens.find(x=>x.id===id);assert.ok(item,id);const article=html.slice(a.start,a.end);assert.equal(sha256(article),item.localizacao.sha256_artigo,id);
+ const nodes=doc.nodes.filter(n=>nchild(a,n)),numericContainer=nodes.find(n=>cls(n,'q-enunciado')||cls(n,'cr-enunciado'));
+ const details=nodes.filter(n=>n.tag==='details');const commands=numericContainer?html.slice(numericContainer.start,numericContainer.end):html.slice(a.openEnd,details[0]?.start??a.end);
+ const resolution=details.length?details.map(n=>html.slice(n.start,n.end)).join('\n'):'';
+ const nums=(text(commands)+' '+text(resolution)).match(/(?<![\p{L}\d])[-−+]?\d+(?:[.,]\d+)?(?:\s*[×x]\s*10[⁻⁺\d]+)?/gu)??[];
+ const refs=nodes.filter(n=>n.tag==='a'&&n.attrs.href).map(n=>n.attrs.href);
+ const unique=[...new Set(refs)],crit=a.attrs['data-cr-avaliacao']==='estudo-critico';
+ const formulas=[...new Set([...commands.matchAll(/data-formula-original="([^"]*)"/g),...resolution.matchAll(/data-formula-original="([^"]*)"/g)].map(m=>decodeHtml(m[1])))];
+ records.push({id,banco:item.banco,formato:item.formato.tipo,uso:crit?'estudo_critico_sem_nota':item.banco==='aberto'?'resposta_aberta':'pontuavel_ou_uso_do_banco_a_confirmar',chave:a.attrs['data-gabarito']??a.attrs['data-cr-gabarito']??null,origem_da_fonte:item.origem,artigo:{arquivo:htmlFile,sha256:sha256(article),localizacao:'#'+id},comando:{sha256:sha256(commands),texto:text(commands)},resolucao:{blocos_details:details.length,sha256:resolution?sha256(resolution):null,limite:'Pode conter roteiros, rubricas e mais de um bloco; conferir todas as partes, não apenas a primeira.'},dados_hipoteses:item.hipoteses,recursos:item.localizacao.recursos,referencias_artigo:unique,triagem_automatica:{indicadores_numericos:nums.slice(0,120),formulas:formulas.slice(0,80),limite:'Extração indicativa: pode incluir rótulos e omitir símbolos, dados em imagens, tabelas ou referências. Não determina aplicabilidade numérica.'},registro_a_preencher:{aplicabilidade:'PENDENTE_DE_LEITURA_INTEGRAL',dados_necessarios:'PENDENTE',solucao:'PENDENTE',resultado:'PENDENTE',tolerancia:'PENDENTE',fonte:'Localização, vínculos e origem acima são pistas; especificar fonte/dado efetivamente usado.',revisor_corretor:'A designar ao registrar a resolução',revisor_independente:'A designar',estado:'NAO_RECALCULADO'}});
+}
+const counts={inicial:records.filter(x=>x.banco==='inicial').length,real:records.filter(x=>x.banco==='real').length,avalia:records.filter(x=>x.banco==='avalia').length,aberto:records.filter(x=>x.banco==='aberto').length,criticos:records.filter(x=>x.uso==='estudo_critico_sem_nota').length};assert.deepEqual(counts,{inicial:30,real:80,avalia:80,aberto:7,criticos:9});
+const files=['AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md','auditoria/termodinamica/PROTOCOLO_AAA.md','auditoria/termodinamica/pareceres/BAN-07-r3.md',htmlFile,invFile,'assets/termodinamica/fun01-dados-v1.json','assets/termodinamica/fun02-dados-v1.json'];
+const output={id:'BAN-08',estado:'DIAGNOSTICO_E_PLANEJAMENTO_NAO_APROVADO',data:'2026-10-29',corretor:'Agente automatizado /root/inspect_repo',criterio:'Recalcular todas as 190 resoluções atuais e futuras com precisão compatível; registro por ID com solução, resultado, tolerância, fonte e revisor; amostragem não fecha o item.',escopo:'197 artigos: 190 questões e 7 problemas abertos. A inclusão dos sete estende a cobertura de cálculos atuais e não altera a redação do aceite BAN-08.',fontes:await Promise.all(files.map(async arquivo=>({arquivo,sha256:await digest(arquivo)}))),contagens:counts,metodo:'parseHtml e sha256 canônicos; cruzamento dos 197 artigos com inventário atual; extração indicativa de comandos, fórmulas e referências. Cada análise e todos os números detectados exigem conferência humana/agente por item; isso não é recálculo.',registros:records,limites:['Nenhum ID é marcado como recalculado apenas pela extração; os registros da amostra são arquivo separado e não fecham cobertura.','QA-09 engloba exemplos, oficinas, diagnósticos e fichas fora dos artigos; aqui permanecem fora e não são declarados concluídos.','Estudos críticos mantêm chave documental separada de condições físicas e não recebem aprovação de nota.','Não há piloto, leitor de tela, navegador, revisão humana ou certificação externa.']};
+await fs.writeFile(path.join(here,'inventario-numerico-197-r1.json'),JSON.stringify(output,null,2)+'\n');console.log(JSON.stringify({artigos:records.length,contagens:counts,sem_details:records.filter(r=>!r.resolucao.blocos_details).map(r=>r.id),indicadores:records.filter(r=>r.triagem_automatica.indicadores_numericos.length).length,sha:sha256(JSON.stringify(output,null,2)+'\n')},null,2));

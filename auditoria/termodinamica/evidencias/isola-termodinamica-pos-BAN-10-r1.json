@@ -1,0 +1,25 @@
+{
+  "data": "2026-10-27",
+  "revisor": "Coordenador automatizado /root",
+  "base": "PUBLICACAO.json histórico, preservado",
+  "arquivos_originais": 106,
+  "divergencias": [
+    {
+      "arquivo": "assets/curso.js",
+      "igual": false,
+      "sha256_atual": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "igual": false,
+      "sha256_atual": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "igual": false,
+      "sha256_atual": "3839c7ba2e473ee9e5b3cdff80ea64242471b83b961eb117cee5a6918c884ae1"
+    }
+  ],
+  "alcance": "Entre os 106 arquivos originais, somente o HTML do E1 e os dois scripts compartilhados diferem da base original. registro.js permanece no hash aprovado em BAN-01. curso.js contém o ajuste explícito do E1 para estudos críticos; houve regressão de leitura do E2 e testes dinâmicos registrados separadamente. Os outros 103 arquivos originais permanecem idênticos.",
+  "limite": "Não é auditoria científica de outros módulos, publicação externa ou regeneração do pacote histórico. Novos recursos E1 e instrumentos de auditoria estão nos manifestos individuais."
+}

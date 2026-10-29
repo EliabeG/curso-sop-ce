@@ -1,0 +1,138 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV56–AV60",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco opções e comentários; contas racionais e sequência lógica.",
+  "registros": [
+    {
+      "id": "av-e1-56",
+      "artigo_sha256": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-56",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-comparar-ciclos",
+          "#base-rankine",
+          "#cr-e1-56"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Usina combinada com turbina a gás e turbina a vapor alimentada por calor da exaustão.",
+      "solucao": "Brayton é modelo usual da parte a gás; Rankine é o da parte a vapor.",
+      "resultado": "E, Brayton e Rankine.",
+      "comparacao": "A Stirling/Otto não são modelos usuais descritos; B Carnot/Diesel não descreve par; C inverte; D Otto/Diesel associam motores alternativos; E correto.",
+      "tolerancia": "Sem potência, calor ou eficiência numéricos, sem tolerância.",
+      "limite": "Modelos idealizam os equipamentos; usina real inclui irreversibilidades e perdas.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-57",
+      "artigo_sha256": "64d1d119452a69f00cbae2a69c844bd047558d33064fcbd0a7ec7172e4c73f73",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-57",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-brayton",
+          "#base-brayton-real",
+          "#cr-e1-57"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "Brayton ideal com calores específicos constantes; rp^((k−1)/k)=2.",
+      "solucao": "η=1−1/2=0,5=50%.",
+      "resultado": "D, 50%.",
+      "comparacao": "A 100% omite 1/2; B −100% usa 1−2; C 0,50% não converte fração para percentagem; D 50%; E 200% confunde potência fornecida com eficiência.",
+      "tolerancia": "Valores exatos sob dados nominais e modelo; sem incerteza.",
+      "limite": "O valor 2 é uma razão elevada a expoente, não eficiência; não extrapolar a Brayton real sem condições adicionais.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-58",
+      "artigo_sha256": "6a7534ee1978a5572870ce9206be5c77578e5c6f308255f9a4f9fef7230825b3",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-58",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "#cr-e1-58"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Gás ideal isotérmico, p1=100 kPa abs, V1=0,20 m³, V2=0,050 m³.",
+      "solucao": "p2=p1V1/V2=100×0,20/0,050=400 kPa abs; incremento 300 kPa; inversão dá 25 kPa.",
+      "resultado": "A, 400 kPa.",
+      "comparacao": "A 400 correto; B 100 ignora mudança; C 25 inverte volumes; D 300 é incremento e não pressão final; E 200 supõe volume pela metade em vez de um quarto.",
+      "tolerancia": "Valores exatos para dados nominais; sem incerteza de medição.",
+      "limite": "Massa fixa e temperatura constante; pressão absoluta deve ser usada.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-59",
+      "artigo_sha256": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-59",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-valvulas-compressor",
+          "#cr-e1-59"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "Válvulas de admissão e descarga em compressor alternativo; três afirmações.",
+      "solucao": "I verdadeira: ambas fechadas na compressão antes da descarga; II verdadeira: descarga abre quando pressão supera limite; III falsa: descarga fica fechada na admissão normal.",
+      "resultado": "C, I e II.",
+      "comparacao": "A III falsa; B inclui III; C I/II corretas; D omite II; E inclui III e omite I.",
+      "tolerancia": "Duas válvulas e sequência de juízos exatas; sem pressões e tolerâncias numéricas.",
+      "limite": "Abertura efetiva depende da diferença de pressão e resistência da válvula; etapas são distintas.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-60",
+      "artigo_sha256": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-60",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-valvulas-compressor",
+          "#cr-e1-60"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Descarga pulsante de compressor alternativo e reservatório dimensionado.",
+      "solucao": "Reservatório armazena gás e suaviza flutuações na linha; descarga instantânea do cilindro permanece pulsante.",
+      "resultado": "A.",
+      "comparacao": "A representa amortecimento; B bloqueio não supre rede; C não elimina trabalho; D não impõe pressão atmosférica; E não garante vazão constante no cilindro.",
+      "tolerancia": "Sem frequência ou vazão, não há cálculo quantitativo ou tolerância.",
+      "limite": "Efetividade depende de dimensionamento e regime; suavizar não significa eliminar toda oscilação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

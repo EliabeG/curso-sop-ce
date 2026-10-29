@@ -1,0 +1,134 @@
+{
+  "id": "BAN-08",
+  "bloco": "Q11–Q15",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura de todos os dados, opções e comentários; Decimal para Q11/12/15; Q13 simbólica e Q14 conceitual.",
+  "registros": [
+    {
+      "id": "q-e1-11",
+      "artigo_sha256": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-11",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-turbina-potencia",
+          "#base-leitura-matematica"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "Vazão 2 kg/s, h1=3100 e h2=2700 kJ/kg; turbina adiabática permanente, Δec/Δep desprezíveis.",
+      "solucao": "Δh=3100−2700=400 kJ/kg; potência=2×400=800 kJ/s=800 kW.",
+      "resultado": "D=800 kW.",
+      "comparacao": "A=2×2×400=1600, vazão duplicada; B=2×(3100+2700)=11600, soma entalpias; C=800 W equivale a 0,8 kW; E=400 copia trabalho específico como potência.",
+      "tolerancia": "Valores informados dão resultado exato no modelo; kW e W não são equivalentes.",
+      "limite": "Modelo usual de turbina, trabalho de eixo e um escoamento; potência de saída positiva. Há pontuação editorial “=:” sem efeito matemático.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-12",
+      "artigo_sha256": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-12",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-gibbs",
+          "#base-bomba-integrada"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "Bomba ideal, v=0,001 m³/kg, Δp=500 kPa; magnitude de trabalho de entrada positiva.",
+      "solucao": "win≈vΔp=0,001×500=0,5 kPa·m³/kg=0,5 kJ/kg.",
+      "resultado": "C=0,5 kJ/kg consumido.",
+      "comparacao": "A=5 erra fator 10; B=0,0005 divide novamente por 1000; D=−0,5 contradiz magnitude positiva; E=500 omite v.",
+      "tolerancia": "Resultado do modelo é exato para dados decimais; ≈ delimita aproximação física, não erro numérico fornecido.",
+      "limite": "A relação vΔp requer modelo de bomba ideal incompressível previamente apresentado; não garante rendimento de bomba real.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-13",
+      "artigo_sha256": "e25596232664c876ba489c4a81be704e052bcc84411f8279d1446ddece384824",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-13",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-propriedades",
+          "#energia"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_ZERO",
+      "dados": "Julgar I calor e trabalho como propriedades, II h=u+pv, III ΔU=0 em ciclo.",
+      "solucao": "I falsa por dependência de caminho; II define entalpia específica; III resulta de U voltar ao estado inicial.",
+      "resultado": "C=II e III.",
+      "comparacao": "A omite III; B aceita I e omite II/III; D aceita I e omite II; E aceita I e omite III.",
+      "tolerancia": "ΔU=0 é igualdade de propriedade entre estados idênticos, não valor arredondado.",
+      "limite": "ΔU=0 no ciclo não implica Q ou W individuais nulos.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-14",
+      "artigo_sha256": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-14",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-segunda-lei"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Comparar dispositivos com enunciado de Clausius.",
+      "solucao": "Calor de frio para quente como único efeito é proibido; refrigerador com trabalho externo tem outro efeito e é compatível.",
+      "resultado": "E.",
+      "comparacao": "A viola Clausius; B viola Kelvin–Planck; C excede Carnot para mesmas fontes; D afirma fluxo espontâneo universal inverso.",
+      "tolerancia": "Não aplicável: comparações qualitativas sem resultados numéricos.",
+      "limite": "Trabalho consumido torna descrição compatível, sem garantir qualquer conjunto quantitativo de dados.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-15",
+      "artigo_sha256": "d86c0c96e11141353e39bc7e0de5480482b69d077f72b9da92e76d81b04ca311",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-15",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-eficiencia-cop"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "Q recebido=1000 kJ, Q rejeitado=650 kJ por ciclo.",
+      "solucao": "Wlíq=1000−650=350 kJ; η=350/1000=0,35=35%.",
+      "resultado": "A=35%.",
+      "comparacao": "B=350/650×100≈53,846% arredondado a 54%; C=(1000+650)/1000=165%; D ignora rejeição e dá 100%; E=650/1000=65% é fração rejeitada.",
+      "tolerancia": "Resultado A é exato; para B, 53,846% arredonda a 54% na unidade percentual exibida, sem aproximação à chave.",
+      "limite": "Máquina cíclica com trocas totais da base e trabalho líquido; a pontuação “= ... .” duplicada é editorial e não altera a conta.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "observacoes_editoriais": [
+    "Q11 apresenta pontuação =: e Q15 ponto adicional após fórmula; sem impacto nas contas."
+  ],
+  "limites": [
+    "Sem revisão independente ou teste de estudantes."
+  ]
+}

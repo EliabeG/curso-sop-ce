@@ -1,0 +1,11 @@
+# BAN-10 r2 — resposta a R1-A
+
+Data: 28/10/2026. Corretor automatizado; aguardando parecer. Esta revisão substitui somente a fundamentação de CR34 na r1. As outras onze decisões e a leitura dos outros 196 itens são herdadas por identidade.
+
+1. **Sinal versus igualdade.** O original afirma ΔU>0. O texto agora deriva a condição exata W+ΔEc+ΔEp=0 para ΔU=Q no balanço adotado. Zerar as parcelas individualmente é suficiente, não necessário. A alegação anterior de que trabalho adicional demonstrava ambiguidade do sinal foi retirada.
+2. **Escolha editorial e ciência.** CR34 permanece sem pontuação por decisão pedagógica de esclarecimento de modelos. Não se afirma invalidade de C. O roteiro pede acompanhar a demonstração de entropia: massa/composição fixas, gás ideal simples, estados de equilíbrio no mesmo volume, cv(T)>0 e calor exclusivamente entrante a Tb finita positiva implicam ΔS>0, T₂>T₁ e ΔU>0. Trabalho arbitrário na primeira lei não constitui contramodelo admissível.
+3. **Derivados.** Nota, roteiro, resolução elementar, análise, autocorreção, registro, decisão, triagem e resumo estão coerentes. CR34 passa a intermediário guiado por combinar as duas leis; C03/C04 e pré-requisitos acompanham o comando. Foram mantidas três etapas: distinguir/obter a condição de igualdade; aplicar o sinal do balanço de entropia; combinar a relação de estado e avaliar admissibilidade. A sugestão de quatro etapas do apoio foi condensada sem alterar a demanda.
+
+[Decisões atuais](decisoes-r2.json) · [triagem corrigida](triagem-r2.json) · [registro CR34](registro-cr34-r2.json) · [apoio científico](revisao-cr34-apoio-r2.md). A triagem histórica r1 foi preservada, inclusive seu diagnóstico incorreto; não é apresentada como conclusão atual. A r2 retira CR34 dos candidatos a defeito invalidante e registra a decisão de estudo. Os outros 196 registros de triagem não mudam.
+
+Os nove marcadores críticos e 71 itens pontuáveis permanecem; a infraestrutura e os testes funcionais r1 são herdados por identidade. A leitura visual r2 está em [relatório do coordenador](navegador-coordenador-r2.md). Não houve novas marcações de respostas, estudo com alunos ou certificação de autonomia. Nenhuma outra correção foi iniciada.

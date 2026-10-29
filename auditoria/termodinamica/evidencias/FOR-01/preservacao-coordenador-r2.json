@@ -1,0 +1,37 @@
+{
+  "data": "2026-10-28",
+  "revisor": "agente automatizado /root",
+  "base": "FOR-01 r1 congelada",
+  "formula": {
+    "fichas": 100,
+    "idsOrdemPreservados": true,
+    "alteradas": [
+      "formula-latente",
+      "formula-valvula",
+      "formula-rankine",
+      "formula-refrigeracao"
+    ],
+    "demaisIntactas": 96,
+    "elementosMathML": 191,
+    "diferencasMathML": []
+  },
+  "aula": {
+    "substituicoes": [
+      {
+        "ancora": "base-calor-latente",
+        "ocorrencias": 1
+      },
+      {
+        "ancora": "base-rankine",
+        "ocorrencias": 1
+      },
+      {
+        "ancora": "base-refrigeracao",
+        "ocorrencias": 1
+      }
+    ],
+    "reconstrucaoIntegralIgual": true,
+    "artigosAvaliativos": 197,
+    "diferencasArtigos": []
+  }
+}

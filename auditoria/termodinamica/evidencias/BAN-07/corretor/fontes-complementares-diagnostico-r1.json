@@ -1,0 +1,45 @@
+{
+  "id": "BAN-07",
+  "data": "2026-10-28",
+  "autoria": "/root/corretor_aaa",
+  "leituras": [
+    {
+      "url": "https://www.gunt.de/en/products/fluid-machinery/positive-displacement-machines/piston-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-731:pr-240",
+      "metodo": "Texto da página oficial aberto via web; descrição do princípio e do equipamento, sem nova leitura de pixels da figura.",
+      "localizador": "Legenda Principle of re-expansion e seção Description",
+      "aplicacao": [
+        "cr-e1-61",
+        "cr-e1-62"
+      ],
+      "sintese": "Gás no volume de folga reexpande antes da abertura da admissão; o fabricante usa esse mecanismo no simulador didático."
+    },
+    {
+      "url": "https://assets.danfoss.com/documents/latest/470491/AB137786416217en-000801.pdf",
+      "metodo": "Trecho indexado da fonte primária retornado pela busca; abertura integral recusada pela ferramenta por tamanho16.975.918 bytes. Não se declara leitura integral/visual.",
+      "localizador": "Application Handbook,2025.01,§1.1.1 Ammonia R717",
+      "aplicacao": [
+        "cr-e1-78"
+      ],
+      "sintese": "O trecho identifica calor latente elevado e toxicidade/inflamabilidade. Não fornece nesta consulta uma comparação calculada de COP."
+    },
+    {
+      "url": "https://www.danfoss.com/en-us/about-danfoss/our-businesses/cooling/refrigerants-and-energy-efficiency/refrigerants-for-lowering-the-gwp/ammonia-nh3/",
+      "metodo": "Trecho indexado primário da busca; tentativa de abertura retornou403.",
+      "localizador": "Energy efficiency e Safety",
+      "aplicacao": [
+        "cr-e1-78"
+      ],
+      "sintese": "Desempenho favorável em aplicações industriais não elimina toxicidade/inflamabilidade. O COP depende do ciclo e equipamentos."
+    },
+    {
+      "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node39.html",
+      "metodo": "Página oficial aberta via web, equações alternativas textuais lidas.",
+      "localizador": "§5.4, equação5.2 e integral entre estados antes da especialização a calores constantes",
+      "aplicacao": [
+        "cr-e1-27"
+      ],
+      "sintese": "Relação ds=cv(T)dT/T+Rdv/v para gás ideal; a dedução do sinal é autoral e usa também Δs≥0 no sistema adiabático."
+    }
+  ],
+  "limites": "Consultas pontuais complementares; não são nova conferência oficial de80itens nem BAN-08. Os registros individuais conservam as demonstrações próprias e fontes previamente vinculadas."
+}

@@ -1,0 +1,6997 @@
+{
+  "id": "FOR-01",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "revisor": "agente automatizado de apoio técnico independente",
+  "natureza": "Subparecer técnico da versão congelada; sem aceite geral ou liberação de próximo ID",
+  "versao": {
+    "manifesto_sha256": "b8beebf1ee084ce8387f79c104194b44932e9af656889bcddadae94343ce2f5b",
+    "formulario_sha256": "e74b3b3a80bd003914c16bd46afd9ec2bc8abba6f374042da21cbf983a5c88fd",
+    "aula_sha256": "dcb29695129041b0dea7383396d2af85f1d656d6414658f8983042bec1f598dd",
+    "inventario_sha256": "069b30f55e2c061a9beefff09252169d89d8e7134f537de6034dc76ced6c3665"
+  },
+  "criterios": [
+    {
+      "criterio": "Identidade e revisão individual das 100 fichas",
+      "resultado": "atendido tecnicamente",
+      "evidencia": "IDs, números, títulos, grupos, hashes antes/depois, condições, símbolos e vínculos confrontados individualmente com revisao-100-r1.json."
+    },
+    {
+      "criterio": "MathML e conteúdo pesquisável",
+      "resultado": "atendido no alcance estrutural",
+      "evidencia": "191 MathML idênticos à base; XML válido e aridade estrutural sem falhas. Em 100 data-busca, somente as substituições de condições/símbolos explicam a mudança; título e expressão pesquisável conservados."
+    },
+    {
+      "criterio": "Delimitação da mudança do formulário",
+      "resultado": "atendido",
+      "evidencia": "61 deltas, todos únicos e com hashes corretos, reconstroem integralmente o formulário; conjunto de IDs coincide com as 61 fichas efetivamente alteradas, 39 preservadas."
+    },
+    {
+      "criterio": "Delimitação da mudança da aula",
+      "resultado": "atendido",
+      "evidencia": "17 substituições únicas em 14 alvos reconstroem integralmente a aula. 197 artigos iguais antes/depois."
+    },
+    {
+      "criterio": "Preservação dos registros e infraestrutura",
+      "resultado": "atendido",
+      "evidencia": "197 registros idênticos; apenas fonte.sha256 e fonte.snapshot mudam no inventário. JS/CSS do formulário, compartilhados e resumo preservados, verificador reproduzido e manifesto conferido."
+    },
+    {
+      "criterio": "Vínculos da aula",
+      "resultado": "existência e alteração estrutural conferidas",
+      "evidencia": "Três complementos (03,05,33) e uma troca (85); sentido pedagógico revisado pelo Auditor principal."
+    },
+    {
+      "criterio": "Integridade da versão congelada",
+      "resultado": "atendido",
+      "evidencia": "Manifesto SHA confirmado, 45 entradas e nove cópias conferidas; resultado das 913 verificações coincide integralmente com o salvo."
+    },
+    {
+      "criterio": "Ciência, hipóteses e suficiência dos destinos",
+      "resultado": "fora desta subauditoria",
+      "evidencia": "Auditor principal faz a leitura científica das 100 fichas e dos vínculos."
+    },
+    {
+      "criterio": "Navegador",
+      "resultado": "não executado por este apoio",
+      "evidencia": "Testes do coordenador são atribuídos separadamente; nenhum navegador de usuário foi acessado."
+    }
+  ],
+  "achados_obrigatorios": [],
+  "integridade": [
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "sha256": "e74b3b3a80bd003914c16bd46afd9ec2bc8abba6f374042da21cbf983a5c88fd",
+      "bytes": 242092,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/formulas/termodinamica.html",
+      "copia_sha256": "e74b3b3a80bd003914c16bd46afd9ec2bc8abba6f374042da21cbf983a5c88fd",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "dcb29695129041b0dea7383396d2af85f1d656d6414658f8983042bec1f598dd",
+      "bytes": 1309689,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/modulos/e1-termodinamica.html",
+      "copia_sha256": "dcb29695129041b0dea7383396d2af85f1d656d6414658f8983042bec1f598dd",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "069b30f55e2c061a9beefff09252169d89d8e7134f537de6034dc76ced6c3665",
+      "bytes": 780241,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "copia_sha256": "069b30f55e2c061a9beefff09252169d89d8e7134f537de6034dc76ced6c3665",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+      "bytes": 59143,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "copia_sha256": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/formulario-e1.js",
+      "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+      "bytes": 2938,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/formulario-e1.js",
+      "copia_sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/formulario-e1.css",
+      "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+      "bytes": 6209,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/formulario-e1.css",
+      "copia_sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+      "bytes": 106783,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/curso.js",
+      "copia_sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "bytes": 27032,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/registro.js",
+      "copia_sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "bytes": 60276,
+      "confere": true,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/curso.css",
+      "copia_sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/REVISAO_100-r1.md",
+      "sha256": "4f8b128070eea73a1669a0617137ee70a27b2e2bdac83090fa855520e3bd753e",
+      "bytes": 118705,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/alteracoes-fichas-01-50-r1.json",
+      "sha256": "b82a98e9a043391684e4b430d2d0b1807376ae0aed5a99ca1f0f92b976dbccf1",
+      "bytes": 6511,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/alteracoes-fichas-51-100-r1.json",
+      "sha256": "062b14e1518d99aff60f91cee1ce5f19a7a691c1f65858fadd5e501aa654433f",
+      "bytes": 12409,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/anotacoes-corretor-01-50-r1.json",
+      "sha256": "77f44889b5ec692d5876a83ad63ea7bcfcee177f9bd3a07d2ea9c5a9a3010156",
+      "bytes": 18568,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/antes/assets/formulario-e1.css",
+      "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+      "bytes": 6209,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/antes/assets/formulario-e1.js",
+      "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+      "bytes": 2938,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/antes/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+      "bytes": 59143,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/antes/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "8703e30d4dba156b83178a4b60f29f39fbdd6a75917b38b95cab0ffc1545a3d1",
+      "bytes": 780241,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/antes/formulas/termodinamica.html",
+      "sha256": "07e4b579c437c2ae0feefc8e2260607da827e335ca6694b1d583181632851e96",
+      "bytes": 224180,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/antes/modulos/e1-termodinamica.html",
+      "sha256": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+      "bytes": 1304318,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/delta-inventario-r1.json",
+      "sha256": "a7815157e53401d01f82843c1dff00b187280fffea4e21cfd9a29ab548722387",
+      "bytes": 617,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/deltas-aula-r1.json",
+      "sha256": "2f663c69c544ddbff6969cc06989ce150fd7f883707f79cbf8fd4089840bf4bc",
+      "bytes": 11540,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/deltas-fichas-r1.json",
+      "sha256": "168509900aa67f662355e5f8d0e73bdfd560a8c5df62145aca8296ba56860a3f",
+      "bytes": 320327,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/e1-termodinamica.r1.html",
+      "sha256": "dcb29695129041b0dea7383396d2af85f1d656d6414658f8983042bec1f598dd",
+      "bytes": 1309689,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/extrato-100-antes.json",
+      "sha256": "19b0f7e94e7fb6c1f35064c8ece548fbf9cb2994b30e2537e8cdc5118754d49b",
+      "bytes": 1595961,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador.md",
+      "sha256": "ad0e4dbf32c37345555a5bd72a41a9e0f30da38f494b288eb1d16853e3039038",
+      "bytes": 3479,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/co2-2017-p2.png",
+      "sha256": "ec3d8fb6b519732d3a0b4ba3eadd23e1ce383662d91148f25f64f4aa8f4c1f90",
+      "bytes": 802017,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/co2-2022-p8.png",
+      "sha256": "3b63daf2e3ae63286321118f835b679962fa69ae1ba0aeede31f1562d30ca671",
+      "bytes": 681160,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/co2-2022-p9.png",
+      "sha256": "f2c6f86cfe20f7daee8a4dddce7885a31bc9fd3ef588a5d6c5e45954171c1265",
+      "bytes": 682095,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/manifesto-fontes-coordenador.json",
+      "sha256": "aea1373666c967de3ac232c7e38d9fda69ef5d3075d15d4eb6f9010aa25fe02f",
+      "bytes": 1858,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/nist-bell-lemmon-harvey-2017.pdf",
+      "sha256": "3bf1b3cca31a07d88bfc5b2ebbafac129f9ec53e961413182e7a682e2347c9e1",
+      "bytes": 532564,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/nist-persily-dejonge-2017.pdf",
+      "sha256": "108b4f88a644bbfbfa3faf15a71ed79f43fecf014196d67fdb0d1a3b5ecaca62",
+      "bytes": 405789,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/nist-tn2213-2022.pdf",
+      "sha256": "4bc74cb11f616d953436235e89d863f83d402c0d6407cceb927ab5364a8c051b",
+      "bytes": 2931696,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/umidade-2017-p7.png",
+      "sha256": "a5d546b4ab44d5427e6fa078e99e767a4e0a77f6c5ffceb87003462b8f359003",
+      "bytes": 731128,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/navegador-coordenador-r1.md",
+      "sha256": "c685bf36d4943714758745d103be54d027ac80d45f9447fa977986ef36bb91be",
+      "bytes": 2246,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/plano-r1.md",
+      "sha256": "b133439401d7a9dd48895a02d5f6ea6a7e23e8b6a9d589d9be49e540cd64488b",
+      "bytes": 1849,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/revisao-100-r1.json",
+      "sha256": "8a307ca2a1a883d90a0aaf724e441b68bc3e54df91c72365feae45318e5d8cf8",
+      "bytes": 199698,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/revisao-apoio-51-100-r1.json",
+      "sha256": "8ee5c3f7ba1ff6dc21dd4a1317e9e554f9fd4a2719d7daa3f4c989e374d512f5",
+      "bytes": 215242,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/revisao-apoio-51-100-r1.md",
+      "sha256": "d965d5eae55c0870468675303df5fda31e03dd66eb3eac4f5e6e99696ced14a2",
+      "bytes": 9801,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/revisao-textual-01-50-r1.json",
+      "sha256": "63f6c77c670201595b613b961edd4aa8ad3aa047d598264e40a0677ee26279f2",
+      "bytes": 37185,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/snapshot-antes.json",
+      "sha256": "44ec107a3187289b806d0e7c7673f756f809de5142d62e2bf4d7074822d3a79f",
+      "bytes": 1607,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/validacao-inventario-r1.json",
+      "sha256": "e9c0b27c4fb03f378c89955d088604acb42ad2935f1cffbbb5ff2006e57bf4e7",
+      "bytes": 333,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/verificacoes-r1.json",
+      "sha256": "846c2e7e07d6563341eab1fb8366cf09d50cca295e91050b2cce59830d32f216",
+      "bytes": 74104,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/verificar-for01-r1.mjs",
+      "sha256": "61d1ba93c95c42632588a4337b499f051d122f6a4c6b43afc8de01f67f13b853",
+      "bytes": 7174,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/isola-termodinamica-pos-FOR-01-r1.json",
+      "sha256": "343b2ae4f8cbf877434a691abc35ffcf208c06e92741e11a1d2ac1fb38f56199",
+      "bytes": 2489,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/FOR-01-r1.md",
+      "sha256": "198cfe4b385a54935255e014071f3788a9a30b007f4165d9eed07c6621d582c5",
+      "bytes": 4102,
+      "confere": true
+    }
+  ],
+  "verificador_entregue": {
+    "metodo": "Kernel Node REPL reiniciado antes das importações; script lido antes de executar verificar(); chamada concluída dentro de 30 s. Script somente lê/compara/calcula e não grava arquivos.",
+    "coincide_resultado_salvo": true,
+    "resultado": {
+      "id": "FOR-01",
+      "rodada": 1,
+      "data": "2026-10-28",
+      "ok": true,
+      "total": 913,
+      "falhas": [],
+      "checks": [
+        {
+          "nome": "100 fichas e IDs preservados",
+          "ok": true
+        },
+        {
+          "nome": "11 grupos preservados",
+          "ok": true
+        },
+        {
+          "nome": "IDs únicos no formulário",
+          "ok": true
+        },
+        {
+          "nome": "formula-variacao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-variacao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-variacao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-variacao: vínculo base-leitura-matematica",
+          "ok": true
+        },
+        {
+          "nome": "formula-taxas: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-taxas: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-taxas: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-taxas: vínculo base-leitura-matematica",
+          "ok": true
+        },
+        {
+          "nome": "formula-conversoes: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-conversoes: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-conversoes: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-conversoes: vínculo base-leitura-matematica",
+          "ok": true
+        },
+        {
+          "nome": "formula-conversoes: vínculo base-balanco-fechado",
+          "ok": true
+        },
+        {
+          "nome": "formula-temperatura: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-temperatura: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-temperatura: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-temperatura: vínculo base-absolutas",
+          "ok": true
+        },
+        {
+          "nome": "formula-pressao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-pressao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-pressao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-pressao: vínculo base-absolutas",
+          "ok": true
+        },
+        {
+          "nome": "formula-pressao: vínculo base-leitura-matematica",
+          "ok": true
+        },
+        {
+          "nome": "formula-densidade: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-densidade: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-densidade: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-densidade: vínculo base-medidas",
+          "ok": true
+        },
+        {
+          "nome": "formula-especificas: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-especificas: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-especificas: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-especificas: vínculo base-propriedades",
+          "ok": true
+        },
+        {
+          "nome": "formula-span: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-span: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-span: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-span: vínculo base-instrumentos",
+          "ok": true
+        },
+        {
+          "nome": "formula-escalas: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-escalas: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-escalas: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-escalas: vínculo base-instrumentos",
+          "ok": true
+        },
+        {
+          "nome": "formula-percentual: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-percentual: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-percentual: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-percentual: vínculo base-leitura-matematica",
+          "ok": true
+        },
+        {
+          "nome": "formula-ppm-geracao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-ppm-geracao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-ppm-geracao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-ppm-geracao: vínculo base-balanco-co2",
+          "ok": true
+        },
+        {
+          "nome": "formula-mols: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-mols: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-mols: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-mols: vínculo base-gas-modelo",
+          "ok": true
+        },
+        {
+          "nome": "formula-gas-ideal: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-gas-ideal: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-gas-ideal: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-gas-ideal: vínculo base-gas-modelo",
+          "ok": true
+        },
+        {
+          "nome": "formula-dois-estados: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-dois-estados: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-dois-estados: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-dois-estados: vínculo base-gas-modelo",
+          "ok": true
+        },
+        {
+          "nome": "formula-restricoes: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-restricoes: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-restricoes: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-restricoes: vínculo base-gas-modelo",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressibilidade: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressibilidade: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressibilidade: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressibilidade: vínculo base-gas-modelo",
+          "ok": true
+        },
+        {
+          "nome": "formula-calores-especificos: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-calores-especificos: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-calores-especificos: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-calores-especificos: vínculo base-gas-energia",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-gas: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-gas: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-gas: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-gas: vínculo base-gas-energia",
+          "ok": true
+        },
+        {
+          "nome": "formula-cinetica-molecular: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-cinetica-molecular: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-cinetica-molecular: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-cinetica-molecular: vínculo base-molecular",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-c-variavel: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-c-variavel: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-c-variavel: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-c-variavel: vínculo base-calor-variavel",
+          "ok": true
+        },
+        {
+          "nome": "formula-titulo: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-titulo: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-titulo: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-titulo: vínculo substancias",
+          "ok": true
+        },
+        {
+          "nome": "formula-mistura: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-mistura: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-mistura: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-mistura: vínculo substancias",
+          "ok": true
+        },
+        {
+          "nome": "formula-latente: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-latente: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-latente: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-latente: vínculo base-calor-latente",
+          "ok": true
+        },
+        {
+          "nome": "formula-interpolacao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-interpolacao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-interpolacao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-interpolacao: vínculo aprofundamento-aplicado",
+          "ok": true
+        },
+        {
+          "nome": "formula-umidade: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-umidade: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-umidade: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-umidade: vínculo base-umidade",
+          "ok": true
+        },
+        {
+          "nome": "formula-capacidade-termica: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-capacidade-termica: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-capacidade-termica: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-capacidade-termica: vínculo base-calorimetria",
+          "ok": true
+        },
+        {
+          "nome": "formula-equilibrio-mistura: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-equilibrio-mistura: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-equilibrio-mistura: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-equilibrio-mistura: vínculo base-mistura-termica",
+          "ok": true
+        },
+        {
+          "nome": "formula-recipiente-mistura: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-recipiente-mistura: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-recipiente-mistura: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-recipiente-mistura: vínculo base-mistura-termica",
+          "ok": true
+        },
+        {
+          "nome": "formula-fase-calorimetria: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-fase-calorimetria: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-fase-calorimetria: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-fase-calorimetria: vínculo base-fase-calorimetria",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-mecanica: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-mecanica: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-mecanica: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-energia-mecanica: vínculo base-primeira-lei",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-fechado: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-fechado: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-fechado: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-fechado: vínculo base-primeira-lei",
+          "ok": true
+        },
+        {
+          "nome": "formula-u-final: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-u-final: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-u-final: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-u-final: vínculo base-balanco-fechado",
+          "ok": true
+        },
+        {
+          "nome": "formula-adiabatico: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-adiabatico: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-adiabatico: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-adiabatico: vínculo base-primeira-lei",
+          "ok": true
+        },
+        {
+          "nome": "formula-adiabatico: vínculo base-balanco-fechado",
+          "ok": true
+        },
+        {
+          "nome": "formula-fronteira: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-fronteira: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-fronteira: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-fronteira: vínculo base-trabalho-fronteira",
+          "ok": true
+        },
+        {
+          "nome": "formula-isobarico: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-isobarico: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-isobarico: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-isobarico: vínculo base-trabalho-fronteira",
+          "ok": true
+        },
+        {
+          "nome": "formula-isotermico: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-isotermico: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-isotermico: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-isotermico: vínculo base-trabalho-fronteira",
+          "ok": true
+        },
+        {
+          "nome": "formula-calor-processos: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-calor-processos: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-calor-processos: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-calor-processos: vínculo base-balanco-fechado",
+          "ok": true
+        },
+        {
+          "nome": "formula-ciclo: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-ciclo: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-ciclo: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-ciclo: vínculo base-trabalho-fronteira",
+          "ok": true
+        },
+        {
+          "nome": "formula-expansao-livre: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-expansao-livre: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-expansao-livre: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-expansao-livre: vínculo base-expansao-livre",
+          "ok": true
+        },
+        {
+          "nome": "formula-reacao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-reacao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-reacao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-reacao: vínculo base-termoquimica",
+          "ok": true
+        },
+        {
+          "nome": "formula-entalpia: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-entalpia: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-entalpia: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-entalpia: vínculo energia",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-escoamento: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-escoamento: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-escoamento: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-escoamento: vínculo energia",
+          "ok": true
+        },
+        {
+          "nome": "formula-turbina: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-turbina: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-turbina: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-turbina: vínculo base-turbina-potencia",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressor: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressor: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressor: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressor: vínculo energia",
+          "ok": true
+        },
+        {
+          "nome": "formula-bomba: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-bomba: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-bomba: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-bomba: vínculo energia",
+          "ok": true
+        },
+        {
+          "nome": "formula-valvula: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-valvula: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-valvula: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-valvula: vínculo energia",
+          "ok": true
+        },
+        {
+          "nome": "formula-trocador-balanco: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-trocador-balanco: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-trocador-balanco: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-trocador-balanco: vínculo energia",
+          "ok": true
+        },
+        {
+          "nome": "formula-acumulacao-massa: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-acumulacao-massa: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-acumulacao-massa: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-acumulacao-massa: vínculo base-balanco-transiente",
+          "ok": true
+        },
+        {
+          "nome": "formula-acumulacao-energia: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-acumulacao-energia: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-acumulacao-energia: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-acumulacao-energia: vínculo base-balanco-transiente",
+          "ok": true
+        },
+        {
+          "nome": "formula-intervalo-energia: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-intervalo-energia: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-intervalo-energia: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-intervalo-energia: vínculo base-balanco-transiente",
+          "ok": true
+        },
+        {
+          "nome": "formula-enchimento-tanque: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-enchimento-tanque: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-enchimento-tanque: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-enchimento-tanque: vínculo base-balanco-transiente",
+          "ok": true
+        },
+        {
+          "nome": "formula-co2-acumulacao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-co2-acumulacao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-co2-acumulacao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-co2-acumulacao: vínculo base-balanco-co2",
+          "ok": true
+        },
+        {
+          "nome": "formula-co2-vazao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-co2-vazao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-co2-vazao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-co2-vazao: vínculo base-balanco-co2",
+          "ok": true
+        },
+        {
+          "nome": "formula-renovacoes: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-renovacoes: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-renovacoes: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-renovacoes: vínculo base-balanco-co2",
+          "ok": true
+        },
+        {
+          "nome": "formula-bomba-potencia: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-bomba-potencia: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-bomba-potencia: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-bomba-potencia: vínculo base-bomba-integrada",
+          "ok": true
+        },
+        {
+          "nome": "formula-misturador-correntes: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-misturador-correntes: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-misturador-correntes: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-misturador-correntes: vínculo base-misturador-correntes",
+          "ok": true
+        },
+        {
+          "nome": "formula-bocal-difusor: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-bocal-difusor: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-bocal-difusor: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-bocal-difusor: vínculo base-bocal-difusor",
+          "ok": true
+        },
+        {
+          "nome": "formula-eficiencia: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-eficiencia: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-eficiencia: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-eficiencia: vínculo base-eficiencia-cop",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-refrigerador: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-refrigerador: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-refrigerador: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-refrigerador: vínculo base-eficiencia-cop",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-bomba-calor: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-bomba-calor: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-bomba-calor: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-bomba-calor: vínculo base-eficiencia-cop",
+          "ok": true
+        },
+        {
+          "nome": "formula-carnot: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-carnot: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-carnot: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-carnot: vínculo base-limite-carnot",
+          "ok": true
+        },
+        {
+          "nome": "formula-limites-carnot: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-limites-carnot: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-limites-carnot: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-limites-carnot: vínculo base-carnot-prova",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-carnot: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-carnot: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-carnot: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-cop-carnot: vínculo base-limite-carnot",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-entropia: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-entropia: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-entropia: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-balanco-entropia: vínculo base-entropia",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-isolado: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-isolado: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-isolado: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-isolado: vínculo base-entropia",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-total: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-total: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-total: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-total: vínculo base-entropia",
+          "ok": true
+        },
+        {
+          "nome": "formula-calor-reversivel: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-calor-reversivel: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-calor-reversivel: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-calor-reversivel: vínculo substancias",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-tp: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-tp: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-tp: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-tp: vínculo base-entropia-gas",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-tv: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-tv: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-tv: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-tv: vínculo base-entropia-gas",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentro-gas: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentro-gas: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentro-gas: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentro-gas: vínculo base-entropia-gas",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentropica-turbina: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentropica-turbina: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentropica-turbina: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentropica-turbina: vínculo base-isentropica",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentropica-compressor: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentropica-compressor: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentropica-compressor: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-isentropica-compressor: vínculo base-isentropica",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-vc: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-vc: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-vc: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-vc: vínculo aprofundamento-aplicado",
+          "ok": true
+        },
+        {
+          "nome": "formula-exergia: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-exergia: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-exergia: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-exergia: vínculo base-exergia",
+          "ok": true
+        },
+        {
+          "nome": "formula-identidades: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-identidades: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-identidades: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-identidades: vínculo base-gibbs",
+          "ok": true
+        },
+        {
+          "nome": "formula-entalpia-isentro: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-entalpia-isentro: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-entalpia-isentro: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-entalpia-isentro: vínculo base-gibbs",
+          "ok": true
+        },
+        {
+          "nome": "formula-gibbs-fases: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-gibbs-fases: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-gibbs-fases: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-gibbs-fases: vínculo base-equilibrio-fases",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-c-variavel: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-c-variavel: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-c-variavel: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-entropia-c-variavel: vínculo base-calor-variavel",
+          "ok": true
+        },
+        {
+          "nome": "formula-rankine: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-rankine: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-rankine: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-rankine: vínculo base-rankine",
+          "ok": true
+        },
+        {
+          "nome": "formula-brayton-liquido: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-brayton-liquido: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-brayton-liquido: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-brayton-liquido: vínculo base-brayton-real",
+          "ok": true
+        },
+        {
+          "nome": "formula-brayton-ideal: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-brayton-ideal: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-brayton-ideal: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-brayton-ideal: vínculo base-brayton",
+          "ok": true
+        },
+        {
+          "nome": "formula-otto: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-otto: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-otto: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-otto: vínculo ciclos",
+          "ok": true
+        },
+        {
+          "nome": "formula-diesel: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-diesel: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-diesel: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-diesel: vínculo ciclos",
+          "ok": true
+        },
+        {
+          "nome": "formula-refrigeracao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-refrigeracao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-refrigeracao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-refrigeracao: vínculo base-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "formula-condensador: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-condensador: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-condensador: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-condensador: vínculo base-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "formula-extracao-aquecedor: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-extracao-aquecedor: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-extracao-aquecedor: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-extracao-aquecedor: vínculo base-ciclos-variantes",
+          "ok": true
+        },
+        {
+          "nome": "formula-volumetrica: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-volumetrica: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-volumetrica: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-volumetrica: vínculo base-eficiencia-volumetrica",
+          "ok": true
+        },
+        {
+          "nome": "formula-intermediaria: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-intermediaria: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-intermediaria: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-intermediaria: vínculo aprofundamento-aplicado",
+          "ok": true
+        },
+        {
+          "nome": "formula-politropico: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-politropico: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-politropico: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-politropico: vínculo aplicacoes",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressao-isotermica: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressao-isotermica: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressao-isotermica: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-compressao-isotermica: vínculo aplicacoes",
+          "ok": true
+        },
+        {
+          "nome": "formula-fourier: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-fourier: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-fourier: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-fourier: vínculo base-transferencia",
+          "ok": true
+        },
+        {
+          "nome": "formula-gradiente: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-gradiente: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-gradiente: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-gradiente: vínculo base-transferencia",
+          "ok": true
+        },
+        {
+          "nome": "formula-newton: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-newton: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-newton: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-newton: vínculo base-transferencia",
+          "ok": true
+        },
+        {
+          "nome": "formula-ua: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-ua: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-ua: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-ua: vínculo base-trocadores",
+          "ok": true
+        },
+        {
+          "nome": "formula-resistencias: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-resistencias: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-resistencias: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-resistencias: vínculo base-trocadores",
+          "ok": true
+        },
+        {
+          "nome": "formula-radiacao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-radiacao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-radiacao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-radiacao: vínculo base-radiacao-vacuo",
+          "ok": true
+        },
+        {
+          "nome": "formula-razao-radiativa: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-razao-radiativa: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-razao-radiativa: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-razao-radiativa: vínculo base-radiacao-vacuo",
+          "ok": true
+        },
+        {
+          "nome": "formula-dilatacao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-dilatacao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-dilatacao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-dilatacao: vínculo base-dilatacao",
+          "ok": true
+        },
+        {
+          "nome": "formula-geracao: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-geracao: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-geracao: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-geracao: vínculo base-geracao-face",
+          "ok": true
+        },
+        {
+          "nome": "formula-geometria: MathML preservado",
+          "ok": true
+        },
+        {
+          "nome": "formula-geometria: busca condicao",
+          "ok": true
+        },
+        {
+          "nome": "formula-geometria: busca simbolos",
+          "ok": true
+        },
+        {
+          "nome": "formula-geometria: vínculo base-geracao-face",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-medidas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-variacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-variacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-variacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-variacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-taxas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-taxas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-taxas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-taxas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-taxas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-temperatura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-temperatura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-temperatura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-temperatura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-pressao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-pressao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-pressao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-pressao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-densidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-densidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-densidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-densidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-especificas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-especificas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-especificas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-especificas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-especificas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-span",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-span",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-span",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-span",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-escalas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-escalas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-escalas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-escalas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-escalas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-percentual",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-percentual",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-percentual",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-percentual",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-ppm-geracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-ppm-geracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-ppm-geracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-ppm-geracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-gases",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-mols",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-mols",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-mols",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-mols",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-mols",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-mols",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-mols",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-gas-ideal",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-gas-ideal",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-gas-ideal",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-gas-ideal",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-dois-estados",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-dois-estados",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-dois-estados",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-dois-estados",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-restricoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-restricoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-restricoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-restricoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-restricoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-compressibilidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-compressibilidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-compressibilidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-compressibilidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-calores-especificos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-calores-especificos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-calores-especificos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-calores-especificos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-energia-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-energia-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-energia-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-energia-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-energia-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-cinetica-molecular",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-cinetica-molecular",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-cinetica-molecular",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-energia-c-variavel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-energia-c-variavel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-energia-c-variavel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-energia-c-variavel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-fases",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-titulo",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-titulo",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-titulo",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-titulo",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-latente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-latente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-latente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-latente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-latente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-interpolacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-interpolacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-interpolacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-umidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-umidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-umidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-umidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-umidade",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-calorimetria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-capacidade-termica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-capacidade-termica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-capacidade-termica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-capacidade-termica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-equilibrio-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-equilibrio-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-equilibrio-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-equilibrio-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-recipiente-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-recipiente-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-recipiente-mistura",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-fase-calorimetria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-fase-calorimetria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-fase-calorimetria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-primeira-lei",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-energia-mecanica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-energia-mecanica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-energia-mecanica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-energia-mecanica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-balanco-fechado",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-balanco-fechado",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-balanco-fechado",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-u-final",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-u-final",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-u-final",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-u-final",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-adiabatico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-adiabatico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-adiabatico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-adiabatico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-fronteira",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-fronteira",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-fronteira",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-isobarico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-isobarico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-isobarico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-isotermico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-isotermico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-isotermico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-isotermico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-calor-processos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-calor-processos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-calor-processos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-calor-processos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-ciclo",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-ciclo",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-ciclo",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-ciclo",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-expansao-livre",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-expansao-livre",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-expansao-livre",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-expansao-livre",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-expansao-livre",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-reacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-reacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-reacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-reacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-escoamento",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-entalpia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entalpia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-entalpia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-balanco-escoamento",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-balanco-escoamento",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-balanco-escoamento",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-turbina",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-turbina",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-turbina",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-turbina",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-compressor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-compressor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-compressor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-compressor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-bomba",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-bomba",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-bomba",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-bomba",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-valvula",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-valvula",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-valvula",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-trocador-balanco",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-trocador-balanco",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-trocador-balanco",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-acumulacao-massa",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-acumulacao-massa",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-acumulacao-massa",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-acumulacao-energia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-acumulacao-energia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-acumulacao-energia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-intervalo-energia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-intervalo-energia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-intervalo-energia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-enchimento-tanque",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-enchimento-tanque",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-enchimento-tanque",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-enchimento-tanque",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-co2-acumulacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-co2-acumulacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-co2-acumulacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-co2-vazao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-co2-vazao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-co2-vazao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-co2-vazao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-renovacoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-renovacoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-renovacoes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-bomba-potencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-bomba-potencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-bomba-potencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-bomba-potencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-misturador-correntes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-misturador-correntes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-misturador-correntes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-misturador-correntes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-misturador-correntes",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-bocal-difusor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-bocal-difusor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-bocal-difusor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-bocal-difusor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-segunda-lei",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-eficiencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-eficiencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-eficiencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-eficiencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-cop-refrigerador",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-cop-refrigerador",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-cop-refrigerador",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-cop-bomba-calor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-cop-bomba-calor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-cop-bomba-calor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-cop-bomba-calor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-limites-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-limites-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-limites-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-limites-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-cop-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-cop-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-cop-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-cop-carnot",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-entropia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-balanco-entropia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-balanco-entropia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-balanco-entropia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-balanco-entropia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-entropia-isolado",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entropia-isolado",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-entropia-isolado",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-entropia-total",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entropia-total",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entropia-total",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-entropia-total",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-calor-reversivel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-calor-reversivel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-calor-reversivel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-calor-reversivel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-entropia-tp",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entropia-tp",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-entropia-tp",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-entropia-tv",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entropia-tv",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-entropia-tv",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-isentro-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-isentro-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-isentro-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-isentro-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-isentro-gas",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-isentropica-turbina",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-isentropica-turbina",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-isentropica-turbina",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-isentropica-compressor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-isentropica-compressor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-isentropica-compressor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-entropia-vc",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entropia-vc",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-entropia-vc",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-exergia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-exergia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-exergia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-exergia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-identidades",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-identidades",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-identidades",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-identidades",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-entalpia-isentro",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entalpia-isentro",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entalpia-isentro",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-entalpia-isentro",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-gibbs-fases",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-gibbs-fases",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-gibbs-fases",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-gibbs-fases",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-gibbs-fases",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-entropia-c-variavel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-entropia-c-variavel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-entropia-c-variavel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-ciclos",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-rankine",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-rankine",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-rankine",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-rankine",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-rankine",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-brayton-liquido",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-brayton-liquido",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-brayton-liquido",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-brayton-liquido",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-brayton-ideal",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-brayton-ideal",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-brayton-ideal",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-brayton-ideal",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-otto",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-otto",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-otto",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-otto",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-diesel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-diesel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-diesel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-diesel",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-condensador",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-condensador",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-condensador",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-extracao-aquecedor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-extracao-aquecedor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-extracao-aquecedor",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-compressores",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-volumetrica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-volumetrica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-volumetrica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-intermediaria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-intermediaria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-intermediaria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-intermediaria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-politropico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-politropico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-politropico",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-compressao-isotermica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-compressao-isotermica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-compressao-isotermica",
+          "ok": true
+        },
+        {
+          "nome": "ARIA h-transferencia",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-fourier",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-fourier",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-fourier",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-fourier",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-gradiente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-gradiente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-gradiente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-gradiente",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-newton",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-newton",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-newton",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-ua",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-ua",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-ua",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-ua",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-resistencias",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-resistencias",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-resistencias",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-radiacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-radiacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-radiacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-radiacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-razao-radiativa",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-razao-radiativa",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-razao-radiativa",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-dilatacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-dilatacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-dilatacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-dilatacao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-geracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-geracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-geracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-geracao",
+          "ok": true
+        },
+        {
+          "nome": "ARIA titulo-geometria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-geometria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA simbolos-geometria",
+          "ok": true
+        },
+        {
+          "nome": "ARIA expressao-geometria",
+          "ok": true
+        },
+        {
+          "nome": "197 artigos byte a byte",
+          "ok": true
+        },
+        {
+          "nome": "fun01-estado-equilibrio integral preservada",
+          "ok": true
+        },
+        {
+          "nome": "fun02-diferenciais-caminhos integral preservada",
+          "ok": true
+        },
+        {
+          "nome": "197 registros intactos",
+          "ok": true
+        },
+        {
+          "nome": "Inventário: somente hash e snapshot globais",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-calor-latente",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-umidade",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-umidade",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-primeira-lei",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-expansao-livre",
+          "ok": true
+        },
+        {
+          "nome": "Delta único energia",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-balanco-transiente",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-entropia",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-rankine",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "Delta único aprofundamento-aplicado",
+          "ok": true
+        },
+        {
+          "nome": "Delta único aplicacoes",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-trocadores",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-trocadores",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-trocadores",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-dilatacao",
+          "ok": true
+        },
+        {
+          "nome": "Delta único base-geracao-face",
+          "ok": true
+        },
+        {
+          "nome": "Aula somente deltas declarados",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-conversoes",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-pressao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-especificas",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-escalas",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-ppm-geracao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-gas-ideal",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-dois-estados",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-restricoes",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-compressibilidade",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-energia-gas",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-titulo",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-mistura",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-latente",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-interpolacao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-umidade",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-equilibrio-mistura",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-recipiente-mistura",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-fase-calorimetria",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-energia-mecanica",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-adiabatico",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-fronteira",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-isobarico",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-isotermico",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-calor-processos",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-expansao-livre",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-reacao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-balanco-escoamento",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-acumulacao-massa",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-acumulacao-energia",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-intervalo-energia",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-enchimento-tanque",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-co2-acumulacao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-co2-vazao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-bomba-potencia",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-misturador-correntes",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-limites-carnot",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-cop-carnot",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-balanco-entropia",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-entropia-tp",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-entropia-tv",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-isentro-gas",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-isentropica-turbina",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-isentropica-compressor",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-entropia-vc",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-entalpia-isentro",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-gibbs-fases",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-entropia-c-variavel",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-rankine",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-diesel",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-condensador",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-intermediaria",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-politropico",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-fourier",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-gradiente",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-newton",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-ua",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-resistencias",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-radiacao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-dilatacao",
+          "ok": true
+        },
+        {
+          "nome": "Hash/delta formula-geracao",
+          "ok": true
+        },
+        {
+          "nome": "Formulário somente 61 deltas declarados",
+          "ok": true
+        },
+        {
+          "nome": "Preservado assets/formulario-e1.js",
+          "ok": true
+        },
+        {
+          "nome": "Preservado assets/formulario-e1.css",
+          "ok": true
+        },
+        {
+          "nome": "Preservado auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+          "ok": true
+        },
+        {
+          "nome": "Compartilhado intacto assets/curso.js",
+          "ok": true
+        },
+        {
+          "nome": "Compartilhado intacto assets/registro.js",
+          "ok": true
+        },
+        {
+          "nome": "Compartilhado intacto assets/curso.css",
+          "ok": true
+        },
+        {
+          "nome": "30: unidades mecânicas",
+          "ok": true
+        },
+        {
+          "nome": "39: energia potencial impede inferência só pela primeira lei",
+          "ok": true,
+          "detalhe": "Q=W=ΔEc=0, ΔEp=10 J dá ΔU=-10 J; é identidade de balanço, não construção de processo físico."
+        },
+        {
+          "nome": "51: entalpia constante versus média",
+          "ok": true,
+          "detalhe": "Se h de entrada varia, a integral produz média ponderada; não o primeiro valor."
+        },
+        {
+          "nome": "64: duas temperaturas não se cancelam com calor líquido",
+          "ok": true
+        },
+        {
+          "nome": "79: quatro balanços e fechamento do ciclo",
+          "ok": true
+        },
+        {
+          "nome": "88: igualdade das razões e mínimo",
+          "ok": true
+        },
+        {
+          "nome": "89: integral vdp n=0.8",
+          "ok": true
+        },
+        {
+          "nome": "89: integral vdp n=1.3",
+          "ok": true
+        },
+        {
+          "nome": "92: gradiente negativo e calor positivo",
+          "ok": true
+        },
+        {
+          "nome": "95: resistência cilíndrica não vira plana por conversão de área",
+          "ok": true
+        },
+        {
+          "nome": "96: calor radiativo positivo ao sair",
+          "ok": true
+        },
+        {
+          "nome": "98: pequena variação relativa no exemplo",
+          "ok": true
+        },
+        {
+          "nome": "99: geração por volume e convecção por face",
+          "ok": true
+        },
+        {
+          "nome": "Validador canônico",
+          "ok": true
+        }
+      ],
+      "inventario": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 197,
+        "artigos_encontrados": 197,
+        "recursos_verificados": 29,
+        "links_locais_verificados": 1166,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      },
+      "limite": "Verificação estrutural, preservação e contas autorais seletivas dos pontos alterados. A revisão científica dos 100 é registrada separadamente; não há teste com estudantes nem prova automática de todos os modelos."
+    }
+  },
+  "confronto_individual_fichas": [
+    {
+      "id": "formula-variacao",
+      "numero": 1,
+      "grupo": "medidas",
+      "sha256_antes": "6e0f2abce8b2160327ec05d6c78ae3b81e27ae5f396f6aea36b18126f6941bb0",
+      "sha256_depois": "6e0f2abce8b2160327ec05d6c78ae3b81e27ae5f396f6aea36b18126f6941bb0",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-leitura-matematica"
+      ]
+    },
+    {
+      "id": "formula-taxas",
+      "numero": 2,
+      "grupo": "medidas",
+      "sha256_antes": "fefa6b91d7cb5abdc509988f1abea2b4c7c603bd20803e398bd884209aa88af5",
+      "sha256_depois": "fefa6b91d7cb5abdc509988f1abea2b4c7c603bd20803e398bd884209aa88af5",
+      "alterada": false,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-leitura-matematica"
+      ]
+    },
+    {
+      "id": "formula-conversoes",
+      "numero": 3,
+      "grupo": "medidas",
+      "sha256_antes": "a0ff507975359bb831861b305e819fd6c9ea77345ee13c432f687c3fed96f94f",
+      "sha256_depois": "43d875446e0bcd01e95dbf2e90def6e13efb6ce62355a57e0b495f142fc3b738",
+      "alterada": true,
+      "math_count": 9,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-leitura-matematica",
+        "../modulos/e1-termodinamica.html#base-balanco-fechado"
+      ]
+    },
+    {
+      "id": "formula-temperatura",
+      "numero": 4,
+      "grupo": "medidas",
+      "sha256_antes": "67887eafe354cad2529070dd9d4268d74c458c42912bc4805919c446f8e0ad0c",
+      "sha256_depois": "67887eafe354cad2529070dd9d4268d74c458c42912bc4805919c446f8e0ad0c",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-absolutas"
+      ]
+    },
+    {
+      "id": "formula-pressao",
+      "numero": 5,
+      "grupo": "medidas",
+      "sha256_antes": "924ed98c559ad886ab692bc019374728d4d733dbd1e85810c1c4498c97c9ed4d",
+      "sha256_depois": "8254d49fdad6ec483188db2f7125a7dedf1d435ac470c60a23652a0cefcb172c",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-absolutas",
+        "../modulos/e1-termodinamica.html#base-leitura-matematica"
+      ]
+    },
+    {
+      "id": "formula-densidade",
+      "numero": 6,
+      "grupo": "medidas",
+      "sha256_antes": "6ab8bf1e45cf2a677d394663e7a34c966fe088e9f8078da5a30c19af7722170d",
+      "sha256_depois": "6ab8bf1e45cf2a677d394663e7a34c966fe088e9f8078da5a30c19af7722170d",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-medidas"
+      ]
+    },
+    {
+      "id": "formula-especificas",
+      "numero": 7,
+      "grupo": "medidas",
+      "sha256_antes": "751b114d09333defb7d05546d7a69b9db6d55c5932ac7858424d399ce48b5882",
+      "sha256_depois": "a3df5c592695c8c8cfb0f6f4e98e42c9e92515aaa52b03c611ed65b1b8e8c363",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-propriedades"
+      ]
+    },
+    {
+      "id": "formula-span",
+      "numero": 8,
+      "grupo": "medidas",
+      "sha256_antes": "c96d68f32b732981d3fccb936c25cbc4ced9561400e7478e537d6eea42d26f67",
+      "sha256_depois": "c96d68f32b732981d3fccb936c25cbc4ced9561400e7478e537d6eea42d26f67",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-instrumentos"
+      ]
+    },
+    {
+      "id": "formula-escalas",
+      "numero": 9,
+      "grupo": "medidas",
+      "sha256_antes": "d5d51285bf0749bf47da67982b8e7dad4e3896d0728ce284eeb674e6c2bae0c8",
+      "sha256_depois": "5b8196140d9b25b01319c20f39a2f87a507b0c85be161c0f1351dd3153955355",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-instrumentos"
+      ]
+    },
+    {
+      "id": "formula-percentual",
+      "numero": 10,
+      "grupo": "medidas",
+      "sha256_antes": "b979cb5cbe386121bbf21dd201ac4f0e673d9cdb5128ec2f9605cde1bd0296a9",
+      "sha256_depois": "b979cb5cbe386121bbf21dd201ac4f0e673d9cdb5128ec2f9605cde1bd0296a9",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-leitura-matematica"
+      ]
+    },
+    {
+      "id": "formula-ppm-geracao",
+      "numero": 11,
+      "grupo": "medidas",
+      "sha256_antes": "4cca39bfb6d4214b9f7254bcd6961c850d2a2b92b256f10e494cd39754baa44f",
+      "sha256_depois": "1e37a0d9af3d54540593f9c3ca54be84c1777c1c5ca3a4f1def78e1128d5c3c2",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-co2"
+      ]
+    },
+    {
+      "id": "formula-mols",
+      "numero": 12,
+      "grupo": "gases",
+      "sha256_antes": "5ced9dcf1d3c229ce86bfd3e90ca808af2a71ef2e43f592eda5cf93b87715992",
+      "sha256_depois": "5ced9dcf1d3c229ce86bfd3e90ca808af2a71ef2e43f592eda5cf93b87715992",
+      "alterada": false,
+      "math_count": 5,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gas-modelo"
+      ]
+    },
+    {
+      "id": "formula-gas-ideal",
+      "numero": 13,
+      "grupo": "gases",
+      "sha256_antes": "6ec9be39fdaa4be09e13d249e4adfc10b34e0e89417af8b3a03cd267e66560bf",
+      "sha256_depois": "cf046561b9a75319f3b0386f64cd3d4dc0e314ad4aa345b1485fbed778bd3fa2",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gas-modelo"
+      ]
+    },
+    {
+      "id": "formula-dois-estados",
+      "numero": 14,
+      "grupo": "gases",
+      "sha256_antes": "46554f70c2b0b3dd1a869914fa60c7c1f1382ed3667984a3f416485e11cafb22",
+      "sha256_depois": "b1b0f9e9411109938d921eaad247735a2ce7c4223d448564ad0699bd242b5fd2",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gas-modelo"
+      ]
+    },
+    {
+      "id": "formula-restricoes",
+      "numero": 15,
+      "grupo": "gases",
+      "sha256_antes": "2ab45d268801ad19599e0b9e38090937e36afd4d8387edf5ce70b2d8839242f4",
+      "sha256_depois": "d8acfe11cbd87b81fc594f5cd991f63a8639f0e9bcfda1dedb242f953c69ea65",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gas-modelo"
+      ]
+    },
+    {
+      "id": "formula-compressibilidade",
+      "numero": 16,
+      "grupo": "gases",
+      "sha256_antes": "2507f47de74f111e5132ef0b3ff732a0fad52f97488e86c72266cba48b0a5a4d",
+      "sha256_depois": "6be199146531e2223bf363040ae081032f0e9c41536c1ec02299f708f1b0d4f9",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gas-modelo"
+      ]
+    },
+    {
+      "id": "formula-calores-especificos",
+      "numero": 17,
+      "grupo": "gases",
+      "sha256_antes": "8e613f5d782057a765ce3c412777b6e1d7ec342039c9e27df5aaf17e6279a217",
+      "sha256_depois": "8e613f5d782057a765ce3c412777b6e1d7ec342039c9e27df5aaf17e6279a217",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gas-energia"
+      ]
+    },
+    {
+      "id": "formula-energia-gas",
+      "numero": 18,
+      "grupo": "gases",
+      "sha256_antes": "c8a662aae469cb0904670526b89a30e1bafe3caaa40ded39ecdeaaf7b50c7d28",
+      "sha256_depois": "d8d3db2305c0e9ce8c007d43c12dd13c0c74500d25c25fc40b3048b7594ae2fa",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gas-energia"
+      ]
+    },
+    {
+      "id": "formula-cinetica-molecular",
+      "numero": 19,
+      "grupo": "gases",
+      "sha256_antes": "8cdc92564eaae67b076cb532eb72a2c275ff9b7e7c821b65568a625876a2ccd1",
+      "sha256_depois": "8cdc92564eaae67b076cb532eb72a2c275ff9b7e7c821b65568a625876a2ccd1",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-molecular"
+      ]
+    },
+    {
+      "id": "formula-energia-c-variavel",
+      "numero": 20,
+      "grupo": "gases",
+      "sha256_antes": "3548046185f19e3dae670fe09bc96e765c803d0b6da5f2c0a91ababac4343003",
+      "sha256_depois": "3548046185f19e3dae670fe09bc96e765c803d0b6da5f2c0a91ababac4343003",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-calor-variavel"
+      ]
+    },
+    {
+      "id": "formula-titulo",
+      "numero": 21,
+      "grupo": "fases",
+      "sha256_antes": "21f8ff190816360e49c09e084eac88e16b1641a3aa8d15a92753bac89052b712",
+      "sha256_depois": "12a0fb5c8bac71b5464ffd1d4b9036f08a6bb355ed1d5cc5b24737ba86c621cf",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#substancias"
+      ]
+    },
+    {
+      "id": "formula-mistura",
+      "numero": 22,
+      "grupo": "fases",
+      "sha256_antes": "cd2922d742a586a4bb4c742ea305c71d82d99bec9784f654c8d1ecc06dc7b7b4",
+      "sha256_depois": "ffc556a5b32aa167056373b92e825a9c45e600c9faf60e10e426f1d204852216",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#substancias"
+      ]
+    },
+    {
+      "id": "formula-latente",
+      "numero": 23,
+      "grupo": "fases",
+      "sha256_antes": "47c2a820a50f1c7297cedbdba173c9b0c4a2609cbc16cea14db0a1760479af97",
+      "sha256_depois": "a3aa5280d1c5164ce25fa59af6dbeb734ffb3ffc01636decd05611b779a38178",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-calor-latente"
+      ]
+    },
+    {
+      "id": "formula-interpolacao",
+      "numero": 24,
+      "grupo": "fases",
+      "sha256_antes": "14abbfa925188e7f4589557004a2ef306013de1288ccf27aa7b514fd39e09fae",
+      "sha256_depois": "a5430830123bfdfc6d909427d48a491dc07f9302160cdc8e661357445f442b89",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#aprofundamento-aplicado"
+      ]
+    },
+    {
+      "id": "formula-umidade",
+      "numero": 25,
+      "grupo": "fases",
+      "sha256_antes": "00b807277ac10178899691a4fb74e0db021659c9acda0f622c5daaa155a1d2ca",
+      "sha256_depois": "5b26cd6204381e0ca167ec0ff8fb6e90032650d4a6e565a1269e59fd880f4eea",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-umidade"
+      ]
+    },
+    {
+      "id": "formula-capacidade-termica",
+      "numero": 26,
+      "grupo": "calorimetria",
+      "sha256_antes": "34ef39953ade95b3e9bfa6a30143de0fa8dc55891004b9b62bd2fb1cdb36862f",
+      "sha256_depois": "34ef39953ade95b3e9bfa6a30143de0fa8dc55891004b9b62bd2fb1cdb36862f",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-calorimetria"
+      ]
+    },
+    {
+      "id": "formula-equilibrio-mistura",
+      "numero": 27,
+      "grupo": "calorimetria",
+      "sha256_antes": "c26c760c0793295183e778a61ba543941d34ecc46d79856753d389ec2a581387",
+      "sha256_depois": "b9aa8457fe442e010290407fcb55a3aada6d7eed7d269a483f54261996c3e9da",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-mistura-termica"
+      ]
+    },
+    {
+      "id": "formula-recipiente-mistura",
+      "numero": 28,
+      "grupo": "calorimetria",
+      "sha256_antes": "936f127ca9a1372cdaa1c75e3fb3f6262e3268b584f0608120fa4f20cf635fa1",
+      "sha256_depois": "a3355e76287a8e8f87817509e29108b37e10c568ebce95455b22144e3ec9c3f3",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-mistura-termica"
+      ]
+    },
+    {
+      "id": "formula-fase-calorimetria",
+      "numero": 29,
+      "grupo": "calorimetria",
+      "sha256_antes": "072d46c6a652ca56f47ba718f626c1e100c0fb5e5225ff08ac1a918961b0c7a3",
+      "sha256_depois": "0078e83717dcae01c63197b1d2e8176d13d1f0b361ce599c4e1ba6590ce5e2a3",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-fase-calorimetria"
+      ]
+    },
+    {
+      "id": "formula-energia-mecanica",
+      "numero": 30,
+      "grupo": "primeira-lei",
+      "sha256_antes": "ff63d969d41b4927a8d8ce04633e27802c52aa84956643b3a6cdb7f900af4c8f",
+      "sha256_depois": "f38ae4a9a926f42e7d0456263de504044fba8bbb4c8e8d9afcaceca461d04a14",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-primeira-lei"
+      ]
+    },
+    {
+      "id": "formula-balanco-fechado",
+      "numero": 31,
+      "grupo": "primeira-lei",
+      "sha256_antes": "236d6b69a25e57915cd2ae3afb826dd587ea106c56498943398e432cda4301aa",
+      "sha256_depois": "236d6b69a25e57915cd2ae3afb826dd587ea106c56498943398e432cda4301aa",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-primeira-lei"
+      ]
+    },
+    {
+      "id": "formula-u-final",
+      "numero": 32,
+      "grupo": "primeira-lei",
+      "sha256_antes": "cbf574eee51c4298b3c16bbe2f693592dadc156d1fd00100fd3290aef1fdb280",
+      "sha256_depois": "cbf574eee51c4298b3c16bbe2f693592dadc156d1fd00100fd3290aef1fdb280",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-fechado"
+      ]
+    },
+    {
+      "id": "formula-adiabatico",
+      "numero": 33,
+      "grupo": "primeira-lei",
+      "sha256_antes": "d548193342cc1c0d77ac85c7b4269e05d3d3739d065f81bc68258ed18557c1cc",
+      "sha256_depois": "5c4ff0da42fdfa0f8739a63684369c89949caf7a60ef06b04cd4ae6a2685a071",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-primeira-lei",
+        "../modulos/e1-termodinamica.html#base-balanco-fechado"
+      ]
+    },
+    {
+      "id": "formula-fronteira",
+      "numero": 34,
+      "grupo": "primeira-lei",
+      "sha256_antes": "3885ccf103ba2c6e94b268c297d8e793d0a6734c0493e5446d9c7992bd15a645",
+      "sha256_depois": "c063b567dc283d53fbaf127ed8800bfea32d5cb524b84d5ecfa8ed5d37aa4498",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-trabalho-fronteira"
+      ]
+    },
+    {
+      "id": "formula-isobarico",
+      "numero": 35,
+      "grupo": "primeira-lei",
+      "sha256_antes": "0651b7c0411ef20cf1f615b221cb8f8fea7bd9bf8924fb5b874733b8b8e4d001",
+      "sha256_depois": "5a02630ba88ac19480cf11332e117dd3d4c2cf0b65ba1113570764cce72f9323",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-trabalho-fronteira"
+      ]
+    },
+    {
+      "id": "formula-isotermico",
+      "numero": 36,
+      "grupo": "primeira-lei",
+      "sha256_antes": "174cdbd88549cd7eb2fed5422eb19eae33dd1dffbe90bef4468aceb6a05834e9",
+      "sha256_depois": "abe514ba0156d1347598eaaa1f140fce11922b74b2fcbea99ad6e470dcf84a10",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-trabalho-fronteira"
+      ]
+    },
+    {
+      "id": "formula-calor-processos",
+      "numero": 37,
+      "grupo": "primeira-lei",
+      "sha256_antes": "4540c0705ed349162eb50cec05c74d8d62404740cec33f53df2458726491f6f4",
+      "sha256_depois": "a3767106ce94b399252bce5f21b1cb8be8ba7bed1768a5f440d1255b9354e3ae",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-fechado"
+      ]
+    },
+    {
+      "id": "formula-ciclo",
+      "numero": 38,
+      "grupo": "primeira-lei",
+      "sha256_antes": "1836c2460e9a1b8394822ef5223978d2d753822a8a2b64aa118eeae8823764d3",
+      "sha256_depois": "1836c2460e9a1b8394822ef5223978d2d753822a8a2b64aa118eeae8823764d3",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-trabalho-fronteira"
+      ]
+    },
+    {
+      "id": "formula-expansao-livre",
+      "numero": 39,
+      "grupo": "primeira-lei",
+      "sha256_antes": "0fe29f59a924b5535239a708724e79a9b82ddf885df4c7b9cef48fd7ac78c3b5",
+      "sha256_depois": "613fa4d83a1e8e8117bd55dfc99f698cafbfa2706eba6db074967f16686a53c5",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-expansao-livre"
+      ]
+    },
+    {
+      "id": "formula-reacao",
+      "numero": 40,
+      "grupo": "primeira-lei",
+      "sha256_antes": "2833d1ac6ee34fb4a427ce2f2bfd090886381187655c5a65b56fe32e3939732c",
+      "sha256_depois": "fcdbb873feeba72d2933e5c4a80f2f08beba5a031cbb20ce03b4a7720f5fe89b",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-termoquimica"
+      ]
+    },
+    {
+      "id": "formula-entalpia",
+      "numero": 41,
+      "grupo": "escoamento",
+      "sha256_antes": "56a4fa95283569dbbf0d3e5008f4a5344e49c6efcad2fa60a64651ecb591c7c9",
+      "sha256_depois": "56a4fa95283569dbbf0d3e5008f4a5344e49c6efcad2fa60a64651ecb591c7c9",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#energia"
+      ]
+    },
+    {
+      "id": "formula-balanco-escoamento",
+      "numero": 42,
+      "grupo": "escoamento",
+      "sha256_antes": "682f96e0f47c628cff55f4f5841cb9fb05c9532f13b9dded26443db658443e49",
+      "sha256_depois": "f63f29455779a5419d5ed28ed68cbbde554a8dbfd7c8814c09985c11fc46e78a",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#energia"
+      ]
+    },
+    {
+      "id": "formula-turbina",
+      "numero": 43,
+      "grupo": "escoamento",
+      "sha256_antes": "182a62bb6375c540decc519554737f603af8bce3fd107d8449947ac8597b65db",
+      "sha256_depois": "182a62bb6375c540decc519554737f603af8bce3fd107d8449947ac8597b65db",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-turbina-potencia"
+      ]
+    },
+    {
+      "id": "formula-compressor",
+      "numero": 44,
+      "grupo": "escoamento",
+      "sha256_antes": "0c146e2e05e866792fc2971e9f33689aded787182b419ff1328e6092d24c8d65",
+      "sha256_depois": "0c146e2e05e866792fc2971e9f33689aded787182b419ff1328e6092d24c8d65",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#energia"
+      ]
+    },
+    {
+      "id": "formula-bomba",
+      "numero": 45,
+      "grupo": "escoamento",
+      "sha256_antes": "c4454c12e59ddc5a7158a8c55b75e038aa8d524249d3f93ad866614753219f16",
+      "sha256_depois": "c4454c12e59ddc5a7158a8c55b75e038aa8d524249d3f93ad866614753219f16",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#energia"
+      ]
+    },
+    {
+      "id": "formula-valvula",
+      "numero": 46,
+      "grupo": "escoamento",
+      "sha256_antes": "f2baa07c0aceaf3bb10307c53675e9854215367d22526ad05c0b8e0fde965b4f",
+      "sha256_depois": "f2baa07c0aceaf3bb10307c53675e9854215367d22526ad05c0b8e0fde965b4f",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#energia"
+      ]
+    },
+    {
+      "id": "formula-trocador-balanco",
+      "numero": 47,
+      "grupo": "escoamento",
+      "sha256_antes": "fbc1ea8bf25715fc3f5f658b7a71b602a66f47a3a106dc662808f1a12074476f",
+      "sha256_depois": "fbc1ea8bf25715fc3f5f658b7a71b602a66f47a3a106dc662808f1a12074476f",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#energia"
+      ]
+    },
+    {
+      "id": "formula-acumulacao-massa",
+      "numero": 48,
+      "grupo": "escoamento",
+      "sha256_antes": "5ae8e2a2cf0354707dd940b183b2540cc20f4407054bfd593c3c6aac40af24c9",
+      "sha256_depois": "5c5ff20529350f2cf4cbf06c801809d037c93306a26297c45619c8a5e3fcd4d7",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-transiente"
+      ]
+    },
+    {
+      "id": "formula-acumulacao-energia",
+      "numero": 49,
+      "grupo": "escoamento",
+      "sha256_antes": "bb61da7cd753d2d8d4963361e15775d9e1f5f40aaf20b895f61c16abad4c4d18",
+      "sha256_depois": "b19223a0488e1c5b2e84634aaf08779f1333c067a0e192fe1eda8986d664b3f1",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-transiente"
+      ]
+    },
+    {
+      "id": "formula-intervalo-energia",
+      "numero": 50,
+      "grupo": "escoamento",
+      "sha256_antes": "4a4af328f171bb7ece3c846475715a2ba6215a004ecc427477f395d691174780",
+      "sha256_depois": "c560e0dad40e0bbc591528272e9c01ccd6500c35252b71c926169b9c4b274784",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-transiente"
+      ]
+    },
+    {
+      "id": "formula-enchimento-tanque",
+      "numero": 51,
+      "grupo": "escoamento",
+      "sha256_antes": "da1c8c12b36db1a42c4e96e8832d0c6b338de43220b7087aed7cb63895aeea70",
+      "sha256_depois": "ec0baf387246626cb28dd86a1713c0065ea5a8a19187c0c50809217d1209348b",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-transiente"
+      ]
+    },
+    {
+      "id": "formula-co2-acumulacao",
+      "numero": 52,
+      "grupo": "escoamento",
+      "sha256_antes": "6e31798db56afa3d2a1b15abce3065f28be851bf80241b27cca87e5588ea5c05",
+      "sha256_depois": "8ce00d9f1adb37ebc9b4a2783948e38e34a17fad813efe8127c922c97308fa6b",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-co2"
+      ]
+    },
+    {
+      "id": "formula-co2-vazao",
+      "numero": 53,
+      "grupo": "escoamento",
+      "sha256_antes": "6c95f3239992fb3c1ade58b5d623e690f0d2e3c4fe67aac100c76f741a8ce59f",
+      "sha256_depois": "a05f1641032fd9994aa0074665cb6f1a0a2c86559f48c09f232ca5008ec1f4cc",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-co2"
+      ]
+    },
+    {
+      "id": "formula-renovacoes",
+      "numero": 54,
+      "grupo": "escoamento",
+      "sha256_antes": "d1f9c145f7da6c91db09c52e7df39e35352e2e5f647fdf40701b21a9d90b03f0",
+      "sha256_depois": "d1f9c145f7da6c91db09c52e7df39e35352e2e5f647fdf40701b21a9d90b03f0",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-balanco-co2"
+      ]
+    },
+    {
+      "id": "formula-bomba-potencia",
+      "numero": 55,
+      "grupo": "escoamento",
+      "sha256_antes": "273769b3c8e021b95c239cdebffc0772c958e703b3a2e272fa6c2da0ad09bb2b",
+      "sha256_depois": "36f3e5bd654b0b30be6746c613b5825d6152544f0374d6d73770bbe2a6d71eac",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-bomba-integrada"
+      ]
+    },
+    {
+      "id": "formula-misturador-correntes",
+      "numero": 56,
+      "grupo": "escoamento",
+      "sha256_antes": "cc3ca523b0377356a711d371c31e173a0916fac2c55ac17335894f3d5e8a7d1b",
+      "sha256_depois": "d4cbb050d6dff034c45fa69e47a31b460e174e4da139271543796372694a029e",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-misturador-correntes"
+      ]
+    },
+    {
+      "id": "formula-bocal-difusor",
+      "numero": 57,
+      "grupo": "escoamento",
+      "sha256_antes": "1cf768e474439c0c7f35293c1ddf3901fce226ef97091baad613a07bdf4abdc7",
+      "sha256_depois": "1cf768e474439c0c7f35293c1ddf3901fce226ef97091baad613a07bdf4abdc7",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-bocal-difusor"
+      ]
+    },
+    {
+      "id": "formula-eficiencia",
+      "numero": 58,
+      "grupo": "segunda-lei",
+      "sha256_antes": "31fea25b43068a922c54a0337fd555bc3e3f4d51e5e13459f7ad7fe6b7bccc3c",
+      "sha256_depois": "31fea25b43068a922c54a0337fd555bc3e3f4d51e5e13459f7ad7fe6b7bccc3c",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-eficiencia-cop"
+      ]
+    },
+    {
+      "id": "formula-cop-refrigerador",
+      "numero": 59,
+      "grupo": "segunda-lei",
+      "sha256_antes": "ae1dc353774cdcd213ba7b321b476e07b227bdc253c92b897df849cabef51d2e",
+      "sha256_depois": "ae1dc353774cdcd213ba7b321b476e07b227bdc253c92b897df849cabef51d2e",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-eficiencia-cop"
+      ]
+    },
+    {
+      "id": "formula-cop-bomba-calor",
+      "numero": 60,
+      "grupo": "segunda-lei",
+      "sha256_antes": "e0e6972adf000747077e456e696c70ffd206ce922b8857f2295521be5c7a1ac9",
+      "sha256_depois": "e0e6972adf000747077e456e696c70ffd206ce922b8857f2295521be5c7a1ac9",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-eficiencia-cop"
+      ]
+    },
+    {
+      "id": "formula-carnot",
+      "numero": 61,
+      "grupo": "segunda-lei",
+      "sha256_antes": "4f5cd7d17704f79c01f737677d21dc563f9ca73233fee1cbfad69712ef462c0a",
+      "sha256_depois": "4f5cd7d17704f79c01f737677d21dc563f9ca73233fee1cbfad69712ef462c0a",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-limite-carnot"
+      ]
+    },
+    {
+      "id": "formula-limites-carnot",
+      "numero": 62,
+      "grupo": "segunda-lei",
+      "sha256_antes": "a5a0bd28224ce476ae0f68581b8f6f1cfba62295b6f9dc454db053c6ceac2eb6",
+      "sha256_depois": "13c0728cb3a6fb2715e3d4ce219b4d65fecea436f5642d6477d14885350dba81",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-carnot-prova"
+      ]
+    },
+    {
+      "id": "formula-cop-carnot",
+      "numero": 63,
+      "grupo": "segunda-lei",
+      "sha256_antes": "f073b40da1598948bf32c7b0e2212a923ea6bc3a905dbed4466d582cd472a2be",
+      "sha256_depois": "10a50156938587c3d2f687721f562eb01bbdc257093743054d143f04f4742114",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-limite-carnot"
+      ]
+    },
+    {
+      "id": "formula-balanco-entropia",
+      "numero": 64,
+      "grupo": "entropia",
+      "sha256_antes": "102b3dcb755d1030ddea3df1ee46b99012c1955046f6dc9e88080ce6c8149c5a",
+      "sha256_depois": "69d63be8b86cfea44666d829bd3e68623e55b82d32579f496f7dfbb2fa19ab8f",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-entropia"
+      ]
+    },
+    {
+      "id": "formula-entropia-isolado",
+      "numero": 65,
+      "grupo": "entropia",
+      "sha256_antes": "3f796bb836428382a9737fae1fe02e0a035ec1ca2b678022cbf506bee9a740b9",
+      "sha256_depois": "3f796bb836428382a9737fae1fe02e0a035ec1ca2b678022cbf506bee9a740b9",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-entropia"
+      ]
+    },
+    {
+      "id": "formula-entropia-total",
+      "numero": 66,
+      "grupo": "entropia",
+      "sha256_antes": "62140482a53766edaf46e25ad4aeb5ea60e698f6fd374fc3babd0581156095e2",
+      "sha256_depois": "62140482a53766edaf46e25ad4aeb5ea60e698f6fd374fc3babd0581156095e2",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-entropia"
+      ]
+    },
+    {
+      "id": "formula-calor-reversivel",
+      "numero": 67,
+      "grupo": "entropia",
+      "sha256_antes": "c7eea15504b5ce2bc5bee60d02789277b1f2acdb1ffac09ab40435776e287c8c",
+      "sha256_depois": "c7eea15504b5ce2bc5bee60d02789277b1f2acdb1ffac09ab40435776e287c8c",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#substancias"
+      ]
+    },
+    {
+      "id": "formula-entropia-tp",
+      "numero": 68,
+      "grupo": "entropia",
+      "sha256_antes": "6a33eeaa15c3035bfb93b61e0cb8c57aeb5ddc3ac62f387d94f26ca46f6f77e4",
+      "sha256_depois": "398e30a63de35205387ad6de46093e0990e878daaf5c02c8b0819c3d44f00f72",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-entropia-gas"
+      ]
+    },
+    {
+      "id": "formula-entropia-tv",
+      "numero": 69,
+      "grupo": "entropia",
+      "sha256_antes": "6ab5ff5e13e8af3f35f0f547e4d0a882606463d870bccc0d062ac65ab643229a",
+      "sha256_depois": "0531a02a02ea164f62a314e8b1c6b27248d407d591e2d7d67fa5e56015c79c76",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-entropia-gas"
+      ]
+    },
+    {
+      "id": "formula-isentro-gas",
+      "numero": 70,
+      "grupo": "entropia",
+      "sha256_antes": "6b62d9076306cd89a05fa9997371129a6d8b425de1c8885bfb33770054d42f08",
+      "sha256_depois": "2ae694b39a0a0c45134a4d68c050fef6793bc23830516045a553af1cac42d47c",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-entropia-gas"
+      ]
+    },
+    {
+      "id": "formula-isentropica-turbina",
+      "numero": 71,
+      "grupo": "entropia",
+      "sha256_antes": "15229ded995231bd5f450df361ace57afc4f70810e2708e1d317f23b40c8c042",
+      "sha256_depois": "d3d4e80310f3a3da350b852c1bc297bb8243a6b741d89aff57a94dbee66633d6",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-isentropica"
+      ]
+    },
+    {
+      "id": "formula-isentropica-compressor",
+      "numero": 72,
+      "grupo": "entropia",
+      "sha256_antes": "7e7f2bb1698cea23432d3865339a6ded7c74d5068ad250ebc981b6981cbfbdb1",
+      "sha256_depois": "ea97869190b73ba09ad1f7a34f642926304ade00804390e0d752587a4a5e5aa6",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-isentropica"
+      ]
+    },
+    {
+      "id": "formula-entropia-vc",
+      "numero": 73,
+      "grupo": "entropia",
+      "sha256_antes": "8f94a973aa812c100fff49af61931bd68125957c2fa7a8e08978713cecf21b01",
+      "sha256_depois": "c8023a75ee87b97476e6bc57a7c77905a952385fc48b025286a2aaa676eb6ac7",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#aprofundamento-aplicado"
+      ]
+    },
+    {
+      "id": "formula-exergia",
+      "numero": 74,
+      "grupo": "entropia",
+      "sha256_antes": "bccaedfec487746cf8eacb1246fe8d78e10f428a85d48471941ff1957dd21030",
+      "sha256_depois": "bccaedfec487746cf8eacb1246fe8d78e10f428a85d48471941ff1957dd21030",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-exergia"
+      ]
+    },
+    {
+      "id": "formula-identidades",
+      "numero": 75,
+      "grupo": "entropia",
+      "sha256_antes": "09b2bb6653007810725cc15b8c39db652d4af2fdd755a45a726a09b3e008233f",
+      "sha256_depois": "09b2bb6653007810725cc15b8c39db652d4af2fdd755a45a726a09b3e008233f",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gibbs"
+      ]
+    },
+    {
+      "id": "formula-entalpia-isentro",
+      "numero": 76,
+      "grupo": "entropia",
+      "sha256_antes": "71e0d8359ba2a57f270744f5240d1e44597cf091d64bf35c7157cdb8c926a619",
+      "sha256_depois": "d97170cd51d76bbbbc512f89ffc188a05fb36a8b0a526e38923202f4e3cc2cea",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-gibbs"
+      ]
+    },
+    {
+      "id": "formula-gibbs-fases",
+      "numero": 77,
+      "grupo": "entropia",
+      "sha256_antes": "2341c74a48e85107036109a38dde1694ff4ba7bd16337d419b52a571cb6bf44f",
+      "sha256_depois": "18470e13948d875ec2d49979f49c7e8b4948f93595d5717c35fcdf07a6cc6c9f",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-equilibrio-fases"
+      ]
+    },
+    {
+      "id": "formula-entropia-c-variavel",
+      "numero": 78,
+      "grupo": "entropia",
+      "sha256_antes": "1d7d0003d915e7b593322e9e6dbfb166c1de22bd61744bb6c74ab17aab912e57",
+      "sha256_depois": "5098010b4f00651049349ac2ebdb98acc2af4d17edf7ed0c71d39cf983b96234",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-calor-variavel"
+      ]
+    },
+    {
+      "id": "formula-rankine",
+      "numero": 79,
+      "grupo": "ciclos",
+      "sha256_antes": "e003f2d87bda1d0e36990a69e6b67211b6a0e5611423dd77598da28a193a787c",
+      "sha256_depois": "273e01ba2b8f373f2842f643f6c4ed383c29a35ddfab9c686ea88174ddffea11",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-rankine"
+      ]
+    },
+    {
+      "id": "formula-brayton-liquido",
+      "numero": 80,
+      "grupo": "ciclos",
+      "sha256_antes": "be53d6d4b8ef9305ad4392713fd7ce2c59379393187d06bf0234116ffc431ea5",
+      "sha256_depois": "be53d6d4b8ef9305ad4392713fd7ce2c59379393187d06bf0234116ffc431ea5",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-brayton-real"
+      ]
+    },
+    {
+      "id": "formula-brayton-ideal",
+      "numero": 81,
+      "grupo": "ciclos",
+      "sha256_antes": "d5e024a0a04d5c2b38210227074b7a01611a3c060a3d6e7d15cbadecf2b00853",
+      "sha256_depois": "d5e024a0a04d5c2b38210227074b7a01611a3c060a3d6e7d15cbadecf2b00853",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-brayton"
+      ]
+    },
+    {
+      "id": "formula-otto",
+      "numero": 82,
+      "grupo": "ciclos",
+      "sha256_antes": "1e41a8c5d4109aac8bd9c36b8b732fde99107cba6f0447cb080253b015f836a0",
+      "sha256_depois": "1e41a8c5d4109aac8bd9c36b8b732fde99107cba6f0447cb080253b015f836a0",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#ciclos"
+      ]
+    },
+    {
+      "id": "formula-diesel",
+      "numero": 83,
+      "grupo": "ciclos",
+      "sha256_antes": "ffa55c670f8b4643b50aa112ffbdd5dcac6464a62b23c12cb00799d3a4ed22ae",
+      "sha256_depois": "456a1998671f57541829e5921a50ed8b79d70320e505d32336c0681f83c9edb1",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#ciclos"
+      ]
+    },
+    {
+      "id": "formula-refrigeracao",
+      "numero": 84,
+      "grupo": "ciclos",
+      "sha256_antes": "0819e4bd85c55d169027762dbd990792ec390ba640714e0887820a1431fbe476",
+      "sha256_depois": "1c2396000c03989f12a12aef41004cdd045b444a8b7fbe88cfc366991c899a47",
+      "alterada": true,
+      "math_count": 3,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-refrigeracao"
+      ]
+    },
+    {
+      "id": "formula-condensador",
+      "numero": 85,
+      "grupo": "ciclos",
+      "sha256_antes": "4570e921bcc03a82c0f89049b86448c968a7e9eaa2165245a410ae9a4f1cda4c",
+      "sha256_depois": "073599882f469b948804fe638a6d6fcb0e2e5c851556ce698328a48de4d13ba4",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-refrigeracao"
+      ]
+    },
+    {
+      "id": "formula-extracao-aquecedor",
+      "numero": 86,
+      "grupo": "ciclos",
+      "sha256_antes": "5aabf01829a3286ea9ec1e866d11046e552bda7bda249119fbdfe18ab8885041",
+      "sha256_depois": "5aabf01829a3286ea9ec1e866d11046e552bda7bda249119fbdfe18ab8885041",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-ciclos-variantes"
+      ]
+    },
+    {
+      "id": "formula-volumetrica",
+      "numero": 87,
+      "grupo": "compressores",
+      "sha256_antes": "824c8484bcf69b95d037fbd3f55681699cff7868356beb71adb5ee3acbc804a5",
+      "sha256_depois": "824c8484bcf69b95d037fbd3f55681699cff7868356beb71adb5ee3acbc804a5",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-eficiencia-volumetrica"
+      ]
+    },
+    {
+      "id": "formula-intermediaria",
+      "numero": 88,
+      "grupo": "compressores",
+      "sha256_antes": "3495d67b7c25c1f31958aa1ecb1ba3381a772113a2d5652534df9bc4e3993fea",
+      "sha256_depois": "bd19218dd4ad251d9debfc2b70b19102da7fb7996c82ea98ab2e61582ce7008d",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#aprofundamento-aplicado"
+      ]
+    },
+    {
+      "id": "formula-politropico",
+      "numero": 89,
+      "grupo": "compressores",
+      "sha256_antes": "6234d2d68c9a655a3337b36556747d2a93231f533ee4ff35fd2e8ed4530846c9",
+      "sha256_depois": "91881f7785f5e195bc3dccc1418f93ea39fb3152ae8ed7b3ff1f9eff85071b49",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#aplicacoes"
+      ]
+    },
+    {
+      "id": "formula-compressao-isotermica",
+      "numero": 90,
+      "grupo": "compressores",
+      "sha256_antes": "0dcf693d5afbaa5fd65de8cedfcfd4a2748c15fdd9900d3befe30a2dec53942e",
+      "sha256_depois": "0dcf693d5afbaa5fd65de8cedfcfd4a2748c15fdd9900d3befe30a2dec53942e",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#aplicacoes"
+      ]
+    },
+    {
+      "id": "formula-fourier",
+      "numero": 91,
+      "grupo": "transferencia",
+      "sha256_antes": "9124e52823fc2ad92bb1fd0425734ecd9aa7b1ff3a47052db62278d9a2036463",
+      "sha256_depois": "2e3753ed96f441bb46e85b74902cd1ed2e83f8d93e447800a031c611673f20eb",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-transferencia"
+      ]
+    },
+    {
+      "id": "formula-gradiente",
+      "numero": 92,
+      "grupo": "transferencia",
+      "sha256_antes": "2a835dd57936ab5f0ed5ad7caf78ca2f962caebca4501de6550149a8c56eeb13",
+      "sha256_depois": "051496957a99d8c917ff90aa5816c786946aba2caf97b9752f5e8f36b11b9f81",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-transferencia"
+      ]
+    },
+    {
+      "id": "formula-newton",
+      "numero": 93,
+      "grupo": "transferencia",
+      "sha256_antes": "899359eaf7f5590660d6be418832e7fff4784cd64caacb078ac945838809c54e",
+      "sha256_depois": "4247ac3b96c333986eaa1b77c42f43a419237eebd9b250070e4c396bf7f98a29",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-transferencia"
+      ]
+    },
+    {
+      "id": "formula-ua",
+      "numero": 94,
+      "grupo": "transferencia",
+      "sha256_antes": "03bca4f07c31a063ec42769701ceab6a4c65c3b89cf9361785affed372f849c4",
+      "sha256_depois": "2563213ad8ca0bd3cfd7055f4b608e5da9cfa25148c621105b412796cd5a21cc",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-trocadores"
+      ]
+    },
+    {
+      "id": "formula-resistencias",
+      "numero": 95,
+      "grupo": "transferencia",
+      "sha256_antes": "8859646f6993c6a784078838d9e54efa68999b18222b850b5374dcd296254e90",
+      "sha256_depois": "250a3dfa305bbfb1297f7eb759c038d131ce2cdba792916b4c0a15b879c2a572",
+      "alterada": true,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-trocadores"
+      ]
+    },
+    {
+      "id": "formula-radiacao",
+      "numero": 96,
+      "grupo": "transferencia",
+      "sha256_antes": "c380cae75f51a1e30d7db4cc44895a04f61930b3de94e5c8aeba813d8b61f70f",
+      "sha256_depois": "bb79add61a2d709d73db2848fc540aa4758d3bb16c5c83156d3319fcafd2241a",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-radiacao-vacuo"
+      ]
+    },
+    {
+      "id": "formula-razao-radiativa",
+      "numero": 97,
+      "grupo": "transferencia",
+      "sha256_antes": "333725e14121af7e4b4665505504b46b55a1bf9be313e608754e4c9d4291e7bd",
+      "sha256_depois": "333725e14121af7e4b4665505504b46b55a1bf9be313e608754e4c9d4291e7bd",
+      "alterada": false,
+      "math_count": 1,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-radiacao-vacuo"
+      ]
+    },
+    {
+      "id": "formula-dilatacao",
+      "numero": 98,
+      "grupo": "transferencia",
+      "sha256_antes": "fc3be46093f2fe2b92dceb9f71ff783e26bb771b0db9479892745cb0426bb2ab",
+      "sha256_depois": "40bc1dfa0adf88bdc54a5287e47fc5054b6fc0b8ecb5bed04923a3c1a460a7af",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-dilatacao"
+      ]
+    },
+    {
+      "id": "formula-geracao",
+      "numero": 99,
+      "grupo": "transferencia",
+      "sha256_antes": "bb0f386dd0577edc19d0e10e428e1abc021f1ebf7a2993c18edce35bd6820302",
+      "sha256_depois": "e4b32d03b87cfde282b239623549998f6852a206208271b5c1147773f97fd6db",
+      "alterada": true,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-geracao-face"
+      ]
+    },
+    {
+      "id": "formula-geometria",
+      "numero": 100,
+      "grupo": "transferencia",
+      "sha256_antes": "c6e16841916686da40fd009f0b8b9fa819d4bde86eb2979b36c7758135392f32",
+      "sha256_depois": "c6e16841916686da40fd009f0b8b9fa819d4bde86eb2979b36c7758135392f32",
+      "alterada": false,
+      "math_count": 2,
+      "math_preservado": true,
+      "busca_deriva_somente_textos": true,
+      "busca_inclui_textos": true,
+      "registro_confere": true,
+      "vinculos": [
+        "../modulos/e1-termodinamica.html#base-geracao-face"
+      ]
+    }
+  ],
+  "verificacoes_independentes": {
+    "formulario": {
+      "reconstrucao_integral": true,
+      "ids_delta_coincidem": true,
+      "edits": [
+        {
+          "id": "formula-conversoes",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-pressao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-especificas",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-escalas",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-ppm-geracao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-gas-ideal",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-dois-estados",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-restricoes",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-compressibilidade",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-energia-gas",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-titulo",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-mistura",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-latente",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-interpolacao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-umidade",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-equilibrio-mistura",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-recipiente-mistura",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-fase-calorimetria",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-energia-mecanica",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-adiabatico",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-fronteira",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-isobarico",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-isotermico",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-calor-processos",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-expansao-livre",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-reacao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-balanco-escoamento",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-acumulacao-massa",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-acumulacao-energia",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-intervalo-energia",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-enchimento-tanque",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-co2-acumulacao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-co2-vazao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-bomba-potencia",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-misturador-correntes",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-limites-carnot",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-cop-carnot",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-balanco-entropia",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-entropia-tp",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-entropia-tv",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-isentro-gas",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-isentropica-turbina",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-isentropica-compressor",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-entropia-vc",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-entalpia-isentro",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-gibbs-fases",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-entropia-c-variavel",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-rankine",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-diesel",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-refrigeracao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-condensador",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-intermediaria",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-politropico",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-fourier",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-gradiente",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-newton",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-ua",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-resistencias",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-radiacao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-dilatacao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        },
+        {
+          "id": "formula-geracao",
+          "ocorrencias_antes": 1,
+          "hash_antes_confere": true,
+          "hash_depois_confere": true
+        }
+      ]
+    },
+    "aula": {
+      "reconstrucao_integral": true,
+      "total": 17,
+      "alvos_distintos": 14,
+      "edits": [
+        {
+          "ancora": "base-calor-latente",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "0da4c8e41b6fccd6f564fb9cc266bfdd24fc744ecb24a945aca330d96ce7d722",
+          "sha256_depois": "f84208c26eb02da0f5d07c9985b6924c0ed9e59259610d70373a36e137b4f1f7"
+        },
+        {
+          "ancora": "base-umidade",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "b235df49354c8a16a0707e67e206d86af2db92c4a1cb19a876bd5ef288cfbbe9",
+          "sha256_depois": "4ee16fc1561b5a64a9da2973f2b52172f210f4c66ca97f7440399e81f0e560a6"
+        },
+        {
+          "ancora": "base-umidade",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "2faaad7491677321d441dabfb343cb9f5b9bb61a662405635317cb2a7f692f58",
+          "sha256_depois": "a64673f5f5a033fb4c1673673242904c9634691d2c6b713744d979f11b27b49b"
+        },
+        {
+          "ancora": "base-primeira-lei",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "b9db05bd6be4b80d54aad69cd23232d6387a8bd61bb970bb9e9bd5da88bb6e7b",
+          "sha256_depois": "2ac399a6369ac4c4c9905e0c29debd38183ad1877b8cb8675c65630ff281bec4"
+        },
+        {
+          "ancora": "base-expansao-livre",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "3fc96b0ee99f2a9779ad0dfbc870b84ac438537de09e3ed8de584bbdf55319be",
+          "sha256_depois": "223c585e341321f8afebd2ce3f7d40f5d82b9b26bcd925afd95c1accf9b4bdd3"
+        },
+        {
+          "ancora": "energia",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "00879be7791603da53bee45a17d8a5eedf9a7af17a7c28a34e30fcfd4f0e0161",
+          "sha256_depois": "5c5bd5ccb05951f8ad20e2c0da0d6cc501c7d33b6e52785248525cbf958aa143"
+        },
+        {
+          "ancora": "base-balanco-transiente",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "f4650996afaf28499bd68809b2159b3833d7beef58777747694c233cc7f3f95f",
+          "sha256_depois": "c9db8f3046e9ae7145e21749a430cd6596cd1a81c8855dff8671ea90b8b6508b"
+        },
+        {
+          "ancora": "base-entropia",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "fd10780a9fd13529ced93dff982dc502e59c2b321bba196d105e7e4aceaf1469",
+          "sha256_depois": "05ba532b5c62a412e4e201a1d4ce8ec94f6303cb49e7a1a095e58327ae17efd8"
+        },
+        {
+          "ancora": "base-rankine",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "0ad15c2e172288fe1064845b7e622b562f9119be662dda71ed3355b69925fb86",
+          "sha256_depois": "3b0e58a11d869931e5b5b6d37e9a4a306097c3b5be3b102e5c82af4452c45f91"
+        },
+        {
+          "ancora": "base-refrigeracao",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "31ebe310ba5cf132f380bf459845a5c0e765ce0dc4f4f7a469f0df0a655f98b1",
+          "sha256_depois": "21d68302662411af2e61c9de51525f63452668910a6f085917a31152c0c6b107"
+        },
+        {
+          "ancora": "aprofundamento-aplicado",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "5643afefe955fc4ff981e09e5ea32555e12f3ac084895913bd4012892e9808fd",
+          "sha256_depois": "683c3dccaf8bccb1ea20d3d503c02f8286fcba4206491a5ce4ce5726bc3ee8fb"
+        },
+        {
+          "ancora": "aplicacoes",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "b55a8e26e6f326f81fbf173947cb69cd7bdd7ef21d92d885905e1827a361672c",
+          "sha256_depois": "629d630cdce41466616cb5a5f3153a4e361a72e88d8d6109104e55093d27e7d1"
+        },
+        {
+          "ancora": "base-trocadores",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "ea332285e53d163014555e3ac7db8bd24a63a791ded5a951462baec2f70cbc32",
+          "sha256_depois": "3936904d9ee2278dd7a92cc379c77ef2f0d6a951eb7574c8728bf6e86fbd2651"
+        },
+        {
+          "ancora": "base-trocadores",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "d51bb8b76ea33e52c43bb1f62a63df0011db5fb67a137bfc2fbf5805967cd006",
+          "sha256_depois": "8a6f92f1dfb2b0107aa33ab107f06498b45c82aecb05ecda37c3cb9150d7f96d"
+        },
+        {
+          "ancora": "base-trocadores",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "d971814a227d9ac0907c945c276f538e8d6ed0d3e538436a3a8f7b18bd01a780",
+          "sha256_depois": "3a22327aee88518dbb79329cd32f5eeb54f2c5837205644a7b62affe746f982b"
+        },
+        {
+          "ancora": "base-dilatacao",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "eb7fe79021ac26c77f2f6ea1d5e9f12b639a9783d74dc86bc68c16a810117826",
+          "sha256_depois": "b3dca210eadf259485c6ed2965d42c1a1b3e74d3742254814799e3cd5f015eec"
+        },
+        {
+          "ancora": "base-geracao-face",
+          "ocorrencias_antes": 1,
+          "sha256_antes": "e881429754b95b440a31bddb8c38369aed8d18a1418f65b1ed0b12f404921a80",
+          "sha256_depois": "0b717e4b6ab80cb05f4ed77cd4a8d222ff9f8f04bdab468d6b426803526f060e"
+        }
+      ]
+    },
+    "artigos": [
+      {
+        "id": "fun01-e1-saturacao",
+        "preservado": true
+      },
+      {
+        "id": "fun01-e1-mistura",
+        "preservado": true
+      },
+      {
+        "id": "fun01-e1-supercritico",
+        "preservado": true
+      },
+      {
+        "id": "fun01-e1-equilibrio",
+        "preservado": true
+      },
+      {
+        "id": "fun02-e1-caminhos",
+        "preservado": true
+      },
+      {
+        "id": "fun02-e1-integrabilidade",
+        "preservado": true
+      },
+      {
+        "id": "fun02-e1-calor-caminho",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-01",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-02",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-03",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-04",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-05",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-06",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-07",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-08",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-09",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-10",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-11",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-12",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-13",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-14",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-15",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-16",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-17",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-18",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-19",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-20",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-21",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-22",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-23",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-24",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-25",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-26",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-27",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-28",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-29",
+        "preservado": true
+      },
+      {
+        "id": "q-e1-30",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-01",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-02",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-03",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-04",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-05",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-06",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-07",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-08",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-09",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-10",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-11",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-12",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-13",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-14",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-15",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-16",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-17",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-18",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-19",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-20",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-21",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-22",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-23",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-24",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-25",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-26",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-27",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-28",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-29",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-30",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-31",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-32",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-33",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-34",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-35",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-36",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-37",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-38",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-39",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-40",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-41",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-42",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-43",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-44",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-45",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-46",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-47",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-48",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-49",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-50",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-51",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-52",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-53",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-54",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-55",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-56",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-57",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-58",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-59",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-60",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-61",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-62",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-63",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-64",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-65",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-66",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-67",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-68",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-69",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-70",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-71",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-72",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-73",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-74",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-75",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-76",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-77",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-78",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-79",
+        "preservado": true
+      },
+      {
+        "id": "cr-e1-80",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-01",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-02",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-03",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-04",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-05",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-06",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-07",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-08",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-09",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-10",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-11",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-12",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-13",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-14",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-15",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-16",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-17",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-18",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-19",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-20",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-21",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-22",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-23",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-24",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-25",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-26",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-27",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-28",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-29",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-30",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-31",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-32",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-33",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-34",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-35",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-36",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-37",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-38",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-39",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-40",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-41",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-42",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-43",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-44",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-45",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-46",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-47",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-48",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-49",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-50",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-51",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-52",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-53",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-54",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-55",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-56",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-57",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-58",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-59",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-60",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-61",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-62",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-63",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-64",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-65",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-66",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-67",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-68",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-69",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-70",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-71",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-72",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-73",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-74",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-75",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-76",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-77",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-78",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-79",
+        "preservado": true
+      },
+      {
+        "id": "av-e1-80",
+        "preservado": true
+      }
+    ],
+    "inventario": {
+      "delta": [
+        {
+          "caminho": "fonte.sha256",
+          "antes": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+          "depois": "dcb29695129041b0dea7383396d2af85f1d656d6414658f8983042bec1f598dd"
+        },
+        {
+          "caminho": "fonte.snapshot",
+          "antes": "auditoria/termodinamica/evidencias/BAN-10/e1-termodinamica.r2.html",
+          "depois": "auditoria/termodinamica/evidencias/FOR-01/e1-termodinamica.r1.html"
+        }
+      ],
+      "coincide_delta_declarado": true,
+      "registros_preservados": true
+    },
+    "vinculos_alterados": [
+      {
+        "id": "formula-conversoes",
+        "numero": 3,
+        "antes": [
+          "../modulos/e1-termodinamica.html#base-leitura-matematica"
+        ],
+        "depois": [
+          "../modulos/e1-termodinamica.html#base-leitura-matematica",
+          "../modulos/e1-termodinamica.html#base-balanco-fechado"
+        ]
+      },
+      {
+        "id": "formula-pressao",
+        "numero": 5,
+        "antes": [
+          "../modulos/e1-termodinamica.html#base-absolutas"
+        ],
+        "depois": [
+          "../modulos/e1-termodinamica.html#base-absolutas",
+          "../modulos/e1-termodinamica.html#base-leitura-matematica"
+        ]
+      },
+      {
+        "id": "formula-adiabatico",
+        "numero": 33,
+        "antes": [
+          "../modulos/e1-termodinamica.html#base-primeira-lei"
+        ],
+        "depois": [
+          "../modulos/e1-termodinamica.html#base-primeira-lei",
+          "../modulos/e1-termodinamica.html#base-balanco-fechado"
+        ]
+      },
+      {
+        "id": "formula-condensador",
+        "numero": 85,
+        "antes": [
+          "../modulos/e1-termodinamica.html#base-eficiencia-cop"
+        ],
+        "depois": [
+          "../modulos/e1-termodinamica.html#base-refrigeracao"
+        ]
+      }
+    ],
+    "mathml": {
+      "xml_parser_independente": "System.Xml.XmlDocument, XmlResolver=null",
+      "expressoes": 191,
+      "erros_xml": [],
+      "erros_aridade": []
+    }
+  },
+  "metodo_busca": "Para cada ficha: data-busca anterior.replace(simbolos_anteriores,simbolos_atuais).replace(condicao_anterior,condicao_atual) é exatamente igual a data-busca atual. Os blocos MathML são comparados literalmente e separadamente. O registro individual é comparado aos campos reais.",
+  "limites": [
+    "XML válido e preservação literal não provam correção científica de cada expressão; esta é revisão do Auditor principal.",
+    "Existência de vínculo não prova suficiência pedagógica do destino.",
+    "As contas seletivas dos 913 checks foram reproduzidas como parte do verificador entregue; não são uma segunda revisão científica independente.",
+    "Não houve navegador próprio, teste com alunos, impressão física/PDF nem acesso a armazenamento do usuário.",
+    "Não executados scripts de aplicação/integração, nem alterados produto, controle ou evidências do Corretor."
+  ],
+  "arquivos_permanentes_escritos": [
+    "auditoria/termodinamica/pareceres/FOR-01-r1-tecnico.json",
+    "auditoria/termodinamica/pareceres/FOR-01-r1-tecnico.md"
+  ]
+}

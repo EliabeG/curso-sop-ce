@@ -1,0 +1,188 @@
+{
+  "decisaoCR45": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-decisao-candidata-cr45-r2.md",
+    "sha256": "2b22e8f2c4a99b370f6d8058ed969e144a00670712d9ef3068ec24eb519e2de7",
+    "limite": "A adjudicação confirmou o ajuste; parecer independente aprovou a variante r2b isolada, sem aprovar o pacote integrado."
+  },
+  "historicoFonHash": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1",
+  "historicoBan10Hash": "b7e64034b3d1c6b31897948369c901a4a05648e53f30f91c6d553a7eb6d29147",
+  "propostasJSON": {
+    "AV04-candidata.json": "973c4c2b82c8ae97ed4f8a784399df44d9cf3f75d80e303943844f368777b05f",
+    "AV31-candidata.json": "51dcf6eeba809fdf5294ddc0b86e5d048424697041930b1fe37b5c6a706e96c1",
+    "AV62-candidata.json": "4c8604d81bf884e5459d26f006c051451357d31a6085b96c8d80724345e0f0bc",
+    "CR06-candidata.json": "78e6688c12a1371dd4e7144ff1098fd590106c430768d43563380213064cd615",
+    "CR26-candidata.json": "e4d168b3c018caf97f4b4f57b0db4478136a2f852544653244480bb3c0951907",
+    "CR45-candidata-r2b.json": "5257957efbb70f493f943634bf6d130bd0cbc5b7a9cc3d264b52a7dfbe70e4ad"
+  },
+  "sincronizacaoInventario": [
+    {
+      "id": "cr-e1-06",
+      "competencias": "C08",
+      "nivel": "iniciante",
+      "etapas": 1,
+      "justificativa": "A hipótese linear é explicitada em suplemento editorial do curso; basta reconhecer TX=a+bTY no modelo delimitado.",
+      "sincronizado": true
+    },
+    {
+      "id": "cr-e1-26",
+      "competencias": "C03, C08",
+      "nivel": "intermediario",
+      "etapas": 2,
+      "justificativa": "Integra direção das transferências, conversão e balanço, com figura contextual.",
+      "sincronizado": true
+    },
+    {
+      "id": "cr-e1-45",
+      "competencias": "C04, C06, C09",
+      "nivel": "intermediario",
+      "etapas": 3,
+      "justificativa": "Acopla balanço de energia, limite da segunda lei e decisão.",
+      "sincronizado": true
+    },
+    {
+      "id": "av-e1-04",
+      "competencias": "C02",
+      "nivel": "iniciante",
+      "etapas": 1,
+      "justificativa": "A hipótese e seu domínio já são fornecidos; basta interpretar seu significado.",
+      "sincronizado": true
+    },
+    {
+      "id": "av-e1-31",
+      "competencias": "C07",
+      "nivel": "iniciante",
+      "etapas": 1,
+      "justificativa": "Identifica a diferença entre duas definições.",
+      "sincronizado": true
+    },
+    {
+      "id": "av-e1-62",
+      "competencias": "C01, C06",
+      "nivel": "iniciante",
+      "etapas": 1,
+      "justificativa": "Associa fluxo já estabelecido à posição das válvulas.",
+      "sincronizado": true
+    }
+  ],
+  "id": "BAN-07",
+  "estado": "PACOTE_R2_PREPARADO_EM_COPIA_NAO_APLICADO_NAO_APROVADO",
+  "stage": "C:\\Users\\User\\AppData\\Local\\Temp\\ban07-r2-preparacao-IMI4AK",
+  "produto_r1_preservado": true,
+  "controle_sha256": "012943624ec4e3ce79352878a36f5b582f663a4dc83e8ea38e4f67f666fc1114",
+  "escopo": [
+    "cr-e1-06",
+    "cr-e1-26",
+    "cr-e1-45",
+    "av-e1-04",
+    "av-e1-31",
+    "av-e1-62"
+  ],
+  "html_sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+  "snapshot": "auditoria/termodinamica/evidencias/BAN-07/e1-termodinamica.r2.html",
+  "artigos_alterados": [
+    "cr-e1-06",
+    "cr-e1-26",
+    "cr-e1-45",
+    "av-e1-04",
+    "av-e1-31",
+    "av-e1-62"
+  ],
+  "fora_dos_artigos_identico": true,
+  "digitais": [
+    {
+      "id": "av-e1-04",
+      "antes": "8eaed3f8",
+      "depois": "cccc3a46",
+      "chave": "D"
+    },
+    {
+      "id": "av-e1-31",
+      "antes": "4538caee",
+      "depois": "9230a05d",
+      "chave": "E"
+    },
+    {
+      "id": "av-e1-62",
+      "antes": "ed91f6ac",
+      "depois": "e0ab3037",
+      "chave": "D"
+    },
+    {
+      "id": "cr-e1-06",
+      "antes": "01aa3697",
+      "depois": "d63393e4",
+      "chave": "C"
+    },
+    {
+      "id": "cr-e1-26",
+      "antes": "988714ce",
+      "depois": "1c9fcf05",
+      "chave": "E"
+    },
+    {
+      "id": "cr-e1-45",
+      "antes": "c084d78c",
+      "depois": "9475e2f5",
+      "chave": "C"
+    }
+  ],
+  "colisoes": "Cada digital nova é única nos 80 itens atuais do seu banco e não existe nas 80 digitais r1 do mesmo banco; históricos desconhecidos não foram examinados.",
+  "persistencia": {
+    "metodo": "Funções reais dos bancos AV e CR em Node/VM com DOM e localStorage simulados; respostas r1 e item inalterado em cada banco, novas respostas e recarga de contexto.",
+    "historico_antigo_preservado": true,
+    "anteriores_nao_preenchem_versoes_novas": true,
+    "item_inalterado_preservado": true,
+    "aviso": true,
+    "novas_respostas_persistem_na_recarga": true,
+    "placar_funcao_real_em_vm": true,
+    "estudo_critico_excluido_do_placar_em_vm": true,
+    "limite": "Sem navegador real, sem armazenamento pessoal ou teste de falhas de escrita."
+  },
+  "inventario": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1261,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "arquivos_ensaio": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "71ac07e042aa65675fc3d4b69d8d0ae11cb66df967d45e66b1a88f4f1350e074"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "35df191e2f7964adfb7b975668491e8ba39d983a5df93640a35d3d96ae142df8"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/e1-termodinamica.r2.html",
+      "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/revisao-fon02-complementar-r2.json",
+      "sha256": "42ce5afe33e0481562c7673daaf25b359b8580b30276d9df75a1965adaa68399"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/triagem-ban10-complementar-r2.json",
+      "sha256": "cc03d1fdf3a2401c93ea193ce99ed44d79c5a937d908e202ca03ee914b9d819d"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/confronto-fon01-cr-r2.json",
+      "sha256": "d7fb0464f2c33701da8396a400c489dcde5096fc66de8c7d3e4d143ee7def9e4"
+    }
+  ],
+  "limites": [
+    "Seis candidatas; AV69 não aplicada. CR45-r2b possui aprovação isolada; o conjunto aguarda revisão independente.",
+    "Se qualquer proposta for alterada ou rejeitada, refazer o ensaio combinado e as evidências.",
+    "Não é aprovação independente, aplicação ao produto nem parecer integral BAN-07.",
+    "O diretório temporário permanece para inspeção; não contém armazenamento do usuário."
+  ]
+}

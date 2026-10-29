@@ -1,0 +1,116 @@
+{
+  "id": "BAN-02",
+  "rodada": 1,
+  "data": "2026-10-27",
+  "natureza": "Verificação do Corretor; aceite reservado ao Auditor",
+  "validacao": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 190,
+    "artigos_encontrados": 190,
+    "recursos_verificados": 7,
+    "links_locais_verificados": 1022,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "contagens": {
+    "inicial": {
+      "total": 30,
+      "iniciante": 27,
+      "intermediario": 3,
+      "avancado": 0
+    },
+    "real": {
+      "total": 80,
+      "iniciante": 69,
+      "intermediario": 11,
+      "avancado": 0
+    },
+    "avalia": {
+      "total": 80,
+      "iniciante": 72,
+      "intermediario": 8,
+      "avancado": 0
+    }
+  },
+  "formatos": {
+    "certo_errado": 73,
+    "multipla_escolha": 117
+  },
+  "integridade": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e",
+      "base": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "base": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "base": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "base": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "preservado": true
+    }
+  ],
+  "recursos_snapshot": [
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-922604ee21ac.png",
+      "sha256": "922604ee21ac25fec713806a3102c7b775b9cd16ba2c77054cb45d976226b17e",
+      "snapshot": "auditoria/termodinamica/evidencias/BAN-02/recursos-antes/figura-922604ee21ac.png",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-9d164690a624.png",
+      "sha256": "9d164690a6243cb31b9ea0f734b9a85ad4c6570398b9d5ef9278e4f44332bcc2",
+      "snapshot": "auditoria/termodinamica/evidencias/BAN-02/recursos-antes/figura-9d164690a624.png",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-4c355dba6054.png",
+      "sha256": "4c355dba6054f57fc26e5872ffdc1b83738a52345f31b8f994c26486651c2995",
+      "snapshot": "auditoria/termodinamica/evidencias/BAN-02/recursos-antes/figura-4c355dba6054.png",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-de4ee7b16ed4.png",
+      "sha256": "de4ee7b16ed42d37537a23bbcf6cf7aee66cb447e11bb950b3c783e3a859aa1b",
+      "snapshot": "auditoria/termodinamica/evidencias/BAN-02/recursos-antes/figura-de4ee7b16ed4.png",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-222735fab01e.png",
+      "sha256": "222735fab01e54a81e34f3bb54cfd7097a8cbc1391ebe6420d60df8b2513a9cb",
+      "snapshot": "auditoria/termodinamica/evidencias/BAN-02/recursos-antes/figura-222735fab01e.png",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+      "sha256": "b8d543e37fc85224e69507c5bf2aa35d6ac5aeb3eb5ae37879c4806e229f30b8",
+      "snapshot": "auditoria/termodinamica/evidencias/BAN-02/recursos-antes/figura-b8d543e37fc8.png",
+      "copia_confere": true
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-9d73adf962aa.png",
+      "sha256": "9d73adf962aaabecba761c823d3faca4bb4dd463a7009033e7267242bce84cb2",
+      "snapshot": "auditoria/termodinamica/evidencias/BAN-02/recursos-antes/figura-9d73adf962aa.png",
+      "copia_confere": true
+    }
+  ],
+  "limites": [
+    "Sem novo teste de interface: produto não mudou.",
+    "Sem piloto, análise psicométrica ou nova conferência oficial.",
+    "Testes técnicos do apoio documentados separadamente; o script consolidado exportado não foi executado como arquivo nesta sessão por ausência de Node CLI configurado. Os casos anteriores efetivamente executados constam de testes-validador-r1.json."
+  ]
+}

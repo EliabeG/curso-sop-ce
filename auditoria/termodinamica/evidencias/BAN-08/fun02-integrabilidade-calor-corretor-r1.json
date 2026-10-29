@@ -1,0 +1,65 @@
+{
+  "id": "BAN-08",
+  "bloco": "FUN02 integrabilidade e calor de caminho",
+  "estado": "CONFERENCIA_SEM_APROVACAO",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "metodo": "Leitura integral de enunciados e rubricas, exame das integrais e derivadas, conferência independente de logaritmos e balanços.",
+  "registros": [
+    {
+      "id": "fun02-e1-integrabilidade",
+      "aplicabilidade": "SIMBOLICO_NUMERICO_ABERTO",
+      "dados": "θ=T/300 K, ν=vm/(.001 m³/mol), E0=100 J/mol, domínio θ,ν>0; α=E0[(lnθ+lnν)dθ+(ν+(θ−1)/ν)dν], β=α+E0κ(θ−2)²dν/ν; ciclo largo 0, esquerdo −20ln2.",
+      "solucao": "Domínio aberto convexo, coeficientes C¹; α exata com Φ/E0=θlnθ−θ+(θ−1)lnν+ν²/2+1/2, referência Φ(1,1)=0. Em β, diferença de cruzadas=2E0κ(θ−2)/ν; só κ=0 é exata em todo domínio. Ciclo largo cancela; esquerdo=−E0κln2 identifica κ=.2.",
+      "resultado": "De P=(1,1) a Q=(2,2), integrais de α e βHV =100(3ln2+1/2)=257,944154 J/mol; βVH acrescenta 20ln2=271,807098 J/mol; diferença −13,862944 J/mol. Em S, parcial a vm fixo=(100/300)ln4=0,462098 J/(mol K); ao longo ν=θ vale 1,295431, com parcela adicional 0,833333.",
+      "comparacao": "Rubrica 1+2+1,5+2+1,5+1+1=10 e mínimo 8/10 sem erros críticos; igualdade na linha θ=2 não garante vizinhança aberta, referência aditiva não corrige inexatidão.",
+      "tolerancia": "Decimais publicados arredondam à sexta casa, erro <0,5×10⁻⁶; números e modelo são didáticos, não incerteza experimental.",
+      "limite": "κ identificado apenas na família postulada; forma matemática energética não prova admissibilidade física. ν=0 e θ=0 fora do domínio.",
+      "artigo_sha256": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+        "dados": "assets/termodinamica/fun02-dados-v1.json",
+        "sha256_dados": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319"
+      },
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA"
+    },
+    {
+      "id": "fun02-e1-calor-caminho",
+      "aplicabilidade": "SIMBOLICO_NUMERICO_ABERTO",
+      "dados": "Gás ideal 1 mol, R=8,314 J/(mol K), cv,m=3R/2, T1=300 K, V1=.020 m³, V2=.005 m³ e pV^(3/2)=const; fronteira reversível no limite, Q entra e W sai positivos.",
+      "solucao": "T√V constante; T2=600 K, p1=124710 Pa, p2=997680 Pa. W=−2RΔT=−4988,4 J; ΔU=(3R/2)ΔT=3741,3 J; Q=−1247,1 J; resíduo zero. Ccaminho=−R/2=−4,157 J/K, CV=12,471 e Cp=20,785 J/K.",
+      "resultado": "δQrev não exata, δQrev/T=dS; ΔS=−(R/2)ln2≈−2,881412830 J/K, enquanto Q/T1=−4,157 J/K. Impondo Q=0 sem alterar percurso/estados o resíduo é −1247,1 J.",
+      "comparacao": "Rubrica 2+2,5+2+2+1,5=10, sugere 0,1% com sinal e base corretos; expoente adiabático reversível γ=5/3, diferente de 3/2. Irreversibilidade externa não implica por si falha da igualdade interna δQ/Tgás=dS.",
+      "tolerancia": "−2,881412830 arredonda com erro <0,5×10⁻⁹ J/K; 0,1% é regra pedagógica, não tolerância metrológica.",
+      "limite": "Ccaminho não é CV; molar e total coincidem numericamente só por n=1 mol. Com geração interna requer modelo e temperatura da fronteira, sem mudar ΔS dos estados.",
+      "artigo_sha256": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+        "dados": "assets/termodinamica/fun02-dados-v1.json",
+        "sha256_dados": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319"
+      },
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA"
+    }
+  ],
+  "apoios": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun02-integrabilidade-r1-independente.md",
+      "autor": "/root/auditor_ban08_novo",
+      "sha256": "cf2605ddaa8b514b7900f9796ff4e1bd59db1c828dece6e4b0bb05dc8b904dfb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun02-calor-caminho-r1-independente.md",
+      "autor": "/root/auditor_ban08_novo",
+      "sha256": "323f6184addba6d55e1b82ffa8661ff5a24a16fc8c45001e75cd2b0dc84daeb4"
+    }
+  ],
+  "limites": [
+    "Apoios examinaram HTML anterior; identidade dos artigos será verificada.",
+    "Sem revisão global, teste de alunos ou validação experimental."
+  ]
+}

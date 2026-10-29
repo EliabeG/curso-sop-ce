@@ -1,0 +1,3151 @@
+{
+  "id": "FON-01",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "metodo": "Verificação de escopo, identidade, completude dos campos e rastreio. Não substitui as leituras humanas/agentes registradas nem certifica ciência ou ausência universal de atos.",
+  "ok": true,
+  "verificacoes": 777,
+  "falhas": [],
+  "resumo": {
+    "artigos": 197,
+    "artigos_identicos": 196,
+    "registros_CR": 80,
+    "outros_registros_identicos": 117,
+    "pdfs_baseline_preservados": 24
+  },
+  "canonico": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1234,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "checks": [
+    {
+      "nome": "snapshot:modulos/e1-termodinamica.html",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:assets/registro.js",
+      "ok": true
+    },
+    {
+      "nome": "preservado:assets/registro.js",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:assets/curso.js",
+      "ok": true
+    },
+    {
+      "nome": "preservado:assets/curso.js",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:assets/curso.css",
+      "ok": true
+    },
+    {
+      "nome": "preservado:assets/curso.css",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:downloads/termodinamica/fontes.json",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/fontes.json",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:downloads/termodinamica/LEIA-ME.md",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/LEIA-ME.md",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2024-12-08_justica-eleitoral-tse-cpnuje-engenharia-mecanica_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2024-12-08_justica-eleitoral-tse-cpnuje-engenharia-mecanica_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2023-10-15_tbg-engenheiro-junior-operacoes_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2024-01-21_itaipu-tecnico-em-mecanica_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2024-01-21_itaipu-tecnico-em-mecanica_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2025-06-22_caesb-engenheiro-mecanico_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2025-06-22_caesb-engenheiro-mecanico_prova-com-justificativas.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/gabaritos/2023-04-30_petrobras-tecnico-operacao-2023-1_gabarito.pdf",
+      "ok": true
+    },
+    {
+      "nome": "preservado:downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia-unica:0",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia-unica:1",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia-unica:2",
+      "ok": true
+    },
+    {
+      "nome": "delta-reconstroi-html-integral",
+      "ok": true
+    },
+    {
+      "nome": "hash-html-baseline",
+      "ok": true
+    },
+    {
+      "nome": "hash-html-final",
+      "ok": true
+    },
+    {
+      "nome": "snapshot-final",
+      "ok": true
+    },
+    {
+      "nome": "197-artigos",
+      "ok": true
+    },
+    {
+      "nome": "ids-ordem-preservados",
+      "ok": true
+    },
+    {
+      "nome": "somente-cr80-muda",
+      "ok": true,
+      "detalhe": [
+        "cr-e1-80"
+      ]
+    },
+    {
+      "nome": "inventario-somente-campos-autorizados",
+      "ok": true
+    },
+    {
+      "nome": "117-registros-nao-CR-identicos",
+      "ok": true
+    },
+    {
+      "nome": "80-registros-individuais-unicos",
+      "ok": true
+    },
+    {
+      "nome": "12-familias",
+      "ok": true
+    },
+    {
+      "nome": "80-ids-exatos",
+      "ok": true
+    },
+    {
+      "nome": "matriz-hash-html-corrente",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:campos-de-leitura",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:pagina-prova-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:hash-artigo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:sha-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:imagem-prova",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:sha-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:imagem-chave",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:indice-existe",
+      "ok": true
+    },
+    {
+      "nome": "CR56-historico-E-C",
+      "ok": true
+    },
+    {
+      "nome": "CR67-historico-E-C",
+      "ok": true
+    },
+    {
+      "nome": "CR80-atual-p5-historica-p4",
+      "ok": true
+    },
+    {
+      "nome": "validador-canonico",
+      "ok": true,
+      "detalhe": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 197,
+        "artigos_encontrados": 197,
+        "recursos_verificados": 29,
+        "links_locais_verificados": 1234,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      }
+    }
+  ]
+}

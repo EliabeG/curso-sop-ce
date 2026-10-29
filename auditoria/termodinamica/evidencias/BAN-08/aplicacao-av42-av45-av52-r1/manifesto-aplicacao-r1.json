@@ -1,0 +1,65 @@
+{
+  "id": "BAN-08",
+  "estado": "APLICADO_AGUARDANDO_VALIDACAO_E_AUDITORIA",
+  "data": "2026-10-29",
+  "corretor": "/root/inspect_repo, agente automatizado",
+  "produtos": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256_antes": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+      "sha256_depois": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256_antes": "486c53c5aa6c432831599c4eca170e4620d089b4eb15b480dbfb2cbfaf54c9ce",
+      "sha256_depois": "5e83ef8b27e4596e9d8d154aa19df1e8f836863a4ff76acac0ba5ea66e9af72c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256_antes": "35df191e2f7964adfb7b975668491e8ba39d983a5df93640a35d3d96ae142df8",
+      "sha256_depois": "1eba9f02611dcb1b1a58690a876a0541d9fe5eb57714496415306f95d5564e29"
+    }
+  ],
+  "snapshot": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/e1-termodinamica-av42-av45-av52-r1.html",
+    "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+  },
+  "artigos": [
+    {
+      "item": "av-e1-42",
+      "digital_antes": "d0b32333",
+      "digital_candidata": "595a0614",
+      "sha_antes": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+      "sha_candidata": "81c755c3fbc510b3d5c1ff5678e5c14c548239a2563346a33b28bdedd650491e"
+    },
+    {
+      "item": "av-e1-45",
+      "digital_antes": "95231db6",
+      "digital_candidata": "10df36ad",
+      "sha_antes": "3babe8cb08138fd4ad42f7358c5208b70974370d17a62d30490075e7b5019b50",
+      "sha_candidata": "4999bebef5d3de5516753ad3390a1728be9b3ace5bf28d23037acb2783c661ba"
+    },
+    {
+      "item": "av-e1-52",
+      "digital_antes": "d95e6b2d",
+      "digital_candidata": "0619ab1f",
+      "sha_antes": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+      "sha_candidata": "f920b246bea3d4b5e3d4b63cbfb5a4dd24ae11cff17877aeec73decf278cfc97"
+    }
+  ],
+  "backup": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-av42-av45-av52-r1/antes",
+  "candidatas_manifesto_sha256": "723882a0286bb20c3280d0ea03991075d18c808e226d87c8d43f029b68db309e",
+  "parecer_candidatas": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-08-candidatas-av42-av45-av52-revisao-independente-r1.md",
+    "sha256": "bbc9741641fa852b2c3535da99795edafdfe001bd63153b0e65aec6c439bd3b4",
+    "autor": "/root/auditoria_av61_70",
+    "alcance": "científico localizado; não aprova versão efetiva"
+  },
+  "validacao": "PENDENTE",
+  "persistencia": "PENDENTE",
+  "revisao_versao_efetiva": "PENDENTE",
+  "limites": [
+    "Nenhum aceite concedido; BAN-07 r3 foi emitido para versão anterior.",
+    "Os registros históricos de auditoria não foram regravados."
+  ]
+}

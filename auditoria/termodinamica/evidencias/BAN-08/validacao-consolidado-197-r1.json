@@ -1,0 +1,19 @@
+{
+  "id": "BAN-08",
+  "estado": "VALIDACAO_INTEGRAL_CORRETOR_SEM_ACEITE",
+  "total": 197,
+  "contagens": {
+    "q": 30,
+    "cr": 80,
+    "av": 80,
+    "aberto": 7
+  },
+  "resultado": "197 IDs únicos correspondem ao inventário e aos artigos atuais; todos os hashes e campos obrigatórios conferem; os arquivos de origem e apoios batem seus hashes.",
+  "html_sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+  "inventario_sha256": "adb2f7edd0bdfbf6d1f0ec0bc8aefd46b22d6728a0aa59fc3981281aac93fbcd",
+  "consolidado_sha256": "d8be445efd5b6a3939dbe6fb58fc042793f722347b8ff4c0ce722e046b6114a3",
+  "limites": [
+    "Esta verificação é estrutural e de vínculos; não substitui auditoria científica independente ou aceite BAN-08.",
+    "Registros históricos são preservados; três recalculados após aplicação e demais herdados com análise atribuída."
+  ]
+}

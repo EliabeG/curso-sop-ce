@@ -1,0 +1,1768 @@
+{
+  "id": "FOR-01",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "natureza": "Subauditoria técnica independente restrita a R1-A; sem gate geral",
+  "versao": {
+    "manifesto_sha256": "e45ac6743e82eccbb6fe30f33d64b6b23eec67574141f961cdabc77eafa72a04",
+    "formulario_sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+    "aula_sha256": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+    "inventario_sha256": "de401cb3f8c56a52db7da18eab7134584cd5d39912fdc797f86b5cc053bdda04"
+  },
+  "achados_obrigatorios": [],
+  "integridade": {
+    "entradas": 23,
+    "copias": 9,
+    "resultados": [
+      {
+        "arquivo": "formulas/termodinamica.html",
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/formulas/termodinamica.html",
+        "sha256_copia": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+        "bytes": 1310369,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/modulos/e1-termodinamica.html",
+        "sha256_copia": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+        "sha256": "de401cb3f8c56a52db7da18eab7134584cd5d39912fdc797f86b5cc053bdda04",
+        "bytes": 780241,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/auditoria/termodinamica/inventario/inventario-questoes.json",
+        "sha256_copia": "de401cb3f8c56a52db7da18eab7134584cd5d39912fdc797f86b5cc053bdda04",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "sha256": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+        "bytes": 59143,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "sha256_copia": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "assets/formulario-e1.js",
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/formulario-e1.js",
+        "sha256_copia": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "assets/formulario-e1.css",
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/formulario-e1.css",
+        "sha256_copia": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "assets/curso.js",
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/curso.js",
+        "sha256_copia": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "assets/registro.js",
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/registro.js",
+        "sha256_copia": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "assets/curso.css",
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276,
+        "confere": true,
+        "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/curso.css",
+        "sha256_copia": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "copia_confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/REVISAO_100-r2.md",
+        "sha256": "ae1f1fcde441c7222e5894937de6679f7f1794f6bdc4660637b6ffa7c9cdbac7",
+        "bytes": 119489,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/delta-inventario-r1-r2.json",
+        "sha256": "9144b2abfa67c88479de562332e34e24cf6bbdba4443925472ace4b03edbab41",
+        "bytes": 520,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/deltas-aula-r1-r2.json",
+        "sha256": "ff657d2dc1d75e1b263c14eba3b50005f389cd8468043e5e0b1cba98a228b99e",
+        "bytes": 1633,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/deltas-fichas-r1-r2.json",
+        "sha256": "d5a563cf432c5aeddc81dfe3c622e1c6dd8af772eafc8d31fa6a483452282df8",
+        "bytes": 22976,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/e1-termodinamica.r2.html",
+        "sha256": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+        "bytes": 1310369,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/navegador-coordenador-r2.md",
+        "sha256": "cefeab1b5229dda9c5220cdbea04db5e0d04637e6c9a8b49526f19bf9580912b",
+        "bytes": 3106,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/preservacao-coordenador-r2.json",
+        "sha256": "78ba3006ad718ca2e5ae5323dbb2a3f1806e2e6b47fe121dd13adf6d95dda0c9",
+        "bytes": 768,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/resposta-r1-a-r2.md",
+        "sha256": "2438a96ba3d201abd39be6f146ad49137551be6f1a4584c8860a9c49d54dd728",
+        "bytes": 2535,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/revisao-100-r2.json",
+        "sha256": "9ae3e62d3c609be37ea0f80a2356ec65799c1a6084de434792fbb30077e4c0b1",
+        "bytes": 201249,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/validacao-inventario-r2.json",
+        "sha256": "e9c0b27c4fb03f378c89955d088604acb42ad2935f1cffbbb5ff2006e57bf4e7",
+        "bytes": 333,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/verificacoes-r2.json",
+        "sha256": "c5c155da8dc1c27cb0d1a839c8d895d97cb0fad48bc844a3853bf2e20fb2ade1",
+        "bytes": 11324,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FOR-01/verificar-for01-r2.mjs",
+        "sha256": "00220a0cc493fc3ad53f0487b1a59165847583ad9955acc460ca97d9eb5e65c3",
+        "bytes": 6972,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/apoio-coordenador/for01-contagem-mathml.json",
+        "sha256": "1652df087c38ba8328d23bb7f3c2bc481449bee914ee17b86bb33e947506ac33",
+        "bytes": 1055,
+        "confere": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/entregas/FOR-01-r2.md",
+        "sha256": "06fd14cdcca2d83bf69ddab678f70bf75f25edee5c9cbbcf5fe34c51ad3f7024",
+        "bytes": 2770,
+        "confere": true
+      }
+    ]
+  },
+  "reexecucao": {
+    "metodo": "Kernel Node REPL reiniciado antes das importações; verificar-for01-r2.mjs lido integralmente antes de executar verificar(). O script só lê/compara/calcula, sem gravações. Os 913 checks r1 não foram repetidos.",
+    "resultado_coincide_com_salvo": true,
+    "resultado": {
+      "id": "FOR-01",
+      "rodada": 2,
+      "data": "2026-10-28",
+      "ok": true,
+      "total": 91,
+      "falhas": [],
+      "checks": [
+        {
+          "nome": "Manifesto r1 imutável",
+          "ok": true
+        },
+        {
+          "nome": "Entrega r1 imutável",
+          "ok": true
+        },
+        {
+          "nome": "Parecer r1 imutável",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/formulas/termodinamica.html",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/modulos/e1-termodinamica.html",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/formulario-e1.js",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/formulario-e1.css",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/curso.js",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/registro.js",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/pacote-r1/assets/curso.css",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/REVISAO_100-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/alteracoes-fichas-01-50-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/alteracoes-fichas-51-100-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/anotacoes-corretor-01-50-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/antes/assets/formulario-e1.css",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/antes/assets/formulario-e1.js",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/antes/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/antes/auditoria/termodinamica/inventario/inventario-questoes.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/antes/formulas/termodinamica.html",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/antes/modulos/e1-termodinamica.html",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/delta-inventario-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/deltas-aula-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/deltas-fichas-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/e1-termodinamica.r1.html",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/extrato-100-antes.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador.md",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/co2-2017-p2.png",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/co2-2022-p8.png",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/co2-2022-p9.png",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/manifesto-fontes-coordenador.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/nist-bell-lemmon-harvey-2017.pdf",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/nist-persily-dejonge-2017.pdf",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/nist-tn2213-2022.pdf",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/fontes-coordenador/umidade-2017-p7.png",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/navegador-coordenador-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/plano-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/revisao-100-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/revisao-apoio-51-100-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/revisao-apoio-51-100-r1.md",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/revisao-textual-01-50-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/snapshot-antes.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/validacao-inventario-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/verificacoes-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/FOR-01/verificar-for01-r1.mjs",
+          "ok": true
+        },
+        {
+          "nome": "Histórico r1 auditoria/termodinamica/evidencias/isola-termodinamica-pos-FOR-01-r1.json",
+          "ok": true
+        },
+        {
+          "nome": "100 fichas / IDs preservados",
+          "ok": true
+        },
+        {
+          "nome": "11 grupos preservados",
+          "ok": true
+        },
+        {
+          "nome": "191 elementos MathML preservados",
+          "ok": true
+        },
+        {
+          "nome": "Somente fichas 23/46/79/84",
+          "ok": true
+        },
+        {
+          "nome": "formula-latente: só condição e busca",
+          "ok": true
+        },
+        {
+          "nome": "formula-latente: hashes do delta",
+          "ok": true
+        },
+        {
+          "nome": "formula-latente: busca sincronizada",
+          "ok": true
+        },
+        {
+          "nome": "formula-latente: exclusão inequívoca",
+          "ok": true
+        },
+        {
+          "nome": "formula-valvula: só condição e busca",
+          "ok": true
+        },
+        {
+          "nome": "formula-valvula: hashes do delta",
+          "ok": true
+        },
+        {
+          "nome": "formula-valvula: busca sincronizada",
+          "ok": true
+        },
+        {
+          "nome": "formula-valvula: exclusão inequívoca",
+          "ok": true
+        },
+        {
+          "nome": "formula-rankine: só condição e busca",
+          "ok": true
+        },
+        {
+          "nome": "formula-rankine: hashes do delta",
+          "ok": true
+        },
+        {
+          "nome": "formula-rankine: busca sincronizada",
+          "ok": true
+        },
+        {
+          "nome": "formula-rankine: exclusão inequívoca",
+          "ok": true
+        },
+        {
+          "nome": "formula-refrigeracao: só condição e busca",
+          "ok": true
+        },
+        {
+          "nome": "formula-refrigeracao: hashes do delta",
+          "ok": true
+        },
+        {
+          "nome": "formula-refrigeracao: busca sincronizada",
+          "ok": true
+        },
+        {
+          "nome": "formula-refrigeracao: exclusão inequívoca",
+          "ok": true
+        },
+        {
+          "nome": "Formulário reconstruído apenas pelo delta",
+          "ok": true
+        },
+        {
+          "nome": "Somente três alvos autorizados",
+          "ok": true
+        },
+        {
+          "nome": "Delta aula único base-calor-latente",
+          "ok": true
+        },
+        {
+          "nome": "Delta aula único base-rankine",
+          "ok": true
+        },
+        {
+          "nome": "Delta aula único base-refrigeracao",
+          "ok": true
+        },
+        {
+          "nome": "Aula reconstruída apenas pelo delta",
+          "ok": true
+        },
+        {
+          "nome": "197 artigos byte a byte",
+          "ok": true
+        },
+        {
+          "nome": "fun01-estado-equilibrio integral preservada",
+          "ok": true
+        },
+        {
+          "nome": "fun02-diferenciais-caminhos integral preservada",
+          "ok": true
+        },
+        {
+          "nome": "197 registros preservados",
+          "ok": true
+        },
+        {
+          "nome": "Inventário só hash/snapshot globais",
+          "ok": true
+        },
+        {
+          "nome": "Registro científico muda somente quatro fichas",
+          "ok": true
+        },
+        {
+          "nome": "Documentação r2: 191 elementos",
+          "ok": true
+        },
+        {
+          "nome": "Infraestrutura/resumo intactos assets/formulario-e1.js",
+          "ok": true
+        },
+        {
+          "nome": "Infraestrutura/resumo intactos assets/formulario-e1.css",
+          "ok": true
+        },
+        {
+          "nome": "Infraestrutura/resumo intactos assets/curso.js",
+          "ok": true
+        },
+        {
+          "nome": "Infraestrutura/resumo intactos assets/curso.css",
+          "ok": true
+        },
+        {
+          "nome": "Infraestrutura/resumo intactos assets/registro.js",
+          "ok": true
+        },
+        {
+          "nome": "Infraestrutura/resumo intactos auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+          "ok": true
+        },
+        {
+          "nome": "Resistor: balanço geral fecha",
+          "ok": true
+        },
+        {
+          "nome": "Resistor: redução Q=ṁhfg falha",
+          "ok": true
+        },
+        {
+          "nome": "Resistor: fora da hipótese publicada",
+          "ok": true
+        },
+        {
+          "nome": "Resistor: entropia gerada não negativa",
+          "ok": true,
+          "detalhe": "No modelo saturado puro a T constante, hfg=T·sfg; Sgen=ṁsfg=Wel,in/T>0 para VC adiabático. Dados 1000 kJ/kg e 300 K são autorais, não tabela de fluido real."
+        },
+        {
+          "nome": "Validação canônica",
+          "ok": true
+        }
+      ],
+      "inventario": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 197,
+        "artigos_encontrados": 197,
+        "recursos_verificados": 29,
+        "links_locais_verificados": 1166,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      },
+      "contraprova": {
+        "natureza": "Caso autoral de verificação, sem propriedade experimental",
+        "mdot_kg_s": 0.02,
+        "hfg_kJ_kg": 1000,
+        "T_K": 300,
+        "Qdot_kW": 0,
+        "Wdot_nao_fluxo_kW": -20,
+        "Wel_in_kW": 20,
+        "mdot_delta_h_kW": 20,
+        "Sger_kW_K": 0.06666666666666667,
+        "interpretacao": "O resistor está dentro da fronteira. Energia entra como trabalho elétrico; a adiabaticidade só anula calor. A r2 exclui esse caso do modelo reduzido e mantém pv em h."
+      },
+      "limite": "Reauditoria restrita a R1-A e preservação. Os 913 checks r1 não foram repetidos; demais critérios são herdados por identidade."
+    }
+  },
+  "comparacao_independente": {
+    "fichas": [
+      {
+        "numero": 1,
+        "id": "formula-variacao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Δ indica final menos inicial.",
+        "sha256": "6e0f2abce8b2160327ec05d6c78ae3b81e27ae5f396f6aea36b18126f6941bb0",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 2,
+        "id": "formula-taxas",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Taxas médias no intervalo; a última expressão vale para taxa constante.",
+        "sha256": "fefa6b91d7cb5abdc509988f1abea2b4c7c603bd20803e398bd884209aa88af5",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 3,
+        "id": "formula-conversoes",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Use a aproximação de J/cal fornecida na questão, se houver.",
+        "sha256": "43d875446e0bcd01e95dbf2e90def6e13efb6ce62355a57e0b495f142fc3b738",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 4,
+        "id": "formula-temperatura",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Razões de temperaturas em gás ideal, Carnot, entropia e radiação usam K.",
+        "sha256": "67887eafe354cad2529070dd9d4268d74c458c42912bc4805919c446f8e0ad0c",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 5,
+        "id": "formula-pressao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Todas as pressões na mesma unidade; F⊥/A representa pressão uniforme ou média.",
+        "sha256": "8254d49fdad6ec483188db2f7125a7dedf1d435ac470c60a23652a0cefcb172c",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 6,
+        "id": "formula-densidade",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Use massa e volume da mesma amostra e do mesmo estado.",
+        "sha256": "6ab8bf1e45cf2a677d394663e7a34c966fe088e9f8078da5a30c19af7722170d",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 7,
+        "id": "formula-especificas",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Nestas relações, U, H e S são totais; u, h e s são por unidade de massa.",
+        "sha256": "a3df5c592695c8c8cfb0f6f4e98e42c9e92515aaa52b03c611ed65b1b8e8c363",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 8,
+        "id": "formula-span",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Span é a diferença entre os limites.",
+        "sha256": "c96d68f32b732981d3fccb936c25cbc4ced9561400e7478e537d6eea42d26f67",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 9,
+        "id": "formula-escalas",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Resposta linear; X₂ ≠ X₁ e Y₂ ≠ Y₁ para as razões. Proporcionalidade direta exige a = 0.",
+        "sha256": "5b8196140d9b25b01319c20f39a2f87a507b0c85be161c0f1351dd3153955355",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 10,
+        "id": "formula-percentual",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "A referência do percentual é o valor inicial.",
+        "sha256": "b979cb5cbe386121bbf21dd201ac4f0e673d9cdb5128ec2f9605cde1bd0296a9",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 11,
+        "id": "formula-ppm-geracao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Geração conhecida; some fontes e use vazões de gás nas mesmas condições de referência.",
+        "sha256": "1e37a0d9af3d54540593f9c3ca54be84c1777c1c5ca3a4f1def78e1128d5c3c2",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 12,
+        "id": "formula-mols",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Unidades de massa e de quantidade de matéria devem ser coerentes.",
+        "sha256": "5ced9dcf1d3c229ce86bfd3e90ca808af2a71ef2e43f592eda5cf93b87715992",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 13,
+        "id": "formula-gas-ideal",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Modelo ideal; Pa·m³ → J ou kPa·m³ → kJ, com R compatível.",
+        "sha256": "cf046561b9a75319f3b0386f64cd3d4dc0e314ad4aa345b1485fbed778bd3fa2",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 14,
+        "id": "formula-dois-estados",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Mesma quantidade e composição de gás ideal; use a mesma unidade de pressão nos dois estados e a mesma unidade de volume.",
+        "sha256": "b1b0f9e9411109938d921eaad247735a2ce7c4223d448564ad0699bd242b5fd2",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 15,
+        "id": "formula-restricoes",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal com quantidade e composição fixas; imponha somente a restrição declarada.",
+        "sha256": "d8acfe11cbd87b81fc594f5cd991f63a8639f0e9bcfda1dedb242f953c69ea65",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 16,
+        "id": "formula-compressibilidade",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Z mede o desvio da equação de estado ideal.",
+        "sha256": "6be199146531e2223bf363040ae081032f0e9c41536c1ec02299f708f1b0d4f9",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 17,
+        "id": "formula-calores-especificos",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Relação de diferença: gás ideal; cp e cv avaliados na mesma temperatura.",
+        "sha256": "8e613f5d782057a765ce3c412777b6e1d7ec342039c9e27df5aaf17e6279a217",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 18,
+        "id": "formula-energia-gas",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal de composição fixa e calores específicos constantes na faixa; a relação para ΔU pressupõe massa fixa.",
+        "sha256": "d8d3db2305c0e9ce8c007d43c12dd13c0c74500d25c25fc40b3048b7594ae2fa",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 19,
+        "id": "formula-cinetica-molecular",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Modelo cinético ideal elementar; não é toda a energia interna de qualquer gás molecular.",
+        "sha256": "8cdc92564eaae67b076cb532eb72a2c275ff9b7e7c821b65568a625876a2ccd1",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 20,
+        "id": "formula-energia-c-variavel",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal; propriedades de tabela ou integração substituem a aproximação de c constante.",
+        "sha256": "3548046185f19e3dae670fe09bc96e765c803d0b6da5f2c0a91ababac4343003",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 21,
+        "id": "formula-titulo",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Substância pura em equilíbrio líquido–vapor, abaixo do ponto crítico; x = 0 e x = 1 são os limites saturados. Título é fração mássica.",
+        "sha256": "12a0fb5c8bac71b5464ffd1d4b9036f08a6bb355ed1d5cc5b24737ba86c621cf",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 22,
+        "id": "formula-mistura",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Substância pura em equilíbrio líquido–vapor; f e g na mesma saturação. A inversão exige yg ≠ yf, excluindo o ponto crítico.",
+        "sha256": "ffc556a5b32aa167056373b92e825a9c45e600c9faf60e10e426f1d204852216",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 23,
+        "id": "formula-latente",
+        "preservada": false,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Vaporização completa de substância pura, de líquido a vapor saturados, a pressão fixa. Para Q: massa fechada, só trabalho pV. Para Q̇: escoamento permanente sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. Despreze variações cinética e potencial.",
+        "sha256": "10cb9a203a56b482dac63cab1522161fb11cfd394ec7e3eefee31d04648e1a64",
+        "registro_preservado": false,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 24,
+        "id": "formula-interpolacao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Mesma pressão e região de fase; Ta ≠ Tb e T entre os dois valores. Aproximação local, sem atravessar transição de fase.",
+        "sha256": "a5430830123bfdfc6d909427d48a491dc07f9302160cdc8e661357445f442b89",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 25,
+        "id": "formula-umidade",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Aproximação de ar úmido ideal, desprezando o fator de intensificação. A razão final exige mesma temperatura e pv1 ≠ 0 (φ1 ≠ 0).",
+        "sha256": "5b26cd6204381e0ca167ec0ff8fb6e90032650d4a6e565a1269e59fd880f4eea",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 26,
+        "id": "formula-capacidade-termica",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Sólidos/líquidos em uma fase; c constante, trabalho e efeitos de pressão desprezíveis.",
+        "sha256": "34ef39953ade95b3e9bfa6a30143de0fa8dc55891004b9b62bd2fb1cdb36862f",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 27,
+        "id": "formula-equilibrio-mistura",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Conjunto isolado; capacidades constantes; sem trabalho relevante, reação ou mudança de fase. Despreze energia de mistura e variações cinética/potencial.",
+        "sha256": "b9aa8457fe442e010290407fcb55a3aada6d7eed7d269a483f54261996c3e9da",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 28,
+        "id": "formula-recipiente-mistura",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Capacidades constantes; sem reação ou mudança de fase; energia de mistura e variações cinética/potencial desprezíveis. Inclua o recipiente uma vez e as trocas externas com sinal.",
+        "sha256": "a3355e76287a8e8f87817509e29108b37e10c568ebce95455b22144e3ec9c3f3",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 29,
+        "id": "formula-fase-calorimetria",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Mudança de fase a pressão fixa, só trabalho de fronteira e variações cinética/potencial desprezíveis; fusão/vaporização recebem calor, suas inversas o liberam.",
+        "sha256": "0078e83717dcae01c63197b1d2e8176d13d1f0b361ce599c4e1ba6590ce5e2a3",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 30,
+        "id": "formula-energia-mecanica",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Massa fixa, movimento de translação não relativístico; g aproximadamente constante na diferença de altura.",
+        "sha256": "f38ae4a9a926f42e7d0456263de504044fba8bbb4c8e8d9afcaceca461d04a14",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 31,
+        "id": "formula-balanco-fechado",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Q entra positivo; W sai positivo. Trabalho recebido tem W negativo.",
+        "sha256": "236d6b69a25e57915cd2ae3afb826dd587ea106c56498943398e432cda4301aa",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 32,
+        "id": "formula-u-final",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Sistema fechado; ΔEC e ΔEP desprezíveis; convenção Q entra, W sai.",
+        "sha256": "cbf574eee51c4298b3c16bbe2f693592dadc156d1fd00100fd3290aef1fdb280",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 33,
+        "id": "formula-adiabatico",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Sistema fechado; ΔEC e ΔEP desprezíveis; adiabático não significa W = 0.",
+        "sha256": "5c4ff0da42fdfa0f8739a63684369c89949caf7a60ef06b04cd4ae6a2685a071",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 34,
+        "id": "formula-fronteira",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Processo quase estático, com pressão na fronteira representada por p.",
+        "sha256": "c063b567dc283d53fbaf127ed8800bfea32d5cb524b84d5ecfa8ed5d37aa4498",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 35,
+        "id": "formula-isobarico",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Processo quase estático isobárico; não confunda redução de volume com ΔV positivo.",
+        "sha256": "5a02630ba88ac19480cf11332e117dd3d4c2cf0b65ba1113570764cce72f9323",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 36,
+        "id": "formula-isotermico",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal de massa e composição fixas, transformação isotérmica reversível, só trabalho de fronteira; ΔEC/ΔEP desprezíveis.",
+        "sha256": "abe514ba0156d1347598eaaa1f140fce11922b74b2fcbea99ad6e470dcf84a10",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 37,
+        "id": "formula-calor-processos",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal de massa e composição fixas, calores específicos constantes, só trabalho de fronteira; isobárico quase estático; ΔEC/ΔEP desprezíveis.",
+        "sha256": "a3767106ce94b399252bce5f21b1cb8be8ba7bed1768a5f440d1255b9354e3ae",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 38,
+        "id": "formula-ciclo",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Retorno ao mesmo estado, sem variação líquida de energia cinética ou potencial.",
+        "sha256": "1836c2460e9a1b8394822ef5223978d2d753822a8a2b64aa118eeae8823764d3",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 39,
+        "id": "formula-expansao-livre",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal em recipiente externo rígido, fechado e isolado; expansão para vácuo, sem outros trabalhos; estados de equilíbrio com ΔEC/ΔEP desprezíveis.",
+        "sha256": "613fa4d83a1e8e8117bd55dfc99f698cafbfa2706eba6db074967f16686a53c5",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 40,
+        "id": "formula-reacao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Qp = ΔH: sistema fechado, pressão constante, só trabalho pV e ΔEC/ΔEP desprezíveis. Inversão entre os mesmos estados.",
+        "sha256": "fcdbb873feeba72d2933e5c4a80f2f08beba5a031cbb20ce03b4a7720f5fe89b",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 41,
+        "id": "formula-entalpia",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "A parcela pv incorpora o trabalho de escoamento.",
+        "sha256": "56a4fa95283569dbbf0d3e5008f4a5344e49c6efcad2fa60a64651ecb591c7c9",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 42,
+        "id": "formula-balanco-escoamento",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Volume de controle fixo em regime permanente, com uma entrada e uma saída representativas; q entra e w sai positivos.",
+        "sha256": "f63f29455779a5419d5ed28ed68cbbde554a8dbfd7c8814c09985c11fc46e78a",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 43,
+        "id": "formula-turbina",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Regime permanente, adiabática; variações de velocidade e altura desprezíveis.",
+        "sha256": "182a62bb6375c540decc519554737f603af8bce3fd107d8449947ac8597b65db",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 44,
+        "id": "formula-compressor",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Regime permanente, adiabático; variações de velocidade e altura desprezíveis.",
+        "sha256": "0c146e2e05e866792fc2971e9f33689aded787182b419ff1328e6092d24c8d65",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 45,
+        "id": "formula-bomba",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Regime permanente, adiabático reversível; v aproximadamente constante; ΔEC/ΔEP desprezíveis.",
+        "sha256": "c4454c12e59ddc5a7158a8c55b75e038aa8d524249d3f93ad866614753219f16",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 46,
+        "id": "formula-valvula",
+        "preservada": false,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Regime permanente, sem calor e sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. ΔEC/ΔEP desprezíveis.",
+        "sha256": "bde74bd12cccb9d883f5d245213ad29468956a36491260783cda6fd86711ae4c",
+        "registro_preservado": false,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 47,
+        "id": "formula-trocador-balanco",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Regime permanente, sem trabalho e sem calor externo; ΔEC/ΔEP desprezíveis.",
+        "sha256": "fbc1ea8bf25715fc3f5f658b7a71b602a66f47a3a106dc662808f1a12074476f",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 48,
+        "id": "formula-acumulacao-massa",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Volume de controle fixo; inclua todas as entradas e saídas. Regime permanente exige acumulação nula.",
+        "sha256": "5c5ff20529350f2cf4cbf06c801809d037c93306a26297c45619c8a5e3fcd4d7",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 49,
+        "id": "formula-acumulacao-energia",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Volume de controle fixo; energias cinética/potencial desprezíveis no armazenamento e nas correntes. Ẇ exclui trabalho de escoamento já incluído em h.",
+        "sha256": "b19223a0488e1c5b2e84634aaf08779f1333c067a0e192fe1eda8986d664b3f1",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 50,
+        "id": "formula-intervalo-energia",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Volume de controle fixo; h constante em cada corrente; energias cinética/potencial desprezíveis. Se h variar, integre ṁh no tempo.",
+        "sha256": "c560e0dad40e0bbc591528272e9c01ccd6500c35252b71c926169b9c4b274784",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 51,
+        "id": "formula-enchimento-tanque",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Tanque rígido inicialmente evacuado, uma entrada e nenhuma saída; entalpia de entrada constante; Q=W=0; armazenamento na parede e EC/EP desprezíveis. Para T₂: mesmo gás ideal de composição fixa, cp e cv constantes e T_in constante.",
+        "sha256": "ec0baf387246626cb28dd86a1713c0065ea5a8a19187c0c50809217d1209348b",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 52,
+        "id": "formula-co2-acumulacao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Ambiente bem misturado, CO₂ diluído, volume/densidade constantes; vazões de entrada/saída iguais e na mesma referência T,p; sem outras fontes, remoções ou zonas.",
+        "sha256": "8ce00d9f1adb37ebc9b4a2783948e38e34a17fad813efe8127c922c97308fa6b",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 53,
+        "id": "formula-co2-vazao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Zona única bem misturada e estacionária; CO₂ diluído, volume/densidade constantes, vazões de entrada/saída iguais e na mesma referência T,p, sem outras fontes/remoções. G>0, V̇>0 e Ci>Ce. Se fornecido o excesso, ele já é Ci−Ce.",
+        "sha256": "a05f1641032fd9994aa0074665cb6f1a0a2c86559f48c09f232ca5008ec1f4cc",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 54,
+        "id": "formula-renovacoes",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Vazão exterior; recirculação não equivale a renovação exterior.",
+        "sha256": "d1f9c145f7da6c91db09c52e7df39e35352e2e5f647fdf40701b21a9d90b03f0",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 55,
+        "id": "formula-bomba-potencia",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Bomba em regime permanente com líquido aproximadamente incompressível; H é a carga total acrescentada ao líquido. Potências como magnitudes positivas. Para potência elétrica, incluir o rendimento do motor.",
+        "sha256": "36f3e5bd654b0b30be6746c613b5825d6152544f0374d6d73770bbe2a6d71eac",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 56,
+        "id": "formula-misturador-correntes",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Regime permanente; EC/EP desprezíveis; Q̇ entra e Ẇ sai positivos. A média de entalpias exige Q̇=Ẇ=0 e vazão total positiva. Com reação, inclua energia química nas propriedades.",
+        "sha256": "d4cbb050d6dff034c45fa69e47a31b460e174e4da139271543796372694a029e",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 57,
+        "id": "formula-bocal-difusor",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Permanente, adiabático, sem trabalho, altura desprezível. Argumento da raiz não negativo; não requer reversibilidade.",
+        "sha256": "1cf768e474439c0c7f35293c1ddf3901fce226ef97091baad613a07bdf4abdc7",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 58,
+        "id": "formula-eficiencia",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "QH e QL são magnitudes positivas do mesmo ciclo.",
+        "sha256": "31fea25b43068a922c54a0337fd555bc3e3f4d51e5e13459f7ad7fe6b7bccc3c",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 59,
+        "id": "formula-cop-refrigerador",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Mesmo ciclo e fronteira; COP é adimensional e pode exceder 1.",
+        "sha256": "ae1dc353774cdcd213ba7b321b476e07b227bdc253c92b897df849cabef51d2e",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 60,
+        "id": "formula-cop-bomba-calor",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Mesmo ciclo e fronteira, sem outras trocas relevantes.",
+        "sha256": "e0e6972adf000747077e456e696c70ffd206ce922b8857f2295521be5c7a1ac9",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 61,
+        "id": "formula-carnot",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Máquina cíclica entre dois reservatórios; TH > TL > 0.",
+        "sha256": "4f5cd7d17704f79c01f737677d21dc563f9ca73233fee1cbfad69712ef462c0a",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 62,
+        "id": "formula-limites-carnot",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Máquina cíclica entre apenas dois reservatórios fixos com TH>TL>0, para calor recebido QH>0 fixado. Wmax e QL,min são limites atingidos pelo ciclo reversível.",
+        "sha256": "13c0728cb3a6fb2715e3d4ce219b4d65fecea436f5642d6477d14885350dba81",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 63,
+        "id": "formula-cop-carnot",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Refrigerador ou bomba de calor reversível, movido a trabalho entre os mesmos dois reservatórios fixos; TH>TL>0.",
+        "sha256": "10a50156938587c3d2f687721f562eb01bbdc257093743054d143f04f4742114",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 64,
+        "id": "formula-balanco-entropia",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Sistema fechado com um contato térmico uniforme a Tb; calor entrando positivo. Para vários contatos, some as integrais locais; nunca divida calor líquido por uma temperatura arbitrária. Sger = 0 no processo internamente reversível.",
+        "sha256": "69d63be8b86cfea44666d829bd3e68623e55b82d32579f496f7dfbb2fa19ab8f",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 65,
+        "id": "formula-entropia-isolado",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Sem trocas de massa ou energia; uma parte do conjunto pode perder entropia.",
+        "sha256": "3f796bb836428382a9737fae1fe02e0a035ec1ca2b678022cbf506bee9a740b9",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 66,
+        "id": "formula-entropia-total",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Conjunto total isolado; a soma, não cada parcela, deve ser não negativa.",
+        "sha256": "62140482a53766edaf46e25ad4aeb5ea60e698f6fd374fc3babd0581156095e2",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 67,
+        "id": "formula-calor-reversivel",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Trajetória reversível de referência; área em T–s não é calor real de todo processo.",
+        "sha256": "c7eea15504b5ce2bc5bee60d02789277b1f2acdb1ffac09ab40435776e287c8c",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 68,
+        "id": "formula-entropia-tp",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Composição fixa e cp constante; ln de razões adimensionais.",
+        "sha256": "398e30a63de35205387ad6de46093e0990e878daaf5c02c8b0819c3d44f00f72",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 69,
+        "id": "formula-entropia-tv",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Composição fixa e cv constante; não omita o sinal positivo do termo de volume.",
+        "sha256": "0531a02a02ea164f62a314e8b1c6b27248d407d591e2d7d67fa5e56015c79c76",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 70,
+        "id": "formula-isentro-gas",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Mesmo gás ideal de composição fixa em sequência de estados isentrópicos, com cp e cv constantes.",
+        "sha256": "2ae694b39a0a0c45134a4d68c050fef6793bc23830516045a553af1cac42d47c",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 71,
+        "id": "formula-isentropica-turbina",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Turbina em regime permanente, adiabática, com ΔEC/ΔEP desprezíveis. Comparar a mesma entrada e mesma pressão de saída; referência s isentrópica. Denominador h₁−h₂,s>0.",
+        "sha256": "d3d4e80310f3a3da350b852c1bc297bb8243a6b741d89aff57a94dbee66633d6",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 72,
+        "id": "formula-isentropica-compressor",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Compressor em regime permanente, adiabático, com ΔEC/ΔEP desprezíveis. Mesma entrada e pressão de saída na referência isentrópica; h₂,real−h₁>0.",
+        "sha256": "ea97869190b73ba09ad1f7a34f642926304ade00804390e0d752587a4a5e5aa6",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 73,
+        "id": "formula-entropia-vc",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Volume de controle estacionário. Q̇j positivo entrando por contato j de temperatura uniforme Tj>0. Se a temperatura variar ao longo da fronteira, integrar Q̇/T localmente; Ṡger≥0.",
+        "sha256": "c8023a75ee87b97476e6bc57a7c77905a952385fc48b025286a2aaa676eb6ac7",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 74,
+        "id": "formula-exergia",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Ambiente a T0 constante; Sger não é necessariamente ΔS do sistema.",
+        "sha256": "bccaedfec487746cf8eacb1246fe8d78e10f428a85d48471941ff1957dd21030",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 75,
+        "id": "formula-identidades",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Propriedades de equilíbrio de substância simples compressível e composição fixa.",
+        "sha256": "09b2bb6653007810725cc15b8c39db652d4af2fdd755a45a726a09b3e008233f",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 76,
+        "id": "formula-entalpia-isentro",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Substância simples compressível de composição fixa, estados de equilíbrio ao longo de uma isentrópica. A forma finita exige v aproximadamente constante; caso contrário, usar Δh=∫ₚ₁^ₚ₂ v dp nessa isentrópica.",
+        "sha256": "d97170cd51d76bbbbc512f89ffc188a05fb36a8b0a526e38923202f4e3cc2cea",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 77,
+        "id": "formula-gibbs-fases",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Transferência infinitesimal do mesmo componente entre fases líquida f e vapor g em um conjunto fechado a T,p fixas; somente trabalho pV, sem campos/interfícies relevantes. Outras quantidades independentes mantidas fixas. A igualdade de μ é necessária ao equilíbrio entre fases presentes com troca permitida.",
+        "sha256": "18470e13948d875ec2d49979f49c7e8b4948f93595d5717c35fcdf07a6cc6c9f",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 78,
+        "id": "formula-entropia-c-variavel",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal de composição fixa; cp varia com T; argumentos de logaritmos são adimensionais.",
+        "sha256": "5098010b4f00651049349ac2ebdb98acc2af4d17edf7ed0c71d39cf983b96234",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 79,
+        "id": "formula-rankine",
+        "preservada": false,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Rankine simples sem extrações, mesma vazão, regime permanente e ΔEC/ΔEP desprezíveis; bomba/turbina adiabáticas. Caldeira/condensador sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. qin>0 e trabalho líquido positivo.",
+        "sha256": "c6304dd9d00a08538c7642b345621808fe2d99defd29c7b1bddc3c5ffd7aeadf",
+        "registro_preservado": false,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 80,
+        "id": "formula-brayton-liquido",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Sem outros consumos; também vale com energias por ciclo ou por kg, em uma única base.",
+        "sha256": "be53d6d4b8ef9305ad4392713fd7ce2c59379393187d06bf0234116ffc431ea5",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 81,
+        "id": "formula-brayton-ideal",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal, cp/cv constantes, duas isentrópicas e duas isobáricas; ciclo motor viável.",
+        "sha256": "d5e024a0a04d5c2b38210227074b7a01611a3c060a3d6e7d15cbadecf2b00853",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 82,
+        "id": "formula-otto",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Modelo ar-padrão ideal, calores específicos constantes; adição de calor isocórica.",
+        "sha256": "1e41a8c5d4109aac8bd9c36b8b732fde99107cba6f0447cb080253b015f836a0",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 83,
+        "id": "formula-diesel",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Diesel ar-padrão ideal com cp e cv constantes: compressão/expansão isentrópicas, adição isobárica e rejeição isocórica. r>1, k>1 e 1<rc<r no ciclo convencional não degenerado.",
+        "sha256": "456a1998671f57541829e5921a50ed8b79d70320e505d32336c0681f83c9edb1",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 84,
+        "id": "formula-refrigeracao",
+        "preservada": false,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Ciclo simples estacionário com mesma vazão; ΔEC/ΔEP desprezíveis. Compressor e válvula adiabáticos. Condensador, evaporador e válvula sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. Desprezar trocas nas ligações. wc>0.",
+        "sha256": "cb9dcd50f4ca7442a1c0f4a85fcd9b6659f9ef7136e9e3d997dc76a773437c06",
+        "registro_preservado": false,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 85,
+        "id": "formula-condensador",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Ciclo permanente, sem outras perdas/trocas ou consumos relevantes.",
+        "sha256": "073599882f469b948804fe638a6d6fcb0e2e5c851556ce698328a48de4d13ba4",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 86,
+        "id": "formula-extracao-aquecedor",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Aquecedor aberto, permanente, adiabático, sem trabalho; EC/EP desprezíveis; pressões compatíveis; 0≤y≤1 e denominador não nulo.",
+        "sha256": "5aabf01829a3286ea9ec1e866d11046e552bda7bda249119fbdfe18ab8885041",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 87,
+        "id": "formula-volumetrica",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Volume admitido referido às condições de sucção; não é eficiência isentrópica.",
+        "sha256": "824c8484bcf69b95d037fbd3f55681699cff7868356beb71adb5ee3acbc804a5",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 88,
+        "id": "formula-intermediaria",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Mínimo trabalho total de dois estágios adiabáticos: mesmo gás ideal, cp e cv constantes, mesma eficiência isentrópica constante; resfriamento até T₁ sem perda de pressão, mesma vazão, sem mudança de fase. ΔEC/ΔEP desprezíveis; p₃>p₁>0 fixas.",
+        "sha256": "bd19218dd4ad251d9debfc2b70b19102da7fb7996c82ea98ab2e61582ce7008d",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 89,
+        "id": "formula-politropico",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal de composição fixa em compressão estacionária internamente reversível, pv^np constante com np constante >0 e np≠1; p₂>p₁>0; ΔEC/ΔEP desprezíveis.",
+        "sha256": "91881f7785f5e195bc3dccc1418f93ea39fb3152ae8ed7b3ff1f9eff85071b49",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 90,
+        "id": "formula-compressao-isotermica",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Gás ideal em escoamento permanente, compressão isotérmica internamente reversível; ΔEC/ΔEP desprezíveis.",
+        "sha256": "0dcf693d5afbaa5fd65de8cedfcfd4a2748c15fdd9900d3befe30a2dec53942e",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 91,
+        "id": "formula-fourier",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Condução unidimensional de Fourier, kt>0. Para Q̇=q″xA, fluxo uniforme na área perpendicular a x. Q̇ e q″x são positivos em +x.",
+        "sha256": "2e3753ed96f441bb46e85b74902cd1ed2e83f8d93e447800a031c611673f20eb",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 92,
+        "id": "formula-gradiente",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Parede plana de área constante, condução unidimensional permanente, kt constante e sem geração interna. x cresce da face 1 para a face 2. Q̇ é positivo no sentido 1→2; dT/dx pode ser negativo.",
+        "sha256": "051496957a99d8c917ff90aa5816c786946aba2caf97b9752f5e8f36b11b9f81",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 93,
+        "id": "formula-newton",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Ts e T∞ uniformes na área considerada; hc uniforme ou médio sobre essa área. Q̇ positivo da superfície para o fluido; diferença de temperatura em K ou °C.",
+        "sha256": "4247ac3b96c333986eaa1b77c42f43a419237eebd9b250070e4c396bf7f98a29",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 94,
+        "id": "formula-ua",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Trocador estacionário, sem trocas externas relevantes, U aproximadamente constante. Use média logarítmica e fator F válidos para o arranjo e os perfis térmicos; A deve corresponder à referência de U.",
+        "sha256": "2563213ad8ca0bd3cfd7055f4b608e5da9cfa25148c621105b412796cd5a21cc",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 95,
+        "id": "formula-resistencias",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Parede plana em regime permanente, condução 1D, kt constante, sem geração; resistências em série na mesma área. Tubos exigem resistência cilíndrica e áreas próprias; converter a área não torna válida a expressão plana.",
+        "sha256": "250a3dfa305bbfb1297f7eb759c038d131ce2cdba792916b4c0a15b879c2a572",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 96,
+        "id": "formula-radiacao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Superfície cinza pequena, uniforme, com visão completa de grande entorno aproximadamente negro e isotérmico; meio intermediário não participante. Q̇rad positivo da superfície para o entorno.",
+        "sha256": "bb79add61a2d709d73db2848fc540aa4758d3bb16c5c83156d3319fcafd2241a",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 97,
+        "id": "formula-razao-radiativa",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Mesmo modelo da ficha de radiação; mesmas área, temperaturas e geometria; perda inicial não nula.",
+        "sha256": "333725e14121af7e4b4665505504b46b55a1bf9be313e608754e4c9d4291e7bd",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 98,
+        "id": "formula-dilatacao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Dilatação livre e aquecimento uniforme. Aproximação linear para |αLΔT|≪1, com coeficiente de dilatação aproximadamente constante na faixa.",
+        "sha256": "40bc1dfa0adf88bdc54a5287e47fc5054b6fc0b8ecb5bed04923a3c1a460a7af",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 99,
+        "id": "formula-geracao",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Regime permanente; q‴ uniforme ou média no volume; Ts e T∞ uniformes, hc médio na face. Demais faces isoladas, sem radiação ou outras perdas; hc>0 e Aexp>0.",
+        "sha256": "e4b32d03b87cfde282b239623549998f6852a206208271b5c1147773f97fd6db",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      },
+      {
+        "numero": 100,
+        "id": "formula-geometria",
+        "preservada": true,
+        "mathml_preservado": true,
+        "busca_deriva_so_condicao": true,
+        "condicao": "Bloco retangular; a profundidade participa do volume, não da área ab.",
+        "sha256": "c6e16841916686da40fd009f0b8b9fa819d4bde86eb2979b36c7758135392f32",
+        "registro_preservado": true,
+        "registro_atual_confere": true
+      }
+    ],
+    "alteradas": [
+      23,
+      46,
+      79,
+      84
+    ],
+    "registros_revisao_alterados": [
+      23,
+      46,
+      79,
+      84
+    ],
+    "mathml_count": 191,
+    "regra_busca": "Para cada ficha, substituir somente a condição anterior pela atual reproduz data-busca atual; nos quatro casos alterados a condição e o hash final também coincidem com revisao-100-r2.json.",
+    "delta_checks": [
+      {
+        "tipo": "ficha",
+        "id": "formula-latente",
+        "ocorrencia_unica": true
+      },
+      {
+        "tipo": "ficha",
+        "id": "formula-valvula",
+        "ocorrencia_unica": true
+      },
+      {
+        "tipo": "ficha",
+        "id": "formula-rankine",
+        "ocorrencia_unica": true
+      },
+      {
+        "tipo": "ficha",
+        "id": "formula-refrigeracao",
+        "ocorrencia_unica": true
+      },
+      {
+        "tipo": "aula",
+        "id": "base-calor-latente",
+        "ocorrencia_unica": true
+      },
+      {
+        "tipo": "aula",
+        "id": "base-rankine",
+        "ocorrencia_unica": true
+      },
+      {
+        "tipo": "aula",
+        "id": "base-refrigeracao",
+        "ocorrencia_unica": true
+      }
+    ],
+    "reconstroi_formulario": true,
+    "reconstroi_aula": true,
+    "delta_inventario": [
+      {
+        "caminho": "fonte.sha256",
+        "antes": "dcb29695129041b0dea7383396d2af85f1d656d6414658f8983042bec1f598dd",
+        "depois": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917"
+      },
+      {
+        "caminho": "fonte.snapshot",
+        "antes": "auditoria/termodinamica/evidencias/FOR-01/e1-termodinamica.r1.html",
+        "depois": "auditoria/termodinamica/evidencias/FOR-01/e1-termodinamica.r2.html"
+      }
+    ],
+    "delta_inventario_coincide": true
+  },
+  "preservacao": "Os checks r2 reproduzidos confirmam pacote/evidências/entrega/parecer r1, 197 artigos/registros, FUN-01/FUN-02, JS/CSS e resumo intactos. A comparação por ficha confirma 96 fichas/registros de revisão e todos os 191 MathML preservados.",
+  "limites": [
+    "Ciência das quatro condições, do contramodelo e dos três alvos pertence ao Auditor principal.",
+    "Contas do verificador foram reproduzidas como entregues; não são revisão científica própria.",
+    "Nenhum teste de navegador próprio, impressão ou teste com alunos.",
+    "Nenhum produto, controle ou evidência do autor modificado."
+  ],
+  "arquivos_permanentes_escritos": [
+    "auditoria/termodinamica/pareceres/FOR-01-r2-tecnico.json",
+    "auditoria/termodinamica/pareceres/FOR-01-r2-tecnico.md"
+  ]
+}

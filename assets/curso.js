@@ -509,23 +509,38 @@
   var dadosQuestao = new WeakMap();
   var ctxQuestoes = null;
 
+  // BAN-07: somente E1 conserva tentativas de versões anteriores sem reaplicá-las.
+  var leituraQuestoesE1Invalida = false;
   function lerEstadoModulo() {
     var vazio = { respostas: {}, erros: {}, simulado: null };
     if (!MODULO) return vazio;
-    var bruto = armazenamento.lerJSON('mod:' + MODULO, registrarCorrompido('mod:' + MODULO));
+    var bruto;
+    if (MODULO === 'e1') {
+      leituraQuestoesE1Invalida = false;
+      var texto = armazenamento.ler('mod:' + MODULO);
+      try {
+        bruto = texto === null ? null : JSON.parse(texto);
+        if (texto !== null && (!bruto || typeof bruto !== 'object' || Array.isArray(bruto) || bruto.v !== 2 ||
+          ['respostas', 'erros', 'simulado'].some(function (k) { return bruto[k] != null && (typeof bruto[k] !== 'object' || Array.isArray(bruto[k])); }))) leituraQuestoesE1Invalida = true;
+      } catch (e) { leituraQuestoesE1Invalida = true; }
+      // Não substitui o texto ilegível nem perde ações já realizadas nesta página.
+      if (leituraQuestoesE1Invalida) return ctxQuestoes && ctxQuestoes.estado ? ctxQuestoes.estado : vazio;
+    } else {
+      bruto = armazenamento.lerJSON('mod:' + MODULO, registrarCorrompido('mod:' + MODULO));
+    }
     if (!bruto || typeof bruto !== 'object' || bruto.v !== 2) return vazio;
     var validas = ctxQuestoes ? ctxQuestoes.digitais : {};
     var estado = { respostas: {}, erros: {}, simulado: null };
     if (bruto.respostas && typeof bruto.respostas === 'object') {
       Object.keys(bruto.respostas).forEach(function (d) {
         var l = bruto.respostas[d];
-        if (RE_DIGITAL.test(d) && validas[d] && LETRAS.indexOf(l) >= 0) estado.respostas[d] = l;
+        if (RE_DIGITAL.test(d) && (MODULO === 'e1' || validas[d]) && LETRAS.indexOf(l) >= 0) estado.respostas[d] = l;
       });
     }
     if (bruto.erros && typeof bruto.erros === 'object') {
       Object.keys(bruto.erros).forEach(function (d) {
         var n = bruto.erros[d];
-        if (RE_DIGITAL.test(d) && validas[d] && inteiroValido(n, LIMITE_ERROS) && n > 0) estado.erros[d] = n;
+        if (RE_DIGITAL.test(d) && (MODULO === 'e1' || validas[d]) && inteiroValido(n, LIMITE_ERROS) && n > 0) estado.erros[d] = n;
       });
     }
     var s = bruto.simulado;
@@ -536,7 +551,7 @@
       if (s.marcadas && typeof s.marcadas === 'object') {
         Object.keys(s.marcadas).forEach(function (d) {
           var l = s.marcadas[d];
-          if (RE_DIGITAL.test(d) && validas[d] && LETRAS.indexOf(l) >= 0) sim.marcadas[d] = l;
+          if (RE_DIGITAL.test(d) && (MODULO === 'e1' || validas[d]) && LETRAS.indexOf(l) >= 0) sim.marcadas[d] = l;
         });
       }
       estado.simulado = sim;
@@ -574,7 +589,7 @@
       simulado: estado.simulado ? JSON.parse(JSON.stringify(estado.simulado)) : null
     };
     mudar(estado);
-    if (MODULO) {
+    if (MODULO && !(MODULO === 'e1' && leituraQuestoesE1Invalida)) {
       if (estadoVazio(estado)) {
         armazenamento.apagar('mod:' + MODULO);
       } else {
@@ -1022,6 +1037,16 @@
   function atualizarAvisoPlacar() {
     if (!ctxQuestoes || !ctxQuestoes.placar) return;
     var msg = MODULO ? armazenamento.aviso() : 'Esta página não tem identificação de módulo; as respostas não são salvas.';
+    if (MODULO === 'e1') {
+      if (leituraQuestoesE1Invalida) {
+        msg = (msg ? msg + ' ' : '') + 'O progresso salvo deste módulo está em formato ilegível. Os dados existentes foram preservados; as novas tentativas ficam somente nesta página.';
+      } else {
+        var estado = ctxQuestoes.estado;
+        var mapas = estado ? [estado.respostas, estado.erros, estado.simulado && estado.simulado.marcadas] : [];
+        var antigas = mapas.some(function (mapa) { return mapa && Object.keys(mapa).some(function (d) { return !ctxQuestoes.digitais[d]; }); });
+        if (antigas) msg = (msg ? msg + ' ' : '') + 'Há tentativas de versões anteriores preservadas neste navegador. Responda novamente às questões revisadas para que contem no placar atual.';
+      }
+    }
     ctxQuestoes.placar.aviso.textContent = msg || '';
     ctxQuestoes.placar.aviso.hidden = !msg;
   }
@@ -1205,10 +1230,16 @@
     var pendentes = banco.querySelector('#' + prefixo + '-pendentes');
     var placar = banco.querySelector('#' + prefixo + '-placar');
     var aviso = banco.querySelector('#' + prefixo + '-armazenamento');
+    // BAN-10: a exclusão é editorial, explícita e restrita ao E1; não altera a identidade da resposta.
+    function estudoCritico(item) {
+      return idModulo() === 'e1' && item.dataset.crAvaliacao === 'estudo-critico';
+    }
+    var temEstudosCriticos = itens.some(estudoCritico);
     var respostas = Object.create(null);
     var digitais = Object.create(null);
     var pendencias = Object.create(null);
     var legado = false;
+    var tentativasAnteriores = false;
     var gravacao = true;
     itens.forEach(function (item) { digitais[item.id] = digitalDoBanco(item); });
     function normalizarBusca(t) {
@@ -1219,6 +1250,7 @@
         ? 'As últimas respostas deste banco ficam salvas neste navegador, separadas do placar das questões autorais.'
         : 'O navegador não permitiu ler ou salvar este banco. As tentativas novas ficam nesta página e podem se perder ao sair ou recarregar. Os dados anteriores não foram substituídos.';
       if (legado) aviso.textContent += ' Há tentativas antigas sem identificação do conteúdo. Elas foram preservadas no armazenamento anterior, mas você precisa responder novamente para contar no placar atual.';
+      if (tentativasAnteriores) aviso.textContent += ' Há tentativas de versões anteriores preservadas neste navegador. Responda novamente aos itens revisados para que contem no placar atual.';
     }
     function lerRespostas() {
       var bruto = window.localStorage.getItem(chave);
@@ -1240,6 +1272,9 @@
     }
     function atualizarRespostas(dados) {
       var atuais = Object.create(null);
+      tentativasAnteriores = idModulo() === 'e1' && Object.keys(dados).some(function (digital) {
+        return !itens.some(function (item) { return digitais[item.id] === digital; });
+      });
       itens.forEach(function (item) {
         var valor = dados[digitais[item.id]];
         if (item.querySelector('input[value="' + valor + '"]')) atuais[item.id] = valor;
@@ -1281,8 +1316,13 @@
         return;
       }
       var correta = valor === item.dataset.crGabarito;
-      item.dataset.crResultado = correta ? 'certo' : 'errado';
-      feedback.textContent = (correta ? 'Resposta correta.' : 'Resposta incorreta.') + ' Sua marcação: ' + valor + '. Gabarito: ' + item.dataset.crGabarito + '. Veja o raciocínio na resolução.';
+      if (estudoCritico(item)) {
+        item.removeAttribute('data-cr-resultado');
+        feedback.textContent = 'Estudo crítico, sem pontuação. Sua marcação: ' + valor + (correta ? ' coincide' : ' não coincide') + ' com o gabarito oficial ' + item.dataset.crGabarito + '. Essa comparação não certifica validade técnica nem domínio. Leia a análise e seus limites.';
+      } else {
+        item.dataset.crResultado = correta ? 'certo' : 'errado';
+        feedback.textContent = (correta ? 'Resposta correta.' : 'Resposta incorreta.') + ' Sua marcação: ' + valor + '. Gabarito: ' + item.dataset.crGabarito + '. Veja o raciocínio na resolução.';
+      }
       if (abrir) item.querySelector('.cr-resolucao').open = true;
     }
     function filtrar() {
@@ -1290,9 +1330,14 @@
       var visiveis = 0;
       var respondidas = 0;
       var certas = 0;
+      var criticos = 0;
+      var criticosRespondidos = 0;
       itens.forEach(function (item) {
         var valor = respostas[item.id];
-        if (valor) { respondidas += 1; if (valor === item.dataset.crGabarito) certas += 1; }
+        if (estudoCritico(item)) {
+          criticos += 1;
+          if (valor) criticosRespondidos += 1;
+        } else if (valor) { respondidas += 1; if (valor === item.dataset.crGabarito) certas += 1; }
         item.hidden = (assunto.value && item.dataset.crAssunto !== assunto.value)
           || (banca.value && item.dataset.crBanca !== banca.value)
           || (pendentes.checked && !!valor)
@@ -1304,6 +1349,7 @@
         lote.hidden = !lote.querySelector('.concurso-item:not([hidden]), .avalia-item:not([hidden])');
       });
       placar.textContent = visiveis + ' de ' + itens.length + ' questões exibidas · ' + pluralizar(respondidas, 'respondida', 'respondidas') + ' no banco · ' + pluralizar(certas, 'correta', 'corretas') + ' · ' + pluralizar(respondidas - certas, 'incorreta', 'incorretas') + '.';
+      if (temEstudosCriticos) placar.textContent = visiveis + ' de ' + itens.length + ' questões exibidas · Treino pontuável: ' + respondidas + ' de ' + (itens.length - criticos) + ' respondidas, ' + pluralizar(certas, 'correta', 'corretas') + ' e ' + pluralizar(respondidas - certas, 'incorreta', 'incorretas') + ' · Estudos críticos: ' + criticosRespondidos + ' de ' + criticos + ' com marcação documental, fora da pontuação.';
       banco.querySelector('#' + prefixo + '-vazio').hidden = visiveis > 0;
     }
     itens.forEach(function (item) {

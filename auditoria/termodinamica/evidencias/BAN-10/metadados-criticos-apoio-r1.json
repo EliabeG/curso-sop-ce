@@ -1,0 +1,293 @@
+{
+  "id": "BAN-10",
+  "rodada": "r1",
+  "natureza": "proposta_de_metadados_cognitivos_sem_edicao_canonica",
+  "fonte": "modulos/e1-termodinamica.html",
+  "sha256_fonte_lida": "913d68e615e5a79d3f7c370c403df6b4de0a078a8b9cf14cdefaec63ff36af24",
+  "data": "2026-10-27",
+  "criterios": [
+    "Os roteiros autorais atuais pedem justificativa crítica; não conservar metadados que afirmam que apenas marcar a letra é solicitado.",
+    "A marcação C/E ou alternativa continua documental, sem pontuação; o roteiro de justificativa não recebe correção automática.",
+    "Não alterar IDs, gabaritos oficiais, números de alternativas ou competencias nesta proposta; formato.tipo permanece o da marcação documental.",
+    "Nível é estimado, não empiricamente validado. Crítica sinalizada previamente não equivale a autonomia avançada.",
+    "CR79 passa de iniciante a intermediario pela nova demanda de construir casos contrastantes, não pela presença da palavra crítico; os demais níveis são conservados."
+  ],
+  "itens": [
+    {
+      "id": "cr-e1-04",
+      "sha256_artigo_lido": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+      "campos_propostos": {
+        "formato.comando": "Comparar documentalmente a marcação C/E com a chave oficial, sem pontuação; justificar por escrito a condição omitida, a incompatibilidade de ordenar sensibilidades com unidades diferentes e uma comparação física delimitada, antes de consultar a análise.",
+        "pre_requisitos": [
+          "Volume específico de líquido em uma fase",
+          "Derivadas parciais de v em T ou p com a outra variável fixa",
+          "Unidades de expansão térmica e compressibilidade; comparação de efeitos adimensionais"
+        ],
+        "nivel": {
+          "estimado": "iniciante",
+          "justificativa": "Reconhece unidades e condições de uma comparação qualitativa por roteiro que já indica a omissão; não precisa obter propriedades, testar uma faixa ou construir um modelo novo. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Distinguir a leitura qualitativa da chave C de uma comparação física quantitativa.",
+            "Relacionar as sensibilidades a K⁻¹ e Pa⁻¹ e recusar sua ordenação direta.",
+            "Indicar estado/faixa e perturbações para comparar efeitos como |αΔT| e |κTΔp|."
+          ],
+          "numero_etapas": 3
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C02: examinar uma hipótese de propriedade do líquido e sua faixa, com orientação explícita. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    },
+    {
+      "id": "cr-e1-09",
+      "sha256_artigo_lido": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780",
+      "campos_propostos": {
+        "formato.comando": "Usar C/E somente para comparação documental com a chave, sem nota; explicar por escrito temperatura termodinâmica e Celsius, a restrição que torna E coerente e por que °C continua sendo unidade SI.",
+        "pre_requisitos": [
+          "Temperatura termodinâmica e temperatura Celsius",
+          "Unidade de base kelvin e unidade SI grau Celsius",
+          "Diferença entre texto oficial, chave oficial e interpretação técnica autoral"
+        ],
+        "nivel": {
+          "estimado": "iniciante",
+          "justificativa": "Distingue grandezas/unidades e localiza uma restrição previamente apontada na nota; a justificativa agora é solicitada, mas não exige inferência independente da ambiguidade. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Nomear temperatura termodinâmica/kelvin e temperatura Celsius/grau Celsius.",
+            "Explicitar a restrição à unidade de base que torna a chave E coerente.",
+            "Separar essa interpretação da leitura literal e de uma alegação indevida de que °C não pertence ao SI."
+          ],
+          "numero_etapas": 3
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C08: comunicar unidades e interpretação técnica com precisão, mediante roteiro. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    },
+    {
+      "id": "cr-e1-24",
+      "sha256_artigo_lido": "887ced079ca74bcde28b91d067b1e6cba6b74e5269fb42c4210952f8e96ae398",
+      "campos_propostos": {
+        "formato.comando": "Marcar C/E apenas para confronto documental, sem pontuação; escrever a razão literal de pressões, identificar o dado ausente e declarar a hipótese que autoriza usar a razão 373,15/273,16.",
+        "pre_requisitos": [
+          "Equação pV=nRT e pressão absoluta",
+          "Temperaturas absolutas e conversão Celsius–kelvin",
+          "Mesma amostra com n e V constantes; diferença entre referência térmica e pressão de outra substância"
+        ],
+        "nivel": {
+          "estimado": "iniciante",
+          "justificativa": "Aplica álgebra curta do gás ideal e compara duas leituras já indicadas; o roteiro solicita a crítica de suficiência, mas fornece o contraste central e a razão térmica. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Representar a razão literal p_gás/p_água e reconhecer a dependência não informada de n/V.",
+            "Declarar mesma amostra ideal, quantidade e volume constantes para a leitura de termômetro.",
+            "Relacionar as duas pressões às temperaturas absolutas e distinguir a hipótese autoral do texto oficial."
+          ],
+          "numero_etapas": 3
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C02: identificar dados insuficientes e condições de uso da equação do gás ideal, em estudo guiado. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    },
+    {
+      "id": "cr-e1-34",
+      "sha256_artigo_lido": "8d5968b24cde31d6374c6ec7e1b29bd550aa198ff44ee76906eeaecf57c80170",
+      "campos_propostos": {
+        "formato.comando": "Comparar C/E com a chave oficial sem nota; justificar qual parcela de trabalho é anulada pela isocoria e quais hipóteses adicionais permitem concluir ΔU=Q>0.",
+        "pre_requisitos": [
+          "Sistema fechado e massa fixa",
+          "Trabalho de fronteira ∫p dV versus trabalho elétrico/de eixo",
+          "Primeira lei incluindo energia cinética e potencial e convenção de sinais"
+        ],
+        "nivel": {
+          "estimado": "iniciante",
+          "justificativa": "Identifica e condiciona uma simplificação do balanço seguindo perguntas que nomeiam o termo decisivo; não é solicitado projetar um processo novo ou medir sua validade. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Anular somente o trabalho de fronteira pela constância do volume.",
+            "Partir do balanço total e declarar massa fixa, ausência de outros trabalhos e variações cinéticas/potenciais nulas.",
+            "Concluir ΔU=Q>0 sob essas restrições e separar a conclusão condicionada da afirmação irrestrita."
+          ],
+          "numero_etapas": 3
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C03: distinguir termos de trabalho e explicitar as condições de redução de um balanço energético. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    },
+    {
+      "id": "cr-e1-35",
+      "sha256_artigo_lido": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa",
+      "campos_propostos": {
+        "formato.comando": "Usar C/E somente como comparação documental, sem nota; reescrever o balanço adiabático completo e explicar se elevar o sistema por trabalho recebido exige aumentar sua energia interna.",
+        "pre_requisitos": [
+          "Energia total U+Ec+Ep e primeira lei de sistema fechado",
+          "Adiabaticidade Q=0",
+          "Trabalho produzido positivo e energia potencial gravitacional"
+        ],
+        "nivel": {
+          "estimado": "iniciante",
+          "justificativa": "Aplica o balanço geral e interpreta um contramodelo de elevação já indicado no roteiro; a ressalva é solicitada, mas a hipótese ausente foi revelada previamente. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Anular Q e manter ΔU+ΔEc+ΔEp=−W com a convenção indicada.",
+            "Identificar que a redução a ΔU=−W requer soma nula das variações macroscópicas.",
+            "Explicar o levantamento ideal em que o trabalho recebido aumenta Ep sem modificar U e delimitar a leitura da chave C."
+          ],
+          "numero_etapas": 3
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C03: interpretar armazenamento cinético/potencial e a validade de uma simplificação do balanço. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    },
+    {
+      "id": "cr-e1-39",
+      "sha256_artigo_lido": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "campos_propostos": {
+        "formato.comando": "Comparar a marcação com a chave C sem pontuação; declarar fronteira, calor total recebido e trabalho líquido, explicando quando a igualdade numérica viola Kelvin–Planck e por que fluxos de massa ou outras trocas mudam a análise.",
+        "pre_requisitos": [
+          "Conversão cal/J",
+          "Balanço de uma máquina térmica cíclica e trabalho líquido",
+          "Enunciado de Kelvin–Planck: única fonte e único efeito",
+          "Distinção entre massa fechada cíclica e instalação com fluxos de massa/energia química"
+        ],
+        "nivel": {
+          "estimado": "intermediario",
+          "justificativa": "Integra conversão, balanço do ciclo e condições da segunda lei, comparando duas escolhas de fronteira explicitamente sugeridas. A ampliação do roteiro não prova autonomia avançada. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Compatibilizar as energias e reconhecer a igualdade entre os valores fornecidos.",
+            "Definir a leitura em que os valores representam todo o calor de uma única fonte e o trabalho líquido do ciclo.",
+            "Aplicar balanço e Kelvin–Planck sob ausência de outros efeitos.",
+            "Explicar por que uma fronteira com massa/energia química ou outras trocas exige informações adicionais."
+          ],
+          "numero_etapas": 4
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C03/C04/C09: articular balanço e viabilidade de uma interpretação, diferenciando fronteiras sob orientação explícita. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    },
+    {
+      "id": "cr-e1-62",
+      "sha256_artigo_lido": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a",
+      "campos_propostos": {
+        "formato.comando": "Comparar C/E documentalmente, sem nota; distinguir aumento de volume de admissão efetiva e justificar o estado das válvulas durante a reexpansão do gás residual e durante a entrada de gás.",
+        "pre_requisitos": [
+          "Ciclo de compressor alternativo e volume residual",
+          "Reexpansão antes da admissão",
+          "Abertura de válvulas por diferença de pressão e orientação geométrica do cilindro"
+        ],
+        "nivel": {
+          "estimado": "iniciante",
+          "justificativa": "Reconhece duas fases do ciclo e as respectivas válvulas com o contraste temporal já indicado na nota; não dimensiona válvulas nem calcula um ciclo novo. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Identificar retorno/aumento de volume e reexpansão do gás residual como intervalo anterior à admissão.",
+            "Distinguir ambas as válvulas fechadas nessa reexpansão de admissão aberta e descarga fechada quando há entrada de gás.",
+            "Explicar a leitura condicionada da chave C e por que descer não é uma condição física universal."
+          ],
+          "numero_etapas": 3
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C01/C06: relacionar fronteira, entrada de massa e fase de operação do compressor, em análise guiada. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    },
+    {
+      "id": "cr-e1-79",
+      "sha256_artigo_lido": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+      "campos_propostos": {
+        "formato.comando": "Usar a alternativa marcada apenas para comparar com a chave oficial, sem nota; identificar mecanismos remanescentes, construir duas montagens compatíveis com predominâncias opostas e indicar os dados que distinguem as montagens.",
+        "pre_requisitos": [
+          "Radiação entre superfícies e temperaturas absolutas",
+          "Condução por suportes/cabos e condutância térmica",
+          "Efeito do alto vácuo sobre transporte gasoso",
+          "Distinção entre existência de um mecanismo e sua predominância quantitativa"
+        ],
+        "nivel": {
+          "estimado": "intermediario",
+          "justificativa": "O novo roteiro solicita construir dois casos contrastantes e indicar parâmetros que mudam a predominância, além de reconhecer mecanismos. Essa tarefa justifica estimativa intermediária; a ressalva inicial e o exemplo de autocorreção impedem tratá-la como prova de descoberta autônoma ou nível avançado. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Identificar radiação e condução sólida e delimitar o transporte pelo gás residual.",
+            "Construir uma montagem com ligação sólida fraca em relação à troca radiativa e outra com ligação suficientemente condutora para inverter a predominância.",
+            "Indicar geometria, temperaturas, emissividades e condutâncias necessárias para sustentar a comparação.",
+            "Explicar a leitura que corresponde à chave B e por que o texto original não fixa a razão entre as trocas."
+          ],
+          "numero_etapas": 4
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C03: comparar mecanismos e condições de balanço por contramodelos guiados, sem medir desempenho autônomo. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    },
+    {
+      "id": "cr-e1-80",
+      "sha256_artigo_lido": "68280c9a67d95bdb9eed7cb3ad0ede1506723d88fd968babed76495e7d05e221",
+      "campos_propostos": {
+        "formato.comando": "Comparar a alternativa com a chave D sem pontuação; escrever o balanço com acumulação, explicitar a hipótese que fornece 40 °C e distinguir uniformidade espacial da face de constância temporal.",
+        "pre_requisitos": [
+          "Volume e área do paralelepípedo e identificação da face ABCD",
+          "Geração volumétrica, convecção hA(Ts−Tamb) e outras trocas possíveis",
+          "Balanço de energia com armazenamento dU/dt",
+          "Diferença entre uniformidade espacial e regime permanente"
+        ],
+        "nivel": {
+          "estimado": "intermediario",
+          "justificativa": "Integra geometria, geração, troca superficial e termo de acumulação, julgando uma simplificação indicada no roteiro. A crítica agora é solicitada, mas as notas revelam o ponto decisivo e não demonstram autonomia avançada. Estudo guiado sem pontuação: a nota inicial já revela a ressalva central, e a análise oferece autocorreção; não mede descoberta independente nem autonomia avançada.",
+          "validacao_empirica": "nao_realizada"
+        },
+        "raciocinio": {
+          "categoria": "julgamento_delimitado",
+          "etapas": [
+            "Escrever o balanço com geração, saídas térmicas pertinentes e acumulação antes de suprimi-la.",
+            "Extrair V e área exposta da geometria e identificar os coeficientes do balanço convectivo.",
+            "Impor explicitamente regime permanente e única saída por convecção para recuperar 40 °C.",
+            "Explicar por que uma temperatura uniforme na face pode variar no tempo e por que outras saídas precisam entrar no balanço."
+          ],
+          "numero_etapas": 4
+        },
+        "vinculo_competencias": {
+          "tipo": "apoio_fundamental",
+          "alcance": "Apoio delimitado a C03/C08: selecionar área, declarar termos e comunicar as condições de um balanço térmico com geração. A justificativa é solicitada para autocorreção sem nota; não certifica a competência integral nem autonomia avançada."
+        }
+      }
+    }
+  ]
+}

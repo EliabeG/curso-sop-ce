@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-diagnostico-28",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO_INDEPENDENTE",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "7541e7c4c8314922992e99e8b62b40342c2d938e6edeac67ef9f74b69f86c17c",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r4.json",
+    "sha256": "44d19642bcf39109edf620e7304580b7a8a686e7c42cfa7101fa3d118a79d054"
+  },
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-26-28-independente-r1.md",
+    "sha256": "68869eb1cf952661bcc8d36c4e9f3ba2d96948d5b94337299f99e6a87ef5b3cb"
+  },
+  "original_sha256_fragmento": "7f2c843eab47d23fa30790386dfbb200c22fa06f1307c56483fee9ac2eab61f0",
+  "candidata_sha256_fragmento": "d19ea80ff8c3ea479fc09548943bb1bed8c40d129ae265f24aec7f04cba162ed",
+  "original_sha256_arquivo": "8a46ed3c93fbce80dc1ad30c08a501649e7bcc8f85f5f7cbc1457c11421c314f",
+  "candidata_sha256_arquivo": "11b15f66c44187f84bb13e77c2cd8a3be3302e9eec9d7005072316c25f1dd7b9",
+  "antes": "A ocupação muda e G passa a 0,20 m³/h. Qual é a taxa inicial de mudança da concentração?",
+  "depois": "A ocupação muda e G passa a 0,20 m³/h. Além de G, não há outras fontes, reações ou remoções de CO₂ nem trocas de ar com outras zonas; os volumes são referidos às mesmas condições. Qual é a taxa inicial de mudança da concentração?",
+  "limite": "Preparação isolada, arquivos têm nova linha final; sem edição do produto/controle ou aceite."
+}

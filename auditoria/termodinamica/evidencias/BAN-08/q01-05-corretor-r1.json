@@ -1,0 +1,133 @@
+{
+  "id": "BAN-08",
+  "bloco": "Q01–Q05",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral de enunciado, opções e resolução da versão congelada; recálculos em Decimal para Q02/Q04, limites físicos de Q05 e classificação fundamentada de Q01/Q03.",
+  "registros": [
+    {
+      "id": "q-e1-01",
+      "artigo_sha256": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-01",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-fronteira"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Recipiente vedado, pistão móvel, calor permitido.",
+      "solucao": "Sem transferência de massa, fronteira fechada; energia pode atravessar como calor ou trabalho.",
+      "resultado": "C.",
+      "comparacao": "A/B atribuem passagem de massa, D nega possível troca de energia, E impõe adiabaticidade que não é necessária.",
+      "tolerancia": "Não aplicável: não há quantidade ou operação numérica na resolução ou alternativas.",
+      "limite": "Possibilidade de calor não significa que haja calor em qualquer processo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-02",
+      "artigo_sha256": "c3ecee12ab0cbc10cefd6eb96a2c0272b7847413506e8add5ad21b453d846525",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-02",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-absolutas",
+          "#base-gas-modelo"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "p manométrica +200 kPa e p atmosfera 100 kPa.",
+      "solucao": "p absoluta=p manométrica+p atmosfera=200+100=300 kPa.",
+      "resultado": "B=300 kPa.",
+      "comparacao": "A=100 é atmosfera; C=200 é leitura manométrica; D=200/100=2 é razão adimensional indevidamente rotulada kPa; E=100−200=−100 usa subtração errada. Nenhuma equivale a B.",
+      "tolerancia": "Decimal exato nos dados, sem arredondamento.",
+      "limite": "Atmosfera local é dada e a pressão de entrada tem sinal positivo explícito.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-03",
+      "artigo_sha256": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-03",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-propriedades",
+          "#base-medidas"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Identificar propriedades intensivas; duplicar sistema homogêneo sob mesmo estado.",
+      "solucao": "T e p não escalam com massa; entalpia total, massa, energia total e volume total são extensivas.",
+      "resultado": "E.",
+      "comparacao": "A/D contêm duas extensivas; B inclui volume; C inclui massa. Nenhum outro par contém apenas intensivas. A palavra duplicar é experimento conceitual, não resultado medido.",
+      "tolerancia": "Não aplicável: sem resultado numérico.",
+      "limite": "A comparação pressupõe mesmo estado, composição e propriedades da amostra.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-04",
+      "artigo_sha256": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-04",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#substancias",
+          "#base-valvula-fase"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "hf=500, hg=2500 e h=1000 kJ/kg para mistura saturada na mesma referência.",
+      "solucao": "x=(h−hf)/(hg−hf)=(1000−500)/(2500−500)=500/2000=0,25; 0≤x≤1.",
+      "resultado": "C=0,25 adimensional; fração líquida 0,75.",
+      "comparacao": "A=1−x=0,75; B=2,00 está fora de [0,1]; D=h/(hg−hf)=1000/2000=0,50; E=(h−hf)/hg=500/2500=0,20. Todas distintas.",
+      "tolerancia": "Quocientes exatos com dados fornecidos; duas casas decimais não produzem empate.",
+      "limite": "Tabela é didática; a substância ou estado físico real não são inferidos além de mistura saturada declarada.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-05",
+      "artigo_sha256": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-05",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#substancias",
+          "#base-valvula-fase"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_LIMITES_NUMERICOS",
+      "dados": "Substância pura; pergunta pede a alternativa incorreta.",
+      "solucao": "Título x=mvapor/mtotal aplica-se à coexistência saturada; nos limites líquido saturado x=0 e vapor saturado x=1. Vapor superaquecido não tem título de mistura.",
+      "resultado": "C é incorreta; D (x=1) e E (x=0) são limites corretos.",
+      "comparacao": "A descreve dependência de saturação, B coexistência, D/E limites. C estende título para todo vapor superaquecido.",
+      "tolerancia": "0 e 1 são limites exatos e adimensionais; sem dados numéricos a arredondar.",
+      "limite": "Limites de saturação subcrítica em equilíbrio e mudança de fase na direção correspondente.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem revisão independente, alunos ou fechamento BAN-08.",
+    "Dados didáticos são utilizados como dados do item; não se infere propriedade externa real."
+  ]
+}

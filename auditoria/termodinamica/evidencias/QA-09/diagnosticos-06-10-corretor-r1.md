@@ -1,0 +1,27 @@
+# QA-09 — diagnósticos 06–10: exame do Corretor
+
+Autor: `/root/inspect_repo`. Documento-base `modulos/e1-termodinamica.html`, SHA-256 `9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55`; seção `#preparacao-questoes`, ocorrências 6–10 do `inventario-r2.json` SHA `8f37801a8dfdc073c3ee37357b36126a5235b8bb1fc4ad1f09215236bd5753f4`. Dados são os hipotéticos dos enunciados. As referências externas para método foram consultadas em 29/10/2026, sem captura ou hash local. Este registro não é revisão independente ou aceite QA-09.
+
+## 06 — Primeira lei
+
+Fragmento `d6834093a3d7ebc5c8058689cf3e6c9c9721d66da12b929051a411ef495e246f`. Sistema fechado, Q positivo recebido e W positivo realizado pelo sistema: Q=−30 kJ, W=−180 kJ. Com as demais variações e trabalhos excluídos, ΔU=Q−W=−30−(−180)=**150 kJ** e U₂=500+150=**650 kJ**. A resposta coincide, com igualdade exata para os dados nominais e sem arredondamento adicional. O enunciado fornece energia total, não potência. [OpenStax, primeira lei](https://openstax.org/books/university-physics-volume-2/pages/3-3-first-law-of-thermodynamics) apresenta o balanço; a convenção de sinais usada está explicitada nesta aula.
+
+## 07 — Expansão livre
+
+Fragmento `23aad629190743ccfee8bbea730b1a29ba305db94f45789547f449be6aae3fb8`. Tanque rígido isolado, expansão ao vácuo e nenhum outro trabalho: Q=W=0. Sob a hipótese de ausência de variação macroscópica de energias cinética e potencial, ΔU=0. Para gás ideal U=U(T); com capacidade térmica positiva, estados de equilíbrio têm ΔT=0. Se o volume acessível cresce de V₁ para V₂>V₁, ΔS=nR ln(V₂/V₁)>0. A resposta coincide qualitativamente nesse modelo; o item não fornece n nem os volumes, portanto não permite quantificar ΔS. Igualdades exatas no modelo, sem tolerância. O aumento de entropia não depende de uma hipótese falsa de reversibilidade: a trajetória reversível é apenas artifício de cálculo de uma propriedade de estado. Fonte: [OpenStax, expansão livre e entropia](https://openstax.org/books/university-physics-volume-2/pages/4-7-entropy-on-a-microscopic-scale). **Pendente de adjudicação:** apoio independente questionou se o enunciado e a base excluem suficientemente as variações macroscópicas de energia; a conta não decide a suficiência dessa hipótese. Não alterar o produto antes da decisão.
+
+## 08 — Reação inversa e PCS
+
+Fragmento `e17e2343bbb13dc336bdf20be1ce0b8a3eb9fb9a9323034f4af73fd60f69d8fe`. Invertendo exatamente a mesma reação e extensão, trocando estados inicial e final nas condições indicadas, ΔH inversa=−(−30)=**+30 kJ**, endotérmica. Comparação exata para os dados; não se atribui por mol ou por massa sem base informada. [NIST, inversão de reação](https://trc.nist.gov/TDE/Help/TDE103a/How_to_do_Evaluations/Evaluation_For_Reactions/ReverseReaction.htm) descreve inversão de sinal; [DOE/AFDC, Higher Heating Value](https://afdc.energy.gov/glossary.html) define PCS com água condensada, para produtos de combustão retornados às condições de referência. O texto coincide dentro dessa definição; o valor numérico de PCS não foi pedido nem fornecido.
+
+## 09 — Carnot e entropia: suficiência sob adjudicação
+
+Fragmento `72a42e3735925949b6977964389d48aa363720f9cfadb69ecdebcad19f92bdc4`. Sob o modelo de máquina térmica **cíclica** com 900 kJ totais recebidos a 900 K, apenas as duas trocas térmicas indicadas, e rejeição de 100 kJ a 300 K na mesma base, ηₘₐₓ=1−300/900=2/3 e Qfrio mínimo=900·300/900=**300 kJ**. A rejeição de 100 kJ é menor: ΔS dos reservatórios = 100/300−900/900=−2/3 kJ/K; a máquina cíclica não acumula entropia e a situação viola a segunda lei. As operações e a comparação são exatas. A água pode diminuir sua entropia ao congelar, desde que a entropia total da água e vizinhança não diminua. [OpenStax, limite de Carnot](https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle).
+
+**Pendente de adjudicação:** apoio independente levantou se o enunciado “uma máquina entre 900 K e 300 K recebe 900 kJ e rejeita só 100 kJ” explicita suficientemente caráter cíclico e totalidade/mesma base das trocas, inclusive à luz da preparação anterior. A conta acima é condicional, não decisão sobre suficiência do item vigente. Acúmulo no sistema ou trocas adicionais não podem ser descartados apenas pela aritmética; não aplicar alteração sem decisão e revisão. A comparação da entropia da água é uma questão separada.
+
+## 10 — Exergia e entalpia
+
+Fragmento `ceb10e781e7592d5dddbb9ad668aa88f976bb2693017bcbb63638a08a6c55d9c`. Para temperatura de referência constante T₀=280 K e entropia gerada total Sgen=0,15 kJ/K, Edestr=T₀Sgen=**42 kJ**, exato para dados nominais. Não se trata de 42 kW nem de exergia específica. A relação de Gouy–Stodola é documentada em [MIT, entropia e energia indisponível](https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node48.html).
+
+Para substância simples compressível, composição fixa, em estados de equilíbrio e com ds=0, dh=Tds+vdp=vdp. Com v representativo aproximadamente constante na faixa de pressão, Δh≈(0,001 m³/kg)(600 kPa)=**0,60 kJ/kg**, pois 1 kPa·m³=1 kJ. O valor coincide com a estimativa publicada. A multiplicação é exata para os valores dados; o enunciado não fornece variação de v nem propriedades para estabelecer erro da aproximação, que não deve ser tratada como tolerância numérica conhecida. Fonte: [MIT, Brayton e relação dh](https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node46.html); avaliar eventual necessidade de explicitar a representatividade de v na revisão independente.

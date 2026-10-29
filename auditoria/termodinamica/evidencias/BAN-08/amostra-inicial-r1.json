@@ -1,0 +1,151 @@
+{
+  "id": "BAN-08",
+  "tipo": "AMOSTRA_INICIAL_NAO_EXAUSTIVA",
+  "estado": "PREPARACAO_NAO_APROVADA",
+  "data": "2026-10-29",
+  "metodo": "Contas independentes em Python Decimal (precisão 40), a partir dos dados do artigo e JSON de propriedades. Exemplos não substituem auditoria dos 197 IDs ou revisão independente.",
+  "fonte_inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/inventario-numerico-197-r1.json",
+    "sha256": "5b56e8280d35d590bf11ddbff9b0e789faed257fafe1cad9c4854cc5ac5fd99f"
+  },
+  "casos": [
+    {
+      "id": "q-e1-01",
+      "artigo_sha256": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "fonte_primaria_do_item": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-01",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+      },
+      "revisor": "/root/inspect_repo, agente automatizado Corretor",
+      "revisao_independente": "PENDENTE",
+      "data": "2026-10-29",
+      "estado": "AMOSTRA_PRELIMINAR_SEM_APROVACAO",
+      "aplicabilidade": "SEM_RESULTADO_NUMERICO_NO_ARTIGO",
+      "dados": "Fronteira vedada, pistão móvel, calor permitido.",
+      "solucao": "Massa não cruza; calor e trabalho podem cruzar.",
+      "resultado": "C; as demais opções atribuem passagem de massa, isolamento ou adiabaticidade necessária.",
+      "tolerancia": "Não aplicável a um juízo conceitual; nenhuma magnitude a arredondar.",
+      "limite": "Esse juízo classifica o item, não contabiliza como recálculo de resultado numérico."
+    },
+    {
+      "id": "q-e1-06",
+      "artigo_sha256": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "fonte_primaria_do_item": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-06",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+      },
+      "revisor": "/root/inspect_repo, agente automatizado Corretor",
+      "revisao_independente": "PENDENTE",
+      "data": "2026-10-29",
+      "estado": "AMOSTRA_PRELIMINAR_SEM_APROVACAO",
+      "aplicabilidade": "NUMERICO",
+      "dados": "m=1 kg, R=0,287 kJ/(kg·K), T=300 K, V=0,861 m³; modelo de gás ideal.",
+      "solucao": "p=mRT/V; kJ/m³=kPa.",
+      "resultado": "100 kPa; D. As demais escolhas 0,287, 300, 1 e 86,1 kPa não coincidem com 100.",
+      "tolerancia": "Igualdade exata para os decimais fornecidos, p=100; não há arredondamento ambíguo.",
+      "reproducao": {
+        "p_kPa": "100"
+      },
+      "limite": "Não se atribui precisão experimental aos dados didáticos."
+    },
+    {
+      "id": "cr-e1-26",
+      "artigo_sha256": "7c0ed44062bd50045076b2379e2449d24ef23da635ffe8a4d751ae37fb85303f",
+      "fonte_primaria_do_item": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-26",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+      },
+      "revisor": "/root/inspect_repo, agente automatizado Corretor",
+      "revisao_independente": "PENDENTE",
+      "data": "2026-10-29",
+      "estado": "AMOSTRA_PRELIMINAR_SEM_APROVACAO",
+      "aplicabilidade": "NUMERICO_COM_HIPOTESE_EDITORIAL",
+      "dados": "Q sai 400 kJ; agitador fornece 1400 kcal; suplemento: sistema fechado, apenas trocas indicadas, ΔEc/ΔEp desprezíveis e 1 kcal termoquímica=4,184 kJ.",
+      "solucao": "Q=−400/4,184 kcal; W=−1400 kcal; ΔU=Q−W.",
+      "resultado": "ΔU≈1304,4 kcal; não supera 5500, logo E sob modelo editorial.",
+      "tolerancia": "Resolução mostra uma casa decimal: desvio ≤0,05 kcal para 1304,4; margem para o limiar muito maior.",
+      "reproducao": {
+        "calor_sai_kcal": "95.60229445506692160611854684512428298279",
+        "deltaU_kcal": "1304.397705544933078393881453154875717017"
+      },
+      "limite": "Não se infere sistema fechado a partir da figura ou da transcrição oficial isolada."
+    },
+    {
+      "id": "cr-e1-39",
+      "artigo_sha256": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "fonte_primaria_do_item": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-39",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+      },
+      "revisor": "/root/inspect_repo, agente automatizado Corretor",
+      "revisao_independente": "PENDENTE",
+      "data": "2026-10-29",
+      "estado": "AMOSTRA_PRELIMINAR_SEM_APROVACAO",
+      "aplicabilidade": "NUMERICO_ESTUDO_CRITICO_SEM_NOTA",
+      "dados": "350 cal, 1 cal=4,2 J e 1470 J de trabalho; original é motor cíclico de combustão.",
+      "solucao": "350×4,2=1470 J. A conclusão de Kelvin–Planck requer calor total de uma única fonte e trabalho líquido do ciclo, sem outros efeitos.",
+      "resultado": "1470 J exatamente; C é chave documental oficial. No modelo restrito, QH=Wlíq e nenhuma rejeição contrariam Kelvin–Planck.",
+      "tolerancia": "Igualdade exata conforme conversão estabelecida no enunciado; a condição de modelo não é questão de arredondamento.",
+      "limite": "Estudo crítico sem pontuação; motor aberto ou outras trocas não são cobertos pela conclusão condicionada."
+    },
+    {
+      "id": "av-e1-31",
+      "artigo_sha256": "2b2015e4ce0ec1bbea95c3da375ec316239d427f44454cfa43ca007c777fff7a",
+      "fonte_primaria_do_item": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-31",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+      },
+      "revisor": "/root/inspect_repo, agente automatizado Corretor",
+      "revisao_independente": "PENDENTE",
+      "data": "2026-10-29",
+      "estado": "AMOSTRA_PRELIMINAR_SEM_APROVACAO",
+      "aplicabilidade": "SEM_RESULTADO_NUMERICO_NO_ARTIGO",
+      "dados": "Comparação PCS/PCI na base comum de combustível e condições de referência.",
+      "solucao": "Referência da água líquida no PCS e vapor no PCI; diferença é a parcela de condensação quando há água.",
+      "resultado": "E; A inverte referências, B atribui diferença a calor sensível, C generaliza igualdade, D usa consumo auxiliar.",
+      "tolerancia": "Não aplicável: alternativas e solução conceituais.",
+      "limite": "Não se supõe diferença positiva quando não se forma água; plausibilidade dos erros é teórica."
+    },
+    {
+      "id": "fun01-e1-saturacao",
+      "artigo_sha256": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "fonte_primaria_do_item": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#fun01-e1-saturacao",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+      },
+      "revisor": "/root/inspect_repo, agente automatizado Corretor",
+      "revisao_independente": "PENDENTE",
+      "data": "2026-10-29",
+      "estado": "AMOSTRA_PRELIMINAR_SEM_APROVACAO",
+      "aplicabilidade": "NUMERICO_ABERTO_AMOSTRA_PARCIAL",
+      "dados": "m=2 kg, V=0,900 m³, vf=0,00106052 e vg=0,88568 m³/kg, hf=504,70 e hg=2706,2 kJ/kg; medição 1800±2 kJ/kg, previsão ±1 kJ/kg.",
+      "solucao": "v=V/m; x=(v−vf)/(vg−vf); mv=mx; h=hf+x(hg−hf); separação mínima=1798−(h+1).",
+      "resultado": "v=0,45 m³/kg; x≈0,507494454; mv≈1,01498891 kg; h≈1621,94904 kJ/kg; afastamento≈175,05096 kJ/kg, intervalos incompatíveis.",
+      "tolerancia": "Para reprodução dos valores apresentados, metade da última casa exibida. A faixa ±1 kJ/kg é tolerância editorial do enunciado, não incerteza do NIST; rubrica admite 0,1% dos cálculos preservada a decisão.",
+      "reproducao": {
+        "v_m3kg": "0.45",
+        "x": "0.5074944539995886140784509968059939172942",
+        "m_vapor_kg": "1.014988907999177228156901993611987834588",
+        "h_kJkg": "1621.949040480094333893709869468395608923",
+        "afastamento_kJkg": "175.050959519905666106290130531604391077"
+      },
+      "fonte_dados": {
+        "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+        "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+        "linha": "agua_saturacao p_MPa=0.2; origem declarada NISTIR 5078, sem reconferência da publicação nesta amostra."
+      },
+      "limite": "Somente a subparte numérica de saturação/intervalos foi recalcada; outras subpartes, medições alternativas e rubrica completa continuam pendentes."
+    }
+  ],
+  "limites": [
+    "Amostra não encerra BAN-08 e não declara número total de itens numéricos.",
+    "As evidências NIST e demais fontes externas são herdadas pelo dado local e devem ser confrontadas no exame de cada caso que delas dependa.",
+    "Nenhuma mudança no produto ou controle."
+  ]
+}

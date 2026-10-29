@@ -1,0 +1,313 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "tipo": "ADJUDICACOES_PONTUAIS_AV31_AV41_E_OBSERVACOES_AV23_AV30",
+  "revisor_atual": "Agente automatizado independente /root/auditor_ban07_final",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "versao": "BAN-07 r1 congelada",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "estado": "CONCLUIDO_4_DECISOES_PONTUAIS",
+  "escopo": "Somente AV31-B, AV41-E, AV23-alt e AV30-alt. Campo decisoes não duplica registros de cobertura científica do banco.",
+  "fontes_de_apoio": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av31-35-r1.json",
+      "sha256": "a0b0eb55bb1d2e718ebdf8d3c91ca2e723add053d769c2c42b95e30d7099c9f8",
+      "revisor": "/root/auditor_av",
+      "alcance": "Somente registro e observação do artigo designado; sem nova execução das demais revisões do bloco."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av41-45-r1.json",
+      "sha256": "56a6537e706c72676f7670e5bb3428bf9a0c09874fd916a80db73ca75a58ccbc",
+      "revisor": "/root/auditor_av",
+      "alcance": "Somente registro e observação do artigo designado; sem nova execução das demais revisões do bloco."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av21-25-r1.json",
+      "sha256": "1c3667b498bc3562ab0b6c00b3e876847d56deacabd0fa4340a3e66c14abb54a",
+      "revisor": "/root/auditor_av",
+      "alcance": "Somente registro e observação do artigo designado; sem nova execução das demais revisões do bloco."
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av26-30-r1.json",
+      "sha256": "97431c365fa7152fafe95eed92e8476ee9b38e9f3194e09fd36e74175a5b7e53",
+      "revisor": "/root/auditor_av",
+      "alcance": "Somente registro e observação do artigo designado; sem nova execução das demais revisões do bloco."
+    }
+  ],
+  "criterios": {
+    "BAN07": "Dados, consistência física, comando, unidades, restrições, resposta única e distratores plausíveis baseados em erros reais, com demonstração do gabarito e justificativas. Plausibilidade julgada teoricamente; facilidade isolada não é defeito e falsidade isolada não demonstra plausibilidade.",
+    "UX04": "Descrições alternativas equivalentes para informação visual relevante. Encaminhamento concreto neste parecer não inicia nem aprova UX-04.",
+    "protocolo": "Auditor não implementa produto; decisão pontual não libera outro ID e não constitui aprovação global."
+  },
+  "metodo_atual": [
+    "Artigos atuais e bases extraídos de forma delimitada por parseHtml/sha256 canônicos; hashes comparados ao apoio.",
+    "Provas anteriores atribuídas a /root/auditor_av; análise aberta própria, com chaves/comentários conhecidos, sem alegar cegamento.",
+    "Duas figuras atuais inspecionadas diretamente com view_image, além da verificação de hashes. Nenhuma proposta do Corretor foi consultada ou aplicada."
+  ],
+  "decisoes": [
+    {
+      "apontamento": "AV31-B",
+      "id_artigo": "av-e1-31",
+      "sha256_artigo": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+      "origem_revisao": "confronto_proprio_de_achado_do_apoio_independente",
+      "fonte_de_apoio": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av31-35-r1.json",
+        "sha256": "a0b0eb55bb1d2e718ebdf8d3c91ca2e723add053d769c2c42b95e30d7099c9f8",
+        "revisor": "/root/auditor_av",
+        "alcance": "Prova completa AV31, cinco opções, comentários, critério e achado AV31-B lidos; autoria da consulta EIA permanece do apoio."
+      },
+      "identidade": "Artigo atual integralmente idêntico ao identificado no apoio. Comando e cinco opções atuais foram lidos; não há figura.",
+      "base_previa": {
+        "href": "#base-termoquimica",
+        "sha256_trecho": "515297af8decab92b2bfd8ce6aa9b5708458551997591e2d41bf12a418c4e6cb",
+        "alcance": "Trecho do h3 ao próximo h1–h3, lido nesta execução: energia da combustão completa por quantidade, estado da água no PCS/PCI e distinção de rendimento. Âncora ligada antes das alternativas."
+      },
+      "derivacao_propria": {
+        "autor": "/root/auditor_ban07_final",
+        "prova": "PCS e PCI medem energia de combustão na mesma base de combustível e condições de referência. A diferença principal indicada é o estado de referência da água dos produtos: líquida no PCS, vapor no PCI. Recuperar condensação acrescenta a parcela latente ao PCS quando há essa água; ambos continuam incluindo a energia liberada pela combustão. O consumo auxiliar pertence ao balanço da instalação, não a essa definição.",
+        "chave": "E",
+        "unicidade": "E única. A inverte as referências, B elimina o objeto da medida, C exige igualdade universal e D usa energia auxiliar. Sem equivalência numérica/arredondamento."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "à recuperação do calor de condensação somente no PCI.",
+          "juizo": "Falsa; inverte PCS/PCI.",
+          "mecanismo": "Troca dos estados de referência da água; teoricamente plausível."
+        },
+        {
+          "letra": "B",
+          "texto": "à exclusão de toda a energia de combustão no PCS.",
+          "juizo": "Falsa; PCS é medida da energia de combustão, não sua exclusão integral.",
+          "mecanismo": "Não suficientemente sustentado. Confusão sensível/latente, inversão PCS/PCI ou energia útil após perdas não dizem excluir toda a energia da combustão. Atribuir a B somente calor de condensação exigiria acrescentar uma definição que ela não traz."
+        },
+        {
+          "letra": "C",
+          "texto": "à igualdade obrigatória entre PCS e PCI para qualquer combustível.",
+          "juizo": "Falsa como exigência universal.",
+          "mecanismo": "Tratar poder calorífico como valor único independente do estado dos produtos ou generalizar um caso sem água; plausível."
+        },
+        {
+          "letra": "D",
+          "texto": "à energia elétrica consumida pela bomba de combustível.",
+          "juizo": "Falsa; auxiliar do equipamento não define a diferença PCS/PCI.",
+          "mecanismo": "Confundir valor inferior/neto com rendimento líquido da instalação após auxiliares; plausível no contexto do gerador."
+        },
+        {
+          "letra": "E",
+          "texto": "à recuperação, no PCS, do calor de condensação da água formada na combustão.",
+          "juizo": "Correta; descreve a referência pertinente.",
+          "mecanismo": null
+        }
+      ],
+      "analise_do_achado": "Concordo com o apoio: o problema de B não é ser fácil ou extremo, mas faltar um mecanismo identificável que produza sua exclusão integral. O comentário somente nega essa exclusão. Não basta imaginar uma cadeia arbitrária; tampouco se exige demonstrar escolha por alunos. O reconhecimento de outros erros de fase/referência não prova a plausibilidade da redação efetiva de B.",
+      "decisao": "CONFIRMADO_AJUSTE_OBRIGATORIO_AV31_B",
+      "veredito_pontual": "AJUSTES_OBRIGATORIOS",
+      "obrigacoes": [
+        {
+          "id": "AV31-B",
+          "acao": "Substituir B por alternativa falsa que expresse uma confusão conceitual concreta e sincronizar seu comentário.",
+          "reapresentacao": "Artigo com novo hash; mecanismo do novo erro explícito, cinco alternativas confrontadas e E preservada como única correta. Não basta refutar a nova opção sem fundamentar sua plausibilidade."
+        }
+      ],
+      "limites": [
+        "Sem proposta isolada ou redação futura examinada/aprovada.",
+        "Não se afirma diferença positiva para todo combustível sem água nos produtos; E identifica o mecanismo da diferença quando pertinente.",
+        "Sem nova consulta EIA, teste com alunos ou conclusão psicométrica."
+      ]
+    },
+    {
+      "apontamento": "AV41-E",
+      "id_artigo": "av-e1-41",
+      "sha256_artigo": "a8e35c751d06cd54ab69a365bf3e2e989296dd85b57c4bd8b5f57125f73d0bb9",
+      "origem_revisao": "confronto_proprio_com_dissenso_fundamentado_do_apoio",
+      "fonte_de_apoio": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av41-45-r1.json",
+        "sha256": "56a6537e706c72676f7670e5bb3428bf9a0c09874fd916a80db73ca75a58ccbc",
+        "revisor": "/root/auditor_av",
+        "alcance": "Prova completa AV41, cinco opções, comentários, achado e sugestão lidos. Consulta IUPAC e derivação anteriores permanecem atribuídas ao apoio."
+      },
+      "identidade": "Artigo atual integralmente idêntico ao identificado pelo apoio. Sem figura; comando, cinco opções e comentário atuais lidos.",
+      "base_previa": {
+        "href": "#base-equilibrio-fases",
+        "sha256_trecho": "7f9248c6da3aa7dd692116768717308606900d055ff2324b46f49bb351e8c87c",
+        "alcance": "Trecho do h3 ao próximo h1–h3, lido nesta execução: igualdade de mu, transferência por dG, repartição de massa, densidades e passagem de moléculas nos dois sentidos. Âncora ligada antes das alternativas."
+      },
+      "derivacao_propria": {
+        "autor": "/root/auditor_ban07_final",
+        "prova": "No quadro usual de substância pura em coexistência a T e p comuns, transferir dn do líquido ao vapor muda G por (mu_v-mu_l)dn. Se a diferença fosse não nula, um sentido reduziria G; com ambas as fases presentes, equilíbrio de fases requer mu_v=mu_l. Isso não fixa repartição de massa nem iguala densidades. Equilíbrio térmico já exclui temperaturas diferentes.",
+        "chave": "D",
+        "unicidade": "D única como condição necessária geral. A/B não são necessárias; C contradiz equilíbrio térmico; E não é requisito de equilíbrio e, na representação molecular da base, eliminaria os constituintes da fase de vapor. Não se usa uma generalização química sobre toda substância ser molecular para estabelecer a chave."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "igualdade das massas totais de líquido e vapor.",
+          "juizo": "Falsa como exigência.",
+          "mecanismo": "Confundir equilíbrio com igualdade de quantidades extensivas; massas podem ser distintas com os mesmos potenciais."
+        },
+        {
+          "letra": "B",
+          "texto": "igualdade das massas específicas das duas fases.",
+          "juizo": "Falsa como exigência geral.",
+          "mecanismo": "Estender a igualdade das variáveis de equilíbrio a toda propriedade intensiva; densidades de fases distintas podem diferir."
+        },
+        {
+          "letra": "C",
+          "texto": "temperaturas diferentes nas duas fases.",
+          "juizo": "Falsa, pois equilíbrio térmico foi declarado.",
+          "mecanismo": "Associar mudança de fase ou fase distinta a temperaturas necessariamente distintas; erro conceitual que não deixa de ser plausível só por contradizer uma hipótese expressa."
+        },
+        {
+          "letra": "D",
+          "texto": "igualdade do potencial químico da substância nas duas fases.",
+          "juizo": "Correta.",
+          "mecanismo": null
+        },
+        {
+          "letra": "E",
+          "texto": "ausência de moléculas na fase de vapor.",
+          "juizo": "Falsa como condição de equilíbrio; distrator teoricamente defensável.",
+          "mecanismo": "Confundir a baixa densidade da fase de vapor com um espaço sem matéria, levando uma aproximação de quantidade pequena a quantidade nula. No quadro molecular, n=rho V/M: substituir indevidamente a densidade positiva por zero leva a n=0 e à ausência literal afirmada. Essa concepção vapor como vazio confunde quantidade de matéria com condição de equilíbrio; não é reinterpretação de E como ausência de evaporação/condensação."
+        }
+      ],
+      "analise_do_achado": "O apoio identificou vapor invisível/vácuo como possível confusão, mas a considerou indireta demais. Discordo nesse ponto: a confusão entre fase gasosa de baixa densidade e região vazia produz diretamente a ausência material escrita em E. Não é necessário transformar E em uma frase sobre taxas moleculares. O mecanismo é conceitualmente distinto de igualdade de massas/densidades, ligado à natureza da fase, e é refutado pela presença de constituintes na representação molecular da base. Ser elementar ou contrariar a coexistência declarada não basta para o descartar, assim como C continua sendo distrator apesar de contrariar equilíbrio térmico. A plausibilidade aqui é teórica, sem afirmar frequência ou escolha observada em alunos.",
+      "confronto_comentario": "A chave D e as refutações atuais sustentam a resposta única no alcance do curso. A frase de E refuta a concepção de vapor sem constituintes na descrição molecular usada. Não se alega que o comentário tenha comprovado empiricamente o mecanismo.",
+      "decisao": "REFUTADO_AJUSTE_OBRIGATORIO_AV41_E_POR_MECANISMO_TEORICO_CONCRETO",
+      "veredito_pontual": "SEM_AJUSTE_OBRIGATORIO_POR_AV41_E",
+      "obrigacoes": [],
+      "recomendacao_editorial": "Explorar equilíbrio estático versus trocas dinâmicas pode melhorar o foco no objetivo de mu, mas não é condição adicional expressa no critério BAN-07. Não se examinou nem se aprovou proposta futura.",
+      "limites": [
+        "Juízo de plausibilidade teórica, sujeito a evidência empírica futura; nenhuma psicometria/piloto foi exigida ou inventada.",
+        "Não se afirma que toda fase de vapor de toda substância seja composta por moléculas poliatômicas; a condição necessária julgada é a de equilíbrio, não a composição microscópica.",
+        "Não altera o parecer do apoio nem o produto; registra o dissenso de forma atribuída para integração do Auditor/coordenador."
+      ]
+    },
+    {
+      "apontamento": "AV23-alt",
+      "id_artigo": "av-e1-23",
+      "sha256_artigo": "52ce7c5b255380dd1c2d876058b8965c9ff3feaa6e373c57f6f8e46bd3db529b",
+      "origem_revisao": "confronto_proprio_de_identidade_escopo_e_inspecao_visual_atual",
+      "fonte_de_apoio": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av21-25-r1.json",
+        "sha256": "1c3667b498bc3562ab0b6c00b3e876847d56deacabd0fa4340a3e66c14abb54a",
+        "revisor": "/root/auditor_av",
+        "alcance": "Observação AV23-alt, inspeção visual declarada, prova científica e limite de figura ilustrativa lidos. Essa execução anterior permanece do apoio."
+      },
+      "imagem": {
+        "arquivo": "assets/questoes-reais-e1/figura-9d164690a624.png",
+        "sha256": "9d164690a6243cb31b9ea0f734b9a85ad4c6570398b9d5ef9278e4f44332bcc2",
+        "igual_ao_hash_do_apoio": true,
+        "execucao_atual": "Imagem local atual efetivamente aberta por view_image em resolução original; comparação direta com alt/caption e inspeção anterior do apoio."
+      },
+      "base_previa": {
+        "href": "#base-gas-modelo",
+        "sha256_trecho": "c3dc17e696fa8f8710243bea95621797936ca08a1b17f55895e6e05f065ab89f",
+        "alcance": "Lida nesta execução: baixa densidade, pressão baixa e temperatura suficientemente alta longe da condensação favorecem a aproximação; Z=1 pertence ao modelo, não a todo gás real. Link de estudo anterior às alternativas."
+      },
+      "descricao_alternativa_atual": "Recipiente fechado e termicamente isolado contendo gás, com suas variáveis termodinâmicas indicadas.",
+      "verificacao_visual_propria": "A figura mostra recipiente fechado e isolado termicamente, uma membrana que confina pontos representando gás rotulado ideal e a região externa à membrana rotulada vácuo. Não há p, T, V, valores termodinâmicos ou escala indicados. Portanto a frase variáveis termodinâmicas indicadas não corresponde ao desenho.",
+      "prova_de_alcance": "O comando pede condição geralmente favorável à aproximação de gás ideal, longe da condensação. Não pede inferir valores do desenho nem comprovar que um estado real é ideal. A base e as condições escritas nas opções bastam: A combina baixa pressão e temperatura suficientemente alta; B/C/D não descrevem condição favorável geral e E universaliza Z=1. Retirar a imagem ou a frase inexata do alt não introduz outra chave ou incógnita necessária. O rótulo gás ideal no desenho é hipótese ilustrativa, não evidência quantitativa de idealidade.",
+      "atribuicao_cientifica": "A demonstração e os cinco juízos científicos de AV23 constam do apoio /root/auditor_av. Nesta decisão, foram confrontados com o comando/opções/base e com a função informativa real da imagem, sem acrescentar um segundo registro de cobertura do item.",
+      "decisao": "CONFIRMADA_OBSERVACAO_AV23_ALT_NAO_BLOQUEANTE_BAN07",
+      "veredito_pontual": "SEM_AJUSTE_OBRIGATORIO_BAN07_POR_AV23_ALT",
+      "fundamento": "A inexatidão descritiva é real e permanece pendente, mas não suprime dado necessário ao comando nem afeta a unicidade no alcance de BAN-07. Isso não equivale a declarar equivalência acessível completa ou a encerrar UX-04.",
+      "obrigacoes": [],
+      "encaminhamento_UX04": {
+        "estado": "PENDENTE_PARA_ID_PROPRIO_SEM_INICIO_OU_ACEITE",
+        "acao": "Substituir a menção a variáveis inexistentes por descrição fiel: recipiente fechado e isolado termicamente, gás rotulado ideal confinado por membrana e vácuo na região externa à membrana. Conferir também a legenda/descrição longa e a equivalência da ampliação, sem atribuir dados numéricos ao desenho.",
+        "criterio_de_verificacao": "Confrontar alt/descrição longa com a figura efetiva e confirmar que nenhum p/T/V ou número inexistente foi acrescentado. Registrar o papel ilustrativo; não contar este item como leitura quantitativa de gráfico."
+      },
+      "limites": [
+        "Sem navegador, leitor de tela, impressão/exportação ou auditoria integral de acessibilidade nesta decisão.",
+        "O defeito não foi corrigido no produto e não é apagado pelo fato de a ciência poder ser resolvida sem a imagem."
+      ]
+    },
+    {
+      "apontamento": "AV30-alt",
+      "id_artigo": "av-e1-30",
+      "sha256_artigo": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01",
+      "origem_revisao": "confronto_proprio_de_identidade_escopo_e_inspecao_visual_atual",
+      "fonte_de_apoio": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av26-30-r1.json",
+        "sha256": "97431c365fa7152fafe95eed92e8476ee9b38e9f3194e09fd36e74175a5b7e53",
+        "revisor": "/root/auditor_av",
+        "alcance": "Observação AV30-alt, inspeção dos dois painéis e prova científica com cinco opções lidas. A resolução anterior e sua sequência de leitura permanecem atribuídas ao apoio."
+      },
+      "imagem": {
+        "arquivo": "assets/questoes-reais-e1/figura-de4ee7b16ed4.png",
+        "sha256": "de4ee7b16ed42d37537a23bbcf6cf7aee66cb447e11bb950b3c783e3a859aa1b",
+        "igual_ao_hash_do_apoio": true,
+        "execucao_atual": "PNG atual efetivamente aberto por view_image em resolução original; comparação direta com alt/caption e prova visual anterior."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#base-balanco-fechado",
+          "sha256_trecho": "19e125336bad7c75983015e19aac3048fc6234aa3ed7d21910f4698a2ecf1f5d",
+          "alcance": "Lida nesta execução: sinais Q entra/W sai, balanço fechado e distinção de isoterma/energia interna, trabalho e caminhos."
+        },
+        {
+          "href": "#base-gas-energia",
+          "sha256_trecho": "f93d30ceee37b23aa44a5c8f6c565e09ad0b3fc6e3fe2af5840a00213230d2bf",
+          "alcance": "Leitura própria anterior nesta sessão reutilizada pela mesma identidade global congelada: u e h do gás ideal dependem apenas de T; não se exige cv constante para DeltaU=0."
+        },
+        {
+          "href": "#base-trabalho-fronteira",
+          "sha256_trecho": "76fb33734274627b72d4aa35f408cbbdfaeffe9212962a180fedb9db547e5bb2",
+          "alcance": "Leitura própria anterior pela mesma identidade: trabalho produzido positivo em expansão e distinção entre transferência em etapa e ciclo."
+        },
+        {
+          "href": "#base-leitura-matematica",
+          "sha256_trecho": "8b54ff73ba5e375e8b010bc7810d6dc4b6c4546553d4e859384106262d116708",
+          "alcance": "Leitura própria anterior pela mesma identidade: eixos, setas, unidades e sinais. Todos os quatro links de estudo constam antes das alternativas."
+        }
+      ],
+      "descricao_alternativa_atual": "Figura A: diagrama pressão-volume com estados A, B, C, D e E. Figura B: gás em um cilindro com pistão, recebendo calor Q e realizando trabalho W.",
+      "verificacao_visual_propria": "Painel A tem eixos pressão/volume, isotermas com T1<T2<T3<T4<T5 e transição A→B na mesma curva, com volume crescente e pressão decrescente. Painel B tem Q entrando no cilindro, W saindo pelo pistão e a expressão Q=DeltaU+W com a anotação 0 apontando para DeltaU. O alt identifica painéis/estados e sentidos de Q/W, mas omite a equação e o zero; a figura não informa 300 kJ nem escala numérica.",
+      "prova_de_alcance": "O próprio comando já declara gás ideal, transição isotérmica A→B, sistema fechado, só trabalho de fronteira, Q recebido de 300 kJ e DeltaEC/DeltaEP desprezíveis. Com u=u(T) e massa/composição fixas no modelo, DeltaU=0; a primeira lei fornece W=Q=+300 kJ. A figura confirma o sentido de expansão, mas não é necessário ler sua anotação para obter a resposta. O texto/base disponível sem imagem fixa D e refuta A por sinal, B por duplicação de energia, C por armazenamento incompatível e E por confundir T constante com trabalho nulo.",
+      "atribuicao_cientifica": "O cálculo e os cinco juízos científicos completos pertencem ao apoio /root/auditor_av. Nesta decisão, a prova foi confrontada com o comando/bases atuais e com o papel da informação visual omitida, sem duplicar cobertura do banco e sem executar cálculo numérico de rotina.",
+      "decisao": "CONFIRMADA_OBSERVACAO_AV30_ALT_NAO_BLOQUEANTE_BAN07",
+      "veredito_pontual": "SEM_AJUSTE_OBRIGATORIO_BAN07_POR_AV30_ALT",
+      "fundamento": "Omissão descritiva confirmada, com desigualdade real no auxílio oferecido pela figura. Entretanto nenhum dado necessário exclusivamente visual falta ao enunciado/base, e a chave continua única. A redundância científica não sana a pendência de equivalência da apresentação.",
+      "obrigacoes": [],
+      "encaminhamento_UX04": {
+        "estado": "PENDENTE_PARA_ID_PROPRIO_SEM_INICIO_OU_ACEITE",
+        "acao": "Fornecer alt/descrição longa equivalente que inclua no painel A a transição A→B na mesma isoterma, com volume aumentando e pressão caindo, e no painel B Q entrando, W saindo, Q=DeltaU+W e DeltaU marcado zero. Conferir a descrição das isotermas/estados e a ampliação.",
+        "criterio_de_verificacao": "A descrição deve transmitir a anotação que já é oferecida visualmente, sem acrescentar resultado numérico ou resolução inexistente no desenho. Confirmar equivalência para leitura sem imagem e impressão/exportação no escopo próprio de UX-04."
+      },
+      "limites": [
+        "Conclusão de uma etapa isotérmica, não conversão integral em trabalho em um ciclo completo; não se exige reversibilidade para o balanço dado.",
+        "Sem navegador, leitor de tela ou validação de impressão/exportação; UX-04 não foi iniciado/aprovado.",
+        "Nenhuma edição de alt, figura ou produto implementada."
+      ]
+    }
+  ],
+  "andamento": {
+    "decisoes_previstas": 4,
+    "decisoes_concluidas": 4,
+    "pendentes": [],
+    "registros_de_cobertura_banco_adicionados": 0
+  },
+  "libera_proximo_id": false,
+  "limites": [
+    "Somente este JSON é escrito; produto, controle e pareceres anteriores preservados.",
+    "Sem parecer global de BAN-07 ou classificação avançada do curso."
+  ],
+  "resumo": {
+    "ajustes_obrigatorios_confirmados": [
+      "AV31-B"
+    ],
+    "ajustes_obrigatorios_refutados_com_fundamento": [
+      "AV41-E"
+    ],
+    "observacoes_nao_bloqueantes_BAN07_encaminhadas_UX04": [
+      "AV23-alt",
+      "AV30-alt"
+    ],
+    "parecer_global": "NAO_EMITIDO",
+    "proximo_ID": "NAO_LIBERADO"
+  }
+}

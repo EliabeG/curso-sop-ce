@@ -1,0 +1,41 @@
+{
+  "id": "QA-09",
+  "data": "2026-10-29",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "INVENTARIO_E_PLANO_EM_PREPARACAO_SEM_RECALCULO",
+  "escopo": "E1: conteúdo numérico fora dos 197 artigos BAN-08, inclusive exemplos, oficinas, 28 diagnósticos, fichas, figuras, fórmulas e textos; recursos e novos projetos existentes serão identificados.",
+  "fontes": [
+    {
+      "arquivo": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md",
+      "sha256": "825138999087aa65d8600ed57e191233184659a8c588cd2d0cb670d6eb10aa0b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "sha256": "18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/CONTROLE_AAA.json",
+      "sha256": "ae7698a3ab5c10f16b412a86bdafa9544f79216676718c29fdaf6439656810d4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-r1.md",
+      "sha256": "46d1b8dcc67cfe65a07f383f83dd01235d72f337be59c4696968ecee03c3a485"
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+    },
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0"
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13"
+    }
+  ],
+  "limites": [
+    "A extração identifica locais candidatos, não prova correção numérica nem suficiência de fonte.",
+    "Não se edita o curso nem o controle; aprovação independente é posterior."
+  ]
+}

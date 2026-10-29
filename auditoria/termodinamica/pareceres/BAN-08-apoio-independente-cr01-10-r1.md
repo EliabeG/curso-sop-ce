@@ -1,0 +1,69 @@
+# BAN-08 — apoio independente de cálculos e condições CR01–CR10
+
+Data: 29/10/2026. Revisor: agente automatizado `/root/auditoria_av61_70`. Escopo: resoluções e estudo crítico atuais de 10 artigos CR, inclusive hipóteses, relações, valores, unidades e critério de precisão, com julgamento individual abaixo. Não é aprovação global de BAN-08 nem liberação de próximo ID. Produto e controle não foram alterados.
+
+Versão examinada: `modulos/e1-termodinamica.html`, SHA-256 `80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0`. Os hashes por artigo são SHA-256 do trecho bruto `<article>...</article>` recodificado em UTF-8. Foram comparados com o parecer BAN-07 r1: CR01–05 e CR07–10 idênticos, enquanto CR06 mudou; a variante corrente é a candidata r2 avaliada separadamente, e sua identidade com a candidata não substitui a verificação científica atual. FON-01 e BAN-07 são trabalhos prévios atribuídos, não aceites numéricos automáticos. As demonstrações deste relatório foram examinadas pelo revisor; o exame documental visual anterior é atribuído a FON-01. Os hashes das provas e chaves abaixo foram recalculados e coincidem com FON-01; não reivindico nova leitura visual integral das páginas nesta rodada. Dados nominais e valores exatos são tratados como tais apenas para os cálculos indicados; isso não estabelece incerteza metrológica.
+
+Fontes e contexto: `auditoria/termodinamica/PROTOCOLO_AAA.md` SHA-256 `18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc`; `auditoria/termodinamica/evidencias/BAN-08/inventario-numerico-197-r1.json` SHA-256 `5b56e8280d35d590bf11ddbff9b0e789faed257fafe1cad9c4854cc5ac5fd99f`; `auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json` SHA-256 `563e70deab73fc10c6af355db9a267a5342243427529efc6407a640436278d42`; `auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-cr01-15-r1.md` SHA-256 `cd99d5ce497a865bdb34d6dd58a383c9c7937599d0a14eca357deedd482d53dc`; `auditoria/termodinamica/pareceres/BAN-07-r2-cientifico-independente.md` SHA-256 `a803a1a25575bba920eea8960186e73cc4cdc4878a23cfac0cc199f0ef592abf`; `auditoria/termodinamica/evidencias/BAN-07/revisao-fon02-complementar-r2.json` SHA-256 `42ce5afe33e0481562c7673daaf25b359b8580b30276d9df75e1965adaa68399`; `auditoria/termodinamica/pareceres/BAN-07-r3.md` SHA-256 `009adc698bf2f88e28826b389a48e2526660efc9b7cc2ea3b598f0e06026d68b`. Fontes BIPM e NIST consultadas em 29/10/2026.
+
+## CR01
+
+**C.** A solução divide uma amostra homogênea em duas partes iguais no mesmo estado: `m/2`, `V/2` e `U/2`, enquanto `T`, `p` e `ρ` permanecem; de fato `(m/2)/(V/2)=m/V`. A fração 1/2 é exata, sem arredondamento ou dado experimental. Volume e energia total são extensivos. Não extrapolar para estados diferentes. Base do módulo: `#base-propriedades`, `#base-medidas`.
+
+Artigo SHA-256 `1a461fa641228ea3bcf7631148fc40821c890b98d8ebd1a72b5b844af982806d`. Fonte documental FON-01: família `p22m`, original 51, prova p. 1, chave p. 1. Prova `downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf`, SHA-256 `900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab`; chave `downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_gabarito.pdf`, SHA-256 `8fdab842bcc3d8123e4b110c3e2f42b9a747239620f7dc15f802a32a05bf6ee0`.
+
+## CR02
+
+**E.** No mesmo estado de equilíbrio, energia interna e demais propriedades têm valor definido, independentemente do caminho; calor e trabalho são transferências dependentes do processo. **N/A numérico:** não há grandeza com valor, operação, resultado ou tolerância a calcular; números do concurso identificam a questão. Base `#base-propriedades`, `#base-balanco-fechado`.
+
+Artigo SHA-256 `ccb20b9d4b9d5741d97a2d539cb48a3cbd1fbc7a8455fe4d58c294678ddd7a9d`. Fonte documental FON-01: família `p22m`, original 52, prova p. 1, chave p. 1. Prova `downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf`, SHA-256 `900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab`; chave `downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_gabarito.pdf`, SHA-256 `8fdab842bcc3d8123e4b110c3e2f42b9a747239620f7dc15f802a32a05bf6ee0`.
+
+## CR03
+
+**E.** Líquidos também possuem movimento e energia cinética microscópica; sólidos apresentam vibrações. A resolução não pressupõe que as energias e liberdades sejam iguais entre fases. **N/A numérico:** há afirmação qualitativa, sem dados ou resultados quantitativos sujeitos a tolerância. Base `#base-molecular`.
+
+Artigo SHA-256 `89ca6a4710177476a8a2f88e8031c1fff598205e86bfac18ce179ad8e87bc3e7`. Fonte documental FON-01: família `p22p`, original 51, prova p. 1, chave p. 1. Prova `downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf`, SHA-256 `1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3`; chave `downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf`, SHA-256 `62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8`.
+
+## CR04
+
+**Chave documental C, estudo crítico fora da pontuação.** Para massa fixa, fase única e `v(T,p)` diferenciável, derivação do diferencial total fornece `dv/v=α dT−κ_T dp`, com `α=(1/v)(∂v/∂T)_p` em K⁻¹ e `κ_T=−(1/v)(∂v/∂p)_T` em Pa⁻¹. Para variações pequenas, efeitos `|α ΔT|` e `|κ_T Δp|` são adimensionais e comparáveis na mesma condição; para variações finitas, devem-se integrar coeficientes dependentes do estado. Falta definir estados e perturbações: não há ordenação numérica universal nem tolerância a calcular. A chave indica o documento, não demonstra unicidade física; a leitura usual qualitativa não fornece hipótese universal. Base `#base-medidas`; o próprio artigo referencia DeVoe, *Thermodynamics and Chemistry*, §7.1. BAN-10 atribuiu o tratamento crítico; não se presume anulação pela banca. O exame dimensional e condições conferidos independentemente.
+
+Artigo SHA-256 `616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12`. Fonte documental FON-01: família `p22p`, original 68, prova p. 1, chave p. 1. Prova `downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf`, SHA-256 `1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3`; chave `downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf`, SHA-256 `62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8`.
+
+## CR05
+
+**E.** São exatamente sete unidades de base: m, kg, s, A, K, mol, cd. A lista original troca segundo por minuto e kelvin por grau Celsius; o minuto é aceito para uso com SI e `1 min = 60 s` exatamente, enquanto °C é unidade SI derivada, não unidade de base. Sete é contagem exata; não há medida experimental ou arredondamento a tolerar. Base `#base-medidas`; [BIPM, unidades de base](https://www.bipm.org/en/measurement-units/si-base-units).
+
+Artigo SHA-256 `bef4e1a13a4eba650e1c6b802957077eb38c26fa5c1660da8e09b694544cacf5`. Fonte documental FON-01: família `p23`, original 59, prova p. 2, chave p. 1. Prova `downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf`, SHA-256 `316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53`; chave `downloads/termodinamica/gabaritos/2023-04-30_petrobras-tecnico-operacao-2023-1_gabarito.pdf`, SHA-256 `e70aeafd5bc25bc37f6ac89bdce6c98bcdb88f76fc29cae094ca5f847b8a5eec`.
+
+## CR06
+
+**C sob suplemento editorial, chave oficial preservada.** Se `T_X=α_X+β_X h` e `T_Y=α_Y+β_Y h`, com `β_Y≠0` e ambas lineares e variando com a altura, então `T_X=(α_X−β_X α_Y/β_Y)+(β_X/β_Y)T_Y=a+bT_Y`. `a` tem unidade de leitura X e `b` unidade de leitura X por leitura Y. Dois pontos de calibração distintos determinam coeficientes; a figura não fornece valores numéricos de X/Y. O exemplo autoral explicitamente independente `t_F/°F=32+1,8(t_C/°C)` é exato: 0 °C → 32 °F e 100 °C → 212 °F. Os coeficientes 32 e 1,8 não são dados das escalas oficiais. Sem tolerância de medição ou arredondamento aplicável ao exemplo exato. [NIST, conversões exatas](https://www.nist.gov/pml/owm/si-units-temperature); bases `#base-leitura-matematica`, `#base-instrumentos`. O suplemento é anterior à tentativa, distinto do original; sua necessidade e o contramodelo da versão anterior estão atribuídos ao parecer BAN-07 r1 e revisão r2, não decorrem apenas de identidade. Figura recriada `assets/questoes-reais-e1/figura-922604ee21ac.png`, SHA-256 `922604ee21ac25fec713806a3102c7b775b9cd16ba2c77054cb45d976226b17e`.
+
+Artigo SHA-256 `873e51481bc440721e17c233292535fdf7367670ba819c954987b7c263d8420b`. Fonte documental FON-01: família `p23`, original 75, prova p. 4, chave p. 1. Prova `downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf`, SHA-256 `316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53`; chave `downloads/termodinamica/gabaritos/2023-04-30_petrobras-tecnico-operacao-2023-1_gabarito.pdf`, SHA-256 `e70aeafd5bc25bc37f6ac89bdce6c98bcdb88f76fc29cae094ca5f847b8a5eec`.
+
+## CR07
+
+**E.** Um manômetro Bourdon utiliza deformação de tubo devido à pressão; a descrição de tubo de vidro com líquido não corresponde ao instrumento apresentado. Um termômetro de sistema preenchido pode utilizar elemento Bourdon, logo a conclusão não proíbe qualquer emprego desse elemento em termometria. **N/A numérico:** não há dados, contas ou precisão a verificar na resolução. Base `#base-instrumentos`.
+
+Artigo SHA-256 `c6e1989e4dc002b751cc23ab3e0c032df264bab82f79972bc059fa2799f072cc`. Fonte documental FON-01: família `p24`, original 62, prova p. 2, chave p. 1. Prova `downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf`, SHA-256 `54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3`; chave `downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf`, SHA-256 `93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071`.
+
+## CR08
+
+**C.** `span = L_sup − L_inf`, portanto `L_sup = 50 °C + 100 °C de intervalo = 150 °C` e faixa `[50,150] °C`. A diferença `100 °C` equivale a `100 K`, sem aplicar deslocamento de origem à diferença. Conferência adicional: limites absolutos são 323,15 K e 423,15 K, cuja diferença é 100 K; esses dois valores são cálculos do auditor, não dados adicionais do enunciado. Dados nominais tratados como exatos para o exercício; não são fornecidas incerteza ou resolução do instrumento, nem tolerância experimental. Fonte [NIST](https://www.nist.gov/pml/owm/si-units-temperature), bases `#base-instrumentos`, `#base-leitura-matematica`.
+
+Artigo SHA-256 `62f6c64f663b2a2901ad832b08768de5304186911da068e4ac48bbe0d2aeae3a`. Fonte documental FON-01: família `p24`, original 65, prova p. 2, chave p. 1. Prova `downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf`, SHA-256 `54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3`; chave `downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf`, SHA-256 `93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071`.
+
+## CR09
+
+**Chave documental E, estudo crítico fora da pontuação.** Na relação exata `T/K=t/°C+273,15`, a diferença de 1 °C equivale à diferença de 1 K; deslocamento de 273,15 não se aplica a intervalos. A temperatura termodinâmica tem kelvin como unidade de base; o grau Celsius é unidade SI de temperatura Celsius, portanto a frase original permite leitura distinta daquela que restringe a grandeza/unidade de base e explica a chave E. O estudo confronta letras documentais sem pontuar. Valores definicionais são exatos: não se exige tolerância experimental ou arredondamento. Fonte [NIST, conversões exatas](https://www.nist.gov/pml/owm/si-units-temperature), [BIPM, unidade de base kelvin](https://www.bipm.org/en/measurement-units/si-base-units); artigo cita Brochura SI do BIPM. BAN-10 atribuiu o tratamento crítico, sem declarar anulação pela banca. Base `#base-absolutas`, `#base-medidas`.
+
+Artigo SHA-256 `a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780`. Fonte documental FON-01: família `tc`, original 39, prova p. 1, chave p. 1. Prova `downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf`, SHA-256 `ff13fb949d16969fb9b5cff2802a04e00a7673425d61be5efb5252c4a7b64c6a`; chave `downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_gabarito.pdf`, SHA-256 `7ec433277a8229d31c145b09fcefa3dacbc53c49bfcff4617e9782623241d45e`.
+
+## CR10
+
+**C.** Com `ρ=m/V`, ao duplicar amostra homogênea no mesmo estado `(2m)/(2V)=m/V`; o fator 2 cancela exatamente. No SI a unidade de massa específica é kg/m³; a razão não depende do tamanho da amostra, mas pode mudar com o estado. Não há dados medidos ou arredondamento; sem tolerância de medida aplicável. Bases `#base-propriedades`, `#base-medidas`, `#base-leitura-matematica`.
+
+Artigo SHA-256 `abe9bc623cad60bc7f3c99fe1f57d2ceda566ce7fba6166afaac0df113ef66a2`. Fonte documental FON-01: família `tm`, original 32, prova p. 1, chave p. 1. Prova `downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf`, SHA-256 `154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4`; chave `downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf`, SHA-256 `1ebd87b8d6d1cd8a679b575de3a0e901d1283c8b6b92e7a916e775d7cdeb9f7d`.
+
+Limites: este apoio não substitui conferência independente de outras questões nem a decisão do Auditor responsável. A identidade dos arquivos não prova, por si só, correção científica ou literalidade; a leitura documental prévia tem a atribuição e os limites declarados acima. Nenhum teste de estudante, certificação externa ou avaliação de incerteza instrumental é alegado.

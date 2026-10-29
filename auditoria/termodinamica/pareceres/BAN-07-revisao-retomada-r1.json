@@ -1,0 +1,513 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "revisor_real": "Agente automatizado independente /root/auditor_aaa_retomada",
+  "estado": "leitura incremental da base; sem parecer da entrega final",
+  "base": {
+    "html_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "extrato_sha256": "9a29bd732b390dd2cb330278622144ced38ecf81937e28ddf887a1fde521e5bc",
+    "leitura_herdada_sha256": "d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913"
+  },
+  "heranca": {
+    "origem": "BAN-07-leitura-base.json",
+    "revisor_original": "/root/auditor_aaa, agente automatizado",
+    "alcance": "30 Q + 50 CR, demonstração e alternativas/juízo; pendências preliminares preservadas. Identidade por artigo conferida, não substitui revisão do produto final.",
+    "identidades_conferidas": [
+      {
+        "id": "q-e1-01",
+        "hash_registro": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+        "hash_extrato": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+        "identico": true
+      },
+      {
+        "id": "q-e1-02",
+        "hash_registro": "ab8e322acf56c6c18183c82d5b8b0b2b8e895c134e6ea7581a0d0b8ccb4d5d4f",
+        "hash_extrato": "ab8e322acf56c6c18183c82d5b8b0b2b8e895c134e6ea7581a0d0b8ccb4d5d4f",
+        "identico": true
+      },
+      {
+        "id": "q-e1-03",
+        "hash_registro": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+        "hash_extrato": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+        "identico": true
+      },
+      {
+        "id": "q-e1-04",
+        "hash_registro": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+        "hash_extrato": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+        "identico": true
+      },
+      {
+        "id": "q-e1-05",
+        "hash_registro": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+        "hash_extrato": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+        "identico": true
+      },
+      {
+        "id": "q-e1-06",
+        "hash_registro": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+        "hash_extrato": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+        "identico": true
+      },
+      {
+        "id": "q-e1-07",
+        "hash_registro": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+        "hash_extrato": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+        "identico": true
+      },
+      {
+        "id": "q-e1-08",
+        "hash_registro": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+        "hash_extrato": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+        "identico": true
+      },
+      {
+        "id": "q-e1-09",
+        "hash_registro": "0599ef026688971f3ddf099fd55133e22b51f6eaf2ac070acacdcf32f11e8732",
+        "hash_extrato": "0599ef026688971f3ddf099fd55133e22b51f6eaf2ac070acacdcf32f11e8732",
+        "identico": true
+      },
+      {
+        "id": "q-e1-10",
+        "hash_registro": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+        "hash_extrato": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+        "identico": true
+      },
+      {
+        "id": "q-e1-11",
+        "hash_registro": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+        "hash_extrato": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+        "identico": true
+      },
+      {
+        "id": "q-e1-12",
+        "hash_registro": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+        "hash_extrato": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+        "identico": true
+      },
+      {
+        "id": "q-e1-13",
+        "hash_registro": "405d677239ba33e510f59cc11d22251c794fad0ba3f5ecd8c3c1d632c0b80a6f",
+        "hash_extrato": "405d677239ba33e510f59cc11d22251c794fad0ba3f5ecd8c3c1d632c0b80a6f",
+        "identico": true
+      },
+      {
+        "id": "q-e1-14",
+        "hash_registro": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+        "hash_extrato": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+        "identico": true
+      },
+      {
+        "id": "q-e1-15",
+        "hash_registro": "67967ac19a16d6167266255da06d674c528b9ae5aaaf8209650fe58a28b1e6f7",
+        "hash_extrato": "67967ac19a16d6167266255da06d674c528b9ae5aaaf8209650fe58a28b1e6f7",
+        "identico": true
+      },
+      {
+        "id": "q-e1-16",
+        "hash_registro": "25c2b67fc2b4b2021dbb5240ceea18631b5423417121e4e41ea83f56677867e4",
+        "hash_extrato": "25c2b67fc2b4b2021dbb5240ceea18631b5423417121e4e41ea83f56677867e4",
+        "identico": true
+      },
+      {
+        "id": "q-e1-17",
+        "hash_registro": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+        "hash_extrato": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+        "identico": true
+      },
+      {
+        "id": "q-e1-18",
+        "hash_registro": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+        "hash_extrato": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+        "identico": true
+      },
+      {
+        "id": "q-e1-19",
+        "hash_registro": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+        "hash_extrato": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+        "identico": true
+      },
+      {
+        "id": "q-e1-20",
+        "hash_registro": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+        "hash_extrato": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+        "identico": true
+      },
+      {
+        "id": "q-e1-21",
+        "hash_registro": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+        "hash_extrato": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+        "identico": true
+      },
+      {
+        "id": "q-e1-22",
+        "hash_registro": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+        "hash_extrato": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+        "identico": true
+      },
+      {
+        "id": "q-e1-23",
+        "hash_registro": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+        "hash_extrato": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+        "identico": true
+      },
+      {
+        "id": "q-e1-24",
+        "hash_registro": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+        "hash_extrato": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+        "identico": true
+      },
+      {
+        "id": "q-e1-25",
+        "hash_registro": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+        "hash_extrato": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+        "identico": true
+      },
+      {
+        "id": "q-e1-26",
+        "hash_registro": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+        "hash_extrato": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+        "identico": true
+      },
+      {
+        "id": "q-e1-27",
+        "hash_registro": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+        "hash_extrato": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+        "identico": true
+      },
+      {
+        "id": "q-e1-28",
+        "hash_registro": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+        "hash_extrato": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+        "identico": true
+      },
+      {
+        "id": "q-e1-29",
+        "hash_registro": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+        "hash_extrato": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+        "identico": true
+      },
+      {
+        "id": "q-e1-30",
+        "hash_registro": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+        "hash_extrato": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-01",
+        "hash_registro": "1a461fa641228ea3bcf7631148fc40821c890b98d8ebd1a72b5b844af982806d",
+        "hash_extrato": "1a461fa641228ea3bcf7631148fc40821c890b98d8ebd1a72b5b844af982806d",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-02",
+        "hash_registro": "ccb20b9d4b9d5741d97a2d539cb48a3cbd1fbc7a8455fe4d58c294678ddd7a9d",
+        "hash_extrato": "ccb20b9d4b9d5741d97a2d539cb48a3cbd1fbc7a8455fe4d58c294678ddd7a9d",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-03",
+        "hash_registro": "89ca6a4710177476a8a2f88e8031c1fff598205e86bfac18ce179ad8e87bc3e7",
+        "hash_extrato": "89ca6a4710177476a8a2f88e8031c1fff598205e86bfac18ce179ad8e87bc3e7",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-04",
+        "hash_registro": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+        "hash_extrato": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-05",
+        "hash_registro": "bef4e1a13a4eba650e1c6b802957077eb38c26fa5c1660da8e09b694544cacf5",
+        "hash_extrato": "bef4e1a13a4eba650e1c6b802957077eb38c26fa5c1660da8e09b694544cacf5",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-06",
+        "hash_registro": "69c0e38652f6be60ce26064942c5df1ef936193d8f6c3b79bd6530c28e29f31e",
+        "hash_extrato": "69c0e38652f6be60ce26064942c5df1ef936193d8f6c3b79bd6530c28e29f31e",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-07",
+        "hash_registro": "c6e1989e4dc002b751cc23ab3e0c032df264bab82f79972bc059fa2799f072cc",
+        "hash_extrato": "c6e1989e4dc002b751cc23ab3e0c032df264bab82f79972bc059fa2799f072cc",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-08",
+        "hash_registro": "62f6c64f663b2a2901ad832b08768de5304186911da068e4ac48bbe0d2aeae3a",
+        "hash_extrato": "62f6c64f663b2a2901ad832b08768de5304186911da068e4ac48bbe0d2aeae3a",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-09",
+        "hash_registro": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780",
+        "hash_extrato": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-10",
+        "hash_registro": "abe9bc623cad60bc7f3c99fe1f57d2ceda566ce7fba6166afaac0df113ef66a2",
+        "hash_extrato": "abe9bc623cad60bc7f3c99fe1f57d2ceda566ce7fba6166afaac0df113ef66a2",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-11",
+        "hash_registro": "d5f8ea44378cd659b600ca4d2b9d24b290fd12bb603390c1117cd9c24678e878",
+        "hash_extrato": "d5f8ea44378cd659b600ca4d2b9d24b290fd12bb603390c1117cd9c24678e878",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-12",
+        "hash_registro": "7c0ff74e35d297c99cae98007bda36ebd4cdca22e4e1fcfa45fc3492f4683c18",
+        "hash_extrato": "7c0ff74e35d297c99cae98007bda36ebd4cdca22e4e1fcfa45fc3492f4683c18",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-13",
+        "hash_registro": "52c02867f253205868fb2da8741a6d7b8cad977367c1d5f1ec848670ff7f90b7",
+        "hash_extrato": "52c02867f253205868fb2da8741a6d7b8cad977367c1d5f1ec848670ff7f90b7",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-14",
+        "hash_registro": "3d06154c3f10b1827e4950b76dcf570d842b054a62406fc2c61a604af4c8a0a6",
+        "hash_extrato": "3d06154c3f10b1827e4950b76dcf570d842b054a62406fc2c61a604af4c8a0a6",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-15",
+        "hash_registro": "51c2987cdbf270b2bf5c447741e91ed1390e7812ad40164aecbdfa6accd4282f",
+        "hash_extrato": "51c2987cdbf270b2bf5c447741e91ed1390e7812ad40164aecbdfa6accd4282f",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-16",
+        "hash_registro": "80a328824d46255663e720f5850480ab96df22ccdba54dc04db4c0e6f205ee32",
+        "hash_extrato": "80a328824d46255663e720f5850480ab96df22ccdba54dc04db4c0e6f205ee32",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-17",
+        "hash_registro": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+        "hash_extrato": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-18",
+        "hash_registro": "06b0dc953b5579ef19c44e8137895aaecd4e1d6245c44a6b49956cc7445fc6e1",
+        "hash_extrato": "06b0dc953b5579ef19c44e8137895aaecd4e1d6245c44a6b49956cc7445fc6e1",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-19",
+        "hash_registro": "3871e235af09e1bdfedc606d42ae3922b3b02eea743895cd42cce446fc9a8a75",
+        "hash_extrato": "3871e235af09e1bdfedc606d42ae3922b3b02eea743895cd42cce446fc9a8a75",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-20",
+        "hash_registro": "2cb07dee73b66b77f5b0bb9b2e7cb494360a2fe28a500c14e2d3fbf709aa6a52",
+        "hash_extrato": "2cb07dee73b66b77f5b0bb9b2e7cb494360a2fe28a500c14e2d3fbf709aa6a52",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-21",
+        "hash_registro": "5e112105b6213109cbaf04f2883ae27052a8c9027ed9d808a0fcd627a326784b",
+        "hash_extrato": "5e112105b6213109cbaf04f2883ae27052a8c9027ed9d808a0fcd627a326784b",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-22",
+        "hash_registro": "a4cb5f18bafa792df4cdc4f632c585b8b49b63f20d7e719b36131dc44d34c944",
+        "hash_extrato": "a4cb5f18bafa792df4cdc4f632c585b8b49b63f20d7e719b36131dc44d34c944",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-23",
+        "hash_registro": "5be283e9eeaad31c39004231ee391654e3f476aaede45b5b81f74163628c3405",
+        "hash_extrato": "5be283e9eeaad31c39004231ee391654e3f476aaede45b5b81f74163628c3405",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-24",
+        "hash_registro": "7263887786f48bf00b02289fba4dcccfda7d655546d4c37da44e14a2d01ed438",
+        "hash_extrato": "7263887786f48bf00b02289fba4dcccfda7d655546d4c37da44e14a2d01ed438",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-25",
+        "hash_registro": "ad3f5a9cb6c50e2cacacb42b7e8d3a14a6c8cb13320c1048aea23cc599d50ed6",
+        "hash_extrato": "ad3f5a9cb6c50e2cacacb42b7e8d3a14a6c8cb13320c1048aea23cc599d50ed6",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-26",
+        "hash_registro": "4799e28ca9e9aa74d19aa5bac1560323e7d4d71e74a98e63561068afb3b802c8",
+        "hash_extrato": "4799e28ca9e9aa74d19aa5bac1560323e7d4d71e74a98e63561068afb3b802c8",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-27",
+        "hash_registro": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+        "hash_extrato": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-28",
+        "hash_registro": "3d6384bcf7120175aba311755ad0ad4f36ff896a0894161de88bc45cb8614365",
+        "hash_extrato": "3d6384bcf7120175aba311755ad0ad4f36ff896a0894161de88bc45cb8614365",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-29",
+        "hash_registro": "f7ba62e87eedc71077825e5be83a5fd8f4dacb08ba29e658a51e99d5fe42fdac",
+        "hash_extrato": "f7ba62e87eedc71077825e5be83a5fd8f4dacb08ba29e658a51e99d5fe42fdac",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-30",
+        "hash_registro": "6abb421dab137437146a58fdaeb64d35ec7f9a6161d142f0bd29c9e91ac53f8b",
+        "hash_extrato": "6abb421dab137437146a58fdaeb64d35ec7f9a6161d142f0bd29c9e91ac53f8b",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-31",
+        "hash_registro": "1195cc79755f79294771716075f277cae296343160770608c81367b2c7272bc3",
+        "hash_extrato": "1195cc79755f79294771716075f277cae296343160770608c81367b2c7272bc3",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-32",
+        "hash_registro": "91cacfbdd2254fd2ad8c183e18f65d94da3156c40a211242599f800a554f73d9",
+        "hash_extrato": "91cacfbdd2254fd2ad8c183e18f65d94da3156c40a211242599f800a554f73d9",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-33",
+        "hash_registro": "06e5d8361e1d50448ff26839517404fe07244c5ec74c1594371c11da6536997a",
+        "hash_extrato": "06e5d8361e1d50448ff26839517404fe07244c5ec74c1594371c11da6536997a",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-34",
+        "hash_registro": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+        "hash_extrato": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-35",
+        "hash_registro": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa",
+        "hash_extrato": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-36",
+        "hash_registro": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e",
+        "hash_extrato": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-37",
+        "hash_registro": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73",
+        "hash_extrato": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-38",
+        "hash_registro": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402",
+        "hash_extrato": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-39",
+        "hash_registro": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+        "hash_extrato": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-40",
+        "hash_registro": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909",
+        "hash_extrato": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-41",
+        "hash_registro": "f4c503ea9b326caa519bbdd2cd70ae85279d9d03996adcfe8de703f77fd18e64",
+        "hash_extrato": "f4c503ea9b326caa519bbdd2cd70ae85279d9d03996adcfe8de703f77fd18e64",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-42",
+        "hash_registro": "a43aea2e5d81accad6559fadfeefb77adf5e5653628f674856c501e795ce48ea",
+        "hash_extrato": "a43aea2e5d81accad6559fadfeefb77adf5e5653628f674856c501e795ce48ea",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-43",
+        "hash_registro": "1a934a1bd574e1b535a5a922cb0814a17d58079a7640b3f4d4c5c493af29c17b",
+        "hash_extrato": "1a934a1bd574e1b535a5a922cb0814a17d58079a7640b3f4d4c5c493af29c17b",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-44",
+        "hash_registro": "73982b41be7659f3a23f320d7ae6414c019750db4778f91c75674c20e0d53875",
+        "hash_extrato": "73982b41be7659f3a23f320d7ae6414c019750db4778f91c75674c20e0d53875",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-45",
+        "hash_registro": "382306e2bd0381e3614cfefd799d12a1b90a06b3b78e1f2171bc5c9c67c4ba4d",
+        "hash_extrato": "382306e2bd0381e3614cfefd799d12a1b90a06b3b78e1f2171bc5c9c67c4ba4d",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-46",
+        "hash_registro": "6db3ea19084b8ebc1743aabcf601f31f82cf56a2d5998e386e7504860cfff1b2",
+        "hash_extrato": "6db3ea19084b8ebc1743aabcf601f31f82cf56a2d5998e386e7504860cfff1b2",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-47",
+        "hash_registro": "8dbbd53e0111efaef76009a38b5c1c9ed437c6f6ecc471c0939147f903ec0786",
+        "hash_extrato": "8dbbd53e0111efaef76009a38b5c1c9ed437c6f6ecc471c0939147f903ec0786",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-48",
+        "hash_registro": "d39d25c7b5b9bafac081c3c1f00b129a54f07fceea77f5354bb4632dfd439fd6",
+        "hash_extrato": "d39d25c7b5b9bafac081c3c1f00b129a54f07fceea77f5354bb4632dfd439fd6",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-49",
+        "hash_registro": "8f8f133eddab5ab062c9f3a35ff78b246fa6ccd357de225593890f15c910cf9f",
+        "hash_extrato": "8f8f133eddab5ab062c9f3a35ff78b246fa6ccd357de225593890f15c910cf9f",
+        "identico": true
+      },
+      {
+        "id": "cr-e1-50",
+        "hash_registro": "b0e25a75cd24dfa1ded90bae33f09ee36222fd5d305d00607be61e818d126d3f",
+        "hash_extrato": "b0e25a75cd24dfa1ded90bae33f09ee36222fd5d305d00607be61e818d126d3f",
+        "identico": true
+      }
+    ],
+    "confirmados": 80
+  },
+  "novos_registros": [],
+  "cobertura": {
+    "herdados_por_identidade": 80,
+    "novos": 0,
+    "total": 80,
+    "pendentes": 117
+  },
+  "congelamento_final": null,
+  "verificacoes_finais": [],
+  "limitacoes": [
+    "Não atribui teste humano, piloto ou certificação externa.",
+    "BAN-08 e demais IDs não encerrados por extensão."
+  ]
+}

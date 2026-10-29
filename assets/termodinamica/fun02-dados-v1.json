@@ -1,0 +1,103 @@
+{
+  "id": "E1-FUN02",
+  "versao": "1.0",
+  "data": "2026-10-27",
+  "convencao": "Q recebido positivo; W realizado pelo sistema positivo; ΔU=Q−W.",
+  "origem": "Estados, janelas operacionais e formas de calibração são didáticos autorais. Nenhuma tabela experimental ou parâmetro de substância real é extrapolado.",
+  "gas": {
+    "n_mol": 1,
+    "R_JmolK": 8.314,
+    "cv_m_sobre_R": 1.5,
+    "modelo": "Gás ideal de composição fixa e capacidade molar constante, somente trabalho de fronteira; sem variação de energia cinética/potencial."
+  },
+  "caminhos": {
+    "A": {
+      "T_K": 300,
+      "V_m3": 0.01
+    },
+    "B": {
+      "T_K": 450,
+      "V_m3": 0.02
+    },
+    "Tmin_K": 250,
+    "Tmax_K": 650,
+    "tipos_permitidos": [
+      "isobarico",
+      "isocorico",
+      "isotermico"
+    ],
+    "max_trechos": 2,
+    "hipoteses": "Fronteira mecanicamente quase estática, sem atrito, pressão do gás conjugada a dV; calor reversível por sequência ideal de reservatórios, permitindo inversão dos trechos."
+  },
+  "calor_caminho": {
+    "T1_K": 300,
+    "V1_m3": 0.02,
+    "V2_m3": 0.005,
+    "expoente": 1.5,
+    "hipoteses": "Compressão ideal pV^r constante; mesmos pressupostos mecânicos e térmicos reversíveis. Não adiabática por definição."
+  },
+  "integrabilidade": {
+    "theta_ref_K": 300,
+    "volume_molar_ref_m3mol": 0.001,
+    "E0_Jmol": 100,
+    "dominio": "θ>0 e ν>0, aberto simplesmente conexo; coordenadas adimensionais.",
+    "alpha_M": "E0*(ln(theta)+ln(nu))",
+    "alpha_N": "E0*(nu+(theta-1)/nu)",
+    "beta_acrescimo_N": "E0*kappa*(theta-2)^2/nu",
+    "ciclo_largo": {
+      "theta_min": 1,
+      "theta_max": 3,
+      "nu_min": 1,
+      "nu_max": 2,
+      "orientacao": "anti-horaria",
+      "integral_Jmol": 0
+    },
+    "ciclo_esquerdo": {
+      "theta_min": 1,
+      "theta_max": 2,
+      "nu_min": 1,
+      "nu_max": 2,
+      "orientacao": "anti-horaria",
+      "integral_Jmol_expressao": "-20*ln(2)",
+      "coeficiente_ln2_Jmol": -20
+    },
+    "ponto_derivada": {
+      "theta": 2,
+      "nu": 2,
+      "caminho": "nu=theta"
+    },
+    "theta_centro_defeito": 2
+  },
+  "fontes": [
+    {
+      "rotulo": "MIT Thermodynamics SPRING §2.1, primeira lei e convenção",
+      "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+      "consulta": "2026-10-27"
+    },
+    {
+      "rotulo": "OpenStax University Physics2 §3.4, processos",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/3-4-thermodynamic-processes",
+      "consulta": "2026-10-27"
+    },
+    {
+      "rotulo": "OpenStax Calculus3 §6.3, potencial e domínio",
+      "url": "https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields",
+      "consulta": "2026-10-27"
+    },
+    {
+      "rotulo": "University of Washington CHEM452 Winter2023, apêndice4.1",
+      "url": "https://faculty.washington.edu/jcv2/CHEM452_WI2023/html/appendix_differentials.html",
+      "consulta": "2026-10-27"
+    },
+    {
+      "rotulo": "OpenStax University Physics2 §4.6, entropia por caminho reversível",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+      "consulta": "2026-10-27"
+    },
+    {
+      "rotulo": "Purdue ME200 Spring2023, cap.6,p.2: temperatura da fronteira interna e reversibilidade interna",
+      "url": "https://www.purdue.edu/freeform/me200/wp-content/uploads/sites/29/2023/03/ME-200-Chapter-6.pdf",
+      "consulta": "2026-10-27"
+    }
+  ]
+}

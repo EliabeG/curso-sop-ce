@@ -1,0 +1,6568 @@
+{
+  "natureza": "Auditoria técnica independente FUN-02 r1; não é parecer geral nem liberação",
+  "manifesto_produto": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "bytes": 1264701,
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/modulos/e1-termodinamica.html",
+      "hash_atual": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "hash_copia": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "bytes_atuais": 1264701,
+      "confere": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-dados-v1.json",
+      "sha256": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+      "bytes": 3497,
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/assets/termodinamica/fun02-dados-v1.json",
+      "hash_atual": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+      "hash_copia": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+      "bytes_atuais": 3497,
+      "confere": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-calculos-v1.mjs",
+      "sha256": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+      "bytes": 6351,
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/assets/termodinamica/fun02-calculos-v1.mjs",
+      "hash_atual": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+      "hash_copia": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+      "bytes_atuais": 6351,
+      "confere": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-caminhos-v1.svg",
+      "sha256": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+      "bytes": 11269,
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/assets/termodinamica/fun02-caminhos-v1.svg",
+      "hash_atual": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+      "hash_copia": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+      "bytes_atuais": 11269,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "c577058429375c11196eb99ae6bd01a9020f5258d3981d72c58896829ed900a2",
+      "bytes": 746652,
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "hash_atual": "c577058429375c11196eb99ae6bd01a9020f5258d3981d72c58896829ed900a2",
+      "hash_copia": "c577058429375c11196eb99ae6bd01a9020f5258d3981d72c58896829ed900a2",
+      "bytes_atuais": 746652,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "c650d94556d527725595dfc86b1feaa055a32a2d9060e9b4680f1a152e11cca4",
+      "bytes": 49611,
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "hash_atual": "c650d94556d527725595dfc86b1feaa055a32a2d9060e9b4680f1a152e11cca4",
+      "hash_copia": "c650d94556d527725595dfc86b1feaa055a32a2d9060e9b4680f1a152e11cca4",
+      "bytes_atuais": 49611,
+      "confere": true
+    }
+  ],
+  "manifesto_evidencias": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/apoio-diferenciais.md",
+      "sha256": "bea4fb67b629e94c9e13b36112fb6bdb077ca5d169631af4bc870604f7133b55",
+      "bytes": 26712,
+      "hash_atual": "bea4fb67b629e94c9e13b36112fb6bdb077ca5d169631af4bc870604f7133b55",
+      "bytes_atuais": 26712,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/calculo-r1.json",
+      "sha256": "39fc1acda13f4c56a51253f583d52fbae6780d0018cb30dbc7fc2e996826c586",
+      "bytes": 9146,
+      "hash_atual": "39fc1acda13f4c56a51253f583d52fbae6780d0018cb30dbc7fc2e996826c586",
+      "bytes_atuais": 9146,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/calculos-preliminares-coordenador-r1.json",
+      "sha256": "7f60bfe2d7459c31665d6cabaa6c78b7b4c8ef0d7b62e03dd1d297455dff1501",
+      "bytes": 5354,
+      "hash_atual": "7f60bfe2d7459c31665d6cabaa6c78b7b4c8ef0d7b62e03dd1d297455dff1501",
+      "bytes_atuais": 5354,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/conferencia-cientifica-r1.md",
+      "sha256": "a2a33adea0e5e81b2c920dd2f8cdbb70a8e4ddbefc2a5056548006fc7d5d6b1c",
+      "bytes": 5017,
+      "hash_atual": "a2a33adea0e5e81b2c920dd2f8cdbb70a8e4ddbefc2a5056548006fc7d5d6b1c",
+      "bytes_atuais": 5017,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/e1-termodinamica.antes.html",
+      "sha256": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+      "bytes": 1194376,
+      "hash_atual": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+      "bytes_atuais": 1194376,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/e1-termodinamica.r1.html",
+      "sha256": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "bytes": 1264701,
+      "hash_atual": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "bytes_atuais": 1264701,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/enunciado-p2-r1.md",
+      "sha256": "b9bed721d7732979261e6cab2ca79f5fb7df61696de78a4b172d0c17a88b0e2b",
+      "bytes": 6092,
+      "hash_atual": "b9bed721d7732979261e6cab2ca79f5fb7df61696de78a4b172d0c17a88b0e2b",
+      "bytes_atuais": 6092,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/figura-coordenador-r1.json",
+      "sha256": "468fa147e609a121ac2949abae47c7153dc5b220fbb80582cc9b8b1f7ffd3b5f",
+      "bytes": 1184,
+      "hash_atual": "468fa147e609a121ac2949abae47c7153dc5b220fbb80582cc9b8b1f7ffd3b5f",
+      "bytes_atuais": 1184,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/fontes-conferidas-coordenador-r1.md",
+      "sha256": "988fbdcef30be1aa2f4824be23b0d51daac2ab1d41d666d4499ebb7657694b15",
+      "bytes": 2880,
+      "hash_atual": "988fbdcef30be1aa2f4824be23b0d51daac2ab1d41d666d4499ebb7657694b15",
+      "bytes_atuais": 2880,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/gov-deltas-r1.json",
+      "sha256": "73657e1f2bfa37d6182bab9fd1990d8e27fa6626e1a7d1040a502df135e49f1c",
+      "bytes": 15734,
+      "hash_atual": "73657e1f2bfa37d6182bab9fd1990d8e27fa6626e1a7d1040a502df135e49f1c",
+      "bytes_atuais": 15734,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/inventario.antes.json",
+      "sha256": "4ead2e63ba59077cd89691dfef83e24a58fa58b5c8a4cde1c5420f9e3aad4def",
+      "bytes": 725642,
+      "hash_atual": "4ead2e63ba59077cd89691dfef83e24a58fa58b5c8a4cde1c5420f9e3aad4def",
+      "bytes_atuais": 725642,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/INVENTARIO_QUESTOES.antes.md",
+      "sha256": "b0223cb896015240284f1027a487308836252942a9503ce3a6eb9d084db0a15c",
+      "bytes": 46509,
+      "hash_atual": "b0223cb896015240284f1027a487308836252942a9503ce3a6eb9d084db0a15c",
+      "bytes_atuais": 46509,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/metadados-analiticos-r1.json",
+      "sha256": "1f7cbd57997dab75ce4070f3f2c0a7232352255ff02791c13227081920d94125",
+      "bytes": 11091,
+      "hash_atual": "1f7cbd57997dab75ce4070f3f2c0a7232352255ff02791c13227081920d94125",
+      "bytes_atuais": 11091,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/navegador-coordenador-r1.md",
+      "sha256": "7bb6638b2faf12260d013c2c4e03ff3efc7ef8d9c65ea118208aa19698a86b2d",
+      "bytes": 2120,
+      "hash_atual": "7bb6638b2faf12260d013c2c4e03ff3efc7ef8d9c65ea118208aa19698a86b2d",
+      "bytes_atuais": 2120,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/novos-registros-r1.json",
+      "sha256": "3e91c64df5120efb3de5627130fc9cefdfbe1243e57d9ded9950e00e5d274d84",
+      "bytes": 19880,
+      "hash_atual": "3e91c64df5120efb3de5627130fc9cefdfbe1243e57d9ded9950e00e5d274d84",
+      "bytes_atuais": 19880,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/preparacao-integrabilidade-r1.html",
+      "sha256": "731cce9d6b28eacec9df3dfef2e0025d14657c24a495330529e7800026a6ac1a",
+      "bytes": 3121,
+      "hash_atual": "731cce9d6b28eacec9df3dfef2e0025d14657c24a495330529e7800026a6ac1a",
+      "bytes_atuais": 3121,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/preservacao-r1.json",
+      "sha256": "c1e21fa2d5ebb3042618243de53f6313fb01b9064492c9b08818d45bdede8954",
+      "bytes": 1017,
+      "hash_atual": "c1e21fa2d5ebb3042618243de53f6313fb01b9064492c9b08818d45bdede8954",
+      "bytes_atuais": 1017,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/problema-2-r1.html",
+      "sha256": "c6ebeefd38400127898579522453f0606cf106e41178cdeac3bbf768517a0126",
+      "bytes": 26108,
+      "hash_atual": "c6ebeefd38400127898579522453f0606cf106e41178cdeac3bbf768517a0126",
+      "bytes_atuais": 26108,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/problemas-caminhos-calor-r1.html",
+      "sha256": "a8fae0fe720dd7f981399ab6ce2552e9fb7ca20f59c3a24ed2659a8e7da7015e",
+      "bytes": 19892,
+      "hash_atual": "a8fae0fe720dd7f981399ab6ce2552e9fb7ca20f59c3a24ed2659a8e7da7015e",
+      "bytes_atuais": 19892,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/reproducao-coordenador-r1.json",
+      "sha256": "6fbf315f78f252e1cbfb40609a3807be9e2be225f6575761801803c65b74fa75",
+      "bytes": 10632,
+      "hash_atual": "6fbf315f78f252e1cbfb40609a3807be9e2be225f6575761801803c65b74fa75",
+      "bytes_atuais": 10632,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/revisao-coordenador-pre-congelamento-r1.md",
+      "sha256": "cf389fc6948bb05a52baad99de626482e4478582d44f7bd3e23b4941facfc7e7",
+      "bytes": 3491,
+      "hash_atual": "cf389fc6948bb05a52baad99de626482e4478582d44f7bd3e23b4941facfc7e7",
+      "bytes_atuais": 3491,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/unidade-integrada-r1.html",
+      "sha256": "aa5cc606d6ea8bb36a1171d8a5e914d088075d75d8638dd0f0aa315b65ee9fca",
+      "bytes": 68275,
+      "hash_atual": "aa5cc606d6ea8bb36a1171d8a5e914d088075d75d8638dd0f0aa315b65ee9fca",
+      "bytes_atuais": 68275,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/unidade-teoria-r1.html",
+      "sha256": "6803fbb91ee006f06537fc090fdf957d20a2fa85a1f7e20fac1db4b36f1ec870",
+      "bytes": 19139,
+      "hash_atual": "6803fbb91ee006f06537fc090fdf957d20a2fa85a1f7e20fac1db4b36f1ec870",
+      "bytes_atuais": 19139,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/validacao-inventario-r1.json",
+      "sha256": "371912eb8a3a446d5ebecf280618c65306e611a8cbb4eae159852fe0561eb942",
+      "bytes": 333,
+      "hash_atual": "371912eb8a3a446d5ebecf280618c65306e611a8cbb4eae159852fe0561eb942",
+      "bytes_atuais": 333,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/verificacao-r1.json",
+      "sha256": "95a18f29bfd1742272a45e27a4360bee62a92f8f015c5451dc946210919a3f2b",
+      "bytes": 28491,
+      "hash_atual": "95a18f29bfd1742272a45e27a4360bee62a92f8f015c5451dc946210919a3f2b",
+      "bytes_atuais": 28491,
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-02/verificar-fun02-r1.mjs",
+      "sha256": "ff9d21e594fa545d88af2f2a1964d1fc514e921974de388f058f5e3226ad8354",
+      "bytes": 4849,
+      "hash_atual": "ff9d21e594fa545d88af2f2a1964d1fc514e921974de388f058f5e3226ad8354",
+      "bytes_atuais": 4849,
+      "confere": true
+    }
+  ],
+  "infraestrutura_preservada": [
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "sha256_auditado": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "confere": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "sha256_auditado": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "confere": true
+    },
+    {
+      "arquivo": "assets/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "sha256_auditado": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario.schema.json",
+      "sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+      "sha256_auditado": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+      "sha256_auditado": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+      "confere": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/LEIA-ME.md",
+      "sha256": "cdcd7e965bdc4a998b6e2fa784a53f84f295abcf9ade2d06ce62fff71d072449",
+      "sha256_auditado": "cdcd7e965bdc4a998b6e2fa784a53f84f295abcf9ade2d06ce62fff71d072449",
+      "confere": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+      "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+      "sha256_auditado": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+      "confere": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-calculos-v1.mjs",
+      "sha256": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+      "sha256_auditado": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+      "confere": true
+    }
+  ],
+  "bases_anteriores": [
+    {
+      "arquivo_base": "auditoria/termodinamica/evidencias/FUN-02/e1-termodinamica.antes.html",
+      "pacote_anterior": "auditoria/termodinamica/evidencias/FUN-01/pacote-r2/modulos/e1-termodinamica.html",
+      "sha256": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+      "confere": true
+    },
+    {
+      "arquivo_base": "auditoria/termodinamica/evidencias/FUN-02/inventario.antes.json",
+      "pacote_anterior": "auditoria/termodinamica/evidencias/FUN-01/pacote-r2/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "4ead2e63ba59077cd89691dfef83e24a58fa58b5c8a4cde1c5420f9e3aad4def",
+      "confere": true
+    },
+    {
+      "arquivo_base": "auditoria/termodinamica/evidencias/FUN-02/INVENTARIO_QUESTOES.antes.md",
+      "pacote_anterior": "auditoria/termodinamica/evidencias/FUN-01/pacote-r2/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "b0223cb896015240284f1027a487308836252942a9503ce3a6eb9d084db0a15c",
+      "confere": true
+    }
+  ],
+  "artigos_anteriores": [
+    {
+      "id": "q-e1-01",
+      "sha256_antes": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "sha256_atual": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "confere": true
+    },
+    {
+      "id": "q-e1-02",
+      "sha256_antes": "ab8e322acf56c6c18183c82d5b8b0b2b8e895c134e6ea7581a0d0b8ccb4d5d4f",
+      "sha256_atual": "ab8e322acf56c6c18183c82d5b8b0b2b8e895c134e6ea7581a0d0b8ccb4d5d4f",
+      "confere": true
+    },
+    {
+      "id": "q-e1-03",
+      "sha256_antes": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "sha256_atual": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "confere": true
+    },
+    {
+      "id": "q-e1-04",
+      "sha256_antes": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "sha256_atual": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "confere": true
+    },
+    {
+      "id": "q-e1-05",
+      "sha256_antes": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "sha256_atual": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "confere": true
+    },
+    {
+      "id": "q-e1-06",
+      "sha256_antes": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "sha256_atual": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "confere": true
+    },
+    {
+      "id": "q-e1-07",
+      "sha256_antes": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "sha256_atual": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "confere": true
+    },
+    {
+      "id": "q-e1-08",
+      "sha256_antes": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "sha256_atual": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "confere": true
+    },
+    {
+      "id": "q-e1-09",
+      "sha256_antes": "0599ef026688971f3ddf099fd55133e22b51f6eaf2ac070acacdcf32f11e8732",
+      "sha256_atual": "0599ef026688971f3ddf099fd55133e22b51f6eaf2ac070acacdcf32f11e8732",
+      "confere": true
+    },
+    {
+      "id": "q-e1-10",
+      "sha256_antes": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "sha256_atual": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "confere": true
+    },
+    {
+      "id": "q-e1-11",
+      "sha256_antes": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "sha256_atual": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "confere": true
+    },
+    {
+      "id": "q-e1-12",
+      "sha256_antes": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "sha256_atual": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "confere": true
+    },
+    {
+      "id": "q-e1-13",
+      "sha256_antes": "405d677239ba33e510f59cc11d22251c794fad0ba3f5ecd8c3c1d632c0b80a6f",
+      "sha256_atual": "405d677239ba33e510f59cc11d22251c794fad0ba3f5ecd8c3c1d632c0b80a6f",
+      "confere": true
+    },
+    {
+      "id": "q-e1-14",
+      "sha256_antes": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "sha256_atual": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "confere": true
+    },
+    {
+      "id": "q-e1-15",
+      "sha256_antes": "67967ac19a16d6167266255da06d674c528b9ae5aaaf8209650fe58a28b1e6f7",
+      "sha256_atual": "67967ac19a16d6167266255da06d674c528b9ae5aaaf8209650fe58a28b1e6f7",
+      "confere": true
+    },
+    {
+      "id": "q-e1-16",
+      "sha256_antes": "25c2b67fc2b4b2021dbb5240ceea18631b5423417121e4e41ea83f56677867e4",
+      "sha256_atual": "25c2b67fc2b4b2021dbb5240ceea18631b5423417121e4e41ea83f56677867e4",
+      "confere": true
+    },
+    {
+      "id": "q-e1-17",
+      "sha256_antes": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "sha256_atual": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "confere": true
+    },
+    {
+      "id": "q-e1-18",
+      "sha256_antes": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+      "sha256_atual": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+      "confere": true
+    },
+    {
+      "id": "q-e1-19",
+      "sha256_antes": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+      "sha256_atual": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+      "confere": true
+    },
+    {
+      "id": "q-e1-20",
+      "sha256_antes": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "sha256_atual": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "confere": true
+    },
+    {
+      "id": "q-e1-21",
+      "sha256_antes": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "sha256_atual": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "confere": true
+    },
+    {
+      "id": "q-e1-22",
+      "sha256_antes": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "sha256_atual": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "confere": true
+    },
+    {
+      "id": "q-e1-23",
+      "sha256_antes": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "sha256_atual": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "confere": true
+    },
+    {
+      "id": "q-e1-24",
+      "sha256_antes": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+      "sha256_atual": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+      "confere": true
+    },
+    {
+      "id": "q-e1-25",
+      "sha256_antes": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "sha256_atual": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "confere": true
+    },
+    {
+      "id": "q-e1-26",
+      "sha256_antes": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+      "sha256_atual": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+      "confere": true
+    },
+    {
+      "id": "q-e1-27",
+      "sha256_antes": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "sha256_atual": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "confere": true
+    },
+    {
+      "id": "q-e1-28",
+      "sha256_antes": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+      "sha256_atual": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+      "confere": true
+    },
+    {
+      "id": "q-e1-29",
+      "sha256_antes": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "sha256_atual": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "confere": true
+    },
+    {
+      "id": "q-e1-30",
+      "sha256_antes": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "sha256_atual": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-01",
+      "sha256_antes": "b0bd5a4a2f5eaea1f0addd8ed696110ba14d99f10577a411ab0144510090d030",
+      "sha256_atual": "b0bd5a4a2f5eaea1f0addd8ed696110ba14d99f10577a411ab0144510090d030",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-02",
+      "sha256_antes": "88330f46201ca197d70fd6060f876cc410a9e7aa2acd355df530ced0e3998266",
+      "sha256_atual": "88330f46201ca197d70fd6060f876cc410a9e7aa2acd355df530ced0e3998266",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-03",
+      "sha256_antes": "3c6cec66df34c03177c210d957f91842d50148d7d63e506e654b5c82a0b60e6d",
+      "sha256_atual": "3c6cec66df34c03177c210d957f91842d50148d7d63e506e654b5c82a0b60e6d",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-04",
+      "sha256_antes": "aa320df8fa7a4638c8a2befa39aac3ce9ea2f8b0b685375ac530e8911c99ea3a",
+      "sha256_atual": "aa320df8fa7a4638c8a2befa39aac3ce9ea2f8b0b685375ac530e8911c99ea3a",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-05",
+      "sha256_antes": "0e756b1237367af6d0380d6935ccd0b0bd11fda5fbe0e5dc733f4954759a13c0",
+      "sha256_atual": "0e756b1237367af6d0380d6935ccd0b0bd11fda5fbe0e5dc733f4954759a13c0",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-06",
+      "sha256_antes": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+      "sha256_atual": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-07",
+      "sha256_antes": "7370a26429d6879438fcf43c0c5200bdd1a64f8318d13de099bad14c957573f1",
+      "sha256_atual": "7370a26429d6879438fcf43c0c5200bdd1a64f8318d13de099bad14c957573f1",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-08",
+      "sha256_antes": "9f993bc1a26e2239421f1504bf758851b25e5f8e25d4761498d47c6c61528f35",
+      "sha256_atual": "9f993bc1a26e2239421f1504bf758851b25e5f8e25d4761498d47c6c61528f35",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-09",
+      "sha256_antes": "13a9f322f73a5e0da456eaa3b8accc36d53cc56bafea42eb7c41d07d1b93a1e7",
+      "sha256_atual": "13a9f322f73a5e0da456eaa3b8accc36d53cc56bafea42eb7c41d07d1b93a1e7",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-10",
+      "sha256_antes": "a2f8e4e1407748aa1e52b5aa4b9dfcb53ce561c81993d96af7752ef8a0de0a1b",
+      "sha256_atual": "a2f8e4e1407748aa1e52b5aa4b9dfcb53ce561c81993d96af7752ef8a0de0a1b",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-11",
+      "sha256_antes": "25f574ce82e77fd539abacb0d0a60d84bebed544b5a2d39bb494901b3e3c98e7",
+      "sha256_atual": "25f574ce82e77fd539abacb0d0a60d84bebed544b5a2d39bb494901b3e3c98e7",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-12",
+      "sha256_antes": "a25e2c7ffcfd139ecdebb4cdfa23c003c524f926171f16a18d4de4fc0f197740",
+      "sha256_atual": "a25e2c7ffcfd139ecdebb4cdfa23c003c524f926171f16a18d4de4fc0f197740",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-13",
+      "sha256_antes": "d038caddab08159beae96c99df97efae278396af24bd3be56009e68c4e311ca1",
+      "sha256_atual": "d038caddab08159beae96c99df97efae278396af24bd3be56009e68c4e311ca1",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-14",
+      "sha256_antes": "b892b8303e9bb256c4c34e22804bd33c9dcd18f033b4daefa1987eb035f3e4c9",
+      "sha256_atual": "b892b8303e9bb256c4c34e22804bd33c9dcd18f033b4daefa1987eb035f3e4c9",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-15",
+      "sha256_antes": "6312f29aa7d400f3a1d317df01fe81ccc8ba856aa8a29219f823275145c39e7b",
+      "sha256_atual": "6312f29aa7d400f3a1d317df01fe81ccc8ba856aa8a29219f823275145c39e7b",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-16",
+      "sha256_antes": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+      "sha256_atual": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-17",
+      "sha256_antes": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+      "sha256_atual": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-18",
+      "sha256_antes": "1ab626bbec5308efdd2a087d9b63f67e6a67022028ba420e91a84e9aa38dd1ea",
+      "sha256_atual": "1ab626bbec5308efdd2a087d9b63f67e6a67022028ba420e91a84e9aa38dd1ea",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-19",
+      "sha256_antes": "605a3f5541abb9d8c34bd02e8963dfc8ba6e18dc30a01b473946c84bc9d72597",
+      "sha256_atual": "605a3f5541abb9d8c34bd02e8963dfc8ba6e18dc30a01b473946c84bc9d72597",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-20",
+      "sha256_antes": "1da42a8241671bf9ed59d7c960412f5ed805e2fbb8ee0c5c210092111704e623",
+      "sha256_atual": "1da42a8241671bf9ed59d7c960412f5ed805e2fbb8ee0c5c210092111704e623",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-21",
+      "sha256_antes": "3338053d71662c8528680b4b7449ca65d314abfb71a83b05940f5adb6adefa31",
+      "sha256_atual": "3338053d71662c8528680b4b7449ca65d314abfb71a83b05940f5adb6adefa31",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-22",
+      "sha256_antes": "4039582bcec1fcbb3f7baf160416f14892244955a67594c583c4660adf138a80",
+      "sha256_atual": "4039582bcec1fcbb3f7baf160416f14892244955a67594c583c4660adf138a80",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-23",
+      "sha256_antes": "2d802855e9017eea01af0f2a2e3f14d68e5a8ce7c02f49fc9ffeabceab716a6e",
+      "sha256_atual": "2d802855e9017eea01af0f2a2e3f14d68e5a8ce7c02f49fc9ffeabceab716a6e",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-24",
+      "sha256_antes": "971cdc5e085473152882d4c3b22358f7cfbab8b44206cd60bc0c7f399f2a45b2",
+      "sha256_atual": "971cdc5e085473152882d4c3b22358f7cfbab8b44206cd60bc0c7f399f2a45b2",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-25",
+      "sha256_antes": "75a9939ea48fec2f6568b7a474df1051f7cb5ccaebf5eaab5e2cdf6a3f59705e",
+      "sha256_atual": "75a9939ea48fec2f6568b7a474df1051f7cb5ccaebf5eaab5e2cdf6a3f59705e",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-26",
+      "sha256_antes": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+      "sha256_atual": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-27",
+      "sha256_antes": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+      "sha256_atual": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-28",
+      "sha256_antes": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+      "sha256_atual": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-29",
+      "sha256_antes": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+      "sha256_atual": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-30",
+      "sha256_antes": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+      "sha256_atual": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-31",
+      "sha256_antes": "e33a863be630fc055c5af33bcb8c7d0cde6f2f3fcff3f43b83814e943e70552e",
+      "sha256_atual": "e33a863be630fc055c5af33bcb8c7d0cde6f2f3fcff3f43b83814e943e70552e",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-32",
+      "sha256_antes": "4677e514a72bd2d54fcf930116afe6551ca3cc75d4b32db373c47e7ab0c16541",
+      "sha256_atual": "4677e514a72bd2d54fcf930116afe6551ca3cc75d4b32db373c47e7ab0c16541",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-33",
+      "sha256_antes": "5f4e940c5e6629741675ba3ad6a93add2967221e8535181e7562beb91464da9b",
+      "sha256_atual": "5f4e940c5e6629741675ba3ad6a93add2967221e8535181e7562beb91464da9b",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-34",
+      "sha256_antes": "a47876e8910efad89a0cd2db57be4ec07676c9c5d145b139d8e1f6fc76c47f94",
+      "sha256_atual": "a47876e8910efad89a0cd2db57be4ec07676c9c5d145b139d8e1f6fc76c47f94",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-35",
+      "sha256_antes": "d53be4ae75a24d7c7369d8b408adf0a4e49cf51e9b315951a1029f3dc0cc4986",
+      "sha256_atual": "d53be4ae75a24d7c7369d8b408adf0a4e49cf51e9b315951a1029f3dc0cc4986",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-36",
+      "sha256_antes": "c5785d05c646b64b1c74d9421e8acda5274eac695fb1d3d6625ad24a6ff19689",
+      "sha256_atual": "c5785d05c646b64b1c74d9421e8acda5274eac695fb1d3d6625ad24a6ff19689",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-37",
+      "sha256_antes": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+      "sha256_atual": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-38",
+      "sha256_antes": "8895b72f34bb0fd12fcad536db449144757e5fef1bcdf29dd409236ee3e8333c",
+      "sha256_atual": "8895b72f34bb0fd12fcad536db449144757e5fef1bcdf29dd409236ee3e8333c",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-39",
+      "sha256_antes": "fc8dd066d4dec28e64f9692d21fca0e40e33b418816c05b1af4fb8fcc6b7c5af",
+      "sha256_atual": "fc8dd066d4dec28e64f9692d21fca0e40e33b418816c05b1af4fb8fcc6b7c5af",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-40",
+      "sha256_antes": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+      "sha256_atual": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-41",
+      "sha256_antes": "c07f4425a20d5839dd7caa63ac3ecbab78ab16beb4df77b4e84d0af011d11b3e",
+      "sha256_atual": "c07f4425a20d5839dd7caa63ac3ecbab78ab16beb4df77b4e84d0af011d11b3e",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-42",
+      "sha256_antes": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+      "sha256_atual": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-43",
+      "sha256_antes": "3b8417f1d9e4dc6f2c1658d03178ba8bc87cd7c5d2776e0e0af55105554c80f0",
+      "sha256_atual": "3b8417f1d9e4dc6f2c1658d03178ba8bc87cd7c5d2776e0e0af55105554c80f0",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-44",
+      "sha256_antes": "505d85a9d656cf593526e85643c8cab8269f9bac8c23b2f5c4736b700afaf3f2",
+      "sha256_atual": "505d85a9d656cf593526e85643c8cab8269f9bac8c23b2f5c4736b700afaf3f2",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-45",
+      "sha256_antes": "9065ac5761995d907afcf86d54c6d04d7e7dd2bd8d7dd70628c8a0c4be31b8ac",
+      "sha256_atual": "9065ac5761995d907afcf86d54c6d04d7e7dd2bd8d7dd70628c8a0c4be31b8ac",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-46",
+      "sha256_antes": "0bb0f9cd0768570ab457e4ac9c9f3b61af6c1bf59570d242df01cca495353831",
+      "sha256_atual": "0bb0f9cd0768570ab457e4ac9c9f3b61af6c1bf59570d242df01cca495353831",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-47",
+      "sha256_antes": "8a99cb5355045fe2477c6438fd7b20b81c7dcc56469a21be72f57806f89f1c7b",
+      "sha256_atual": "8a99cb5355045fe2477c6438fd7b20b81c7dcc56469a21be72f57806f89f1c7b",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-48",
+      "sha256_antes": "e7585a8c58fabc658d7c57c28e3b2b067a196f8425e8dd2fa569e9ca36a9face",
+      "sha256_atual": "e7585a8c58fabc658d7c57c28e3b2b067a196f8425e8dd2fa569e9ca36a9face",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-49",
+      "sha256_antes": "d1d8cab6e7cc2b0a7ac70e6d16fc6112d2aecb30345213927e0a4247d0d948d9",
+      "sha256_atual": "d1d8cab6e7cc2b0a7ac70e6d16fc6112d2aecb30345213927e0a4247d0d948d9",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-50",
+      "sha256_antes": "b1fd08abfa0ff599e2d0202bf2a471e1972d00d1ea6921e2df2a8bf09d37611c",
+      "sha256_atual": "b1fd08abfa0ff599e2d0202bf2a471e1972d00d1ea6921e2df2a8bf09d37611c",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-51",
+      "sha256_antes": "e6b795e6c83ad2c125e36b42750e131ddf7da5254fa6cc62f6284b1d5770c098",
+      "sha256_atual": "e6b795e6c83ad2c125e36b42750e131ddf7da5254fa6cc62f6284b1d5770c098",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-52",
+      "sha256_antes": "0a1e2c76406a3ffa58de5677e0bbec9d7cd938cd89ea83776712f6f2dfa3363d",
+      "sha256_atual": "0a1e2c76406a3ffa58de5677e0bbec9d7cd938cd89ea83776712f6f2dfa3363d",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-53",
+      "sha256_antes": "88a3ce14dae670334b9a1c277c31fd539b3249ab6b9d87865392798967a299b9",
+      "sha256_atual": "88a3ce14dae670334b9a1c277c31fd539b3249ab6b9d87865392798967a299b9",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-54",
+      "sha256_antes": "bb4985d1b74f411b0a581709e552f79e82658f88e51bdc208cdf8b2b8e15bc6b",
+      "sha256_atual": "bb4985d1b74f411b0a581709e552f79e82658f88e51bdc208cdf8b2b8e15bc6b",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-55",
+      "sha256_antes": "cb970e9fdfa77c97a03cb84a6f337676bdd3cbb626819688c2e001c1b98d386a",
+      "sha256_atual": "cb970e9fdfa77c97a03cb84a6f337676bdd3cbb626819688c2e001c1b98d386a",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-56",
+      "sha256_antes": "e454a08aa8d566d15fd40d8301e5a41be923c5b8f1b4f5682df242b1df809a25",
+      "sha256_atual": "e454a08aa8d566d15fd40d8301e5a41be923c5b8f1b4f5682df242b1df809a25",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-57",
+      "sha256_antes": "9ec32a8405951828d2a5d18681730df40d18778a177c8a4021f26abf853385a0",
+      "sha256_atual": "9ec32a8405951828d2a5d18681730df40d18778a177c8a4021f26abf853385a0",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-58",
+      "sha256_antes": "eab62eaa7a838747c40e753a4ef8229e016ec0ced56a013c098263eb5b36ea08",
+      "sha256_atual": "eab62eaa7a838747c40e753a4ef8229e016ec0ced56a013c098263eb5b36ea08",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-59",
+      "sha256_antes": "4bbfd2e74eed80002b59704eef4106bba6864e504e80864ea9e9a0f562607348",
+      "sha256_atual": "4bbfd2e74eed80002b59704eef4106bba6864e504e80864ea9e9a0f562607348",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-60",
+      "sha256_antes": "2e5d313e3cc3f01ba79fe2854a3bb19e8409d78b7cb02a38a423f0f72ec0d1b7",
+      "sha256_atual": "2e5d313e3cc3f01ba79fe2854a3bb19e8409d78b7cb02a38a423f0f72ec0d1b7",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-61",
+      "sha256_antes": "6196d3ecfd0f16b8c35118d7c02ff27b86b9bceee5b88a8be606550d9bc3b5e0",
+      "sha256_atual": "6196d3ecfd0f16b8c35118d7c02ff27b86b9bceee5b88a8be606550d9bc3b5e0",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-62",
+      "sha256_antes": "3a2c154691493e54a0f5d4cf7ce38cbedfe11f945938d20cc59d4189217db6b6",
+      "sha256_atual": "3a2c154691493e54a0f5d4cf7ce38cbedfe11f945938d20cc59d4189217db6b6",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-63",
+      "sha256_antes": "08934e196ed8815785afcb9d000fcc56326e7527b250d5f51f169c0844883f11",
+      "sha256_atual": "08934e196ed8815785afcb9d000fcc56326e7527b250d5f51f169c0844883f11",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-64",
+      "sha256_antes": "8d2a2179f5ccc824e3ffbe6c5ffad76e16ad7455b56e283c9be3d2f90834a210",
+      "sha256_atual": "8d2a2179f5ccc824e3ffbe6c5ffad76e16ad7455b56e283c9be3d2f90834a210",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-65",
+      "sha256_antes": "7d2096286200bc4cafcfb512f081b4c5515c7e3a290dcb87582567c1170f8522",
+      "sha256_atual": "7d2096286200bc4cafcfb512f081b4c5515c7e3a290dcb87582567c1170f8522",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-66",
+      "sha256_antes": "4b194eda06c6ee5215c05177f00ca8f01bbf490fc06d9f53b65df372a45c0bae",
+      "sha256_atual": "4b194eda06c6ee5215c05177f00ca8f01bbf490fc06d9f53b65df372a45c0bae",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-67",
+      "sha256_antes": "ecddb0148ddc0cbb74ff06eff3e47032ba240626e6c35c01905724ce06026043",
+      "sha256_atual": "ecddb0148ddc0cbb74ff06eff3e47032ba240626e6c35c01905724ce06026043",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-68",
+      "sha256_antes": "db7da36b75e047ef81dc83ebbfe33ce499b6a2f4c97314ac9a4d5ab5fd9bdaaf",
+      "sha256_atual": "db7da36b75e047ef81dc83ebbfe33ce499b6a2f4c97314ac9a4d5ab5fd9bdaaf",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-69",
+      "sha256_antes": "6c621ff003b12f2f67ca92d9a51d8b9ab38ac2ff98588b05e78108f88dbeda9b",
+      "sha256_atual": "6c621ff003b12f2f67ca92d9a51d8b9ab38ac2ff98588b05e78108f88dbeda9b",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-70",
+      "sha256_antes": "f581577d62634979ee5d025e93d96b40bfa4b68dd7c4b70f7c6b71a61444446a",
+      "sha256_atual": "f581577d62634979ee5d025e93d96b40bfa4b68dd7c4b70f7c6b71a61444446a",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-71",
+      "sha256_antes": "ef1f1de0d3aba6c166381fe3af769f819fe9b9445651a1016de91944291375f2",
+      "sha256_atual": "ef1f1de0d3aba6c166381fe3af769f819fe9b9445651a1016de91944291375f2",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-72",
+      "sha256_antes": "1f8978ee9f14297e3ca0b8323a8c2622d06f2c6b9f921d026ca6bb75d22a0dd4",
+      "sha256_atual": "1f8978ee9f14297e3ca0b8323a8c2622d06f2c6b9f921d026ca6bb75d22a0dd4",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-73",
+      "sha256_antes": "c65b0368e6572bc3505c3aac6b1676072cfae06cc781807fe6b96a8ee270420a",
+      "sha256_atual": "c65b0368e6572bc3505c3aac6b1676072cfae06cc781807fe6b96a8ee270420a",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-74",
+      "sha256_antes": "fc277c15bccdcd3178cf209367e5d7f5eb6fadc7446b1a409e5d2b2f90d1bbbd",
+      "sha256_atual": "fc277c15bccdcd3178cf209367e5d7f5eb6fadc7446b1a409e5d2b2f90d1bbbd",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-75",
+      "sha256_antes": "90300e7354993e382db2a2ac18a4f26e6b7055b7e073176542095e436b67e8dd",
+      "sha256_atual": "90300e7354993e382db2a2ac18a4f26e6b7055b7e073176542095e436b67e8dd",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-76",
+      "sha256_antes": "43598c42f864bae79295cfee191095dd8fe691b64a59ffca3a4e4588907a475f",
+      "sha256_atual": "43598c42f864bae79295cfee191095dd8fe691b64a59ffca3a4e4588907a475f",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-77",
+      "sha256_antes": "902e8ca91003f7f3529280b54cf81b5f91d425a91a142b1bb09ca7876042c6b4",
+      "sha256_atual": "902e8ca91003f7f3529280b54cf81b5f91d425a91a142b1bb09ca7876042c6b4",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-78",
+      "sha256_antes": "cd13d18ed248d752ad0ab84a4504f3782370596c1d564070d9151fd5726dabb8",
+      "sha256_atual": "cd13d18ed248d752ad0ab84a4504f3782370596c1d564070d9151fd5726dabb8",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-79",
+      "sha256_antes": "88ff393f3f2f11423f9d378da4ac20ac9f1aeaa9a9897d66712e1ba4def13b35",
+      "sha256_atual": "88ff393f3f2f11423f9d378da4ac20ac9f1aeaa9a9897d66712e1ba4def13b35",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-80",
+      "sha256_antes": "50990bf926512b426c3bfe32a82653a3054ede8d738391c674bb23457b8601ae",
+      "sha256_atual": "50990bf926512b426c3bfe32a82653a3054ede8d738391c674bb23457b8601ae",
+      "confere": true
+    },
+    {
+      "id": "av-e1-01",
+      "sha256_antes": "fef921d85b9f61c1e2a63b23fa1df1a9479973608dea0c768045e221f31390b5",
+      "sha256_atual": "fef921d85b9f61c1e2a63b23fa1df1a9479973608dea0c768045e221f31390b5",
+      "confere": true
+    },
+    {
+      "id": "av-e1-02",
+      "sha256_antes": "8b7328a79ca6b50995426770504df6de88f6bf37cf7a3038fef9709847d6bc20",
+      "sha256_atual": "8b7328a79ca6b50995426770504df6de88f6bf37cf7a3038fef9709847d6bc20",
+      "confere": true
+    },
+    {
+      "id": "av-e1-03",
+      "sha256_antes": "6e8bc6e49193f08a8c5f0ae6b4271720a23a29e7888ecfe6cf83faaa63ff85fa",
+      "sha256_atual": "6e8bc6e49193f08a8c5f0ae6b4271720a23a29e7888ecfe6cf83faaa63ff85fa",
+      "confere": true
+    },
+    {
+      "id": "av-e1-04",
+      "sha256_antes": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+      "sha256_atual": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+      "confere": true
+    },
+    {
+      "id": "av-e1-05",
+      "sha256_antes": "8860a27c54eebc598b479ab61197026acb81cf4d81a143876bfe55fea2a6fa4c",
+      "sha256_atual": "8860a27c54eebc598b479ab61197026acb81cf4d81a143876bfe55fea2a6fa4c",
+      "confere": true
+    },
+    {
+      "id": "av-e1-06",
+      "sha256_antes": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d",
+      "sha256_atual": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d",
+      "confere": true
+    },
+    {
+      "id": "av-e1-07",
+      "sha256_antes": "f6c6439615c358a02d91c7dbc1450c5550f193cc38a4af0f5e8c8a2958804251",
+      "sha256_atual": "f6c6439615c358a02d91c7dbc1450c5550f193cc38a4af0f5e8c8a2958804251",
+      "confere": true
+    },
+    {
+      "id": "av-e1-08",
+      "sha256_antes": "5cfa5c0bb56e0ccc235b369110a5343cffd16dbc7d35de410a2d9432355a7d55",
+      "sha256_atual": "5cfa5c0bb56e0ccc235b369110a5343cffd16dbc7d35de410a2d9432355a7d55",
+      "confere": true
+    },
+    {
+      "id": "av-e1-09",
+      "sha256_antes": "c132589fa0387abc5108633a2b130632334db4cebf0479b9442bc9158ae78f30",
+      "sha256_atual": "c132589fa0387abc5108633a2b130632334db4cebf0479b9442bc9158ae78f30",
+      "confere": true
+    },
+    {
+      "id": "av-e1-10",
+      "sha256_antes": "a19c2c5e9dbf69121d4cd0d182b8e7da45130ea405096ad53451e230c79d11a8",
+      "sha256_atual": "a19c2c5e9dbf69121d4cd0d182b8e7da45130ea405096ad53451e230c79d11a8",
+      "confere": true
+    },
+    {
+      "id": "av-e1-11",
+      "sha256_antes": "574b95a7bc7d26adf5ccc8a100cba3b30a3f5f34b9c76a670190cd7c43c5a165",
+      "sha256_atual": "574b95a7bc7d26adf5ccc8a100cba3b30a3f5f34b9c76a670190cd7c43c5a165",
+      "confere": true
+    },
+    {
+      "id": "av-e1-12",
+      "sha256_antes": "6d4d741b3c2f0be508022e5f24ba0cdbb360c3f0c2ddbb72aca59aebf3efcd6f",
+      "sha256_atual": "6d4d741b3c2f0be508022e5f24ba0cdbb360c3f0c2ddbb72aca59aebf3efcd6f",
+      "confere": true
+    },
+    {
+      "id": "av-e1-13",
+      "sha256_antes": "67a3276e7a96d89fd1c93db9f3dad1f417bb62dff584b34c4e5df1a406651543",
+      "sha256_atual": "67a3276e7a96d89fd1c93db9f3dad1f417bb62dff584b34c4e5df1a406651543",
+      "confere": true
+    },
+    {
+      "id": "av-e1-14",
+      "sha256_antes": "3c811cd41a5553c76a3d79539c529fc0700861c827165f1a490339f0a41b6fcd",
+      "sha256_atual": "3c811cd41a5553c76a3d79539c529fc0700861c827165f1a490339f0a41b6fcd",
+      "confere": true
+    },
+    {
+      "id": "av-e1-15",
+      "sha256_antes": "aabe5d8c80218bb2762758349c567671cb06794100899eb42e6c2906cae487a9",
+      "sha256_atual": "aabe5d8c80218bb2762758349c567671cb06794100899eb42e6c2906cae487a9",
+      "confere": true
+    },
+    {
+      "id": "av-e1-16",
+      "sha256_antes": "48ae42d26499f4389ca87b570e9864234c58223277b8b4a16302f7ba808ebdee",
+      "sha256_atual": "48ae42d26499f4389ca87b570e9864234c58223277b8b4a16302f7ba808ebdee",
+      "confere": true
+    },
+    {
+      "id": "av-e1-17",
+      "sha256_antes": "c66e9cab79853753be699d582b606617cf4c832a063a013977b1a5e8d87aa90b",
+      "sha256_atual": "c66e9cab79853753be699d582b606617cf4c832a063a013977b1a5e8d87aa90b",
+      "confere": true
+    },
+    {
+      "id": "av-e1-18",
+      "sha256_antes": "6feba70ee87aff9199ffad1ac540bf98a3f1ac0c02b450069b0aff19de0a6f7e",
+      "sha256_atual": "6feba70ee87aff9199ffad1ac540bf98a3f1ac0c02b450069b0aff19de0a6f7e",
+      "confere": true
+    },
+    {
+      "id": "av-e1-19",
+      "sha256_antes": "13db446f2d53ba81a62449e2e82b81d5ddea5db59e27873088c024f9663794c3",
+      "sha256_atual": "13db446f2d53ba81a62449e2e82b81d5ddea5db59e27873088c024f9663794c3",
+      "confere": true
+    },
+    {
+      "id": "av-e1-20",
+      "sha256_antes": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+      "sha256_atual": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+      "confere": true
+    },
+    {
+      "id": "av-e1-21",
+      "sha256_antes": "d30c611664194c81700bc047dc72f6f1d9242c9552a394616ba605226c6aba73",
+      "sha256_atual": "d30c611664194c81700bc047dc72f6f1d9242c9552a394616ba605226c6aba73",
+      "confere": true
+    },
+    {
+      "id": "av-e1-22",
+      "sha256_antes": "a60b027d19ccee5b6445c7865ba43a1732ddb069c63592895d523ebb82738e36",
+      "sha256_atual": "a60b027d19ccee5b6445c7865ba43a1732ddb069c63592895d523ebb82738e36",
+      "confere": true
+    },
+    {
+      "id": "av-e1-23",
+      "sha256_antes": "52ce7c5b255380dd1c2d876058b8965c9ff3feaa6e373c57f6f8e46bd3db529b",
+      "sha256_atual": "52ce7c5b255380dd1c2d876058b8965c9ff3feaa6e373c57f6f8e46bd3db529b",
+      "confere": true
+    },
+    {
+      "id": "av-e1-24",
+      "sha256_antes": "8e27e9a89a7e9cd792555923bc8888441ac0ec412520da31a5b29b2379cf79c6",
+      "sha256_atual": "8e27e9a89a7e9cd792555923bc8888441ac0ec412520da31a5b29b2379cf79c6",
+      "confere": true
+    },
+    {
+      "id": "av-e1-25",
+      "sha256_antes": "944eadc933945dd04024af4da9585627d9484f9e2095af98a0efb541c9ff8ba1",
+      "sha256_atual": "944eadc933945dd04024af4da9585627d9484f9e2095af98a0efb541c9ff8ba1",
+      "confere": true
+    },
+    {
+      "id": "av-e1-26",
+      "sha256_antes": "2d44c7a93a3d7cbe464d96fab7a2427fab1ee039ef3eeb272539d7eefe421a74",
+      "sha256_atual": "2d44c7a93a3d7cbe464d96fab7a2427fab1ee039ef3eeb272539d7eefe421a74",
+      "confere": true
+    },
+    {
+      "id": "av-e1-27",
+      "sha256_antes": "1cac59ad0421ba447b5d28ea97a5b47d99889dda7e6283c3d56d3a4eb05d5db1",
+      "sha256_atual": "1cac59ad0421ba447b5d28ea97a5b47d99889dda7e6283c3d56d3a4eb05d5db1",
+      "confere": true
+    },
+    {
+      "id": "av-e1-28",
+      "sha256_antes": "5ba6b332f4915122f681d9e816a36d869ac678a9ce1921e5b5d22dac5bfa35ed",
+      "sha256_atual": "5ba6b332f4915122f681d9e816a36d869ac678a9ce1921e5b5d22dac5bfa35ed",
+      "confere": true
+    },
+    {
+      "id": "av-e1-29",
+      "sha256_antes": "20636340c4eaf5d0230b128cbb6d530369b7b690ff55043e10c36ea77ef0b3a4",
+      "sha256_atual": "20636340c4eaf5d0230b128cbb6d530369b7b690ff55043e10c36ea77ef0b3a4",
+      "confere": true
+    },
+    {
+      "id": "av-e1-30",
+      "sha256_antes": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01",
+      "sha256_atual": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01",
+      "confere": true
+    },
+    {
+      "id": "av-e1-31",
+      "sha256_antes": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+      "sha256_atual": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+      "confere": true
+    },
+    {
+      "id": "av-e1-32",
+      "sha256_antes": "5d53de738a3e1b78ce907920d3ee56add57516359d4b4f36880aa2caa7d6e500",
+      "sha256_atual": "5d53de738a3e1b78ce907920d3ee56add57516359d4b4f36880aa2caa7d6e500",
+      "confere": true
+    },
+    {
+      "id": "av-e1-33",
+      "sha256_antes": "80f3f23218940626a28e00d2090cbfbc30f8ed21cacc9a4600451e0927ae1f12",
+      "sha256_atual": "80f3f23218940626a28e00d2090cbfbc30f8ed21cacc9a4600451e0927ae1f12",
+      "confere": true
+    },
+    {
+      "id": "av-e1-34",
+      "sha256_antes": "3ae8bcce339a9cfb8899c0dda553455c5cc89fbd8cb6fd39b753b96f7cbcbc20",
+      "sha256_atual": "3ae8bcce339a9cfb8899c0dda553455c5cc89fbd8cb6fd39b753b96f7cbcbc20",
+      "confere": true
+    },
+    {
+      "id": "av-e1-35",
+      "sha256_antes": "93e57e67f34546f1cf930966cb7afd71fc3a659850be1456bfdb78d22e54d337",
+      "sha256_atual": "93e57e67f34546f1cf930966cb7afd71fc3a659850be1456bfdb78d22e54d337",
+      "confere": true
+    },
+    {
+      "id": "av-e1-36",
+      "sha256_antes": "6b740a5a219f82f11f8e03899fb670df2cc54663545c07731f48643f1edb7285",
+      "sha256_atual": "6b740a5a219f82f11f8e03899fb670df2cc54663545c07731f48643f1edb7285",
+      "confere": true
+    },
+    {
+      "id": "av-e1-37",
+      "sha256_antes": "ccefde48db15ca2082dd9167469f4953d0ca0778b051d7e6eac6e886ab39e951",
+      "sha256_atual": "ccefde48db15ca2082dd9167469f4953d0ca0778b051d7e6eac6e886ab39e951",
+      "confere": true
+    },
+    {
+      "id": "av-e1-38",
+      "sha256_antes": "4be6c519786ca604598c0799748297d8487fc6b566a57276d02998979e071ffc",
+      "sha256_atual": "4be6c519786ca604598c0799748297d8487fc6b566a57276d02998979e071ffc",
+      "confere": true
+    },
+    {
+      "id": "av-e1-39",
+      "sha256_antes": "42ffe7852ec1c612a414d4403674cecde23d4f79aea495c7e0feb68d7dd7cf6b",
+      "sha256_atual": "42ffe7852ec1c612a414d4403674cecde23d4f79aea495c7e0feb68d7dd7cf6b",
+      "confere": true
+    },
+    {
+      "id": "av-e1-40",
+      "sha256_antes": "b0eea6e50cfc5d5c03befe2871587f01f350784667829c280e90723526ed7ef8",
+      "sha256_atual": "b0eea6e50cfc5d5c03befe2871587f01f350784667829c280e90723526ed7ef8",
+      "confere": true
+    },
+    {
+      "id": "av-e1-41",
+      "sha256_antes": "a8e35c751d06cd54ab69a365bf3e2e989296dd85b57c4bd8b5f57125f73d0bb9",
+      "sha256_atual": "a8e35c751d06cd54ab69a365bf3e2e989296dd85b57c4bd8b5f57125f73d0bb9",
+      "confere": true
+    },
+    {
+      "id": "av-e1-42",
+      "sha256_antes": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+      "sha256_atual": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+      "confere": true
+    },
+    {
+      "id": "av-e1-43",
+      "sha256_antes": "8d32bb5b9ad7673e2a58d15b3e6ea37751add3e2d9b7b3f3376a390cd3c6ba68",
+      "sha256_atual": "8d32bb5b9ad7673e2a58d15b3e6ea37751add3e2d9b7b3f3376a390cd3c6ba68",
+      "confere": true
+    },
+    {
+      "id": "av-e1-44",
+      "sha256_antes": "192525a6985a995bb6e73ab56148c54fd89b7e2ed2dd7315aaba7db5d56386b9",
+      "sha256_atual": "192525a6985a995bb6e73ab56148c54fd89b7e2ed2dd7315aaba7db5d56386b9",
+      "confere": true
+    },
+    {
+      "id": "av-e1-45",
+      "sha256_antes": "0772a1835ec9df7838cf240588d074230a013f24dcfa7b55f67eee3743fb0dc1",
+      "sha256_atual": "0772a1835ec9df7838cf240588d074230a013f24dcfa7b55f67eee3743fb0dc1",
+      "confere": true
+    },
+    {
+      "id": "av-e1-46",
+      "sha256_antes": "0c048ab1b4c1148d9a424b0a9b55a2ddb097ba7fc79dc6a22b04c6447538721b",
+      "sha256_atual": "0c048ab1b4c1148d9a424b0a9b55a2ddb097ba7fc79dc6a22b04c6447538721b",
+      "confere": true
+    },
+    {
+      "id": "av-e1-47",
+      "sha256_antes": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+      "sha256_atual": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+      "confere": true
+    },
+    {
+      "id": "av-e1-48",
+      "sha256_antes": "334ccfa79935dfb95f1a430e582f35966b6baf3a666aa2fb3516d0f76e6d1c60",
+      "sha256_atual": "334ccfa79935dfb95f1a430e582f35966b6baf3a666aa2fb3516d0f76e6d1c60",
+      "confere": true
+    },
+    {
+      "id": "av-e1-49",
+      "sha256_antes": "ba294a58c27857ff270db5bc1300c7823b7bee36997791c77c678e9ecb04d7d1",
+      "sha256_atual": "ba294a58c27857ff270db5bc1300c7823b7bee36997791c77c678e9ecb04d7d1",
+      "confere": true
+    },
+    {
+      "id": "av-e1-50",
+      "sha256_antes": "c10f8ecf5ea5e1579ac8b39b5fd05ae01d6b225a1f95f0404e5c06a494f35d9b",
+      "sha256_atual": "c10f8ecf5ea5e1579ac8b39b5fd05ae01d6b225a1f95f0404e5c06a494f35d9b",
+      "confere": true
+    },
+    {
+      "id": "av-e1-51",
+      "sha256_antes": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+      "sha256_atual": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+      "confere": true
+    },
+    {
+      "id": "av-e1-52",
+      "sha256_antes": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+      "sha256_atual": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+      "confere": true
+    },
+    {
+      "id": "av-e1-53",
+      "sha256_antes": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+      "sha256_atual": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+      "confere": true
+    },
+    {
+      "id": "av-e1-54",
+      "sha256_antes": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+      "sha256_atual": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+      "confere": true
+    },
+    {
+      "id": "av-e1-55",
+      "sha256_antes": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+      "sha256_atual": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+      "confere": true
+    },
+    {
+      "id": "av-e1-56",
+      "sha256_antes": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+      "sha256_atual": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+      "confere": true
+    },
+    {
+      "id": "av-e1-57",
+      "sha256_antes": "0e7279567efbcd2caf5a82d8082573029f15570a1806b11a554d3ab30f96f1fa",
+      "sha256_atual": "0e7279567efbcd2caf5a82d8082573029f15570a1806b11a554d3ab30f96f1fa",
+      "confere": true
+    },
+    {
+      "id": "av-e1-58",
+      "sha256_antes": "ed7991b384a31713d5cf3e2963b51f3e23c81e676a922f4a01264f86d678c46c",
+      "sha256_atual": "ed7991b384a31713d5cf3e2963b51f3e23c81e676a922f4a01264f86d678c46c",
+      "confere": true
+    },
+    {
+      "id": "av-e1-59",
+      "sha256_antes": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+      "sha256_atual": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+      "confere": true
+    },
+    {
+      "id": "av-e1-60",
+      "sha256_antes": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+      "sha256_atual": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+      "confere": true
+    },
+    {
+      "id": "av-e1-61",
+      "sha256_antes": "2ef609887b7c6e57a7b9a8f38f7760b69c0ffe4377c1c2b43d307101ffd1be86",
+      "sha256_atual": "2ef609887b7c6e57a7b9a8f38f7760b69c0ffe4377c1c2b43d307101ffd1be86",
+      "confere": true
+    },
+    {
+      "id": "av-e1-62",
+      "sha256_antes": "3afa637b59ec0aa48e6885ab0877b0ed1bada0bcebe86c841d221e1559235148",
+      "sha256_atual": "3afa637b59ec0aa48e6885ab0877b0ed1bada0bcebe86c841d221e1559235148",
+      "confere": true
+    },
+    {
+      "id": "av-e1-63",
+      "sha256_antes": "e5ee106ebb64b6a28b89d824d5ee934c4be36dcde18a147d6d65c94bac558c00",
+      "sha256_atual": "e5ee106ebb64b6a28b89d824d5ee934c4be36dcde18a147d6d65c94bac558c00",
+      "confere": true
+    },
+    {
+      "id": "av-e1-64",
+      "sha256_antes": "a7967a8d0853d244b89a8898dbd430e487abef40363cda93bb9a51bcb8a2e07a",
+      "sha256_atual": "a7967a8d0853d244b89a8898dbd430e487abef40363cda93bb9a51bcb8a2e07a",
+      "confere": true
+    },
+    {
+      "id": "av-e1-65",
+      "sha256_antes": "5f993c3d09879d8de3fd56710cb38d657dd3415112868673a9bed285aa473000",
+      "sha256_atual": "5f993c3d09879d8de3fd56710cb38d657dd3415112868673a9bed285aa473000",
+      "confere": true
+    },
+    {
+      "id": "av-e1-66",
+      "sha256_antes": "414e4a69cb79528ed86dcb04c0172f1f99eba044f8975a08ca92bbf212601946",
+      "sha256_atual": "414e4a69cb79528ed86dcb04c0172f1f99eba044f8975a08ca92bbf212601946",
+      "confere": true
+    },
+    {
+      "id": "av-e1-67",
+      "sha256_antes": "c234657d9d082fb9ca732f48724916a7c267b2048c8fca190ae934f62fb6ba84",
+      "sha256_atual": "c234657d9d082fb9ca732f48724916a7c267b2048c8fca190ae934f62fb6ba84",
+      "confere": true
+    },
+    {
+      "id": "av-e1-68",
+      "sha256_antes": "856b39ea9bb6e14936108cc8f0cc0633ac20f6777777c30320e28414e1f6207d",
+      "sha256_atual": "856b39ea9bb6e14936108cc8f0cc0633ac20f6777777c30320e28414e1f6207d",
+      "confere": true
+    },
+    {
+      "id": "av-e1-69",
+      "sha256_antes": "f1ade775126752789740119acdb33f04190299cc54d46883e4e0354d7c6e6fee",
+      "sha256_atual": "f1ade775126752789740119acdb33f04190299cc54d46883e4e0354d7c6e6fee",
+      "confere": true
+    },
+    {
+      "id": "av-e1-70",
+      "sha256_antes": "aa3759b74d4479c6c2c7e76f4ad964b19344b6c1b13593c027dac0358a2600da",
+      "sha256_atual": "aa3759b74d4479c6c2c7e76f4ad964b19344b6c1b13593c027dac0358a2600da",
+      "confere": true
+    },
+    {
+      "id": "av-e1-71",
+      "sha256_antes": "a6822e633557838619c8a4c9fa1790c583776ef03830b6ca475f28ad6b25e2ff",
+      "sha256_atual": "a6822e633557838619c8a4c9fa1790c583776ef03830b6ca475f28ad6b25e2ff",
+      "confere": true
+    },
+    {
+      "id": "av-e1-72",
+      "sha256_antes": "9b34292c52fddf0bbfff7573258e810e24f0d3ad6cc86dc0c1eaed9743754e7d",
+      "sha256_atual": "9b34292c52fddf0bbfff7573258e810e24f0d3ad6cc86dc0c1eaed9743754e7d",
+      "confere": true
+    },
+    {
+      "id": "av-e1-73",
+      "sha256_antes": "6112aaaabbba78b71fbc5b7d5c216ddc3b56a62fa2ebeab34bca6645567521d1",
+      "sha256_atual": "6112aaaabbba78b71fbc5b7d5c216ddc3b56a62fa2ebeab34bca6645567521d1",
+      "confere": true
+    },
+    {
+      "id": "av-e1-74",
+      "sha256_antes": "e1cbd2e738cff1e20744251bba5ae94651ec5502fd9dc5808c1627f19b37b032",
+      "sha256_atual": "e1cbd2e738cff1e20744251bba5ae94651ec5502fd9dc5808c1627f19b37b032",
+      "confere": true
+    },
+    {
+      "id": "av-e1-75",
+      "sha256_antes": "cf84420539a50440af16625535da0e7513c3d3de6362be04a830790f9eb9029c",
+      "sha256_atual": "cf84420539a50440af16625535da0e7513c3d3de6362be04a830790f9eb9029c",
+      "confere": true
+    },
+    {
+      "id": "av-e1-76",
+      "sha256_antes": "1c62973843285a448a379f2b090961af88e38192c7728fb8d628fe4f7a4b48cb",
+      "sha256_atual": "1c62973843285a448a379f2b090961af88e38192c7728fb8d628fe4f7a4b48cb",
+      "confere": true
+    },
+    {
+      "id": "av-e1-77",
+      "sha256_antes": "ba4e9d281b7c90b87fa9f88e4d953020a002c8903045cd2fcc0e0e55430b2820",
+      "sha256_atual": "ba4e9d281b7c90b87fa9f88e4d953020a002c8903045cd2fcc0e0e55430b2820",
+      "confere": true
+    },
+    {
+      "id": "av-e1-78",
+      "sha256_antes": "eb02ebe932d364e4cd46353e409c2c75a53ec06000a2f3d95929a1289b2af8e4",
+      "sha256_atual": "eb02ebe932d364e4cd46353e409c2c75a53ec06000a2f3d95929a1289b2af8e4",
+      "confere": true
+    },
+    {
+      "id": "av-e1-79",
+      "sha256_antes": "e1bcf99fdeeb7c91da73b8c89d96714294fd1c64234861d3ae7fb0b91cf78bcc",
+      "sha256_atual": "e1bcf99fdeeb7c91da73b8c89d96714294fd1c64234861d3ae7fb0b91cf78bcc",
+      "confere": true
+    },
+    {
+      "id": "av-e1-80",
+      "sha256_antes": "9586c1757d18d3ba88d59485b308d8e6c92a4dd5859ffe94ff3cd7e3e9ac9a71",
+      "sha256_atual": "9586c1757d18d3ba88d59485b308d8e6c92a4dd5859ffe94ff3cd7e3e9ac9a71",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-saturacao",
+      "sha256_antes": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "sha256_atual": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "sha256_antes": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "sha256_atual": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "sha256_antes": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "sha256_atual": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "sha256_antes": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "sha256_atual": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "confere": true
+    }
+  ],
+  "registros_anteriores": [
+    {
+      "id": "q-e1-01",
+      "confere": true
+    },
+    {
+      "id": "q-e1-02",
+      "confere": true
+    },
+    {
+      "id": "q-e1-03",
+      "confere": true
+    },
+    {
+      "id": "q-e1-04",
+      "confere": true
+    },
+    {
+      "id": "q-e1-05",
+      "confere": true
+    },
+    {
+      "id": "q-e1-06",
+      "confere": true
+    },
+    {
+      "id": "q-e1-07",
+      "confere": true
+    },
+    {
+      "id": "q-e1-08",
+      "confere": true
+    },
+    {
+      "id": "q-e1-09",
+      "confere": true
+    },
+    {
+      "id": "q-e1-10",
+      "confere": true
+    },
+    {
+      "id": "q-e1-11",
+      "confere": true
+    },
+    {
+      "id": "q-e1-12",
+      "confere": true
+    },
+    {
+      "id": "q-e1-13",
+      "confere": true
+    },
+    {
+      "id": "q-e1-14",
+      "confere": true
+    },
+    {
+      "id": "q-e1-15",
+      "confere": true
+    },
+    {
+      "id": "q-e1-16",
+      "confere": true
+    },
+    {
+      "id": "q-e1-17",
+      "confere": true
+    },
+    {
+      "id": "q-e1-18",
+      "confere": true
+    },
+    {
+      "id": "q-e1-19",
+      "confere": true
+    },
+    {
+      "id": "q-e1-20",
+      "confere": true
+    },
+    {
+      "id": "q-e1-21",
+      "confere": true
+    },
+    {
+      "id": "q-e1-22",
+      "confere": true
+    },
+    {
+      "id": "q-e1-23",
+      "confere": true
+    },
+    {
+      "id": "q-e1-24",
+      "confere": true
+    },
+    {
+      "id": "q-e1-25",
+      "confere": true
+    },
+    {
+      "id": "q-e1-26",
+      "confere": true
+    },
+    {
+      "id": "q-e1-27",
+      "confere": true
+    },
+    {
+      "id": "q-e1-28",
+      "confere": true
+    },
+    {
+      "id": "q-e1-29",
+      "confere": true
+    },
+    {
+      "id": "q-e1-30",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-01",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-02",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-03",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-04",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-05",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-06",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-07",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-08",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-09",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-10",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-11",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-12",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-13",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-14",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-15",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-16",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-17",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-18",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-19",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-20",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-21",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-22",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-23",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-24",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-25",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-26",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-27",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-28",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-29",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-30",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-31",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-32",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-33",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-34",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-35",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-36",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-37",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-38",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-39",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-40",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-41",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-42",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-43",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-44",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-45",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-46",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-47",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-48",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-49",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-50",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-51",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-52",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-53",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-54",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-55",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-56",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-57",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-58",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-59",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-60",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-61",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-62",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-63",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-64",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-65",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-66",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-67",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-68",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-69",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-70",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-71",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-72",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-73",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-74",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-75",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-76",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-77",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-78",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-79",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-80",
+      "confere": true
+    },
+    {
+      "id": "av-e1-01",
+      "confere": true
+    },
+    {
+      "id": "av-e1-02",
+      "confere": true
+    },
+    {
+      "id": "av-e1-03",
+      "confere": true
+    },
+    {
+      "id": "av-e1-04",
+      "confere": true
+    },
+    {
+      "id": "av-e1-05",
+      "confere": true
+    },
+    {
+      "id": "av-e1-06",
+      "confere": true
+    },
+    {
+      "id": "av-e1-07",
+      "confere": true
+    },
+    {
+      "id": "av-e1-08",
+      "confere": true
+    },
+    {
+      "id": "av-e1-09",
+      "confere": true
+    },
+    {
+      "id": "av-e1-10",
+      "confere": true
+    },
+    {
+      "id": "av-e1-11",
+      "confere": true
+    },
+    {
+      "id": "av-e1-12",
+      "confere": true
+    },
+    {
+      "id": "av-e1-13",
+      "confere": true
+    },
+    {
+      "id": "av-e1-14",
+      "confere": true
+    },
+    {
+      "id": "av-e1-15",
+      "confere": true
+    },
+    {
+      "id": "av-e1-16",
+      "confere": true
+    },
+    {
+      "id": "av-e1-17",
+      "confere": true
+    },
+    {
+      "id": "av-e1-18",
+      "confere": true
+    },
+    {
+      "id": "av-e1-19",
+      "confere": true
+    },
+    {
+      "id": "av-e1-20",
+      "confere": true
+    },
+    {
+      "id": "av-e1-21",
+      "confere": true
+    },
+    {
+      "id": "av-e1-22",
+      "confere": true
+    },
+    {
+      "id": "av-e1-23",
+      "confere": true
+    },
+    {
+      "id": "av-e1-24",
+      "confere": true
+    },
+    {
+      "id": "av-e1-25",
+      "confere": true
+    },
+    {
+      "id": "av-e1-26",
+      "confere": true
+    },
+    {
+      "id": "av-e1-27",
+      "confere": true
+    },
+    {
+      "id": "av-e1-28",
+      "confere": true
+    },
+    {
+      "id": "av-e1-29",
+      "confere": true
+    },
+    {
+      "id": "av-e1-30",
+      "confere": true
+    },
+    {
+      "id": "av-e1-31",
+      "confere": true
+    },
+    {
+      "id": "av-e1-32",
+      "confere": true
+    },
+    {
+      "id": "av-e1-33",
+      "confere": true
+    },
+    {
+      "id": "av-e1-34",
+      "confere": true
+    },
+    {
+      "id": "av-e1-35",
+      "confere": true
+    },
+    {
+      "id": "av-e1-36",
+      "confere": true
+    },
+    {
+      "id": "av-e1-37",
+      "confere": true
+    },
+    {
+      "id": "av-e1-38",
+      "confere": true
+    },
+    {
+      "id": "av-e1-39",
+      "confere": true
+    },
+    {
+      "id": "av-e1-40",
+      "confere": true
+    },
+    {
+      "id": "av-e1-41",
+      "confere": true
+    },
+    {
+      "id": "av-e1-42",
+      "confere": true
+    },
+    {
+      "id": "av-e1-43",
+      "confere": true
+    },
+    {
+      "id": "av-e1-44",
+      "confere": true
+    },
+    {
+      "id": "av-e1-45",
+      "confere": true
+    },
+    {
+      "id": "av-e1-46",
+      "confere": true
+    },
+    {
+      "id": "av-e1-47",
+      "confere": true
+    },
+    {
+      "id": "av-e1-48",
+      "confere": true
+    },
+    {
+      "id": "av-e1-49",
+      "confere": true
+    },
+    {
+      "id": "av-e1-50",
+      "confere": true
+    },
+    {
+      "id": "av-e1-51",
+      "confere": true
+    },
+    {
+      "id": "av-e1-52",
+      "confere": true
+    },
+    {
+      "id": "av-e1-53",
+      "confere": true
+    },
+    {
+      "id": "av-e1-54",
+      "confere": true
+    },
+    {
+      "id": "av-e1-55",
+      "confere": true
+    },
+    {
+      "id": "av-e1-56",
+      "confere": true
+    },
+    {
+      "id": "av-e1-57",
+      "confere": true
+    },
+    {
+      "id": "av-e1-58",
+      "confere": true
+    },
+    {
+      "id": "av-e1-59",
+      "confere": true
+    },
+    {
+      "id": "av-e1-60",
+      "confere": true
+    },
+    {
+      "id": "av-e1-61",
+      "confere": true
+    },
+    {
+      "id": "av-e1-62",
+      "confere": true
+    },
+    {
+      "id": "av-e1-63",
+      "confere": true
+    },
+    {
+      "id": "av-e1-64",
+      "confere": true
+    },
+    {
+      "id": "av-e1-65",
+      "confere": true
+    },
+    {
+      "id": "av-e1-66",
+      "confere": true
+    },
+    {
+      "id": "av-e1-67",
+      "confere": true
+    },
+    {
+      "id": "av-e1-68",
+      "confere": true
+    },
+    {
+      "id": "av-e1-69",
+      "confere": true
+    },
+    {
+      "id": "av-e1-70",
+      "confere": true
+    },
+    {
+      "id": "av-e1-71",
+      "confere": true
+    },
+    {
+      "id": "av-e1-72",
+      "confere": true
+    },
+    {
+      "id": "av-e1-73",
+      "confere": true
+    },
+    {
+      "id": "av-e1-74",
+      "confere": true
+    },
+    {
+      "id": "av-e1-75",
+      "confere": true
+    },
+    {
+      "id": "av-e1-76",
+      "confere": true
+    },
+    {
+      "id": "av-e1-77",
+      "confere": true
+    },
+    {
+      "id": "av-e1-78",
+      "confere": true
+    },
+    {
+      "id": "av-e1-79",
+      "confere": true
+    },
+    {
+      "id": "av-e1-80",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-saturacao",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "confere": true
+    }
+  ],
+  "linhas_anteriores_resumo": [
+    {
+      "id": "q-e1-01",
+      "sha256_linha": "a511f35ab71d3a36c825a757fc68f9a1e9d29c9995b716d7a0df3e32fb34bb5f",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-02",
+      "sha256_linha": "a30449b464e06a386493cadfd8ab01bcee3c482d3af3311e62fdd6101b98f599",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-03",
+      "sha256_linha": "4634d7038791e97fb9422a563a5ba6a12a3f825f94827750820f8ec0678521d8",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-04",
+      "sha256_linha": "91ee9a3a05138e3befea3ef66a3d09c95cc29041056274649e19c714b5cc8113",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-05",
+      "sha256_linha": "3d7716ba64f5d2a5c9fae6098bbb16b06ccd0e9673522dade6e9ed4efbfb5b4a",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-06",
+      "sha256_linha": "084a2eb2eea79484ecfd964d28466639234a4af449f8d29902e4f38e34fe9078",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-07",
+      "sha256_linha": "7d64dce6109aab81d69977a55f54659b324c8578f09bcd957cde47b768c8b740",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-08",
+      "sha256_linha": "4b3395b7eb078a472044d40f40671b31e99af33db0b45c74d47aa894c38e47a4",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-09",
+      "sha256_linha": "b5756dfabb6788aae9befa276d59461d0907bc48025bc7583601e7154cabe4e3",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-10",
+      "sha256_linha": "804b032455880258a2282685ab00f4400f1b9b6ccc5dea77e72b715f1a16c95e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-11",
+      "sha256_linha": "eda9b66fe57efc6e2b545dab8a528707255a759ea403d7b51c7fd20dccaea7e5",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-12",
+      "sha256_linha": "06ddc29d314f97ae7107ee3661bab5684e845dba0893629694bb01c21de71d9a",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-13",
+      "sha256_linha": "927ca84dc0def708d3029f036d46b4a2a22e640ea09548817015f5347323666f",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-14",
+      "sha256_linha": "49add653242fa44d4c98c1ef2eebd95b4c8f39239ecfcc013fa7c7b957c3fe15",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-15",
+      "sha256_linha": "aedf51ec3982e74dc92f5c98bfe0c12bb4a6f862830e2a97b4ce715be064da7f",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-16",
+      "sha256_linha": "d88ff486528f633e4edef31e2589afc4fec0df65afd1d34f4262a4d28e13efa4",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-17",
+      "sha256_linha": "190310988170a1aa3d485887525be86992456de9a5bca28179a9c2565219b212",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-18",
+      "sha256_linha": "4775c696c2b098d227b5b97e9a0e7fd0856c5090ff2aab3e07c4e2880d8dfa83",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-19",
+      "sha256_linha": "c325a84cb9b8ebf1fdee38d5d095b64895de561ef73289c9706e47bc058082d1",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-20",
+      "sha256_linha": "fc061450bce3e706256b8db2bca58c0a177b1f426f7742d2bc108872690e9b6e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-21",
+      "sha256_linha": "b0f2dad41af8b758f6c47de286e394d6d0d0cac0bd67a3029a4ca555bf28e937",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-22",
+      "sha256_linha": "232ea87dfc5e52ea2df5cdc8191976011ed6c3a143503d729c168c9a6d27523b",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-23",
+      "sha256_linha": "47fb62d4cffe0192e0ac1479d1b72f27e7290da3dfe8fa6d0a43a6c87ef972ca",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-24",
+      "sha256_linha": "0dfa6c83aa5a8409466374777956d55e4491a0bffa010209fa98c8a3f68dc1bf",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-25",
+      "sha256_linha": "90ff973e341ef9a84c51142f286dba0dece3fe77e59ef7acbbfabaee217d53ef",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-26",
+      "sha256_linha": "f33714d4f48aaaef9a06b51d6c3c07f05c9fdf8734f0a24ea4d33a69a7a676ab",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-27",
+      "sha256_linha": "d9a3f4292e158bc4ff606827407bd1c76adc514f44c2c0a57c6ba60ef40f13b6",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-28",
+      "sha256_linha": "41f57ddd5a01f9f7b9953f2ba85b2e7d734622bf7b8de74eac85c247285bca1d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-29",
+      "sha256_linha": "89599fbe92056b07429bade35ce4906d551e8eef2afa78a62fd25e710a76b371",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "q-e1-30",
+      "sha256_linha": "a684447a094102e67661d591c34420ec9c4d2b5e6f2ff520d26f195ab1177f94",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-01",
+      "sha256_linha": "4d65302246dbe53606746a75ab33d98c644eadb63c1fd5fc0fda95abdf5bda12",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-02",
+      "sha256_linha": "de71c137369c12e79d127a4ae0bd779f9cb4ff476fc870384371f0824f51d1c6",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-03",
+      "sha256_linha": "251a3c3dafddc9a30692e0a3e16876f7aefccf1ea68d37e1e8441b010c5d4157",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-04",
+      "sha256_linha": "9e8b1ddaf6d7a9802169421a621cd356fb4ae83f9add48734f16d638c189391c",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-05",
+      "sha256_linha": "1f2d3e453bcfa80a95aa307c7fde74e9dde7248956c9a6f76b6521cdd4527017",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-06",
+      "sha256_linha": "383583101ecf19b428a54e080341c68eb6fe3ac1abcd912583b56141ca0d7879",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-07",
+      "sha256_linha": "825745a42d8bce2c1fe3d04b43215e563af7807730747a382a3194fa22a313c9",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-08",
+      "sha256_linha": "b9b02f85723ffc12fd85a7c03331416393342f9ad828b9c87387a2c091b0037d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-09",
+      "sha256_linha": "41c324add0fa3ff4b3268e95210a59f5425e02c72a1a9986ec3c22e3294f6dfd",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-10",
+      "sha256_linha": "a0156cbc1069cff8fe936a2345cc839e314244aa2a57b04d8a25cbc45f0f910e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-11",
+      "sha256_linha": "b2dad1eaa12363b9797907a8cc0782cb2a76db98ff23b836d0675fab69d325cf",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-12",
+      "sha256_linha": "fcadb17cce8b84b333e1feb0bc223c52d76295ff825028136638688e529e205b",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-13",
+      "sha256_linha": "54c77d375943f0605acb318fea92ea2d661f8c2e2fac7c3f169020e563e20482",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-14",
+      "sha256_linha": "5771bd5e56267e8b530b723569f505e4921ff104e2a4fa8a8770388252cb7e99",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-15",
+      "sha256_linha": "87972661bb791b7e73382594f19685c8c84cae490fe86705d7fb9ab98e6880bf",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-16",
+      "sha256_linha": "9b953afad4493dea504be040edb223056e9bd907bd74556e051217516658a2d8",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-17",
+      "sha256_linha": "267391db556f77f0faf98347da3fe469e67a1401e59f36232908f2012032d99a",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-18",
+      "sha256_linha": "27ab177c0d1638f6db373d1d22455f7948b1c8bc77b035712b9b3086491e6846",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-19",
+      "sha256_linha": "a1dfd8794b4e5c764231066edf70249f9752fe906dadd255f40a3cae3e1f2ea2",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-20",
+      "sha256_linha": "064890d5d1878cb1c1f7a431ce894aaeee406e03ff51d3e7dc8f3f3b190fa478",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-21",
+      "sha256_linha": "5d9d2cc7f7bbae486d9b653a831b0c3964c47c43ad36d169ff2c9140d2e4c54e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-22",
+      "sha256_linha": "30c13596d5c04dc1c2c6d69046f5077520d5f7b9f519a19d5e07796e43572bf0",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-23",
+      "sha256_linha": "d0d3d7c7dca26fa8e6bc8ded1a0cfb367d24457c32bce1c18b2f4035959b749f",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-24",
+      "sha256_linha": "30f719f848350e9b6a5a6d243daeef4e2b99f04bd7643cda4edc23eca3390d8a",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-25",
+      "sha256_linha": "875853b19f47aa87a29fd74b81360434e68100be71b5204a084fd1212ae8d39c",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-26",
+      "sha256_linha": "507428cf70c5c90dc2af23b5c1e80c2d956152d9ca99610caacfdd12f0437723",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-27",
+      "sha256_linha": "a5ca2a506c9cb6cdea1b9c87e592a963cf9940afdee13d3247cd4fa965df97f8",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-28",
+      "sha256_linha": "774da0d24030145cb5fe92cbd330ff2b8bdbbdb24743f19ced4d45fa57e225aa",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-29",
+      "sha256_linha": "53298141f8bccbb8ff0d1618efe27ca300394e91a634798e78ce7757a0327e72",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-30",
+      "sha256_linha": "c48fcdebaadec51f3e6aa1b42e06218aac13b4fdee96f03ff3a9014f53bf8b17",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-31",
+      "sha256_linha": "47fb77f24b38f108042edab105cb1e748fddf087c3c955beb16de94cf51cb6ec",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-32",
+      "sha256_linha": "bbf232962e55ef9e4ed784f78af40fde21acd502999dfbe41adfb42efb727fa9",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-33",
+      "sha256_linha": "477f78ebf1b3ee736c9e9f2be9c5b5f7db1a95b280ee10ffb545df1cf5d77376",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-34",
+      "sha256_linha": "9c7bf0898a6d383e1561c65b465dee5eb8bae9ae36b6274809792642f22b2c83",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-35",
+      "sha256_linha": "7944b124961e3b1e3602d7e78e255da0fb96d3757487bd7dfb878f1f051e066f",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-36",
+      "sha256_linha": "b93aa546a8a58679ea92ec22286136dc51bf02d9943088dc7230e738eb04a852",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-37",
+      "sha256_linha": "3fec1911cd5f3d8da14808a3ac2b22333be3aea1a0845e1e93826f2a2de24ebb",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-38",
+      "sha256_linha": "a251d6f7eec34d163076705c071ab78a48ca59a868f3d6f055cfaa2baf033014",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-39",
+      "sha256_linha": "da1bedb28a805fb2be4d1447602cd8f5171c45faa8c090fc46403dba3ab2121e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-40",
+      "sha256_linha": "263574453c66fcbb57dc8553cfd861bde8a50b8618d96eefa31d503973623e36",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-41",
+      "sha256_linha": "d2add5ae685e2252eedc39889c47098168ad38281ddbca524ca85e550ab5fc9d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-42",
+      "sha256_linha": "dd8e93eb1bb535a5109713a809e52ae0a10e38a982b046cd540ad2fd985a4bf5",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-43",
+      "sha256_linha": "9541403c67e1d1d6ceadae269df8cbc6e16a2e1b5c0b15872f664586653a674e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-44",
+      "sha256_linha": "9ead85e857d3be6075cba5d540d8e1b3c09a3e7efa1d718001b2f73e561736fc",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-45",
+      "sha256_linha": "841e585596970bae951aa8907bf8b321835a8f7ea0e4b6a04121a663ed30229d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-46",
+      "sha256_linha": "170fb2900baa2f9724ba8ef844af713e0b33b84518a79ba8a178cbacfed5dfdb",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-47",
+      "sha256_linha": "08f13bfac1bbd60039469e1c29bd7457135e35f879dba021a2040c782ae1c290",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-48",
+      "sha256_linha": "05b0bfb4e7355c88f8f8d5ad31c43489154ade036805ca553f7348ca2c1a73e5",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-49",
+      "sha256_linha": "f3453ccdd0684738c03ddd68a97620c9e7fd7403bbabf31e0f1975dc521aaf35",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-50",
+      "sha256_linha": "bc81c72e6ef145c6aab2b9e19aa1cbd73eaaa9a2265b87533f812dca2cdf8aa9",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-51",
+      "sha256_linha": "05cdf09a77eac780b2ea1cdcc88d201bc986304e2ea2b6c549d6982206ac32ea",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-52",
+      "sha256_linha": "aeeae64e38b160f9855f7202a5ff972e1f0e3883c151cda05f3c9bae4e986226",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-53",
+      "sha256_linha": "b9c62fb750a1075f4de750125d1b6546f9dca7da185a6592247f5ac25f376a66",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-54",
+      "sha256_linha": "ab24cabe2c936f7109a2d04e14adffe0c5fc97d143b2f1897e34aeced172a0f6",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-55",
+      "sha256_linha": "e1913f89fdde9b6b57658a2578ba8383c6bed300576a293e918e89d7409719de",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-56",
+      "sha256_linha": "e929a62c499241311edb64473b27e1aba1b76b69ec657eb1b3415cc14a5fe278",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-57",
+      "sha256_linha": "584fc9e3194c68ed8a2535328de3a9fa6331ff098c357bdec83cc7acfacbd732",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-58",
+      "sha256_linha": "74df94442c05935e8de6285b9ec05e2d9d049130880376ff5d2abc995e1fb5af",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-59",
+      "sha256_linha": "ee64043b1165bae32904f42b8a496698362989391a9c4e04a6e0fb1fca165d82",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-60",
+      "sha256_linha": "28ced8502eeff28ea4171cc5878d4b10b36bf6653e24c614f6b7c5c0d7234867",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-61",
+      "sha256_linha": "03c0048db46ebe1dd3bf9ec7fbbd819bab284efbe7663ce8dd0cb2e61a827cd6",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-62",
+      "sha256_linha": "0fc955070042548f5871a65a61cf6e93e5434b4671815de8b37e88848a646551",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-63",
+      "sha256_linha": "a50e3eb376caa357e32d5b1e6f089e7fdc9ee3d0d980abc8c3ddf4c2b9b172bd",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-64",
+      "sha256_linha": "a0c76d295d35218fa7355bdbf1c102cac56733ff980cd55cc80d7213f396cfe2",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-65",
+      "sha256_linha": "3cd5d5823d93e75bfc08c5e2b2ff3385dce4853e87c61dcb13ed3246ab71ba99",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-66",
+      "sha256_linha": "80a474e550bde50ac26517ff1c09843ef4a1c163b7ce74c5f3377953c51de7a6",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-67",
+      "sha256_linha": "6039f3eea8cd9b75b9cbc5d7a80a4dc574730604f3b23175ce1710167b3f73a4",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-68",
+      "sha256_linha": "c4799ae5c9979827880e85db389a8f911aa4ffd0b31aba6002cc6a371d4b848d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-69",
+      "sha256_linha": "1559c3b9a07450b1eb65c22029bec81dcf8c7a364c51cb6bec82c92b3091b5e2",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-70",
+      "sha256_linha": "16915cc01135d886991b7c3ef2f9b677785ef867f929bf6334f08929f79875ec",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-71",
+      "sha256_linha": "e26478041f77b704373da3642d05b0ade251cc03647ad32804a77679b8b0fe44",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-72",
+      "sha256_linha": "17d622aedd685db19a3586e82c3bc89d0ab7cf6f17248f0db54674f23f93f214",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-73",
+      "sha256_linha": "afc76d0dc30d0ac81204c2d9933b626e30dc0389fd334d99bec28d5a2db24ce7",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-74",
+      "sha256_linha": "7b793189155d3635f5a4d101f803972632750800b27cb091c35e91c7385a4c19",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-75",
+      "sha256_linha": "a5defea119b956c786656fcc01766bcdefe126158871cd470a6618220a4a6c54",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-76",
+      "sha256_linha": "0f3b0df32a9b72a29f8355697856685ef491ab2142ed070fc7c44a4c16135947",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-77",
+      "sha256_linha": "6b69597b5363095e3f3cdc22376591f44bf5f8f268efb837cc107db7e992af85",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-78",
+      "sha256_linha": "7c61819c2d9d0b3fd854905abd8165ccac472ce01e2347d2e6d9c99063462879",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-79",
+      "sha256_linha": "811398316991ed40be85c8d78d546a632bd3a135761fd5cbc8d5f63fa332360a",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "cr-e1-80",
+      "sha256_linha": "ced5981453748b60fd929b1f509343831d9553f21dffd2adfea340f6b06d68c3",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-01",
+      "sha256_linha": "d0b1dcf1161ba5456c5f4e656883f8b7cc8d17ac6b82f1c033e457cff9bbec15",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-02",
+      "sha256_linha": "20cba3331d6f552b8c4ed1c40efa163feb7c823068e24bcba3dd723dcf20857b",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-03",
+      "sha256_linha": "5874f4728061f744b26b5a18ac4593b33df182763a2dca8b971f4f83c17821b0",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-04",
+      "sha256_linha": "20f3390eaa881e63048404fc1ffa8340a2c3d384edabbf3faa2a0cc959dc42bc",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-05",
+      "sha256_linha": "20c8ac376d2d763f99609a5312232cbe74db64530d656a63c83c70028e653d5e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-06",
+      "sha256_linha": "a8c78452bed8c8823569b0f15d6fec0dbd9377e07d12e770029d5f9fec90f5b5",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-07",
+      "sha256_linha": "8cd959468fbd6ec6b23b433393d0f5b6fd30a074d40e49a1b4f0bf2890aa010e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-08",
+      "sha256_linha": "f1235f38b38e9965ac1276aa585c0a4ba8692962941582b61bcbda0bfc2950ce",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-09",
+      "sha256_linha": "e775b50267cb96aaf881e7b96473e671ef88d8324d34f2947009380fdd9a38fc",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-10",
+      "sha256_linha": "4e83c3c02c218926e9ed95bcfd48e1acddf8f841bb553f4cade469a8b41be796",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-11",
+      "sha256_linha": "60fd0ad4ef2d9338b69ed6879229ab847d5bc70ef608481ed5935c11f7489fee",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-12",
+      "sha256_linha": "47b2f4a765ad7e6944896125ac37adae4e534a599c2cf6180200ebf6ccdc5a3d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-13",
+      "sha256_linha": "afa1670b26175f34dfa482a4b975c8082a09b61bec5e0e3f27d6b44cd5bcc9c6",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-14",
+      "sha256_linha": "4394b8f2e6e992634038e62e646c644767138d30b87835b5af24446d73153f01",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-15",
+      "sha256_linha": "753d137aba2394aabb91f66d4b9065c16191e3d6a41a036d078bfadbd1d9670d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-16",
+      "sha256_linha": "80f55f4bb180d4735e2d64897fcaa7141d1c329e8efd45dc3824b08336fae80a",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-17",
+      "sha256_linha": "a6669569140dfb6b06164caa7d683ccfb4a6beb60ba5ed8d25d67ab5cceb6b1e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-18",
+      "sha256_linha": "016d6556f7dc2a21dff5f1d5d7dc31d6198248876a4447959367a218e15361eb",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-19",
+      "sha256_linha": "a8a15615859c88030e680763e6c1eb45423e0d9b5cbd2211f046afadfe9fe3b5",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-20",
+      "sha256_linha": "91ef7153465fa9d4b624e1c48dd367ccf6e87def14f6d1f3e979fd730ef665d9",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-21",
+      "sha256_linha": "8a7262ede1130329272928c95be364145a54a75c75f1df8e46384b423d04edd3",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-22",
+      "sha256_linha": "897a8db8cf28224362ac09b21b228a75de13dbdfee1b3c2567985e09ef7f1a18",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-23",
+      "sha256_linha": "aa748de7d8cc3ae16fbc4c0d316621f84155ad3bec7f251c4e5158d59d917a11",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-24",
+      "sha256_linha": "5f52881a7e415658913b6b72ab683449010d88f1ac791935a965594c9ce2bbcb",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-25",
+      "sha256_linha": "24e57558bc693718d93e9c498e889759dbe6b9edb247af31ed3b23afbfa3fe40",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-26",
+      "sha256_linha": "c07282ab4ce46a4a8440991a49044a34fed7a74af58d30d5c3b33aff565e9f42",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-27",
+      "sha256_linha": "9bcd229a0ab371d8f6543c1b59c30d71d1b6f4de463f596ae962d0ed6badbe75",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-28",
+      "sha256_linha": "1c6e80430478a321a0661f3533b1ad1bbceeabea279a45974971af862c11c345",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-29",
+      "sha256_linha": "9362514e053d5c0fce996d84f3faef4e836293ea52d5decd48e279a07d2ca844",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-30",
+      "sha256_linha": "c0d2e2e5c9e0f3ad97cc81be00a97196a9c51fb5bc5aef4f9429c2adb6fca584",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-31",
+      "sha256_linha": "c430786295040fd0d97797957c3006b60245e3c4959f2e9537356067e9e5cffc",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-32",
+      "sha256_linha": "bd8f21f5efadb1b27b52e71c89d6e313fec8303ade65e4ca520a6edc9d4fc634",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-33",
+      "sha256_linha": "1ffee147114feddb12dc5b32b58ac51424ddfaadf53805d661e0c36fd0003c26",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-34",
+      "sha256_linha": "9c9db95ef4f5ae3c998bf4429bc1e335df1e28bbaeebd96195cb0bf5c0b5fb87",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-35",
+      "sha256_linha": "1b3526cc23aaa8a70adf4fc05ab2a09402439e212a150af39177cce3685a4f0d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-36",
+      "sha256_linha": "f388869efc6f8d8c1f426cd3e398fbb1fa3bcd2b0e9d4db3995bc2a84e0c506c",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-37",
+      "sha256_linha": "33d5bb664bfec6d1138c7bd444f05a73b3c3e94656066633dc21f5c10fcdd8ea",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-38",
+      "sha256_linha": "385dda6dd4a6a51c666e5d5c0ae610c0ac79922cb39c0883f703a4dea4024c92",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-39",
+      "sha256_linha": "c02a0db1d1af0164e98f8b73aa741fab397e94e74aa7ba1be47fc9ff498006a3",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-40",
+      "sha256_linha": "70cd08168f3098cb3d829075500247d3352d6166f26a9c67df0189bf3da1cbb4",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-41",
+      "sha256_linha": "0db54d6706b99f9f2a6dd36d98ebd55ca53e2cdcc5caefd0773a05400ed24337",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-42",
+      "sha256_linha": "b1876b99c16e826c2736401e26e712c57706d8a388d0209b329ec1ea1ebd0eb4",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-43",
+      "sha256_linha": "4cf7a2bc92f656eab951eebfad97a4bf9e09874e7df9c79ba7d21f6d14264ff8",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-44",
+      "sha256_linha": "da9522ef53072ac811e4693fdf6a454f041511d9333c38f23cadeb3005aa9fa5",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-45",
+      "sha256_linha": "92c2e52871f9d33f6f25ffee6ee42395429b5bb6fea451f979bef0078aa4c257",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-46",
+      "sha256_linha": "87fcf692978d75ea09f414426654effc5f1f76ef24338dd8cf9977f9e197efa7",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-47",
+      "sha256_linha": "095c3b4c31e0e671bf72c339c5a31e303b0ca6947dc9989669546418f684ba62",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-48",
+      "sha256_linha": "8bad19ac59e9687ff90d9bd5798788c7259a7bb7712538b4fbb160d312f608ee",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-49",
+      "sha256_linha": "9179ad62a52e06a3fe168865c29491a8e1d37dd3def2945d717915f7d4989509",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-50",
+      "sha256_linha": "a2713ee9aa95ce00727f0846143e871124064604d613efed4e8ab191c058094d",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-51",
+      "sha256_linha": "68876c944be82ada1184ba54a813450ccaa1a577e4b05d83b4078cd7cd5a0438",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-52",
+      "sha256_linha": "844940a24cfeee1f9ff726341bb1003e43eb036e1ecaa96db1f649dc7869308c",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-53",
+      "sha256_linha": "abf2762d10bad23e3d4147585b1db773ca2f9bb3de0aa15bb4ea90b1430bc569",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-54",
+      "sha256_linha": "517e5301199e6dbb8ee47a6ab875cca0b48ca716f8d24c1b180039276e401701",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-55",
+      "sha256_linha": "b6c4a53f08173ab5b4c2b0084268f773260037003ca383014695fd4496607b04",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-56",
+      "sha256_linha": "4b10e3f31ad654908e11e2b0d43cd463d6a285aa6662525db1e2b2361bf94621",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-57",
+      "sha256_linha": "791dba8f8b1e79c4c4792f98ca860d92131037b88855c97b65751e7a9150be4b",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-58",
+      "sha256_linha": "973fdc6a076437f88be1552685b41695f0e4eb7fecbe2eb3a18b780ab04b6efa",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-59",
+      "sha256_linha": "5cfaa7fb0f907aaf2c7fbf1d66c16aea719ee33f7002896baf9aa35429b121ba",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-60",
+      "sha256_linha": "c9b2c8fba220274dcc1d2cff9a3b907526143f43402383552db04653188619b6",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-61",
+      "sha256_linha": "176ac76957d38d416ef8b5f23b10ff3df7597c15ba3424b52f86a4f55b0b5183",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-62",
+      "sha256_linha": "57ad94ee216257733b3d0412c040ebda817341ceca86c1734a373fb2eaf3ecbc",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-63",
+      "sha256_linha": "f253746fb8e08cdffa1299c02d5344158b34604f0b715af916133fe0c592f315",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-64",
+      "sha256_linha": "58779fc03c784b0541f10cd24ec23ffae33889cac262967bdd012207449ed926",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-65",
+      "sha256_linha": "b5f1f0ac63382328c96ef0436784ef482f9281970a18f47dcf2b1264c567b7fc",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-66",
+      "sha256_linha": "7b125e882635207f78a120f70b491570745d7ddfabe47a4d273ed0bd8065dc0b",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-67",
+      "sha256_linha": "8b081c0c45ccd1324cf2aa08e7cd5c15c1c4a837c95ea1adf046522079b1593b",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-68",
+      "sha256_linha": "5650dd9a428ff5c9bf7f9b73c53e8537da0d780723867b882ff22410771615c2",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-69",
+      "sha256_linha": "e5237e1ce7ce67ef4f7a214a90fbef551076b9b89063f94d232b3036ff130a26",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-70",
+      "sha256_linha": "84fa2ac77a2e44d8270ae3310abe296f7019eca60147f977326bbe4f4eb3a263",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-71",
+      "sha256_linha": "03bfcf4017c393be60af6e1cb948448308415945488ddc10d47e8e1a05af36ca",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-72",
+      "sha256_linha": "32fe8df5b5208ffb0944f77e36855796f28088b3eea767bafbcdad9b5b29336f",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-73",
+      "sha256_linha": "f15499661ad90272a9b71c32d813aed47b051cf9c7860336e2b6b8d08e4af172",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-74",
+      "sha256_linha": "c5fa4842f3326576648626be5ce0deb84820635af5166dee945b824cd36536df",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-75",
+      "sha256_linha": "8578d4749a783ea6a6bf712525010173b5471158e6b79861d80a52112fe387e3",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-76",
+      "sha256_linha": "20b8783fdec216998af23539ad7a04b6968002ada5e955c0a93b49492dcd764b",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-77",
+      "sha256_linha": "0c2242f95cfacab4b1de2ebeada07d1810e5636434c04d253b47c7dc029428d2",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-78",
+      "sha256_linha": "eb657c412a446165afdb1b1e5064e3c88f8416cd9068deb65452464d226f6994",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-79",
+      "sha256_linha": "4a8ae8304fdda23211f2b65fb4ed02164d6ba0e8eefd02cb4f926b84380d9c69",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "av-e1-80",
+      "sha256_linha": "8bf0270f199a69a149c66f7636ec1173169052a9917deb91c9e736af29a93f15",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-saturacao",
+      "sha256_linha": "31dd5db84d51e1719e953b4675493f2bc2fc6b5266d048aa702265c94bef090e",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "sha256_linha": "79e04620cea832ce765d15f78013076daaf325fe6d4335cff76e13eeb68e8093",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "sha256_linha": "8a5929e901b43e4a39eb11a78c317087936fcce3f5c62579a396bcc44980f398",
+      "ocorrencias": 1,
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "sha256_linha": "2005daa4b148a0354887bc965498510e1244767c8e9bfe793c38dc10acd55fb6",
+      "ocorrencias": 1,
+      "confere": true
+    }
+  ],
+  "restauracao_html": {
+    "integral": true,
+    "sha256_restaurado": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+    "sha256_antes": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+    "celulas_matriz": [
+      "c01",
+      "c02",
+      "c03",
+      "c08",
+      "c09",
+      "c10"
+    ]
+  },
+  "titulos": [
+    {
+      "id": "q-e1-01",
+      "inventario": "Questão 1",
+      "html": "Questão 1",
+      "confere": true
+    },
+    {
+      "id": "q-e1-02",
+      "inventario": "Questão 2",
+      "html": "Questão 2",
+      "confere": true
+    },
+    {
+      "id": "q-e1-03",
+      "inventario": "Questão 3",
+      "html": "Questão 3",
+      "confere": true
+    },
+    {
+      "id": "q-e1-04",
+      "inventario": "Questão 4",
+      "html": "Questão 4",
+      "confere": true
+    },
+    {
+      "id": "q-e1-05",
+      "inventario": "Questão 5",
+      "html": "Questão 5",
+      "confere": true
+    },
+    {
+      "id": "q-e1-06",
+      "inventario": "Questão 6",
+      "html": "Questão 6",
+      "confere": true
+    },
+    {
+      "id": "q-e1-07",
+      "inventario": "Questão 7",
+      "html": "Questão 7",
+      "confere": true
+    },
+    {
+      "id": "q-e1-08",
+      "inventario": "Questão 8",
+      "html": "Questão 8",
+      "confere": true
+    },
+    {
+      "id": "q-e1-09",
+      "inventario": "Questão 9",
+      "html": "Questão 9",
+      "confere": true
+    },
+    {
+      "id": "q-e1-10",
+      "inventario": "Questão 10",
+      "html": "Questão 10",
+      "confere": true
+    },
+    {
+      "id": "q-e1-11",
+      "inventario": "Questão 11",
+      "html": "Questão 11",
+      "confere": true
+    },
+    {
+      "id": "q-e1-12",
+      "inventario": "Questão 12",
+      "html": "Questão 12",
+      "confere": true
+    },
+    {
+      "id": "q-e1-13",
+      "inventario": "Questão 13",
+      "html": "Questão 13",
+      "confere": true
+    },
+    {
+      "id": "q-e1-14",
+      "inventario": "Questão 14",
+      "html": "Questão 14",
+      "confere": true
+    },
+    {
+      "id": "q-e1-15",
+      "inventario": "Questão 15",
+      "html": "Questão 15",
+      "confere": true
+    },
+    {
+      "id": "q-e1-16",
+      "inventario": "Questão 16",
+      "html": "Questão 16",
+      "confere": true
+    },
+    {
+      "id": "q-e1-17",
+      "inventario": "Questão 17",
+      "html": "Questão 17",
+      "confere": true
+    },
+    {
+      "id": "q-e1-18",
+      "inventario": "Questão 18",
+      "html": "Questão 18",
+      "confere": true
+    },
+    {
+      "id": "q-e1-19",
+      "inventario": "Questão 19",
+      "html": "Questão 19",
+      "confere": true
+    },
+    {
+      "id": "q-e1-20",
+      "inventario": "Questão 20",
+      "html": "Questão 20",
+      "confere": true
+    },
+    {
+      "id": "q-e1-21",
+      "inventario": "Questão 21",
+      "html": "Questão 21",
+      "confere": true
+    },
+    {
+      "id": "q-e1-22",
+      "inventario": "Questão 22",
+      "html": "Questão 22",
+      "confere": true
+    },
+    {
+      "id": "q-e1-23",
+      "inventario": "Questão 23",
+      "html": "Questão 23",
+      "confere": true
+    },
+    {
+      "id": "q-e1-24",
+      "inventario": "Questão 24",
+      "html": "Questão 24",
+      "confere": true
+    },
+    {
+      "id": "q-e1-25",
+      "inventario": "Questão 25",
+      "html": "Questão 25",
+      "confere": true
+    },
+    {
+      "id": "q-e1-26",
+      "inventario": "Questão 26",
+      "html": "Questão 26",
+      "confere": true
+    },
+    {
+      "id": "q-e1-27",
+      "inventario": "Questão 27",
+      "html": "Questão 27",
+      "confere": true
+    },
+    {
+      "id": "q-e1-28",
+      "inventario": "Questão 28",
+      "html": "Questão 28",
+      "confere": true
+    },
+    {
+      "id": "q-e1-29",
+      "inventario": "Questão 29",
+      "html": "Questão 29",
+      "confere": true
+    },
+    {
+      "id": "q-e1-30",
+      "inventario": "Questão 30",
+      "html": "Questão 30",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-01",
+      "inventario": "01. Quantidade de matéria",
+      "html": "01. Quantidade de matéria",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-02",
+      "inventario": "02. Estado e caminho",
+      "html": "02. Estado e caminho",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-03",
+      "inventario": "03. Movimento molecular",
+      "html": "03. Movimento molecular",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-04",
+      "inventario": "04. Líquido quase incompressível",
+      "html": "04. Líquido quase incompressível",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-05",
+      "inventario": "05. Unidades fundamentais",
+      "html": "05. Unidades fundamentais",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-06",
+      "inventario": "06. Conversão de escalas",
+      "html": "06. Conversão de escalas",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-07",
+      "inventario": "07. Bourdon ou termômetro?",
+      "html": "07. Bourdon ou termômetro?",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-08",
+      "inventario": "08. Faixa de um sensor",
+      "html": "08. Faixa de um sensor",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-09",
+      "inventario": "09. Unidade de temperatura",
+      "html": "09. Unidade de temperatura",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-10",
+      "inventario": "10. Massa específica",
+      "html": "10. Massa específica",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-11",
+      "inventario": "11. Unidade termodinâmica",
+      "html": "11. Unidade termodinâmica",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-12",
+      "inventario": "12. Identificação das quatro leis",
+      "html": "12. Identificação das quatro leis",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-13",
+      "inventario": "13. Energia interna do gás ideal",
+      "html": "13. Energia interna do gás ideal",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-14",
+      "inventario": "14. Ocupação do recipiente",
+      "html": "14. Ocupação do recipiente",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-15",
+      "inventario": "15. Colisões moleculares",
+      "html": "15. Colisões moleculares",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-16",
+      "inventario": "16. Desumidificador: pressão parcial",
+      "html": "16. Desumidificador: pressão parcial",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-17",
+      "inventario": "17. Significado de 50% de umidade",
+      "html": "17. Significado de 50% de umidade",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-18",
+      "inventario": "18. Aumento de temperatura",
+      "html": "18. Aumento de temperatura",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-19",
+      "inventario": "19. Pressão pela equação de estado",
+      "html": "19. Pressão pela equação de estado",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-20",
+      "inventario": "20. Extrapolação ao zero absoluto",
+      "html": "20. Extrapolação ao zero absoluto",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-21",
+      "inventario": "21. Variáveis do gás",
+      "html": "21. Variáveis do gás",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-22",
+      "inventario": "22. Fator de compressibilidade",
+      "html": "22. Fator de compressibilidade",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-23",
+      "inventario": "23. Condições para idealidade",
+      "html": "23. Condições para idealidade",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-24",
+      "inventario": "24. Termômetro de gás",
+      "html": "24. Termômetro de gás",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-25",
+      "inventario": "25. Temperatura relativa e aumento percentual",
+      "html": "25. Temperatura relativa e aumento percentual",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-26",
+      "inventario": "26. Agitador e perda de calor",
+      "html": "26. Agitador e perda de calor",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-27",
+      "inventario": "27. Compressão adiabática",
+      "html": "27. Compressão adiabática",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-28",
+      "inventario": "28. Energia final ou variação?",
+      "html": "28. Energia final ou variação?",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-29",
+      "inventario": "29. Compressão com resfriamento",
+      "html": "29. Compressão com resfriamento",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-30",
+      "inventario": "30. Expansão isotérmica",
+      "html": "30. Expansão isotérmica",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-31",
+      "inventario": "31. Poder calorífico",
+      "html": "31. Poder calorífico",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-32",
+      "inventario": "32. Reação e sentido inverso",
+      "html": "32. Reação e sentido inverso",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-33",
+      "inventario": "33. Expansão livre no vácuo",
+      "html": "33. Expansão livre no vácuo",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-34",
+      "inventario": "34. Aquecimento isocórico",
+      "html": "34. Aquecimento isocórico",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-35",
+      "inventario": "35. Primeira lei adiabática",
+      "html": "35. Primeira lei adiabática",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-36",
+      "inventario": "36. Adiabático não significa sem trabalho",
+      "html": "36. Adiabático não significa sem trabalho",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-37",
+      "inventario": "37. Custo das irreversibilidades",
+      "html": "37. Custo das irreversibilidades",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-38",
+      "inventario": "38. Limite de Carnot",
+      "html": "38. Limite de Carnot",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-39",
+      "inventario": "39. Máquina com rendimento total",
+      "html": "39. Máquina com rendimento total",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-40",
+      "inventario": "40. Pressão e entalpia",
+      "html": "40. Pressão e entalpia",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-41",
+      "inventario": "41. Equilíbrio entre fases",
+      "html": "41. Equilíbrio entre fases",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-42",
+      "inventario": "42. Eficiência calculada",
+      "html": "42. Eficiência calculada",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-43",
+      "inventario": "43. Congelamento e entropia",
+      "html": "43. Congelamento e entropia",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-44",
+      "inventario": "44. Adiabático e rendimento",
+      "html": "44. Adiabático e rendimento",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-45",
+      "inventario": "45. Máquina impossível",
+      "html": "45. Máquina impossível",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-46",
+      "inventario": "46. Transformações de Carnot",
+      "html": "46. Transformações de Carnot",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-47",
+      "inventario": "47. Vazão e tipo de compressor",
+      "html": "47. Vazão e tipo de compressor",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-48",
+      "inventario": "48. Regenerador em contracorrente",
+      "html": "48. Regenerador em contracorrente",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-49",
+      "inventario": "49. Pressão no Brayton real",
+      "html": "49. Pressão no Brayton real",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-50",
+      "inventario": "50. Consumo do compressor",
+      "html": "50. Consumo do compressor",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-51",
+      "inventario": "51. Processos do Brayton",
+      "html": "51. Processos do Brayton",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-52",
+      "inventario": "52. Aumentar consumo melhora eficiência?",
+      "html": "52. Aumentar consumo melhora eficiência?",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-53",
+      "inventario": "53. Recuperar calor da exaustão",
+      "html": "53. Recuperar calor da exaustão",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-54",
+      "inventario": "54. Aplicações de compressores",
+      "html": "54. Aplicações de compressores",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-55",
+      "inventario": "55. Rejeição de calor no Brayton",
+      "html": "55. Rejeição de calor no Brayton",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-56",
+      "inventario": "56. Geração de eletricidade",
+      "html": "56. Geração de eletricidade",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-57",
+      "inventario": "57. Razão de pressões e eficiência",
+      "html": "57. Razão de pressões e eficiência",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-58",
+      "inventario": "58. Compressão e pressão",
+      "html": "58. Compressão e pressão",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-59",
+      "inventario": "59. Válvulas na compressão",
+      "html": "59. Válvulas na compressão",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-60",
+      "inventario": "60. Vazão pulsante",
+      "html": "60. Vazão pulsante",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-61",
+      "inventario": "61. Eficiência volumétrica",
+      "html": "61. Eficiência volumétrica",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-62",
+      "inventario": "62. Etapa de admissão",
+      "html": "62. Etapa de admissão",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-63",
+      "inventario": "63. Ciclo da turbina a gás",
+      "html": "63. Ciclo da turbina a gás",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-64",
+      "inventario": "64. Deslocamento positivo",
+      "html": "64. Deslocamento positivo",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-65",
+      "inventario": "65. Turbina a vapor",
+      "html": "65. Turbina a vapor",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-66",
+      "inventario": "66. Casco e tubos: mistura?",
+      "html": "66. Casco e tubos: mistura?",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-67",
+      "inventario": "67. Dilatação em tubulações",
+      "html": "67. Dilatação em tubulações",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-68",
+      "inventario": "68. Perda por radiação",
+      "html": "68. Perda por radiação",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-69",
+      "inventario": "69. Caminho do calor no trocador",
+      "html": "69. Caminho do calor no trocador",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-70",
+      "inventario": "70. Sentido da condução",
+      "html": "70. Sentido da condução",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-71",
+      "inventario": "71. Convecção forçada",
+      "html": "71. Convecção forçada",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-72",
+      "inventario": "72. Escoamento paralelo",
+      "html": "72. Escoamento paralelo",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-73",
+      "inventario": "73. Trocador compacto",
+      "html": "73. Trocador compacto",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-74",
+      "inventario": "74. Incrustação e resistência térmica",
+      "html": "74. Incrustação e resistência térmica",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-75",
+      "inventario": "75. Sinal na lei de Fourier",
+      "html": "75. Sinal na lei de Fourier",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-76",
+      "inventario": "76. Advecção e convecção",
+      "html": "76. Advecção e convecção",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-77",
+      "inventario": "77. Função do condensador",
+      "html": "77. Função do condensador",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-78",
+      "inventario": "78. Vantagem térmica da amônia",
+      "html": "78. Vantagem térmica da amônia",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-79",
+      "inventario": "79. Calor em câmara de vácuo",
+      "html": "79. Calor em câmara de vácuo",
+      "confere": true
+    },
+    {
+      "id": "cr-e1-80",
+      "inventario": "80. Geração interna e convecção",
+      "html": "80. Geração interna e convecção",
+      "confere": true
+    },
+    {
+      "id": "av-e1-01",
+      "inventario": "AV-01. Quantidade de matéria",
+      "html": "AV-01. Quantidade de matéria",
+      "confere": true
+    },
+    {
+      "id": "av-e1-02",
+      "inventario": "AV-02. Estado e caminho",
+      "html": "AV-02. Estado e caminho",
+      "confere": true
+    },
+    {
+      "id": "av-e1-03",
+      "inventario": "AV-03. Movimento molecular",
+      "html": "AV-03. Movimento molecular",
+      "confere": true
+    },
+    {
+      "id": "av-e1-04",
+      "inventario": "AV-04. Líquido quase incompressível",
+      "html": "AV-04. Líquido quase incompressível",
+      "confere": true
+    },
+    {
+      "id": "av-e1-05",
+      "inventario": "AV-05. Unidades fundamentais",
+      "html": "AV-05. Unidades fundamentais",
+      "confere": true
+    },
+    {
+      "id": "av-e1-06",
+      "inventario": "AV-06. Conversão de escalas",
+      "html": "AV-06. Conversão de escalas",
+      "confere": true
+    },
+    {
+      "id": "av-e1-07",
+      "inventario": "AV-07. Bourdon ou termômetro?",
+      "html": "AV-07. Bourdon ou termômetro?",
+      "confere": true
+    },
+    {
+      "id": "av-e1-08",
+      "inventario": "AV-08. Faixa de um sensor",
+      "html": "AV-08. Faixa de um sensor",
+      "confere": true
+    },
+    {
+      "id": "av-e1-09",
+      "inventario": "AV-09. Unidade de temperatura",
+      "html": "AV-09. Unidade de temperatura",
+      "confere": true
+    },
+    {
+      "id": "av-e1-10",
+      "inventario": "AV-10. Massa específica",
+      "html": "AV-10. Massa específica",
+      "confere": true
+    },
+    {
+      "id": "av-e1-11",
+      "inventario": "AV-11. Unidade termodinâmica",
+      "html": "AV-11. Unidade termodinâmica",
+      "confere": true
+    },
+    {
+      "id": "av-e1-12",
+      "inventario": "AV-12. Identificação das quatro leis",
+      "html": "AV-12. Identificação das quatro leis",
+      "confere": true
+    },
+    {
+      "id": "av-e1-13",
+      "inventario": "AV-13. Energia interna do gás ideal",
+      "html": "AV-13. Energia interna do gás ideal",
+      "confere": true
+    },
+    {
+      "id": "av-e1-14",
+      "inventario": "AV-14. Ocupação do recipiente",
+      "html": "AV-14. Ocupação do recipiente",
+      "confere": true
+    },
+    {
+      "id": "av-e1-15",
+      "inventario": "AV-15. Colisões moleculares",
+      "html": "AV-15. Colisões moleculares",
+      "confere": true
+    },
+    {
+      "id": "av-e1-16",
+      "inventario": "AV-16. Desumidificador: pressão parcial",
+      "html": "AV-16. Desumidificador: pressão parcial",
+      "confere": true
+    },
+    {
+      "id": "av-e1-17",
+      "inventario": "AV-17. Significado de 50% de umidade",
+      "html": "AV-17. Significado de 50% de umidade",
+      "confere": true
+    },
+    {
+      "id": "av-e1-18",
+      "inventario": "AV-18. Aumento de temperatura",
+      "html": "AV-18. Aumento de temperatura",
+      "confere": true
+    },
+    {
+      "id": "av-e1-19",
+      "inventario": "AV-19. Pressão pela equação de estado",
+      "html": "AV-19. Pressão pela equação de estado",
+      "confere": true
+    },
+    {
+      "id": "av-e1-20",
+      "inventario": "AV-20. Extrapolação ao zero absoluto",
+      "html": "AV-20. Extrapolação ao zero absoluto",
+      "confere": true
+    },
+    {
+      "id": "av-e1-21",
+      "inventario": "AV-21. Variáveis do gás",
+      "html": "AV-21. Variáveis do gás",
+      "confere": true
+    },
+    {
+      "id": "av-e1-22",
+      "inventario": "AV-22. Fator de compressibilidade",
+      "html": "AV-22. Fator de compressibilidade",
+      "confere": true
+    },
+    {
+      "id": "av-e1-23",
+      "inventario": "AV-23. Condições para idealidade",
+      "html": "AV-23. Condições para idealidade",
+      "confere": true
+    },
+    {
+      "id": "av-e1-24",
+      "inventario": "AV-24. Termômetro de gás",
+      "html": "AV-24. Termômetro de gás",
+      "confere": true
+    },
+    {
+      "id": "av-e1-25",
+      "inventario": "AV-25. Temperatura relativa e aumento percentual",
+      "html": "AV-25. Temperatura relativa e aumento percentual",
+      "confere": true
+    },
+    {
+      "id": "av-e1-26",
+      "inventario": "AV-26. Agitador e perda de calor",
+      "html": "AV-26. Agitador e perda de calor",
+      "confere": true
+    },
+    {
+      "id": "av-e1-27",
+      "inventario": "AV-27. Compressão adiabática",
+      "html": "AV-27. Compressão adiabática",
+      "confere": true
+    },
+    {
+      "id": "av-e1-28",
+      "inventario": "AV-28. Energia final ou variação?",
+      "html": "AV-28. Energia final ou variação?",
+      "confere": true
+    },
+    {
+      "id": "av-e1-29",
+      "inventario": "AV-29. Compressão com resfriamento",
+      "html": "AV-29. Compressão com resfriamento",
+      "confere": true
+    },
+    {
+      "id": "av-e1-30",
+      "inventario": "AV-30. Expansão isotérmica",
+      "html": "AV-30. Expansão isotérmica",
+      "confere": true
+    },
+    {
+      "id": "av-e1-31",
+      "inventario": "AV-31. Poder calorífico",
+      "html": "AV-31. Poder calorífico",
+      "confere": true
+    },
+    {
+      "id": "av-e1-32",
+      "inventario": "AV-32. Reação e sentido inverso",
+      "html": "AV-32. Reação e sentido inverso",
+      "confere": true
+    },
+    {
+      "id": "av-e1-33",
+      "inventario": "AV-33. Expansão livre no vácuo",
+      "html": "AV-33. Expansão livre no vácuo",
+      "confere": true
+    },
+    {
+      "id": "av-e1-34",
+      "inventario": "AV-34. Aquecimento isocórico",
+      "html": "AV-34. Aquecimento isocórico",
+      "confere": true
+    },
+    {
+      "id": "av-e1-35",
+      "inventario": "AV-35. Primeira lei adiabática",
+      "html": "AV-35. Primeira lei adiabática",
+      "confere": true
+    },
+    {
+      "id": "av-e1-36",
+      "inventario": "AV-36. Adiabático não significa sem trabalho",
+      "html": "AV-36. Adiabático não significa sem trabalho",
+      "confere": true
+    },
+    {
+      "id": "av-e1-37",
+      "inventario": "AV-37. Custo das irreversibilidades",
+      "html": "AV-37. Custo das irreversibilidades",
+      "confere": true
+    },
+    {
+      "id": "av-e1-38",
+      "inventario": "AV-38. Limite de Carnot",
+      "html": "AV-38. Limite de Carnot",
+      "confere": true
+    },
+    {
+      "id": "av-e1-39",
+      "inventario": "AV-39. Máquina com rendimento total",
+      "html": "AV-39. Máquina com rendimento total",
+      "confere": true
+    },
+    {
+      "id": "av-e1-40",
+      "inventario": "AV-40. Pressão e entalpia",
+      "html": "AV-40. Pressão e entalpia",
+      "confere": true
+    },
+    {
+      "id": "av-e1-41",
+      "inventario": "AV-41. Equilíbrio entre fases",
+      "html": "AV-41. Equilíbrio entre fases",
+      "confere": true
+    },
+    {
+      "id": "av-e1-42",
+      "inventario": "AV-42. Eficiência calculada",
+      "html": "AV-42. Eficiência calculada",
+      "confere": true
+    },
+    {
+      "id": "av-e1-43",
+      "inventario": "AV-43. Congelamento e entropia",
+      "html": "AV-43. Congelamento e entropia",
+      "confere": true
+    },
+    {
+      "id": "av-e1-44",
+      "inventario": "AV-44. Adiabático e rendimento",
+      "html": "AV-44. Adiabático e rendimento",
+      "confere": true
+    },
+    {
+      "id": "av-e1-45",
+      "inventario": "AV-45. Máquina impossível",
+      "html": "AV-45. Máquina impossível",
+      "confere": true
+    },
+    {
+      "id": "av-e1-46",
+      "inventario": "AV-46. Transformações de Carnot",
+      "html": "AV-46. Transformações de Carnot",
+      "confere": true
+    },
+    {
+      "id": "av-e1-47",
+      "inventario": "AV-47. Vazão e tipo de compressor",
+      "html": "AV-47. Vazão e tipo de compressor",
+      "confere": true
+    },
+    {
+      "id": "av-e1-48",
+      "inventario": "AV-48. Regenerador em contracorrente",
+      "html": "AV-48. Regenerador em contracorrente",
+      "confere": true
+    },
+    {
+      "id": "av-e1-49",
+      "inventario": "AV-49. Pressão no Brayton real",
+      "html": "AV-49. Pressão no Brayton real",
+      "confere": true
+    },
+    {
+      "id": "av-e1-50",
+      "inventario": "AV-50. Consumo do compressor",
+      "html": "AV-50. Consumo do compressor",
+      "confere": true
+    },
+    {
+      "id": "av-e1-51",
+      "inventario": "AV-51. Processos do Brayton",
+      "html": "AV-51. Processos do Brayton",
+      "confere": true
+    },
+    {
+      "id": "av-e1-52",
+      "inventario": "AV-52. Aumentar consumo melhora eficiência?",
+      "html": "AV-52. Aumentar consumo melhora eficiência?",
+      "confere": true
+    },
+    {
+      "id": "av-e1-53",
+      "inventario": "AV-53. Recuperar calor da exaustão",
+      "html": "AV-53. Recuperar calor da exaustão",
+      "confere": true
+    },
+    {
+      "id": "av-e1-54",
+      "inventario": "AV-54. Aplicações de compressores",
+      "html": "AV-54. Aplicações de compressores",
+      "confere": true
+    },
+    {
+      "id": "av-e1-55",
+      "inventario": "AV-55. Rejeição de calor no Brayton",
+      "html": "AV-55. Rejeição de calor no Brayton",
+      "confere": true
+    },
+    {
+      "id": "av-e1-56",
+      "inventario": "AV-56. Geração de eletricidade",
+      "html": "AV-56. Geração de eletricidade",
+      "confere": true
+    },
+    {
+      "id": "av-e1-57",
+      "inventario": "AV-57. Razão de pressões e eficiência",
+      "html": "AV-57. Razão de pressões e eficiência",
+      "confere": true
+    },
+    {
+      "id": "av-e1-58",
+      "inventario": "AV-58. Compressão e pressão",
+      "html": "AV-58. Compressão e pressão",
+      "confere": true
+    },
+    {
+      "id": "av-e1-59",
+      "inventario": "AV-59. Válvulas na compressão",
+      "html": "AV-59. Válvulas na compressão",
+      "confere": true
+    },
+    {
+      "id": "av-e1-60",
+      "inventario": "AV-60. Vazão pulsante",
+      "html": "AV-60. Vazão pulsante",
+      "confere": true
+    },
+    {
+      "id": "av-e1-61",
+      "inventario": "AV-61. Eficiência volumétrica",
+      "html": "AV-61. Eficiência volumétrica",
+      "confere": true
+    },
+    {
+      "id": "av-e1-62",
+      "inventario": "AV-62. Etapa de admissão",
+      "html": "AV-62. Etapa de admissão",
+      "confere": true
+    },
+    {
+      "id": "av-e1-63",
+      "inventario": "AV-63. Ciclo da turbina a gás",
+      "html": "AV-63. Ciclo da turbina a gás",
+      "confere": true
+    },
+    {
+      "id": "av-e1-64",
+      "inventario": "AV-64. Deslocamento positivo",
+      "html": "AV-64. Deslocamento positivo",
+      "confere": true
+    },
+    {
+      "id": "av-e1-65",
+      "inventario": "AV-65. Turbina a vapor",
+      "html": "AV-65. Turbina a vapor",
+      "confere": true
+    },
+    {
+      "id": "av-e1-66",
+      "inventario": "AV-66. Casco e tubos: mistura?",
+      "html": "AV-66. Casco e tubos: mistura?",
+      "confere": true
+    },
+    {
+      "id": "av-e1-67",
+      "inventario": "AV-67. Dilatação em tubulações",
+      "html": "AV-67. Dilatação em tubulações",
+      "confere": true
+    },
+    {
+      "id": "av-e1-68",
+      "inventario": "AV-68. Perda por radiação",
+      "html": "AV-68. Perda por radiação",
+      "confere": true
+    },
+    {
+      "id": "av-e1-69",
+      "inventario": "AV-69. Caminho do calor no trocador",
+      "html": "AV-69. Caminho do calor no trocador",
+      "confere": true
+    },
+    {
+      "id": "av-e1-70",
+      "inventario": "AV-70. Sentido da condução",
+      "html": "AV-70. Sentido da condução",
+      "confere": true
+    },
+    {
+      "id": "av-e1-71",
+      "inventario": "AV-71. Convecção forçada",
+      "html": "AV-71. Convecção forçada",
+      "confere": true
+    },
+    {
+      "id": "av-e1-72",
+      "inventario": "AV-72. Escoamento paralelo",
+      "html": "AV-72. Escoamento paralelo",
+      "confere": true
+    },
+    {
+      "id": "av-e1-73",
+      "inventario": "AV-73. Trocador compacto",
+      "html": "AV-73. Trocador compacto",
+      "confere": true
+    },
+    {
+      "id": "av-e1-74",
+      "inventario": "AV-74. Incrustação e resistência térmica",
+      "html": "AV-74. Incrustação e resistência térmica",
+      "confere": true
+    },
+    {
+      "id": "av-e1-75",
+      "inventario": "AV-75. Sinal na lei de Fourier",
+      "html": "AV-75. Sinal na lei de Fourier",
+      "confere": true
+    },
+    {
+      "id": "av-e1-76",
+      "inventario": "AV-76. Advecção e convecção",
+      "html": "AV-76. Advecção e convecção",
+      "confere": true
+    },
+    {
+      "id": "av-e1-77",
+      "inventario": "AV-77. Função do condensador",
+      "html": "AV-77. Função do condensador",
+      "confere": true
+    },
+    {
+      "id": "av-e1-78",
+      "inventario": "AV-78. Vantagem térmica da amônia",
+      "html": "AV-78. Vantagem térmica da amônia",
+      "confere": true
+    },
+    {
+      "id": "av-e1-79",
+      "inventario": "AV-79. Calor em câmara de vácuo",
+      "html": "AV-79. Calor em câmara de vácuo",
+      "confere": true
+    },
+    {
+      "id": "av-e1-80",
+      "inventario": "AV-80. Geração interna e convecção",
+      "html": "AV-80. Geração interna e convecção",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-saturacao",
+      "inventario": "Problema 1 — Um tanque, três informações e um conflito",
+      "html": "Problema 1 — Um tanque, três informações e um conflito",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "inventario": "Problema 2 — Quatro lotes e uma hipótese bifásica",
+      "html": "Problema 2 — Quatro lotes e uma hipótese bifásica",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "inventario": "Problema 3 — O rótulo “supercrítico” é sustentado pelos dados?",
+      "html": "Problema 3 — O rótulo “supercrítico” é sustentado pelos dados?",
+      "confere": true
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "inventario": "Problema 4 — Diagnóstico de uma bancada multicâmara",
+      "html": "Problema 4 — Diagnóstico de uma bancada multicâmara",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-caminhos",
+      "inventario": "Problema 1 — Projetar caminhos dentro de uma janela de temperatura",
+      "html": "Problema 1 — Projetar caminhos dentro de uma janela de temperatura",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-integrabilidade",
+      "inventario": "Problema 2 — Um registrador pode confundir percurso com propriedade?",
+      "html": "Problema 2 — Um registrador pode confundir percurso com propriedade?",
+      "confere": true
+    },
+    {
+      "id": "fun02-e1-calor-caminho",
+      "inventario": "Problema 3 — Aquecer a temperatura enquanto o gás perde calor",
+      "html": "Problema 3 — Aquecer a temperatura enquanto o gás perde calor",
+      "confere": true
+    }
+  ],
+  "novos_registros": [
+    {
+      "id": "fun02-e1-caminhos",
+      "titulo_confere": true,
+      "marcas_html": {
+        "inventario": true,
+        "banco": true,
+        "formato": true
+      },
+      "banco": "aberto",
+      "formato": {
+        "tipo": "resposta_aberta",
+        "comando": "Produzir solução escrita com decisões, condições mantidas, memória de cálculo e limites, respondendo aos subcomandos; aplicar rubrica analítica de 10 pontos e regra comum de crédito.",
+        "numero_alternativas": 0
+      },
+      "localizacao": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "fragmento": "fun02-e1-caminhos",
+        "sha256_artigo": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6",
+        "recursos": [
+          {
+            "arquivo": "assets/termodinamica/fun02-dados-v1.json",
+            "sha256": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319"
+          },
+          {
+            "arquivo": "assets/termodinamica/fun02-caminhos-v1.svg",
+            "sha256": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35"
+          }
+        ]
+      },
+      "hash_confere": true,
+      "sem_radios": true,
+      "etapas_coerentes": true,
+      "competencias": [
+        "C01",
+        "C02",
+        "C03",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "alcance": "avaliacao_parcial",
+      "estado_revisao": "pendente",
+      "relacoes": [
+        {
+          "alvo": "fun02-processos",
+          "ocorrencias": 1
+        },
+        {
+          "alvo": "q-e1-09",
+          "ocorrencias": 1
+        },
+        {
+          "alvo": "av-e1-30",
+          "ocorrencias": 1
+        }
+      ]
+    },
+    {
+      "id": "fun02-e1-integrabilidade",
+      "titulo_confere": true,
+      "marcas_html": {
+        "inventario": true,
+        "banco": true,
+        "formato": true
+      },
+      "banco": "aberto",
+      "formato": {
+        "tipo": "resposta_aberta",
+        "comando": "Produzir solução escrita com decisões, condições mantidas, memória de cálculo e limites, respondendo aos subcomandos; aplicar rubrica analítica de 10 pontos e regra comum de crédito.",
+        "numero_alternativas": 0
+      },
+      "localizacao": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "fragmento": "fun02-e1-integrabilidade",
+        "sha256_artigo": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+        "recursos": [
+          {
+            "arquivo": "assets/termodinamica/fun02-dados-v1.json",
+            "sha256": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319"
+          },
+          {
+            "arquivo": "assets/termodinamica/fun02-calculos-v1.mjs",
+            "sha256": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70"
+          }
+        ]
+      },
+      "hash_confere": true,
+      "sem_radios": true,
+      "etapas_coerentes": true,
+      "competencias": [
+        "C02",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "alcance": "avaliacao_parcial",
+      "estado_revisao": "pendente",
+      "relacoes": [
+        {
+          "alvo": "fun02-exatidao",
+          "ocorrencias": 1
+        },
+        {
+          "alvo": "fun02-parciais",
+          "ocorrencias": 1
+        }
+      ]
+    },
+    {
+      "id": "fun02-e1-calor-caminho",
+      "titulo_confere": true,
+      "marcas_html": {
+        "inventario": true,
+        "banco": true,
+        "formato": true
+      },
+      "banco": "aberto",
+      "formato": {
+        "tipo": "resposta_aberta",
+        "comando": "Produzir solução escrita com decisões, condições mantidas, memória de cálculo e limites, respondendo aos subcomandos; aplicar rubrica analítica de 10 pontos e regra comum de crédito.",
+        "numero_alternativas": 0
+      },
+      "localizacao": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "fragmento": "fun02-e1-calor-caminho",
+        "sha256_artigo": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+        "recursos": [
+          {
+            "arquivo": "assets/termodinamica/fun02-dados-v1.json",
+            "sha256": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319"
+          }
+        ]
+      },
+      "hash_confere": true,
+      "sem_radios": true,
+      "etapas_coerentes": true,
+      "competencias": [
+        "C01",
+        "C02",
+        "C03",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "alcance": "avaliacao_parcial",
+      "estado_revisao": "pendente",
+      "relacoes": [
+        {
+          "alvo": "fun02-fator",
+          "ocorrencias": 1
+        },
+        {
+          "alvo": "cr-e1-36",
+          "ocorrencias": 1
+        }
+      ]
+    }
+  ],
+  "novos_registros_extrato_identico": true,
+  "distribuicao": {
+    "iniciante": 171,
+    "intermediario": 22,
+    "avancado": 4
+  },
+  "metadados": {
+    "fonte": {
+      "antes": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+        "snapshot": "auditoria/termodinamica/evidencias/FUN-01/e1-termodinamica.r1.html"
+      },
+      "depois": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+        "snapshot": "auditoria/termodinamica/evidencias/FUN-02/e1-termodinamica.r1.html"
+      }
+    },
+    "metodo_somente_acrescimo": true,
+    "metodo_acrescimo": " Inclusão FUN-02: três problemas abertos lidos integralmente, com modelo, comandos, soluções, rubricas, figura e pacote de dados/cálculo. O apoio_fun01 preparou P2 e sua recuperação; o Corretor revisou e integrou todos os registros. Classificações individuais distinguem construção/diagnóstico de modelo da integração de relações já fornecidas.",
+    "limites_preservados": true,
+    "demais_campos_topo_preservados": true
+  },
+  "svg_dependencias": [
+    "#arrowBlue",
+    "#arrowBlue",
+    "#arrowOrange",
+    "#arrowOrange"
+  ],
+  "verificador_reexecutado": {
+    "ok": true,
+    "sha256_html": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+    "verificacoes": 240,
+    "checks": [
+      {
+        "nome": "unidade inserida uma vez",
+        "ok": true
+      },
+      {
+        "nome": "link único de sumário",
+        "ok": true
+      },
+      {
+        "nome": "seis linhas de integração curricular delimitadas",
+        "ok": true
+      },
+      {
+        "nome": "linha atual c01",
+        "ok": true
+      },
+      {
+        "nome": "linha atual c02",
+        "ok": true
+      },
+      {
+        "nome": "linha atual c03",
+        "ok": true
+      },
+      {
+        "nome": "linha atual c08",
+        "ok": true
+      },
+      {
+        "nome": "linha atual c09",
+        "ok": true
+      },
+      {
+        "nome": "linha atual c10",
+        "ok": true
+      },
+      {
+        "nome": "reconstrução integral da fonte aprovada",
+        "ok": true
+      },
+      {
+        "nome": "194 anteriores e197 atuais",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado fun01-e1-saturacao",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado fun01-e1-mistura",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado fun01-e1-supercritico",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado fun01-e1-equilibrio",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-01",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-02",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-03",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-04",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-05",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-06",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-07",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-08",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-09",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-10",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-11",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-12",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-13",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-14",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-15",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-16",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-17",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-18",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-19",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-20",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-21",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-22",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-23",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-24",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-25",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-26",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-27",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-28",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-29",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado q-e1-30",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-01",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-02",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-03",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-04",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-05",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-06",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-07",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-08",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-09",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-10",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-11",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-12",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-13",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-14",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-15",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-16",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-17",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-18",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-19",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-20",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-21",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-22",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-23",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-24",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-25",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-26",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-27",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-28",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-29",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-30",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-31",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-32",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-33",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-34",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-35",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-36",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-37",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-38",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-39",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-40",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-41",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-42",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-43",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-44",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-45",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-46",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-47",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-48",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-49",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-50",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-51",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-52",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-53",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-54",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-55",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-56",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-57",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-58",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-59",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-60",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-61",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-62",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-63",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-64",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-65",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-66",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-67",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-68",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-69",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-70",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-71",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-72",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-73",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-74",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-75",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-76",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-77",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-78",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-79",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado cr-e1-80",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-01",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-02",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-03",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-04",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-05",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-06",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-07",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-08",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-09",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-10",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-11",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-12",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-13",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-14",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-15",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-16",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-17",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-18",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-19",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-20",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-21",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-22",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-23",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-24",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-25",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-26",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-27",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-28",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-29",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-30",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-31",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-32",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-33",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-34",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-35",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-36",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-37",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-38",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-39",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-40",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-41",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-42",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-43",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-44",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-45",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-46",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-47",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-48",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-49",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-50",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-51",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-52",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-53",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-54",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-55",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-56",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-57",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-58",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-59",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-60",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-61",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-62",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-63",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-64",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-65",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-66",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-67",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-68",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-69",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-70",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-71",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-72",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-73",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-74",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-75",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-76",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-77",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-78",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-79",
+        "ok": true
+      },
+      {
+        "nome": "artigo preservado av-e1-80",
+        "ok": true
+      },
+      {
+        "nome": "IDs únicos",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun02-entrada",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun02-parciais",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun02-exatidao",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun02-processos",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun02-fator",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun02-problemas",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun01-independencia",
+        "ok": true
+      },
+      {
+        "nome": "âncora #base-primeira-lei",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun02-exatidao",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun01-parecer",
+        "ok": true
+      },
+      {
+        "nome": "âncora #fun02-preparacao-integrabilidade",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "tabela acessível",
+        "ok": true
+      },
+      {
+        "nome": "194 registros anteriores idênticos",
+        "ok": true
+      },
+      {
+        "nome": "título corresponde ao publicado fun02-e1-caminhos",
+        "ok": true
+      },
+      {
+        "nome": "título corresponde ao publicado fun02-e1-integrabilidade",
+        "ok": true
+      },
+      {
+        "nome": "título corresponde ao publicado fun02-e1-calor-caminho",
+        "ok": true
+      },
+      {
+        "nome": "arquivo preservado assets/registro.js",
+        "ok": true
+      },
+      {
+        "nome": "arquivo preservado assets/curso.js",
+        "ok": true
+      },
+      {
+        "nome": "arquivo preservado assets/curso.css",
+        "ok": true
+      },
+      {
+        "nome": "arquivo preservado assets/termodinamica/fun01-dados-v1.json",
+        "ok": true
+      },
+      {
+        "nome": "arquivo preservado assets/termodinamica/fun01-calculos-v1.mjs",
+        "ok": true
+      },
+      {
+        "nome": "arquivo preservado auditoria/termodinamica/inventario/inventario.schema.json",
+        "ok": true
+      },
+      {
+        "nome": "arquivo preservado auditoria/termodinamica/inventario/validar-inventario.mjs",
+        "ok": true
+      },
+      {
+        "nome": "arquivo preservado auditoria/termodinamica/inventario/LEIA-ME.md",
+        "ok": true
+      },
+      {
+        "nome": "inventário canônico válido",
+        "ok": true
+      },
+      {
+        "nome": "49 verificações de reprodução",
+        "ok": true
+      }
+    ],
+    "validacao": {
+      "ok": true,
+      "curso": "E1",
+      "itens_registrados": 197,
+      "artigos_encontrados": 197,
+      "recursos_verificados": 11,
+      "links_locais_verificados": 1062,
+      "erros": [],
+      "avisos": [],
+      "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+    },
+    "calculos": {
+      "versao": "1.0",
+      "caminhos": [
+        {
+          "id": "I",
+          "trechos": [
+            {
+              "tipo": "isobarico",
+              "inicial": {
+                "T_K": 300,
+                "V_m3": 0.01,
+                "p_Pa": 249419.99999999997
+              },
+              "final": {
+                "T_K": 600,
+                "V_m3": 0.02,
+                "p_Pa": 249419.99999999997
+              },
+              "W_J": 2494.2,
+              "delta_U_J": 3741.3,
+              "Q_J": 6235.5,
+              "admissivel": true
+            },
+            {
+              "tipo": "isocorico",
+              "inicial": {
+                "T_K": 600,
+                "V_m3": 0.02,
+                "p_Pa": 249419.99999999997
+              },
+              "final": {
+                "T_K": 450,
+                "V_m3": 0.02,
+                "p_Pa": 187065
+              },
+              "W_J": 0,
+              "delta_U_J": -1870.65,
+              "Q_J": -1870.65,
+              "admissivel": true
+            }
+          ],
+          "W_J": 2494.2,
+          "Q_J": 4364.85,
+          "delta_U_J": 1870.65,
+          "admissivel": true
+        },
+        {
+          "id": "II",
+          "trechos": [
+            {
+              "tipo": "isotermico",
+              "inicial": {
+                "T_K": 300,
+                "V_m3": 0.01,
+                "p_Pa": 249419.99999999997
+              },
+              "final": {
+                "T_K": 300,
+                "V_m3": 0.02,
+                "p_Pa": 124709.99999999999
+              },
+              "W_J": 1728.8476977526154,
+              "delta_U_J": 0,
+              "Q_J": 1728.8476977526154,
+              "admissivel": true
+            },
+            {
+              "tipo": "isocorico",
+              "inicial": {
+                "T_K": 300,
+                "V_m3": 0.02,
+                "p_Pa": 124709.99999999999
+              },
+              "final": {
+                "T_K": 450,
+                "V_m3": 0.02,
+                "p_Pa": 187065
+              },
+              "W_J": 0,
+              "delta_U_J": 1870.65,
+              "Q_J": 1870.65,
+              "admissivel": true
+            }
+          ],
+          "W_J": 1728.8476977526154,
+          "Q_J": 3599.4976977526157,
+          "delta_U_J": 1870.65,
+          "admissivel": true
+        },
+        {
+          "id": "III",
+          "trechos": [
+            {
+              "tipo": "isocorico",
+              "inicial": {
+                "T_K": 300,
+                "V_m3": 0.01,
+                "p_Pa": 249419.99999999997
+              },
+              "final": {
+                "T_K": 450,
+                "V_m3": 0.01,
+                "p_Pa": 374130
+              },
+              "W_J": 0,
+              "delta_U_J": 1870.65,
+              "Q_J": 1870.65,
+              "admissivel": true
+            },
+            {
+              "tipo": "isotermico",
+              "inicial": {
+                "T_K": 450,
+                "V_m3": 0.01,
+                "p_Pa": 374130
+              },
+              "final": {
+                "T_K": 450,
+                "V_m3": 0.02,
+                "p_Pa": 187065
+              },
+              "W_J": 2593.2715466289233,
+              "delta_U_J": 0,
+              "Q_J": 2593.2715466289233,
+              "admissivel": true
+            }
+          ],
+          "W_J": 2593.2715466289233,
+          "Q_J": 4463.921546628923,
+          "delta_U_J": 1870.65,
+          "admissivel": true
+        },
+        {
+          "id": "IV",
+          "trechos": [
+            {
+              "tipo": "isobarico",
+              "inicial": {
+                "T_K": 300,
+                "V_m3": 0.01,
+                "p_Pa": 249419.99999999997
+              },
+              "final": {
+                "T_K": 450,
+                "V_m3": 0.015000000000000003,
+                "p_Pa": 249419.99999999997
+              },
+              "W_J": 1247.1000000000006,
+              "delta_U_J": 1870.65,
+              "Q_J": 3117.750000000001,
+              "admissivel": true
+            },
+            {
+              "tipo": "isotermico",
+              "inicial": {
+                "T_K": 450,
+                "V_m3": 0.015000000000000003,
+                "p_Pa": 249419.99999999997
+              },
+              "final": {
+                "T_K": 450,
+                "V_m3": 0.02,
+                "p_Pa": 187065
+              },
+              "W_J": 1076.304937663847,
+              "delta_U_J": 0,
+              "Q_J": 1076.304937663847,
+              "admissivel": true
+            }
+          ],
+          "W_J": 2323.4049376638477,
+          "Q_J": 4194.054937663848,
+          "delta_U_J": 1870.65,
+          "admissivel": true
+        },
+        {
+          "id": "V",
+          "trechos": [
+            {
+              "tipo": "isotermico",
+              "inicial": {
+                "T_K": 300,
+                "V_m3": 0.01,
+                "p_Pa": 249419.99999999997
+              },
+              "final": {
+                "T_K": 300,
+                "V_m3": 0.013333333333333332,
+                "p_Pa": 187065
+              },
+              "W_J": 717.5366251092317,
+              "delta_U_J": 0,
+              "Q_J": 717.5366251092317,
+              "admissivel": true
+            },
+            {
+              "tipo": "isobarico",
+              "inicial": {
+                "T_K": 300,
+                "V_m3": 0.013333333333333332,
+                "p_Pa": 187065
+              },
+              "final": {
+                "T_K": 450,
+                "V_m3": 0.02,
+                "p_Pa": 187065
+              },
+              "W_J": 1247.1000000000001,
+              "delta_U_J": 1870.65,
+              "Q_J": 3117.75,
+              "admissivel": true
+            }
+          ],
+          "W_J": 1964.6366251092318,
+          "Q_J": 3835.286625109232,
+          "delta_U_J": 1870.65,
+          "admissivel": true
+        },
+        {
+          "id": "rejeitada",
+          "trechos": [
+            {
+              "tipo": "isocorico",
+              "inicial": {
+                "T_K": 300,
+                "V_m3": 0.01,
+                "p_Pa": 249419.99999999997
+              },
+              "final": {
+                "T_K": 225,
+                "V_m3": 0.01,
+                "p_Pa": 187065
+              },
+              "W_J": 0,
+              "delta_U_J": -935.325,
+              "Q_J": -935.325,
+              "admissivel": false
+            },
+            {
+              "tipo": "isobarico",
+              "inicial": {
+                "T_K": 225,
+                "V_m3": 0.01,
+                "p_Pa": 187065
+              },
+              "final": {
+                "T_K": 450,
+                "V_m3": 0.02,
+                "p_Pa": 187065
+              },
+              "W_J": 1870.65,
+              "delta_U_J": 2805.975,
+              "Q_J": 4676.625,
+              "admissivel": false
+            }
+          ],
+          "W_J": 1870.65,
+          "Q_J": 3741.3,
+          "delta_U_J": 1870.6499999999999,
+          "admissivel": false
+        }
+      ],
+      "ciclo": {
+        "W_J": 765.3523022473844,
+        "Q_J": 765.3523022473846,
+        "delta_U_J": 0
+      },
+      "calor_caminho": {
+        "inicial": {
+          "T_K": 300,
+          "V_m3": 0.02,
+          "p_Pa": 124709.99999999999
+        },
+        "final": {
+          "T_K": 600,
+          "V_m3": 0.005,
+          "p_Pa": 997679.9999999999
+        },
+        "W_J": -4988.4,
+        "delta_U_J": 3741.3,
+        "Q_J": -1247.0999999999995,
+        "C_V_JK": 12.471,
+        "C_p_JK": 20.785,
+        "cv_m_JmolK": 12.471,
+        "cp_m_JmolK": 20.785,
+        "C_caminho_JK": -4.157,
+        "delta_S_JK": -2.881412829587692,
+        "Q_sobre_T1_JK": -4.156999999999998
+      },
+      "integrabilidade": {
+        "kappa": 0.19999999999999998,
+        "observacao_ciclo_esquerdo_Jmol": -13.862943611198906,
+        "ciclo_largo_quadratura_Jmol": -1.0516032489249483e-12,
+        "ciclo_esquerdo_quadratura_Jmol": -13.862943611199654,
+        "alpha_ciclo_quadratura_Jmol": -3.126388037344441e-13,
+        "parcial_a_volume_molar_constante_JmolK": 0.4620981203732969,
+        "derivada_caminho_nu_igual_theta_JmolK": 1.2954314537066303,
+        "delta_potencial_11_a_22_Jmol": 257.9441541679836,
+        "caminhos_abertos": {
+          "alpha_HV_Jmol": 257.9441541679831,
+          "alpha_VH_Jmol": 257.9441541679834,
+          "beta_HV_Jmol": 257.9441541679831,
+          "beta_VH_Jmol": 271.80709777918224
+        }
+      },
+      "quadratura": {
+        "W_compressao_J": -4988.400000000106
+      },
+      "testes": [
+        "pressão mantida",
+        "resíduo de energia do trecho",
+        "volume mantido",
+        "resíduo de energia do trecho",
+        "mesma variação de propriedade I",
+        "temperatura mantida",
+        "resíduo de energia do trecho",
+        "volume mantido",
+        "resíduo de energia do trecho",
+        "mesma variação de propriedade II",
+        "volume mantido",
+        "resíduo de energia do trecho",
+        "temperatura mantida",
+        "resíduo de energia do trecho",
+        "mesma variação de propriedade III",
+        "pressão mantida",
+        "resíduo de energia do trecho",
+        "temperatura mantida",
+        "resíduo de energia do trecho",
+        "mesma variação de propriedade IV",
+        "temperatura mantida",
+        "resíduo de energia do trecho",
+        "pressão mantida",
+        "resíduo de energia do trecho",
+        "mesma variação de propriedade V",
+        "volume mantido",
+        "resíduo de energia do trecho",
+        "pressão mantida",
+        "resíduo de energia do trecho",
+        "mesma variação de propriedade rejeitada",
+        "cinco construções permitidas e uma rejeitada",
+        "ciclo fecha energia",
+        "ciclo volta à propriedade",
+        "calor por derivada de caminho",
+        "entropia por integral ao longo do caminho",
+        "constante do caminho",
+        "compressão aquece e perde calor",
+        "quadratura de trabalho da compressão",
+        "ensaio esquerdo identifica parâmetro",
+        "orientações dos ensaios declaradas",
+        "ciclo largo reproduz observação",
+        "ciclo largo por expressão analítica",
+        "ciclo esquerdo reproduz observação",
+        "alpha fecha ciclo",
+        "kappa não nulo refuta exatidão",
+        "parcial difere da derivada de caminho",
+        "potencial coincide com caminho HV",
+        "potencial coincide com caminho VH",
+        "diferença dos caminhos reproduz ciclo"
+      ]
+    },
+    "alcance": "Estrutura, preservação e consistência numérica. Não substitui auditoria científica/pedagógica nem piloto."
+  },
+  "validador_reexecutado": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 11,
+    "links_locais_verificados": 1062,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "calculo_reexecutado": {
+    "versao": "1.0",
+    "caminhos": [
+      {
+        "id": "I",
+        "trechos": [
+          {
+            "tipo": "isobarico",
+            "inicial": {
+              "T_K": 300,
+              "V_m3": 0.01,
+              "p_Pa": 249419.99999999997
+            },
+            "final": {
+              "T_K": 600,
+              "V_m3": 0.02,
+              "p_Pa": 249419.99999999997
+            },
+            "W_J": 2494.2,
+            "delta_U_J": 3741.3,
+            "Q_J": 6235.5,
+            "admissivel": true
+          },
+          {
+            "tipo": "isocorico",
+            "inicial": {
+              "T_K": 600,
+              "V_m3": 0.02,
+              "p_Pa": 249419.99999999997
+            },
+            "final": {
+              "T_K": 450,
+              "V_m3": 0.02,
+              "p_Pa": 187065
+            },
+            "W_J": 0,
+            "delta_U_J": -1870.65,
+            "Q_J": -1870.65,
+            "admissivel": true
+          }
+        ],
+        "W_J": 2494.2,
+        "Q_J": 4364.85,
+        "delta_U_J": 1870.65,
+        "admissivel": true
+      },
+      {
+        "id": "II",
+        "trechos": [
+          {
+            "tipo": "isotermico",
+            "inicial": {
+              "T_K": 300,
+              "V_m3": 0.01,
+              "p_Pa": 249419.99999999997
+            },
+            "final": {
+              "T_K": 300,
+              "V_m3": 0.02,
+              "p_Pa": 124709.99999999999
+            },
+            "W_J": 1728.8476977526154,
+            "delta_U_J": 0,
+            "Q_J": 1728.8476977526154,
+            "admissivel": true
+          },
+          {
+            "tipo": "isocorico",
+            "inicial": {
+              "T_K": 300,
+              "V_m3": 0.02,
+              "p_Pa": 124709.99999999999
+            },
+            "final": {
+              "T_K": 450,
+              "V_m3": 0.02,
+              "p_Pa": 187065
+            },
+            "W_J": 0,
+            "delta_U_J": 1870.65,
+            "Q_J": 1870.65,
+            "admissivel": true
+          }
+        ],
+        "W_J": 1728.8476977526154,
+        "Q_J": 3599.4976977526157,
+        "delta_U_J": 1870.65,
+        "admissivel": true
+      },
+      {
+        "id": "III",
+        "trechos": [
+          {
+            "tipo": "isocorico",
+            "inicial": {
+              "T_K": 300,
+              "V_m3": 0.01,
+              "p_Pa": 249419.99999999997
+            },
+            "final": {
+              "T_K": 450,
+              "V_m3": 0.01,
+              "p_Pa": 374130
+            },
+            "W_J": 0,
+            "delta_U_J": 1870.65,
+            "Q_J": 1870.65,
+            "admissivel": true
+          },
+          {
+            "tipo": "isotermico",
+            "inicial": {
+              "T_K": 450,
+              "V_m3": 0.01,
+              "p_Pa": 374130
+            },
+            "final": {
+              "T_K": 450,
+              "V_m3": 0.02,
+              "p_Pa": 187065
+            },
+            "W_J": 2593.2715466289233,
+            "delta_U_J": 0,
+            "Q_J": 2593.2715466289233,
+            "admissivel": true
+          }
+        ],
+        "W_J": 2593.2715466289233,
+        "Q_J": 4463.921546628923,
+        "delta_U_J": 1870.65,
+        "admissivel": true
+      },
+      {
+        "id": "IV",
+        "trechos": [
+          {
+            "tipo": "isobarico",
+            "inicial": {
+              "T_K": 300,
+              "V_m3": 0.01,
+              "p_Pa": 249419.99999999997
+            },
+            "final": {
+              "T_K": 450,
+              "V_m3": 0.015000000000000003,
+              "p_Pa": 249419.99999999997
+            },
+            "W_J": 1247.1000000000006,
+            "delta_U_J": 1870.65,
+            "Q_J": 3117.750000000001,
+            "admissivel": true
+          },
+          {
+            "tipo": "isotermico",
+            "inicial": {
+              "T_K": 450,
+              "V_m3": 0.015000000000000003,
+              "p_Pa": 249419.99999999997
+            },
+            "final": {
+              "T_K": 450,
+              "V_m3": 0.02,
+              "p_Pa": 187065
+            },
+            "W_J": 1076.304937663847,
+            "delta_U_J": 0,
+            "Q_J": 1076.304937663847,
+            "admissivel": true
+          }
+        ],
+        "W_J": 2323.4049376638477,
+        "Q_J": 4194.054937663848,
+        "delta_U_J": 1870.65,
+        "admissivel": true
+      },
+      {
+        "id": "V",
+        "trechos": [
+          {
+            "tipo": "isotermico",
+            "inicial": {
+              "T_K": 300,
+              "V_m3": 0.01,
+              "p_Pa": 249419.99999999997
+            },
+            "final": {
+              "T_K": 300,
+              "V_m3": 0.013333333333333332,
+              "p_Pa": 187065
+            },
+            "W_J": 717.5366251092317,
+            "delta_U_J": 0,
+            "Q_J": 717.5366251092317,
+            "admissivel": true
+          },
+          {
+            "tipo": "isobarico",
+            "inicial": {
+              "T_K": 300,
+              "V_m3": 0.013333333333333332,
+              "p_Pa": 187065
+            },
+            "final": {
+              "T_K": 450,
+              "V_m3": 0.02,
+              "p_Pa": 187065
+            },
+            "W_J": 1247.1000000000001,
+            "delta_U_J": 1870.65,
+            "Q_J": 3117.75,
+            "admissivel": true
+          }
+        ],
+        "W_J": 1964.6366251092318,
+        "Q_J": 3835.286625109232,
+        "delta_U_J": 1870.65,
+        "admissivel": true
+      },
+      {
+        "id": "rejeitada",
+        "trechos": [
+          {
+            "tipo": "isocorico",
+            "inicial": {
+              "T_K": 300,
+              "V_m3": 0.01,
+              "p_Pa": 249419.99999999997
+            },
+            "final": {
+              "T_K": 225,
+              "V_m3": 0.01,
+              "p_Pa": 187065
+            },
+            "W_J": 0,
+            "delta_U_J": -935.325,
+            "Q_J": -935.325,
+            "admissivel": false
+          },
+          {
+            "tipo": "isobarico",
+            "inicial": {
+              "T_K": 225,
+              "V_m3": 0.01,
+              "p_Pa": 187065
+            },
+            "final": {
+              "T_K": 450,
+              "V_m3": 0.02,
+              "p_Pa": 187065
+            },
+            "W_J": 1870.65,
+            "delta_U_J": 2805.975,
+            "Q_J": 4676.625,
+            "admissivel": false
+          }
+        ],
+        "W_J": 1870.65,
+        "Q_J": 3741.3,
+        "delta_U_J": 1870.6499999999999,
+        "admissivel": false
+      }
+    ],
+    "ciclo": {
+      "W_J": 765.3523022473844,
+      "Q_J": 765.3523022473846,
+      "delta_U_J": 0
+    },
+    "calor_caminho": {
+      "inicial": {
+        "T_K": 300,
+        "V_m3": 0.02,
+        "p_Pa": 124709.99999999999
+      },
+      "final": {
+        "T_K": 600,
+        "V_m3": 0.005,
+        "p_Pa": 997679.9999999999
+      },
+      "W_J": -4988.4,
+      "delta_U_J": 3741.3,
+      "Q_J": -1247.0999999999995,
+      "C_V_JK": 12.471,
+      "C_p_JK": 20.785,
+      "cv_m_JmolK": 12.471,
+      "cp_m_JmolK": 20.785,
+      "C_caminho_JK": -4.157,
+      "delta_S_JK": -2.881412829587692,
+      "Q_sobre_T1_JK": -4.156999999999998
+    },
+    "integrabilidade": {
+      "kappa": 0.19999999999999998,
+      "observacao_ciclo_esquerdo_Jmol": -13.862943611198906,
+      "ciclo_largo_quadratura_Jmol": -1.0516032489249483e-12,
+      "ciclo_esquerdo_quadratura_Jmol": -13.862943611199654,
+      "alpha_ciclo_quadratura_Jmol": -3.126388037344441e-13,
+      "parcial_a_volume_molar_constante_JmolK": 0.4620981203732969,
+      "derivada_caminho_nu_igual_theta_JmolK": 1.2954314537066303,
+      "delta_potencial_11_a_22_Jmol": 257.9441541679836,
+      "caminhos_abertos": {
+        "alpha_HV_Jmol": 257.9441541679831,
+        "alpha_VH_Jmol": 257.9441541679834,
+        "beta_HV_Jmol": 257.9441541679831,
+        "beta_VH_Jmol": 271.80709777918224
+      }
+    },
+    "quadratura": {
+      "W_compressao_J": -4988.400000000106
+    },
+    "testes": [
+      "pressão mantida",
+      "resíduo de energia do trecho",
+      "volume mantido",
+      "resíduo de energia do trecho",
+      "mesma variação de propriedade I",
+      "temperatura mantida",
+      "resíduo de energia do trecho",
+      "volume mantido",
+      "resíduo de energia do trecho",
+      "mesma variação de propriedade II",
+      "volume mantido",
+      "resíduo de energia do trecho",
+      "temperatura mantida",
+      "resíduo de energia do trecho",
+      "mesma variação de propriedade III",
+      "pressão mantida",
+      "resíduo de energia do trecho",
+      "temperatura mantida",
+      "resíduo de energia do trecho",
+      "mesma variação de propriedade IV",
+      "temperatura mantida",
+      "resíduo de energia do trecho",
+      "pressão mantida",
+      "resíduo de energia do trecho",
+      "mesma variação de propriedade V",
+      "volume mantido",
+      "resíduo de energia do trecho",
+      "pressão mantida",
+      "resíduo de energia do trecho",
+      "mesma variação de propriedade rejeitada",
+      "cinco construções permitidas e uma rejeitada",
+      "ciclo fecha energia",
+      "ciclo volta à propriedade",
+      "calor por derivada de caminho",
+      "entropia por integral ao longo do caminho",
+      "constante do caminho",
+      "compressão aquece e perde calor",
+      "quadratura de trabalho da compressão",
+      "ensaio esquerdo identifica parâmetro",
+      "orientações dos ensaios declaradas",
+      "ciclo largo reproduz observação",
+      "ciclo largo por expressão analítica",
+      "ciclo esquerdo reproduz observação",
+      "alpha fecha ciclo",
+      "kappa não nulo refuta exatidão",
+      "parcial difere da derivada de caminho",
+      "potencial coincide com caminho HV",
+      "potencial coincide com caminho VH",
+      "diferença dos caminhos reproduz ciclo"
+    ]
+  },
+  "saidas_identicas": {
+    "documental": true,
+    "validacao": true,
+    "calculo": true
+  },
+  "hashes_codigos": {
+    "verificador_documental": "ff9d21e594fa545d88af2f2a1964d1fc514e921974de388f058f5e3226ad8354",
+    "calculo": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+    "manifesto": "c2360f056cdf9144133626210c0fc81b019888223a3939e386c3ec7495a19b38"
+  },
+  "limites": [
+    "Não é revisão científica das derivações, dos três problemas ou dos níveis estimados.",
+    "Executou exports dos módulos em Node REPL; não executou Node CLI nem navegador.",
+    "Não repetiu 56 testes BAN-02 de infraestrutura intacta.",
+    "As 49 verificações reproduzem o pacote fornecido; não certificam biblioteca genérica nem o domínio pedagógico.",
+    "Não revalidou fontes externas, experiência móvel, leitor de tela ou piloto."
+  ]
+}

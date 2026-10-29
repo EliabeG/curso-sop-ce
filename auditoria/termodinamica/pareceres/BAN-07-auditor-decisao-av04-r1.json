@@ -1,0 +1,116 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "tipo": "DECISAO_PONTUAL_AV04_E",
+  "data": "2026-10-28",
+  "revisor": {
+    "agente": "/root/auditor_ban07_final",
+    "natureza": "agente automatizado independente; sucessor do Auditor anterior",
+    "autor_corretor": false
+  },
+  "escopo": "Somente o apontamento AV04-E, confrontado com comando, cinco alternativas, comentário e base ligada. Não constitui parecer global de BAN-07.",
+  "produto": {
+    "versao": "BAN-07 r1 congelada",
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "id_artigo": "av-e1-04",
+    "sha256_artigo": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead"
+  },
+  "atribuicao": {
+    "apoio": {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av01-05-r1.json",
+      "sha256": "213a688f21a8ebdf0933c978cd374190ad496418903eca93c2bd9bc018ac7d59",
+      "revisor": "/root/auditor_av",
+      "alcance_lido": "Somente prova completa AV04 e metadados pertinentes",
+      "achado": "AV04-E: plausibilidade do distrator temperatura igual a zero não demonstrada"
+    },
+    "decisao_anterior": {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-heranca-fun01-r1.json",
+      "sha256": "9614b1c1abb3837fc81e5dbb6bde9311ce22d5c54b874ce7d4cb8fef099a80b6",
+      "revisor": "/root/auditor_ban07",
+      "campo_lido": "decisao_av04; metadados e limites pertinentes",
+      "decisao": "CONFIRMADO_AJUSTE_OBRIGATORIO_AV04_E",
+      "atribuicao": "A revisão e a decisão ali registradas pertencem ao Auditor anterior. As quatro heranças FUN-01 não foram reexaminadas nesta peça."
+    }
+  },
+  "verificacao_propria": [
+    "Li protocolo, critério BAN-07 e regra comum pertinente, entrega BAN-07 r1 e estado operacional relevante. O protocolo exige revisão independente e bloqueia outro ID até APROVADO.",
+    "Usei parseHtml e sha256 do validador canônico para localizar univocamente AV04 e conferir hashes do HTML e do artigo; ambos coincidem com a versão examinada pelas fontes citadas.",
+    "Li comando, cinco alternativas e comentário atuais, além do trecho ligado #base-medidas sobre rho=m/V, v=1/rho e limites da aproximação. Não li outros artigos do banco para esta decisão.",
+    "Confrontei a prova AV04 do apoio e a decisão preservada do Auditor anterior. A análise própria abaixo confirma seu fundamento científico e pedagógico; não converte os demais registros dessas peças em execução minha.",
+    "Revisão aberta: chave, comentário e decisões antecedentes eram conhecidos. Não se alega derivação cega, teste com alunos ou validação empírica."
+  ],
+  "comando": "Em estimativa de bombeamento de água líquida longe da região crítica e em faixa moderada de pressão e temperatura, identificar o significado da hipótese de líquido incompressível.",
+  "derivacao_propria": {
+    "definicao": "Aproxima-se v=1/rho por constante finita e positiva na faixa operacional declarada. Desprezar a variação de v não significa anular v nem impor um valor de temperatura.",
+    "limites": "Pequena compressibilidade refere-se à resposta de v à pressão; a aproximação também ao longo da faixa de temperatura é delimitada pelo próprio comando e pela base. Não há hipótese de regime permanente, sistema fechado, pressão constante ou isotermia obrigatória.",
+    "chave": "D",
+    "unicidade": "Somente D expressa a aproximação pedida. A, B, C e E não são consequências necessárias do modelo. Item conceitual sem valores a arredondar; não há equivalência numérica de alternativas."
+  },
+  "opcoes": [
+    {
+      "letra": "A",
+      "texto": "a massa do líquido não pode variar em um volume de controle.",
+      "correta": false,
+      "justificativa": "Durante enchimento de um tanque, o volume ocupado e a massa armazenada de líquido podem aumentar com rho aproximadamente constante. Em volume de controle fixo totalmente cheio de uma fase incompressível, a massa pode ser constante, mas isso exige condições de ocupação/fronteira que não definem o material.",
+      "mecanismo_teorico": "Confusão entre propriedade do material e sistema fechado ou regime permanente; plausível. Nenhuma nova obrigação é aberta para A nesta decisão."
+    },
+    {
+      "letra": "B",
+      "texto": "a pressão não pode variar ao atravessar uma bomba.",
+      "correta": false,
+      "justificativa": "A bomba pode elevar a pressão com mudança desprezível de v. A aproximação de trabalho mecânico por unidade de massa v Delta p admite Delta p positivo.",
+      "mecanismo_teorico": "Confusão entre incompressibilidade e pressão constante; plausível."
+    },
+    {
+      "letra": "C",
+      "texto": "o volume específico é nulo.",
+      "correta": false,
+      "justificativa": "v=1/rho permanece finito e positivo. É sua variação que se despreza, não a grandeza.",
+      "mecanismo_teorico": "Trocar variação nula pelo valor nulo da mesma grandeza; vínculo direto com a definição, teoricamente plausível."
+    },
+    {
+      "letra": "D",
+      "texto": "o volume específico pode ser tratado como aproximadamente constante na faixa analisada.",
+      "correta": true,
+      "justificativa": "É a definição operacional da aproximação delimitada pelo comando.",
+      "mecanismo_teorico": null
+    },
+    {
+      "letra": "E",
+      "texto": "a temperatura do líquido deve ser igual a zero.",
+      "correta": false,
+      "justificativa": "A hipótese não seleciona uma temperatura especial. Água líquida em temperaturas operacionais diferentes de zero pode satisfazer a aproximação; não é necessário discutir impossibilidade de água líquida a zero Celsius para refutar a necessidade.",
+      "mecanismo_teorico": "Não demonstrado. A confusão reconhecível com isotermia produziria Delta T=0; a opção ainda exige substituir variação por valor de T e escolher um zero sem escala, sem relação ou operação local que motive essa passagem."
+    }
+  ],
+  "criterio": {
+    "fonte": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md, BAN-07, seção 8",
+    "exigencia": "Conferir dados suficientes, consistência física, comando, unidades, restrições e resposta única, incluindo distratores plausíveis baseados em erros reais; demonstração do gabarito e justificativa dos distratores.",
+    "regra_comum_pertinente": "Seção 3.2: registrar responsável, revisor, data, arquivos, evidência e pendências. O protocolo afasta aplicação artificial de requisitos de conteúdo curricular novo à correção mecânica de alternativas.",
+    "avaliacao": "Comando e faixa fornecem contexto suficiente e D é única. A falsidade de E e a refutação do comentário são corretas, mas não demonstram sua plausibilidade. O requisito de distrator plausível permanece não atendido em E.",
+    "natureza_da_plausibilidade": "Julgamento teórico de mecanismo de erro reconhecível. Não se exige piloto ou psicometria e não se afirma que nenhum estudante escolheria E. Erros combinados não são proibidos; neste caso falta uma cadeia específica sustentada pelo conteúdo."
+  },
+  "confronto_da_sugestao": {
+    "direcao": "E pode exigir que a temperatura permaneça necessariamente constante durante o bombeamento, com comentário que distinga incompressibilidade de isotermia.",
+    "juizo": "Direção cientificamente admissível e ligada a confusão conceitual concreta. A palavra necessariamente é decisiva: uma temperatura constante pode ocorrer, mas não é imposta pelo modelo. Formulação de mera possibilidade poderia tornar E também verdadeira.",
+    "contramodelo": "No modelo v=v0 e calor específico c positivo, dh=c dT+v0 dp. Uma bomba adiabática em regime permanente, desprezando variações cinética e potencial, pode receber trabalho específico w_in=v0 Delta p+epsilon, epsilon positivo por irreversibilidade. Então Delta T=epsilon/c positivo, tão pequeno quanto necessário à faixa, embora v seja constante. O comando não impõe reversibilidade/isentropia. Isso refuta isotermia necessária sem alterar D.",
+    "limite": "É análise de direção de correção, sem implementar ou aprovar antecipadamente uma redação futura."
+  },
+  "decisao": "CONFIRMADO_AJUSTE_OBRIGATORIO_AV04_E",
+  "veredito_pontual": "AJUSTES_OBRIGATORIOS",
+  "fundamento": "Confirmo a decisão preservada de /root/auditor_ban07 e o achado de /root/auditor_av. A chave D permanece correta e única; a versão atual de E exige uma condição arbitrária em relação ao modelo, sem mecanismo suficientemente sustentado. Ser falsa não basta para atender BAN-07.",
+  "obrigacoes_objetivas": [
+    "Substituir E por alternativa falsa apoiada em confusão conceitual identificável ligada ao modelo, preservando as condições do comando e a chave única D.",
+    "Sincronizar o comentário de E para explicar o erro e sua distinção da hipótese de v aproximadamente constante; não basta negar o novo texto.",
+    "Reapresentar artigo com novo SHA-256 e demonstração das cinco opções, incluindo a plausibilidade teórica do novo distrator e a unicidade de D. A redação final será examinada na nova versão."
+  ],
+  "limites": [
+    "Somente este JSON foi criado. Produto r1, controle e pareceres existentes não foram editados.",
+    "Decisão restrita a AV04-E; não reabre as heranças FUN-01 nem antecipa o restante do banco.",
+    "Sem revisão humana, aplicação com estudantes, teste de navegador ou certificação externa nesta peça.",
+    "Não adiciona um segundo registro de cobertura para AV04 já examinado pelo apoio.",
+    "Não aprova BAN-07, não declara E1 avançado e não libera o próximo ID."
+  ],
+  "libera_proximo_id": false
+}

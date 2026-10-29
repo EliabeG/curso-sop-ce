@@ -1,0 +1,1618 @@
+{
+  "id": "FON-02",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "correcao": "R1-A",
+  "base": {
+    "arquivo": "antes/modulos/e1-termodinamica.html",
+    "sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe"
+  },
+  "regra": "Âncoras descendentes dos80CR na base anterior, fora de .cr-fontes, com href # ou http(s). Ordem e ocorrências preservadas, sem deduplicação; rótulo é o texto interno da própria âncora, entidades HTML decodificadas e espaços normalizados. Fontes novas da r1 continuam separadas.",
+  "matriz": {
+    "sha256_r1": "ffeab0e9324624579772588dd010d2d70ad256e025290d06a0efb474fd5f9170",
+    "sha256_r2": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1",
+    "metadados": "Todos os campos fora dos80arrays são preservados, inclusive rodada1 da matriz científica. A reapresentação documental rodada2 é identificada nos arquivos/manifesto/delta/entrega."
+  },
+  "resumo": {
+    "registros": 80,
+    "ocorrencias_antes": 80,
+    "ocorrencias_depois": 158,
+    "internas": 141,
+    "externas": 17,
+    "registros_com_omissoes": 50
+  },
+  "alteracoes": [
+    {
+      "id": "cr-e1-01",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-propriedades",
+          "rotulo": "Estado, processo e propriedades · Bagagem: unidades, densidade e líquido quase incompressível\nFase de uma substância é definida como uma quantidade de matéria totalmente homogênea. Quando mais de uma fase estão presentes, elas se acham separadas entre si por meio dos contornos das fases; em cada fase, a substância pode existir em vários estados, descritos por certas propriedades macroscópicas observáveis, como temperatura, pressão e densidade. A respeito desse assunto, julgue os itens seguintes.51 As propriedades termodinâmicas das classes intensivas são independentes da massa.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nDivida uma amostra homogênea em duas partes iguais. Cada parte terá metade da massa, mas conservará a temperatura, a pressão e a massa específica. Essas são propriedades intensivas. Volume total e energia interna total, por sua vez, acompanham o tamanho da amostra e são extensivas.Leve para a prova: Antes de usar uma propriedade, identifique se ela é total ou por unidade de massa.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 2)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-propriedades",
+          "rotulo": "Estado, processo e propriedades"
+        },
+        {
+          "alvo": "#base-medidas",
+          "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-02",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-propriedades",
+          "rotulo": "Estado, processo e propriedades · Do desenho ao balanço: sinais, energia final e unidades\nFase de uma substância é definida como uma quantidade de matéria totalmente homogênea. Quando mais de uma fase estão presentes, elas se acham separadas entre si por meio dos contornos das fases; em cada fase, a substância pode existir em vários estados, descritos por certas propriedades macroscópicas observáveis, como temperatura, pressão e densidade. A respeito desse assunto, julgue os itens seguintes.52 Em um dado estado da substância, cada uma das suas propriedades pode ter mais de um valor definido, dependendo da forma pela qual a substância atingiu o estado considerado.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nUma propriedade de estado tem valor determinado pelo estado atual. Se dois processos terminam no mesmo estado de equilíbrio, a energia interna final é a mesma. Calor e trabalho dependem do caminho, mas não são propriedades armazenadas no sistema.Leve para a prova: Não confunda a energia que o sistema possui com a energia que cruza sua fronteira.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 2)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-propriedades",
+          "rotulo": "Estado, processo e propriedades"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-03",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-molecular",
+          "rotulo": "Bagagem: partículas, temperatura e o modelo cinético\nCom relação aos materiais gasosos e líquidos, julgue os itens seguintes.51 Apenas as partículas de materiais gasosos contêm energia cinética, razão por que se diferenciam das partículas de materiais líquidos.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nMoléculas de líquidos também se movimentam e possuem energia cinética. Nos sólidos, há vibrações em torno das posições de equilíbrio. O estado físico muda as interações e a liberdade de movimento; ele não elimina toda a energia cinética microscópica.Leve para a prova: Temperatura e movimento microscópico estão presentes nos diferentes estados físicos.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 6)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-molecular",
+          "rotulo": "Bagagem: partículas, temperatura e o modelo cinético"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-04",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-medidas",
+          "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível\nEstudo crítico — fora da pontuação (BAN-10, 27/10/2026). A chave oficial C representa a comparação qualitativa usual para líquidos. O texto não define a faixa nem como comparar perturbações de temperatura e pressão; por isso esta pergunta será estudada criticamente, sem entrar no placar. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nQuanto às propriedades termodinâmicas e às relações de Maxwell, julgue os próximos itens.68 O volume específico de um fluido no estado líquido é mais sensível à variação da temperatura do que à variação de pressão.\nRoteiro autoral de estudo críticoIdentifique a condição omitida na comparação. É possível ordenar diretamente uma derivada por kelvin e outra por pascal? Explique como formular uma comparação física verificável.Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n C. Certo E. Errado\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: C — Certo.\nResolução de referência sob as hipóteses discutidas abaixo: Na leitura usual de líquido quase incompressível, líquidos apresentam pequena compressibilidade: é preciso grande variação de pressão para alterar significativamente seu volume. A dilatação térmica costuma ser mais relevante. É uma comparação de comportamento usual, não uma regra independente da faixa de pressão e temperatura.Leve para a prova: A aproximação de líquido incompressível precisa ser compatível com as condições do problema.\nInterpretação técnica autoral — BAN-10Para massa fixa de líquido em uma fase, dv/v = α dT − κT dp, com α = (1/v)(∂v/∂T)p e κT = −(1/v)(∂v/∂p)T. α tem unidade K⁻¹ e κT, Pa⁻¹. Devem-se comparar efeitos como |αΔT| e |κTΔp|, na mesma faixa e com propriedades adequadas. Baixa compressibilidade não prova uma desigualdade universal entre esses efeitos. A leitura usual da chave é plausível, mas as escalas necessárias não foram especificadas.Critério de autocorreção, sem nota: Reconhecer a leitura usual C, recusar a comparação direta entre dimensões diferentes e indicar estado/faixa e perturbações necessárias. Uma discordância fundamentada não recebe erro no placar.Fundamentação: H. DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 7)\nConferência documental BAN-10: Prova local · item 68 · PDF p. 1 · Gabarito local · C · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-medidas",
+          "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+        },
+        {
+          "alvo": "https://faculty.washington.edu/gdrobny/v5-screen.pdf#page=163",
+          "rotulo": "H. DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-05",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-medidas",
+          "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível\nNo que se refere à instrumentação e à metrologia, julgue os itens subsequentes.59 O Sistema Internacional de Unidades (SI) define sete unidades de base, ou unidades fundamentais, quais sejam: metro, minuto, ampere, grau Celsius, quilograma, candela e mol.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nAs unidades de base correspondentes ao tempo e à temperatura termodinâmica são segundo e kelvin. O minuto é aceito para uso com o SI, mas não é unidade de base. Celsius é muito usado em medições, mas a unidade de base de temperatura continua sendo K.Leve para a prova: Temperaturas em relações termodinâmicas de razão devem estar em kelvin.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 9)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-medidas",
+          "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-06",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Bagagem: o que mede o instrumento e como ler sua faixa\n75 Considere-se que a figura abaixo represente um esquema para correlacionar duas escalas X e Y de temperatura com a utilização de um termômetro de mercúrio que apresenta uma dilação constante à medida que a temperatura aumenta. Com base nessa hipótese, é correto concluir que a relação matemática entre as duas escalas é do tipo TX = a + bTY, em que TX e TY representam, respectivamente, as temperaturas nas escalas X e Y e a e b representam constantes.Escalas X e Y · figura recriada no caderno fornecido. Clique para ampliar.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nUma escala linear pode mudar o ponto de origem e o tamanho da unidade. O coeficiente a desloca a origem e b muda a proporção entre os intervalos. Dois pontos conhecidos determinam ambos. Exemplo: a conversão Celsius–Fahrenheit usa TF = 32 + 1,8TC.Leve para a prova: Não aplique um fator de conversão sozinho quando as origens das escalas são diferentes.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 11)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-instrumentos",
+          "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-07",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-instrumentos",
+          "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa\nCom base em conceitos de termodinâmica e noções de instrumentação, julgue os próximos itens.62 O tubo de Bourdon consiste em instrumento de medição de temperatura por dilatação de líquido que preenche o referido tubo, o qual, por sua vez, é normalmente fabricado em vidro com propriedades térmicas adequadas às variações de temperatura cobertas pelo medidor.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nO manômetro de Bourdon mede pressão. Um tubo curvo de seção apropriada se deforma quando sua pressão interna muda, movimentando o indicador. O item descreve o princípio de um termômetro de líquido em vidro e o atribui ao instrumento errado.Leve para a prova: Associe cada instrumento à grandeza medida e ao seu princípio físico.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 12)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-instrumentos",
+          "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-08",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Bagagem: o que mede o instrumento e como ler sua faixa\nCom base em conceitos de termodinâmica e noções de instrumentação, julgue os próximos itens.65 Considere um instrumento de medição de temperatura ajustado para alcance (span) de 100 oC; considere, ainda, que o limite inferior da capacidade de medida ou de transmissão desse instrumento seja de 50 oC. Nessa situação, o limite superior dessa capacidade de medida ou de transmissão é de 150 oC.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nSpan é a diferença entre o limite superior e o inferior. Logo, limite superior = 50 + 100 = 150 °C. A faixa de medição é 50 a 150 °C. Aqui se trabalha com um intervalo, por isso 100 °C de diferença equivale a 100 K de diferença.Leve para a prova: Faixa é um par de limites; alcance é a diferença entre eles.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 12)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-instrumentos",
+          "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-09",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-absolutas",
+          "rotulo": "Temperatura e pressão absolutas · Bagagem: unidades, densidade e líquido quase incompressívelEstudo crítico — fora da pontuação (BAN-10, 27/10/2026). O original e a chave E são preservados. A expressão unidade de temperatura no SI não especifica a unidade de base da temperatura termodinâmica. A leitura com essa restrição é diferente da leitura literal sobre unidades SI. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nJulgue os itens subsequentes, no que se refere ao Sistema Internacional de Unidades (SI) e às definições e unidades de parâmetros físicos.39 A unidade de medida de temperatura no SI é o grau Celsius (°C).\nRoteiro autoral de estudo críticoDiferencie temperatura termodinâmica e temperatura Celsius. Explique em qual leitura a chave E é coerente e por que isso não permite afirmar que °C esteja fora do SI.Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n C. Certo E. Errado\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: E — Errado.\nResolução de referência sob as hipóteses discutidas abaixo: O gabarito definitivo é E. A unidade de base da temperatura termodinâmica é o kelvin, símbolo K. Atenção à redação: o grau Celsius também é uma unidade SI, com nome especial para temperatura Celsius, conforme a Brochura do SI do BIPM. A interpretação de que o item se refere à unidade de base explica o gabarito, mas é uma leitura do contexto, pois a frase fornecida não explicita essa restrição. Não conclua que °C esteja fora do SI. T(K) = t(°C) + 273,15; intervalos de 1 °C e 1 K têm o mesmo tamanho.Leve para a prova: Valor de temperatura e diferença de temperatura exigem cuidados de conversão distintos.\nInterpretação técnica autoral — BAN-10A temperatura termodinâmica usa o kelvin como unidade de base. A temperatura Celsius é t = T − 273,15 K e sua unidade SI é o grau Celsius. A chave E é coerente ao restringir a frase à unidade de base da temperatura termodinâmica; a restrição não aparece expressamente no comando. O curso não atribui essa interpretação à banca como justificativa documentada.Critério de autocorreção, sem nota: Nomear as duas grandezas/unidades, localizar a restrição adicional e preservar a distinção entre chave documental e interpretação técnica.Fundamentação: BIPM, Brochura do SI, 9ª ed., v4.01 (2026), §2.3.1 e tabela 4. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 21)\nConferência documental BAN-10: Prova local · item 39 · PDF p. 1 · Gabarito local · E · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-absolutas",
+          "rotulo": "Temperatura e pressão absolutas"
+        },
+        {
+          "alvo": "#base-medidas",
+          "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+        },
+        {
+          "alvo": "https://www.bipm.org/en/publications/si-brochure",
+          "rotulo": "BIPM, Brochura do SI, 9ª ed., v4.01 (2026), §2.3.1 e tabela 4"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-10",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Bagagem: unidades, densidade e líquido quase incompressível · Estado, processo e propriedades\nJulgue os itens a seguir, relativos às caracterizações dos materiais.32 A densidade é uma propriedade intensiva que não depende da quantidade de material presente.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nA massa específica é ρ = m/V. Ao duplicar uma amostra homogênea no mesmo estado, massa e volume duplicam e sua razão permanece igual. Portanto, a propriedade não depende da quantidade total de material.Leve para a prova: Uma razão entre grandezas extensivas pode resultar em uma propriedade intensiva.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 22)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-medidas",
+          "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+        },
+        {
+          "alvo": "#base-propriedades",
+          "rotulo": "Estado, processo e propriedades"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-11",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Temperatura e pressão absolutas · Bagagem: unidades, densidade e líquido quase incompressível\n35 De acordo com o Sistema Internacional de Medidas, a unidade utilizada para se medir temperatura termodinâmica é o\nSelecione uma alternativa.\n A. grau Fahrenheit. B. kelvin. C. grau Celsius. D. watt. E. joule.\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: B.\nA unidade de base é o kelvin, escrito K. Fahrenheit e Celsius são escalas de temperatura; watt mede potência e joule mede energia. Em eficiência de Carnot e na equação de gás ideal, use valores absolutos em kelvin.Leve para a prova: Não confunda unidade de energia com unidade de temperatura.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 25)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-absolutas",
+          "rotulo": "Temperatura e pressão absolutas"
+        },
+        {
+          "alvo": "#base-medidas",
+          "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-12",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-quatro-leis",
+          "rotulo": "Bagagem: as quatro leis e o que cada uma responde\n40 Julgue os próximos itens, a respeito das leis da termodinâmica.I A primeira lei da termodinâmica determina que, quando dois corpos têm igualdade de temperatura com um terceiro corpo, todos eles têm igualdade de temperatura entre si.II A lei zero da termodinâmica determina o aspecto qualitativo de processos em sistemas físicos, ou seja, eles ocorrem apenas em um sentido, não podendo ocorrer em sentido oposto.III A segunda lei da termodinâmica fornece o aspecto quantitativo de processos de conversão de energia. É o princípio da conservação da energia e da conservação da massa, que define que a energia do universo é constante.IV A terceira lei da termodinâmica estabelece um ponto de referência absoluto para a determinação da entropia, representado pelo estado de ordem molecular máxima e mínima energia, sendo zero a entropia de uma substância cristalina pura na temperatura de zero absoluto. Assinale a opção correta.\nSelecione uma alternativa.\n A. Apenas o item II está certo. B. Apenas o item IV está certo. C. Apenas os itens I e III estão certos. D. Apenas os itens I e IV estão certos. E. Apenas os itens II e III estão certos.\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: B.\nI é falsa: equilíbrio térmico transitivo é a lei zero. II é falsa: a direção espontânea é tratada pela segunda lei. III é falsa: conservação de energia é a primeira lei. IV é verdadeira para o cristal perfeito puro na condição de referência indicada. Portanto, apenas IV está correta.Leve para a prova: Relacione lei zero a temperatura, primeira a energia, segunda a direção e terceira à referência de entropia.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 25)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-quatro-leis",
+          "rotulo": "Bagagem: as quatro leis e o que cada uma responde"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-13",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Gás ideal: estado e energia · Do desenho ao balanço: sinais, energia final e unidades\nConsiderando que um gás perfeito é definido como um gás a uma densidade suficientemente baixa, de modo que as forças intermoleculares e a energia associada possam ser desprezadas, julgue o próximo item.56 Um gás perfeito à determinada pressão tem uma energia interna específica definida, qualquer que seja a temperatura.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nPara o modelo de gás ideal, a energia interna específica u depende da temperatura. Mantendo a pressão e aquecendo o gás, seu volume pode aumentar e u também muda. Com calor específico constante, Δu = cv × ΔT, em que cv é o calor específico a volume constante.Leve para a prova: No gás ideal, procure a temperatura para avaliar a energia interna.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 5)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-gas-energia",
+          "rotulo": "Gás ideal: estado e energia"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-14",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-molecular",
+          "rotulo": "Bagagem: partículas, temperatura e o modelo cinético\nCom relação aos materiais gasosos e líquidos, julgue os itens seguintes.52 Os materiais gasosos ocupam todo o espaço disponível e têm movimento livre.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nSem uma barreira ou outro impedimento, o gás se expande para ocupar o recipiente. Suas moléculas se deslocam entre colisões. No modelo de gás ideal, seu volume é o volume disponível, pois o volume próprio das moléculas é desprezado.Leve para a prova: Gases não conservam um volume próprio como um líquido em um recipiente aberto.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 6)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-molecular",
+          "rotulo": "Bagagem: partículas, temperatura e o modelo cinético"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-15",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-molecular",
+          "rotulo": "Bagagem: partículas, temperatura e o modelo cinético\nCom relação aos materiais gasosos e líquidos, julgue os itens seguintes.53 As partículas dos materiais gasosos apresentam alta velocidade, e os choques entre elas são inelásticos.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nO modelo cinético elementar do gás ideal adota colisões elásticas entre moléculas e com as paredes: a energia cinética total é conservada nessas colisões. A velocidade elevada não implica perda de energia em cada choque.Leve para a prova: Reconheça as hipóteses do modelo antes de interpretar uma afirmação sobre gases.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 6)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-molecular",
+          "rotulo": "Bagagem: partículas, temperatura e o modelo cinético"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-16",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Ar úmido: pressão parcial e umidade relativa\nConsidere um ambiente com uma corrente de ar com umidade relativa de 50% que, após passar por um desumidificador, fica com umidade relativa igual a 40%. A respeito dessa situação hipotética, julgue os próximos itens.54 Se o desumidificador opera a pressão e temperatura constantes, a razão entre a pressão parcial do vapor de água na saída e a pressão parcial do vapor de água na entrada é igual a 1,25.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA umidade relativa é φ = pv/psat, onde pv é a pressão parcial do vapor e psat é sua pressão de saturação à temperatura do ar. Como a temperatura permanece constante, psat não muda. Logo, a razão é 0,40/0,50 = 0,80. O valor 1,25 resulta de inverter entrada e saída.Leve para a prova: Uma retirada de vapor deve diminuir sua pressão parcial nessa comparação.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 6)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-umidade",
+          "rotulo": "Ar úmido: pressão parcial e umidade relativa"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-17",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-umidade",
+          "rotulo": "Ar úmido: pressão parcial e umidade relativa\nConsidere um ambiente com uma corrente de ar com umidade relativa de 50% que, após passar por um desumidificador, fica com umidade relativa igual a 40%. A respeito dessa situação hipotética, julgue os próximos itens.55 A quantidade de vapor de água presente antes de entrar no desumidificador é igual à metade daquela que o ar consegue suportar na temperatura em questão.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nPara o mesmo volume e temperatura, a quantidade de vapor é proporcional à sua pressão parcial. Se pv é metade de psat, a quantidade também é metade da quantidade na saturação. Isso não significa que metade da massa do ar seja água. A expressão cotidiana “o ar suporta água” é apenas uma simplificação.Leve para a prova: Umidade relativa compara o vapor atual com a saturação; não é porcentagem de água na massa total.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 6)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-umidade",
+          "rotulo": "Ar úmido: pressão parcial e umidade relativa"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-18",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Gás ideal: quantidade de matéria, proporções e limites\nCom relação ao comportamento de gases ideais, julgue os itens seguintes, assumindo o valor da constante universal dos gases perfeitos como R = 0,082 atm ∙ L ∙ mol−1 ∙ K−1.69 Se a temperatura de certa quantidade de um gás ideal, inicialmente a 300 K, for elevada a 1.200 K, tanto a pressão como o volume triplicarão.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA equação pV = nRT exige p2V2/(p1V1) = T2/T1 = 4. Se pressão e volume triplicassem, o produto aumentaria nove vezes. Seria necessária temperatura final de 2.700 K, e não 1.200 K.Leve para a prova: Compare o produto pV com a temperatura absoluta, não cada grandeza isoladamente.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 8)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-19",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Gás ideal: quantidade de matéria, proporções e limites\nCom relação ao comportamento de gases ideais, julgue os itens seguintes, assumindo o valor da constante universal dos gases perfeitos como R = 0,082 atm ∙ L ∙ mol−1 ∙ K−1.70 A pressão de 3 mols de um gás, à temperatura de 330 K, que ocupa um volume de 85,4 L, é superior a 0,94 atm.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nIsole p em pV = nRT. Então p = (3 × 0,082 × 330)/85,4 = 81,18/85,4 ≈ 0,9506 atm. O resultado é maior que 0,94 atm. As unidades fornecidas já são compatíveis; converter somente o volume para m³ sem converter R produziria erro.Leve para a prova: Use as unidades de R como guia para pressão e volume.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 8)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-20",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites\nNo que se refere às escalas de temperatura, julgue os itens que se seguem.73 O zero absoluto é a temperatura na qual o volume de um gás tende ao infinito, sob a aplicação de qualquer pressão.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nPela extrapolação de pV = nRT a pressão constante e positiva, o volume tende a zero quando T tende a zero, não ao infinito. Gases reais deixam de seguir essa extrapolação e podem mudar de fase antes. O modelo ideal não descreve uma substância real até 0 K.Leve para a prova: Use o modelo dentro de sua faixa de validade física.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 13)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-21",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites\nCom relação às propriedades dos gases, julgue os itens a seguir.75 Três variáveis são especialmente usadas para descrever o comportamento dos gases: o volume, a pressão e a temperatura.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nEssas variáveis são ligadas por uma equação de estado. Para quantidade e composição fixas de gás ideal, pV = nRT. Assim, elas não são três informações independentes: duas permitem calcular a terceira, dentro do modelo.Leve para a prova: Antes de aplicar pV = nRT, confira se a quantidade de gás é constante.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 13)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-22",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Gás ideal: estado e energia · Gás ideal: quantidade de matéria, proporções e limites\nJulgue os itens que se seguem, em relação às propriedades termodinâmicas de fluidos, às equações e aos simuladores de escoamento.68 O fator de compressibilidade (Z) é usado para corrigir os desvios de comportamento de gases reais em relação ao comportamento de um gás ideal; quando Z for significativamente diferente de 1, isso implica que o gás está se comportando de maneira não ideal.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nO fator Z é definido por Z = pV/(nRT), usando pressão absoluta e temperatura absoluta. Para o gás ideal, Z = 1. Valores afastados de 1 revelam a importância das interações e do volume molecular. A equação corrigida é pV = ZnRT.Leve para a prova: Z é adimensional e permite avaliar a adequação da aproximação ideal.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 16)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-gas-energia",
+          "rotulo": "Gás ideal: estado e energia"
+        },
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-23",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites\nRecipiente fechado e isolado · figura recriada no caderno fornecido. Clique para ampliar.Tendo como referência a figura precedente, que representa um recipiente fechado e isolado termicamente, julgue os itens a seguir.71 Quando submetido a condições de alta pressão e alta temperatura, o comportamento de um gás real tende a se aproximar ao de um gás ideal.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA combinação usual favorável é baixa pressão e temperatura suficientemente alta, longe da condensação. Pressões elevadas aproximam as moléculas e tornam seu volume e suas interações mais relevantes. A temperatura alta, sozinha, não justifica a generalização do item.Leve para a prova: Ao ler uma afirmação composta, verifique todas as condições, não apenas a temperatura.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 17)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-24",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Gás ideal: quantidade de matéria, proporções e limites · Temperatura e pressão absolutasEstudo crítico — fora da pontuação (BAN-10, 27/10/2026). A frase oficial compara pressões de substâncias diferentes. O quociente entre temperaturas somente resolve outra leitura, em que o ponto triplo é uma referência térmica para a mesma amostra gasosa. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nEm relação à termodinâmica, julgue os itens seguintes.52 O valor da razão entre a pressão de um gás ideal, mantido em volume constante no seu ponto de vapor de 100 °C, e a pressão da água em seu ponto triplo, que ocorre a 0,01 °C, é igual a 1.\nRoteiro autoral de estudo críticoEscreva a razão pedida na leitura literal e identifique o dado ausente. Depois declare explicitamente a hipótese que permite usar 373,15/273,16.Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n C. Certo E. Errado\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: E — Errado.\nResolução de referência sob as hipóteses discutidas abaixo: O gabarito definitivo é E. Na interpretação usual de um termômetro de gás, compare a pressão do mesmo gás, com massa e volume constantes, nos dois pontos de temperatura: p2/p1 = 373,15/273,16 ≈ 1,366, diferente de 1. Essa conta pressupõe que o ponto triplo da água seja somente a referência térmica. Lida literalmente, a redação compara pressão de gás com pressão da água e não fornece dados suficientes para obter essa razão; a equação do gás ideal não autoriza substituir uma pressão pela outra.Leve para a prova: O ponto fixo calibra a temperatura; a equação de estado usa a pressão do gás estudado.\nInterpretação técnica autoral — BAN-10Na leitura literal, pgás/págua = (nR·373,15/V)/págua: falta n/V, mesmo se a pressão da água no ponto triplo fosse conhecida. O número 1 não pode ser julgado pela razão de temperaturas de substâncias diferentes. Suplemento autoral: se forem pressões da mesma amostra ideal, com n e V constantes, em equilíbrio térmico a 373,15 K e 273,16 K, então p₂/p₁ ≈ 1,366. Essa é uma leitura condicionada compatível com E, não uma emenda silenciosa ao original nem uma definição atual do kelvin.Critério de autocorreção, sem nota: Apontar n/V ausente na leitura literal e distinguir a pressão da água da pressão do gás termométrico; só aplicar a razão térmica após declarar mesma amostra e volume.Fundamentação: OpenStax, University Physics 2, §2.1, equação 2.2. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 29)\nConferência documental BAN-10: Prova local · item 52 · PDF p. 1 · Gabarito local · E · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        },
+        {
+          "alvo": "#base-absolutas",
+          "rotulo": "Temperatura e pressão absolutas"
+        },
+        {
+          "alvo": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "rotulo": "OpenStax, University Physics 2, §2.1, equação 2.2"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-25",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Gás ideal: quantidade de matéria, proporções e limites\n33 Como em um volume de controle fechado não há alteração do número de mols de um determinado gás, as transformações sofridas por um gás ideal serão dependentes de pressão, volume do recipiente e de sua temperatura. Considere um caso em que, a partir de uma dada condição inicial, a pressão do gás seja duplicada e o volume do recipiente aumentado em 50%. Nessas condições, em relação aos valores iniciais, a temperatura do gás\nSelecione uma alternativa.\n A. reduz 50%. B. permanece inalterada. C. aumenta 50%. D. aumenta 200%. E. aumenta 300%.\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: D.\nA razão é T2/T1 = (p2/p1)(V2/V1) = 2 × 1,5 = 3. A temperatura final é três vezes a inicial, mas o aumento é (3 − 1) × 100% = 200%. O cálculo é feito em kelvin; não se aplica a um percentual de temperatura Celsius.Leve para a prova: Valor final de 300% do inicial corresponde a aumento de 200%.\n\nProva original · p. 8 · Gabarito definitivo · Caderno fornecido (questão na p. 27)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-26",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Do desenho ao balanço: sinais, energia final e unidades\nTanque e misturador · figura recriada no caderno fornecido. Clique para ampliar.A figura precedente mostra um tanque industrial utilizado para o armazenamento de um fluido, que é agitado por um misturador. Considerando o tanque e o fluido como um sistema, julgue o item a seguir.53 Se o calor transferido do tanque é de 400 kJ e o trabalho realizado pelo misturador é de 1.400 kcal, então a variação de energia interna do sistema é superior a 5.500 kcal.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nAdote calor positivo para dentro e trabalho positivo realizado pelo sistema. O agitador fornece trabalho, portanto W = −1.400 kcal. Usando 1 kcal ≈ 4,184 kJ: Q ≈ −95,6 kcal. Assim, ΔU = Q − W ≈ −95,6 + 1.400 = 1.304,4 kcal. Há aumento, mas muito inferior ao valor proposto.Leve para a prova: Converta as unidades antes de somar calor e trabalho.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 3)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-27",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-primeira-lei",
+          "rotulo": "Declare a convenção de sinais · Gás ideal: estado e energia\nAs leis fundamentais da termodinâmica regem o modo como o calor se transforma em trabalho, e vice-versa. De acordo com esse princípio e considerando que 1 cal = 4,2 J, julgue os itens que se seguem.64 Um gás tem sua temperatura aumentada ao sofrer uma compressão adiabática.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nNo modelo de compressão considerado, sem perda de calor nem mudanças relevantes de energia cinética ou potencial, o trabalho fornecido fica como aumento de energia interna. Para um gás ideal, elevar a energia interna eleva a temperatura. É o aquecimento percebido em uma bomba manual ao comprimir ar.Leve para a prova: Adiabático significa sem transferência de calor; a temperatura ainda pode mudar.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 7)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-primeira-lei",
+          "rotulo": "Declare a convenção de sinais"
+        },
+        {
+          "alvo": "#base-gas-energia",
+          "rotulo": "Gás ideal: estado e energia"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-28",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Do desenho ao balanço: sinais, energia final e unidades · Declare a convenção de sinais\nAs leis fundamentais da termodinâmica regem o modo como o calor se transforma em trabalho, e vice-versa. De acordo com esse princípio e considerando que 1 cal = 4,2 J, julgue os itens que se seguem.65 Considerando-se que a energia interna do sistema antes de receber calor era Ui = 100 J, se, ao sofrer uma transformação, um gás ideal absorve 200 cal de energia na forma de calor e, ao expandir-se, realiza um trabalho de 350 J, então a energia do sistema após essa transformação é de 490 J.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nPrimeiro converta o calor: Q = 200 × 4,2 = 840 J. Pela primeira lei, ΔU = Q − W = 840 − 350 = 490 J. Esse número é a variação. A energia final é Uf = Ui + ΔU = 100 + 490 = 590 J.Leve para a prova: Confira se a pergunta pede ΔU ou a energia final Uf.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 7)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        },
+        {
+          "alvo": "#base-primeira-lei",
+          "rotulo": "Declare a convenção de sinais"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-29",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Trabalho de fronteira · Do desenho ao balanço: sinais, energia final e unidades\nConforme as leis da termodinâmica básica, julgue o seguinte item.67 Considere-se que o volume de um gás ideal tenha diminuído 0,1 m3 devido a uma compressão isobárica sob a pressão de 103 N/m2 e que, durante esse processo, o gás tenha perdido 103 J de calor. Nessa situação, a variação da energia interna do gás foi superior a 900 J.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nO trabalho realizado pelo gás é W = pΔV = 1.000 × (−0,1) = −100 J. O calor que sai tem sinal negativo: Q = −1.000 J. Assim, ΔU = Q − W = −1.000 − (−100) = −900 J. O gás recebe trabalho, mas perde mais energia por calor.Leve para a prova: Compressão não garante aquecimento quando também existe perda de calor.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 9)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-trabalho-fronteira",
+          "rotulo": "Trabalho de fronteira"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-30",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Trabalho de fronteira · Gás ideal: estado e energia · Do desenho ao balanço: sinais, energia final e unidades\nDiagramas A e B · figura recriada no caderno fornecido. Clique para ampliar.Transições, processos e temperaturastransiçãoprocessotemperaturasA → BisotérmicoTA = TBA → CadiabáticoTA > TCA → DisocóricoTA > TDA → EisobáricoTA < TEA figura (A), precedente, representa um processo termodinâmico, por meio de gráficos de variação da pressão (P) em função do volume (V) em várias temperaturas distintas (T1 a T5). O sistema físico, representado na figura (B), refere-se a um gás ideal submetido a variações de pressão, temperatura e volume. Na tabela apresentada, informa-se o tipo de processo para várias transições ilustradas na figura (A), bem como as relações entre as temperaturas inicial e final da transição. A transição A → C ocorre sem transferência de calor ou massa entre o sistema termodinâmico e seu ambiente.Considerando essas informações e embasado nas leis da termodinâmica, julgue os itens que se seguem.74 Considerando-se as informações da figura (B) e a transiçãoA → B, no diagrama P × V da figura (A), é correto concluir que todo o calor absorvido pelo gás é usado para realizar trabalho, aumentando-se o volume.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nA temperatura constante mantém constante a energia interna do gás ideal. Desprezando mudanças de energia cinética e potencial, ΔU = 0 e Q = W. Trata-se de um processo, não de uma máquina operando em ciclo completo; por isso não contradiz Kelvin–Planck.Leve para a prova: A restrição de rendimento da máquina térmica se refere ao ciclo completo.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 10)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-trabalho-fronteira",
+          "rotulo": "Trabalho de fronteira"
+        },
+        {
+          "alvo": "#base-gas-energia",
+          "rotulo": "Gás ideal: estado e energia"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-31",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-termoquimica",
+          "rotulo": "Combustão: calor liberado, PCS, PCI e reação inversa\nAcerca da termoquímica, julgue os itens subsequentes.71 O valor calorífico de um combustível é medido a partir do calor de absorção que ele apresenta.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nO poder calorífico expressa a energia liberada pela combustão de uma quantidade especificada de combustível. O valor superior inclui a recuperação do calor associado à condensação da água formada; o inferior não a inclui. A afirmação troca liberação de energia por absorção.Leve para a prova: Verifique se a energia entra ou sai na reação química.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 12)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-termoquimica",
+          "rotulo": "Combustão: calor liberado, PCS, PCI e reação inversa"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-32",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-termoquimica",
+          "rotulo": "Combustão: calor liberado, PCS, PCI e reação inversa\nAcerca da termoquímica, julgue os itens subsequentes.72 Uma reação reversível que seja exotérmica em um sentido será endotérmica no sentido oposto; se uma reação química libera calor, ela é exotérmica; se, durante uma reação química, calor é absorvido do meio, então a reação em questão é endotérmica.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nMantidas as condições e os estados inicial e final correspondentes, inverter a reação inverte o sinal da variação de entalpia. A pressão constante e com apenas trabalho de expansão, a reação exotérmica tem ΔH negativo; a reação inversa tem ΔH positivo.Leve para a prova: Inverter o processo troca o sinal da energia transferida.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 12)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-termoquimica",
+          "rotulo": "Combustão: calor liberado, PCS, PCI e reação inversa"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-33",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-expansao-livre",
+          "rotulo": "Expansão livre: volume aumenta, mas não há trabalho contra o vácuo · Entropia de gás ideal\nRecipiente fechado e isolado · figura recriada no caderno fornecido. Clique para ampliar.Tendo como referência a figura precedente, que representa um recipiente fechado e isolado termicamente, julgue os itens a seguir.72 No processo de expansão do gás ideal em razão do rompimento da membrana, que ocorre dentro de um recipiente rígido, fechado e isolado termicamente, a temperatura do gás diminui.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA fronteira externa é rígida e não há trabalho de expansão contra o vácuo. O isolamento fornece Q = 0. Logo, ΔU = 0 e, para gás ideal, ΔT = 0. A expansão é irreversível e a entropia aumenta, mesmo sem mudança de temperatura.Leve para a prova: Não aplique a relação de expansão adiabática reversível a uma expansão livre.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 18)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-expansao-livre",
+          "rotulo": "Expansão livre: volume aumenta, mas não há trabalho contra o vácuo"
+        },
+        {
+          "alvo": "#base-entropia-gas",
+          "rotulo": "Entropia de gás ideal"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-34",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Do desenho ao balanço: sinais, energia final e unidades · Gás ideal: estado e energia\nEstudo crítico — fora da pontuação (BAN-10 r2, 28/10/2026). O original afirma aumento da energia interna, não a igualdade ΔU = Q. A chave C é coerente com a leitura usual de aquecimento isocórico de uma massa fixa de gás ideal. Este item fica fora do placar por escolha pedagógica: esclarecer a diferença entre sinal, igualdade e hipóteses de modelo. Não se demonstrou que a simples presença de outro trabalho invalide C. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nEm relação à termodinâmica, julgue os itens seguintes.53 Se um gás ideal for submetido a uma transformação isocórica e o sistema receber calor, a sua energia interna aumentará.\nRoteiro autoral de estudo críticoO original afirma ΔU > 0 ou ΔU = Q? Partindo do balanço de energia total, escreva a condição exata para ΔU = Q e uma escolha suficiente de termos nulos. Depois acompanhe a demonstração guiada de entropia na análise: por que escolher um trabalho arbitrário na primeira lei não basta para contrariar C?Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n C. Certo E. Errado\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: C — Certo.\nResolução elementar por condições suficientes: Para massa fixa, somente trabalho de expansão e variações cinética/potencial nulas, a isocoria dá W = 0; logo ΔU = Q > 0. Essa rota simples sustenta C, mas suas condições adicionais não são todas necessárias ao aumento de U. O argumento mais amplo de entropia abaixo separa o sinal da igualdade.Leve para a prova: Isocórico elimina o trabalho de expansão. Distinguir ΔU > 0 de ΔU = Q evita transformar uma condição suficiente em necessária.\nInterpretação técnica autoral — BAN-10 r2Igualdade e condição suficiente. Para a massa fechada, com Q positivo entrando e W positivo saindo, ΔU + ΔEc + ΔEp = Q − W. Nesse balanço, ΔU = Q se e somente se W + ΔEc + ΔEp = 0. Anular cada termo separadamente é suficiente, não necessário: a condição é a soma nula. A isocoria anula o trabalho de expansão da fronteira simples, mas não todo trabalho possível. Isso limita a dedução da igualdade; não prova que o sinal de ΔU possa ser escolhido livremente.Demonstração guiada do sinal. Considere massa m e composição fixas de gás ideal simples, estados inicial e final de equilíbrio no mesmo volume e capacidade térmica específica cv(T) positiva. Interprete o aquecimento como calor exclusivamente entrando, com quantidade não nula, a temperaturas absolutas de fronteira Tb finitas e positivas. O balanço de entropia é ΔS = ∫δQ/Tb + Sger, com Sger ≥ 0; portanto ΔS > 0. Tb é a temperatura no ponto de transferência da fronteira, não uma substituição automática pela temperatura uniforme do gás.Entre os estados de equilíbrio, a relação do gás ideal é ΔS = m∫T₁T₂[cv(T)/T] dT + mR ln(v₂/v₁). Como m e V são iguais nos dois estados, v₂ = v₁. O integrando é positivo: ΔS > 0 implica T₂ > T₁ e ΔU = m∫T₁T₂cv(T) dT > 0. Essa inferência não exigiu W = 0 nem reversibilidade do caminho real.Trabalho não transporta entropia. Um valor de W que produza ΔU ≤ 0 apenas por substituição na primeira lei não constitui processo admissível sob essas hipóteses: contrariaria a segunda lei e a relação de estado. Assim, o estudo esclarece os modelos sem atribuir ao texto oficial a igualdade que ele não afirma e sem apresentar um contramodelo inválido. A dedução acima é autoral a partir das relações citadas.Critério de autocorreção, sem nota: Distinguir ΔU>0 de ΔU=Q; escrever a soma W+ΔEc+ΔEp=0 como condição exata da igualdade e reconhecer que zerar cada parcela é apenas suficiente. Na demonstração guiada, identificar as hipóteses de massa/composição, estados, volume, calor exclusivamente entrante e temperaturas positivas; explicar ΔS>0 ⇒ T₂>T₁ ⇒ ΔU>0. Não tratar um W arbitrário como contraprova nem supor que o original declarou ΔU=Q.Fundamentação: MIT Unified, §2.1, balanço da energia total · MIT Unified, §5.4, variação de entropia do gás ideal · MIT Unified, §5.5, segunda lei e transferência de entropia. Consulta em 28/10/2026. A demonstração e a escolha pedagógica são do curso, não uma justificativa publicada pela banca.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 29)\nConferência documental BAN-10: Prova local · item 53 · PDF p. 1 · Gabarito local · C · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        },
+        {
+          "alvo": "#base-gas-energia",
+          "rotulo": "Gás ideal: estado e energia"
+        },
+        {
+          "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+          "rotulo": "MIT Unified, §2.1, balanço da energia total"
+        },
+        {
+          "alvo": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html",
+          "rotulo": "MIT Unified, §5.4, variação de entropia do gás ideal"
+        },
+        {
+          "alvo": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html",
+          "rotulo": "MIT Unified, §5.5, segunda lei e transferência de entropia"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-35",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Declare a convenção de sinais\nEstudo crítico — fora da pontuação (BAN-10, 27/10/2026). A chave C é coerente com o modelo em que as energias cinética e potencial não variam. Fechado e adiabático, por si sós, não impõem essas duas condições. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nEm relação à termodinâmica, julgue os itens seguintes.54 Para um sistema fechado submetido a um processo adiabático, a variação da energia interna ΔU entre os estados inicial e final é expressa por ΔU = −W, em que W é o trabalho realizado pelo sistema.\nRoteiro autoral de estudo críticoReescreva o balanço antes de desprezar parcelas. Uma elevação do sistema, com trabalho recebido e sem calor, precisa aumentar sua energia interna?Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n C. Certo E. Errado\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: C — Certo.\nResolução de referência sob as hipóteses discutidas abaixo: Adiabático significa Q = 0. Desprezando alterações de energia cinética e potencial, a primeira lei ΔU = Q − W resulta em ΔU = −W. Ao produzir trabalho, o sistema perde energia interna; ao receber trabalho, ganha. Se as outras formas de energia mudarem, o balanço deve incluí-las.Leve para a prova: A convenção do sinal de trabalho deve acompanhar a fórmula escolhida.\nInterpretação técnica autoral — BAN-10Com Q = 0, o balanço é ΔU + ΔEc + ΔEp = −W. Portanto ΔU = −W apenas se a soma das variações macroscópicas for nula. Num levantamento ideal sem mudança de velocidade ou estado interno, o trabalho recebido pode corresponder a ΔEp, com ΔU = 0. O exemplo é um contramodelo autoral, não dado da prova. A chave conserva sentido no modelo usual de sistema em repouso e sem alteração de elevação.Critério de autocorreção, sem nota: Manter a convenção W produzido positivo, escrever o balanço total e explicar a condição de redução a ΔU = −W.Fundamentação: MIT Unified, §2.1, balanço da energia total. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 29)\nConferência documental BAN-10: Prova local · item 54 · PDF p. 1 · Gabarito local · C · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-primeira-lei",
+          "rotulo": "Declare a convenção de sinais"
+        },
+        {
+          "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+          "rotulo": "MIT Unified, §2.1, balanço da energia total"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-36",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-trabalho-fronteira",
+          "rotulo": "Trabalho de fronteira · Entropia: transferência e geração · Do desenho ao balanço: sinais, energia final e unidades\nA respeito de termodinâmica e de transferência de calor, julgue os próximos itens.58 Para um gás submetido a um processo adiabático reversível, o trabalho realizado pelo gás é zero.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA condição adiabática zera o calor, não o trabalho. Um gás pode empurrar um pistão isolado termicamente, realizando trabalho e reduzindo sua energia interna. No modelo ideal reversível, pVᵏ é constante e a expansão geralmente diminui a temperatura.Leve para a prova: Separe as duas interações: calor exige diferença de temperatura; trabalho pode ocorrer sem calor.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 28)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-trabalho-fronteira",
+          "rotulo": "Trabalho de fronteira"
+        },
+        {
+          "alvo": "#base-entropia",
+          "rotulo": "Entropia: transferência e geração"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-37",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Disponibilidade e exergia: quanto trabalho útil a energia pode fornecer\nO gráfico a seguir mostra a disponibilidade versus ângulo de manivela em um motor de combustão interna de ignição por centelha, que caracteriza o uso da disponibilidade e da irreversibilidade em um problema termodinâmico real.Disponibilidade e irreversibilidade · figura recriada no caderno fornecido. Clique para ampliar.A partir desse gráfico e considerando os conceitos de disponibilidade e irreversibilidade na termodinâmica, julgue o item a seguir.54 Quanto mais irreversibilidade está associada a uma mudança de estado, mais trabalho será realizado.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nAtrito, mistura e transferência de calor com diferença finita de temperatura geram entropia. Na comparação entre as mesmas condições de operação, eles destroem capacidade de produzir trabalho útil. A relação de Gouy–Stodola expressa essa perda como trabalho perdido = temperatura ambiente absoluta × entropia gerada.Leve para a prova: Irreversibilidade reduz o trabalho útil disponível.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 4)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-exergia",
+          "rotulo": "Disponibilidade e exergia: quanto trabalho útil a energia pode fornecer"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-38",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Carnot: o limite entre duas fontes\nSegundo o enunciado de Clausius para a 2.ª Lei da Termodinâmica, é impossível construir um dispositivo que opere em um ciclo termodinâmico e que não produza outros efeitos, além da passagem de calor de um corpo frio para um corpo quente. A esse respeito, julgue o item subsecutivo.55 O ciclo de Carnot é o ciclo de maior rendimento que pode operar entre dois reservatórios de temperaturas constantes, nos quais todos os processos são reversíveis.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nO limite é η = 1 − Tfria/Tquente, com ambas as temperaturas em kelvin. Nenhuma máquina real entre essas mesmas fontes pode ultrapassá-lo. Outras máquinas reversíveis entre as mesmas duas fontes também têm essa eficiência: Carnot representa o limite, não uma exclusividade de construção.Leve para a prova: Compare máquinas somente depois de identificar as temperaturas de suas fontes.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 4)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-limite-carnot",
+          "rotulo": "Carnot: o limite entre duas fontes"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-39",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-segunda-lei",
+          "rotulo": "Conservar energia não basta · Do desenho ao balanço: sinais, energia final e unidades\nEstudo crítico — fora da pontuação (BAN-10, 27/10/2026). O cálculo 350 × 4,2 = 1.470 J é inequívoco. O passo que conclui violação da segunda lei pressupõe uma máquina térmica cíclica ideal com essas trocas totais, não qualquer fronteira de um motor de combustão. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nAs leis fundamentais da termodinâmica regem o modo como o calor se transforma em trabalho, e vice-versa. De acordo com esse princípio e considerando que 1 cal = 4,2 J, julgue os itens que se seguem.66 Caso um motor de combustão que opera em ciclos receba 350 cal da fonte quente e realiza um trabalho de 1.470 J, o funcionamento dessa máquina contraria a segunda lei da termodinâmica.\nRoteiro autoral de estudo críticoDeclare a fronteira e o significado de calor recebido e trabalho. Em que condições a igualdade entre os dois números contradiz Kelvin–Planck? O que mudaria com fluxos de massa ou outras trocas?Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n C. Certo E. Errado\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: C — Certo.\nResolução de referência sob as hipóteses discutidas abaixo: O calor recebido é 350 × 4,2 = 1.470 J, exatamente o trabalho fornecido. Portanto, η = 1 e o calor rejeitado seria zero. Embora o balanço de energia feche, uma máquina cíclica não pode converter todo o calor retirado de uma única fonte em trabalho, conforme Kelvin–Planck.Leve para a prova: Fechar a primeira lei não garante que o processo seja permitido pela segunda.\nInterpretação técnica autoral — BAN-10No modelo convencional, 350 cal são todo o calor recebido de uma única fonte e 1.470 J são o trabalho líquido de um ciclo, sem outros efeitos. Então Qentra = Wlíq, Qrejeitado = 0, e Kelvin–Planck impede essa conversão integral. A chave C é coerente nesse recorte. Num motor de combustão real, a fronteira pode ter entrada/saída de massa e energia química; os dois números isolados não definem o balanço completo. A exclusão editorial evita premiar somente a escolha tácita de uma fronteira.Critério de autocorreção, sem nota: Fazer a conversão correta, declarar totalidade das trocas e ciclo líquido, e distinguir modelo térmico de balanço de combustão com massa.Fundamentação: OpenStax, University Physics 2, §4.4, Kelvin–Planck. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 7)\nConferência documental BAN-10: Prova local · item 66 · PDF p. 1 · Gabarito local · C · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-segunda-lei",
+          "rotulo": "Conservar energia não basta"
+        },
+        {
+          "alvo": "#base-balanco-fechado",
+          "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+        },
+        {
+          "alvo": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "rotulo": "OpenStax, University Physics 2, §4.4, Kelvin–Planck"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-40",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Relação de Gibbs: entalpia, entropia e pressão\nQuanto às propriedades termodinâmicas e às relações de Maxwell, julgue os próximos itens.67 Se a pressão aumentar em uma transformação isentrópica, a entalpia também aumentará.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nPara uma substância simples compressível de composição fixa, a relação fundamental é dh = T ds + v dp. Aqui h é a entalpia específica, s a entropia específica e v o volume específico. Como ds = 0 e v é positivo, dh tem o mesmo sinal de dp.Leve para a prova: Isentrópico significa entropia constante, não entalpia constante.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 7)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-gibbs",
+          "rotulo": "Relação de Gibbs: entalpia, entropia e pressão"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-41",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-equilibrio-fases",
+          "rotulo": "Equilíbrio de fases: por que temperatura e pressão não bastam\nA respeito de equilíbrio de fases, julgue os itens seguintes.73 O equilíbrio de fases ocorre quando o potencial químico é igual em todo o sistema.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nPara cada componente em equilíbrio, seus potenciais químicos nas fases coexistentes são iguais, além do equilíbrio térmico e mecânico. Se houvesse diferença de potencial químico desse componente, haveria tendência de transferência de matéria. Em uma mistura, não se exige igualdade entre componentes diferentes: a comparação é do mesmo componente nas diferentes fases.Leve para a prova: Em equilíbrio, compare o mesmo componente nas fases que coexistem.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 8)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-equilibrio-fases",
+          "rotulo": "Equilíbrio de fases: por que temperatura e pressão não bastam"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-42",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Eficiência térmica e COP\nCom base em conceitos de termodinâmica e noções de instrumentação, julgue os próximos itens.64 Uma máquina que realiza 1.000 J de trabalho ao retirar 3.000 J de calor de um reservatório que está à temperatura de 750 K possui eficiência térmica inferior a 35%.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nA eficiência efetiva é η = W/Qrecebido = 1.000/3.000 = 1/3 ≈ 33,3%. Para essa conta, a temperatura da fonte é dispensável. Ela seria necessária, junto da temperatura fria, para calcular o limite de Carnot.Leve para a prova: Separe o rendimento medido do rendimento máximo teórico.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 12)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-eficiencia-cop",
+          "rotulo": "Eficiência térmica e COP"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-43",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-entropia",
+          "rotulo": "Entropia: transferência e geração\nJulgue os próximos itens, relativos a conceitos e princípios da termodinâmica.57 No processo de congelamento de uma quantidade de água, embora a entropia diminua, não há violação da 2.ª lei da termodinâmica.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nA segunda lei exige que a entropia total de sistema e vizinhança não diminua. Ao congelar, a água libera calor para o meio. Sua entropia diminui, mas a do meio aumenta. Em um processo reversível ideal, as variações se compensam; com irreversibilidades, a soma é positiva.Leve para a prova: A entropia de uma parte pode diminuir; avalie o conjunto que a segunda lei exige.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 21)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-entropia",
+          "rotulo": "Entropia: transferência e geração"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-44",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-carnot-prova",
+          "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático · Trabalho de fronteira\nJulgue os próximos itens, relativos a conceitos e princípios da termodinâmica.59 Uma máquina térmica ideal, ao ser submetida a um processo adiabático, poderia alcançar 100% de eficiência, pois os processos adiabáticos ocorrem sem troca de calor.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nUma etapa adiabática não garante rendimento total ao ciclo. Uma máquina térmica operando entre fontes finitas precisa rejeitar calor. Se o ciclo inteiro fosse adiabático, ΔU no ciclo seria zero e Qlíquido também: pela primeira lei, o trabalho líquido seria zero.Leve para a prova: Analise o ciclo completo, não transfira a característica de uma etapa para toda a máquina.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 21)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-carnot-prova",
+          "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático"
+        },
+        {
+          "alvo": "#base-trabalho-fronteira",
+          "rotulo": "Trabalho de fronteira"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-45",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Carnot na prova: etapas, rejeição mínima e ciclo adiabático · Carnot: o limite entre duas fontes\nEm relação à termodinâmica, julgue os itens seguintes.51 É impossível se construir uma máquina térmica que, recebendo 900 kJ de calor de uma fonte a 477 °C, rejeite 90 kJ de calor por ciclo para um dissipador a 27 °C.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nO trabalho proposto é 900 − 90 = 810 kJ e a eficiência é 810/900 = 90%. Convertendo as fontes: Tquente = 750,15 K e Tfria = 300,15 K. Carnot limita η a 1 − 300,15/750,15 ≈ 60%. O rendimento de 90% excede o limite, embora conserve energia.Leve para a prova: Faça duas verificações: balanço de energia e limite imposto pela segunda lei.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 29)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-carnot-prova",
+          "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático"
+        },
+        {
+          "alvo": "#base-limite-carnot",
+          "rotulo": "Carnot: o limite entre duas fontes"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-46",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-carnot-prova",
+          "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático\n35 Em um ciclo termodinâmico ideal conhecido como ciclo Carnot, o sistema transfere energia sob a forma de calor de uma fonte para outra. No processo, parte desta energia é convertida em trabalho. O ciclo de Carnot é composto de dois pares de transformações\nSelecione uma alternativa.\n A. isotérmicas e isobáricas. B. isocóricas e isobáricas. C. isobáricas e isentrópicas. D. isotérmicas e isocóricas. E. isotérmicas e adiabáticas.\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E.\nHá duas isotérmicas reversíveis, nas quais o sistema troca calor com cada fonte, e duas adiabáticas reversíveis, que conectam as temperaturas sem troca de calor. As adiabáticas reversíveis também são isentrópicas. Trocas a pressão ou volume constantes não substituem as isotérmicas nesse ciclo.Leve para a prova: Carnot combina temperatura constante durante as trocas de calor e entropia constante nas conexões.\n\nProva original · p. 9 · Gabarito definitivo · Caderno fornecido (questão na p. 27)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-carnot-prova",
+          "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-47",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-tipos-compressores",
+          "rotulo": "Compressores: mecanismo de compressão e seleção preliminar\nAcerca das características dos compressores de gás natural dos tipos alternativo e centrífugo, julgue os itens que se seguem.31 Os compressores centrífugos são mais adequados que os alternativos para situações em que seja necessária uma elevada vazão de gás natural em baixas pressões de descarga.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nNa comparação geral tratada na prova, compressores centrífugos atendem bem a grandes vazões. Compressores alternativos costumam ser favorecidos para vazões menores e razões de pressão elevadas. A seleção final também considera propriedades do gás, faixa de operação e eficiência: a indicação geral não substitui o projeto.Leve para a prova: Vazão e pressão de descarga ajudam a escolher a família do compressor.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 16)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-tipos-compressores",
+          "rotulo": "Compressores: mecanismo de compressão e seleção preliminar"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-48",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-brayton",
+          "rotulo": "Brayton · potência com gás · Ponte para E2: parede, arranjo, área e incrustação\nEm relação aos trocadores de calor, julgue os itens subsequentes.93 Os trocadores de calor de contracorrente podem ser utilizados como regeneradores para aquecer o ar de alta pressão que sai do compressor.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nEm uma turbina a gás com regeneração, a exaustão da turbina pode ceder calor ao ar comprimido antes da combustão. Isso exige que a exaustão esteja mais quente que esse ar. O trocador em contracorrente mantém uma diferença de temperatura favorável ao longo de sua extensão.Leve para a prova: Recuperação de calor exige uma fonte efetivamente mais quente que o fluido a aquecer.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 18)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-brayton",
+          "rotulo": "Brayton · potência com gás"
+        },
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-49",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-brayton-real",
+          "rotulo": "Brayton real: trabalho líquido, perdas e regeneração\nJulgue os próximos itens, referentes ao ciclo Brayton.96 No ciclo real, a adição de calor acontece com queda de pressão, e a rejeição de calor ocorre com aumento de pressão.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nO modelo ideal considera adição e rejeição de calor a pressão constante. No equipamento real, o escoamento encontra perdas de pressão nos trechos de troca térmica. A rejeição de calor não atua como um compressor para elevar a pressão.Leve para a prova: Separar o modelo ideal das perdas reais ajuda a identificar a afirmação incorreta.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 19)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-brayton-real",
+          "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-50",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-isentropica",
+          "rotulo": "Eficiência isentrópica: cuidado com a ordem · Brayton real: trabalho líquido, perdas e regeneração\nJulgue os próximos itens, referentes ao ciclo Brayton.97 No ciclo real, o compressor consome menos potência do trabalho produzido pela turbina, se comparado com o ciclo ideal.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nPara a mesma comparação de estados e razão de pressões, as irreversibilidades aumentam o trabalho necessário no compressor e reduzem o produzido na turbina. A parcela consumida pelo compressor tende a aumentar, diminuindo o trabalho líquido do conjunto.Leve para a prova: O trabalho líquido é o produzido pela turbina menos o consumido pelo compressor.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 19)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-isentropica",
+          "rotulo": "Eficiência isentrópica: cuidado com a ordem"
+        },
+        {
+          "alvo": "#base-brayton-real",
+          "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-51",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-brayton",
+          "rotulo": "Brayton · potência com gás\nLeitura técnica e uso no treino (BAN-10, 27/10/2026). Mantido no treino: a identificação do ciclo Brayton remete ao modelo ideal convencional ensinado na base. A chave C refere-se a esse ciclo com processos não degenerados; não é uma afirmação sobre toda modificação tecnológica ou turbina real.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nJulgue os próximos itens, referentes ao ciclo Brayton.98 Não existe processo isotérmico dentro do ciclo Brayton.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nNo Brayton ideal convencional, há compressão e expansão isentrópicas e duas trocas de calor isobáricas. Nessas quatro etapas, a temperatura normalmente varia. Modificações com resfriamento intermediário ou outras idealizações precisam ser identificadas à parte.Leve para a prova: Memorize os processos do ciclo junto com o significado físico de cada equipamento.\nInterpretação técnica autoral — BAN-10Compressão/expansão isentrópicas e aquecimento/resfriamento isobáricos formam o Brayton ideal convencional. A descrição do ciclo nomeado é suficiente para a leitura de reconhecimento aqui adotada; versões modificadas devem ser identificadas à parte. Não se acrescenta uma medida de autonomia avançada por reconhecer esse modelo.Fundamentação: MIT Unified, §3.7, quatro processos do Brayton. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 19)\nConferência documental BAN-10: Prova local · item 98 · PDF p. 4 · Gabarito local · C · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-brayton",
+          "rotulo": "Brayton · potência com gás"
+        },
+        {
+          "alvo": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "rotulo": "MIT Unified, §3.7, quatro processos do Brayton"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-52",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Brayton real: trabalho líquido, perdas e regeneração\nJulgue os próximos itens, referentes ao ciclo Brayton.99 O aumento da potência do compressor é suficiente para aumentar a eficiência do ciclo térmico.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA eficiência depende do trabalho líquido dividido pelo calor fornecido. Aumentar isoladamente o consumo do compressor reduz o trabalho líquido se a turbina não mudar. Alterar razão de pressões pode modificar todo o ciclo, mas é preciso analisar o conjunto; maior consumo não é garantia de maior eficiência.Leve para a prova: Uma variável de consumo não determina sozinha o desempenho de todo o sistema.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 19)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-brayton-real",
+          "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-53",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Brayton real: trabalho líquido, perdas e regeneração\nJulgue os próximos itens, referentes ao ciclo Brayton.100 A característica regenerativa do ciclo Brayton consiste na utilização dos gases de exaustão para preaquecer o ar que entra na câmara de combustão.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nO regenerador reaproveita parte do calor que seria descartado com os gases. Quando existe diferença de temperatura adequada, o ar entra mais quente na combustão e precisa de menos combustível para atingir a temperatura desejada. O equipamento real também introduz perdas de pressão.Leve para a prova: Regeneração economiza calor fornecido, respeitando os limites térmicos e as perdas do trocador.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 20)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-brayton-real",
+          "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-54",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-tipos-compressores",
+          "rotulo": "Compressores: mecanismo de compressão e seleção preliminar\nNo que se refere a plantas de compressão, julgue os itens subsequentes.82 Dentre os diversos tipos de compressores usados na indústria, de um modo geral, os compressores de fluxo, axiais ou radiais, são apropriados para baixas vazões e altas razões de compressão, enquanto os compressores volumétricos, como os alternativos de estágio simples ou multiestágios, são apropriados para pequenas diferenças de pressão.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA indicação geral está invertida. Compressores dinâmicos, como axiais e centrífugos, são associados a grandes vazões. Volumétricos, especialmente alternativos em vários estágios, podem atingir razões de pressão elevadas com vazões menores. A escolha concreta depende da faixa operacional e das características do gás.Leve para a prova: Não confunda grande vazão com grande razão de pressão.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 24)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-tipos-compressores",
+          "rotulo": "Compressores: mecanismo de compressão e seleção preliminar"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-55",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-brayton",
+          "rotulo": "Brayton · potência com gás\nLeitura técnica e uso no treino (BAN-10, 27/10/2026). Mantido no treino com ressalva documental: a expressão “pressão isentrópica” já consta da prova oficial. Não foi criada pelo curso e não é silenciosamente substituída. O resfriamento a volume constante, também escrito no original, basta para rejeitar a descrição do Brayton ideal.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nA respeito do ciclo de funcionamento Brayton, julgue os itens que se seguem.47 O ciclo de funcionamento Brayton envolve quatro processos: pressão isentrópica; aquecimento à pressão constante; expansão isentrópica; e resfriamento a volume constante.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA última etapa está errada. No Brayton ideal, tanto a adição quanto a rejeição de calor são isobáricas, isto é, a pressão constante. As duas outras etapas são isentrópicas. Troca de calor a volume constante é característica de outro modelo, como o ciclo Otto.Leve para a prova: Uma única etapa trocada já altera a identificação do ciclo.\nInterpretação técnica autoral — BAN-10A expressão “pressão isentrópica” não nomeia adequadamente um processo e não revela, por si, o que o autor pretendia. Independentemente de sua possível leitura, a rejeição de calor isocórica contradiz o Brayton ideal convencional, que a realiza a pressão constante. Assim E permanece justificável sem adivinhar uma correção tipográfica. Não há aqui errata oficial ou declaração de intenção da banca.Fundamentação: MIT Unified, §3.7, quatro processos do Brayton. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 22)\nConferência documental BAN-10: Prova local · item 47 · PDF p. 1 · Gabarito local · E · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-brayton",
+          "rotulo": "Brayton · potência com gás"
+        },
+        {
+          "alvo": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "rotulo": "MIT Unified, §3.7, quatro processos do Brayton"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-56",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-comparar-ciclos",
+          "rotulo": "Reconhecer o ciclo pelo equipamento e pela transformação · Rankine · potência com vapor\nA respeito do ciclo de funcionamento Brayton, julgue os itens que se seguem.48 O ciclo de Brayton é frequentemente usado em usinas energéticas para gerar eletricidade.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nTurbinas a gás podem acionar geradores elétricos. Em ciclo combinado, a exaustão ainda alimenta uma caldeira de recuperação e um ciclo a vapor. O Brayton descreve o núcleo termodinâmico da turbina a gás; o ciclo a vapor é usualmente modelado por Rankine.Leve para a prova: Associe Brayton a turbina a gás e Rankine a um ciclo de potência com vapor.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 22)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-comparar-ciclos",
+          "rotulo": "Reconhecer o ciclo pelo equipamento e pela transformação"
+        },
+        {
+          "alvo": "#base-rankine",
+          "rotulo": "Rankine · potência com vapor"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-57",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Brayton · potência com gás · Brayton real: trabalho líquido, perdas e regeneração\nA respeito do ciclo de funcionamento Brayton, julgue os itens que se seguem.50 A eficiência térmica do ciclo de Brayton aumenta à medida que aumenta a relação de pressões.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nNo modelo ideal de ar com calores específicos constantes, η = 1 − 1/rp^((k−1)/k). rp é a razão de pressões do compressor e k = cp/cv. Para k maior que 1, elevar rp aumenta essa eficiência. A conclusão não autoriza aumentos ilimitados em uma turbina real com temperatura máxima fixada.Leve para a prova: A condição “ideal” faz parte da conclusão; desempenho real exige mais informações.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 22)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-brayton",
+          "rotulo": "Brayton · potência com gás"
+        },
+        {
+          "alvo": "#base-brayton-real",
+          "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-58",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Gás ideal: quantidade de matéria, proporções e limites\nCom referência a compressores de gás natural, do tipo alternativo, julgue os seguintes itens.55 Quando o gás começa a ser comprimido, a pressão não se eleva mais.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nNa fase de compressão, o pistão reduz o volume aprisionado e a pressão sobe até permitir a descarga. No modelo isotérmico de gás ideal, pV é constante: menor volume implica maior pressão. Nos processos usuais com aquecimento, a elevação de pressão também ocorre.Leve para a prova: Leia o movimento do pistão junto com a condição das válvulas.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 22)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-gas-modelo",
+          "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-59",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-valvulas-compressor",
+          "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão\nCom referência a compressores de gás natural, do tipo alternativo, julgue os seguintes itens.56 Na subida do pistão, o gás é comprimido com ambas as válvulas abertas.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nNa compressão propriamente dita, ambas ficam fechadas para aprisionar o gás. Quando a pressão interna supera a pressão de descarga e a resistência da válvula, a descarga abre. Se ambas ficassem abertas durante a compressão, não haveria a etapa fechada descrita.Leve para a prova: Distingua admissão, compressão e descarga como etapas diferentes.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 22)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-valvulas-compressor",
+          "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-60",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-valvulas-compressor",
+          "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão\nCom referência a compressores de gás natural, do tipo alternativo, julgue os seguintes itens.57 Os compressores alternativos produzem uma descarga constante.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA descarga ocorre em partes do movimento do pistão, gerando pulsações. Mais cilindros e reservatórios podem suavizar o fornecimento, mas a vazão instantânea de um cilindro não é naturalmente constante durante todo o ciclo.Leve para a prova: Vazão média constante não significa ausência de pulsação instantânea.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 23)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-valvulas-compressor",
+          "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-61",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Eficiência volumétrica: quanto do deslocamento virou admissão\nCom referência a compressores de gás natural, do tipo alternativo, julgue os seguintes itens.58 A eficiência volumétrica de um compressor alternativo é sempre igual a 1.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nO volume residual contém gás que se reexpande antes da nova admissão. Isso ocupa parte do curso e reduz o volume efetivamente admitido. Aquecimento, perdas nas válvulas e vazamentos também afetam a eficiência volumétrica. O valor unitário pode aparecer em uma idealização, mas não é uma regra.Leve para a prova: O volume deslocado pelo pistão não é necessariamente o volume de gás fresco admitido.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 23)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-eficiencia-volumetrica",
+          "rotulo": "Eficiência volumétrica: quanto do deslocamento virou admissão"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-62",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-valvulas-compressor",
+          "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão\nEstudo crítico — fora da pontuação (BAN-10, 27/10/2026). A chave C descreve a fase em que há admissão. A leitura de “durante esse movimento” como toda a descida do pistão não é equivalente quando existe volume residual. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\nCom referência a compressores de gás natural, do tipo alternativo, julgue os seguintes itens.59 A admissão do gás ocorre quando o pistão desce. Durante esse movimento, a válvula de admissão está aberta; e a de escape, fechada.\nRoteiro autoral de estudo críticoDistinga o movimento de aumento do volume e o intervalo em que efetivamente entra gás. O que ocorre com as válvulas antes da admissão quando há gás residual?Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n C. Certo E. Errado\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: C — Certo.\nResolução de referência sob as hipóteses discutidas abaixo: No arranjo de cilindro considerado, o deslocamento aumenta o volume da câmara e reduz sua pressão até permitir a entrada do gás. A válvula de admissão abre pela diferença de pressão; a de descarga permanece fechada. A direção “desce” depende da orientação do desenho do cilindro.Leve para a prova: Use o aumento do volume da câmara como referência física para identificar a admissão.\nInterpretação técnica autoral — BAN-10Após a descarga, o gás retido na folga reexpande no início do retorno do pistão. Nessa parte, as duas válvulas podem permanecer fechadas; a admissão só começa quando a diferença de pressão a permite. Durante a admissão propriamente dita, a entrada está aberta e a descarga fechada, coerente com C. Sem delimitar o intervalo, o texto comporta essas duas leituras. “Desce” também depende da orientação; a referência física é o aumento do volume da câmara.Critério de autocorreção, sem nota: Separar retorno/reexpansão de admissão, identificar as válvulas em cada fase e evitar transformar direção geométrica em condição universal.Fundamentação: GUNT, ET 508, princípio da reexpansão no compressor alternativo. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 23)\nConferência documental BAN-10: Prova local · item 59 · PDF p. 1 · Gabarito local · C · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-valvulas-compressor",
+          "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão"
+        },
+        {
+          "alvo": "https://gunt.de/en/products/fluid-machinery/driven-machines/fans-and-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-752:pr-240",
+          "rotulo": "GUNT, ET 508, princípio da reexpansão no compressor alternativo"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-63",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-comparar-ciclos",
+          "rotulo": "Reconhecer o ciclo pelo equipamento e pela transformação\nCom relação à utilização de equipamentos rotativos para o transporte de fluidos compressíveis, tais como compressores, e para extrair a energia de fluidos compressíveis, tais como turbinas de alta pressão e turbinas de potência, julgue os itens que se seguem.60 Uma turbina a gás produz energia a partir do resultado das seguintes etapas contínuas do ciclo Stirling: compressão, combustão, expansão e exaustão.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA turbina a gás convencional é associada ao Brayton. O Stirling ideal tem duas etapas isotérmicas e duas isocóricas com regeneração, sendo ligado a motores de aquecimento externo. A identidade dos processos distingue os dois modelos.Leve para a prova: Não associe ciclos apenas pela presença de gás como fluido de trabalho.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 23)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-comparar-ciclos",
+          "rotulo": "Reconhecer o ciclo pelo equipamento e pela transformação"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-64",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-tipos-compressores",
+          "rotulo": "Compressores: mecanismo de compressão e seleção preliminar\nNo que se refere a plantas de compressão, julgue os itens subsequentes.81 Compressores parafuso podem ser descritos como máquinas de deslocamento positivo, que operam de forma análoga a um compressor alternativo, ou seja, em ambos a elevação da pressão é obtida com a redução de volume do gás.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nAmbos pertencem à família de deslocamento positivo. No pistão, a câmara diminui pelo movimento alternativo; no parafuso, diminui entre rotores e carcaça. Compressores dinâmicos usam principalmente a transferência de energia por pás e a conversão de velocidade em pressão.Leve para a prova: Identifique se a compressão vem de aprisionar e reduzir volume ou de ação dinâmica das pás.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 23)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-tipos-compressores",
+          "rotulo": "Compressores: mecanismo de compressão e seleção preliminar"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-65",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Exemplo resolvido · Turbina e potência\nA respeito de turbinas a vapor e de compressores, julgue os itens a seguir.71 No ciclo de funcionamento de uma turbina a vapor, a fase de expansão corresponde a uma transformação termodinâmica do tipo adiabática, resultando na produção de trabalho.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nNo modelo de escoamento permanente com perdas de calor e variações cinética e potencial desprezíveis, a potência produzida é vazão mássica × queda de entalpia. A entalpia do vapor diminui ao fornecer trabalho ao eixo. Uma turbina real pode ser aproximadamente adiabática sem ser reversível.Leve para a prova: Adiabático não é sinônimo de isentrópico quando existem irreversibilidades.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 28)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-turbina-potencia",
+          "rotulo": "Exemplo resolvido · Turbina e potência"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-66",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação\nEm relação a bombas centrífugas e alternativas e a permutadores de casco/tubo, julgue os itens seguintes.82 O princípio do funcionamento de um permutador de casco/tubo diz respeito a aproveitar a diferença de temperatura entre dois fluidos que, ao se misturarem, atingem a temperatura desejada.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nUm fluido circula dentro dos tubos e o outro pelo casco. A parede dos tubos separa os fluidos: há convecção em cada lado e condução através da parede. Mistura pode ocorrer em um equipamento de contato direto; em casco e tubos, normalmente indica vazamento.Leve para a prova: Desenhe os dois caminhos de escoamento e a parede que os separa.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 11)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-67",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Tubulação aquecida: dilatação e juntas de expansão\nNo que se refere a tubulações industriais, válvulas e acessórios, julgue os itens que se seguem.84 Juntas de expansão são acessórios utilizados para permitir a expansão e contração térmica das tubulações industriais sem causar danos à estrutura.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nAo aquecer, uma tubulação tende a aumentar de comprimento. Se estiver completamente impedida de se deslocar, pode desenvolver tensões e transmitir esforços a apoios e equipamentos. Juntas e arranjos flexíveis acomodam esse movimento dentro de seus limites de projeto.Leve para a prova: Uma mudança de temperatura pode produzir efeitos mecânicos em uma instalação.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 11)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-dilatacao",
+          "rotulo": "Tubulação aquecida: dilatação e juntas de expansão"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-68",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Ponte para E2: emissividade, radiação e alto vácuoDados de apoio corrigidos — FON-09 v1.0 (27/10/2026). A unidade incorreta kg/cm³ e os valores defeituosos da tabela histórica já constam da prova oficial, p. 3, e foram reproduzidos no caderno fornecido, p. 14, e no HTML. A transcrição histórica está recolhida e identificada como inadequada para cálculos. Use somente o conjunto físico corrigido para consultar esses dados. Esta é uma correção editorial do curso; não constitui errata oficial da banca nem presume a intenção de quem produziu a prova. O julgamento de emissividade não usa densidade ou propriedades de saturação.\nLeitura técnica e uso no treino (BAN-10, 27/10/2026). Mantido no treino — BAN-10: a afirmação fala em possibilidade de reduzir perdas. Para uma superfície mais quente que a vizinhança, mantendo temperaturas, área e geometria comparáveis, reduzir emissividade reduz a parcela radiativa. Os dados de água não entram nesse julgamento.\nAfirmação a julgar (item original 85):85 A aplicação de um revestimento com baixa emissividade sobre a superfície externa da fornalha possibilita a redução da perda de calor para o ambiente.\nDados físicos corrigidos, origem e precisão — FON-09 v1.0Densidade: a escrita literal 1.000 kg/cm³ equivale a 10⁹ kg/m³, incompatível com água líquida nas condições descritas. Como aproximação didática de líquido incompressível perto de 25 °C e pressão atmosférica, pode-se adotar ρ≈1.000 kg/m³ (1 g/cm³), declarando a aproximação. O NIST WebBook, consulta a 25 °C e 101,325 kPa, fornece 997,04764 kg/m³: o arredondamento para 1.000 fica cerca de 0,296% acima. Essa condição é uma referência, não a afirmação de que a pressão real dos pontos 1 e 2 seja atmosférica. Densidade constante não é uma propriedade exata da água.Água pura saturada — conjunto corrigido FON-09 v1.0; pressão absolutap (kPa abs)T de saturação (°C)v do líquido (m³/kg)v do vapor (m³/kg)Origem101,32599,9740,001043441,6732NIST WebBook: consulta direta150111,3490,001052731,1593NISTIR 5078, tabela 2, p. 12200120,2100,001060520,88568NISTIR 5078, tabela 2, p. 12250127,4110,001067220,71866NISTIR 5078, tabela 2, p. 12300133,5220,001073170,60576NISTIR 5078, tabela 2, p. 12Modelo e unidades: água pura em equilíbrio líquido–vapor em cada pressão. Estes volumes são de líquido e vapor saturados, não do líquido a 25 °C. Nas quatro últimas linhas, a NISTIR 5078 (1998), tabela 2, p. impressa 12 / p. 2 do PDF, publica pressão em MPa e volumes em cm³/g: multiplicamos por 1.000 e 0,001, respectivamente. A primeira linha não existe literalmente nessa tabela: veio de consulta direta de saturação no NIST WebBook a 0,101325 MPa, baseada em IAPWS-95; não houve interpolação editorial.Precisão: as quatro últimas linhas conservam as casas da fonte após conversão exata. Na primeira, a consulta retorna 99,974296 °C; 0,0010434411 m³/kg; 1,6732012 m³/kg. A exibição arredonda esses valores, sem atribuir aos dígitos uma incerteza experimental. As referências são valores de modelo/tabela, não medições desta instalação.Confronto de todas as células: as cinco pressões definem os estados consultados. Na linha 101,325 kPa da transcrição, 100 °C e 0,00104 m³/kg são compatíveis com arredondamento às casas impressas; 1,695 m³/kg para o vapor não é. Nas linhas 150–300 kPa, temperatura, volume do líquido e volume do vapor são incompatíveis com a precisão impressa. Portanto a tabela histórica permanece apenas para conferência documental e não deve ser reutilizada como conjunto de cálculo; use os valores corrigidos e sua precisão.Baixar dados corrigidos, valores originais, comparações, consultas e hashes — v1.0. A conferência se restringe aos dados associados a este item e à letra do gabarito; não reavalia os demais itens da prova.\nTranscrição histórica com dados inválidos — não usar em cálculosConsulta documental somente. O bloco seguinte preserva os números da prova/caderno, incluindo erros. Sua tabela não é uma referência física. Os valores substitutos e seus limites estão no conjunto corrigido acima. A figura foi recriada no caderno fornecido.Unidade geradora de vapor · figura recriada no caderno fornecido. Clique para ampliar.O diagrama precedente representa uma unidade geradora de vapor instalada ao nível do mar. Nos pontos 1 e 2, a temperatura da água, cuja densidade é igual a 1.000 kg/cm3, é igual a 25 °C, a elevação de pressão causada pela bomba é de 74 kPa, a temperatura no ponto 3 é igual a 133 °C, e o reservatório de água é mantido aberto e cheio, tendo sido instalado a 5 m de altura do ponto de sucção da bomba centrífuga.A tabela seguinte apresenta as propriedades de saturação da água.Propriedades de saturação da águapressão (kPa abs)temperatura (°C)volume específico do líquido (m3/kg)volume específico do gás (m3/kg)101,3251000,001041,6951501140,001080,3542001280,001100,2062501380,00120,1383001470,001140,100Com base nas informações apresentadas e considerando que a aceleração gravitacional local é igual a 10 m/s2, que a pressão atmosférica é igual a 101,325 kPa abs e que a perda de água é desprezível, julgue os itens que se seguem.85 A aplicação de um revestimento com baixa emissividade sobre a superfície externa da fornalha possibilita a redução da perda de calor para o ambiente.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nEm uma comparação com as mesmas temperaturas e geometria, a taxa radiativa é proporcional à emissividade ε. Para uma superfície diante de uma grande vizinhança, Q̇ = εσA(Ts⁴ − Tv⁴). ε mede a capacidade de emitir radiação, σ é a constante de Stefan–Boltzmann e A é a área. As temperaturas devem estar em K.Leve para a prova: A emissividade atua na radiação; não elimina automaticamente condução ou convecção.\nInterpretação técnica autoral — BAN-10No modelo de superfície cinzenta diante de grande vizinhança isotérmica, Q̇rad = εσA(Ts⁴ − Tv⁴). Com Ts > Tv e demais fatores mantidos, a redução de ε diminui essa parcela. Isso fundamenta a possibilidade expressa pela chave C, sem prometer redução igual de convecção/condução ou manter automaticamente Ts num equipamento real. O conjunto corrigido FON-09 e sua transcrição histórica continuam separados e preservados.Fundamentação: OpenStax, University Physics 2, §1.6, radiação líquida. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 14) · Cópia local da prova · p. 3 · Cópia local do gabarito · p. 1\nConferência documental BAN-10: Prova local · item 85 · PDF p. 3 · Gabarito local · C · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-radiacao-vacuo",
+          "rotulo": "Ponte para E2: emissividade, radiação e alto vácuo"
+        },
+        {
+          "alvo": "#cr-e1-68-dados-corrigidos",
+          "rotulo": "conjunto físico corrigido"
+        },
+        {
+          "alvo": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+          "rotulo": "NIST WebBook, consulta a 25 °C e 101,325 kPa"
+        },
+        {
+          "alvo": "https://www.nist.gov/document/nistir5078-tab2pdf#page=2",
+          "rotulo": "NISTIR 5078 (1998), tabela 2, p. impressa 12 / p. 2 do PDF"
+        },
+        {
+          "alvo": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+          "rotulo": "consulta direta de saturação no NIST WebBook a 0,101325 MPa"
+        },
+        {
+          "alvo": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+          "rotulo": "OpenStax, University Physics 2, §1.6, radiação líquida"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-69",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação\nAcerca de equipamentos de processo, julgue os próximos itens.90 O permutador de casco e tubo é um conjunto de tubos montados dentro de um casco no qual se transfere o calor por condução-convecção entre dois fluidos, um quente e outro frio, através das paredes dos tubos, com um dos fluidos circulando dentro dos tubos, enquanto o outro escoa por fora entre os tubos e o casco.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nO calor passa do fluido quente à parede por convecção, atravessa o material do tubo por condução e chega ao outro fluido por convecção. Cada etapa adiciona resistência térmica. Depósitos na superfície criam resistência adicional e podem diminuir o desempenho.Leve para a prova: Uma aplicação real pode combinar vários mecanismos de transferência de calor.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 15)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-70",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-transferencia",
+          "rotulo": "Ponte para E2: condução, convecção e advecção\nAcerca de processos de transferência de calor, julgue os seguintes itens.88 No processo de condução, o calor é transferido da menor para a maior temperatura.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA condução espontânea segue o sentido de temperatura decrescente. Na forma unidimensional, q″ = −k dT/dx, onde q″ é fluxo de calor por área e k é condutividade térmica. O sinal negativo garante que o vetor fluxo se oponha ao gradiente de temperatura.Leve para a prova: Calor espontâneo vai do quente ao frio; o gradiente aponta para temperatura crescente.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 18)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-transferencia",
+          "rotulo": "Ponte para E2: condução, convecção e advecção"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-71",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-transferencia",
+          "rotulo": "Ponte para E2: condução, convecção e advecção\nAcerca de processos de transferência de calor, julgue os seguintes itens.91 Ventiladores e bombas são utilizados no processo de convecção forçada de fluidos em tubulações.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nNa convecção forçada, um equipamento externo promove o escoamento: uma bomba movimenta líquido e um ventilador movimenta gás. Na convecção natural, o movimento decorre de diferenças de densidade sob ação da gravidade, sem esse acionamento externo.Leve para a prova: Identifique o que movimenta o fluido para distinguir convecção natural de forçada.\n\nProva original · p. 3 · Gabarito definitivo · Caderno fornecido (questão na p. 18)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-transferencia",
+          "rotulo": "Ponte para E2: condução, convecção e advecção"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-72",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação\nEm relação aos trocadores de calor, julgue os itens subsequentes.94 Nos trocadores de calor com tubos concêntricos e configuração paralela, os fluidos quente e frio entram pela mesma extremidade.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nAs correntes quente e fria seguem na mesma direção e entram pelo mesmo lado do trocador. Em contracorrente, entram por extremidades opostas e seguem em sentidos contrários. Essa orientação afeta os perfis de temperatura e a diferença média que impulsiona a troca.Leve para a prova: Marque setas de entrada e saída antes de escolher uma fórmula de trocadores.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 19)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-73",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação\nEm relação aos trocadores de calor, julgue os itens subsequentes.95 Uma grande densidade de tubos aletados, ou placas, compõe trocadores de calor compactos, os quais são projetados para obter menores superfícies de transferência de calor.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nA característica é uma grande área de troca por unidade de volume. Aletas e passagens pequenas aumentam a superfície disponível dentro de um equipamento de dimensões reduzidas. Pequeno volume externo não significa pequena área interna de transferência.Leve para a prova: Distingua área de transferência, volume do equipamento e área ocupada na instalação.\n\nProva original · p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 19)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-74",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Ponte para E2: parede, arranjo, área e incrustação\nA respeito da transmissão de calor, julgue os itens seguintes.65 Em trocadores de calor, o valor da resistência térmica por fator de deposição/incrustração depende da temperatura de operação, da velocidade do fluido e do tempo de serviço do trocador de calor.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nDepósitos se formam conforme as condições de operação e as características do fluido. Eles adicionam uma camada que dificulta a passagem de calor. A resistência adicional reduz o coeficiente global de transferência e pode aumentar o consumo de energia da instalação.Leve para a prova: Condições de manutenção e operação afetam o desempenho previsto pelo modelo limpo.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 29)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-trocadores",
+          "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-75",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Ponte para E2: condução, convecção e advecção\nA respeito da transmissão de calor, julgue os itens seguintes.66 Na condução de calor, o fluxo térmico na direção de transferência é igual ao produto do gradiente de temperatura nessa mesma direção pela condutividade térmica; o sinal negativo no produto é uma consequência do fato de o calor ser transferido na direção da temperatura decrescente.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: C — Certo.\nO gradiente indica a direção em que a temperatura cresce. Como o calor conduzido espontaneamente vai para onde ela diminui, o fluxo tem orientação oposta. A condutividade é positiva; o sinal negativo vem da direção do fenômeno, não de uma propriedade negativa do material.Leve para a prova: Se a temperatura cai no sentido positivo de x, o fluxo de calor nesse sentido é positivo.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 30)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-transferencia",
+          "rotulo": "Ponte para E2: condução, convecção e advecção"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-76",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-transferencia",
+          "rotulo": "Ponte para E2: condução, convecção e advecção\nA respeito da transmissão de calor, julgue os itens seguintes.67 O termo advecção é usado para fazer referência ao transporte de energia cumulativo de um fluido na presença de um gradiente de temperatura, enquanto o termo convecção é usado para fazer referência ao transporte de energia devido ao movimento global do fluido.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nAdvecção é o transporte associado ao movimento global do fluido. A descrição da transferência convectiva inclui esse movimento e a difusão de energia térmica. Na interface fluido–parede, há condução; o escoamento transporta energia no fluido. A afirmação atribui os mecanismos aos termos de forma inadequada.Leve para a prova: Movimento do fluido transporta energia; gradiente térmico também pode conduzi-la sem movimento global.\n\nProva original · p. 1 · Gabarito definitivo · Caderno fornecido (questão na p. 30)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-transferencia",
+          "rotulo": "Ponte para E2: condução, convecção e advecção"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-77",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Refrigeração por compressão de vapor · Eficiência térmica e COP\nA respeito de turbinas a vapor e de compressores, julgue os itens a seguir.70 O gás refrigerante comprimido, ao fluir para o condensador, absorve calor do ambiente circundante, permitindo que o gás se estabilize, passando do estado líquido para o gasoso.\nJulgue a afirmação.\n C. Certo E. Errado\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: E — Errado.\nO condensador rejeita calor para a vizinhança. O refrigerante normalmente chega como vapor de alta pressão, é resfriado e condensa. A absorção de calor e a vaporização ocorrem no evaporador. São lados distintos do mesmo ciclo.Leve para a prova: Condensador aquece a vizinhança; evaporador retira calor do ambiente que se deseja resfriar.\n\nProva original · p. 2 · Gabarito definitivo · Caderno fornecido (questão na p. 28)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-refrigeracao",
+          "rotulo": "Refrigeração por compressão de vapor"
+        },
+        {
+          "alvo": "#base-eficiencia-cop",
+          "rotulo": "Eficiência térmica e COP"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-78",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-calor-latente",
+          "rotulo": "Refrigerante: por que o calor latente importa\n25 Apesar dos riscos associados, sistemas de refrigeração por amônia são empregados desde o século XIX em diversas indústrias. Uma das principais vantagens do uso de amônia como gás refrigerante é\nSelecione uma alternativa.\n A. ser empregada sob alta pressão, sendo indicada para temperaturas muito baixas. B. apresentar alta eficiência energética, por conta de seu alto calor latente de vaporização. C. ser segura em caso de vazamento, por se dispersar rapidamente na atmosfera. D. facilitar manutenção das instalações, por ser segura em operações de solda. E. poder ser descartada diretamente na rede de esgoto, por sua alta solubilidade em água.\n\nConferir respostaRefazer questão\n\nVer gabarito e resolução\nGabarito definitivo: B.\nSeu elevado calor latente permite retirar uma quantidade expressiva de calor na evaporação por unidade de massa. Isso contribui para o bom desempenho térmico, embora a eficiência total também dependa do ciclo e dos equipamentos. As alternativas que tratam vazamentos, soldagem ou descarte como inofensivos não descrevem uma vantagem válida.Leve para a prova: Calor latente relaciona massa evaporada à quantidade de calor retirada.\n\nProva original · p. 7 · Gabarito definitivo · Caderno fornecido (questão na p. 26)"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-calor-latente",
+          "rotulo": "Refrigerante: por que o calor latente importa"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-79",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-radiacao-vacuo",
+          "rotulo": "Ponte para E2: emissividade, radiação e alto vácuoEstudo crítico — fora da pontuação (BAN-10, 27/10/2026). O original e a alternativa oficial B são preservados como documento. A predominância radiativa não decorre apenas de alto vácuo e da temperatura das paredes; faltam as ligações térmicas, propriedades e geometria do equipamento. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\n30 Considere um setup de testes, instrumentado para medir diversos canais de temperaturas em diversos pontos de um equipamento sob teste, instalado dentro de uma câmara de simulação espacial. Durante os testes, a câmara estará em alto vácuo e a temperatura de suas paredes será mantida por volta de -196°C. Nesse caso, os arquitetos térmicos, que acompanham os testes, deverão estar atentos às trocas de calor\nRoteiro autoral de estudo críticoQuais mecanismos continuam possíveis? Construa duas montagens compatíveis com o enunciado, uma com radiação predominante e outra com condução predominante. Quais dados distinguiriam as duas?Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n A. por radiação, apenas. B. por radiação, predominantemente, mas também por condução. C. por condução, por convecção e por radiação, com predominância dessa última. D. por convecção e por radiação, com predominância dessa última. E. por convecção em menor grau e por condução em maior grau.\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: B.\nResolução de referência sob as hipóteses discutidas abaixo: O gabarito definitivo é B. O alto vácuo reduz fortemente a troca por gás residual; radiação não exige meio material e suportes, fios e contatos sólidos continuam conduzindo calor. A opção B corresponde ao cenário de radiação predominante pressuposto pela prova. Essa predominância não pode ser demonstrada quantitativamente só com o nível de vácuo e a temperatura das paredes: seria necessário conhecer áreas, emissividades, temperaturas e condutâncias dos contatos. O conceito seguro é considerar radiação e condução pelos sólidos, sem convecção gasosa relevante nas hipóteses usuais.Leve para a prova: Vácuo reduz convecção; não elimina radiação nem condução pelos contatos sólidos.\nInterpretação técnica autoral — BAN-10A condução por suportes/cabos pode competir com a radiação; alto vácuo não fixa essa razão. Contramodelo autoral, não dado da prova: corpo a 300 K, área 0,10 m², superfícies negras e grande parede a 77,15 K dão aproximadamente 45,73 W radiativos. Se a ligação sólida à parede tiver condutância G = 0,01 W/K, conduz cerca de 2,23 W; com G = 0,50 W/K, conduz 111,43 W. As duas montagens respeitam o contexto térmico, mas invertem a predominância. A chave B corresponde à primeira leitura, sem ser demonstrada pelos dados originais. A troca gasosa foi desprezada nesse contramodelo; não se afirma pressão residual rigorosamente nula.Critério de autocorreção, sem nota: Reconhecer radiação e condução sólida, apresentar condição/contramodelo que altere sua razão e não usar apenas a palavra vácuo como prova de predominância.Fundamentação: NASA, Thermal Control (07/05/2026), §§7.2.1 e 7.2.3. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva original · p. 8 · Gabarito definitivo · Caderno fornecido (questão na p. 26)\nConferência documental BAN-10: Prova local · item 30 · PDF p. 8 · Gabarito local · B · PDF p. 4"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-radiacao-vacuo",
+          "rotulo": "Ponte para E2: emissividade, radiação e alto vácuo"
+        },
+        {
+          "alvo": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+          "rotulo": "NASA, Thermal Control (07/05/2026), §§7.2.1 e 7.2.3"
+        }
+      ]
+    },
+    {
+      "id": "cr-e1-80",
+      "campo": "fontes.ensino_e_fundamentos_ja_vinculados",
+      "antes": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática · Ler a figura: geração por volume e calor pela face exposta · Ponte para E2: condução, convecção e advecção\nEstudo crítico — fora da pontuação (BAN-10, 27/10/2026). A chave D usa um balanço sem acumulação, com convecção como única troca da face exposta. A uniformidade espacial de Tₛ declarada no texto não estabelece constância no tempo. A marcação abaixo serve somente para comparar com o gabarito oficial; não recebe acerto/erro nem nota de domínio.\nTexto oficial preservado: confira o documento original e sua página nos links deste item.\n38 Das seis faces do bloco esquematizado na figura a seguir, cinco estão termicamente isoladas. A face ABCD não está isolada e interage termicamente com o ambiente, cuja temperatura é de 30 °C. No interior do bloco, há uma geração uniforme de calor na taxa de 100 W/m3, e o coeficiente de transferência de calor por convecção é de 10 W/m2·K. A temperatura Ts na superfície da face ABCD é uniforme.Bloco com geração interna de calor · figura recriada no caderno fornecido. Clique para ampliar.Com base nas informações precedentes, é correto afirmar que Ts é igual a\nRoteiro autoral de estudo críticoEscreva o balanço com acumulação antes de usar as dimensões. Qual hipótese leva a 40 °C? Uma face espacialmente uniforme pode aquecer no tempo?Registre sua justificativa antes de abrir a análise. A comparação automática da letra não corrige essa justificativa.\nMarcação documental: compare depois com a chave oficial; sem pontuação.\n A. 10 °C. B. 20 °C. C. 30 °C. D. 40 °C. E. 50 °C.\n\nComparar com a chave oficialRefazer questão\n\nVer chave oficial e análise crítica autoral\nGabarito definitivo: D.\nResolução de referência sob as hipóteses discutidas abaixo: Os valores de volume e área são os obtidos das dimensões do desenho original. A geração total é Q̇ = 100 × 4 = 400 W. Sem acumulação, todo esse calor sai pela única face exposta: 400 = 10 × 4 × (Ts − 30). Então Ts − 30 = 10 e Ts = 40 °C. Não some a área das faces isoladas.Leve para a prova: O balanço determina o calor total; a área efetivamente exposta determina a temperatura da superfície.\nInterpretação técnica autoral — BAN-10Com as dimensões fornecidas, V = 4 m³, A = 4 m² e geração = 400 W. No modelo de única saída por convecção, dU/dt = 400 − 40(Ts − 30) W. Se dU/dt = 0, Ts = 40 °C, a chave D. A igualdade espacial de temperatura sobre a face não impõe essa condição temporal. Se houver radiação ou outra saída, seu termo também deve entrar no balanço. A resolução de referência é válida sob essas hipóteses adicionais, não como determinação geral a partir da uniformidade da face. A justificativa oficial, PDF p. 5, também iguala geração e convecção para chegar a 40 °C; essa é uma justificativa documentada da banca, mas não acrescenta regime permanente ao comando da p. 4.Critério de autocorreção, sem nota: Manter o termo de acumulação, separar uniformidade espacial de regime permanente e explicitar o modelo de troca superficial antes de obter 40 °C.Fundamentação: MIT Unified, §2.1, balanço da energia total. Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca.\n\nProva oficial atualizada em 11/05/2026 · PDF p. 5 · Versão histórica (sem efeito) · PDF p. 4 · Gabarito definitivo · Caderno fornecido (questão na p. 31)\nConferência documental BAN-10: Prova local histórica (sem efeito) · item 38 · PDF p. 4 · Gabarito local · D · PDF p. 1"
+        }
+      ],
+      "depois": [
+        {
+          "alvo": "#base-leitura-matematica",
+          "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+        },
+        {
+          "alvo": "#base-geracao-face",
+          "rotulo": "Ler a figura: geração por volume e calor pela face exposta"
+        },
+        {
+          "alvo": "#base-transferencia",
+          "rotulo": "Ponte para E2: condução, convecção e advecção"
+        },
+        {
+          "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+          "rotulo": "MIT Unified, §2.1, balanço da energia total"
+        }
+      ]
+    }
+  ]
+}

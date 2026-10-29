@@ -1,0 +1,360 @@
+{
+  "versao": "1.0",
+  "caminhos": [
+    {
+      "id": "I",
+      "trechos": [
+        {
+          "tipo": "isobarico",
+          "inicial": {
+            "T_K": 300,
+            "V_m3": 0.01,
+            "p_Pa": 249419.99999999997
+          },
+          "final": {
+            "T_K": 600,
+            "V_m3": 0.02,
+            "p_Pa": 249419.99999999997
+          },
+          "W_J": 2494.2,
+          "delta_U_J": 3741.3,
+          "Q_J": 6235.5,
+          "admissivel": true
+        },
+        {
+          "tipo": "isocorico",
+          "inicial": {
+            "T_K": 600,
+            "V_m3": 0.02,
+            "p_Pa": 249419.99999999997
+          },
+          "final": {
+            "T_K": 450,
+            "V_m3": 0.02,
+            "p_Pa": 187065
+          },
+          "W_J": 0,
+          "delta_U_J": -1870.65,
+          "Q_J": -1870.65,
+          "admissivel": true
+        }
+      ],
+      "W_J": 2494.2,
+      "Q_J": 4364.85,
+      "delta_U_J": 1870.65,
+      "admissivel": true
+    },
+    {
+      "id": "II",
+      "trechos": [
+        {
+          "tipo": "isotermico",
+          "inicial": {
+            "T_K": 300,
+            "V_m3": 0.01,
+            "p_Pa": 249419.99999999997
+          },
+          "final": {
+            "T_K": 300,
+            "V_m3": 0.02,
+            "p_Pa": 124709.99999999999
+          },
+          "W_J": 1728.8476977526154,
+          "delta_U_J": 0,
+          "Q_J": 1728.8476977526154,
+          "admissivel": true
+        },
+        {
+          "tipo": "isocorico",
+          "inicial": {
+            "T_K": 300,
+            "V_m3": 0.02,
+            "p_Pa": 124709.99999999999
+          },
+          "final": {
+            "T_K": 450,
+            "V_m3": 0.02,
+            "p_Pa": 187065
+          },
+          "W_J": 0,
+          "delta_U_J": 1870.65,
+          "Q_J": 1870.65,
+          "admissivel": true
+        }
+      ],
+      "W_J": 1728.8476977526154,
+      "Q_J": 3599.4976977526157,
+      "delta_U_J": 1870.65,
+      "admissivel": true
+    },
+    {
+      "id": "III",
+      "trechos": [
+        {
+          "tipo": "isocorico",
+          "inicial": {
+            "T_K": 300,
+            "V_m3": 0.01,
+            "p_Pa": 249419.99999999997
+          },
+          "final": {
+            "T_K": 450,
+            "V_m3": 0.01,
+            "p_Pa": 374130
+          },
+          "W_J": 0,
+          "delta_U_J": 1870.65,
+          "Q_J": 1870.65,
+          "admissivel": true
+        },
+        {
+          "tipo": "isotermico",
+          "inicial": {
+            "T_K": 450,
+            "V_m3": 0.01,
+            "p_Pa": 374130
+          },
+          "final": {
+            "T_K": 450,
+            "V_m3": 0.02,
+            "p_Pa": 187065
+          },
+          "W_J": 2593.2715466289233,
+          "delta_U_J": 0,
+          "Q_J": 2593.2715466289233,
+          "admissivel": true
+        }
+      ],
+      "W_J": 2593.2715466289233,
+      "Q_J": 4463.921546628923,
+      "delta_U_J": 1870.65,
+      "admissivel": true
+    },
+    {
+      "id": "IV",
+      "trechos": [
+        {
+          "tipo": "isobarico",
+          "inicial": {
+            "T_K": 300,
+            "V_m3": 0.01,
+            "p_Pa": 249419.99999999997
+          },
+          "final": {
+            "T_K": 450,
+            "V_m3": 0.015000000000000003,
+            "p_Pa": 249419.99999999997
+          },
+          "W_J": 1247.1000000000006,
+          "delta_U_J": 1870.65,
+          "Q_J": 3117.750000000001,
+          "admissivel": true
+        },
+        {
+          "tipo": "isotermico",
+          "inicial": {
+            "T_K": 450,
+            "V_m3": 0.015000000000000003,
+            "p_Pa": 249419.99999999997
+          },
+          "final": {
+            "T_K": 450,
+            "V_m3": 0.02,
+            "p_Pa": 187065
+          },
+          "W_J": 1076.304937663847,
+          "delta_U_J": 0,
+          "Q_J": 1076.304937663847,
+          "admissivel": true
+        }
+      ],
+      "W_J": 2323.4049376638477,
+      "Q_J": 4194.054937663848,
+      "delta_U_J": 1870.65,
+      "admissivel": true
+    },
+    {
+      "id": "V",
+      "trechos": [
+        {
+          "tipo": "isotermico",
+          "inicial": {
+            "T_K": 300,
+            "V_m3": 0.01,
+            "p_Pa": 249419.99999999997
+          },
+          "final": {
+            "T_K": 300,
+            "V_m3": 0.013333333333333332,
+            "p_Pa": 187065
+          },
+          "W_J": 717.5366251092317,
+          "delta_U_J": 0,
+          "Q_J": 717.5366251092317,
+          "admissivel": true
+        },
+        {
+          "tipo": "isobarico",
+          "inicial": {
+            "T_K": 300,
+            "V_m3": 0.013333333333333332,
+            "p_Pa": 187065
+          },
+          "final": {
+            "T_K": 450,
+            "V_m3": 0.02,
+            "p_Pa": 187065
+          },
+          "W_J": 1247.1000000000001,
+          "delta_U_J": 1870.65,
+          "Q_J": 3117.75,
+          "admissivel": true
+        }
+      ],
+      "W_J": 1964.6366251092318,
+      "Q_J": 3835.286625109232,
+      "delta_U_J": 1870.65,
+      "admissivel": true
+    },
+    {
+      "id": "rejeitada",
+      "trechos": [
+        {
+          "tipo": "isocorico",
+          "inicial": {
+            "T_K": 300,
+            "V_m3": 0.01,
+            "p_Pa": 249419.99999999997
+          },
+          "final": {
+            "T_K": 225,
+            "V_m3": 0.01,
+            "p_Pa": 187065
+          },
+          "W_J": 0,
+          "delta_U_J": -935.325,
+          "Q_J": -935.325,
+          "admissivel": false
+        },
+        {
+          "tipo": "isobarico",
+          "inicial": {
+            "T_K": 225,
+            "V_m3": 0.01,
+            "p_Pa": 187065
+          },
+          "final": {
+            "T_K": 450,
+            "V_m3": 0.02,
+            "p_Pa": 187065
+          },
+          "W_J": 1870.65,
+          "delta_U_J": 2805.975,
+          "Q_J": 4676.625,
+          "admissivel": false
+        }
+      ],
+      "W_J": 1870.65,
+      "Q_J": 3741.3,
+      "delta_U_J": 1870.6499999999999,
+      "admissivel": false
+    }
+  ],
+  "ciclo": {
+    "W_J": 765.3523022473844,
+    "Q_J": 765.3523022473846,
+    "delta_U_J": 0
+  },
+  "calor_caminho": {
+    "inicial": {
+      "T_K": 300,
+      "V_m3": 0.02,
+      "p_Pa": 124709.99999999999
+    },
+    "final": {
+      "T_K": 600,
+      "V_m3": 0.005,
+      "p_Pa": 997679.9999999999
+    },
+    "W_J": -4988.4,
+    "delta_U_J": 3741.3,
+    "Q_J": -1247.0999999999995,
+    "C_V_JK": 12.471,
+    "C_p_JK": 20.785,
+    "cv_m_JmolK": 12.471,
+    "cp_m_JmolK": 20.785,
+    "C_caminho_JK": -4.157,
+    "delta_S_JK": -2.881412829587692,
+    "Q_sobre_T1_JK": -4.156999999999998
+  },
+  "integrabilidade": {
+    "kappa": 0.19999999999999998,
+    "observacao_ciclo_esquerdo_Jmol": -13.862943611198906,
+    "ciclo_largo_quadratura_Jmol": -1.0516032489249483e-12,
+    "ciclo_esquerdo_quadratura_Jmol": -13.862943611199654,
+    "alpha_ciclo_quadratura_Jmol": -3.126388037344441e-13,
+    "parcial_a_volume_molar_constante_JmolK": 0.4620981203732969,
+    "derivada_caminho_nu_igual_theta_JmolK": 1.2954314537066303,
+    "delta_potencial_11_a_22_Jmol": 257.9441541679836,
+    "caminhos_abertos": {
+      "alpha_HV_Jmol": 257.9441541679831,
+      "alpha_VH_Jmol": 257.9441541679834,
+      "beta_HV_Jmol": 257.9441541679831,
+      "beta_VH_Jmol": 271.80709777918224
+    }
+  },
+  "quadratura": {
+    "W_compressao_J": -4988.400000000106
+  },
+  "testes": [
+    "pressão mantida",
+    "resíduo de energia do trecho",
+    "volume mantido",
+    "resíduo de energia do trecho",
+    "mesma variação de propriedade I",
+    "temperatura mantida",
+    "resíduo de energia do trecho",
+    "volume mantido",
+    "resíduo de energia do trecho",
+    "mesma variação de propriedade II",
+    "volume mantido",
+    "resíduo de energia do trecho",
+    "temperatura mantida",
+    "resíduo de energia do trecho",
+    "mesma variação de propriedade III",
+    "pressão mantida",
+    "resíduo de energia do trecho",
+    "temperatura mantida",
+    "resíduo de energia do trecho",
+    "mesma variação de propriedade IV",
+    "temperatura mantida",
+    "resíduo de energia do trecho",
+    "pressão mantida",
+    "resíduo de energia do trecho",
+    "mesma variação de propriedade V",
+    "volume mantido",
+    "resíduo de energia do trecho",
+    "pressão mantida",
+    "resíduo de energia do trecho",
+    "mesma variação de propriedade rejeitada",
+    "cinco construções permitidas e uma rejeitada",
+    "ciclo fecha energia",
+    "ciclo volta à propriedade",
+    "calor por derivada de caminho",
+    "entropia por integral ao longo do caminho",
+    "constante do caminho",
+    "compressão aquece e perde calor",
+    "quadratura de trabalho da compressão",
+    "ensaio esquerdo identifica parâmetro",
+    "orientações dos ensaios declaradas",
+    "ciclo largo reproduz observação",
+    "ciclo largo por expressão analítica",
+    "ciclo esquerdo reproduz observação",
+    "alpha fecha ciclo",
+    "kappa não nulo refuta exatidão",
+    "parcial difere da derivada de caminho",
+    "potencial coincide com caminho HV",
+    "potencial coincide com caminho VH",
+    "diferença dos caminhos reproduz ciclo"
+  ]
+}

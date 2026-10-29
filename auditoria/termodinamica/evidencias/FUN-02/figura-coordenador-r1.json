@@ -1,0 +1,30 @@
+{
+  "data": "2026-10-27",
+  "autor": "Coordenador automatizado /root",
+  "arquivo": "assets/termodinamica/fun02-caminhos-v1.svg",
+  "sha256": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+  "coordenadas": "Mapeamento linear: V de 8 a 22 L e p de 0 a 280 kPa. Pontos calculados do modelo pV=nRT.",
+  "estados": {
+    "A": [
+      10,
+      249.42
+    ],
+    "B": [
+      20,
+      187.065
+    ],
+    "C": [
+      20,
+      249.42
+    ],
+    "D": [
+      20,
+      124.71
+    ]
+  },
+  "curva": "p(kPa)=2494.2/V(L), amostrada em 161 pontos entre 10 e 20 L; valores de trabalho pela integral analítica.",
+  "rotas": "I A-C-B e II A-D-B; setas mostram ambos os percursos A→B. O ciclo citado usa I e o inverso de II.",
+  "trabalho_ciclo_J": 765.3523022473844,
+  "verificacao_visual": "SVG aberto na prévia local pelo navegador integrado: eixos, unidades, quatro rótulos e legenda legíveis sem sobreposição observada. Título e descrição presentes na árvore de acessibilidade. Verificação não inclui leitor de tela nem integração final no HTML.",
+  "origem": "Figura autoral de dados didáticos verificados. Não é reprodução de gráfico externo."
+}

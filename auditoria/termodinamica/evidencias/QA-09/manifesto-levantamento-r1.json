@@ -1,0 +1,94 @@
+{
+  "id": "QA-09",
+  "autor": "/root/inspect_repo — Corretor",
+  "estado": "PLANO_E_INVENTARIO_PARA_REVISAO; CANDIDATA_DIAGNOSTICO_01_ISOLADA",
+  "limite": "Sem auditoria numérica sistemática nem aceite; diagnóstico 1 analisado pontualmente; diagnóstico 5 em apuração. Não modifica produto ou controle.",
+  "artefatos": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/preflight-r1.json",
+      "sha256": "43eed40470cd19165626ebc518af049325a765633f401e9e87b8b0b0680ee842"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-estrutural-parcial-r1.json",
+      "sha256": "5099a1523244ac784dadc121f266afd7f0b33f373727b298ad6047ef488c8c71"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r1.json",
+      "sha256": "e12aedd9e974286823de4157ad634b794126271d4ba13311791239c91a1f5b59"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventariar-r1.mjs",
+      "sha256": "2eefdab7af1fe11b5abeec0f1fd7462e2431fa47013260505e3db70b6af1a8f1"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r2.json",
+      "sha256": "8f37801a8dfdc073c3ee37357b36126a5235b8bb1fc4ad1f09215236bd5753f4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventariar-r2.mjs",
+      "sha256": "76e1ce09b4635548af781771bd5951b33d10d3f263c15dcee2c1e4da14300661"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/validar-levantamento-r1.py",
+      "sha256": "34b9dc44ddbd2531b3b1553137d7853c9f2fcbbbc67286b83a7a594034d2209c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/validacao-levantamento-r1.json",
+      "sha256": "002ad707ec3f3bb1d8b3c55cc3e0afd983b02426f2f2ee064adf3714f19d284d"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/plano-execucao-r1.md",
+      "sha256": "a5967a37ebb46f9f02b938bfbd965724611c6fffe185c4a4e20edd9110cd685c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico01-original-r1.html",
+      "sha256": "80a22fe349ce210437582ddc0f06610a30e1259766d55c19d496e39276f62a29"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico01-candidata-r1.html",
+      "sha256": "105196333d9b8092d7f56401b296f86a6ed9ef7ad6796fe31a091cd7c6b2b506"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico01-candidata-r1.json",
+      "sha256": "4418c3909d7e3c937e95ee39102e9b5acb5b246cfee0b1c84edc3125623efb2c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico01-analise-candidata-r1.md",
+      "sha256": "3a536ad778fc930486251a9da38d632bacf851b12b39521219700ef630ad39c9"
+    }
+  ],
+  "fotografia_base": [
+    {
+      "arquivo": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md",
+      "sha256": "825138999087aa65d8600ed57e191233184659a8c588cd2d0cb670d6eb10aa0b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "sha256": "18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/CONTROLE_AAA.json",
+      "sha256": "5b25088b90cacf221b049791e0c5092867ab37482584693293de55edd2f9a01c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-r1.md",
+      "sha256": "46d1b8dcc67cfe65a07f383f83dd01235d72f337be59c4696968ecee03c3a485"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FOR-01-r2.md",
+      "sha256": "14b2d2704d1d7e8e23ae92f019f5b734be868dc1d0961595c8a61d2d231887b3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "adb2f7edd0bdfbf6d1f0ec0bc8aefd46b22d6728a0aa59fc3981281aac93fbcd"
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+    },
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR61–CR65",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos, condições de uso e estudo crítico; conferência dimensional e contagem.",
+  "registros": [
+    {
+      "id": "cr-e1-61",
+      "artigo_sha256": "745cde3da24b14b573ac4b3fb6cca25d7e1cf90b099d9a8f05adcbd86bb86143",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-61",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-eficiencia-volumetrica",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Eficiência volumétrica: volume fresco admitido nas condições de entrada / volume deslocado.",
+      "solucao": "O gás residual se reexpande e ocupa parte do curso; aquecimento, perdas nas válvulas e vazamentos também influenciam. Valor 1 é possível em idealização, não universal.",
+      "resultado": "E.",
+      "comparacao": "C impõe eficiência sempre igual a 1; E a rejeita.",
+      "tolerancia": "1 é valor adimensional exato de referência ideal; não há folga, pressões ou volumes para cálculo ou tolerância.",
+      "limite": "Não supor mesmo efeito quantitativo de cada perda ou eficiência sempre inferior a 1 em qualquer configuração.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-62",
+      "artigo_sha256": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-62",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-valvulas-compressor",
+          "https://gunt.de/en/products/fluid-machinery/driven-machines/fans-and-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-752:pr-240",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "../downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf#page=1",
+          "../downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf#page=1"
+        ]
+      },
+      "aplicabilidade": "ESTUDO_CRITICO_SEM_NOTA",
+      "dados": "Duas válvulas, retorno do pistão e possível gás residual na folga; direção geométrica depende da orientação.",
+      "solucao": "Na reexpansão inicial ambas podem estar fechadas. Na admissão efetiva, válvula de entrada aberta e descarga fechada; admissão começa quando a diferença de pressão permite.",
+      "resultado": "Chave documental C para fase de admissão, estudo crítico sem nota.",
+      "comparacao": "C corresponde à fase de admissão; ler durante todo movimento de retorno inclui reexpansão e admite distinção.",
+      "tolerancia": "Duas válvulas contam-se exatamente; sem pressões, volumes ou instantes para calcular tolerância.",
+      "limite": "Não atribuir intenção à banca nem declarar anulação; leitura de descida deve ser vinculada à geometria.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-63",
+      "artigo_sha256": "777d85e75efa77ab3c17204d511d215d72be4519ee59f4b06e371c9d9bc30695",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-63",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-comparar-ciclos",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_EXATA",
+      "dados": "Turbina convencional e identificação do ciclo; Stirling ideal.",
+      "solucao": "Brayton descreve turbina a gás convencional; Stirling ideal de aquecimento externo tem duas isotérmicas e duas isocóricas com regeneração.",
+      "resultado": "E.",
+      "comparacao": "C atribui operação da turbina convencional ao Stirling; E corrige a identificação.",
+      "tolerancia": "2+2=4 etapas ideais, contagem exata; sem dados de trabalho, temperatura ou tolerância.",
+      "limite": "Presença de gás não identifica sozinha o ciclo ou um equipamento específico.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-64",
+      "artigo_sha256": "5cb37f5064e8114789a60496810e7ebd847a164bcb798385e5c0f5b37fef7313",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-64",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-tipos-compressores",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=3",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Compressores de parafuso e alternativo como famílias de deslocamento positivo.",
+      "solucao": "Ambos aprisionam gás e reduzem volume: pistão altera câmara; parafuso atua entre rotores e carcaça.",
+      "resultado": "C.",
+      "comparacao": "C identifica mecanismo comum; E negaria analogia.",
+      "tolerancia": "Sem volume ou pressão numérica; sem cálculo ou tolerância.",
+      "limite": "Analogia de mecanismo não iguala eficiência, capacidades ou trajetória termodinâmica.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-65",
+      "artigo_sha256": "9322946ef9f40d87e6ff05c7a9d49c484260044be286ecbe9153b3a05dedeeda",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-65",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-turbina-potencia",
+          "https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html",
+          "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_009_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_009_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_UNIDADES",
+      "dados": "Turbina a vapor em regime permanente, uma entrada e uma saída; calor, ΔEC e ΔEP desprezíveis; trabalho de eixo.",
+      "solucao": "Ẇeixo=ṁ(h1−h2); (kg/s)(kJ/kg)=kW. Trabalho de escoamento pv já está incluído em h.",
+      "resultado": "C sob modelo: trabalho produzido positivo requer h1>h2.",
+      "comparacao": "C associa expansão e trabalho produzido; E negaria a interpretação do modelo.",
+      "tolerancia": "Sem vazão nem entalpias, não há potência ou tolerância numérica.",
+      "limite": "Adiabático não implica isentrópico; turbina real pode ser aproximadamente adiabática e irreversível.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior; PDFs não reexaminados nesta execução."
+  ]
+}

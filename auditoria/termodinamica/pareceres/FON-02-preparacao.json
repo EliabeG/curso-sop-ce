@@ -1,0 +1,1442 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "revisor": "Auditor AAA /root/auditor_aaa — agente automatizado independente",
+  "estado": "PREPARACAO_SEM_VEREDITO",
+  "baseline_html_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+  "dependencia": "Não há impedimento curricular/documental para executar o recorte. FON-01 fornece fontes e leituras por identidade; FON-09/BAN-10 não substituem a busca de suplementos nos 80.",
+  "criterio": "Identificar cada constante, propriedade ou hipótese acrescentada ao enunciado original; separar e justificar cada suplemento, sem apresentar versão enriquecida como transcrição literal.",
+  "fontes_herdadas": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FON-01-leitura-baseline.json",
+      "sha256": "f2f98df478f18e236ba8b0e045553bd6c7d3374440423a5fb1567a19e13166aa"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+      "sha256": "563e70deab73fc10c6af355db9a267a5342243427529efc6407a640436278d42"
+    }
+  ],
+  "alcance_leitura_previa": "Leituras das 80 fontes concluídas em FON-01; nesta preparação foi feita triagem textual nos comentários dos 80 e confronto direto dos enunciados dos candidatos. O filtro não substitui leitura integral de todos os blocos na auditoria final.",
+  "categorias": [
+    "Dado/hipótese explicitamente presente na fonte original",
+    "Consequência algébrica/geométrica dos dados originais, com cadeia indicada",
+    "Convenção de sinais, definição ou conversão de unidade",
+    "Propriedade física, constante ou relação de modelo usada pelo curso",
+    "Hipótese acrescentada para cálculo/interpretação condicionada",
+    "Exemplo/contramodelo ou conjunto didático autoral"
+  ],
+  "prioridades_preliminares": [
+    {
+      "ids": [
+        "cr-e1-16"
+      ],
+      "questao": "A relação de umidade usada no comentário exige identificação do modelo/alcance; distinguir propriedade/relação explicativa dos dados 50% e 40% fornecidos."
+    },
+    {
+      "ids": [
+        "cr-e1-26"
+      ],
+      "questao": "Distinguir a conversão kcal–kJ escolhida, convenção de sinais e condições da redução a ΔU dos valores fornecidos no tanque."
+    },
+    {
+      "ids": [
+        "cr-e1-24",
+        "cr-e1-34",
+        "cr-e1-35",
+        "cr-e1-39"
+      ],
+      "questao": "Conferir hipóteses de leitura condicionada e contramodelos já aceitos em BAN-10, sem inseri-los como fatos do comando."
+    },
+    {
+      "ids": [
+        "cr-e1-27",
+        "cr-e1-30",
+        "cr-e1-33",
+        "cr-e1-36",
+        "cr-e1-40",
+        "cr-e1-57",
+        "cr-e1-65"
+      ],
+      "questao": "Inventariar as restrições dos modelos explicativos usados, distinguindo informação original, consequência do modelo e hipótese acrescentada."
+    },
+    {
+      "ids": [
+        "cr-e1-68"
+      ],
+      "questao": "Reutilizar por identidade o conjunto corrigido FON-09 e sua proveniência, sem confundi-lo com transcrição oficial ou dado necessário ao julgamento da emissividade."
+    },
+    {
+      "ids": [
+        "cr-e1-79"
+      ],
+      "questao": "Valores escolhidos no contramodelo e propriedades/constantes usadas devem manter natureza autoral, origem/justificação e alcance; não são medidas da prova."
+    },
+    {
+      "ids": [
+        "cr-e1-80"
+      ],
+      "questao": "Separar volume/área derivados da figura de regime permanente e única saída por convecção; distinguir a justificativa oficial da hipótese ausente no comando."
+    }
+  ],
+  "itens": [
+    {
+      "id": "cr-e1-01",
+      "sha256_artigo_base": "b0bd5a4a2f5eaea1f0addd8ed696110ba14d99f10577a411ab0144510090d030",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+        "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22m-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-02",
+      "sha256_artigo_base": "88330f46201ca197d70fd6060f876cc410a9e7aa2acd355df530ced0e3998266",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+        "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22m-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-03",
+      "sha256_artigo_base": "3c6cec66df34c03177c210d957f91842d50148d7d63e506e654b5c82a0b60e6d",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-04",
+      "sha256_artigo_base": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Resolução de referência sob as hipóteses discutidas abaixo: Na leitura usual de líquido quase incompressível, líquidos apresentam pequena compressibilidade: é preciso grande variação de pressão para alterar significativamente seu volume. A dilatação térmica costuma ser mais relevante. É uma comparação de comportamento usual, não uma regra independente da faixa de pressão e temperatura.",
+        "Leve para a prova: A aproximação de líquido incompressível precisa ser compatível com as condições do problema.",
+        "Para massa fixa de líquido em uma fase, dv/v = α dT − κ T dp, com α = (1/v)(∂v/∂T) p e κ T = −(1/v)(∂v/∂p) T . α tem unidade K⁻¹ e κ T , Pa⁻¹. Devem-se comparar efeitos como |αΔT| e |κ T Δp|, na mesma faixa e com propriedades adequadas. Baixa compressibilidade não prova uma desigualdade universal entre esses efeitos. A leitura usual da chave é plausível, mas as escalas necessárias não foram especificadas.",
+        "Fundamentação: H. DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165 . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-05",
+      "sha256_artigo_base": "0e756b1237367af6d0380d6935ccd0b0bd11fda5fbe0e5dc733f4954759a13c0",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+        "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p2.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-06",
+      "sha256_artigo_base": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+        "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p4.png"
+      },
+      "triagem_comentario": [
+        "Uma escala linear pode mudar o ponto de origem e o tamanho da unidade. O coeficiente a desloca a origem e b muda a proporção entre os intervalos. Dois pontos conhecidos determinam ambos. Exemplo: a conversão Celsius–Fahrenheit usa TF = 32 + 1,8TC."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-07",
+      "sha256_artigo_base": "7370a26429d6879438fcf43c0c5200bdd1a64f8318d13de099bad14c957573f1",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p2.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-08",
+      "sha256_artigo_base": "9f993bc1a26e2239421f1504bf758851b25e5f8e25d4761498d47c6c61528f35",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "Span é a diferença entre o limite superior e o inferior. Logo, limite superior = 50 + 100 = 150 °C. A faixa de medição é 50 a 150 °C. Aqui se trabalha com um intervalo, por isso 100 °C de diferença equivale a 100 K de diferença."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-09",
+      "sha256_artigo_base": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_019_01.PDF",
+        "sha256": "ff13fb949d16969fb9b5cff2802a04e00a7673425d61be5efb5252c4a7b64c6a",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tc-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Resolução de referência sob as hipóteses discutidas abaixo: O gabarito definitivo é E. A unidade de base da temperatura termodinâmica é o kelvin, símbolo K. Atenção à redação: o grau Celsius também é uma unidade SI, com nome especial para temperatura Celsius, conforme a Brochura do SI do BIPM. A interpretação de que o item se refere à unidade de base explica o gabarito, mas é uma leitura do contexto, pois a frase fornecida não explicita essa restrição. Não conclua que °C esteja fora do SI. T(K) = t(°C) + 273,15; intervalos de 1 °C e 1 K têm o mesmo tamanho.",
+        "A temperatura termodinâmica usa o kelvin como unidade de base. A temperatura Celsius é t = T − 273,15 K e sua unidade SI é o grau Celsius. A chave E é coerente ao restringir a frase à unidade de base da temperatura termodinâmica; a restrição não aparece expressamente no comando. O curso não atribui essa interpretação à banca como justificativa documentada.",
+        "Fundamentação: BIPM, Brochura do SI, 9ª ed., v4.01 (2026), §2.3.1 e tabela 4 . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-10",
+      "sha256_artigo_base": "a2f8e4e1407748aa1e52b5aa4b9dfcb53ce561c81993d96af7752ef8a0de0a1b",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-11",
+      "sha256_artigo_base": "25f574ce82e77fd539abacb0d0a60d84bebed544b5a2d39bb494901b3e3c98e7",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-01-21_itaipu-tecnico-em-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/924_ITAIPU_028_01.PDF",
+        "sha256": "df3742fe8e7802f77aa6c6c4fec53ea31a869be83a0b6aeee8adb720c0035761",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ita-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "A unidade de base é o kelvin, escrito K. Fahrenheit e Celsius são escalas de temperatura; watt mede potência e joule mede energia. Em eficiência de Carnot e na equação de gás ideal, use valores absolutos em kelvin."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-12",
+      "sha256_artigo_base": "a25e2c7ffcfd139ecdebb4cdfa23c003c524f926171f16a18d4de4fc0f197740",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-01-21_itaipu-tecnico-em-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/924_ITAIPU_028_01.PDF",
+        "sha256": "df3742fe8e7802f77aa6c6c4fec53ea31a869be83a0b6aeee8adb720c0035761",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ita-prova-p3.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-13",
+      "sha256_artigo_base": "d038caddab08159beae96c99df97efae278396af24bd3be56009e68c4e311ca1",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+        "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22m-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Para o modelo de gás ideal, a energia interna específica u depende da temperatura. Mantendo a pressão e aquecendo o gás, seu volume pode aumentar e u também muda. Com calor específico constante, Δu = cv × ΔT, em que cv é o calor específico a volume constante.",
+        "Leve para a prova: No gás ideal, procure a temperatura para avaliar a energia interna."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-14",
+      "sha256_artigo_base": "b892b8303e9bb256c4c34e22804bd33c9dcd18f033b4daefa1987eb035f3e4c9",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Sem uma barreira ou outro impedimento, o gás se expande para ocupar o recipiente. Suas moléculas se deslocam entre colisões. No modelo de gás ideal, seu volume é o volume disponível, pois o volume próprio das moléculas é desprezado."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-15",
+      "sha256_artigo_base": "6312f29aa7d400f3a1d317df01fe81ccc8ba856aa8a29219f823275145c39e7b",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "O modelo cinético elementar do gás ideal adota colisões elásticas entre moléculas e com as paredes: a energia cinética total é conservada nessas colisões. A velocidade elevada não implica perda de energia em cada choque.",
+        "Leve para a prova: Reconheça as hipóteses do modelo antes de interpretar uma afirmação sobre gases."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-16",
+      "sha256_artigo_base": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "A umidade relativa é φ = pv/psat, onde pv é a pressão parcial do vapor e psat é sua pressão de saturação à temperatura do ar. Como a temperatura permanece constante, psat não muda. Logo, a razão é 0,40/0,50 = 0,80. O valor 1,25 resulta de inverter entrada e saída."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-17",
+      "sha256_artigo_base": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-18",
+      "sha256_artigo_base": "1ab626bbec5308efdd2a087d9b63f67e6a67022028ba420e91a84e9aa38dd1ea",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "A equação pV = nRT exige p2V2/(p1V1) = T2/T1 = 4. Se pressão e volume triplicassem, o produto aumentaria nove vezes. Seria necessária temperatura final de 2.700 K, e não 1.200 K."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-19",
+      "sha256_artigo_base": "605a3f5541abb9d8c34bd02e8963dfc8ba6e18dc30a01b473946c84bc9d72597",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Isole p em pV = nRT. Então p = (3 × 0,082 × 330)/85,4 = 81,18/85,4 ≈ 0,9506 atm. O resultado é maior que 0,94 atm. As unidades fornecidas já são compatíveis; converter somente o volume para m³ sem converter R produziria erro."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-20",
+      "sha256_artigo_base": "1da42a8241671bf9ed59d7c960412f5ed805e2fbb8ee0c5c210092111704e623",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "Pela extrapolação de pV = nRT a pressão constante e positiva, o volume tende a zero quando T tende a zero, não ao infinito. Gases reais deixam de seguir essa extrapolação e podem mudar de fase antes. O modelo ideal não descreve uma substância real até 0 K.",
+        "Leve para a prova: Use o modelo dentro de sua faixa de validade física."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-21",
+      "sha256_artigo_base": "3338053d71662c8528680b4b7449ca65d314abfb71a83b05940f5adb6adefa31",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "Essas variáveis são ligadas por uma equação de estado. Para quantidade e composição fixas de gás ideal, pV = nRT. Assim, elas não são três informações independentes: duas permitem calcular a terceira, dentro do modelo.",
+        "Leve para a prova: Antes de aplicar pV = nRT, confira se a quantidade de gás é constante."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-22",
+      "sha256_artigo_base": "4039582bcec1fcbb3f7baf160416f14892244955a67594c583c4660adf138a80",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "O fator Z é definido por Z = pV/(nRT), usando pressão absoluta e temperatura absoluta. Para o gás ideal, Z = 1. Valores afastados de 1 revelam a importância das interações e do volume molecular. A equação corrigida é pV = ZnRT.",
+        "Leve para a prova: Z é adimensional e permite avaliar a adequação da aproximação ideal."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-23",
+      "sha256_artigo_base": "2d802855e9017eea01af0f2a2e3f14d68e5a8ce7c02f49fc9ffeabceab716a6e",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p3.png"
+      },
+      "triagem_comentario": [
+        "A combinação usual favorável é baixa pressão e temperatura suficientemente alta, longe da condensação. Pressões elevadas aproximam as moléculas e tornam seu volume e suas interações mais relevantes. A temperatura alta, sozinha, não justifica a generalização do item."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-24",
+      "sha256_artigo_base": "887ced079ca74bcde28b91d067b1e6cba6b74e5269fb42c4210952f8e96ae398",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+        "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Resolução de referência sob as hipóteses discutidas abaixo: O gabarito definitivo é E. Na interpretação usual de um termômetro de gás, compare a pressão do mesmo gás, com massa e volume constantes, nos dois pontos de temperatura: p2/p1 = 373,15/273,16 ≈ 1,366, diferente de 1. Essa conta pressupõe que o ponto triplo da água seja somente a referência térmica. Lida literalmente, a redação compara pressão de gás com pressão da água e não fornece dados suficientes para obter essa razão; a equação do gás ideal não autoriza substituir uma pressão pela outra.",
+        "Na leitura literal, p gás /p água = (nR·373,15/V)/p água : falta n/V, mesmo se a pressão da água no ponto triplo fosse conhecida. O número 1 não pode ser julgado pela razão de temperaturas de substâncias diferentes. Suplemento autoral: se forem pressões da mesma amostra ideal, com n e V constantes, em equilíbrio térmico a 373,15 K e 273,16 K, então p₂/p₁ ≈ 1,366. Essa é uma leitura condicionada compatível com E, não uma emenda silenciosa ao original nem uma definição atual do kelvin.",
+        "Fundamentação: OpenStax, University Physics 2, §2.1, equação 2.2 . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-25",
+      "sha256_artigo_base": "75a9939ea48fec2f6568b7a474df1051f7cb5ccaebf5eaab5e2cdf6a3f59705e",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+        "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+        "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+        "pagina_fisica": 8,
+        "pagina_impressa": "8",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-prova-p8.png"
+      },
+      "triagem_comentario": [
+        "A razão é T2/T1 = (p2/p1)(V2/V1) = 2 × 1,5 = 3. A temperatura final é três vezes a inicial, mas o aumento é (3 − 1) × 100% = 200%. O cálculo é feito em kelvin; não se aplica a um percentual de temperatura Celsius.",
+        "Leve para a prova: Valor final de 300% do inicial corresponde a aumento de 200%."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-26",
+      "sha256_artigo_base": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+        "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22m-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Adote calor positivo para dentro e trabalho positivo realizado pelo sistema. O agitador fornece trabalho, portanto W = −1.400 kcal. Usando 1 kcal ≈ 4,184 kJ: Q ≈ −95,6 kcal. Assim, ΔU = Q − W ≈ −95,6 + 1.400 = 1.304,4 kcal. Há aumento, mas muito inferior ao valor proposto."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-27",
+      "sha256_artigo_base": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "No modelo de compressão considerado, sem perda de calor nem mudanças relevantes de energia cinética ou potencial, o trabalho fornecido fica como aumento de energia interna. Para um gás ideal, elevar a energia interna eleva a temperatura. É o aquecimento percebido em uma bomba manual ao comprimir ar."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-28",
+      "sha256_artigo_base": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Primeiro converta o calor: Q = 200 × 4,2 = 840 J. Pela primeira lei, ΔU = Q − W = 840 − 350 = 490 J. Esse número é a variação. A energia final é Uf = Ui + ΔU = 100 + 490 = 590 J."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-29",
+      "sha256_artigo_base": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+        "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "O trabalho realizado pelo gás é W = pΔV = 1.000 × (−0,1) = −100 J. O calor que sai tem sinal negativo: Q = −1.000 J. Assim, ΔU = Q − W = −1.000 − (−100) = −900 J. O gás recebe trabalho, mas perde mais energia por calor."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-30",
+      "sha256_artigo_base": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+        "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p3.png"
+      },
+      "triagem_comentario": [
+        "A temperatura constante mantém constante a energia interna do gás ideal. Desprezando mudanças de energia cinética e potencial, ΔU = 0 e Q = W. Trata-se de um processo, não de uma máquina operando em ciclo completo; por isso não contradiz Kelvin–Planck."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-31",
+      "sha256_artigo_base": "e33a863be630fc055c5af33bcb8c7d0cde6f2f3fcff3f43b83814e943e70552e",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p2.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-32",
+      "sha256_artigo_base": "4677e514a72bd2d54fcf930116afe6551ca3cc75d4b32db373c47e7ab0c16541",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "Mantidas as condições e os estados inicial e final correspondentes, inverter a reação inverte o sinal da variação de entalpia. A pressão constante e com apenas trabalho de expansão, a reação exotérmica tem ΔH negativo; a reação inversa tem ΔH positivo."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-33",
+      "sha256_artigo_base": "5f4e940c5e6629741675ba3ad6a93add2967221e8535181e7562beb91464da9b",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p3.png"
+      },
+      "triagem_comentario": [
+        "A fronteira externa é rígida e não há trabalho de expansão contra o vácuo. O isolamento fornece Q = 0. Logo, ΔU = 0 e, para gás ideal, ΔT = 0. A expansão é irreversível e a entropia aumenta, mesmo sem mudança de temperatura."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-34",
+      "sha256_artigo_base": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+        "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Resolução elementar por condições suficientes: Para massa fixa, somente trabalho de expansão e variações cinética/potencial nulas, a isocoria dá W = 0; logo ΔU = Q > 0. Essa rota simples sustenta C, mas suas condições adicionais não são todas necessárias ao aumento de U. O argumento mais amplo de entropia abaixo separa o sinal da igualdade.",
+        "Leve para a prova: Isocórico elimina o trabalho de expansão. Distinguir ΔU > 0 de ΔU = Q evita transformar uma condição suficiente em necessária.",
+        "Igualdade e condição suficiente. Para a massa fechada, com Q positivo entrando e W positivo saindo, ΔU + ΔE c + ΔE p = Q − W. Nesse balanço, ΔU = Q se e somente se W + ΔE c + ΔE p = 0. Anular cada termo separadamente é suficiente, não necessário: a condição é a soma nula. A isocoria anula o trabalho de expansão da fronteira simples, mas não todo trabalho possível. Isso limita a dedução da igualdade; não prova que o sinal de ΔU possa ser escolhido livremente.",
+        "Demonstração guiada do sinal. Considere massa m e composição fixas de gás ideal simples, estados inicial e final de equilíbrio no mesmo volume e capacidade térmica específica c v (T) positiva. Interprete o aquecimento como calor exclusivamente entrando, com quantidade não nula, a temperaturas absolutas de fronteira T b finitas e positivas. O balanço de entropia é ΔS = ∫δQ/T b + S ger , com S ger ≥ 0; portanto ΔS > 0. T b é a temperatura no ponto de transferência da fronteira, não uma substituição automática pela temperatura uniforme do gás.",
+        "Entre os estados de equilíbrio, a relação do gás ideal é ΔS = m∫ T₁ T₂ [c v (T)/T] dT + mR ln(v₂/v₁). Como m e V são iguais nos dois estados, v₂ = v₁. O integrando é positivo: ΔS > 0 implica T₂ > T₁ e ΔU = m∫ T₁ T₂ c v (T) dT > 0. Essa inferência não exigiu W = 0 nem reversibilidade do caminho real.",
+        "Trabalho não transporta entropia. Um valor de W que produza ΔU ≤ 0 apenas por substituição na primeira lei não constitui processo admissível sob essas hipóteses: contrariaria a segunda lei e a relação de estado. Assim, o estudo esclarece os modelos sem atribuir ao texto oficial a igualdade que ele não afirma e sem apresentar um contramodelo inválido. A dedução acima é autoral a partir das relações citadas.",
+        "Critério de autocorreção, sem nota: Distinguir ΔU>0 de ΔU=Q; escrever a soma W+ΔEc+ΔEp=0 como condição exata da igualdade e reconhecer que zerar cada parcela é apenas suficiente. Na demonstração guiada, identificar as hipóteses de massa/composição, estados, volume, calor exclusivamente entrante e temperaturas positivas; explicar ΔS>0 ⇒ T₂>T₁ ⇒ ΔU>0. Não tratar um W arbitrário como contraprova nem supor que o original declarou ΔU=Q.",
+        "Fundamentação: MIT Unified, §2.1, balanço da energia total · MIT Unified, §5.4, variação de entropia do gás ideal · MIT Unified, §5.5, segunda lei e transferência de entropia . Consulta em 28/10/2026. A demonstração e a escolha pedagógica são do curso, não uma justificativa publicada pela banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-35",
+      "sha256_artigo_base": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+        "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Resolução de referência sob as hipóteses discutidas abaixo: Adiabático significa Q = 0. Desprezando alterações de energia cinética e potencial, a primeira lei ΔU = Q − W resulta em ΔU = −W. Ao produzir trabalho, o sistema perde energia interna; ao receber trabalho, ganha. Se as outras formas de energia mudarem, o balanço deve incluí-las.",
+        "Com Q = 0, o balanço é ΔU + ΔE c + ΔE p = −W. Portanto ΔU = −W apenas se a soma das variações macroscópicas for nula. Num levantamento ideal sem mudança de velocidade ou estado interno, o trabalho recebido pode corresponder a ΔE p , com ΔU = 0. O exemplo é um contramodelo autoral, não dado da prova. A chave conserva sentido no modelo usual de sistema em repouso e sem alteração de elevação.",
+        "Fundamentação: MIT Unified, §2.1, balanço da energia total . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-36",
+      "sha256_artigo_base": "c5785d05c646b64b1c74d9421e8acda5274eac695fb1d3d6625ad24a6ff19689",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-12-08_justica-eleitoral-tse-cpnuje-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_009_01.PDF",
+        "sha256": "fae9b7159587bd52cfe63f1bffce4894bdd4b3419ae449740c70ff0b021c5ce6",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tse-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "A condição adiabática zera o calor, não o trabalho. Um gás pode empurrar um pistão isolado termicamente, realizando trabalho e reduzindo sua energia interna. No modelo ideal reversível, pVᵏ é constante e a expansão geralmente diminui a temperatura."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-37",
+      "sha256_artigo_base": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+        "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22m-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-38",
+      "sha256_artigo_base": "8895b72f34bb0fd12fcad536db449144757e5fef1bcdf29dd409236ee3e8333c",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+        "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22m-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "O limite é η = 1 − Tfria/Tquente, com ambas as temperaturas em kelvin. Nenhuma máquina real entre essas mesmas fontes pode ultrapassá-lo. Outras máquinas reversíveis entre as mesmas duas fontes também têm essa eficiência: Carnot representa o limite, não uma exclusividade de construção."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-39",
+      "sha256_artigo_base": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Resolução de referência sob as hipóteses discutidas abaixo: O calor recebido é 350 × 4,2 = 1.470 J, exatamente o trabalho fornecido. Portanto, η = 1 e o calor rejeitado seria zero. Embora o balanço de energia feche, uma máquina cíclica não pode converter todo o calor retirado de uma única fonte em trabalho, conforme Kelvin–Planck.",
+        "No modelo convencional, 350 cal são todo o calor recebido de uma única fonte e 1.470 J são o trabalho líquido de um ciclo, sem outros efeitos. Então Q entra = W líq , Q rejeitado = 0, e Kelvin–Planck impede essa conversão integral. A chave C é coerente nesse recorte. Num motor de combustão real, a fronteira pode ter entrada/saída de massa e energia química; os dois números isolados não definem o balanço completo. A exclusão editorial evita premiar somente a escolha tácita de uma fronteira.",
+        "Critério de autocorreção, sem nota: Fazer a conversão correta, declarar totalidade das trocas e ciclo líquido, e distinguir modelo térmico de balanço de combustão com massa.",
+        "Fundamentação: OpenStax, University Physics 2, §4.4, Kelvin–Planck . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-40",
+      "sha256_artigo_base": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Para uma substância simples compressível de composição fixa, a relação fundamental é dh = T ds + v dp. Aqui h é a entalpia específica, s a entropia específica e v o volume específico. Como ds = 0 e v é positivo, dh tem o mesmo sinal de dp.",
+        "Leve para a prova: Isentrópico significa entropia constante, não entalpia constante."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-41",
+      "sha256_artigo_base": "c07f4425a20d5839dd7caa63ac3ecbab78ab16beb4df77b4e84d0af011d11b3e",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+        "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-42",
+      "sha256_artigo_base": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "A eficiência efetiva é η = W/Qrecebido = 1.000/3.000 = 1/3 ≈ 33,3%. Para essa conta, a temperatura da fonte é dispensável. Ela seria necessária, junto da temperatura fria, para calcular o limite de Carnot."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-43",
+      "sha256_artigo_base": "3b8417f1d9e4dc6f2c1658d03178ba8bc87cd7c5d2776e0e0af55105554c80f0",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_019_01.PDF",
+        "sha256": "ff13fb949d16969fb9b5cff2802a04e00a7673425d61be5efb5252c4a7b64c6a",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tc-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "A segunda lei exige que a entropia total de sistema e vizinhança não diminua. Ao congelar, a água libera calor para o meio. Sua entropia diminui, mas a do meio aumenta. Em um processo reversível ideal, as variações se compensam; com irreversibilidades, a soma é positiva."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-44",
+      "sha256_artigo_base": "505d85a9d656cf593526e85643c8cab8269f9bac8c23b2f5c4736b700afaf3f2",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_019_01.PDF",
+        "sha256": "ff13fb949d16969fb9b5cff2802a04e00a7673425d61be5efb5252c4a7b64c6a",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tc-prova-p2.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-45",
+      "sha256_artigo_base": "9065ac5761995d907afcf86d54c6d04d7e7dd2bd8d7dd70628c8a0c4be31b8ac",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+        "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "O trabalho proposto é 900 − 90 = 810 kJ e a eficiência é 810/900 = 90%. Convertendo as fontes: Tquente = 750,15 K e Tfria = 300,15 K. Carnot limita η a 1 − 300,15/750,15 ≈ 60%. O rendimento de 90% excede o limite, embora conserve energia."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-46",
+      "sha256_artigo_base": "0bb0f9cd0768570ab457e4ac9c9f3b61af6c1bf59570d242df01cca495353831",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+        "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+        "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+        "pagina_fisica": 9,
+        "pagina_impressa": "9",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-prova-p9.png"
+      },
+      "triagem_comentario": [
+        "Há duas isotérmicas reversíveis, nas quais o sistema troca calor com cada fonte, e duas adiabáticas reversíveis, que conectam as temperaturas sem troca de calor. As adiabáticas reversíveis também são isentrópicas. Trocas a pressão ou volume constantes não substituem as isotérmicas nesse ciclo.",
+        "Leve para a prova: Carnot combina temperatura constante durante as trocas de calor e entropia constante nas conexões."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-47",
+      "sha256_artigo_base": "8a99cb5355045fe2477c6438fd7b20b81c7dcc56469a21be72f57806f89f1c7b",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Na comparação geral tratada na prova, compressores centrífugos atendem bem a grandes vazões. Compressores alternativos costumam ser favorecidos para vazões menores e razões de pressão elevadas. A seleção final também considera propriedades do gás, faixa de operação e eficiência: a indicação geral não substitui o projeto."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-48",
+      "sha256_artigo_base": "e7585a8c58fabc658d7c57c28e3b2b067a196f8425e8dd2fa569e9ca36a9face",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-49",
+      "sha256_artigo_base": "d1d8cab6e7cc2b0a7ac70e6d16fc6112d2aecb30345213927e0a4247d0d948d9",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png"
+      },
+      "triagem_comentario": [
+        "O modelo ideal considera adição e rejeição de calor a pressão constante. No equipamento real, o escoamento encontra perdas de pressão nos trechos de troca térmica. A rejeição de calor não atua como um compressor para elevar a pressão.",
+        "Leve para a prova: Separar o modelo ideal das perdas reais ajuda a identificar a afirmação incorreta."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-50",
+      "sha256_artigo_base": "b1fd08abfa0ff599e2d0202bf2a471e1972d00d1ea6921e2df2a8bf09d37611c",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-51",
+      "sha256_artigo_base": "fa9b521938d9944137be722345b961fe7f5d2b8aa8acf9ed2dfd2789d7d4256d",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png"
+      },
+      "triagem_comentario": [
+        "No Brayton ideal convencional, há compressão e expansão isentrópicas e duas trocas de calor isobáricas. Nessas quatro etapas, a temperatura normalmente varia. Modificações com resfriamento intermediário ou outras idealizações precisam ser identificadas à parte.",
+        "Compressão/expansão isentrópicas e aquecimento/resfriamento isobáricos formam o Brayton ideal convencional. A descrição do ciclo nomeado é suficiente para a leitura de reconhecimento aqui adotada; versões modificadas devem ser identificadas à parte. Não se acrescenta uma medida de autonomia avançada por reconhecer esse modelo.",
+        "Fundamentação: MIT Unified, §3.7, quatro processos do Brayton . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-52",
+      "sha256_artigo_base": "0a1e2c76406a3ffa58de5677e0bbec9d7cd938cd89ea83776712f6f2dfa3363d",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-53",
+      "sha256_artigo_base": "88a3ce14dae670334b9a1c277c31fd539b3249ab6b9d87865392798967a299b9",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-54",
+      "sha256_artigo_base": "bb4985d1b74f411b0a581709e552f79e82658f88e51bdc208cdf8b2b8e15bc6b",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p3.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-55",
+      "sha256_artigo_base": "f32de84a31a24cebe70f9d4920a27997f64b170b7bee0723c7b2d01727950230",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "A última etapa está errada. No Brayton ideal, tanto a adição quanto a rejeição de calor são isobáricas, isto é, a pressão constante. As duas outras etapas são isentrópicas. Troca de calor a volume constante é característica de outro modelo, como o ciclo Otto.",
+        "A expressão “pressão isentrópica” não nomeia adequadamente um processo e não revela, por si, o que o autor pretendia. Independentemente de sua possível leitura, a rejeição de calor isocórica contradiz o Brayton ideal convencional, que a realiza a pressão constante. Assim E permanece justificável sem adivinhar uma correção tipográfica. Não há aqui errata oficial ou declaração de intenção da banca.",
+        "Fundamentação: MIT Unified, §3.7, quatro processos do Brayton . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-56",
+      "sha256_artigo_base": "e454a08aa8d566d15fd40d8301e5a41be923c5b8f1b4f5682df242b1df809a25",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-57",
+      "sha256_artigo_base": "9ec32a8405951828d2a5d18681730df40d18778a177c8a4021f26abf853385a0",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "No modelo ideal de ar com calores específicos constantes, η = 1 − 1/rp^((k−1)/k). rp é a razão de pressões do compressor e k = cp/cv. Para k maior que 1, elevar rp aumenta essa eficiência. A conclusão não autoriza aumentos ilimitados em uma turbina real com temperatura máxima fixada.",
+        "Leve para a prova: A condição “ideal” faz parte da conclusão; desempenho real exige mais informações."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-58",
+      "sha256_artigo_base": "eab62eaa7a838747c40e753a4ef8229e016ec0ced56a013c098263eb5b36ea08",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Na fase de compressão, o pistão reduz o volume aprisionado e a pressão sobe até permitir a descarga. No modelo isotérmico de gás ideal, pV é constante: menor volume implica maior pressão. Nos processos usuais com aquecimento, a elevação de pressão também ocorre."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-59",
+      "sha256_artigo_base": "4bbfd2e74eed80002b59704eef4106bba6864e504e80864ea9e9a0f562607348",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-60",
+      "sha256_artigo_base": "2e5d313e3cc3f01ba79fe2854a3bb19e8409d78b7cb02a38a423f0f72ec0d1b7",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "A descarga ocorre em partes do movimento do pistão, gerando pulsações. Mais cilindros e reservatórios podem suavizar o fornecimento, mas a vazão instantânea de um cilindro não é naturalmente constante durante todo o ciclo.",
+        "Leve para a prova: Vazão média constante não significa ausência de pulsação instantânea."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-61",
+      "sha256_artigo_base": "6196d3ecfd0f16b8c35118d7c02ff27b86b9bceee5b88a8be606550d9bc3b5e0",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "O volume residual contém gás que se reexpande antes da nova admissão. Isso ocupa parte do curso e reduz o volume efetivamente admitido. Aquecimento, perdas nas válvulas e vazamentos também afetam a eficiência volumétrica. O valor unitário pode aparecer em uma idealização, mas não é uma regra."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-62",
+      "sha256_artigo_base": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Resolução de referência sob as hipóteses discutidas abaixo: No arranjo de cilindro considerado, o deslocamento aumenta o volume da câmara e reduz sua pressão até permitir a entrada do gás. A válvula de admissão abre pela diferença de pressão; a de descarga permanece fechada. A direção “desce” depende da orientação do desenho do cilindro.",
+        "Fundamentação: GUNT, ET 508, princípio da reexpansão no compressor alternativo . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-63",
+      "sha256_artigo_base": "08934e196ed8815785afcb9d000fcc56326e7527b250d5f51f169c0844883f11",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "A turbina a gás convencional é associada ao Brayton. O Stirling ideal tem duas etapas isotérmicas e duas isocóricas com regeneração, sendo ligado a motores de aquecimento externo. A identidade dos processos distingue os dois modelos."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-64",
+      "sha256_artigo_base": "8d2a2179f5ccc824e3ffbe6c5ffad76e16ad7455b56e283c9be3d2f90834a210",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+        "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p3.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-65",
+      "sha256_artigo_base": "7d2096286200bc4cafcfb512f081b4c5515c7e3a290dcb87582567c1170f8522",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-12-08_justica-eleitoral-tse-cpnuje-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_009_01.PDF",
+        "sha256": "fae9b7159587bd52cfe63f1bffce4894bdd4b3419ae449740c70ff0b021c5ce6",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tse-prova-p2.png"
+      },
+      "triagem_comentario": [
+        "No modelo de escoamento permanente com perdas de calor e variações cinética e potencial desprezíveis, a potência produzida é vazão mássica × queda de entalpia. A entalpia do vapor diminui ao fornecer trabalho ao eixo. Uma turbina real pode ser aproximadamente adiabática sem ser reversível."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-66",
+      "sha256_artigo_base": "4b194eda06c6ee5215c05177f00ca8f01bbf490fc06d9f53b65df372a45c0bae",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+        "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-67",
+      "sha256_artigo_base": "ecddb0148ddc0cbb74ff06eff3e47032ba240626e6c35c01905724ce06026043",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+        "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-68",
+      "sha256_artigo_base": "868e2438c1a4c020a75209fd26c9bcf0cd08c67fc4b4c7d037f90eff3d5c70f6",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p3.png"
+      },
+      "triagem_comentario": [
+        "Em uma comparação com as mesmas temperaturas e geometria, a taxa radiativa é proporcional à emissividade ε. Para uma superfície diante de uma grande vizinhança, Q̇ = εσA(Ts⁴ − Tv⁴). ε mede a capacidade de emitir radiação, σ é a constante de Stefan–Boltzmann e A é a área. As temperaturas devem estar em K.",
+        "No modelo de superfície cinzenta diante de grande vizinhança isotérmica, Q̇ rad = εσA(T s ⁴ − T v ⁴). Com T s > T v e demais fatores mantidos, a redução de ε diminui essa parcela. Isso fundamenta a possibilidade expressa pela chave C, sem prometer redução igual de convecção/condução ou manter automaticamente T s num equipamento real. O conjunto corrigido FON-09 e sua transcrição histórica continuam separados e preservados.",
+        "Fundamentação: OpenStax, University Physics 2, §1.6, radiação líquida . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-69",
+      "sha256_artigo_base": "6c621ff003b12f2f67ca92d9a51d8b9ab38ac2ff98588b05e78108f88dbeda9b",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+        "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-70",
+      "sha256_artigo_base": "f581577d62634979ee5d025e93d96b40bfa4b68dd7c4b70f7c6b71a61444446a",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p3.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-71",
+      "sha256_artigo_base": "ef1f1de0d3aba6c166381fe3af769f819fe9b9445651a1016de91944291375f2",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 3,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p3.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-72",
+      "sha256_artigo_base": "1f8978ee9f14297e3ca0b8323a8c2622d06f2c6b9f921d026ca6bb75d22a0dd4",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-73",
+      "sha256_artigo_base": "c65b0368e6572bc3505c3aac6b1676072cfae06cc781807fe6b96a8ee270420a",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+        "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356",
+        "pagina_fisica": 4,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-74",
+      "sha256_artigo_base": "fc277c15bccdcd3178cf209367e5d7f5eb6fadc7446b1a409e5d2b2f90d1bbbd",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+        "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-prova-p1.png"
+      },
+      "triagem_comentario": [
+        "Leve para a prova: Condições de manutenção e operação afetam o desempenho previsto pelo modelo limpo."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-75",
+      "sha256_artigo_base": "90300e7354993e382db2a2ac18a4f26e6b7055b7e073176542095e436b67e8dd",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+        "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-76",
+      "sha256_artigo_base": "43598c42f864bae79295cfee191095dd8fe691b64a59ffca3a4e4588907a475f",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+        "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79",
+        "pagina_fisica": 1,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-prova-p1.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-77",
+      "sha256_artigo_base": "902e8ca91003f7f3529280b54cf81b5f91d425a91a142b1bb09ca7876042c6b4",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-12-08_justica-eleitoral-tse-cpnuje-engenharia-mecanica_prova.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_009_01.PDF",
+        "sha256": "fae9b7159587bd52cfe63f1bffce4894bdd4b3419ae449740c70ff0b021c5ce6",
+        "pagina_fisica": 2,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tse-prova-p2.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-78",
+      "sha256_artigo_base": "cd13d18ed248d752ad0ab84a4504f3782370596c1d564070d9151fd5726dabb8",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+        "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+        "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+        "pagina_fisica": 7,
+        "pagina_impressa": "7",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-prova-p7.png"
+      },
+      "triagem_comentario": [],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-79",
+      "sha256_artigo_base": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+      "fonte_original": {
+        "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+        "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+        "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+        "pagina_fisica": 8,
+        "pagina_impressa": "8",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-prova-p8.png"
+      },
+      "triagem_comentario": [
+        "Resolução de referência sob as hipóteses discutidas abaixo: O gabarito definitivo é B. O alto vácuo reduz fortemente a troca por gás residual; radiação não exige meio material e suportes, fios e contatos sólidos continuam conduzindo calor. A opção B corresponde ao cenário de radiação predominante pressuposto pela prova. Essa predominância não pode ser demonstrada quantitativamente só com o nível de vácuo e a temperatura das paredes: seria necessário conhecer áreas, emissividades, temperaturas e condutâncias dos contatos. O conceito seguro é considerar radiação e condução pelos sólidos, sem convecção gasosa relevante nas hipóteses usuais.",
+        "A condução por suportes/cabos pode competir com a radiação; alto vácuo não fixa essa razão. Contramodelo autoral, não dado da prova: corpo a 300 K, área 0,10 m², superfícies negras e grande parede a 77,15 K dão aproximadamente 45,73 W radiativos. Se a ligação sólida à parede tiver condutância G = 0,01 W/K, conduz cerca de 2,23 W; com G = 0,50 W/K, conduz 111,43 W. As duas montagens respeitam o contexto térmico, mas invertem a predominância. A chave B corresponde à primeira leitura, sem ser demonstrada pelos dados originais. A troca gasosa foi desprezada nesse contramodelo; não se afirma pressão residual rigorosamente nula.",
+        "Critério de autocorreção, sem nota: Reconhecer radiação e condução sólida, apresentar condição/contramodelo que altere sua razão e não usar apenas a palavra vácuo como prova de predominância.",
+        "Fundamentação: NASA, Thermal Control (07/05/2026), §§7.2.1 e 7.2.3 . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    },
+    {
+      "id": "cr-e1-80",
+      "sha256_artigo_base": "5390d7c70005822548d2922ef764d627d9c93794c3b79e043a3f47606da29184",
+      "fonte_original": {
+        "arquivo": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/prova-caesb_24-atualizada.pdf",
+        "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/905BAE8B8901D96A45D9CBF7F17341894AF8405A0E2D9122A552F640CAC8B9DB.pdf",
+        "sha256": "767b22affb2fe53295ccf8a4f66dd9e4a4cae55ba36d1a49b1dc980dc7efa9b5",
+        "pagina_fisica": 5,
+        "pagina_impressa": "Sem número de página impresso visível na folha examinada.",
+        "pagina_declarada_confere": true,
+        "evidencia_visual": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/caesb-atualizada-p5.png",
+        "leitores": "Coordenador e Corretor viram a página; Auditor registrou confronto próprio separado.",
+        "natureza_portal": "PROVA OBJETIVA (P2) E GABARITO PRELIMINAR COM JUSTIFICATIVAS - CARGO 9 (ATUALIZADO)",
+        "data_portal": "11/05/2026 12:39"
+      },
+      "triagem_comentario": [
+        "Resolução de referência sob as hipóteses discutidas abaixo: Os valores de volume e área são os obtidos das dimensões do desenho original. A geração total é Q̇ = 100 × 4 = 400 W. Sem acumulação, todo esse calor sai pela única face exposta: 400 = 10 × 4 × (Ts − 30). Então Ts − 30 = 10 e Ts = 40 °C. Não some a área das faces isoladas.",
+        "Com as dimensões fornecidas, V = 4 m³, A = 4 m² e geração = 400 W. No modelo de única saída por convecção, dU/dt = 400 − 40(T s − 30) W. Se dU/dt = 0, T s = 40 °C, a chave D. A igualdade espacial de temperatura sobre a face não impõe essa condição temporal. Se houver radiação ou outra saída, seu termo também deve entrar no balanço. A resolução de referência é válida sob essas hipóteses adicionais, não como determinação geral a partir da uniformidade da face. A justificativa oficial, PDF p. 5 , também iguala geração e convecção para chegar a 40 °C; essa é uma justificativa documentada da banca, mas não acrescenta regime permanente ao comando da p. 4.",
+        "Critério de autocorreção, sem nota: Manter o termo de acumulação, separar uniformidade espacial de regime permanente e explicitar o modelo de troca superficial antes de obter 40 °C.",
+        "Fundamentação: MIT Unified, §2.1, balanço da energia total . Consulta em 27/10/2026. O comentário é do curso; a letra oficial não constitui justificativa técnica da banca."
+      ],
+      "estado_revisao_final": "pendente de pacote congelado; triagem não equivale a aceite"
+    }
+  ],
+  "plano_verificacao": [
+    "Confrontar os 80 registros finais com as fontes já lidas e confirmar identidade dos originais preservados.",
+    "Ler integralmente cada artigo, inclusive resolução, notas, roteiros, legendas e conjuntos de dados; o registro deve enumerar cada suplemento relevante, não apenas marcar o item genericamente.",
+    "Para cada elemento, localizar trecho original e autoral, classificar natureza e verificar origem/justificação, unidades, modelo/condições, papel no raciocínio e limite da conclusão.",
+    "Verificar separação perceptível ao estudante e fidelidade da atribuição. Derivação de valor original não é dado importado; hipótese do comentário não passa a condição da prova.",
+    "Conferir mérito científico/numérico suficiente à justificação de cada suplemento afetado, sem antecipar BAN-07/BAN-08 globais.",
+    "Verificar delta, metadados/representações, hashes/identidades, gabaritos, figuras, placar 71/9 e preservação de componentes de persistência; reproduzir somente verificações pertinentes.",
+    "Emitir parecer após entrega congelada, sem aprovação antecipada de campos presentes ou leituras de autoria."
+  ],
+  "limites": [
+    "Nenhuma alteração de produto, inventário, controle ou checklist pelo Auditor.",
+    "Não se exige nova unidade curricular, nem novo problema/rubrica artificialmente, para este ID documental.",
+    "FON-02 não encerra FON-03/FON-10 ou revisão científica integral; defeito material do suplemento afetado, porém, não pode ser remetido a outro ID para aceitar este."
+  ]
+}

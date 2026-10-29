@@ -1,0 +1,567 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "HERANCA_FUN02_CR17_CR27",
+  "data": "2026-10-28",
+  "revisor_atual": "Agente automatizado independente /root/auditor_ban07_final",
+  "estado": "CONCLUIDO_5_ITENS_SEM_NOVOS_AJUSTES_OBRIGATORIOS",
+  "produto": {
+    "versao": "BAN-07 r1 congelada",
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "escopo": "Exclusivamente três abertos FUN-02 e ressalvas CR17/CR27; sem parecer global.",
+  "criterio_comum": {
+    "referencia": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md, BAN-07; protocolo AAA e regra comum pertinente já lidos",
+    "exigencia": "Suficiência de dados, modelos e condições, comando, consistência física, unidades, restrições e respostas admissíveis; para itens fechados, chave única e julgamento das duas opções; para abertos, família válida, solução e rubrica coerentes."
+  },
+  "fontes": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FUN-02-r1.md",
+      "sha256": "3518816f3bb65ff601ece5198f4fc7cfe2fec3bcd966b9074d36f1c9c4982524"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FUN-02-r1-calculos-independentes.json",
+      "sha256": "d72bd6424fa95851dd97ae5983cceee3afce710105fe3c07f3a59cea5775d69b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FUN-02-r1-evidencias.json",
+      "sha256": "5c6f1c0b9d4bc28006f937dcf873078528f01bb73bb80dc9e7839452d7b229d4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/heranca-abertos-coordenador-r1.json",
+      "sha256": "20a6ab1b1ee4feed968f5cf54a799257f40a4f4ab0edb8f8fa6c9c296b6b76f6"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+      "sha256": "d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FUN-02-p2-preliminar.md",
+      "sha256": "5b3e0e2bf06d401420bc038e1fef284588e294f8a80eb9c64ef81836674102b0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FUN-02-p2-preliminar-calculos.json",
+      "sha256": "174fcd13e1520e7544aec682917eab2b551f821405dc743fb62bc30a9bf000c2"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FON-01-r1.md",
+      "sha256": "997313ef9d2e2137fe0ada9a028699ef29e536f75202780afbca961c0d39bf22"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/FON-02-r2.md",
+      "sha256": "569a99f0108696d845b08b5329628e51283c38b079bcbe7a533a9a57e15d08b4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-10-r2.md",
+      "sha256": "f07e4534b4a4c42df78d771d0857cfc1399d3d4330a743297474ef9d69a47d9b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-10-r1-cientifico.json",
+      "sha256": "831b73d6dc2a37d3787e7cc49e23ce2e86fdefe3cd097a917318ecfc08d1a06a"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r2.json",
+      "sha256": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1"
+    }
+  ],
+  "identidade_fun02": {
+    "metodo": "Conferência própria com parseHtml/sha256 canônicos; comparação da unidade e artigos integrais e dos bytes dos recursos com pacote FUN-02 r1. Índice do coordenador foi apoio, não substituto da conferência.",
+    "html_pacote_sha256": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+    "componentes": [
+      {
+        "id": "fun02-diferenciais-caminhos",
+        "sha256_atual": "1f73415d458bf3f5789094bd91cef86536815f6135ec871292edbfaebfd24e96",
+        "sha256_aprovado": "1f73415d458bf3f5789094bd91cef86536815f6135ec871292edbfaebfd24e96",
+        "identico": true
+      },
+      {
+        "id": "fun02-e1-caminhos",
+        "sha256_atual": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6",
+        "sha256_aprovado": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6",
+        "identico": true
+      },
+      {
+        "id": "fun02-e1-integrabilidade",
+        "sha256_atual": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+        "sha256_aprovado": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+        "identico": true
+      },
+      {
+        "id": "fun02-e1-calor-caminho",
+        "sha256_atual": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+        "sha256_aprovado": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+        "identico": true
+      }
+    ],
+    "recursos": [
+      {
+        "arquivo": "assets/termodinamica/fun02-dados-v1.json",
+        "sha256_atual": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+        "sha256_aprovado": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+        "identico": true
+      },
+      {
+        "arquivo": "assets/termodinamica/fun02-calculos-v1.mjs",
+        "sha256_atual": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+        "sha256_aprovado": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+        "identico": true
+      },
+      {
+        "arquivo": "assets/termodinamica/fun02-caminhos-v1.svg",
+        "sha256_atual": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+        "sha256_aprovado": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+        "identico": true
+      }
+    ]
+  },
+  "registros": [
+    {
+      "item": "FUN02-P1",
+      "id_artigo": "fun02-e1-caminhos",
+      "sha256_artigo": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6",
+      "origem_revisao": "heranca_cientifica_atribuida_com_confronto_proprio_de_identidade_e_alcance",
+      "fontes_e_alcance": [
+        {
+          "referencia": "FUN-02-r1.md",
+          "revisor_original": "/root/auditor_aaa",
+          "alcance": "Seção P1, teoria/modelos, respostas alternativas, solução/rubrica e quadro de aceite APROVADO"
+        },
+        {
+          "referencia": "FUN-02-r1-calculos-independentes.json",
+          "revisor_original": "/root/auditor_aaa",
+          "alcance": "Memória P1: estados, duas rotas de referência, três outras ordenações admissíveis, balanços, faixa e ciclo"
+        },
+        {
+          "referencia": "FUN-02-r1-evidencias.json",
+          "alcance": "Veredito e confronto P1; revisão original, sem reatribuição de execução"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#fun02-e1-caminhos",
+          "alcance": "Comando, condições, solução, respostas alternativas e rubrica atuais lidos e confrontados"
+        }
+      ],
+      "confronto_atual": {
+        "suficiencia": "O comando fornece n=1 mol, gás ideal de composição fixa, R=8,314 J/(mol K), cv,m=3R/2 constante, U(T), extremos A/B, janela 250–650 K, até dois trechos permitidos e convenção Q recebido/W realizado. Sistema fechado, modos de trabalho e energias cinética/potencial delimitados.",
+        "modelos": "Equilíbrio mecânico, pistão sem atrito e pressão conjugada a dV sustentam a integral de trabalho; reversibilidade térmica adicional permite inverter o percurso. A rubrica não infere reversibilidade só da lentidão.",
+        "respostas_admissiveis": "Exige dois caminhos com trabalhos distintos, mas não impõe o par da referência. Sequências alternativas são aceitas se fecharem estados/balanços e toda a faixa; ciclo e sinais dependem do par e orientação. Terceiro caminho a 225 K é inadmissível. A afirmação sobre adiabáticos é condicional, não promete uma adiabat reversível entre esses extremos.",
+        "rubrica": "10 pontos: construção/faixa 3; integrais/balanços 3; ciclo orientado 2,5; conclusão/limites 1,5. Crédito parcial, erro aritmético isolado e tolerância 0,1% declarados; erros críticos compatíveis com o comando."
+      },
+      "demonstracao_herdada": {
+        "autor": "/root/auditor_aaa",
+        "natureza": "Resultados da resolução independente anterior, lidos e herdados; não recalculados nesta execução",
+        "resultados": "pA=249420 Pa e pB=187065 Pa; rota I por 600 K: W=2494,200 J, DeltaU=1870,650 J, Q=4364,850 J; rota II isotérmica 300 K/isocórica: W=1728,847698 J, mesma DeltaU, Q=3599,497698 J. Resíduos nulos; terceiro caminho passa por 225 K; ciclo I menos II dá W=Q=765,352302 J e DeltaU=0. Três outras ordenações admissíveis verificadas na memória original.",
+        "alcance_herdado": "A aprovação científica e numérica anterior cobre exatamente o artigo, unidade e recursos idênticos atuais. Não surgiu divergência que justificasse repetir a matemática."
+      },
+      "criterio_resultado": "Atendido no alcance BAN-07 do aberto: dados/modelos/comando suficientes, restrições e unidades coerentes, família de respostas e rubrica correspondentes.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Não é nova execução dos cálculos, código, fontes externas ou navegador do revisor original.",
+        "Aceite restrito à identidade e ao alcance confrontados; não declara competência do aluno ou aprovação global de BAN-07."
+      ]
+    },
+    {
+      "item": "FUN02-P2",
+      "id_artigo": "fun02-e1-integrabilidade",
+      "sha256_artigo": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+      "origem_revisao": "heranca_cientifica_atribuida_com_confronto_proprio_de_identidade_e_alcance",
+      "fontes_e_alcance": [
+        {
+          "referencia": "FUN-02-r1.md",
+          "revisor_original": "/root/auditor_aaa",
+          "alcance": "Aceite final da versão integrada: sete comandos, dados, solução, rubrica, teste global/local e decisão física delimitada"
+        },
+        {
+          "referencia": "FUN-02-p2-preliminar.md e FUN-02-p2-preliminar-calculos.json",
+          "revisor_original": "/root/auditor_aaa",
+          "alcance": "Resolução preliminar própria do enunciado isolado, posteriormente reconferida e incorporada pelo parecer final; não é aceite autônomo"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#fun02-e1-integrabilidade",
+          "alcance": "Comando completo, modelos, tabelas de resultados e rubrica atuais confrontados com o parecer/memória; artigo e preparação contidos na unidade idêntica"
+        }
+      ],
+      "confronto_atual": {
+        "suficiencia": "Domínio D positivo, referências Tref=300 K, vref=0,001 m³/mol, E0=100 J/mol, coordenadas/parametrização, formas A/B, família de defeito, ciclos orientados, ensaios exatos, referência do potencial e trajetória da inclinação são fornecidos. Sete comandos definem o produto argumentativo solicitado.",
+        "modelos": "É um registrador matemático declarado, sem alegar equação fundamental de substância real. Unidades de energia e exatidão não garantem admissibilidade física. A identificação de kappa é restrita à família fornecida; não se introduz incerteza experimental ausente.",
+        "respostas_admissiveis": "A deve ser aceita como diferencial de potencial global em D; B com parâmetro identificado deve ter essa interpretação rejeitada. Proposta de corrigir kappa para zero só é válida reconhecendo mudança dos ensaios/versão. Métodos equivalentes de integração/potencial são admissíveis, com domínio, orientação e unidades demonstrados.",
+        "rubrica": "10 pontos distribuídos por coordenadas/domínio 1; reconstrução A 2; B/local-global 1,5; ciclos/identificação 2; dois caminhos 1,5; condição mantida 1; decisão/limites 1. Crédito parcial distingue modelo, cálculo, orientação e interpretação. O número da inclinação pode estar correto enquanto seu rótulo é errado."
+      },
+      "demonstracao_herdada": {
+        "autor": "/root/auditor_aaa",
+        "natureza": "Ciência e números da memória independente anterior, não recalculados neste turno",
+        "resultados": "Phi/E0=theta ln(theta)-theta+(theta-1)ln(nu)+nu²/2+1/2. Defeito de cruzadas de B=2E0 kappa(theta-2)/nu: exata em todo D somente para kappa=0; linha theta=2 não fornece vizinhança aberta de exatidão para kappa não nulo. Ciclo largo cancela para todo kappa; esquerdo identifica kappa=0,200. A tem 257,944154 J/mol nos dois percursos; B tem 257,944154 e 271,807098 J/mol, com diferença orientada -13,862944 J/mol. Parcial por kelvin a vm constante=0,462098 J/(mol K); inclinação no caminho=1,295431 J/(mol K).",
+        "alcance_herdado": "O parecer final APROVADO reconferiu dados, domínio e sete comandos da memória preliminar na versão integrada. Artigo, unidade, dados e código atuais são idênticos ao pacote aprovado; não surgiu motivo científico para repetição numérica."
+      },
+      "criterio_resultado": "Atendido no alcance BAN-07: dados/modelo suficientes e explícitos, comando não exige propriedade física não fornecida, respostas e rubrica distinguem teste global, identificação, orientação e condição mantida.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Memória preliminar é usada pelo alcance confirmado no parecer final, com autoria original preservada.",
+        "Não se executaram cálculos, código ou novas consultas às fontes externas; nenhuma aprovação física de substância real é inferida."
+      ]
+    },
+    {
+      "item": "FUN02-P3",
+      "id_artigo": "fun02-e1-calor-caminho",
+      "sha256_artigo": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+      "origem_revisao": "heranca_cientifica_atribuida_com_confronto_proprio_de_identidade_e_alcance",
+      "fontes_e_alcance": [
+        {
+          "referencia": "FUN-02-r1.md",
+          "revisor_original": "/root/auditor_aaa",
+          "alcance": "P3, teoria, soluções/rubricas, bases e distinção de reversibilidade interna/externa; APROVADO"
+        },
+        {
+          "referencia": "FUN-02-r1-calculos-independentes.json",
+          "revisor_original": "/root/auditor_aaa",
+          "alcance": "Memória P3 com estados, integrais, capacidade de caminho, exatidão e entropia"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#fun02-e1-calor-caminho",
+          "alcance": "Comando, solução e rubrica atuais lidos; identidade integral com pacote aprovado e unidade/recursos confirmada"
+        }
+      ],
+      "confronto_atual": {
+        "suficiencia": "n, R, cv,m constante, gás ideal, estado inicial, volume final, pV^(3/2)=K e condições mecânicas/térmicas são fornecidos. Sistema fechado, somente p dV, DeltaEC=DeltaEP=0, pressões absolutas e sinais explícitos permitem determinar estados, W, DeltaU, Q e DeltaS.",
+        "modelos": "Trocas térmicas reversíveis no limite são hipótese explícita. Adiabaticidade não é pressuposta. Derivada na trajetória mantém K,n; propriedades mantêm suas variáveis declaradas. O comando exige distinguir temperatura do gás/fronteira/reservatório e geração interna/externa no caso modificado.",
+        "respostas_admissiveis": "O parecer deve rejeitar CV negativo, adiabaticidade por qualquer potência e imposição Q=0 mantendo o mesmo caminho. Para a interação com diferença finita de temperatura, admite-se igualdade interna do gás sob reversibilidade interna; não se impõe resposta falsa universal. Estados fixam DeltaS, e novos detalhes de irreversibilidade requerem fronteira e modelo.",
+        "rubrica": "10 pontos: trajetória/derivadas 2; energia 2,5; capacidades/bases 2; fator integrante 2; parecer/limites 1,5. Crédito parcial, tolerância 0,1%, sinais e erros críticos acompanham as condições do comando."
+      },
+      "demonstracao_herdada": {
+        "autor": "/root/auditor_aaa",
+        "natureza": "Resolução independente anterior herdada e confrontada; sem novo cálculo nesta execução",
+        "resultados": "T(V)=T1 sqrt(V1/V), T2=600 K; W=-4988,400 J, DeltaU=3741,300 J, Q=-1247,100 J. Capacidade de caminho=-4,157 J/K, CV=12,471 J/K e Cp=20,785 J/K; bases molares distintas. deltaQrev é inexata; deltaQrev/T tem potencial global no quadrante positivo. DeltaS=-2,881412830 J/K; Q/T1=-4,157 J/K não coincide. O expoente 3/2 difere do gamma=5/3 adiabático reversível neste gás.",
+        "alcance_herdado": "Parecer final e memória cobrem explicitamente a localização de irreversibilidades, sem substituir temperatura interna pela do reservatório e sem mudar DeltaS dos mesmos estados. Unidade, artigo, dados, código e figura permanecem idênticos; nada exigiu repetição numérica."
+      },
+      "criterio_resultado": "Atendido no alcance BAN-07: dados suficientes, condições para trabalho/calor explicitadas, bases/unidades coerentes e família argumentativa aceita pela rubrica. Nenhum conflito atual com a ciência aprovada foi identificado.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Não executados novamente cálculos, código, fontes externas ou navegador.",
+        "A evidência original de fonte Purdue e suas limitações permanece atribuída ao parecer FUN-02, sem alegar nova leitura dessa fonte."
+      ]
+    },
+    {
+      "item": "CR17",
+      "id_artigo": "cr-e1-17",
+      "sha256_artigo": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+      "origem_revisao": "confronto_proprio_da_ressalva_preliminar_com_heranca_documental_atribuida",
+      "fontes_e_alcance": [
+        {
+          "referencia": "BAN-07-leitura-base.json, registro cr-e1-17",
+          "revisor_original": "/root/auditor_aaa",
+          "alcance": "Registro completo lido; C condicionado à mistura ideal e comparação mesmo V/T, com ressalva de disponibilidade antes da resposta; era preliminar, sem parecer"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-17",
+          "alcance": "Comando atual, duas opções, link prévio de estudo, chave e comentário lidos"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-umidade",
+          "sha256_trecho": "7287f3e2bac49eb098650532e5193b57893da0aba5f758682c8ca9160911f8f5",
+          "alcance": "Trecho do h3 até próximo h3, incluindo mistura ideal, fator de intensificação desprezado, fase de referência e comparação mesmo V/T; acessível pela âncora do parágrafo cr-estudo antes das alternativas"
+        }
+      ],
+      "herancas_atribuidas": {
+        "FON01": "Parecer FON-01-r1 de /root/auditor_aaa aprova confronto documental, não toda a ciência. Identidade própria de enunciado, opções, metadados e chave com o pacote aprovado permite herdar a fidelidade documental. O artigo inteiro difere por comentário posterior FON-02; isso não foi tratado como identidade total.",
+        "FON02": "Parecer FON-02-r2 de /root/auditor_aaa preserva identificação/proveniência de suplementos da r1. Artigo atual integralmente idêntico ao pacote FON-02 r2. Registro diagnóstico CR17 do Corretor/apoio foi lido como diagnóstico de autoria, não como auditoria independente.",
+        "BAN10": "Matriz científica r1 incorporada pelo parecer r2, de /root/auditor_aaa, classificou leitura usual no mesmo V/T como sem novo bloqueador BAN-10. Enunciado/opções/chave são idênticos; comentário inteiro não é. Essa triagem não substitui a demonstração atual de BAN-07."
+      },
+      "confronto_atual": {
+        "comando": "Julgar se a quantidade inicial de vapor a 50% de umidade relativa é metade da quantidade de saturação na temperatura indicada. Os 40% posteriores não são necessários a essa afirmação e não autorizam deduzir remoção de massa sem condições adicionais.",
+        "suficiencia_antes_da_resposta": "Resolvida no curso atual: o link de estudo, fora de details e antes das opções, leva à base que declara mistura ideal e diz expressamente mesma temperatura e volume. Assim as condições não dependem somente do comentário posterior. Não se inventa um volume numérico ou vazão dado pela prova.",
+        "modelo_e_limites": "A relação vale na aproximação ideal e na mesma fase de referência; o próprio texto anterior informa que na descrição real a saturação depende também da pressão total. Não se apresenta a frase cotidiana como lei universal sobre ar que suporta água."
+      },
+      "demonstracao_atual": {
+        "autor": "/root/auditor_ban07_final",
+        "natureza": "Derivação simbólica própria para decidir a ressalva; revisão aberta, com chave e comentários conhecidos",
+        "massa_por_volume": "Para vapor ideal, pv V=nv Ru T e mv=Mv nv. Então rho_v=mv/V=Mv pv/(Ru T). Na saturação da mesma T e fase, rho_v,sat=Mv psat/(Ru T). Logo rho_v/rho_v,sat=pv/psat=phi=0,50. No mesmo V, mv/mv,sat=0,50; para quantidade de matéria a mesma razão vale.",
+        "fracao_massica": "A fração de água na massa total é yv=mv/(ma+mv)=W/(1+W), não phi. Nenhuma identidade faz yv=0,50 a partir apenas de phi=0,50.",
+        "razao_umidade": "Por massa de ar seco em mistura ideal, W=epsilon pv/(P-pv), com epsilon=Mv/Ma. À mesma pressão total e T, Wsat=epsilon psat/(P-psat); W/Wsat=phi(P-psat)/(P-phi psat), que difere de phi para 0<psat<P e 0<phi<1. Não se exige P numérico para distinguir as bases.",
+        "arredondamento": "Não aplicável: julgamento conceitual, sem alternativas numéricas equivalentes."
+      },
+      "opcoes": [
+        {
+          "letra": "C",
+          "texto": "Certo",
+          "juizo": "Correta no modelo/base explicitados antes da resposta: metade da quantidade de saturação em mesmo V/T.",
+          "justificativa": "Segue da equação de estado do vapor e da definição ideal de umidade relativa."
+        },
+        {
+          "letra": "E",
+          "texto": "Errado",
+          "juizo": "Incorreta nesse modelo/base.",
+          "justificativa": "Negar a frase pela leitura de fração mássica total ou por W/Wsat troca a base de comparação que a preparação atual explicita; é um erro conceitual reconhecível, não uma segunda chave."
+        }
+      ],
+      "decisao_da_ressalva": "RESOLVIDA_SEM_AJUSTE_OBRIGATORIO_CR17_NA_BASE_DO_CURSO",
+      "criterio_resultado": "Atendido no alcance BAN-07: base e idealidade estão acessíveis antes da resposta; C única nas condições sustentadas, comentário concordante e limites preservados.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Não estende a igualdade à razão por massa de ar seco, à fração mássica total ou ao gás real exato.",
+        "Sem nova inspeção dos PDFs oficiais, consulta ASHRAE ou execução atribuída aos revisores anteriores.",
+        "A aprovação é do artigo com sua base ligada; não afirma suficiência universal de uma transcrição isolada fora do curso."
+      ]
+    },
+    {
+      "item": "CR27",
+      "id_artigo": "cr-e1-27",
+      "sha256_artigo": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+      "origem_revisao": "confronto_proprio_da_ressalva_preliminar_com_heranca_documental_atribuida",
+      "fontes_e_alcance": [
+        {
+          "referencia": "BAN-07-leitura-base.json, registro cr-e1-27",
+          "revisor_original": "/root/auditor_aaa",
+          "alcance": "Registro completo lido: C no modelo convencional, prova por entropia e advertência de idealidade não nomeada no original; memória preliminar, sem parecer"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-27",
+          "alcance": "Transcrição/contexto, duas opções, trilha prévia, chave oficial e comentário autoral atuais lidos"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-primeira-lei",
+          "sha256_trecho": "a2f7bd5c90cb18202613e5fea1d90de56f87248be153ddfb7c0b98a47160962f",
+          "alcance": "Trecho do h3 ao próximo h3; sistema fechado, sinais, DeltaU+DeltaEC+DeltaEP=Q-W e recorte sem EC/EP"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-gas-energia",
+          "sha256_trecho": "f93d30ceee37b23aa44a5c8f6c565e09ad0b3fc6e3fe2af5840a00213230d2bf",
+          "alcance": "Trecho do h3 ao próximo h3; equação ideal, pressões/temperaturas absolutas, U(T), h(T), capacidades e fator Z. Ambas as âncoras são ligadas no cr-estudo antes das alternativas, fora do comentário."
+        }
+      ],
+      "herancas_atribuidas": {
+        "FON01": "Fidelidade documental herdada do parecer APROVADO de /root/auditor_aaa, mediante identidade própria de enunciado, opções, metadados e chave com o pacote FON-01. Não se herda identidade integral do artigo, pois FON-02 esclareceu o comentário posteriormente.",
+        "FON02": "Identificação e proveniência das hipóteses da resolução herdadas no alcance do parecer FON-02-r2 de /root/auditor_aaa. Artigo atual integralmente idêntico ao pacote FON-02 r2. Diagnóstico de autoria do Corretor/apoio distingue adiabaticidade e 1 cal=4,2 J originais de massa/composição fixas, idealidade, trabalho líquido entrando e descartes EC/EP da resolução.",
+        "BAN10": "Matriz r1 preservada pelo parecer r2 de /root/auditor_aaa não encontrou novo bloqueador no modelo usual de compressão de gás. Identidade documental verificada permite atribuir essa triagem; não substitui BAN-07 nem aprova ciência universal por extensão."
+      },
+      "confronto_atual": {
+        "comando": "Afirma aumento de temperatura de um gás por compressão adiabática. O original não nomeia idealidade, massa/composição fixas ou descartes de energia; 1 cal=4,2 J faz parte do contexto oficial e não é necessário a este julgamento.",
+        "disponibilidade_antes_da_resposta": "O próprio artigo indica antes das opções as bases de sistema fechado e Gás ideal: estado e energia. Esse enquadramento sustenta a interpretação convencional de uma mesma amostra de composição fixa; não é criado somente pelo comentário posterior. A base de gás ideal é condicional, e a transcrição original permanece mais concisa: não se atribuem essas palavras à banca.",
+        "suficiencia_e_alcance": "Para decidir o sinal de DeltaT no modelo convencional indicado, não são necessários pressões, volumes ou trabalho numéricos, nem calor específico constante. O comentário posterior é concordante e identifica o recorte autoral. O aceite é do item no curso com suas bases ligadas, não de uma tese universal sem equação de estado e sem especificar o sistema."
+      },
+      "demonstracao_atual": {
+        "autor": "/root/auditor_ban07_final",
+        "natureza": "Confronto simbólico próprio da prova preliminar e do alcance atual; chave/comentário conhecidos, sem alegar cegamento",
+        "segunda_lei": "Para massa e composição fixas de gás ideal com estados de equilíbrio, T>0, cv(T)>0 e R>0, vale Delta s=integral[T1,T2] cv(T)/T dT+R ln(v2/v1). Uma amostra fechada adiabática não transfere entropia por calor nem massa, portanto Delta s=sger>=0. Compressão significa v2<v1. Assim integral cv(T)/T dT=Delta s-R ln(v2/v1)>0, o que exige T2>T1. A desigualdade vale também com geração interna; não se pressupõe reversibilidade ou Delta s=0.",
+        "caso_cv_constante": "Com cv positivo constante, T2/T1 >= (v1/v2)^(R/cv)>1. Essa expressão é apenas verificação simbólica do sinal; nenhum valor novo foi acrescentado ao original.",
+        "primeira_lei": "No recorte da resolução, Q=0, trabalho líquido entrando e DeltaEC=DeltaEP=0 dão DeltaU=-W>0. Para gás ideal físico, DeltaU=m integral cv(T)dT>0 implica T2>T1. É concordante com a prova por entropia, mas não autoriza trocar U(T) ideal por propriedade universal de gás real.",
+        "protecoes_da_prova": "A identidade de entropia é relação de propriedades entre estados; não aplica indevidamente p interno dV ao trabalho de uma compressão irreversível. Não se inventa contramodelo de extração arbitrária de trabalho que exigiria Delta s<0 para a amostra adiabática ideal. A ausência do adjetivo ideal no original, sozinha, não demonstra E no contexto convencional indicado.",
+        "limite_cientifico": "A prova usa idealidade, massa/composição fixas e o caráter fechado. Não decide processos com transferência de massa, reação, mudança de composição ou outra equação de estado; também não afirma que Q=0 force T constante. Não foi apresentado contramodelo admissível, sustentado pelo comando/base atual, que produzisse uma segunda chave."
+      },
+      "opcoes": [
+        {
+          "letra": "C",
+          "texto": "Certo",
+          "juizo": "Correta no modelo convencional de gás ideal fechado indicado pelas bases prévias.",
+          "justificativa": "A compressão adiabática entre estados de equilíbrio satisfaz a desigualdade de entropia que força T2>T1 para cv positivo."
+        },
+        {
+          "letra": "E",
+          "texto": "Errado",
+          "juizo": "Incorreta nesse modelo.",
+          "justificativa": "Confundir adiabaticidade com isotermia leva a negar indevidamente o aquecimento. Q=0 não significa DeltaU=0 ou DeltaT=0; essa é uma confusão conceitual plausível."
+        }
+      ],
+      "decisao_da_ressalva": "RESOLVIDA_SEM_AJUSTE_OBRIGATORIO_CR27_NO_MODELO_CONVENCIONAL_INDICADO",
+      "criterio_resultado": "Atendido no alcance BAN-07: a trilha prévia fornece o enquadramento fechado/ideal, a demonstração sustenta C sem supor isentropia, as duas opções foram julgadas e a chave/documento oficiais são preservados. Limites de universalidade registrados expressamente.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Não se altera nem se amplia a transcrição original; idealidade não é atribuída ao enunciado da banca.",
+        "A conclusão vale no enquadramento convencional do curso explicitamente indicado antes da resposta; a falta de uma frase de adoção no original não é tratada como prova de falsidade universal.",
+        "Sem nova leitura dos PDFs oficiais/fontes externas ou execução de auditorias anteriores."
+      ]
+    }
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "concluidos": 5,
+    "ids_concluidos": [
+      "fun02-e1-caminhos",
+      "fun02-e1-integrabilidade",
+      "fun02-e1-calor-caminho",
+      "cr-e1-17",
+      "cr-e1-27"
+    ],
+    "pendentes": [],
+    "abertos_por_heranca_atribuida": 3,
+    "fechados_por_confronto_proprio": 2,
+    "opcoes_ce_examinadas": 4,
+    "novos_ajustes_obrigatorios": 0
+  },
+  "libera_proximo_id": false,
+  "limites": [
+    "Produto, controle e outros pareceres não editados.",
+    "Sem revisão humana, piloto com estudantes ou certificação externa.",
+    "A ciência FUN-02 herdada pertence aos revisores originais identificados."
+  ],
+  "identidade_documental_cr": [
+    {
+      "pacote": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/modulos/e1-termodinamica.html",
+      "sha256_html": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "itens": [
+        {
+          "id": "cr-e1-17",
+          "sha256_atual": {
+            "artigo": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+            "enunciado": "0c781f4bc1fb55a560971a5f24b6f3ef4f488b09becea79b1fa7932bc33167e9",
+            "opcoes": "e2e4620d2a560c34d6e7756cb03257a8f62ad634acfdce8052dd71aa5e1122e9",
+            "metadados": "f61a40cf79bb1d563099deab2df954535fdbcb1847bbc82c7388e9512d815ef2",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "sha256_pacote": {
+            "artigo": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+            "enunciado": "0c781f4bc1fb55a560971a5f24b6f3ef4f488b09becea79b1fa7932bc33167e9",
+            "opcoes": "e2e4620d2a560c34d6e7756cb03257a8f62ad634acfdce8052dd71aa5e1122e9",
+            "metadados": "f61a40cf79bb1d563099deab2df954535fdbcb1847bbc82c7388e9512d815ef2",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "identidades": {
+            "artigo": false,
+            "enunciado": true,
+            "opcoes": true,
+            "metadados": true,
+            "chave": true
+          }
+        },
+        {
+          "id": "cr-e1-27",
+          "sha256_atual": {
+            "artigo": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+            "enunciado": "3c8046fbc2722bc1b7e12e78786e7b3593a97b5d4f21b9d5133e43307c70a20f",
+            "opcoes": "77e0428d3d71547cd91dcfc6c616df192c187911ae4f657e51764894c538627f",
+            "metadados": "0b1258a67a03aeb5b9e2367f5802e7d5bd501e4e9fcbdd0631da2d1ecba3f379",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "sha256_pacote": {
+            "artigo": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+            "enunciado": "3c8046fbc2722bc1b7e12e78786e7b3593a97b5d4f21b9d5133e43307c70a20f",
+            "opcoes": "77e0428d3d71547cd91dcfc6c616df192c187911ae4f657e51764894c538627f",
+            "metadados": "0b1258a67a03aeb5b9e2367f5802e7d5bd501e4e9fcbdd0631da2d1ecba3f379",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "identidades": {
+            "artigo": false,
+            "enunciado": true,
+            "opcoes": true,
+            "metadados": true,
+            "chave": true
+          }
+        }
+      ]
+    },
+    {
+      "pacote": "auditoria/termodinamica/evidencias/FON-02/pacote-r2/modulos/e1-termodinamica.html",
+      "sha256_html": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+      "itens": [
+        {
+          "id": "cr-e1-17",
+          "sha256_atual": {
+            "artigo": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+            "enunciado": "0c781f4bc1fb55a560971a5f24b6f3ef4f488b09becea79b1fa7932bc33167e9",
+            "opcoes": "e2e4620d2a560c34d6e7756cb03257a8f62ad634acfdce8052dd71aa5e1122e9",
+            "metadados": "f61a40cf79bb1d563099deab2df954535fdbcb1847bbc82c7388e9512d815ef2",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "sha256_pacote": {
+            "artigo": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+            "enunciado": "0c781f4bc1fb55a560971a5f24b6f3ef4f488b09becea79b1fa7932bc33167e9",
+            "opcoes": "e2e4620d2a560c34d6e7756cb03257a8f62ad634acfdce8052dd71aa5e1122e9",
+            "metadados": "f61a40cf79bb1d563099deab2df954535fdbcb1847bbc82c7388e9512d815ef2",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "identidades": {
+            "artigo": true,
+            "enunciado": true,
+            "opcoes": true,
+            "metadados": true,
+            "chave": true
+          }
+        },
+        {
+          "id": "cr-e1-27",
+          "sha256_atual": {
+            "artigo": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+            "enunciado": "3c8046fbc2722bc1b7e12e78786e7b3593a97b5d4f21b9d5133e43307c70a20f",
+            "opcoes": "77e0428d3d71547cd91dcfc6c616df192c187911ae4f657e51764894c538627f",
+            "metadados": "0b1258a67a03aeb5b9e2367f5802e7d5bd501e4e9fcbdd0631da2d1ecba3f379",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "sha256_pacote": {
+            "artigo": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+            "enunciado": "3c8046fbc2722bc1b7e12e78786e7b3593a97b5d4f21b9d5133e43307c70a20f",
+            "opcoes": "77e0428d3d71547cd91dcfc6c616df192c187911ae4f657e51764894c538627f",
+            "metadados": "0b1258a67a03aeb5b9e2367f5802e7d5bd501e4e9fcbdd0631da2d1ecba3f379",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "identidades": {
+            "artigo": true,
+            "enunciado": true,
+            "opcoes": true,
+            "metadados": true,
+            "chave": true
+          }
+        }
+      ]
+    },
+    {
+      "pacote": "auditoria/termodinamica/evidencias/BAN-10/pacote-r2/modulos/e1-termodinamica.html",
+      "sha256_html": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+      "itens": [
+        {
+          "id": "cr-e1-17",
+          "sha256_atual": {
+            "artigo": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+            "enunciado": "0c781f4bc1fb55a560971a5f24b6f3ef4f488b09becea79b1fa7932bc33167e9",
+            "opcoes": "e2e4620d2a560c34d6e7756cb03257a8f62ad634acfdce8052dd71aa5e1122e9",
+            "metadados": "f61a40cf79bb1d563099deab2df954535fdbcb1847bbc82c7388e9512d815ef2",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "sha256_pacote": {
+            "artigo": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+            "enunciado": "0c781f4bc1fb55a560971a5f24b6f3ef4f488b09becea79b1fa7932bc33167e9",
+            "opcoes": "e2e4620d2a560c34d6e7756cb03257a8f62ad634acfdce8052dd71aa5e1122e9",
+            "metadados": "f61a40cf79bb1d563099deab2df954535fdbcb1847bbc82c7388e9512d815ef2",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "identidades": {
+            "artigo": false,
+            "enunciado": true,
+            "opcoes": true,
+            "metadados": true,
+            "chave": true
+          }
+        },
+        {
+          "id": "cr-e1-27",
+          "sha256_atual": {
+            "artigo": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+            "enunciado": "3c8046fbc2722bc1b7e12e78786e7b3593a97b5d4f21b9d5133e43307c70a20f",
+            "opcoes": "77e0428d3d71547cd91dcfc6c616df192c187911ae4f657e51764894c538627f",
+            "metadados": "0b1258a67a03aeb5b9e2367f5802e7d5bd501e4e9fcbdd0631da2d1ecba3f379",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "sha256_pacote": {
+            "artigo": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+            "enunciado": "3c8046fbc2722bc1b7e12e78786e7b3593a97b5d4f21b9d5133e43307c70a20f",
+            "opcoes": "77e0428d3d71547cd91dcfc6c616df192c187911ae4f657e51764894c538627f",
+            "metadados": "0b1258a67a03aeb5b9e2367f5802e7d5bd501e4e9fcbdd0631da2d1ecba3f379",
+            "chave": "9795c1d658466845e76a0f7e5b8e01e2245f94192f062e1a7328f93800e218cd"
+          },
+          "identidades": {
+            "artigo": false,
+            "enunciado": true,
+            "opcoes": true,
+            "metadados": true,
+            "chave": true
+          }
+        }
+      ]
+    }
+  ],
+  "resumo": "Três FUN-02 aceitos por identidade e alcance da revisão científica/numérica APROVADA, com atribuição original preservada. CR17 tem a base mesmo V/T e idealidade acessível antes da resposta; CR27 tem enquadramento convencional fechado/ideal nas bases prévias e prova por segunda lei. Ambas as ressalvas foram decididas sem nova obrigação neste bloco.",
+  "decisao_de_liberacao": "NÃO: este bloco não aprova BAN-07 integralmente, não resolve pendências externas ao seu escopo e não libera outro ID."
+}

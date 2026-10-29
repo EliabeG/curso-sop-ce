@@ -1,0 +1,156 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR26–CR30",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos, alternativas e suplementos; aritmética exata com Fraction.",
+  "registros": [
+    {
+      "id": "cr-e1-26",
+      "artigo_sha256": "7c0ed44062bd50045076b2379e2449d24ef23da635ffe8a4d751ae37fb85303f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-26",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-balanco-fechado",
+          "../assets/questoes-reais-e1/figura-4c355dba6054.png",
+          "https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_014_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "Suplemento editorial: sistema fechado, ΔEC e ΔEP desprezíveis, sem outras transferências, 1 kcal=4,184 kJ termoquímica. Calor sai 400 kJ; agitador fornece 1400 kcal.",
+      "solucao": "Q=−400/4,184≈−95,6023 kcal; W=−1400 kcal; ΔU=Q−W=1400−400/4,184≈1304,3977 kcal.",
+      "resultado": "E; ΔU≈1304,4 kcal, não superior a 5500 kcal.",
+      "comparacao": "C aceitaria limite superior a 5500; E é coerente sob hipóteses editoriais.",
+      "tolerancia": "95,6 e 1304,4 arredondados a 0,1 kcal, erro <0,05 kcal; valores nominais, sem incerteza metrológica.",
+      "limite": "A hipótese e convenção de caloria são editoriais anteriores à tentativa, não dados oficiais; conservação e chaves permanecem atribuídas à prova.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-27",
+      "artigo_sha256": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-27",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-primeira-lei",
+          "#base-gas-energia",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Compressão adiabática; modelo do curso assume gás ideal de composição fixa, trabalho líquido de compressão entrando e ΔEC e ΔEP desprezíveis.",
+      "solucao": "Q=0; com W líquido feito pelo sistema negativo, ΔU=−W>0. Para gás ideal com cv>0, u aumenta com T.",
+      "resultado": "C no modelo explicitado.",
+      "comparacao": "C associa trabalho líquido recebido à elevação de temperatura; E negaria neste modelo.",
+      "tolerancia": "1 cal=4,2 J é dado comum do conjunto, sem uso nesta resolução; nenhum resultado numérico a calcular.",
+      "limite": "Sem hipóteses sobre sistema e trabalho líquido a formulação geral não garante a conclusão; não extrapolar a todos os processos de qualquer gás.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-28",
+      "artigo_sha256": "3d6384bcf7120175aba311755ad0ad4f36ff896a0894161de88bc45cb8614365",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-28",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-balanco-fechado",
+          "#base-primeira-lei",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "Ui=100 J, Q=200 cal entrando, 1 cal=4,2 J dado, W=350 J saindo; sistema fechado, sem outras trocas, ΔEC e ΔEP desprezíveis.",
+      "solucao": "Q=200×4,2=840 J; ΔU=840−350=490 J; Uf=100+490=590 J.",
+      "resultado": "E; energia final 590 J, não 490 J.",
+      "comparacao": "C confunde a variação 490 J com a energia final; E rejeita.",
+      "tolerancia": "Valores são exatos nas contas com dados nominais, sem incertezas informadas.",
+      "limite": "Convenção Q para dentro e W para fora; condições adicionais são hipóteses do curso.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-29",
+      "artigo_sha256": "f7ba62e87eedc71077825e5be83a5fd8f4dacb08ba29e658a51e99d5fe42fdac",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-29",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-trabalho-fronteira",
+          "#base-balanco-fechado",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/GAB_DEFINITIVO_822_PETROBRAS_23_007_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "p=10³ N/m² absoluta, ΔV=−0,1 m³, calor perdido 10³ J; sistema fechado com trabalho de fronteira quase estático e ΔEC e ΔEP desprezíveis.",
+      "solucao": "W=pΔV=1000×(−0,1)=−100 J; Q=−1000 J; ΔU=Q−W=−1000−(−100)=−900 J.",
+      "resultado": "E; −900 J não é superior a +900 J.",
+      "comparacao": "C exigiria ΔU>900 J; E corresponde ao sinal e balanço.",
+      "tolerancia": "Resultado exato com valores nominais e 1 Pa·m³=1 J; sem incerteza de medição.",
+      "limite": "Pressão absoluta na fronteira e exclusão de outras trocas são condições do curso; calor perdido supera trabalho recebido.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-30",
+      "artigo_sha256": "6abb421dab137437146a58fdaeb64d35ec7f9a6161d142f0bd29c9e91ac53f8b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-30",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-trabalho-fronteira",
+          "#base-gas-energia",
+          "#base-balanco-fechado",
+          "../assets/questoes-reais-e1/figura-de4ee7b16ed4.png",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF#page=3",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/GAB_DEFINITIVO_822_PETROBRAS_23_007_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Gás ideal, transição A→B isotérmica; massa e composição fixas, energia cinética e potencial desprezíveis.",
+      "solucao": "u=u(T); temperatura constante implica ΔU=0; primeira lei ΔU=Q−W fornece Q=W. Para expansão W>0, portanto Q>0.",
+      "resultado": "C nas condições indicadas.",
+      "comparacao": "C exprime o balanço para a expansão isotérmica; E o negaria.",
+      "tolerancia": "Não há valores de energia ou precisão numérica para comparar.",
+      "limite": "Trata-se de processo, não de máquina térmica em ciclo completo; não implica eficiência de Carnot igual a 1.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão independente final nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior, sem nova leitura visual de PDFs nesta execução."
+  ]
+}

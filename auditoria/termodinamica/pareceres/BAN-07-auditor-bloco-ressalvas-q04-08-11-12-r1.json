@@ -1,0 +1,449 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "RESSALVAS_Q04_Q08_Q11_Q12",
+  "data": "2026-10-28",
+  "revisor_atual": "Agente automatizado independente /root/auditor_ban07_final",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "versao": "BAN-07 r1 congelada",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "estado": "CONCLUIDO_4_ITENS_SEM_NOVOS_AJUSTES_OBRIGATORIOS",
+  "escopo": "Exclusivamente quatro artigos Q inalterados e seus pontos de preparação; sem parecer global.",
+  "criterio": {
+    "referencia": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md, BAN-07; protocolo AAA e regra comum pertinente",
+    "exigencia": "Conferir suficiência, consistência física, comando, unidades, restrições, chave única e distratores plausíveis com demonstração/justificativas. Identidade permite atribuir ciência anterior, mas não converte memória preliminar em aprovação."
+  },
+  "fonte_anterior": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+    "sha256": "d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913",
+    "revisor": "/root/auditor_aaa, agente automatizado",
+    "natureza": "Preparação anterior, não parecer da entrega; método original preservado nos registros."
+  },
+  "metodo_atual": [
+    "Extração delimitada com parseHtml e sha256 canônicos, sem imprimir banco/diagnóstico integral.",
+    "Confronto de comando, cinco opções, comentário e bases ligadas antes da tentativa; revisão aberta, sem alegar cegamento.",
+    "Cálculos preservados atribuídos ao revisor original; nova análise limitada às ressalvas e lacunas de prova."
+  ],
+  "registros": [
+    {
+      "item": "Q04",
+      "id_artigo": "q-e1-04",
+      "sha256_artigo": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "origem_revisao": "heranca_atribuida_da_preparacao_com_confronto_proprio_de_suficiencia_e_distrator_B",
+      "nota_anterior": {
+        "id": "q-e1-04",
+        "sha256_artigo": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+        "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+        "chave_derivada": "C",
+        "demonstracao": "x=(h-hf)/(hg-hf)=500/2000=0,25, admissível entre0e1.",
+        "alternativas": [
+          "A: fração de líquido 1-x.",
+          "B: título fora de[0,1], inversão de razão.",
+          "C: relação de mistura bifásica com propriedades na mesma saturação.",
+          "D: razão h/(hg-hf), omite hf.",
+          "E: razão(h-hf)/hg, confunde hg com hfg."
+        ],
+        "pontos_a_verificar": [
+          "Propriedades fornecidas tratadas como dados didáticos da mesma mistura saturada, sem inferir água real ou estado p/T não declarado."
+        ],
+        "estado": "preliminar; não é veredito da entrega",
+        "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+      },
+      "identidade_e_alcance": {
+        "artigo_atual_igual_preparacao": true,
+        "metodo": "Hash próprio do artigo integral coincide com o salvo na nota. A nota contém chave e cinco juízos, mas era preliminar e deixava uma ressalva explícita.",
+        "derivacao_herdada": "De /root/auditor_aaa: x=(h-hf)/(hg-hf)=500/2000=0,25 e teste 0<=x<=1. Não foi reexecutada uma rotina numérica nesta revisão."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#substancias",
+          "alcance": "Trecho Título: fração mássica de vapor, relação y=yf+x(yg-yf), exemplo e interpretação; âncora de estudo anterior às alternativas.",
+          "sha256_trecho": "077a2d1c23c1582d1b2af1ba042e173eb2fb9342a032beefc519d87ac9503f21",
+          "delimitacao": "Do h3 Título até próximo cabeçalho h1–h3."
+        },
+        {
+          "href": "#base-valvula-fase",
+          "alcance": "Propriedades da mesma substância/estado de saturação, referência comum e intervalo físico; não se importa uma válvula para o comando Q04.",
+          "sha256_trecho": "31f66f5d9699f776777ab8a42bdc5fbeed5577eb92887ab8b93a4f4b70409426",
+          "delimitacao": "Do h3 da âncora até próximo cabeçalho h1–h3."
+        }
+      ],
+      "pontos_decididos": [
+        {
+          "ponto": "Propriedades fornecidas tratadas como dados didáticos da mesma mistura saturada, sem inferir água real ou estado p/T não declarado.",
+          "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+          "prova_atual": "O comando declara mistura saturada e fornece hf=500, hg=2500 e h=1000 kJ/kg para ela. Logo fornece as extremidades e a propriedade intermediária necessárias, com hf<h<hg e hg-hf>0. As bases definem f/g e a relação mássica na mesma saturação. Pressão, temperatura ou nome do fluido não são necessários para essa interpolação já parametrizada; inventá-los ou alegar água real ultrapassaria os dados.",
+          "limite": "São dados didáticos definidos no problema genérico. Não se atesta uma tabela, substância ou estado real, nem se infere p/T inexistente."
+        }
+      ],
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "0,75.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e confrontado com comentário atual",
+          "prova": "1-x=0,75 é fração mássica de líquido; confusão entre fração líquida e título de vapor."
+        },
+        {
+          "letra": "B",
+          "texto": "2,00.",
+          "correta": false,
+          "origem": "nova especificação do mecanismo por /root/auditor_ban07_final; não herdada como inversão correta",
+          "prova": "h/hf=1000/500=2 produz a opção ao confundir uma proporção de entalpias com a fração mássica da mistura e ignorar o incremento de saturação. O resultado fora de [0,1] também o refuta.",
+          "decisao_da_nota": "A nota anterior dizia inversão de razão, mas a inversão da razão correta daria 4, não 2. Essa explicação imprecisa não foi adotada; o mecanismo atual é explícito e teoricamente plausível."
+        },
+        {
+          "letra": "C",
+          "texto": "0,25.",
+          "correta": true,
+          "origem": "derivação herdada de /root/auditor_aaa e significado físico confrontado",
+          "prova": "h=(1-x)hf+x hg; o título é 0,25 no intervalo físico."
+        },
+        {
+          "letra": "D",
+          "texto": "0,50.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e confrontado",
+          "prova": "h/(hg-hf)=1000/2000=0,50; omite subtração da entalpia do líquido no numerador."
+        },
+        {
+          "letra": "E",
+          "texto": "0,20.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e confrontado",
+          "prova": "(h-hf)/hg=500/2500=0,20; troca calor latente hg-hf por hg."
+        }
+      ],
+      "confronto_comentario": "Chave C e comentários atuais concordam com a relação de mistura, a fração líquida e os erros D/E. B é refutada no comentário pelo intervalo físico; esta auditoria fornece o mecanismo teórico adicional que a nota não havia especificado corretamente.",
+      "modelos_e_limites": "Mistura líquido-vapor saturada no tratamento de substância pura e referência comum. Não é título volumétrico, não se extrapola fora da região bifásica e não se valida estado de água real.",
+      "unicidade": "Somente C coincide com a definição e os dados; alternativas distintas, sem equivalência após arredondamento.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "A preparação foi atribuída, não transformada em execução científica nova integral.",
+        "Plausibilidade é teórica; sem dados de estudantes ou validação empírica."
+      ]
+    },
+    {
+      "item": "Q08",
+      "id_artigo": "q-e1-08",
+      "sha256_artigo": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "origem_revisao": "heranca_atribuida_da_derivacao_e_cinco_opcoes_com_confronto_proprio_da_pressao_e_processo",
+      "nota_anterior": {
+        "id": "q-e1-08",
+        "sha256_artigo": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+        "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+        "chave_derivada": "A",
+        "demonstracao": "Wfr=∫p dV=200*(0,3-0,1)=40 kJ; expansão fornece trabalho positivo na convenção produzida.",
+        "alternativas": [
+          "A: área correta.",
+          "B: pVfinal, sem descontar inicial.",
+          "C: sinal de compressão.",
+          "D: confunde pressão constante com trabalho nulo.",
+          "E: pVinicial ou intervalo incorreto."
+        ],
+        "pontos_a_verificar": [
+          "Pressão constante interpretada como absoluta na relação de fronteira; processo quase estático declarado."
+        ],
+        "estado": "preliminar; não é veredito da entrega",
+        "confronto_comentario": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+      },
+      "identidade_e_alcance": {
+        "artigo_atual_igual_preparacao": true,
+        "metodo": "Conferência própria por parseHtml/sha256 do artigo integral; comando, opções e comentário relidos. A memória era preliminar e não aprova por identidade.",
+        "derivacao_herdada": "De /root/auditor_aaa: W=integral p dV=200(0,3-0,1)=40 kJ, positivo como trabalho produzido. Resultado e cinco mecanismos foram confrontados sem repetir rotina numérica."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#base-trabalho-fronteira",
+          "sha256_trecho": "76fb33734274627b72d4aa35f408cbbdfaeffe9212962a180fedb9db547e5bb2",
+          "delimitacao": "Do h3 até próximo cabeçalho h1–h3.",
+          "alcance": "Pressão na fronteira e mudança de volume no quase-estático; integral e caso p constante. As legendas dd de p dizem Pressão absoluta do gás ou fluido, em kPa. Base ligada antes das alternativas."
+        },
+        {
+          "href": "#base-leitura-matematica",
+          "sha256_trecho": "8b54ff73ba5e375e8b010bc7810d6dc4b6c4546553d4e859384106262d116708",
+          "alcance": "Trechos sobre pressão absoluta/manométrica, Delta final menos inicial e kPa m³=kJ; base ligada antes das alternativas."
+        }
+      ],
+      "pontos_decididos": [
+        {
+          "ponto": "Pressão constante interpretada como absoluta na relação de fronteira; processo quase estático declarado.",
+          "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+          "prova_atual": "Quase-estática consta expressamente do comando. A base ligada define p como pressão absoluta antes da tentativa e descreve a pressão na fronteira como conjugada a dV. Portanto 200 kPa é usada diretamente em integral p dV; não se acrescenta pressão atmosférica inexistente nem se calcula somente trabalho contra uma carga manométrica.",
+          "limite": "A expressão usa o processo quase-estático declarado e o trabalho de fronteira total produzido. Não é trabalho útil subtraído do deslocamento da atmosfera nem licença para integrar uma pressão interna arbitrária em processo rápido irreversível."
+        }
+      ],
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "40 kJ.",
+          "correta": true,
+          "origem": "prova herdada de /root/auditor_aaa e condições de aplicação agora fechadas",
+          "prova": "Área p(V2-V1) sob a isóbara: resultado positivo do trabalho produzido."
+        },
+        {
+          "letra": "B",
+          "texto": "60 kJ.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, comentário atual conferido",
+          "prova": "pV2=200 vezes 0,3 usa volume final e deixa de subtrair o inicial."
+        },
+        {
+          "letra": "C",
+          "texto": "−40 kJ.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, comentário atual conferido",
+          "prova": "Inverte o sinal da expansão ou usa convenção de trabalho recebido apesar do comando pedir o produzido."
+        },
+        {
+          "letra": "D",
+          "texto": "0 kJ.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, comentário atual conferido",
+          "prova": "Confunde pressão constante com volume constante ou trabalho nulo; p positivo e DeltaV positivo tornam a área não nula."
+        },
+        {
+          "letra": "E",
+          "texto": "20 kJ.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, comentário atual conferido",
+          "prova": "pV1=200 vezes 0,1 usa somente volume inicial no lugar da variação."
+        }
+      ],
+      "confronto_comentario": "Gabarito A, expressão W=p DeltaV, unidade kJ, sinal de expansão e justificativas dos quatro distratores concordam com a prova herdada e a base prévia. A legenda posterior do comentário confirma pressão absoluta, mas não foi usada como único suporte.",
+      "modelos_e_limites": "Pressão de fronteira constante e absoluta em expansão quase-estática; nenhuma hipótese de gás ideal, isotermia ou reversibilidade térmica é necessária para a integral de fronteira dada.",
+      "unicidade": "A única é A. Os cinco valores/sinais são distintos e não se tornam equivalentes pelo arredondamento.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "A demonstração numérica e mecanismos anteriores são atribuídos ao revisor original; conferência atual é de alcance/suficiência.",
+        "Plausibilidade teórica, sem piloto."
+      ]
+    },
+    {
+      "item": "Q11",
+      "id_artigo": "q-e1-11",
+      "sha256_artigo": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "origem_revisao": "heranca_atribuida_da_derivacao_e_cinco_opcoes_com_confronto_proprio_do_significado_de_potencia",
+      "nota_anterior": {
+        "id": "q-e1-11",
+        "sha256_artigo": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+        "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+        "chave_derivada": "D",
+        "demonstracao": "Escoamento estacionário adiabático com ΔEc/ΔEp desprezados: potência líquida=2*(3100-2700)=800 kW.",
+        "alternativas": [
+          "A: dobra novamente a vazão.",
+          "B: soma entalpias de entrada e saída em vez da diferença.",
+          "C: confunde kW com W por fator1000.",
+          "D: balanço de energia correto.",
+          "E: omite a vazão e toma queda específica como potência."
+        ],
+        "pontos_a_verificar": [
+          "A identificação da potência como trabalho líquido da turbina é coerente; se solução disser apenas potência de eixo, explicitar modelo sem outras modalidades relevantes conforme contexto didático."
+        ],
+        "estado": "preliminar; não é veredito da entrega",
+        "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+      },
+      "identidade_e_alcance": {
+        "artigo_atual_igual_preparacao": true,
+        "metodo": "Hash integral próprio coincide com a nota; comando, cinco opções e comentário atuais lidos. Identidade não encerrou a ressalva sem a leitura de significado/condições.",
+        "derivacao_herdada": "De /root/auditor_aaa: escoamento permanente adiabático, DeltaEc/DeltaEp desprezados, Wdot_liq=mdot(h1-h2)=2(3100-2700)=800 kW. Cálculo e mecanismos anteriores atribuídos, sem rotina numérica repetida."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#base-turbina-potencia",
+          "sha256_trecho": "f203664e9ce559a79551447f80f344399e660aa046baa6d2ebe6c907488df9d1",
+          "delimitacao": "Do h4 da âncora até próximo cabeçalho de nível igual ou superior.",
+          "alcance": "Exemplo prévio de turbina adiabática, velocidades/alturas desprezíveis, queda entálpica, Wdot=mdot w, kJ/s=kW e legendas; link anterior às alternativas."
+        },
+        {
+          "href": "#base-leitura-matematica",
+          "sha256_trecho": "8b54ff73ba5e375e8b010bc7810d6dc4b6c4546553d4e859384106262d116708",
+          "alcance": "Trechos previamente lidos: potência como energia por tempo e unidades kW=kJ/s; link anterior às alternativas."
+        }
+      ],
+      "pontos_decididos": [
+        {
+          "ponto": "A identificação da potência como trabalho líquido da turbina é coerente; se solução disser apenas potência de eixo, explicitar modelo sem outras modalidades relevantes conforme contexto didático.",
+          "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+          "prova_atual": "Regime permanente, adiabaticidade e desprezo de DeltaEC/DeltaEP constam do próprio comando. Uma entrada/saída e vazão especificada permitem o balanço da potência líquida de trabalho da turbina, excluído o trabalho de escoamento já incorporado à entalpia. A solução atual diz Potência e potência produzida no contexto da base, sem afirmar que se isolou uma modalidade de eixo de um conjunto com outras modalidades relevantes desconhecidas.",
+          "modalidades": "O balanço determina Wdot_liq, soma algébrica das modalidades de trabalho não associadas ao escoamento. Identificá-la com eixo isolado exigiria ausência de outras modalidades relevantes; não há no item outra modalidade especificada para subtrair ou somar, e o comentário não faz a identificação exclusiva que a ressalva condicionava.",
+          "limite": "Não se converte adiabaticidade em isentropia nem se exige turbina ideal. Não se infere potência de um gerador ou eficiência elétrica. Se uma futura redação pedir potência de eixo com outras modalidades presentes, será necessário declará-las e separar o balanço."
+        }
+      ],
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "1.600 kW.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, confrontada com comentário",
+          "prova": "Aplica a vazão novamente depois de obter 800 kW: mdot²(h1-h2) numericamente dobra o resultado, além de usar base dimensional inadequada."
+        },
+        {
+          "letra": "B",
+          "texto": "11.600 kW.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, confrontada com comentário",
+          "prova": "mdot(h1+h2) soma entalpias de correntes em vez de usar entrada menos saída."
+        },
+        {
+          "letra": "C",
+          "texto": "800 W.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, confrontada com comentário",
+          "prova": "Mantém o número 800, mas troca kJ/s por J/s; erra fator 1000."
+        },
+        {
+          "letra": "D",
+          "texto": "800 kW.",
+          "correta": true,
+          "origem": "derivação herdada de /root/auditor_aaa; alcance do trabalho líquido fechado nesta revisão",
+          "prova": "mdot(h1-h2) com kg/s e kJ/kg fornece kJ/s=kW, positivo na saída."
+        },
+        {
+          "letra": "E",
+          "texto": "400 kW.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, confrontada com comentário",
+          "prova": "Trata queda entálpica específica de 400 kJ/kg como potência e omite a vazão de 2 kg/s."
+        }
+      ],
+      "confronto_comentario": "Chave D e justificativas das cinco opções concordam com a prova herdada e o significado de potência da base prévia. A solução usa a queda de entalpia, não acrescenta trabalho de fluxo nem atribui eficiência isentrópica/elétrica.",
+      "modelos_e_limites": "Volume de controle em regime permanente, uma entrada/saída, adiabático, variações cinética/potencial desprezadas; potência líquida de trabalho. Dados de entalpia fornecidos bastam sem idealidade de fluido ou tabela externa.",
+      "unicidade": "D única nas condições declaradas; 800 W é distinta de 800 kW. Nenhuma equivalência de opções por arredondamento.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Ciência numérica e mecanismos anteriores preservam autoria do revisor original.",
+        "Confronto atual não é teste de turbina real nem de aprendizagem."
+      ]
+    },
+    {
+      "item": "Q12",
+      "id_artigo": "q-e1-12",
+      "sha256_artigo": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "origem_revisao": "heranca_atribuida_da_derivacao_com_confronto_proprio_do_modelo_de_bomba_ideal_e_opcoes",
+      "nota_anterior": {
+        "id": "q-e1-12",
+        "sha256_artigo": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+        "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+        "chave_derivada": "C",
+        "demonstracao": "No modelo de bomba ideal com líquido incompressível, win≈vΔp=0,001*500=0,5 kJ/kg, magnitude positiva.",
+        "alternativas": [
+          "A: fator10 indevido.",
+          "B: fator1000 indevido.",
+          "C: produto de volume específico e incremento de pressão.",
+          "D: contraria magnitude positiva pedida.",
+          "E: omite fator v."
+        ],
+        "pontos_a_verificar": [
+          "Bomba ideal deve remeter ao modelo adiabático reversível/energias macroscópicas desprezadas já definido na aula; não inferir universalidade de vΔp."
+        ],
+        "estado": "preliminar; não é veredito da entrega",
+        "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+      },
+      "identidade_e_alcance": {
+        "artigo_atual_igual_preparacao": true,
+        "metodo": "Hash integral próprio coincide com a preparação. Comando, cinco opções e comentário atuais relidos; modelo definido na aula e duas bases diretamente ligadas confrontados.",
+        "derivacao_herdada": "De /root/auditor_aaa: no modelo de bomba ideal com líquido incompressível, win≈v Delta p=0,001 vezes 500=0,5 kJ/kg, magnitude positiva. Resultado anterior atribuído; sem rotina numérica repetida."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#base-gibbs",
+          "sha256_trecho": "52cc467ab630fb5f71107265885a1326fa234d4243ca3363a0cb03994b9e097e",
+          "alcance": "Identidade dh=T ds+v dp de substância simples compressível/composição fixa; relação de propriedades não é automaticamente trabalho real; redução isentrópica com v aproximadamente constante e unidades kPa m³/kg=kJ/kg. Link anterior às alternativas."
+        },
+        {
+          "href": "#base-bomba-integrada",
+          "sha256_trecho": "fd717ed5b79c4b6fb29fd83f4b61b953f1db7a0dff394c2bfd281e1072ea823a",
+          "alcance": "Distingue energia por massa, altura, potência hidráulica/de eixo/elétrica; somente quando a altura representa elevação de pressão, gH=v Delta p. Refere-se à bomba ideal ensinada antes. Link anterior às alternativas."
+        },
+        {
+          "href": "#energia",
+          "trecho": "Simplificações por equipamento, do h3 até o h4 base-turbina-potencia",
+          "sha256_trecho": "ff11740c876e36f5c90e83aa532a011269f2de7365d01ba4c3045f64b8173b9b",
+          "alcance": "Linha Bomba ideal lida: regime permanente, adiabático reversível, líquido com v aproximadamente constante, variações cinética/potencial desprezíveis e win≈v Delta p como magnitude consumida. Teoria antecede as questões e está disponível antes da tentativa; não é comentário da resposta."
+        }
+      ],
+      "pontos_decididos": [
+        {
+          "ponto": "Bomba ideal deve remeter ao modelo adiabático reversível/energias macroscópicas desprezadas já definido na aula; não inferir universalidade de vΔp.",
+          "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+          "prova_atual": "A aula define explicitamente Bomba ideal com as hipóteses que a nota exigia. Q12 usa esse nome e fornece v e Delta p; suas bases prévias explicam quando a identidade de entalpia pode produzir v Delta p e separam energias de pressão, velocidade e altura. Logo não se depende somente do comentário para adotar regime permanente, adiabático reversível, v constante e DeltaEc/DeltaEp desprezíveis.",
+          "fechamento_cientifico": "No modelo adiabático reversível, ds=0. Integrar dh=v dp com v constante fornece Delta h≈v Delta p. Pelo balanço permanente sem energias macroscópicas relevantes e sem outros modos relevantes especificados, a magnitude líquida do trabalho de entrada é Delta h. Isto justifica win≈v Delta p; não se identifica toda pressurização real com essa fórmula.",
+          "limite": "Se houvesse velocidades, elevação, perdas, transferência de calor, rendimento não unitário ou outra modalidade relevante, seria necessário o balanço completo. Não se acrescentam esses termos inexistentes ao modelo ideal definido nem se calcula potência a partir de trabalho por kg."
+        }
+      ],
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "5 kJ/kg.",
+          "correta": false,
+          "origem": "erro decimal herdado de /root/auditor_aaa; operação concreta explicitada por /root/auditor_ban07_final",
+          "prova": "Ler 0,001 como 0,01 m³/kg ou deslocar uma casa no produto leva a 0,01 vezes 500=5. É erro de posição decimal, não outra hipótese física."
+        },
+        {
+          "letra": "B",
+          "texto": "0,0005 kJ/kg.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa e comentário atual confrontado",
+          "prova": "Dividir o produto correto novamente por 1000, embora kPa m³ já forneça kJ, dá 0,0005. Conversão duplicada de unidade."
+        },
+        {
+          "letra": "C",
+          "texto": "0,5 kJ/kg.",
+          "correta": true,
+          "origem": "cálculo herdado de /root/auditor_aaa com alcance do modelo fechado nesta revisão",
+          "prova": "Produto v Delta p nas unidades fornecidas, magnitude positiva de entrada conforme comando."
+        },
+        {
+          "letra": "D",
+          "texto": "−0,5 kJ/kg consumido.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa e comando/comentário atuais confrontados",
+          "prova": "Aplica ao número o sinal de trabalho produzido pelo sistema, mas o comando pede expressamente magnitude do trabalho de entrada, adotada positiva. A palavra consumido não transforma magnitude negativa em resposta válida."
+        },
+        {
+          "letra": "E",
+          "texto": "500 kJ/kg.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa e comentário atual confrontado",
+          "prova": "Usa numericamente Delta p=500 como energia específica, omitindo v=0,001 e a mudança dimensional necessária."
+        }
+      ],
+      "confronto_comentario": "Gabarito C, aproximação de líquido incompressível, magnitude consumida e quatro justificativas concordam com o modelo antecedente. A distinção C/D é fixada antes da tentativa pelo próprio comando; não há duas chaves por convenção de sinal.",
+      "modelos_e_limites": "Bomba ideal no sentido explicitamente definido na aula: regime permanente, adiabático reversível, v aproximadamente constante e energias cinética/potencial desprezadas. Água é o fluido declarado, mas não se inferem p1/T1 ou uma propriedade real adicional. Não se universaliza v Delta p para qualquer bomba ou para energia mecânica com outras parcelas.",
+      "unicidade": "C única. A diferença de sinal entre C/D é relevante porque se pede magnitude positiva; demais valores não coincidem após arredondamento.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Prova numérica anterior atribuída; nova análise cobre hipóteses, alcance e operações dos distratores.",
+        "Sem ensaio de bomba, piloto ou validação empírica de distratores."
+      ]
+    }
+  ],
+  "cobertura": {
+    "previstos": 4,
+    "concluidos": 4,
+    "ids_concluidos": [
+      "q-e1-04",
+      "q-e1-08",
+      "q-e1-11",
+      "q-e1-12"
+    ],
+    "pendentes": [],
+    "opcoes_examinadas": 20,
+    "pontos_a_verificar_decididos": 4,
+    "novos_ajustes_obrigatorios": 0
+  },
+  "libera_proximo_id": false,
+  "limites": [
+    "Somente este JSON é editado; produto, controle e outros pareceres preservados.",
+    "Nenhum próximo ID nem aprovação global de BAN-07 ou classificação avançada do curso."
+  ],
+  "resumo": "Quatro artigos idênticos à preparação, com ciência anterior atribuída e ressalvas fechadas por confronto atual de bases/modelos. Q04 mantém dados didáticos genéricos e corrige a explicação imprecisa de B na memória; Q08 tem pressão absoluta e quase-estática sustentadas; Q11 determina potência líquida de trabalho; Q12 remete ao modelo de bomba ideal explicitamente definido. Nenhum ajuste obrigatório novo neste bloco.",
+  "decisao_de_liberacao": "NÃO: parecer restrito a quatro itens, sem aprovação global de BAN-07 e sem autorização de outro ID."
+}

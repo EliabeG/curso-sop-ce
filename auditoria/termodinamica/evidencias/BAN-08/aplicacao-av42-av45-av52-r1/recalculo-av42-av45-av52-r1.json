@@ -1,0 +1,75 @@
+{
+  "id": "BAN-08",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "RECALCULO_VERSAO_EFETIVA_SEM_ACEITE",
+  "versao": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+  "registros": [
+    {
+      "id": "av-e1-42",
+      "artigo_sha256": "81c755c3fbc510b3d5c1ff5678e5c14c548239a2563346a33b28bdedd650491e",
+      "fonte_html_sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+      "aplicabilidade": "NUMERICO_NO_MODELO_DO_ENUNCIADO",
+      "dados_e_solucao": "Qtotal=4000 kJ/ciclo, Wlíq=1000 kJ/ciclo, Qrejeitado=3000 kJ/ciclo; η=1000/4000=0,25=25%.",
+      "comparacao_cinco_opcoes": {
+        "A": "33,3%≈1000/3000: razão sobre calor rejeitado, não sobre entrada total; erro de arredondamento de 0,0333 p.p.",
+        "B": "100% ignoraria que apenas 25% do calor de entrada é convertido em trabalho.",
+        "C": "400% inverte 4000/1000.",
+        "D": "75%=3000/4000 é fração rejeitada.",
+        "E": "25%=1000/4000 é a única eficiência proposta correta."
+      },
+      "resultado": "chave E sustentada pela conferência do Corretor",
+      "tolerancia": "Operações nominais exatas; em AV42/45 os valores aproximados 33,3% e 333,3 kJ têm erro inferior a 0,05 na unidade exibida; sem incerteza de medição.",
+      "limite": "Condição editorial define duas fontes e única outra troca como trabalho; não se atribui a restrição ao enunciado anterior.",
+      "autor_recalculo": "/root/inspect_repo, agente automatizado",
+      "apoio_candidata": "/root/auditoria_av61_70 em auditoria/termodinamica/pareceres/BAN-08-candidatas-av42-av45-av52-revisao-independente-r1.md",
+      "revisao_independente_da_versao_aplicada": "PENDENTE",
+      "estado": "CONFERIDO_CORRETOR_SUJEITO_A_AUDITORIA"
+    },
+    {
+      "id": "av-e1-45",
+      "artigo_sha256": "4999bebef5d3de5516753ad3390a1728be9b3ace5bf28d23037acb2783c661ba",
+      "fonte_html_sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+      "aplicabilidade": "NUMERICO_NO_MODELO_DO_ENUNCIADO",
+      "dados_e_solucao": "ηCarnot=1−300/600=0,5; Wmáx=1000×0,5=500 kJ/ciclo; Qrejeitado mínimo=1000−500=500 kJ/ciclo.",
+      "comparacao_cinco_opcoes": {
+        "A": "333,3≈1000×300/(600+300), abaixo do mínimo; implicaria η≈66,7% >50%.",
+        "B": "1000 rejeitados podem resultar em trabalho zero, mas não são mínimo.",
+        "C": "300 rejeitados implicam W=700 e η=70% >50%.",
+        "D": "zero implicaria eficiência 100% >50%.",
+        "E": "500 kJ/ciclo é mínimo reversível no modelo de duas fontes."
+      },
+      "resultado": "chave E sustentada pela conferência do Corretor",
+      "tolerancia": "Operações nominais exatas; em AV42/45 os valores aproximados 33,3% e 333,3 kJ têm erro inferior a 0,05 na unidade exibida; sem incerteza de medição.",
+      "limite": "Fontes mantidas a temperatura constante e modelo cíclico, fonte quente como entrada total; mínimo é limite reversível ideal, não desempenho garantido de máquina real.",
+      "autor_recalculo": "/root/inspect_repo, agente automatizado",
+      "apoio_candidata": "/root/auditoria_av61_70 em auditoria/termodinamica/pareceres/BAN-08-candidatas-av42-av45-av52-revisao-independente-r1.md",
+      "revisao_independente_da_versao_aplicada": "PENDENTE",
+      "estado": "CONFERIDO_CORRETOR_SUJEITO_A_AUDITORIA"
+    },
+    {
+      "id": "av-e1-52",
+      "artigo_sha256": "f920b246bea3d4b5e3d4b63cbfb5a4dd24ae11cff17877aeec73decf278cfc97",
+      "fonte_html_sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+      "aplicabilidade": "NUMERICO_NO_MODELO_DO_ENUNCIADO",
+      "dados_e_solucao": "Q̇total=200 kW; Ẇlíq inicial=100−40=60 kW e final=100−50=50 kW; η inicial=30%, final=25%.",
+      "comparacao_cinco_opcoes": {
+        "A": "30%→35% supõe aumento em vez de redução do trabalho líquido.",
+        "B": "20%→25% são frações do consumo do compressor, não eficiências.",
+        "C": "70%→75% somam potência da turbina e consumo do compressor.",
+        "D": "30%→25% resulta dos balanços, única correta.",
+        "E": "50%→50% omite consumo do compressor."
+      },
+      "resultado": "chave D sustentada pela conferência do Corretor",
+      "tolerancia": "Operações nominais exatas; em AV42/45 os valores aproximados 33,3% e 333,3 kJ têm erro inferior a 0,05 na unidade exibida; sem incerteza de medição.",
+      "limite": "Outros consumos desprezíveis e calor total fixo são hipóteses explícitas, não propriedades de unidade física medida.",
+      "autor_recalculo": "/root/inspect_repo, agente automatizado",
+      "apoio_candidata": "/root/auditoria_av61_70 em auditoria/termodinamica/pareceres/BAN-08-candidatas-av42-av45-av52-revisao-independente-r1.md",
+      "revisao_independente_da_versao_aplicada": "PENDENTE",
+      "estado": "CONFERIDO_CORRETOR_SUJEITO_A_AUDITORIA"
+    }
+  ],
+  "limites": [
+    "Revisão da candidata é atribuída ao Auditor, mas não substitui reauditoria da versão aplicada.",
+    "Não se sobrepõem nem modificam os registros pré-aplicação."
+  ]
+}

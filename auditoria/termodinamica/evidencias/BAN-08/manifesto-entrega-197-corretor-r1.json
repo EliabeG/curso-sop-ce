@@ -1,0 +1,79 @@
+{
+  "id": "BAN-08",
+  "estado": "ENTREGA_CORRETOR_AGUARDANDO_AUDITORIA",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "data": "2026-10-29",
+  "contagens": {
+    "q": 30,
+    "cr": 80,
+    "av": 80,
+    "abertos": 7
+  },
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+  },
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+    "sha256": "adb2f7edd0bdfbf6d1f0ec0bc8aefd46b22d6728a0aa59fc3981281aac93fbcd"
+  },
+  "artefatos": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/consolidado-197-corretor-r1.json",
+      "sha256": "d8be445efd5b6a3939dbe6fb58fc042793f722347b8ff4c0ce722e046b6114a3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/consolidar-197-r1.py",
+      "sha256": "4bc7116cde35e3344fe922409a1a78bc42749e69d590f884866b24410cee51a5"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/validacao-consolidado-197-r1.json",
+      "sha256": "ed5cff4838f3ad0ae18df5fc65c3d89c16d9b135273143142ccbcea865d174a4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-q01-30-corretor-r1.json",
+      "sha256": "2d54580e86f34304e4bc10aa8f78891090b2fa10fa1e029c97fe8e87ad63e6c7"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-cr01-20-corretor-r1.json",
+      "sha256": "79b2f1c7418de7ff40407209c85a9f6f3dc7e6abb5d27aa3bdcff1560adedb33"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-cr21-40-corretor-r1.json",
+      "sha256": "2a4f3143bf97b2019603b08cd6dafb8a07916547a32f4b0156fcc2efa6bf0706"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-cr41-60-corretor-r1.json",
+      "sha256": "f9c2a4f915fb3f7d43c73e518264b97d32060d821432f7cb672d70644da6e19c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-cr61-80-corretor-r1.json",
+      "sha256": "db20a07f178bda763e7f7c3a65a2714827f0321123174f38b9be91de1c741555"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-av01-20-corretor-r1.json",
+      "sha256": "9b377bcbc212adda939a53b0092bc9acb0a7a1c89f5bd7b9e1a58608d2d01f7a"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-av21-40-corretor-r1.json",
+      "sha256": "f99957da4407687280d6d624977fb2030706f34db84894aff6a0683e505a0fa1"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-av41-60-corretor-r1.json",
+      "sha256": "b372429fa2eb7b60e08d0d15ac49e139b632b0d432043a091eacbccd8edd4f67"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-av61-80-corretor-r1.json",
+      "sha256": "820070b37dff17605ccacf38f75e03a4789bd317e54709d3056ec6fdc91942bd"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cobertura-abertos-corretor-r1.json",
+      "sha256": "5528bcdbea65558f5030021e165158a345f6bce3f10e825630c6eac06edacc45"
+    }
+  ],
+  "limites": [
+    "AV42/45/52 foram recalculados na versão aplicada, e seus registros anteriores são preservados como históricos.",
+    "Os apoios independentes são atribuídos e parciais, em geral sem cegamento; decisão global BAN-08 permanece pendente.",
+    "Proposta editorial para qualificar no resumo o estado histórico de gabarito pendente aguarda parecer e não foi aplicada."
+  ]
+}

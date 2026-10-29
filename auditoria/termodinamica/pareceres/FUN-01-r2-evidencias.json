@@ -1,0 +1,166 @@
+{
+  "id": "FUN-01",
+  "rodada": 2,
+  "data": "2026-10-27",
+  "revisor": "Agente automatizado /root/auditor_aaa",
+  "veredito": "APROVADO",
+  "criterio": "Reauditoria exclusiva R1-A, com preservação dos demais critérios aceitos em FUN-01-r1.md",
+  "deltaIntegral": [
+    {
+      "campo": "/itens/191.titulo",
+      "antes": "Problema 2 — A mesma temperatura não determina o lote",
+      "depois": "Problema 2 — Quatro lotes e uma hipótese bifásica"
+    },
+    {
+      "campo": "/itens/192.titulo",
+      "antes": "Problema 3 — Quando a leitura garante condição supercrítica?",
+      "depois": "Problema 3 — O rótulo “supercrítico” é sustentado pelos dados?"
+    }
+  ],
+  "comparacaoTextual": {
+    "inventarioSomenteDoisTitulos": true,
+    "resumoSomenteDoisTitulos": true,
+    "demais192RegistrosPreservados": true,
+    "demaisCamposDosDoisRegistrosPreservados": true,
+    "extratoCorresponde": true
+  },
+  "titulos": [
+    {
+      "id": "fun01-e1-saturacao",
+      "titulo": "Problema 1 — Um tanque, três informações e um conflito",
+      "igualH3": true
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "titulo": "Problema 2 — Quatro lotes e uma hipótese bifásica",
+      "igualH3": true
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "titulo": "Problema 3 — O rótulo “supercrítico” é sustentado pelos dados?",
+      "igualH3": true
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "titulo": "Problema 4 — Diagnóstico de uma bancada multicâmara",
+      "igualH3": true
+    }
+  ],
+  "arquivos": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+      "bytes": 1194376,
+      "hashCorreto": true,
+      "copiaIdentica": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+      "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+      "bytes": 3895,
+      "hashCorreto": true,
+      "copiaIdentica": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-calculos-v1.mjs",
+      "sha256": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+      "bytes": 5485,
+      "hashCorreto": true,
+      "copiaIdentica": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "4ead2e63ba59077cd89691dfef83e24a58fa58b5c8a4cde1c5420f9e3aad4def",
+      "bytes": 725642,
+      "hashCorreto": true,
+      "copiaIdentica": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "b0223cb896015240284f1027a487308836252942a9503ce3a6eb9d084db0a15c",
+      "bytes": 46509,
+      "hashCorreto": true,
+      "copiaIdentica": true
+    }
+  ],
+  "pacoteR1": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-01/pacote-r1/modulos/e1-termodinamica.html",
+      "sha256": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-01/pacote-r1/assets/termodinamica/fun01-dados-v1.json",
+      "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-01/pacote-r1/assets/termodinamica/fun01-calculos-v1.mjs",
+      "sha256": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-01/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "4b18b397b68b9a46aae4db4c526d7bc2e4712df0e65b33359ba414fc6112e4df",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FUN-01/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "5242d53447dc9441109586d448793c324596745e2017546a19cb39ff5b854725",
+      "preservado": true
+    }
+  ],
+  "produtoPreservado": true,
+  "infraestrutura": [
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "esperado": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "esperado": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899"
+    },
+    {
+      "arquivo": "assets/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "esperado": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario.schema.json",
+      "sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+      "esperado": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+      "esperado": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/LEIA-ME.md",
+      "sha256": "cdcd7e965bdc4a998b6e2fa784a53f84f295abcf9ade2d06ce62fff71d072449",
+      "esperado": "cdcd7e965bdc4a998b6e2fa784a53f84f295abcf9ade2d06ce62fff71d072449"
+    }
+  ],
+  "validacaoExecutada": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 194,
+    "artigos_encontrados": 194,
+    "recursos_verificados": 8,
+    "links_locais_verificados": 1042,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "verificacoesPreservadas": [
+    "FUN-01-r1.md: todos os critérios científicos e pedagógicos examinados",
+    "FUN-01-r1-calculos-independentes.json: resoluções antes da leitura das soluções",
+    "FUN-01-r1-tecnico.md: 239 verificações documentais e28 numéricas",
+    "auditoria/termodinamica/evidencias/FUN-01/navegador-coordenador-r1.md: execução do coordenador sob mesmo hash HTML"
+  ],
+  "limites": "Reauditoria estática/documental; não houve novo teste de navegador ou piloto. Nenhum produto/controle editado pelo Auditor.",
+  "ajustesObrigatorios": [],
+  "liberacao": "FUN-01 encerrado. Coordenador pode selecionar/liberar o próximo ID; Auditor não inicia outro ID. FUN-02 segue viável sob condições do preflight r1, sem encerramento de P0s legados ou GOV-02."
+}

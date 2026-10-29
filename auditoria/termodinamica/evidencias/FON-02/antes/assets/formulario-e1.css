@@ -1,0 +1,84 @@
+/* Formulários do E1 e E2. Tudo continua legível sem JavaScript. */
+.pagina-formulas { max-width: 78rem; }
+.formulario-intro { max-width: 58rem; margin: 1.6rem 0 2rem; }
+.formulario-intro h1 { margin-bottom: .8rem; }
+.formulario-convencao { border-left: 3px solid var(--acento); padding-left: 1rem; color: var(--tinta-2); }
+.formulario-ferramentas { padding: 1.2rem; background: var(--superficie); border: 1px solid var(--linha); border-radius: var(--raio); margin-bottom: 1.25rem; }
+.formulario-filtros { display: grid; grid-template-columns: minmax(0,2fr) minmax(0,1fr); gap: 1rem; }
+.formulario-filtros label { display: grid; gap: .4rem; font-size: .9rem; font-weight: 600; }
+.formulario-filtros input, .formulario-filtros select { width: 100%; min-width: 0; background: var(--fundo); color: var(--tinta); border: 1px solid var(--linha-forte); border-radius: var(--raio-sm); padding: .75rem; font: inherit; }
+.formulario-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-top: 1rem; }
+#formula-contagem { margin: 0 0 0 auto; color: var(--tinta-2); font-size: .9rem; }
+.formulario-instrucao { margin: 1rem 0 0; color: var(--tinta-2); }
+.formulario-indice { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
+.formulario-indice a { border: 1px solid var(--linha); border-radius: 2rem; padding: .4rem .8rem; font-size: .85rem; background: var(--superficie); text-decoration: none; }
+.formulario-indice a:hover { border-color: var(--acento); }
+.formula-grupo { margin: 2.5rem 0 3rem; scroll-margin-top: 5rem; }
+.formula-grupo-cabecalho { border-bottom: 1px solid var(--linha); margin-bottom: 1.25rem; padding-bottom: .8rem; }
+.formula-grupo-cabecalho h2 { margin: .25rem 0 0; border: 0; padding: 0; }
+.formula-grupo-cabecalho .eyebrow { margin: 0; }
+.formula-grade { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; align-items: start; }
+.formula-card { background: var(--superficie); border: 1px solid var(--linha); border-radius: var(--raio); padding: 1.2rem 1.35rem; min-width: 0; scroll-margin-top: 5rem; }
+.formula-cabecalho { display: flex; gap: .7rem; align-items: baseline; }
+.formula-cabecalho h3 { margin: 0; font-size: 1.04rem; line-height: 1.45; }
+.formula-numero { color: var(--acento); font-variant-numeric: tabular-nums; font-size: .8rem; font-weight: 700; }
+.formula-expressao { margin: 1.2rem 0; padding: .9rem .6rem; border-radius: var(--raio-sm); background: var(--superficie-2); display: flex; flex-direction: column; align-items: center; gap: .7rem; min-width: 0; }
+.formula-math { display: block; max-width: 100%; font-size: 1.13rem; color: var(--tinta); }
+.formula-condicao { margin: .75rem 0; color: var(--tinta-2); font-size: .88rem; line-height: 1.6; overflow-wrap: anywhere; }
+.formula-simbolos { border-top: 1px solid var(--linha); padding-top: .65rem; margin-top: .8rem; }
+.formula-simbolos summary { font-size: .85rem; color: var(--tinta-2); cursor: pointer; }
+.formula-simbolos p { font-size: .9rem; margin: .6rem 0; }
+.formula-aula { display: inline-block; font-size: .82rem; margin-top: .6rem; }
+.formula-revelar { margin: 1.2rem 0; width: 100%; }
+.formulario-rodape { border-top: 1px solid var(--linha); padding: 1.5rem 0 2rem; color: var(--tinta-2); font-size: .9rem; }
+.formulario-rodape p { margin-bottom: 0; }
+.pg-formulas [hidden] { display: none !important; }
+/* curso.js sinaliza .js no head. Os controles ainda hidden reservam sua geometria
+   antes da primeira pintura, sem expor controles inativos; sem JS não ocupam espaço. */
+@media screen {
+  .js .pg-formulas .formulario-ferramentas[hidden] { display: block !important; visibility: hidden; }
+  .js .pg-formulas .botao-tema[hidden] { display: inline-flex !important; visibility: hidden; }
+}
+/* O rótulo mais longo reserva a largura também quando há um tema salvo.
+   O pseudo-elemento tem altura zero e acompanha a fonte responsiva do botão. */
+.pg-formulas .botao-tema { flex-direction: column; gap: 0; }
+.pg-formulas .botao-tema::after { content: "Tema: automático"; height: 0; overflow: hidden; visibility: hidden; }
+@media (max-width: 50rem) {
+  .formula-grade { grid-template-columns: minmax(0,1fr); }
+  .formulario-filtros { grid-template-columns: minmax(0,1fr); }
+  .formula-card { padding: 1rem; }
+  #formula-contagem { flex-basis: 100%; margin: .5rem 0 0; }
+}
+@media (max-width: 24rem) {
+  .formula-card { padding: .85rem .7rem; }
+  .formula-expressao { padding: .8rem .25rem; }
+  .formula-math { font-size: 1rem; }
+  .pg-formulas .marca-texto { display: none; }
+  .pg-formulas .topo-acoes { gap: .3rem; }
+  .pg-formulas .topo-acoes .botao { font-size: .8rem; padding: .5rem .6rem; }
+}
+@media print {
+  @page { margin: 12mm; }
+  .pg-formulas { color: #111; background: #fff; }
+  .pg-formulas .topo, .formulario-ferramentas, .formulario-indice, .formula-revelar, .formula-aula, #formula-vazio, .formulario-rodape { display: none !important; }
+  .pagina-formulas { max-width: none; padding: 0; }
+  .formulario-intro { margin: 0 0 8mm; }
+  .formulario-intro h1 { font-size: 22pt; }
+  .formulario-intro p { font-size: 9pt; }
+  .pg-formulas .formula-grupo[hidden], .pg-formulas .formula-card[hidden] { display: block !important; }
+  .pg-formulas .formula-expressao[hidden] { display: flex !important; }
+  .formula-grupo { margin: 6mm 0; }
+  .formula-grupo-cabecalho { break-inside: avoid; break-after: avoid; }
+  .formula-grupo-cabecalho h2 { font-size: 14pt; }
+  .formula-grupo-cabecalho .eyebrow { font-size: 8pt; }
+  .formula-grade { display: block; columns: 2; column-gap: 6mm; }
+  .formula-card { display: inline-block !important; width: 100%; margin-bottom: 4mm; border: 1px solid #aaa; background: #fff; padding: 3mm; break-inside: avoid; }
+  .formula-cabecalho h3 { font-size: 10pt; }
+  .formula-numero { color: #333; font-size: 8pt; }
+  .formula-expressao { margin: 3mm 0; padding: 2mm; background: #fff; border: 0; }
+  .formula-math { color: #111; font-size: 10pt; }
+  .formula-condicao, .formula-simbolos summary, .formula-simbolos p { color: #333; font-size: 8pt; }
+  .formula-simbolos { display: block; }
+  .formula-simbolos summary { display: none; }
+  .formula-simbolos p { margin: 1.5mm 0 0; line-height: 1.4; }
+}

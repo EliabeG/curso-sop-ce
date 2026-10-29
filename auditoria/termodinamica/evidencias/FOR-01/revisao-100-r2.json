@@ -1,0 +1,3266 @@
+{
+  "id": "FOR-01",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "status": "entrega_para_auditoria_independente",
+  "escopo": "100 fichas existentes, 11 grupos. Sem nova cobertura FOR-02.",
+  "autoria": "Corretor leu 01–50; apoio_fun01 leu 51–100 e revisou a legibilidade das notas 01–50. Corretor leu e integrou as análises, decidiu as correções finais e conferiu o produto. Coordenador forneceu apoio primário de CO₂/umidade e teste de navegador. Não constitui aprovação do próprio Corretor. Rodada 2: Corretor aplicou exclusivamente R1-A; apoio_fun01 conferiu a formulação do contramodelo. A contagem correta é 100 fichas contendo 191 elementos MathML; a redação histórica r1 ficou preservada.",
+  "contagem": {
+    "fichas": 100,
+    "grupos": 11,
+    "elementos_mathml": 191,
+    "fichas_alteradas_nesta_rodada": 4,
+    "fichas_preservadas_desde_r1": 96,
+    "deltas_aula_nesta_rodada": 3,
+    "alvos_aula_nesta_rodada": 3
+  },
+  "metodo": "Revisão das 100 fichas herdada da r1, com reapresentação restrita de R1-A nas fichas 23/46/79/84. O diagnóstico anterior e o resultado final permanecem separados. Os 191 elementos MathML ficam idênticos; nesta rodada só condições, busca e três trechos de aula mudam. Os demais 96 registros científicos são preservados. As verificações e contas da r1 não são repetidas; r2 comprova delta e preservação e valida novamente o inventário.",
+  "fontes": {
+    "algebra": {
+      "titulo": "Conferência autoral de definições e rearranjos",
+      "tipo": "deducao_autoral",
+      "consulta": "2026-10-28",
+      "resultado": "Diferenças, médias, razões, interpolação afim, soma de capacidades e unidades rederivadas diretamente. Não é uma norma externa nem ensaio experimental."
+    },
+    "si": {
+      "titulo": "BIPM, SI Brochure, 9ª edição, versão 4.01 (2026)",
+      "url": "https://www.bipm.org/en/publications/si-brochure",
+      "consulta": "2026-10-27",
+      "resultado": "Consulta primária reutilizada de BAN-10: unidades SI, kelvin/Celsius, mol e constantes definidoras. Sem alegar nova inspeção integral nesta rodada."
+    },
+    "nist_cal": {
+      "titulo": "NIST SP811, notas 9 e 19",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes",
+      "consulta": "2026-10-28",
+      "resultado": "Texto web: caloria termoquímica = 4,184 J exatamente; litro = dm³. A tabela B.8 não expôs o termo pesquisado; a nota 9 foi efetivamente lida."
+    },
+    "ideal": {
+      "titulo": "OpenStax University Physics 2, §2.1",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+      "consulta": "2026-10-28",
+      "resultado": "Equação do gás ideal e bases por molécula/mol; pressão e temperatura absolutas."
+    },
+    "kinetic": {
+      "titulo": "OpenStax University Physics 2, §2.2, equação 2.6",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/2-2-pressure-temperature-and-rms-speed",
+      "consulta": "2026-10-28",
+      "resultado": "Conferida a energia cinética translacional média 3kBT/2 e distinção da energia interna de gás molecular."
+    },
+    "firstlaw": {
+      "titulo": "MIT Thermodynamics §2.4, primeira lei",
+      "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+      "consulta": "2026-10-28",
+      "resultado": "Balanço total fechado, Q entrando e W saindo; a redução para energia interna depende das variações mecânicas. Derivações locais de calor a p constante e de ciclo usam esse balanço."
+    },
+    "ideal_energy": {
+      "titulo": "MIT Thermodynamics §2.4.1",
+      "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node17.html",
+      "consulta": "2026-10-28",
+      "resultado": "du=cv(T)dT, dh=cp(T)dT, integração, aproximação de capacidades constantes e cp−cv=R para gás ideal."
+    },
+    "calorimetry": {
+      "titulo": "OpenStax University Physics 2, §1.4",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-4-heat-transfer-specific-heat-and-calorimetry",
+      "consulta": "2026-10-28",
+      "resultado": "Capacidade térmica e calorimetria sensível; balanços com recipiente rederivados. O valor de caloria dessa seção não é usado para a caloria termoquímica da ficha 03."
+    },
+    "phase": {
+      "titulo": "OpenStax University Physics 2, §1.5",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-5-phase-changes",
+      "consulta": "2026-10-28",
+      "resultado": "Calor de mudança de fase e massa transformada. Limites de pressão/trabalho são estabelecidos pela primeira lei; a descrição informal de supercrítico dessa página não foi importada."
+    },
+    "quality": {
+      "titulo": "ASHRAE Handbook 2025, capítulo 2, §1.2",
+      "url": "https://handbook.ashrae.org/Handbooks/F25/IP/f25_ch02/f25_ch02_ip.aspx",
+      "consulta": "2026-10-28",
+      "resultado": "Texto sobre qualidade como fração mássica e dependência p/T em saturação pura. Média de propriedades específicas deriva da aditividade e das massas; não se generaliza a p/T ou misturas zeotrópicas."
+    },
+    "mechanics_k": {
+      "titulo": "OpenStax University Physics 1, §7.2",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy",
+      "consulta": "2026-10-28",
+      "resultado": "Energia cinética translacional clássica, referencial e unidade J."
+    },
+    "mechanics_p": {
+      "titulo": "OpenStax University Physics 1, §8.1",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+      "consulta": "2026-10-28",
+      "resultado": "Diferença de energia potencial gravitacional mgΔz em campo uniforme; no curso usa-se EP para distingui-la da energia interna U."
+    },
+    "humidity": {
+      "titulo": "ASHRAE Handbook 2021, capítulo 1, §§5–6, equações 12/13/23",
+      "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+      "consulta": "2026-10-28",
+      "resultado": "Texto distingue saturação real, fator de intensificação e aproximação de gases perfeitos. Apoio visual NIST Bell/Lemmon/Harvey e pinpoint estão no relatório do coordenador."
+    },
+    "coord_co2": {
+      "titulo": "Apoio documental do coordenador: Persily/deJonge 2017 e NIST TN2213",
+      "arquivo": "fontes-coordenador.md",
+      "consulta": "2026-10-28",
+      "resultado": "Relatório lido e integrado; URLs, páginas, PDFs e capturas reais do coordenador no pacote. Balanço usa frações e geração volumétrica coerente, sem adotar limites normativos."
+    },
+    "mit_cv": {
+      "titulo": "MIT, Thermodynamics and Propulsion §2.5",
+      "url": "https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html",
+      "resultado": "Conferidos balanço de volume de controle, energia cinética e §2.5.4.1: a integração do tanque declara entalpia de entrada constante.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "nist_co2": {
+      "titulo": "NIST TN 2213, §2.1, pp. impressas 2–3 / PDF 8–9",
+      "url": "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2213.pdf",
+      "resultado": "Conferidos balanço de zona única, mesma vazão volumétrica de entrada/saída, ausência de diferenças espaciais e razão Q/V. A ficha usa fração, não o valor numérico em ppm.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "doe_pump": {
+      "titulo": "DOE, Pumps Test Procedure Final Rule, equação (10), p. 103",
+      "url": "https://www.energy.gov/sites/default/files/2015/12/f27/Pumps%20Test%20Procedure%20Final%20Rule.pdf",
+      "resultado": "Expressão primária Pu=ρQHg com H definido como carga total da bomba; consulta ao trecho indexado da publicação.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "doe_eff": {
+      "titulo": "DOE, Improving Pumping System Performance",
+      "url": "https://www.energy.gov/sites/default/files/2014/05/f16/pump.pdf",
+      "resultado": "Conferida definição de eficiência da bomba como potência transmitida ao líquido dividida pela potência no eixo; não pela potência elétrica.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "open_cop": {
+      "titulo": "OpenStax University Physics 2 §4.3",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-3-refrigerators-and-heat-pumps",
+      "resultado": "Conferidos COP de refrigeração e aquecimento e balanço W=QH−QL, com trabalho fornecido ao ciclo.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "open_carnot": {
+      "titulo": "OpenStax University Physics 2 §4.5",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+      "resultado": "Conferidos limite de Carnot e igualdade entre ciclos reversíveis ligados aos mesmos dois reservatórios.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_entropy": {
+      "titulo": "MIT 2.60J, Lecture 2, slides 7–8",
+      "url": "https://ocw.mit.edu/courses/2-60j-fundamentals-of-advanced-energy-conversion-spring-2020/54a791b898a31befeea178f796efcd9c_MIT2_60s20_lec2.pdf",
+      "resultado": "Conferidos balanços de entropia de massa de controle e volume de controle, distinguindo transferência e geração.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "open_entropy": {
+      "titulo": "OpenStax University Physics 2 §4.6",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-6-entropy",
+      "resultado": "Conferida definição da variação de entropia por trajetória reversível e temperatura absoluta; a integração é pelo caminho.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_gibbs": {
+      "titulo": "MIT Thermodynamics §5.3",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node39.html",
+      "resultado": "Conferidas du=Tds−pdv e dh=Tds+vdp como identidades de propriedades; calor e trabalho reais exigem hipóteses adicionais.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_ideal_s": {
+      "titulo": "MIT Thermodynamics §5.4",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html",
+      "resultado": "Conferida forma diferencial ds=cv dT/T+R dv/v e integração com cv constante. Forma T,p e relações isentrópicas conferidas por substituição pv=RT e cp=cv+R.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "purdue_ref": {
+      "titulo": "Purdue, C. Wassgren, §3.8.3, pp. 307–310",
+      "url": "https://engineering.purdue.edu/~wassgren/teaching/ME20000/NotesAndReading/Lec35_Reading_Wassgren.pdf",
+      "resultado": "Conferidos COP de compressão de vapor, balanços por entalpia e eficiência isentrópica do compressor com mesma pressão final.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_lost": {
+      "titulo": "MIT Thermodynamics §6.6",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+      "resultado": "Conferida relação entre trabalho perdido e geração total de entropia sob ambiente de referência a T0 constante.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "wash_gibbs": {
+      "titulo": "University of Washington, Gibbs Energy Minimization, p. 3",
+      "url": "https://courses.washington.edu/mengr524/sp15/handouts/gibbs_min.pdf",
+      "resultado": "Conferidas definição de μ como derivada de G a T,p e demais quantidades fixas e condição de mínimo de G. A diferença entre fases resulta da conservação dn_f=−dn_g.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_phase": {
+      "titulo": "MIT Materials Science, Lecture 14",
+      "url": "https://wikis.mit.edu/confluence/display/MSEDG/Lecture%2B14",
+      "resultado": "Conferida transferência entre duas fases a T,p fixas e igualdade do potencial químico do mesmo componente móvel.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_rankine": {
+      "titulo": "MIT Thermodynamics §8.5",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node65.html",
+      "resultado": "Conferidos equipamentos e processos do ciclo Rankine; a numeração da ficha é própria e os balanços foram rederivados da primeira lei estacionária.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_brayton": {
+      "titulo": "MIT Thermodynamics §3.7",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+      "resultado": "Conferidos quatro processos, trabalho líquido e redução do rendimento por relações isentrópicas para gás ideal com calores constantes.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_otto": {
+      "titulo": "MIT Thermodynamics §3.5.1",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node26.html",
+      "resultado": "Conferida dedução η=1−r^(1−k) com calor a volume constante e compressão/expansão isentrópicas.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_diesel": {
+      "titulo": "MIT Thermodynamics §3.6",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node27.html",
+      "resultado": "Conferida eficiência por temperaturas; expressão da ficha em r e rc rederivada usando adição isobárica e relações isentrópicas.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "purdue_comp": {
+      "titulo": "Purdue ME418, Chapter SM6, pp. SM6.2–SM6.7",
+      "url": "https://www.purdue.edu/freeform/me418/wp-content/uploads/sites/30/2024/09/Chapter-SM-6-Ref-Compressors.pdf",
+      "resultado": "Conferidos referência de sucção, definição de admissão por deslocamento e expressão politrópica com fator n/(n−1); não se confunde com trabalho de uma única etapa fechada.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "tamu_two": {
+      "titulo": "C. E. Pelli, Texas A&M, The Energy Efficiency of Dehumidified Two-Stage Air Compression, §§4.2–4.4, pp. 17–20",
+      "url": "https://oaktrust.library.tamu.edu/server/api/core/bitstreams/720949b2-1bd4-4884-9025-d39f685f11a5/content",
+      "resultado": "Conferido modelo ideal de dois estágios, intercooling isobárico até temperatura inicial e média geométrica minimizadora; extensão a eficiências iguais e constantes rederivada neste apoio.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_cond": {
+      "titulo": "MIT Thermodynamics §16.3",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node117.html",
+      "resultado": "Conferidos Fourier com sinal negativo, parede plana de área constante, perfil linear e gradiente (T2−T1)/L.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_conv": {
+      "titulo": "MIT Thermodynamics §17.2",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node123.html",
+      "resultado": "Conferidos q″=h(Ts−T∞) e resistências de convecção/condução em série.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_res": {
+      "titulo": "MIT Thermodynamics §16.4",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node118.html",
+      "resultado": "Conferidas resistência L/(kA), soma em série e conversão para resistência multiplicada pela área comum.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_hx": {
+      "titulo": "MIT Thermodynamics §18.5",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node131.html",
+      "resultado": "Conferidos coeficiente global com área declarada e diferença média logarítmica deduzida para hipóteses do trocador.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "ahtt": {
+      "titulo": "J. H. Lienhard IV/V, A Heat Transfer Textbook, 6ª edição, §3.2",
+      "url": "https://ahtt.mit.edu/wp-content/uploads/2024/04/AHTTv600.pdf",
+      "resultado": "Trecho primário indexado: método LMTD com U razoavelmente constante e fator F para arranjos apropriados; não valida qualquer média arbitrária.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_rad": {
+      "titulo": "MIT Thermodynamics §§19.2 e 19.4",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node135.html",
+      "resultado": "Conferidas emissividade/absortividade de corpo cinza; geometria e fator de vista tratados no §19.4. Derivação do balanço emissão menos absorção feita neste apoio.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_view": {
+      "titulo": "MIT Thermodynamics §19.4",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node137.html",
+      "resultado": "Conferidos fator de vista e troca líquida entre superfícies; encerramento completo permite F=1 para a superfície interna que não se vê.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "open_expansion": {
+      "titulo": "OpenStax University Physics 2 §1.3",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-3-thermal-expansion",
+      "resultado": "Conferida distinção entre dL/dT=αL e aproximação linear para pequenas variações relativas.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "mit_generation": {
+      "titulo": "MIT Thermodynamics §18.1",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node127.html",
+      "resultado": "Conferida geração volumétrica em W/m³ e balanço estacionário de energia. Caso de única face convectiva foi rederivado diretamente.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    },
+    "purdue_turb": {
+      "titulo": "Purdue ME200, HW36, turbina de referência",
+      "url": "https://engineering.purdue.edu/ME200/files/homework/HW36/ME200-Spring2020-HW36-web.html",
+      "resultado": "Conferidos modelo estacionário adiabático, EC/EP desprezíveis e relação h_out=h_in−ηt(h_in−h_out,s), equivalente à ficha.",
+      "consulta": "2026-10-28",
+      "responsavel_consulta": "apoio_fun01",
+      "limite": "Escopo de leitura descrito no resultado; não implica inspeção integral do documento."
+    }
+  },
+  "fichas": [
+    {
+      "numero": 1,
+      "id": "formula-variacao",
+      "titulo": "Variação e valor final",
+      "grupo": "medidas",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "A definição ΔX = X₂ − X₁ e o rearranjo X₂ = X₁ + ΔX estão corretos.",
+        "simbolos_unidades": "ΔX tem a mesma unidade de X; os índices identificam os estados inicial e final.",
+        "hipoteses": "É uma definição de variação, sem hipótese adicional sobre o processo.",
+        "vinculo_aula": "A aula define ΔX, exemplifica seu sinal e distingue variação de valor final."
+      },
+      "fontes_ids": [
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Δ indica final menos inicial.",
+        "simbolos_unidades": "X: grandeza analisada; 1: estado inicial; 2: estado final. Unidade igual à de X.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-leitura-matematica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "6e0f2abce8b2160327ec05d6c78ae3b81e27ae5f396f6aea36b18126f6941bb0",
+      "sha256_depois": "6e0f2abce8b2160327ec05d6c78ae3b81e27ae5f396f6aea36b18126f6941bb0"
+    },
+    {
+      "numero": 2,
+      "id": "formula-taxas",
+      "titulo": "Energia, potência e duração",
+      "grupo": "medidas",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "Q/Δt e W/Δt representam taxas médias; multiplicar a taxa média pela duração recupera a energia transferida.",
+        "simbolos_unidades": "A equivalência kJ/s = kW e o intervalo de tempo em segundos estão definidos.",
+        "hipoteses": "A condição distingue taxa média de taxa constante. A expressão não deve ser interpretada como definição de taxa instantânea.",
+        "vinculo_aula": "A aula apresenta o caso de um aquecedor de potência constante e a conversão entre potência e energia."
+      },
+      "fontes_ids": [
+        "algebra",
+        "si"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Taxas médias no intervalo; a última expressão vale para taxa constante.",
+        "simbolos_unidades": "Q: calor (kJ); W: trabalho (kJ); ponto: taxa (kW); Δt: duração (s).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-leitura-matematica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "fefa6b91d7cb5abdc509988f1abea2b4c7c603bd20803e398bd884209aa88af5",
+      "sha256_depois": "fefa6b91d7cb5abdc509988f1abea2b4c7c603bd20803e398bd884209aa88af5"
+    },
+    {
+      "numero": 3,
+      "id": "formula-conversoes",
+      "titulo": "Conversões e produtos de unidades",
+      "grupo": "medidas",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Os fatores de conversão entre múltiplos de mil, unidades cúbicas, litros e calorias termoquímicas estão corretos. O valor 4,184 corresponde à caloria termoquímica.",
+        "simbolos_unidades": "J, kJ, W, kW, Pa, kPa, L, mm e cm³ usam conversões compatíveis.",
+        "hipoteses": "Preservar a aproximação explicitamente fornecida no enunciado, quando houver.",
+        "vinculo_aula": "O alvo atual ensina o SI e os produtos de unidades. A alteração prevista acrescenta #base-balanco-fechado, que trata de cal e kcal, com o texto “Conferir calorias e sinais”."
+      },
+      "fontes_ids": [
+        "si",
+        "nist_cal"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Use a aproximação de J/cal fornecida na questão, se houver.",
+        "simbolos_unidades": "J: joule; W: watt; Pa: pascal; L: litro; cal: caloria termoquímica; prefixo k: mil.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-leitura-matematica",
+          "../modulos/e1-termodinamica.html#base-balanco-fechado"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "a0ff507975359bb831861b305e819fd6c9ea77345ee13c432f687c3fed96f94f",
+      "sha256_depois": "43d875446e0bcd01e95dbf2e90def6e13efb6ce62355a57e0b495f142fc3b738"
+    },
+    {
+      "numero": 4,
+      "id": "formula-temperatura",
+      "titulo": "Temperatura absoluta e intervalos",
+      "grupo": "medidas",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "O deslocamento de 273,15 entre as escalas e a igualdade numérica dos intervalos em Celsius e kelvin estão corretos.",
+        "simbolos_unidades": "T e t distinguem temperatura absoluta e temperatura em graus Celsius.",
+        "hipoteses": "A necessidade de usar temperaturas absolutas em razões está explicitada.",
+        "vinculo_aula": "A aula explica a lei zero, a conversão de escalas e o exemplo de 10 °C = 283,15 K."
+      },
+      "fontes_ids": [
+        "si"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Razões de temperaturas em gás ideal, Carnot, entropia e radiação usam K.",
+        "simbolos_unidades": "T: temperatura absoluta (K); t: temperatura Celsius (°C).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-absolutas"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "67887eafe354cad2529070dd9d4268d74c458c42912bc4805919c446f8e0ad0c",
+      "sha256_depois": "67887eafe354cad2529070dd9d4268d74c458c42912bc4805919c446f8e0ad0c"
+    },
+    {
+      "numero": 5,
+      "id": "formula-pressao",
+      "titulo": "Pressão absoluta e manométrica",
+      "grupo": "medidas",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "p_abs = p_man + p_atm e p = F_normal/A estão corretos nas condições indicadas.",
+        "simbolos_unidades": "N/m² = Pa; usar kPa exige a conversão correspondente. A pressão é uniforme ou representa uma média sobre a área.",
+        "hipoteses": "As pressões somadas devem estar na mesma unidade; a força considerada é normal à superfície.",
+        "vinculo_aula": "#base-absolutas ensina a referência de pressão. A alteração prevista acrescenta #base-leitura-matematica para p = F/A, com o texto “Retomar força por área”."
+      },
+      "fontes_ids": [
+        "algebra",
+        "si"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Todas as pressões na mesma unidade; F⊥/A representa pressão uniforme ou média.",
+        "simbolos_unidades": "pabs: absoluta; pman: relativa à atmosfera; patm: atmosférica (Pa ou kPa). F⊥: força normal (N); A: área (m²).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-absolutas",
+          "../modulos/e1-termodinamica.html#base-leitura-matematica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "924ed98c559ad886ab692bc019374728d4d733dbd1e85810c1c4498c97c9ed4d",
+      "sha256_depois": "8254d49fdad6ec483188db2f7125a7dedf1d435ac470c60a23652a0cefcb172c"
+    },
+    {
+      "numero": 6,
+      "id": "formula-densidade",
+      "titulo": "Densidade e volume específico",
+      "grupo": "medidas",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "ρ = m/V e v = V/m = 1/ρ estão corretos.",
+        "simbolos_unidades": "As unidades kg/m³ e m³/kg estão explicitadas.",
+        "hipoteses": "As razões se referem à mesma amostra e ao mesmo estado; a interpretação de um sistema homogêneo é ensinada.",
+        "vinculo_aula": "A aula divide uma amostra e verifica que sua densidade permanece a mesma."
+      },
+      "fontes_ids": [
+        "algebra",
+        "si"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Use massa e volume da mesma amostra e do mesmo estado.",
+        "simbolos_unidades": "ρ: densidade (kg/m³); m: massa (kg); V: volume total (m³); v: volume específico (m³/kg).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-medidas"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "6ab8bf1e45cf2a677d394663e7a34c966fe088e9f8078da5a30c19af7722170d",
+      "sha256_depois": "6ab8bf1e45cf2a677d394663e7a34c966fe088e9f8078da5a30c19af7722170d"
+    },
+    {
+      "numero": 7,
+      "id": "formula-especificas",
+      "titulo": "Propriedades por unidade de massa",
+      "grupo": "medidas",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "u = U/m, h = H/m e s = S/m dividem corretamente cada propriedade total pela massa.",
+        "simbolos_unidades": "U e H são energias totais; S é entropia total. Com m em kg, u e h ficam em kJ/kg e s em kJ/(kg·K).",
+        "hipoteses": "A condição prevista deve ser lida apenas para estas relações: U, H e S são totais; u, h e s são por unidade de massa. Não é uma regra universal de letras maiúsculas e minúsculas e não exige gás ideal.",
+        "vinculo_aula": "A aula ensina a divisão de uma propriedade extensiva pela massa. Essa explicação também cobre s, mesmo sem uma linha separada para a entropia."
+      },
+      "fontes_ids": [
+        "firstlaw",
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Nestas relações, U, H e S são totais; u, h e s são por unidade de massa.",
+        "simbolos_unidades": "U, H: energias totais (kJ); S: entropia total (kJ/K); u, h: kJ/kg; s: kJ/(kg·K); m: kg.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-propriedades"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "751b114d09333defb7d05546d7a69b9db6d55c5932ac7858424d399ce48b5882",
+      "sha256_depois": "a3df5c592695c8c8cfb0f6f4e98e42c9e92515aaa52b03c611ed65b1b8e8c363"
+    },
+    {
+      "numero": 8,
+      "id": "formula-span",
+      "titulo": "Faixa do instrumento",
+      "grupo": "medidas",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "Span = L_sup − L_inf e seu rearranjo estão corretos.",
+        "simbolos_unidades": "O intervalo e os limites usam a mesma unidade; os limites são identificados.",
+        "hipoteses": "O span é distinguido do limite superior da faixa.",
+        "vinculo_aula": "A aula define o span e usa o exemplo L_sup = −10 °C + 120 °C = 110 °C."
+      },
+      "fontes_ids": [
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Span é a diferença entre os limites.",
+        "simbolos_unidades": "Lsup e Linf: limites superior e inferior; span: tamanho do intervalo, na mesma unidade.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-instrumentos"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "c96d68f32b732981d3fccb936c25cbc4ced9561400e7478e537d6eea42d26f67",
+      "sha256_depois": "c96d68f32b732981d3fccb936c25cbc4ced9561400e7478e537d6eea42d26f67"
+    },
+    {
+      "numero": 9,
+      "id": "formula-escalas",
+      "titulo": "Duas escalas lineares",
+      "grupo": "medidas",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "A interpolação afim e o ganho b = (X₂ − X₁)/(Y₂ − Y₁) estão corretos quando os denominadores são não nulos.",
+        "simbolos_unidades": "A alteração prevista define a como deslocamento, na unidade de X, e b como ganho, na unidade de X por unidade de Y; 1 e 2 são pontos de calibração.",
+        "hipoteses": "A forma fracionária exige X₂ ≠ X₁ e Y₂ ≠ Y₁. A resposta é linear; proporcionalidade direta exige a = 0. As origens das escalas não precisam coincidir.",
+        "vinculo_aula": "A aula deriva ganho e deslocamento e apresenta um exemplo. O vínculo deve ser mantido."
+      },
+      "fontes_ids": [
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Resposta linear; X₂ ≠ X₁ e Y₂ ≠ Y₁ para as razões. Proporcionalidade direta exige a = 0.",
+        "simbolos_unidades": "X, Y: leituras simultâneas; 1 e 2: pontos de calibração; a: deslocamento, na unidade de X; b: ganho, unidade de X por unidade de Y.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-instrumentos"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "d5d51285bf0749bf47da67982b8e7dad4e3896d0728ce284eeb674e6c2bae0c8",
+      "sha256_depois": "5b8196140d9b25b01319c20f39a2f87a507b0c85be161c0f1351dd3153955355"
+    },
+    {
+      "numero": 10,
+      "id": "formula-percentual",
+      "titulo": "Razão, aumento e redução percentual",
+      "grupo": "medidas",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "As expressões calculam aumento e redução em relação ao valor de referência, respeitando a orientação dos sinais.",
+        "simbolos_unidades": "As razões são adimensionais e sua apresentação em porcentagem está explicitada.",
+        "hipoteses": "A exigência de X₁ inicial positivo evita denominador nulo e uma referência inadequada para a interpretação percentual proposta.",
+        "vinculo_aula": "A aula distingue valor final igual a 140% do inicial de aumento de 40%, além de apresentar a redução percentual."
+      },
+      "fontes_ids": [
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "A referência do percentual é o valor inicial.",
+        "simbolos_unidades": "X1: referência inicial positiva; X2: valor final. Resultados em porcentagem.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-leitura-matematica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "b979cb5cbe386121bbf21dd201ac4f0e673d9cdb5128ec2f9605cde1bd0296a9",
+      "sha256_depois": "b979cb5cbe386121bbf21dd201ac4f0e673d9cdb5128ec2f9605cde1bd0296a9"
+    },
+    {
+      "numero": 11,
+      "id": "formula-ppm-geracao",
+      "titulo": "Concentração em ppm e geração total",
+      "grupo": "medidas",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "A conversão C = C_ppm × 10⁻⁶ e o produto para somar a geração de fontes iguais estão corretos.",
+        "simbolos_unidades": "A alteração prevista define C como fração volumétrica, G como taxa volumétrica total de geração de CO₂, N como número de pessoas e a geração individual em unidade de vazão por pessoa.",
+        "hipoteses": "As vazões volumétricas devem usar as mesmas condições de referência. O produto N vezes a geração por pessoa pressupõe que todas as pessoas tenham a geração individual adotada.",
+        "vinculo_aula": "#base-balanco-co2 ensina a geração total, as unidades e o exemplo com 16 pessoas. Os valores do exercício não são apresentados como limites normativos."
+      },
+      "fontes_ids": [
+        "coord_co2"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Geração conhecida; some fontes e use vazões de gás nas mesmas condições de referência.",
+        "simbolos_unidades": "C: fração volumétrica de CO₂; Cppm: concentração em ppm; G: geração volumétrica de CO₂ (m³/h ou m³/s); N: número de pessoas; geração por pessoa: mesma unidade de vazão por pessoa.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-co2"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "4cca39bfb6d4214b9f7254bcd6961c850d2a2b92b256f10e494cd39754baa44f",
+      "sha256_depois": "1e37a0d9af3d54540593f9c3ca54be84c1777c1c5ca3a4f1def78e1128d5c3c2"
+    },
+    {
+      "numero": 12,
+      "id": "formula-mols",
+      "titulo": "Quantidade de matéria e constante do gás",
+      "grupo": "gases",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "n = m/M, R = Rᵤ/M e os valores aproximados de Rᵤ estão corretos. O número de Avogadro apresentado é exato.",
+        "simbolos_unidades": "M em kg/mol é compatível com m em kg e n em mol. R usa energia por kg e por kelvin; Rᵤ usa energia por mol e por kelvin.",
+        "hipoteses": "A compatibilidade entre as bases mássica e molar está explicitada.",
+        "vinculo_aula": "A aula explica o mol, a conversão entre as constantes por massa e por mol e um cálculo em atm·L."
+      },
+      "fontes_ids": [
+        "si",
+        "ideal"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Unidades de massa e de quantidade de matéria devem ser coerentes.",
+        "simbolos_unidades": "n: mol; m: kg; M: massa molar (kg/mol); Ru: universal; R: específica (J/(kg·K)).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gas-modelo"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "5ced9dcf1d3c229ce86bfd3e90ca808af2a71ef2e43f592eda5cf93b87715992",
+      "sha256_depois": "5ced9dcf1d3c229ce86bfd3e90ca808af2a71ef2e43f592eda5cf93b87715992"
+    },
+    {
+      "numero": 13,
+      "id": "formula-gas-ideal",
+      "titulo": "Equação de estado do gás ideal",
+      "grupo": "gases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "pV = mRT = nRᵤT e pv = RT estão corretos para o modelo indicado.",
+        "simbolos_unidades": "A alteração prevista completa m em kg, V em m³, v em m³/kg, n em mol e T em K. R e Rᵤ usam J ou kJ por sua respectiva base, de modo compatível com pV em Pa·m³ ou kPa·m³.",
+        "hipoteses": "O modelo de gás ideal e o uso de pressão e temperatura absolutas já estão declarados; a composição determina a constante específica R.",
+        "vinculo_aula": "#base-gas-modelo deriva as bases mássica e molar; #base-gas-energia também explicita as unidades."
+      },
+      "fontes_ids": [
+        "ideal"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Modelo ideal; Pa·m³ → J ou kPa·m³ → kJ, com R compatível.",
+        "simbolos_unidades": "p: pressão absoluta (Pa ou kPa); V: m³; v: m³/kg; m: kg; n: mol; T: K; R: J/(kg·K) ou kJ/(kg·K); Ru: J/(mol·K) ou kJ/(mol·K), compatíveis com pV.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gas-modelo"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "6ec9be39fdaa4be09e13d249e4adfc10b34e0e89417af8b3a03cd267e66560bf",
+      "sha256_depois": "cf046561b9a75319f3b0386f64cd3d4dc0e314ad4aa345b1485fbed778bd3fa2"
+    },
+    {
+      "numero": 14,
+      "id": "formula-dois-estados",
+      "titulo": "Gás ideal em dois estados",
+      "grupo": "gases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "A relação combinada entre estados e o produto das razões de pressão e volume estão corretos.",
+        "simbolos_unidades": "A alteração prevista exige a mesma unidade entre p₁ e p₂ e entre V₁ e V₂. As temperaturas permanecem em kelvin.",
+        "hipoteses": "A mesma quantidade de gás ideal e a mesma composição devem ser mantidas nos dois estados.",
+        "vinculo_aula": "A aula apresenta a derivação da relação e um exemplo de aumento percentual composto."
+      },
+      "fontes_ids": [
+        "ideal",
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Mesma quantidade e composição de gás ideal; use a mesma unidade de pressão nos dois estados e a mesma unidade de volume.",
+        "simbolos_unidades": "p: pressão absoluta; V: volume total; T: K; índices: estados. Razões adimensionais.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gas-modelo"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "46554f70c2b0b3dd1a869914fa60c7c1f1382ed3667984a3f416485e11cafb22",
+      "sha256_depois": "b1b0f9e9411109938d921eaad247735a2ce7c4223d448564ad0699bd242b5fd2"
+    },
+    {
+      "numero": 15,
+      "id": "formula-restricoes",
+      "titulo": "Restrições dos processos de gás ideal",
+      "grupo": "gases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "As três reduções da equação de estado estão corretas para as restrições indicadas.",
+        "simbolos_unidades": "A alteração prevista identifica cte como constante, p como pressão absoluta em Pa ou kPa, V em m³ e T em K, mantendo as unidades entre estados.",
+        "hipoteses": "Além da quantidade de gás, a composição deve permanecer fixa. Impõe-se apenas a restrição declarada para cada relação.",
+        "vinculo_aula": "A aula exige quantidade e composição fixas e explica por que reação ou vazamento podem invalidar a relação simplificada."
+      },
+      "fontes_ids": [
+        "ideal"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal com quantidade e composição fixas; imponha somente a restrição declarada.",
+        "simbolos_unidades": "cte: constante; p: pressão absoluta (Pa ou kPa); V: m³; T: K; mantenha as unidades entre estados.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gas-modelo"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "2ab45d268801ad19599e0b9e38090937e36afd4d8387edf5ce70b2d8839242f4",
+      "sha256_depois": "d8acfe11cbd87b81fc594f5cd991f63a8639f0e9bcfda1dedb242f953c69ea65"
+    },
+    {
+      "numero": 16,
+      "id": "formula-compressibilidade",
+      "titulo": "Fator de compressibilidade",
+      "grupo": "gases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Z = pV/(nRᵤT) = pv/(RT) e Z = 1 no modelo ideal estão corretos.",
+        "simbolos_unidades": "A alteração prevista substitui a remissão genérica por símbolos locais: Z adimensional, pressão absoluta, volumes total e específico, quantidade de matéria, temperatura e constantes em bases compatíveis.",
+        "hipoteses": "Z pode ser calculado para um gás real. Encontrar Z = 1 em um estado não comprova, sozinho, toda a idealidade das propriedades energéticas.",
+        "vinculo_aula": "A aula calcula Z = 0,80 e interpreta o desvio em relação à equação de estado ideal."
+      },
+      "fontes_ids": [
+        "ideal",
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Z mede o desvio da equação de estado ideal.",
+        "simbolos_unidades": "Z: adimensional; p: pressão absoluta (Pa); v: m³/kg; V: m³; n: mol; T: K; R: J/(kg·K); Ru: J/(mol·K). Também se pode usar kPa e kJ de forma coerente.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gas-modelo"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "2507f47de74f111e5132ef0b3ff732a0fad52f97488e86c72266cba48b0a5a4d",
+      "sha256_depois": "6be199146531e2223bf363040ae081032f0e9c41536c1ec02299f708f1b0d4f9"
+    },
+    {
+      "numero": 17,
+      "id": "formula-calores-especificos",
+      "titulo": "Relações entre calores específicos",
+      "grupo": "gases",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "cp − cv = R para gás ideal e k = cp/cv estão corretos.",
+        "simbolos_unidades": "Os calores específicos e R usam a mesma base, J/(kg·K) ou kJ/(kg·K); k é adimensional.",
+        "hipoteses": "A restrição da diferença cp − cv ao gás ideal e a comparação na mesma temperatura estão explicitadas.",
+        "vinculo_aula": "A aula apresenta as relações e o uso de k nas relações isentrópicas."
+      },
+      "fontes_ids": [
+        "ideal_energy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Relação de diferença: gás ideal; cp e cv avaliados na mesma temperatura.",
+        "simbolos_unidades": "cp, cv, R: J/(kg·K) ou kJ/(kg·K); k: razão adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gas-energia"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "8e613f5d782057a765ce3c412777b6e1d7ec342039c9e27df5aaf17e6279a217",
+      "sha256_depois": "8e613f5d782057a765ce3c412777b6e1d7ec342039c9e27df5aaf17e6279a217"
+    },
+    {
+      "numero": 18,
+      "id": "formula-energia-gas",
+      "titulo": "Variações de energia do gás ideal",
+      "grupo": "gases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Δu = cvΔT, Δh = cpΔT e ΔU = mcvΔT estão corretos no modelo indicado.",
+        "simbolos_unidades": "As grandezas totais e específicas estão distinguidas; o intervalo de temperatura está identificado.",
+        "hipoteses": "A alteração prevista explicita massa fixa para a expressão de ΔU. Gás ideal, composição fixa e calores específicos constantes na faixa já delimitam o restante do modelo.",
+        "vinculo_aula": "A aula separa a dependência de u e h com a temperatura da aproximação de calor específico constante; o balanço fechado mostra o fator massa."
+      },
+      "fontes_ids": [
+        "ideal_energy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal de composição fixa e calores específicos constantes na faixa; a relação para ΔU pressupõe massa fixa.",
+        "simbolos_unidades": "Δu, Δh: kJ/kg; ΔU: kJ; m: kg; cp, cv: kJ/(kg·K); ΔT: K ou diferença em °C.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gas-energia"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "c8a662aae469cb0904670526b89a30e1bafe3caaa40ded39ecdeaaf7b50c7d28",
+      "sha256_depois": "d8d3db2305c0e9ce8c007d43c12dd13c0c74500d25c25fc40b3048b7594ae2fa"
+    },
+    {
+      "numero": 19,
+      "id": "formula-cinetica-molecular",
+      "titulo": "Energia cinética translacional média",
+      "grupo": "gases",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "A energia cinética translacional média de (3/2)kBT está correta no modelo cinético clássico de gás ideal.",
+        "simbolos_unidades": "O resultado é energia por molécula em J; kB tem unidade J/K e T é dada em K.",
+        "hipoteses": "A ficha não confunde a contribuição translacional com toda a energia interna molecular; esse limite está explícito.",
+        "vinculo_aula": "A aula discute rotação, vibração, colisões elásticas e valores médios, sem afirmar que todas as moléculas têm a mesma velocidade."
+      },
+      "fontes_ids": [
+        "kinetic"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Modelo cinético ideal elementar; não é toda a energia interna de qualquer gás molecular.",
+        "simbolos_unidades": "Média por molécula em J; kB: constante de Boltzmann (J/K); T: K.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-molecular"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "8cdc92564eaae67b076cb532eb72a2c275ff9b7e7c821b65568a625876a2ccd1",
+      "sha256_depois": "8cdc92564eaae67b076cb532eb72a2c275ff9b7e7c821b65568a625876a2ccd1"
+    },
+    {
+      "numero": 20,
+      "id": "formula-energia-c-variavel",
+      "titulo": "Energia com calor específico variável",
+      "grupo": "gases",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "As integrais de cv(T) e cp(T), de T₁ a T₂, estão corretas.",
+        "simbolos_unidades": "Calores específicos em kJ/(kg·K) e temperatura em K produzem variações de energia específica em kJ/kg.",
+        "hipoteses": "Gás ideal e composição fixa estão explícitos; as relações não são estendidas automaticamente a gases reais.",
+        "vinculo_aula": "A aula integra uma expressão linear de cp, obtém 196 kJ/kg e compara aproximações."
+      },
+      "fontes_ids": [
+        "ideal_energy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal; propriedades de tabela ou integração substituem a aproximação de c constante.",
+        "simbolos_unidades": "u, h: kJ/kg; cp, cv: kJ/(kg·K); T: K; composição fixa.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-calor-variavel"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "3548046185f19e3dae670fe09bc96e765c803d0b6da5f2c0a91ababac4343003",
+      "sha256_depois": "3548046185f19e3dae670fe09bc96e765c803d0b6da5f2c0a91ababac4343003"
+    },
+    {
+      "numero": 21,
+      "id": "formula-titulo",
+      "titulo": "Título da mistura saturada",
+      "grupo": "fases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "x = mg/(mf + mg), com 0 ≤ x ≤ 1, define corretamente a fração mássica de vapor.",
+        "simbolos_unidades": "x é adimensional; as massas devem usar a mesma unidade.",
+        "hipoteses": "A alteração prevista delimita substância pura em equilíbrio líquido–vapor abaixo do ponto crítico. x = 0 e x = 1 representam os limites saturados.",
+        "vinculo_aula": "A seção #substancias ensina a fração mássica e a coexistência em equilíbrio; FUN-01 distingue mistura bifásica e estado supercrítico."
+      },
+      "fontes_ids": [
+        "quality"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Substância pura em equilíbrio líquido–vapor, abaixo do ponto crítico; x = 0 e x = 1 são os limites saturados. Título é fração mássica.",
+        "simbolos_unidades": "x: fração mássica de vapor; mg: massa de vapor; mf: massa de líquido (mesma unidade).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#substancias"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "21f8ff190816360e49c09e084eac88e16b1641a3aa8d15a92753bac89052b712",
+      "sha256_depois": "12a0fb5c8bac71b5464ffd1d4b9036f08a6bb355ed1d5cc5b24737ba86c621cf"
+    },
+    {
+      "numero": 22,
+      "id": "formula-mistura",
+      "titulo": "Propriedade da mistura saturada",
+      "grupo": "fases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "A média ponderada pelas massas e sua inversão para obter x estão corretas.",
+        "simbolos_unidades": "A alteração prevista especifica v em m³/kg, u e h em kJ/kg, s em kJ/(kg·K), além de x adimensional e dos índices f e g.",
+        "hipoteses": "A substância deve ser pura, em equilíbrio líquido–vapor, com f e g na mesma condição de saturação. A inversão exige yg ≠ yf e exclui o ponto crítico.",
+        "vinculo_aula": "A seção explica propriedades específicas e traz um exemplo com entalpia. A regra não deve ser usada para interpolar temperatura ou pressão pelo título."
+      },
+      "fontes_ids": [
+        "quality",
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Substância pura em equilíbrio líquido–vapor; f e g na mesma saturação. A inversão exige yg ≠ yf, excluindo o ponto crítico.",
+        "simbolos_unidades": "y: v (m³/kg), u ou h (kJ/kg), ou s (kJ/(kg·K)); f: líquido saturado; g: vapor saturado; x: título adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#substancias"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "cd2922d742a586a4bb4c742ea305c71d82d99bec9784f654c8d1ecc06dc7b7b4",
+      "sha256_depois": "ffc556a5b32aa167056373b92e825a9c45e600c9faf60e10e426f1d204852216"
+    },
+    {
+      "numero": 23,
+      "id": "formula-latente",
+      "titulo": "Calor latente de vaporização",
+      "grupo": "fases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "hfg = hg − hf está correto. As expressões de calor e taxa de calor exigem os modelos reduzidos explicitados nas alterações.",
+        "simbolos_unidades": "A alteração prevista identifica as entalpias específicas em kJ/kg, a massa vaporizada em kg, Q em kJ, Q̇ em kW e ṁ em kg/s. hf e hg correspondem aos estados saturados de líquido e vapor.",
+        "hipoteses": "A parte fechada já limita o trabalho a pV. A redução de escoamento exige excluir todo trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; a r1 excluía somente eixo, condição insuficiente.",
+        "vinculo_aula": "#base-calor-latente agora declara a exclusão completa e demonstra por que um vaporizador adiabático com resistor interno deve usar Q̇−Ẇnão-fluxo=ṁhfg. O termo pv permanece em h."
+      },
+      "fontes_ids": [
+        "firstlaw",
+        "mit_cv",
+        "phase"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Vaporização completa de substância pura, de líquido a vapor saturados, a pressão fixa. Para Q: massa fechada, só trabalho pV. Para Q̇: escoamento permanente sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. Despreze variações cinética e potencial.",
+        "simbolos_unidades": "hf, hg, hfg: kJ/kg; m: massa vaporizada (kg); Q: calor recebido (kJ); Q̇: kW; ṁ: kg/s.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-calor-latente"
+        ],
+        "ajustes_no_alvo": [
+          "#base-calor-latente agora declara a exclusão completa e demonstra por que um vaporizador adiabático com resistor interno deve usar Q̇−Ẇnão-fluxo=ṁhfg. O termo pv permanece em h."
+        ],
+        "encaminhamento": "R1-A corrigido: exclusão de todo trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; condições e data-busca sincronizadas."
+      },
+      "sha256_antes": "47c2a820a50f1c7297cedbdba173c9b0c4a2609cbc16cea14db0a1760479af97",
+      "sha256_depois": "10cb9a203a56b482dac63cab1522161fb11cfd394ec7e3eefee31d04648e1a64",
+      "sha256_base_r1": "a3aa5280d1c5164ce25fa59af6dbeb734ffb3ffc01636decd05611b779a38178"
+    },
+    {
+      "numero": 24,
+      "id": "formula-interpolacao",
+      "titulo": "Interpolação linear em tabela",
+      "grupo": "fases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "A interpolação linear local está correta.",
+        "simbolos_unidades": "A propriedade mantém sua unidade e as três temperaturas usam a mesma escala.",
+        "hipoteses": "A alteração prevista exige Ta ≠ Tb e T entre os dois valores conhecidos. A pressão e a região de fase permanecem as mesmas, sem atravessar uma transição de fase.",
+        "vinculo_aula": "O alvo amplo contém a fórmula e o exemplo de 230 °C, que resulta em 2.860 kJ/kg. A orientação sobre não atravessar uma mudança de fase está presente."
+      },
+      "fontes_ids": [
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Mesma pressão e região de fase; Ta ≠ Tb e T entre os dois valores. Aproximação local, sem atravessar transição de fase.",
+        "simbolos_unidades": "a, b: pontos conhecidos; y: propriedade na sua unidade; T: temperatura na mesma escala.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#aprofundamento-aplicado"
+        ],
+        "ajustes_no_alvo": [
+          "Justificar quantitativamente o ótimo nas hipóteses da ficha 88."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "14abbfa925188e7f4589557004a2ef306013de1288ccf27aa7b514fd39e09fae",
+      "sha256_depois": "a5430830123bfdfc6d909427d48a491dc07f9302160cdc8e661357445f442b89"
+    },
+    {
+      "numero": 25,
+      "id": "formula-umidade",
+      "titulo": "Umidade relativa",
+      "grupo": "fases",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "φ = pv/psat e a razão entre umidades à mesma temperatura são válidas na aproximação de ar úmido ideal adotada; não devem ser apresentadas como definição geral de uma mistura real.",
+        "simbolos_unidades": "A alteração prevista define φ como fração, pv como pressão parcial do vapor e psat(T) como pressão de saturação da água pura sobre a fase de referência escolhida. As pressões usam a mesma unidade.",
+        "hipoteses": "Explicitar a aproximação ideal e o desprezo do fator de intensificação. A razão final exige a mesma temperatura e pv₁ ≠ 0, equivalentemente φ₁ ≠ 0.",
+        "vinculo_aula": "#base-umidade apresenta a razão como definição e deve receber a mesma delimitação. Esse ajuste não exige implementar psicrometria de misturas reais."
+      },
+      "fontes_ids": [
+        "humidity"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Aproximação de ar úmido ideal, desprezando o fator de intensificação. A razão final exige mesma temperatura e pv1 ≠ 0 (φ1 ≠ 0).",
+        "simbolos_unidades": "φ: fração, por exemplo 50% = 0,50; pv: pressão parcial do vapor; psat(T): pressão de saturação da água pura sobre a fase de referência escolhida. Pressões na mesma unidade.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-umidade"
+        ],
+        "ajustes_no_alvo": [
+          "Delimitar a aproximação psicrométrica.",
+          "Título compatível com o modelo."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "00b807277ac10178899691a4fb74e0db021659c9acda0f622c5daaa155a1d2ca",
+      "sha256_depois": "5b26cd6204381e0ca167ec0ff8fb6e90032650d4a6e565a1269e59fd880f4eea"
+    },
+    {
+      "numero": 26,
+      "id": "formula-capacidade-termica",
+      "titulo": "Capacidade térmica e calor sensível",
+      "grupo": "calorimetria",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "C = mc e Qsens = mcΔT estão corretos no modelo de calor sensível delimitado.",
+        "simbolos_unidades": "Capacidade térmica total em J/K, calor específico em J/(kg·K) e massa em kg estão distinguidos.",
+        "hipoteses": "Uma única fase, calor específico constante, sólidos ou líquidos e efeitos de trabalho e pressão desprezíveis já estão explicitados.",
+        "vinculo_aula": "A aula delimita o modelo e calcula 252 kJ e 157,5 s sem confundir energia com potência."
+      },
+      "fontes_ids": [
+        "calorimetry"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Sólidos/líquidos em uma fase; c constante, trabalho e efeitos de pressão desprezíveis.",
+        "simbolos_unidades": "C: J/K; m: kg; c: J/(kg·K); Qsens: J. Pode usar kJ em todos os termos energéticos. Intervalos em K ou °C.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-calorimetria"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "34ef39953ade95b3e9bfa6a30143de0fa8dc55891004b9b62bd2fb1cdb36862f",
+      "sha256_depois": "34ef39953ade95b3e9bfa6a30143de0fa8dc55891004b9b62bd2fb1cdb36862f"
+    },
+    {
+      "numero": 27,
+      "id": "formula-equilibrio-mistura",
+      "titulo": "Balanço da mistura e temperatura final",
+      "grupo": "calorimetria",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "O balanço ΣCi(Tf − Ti) = 0 e a temperatura final como média ponderada estão corretos.",
+        "simbolos_unidades": "Ci = mici tem unidade J/K; as temperaturas usam a mesma escala e as capacidades são positivas.",
+        "hipoteses": "A alteração prevista explicita conjunto isolado, capacidades constantes, ausência de trabalho relevante, reação e mudança de fase, além de energia de mistura e variações cinética e potencial desprezíveis. Excluir apenas reação não elimina a energia de mistura.",
+        "vinculo_aula": "A aula apresenta Tf = 50 °C e já ressalva a entalpia de mistura ao final. O vínculo deve ser mantido."
+      },
+      "fontes_ids": [
+        "calorimetry",
+        "firstlaw"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Conjunto isolado; capacidades constantes; sem trabalho relevante, reação ou mudança de fase. Despreze energia de mistura e variações cinética/potencial.",
+        "simbolos_unidades": "Ci = mici: capacidade de cada porção (J/K); Ti: temperatura inicial; Tf: final. Temperaturas na mesma escala.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-mistura-termica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "c26c760c0793295183e778a61ba543941d34ecc46d79856753d389ec2a581387",
+      "sha256_depois": "b9aa8457fe442e010290407fcb55a3aada6d7eed7d269a483f54261996c3e9da"
+    },
+    {
+      "numero": 28,
+      "id": "formula-recipiente-mistura",
+      "titulo": "Recipiente e energia externa na mistura",
+      "grupo": "calorimetria",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "A contribuição do recipiente deve ser somada uma única vez. Eext = Qext − Wext está correto na convenção adotada.",
+        "simbolos_unidades": "A alteração prevista define Ci e Crec em J/K, as temperaturas iniciais de cada porção e do recipiente, a temperatura final e Eext em J. Calor entrando e trabalho saindo são positivos.",
+        "hipoteses": "Usar capacidades constantes, sem reação ou mudança de fase, e desprezar energia de mistura e variações cinética e potencial. Incluir as trocas externas com seus sinais.",
+        "vinculo_aula": "A aula calcula 44 °C incluindo o recipiente e explica como tratar perdas, agitador e entalpia de mistura."
+      },
+      "fontes_ids": [
+        "calorimetry",
+        "firstlaw"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Capacidades constantes; sem reação ou mudança de fase; energia de mistura e variações cinética/potencial desprezíveis. Inclua o recipiente uma vez e as trocas externas com sinal.",
+        "simbolos_unidades": "Ci: capacidade de cada porção; Crec: capacidade do recipiente (J/K); Ti e Trec: temperaturas iniciais; Tf: final, na mesma escala. Eext = Qext − Wext (J), com calor entrando e trabalho saindo positivos.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-mistura-termica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "936f127ca9a1372cdaa1c75e3fb3f6262e3268b584f0608120fa4f20cf635fa1",
+      "sha256_depois": "a3355e76287a8e8f87817509e29108b37e10c568ebce95455b22144e3ec9c3f3"
+    },
+    {
+      "numero": 29,
+      "id": "formula-fase-calorimetria",
+      "titulo": "Energia para transformar uma fase",
+      "grupo": "calorimetria",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "|Qfase| = mℓ está correto para o calor da mudança de fase nas condições indicadas; não representa qualquer variação de energia interna.",
+        "simbolos_unidades": "m é a massa efetivamente transformada; ℓ é o calor latente específico positivo, em J/kg ou kJ/kg. |Qfase| é a magnitude do calor na unidade correspondente.",
+        "hipoteses": "A alteração prevista delimita pressão fixa, apenas trabalho de fronteira e variações cinética e potencial desprezíveis. Fusão e vaporização recebem calor; os processos inversos o liberam.",
+        "vinculo_aula": "A aula fixa a pressão, separa as etapas e exemplifica fusão parcial. A condição local deve impedir que Q seja interpretado como uma energia genérica."
+      },
+      "fontes_ids": [
+        "phase",
+        "firstlaw"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Mudança de fase a pressão fixa, só trabalho de fronteira e variações cinética/potencial desprezíveis; fusão/vaporização recebem calor, suas inversas o liberam.",
+        "simbolos_unidades": "m: massa efetivamente transformada (kg); ℓ: calor latente específico positivo (J/kg ou kJ/kg); |Qfase|: magnitude do calor (J ou kJ).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-fase-calorimetria"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "072d46c6a652ca56f47ba718f626c1e100c0fb5e5225ff08ac1a918961b0c7a3",
+      "sha256_depois": "0078e83717dcae01c63197b1d2e8176d13d1f0b361ce599c4e1ba6590ce5e2a3"
+    },
+    {
+      "numero": 30,
+      "id": "formula-energia-mecanica",
+      "titulo": "Energia cinética e potencial",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "ΔEc = m(vel₂² − vel₁²)/2 e ΔEp = mg(z₂ − z₁) estão corretos para o movimento macroscópico de translação considerado.",
+        "simbolos_unidades": "Massa em kg, velocidade em m/s, g em m/s² e altura em m produzem energia em J; converter antes de somar a termos em kJ.",
+        "hipoteses": "A alteração prevista explicita massa fixa, translação não relativística e g aproximadamente constante na diferença de altura. As alturas usam a mesma referência e a velocidade descreve o movimento macroscópico do conjunto.",
+        "vinculo_aula": "#base-primeira-lei nomeia Ec e Ep, mas não apresenta essas expressões. O alvo precisa de uma recapitulação delimitada ou de vínculo para um trecho existente que as ensine."
+      },
+      "fontes_ids": [
+        "mechanics_k",
+        "mechanics_p"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Massa fixa, movimento de translação não relativístico; g aproximadamente constante na diferença de altura.",
+        "simbolos_unidades": "m: kg; vel: velocidade (m/s); g: aceleração gravitacional (m/s²); z: altura (m). Resultados em J.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-primeira-lei"
+        ],
+        "ajustes_no_alvo": [
+          "Ensinar as duas relações da ficha 30 no alvo já existente."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "ff63d969d41b4927a8d8ce04633e27802c52aa84956643b3a6cdb7f900af4c8f",
+      "sha256_depois": "f38ae4a9a926f42e7d0456263de504044fba8bbb4c8e8d9afcaceca461d04a14"
+    },
+    {
+      "numero": 31,
+      "id": "formula-balanco-fechado",
+      "titulo": "Primeira lei: sistema fechado",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "O balanço total de energia de um sistema fechado está correto e preserva as variações de energia cinética e potencial.",
+        "simbolos_unidades": "Todos os termos devem usar a mesma unidade de energia.",
+        "hipoteses": "A convenção de calor entrando e trabalho saindo positivos está explícita; trabalho recebido pelo sistema tem sinal negativo.",
+        "vinculo_aula": "A aula distingue o balanço total de sua redução ΔU = Q − W, atendendo ao cuidado central do critério P0."
+      },
+      "fontes_ids": [
+        "firstlaw"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Q entra positivo; W sai positivo. Trabalho recebido tem W negativo.",
+        "simbolos_unidades": "U: energia interna; EC: cinética; EP: potencial; Q: calor; W: trabalho. Todos na mesma unidade de energia.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-primeira-lei"
+        ],
+        "ajustes_no_alvo": [
+          "Ensinar as duas relações da ficha 30 no alvo já existente."
+        ],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "236d6b69a25e57915cd2ae3afb826dd587ea106c56498943398e432cda4301aa",
+      "sha256_depois": "236d6b69a25e57915cd2ae3afb826dd587ea106c56498943398e432cda4301aa"
+    },
+    {
+      "numero": 32,
+      "id": "formula-u-final",
+      "titulo": "Energia interna e valor final",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "ΔU = Q − W e U₂ = U₁ + Q − W são coerentes nas condições indicadas.",
+        "simbolos_unidades": "Estados e transferências usam J ou kJ. A variação de energia não deve ser confundida com a energia final.",
+        "hipoteses": "Sistema fechado e variações de energia cinética e potencial desprezíveis estão explicitados.",
+        "vinculo_aula": "A aula apresenta o caso do agitador e o cálculo da energia final, com conversões de unidades."
+      },
+      "fontes_ids": [
+        "firstlaw"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Sistema fechado; ΔEC e ΔEP desprezíveis; convenção Q entra, W sai.",
+        "simbolos_unidades": "U1, U2: energias internas totais; Q, W: energias transferidas (J ou kJ).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-fechado"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "cbf574eee51c4298b3c16bbe2f693592dadc156d1fd00100fd3290aef1fdb280",
+      "sha256_depois": "cbf574eee51c4298b3c16bbe2f693592dadc156d1fd00100fd3290aef1fdb280"
+    },
+    {
+      "numero": 33,
+      "id": "formula-adiabatico",
+      "titulo": "Sistema fechado adiabático",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Q = 0 e ΔU = −W estão corretos para a redução indicada do balanço fechado.",
+        "simbolos_unidades": "A alteração prevista define Q como calor recebido, ΔU como variação da energia interna e W como trabalho realizado pelo sistema, todos na mesma unidade, J ou kJ.",
+        "hipoteses": "A ficha deve explicitar sistema fechado e ΔEc e ΔEp desprezíveis. Ser adiabático não significa que W seja nulo.",
+        "vinculo_aula": "A alteração prevista acrescenta #base-balanco-fechado, com o texto “Retomar casos do balanço fechado”, para apoiar as condições da redução."
+      },
+      "fontes_ids": [
+        "firstlaw"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Sistema fechado; ΔEC e ΔEP desprezíveis; adiabático não significa W = 0.",
+        "simbolos_unidades": "Q: calor recebido; ΔU: variação da energia interna; W: trabalho realizado pelo sistema. Mesma unidade de energia (J ou kJ).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-primeira-lei",
+          "../modulos/e1-termodinamica.html#base-balanco-fechado"
+        ],
+        "ajustes_no_alvo": [
+          "Ensinar as duas relações da ficha 30 no alvo já existente."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "d548193342cc1c0d77ac85c7b4269e05d3d3739d065f81bc68258ed18557c1cc",
+      "sha256_depois": "5c4ff0da42fdfa0f8739a63684369c89949caf7a60ef06b04cd4ae6a2685a071"
+    },
+    {
+      "numero": 34,
+      "id": "formula-fronteira",
+      "titulo": "Trabalho de fronteira",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "A integral de p dV está correta para o trabalho de fronteira na trajetória quase estática indicada.",
+        "simbolos_unidades": "A alteração prevista define W como trabalho de fronteira em kJ, p como pressão absoluta na fronteira em kPa e V em m³.",
+        "hipoteses": "A pressão deve corresponder à fronteira no modelo adotado. Expansão dá trabalho positivo e compressão, negativo; a expressão não representa todos os modos de trabalho.",
+        "vinculo_aula": "A aula ensina a integral, a área no diagrama e a convenção de sinais. FUN-02 aprofunda o assunto sem precisar ser alterado neste ajuste."
+      },
+      "fontes_ids": [
+        "firstlaw"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Processo quase estático, com pressão na fronteira representada por p.",
+        "simbolos_unidades": "W: trabalho de fronteira (kJ); p: pressão absoluta na fronteira (kPa); V: m³. Expansão → W positivo; compressão → negativo.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-trabalho-fronteira"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "3885ccf103ba2c6e94b268c297d8e793d0a6734c0493e5446d9c7992bd15a645",
+      "sha256_depois": "c063b567dc283d53fbaf127ed8800bfea32d5cb524b84d5ecfa8ed5d37aa4498"
+    },
+    {
+      "numero": 35,
+      "id": "formula-isobarico",
+      "titulo": "Trabalho a pressão constante",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "W = p(V₂ − V₁) está correto quando a pressão de fronteira permanece constante.",
+        "simbolos_unidades": "A alteração prevista define p como pressão absoluta constante em kPa, V em m³ e W como trabalho de fronteira em kJ.",
+        "hipoteses": "A trajetória quase estática e isobárica está explicitada; a pressão usada é a pressão absoluta na fronteira.",
+        "vinculo_aula": "A aula integra a pressão constante e contrasta esse caso com a transformação isotérmica."
+      },
+      "fontes_ids": [
+        "firstlaw",
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Processo quase estático isobárico; não confunda redução de volume com ΔV positivo.",
+        "simbolos_unidades": "p: pressão absoluta constante (kPa); V: m³; W: trabalho de fronteira (kJ).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-trabalho-fronteira"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "0651b7c0411ef20cf1f615b221cb8f8fea7bd9bf8924fb5b874733b8b8e4d001",
+      "sha256_depois": "5a02630ba88ac19480cf11332e117dd3d4c2cf0b65ba1113570764cce72f9323"
+    },
+    {
+      "numero": 36,
+      "id": "formula-isotermico",
+      "titulo": "Trabalho isotérmico do gás ideal",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "W = mRT ln(V₂/V₁) e ΔU = 0 estão corretos para o gás ideal em transformação isotérmica. Concluir Q = W também exige que W represente o único modo de trabalho considerado no balanço reduzido.",
+        "simbolos_unidades": "R em kJ/(kg·K), m em kg e T em K produzem trabalho em kJ; V₂/V₁ é adimensional.",
+        "hipoteses": "A alteração prevista explicita massa e composição fixas, transformação isotérmica reversível, apenas trabalho de fronteira e variações cinética e potencial desprezíveis.",
+        "vinculo_aula": "A aula ensina a expressão. O trecho de balanço fechado declara a hipótese de apenas trabalho de fronteira para os processos apresentados."
+      },
+      "fontes_ids": [
+        "firstlaw",
+        "ideal_energy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal de massa e composição fixas, transformação isotérmica reversível, só trabalho de fronteira; ΔEC/ΔEP desprezíveis.",
+        "simbolos_unidades": "m: kg; R: kJ/(kg·K); T: K; volumes na mesma unidade; W, Q: kJ.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-trabalho-fronteira"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "174cdbd88549cd7eb2fed5422eb19eae33dd1dffbe90bef4468aceb6a05834e9",
+      "sha256_depois": "abe514ba0156d1347598eaaa1f140fce11922b74b2fcbea99ad6e470dcf84a10"
+    },
+    {
+      "numero": 37,
+      "id": "formula-calor-processos",
+      "titulo": "Calor nos processos isocórico e isobárico",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Qisocórico = mcvΔT e Qisobárico = mcpΔT estão corretos nas condições indicadas.",
+        "simbolos_unidades": "A alteração prevista define Q e W em kJ, m em kg, cp e cv em kJ/(kg·K), ΔT em K ou intervalo em °C, p em kPa e V em m³. W é trabalho de fronteira.",
+        "hipoteses": "Usar gás ideal de massa e composição fixas, calores específicos constantes e apenas trabalho de fronteira. A etapa isobárica deve ser quase estática; desprezar variações cinética e potencial.",
+        "vinculo_aula": "A aula deriva Qp = ΔU + pΔV e a tabela declara a hipótese de trajetória quase estática."
+      },
+      "fontes_ids": [
+        "firstlaw",
+        "ideal_energy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal de massa e composição fixas, calores específicos constantes, só trabalho de fronteira; isobárico quase estático; ΔEC/ΔEP desprezíveis.",
+        "simbolos_unidades": "Q: calor recebido e W: trabalho de fronteira (kJ); m: kg; cp, cv: kJ/(kg·K); ΔT: K ou intervalo em °C; p: kPa; V: m³.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-fechado"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "4540c0705ed349162eb50cec05c74d8d62404740cec33f53df2458726491f6f4",
+      "sha256_depois": "a3767106ce94b399252bce5f21b1cb8be8ba7bed1768a5f440d1255b9354e3ae"
+    },
+    {
+      "numero": 38,
+      "id": "formula-ciclo",
+      "titulo": "Balanço de um ciclo fechado",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "ΔU no ciclo é zero e Qlíq = Wlíq está correto quando o sistema retorna ao estado inicial e não há variação líquida de energia mecânica.",
+        "simbolos_unidades": "As transferências são somas algébricas por ciclo, em kJ, conforme definido.",
+        "hipoteses": "Calor e trabalho não precisam ser nulos em cada etapa. A condição explicita o tratamento das variações cinética e potencial.",
+        "vinculo_aula": "A aula explica o retorno de uma propriedade ao valor inicial e a interpretação do ciclo horário."
+      },
+      "fontes_ids": [
+        "firstlaw"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Retorno ao mesmo estado, sem variação líquida de energia cinética ou potencial.",
+        "simbolos_unidades": "Qliq, Wliq: somas algébricas das transferências de energia por ciclo (kJ).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-trabalho-fronteira"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "1836c2460e9a1b8394822ef5223978d2d753822a8a2b64aa118eeae8823764d3",
+      "sha256_depois": "1836c2460e9a1b8394822ef5223978d2d753822a8a2b64aa118eeae8823764d3"
+    },
+    {
+      "numero": 39,
+      "id": "formula-expansao-livre",
+      "titulo": "Expansão livre isolada de gás ideal",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Na expansão livre do gás ideal, Q = W = 0. Pelo balanço total de energia, isso implica ΔU = −ΔEc − ΔEp. Somente com essas variações desprezíveis se conclui ΔU = 0 e, no modelo indicado, T₂ = T₁. A expressão ΔS = mR ln(V₂/V₁) = Sger então está correta.",
+        "simbolos_unidades": "Q e W são transferências de energia; ΔU é a variação de energia interna; ΔEc e ΔEp são as variações cinética e potencial, todas em unidades de energia compatíveis. T₁ e T₂ são temperaturas absolutas; ΔS e Sger são entropias.",
+        "hipoteses": "A alteração prevista explicita gás ideal em recipiente externo rígido, fechado e isolado, expansão para o vácuo, ausência de outros trabalhos e estados de equilíbrio com ΔEc e ΔEp desprezíveis. Q = W = 0, sozinho, não permite concluir ΔU = 0.",
+        "vinculo_aula": "A aula deriva ΔU = 0 sem nomear as variações cinética e potencial. É necessário explicitar o desprezo desses termos na hipótese inicial; a rigidez da parede externa, isoladamente, não elimina variações macroscópicas de energia."
+      },
+      "fontes_ids": [
+        "firstlaw",
+        "ideal_energy",
+        "mit_ideal_s"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal em recipiente externo rígido, fechado e isolado; expansão para vácuo, sem outros trabalhos; estados de equilíbrio com ΔEC/ΔEP desprezíveis.",
+        "simbolos_unidades": "m: kg; R: kJ/(kg·K); ΔS, Sger: kJ/K; V2/V1: razão dos volumes ocupados.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-expansao-livre"
+        ],
+        "ajustes_no_alvo": [
+          "Completar as hipóteses que permitem ΔU = 0."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "0fe29f59a924b5535239a708724e79a9b82ddf885df4c7b9cef48fd7ac78c3b5",
+      "sha256_depois": "613fa4d83a1e8e8117bd55dfc99f698cafbfa2706eba6db074967f16686a53c5"
+    },
+    {
+      "numero": 40,
+      "id": "formula-reacao",
+      "titulo": "Entalpia de reação e reação inversa",
+      "grupo": "primeira-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Qp = ΔH e a inversão do sinal para a reação inversa entre os mesmos estados estão corretos no modelo indicado.",
+        "simbolos_unidades": "A energia corresponde à quantidade de reação especificada; não deve ser tratada automaticamente como energia por mol.",
+        "hipoteses": "A alteração prevista explicita sistema fechado, pressão constante, apenas trabalho pV e variações cinética e potencial desprezíveis. A inversão deve manter os mesmos estados e referências.",
+        "vinculo_aula": "A aula trata de reação exotérmica e de sua inversa, além de comparar PCS e PCI sem mudar a base da comparação."
+      },
+      "fontes_ids": [
+        "firstlaw",
+        "algebra"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Qp = ΔH: sistema fechado, pressão constante, só trabalho pV e ΔEC/ΔEP desprezíveis. Inversão entre os mesmos estados.",
+        "simbolos_unidades": "Qp e ΔH: energia para a quantidade de reação indicada (kJ); ΔH < 0 exotérmica, ΔH > 0 endotérmica.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-termoquimica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "2833d1ac6ee34fb4a427ce2f2bfd090886381187655c5a65b56fe32e3939732c",
+      "sha256_depois": "fcdbb873feeba72d2933e5c4a80f2f08beba5a031cbb20ce03b4a7720f5fe89b"
+    },
+    {
+      "numero": 41,
+      "id": "formula-entalpia",
+      "titulo": "Definição de entalpia específica",
+      "grupo": "escoamento",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "h = u + pv é a definição correta de entalpia específica; ela não depende da idealidade do gás.",
+        "simbolos_unidades": "u e h em kJ/kg, p em kPa e v em m³/kg tornam pv compatível com kJ/kg.",
+        "hipoteses": "Não é necessário supor gás ideal ou regime permanente para definir h. A condição atual apenas interpreta seu uso no escoamento.",
+        "vinculo_aula": "O bloco de energia explica entalpia e escoamento sem restringir a definição a máquinas."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "A parcela pv incorpora o trabalho de escoamento.",
+        "simbolos_unidades": "h, u: kJ/kg; p: kPa; v: m³/kg.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#energia"
+        ],
+        "ajustes_no_alvo": [
+          "Alinhar a simplificação da bomba ao balanço estacionário e à relação isentrópica."
+        ],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "56a4fa95283569dbbf0d3e5008f4a5344e49c6efcad2fa60a64651ecb591c7c9",
+      "sha256_depois": "56a4fa95283569dbbf0d3e5008f4a5344e49c6efcad2fa60a64651ecb591c7c9"
+    },
+    {
+      "numero": 42,
+      "id": "formula-balanco-escoamento",
+      "titulo": "Primeira lei: uma entrada e uma saída",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "q − w = Δh + (vel₂² − vel₁²)/2000 + gΔz/1000 está correto na base de kJ/kg.",
+        "simbolos_unidades": "Os divisores 2000 e 1000 combinam o fator da energia cinética e a conversão de J/kg para kJ/kg. A alteração prevista define q como calor específico e w como trabalho específico não associado ao escoamento; h já inclui pv.",
+        "hipoteses": "Usar volume de controle fixo em regime permanente, com uma entrada e uma saída representativas. Calor entrando e trabalho saindo são positivos; o trabalho de escoamento não deve ser somado novamente.",
+        "vinculo_aula": "A aula apresenta a forma em J/kg e explica a divisão por 1000. O vínculo apoia a prevenção de somas indevidas entre J/kg e kJ/kg."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Volume de controle fixo em regime permanente, com uma entrada e uma saída representativas; q entra e w sai positivos.",
+        "simbolos_unidades": "q: calor e w: trabalho não associado ao escoamento (kJ/kg); h: kJ/kg, já inclui pv; vel: m/s; z: m; g: m/s². Os divisores convertem J/kg em kJ/kg.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#energia"
+        ],
+        "ajustes_no_alvo": [
+          "Alinhar a simplificação da bomba ao balanço estacionário e à relação isentrópica."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "682f96e0f47c628cff55f4f5841cb9fb05c9532f13b9dded26443db658443e49",
+      "sha256_depois": "f63f29455779a5419d5ed28ed68cbbde554a8dbfd7c8814c09985c11fc46e78a"
+    },
+    {
+      "numero": 43,
+      "id": "formula-turbina",
+      "titulo": "Turbina: trabalho e potência produzidos",
+      "grupo": "escoamento",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "wt = h₁ − h₂ e a potência ṁ(h₁ − h₂) estão corretos.",
+        "simbolos_unidades": "kg/s multiplicado por kJ/kg resulta em kW; as magnitudes produzidas estão declaradas.",
+        "hipoteses": "Regime permanente, turbina adiabática e variações de energia cinética e potencial desprezíveis estão explícitos. Não é necessário exigir isentropia para esse balanço.",
+        "vinculo_aula": "O exemplo de 800 kW fornece os estados e as convenções utilizadas."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Regime permanente, adiabática; variações de velocidade e altura desprezíveis.",
+        "simbolos_unidades": "wt: kJ/kg; h: kJ/kg; ṁ: kg/s; Ẇt: kW, magnitude produzida.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-turbina-potencia"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "182a62bb6375c540decc519554737f603af8bce3fd107d8449947ac8597b65db",
+      "sha256_depois": "182a62bb6375c540decc519554737f603af8bce3fd107d8449947ac8597b65db"
+    },
+    {
+      "numero": 44,
+      "id": "formula-compressor",
+      "titulo": "Compressor: trabalho e potência consumidos",
+      "grupo": "escoamento",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "O consumo específico como magnitude h₂ − h₁ e a potência correspondente estão corretos; o sentido do trabalho é oposto ao da turbina.",
+        "simbolos_unidades": "kJ/kg, kg/s e kW estão definidos de forma completa.",
+        "hipoteses": "Regime permanente, compressor adiabático e variações de energia cinética e potencial desprezíveis estão explícitos.",
+        "vinculo_aula": "A tabela no alvo define a magnitude consumida e não a confunde com eficiência isentrópica."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Regime permanente, adiabático; variações de velocidade e altura desprezíveis.",
+        "simbolos_unidades": "win: magnitude recebida (kJ/kg); h: kJ/kg; ṁ: kg/s; Ẇin: kW.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#energia"
+        ],
+        "ajustes_no_alvo": [
+          "Alinhar a simplificação da bomba ao balanço estacionário e à relação isentrópica."
+        ],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "0c146e2e05e866792fc2971e9f33689aded787182b419ff1328e6092d24c8d65",
+      "sha256_depois": "0c146e2e05e866792fc2971e9f33689aded787182b419ff1328e6092d24c8d65"
+    },
+    {
+      "numero": 45,
+      "id": "formula-bomba",
+      "titulo": "Bomba ideal: líquido incompressível",
+      "grupo": "escoamento",
+      "decisao": "ficha_mantida_alvo_corrigido",
+      "revisao_individual": {
+        "expressao": "wb,s ≈ vΔp e a potência correspondente estão corretos para líquido aproximadamente incompressível no caminho isentrópico.",
+        "simbolos_unidades": "m³/kg multiplicado por kPa resulta em kJ/kg; as magnitudes consumidas estão identificadas.",
+        "hipoteses": "A ficha já declara regime permanente, processo adiabático reversível, v aproximadamente constante e variações cinética e potencial desprezíveis.",
+        "vinculo_aula": "A tabela da aula menciona apenas líquido quase incompressível sob o rótulo “Bomba ideal”. O alvo precisa explicitar as hipóteses que a ficha já apresenta corretamente."
+      },
+      "fontes_ids": [
+        "mit_cv",
+        "mit_gibbs"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Regime permanente, adiabático reversível; v aproximadamente constante; ΔEC/ΔEP desprezíveis.",
+        "simbolos_unidades": "wb,s: consumo ideal (kJ/kg); v: m³/kg; p: kPa; ṁ: kg/s; Ẇb,s: kW.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#energia"
+        ],
+        "ajustes_no_alvo": [
+          "Alinhar a simplificação da bomba ao balanço estacionário e à relação isentrópica."
+        ],
+        "encaminhamento": "A ficha já estava delimitada; a linha da bomba na aula recebeu as hipóteses faltantes."
+      },
+      "sha256_antes": "c4454c12e59ddc5a7158a8c55b75e038aa8d524249d3f93ad866614753219f16",
+      "sha256_depois": "c4454c12e59ddc5a7158a8c55b75e038aa8d524249d3f93ad866614753219f16"
+    },
+    {
+      "numero": 46,
+      "id": "formula-valvula",
+      "titulo": "Válvula de estrangulamento",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "h₁ ≈ h₂ está correto na aproximação de estrangulamento delimitada.",
+        "simbolos_unidades": "h é dado em kJ/kg; igualdade de entalpia não exige temperatura constante.",
+        "hipoteses": "Para h₁≈h₂, além do regime permanente, adiabaticidade e variações mecânicas desprezíveis, deve ser nulo todo trabalho não associado ao escoamento. Ausência de eixo não exclui trabalho elétrico.",
+        "vinculo_aula": "A tabela vinculada já excluía calor e trabalho, sem restringir a eixo; foi preservada. A condição da ficha agora coincide com esse modelo passivo."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Regime permanente, sem calor e sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. ΔEC/ΔEP desprezíveis.",
+        "simbolos_unidades": "h: entalpia específica (kJ/kg).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#energia"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "R1-A corrigido: exclusão de todo trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; condições e data-busca sincronizadas."
+      },
+      "sha256_antes": "f2baa07c0aceaf3bb10307c53675e9854215367d22526ad05c0b8e0fde965b4f",
+      "sha256_depois": "bde74bd12cccb9d883f5d245213ad29468956a36491260783cda6fd86711ae4c",
+      "sha256_base_r1": "f2baa07c0aceaf3bb10307c53675e9854215367d22526ad05c0b8e0fde965b4f"
+    },
+    {
+      "numero": 47,
+      "id": "formula-trocador-balanco",
+      "titulo": "Balanço de trocador ao ambiente adiabático",
+      "grupo": "escoamento",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "A energia perdida pela corrente quente igual à energia recebida pela corrente fria está correta para duas correntes sem trocas externas relevantes.",
+        "simbolos_unidades": "Cada lado tem dimensão de potência: kg/s × kJ/kg = kW. Os índices quente/frio e entrada/saída estão definidos.",
+        "hipoteses": "Regime permanente, somente duas correntes, ausência de trabalho e calor externos e variações cinética e potencial desprezíveis estão explicitados. O conjunto adiabático não impede a troca de calor entre as correntes.",
+        "vinculo_aula": "A aula declara isolamento externo e balanço entre as correntes, sem impor ausência de transferência interna."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Regime permanente, sem trabalho e sem calor externo; ΔEC/ΔEP desprezíveis.",
+        "simbolos_unidades": "q: corrente quente; f: fria; in/out: entrada/saída; ṁ: kg/s; h: kJ/kg. Cada lado é kW.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#energia"
+        ],
+        "ajustes_no_alvo": [
+          "Alinhar a simplificação da bomba ao balanço estacionário e à relação isentrópica."
+        ],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "fbc1ea8bf25715fc3f5f658b7a71b602a66f47a3a106dc662808f1a12074476f",
+      "sha256_depois": "fbc1ea8bf25715fc3f5f658b7a71b602a66f47a3a106dc662808f1a12074476f"
+    },
+    {
+      "numero": 48,
+      "id": "formula-acumulacao-massa",
+      "titulo": "Acumulação de massa",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "dmVC/dt = Σṁin − Σṁout está correto por conservação de massa.",
+        "simbolos_unidades": "Ambos os lados têm unidade kg/s e os índices estão definidos.",
+        "hipoteses": "A alteração prevista explicita volume de controle fixo e inclusão de todas as entradas e saídas. Regime permanente exige acumulação de massa nula; acumulação de massa nula, sozinha, não prova que todas as propriedades estejam em regime permanente.",
+        "vinculo_aula": "A aula sobre enchimento do tanque distingue rigidez, adiabaticidade e regime permanente, preservando o termo de acumulação."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Volume de controle fixo; inclua todas as entradas e saídas. Regime permanente exige acumulação nula.",
+        "simbolos_unidades": "mVC: massa armazenada (kg); t: s; vazões ṁ: kg/s; in/out: entrada/saída.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-transiente"
+        ],
+        "ajustes_no_alvo": [
+          "Explicitar a condição necessária para retirar h da integral."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "5ae8e2a2cf0354707dd940b183b2540cc20f4407054bfd593c3c6aac40af24c9",
+      "sha256_depois": "5c5ff20529350f2cf4cbf06c801809d037c93306a26297c45619c8a5e3fcd4d7"
+    },
+    {
+      "numero": 49,
+      "id": "formula-acumulacao-energia",
+      "titulo": "Balanço transiente de energia",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "dUVC/dt = Q̇ − Ẇ + Σin ṁh − Σout ṁh está correto quando as contribuições cinética e potencial são desprezadas. É um balanço reduzido, não a forma universal.",
+        "simbolos_unidades": "kJ/s = kW. A alteração prevista define UVC armazenada em kJ, Q̇ entrando e Ẇ saindo em kW, ṁ em kg/s e h em kJ/kg. Ẇ exclui o trabalho de escoamento já incluído em h.",
+        "hipoteses": "Usar volume de controle fixo, com entalpia representativa de cada corrente. Desprezar energia cinética e potencial tanto no armazenamento quanto nas correntes.",
+        "vinculo_aula": "A aula delimita o desprezo de energia cinética e potencial e define o trabalho empregado; não apresenta a redução como um balanço universal."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Volume de controle fixo; energias cinética/potencial desprezíveis no armazenamento e nas correntes. Ẇ exclui trabalho de escoamento já incluído em h.",
+        "simbolos_unidades": "UVC: energia interna armazenada (kJ); Q̇: calor entrando e Ẇ: trabalho saindo (kW); ṁ: kg/s; h: kJ/kg, representativa de cada corrente.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-transiente"
+        ],
+        "ajustes_no_alvo": [
+          "Explicitar a condição necessária para retirar h da integral."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "bb61da7cd753d2d8d4963361e15775d9e1f5f40aaf20b895f61c16abad4c4d18",
+      "sha256_depois": "b19223a0488e1c5b2e84634aaf08779f1333c067a0e192fe1eda8986d664b3f1"
+    },
+    {
+      "numero": 50,
+      "id": "formula-intervalo-energia",
+      "titulo": "Energia em um intervalo com entrada e saída",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Integrar os termos ṁh com h constante em cada corrente produz as parcelas mh. A massa dessas parcelas é a que atravessa a fronteira no intervalo.",
+        "simbolos_unidades": "As energias são totais em kJ, as massas atravessadas em kg e as entalpias em kJ/kg. A alteração prevista define Q entrando e W saindo, excluindo o trabalho de escoamento.",
+        "hipoteses": "Usar volume de controle fixo e o mesmo recorte de energia da ficha 49. Cada corrente deve manter h constante; se h variar, integrar ṁh no tempo.",
+        "vinculo_aula": "A aula distingue a massa inicialmente armazenada da massa que atravessa a fronteira e exige integração quando a entalpia da corrente varia."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Volume de controle fixo; h constante em cada corrente; energias cinética/potencial desprezíveis. Se h variar, integre ṁh no tempo.",
+        "simbolos_unidades": "U1/U2: energia interna armazenada; Q: calor entrando e W: trabalho não associado ao escoamento saindo (kJ); min/mout: kg atravessando no intervalo; h: kJ/kg.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-transiente"
+        ],
+        "ajustes_no_alvo": [
+          "Explicitar a condição necessária para retirar h da integral."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "4a4af328f171bb7ece3c846475715a2ba6215a004ecc427477f395d691174780",
+      "sha256_depois": "c560e0dad40e0bbc591528272e9c01ccd6500c35252b71c926169b9c4b274784"
+    },
+    {
+      "numero": 51,
+      "id": "formula-enchimento-tanque",
+      "titulo": "Tanque evacuado: enchimento adiabático",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "u₂=h_in; T₂=(cp/cv)T_in — Integrar d(mu)=h_in dm com m₁=0 dá m₂u₂=m₂h_in. Com u=cvT+b e h=cpT+b, resulta T₂=cp Tin/cv; a referência b cancela.",
+        "simbolos_unidades": "Unidades coerentes: u,h em kJ/kg e T em K; cp/cv adimensional. Definir 2 como estado final do tanque e in como entrada.",
+        "hipoteses": "Evacuação inicial, rigidez, Q=W=0 e desprezo da parede/EC/EP estão presentes. Falta constância de h_in; para a relação térmica, cp e cv devem ser constantes individualmente.",
+        "vinculo_aula": "#base-balanco-transiente contém o balanço geral, sua integração para h constantes e o exemplo T₂=420 K; vínculo adequado."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Tanque rígido inicialmente evacuado, uma entrada e nenhuma saída; entalpia de entrada constante; Q=W=0; armazenamento na parede e EC/EP desprezíveis. Para T₂: mesmo gás ideal de composição fixa, cp e cv constantes e T_in constante.",
+        "simbolos_unidades": "u₂: energia interna específica final no tanque; h_in: entalpia específica na entrada, ambas em kJ/kg e na mesma referência. T₂ e T_in: K. cp e cv: calores específicos, em kJ/(kg·K); cp/cv é adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-transiente"
+        ],
+        "ajustes_no_alvo": [
+          "Explicitar a condição necessária para retirar h da integral."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "da1c8c12b36db1a42c4e96e8832d0c6b338de43220b7087aed7cb63895aeea70",
+      "sha256_depois": "ec0baf387246626cb28dd86a1713c0065ea5a8a19187c0c50809217d1209348b"
+    },
+    {
+      "numero": 52,
+      "id": "formula-co2-acumulacao",
+      "titulo": "CO₂: acumulação no ambiente",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "V dCi/dt=G+V̇(Ce−Ci) — Soma entrada V̇Ce, geração G e saída −V̇Ci; aumento de Ci intensifica a remoção líquida.",
+        "simbolos_unidades": "Dimensão de todos os termos: m³/h quando as concentrações são frações. G e V̇ têm unidades, mas G não está definido e V̇ não é explicitamente ar exterior na ficha.",
+        "hipoteses": "Mistura completa, diluição, volume/densidade constantes, fluxos iguais e ausência de remoções estão declarados. Falta mesma referência de T,p para volumes.",
+        "vinculo_aula": "#base-balanco-co2 ensina o balanço e todas essas hipóteses, inclusive ar exterior e condições comuns dos volumes."
+      },
+      "fontes_ids": [
+        "nist_co2"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Ambiente bem misturado, CO₂ diluído, volume/densidade constantes; vazões de entrada/saída iguais e na mesma referência T,p; sem outras fontes, remoções ou zonas.",
+        "simbolos_unidades": "V: volume do ambiente (m³); Ci e Ce: frações volumétricas de CO₂ no interior e exterior; G: taxa volumétrica de geração de CO₂ (m³/h); V̇: vazão de ar exterior, igual à vazão de saída (m³/h); t: h. Pode-se usar s com todas as taxas compatíveis.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-co2"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "6e31798db56afa3d2a1b15abce3065f28be851bf80241b27cca87e5588ea5c05",
+      "sha256_depois": "8ce00d9f1adb37ebc9b4a2783948e38e34a17fad813efe8127c922c97308fa6b"
+    },
+    {
+      "numero": 53,
+      "id": "formula-co2-vazao",
+      "titulo": "CO₂: vazão exterior em regime estacionário",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "V̇=G/(Ci−Ce); Ci=Ce+G/V̇ — Anular acumulação na 52 e isolar V̇ ou Ci. G/V̇ é adimensional.",
+        "simbolos_unidades": "Concentrações em fração e conversão de ppm corretas. Completar unidade de G e significado das duas concentrações.",
+        "hipoteses": "Estacionário, bem misturado e G>0/Ci>Ce corretos; explicitar diluição, vazões iguais e ausência de outras fontes/remoções para evitar generalização.",
+        "vinculo_aula": "#base-balanco-co2 ensina modelo diferencial e redução estacionária, com exemplos de ambas as formas."
+      },
+      "fontes_ids": [
+        "nist_co2"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Zona única bem misturada e estacionária; CO₂ diluído, volume/densidade constantes, vazões de entrada/saída iguais e na mesma referência T,p, sem outras fontes/remoções. G>0, V̇>0 e Ci>Ce. Se fornecido o excesso, ele já é Ci−Ce.",
+        "simbolos_unidades": "G: geração volumétrica de CO₂; V̇: vazão de ar exterior, ambas em m³/h ou ambas em m³/s. Ci/Ce: frações volumétricas interna/exterior, após converter ppm.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-co2"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "6c95f3239992fb3c1ade58b5d623e690f0d2e3c4fe67aac100c76f741a8ce59f",
+      "sha256_depois": "a05f1641032fd9994aa0074665cb6f1a0a2c86559f48c09f232ca5008ec1f4cc"
+    },
+    {
+      "numero": 54,
+      "id": "formula-renovacoes",
+      "titulo": "Renovações por hora",
+      "grupo": "escoamento",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "n_ren=V̇/V — (m³/h)/m³=h⁻¹.",
+        "simbolos_unidades": "h⁻¹ com V̇ em m³/h e V em m³; n_ren definido.",
+        "hipoteses": "Ar exterior explicitamente distinguido de recirculação. Não exige equilíbrio de concentração para definir a taxa.",
+        "vinculo_aula": "#base-balanco-co2 ensina a razão, exemplo 600/200=3 h⁻¹ e ressalva de recirculação."
+      },
+      "fontes_ids": [
+        "nist_co2"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Vazão exterior; recirculação não equivale a renovação exterior.",
+        "simbolos_unidades": "nren: h⁻¹; V̇: vazão exterior em m³/h; V: volume do ambiente em m³.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-balanco-co2"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "d1f9c145f7da6c91db09c52e7df39e35352e2e5f647fdf40701b21a9d90b03f0",
+      "sha256_depois": "d1f9c145f7da6c91db09c52e7df39e35352e2e5f647fdf40701b21a9d90b03f0"
+    },
+    {
+      "numero": 55,
+      "id": "formula-bomba-potencia",
+      "titulo": "Potência hidráulica e rendimento de bomba",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Ph=ρgV̇H; ηb=Ph/Peixo — ρgV̇H tem kg·m²/s³=W.",
+        "simbolos_unidades": "Unidades SI corretas; H identificado como altura manométrica. Definir H como carga mecânica total, ρ como densidade do líquido.",
+        "hipoteses": "A distinção entre potência no eixo e elétrica está correta. Acrescentar regime permanente/líquido aproximadamente incompressível.",
+        "vinculo_aula": "#base-bomba-integrada define H como energia por peso e ensina conversão de vazão; suporte adequado."
+      },
+      "fontes_ids": [
+        "doe_pump",
+        "doe_eff"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Bomba em regime permanente com líquido aproximadamente incompressível; H é a carga total acrescentada ao líquido. Potências como magnitudes positivas. Para potência elétrica, incluir o rendimento do motor.",
+        "simbolos_unidades": "Ph: potência hidráulica útil; Peixo: potência recebida no eixo (W). ρ: densidade do líquido (kg/m³); g: aceleração gravitacional (m/s²); V̇: vazão do líquido (m³/s); H: altura manométrica total (m); ηb: rendimento adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-bomba-integrada"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "273769b3c8e021b95c239cdebffc0772c958e703b3a2e272fa6c2da0ad09bb2b",
+      "sha256_depois": "36f3e5bd654b0b30be6746c613b5825d6152544f0374d6d73770bbe2a6d71eac"
+    },
+    {
+      "numero": 56,
+      "id": "formula-misturador-correntes",
+      "titulo": "Misturador: duas entradas e uma saída",
+      "grupo": "escoamento",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "ṁ₃=ṁ₁+ṁ₂; ṁ₃h₃=Q̇−Ẇ+ṁ₁h₁+ṁ₂h₂; h₃=(ṁ₁h₁+ṁ₂h₂)/(ṁ₁+ṁ₂) — Balanço geral estacionário: 0=Q̇−Ẇ+Σṁh_in−Σṁh_out. Média é combinação convexa com vazões positivas.",
+        "simbolos_unidades": "kg/s e kJ/kg produzem kW; mesma referência das entalpias explicitada.",
+        "hipoteses": "Permanente e EC/EP desprezíveis explícitos; a média só para Q̇=Ẇ=0 está corretamente separada. Falta convenção de sinais local.",
+        "vinculo_aula": "#base-misturador-correntes contém as três expressões, Q entrando/W saindo e cautelas químicas."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Regime permanente; EC/EP desprezíveis; Q̇ entra e Ẇ sai positivos. A média de entalpias exige Q̇=Ẇ=0 e vazão total positiva. Com reação, inclua energia química nas propriedades.",
+        "simbolos_unidades": "ṁ: kg/s; h: kJ/kg na mesma referência; Q̇: calor recebido e Ẇ: trabalho entregue (kW); 1/2 entram e 3 sai.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-misturador-correntes"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "cc3ca523b0377356a711d371c31e173a0916fac2c55ac17335894f3d5e8a7d1b",
+      "sha256_depois": "d4cbb050d6dff034c45fa69e47a31b460e174e4da139271543796372694a029e"
+    },
+    {
+      "numero": 57,
+      "id": "formula-bocal-difusor",
+      "titulo": "Bocal e difusor: entalpia e velocidade",
+      "grupo": "escoamento",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "h₁−h₂=(vel₂²−vel₁²)/2000; vel₂=√[vel₁²+2000(h₁−h₂)] — h₁+vel₁²/(2·1000)=h₂+vel₂²/(2·1000); raiz retorna módulo da velocidade, não componente assinada.",
+        "simbolos_unidades": "h em kJ/kg e velocidades em m/s; conversão 2000 é correta. Índices entrada/saída definidos.",
+        "hipoteses": "Permanente, adiabático, sem trabalho, variação de altura desprezível e radicando não negativo. Não exige reversibilidade.",
+        "vinculo_aula": "#base-bocal-difusor ensina ambos os sentidos de conversão entalpia/energia cinética e exemplo."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Permanente, adiabático, sem trabalho, altura desprezível. Argumento da raiz não negativo; não requer reversibilidade.",
+        "simbolos_unidades": "h: kJ/kg; vel: m/s; índices: entrada/saída. Se h estiver em J/kg, use fator 2, não 2.000.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-bocal-difusor"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "1cf768e474439c0c7f35293c1ddf3901fce226ef97091baad613a07bdf4abdc7",
+      "sha256_depois": "1cf768e474439c0c7f35293c1ddf3901fce226ef97091baad613a07bdf4abdc7"
+    },
+    {
+      "numero": 58,
+      "id": "formula-eficiencia",
+      "titulo": "Máquina térmica: trabalho e rendimento",
+      "grupo": "segunda-lei",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "Wliq=QH−QL; η=Wliq/QH=1−QL/QH — Retorno ao estado inicial anula ΔE do ciclo; dividir Wliq=QH−QL por QH.",
+        "simbolos_unidades": "Energias em mesma base por ciclo; η adimensional. QH/QL definidos como calor recebido/rejeitado.",
+        "hipoteses": "Magnitudes positivas e mesmo ciclo explícitos; título identifica máquina térmica.",
+        "vinculo_aula": "#base-eficiencia-cop fornece balanço, convenção de magnitudes e rendimento."
+      },
+      "fontes_ids": [
+        "open_carnot"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "QH e QL são magnitudes positivas do mesmo ciclo.",
+        "simbolos_unidades": "QH: calor recebido; QL: rejeitado; Wliq: trabalho líquido (kJ/ciclo); η: fração adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-eficiencia-cop"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "31fea25b43068a922c54a0337fd555bc3e3f4d51e5e13459f7ad7fe6b7bccc3c",
+      "sha256_depois": "31fea25b43068a922c54a0337fd555bc3e3f4d51e5e13459f7ad7fe6b7bccc3c"
+    },
+    {
+      "numero": 59,
+      "id": "formula-cop-refrigerador",
+      "titulo": "COP do refrigerador",
+      "grupo": "segunda-lei",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "COP_R=QL/Win — Efeito útil dividido pelo consumo; não há restrição COP≤1.",
+        "simbolos_unidades": "Mesma unidade para calor retirado da fonte fria e trabalho consumido; razão adimensional.",
+        "hipoteses": "Mesmo ciclo/fronteira e possibilidade de COP>1 corretamente declarados.",
+        "vinculo_aula": "#base-eficiencia-cop apresenta definição de refrigerador movido a trabalho e exemplo."
+      },
+      "fontes_ids": [
+        "open_cop"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Mesmo ciclo e fronteira; COP é adimensional e pode exceder 1.",
+        "simbolos_unidades": "QL: calor retirado da fonte fria; Win: magnitude do trabalho consumido (mesma unidade).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-eficiencia-cop"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "ae1dc353774cdcd213ba7b321b476e07b227bdc253c92b897df849cabef51d2e",
+      "sha256_depois": "ae1dc353774cdcd213ba7b321b476e07b227bdc253c92b897df849cabef51d2e"
+    },
+    {
+      "numero": 60,
+      "id": "formula-cop-bomba-calor",
+      "titulo": "COP da bomba de calor",
+      "grupo": "segunda-lei",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "COP_BC=QH/Win; COP_BC=COP_R+1 — QH/Win=QL/Win+1.",
+        "simbolos_unidades": "QH entregue à fonte quente e Win consumido na mesma base; COP adimensional.",
+        "hipoteses": "Mesmo ciclo/fronteira e ausência de outras trocas relevantes explicitados.",
+        "vinculo_aula": "#base-eficiencia-cop ensina ambos os COPs e a identidade para o mesmo ciclo."
+      },
+      "fontes_ids": [
+        "open_cop"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Mesmo ciclo e fronteira, sem outras trocas relevantes.",
+        "simbolos_unidades": "QH: calor entregue à fonte quente; Win: trabalho consumido (mesma unidade).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-eficiencia-cop"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "e0e6972adf000747077e456e696c70ffd206ce922b8857f2295521be5c7a1ac9",
+      "sha256_depois": "e0e6972adf000747077e456e696c70ffd206ce922b8857f2295521be5c7a1ac9"
+    },
+    {
+      "numero": 61,
+      "id": "formula-carnot",
+      "titulo": "Limite de rendimento de Carnot",
+      "grupo": "segunda-lei",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "ηC=1−TL/TH; η≤ηC — Entropia das fontes exige QL/TL−QH/TH≥0; dividir o balanço energético por QH.",
+        "simbolos_unidades": "Temperaturas em K e rendimentos adimensionais. TH/TL identificam reservatórios.",
+        "hipoteses": "Máquina cíclica com apenas dois reservatórios e TH>TL>0 estão explícitos.",
+        "vinculo_aula": "#base-limite-carnot apresenta a fórmula, a referência reversível e diferença das irreversíveis."
+      },
+      "fontes_ids": [
+        "open_carnot"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Máquina cíclica entre dois reservatórios; TH > TL > 0.",
+        "simbolos_unidades": "TH: fonte quente; TL: fria (K); η: rendimento; ηC: limite reversível.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-limite-carnot"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "4f5cd7d17704f79c01f737677d21dc563f9ca73233fee1cbfad69712ef462c0a",
+      "sha256_depois": "4f5cd7d17704f79c01f737677d21dc563f9ca73233fee1cbfad69712ef462c0a"
+    },
+    {
+      "numero": 62,
+      "id": "formula-limites-carnot",
+      "titulo": "Trabalho máximo e rejeição mínima",
+      "grupo": "segunda-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Wmax=QH(1−TL/TH); QL,min=QH TL/TH — Multiplicar η≤1−TL/TH por QH fixo e usar QL=QH−Wliq.",
+        "simbolos_unidades": "Unidades de energia e K corretas, mas faltam os significados dos símbolos no detalhe.",
+        "hipoteses": "Dois reservatórios fixos e reversibilidade na igualdade declarados; falta fixar também QH para que máximo/mínimo sejam determinados.",
+        "vinculo_aula": "#base-carnot-prova deduz a rejeição mínima e exemplifica para QH fixado."
+      },
+      "fontes_ids": [
+        "open_carnot"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Máquina cíclica entre apenas dois reservatórios fixos com TH>TL>0, para calor recebido QH>0 fixado. Wmax e QL,min são limites atingidos pelo ciclo reversível.",
+        "simbolos_unidades": "QH: magnitude do calor recebido; Wmax: máximo trabalho líquido produzido; QL,min: mínima magnitude de calor rejeitado, na mesma unidade de energia por ciclo. TH e TL: temperaturas dos reservatórios quente/frio (K).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-carnot-prova"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "a5a0bd28224ce476ae0f68581b8f6f1cfba62295b6f9dc454db053c6ceac2eb6",
+      "sha256_depois": "13c0728cb3a6fb2715e3d4ce219b4d65fecea436f5642d6477d14885350dba81"
+    },
+    {
+      "numero": 63,
+      "id": "formula-cop-carnot",
+      "titulo": "COPs reversíveis de Carnot",
+      "grupo": "segunda-lei",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "COP_R,C=TL/(TH−TL); COP_BC,C=TH/(TH−TL) — Para referência reversível QH/TH=QL/TL e Win=QH−QL.",
+        "simbolos_unidades": "K correto; falta explicitar COP_R,C e COP_BC,C como razões adimensionais.",
+        "hipoteses": "Reversível e mesmos dois reservatórios declarados; acrescentar TL>0 ao domínio TH>TL.",
+        "vinculo_aula": "#base-limite-carnot contém as duas formas e as respectivas definições."
+      },
+      "fontes_ids": [
+        "open_cop",
+        "open_carnot"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Refrigerador ou bomba de calor reversível, movido a trabalho entre os mesmos dois reservatórios fixos; TH>TL>0.",
+        "simbolos_unidades": "TH e TL: temperaturas absolutas dos reservatórios quente/frio (K). COP_R,C e COP_BC,C: coeficientes de desempenho reversíveis de refrigeração e aquecimento; adimensionais. C: Carnot.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-limite-carnot"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "f073b40da1598948bf32c7b0e2212a923ea6bc3a905dbed4466d582cd472a2be",
+      "sha256_depois": "10a50156938587c3d2f687721f562eb01bbdc257093743054d143f04f4742114"
+    },
+    {
+      "numero": 64,
+      "id": "formula-balanco-entropia",
+      "titulo": "Entropia: sistema fechado",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "ΔS=∫₁²δQ/Tb+Sger; Sger≥0 — Exemplo diagnóstico: +100 kJ a 400 K e −100 kJ a 300 K dão calor líquido zero, mas transferência de entropia −0,08333 kJ/K.",
+        "simbolos_unidades": "kJ/K, kJ e K coerentes. Definir ΔS=S₂−S₁ e geração total no intervalo.",
+        "hipoteses": "Q positivo entrando e reversibilidade interna corretos. A notação com um Tb precisa delimitar como tratar várias partes da fronteira a temperaturas distintas.",
+        "vinculo_aula": "#base-entropia contém a mesma integral e define temperatura local; adequado como base, mas deve explicitar soma sobre contatos."
+      },
+      "fontes_ids": [
+        "mit_entropy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Sistema fechado com um contato térmico uniforme a Tb; calor entrando positivo. Para vários contatos, some as integrais locais; nunca divida calor líquido por uma temperatura arbitrária. Sger = 0 no processo internamente reversível.",
+        "simbolos_unidades": "ΔS=S₂−S₁ e Sger: kJ/K; δQ: calor elementar no contato (kJ); Tb: temperatura absoluta da fronteira nesse contato (K), podendo variar no tempo.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-entropia"
+        ],
+        "ajustes_no_alvo": [
+          "Distinguir cada transferência e preservar a nuance ensinada em FUN-02."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "102b3dcb755d1030ddea3df1ee46b99012c1955046f6dc9e88080ce6c8149c5a",
+      "sha256_depois": "69d63be8b86cfea44666d829bd3e68623e55b82d32579f496f7dfbb2fa19ab8f"
+    },
+    {
+      "numero": 65,
+      "id": "formula-entropia-isolado",
+      "titulo": "Entropia de sistema isolado",
+      "grupo": "entropia",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "ΔS=Sger≥0 — Sem transferência de massa/calor, resta geração. Trabalho não transfere entropia, mas o isolamento aqui também o elimina.",
+        "simbolos_unidades": "Entropia total e gerada em kJ/K.",
+        "hipoteses": "Isolamento de massa e energia explicitado; uma parte pode perder entropia.",
+        "vinculo_aula": "#base-entropia ensina a desigualdade para sistema isolado e diferencia geração de transferência."
+      },
+      "fontes_ids": [
+        "mit_entropy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Sem trocas de massa ou energia; uma parte do conjunto pode perder entropia.",
+        "simbolos_unidades": "S: entropia total; Sger: gerada (kJ/K).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-entropia"
+        ],
+        "ajustes_no_alvo": [
+          "Distinguir cada transferência e preservar a nuance ensinada em FUN-02."
+        ],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "3f796bb836428382a9737fae1fe02e0a035ec1ca2b678022cbf506bee9a740b9",
+      "sha256_depois": "3f796bb836428382a9737fae1fe02e0a035ec1ca2b678022cbf506bee9a740b9"
+    },
+    {
+      "numero": 66,
+      "id": "formula-entropia-total",
+      "titulo": "Sistema e vizinhança: entropia total",
+      "grupo": "entropia",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "ΔStotal=ΔSsistema+ΔSviz; ΔStotal≥0 — Somar balanços dos dois subsistemas cancela transferências internas; resta geração total.",
+        "simbolos_unidades": "As parcelas têm unidade kJ/K e vizinhança é parte do conjunto.",
+        "hipoteses": "Conjunto total isolado e desigualdade apenas para soma corretamente declarados.",
+        "vinculo_aula": "#base-entropia explica que parte pode perder entropia e o conjunto não; soma é extensão direta por aditividade."
+      },
+      "fontes_ids": [
+        "mit_entropy",
+        "open_entropy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Conjunto total isolado; a soma, não cada parcela, deve ser não negativa.",
+        "simbolos_unidades": "ΔS: variações de entropia (kJ/K); viz: vizinhança incluída no conjunto.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-entropia"
+        ],
+        "ajustes_no_alvo": [
+          "Distinguir cada transferência e preservar a nuance ensinada em FUN-02."
+        ],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "62140482a53766edaf46e25ad4aeb5ea60e698f6fd374fc3babd0581156095e2",
+      "sha256_depois": "62140482a53766edaf46e25ad4aeb5ea60e698f6fd374fc3babd0581156095e2"
+    },
+    {
+      "numero": 67,
+      "id": "formula-calor-reversivel",
+      "titulo": "Calor reversível e entropia",
+      "grupo": "entropia",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "δqrev=T ds; qrev=∫₁²T ds — Dimensão T ds=kJ/kg; integração é ao longo da trajetória reversível escolhida.",
+        "simbolos_unidades": "qrev em kJ/kg, T em K e s em kJ/(kg·K).",
+        "hipoteses": "Trajetória reversível de referência explícita; alerta sobre calor real irreversível evita universalização.",
+        "vinculo_aula": "#substancias inclui “Calor reversível no diagrama T–s”, expressão diferencial e interpretação da área. Integral é continuação direta."
+      },
+      "fontes_ids": [
+        "open_entropy",
+        "mit_gibbs"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Trajetória reversível de referência; área em T–s não é calor real de todo processo.",
+        "simbolos_unidades": "qrev: kJ/kg; T: K; s: kJ/(kg·K).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#substancias"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "c7eea15504b5ce2bc5bee60d02789277b1f2acdb1ffac09ab40435776e287c8c",
+      "sha256_depois": "c7eea15504b5ce2bc5bee60d02789277b1f2acdb1ffac09ab40435776e287c8c"
+    },
+    {
+      "numero": 68,
+      "id": "formula-entropia-tp",
+      "titulo": "Gás ideal: entropia por T e p",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Δs=cp ln(T₂/T₁)−R ln(p₂/p₁) — Substituir dv/v=dT/T−dp/p em ds=cv dT/T+R dv/v e cp=cv+R.",
+        "simbolos_unidades": "Unidades e pressão absoluta corretas; s, cp e R só têm unidades e não nomes na ficha.",
+        "hipoteses": "Título impõe gás ideal; composição fixa/cp constante e logaritmos de razões corretos.",
+        "vinculo_aula": "#base-entropia-gas contém expressão e nomes dos símbolos, estado inicial/final."
+      },
+      "fontes_ids": [
+        "mit_ideal_s"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Composição fixa e cp constante; ln de razões adimensionais.",
+        "simbolos_unidades": "Δs=s₂−s₁: variação de entropia específica; cp: calor específico a pressão constante; R: constante específica do gás, todos em kJ/(kg·K). T₁/T₂: temperaturas inicial/final em K; p₁/p₂: pressões absolutas inicial/final na mesma unidade.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-entropia-gas"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "6a33eeaa15c3035bfb93b61e0cb8c57aeb5ddc3ac62f387d94f26ca46f6f77e4",
+      "sha256_depois": "398e30a63de35205387ad6de46093e0990e878daaf5c02c8b0819c3d44f00f72"
+    },
+    {
+      "numero": 69,
+      "id": "formula-entropia-tv",
+      "titulo": "Gás ideal: entropia por T e v",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Δs=cv ln(T₂/T₁)+R ln(v₂/v₁) — Integração de ds=cv dT/T+R dv/v; expansão isotérmica ideal aumenta s.",
+        "simbolos_unidades": "Sinal de volume correto. Falta unidade de v e nome de cv/R; volumes devem usar mesma base por massa.",
+        "hipoteses": "Gás ideal no título, composição fixa e cv constante explícitos.",
+        "vinculo_aula": "#base-entropia-gas ensina a fórmula e v em m³/kg."
+      },
+      "fontes_ids": [
+        "mit_ideal_s"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Composição fixa e cv constante; não omita o sinal positivo do termo de volume.",
+        "simbolos_unidades": "Δs=s₂−s₁: variação de entropia específica; cv: calor específico a volume constante; R: constante específica do gás, em kJ/(kg·K). T₁/T₂: K; v₁/v₂: volumes específicos por massa (m³/kg), inicial/final; razões adimensionais.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-entropia-gas"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "6ab5ff5e13e8af3f35f0f547e4d0a882606463d870bccc0d062ac65ab643229a",
+      "sha256_depois": "0531a02a02ea164f62a314e8b1c6b27248d407d591e2d7d67fa5e56015c79c76"
+    },
+    {
+      "numero": 70,
+      "id": "formula-isentro-gas",
+      "titulo": "Relações isentrópicas do gás ideal",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "T₂/T₁=(p₂/p₁)^((k−1)/k); pv^k=cte; T₂/T₁=(v₁/v₂)^(k−1) — Δs=0 fornece T v^(k−1)=constante; com pv=RT resulta pv^k=constante.",
+        "simbolos_unidades": "Pressão absoluta e temperatura K corretas; falta unidade de v e caracterizar k como adimensional.",
+        "hipoteses": "Gás ideal isentrópico com capacidades constantes explícito; composições/referências devem ser as mesmas.",
+        "vinculo_aula": "#base-entropia-gas ensina forma T,p e pv^k; a forma T,v decorre imediatamente da equação de estado e da forma de entropia."
+      },
+      "fontes_ids": [
+        "mit_ideal_s"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Mesmo gás ideal de composição fixa em sequência de estados isentrópicos, com cp e cv constantes.",
+        "simbolos_unidades": "T₁/T₂: temperaturas em K; p₁/p₂: pressões absolutas na mesma unidade; v₁/v₂: volumes específicos (m³/kg). k=cp/cv>1, adimensional e constante; 1/2: estados inicial/final. A constante em pv^k depende das unidades escolhidas.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-entropia-gas"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "6b62d9076306cd89a05fa9997371129a6d8b425de1c8885bfb33770054d42f08",
+      "sha256_depois": "2ae694b39a0a0c45134a4d68c050fef6793bc23830516045a553af1cac42d47c"
+    },
+    {
+      "numero": 71,
+      "id": "formula-isentropica-turbina",
+      "titulo": "Eficiência isentrópica da turbina",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "ηt=(h₁−h₂,real)/(h₁−h₂,s) — Na turbina wt=h₁−h₂; eficiência é trabalho real dividido pelo isentrópico de referência.",
+        "simbolos_unidades": "h em kJ/kg e eficiência adimensional; explicitar h como entalpia específica, 2,real como saída real.",
+        "hipoteses": "Mesma entrada e pressão final, adiabaticidade e ΔEC/ΔEP desprezíveis presentes. Falta declarar regime permanente.",
+        "vinculo_aula": "#base-isentropica ensina definição real/ideal, saída de referência e comparação; condições operacionais devem ser explicitadas junto da fórmula."
+      },
+      "fontes_ids": [
+        "purdue_turb",
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Turbina em regime permanente, adiabática, com ΔEC/ΔEP desprezíveis. Comparar a mesma entrada e mesma pressão de saída; referência s isentrópica. Denominador h₁−h₂,s>0.",
+        "simbolos_unidades": "h₁, h₂,real e h₂,s: entalpias específicas de entrada, saída real e saída isentrópica, em kJ/kg. p₂,s=p₂,real e s₂,s=s₁; ηt é adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-isentropica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "15229ded995231bd5f450df361ace57afc4f70810e2708e1d317f23b40c8c042",
+      "sha256_depois": "d3d4e80310f3a3da350b852c1bc297bb8243a6b741d89aff57a94dbee66633d6"
+    },
+    {
+      "numero": 72,
+      "id": "formula-isentropica-compressor",
+      "titulo": "Eficiência isentrópica do compressor",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "ηc=(h₂,s−h₁)/(h₂,real−h₁) — wc=h₂−h₁; razão de trabalho ideal para real.",
+        "simbolos_unidades": "h em kJ/kg e ηc adimensional; o detalhe não define 1 e 2,real.",
+        "hipoteses": "Mesma entrada/pressão final, adiabático e EC/EP desprezíveis presentes. Falta regime permanente.",
+        "vinculo_aula": "#base-isentropica ensina razão ideal/real e saída s na mesma pressão."
+      },
+      "fontes_ids": [
+        "purdue_ref",
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Compressor em regime permanente, adiabático, com ΔEC/ΔEP desprezíveis. Mesma entrada e pressão de saída na referência isentrópica; h₂,real−h₁>0.",
+        "simbolos_unidades": "h₁, h₂,real e h₂,s: entalpias específicas de entrada, saída real e saída isentrópica (kJ/kg). p₂,s=p₂,real e s₂,s=s₁; ηc: adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-isentropica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "7e7f2bb1698cea23432d3865339a6ded7c74d5068ad250ebc981b6981cbfbdb1",
+      "sha256_depois": "ea97869190b73ba09ad1f7a34f642926304ade00804390e0d752587a4a5e5aa6"
+    },
+    {
+      "numero": 73,
+      "id": "formula-entropia-vc",
+      "titulo": "Entropia: volume de controle permanente",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Ṡger=Σsai ṁs−Σent ṁs−Σj Q̇j/Tj≥0 — Isolar geração em 0=Σent ṁs−Σsai ṁs+ΣQ̇j/Tj+Ṡger; sinais verificados.",
+        "simbolos_unidades": "Todas as parcelas em kW/K. ṁ, s e Tj têm unidades, mas convém nomear correntes e contatos.",
+        "hipoteses": "Sem acumulação e calor positivo entrando explícitos. Cada Tj deve representar temperatura uniforme no contato j; substituir soma por integral se distribuída.",
+        "vinculo_aula": "#aprofundamento-aplicado ensina o balanço completo estacionário, não só uma ocorrência do símbolo; exemplo de trocador adiabático coerente."
+      },
+      "fontes_ids": [
+        "mit_entropy"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Volume de controle estacionário. Q̇j positivo entrando por contato j de temperatura uniforme Tj>0. Se a temperatura variar ao longo da fronteira, integrar Q̇/T localmente; Ṡger≥0.",
+        "simbolos_unidades": "ṁ: vazão mássica de cada corrente (kg/s); s: entropia específica (kJ/(kg·K)); Q̇j: taxa de calor no contato j (kW); Tj: temperatura da fronteira nesse contato (K); Ṡger: geração de entropia por tempo (kW/K).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#aprofundamento-aplicado"
+        ],
+        "ajustes_no_alvo": [
+          "Justificar quantitativamente o ótimo nas hipóteses da ficha 88."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "8f94a973aa812c100fff49af61931bd68125957c2fa7a8e08978713cecf21b01",
+      "sha256_depois": "c8023a75ee87b97476e6bc57a7c77905a952385fc48b025286a2aaa676eb6ac7"
+    },
+    {
+      "numero": 74,
+      "id": "formula-exergia",
+      "titulo": "Gouy–Stodola: exergia destruída",
+      "grupo": "entropia",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "Xdest=T₀Sger; Ẋdest=T₀Ṡger — K·kJ/K=kJ; Sger≥0 e T₀>0 implicam Xdest≥0.",
+        "simbolos_unidades": "kJ e kW corretos; T₀ K, Sger kJ/K e taxa kW/K.",
+        "hipoteses": "Ambiente a T₀ constante e diferença entre geração e ΔS declaradas.",
+        "vinculo_aula": "#base-exergia define trabalho útil máximo e ensina Gouy–Stodola com exemplo numérico."
+      },
+      "fontes_ids": [
+        "mit_lost"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Ambiente a T0 constante; Sger não é necessariamente ΔS do sistema.",
+        "simbolos_unidades": "T0: ambiente de referência (K); Sger: kJ/K; Xdest: kJ; taxas: kW/K e kW.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-exergia"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "bccaedfec487746cf8eacb1246fe8d78e10f428a85d48471941ff1957dd21030",
+      "sha256_depois": "bccaedfec487746cf8eacb1246fe8d78e10f428a85d48471941ff1957dd21030"
+    },
+    {
+      "numero": 75,
+      "id": "formula-identidades",
+      "titulo": "Identidades termodinâmicas",
+      "grupo": "entropia",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "du=T ds−p dv; dh=T ds+v dp — dh=du+p dv+v dp cancela −p dv.",
+        "simbolos_unidades": "Base específica consistente: kPa·m³/kg=kJ/kg; T ds na mesma unidade.",
+        "hipoteses": "Propriedades de equilíbrio, substância simples compressível e composição fixa declaradas.",
+        "vinculo_aula": "#base-gibbs deriva dh a partir de du e h=u+pv; alerta que a identidade não é calor/trabalho real de qualquer processo."
+      },
+      "fontes_ids": [
+        "mit_gibbs"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Propriedades de equilíbrio de substância simples compressível e composição fixa.",
+        "simbolos_unidades": "u, h: kJ/kg; T: K; s: kJ/(kg·K); p: kPa; v: m³/kg; d: pequena variação.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gibbs"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "09b2bb6653007810725cc15b8c39db652d4af2fdd755a45a726a09b3e008233f",
+      "sha256_depois": "09b2bb6653007810725cc15b8c39db652d4af2fdd755a45a726a09b3e008233f"
+    },
+    {
+      "numero": 76,
+      "id": "formula-entalpia-isentro",
+      "titulo": "Entalpia em variação isentrópica",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "ds=0 ⇒ dh=v dp; Δh≈v(p₂−p₁) — ds=0 anula T ds; se v>0, sinal de dh acompanha dp.",
+        "simbolos_unidades": "h kJ/kg, v m³/kg e p kPa coerentes. s aparece na expressão sem definição/unidade no detalhe.",
+        "hipoteses": "v aproximadamente constante corretamente exigido para a forma finita. Falta repetir o domínio simples compressível/composição fixa.",
+        "vinculo_aula": "#base-gibbs explica ambas as formas, integração se v variar e hipótese da identidade."
+      },
+      "fontes_ids": [
+        "mit_gibbs"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Substância simples compressível de composição fixa, estados de equilíbrio ao longo de uma isentrópica. A forma finita exige v aproximadamente constante; caso contrário, usar Δh=∫ₚ₁^ₚ₂ v dp nessa isentrópica.",
+        "simbolos_unidades": "h: entalpia específica (kJ/kg); s: entropia específica (kJ/(kg·K)); v: volume específico (m³/kg); p₁/p₂: pressões inicial/final (kPa).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-gibbs"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "71e0d8359ba2a57f270744f5240d1e44597cf091d64bf35c7157cdb8c926a619",
+      "sha256_depois": "d97170cd51d76bbbbc512f89ffc188a05fb36a8b0a526e38923202f4e3cc2cea"
+    },
+    {
+      "numero": 77,
+      "id": "formula-gibbs-fases",
+      "titulo": "Gibbs e equilíbrio de fases",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "G=H−TS; dG=(μg−μf)dn; μg=μf no equilíbrio — dG=μf(−dn)+μg dn; igualdade anula a primeira variação, mas não substitui análise de estabilidade.",
+        "simbolos_unidades": "Unidades extensivas/mol corretas; nomear f como líquido e g como vapor, em vez de somente “fases”.",
+        "hipoteses": "Mesmo componente, T,p fixas e dn positivo líquido→vapor corretos. “Usualmente só trabalho pV” deve virar hipótese explícita, com outros componentes fixos.",
+        "vinculo_aula": "#base-equilibrio-fases explica transferência, mínimo de Gibbs e μl/μv. A ficha usa f/g: harmonização local necessária."
+      },
+      "fontes_ids": [
+        "wash_gibbs",
+        "mit_phase"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Transferência infinitesimal do mesmo componente entre fases líquida f e vapor g em um conjunto fechado a T,p fixas; somente trabalho pV, sem campos/interfícies relevantes. Outras quantidades independentes mantidas fixas. A igualdade de μ é necessária ao equilíbrio entre fases presentes com troca permitida.",
+        "simbolos_unidades": "G: energia de Gibbs; H: entalpia (J); S: entropia (J/K); T: K. μf/μg: potenciais químicos do mesmo componente no líquido/vapor (J/mol); dn: quantidade transferida de f para g (mol).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-equilibrio-fases"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "2341c74a48e85107036109a38dde1694ff4ba7bd16337d419b52a571cb6bf44f",
+      "sha256_depois": "18470e13948d875ec2d49979f49c7e8b4948f93595d5717c35fcdf07a6cc6c9f"
+    },
+    {
+      "numero": 78,
+      "id": "formula-entropia-c-variavel",
+      "titulo": "Entropia com calor específico variável",
+      "grupo": "entropia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Δs=∫T₁^T₂ cp(T)/T dT−R ln(p₂/p₁) — Integração de ds=cp(T)dT/T−R dp/p, válida para diferença de propriedade entre estados.",
+        "simbolos_unidades": "Unidades corretas; definir R específico e Δs, não só listar unidades.",
+        "hipoteses": "Gás ideal, composição fixa, cp(T) e log adimensional declarados; não exige processo real reversível.",
+        "vinculo_aula": "#base-calor-variavel contém exatamente a forma e explica integração/limites do gás ideal."
+      },
+      "fontes_ids": [
+        "mit_ideal_s"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal de composição fixa; cp varia com T; argumentos de logaritmos são adimensionais.",
+        "simbolos_unidades": "Δs=s₂−s₁: variação de entropia específica (kJ/(kg·K)); cp(T): calor específico a pressão constante; R: constante específica do gás, ambos em kJ/(kg·K). T₁/T₂: temperaturas inicial/final em K; p₁/p₂: pressões absolutas na mesma unidade.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-calor-variavel"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "1d7d0003d915e7b593322e9e6dbfb166c1de22bd61744bb6c74ab17aab912e57",
+      "sha256_depois": "5098010b4f00651049349ac2ebdb98acc2af4d17edf7ed0c71d39cf983b96234"
+    },
+    {
+      "numero": 79,
+      "id": "formula-rankine",
+      "titulo": "Rankine: balanços por equipamento",
+      "grupo": "ciclos",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "wt=h₃−h₄; wb=h₂−h₁; qin=h₃−h₂; qout=h₄−h₁; η=(wt−wb)/qin — Soma telescópica das quatro diferenças: (h₃−h₂)−(h₄−h₁)=(h₃−h₄)−(h₂−h₁).",
+        "simbolos_unidades": "Estados 1–4 identificados e kJ/kg correto; definir todas as energias como magnitudes e η adimensional.",
+        "hipoteses": "Os balanços qin=h₃−h₂ e qout=h₄−h₁ exigem caldeira e condensador sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico. As demais hipóteses e o trabalho pv incorporado a h foram preservados.",
+        "vinculo_aula": "#base-rankine recebeu a mesma exclusão completa nos dois trocadores; estados, quatro balanços, eficiência e distinção da isentropia ficaram intactos."
+      },
+      "fontes_ids": [
+        "mit_cv",
+        "mit_rankine"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Rankine simples sem extrações, mesma vazão, regime permanente e ΔEC/ΔEP desprezíveis; bomba/turbina adiabáticas. Caldeira/condensador sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. qin>0 e trabalho líquido positivo.",
+        "simbolos_unidades": "1: saída do condensador; 2: saída da bomba; 3: entrada da turbina; 4: saída da turbina. wt: trabalho produzido; wb: consumido; qin/qout: calor recebido/rejeitado, magnitudes em kJ/kg. h: kJ/kg; η: adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-rankine"
+        ],
+        "ajustes_no_alvo": [
+          "#base-rankine recebeu a mesma exclusão completa nos dois trocadores; estados, quatro balanços, eficiência e distinção da isentropia ficaram intactos."
+        ],
+        "encaminhamento": "R1-A corrigido: exclusão de todo trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; condições e data-busca sincronizadas."
+      },
+      "sha256_antes": "e003f2d87bda1d0e36990a69e6b67211b6a0e5611423dd77598da28a193a787c",
+      "sha256_depois": "c6304dd9d00a08538c7642b345621808fe2d99defd29c7b1bddc3c5ffd7aeadf",
+      "sha256_base_r1": "273e01ba2b8f373f2842f643f6c4ed383c29a35ddfab9c686ea88174ddffea11"
+    },
+    {
+      "numero": 80,
+      "id": "formula-brayton-liquido",
+      "titulo": "Brayton: trabalho líquido e rendimento",
+      "grupo": "ciclos",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "Ẇliq=Ẇt−Ẇc; η=(Ẇt−Ẇc)/Q̇in — Subtrair consumo do compressor da produção da turbina na mesma fronteira.",
+        "simbolos_unidades": "Taxas kW e magnitude consumida identificadas; uma base única exigida.",
+        "hipoteses": "Sem outros consumos explicitado. Título e Q̇in externo delimitam rendimento do conjunto.",
+        "vinculo_aula": "#base-brayton-real ensina exatamente a diferença e mostra exemplo de potência líquida."
+      },
+      "fontes_ids": [
+        "mit_brayton"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Sem outros consumos; também vale com energias por ciclo ou por kg, em uma única base.",
+        "simbolos_unidades": "Ẇt: turbina; Ẇc: compressor, magnitude consumida; Q̇in: calor externo recebido (kW).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-brayton-real"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "be53d6d4b8ef9305ad4392713fd7ce2c59379393187d06bf0234116ffc431ea5",
+      "sha256_depois": "be53d6d4b8ef9305ad4392713fd7ce2c59379393187d06bf0234116ffc431ea5"
+    },
+    {
+      "numero": 81,
+      "id": "formula-brayton-ideal",
+      "titulo": "Rendimento do Brayton ideal",
+      "grupo": "ciclos",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "rp=palta/pbaixa; ηB=1−rp^(-(k−1)/k) — Com T₂/T₁=T₃/T₄=rp^((k−1)/k), razão de calores leva à forma exibida.",
+        "simbolos_unidades": "Razão de pressões absolutas e eficiência adimensionais; k=cp/cv.",
+        "hipoteses": "Gás ideal, capacidades constantes, duas isentrópicas/isobáricas e viabilidade motora declarados.",
+        "vinculo_aula": "#base-brayton ensina a relação e limites de alterações do ciclo; #base-brayton-real detalha viabilidade."
+      },
+      "fontes_ids": [
+        "mit_brayton"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal, cp/cv constantes, duas isentrópicas e duas isobáricas; ciclo motor viável.",
+        "simbolos_unidades": "rp: razão de pressões absolutas; k = cp/cv; ηB: adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-brayton"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "d5e024a0a04d5c2b38210227074b7a01611a3c060a3d6e7d15cbadecf2b00853",
+      "sha256_depois": "d5e024a0a04d5c2b38210227074b7a01611a3c060a3d6e7d15cbadecf2b00853"
+    },
+    {
+      "numero": 82,
+      "id": "formula-otto",
+      "titulo": "Rendimento do Otto ideal",
+      "grupo": "ciclos",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "r=Vmax/Vmin; ηO=1−r^(-(k−1)) — Qout/Qin=(T₄−T₁)/(T₃−T₂)=r^(1−k).",
+        "simbolos_unidades": "r,k,η adimensionais; volumes na mesma unidade, inferível pela razão e nome.",
+        "hipoteses": "Ar-padrão ideal com capacidades constantes e adição isocórica; título Otto identifica as demais etapas.",
+        "vinculo_aula": "#ciclos contém a tabela Otto/Diesel, compressão/expansão isentrópicas, definição de r e fórmula."
+      },
+      "fontes_ids": [
+        "mit_otto"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Modelo ar-padrão ideal, calores específicos constantes; adição de calor isocórica.",
+        "simbolos_unidades": "r: taxa de compressão volumétrica; k = cp/cv; ηO: adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#ciclos"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "1e41a8c5d4109aac8bd9c36b8b732fde99107cba6f0447cb080253b015f836a0",
+      "sha256_depois": "1e41a8c5d4109aac8bd9c36b8b732fde99107cba6f0447cb080253b015f836a0"
+    },
+    {
+      "numero": 83,
+      "id": "formula-diesel",
+      "titulo": "Rendimento do Diesel ideal",
+      "grupo": "ciclos",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "rc=V₃/V₂; ηD=1−r^(-(k−1))(rc^k−1)/[k(rc−1)] — T₂/T₁=r^(k−1), T₃/T₂=rc e T₄/T₁=rc^k. Substituir qin=cp(T₃−T₂), qout=cv(T₄−T₁).",
+        "simbolos_unidades": "r,rc,k e ηD são adimensionais, mas ηD não definido e V₂/V₃ não nomeados além do trecho.",
+        "hipoteses": "Modelo ar-padrão/capacidades constantes/adição isobárica corretos; domínio rc=1 gera 0/0 e ciclo precisa de expansão após adição.",
+        "vinculo_aula": "#ciclos contém fórmula e definição verbal da razão de corte. Não atribui estados 2/3, supridos pela ficha."
+      },
+      "fontes_ids": [
+        "mit_diesel"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Diesel ar-padrão ideal com cp e cv constantes: compressão/expansão isentrópicas, adição isobárica e rejeição isocórica. r>1, k>1 e 1<rc<r no ciclo convencional não degenerado.",
+        "simbolos_unidades": "r=Vmax/Vmin: razão volumétrica de compressão; rc=V₃/V₂: razão de corte; 2/3: início/fim da adição de calor; V em mesma unidade. k=cp/cv e ηD: razão de calores e rendimento Diesel; todos adimensionais.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#ciclos"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "ffa55c670f8b4643b50aa112ffbdd5dcac6464a62b23c12cb00799d3a4ed22ae",
+      "sha256_depois": "456a1998671f57541829e5921a50ed8b79d70320e505d32336c0681f83c9edb1"
+    },
+    {
+      "numero": 84,
+      "id": "formula-refrigeracao",
+      "titulo": "Refrigeração por compressão de vapor",
+      "grupo": "ciclos",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "qL=h₁−h₄; wc=h₂−h₁; qH=h₂−h₃; h₃≈h₄; COP_R=(h₁−h₄)/(h₂−h₁) — Com h₃=h₄: qH−qL=h₂−h₁=wc.",
+        "simbolos_unidades": "Índices e kJ/kg corretos; definir qL,qH,wc como magnitudes e COP adimensional.",
+        "hipoteses": "Condensador, evaporador e válvula não recebem nem fornecem qualquer trabalho não associado ao escoamento, inclusive elétrico. Compressor e válvula são adiabáticos; pv continua em h. Dizer apenas que os trocadores não produzem trabalho não excluía recebimento.",
+        "vinculo_aula": "#base-refrigeracao agora exclui trabalhos nos dois sentidos nos componentes passivos. Estados, relações de entalpia, soma de calor e trabalho do ciclo e COP ficaram intactos."
+      },
+      "fontes_ids": [
+        "purdue_ref",
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Ciclo simples estacionário com mesma vazão; ΔEC/ΔEP desprezíveis. Compressor e válvula adiabáticos. Condensador, evaporador e válvula sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. Desprezar trocas nas ligações. wc>0.",
+        "simbolos_unidades": "1: entrada do compressor; 2: saída do compressor; 3: saída do condensador; 4: saída da válvula. qL: calor absorvido; qH: rejeitado; wc: trabalho consumido, magnitudes em kJ/kg. h: kJ/kg; COP_R: adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-refrigeracao"
+        ],
+        "ajustes_no_alvo": [
+          "#base-refrigeracao agora exclui trabalhos nos dois sentidos nos componentes passivos. Estados, relações de entalpia, soma de calor e trabalho do ciclo e COP ficaram intactos."
+        ],
+        "encaminhamento": "R1-A corrigido: exclusão de todo trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; condições e data-busca sincronizadas."
+      },
+      "sha256_antes": "0819e4bd85c55d169027762dbd990792ec390ba640714e0887820a1431fbe476",
+      "sha256_depois": "cb9dcd50f4ca7442a1c0f4a85fcd9b6659f9ef7136e9e3d997dc76a773437c06",
+      "sha256_base_r1": "1c2396000c03989f12a12aef41004cdd045b444a8b7fbe88cfc366991c899a47"
+    },
+    {
+      "numero": 85,
+      "id": "formula-condensador",
+      "titulo": "Calor rejeitado no condensador",
+      "grupo": "ciclos",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Q̇H=Q̇L+Ẇin — Primeira lei do ciclo: Q̇L+Ẇin−Q̇H=0.",
+        "simbolos_unidades": "Magnitudes em kW, definidas corretamente.",
+        "hipoteses": "Ciclo permanente sem outras trocas/consumos é condição suficiente; nenhuma irreversibilidade precisa ser anulada.",
+        "vinculo_aula": "#base-eficiencia-cop ensina definições e diferença entre COPs; o exemplo explícito QH=600+200 está em #base-refrigeracao."
+      },
+      "fontes_ids": [
+        "open_cop",
+        "purdue_ref"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Ciclo permanente, sem outras perdas/trocas ou consumos relevantes.",
+        "simbolos_unidades": "Q̇H: calor rejeitado; Q̇L: retirado do ambiente frio; Ẇin: potência consumida, magnitudes em kW.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-refrigeracao"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "4570e921bcc03a82c0f89049b86448c968a7e9eaa2165245a410ae9a4f1cda4c",
+      "sha256_depois": "073599882f469b948804fe638a6d6fcb0e2e5c851556ce698328a48de4d13ba4"
+    },
+    {
+      "numero": 86,
+      "id": "formula-extracao-aquecedor",
+      "titulo": "Fração extraída para aquecedor aberto",
+      "grupo": "ciclos",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "y=(hsaída−hágua)/(hextração−hágua) — yh_extração+(1−y)h_água=h_saída ⇒ y(h_extração−h_água)=h_saída−h_água.",
+        "simbolos_unidades": "y definido por vazão extraída/principal; h em kJ/kg, grandezas de cada corrente identificadas.",
+        "hipoteses": "Aquecedor aberto estacionário, adiabático, sem trabalho, EC/EP desprezíveis, pressões compatíveis, 0≤y≤1 e denominador não nulo estão explícitos.",
+        "vinculo_aula": "#base-ciclos-variantes deduz a equação da massa e energia, calcula y e distingue aquecedor fechado."
+      },
+      "fontes_ids": [
+        "mit_cv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Aquecedor aberto, permanente, adiabático, sem trabalho; EC/EP desprezíveis; pressões compatíveis; 0≤y≤1 e denominador não nulo.",
+        "simbolos_unidades": "y: ṁextração/ṁprincipal; hágua: corrente de retorno; hextração: vapor extraído; hsaída: mistura, em kJ/kg.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-ciclos-variantes"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "5aabf01829a3286ea9ec1e866d11046e552bda7bda249119fbdfe18ab8885041",
+      "sha256_depois": "5aabf01829a3286ea9ec1e866d11046e552bda7bda249119fbdfe18ab8885041"
+    },
+    {
+      "numero": 87,
+      "id": "formula-volumetrica",
+      "titulo": "Eficiência volumétrica",
+      "grupo": "compressores",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "ηv=Vfresco,admitido/Vdeslocado — Massa admitida vezes volume específico na sucção produz volume equivalente admitido; dividir pelo deslocamento.",
+        "simbolos_unidades": "Razão adimensional com mesmos volumes por ciclo ou vazões na mesma base.",
+        "hipoteses": "Referência de sucção explícita; não confunde com eficiência isentrópica.",
+        "vinculo_aula": "#base-eficiencia-volumetrica ensina volume varrido, gás fresco referido à sucção e exemplo 3,5/5."
+      },
+      "fontes_ids": [
+        "purdue_comp"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Volume admitido referido às condições de sucção; não é eficiência isentrópica.",
+        "simbolos_unidades": "ηv: adimensional; volumes na mesma unidade e por ciclo; pode-se usar vazões volumétricas coerentes.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-eficiencia-volumetrica"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "824c8484bcf69b95d037fbd3f55681699cff7868356beb71adb5ee3acbc804a5",
+      "sha256_depois": "824c8484bcf69b95d037fbd3f55681699cff7868356beb71adb5ee3acbc804a5"
+    },
+    {
+      "numero": 88,
+      "id": "formula-intermediaria",
+      "titulo": "Pressão intermediária ideal: dois estágios",
+      "grupo": "compressores",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "pi=√(p₁p₃); pi/p₁=p₃/pi — Com z=ln(pi/p₁), R=p₃/p₁ e A=cpT₁/ηc>0: w=A[e^(az)+R^a e^(−az)−2]. w′=Aa[e^(az)−R^a e^(−az)]; w″=Aa²[e^(az)+R^a e^(−az)]>0. Único mínimo z=ln(R)/2 ⇒ pi=√p₁p₃. Sem resfriamento perfeito ou com η dependente da razão, essa função muda.",
+        "simbolos_unidades": "Todas pressões absolutas na mesma unidade; raiz de pressão² tem dimensão de pressão.",
+        "hipoteses": "Estágios equivalentes, intercooling perfeito e perdas desprezíveis não explicitam modelo de propriedades nem objetivo de otimização.",
+        "vinculo_aula": "#aprofundamento-aplicado afirma trabalho mínimo e eficiência igual, mas também omite gás ideal/cp constante e independência da eficiência em relação à pressão escolhida. A aula precisa acompanhar a condição corrigida."
+      },
+      "fontes_ids": [
+        "tamu_two",
+        "purdue_comp"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Mínimo trabalho total de dois estágios adiabáticos: mesmo gás ideal, cp e cv constantes, mesma eficiência isentrópica constante; resfriamento até T₁ sem perda de pressão, mesma vazão, sem mudança de fase. ΔEC/ΔEP desprezíveis; p₃>p₁>0 fixas.",
+        "simbolos_unidades": "p₁: pressão na entrada do primeiro estágio; pi: pressão comum à saída do primeiro e entrada do segundo; p₃: saída final, absolutas e na mesma unidade. pi é ótimo para mínimo trabalho nas hipóteses, não pressão universal de operação.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#aprofundamento-aplicado"
+        ],
+        "ajustes_no_alvo": [
+          "Justificar quantitativamente o ótimo nas hipóteses da ficha 88."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "3495d67b7c25c1f31958aa1ecb1ba3381a772113a2d5652534df9bc4e3993fea",
+      "sha256_depois": "bd19218dd4ad251d9debfc2b70b19102da7fb7996c82ea98ab2e61582ce7008d"
+    },
+    {
+      "numero": 89,
+      "id": "formula-politropico",
+      "titulo": "Compressão politrópica: trabalho consumido",
+      "grupo": "compressores",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "win=np/(np−1) R T₁[(p₂/p₁)^((np−1)/np)−1] — Para escoamento reversível δwin=v dp. v=v₁(p₁/p)^(1/np); integrar p₁→p₂ e usar p₁v₁=RT₁. A exclusão np>0 limita o caso convencional de compressão volumétrica, sem alegar que todos os processos com np<0 sejam matematicamente inexistentes.",
+        "simbolos_unidades": "R específico kJ/(kg·K), T₁ K e trabalho kJ/kg; np não confunde com mol.",
+        "hipoteses": "Escoamento permanente reversível, gás ideal e pv^np constante explícitos. Excluir somente np=1 não evita divisão por np=0; compressão requer p₂>p₁.",
+        "vinculo_aula": "#aplicacoes ensina o fator np do escoamento e sua diferença para o trabalho de fronteira. O domínio da aula também só exclui 1."
+      },
+      "fontes_ids": [
+        "purdue_comp",
+        "mit_gibbs"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal de composição fixa em compressão estacionária internamente reversível, pv^np constante com np constante >0 e np≠1; p₂>p₁>0; ΔEC/ΔEP desprezíveis.",
+        "simbolos_unidades": "np: expoente politrópico adimensional, não quantidade de matéria; R: constante específica do gás (kJ/(kg·K)); T₁: temperatura de entrada (K); p₁/p₂: pressões absolutas na mesma unidade; win: trabalho de eixo recebido por massa, positivo (kJ/kg).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#aplicacoes"
+        ],
+        "ajustes_no_alvo": [
+          "Excluir também n = 0 e manter a distinção entre trabalho de escoamento e massa fechada."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "6234d2d68c9a655a3337b36556747d2a93231f533ee4ff35fd2e8ed4530846c9",
+      "sha256_depois": "91881f7785f5e195bc3dccc1418f93ea39fb3152ae8ed7b3ff1f9eff85071b49"
+    },
+    {
+      "numero": 90,
+      "id": "formula-compressao-isotermica",
+      "titulo": "Limite isotérmico: trabalho consumido",
+      "grupo": "compressores",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "win=RT ln(p₂/p₁) — Integrar v dp=RT dp/p com T constante; também limite np→1 da expressão 89.",
+        "simbolos_unidades": "R em kJ/(kg·K), T K e win kJ/kg; pressões absolutas; trabalho positivo na compressão.",
+        "hipoteses": "Gás ideal, escoamento permanente internamente reversível isotérmico e EC/EP desprezíveis declarados.",
+        "vinculo_aula": "#aplicacoes contém expressão e diferença entre trabalho de escoamento e fronteira."
+      },
+      "fontes_ids": [
+        "purdue_comp",
+        "mit_gibbs"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Gás ideal em escoamento permanente, compressão isotérmica internamente reversível; ΔEC/ΔEP desprezíveis.",
+        "simbolos_unidades": "R: kJ/(kg·K); T: K; p: absoluta; win: kJ/kg, positivo na compressão.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#aplicacoes"
+        ],
+        "ajustes_no_alvo": [
+          "Excluir também n = 0 e manter a distinção entre trabalho de escoamento e massa fechada."
+        ],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "0dcf693d5afbaa5fd65de8cedfcfd4a2748c15fdd9900d3befe30a2dec53942e",
+      "sha256_depois": "0dcf693d5afbaa5fd65de8cedfcfd4a2748c15fdd9900d3befe30a2dec53942e"
+    },
+    {
+      "numero": 91,
+      "id": "formula-fourier",
+      "titulo": "Lei de Fourier: fluxo e taxa",
+      "grupo": "transferencia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "q″x=−kt dT/dx; Q̇=q″A — A componente tem sinal oposto ao gradiente para kt>0; multiplicação por área normal preserva o sinal.",
+        "simbolos_unidades": "W/m², W/(m·K), K/m e W coerentes. Falta definir x e distinguir componente assinada de magnitude de fluxo na segunda linha.",
+        "hipoteses": "Uma dimensão e uniformidade do fluxo na área explícitas; área deve ser normal ao eixo do fluxo. Não há necessidade de impor permanente à lei local.",
+        "vinculo_aula": "#base-transferencia explica eixo, sinal e exemplo −30 K/m→+150 W/m²; conteúdo adequado."
+      },
+      "fontes_ids": [
+        "mit_cond"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Condução unidimensional de Fourier, kt>0. Para Q̇=q″xA, fluxo uniforme na área perpendicular a x. Q̇ e q″x são positivos em +x.",
+        "simbolos_unidades": "q″x: componente do fluxo térmico (W/m²); kt: condutividade (W/(m·K)); x: posição (m); dT/dx: K/m; A: área perpendicular a x (m²); Q̇: taxa assinada de calor (W).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-transferencia"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "9124e52823fc2ad92bb1fd0425734ecd9aa7b1ff3a47052db62278d9a2036463",
+      "sha256_depois": "2e3753ed96f441bb46e85b74902cd1ed2e83f8d93e447800a031c611673f20eb"
+    },
+    {
+      "numero": 92,
+      "id": "formula-gradiente",
+      "titulo": "Gradiente em uma parede plana",
+      "grupo": "transferencia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "dT/dx=(T₂−T₁)/L; Q̇=kt A(T₁−T₂)/L — T₁=60, T₂=40, L=0,1 dá gradiente −200 K/m e Q̇>0. Inverter o eixo inverte ambas as componentes, não o calor físico.",
+        "simbolos_unidades": "L m, kt W/(m·K), A m² e Q̇ W; T₁/T₂ posicionadas x=0/L corretamente. Acrescentar unidade das temperaturas e gradiente.",
+        "hipoteses": "Perfil linear, permanente, kt constante, sem geração declarados. “Positivo no sentido 1→2” não nomeia a grandeza; gradiente e Q̇ têm sinais opostos.",
+        "vinculo_aula": "#base-transferencia ensina o eixo da esquerda para direita, gradiente −200 K/m e Q̇ positivo; suporte real e correto."
+      },
+      "fontes_ids": [
+        "mit_cond"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Parede plana de área constante, condução unidimensional permanente, kt constante e sem geração interna. x cresce da face 1 para a face 2. Q̇ é positivo no sentido 1→2; dT/dx pode ser negativo.",
+        "simbolos_unidades": "L: espessura (m); T₁=T(0) e T₂=T(L): temperaturas em K ou °C na mesma escala; dT/dx: K/m; kt: W/(m·K); A: área perpendicular a x (m²); Q̇: taxa assinada em W.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-transferencia"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "2a835dd57936ab5f0ed5ad7caf78ca2f962caebca4501de6550149a8c56eeb13",
+      "sha256_depois": "051496957a99d8c917ff90aa5816c786946aba2caf97b9752f5e8f36b11b9f81"
+    },
+    {
+      "numero": 93,
+      "id": "formula-newton",
+      "titulo": "Convecção: lei de Newton",
+      "grupo": "transferencia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Q̇=hc A(Ts−T∞) — Q̇=∫A hlocal(Ts−T∞)dA=hc,médio A(Ts−T∞) para diferença uniforme.",
+        "simbolos_unidades": "hc W/(m²·K), A m² e Q̇ W corretos; Ts/T∞ definidos.",
+        "hipoteses": "Ts uniforme declarado e sinal superfície→fluido correto. Falta T∞ uniforme e identificar hc como valor uniforme ou média sobre a área.",
+        "vinculo_aula": "#base-transferencia contém lei de Newton e interpretação do sinal; pode receber a mesma delimitação em uma frase."
+      },
+      "fontes_ids": [
+        "mit_conv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Ts e T∞ uniformes na área considerada; hc uniforme ou médio sobre essa área. Q̇ positivo da superfície para o fluido; diferença de temperatura em K ou °C.",
+        "simbolos_unidades": "hc: coeficiente convectivo médio na área A (W/(m²·K)); A: área exposta (m²); Ts: temperatura superficial; T∞: temperatura do fluido distante, na mesma escala; Q̇: taxa assinada de calor (W).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-transferencia"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "899359eaf7f5590660d6be418832e7fff4784cd64caacb078ac945838809c54e",
+      "sha256_depois": "4247ac3b96c333986eaa1b77c42f43a419237eebd9b250070e4c396bf7f98a29"
+    },
+    {
+      "numero": 94,
+      "id": "formula-ua",
+      "titulo": "Trocador: coeficiente global",
+      "grupo": "transferencia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Q̇=UA ΔTm; ΔTm=F ΔTlm — Dimensão U A ΔT é W. Para U espacialmente variável, Q̇=∫U ΔT dA; fatorizar um valor arbitrário de U não é identidade geral.",
+        "simbolos_unidades": "U e A com mesma referência e F adimensional corretos. Faltam significado/unidade de Q̇ e de ΔTlm.",
+        "hipoteses": "Permanente e fator adequado ao arranjo corretos; explicitar U constante/médio compatível e hipóteses do método LMTD.",
+        "vinculo_aula": "#base-trocadores ensina UA, referência de área, necessidade de F e exemplo; não define ΔTlm nem hipóteses para usar F."
+      },
+      "fontes_ids": [
+        "mit_hx",
+        "ahtt"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Trocador estacionário, sem trocas externas relevantes, U aproximadamente constante. Use média logarítmica e fator F válidos para o arranjo e os perfis térmicos; A deve corresponder à referência de U.",
+        "simbolos_unidades": "Q̇: taxa de calor do fluido quente para o frio (W); U: coeficiente global (W/(m²·K)); A: área correspondente a U (m²); ΔTm: diferença média efetiva (K); ΔTlm: diferença média logarítmica de referência (K); F: fator de correção do arranjo, adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-trocadores"
+        ],
+        "ajustes_no_alvo": [
+          "Definir a média usada na ficha 94 e seu domínio.",
+          "Delimitar a resistência plana.",
+          "Impedir aplicação da resistência plana a tubos sem aproximação."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "03bca4f07c31a063ec42769701ceab6a4c65c3b89cf9361785affed372f849c4",
+      "sha256_depois": "2563213ad8ca0bd3cfd7055f4b608e5da9cfa25148c621105b412796cd5a21cc"
+    },
+    {
+      "numero": 95,
+      "id": "formula-resistencias",
+      "titulo": "Resistências térmicas por área",
+      "grupo": "transferencia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "1/U=1/hq+L/kt+1/hf+R″dep — Rcond,plana=L/(ktA); U=1/(ARtotal). Em cilindro, integrar dr/(2πrℓkt) produz logaritmo.",
+        "simbolos_unidades": "Todas as parcelas em m²·K/W. Definir q/f como quente/frio, R″dep como soma dos depósitos, L espessura.",
+        "hipoteses": "Plano em série e área comum estão declarados. A cautela “tubos exigem conversão entre áreas” é incompleta: a condução cilíndrica tem resistência logarítmica, não apenas L/kt convertido.",
+        "vinculo_aula": "#base-trocadores contém a soma plana e adverte converter áreas em tubos; mesma ressalva incompleta sobre geometria."
+      },
+      "fontes_ids": [
+        "mit_conv",
+        "mit_res",
+        "mit_hx"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Parede plana em regime permanente, condução 1D, kt constante, sem geração; resistências em série na mesma área. Tubos exigem resistência cilíndrica e áreas próprias; converter a área não torna válida a expressão plana.",
+        "simbolos_unidades": "U: coeficiente global; hq/hf: coeficientes convectivos dos lados quente/frio (W/(m²·K)); L: espessura da parede (m); kt: condutividade (W/(m·K)); R″dep: soma das resistências dos depósitos referidas à área comum (m²·K/W).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-trocadores"
+        ],
+        "ajustes_no_alvo": [
+          "Definir a média usada na ficha 94 e seu domínio.",
+          "Delimitar a resistência plana.",
+          "Impedir aplicação da resistência plana a tubos sem aproximação."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "8859646f6993c6a784078838d9e54efa68999b18222b850b5374dcd296254e90",
+      "sha256_depois": "250a3dfa305bbfb1297f7eb759c038d131ce2cdba792916b4c0a15b879c2a572"
+    },
+    {
+      "numero": 96,
+      "id": "formula-radiacao",
+      "titulo": "Troca líquida por radiação",
+      "grupo": "transferencia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "Q̇rad=εσA(Ts⁴−Tamb⁴); σ≈5,67×10⁻⁸ W/(m²·K⁴) — Emissão εσATs⁴ menos absorção εσATamb⁴; se Ts=Tamb, troca líquida nula.",
+        "simbolos_unidades": "Constante, expoentes e K corretos. ε adimensional e Q̇rad W.",
+        "hipoteses": "Superfície cinza pequena, entorno grande aproximadamente negro e visão completa com temperaturas uniformes explicitados. Falta convenção de sinal e meio não participante.",
+        "vinculo_aula": "#base-radiacao-vacuo ensina expressão, limitações de geometria e perdas por outros mecanismos; adequado."
+      },
+      "fontes_ids": [
+        "mit_rad",
+        "mit_view"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Superfície cinza pequena, uniforme, com visão completa de grande entorno aproximadamente negro e isotérmico; meio intermediário não participante. Q̇rad positivo da superfície para o entorno.",
+        "simbolos_unidades": "ε: emissividade hemisférica da superfície cinza (0 a 1); σ: constante de Stefan–Boltzmann; A: área que troca radiação (m²); Ts/Tamb: temperaturas absolutas (K); Q̇rad: taxa líquida de calor (W).",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-radiacao-vacuo"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "c380cae75f51a1e30d7db4cc44895a04f61930b3de94e5c8aeba813d8b61f70f",
+      "sha256_depois": "bb79add61a2d709d73db2848fc540aa4758d3bb16c5c83156d3319fcafd2241a"
+    },
+    {
+      "numero": 97,
+      "id": "formula-razao-radiativa",
+      "titulo": "Comparar duas emissividades",
+      "grupo": "transferencia",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "Q̇rad,2/Q̇rad,1=ε₂/ε₁ — Cancelar σA(Ts⁴−Tamb⁴), que deve ser não nulo; ε₁ também não pode ser zero.",
+        "simbolos_unidades": "Razão adimensional, emissividades e perdas identificadas.",
+        "hipoteses": "Mesmas área, temperaturas, geometria e modelo da ficha96; denominador não nulo explicitado.",
+        "vinculo_aula": "#base-radiacao-vacuo deriva a razão por cancelamento e alerta contra duas superfícies cinzas comparáveis."
+      },
+      "fontes_ids": [
+        "mit_rad",
+        "mit_view"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Mesmo modelo da ficha de radiação; mesmas área, temperaturas e geometria; perda inicial não nula.",
+        "simbolos_unidades": "ε1, ε2: emissividades; Q̇rad: perdas radiativas. Razão adimensional.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-radiacao-vacuo"
+        ],
+        "ajustes_no_alvo": [],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "333725e14121af7e4b4665505504b46b55a1bf9be313e608754e4c9d4291e7bd",
+      "sha256_depois": "333725e14121af7e4b4665505504b46b55a1bf9be313e608754e4c9d4291e7bd"
+    },
+    {
+      "numero": 98,
+      "id": "formula-dilatacao",
+      "titulo": "Dilatação linear livre",
+      "grupo": "transferencia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "ΔL=αL L₀ ΔT; L₂=L₀+ΔL — L₂=L₀e^(αΔT) ⇒ ΔL≈L₀αΔT para |αΔT| pequeno. Não exigir exponencial na ficha: basta nomear a aproximação.",
+        "simbolos_unidades": "K⁻¹, m e intervalo em K/°C corretos; índices inicial/final merecem definição por extenso.",
+        "hipoteses": "Livre, aquecimento uniforme e coeficiente quase constante explícitos. Falta afirmar aproximação linear/pequena deformação.",
+        "vinculo_aula": "#base-dilatacao ensina deslocamento livre e exclui cálculo de tensões, mas não explicita a linearização."
+      },
+      "fontes_ids": [
+        "open_expansion"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Dilatação livre e aquecimento uniforme. Aproximação linear para |αLΔT|≪1, com coeficiente de dilatação aproximadamente constante na faixa.",
+        "simbolos_unidades": "αL: coeficiente de dilatação linear (K⁻¹); L₀: comprimento inicial; ΔL=L₂−L₀: variação; L₂: final (m). ΔT=T₂−T₁: K ou intervalo em °C.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-dilatacao"
+        ],
+        "ajustes_no_alvo": [
+          "Delimitar a linearização da dilatação."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "fc3be46093f2fe2b92dceb9f71ff783e26bb771b0db9479892745cb0426bb2ab",
+      "sha256_depois": "40bc1dfa0adf88bdc54a5287e47fc5054b6fc0b8ecb5bed04923a3c1a460a7af"
+    },
+    {
+      "numero": 99,
+      "id": "formula-geracao",
+      "titulo": "Geração interna e face exposta",
+      "grupo": "transferencia",
+      "decisao": "ficha_corrigida",
+      "revisao_individual": {
+        "expressao": "q‴V=hc Aexp(Ts−T∞); Ts=T∞+q‴V/(hc Aexp) — No permanente, ∫V q‴dV=∫A h(Ts−T∞)dA. Com hipóteses propostas, reduz aos produtos; geração positiva impõe Ts>T∞.",
+        "simbolos_unidades": "W/m³·m³=W; lado convectivo W; diferença de temperaturas K. q‴ não está definido por nome e falta domínio do denominador.",
+        "hipoteses": "Permanente, única face exposta, temperatura superficial uniforme, demais faces isoladas e sem outras perdas corretos. Falta geração uniforme ou média volumétrica e hc uniforme/médio.",
+        "vinculo_aula": "#base-geracao-face ensina balanço, geometria e que o interior pode ter gradiente; evita hipótese desnecessária de bloco isotérmico."
+      },
+      "fontes_ids": [
+        "mit_generation",
+        "mit_conv"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Regime permanente; q‴ uniforme ou média no volume; Ts e T∞ uniformes, hc médio na face. Demais faces isoladas, sem radiação ou outras perdas; hc>0 e Aexp>0.",
+        "simbolos_unidades": "q‴: geração volumétrica de energia (W/m³); V: volume gerador (m³); hc: coeficiente convectivo médio (W/(m²·K)); Aexp: área efetivamente exposta (m²); Ts/T∞: temperaturas da face/fluido na mesma escala.",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-geracao-face"
+        ],
+        "ajustes_no_alvo": [
+          "Delimitar as médias que permitem retirar propriedades das integrais."
+        ],
+        "encaminhamento": "Correções de condição, símbolos ou vínculo aplicadas; data-busca sincronizada."
+      },
+      "sha256_antes": "bb0f386dd0577edc19d0e10e428e1abc021f1ebf7a2993c18edce35bd6820302",
+      "sha256_depois": "e4b32d03b87cfde282b239623549998f6852a206208271b5c1147773f97fd6db"
+    },
+    {
+      "numero": 100,
+      "id": "formula-geometria",
+      "titulo": "Volume do bloco e área da face",
+      "grupo": "transferencia",
+      "decisao": "ficha_mantida",
+      "revisao_individual": {
+        "expressao": "V=abc; Aface=ab — Conferência geométrica própria: a×b é área da face; extrusão por c gera abc. A fonte térmica apoia a necessidade de separar área/volume, não é citada como origem dessa identidade geométrica.",
+        "simbolos_unidades": "a,b,c em m, V m³ e A m²; profundidade identificada.",
+        "hipoteses": "Bloco retangular e face a×b escolhida explicitamente.",
+        "vinculo_aula": "#base-geracao-face ensina produto abc, área ab e distinção em relação à área total 2(ab+ac+bc)."
+      },
+      "fontes_ids": [
+        "mit_generation"
+      ],
+      "resultado": {
+        "expressao_mathml": "Preservada byte a byte; validade limitada pelas condições publicadas.",
+        "condicao": "Bloco retangular; a profundidade participa do volume, não da área ab.",
+        "simbolos_unidades": "a, b: lados da face (m); c: profundidade (m); V: m³; Aface: m².",
+        "vinculos": [
+          "../modulos/e1-termodinamica.html#base-geracao-face"
+        ],
+        "ajustes_no_alvo": [
+          "Delimitar as médias que permitem retirar propriedades das integrais."
+        ],
+        "encaminhamento": "Mantida após conferência individual da expressão, símbolos/unidades, hipóteses e ensino vinculado."
+      },
+      "sha256_antes": "c6e16841916686da40fd009f0b8b9fa819d4bde86eb2979b36c7758135392f32",
+      "sha256_depois": "c6e16841916686da40fd009f0b8b9fa819d4bde86eb2979b36c7758135392f32"
+    }
+  ],
+  "limites": [
+    "Não fecha FOR-02, FOR-03, ENE, CIC ou outros IDs. Não acrescenta novas fichas ou certificação de nível do curso.",
+    "Números das verificações são casos autorais de verificação, não dados experimentais ou atividades novas do aluno.",
+    "Fontes web foram lidas nos trechos indicados; as consultas do apoio e do coordenador estão atribuídas. Não se afirma inspeção integral dos PDFs nem consulta independente duplicada pelo Corretor.",
+    "O resumo do inventário de questões permanece idêntico porque seus 197 registros não mudaram. Somente fonte.sha256 e fonte.snapshot do JSON canônico mudaram em razão da aula.",
+    "A expressão “100 expressões” da documentação r1 era imprecisa: as 100 fichas contêm 191 elementos MathML. A r1 não foi reescrita."
+  ]
+}

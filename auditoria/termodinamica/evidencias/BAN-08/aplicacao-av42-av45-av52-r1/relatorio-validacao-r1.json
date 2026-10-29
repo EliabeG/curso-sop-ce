@@ -1,0 +1,47 @@
+{
+  "id": "BAN-08",
+  "estado": "VALIDADO_PELO_CORRETOR_AGUARDANDO_AUDITOR",
+  "data": "2026-10-29",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "manifesto_inicial": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-av42-av45-av52-r1/manifesto-aplicacao-r1.json",
+    "sha256": "b0f359212d9a7f100a44edbe513f2a610e1a8294ef229b48b18ad5e62d227f26"
+  },
+  "testes": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-av42-av45-av52-r1/validacao-inventario-r1.json",
+      "sha256": "c4dc681129269100f30415b4f536c466a6337b76ea96aac4883897b339b8ee40"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-av42-av45-av52-r1/verificar-versao.mjs",
+      "sha256": "a60fa67a0a7fea4bf3944e6662d9e57afac04f3ee01905fb9857f2115db30ab2"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-av42-av45-av52-r1/versao-verificada.json",
+      "sha256": "bb4759ca49bc2e1b03070f7c40fb94f848e7ef58896e23aca110a1e9bd577392"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-av42-av45-av52-r1/testar-persistencia.mjs",
+      "sha256": "2b8f10564ce71a7dbfdad1b4ee063caa026e0b0cc2a08db008723c43c30f1eaf"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-av42-av45-av52-r1/persistencia-r1.json",
+      "sha256": "0c57a2856a3e835d0b137b6a24b3d1f8e61f8153a16c4a08ad9b712c86ece6db"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-av42-av45-av52-r1/recalculo-av42-av45-av52-r1.json",
+      "sha256": "2cec1fffb163edafdbeef6fb69ed06180239c56df58a9770593be546a3f49f79"
+    }
+  ],
+  "conclusoes": [
+    "Validador do inventário: 197 itens e artigos, 29 recursos, 1260 links locais, zero erros e avisos.",
+    "Verificador da versão: apenas três artigos mudaram, conteúdo fora deles preservado, snapshot idêntico, chaves e 197 IDs preservados e sem colisão entre 80 digitais AV atuais.",
+    "Funções reais de banco em VM com armazenamento e DOM simulados: três respostas antigas ficam no histórico e não contam para versão nova; novas respostas entram no placar, sobrevivem à releitura e refazer remove apenas a atual; falhas de leitura/gravação não sobrescrevem o disco simulado.",
+    "Os três itens foram recalculados na versão efetiva pelo Corretor; revisão independente da versão efetiva permanece pendente."
+  ],
+  "limites": [
+    "Sem navegador real, dados pessoais, teste de aluno, acessibilidade ou certificação externa.",
+    "BAN-07 r3 continua como aceite da versão anterior; revisão localizada das mudanças e impactos é necessária.",
+    "Nenhum aceite de BAN-08, nem alteração de controle."
+  ]
+}

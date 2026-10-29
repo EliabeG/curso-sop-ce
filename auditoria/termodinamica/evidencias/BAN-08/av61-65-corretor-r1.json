@@ -1,0 +1,114 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV61–AV65",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco alternativas e comentários, frações exatas e atribuição das condições.",
+  "registros": [
+    {
+      "id": "av-e1-61",
+      "artigo_sha256": "2ef609887b7c6e57a7b9a8f38f7760b69c0ffe4377c1c2b43d307101ffd1be86",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-61",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Volume admitido à sucção 0,008 m³ e deslocado 0,010 m³ por ciclo.",
+      "solucao": "ηv=0,008/0,010=0,80=80%; inversa 1,25=125%; fração não admitida 0,20=20%.",
+      "resultado": "D, 80%.",
+      "comparacao": "A 8% erra porcentagem; B 20% é fração não admitida; C 100% ignora diferença; D 80%; E 125% inverte razão.",
+      "tolerancia": "Valores exatos nos dados nominais; sem incerteza de medição.",
+      "limite": "Referir volume efetivamente admitido às condições de sucção, como dado.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-62",
+      "artigo_sha256": "795e127dad4361f30a6056f49479171b12c849388cdcdebde7fc09561be75ae7",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-62",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Admissão efetiva de compressor alternativo com câmara aumentando e pressão permitindo entrada.",
+      "solucao": "Válvula de entrada abre e descarga permanece fechada; válvula automática requer pressão da linha superior à da câmara.",
+      "resultado": "D.",
+      "comparacao": "A descreve descarga; B inverte diferencial de pressão; C ambas fechadas impede entrada; D entrada aberta e descarga fechada; E ambas abertas não é arranjo normal.",
+      "tolerancia": "Sem pressões nem vazões numéricas; tolerância não aplicável.",
+      "limite": "Etapa é admissão efetiva, não todo deslocamento de retorno; item r2 alterado em BAN-07, cujo aceite não substitui revisão atual.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-63",
+      "artigo_sha256": "e5ee106ebb64b6a28b89d824d5ee934c4be36dcde18a147d6d65c94bac558c00",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-63",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "Associação de ciclos ideais e equipamentos.",
+      "solucao": "Brayton ideal tem duas isentrópicas e duas isobáricas e modela turbina a gás.",
+      "resultado": "D.",
+      "comparacao": "A Rankine não é motor a centelha; B Stirling não tem quatro etapas Brayton; C Otto não é ciclo a vapor; D Brayton/turbina a gás; E Carnot é reversível e não quatro isobáricas.",
+      "tolerancia": "Duas mais duas etapas, contagem exata; sem tolerância de medição.",
+      "limite": "Modelos usuais idealizados, sem afirmar toda máquina real perfeita.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-64",
+      "artigo_sha256": "d7a2c29feee7ebd705e93fe6d8c6d222c7f365d15e9d5ffd75650f3f900c44df",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-64",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Compressores alternativo e parafuso como deslocamento positivo.",
+      "solucao": "Ambos aprisionam gás e diminuem volume, elevando pressão no mecanismo usual.",
+      "resultado": "D.",
+      "comparacao": "A volume constante contradiz mecanismo; B não exige vácuo de descarga; C mecanismo dinâmico de rotor/difusor não é de deslocamento positivo; D redução do volume aprisionado; E requerem trabalho.",
+      "tolerancia": "Sem pressão ou volume numéricos; não há cálculo ou tolerância.",
+      "limite": "Comentário C distingue fornecimento por rotor e conversão no difusor; classificação não compara rendimento.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-65",
+      "artigo_sha256": "5f993c3d09879d8de3fd56710cb38d657dd3415112868673a9bed285aa473000",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-65",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "ṁ=2 kg/s, h1=3200 kJ/kg, h2=2800 kJ/kg, regime permanente e calor/ΔEc/ΔEp desprezíveis.",
+      "solucao": "Δh=400 kJ/kg; Ẇ=2×400=800 kJ/s=800 kW.",
+      "resultado": "C, 800 kW.",
+      "comparacao": "A 400 omite vazão; B 6400 usa somente h1; C 800; D 12000 soma entalpias; E −800 inverte sinal de potência produzida.",
+      "tolerancia": "Operações exatas nos dados nominais; sem incerteza de medição.",
+      "limite": "Balanço supõe trabalho de eixo como interação relevante e uma entrada/saída; não pressupõe isentropia.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

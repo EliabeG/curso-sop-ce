@@ -1,0 +1,86 @@
+{
+  "id": "FOR-01",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado /root/auditor_aaa",
+  "escopo": "Reauditoria restrita de R1-A; ciência das outras96 fichas herdada por identidade da r1, sem nova ampliação.",
+  "resultado_cientifico": "R1-A_ATENDIDO",
+  "base_parecer": {
+    "arquivo": "FOR-01-r1.md",
+    "sha256": "363575e3c97b729560bce956a90902bdf2934f32025c6826a279be96a1d1519f"
+  },
+  "hashes": {
+    "formulario": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+    "aula": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+    "inventario": "de401cb3f8c56a52db7da18eab7134584cd5d39912fdc797f86b5cc053bdda04",
+    "manifesto": "e45ac6743e82eccbb6fe30f33d64b6b23eec67574141f961cdabc77eafa72a04",
+    "entrega": "06fd14cdcca2d83bf69ddab678f70bf75f25edee5c9cbbcf5fe34c51ad3f7024"
+  },
+  "fichas": [
+    {
+      "numero": 23,
+      "conclusao": "Atendido. Parte fechada conserva só trabalho pV; parte permanente exige todo trabalho não associado ao escoamento nulo, recebido e fornecido, inclusive elétrico. Não elimina indevidamente pv de h."
+    },
+    {
+      "numero": 46,
+      "conclusao": "Atendido. Além de calor nulo e macroenergia desprezível, ausência de todo trabalho não associado ao escoamento permite hentrada≈hsaída; condição coincide com tabela-alvo preservada."
+    },
+    {
+      "numero": 79,
+      "conclusao": "Atendido. Exclusão completa aplicada à caldeira e ao condensador; trabalho útil de bomba/turbina não foi eliminado e as quatro diferenças de h permanecem válidas."
+    },
+    {
+      "numero": 84,
+      "conclusao": "Atendido. Trocadores e válvula não recebem nem fornecem trabalho não associado ao escoamento; compressor continua realizando a transferência de trabalho prevista. Condições de adiabaticidade e ligações foram conservadas."
+    }
+  ],
+  "aula": [
+    {
+      "alvo": "base-calor-latente",
+      "texto_lido": "Em um vaporizador de escoamento permanente, sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico, e com essas variações desprezíveis, Q̇ = ṁh fg . O trabalho pv já está incluído em h. Se uma resistência elétrica está dentro da fronteira e recebe energia, essa redução não se aplica: o balanço é Q̇ − Ẇ não-fluxo = ṁh fg , com trabalho saindo positivo. Um vaporizador externamente adiabático pode ter Q̇ = 0 e Ẇ el,in = ṁh fg , pois Ẇ não-fluxo = −Ẇ el,in .",
+      "resultado": "Coerente com condição da ficha e com convenção Q entrando/W saindo."
+    },
+    {
+      "alvo": "base-rankine",
+      "texto_lido": "bomba/turbina adiabáticas e caldeira/condensador sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico. O trabalho pv já está incluído em h.",
+      "resultado": "Coerente com condição da ficha e com convenção Q entrando/W saindo."
+    },
+    {
+      "alvo": "base-refrigeracao",
+      "texto_lido": "Compressor e válvula são adiabáticos. Evaporador, condensador e válvula não recebem nem fornecem qualquer trabalho não associado ao escoamento, inclusive elétrico; o trabalho pv já está incluído em h. As ligações não trocam calor relevante.",
+      "resultado": "Coerente com condição da ficha e com convenção Q entrando/W saindo."
+    }
+  ],
+  "contraprova": {
+    "fronteira": "Resistência dentro do volume de controle; trabalho elétrico cruza a fronteira. Não confundir com fronteira alternativa que exclui resistência e pode receber calor.",
+    "deducao": "Qdot-Wdot_nfluxo=mdot*hfg. Para externo adiabático,Qdot=0 e Wdot_nfluxo=-Wdot_el,in. Logo Wdot_el,in=mdot*hfg>0. Esse trabalho não nulo viola a hipótese nova da fórmula reduzida, portanto o caso é excluído corretamente e a aula oferece balanço geral.",
+    "segunda_lei": "Para fases saturadas puras à mesma T,p, hfg=T*sfg. Em CV adiabático, Sdot_ger=mdot*sfg=Wdot_el,in/T>0. O argumento é coerente, sem atribuir entropia transportada ao trabalho.",
+    "tipo": "Demonstração simbólica independente; números do autor são didáticos, sem alegação de propriedades tabeladas ou medição."
+  },
+  "derivados": {
+    "registros_cientificos_alterados": [
+      23,
+      46,
+      79,
+      84
+    ],
+    "demais96": "Comparação JSON individual direta no Node REPL: idênticos à revisão100r1.",
+    "contagem": {
+      "fichas": 100,
+      "grupos": 11,
+      "elementos_mathml": 191,
+      "fichas_alteradas_nesta_rodada": 4,
+      "fichas_preservadas_desde_r1": 96,
+      "deltas_aula_nesta_rodada": 3,
+      "alvos_aula_nesta_rodada": 3
+    },
+    "busca": "Quatro condições novas lidas em data-busca, com expressões/símbolos preservados; confronto técnico complementar separado."
+  },
+  "fontes": "Herdadas de r1 nos mesmos modelos; não foi necessário repetir consultas científicas externas.",
+  "limites": [
+    "Não editaram-se produto/controle/evidências dos autores.",
+    "Navegador r2 é do coordenador; não é execução própria do Auditor.",
+    "Não se repetiu auditoria191expressões nem913checks sem alteração; herança exige preservação técnica.",
+    "Sem novoID, piloto, impressão física/PDF ou certificação global de nível."
+  ]
+}

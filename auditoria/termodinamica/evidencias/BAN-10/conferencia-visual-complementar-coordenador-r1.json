@@ -1,0 +1,91 @@
+{
+  "data": "2026-10-27",
+  "revisor": "Coordenador automatizado /root",
+  "metodo": "Dois PDFs obtidos diretamente da banca, com página 1 renderizada por Windows.Data.Pdf. Ambos os PNGs foram efetivamente abertos com view_image em resolução original. Para os demais três itens, releitura das páginas TRF6 e TBG023 já renderizadas e vistas.",
+  "documentos": [
+    {
+      "nome": "cr04-prova",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+      "pagina": 1,
+      "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr04-prova-oficial-r1.pdf",
+      "bytes": 213922,
+      "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3"
+    },
+    {
+      "nome": "cr04-gabarito",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF",
+      "pagina": 1,
+      "arquivo": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr04-gabarito-oficial-r1.pdf",
+      "bytes": 47866,
+      "sha256": "62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8"
+    }
+  ],
+  "renderizacoes": [
+    {
+      "nome": "cr04-prova",
+      "paginas": 4,
+      "pagina": 1,
+      "imagem": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr04-prova-p1-r1.png",
+      "sha256": "b14753c62db4280062df46f7c03d0397865b526ae18f132122e8b0bc17c77045"
+    },
+    {
+      "nome": "cr04-gabarito",
+      "paginas": 1,
+      "pagina": 1,
+      "imagem": "C:\\Users\\User\\Downloads\\SOP-CE\\auditoria\\termodinamica\\evidencias\\BAN-10\\cr04-gabarito-p1-r1.png",
+      "sha256": "518a6ca7c92c4a9f1c1ab7ea9545282b27644725587d7ceb14e78a9775f44523"
+    }
+  ],
+  "itens": [
+    {
+      "id": "cr-e1-04",
+      "codigo": "658_PETROBRAS_017_01",
+      "item_original": 68,
+      "pagina_prova_pdf": 1,
+      "pagina_gabarito_pdf": 1,
+      "gabarito": "C",
+      "conferencia": "O contexto imediato trata de propriedades termodinâmicas e relações de Maxwell. A comparação genérica de sensibilidade de v à temperatura e à pressão consta do original; não especifica perturbações, escalas, estado ou faixa. Chave 68 = C confirmada; aplicação 20/02/2022 e ênfase 17 — Engenharia de Processamento identificadas."
+    },
+    {
+      "id": "cr-e1-39",
+      "codigo": "658_PETROBRAS_017_01",
+      "item_original": 66,
+      "pagina_prova_pdf": 1,
+      "pagina_gabarito_pdf": 1,
+      "gabarito": "C",
+      "conferencia": "O original informa motor de combustão em ciclos, 350 cal da fonte quente e trabalho de 1.470 J. O contexto imediato especifica 1 cal = 4,2 J. Não diz expressamente calor total ou trabalho líquido nem exclui outras fontes e fluxos. A interpretação como máquina térmica cíclica será declarada separadamente. Chave 66 = C confirmada visualmente."
+    },
+    {
+      "id": "cr-e1-34",
+      "codigo": "034_TRF6_011_01",
+      "item_original": 53,
+      "pagina_prova_pdf": 1,
+      "pagina_gabarito_pdf": 1,
+      "gabarito": "C",
+      "conferencia": "Nos PNGs já vistos, o original informa gás ideal, transformação isocórica e recebimento de calor, sem exclusão expressa de outros modos de trabalho. Chave 53 = C confirmada. O mesmo bloco introdutório diz apenas que se trata de termodinâmica."
+    },
+    {
+      "id": "cr-e1-35",
+      "codigo": "034_TRF6_011_01",
+      "item_original": 54,
+      "pagina_prova_pdf": 1,
+      "pagina_gabarito_pdf": 1,
+      "gabarito": "C",
+      "conferencia": "O original declara sistema fechado, processo adiabático, ΔU = −W e trabalho realizado pelo sistema. Não explicita alterações nulas de energia cinética e potencial. Chave 54 = C confirmada."
+    },
+    {
+      "id": "cr-e1-62",
+      "codigo": "888_TBG_023_01",
+      "item_original": 59,
+      "pagina_prova_pdf": 1,
+      "pagina_gabarito_pdf": 1,
+      "gabarito": "C",
+      "conferencia": "O original afirma admissão na descida e o posicionamento das válvulas durante esse movimento. O contexto trata de compressores alternativos de gás natural, sem desenho ou folga explicitados nessa página. Chave 59 = C confirmada. A distinção entre intervalo de admissão e toda a descida será examinada como interpretação técnica."
+    }
+  ],
+  "limites": [
+    "Os três últimos itens utilizam os mesmos PDFs, PNGs e hashes de conferencia-visual-coordenador-r1.json. Não foi alegado teste com o caderno fornecido.",
+    "Esta evidência constata redações e chaves. As decisões de validade e uso serão fundamentadas e auditadas; não se atribui uma justificativa oficial que não tenha sido examinada.",
+    "Não encerra FON-01 global nem BAN-10."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "BAN-07",
+  "data": "2026-10-28",
+  "responsavel": "/root, coordenador, agente automatizado",
+  "metodo": "Interações reais por mcp__cua_repl em origem local temporária, criada exclusivamente para o teste antes/depois.",
+  "origem": "http://127.0.0.1:56679",
+  "html_sha256_antes": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+  "acoes_e_observacoes": [
+    {
+      "item": "q-e1-24",
+      "acao": "Marcar A, Refrigerante do evaporador.",
+      "observado": "Alternativa A marcada e desabilitada; feedback incorreto, gabarito C; histórico de erro visível."
+    },
+    {
+      "item": "q-e1-23",
+      "acao": "Marcar C, 3.",
+      "observado": "Alternativa C marcada e desabilitada; feedback correto. Placar do banco Q: 2 de 30 respondidas, 1 acerto."
+    },
+    {
+      "item": "av-e1-08",
+      "acao": "Marcar D, 160 °C, e clicar Conferir resposta.",
+      "observado": "D marcada; feedback incorreto com gabarito C; placar AV: 1 respondida, 0 corretas, 1 incorreta."
+    }
+  ],
+  "limites": [
+    "Não houve leitura programática de localStorage por esta ferramenta; este registro descreve somente DOM e interface observados.",
+    "A verificação após a alteração será registrada separadamente; não está declarada executada aqui."
+  ]
+}

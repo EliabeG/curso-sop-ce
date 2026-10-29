@@ -1,0 +1,205 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "AV21–AV25",
+  "data": "2026-10-28",
+  "revisor": {"agente": "/root/auditor_av", "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07", "autor_corretor": false, "poder_de_aprovacao": "Vereditos locais dos itens; sem aceite global de BAN-07."},
+  "produto": {"arquivo": "modulos/e1-termodinamica.html", "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80", "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"},
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "escopo": {"previsto": ["AV21", "AV22", "AV23", "AV24", "AV25"], "examinado": ["AV21", "AV22", "AV23", "AV24", "AV25"], "opcoes_examinadas": 25, "fora_de_escopo": "Demais artigos, implementação, controle/checklist e outros IDs; blocos anteriores preservados."},
+  "metodo": "Extração dos artigos atuais por parseHtml/decodeHtml do validador. Comando/recursos e derivação com todas as opções antes da resolução. Bases imutáveis já lidas reutilizadas apenas por identidade do SHA global e alcance declarado. Plausibilidade teórica, sem piloto; nenhum julgamento herdado da narrativa do Corretor.",
+  "itens": [
+    {
+      "item": "AV21",
+      "id_artigo": "av-e1-21",
+      "sha256_artigo": "d30c611664194c81700bc047dc72f6f1d9242c9552a394616ba605226c6aba73",
+      "comando": "Gás ideal com quantidade e composição fixas: julgar equação de estado, determinação de uma variável por duas conhecidas com n conhecido e independência irrestrita de p,V,T.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "I/II/III e cinco combinações julgadas antes da resolução; atributos do article e details omitidos na extração inicial."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Quantidade e composição fixas são explícitas. R universal é constante, e não se pede cálculo que exija seu valor numérico.",
+        "hipoteses": "Estados ordinários de gás ideal com p,V,T absolutos positivos e finitos, n positivo; exclui pontos degenerados que não representam o estado gasoso finito do enunciado.",
+        "unidades": "pV=nRuT exige unidades compatíveis, pressão e temperatura absolutas. O item é conceitual, sem conversões.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-gas-modelo"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "pV=nRuT impõe uma restrição entre p,V,T para n/composição fixos. I verdadeira. Com duas conhecidas, p=nRuT/V, V=nRuT/p ou T=pV/(nRu) determina a terceira no domínio positivo; II verdadeira. III falsa, porque alterar uma variável em geral exige ajustar ao menos outra para manter a igualdade. Conjunto correto {I,II}.",
+        "chave_derivada": "B",
+        "unicidade": "Só B inclui exatamente I e II. As demais aceitam III falsa ou omitem afirmação verdadeira; não há números ou arredondamentos."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "II e III, apenas.", "correta": false, "demonstracao": "II verdadeira, mas III falsa e I deveria ser incluída.", "erro_plausivel": "Reconhecer uma receita para calcular incógnita sem entender que ela é uma restrição de estado, mantendo a ideia de variáveis livremente independentes.", "plausibilidade": "Teórica, baseada em compreensão fragmentada da relação."},
+        {"letra": "B", "texto": "I e II, apenas.", "correta": true, "demonstracao": "Corresponde à existência da equação e à resolução de uma incógnita, rejeitando independência irrestrita.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "C", "texto": "I, II e III.", "correta": false, "demonstracao": "Aceita III apesar da restrição reconhecida em I/II.", "erro_plausivel": "Confundir capacidade de controlar variáveis experimentalmente com independência de seus valores de equilíbrio.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "III, apenas.", "correta": false, "demonstracao": "Inverte os três julgamentos; p,V,T não são irrestritos.", "erro_plausivel": "Ignorar a equação de estado e tratar pressão, volume e temperatura como grandezas sem vínculo.", "plausibilidade": "Plausível como desconhecimento da restrição constitutiva."},
+        {"letra": "E", "texto": "I, apenas.", "correta": false, "demonstracao": "Omite II, embora haja uma equação com apenas uma incógnita após conhecer n e duas variáveis.", "erro_plausivel": "Supor que é necessário fornecer as três variáveis, identidade do gás ou massa molar mesmo quando n e a constante universal já bastam.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "B", "coincide": true, "comentario": "Confere. A/C/D rejeitam a independência irrestrita e E reconhece II verdadeira; a solução mantém quantidade conhecida como condição da determinação."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-21", "uso": "Proposições/opções, depois resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-modelo", "origem": "Leitura própria no AV18, mesmo SHA global congelado.", "alcance_reutilizado": "pV=nRuT, quantidade/composição fixas e uso de valores absolutos; solução e opções de AV21 derivadas novamente."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV22",
+      "id_artigo": "av-e1-22",
+      "sha256_artigo": "a60b027d19ccee5b6445c7865ba43a1732ddb069c63592895d523ebb82738e36",
+      "comando": "Gás real com pV=180 kJ e nRT=200 kJ nas mesmas condições; achar Z e concluir sobre desvio da equação ideal.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Razão, dimensão, conclusão e cinco pares de respostas julgados antes do comentário."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Os dois produtos fornecidos nas mesmas condições bastam para a razão. Não são necessários p,V,n ou T separados.",
+        "hipoteses": "Valores nominais fornecidos tratados como dados do exercício, sem incertezas instrumentais especificadas. Z=1 caracteriza a equação ideal; não se faz afirmação sobre tolerância de um projeto que aceite idealidade aproximada.",
+        "unidades": "kJ/kJ cancela; Z é adimensional. A diferença 200-180 teria unidade kJ e não é Z.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-gas-energia", "#base-gas-modelo"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Z=pV/(nRuT)=180/200=0,90. Para a equação ideal, pV=nRuT e Z=1. O produto medido é nominalmente 10% menor que o produto ideal, logo existe desvio nas condições dadas. Não se conclui que a aproximação seja proibida em qualquer projeto: só que a igualdade ideal exata não vale para os números.",
+        "chave_derivada": "B",
+        "unicidade": "B combina valor e conclusão corretos. E repete 0,90 mas afirma idealidade exata, não sendo equivalente à B. A usa o inverso, C troca por 1,00 e D usa diferença. A precisão 0,90 não arredonda a 1,00 na apresentação proposta."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "Z = 1,11; o gás é ideal.", "correta": false, "demonstracao": "200/180=1,111... é o inverso; mesmo esse valor diferente de 1 não comprovaria igualdade ideal.", "erro_plausivel": "Inverter a definição e confundir proximidade de 1 com identidade exata.", "plausibilidade": "Plausível conceitualmente e numericamente."},
+        {"letra": "B", "texto": "Z = 0,90; há desvio em relação ao gás ideal.", "correta": true, "demonstracao": "180/200=0,90, diferente de 1.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "C", "texto": "Z = 1,00; não há desvio.", "correta": false, "demonstracao": "180 não é igual a 200; o quociente é 0,90.", "erro_plausivel": "Impor Z=1 por automatismo ao ver nRT ou arredondar grosseiramente a razão antes de julgar o desvio.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "Z = 20 kJ; há desvio.", "correta": false, "demonstracao": "200-180=20 kJ é diferença de produtos energéticos, não fator adimensional.", "erro_plausivel": "Usar diferença absoluta para quantificar desvio onde a definição exige razão.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "E", "texto": "Z = 0,90; o gás é exatamente ideal.", "correta": false, "demonstracao": "Valor certo, conclusão incompatível com Z≠1.", "erro_plausivel": "Aplicar a expressão de Z corretamente, mas não distinguir gás real, aproximação ideal e igualdade ideal exata.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "B", "coincide": true, "comentario": "Cálculo, caráter adimensional e todas as refutações conferem. O comentário A rejeita tanto a inversão quanto a classificação; E separa valor correto de conclusão errada."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-22", "uso": "Dados/opções, depois resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-energia", "origem": "Leitura própria no AV13, mesmo SHA global congelado.", "alcance_reutilizado": "Definição Z=pv/(RT) e valor ideal 1; nenhum julgamento de AV22 herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-modelo", "origem": "Leitura própria no AV18, mesmo snapshot.", "alcance_reutilizado": "Z na base molar pV/(nRuT), limites de idealidade."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Razão versus diferença e verificação dimensional."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV23",
+      "id_artigo": "av-e1-23",
+      "sha256_artigo": "52ce7c5b255380dd1c2d876058b8965c9ff3feaa6e373c57f6f8e46bd3db529b",
+      "comando": "Escolher condição geralmente mais favorável à aproximação ideal em instalações, longe da condensação; esquema de recipiente com gás.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Figura vista e condições julgadas antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Questão qualitativa pede condição geralmente favorável, não comprovação de idealidade de um gás específico. Não são necessários valores de pressão/temperatura ou composição.",
+        "hipoteses": "Regime de baixa densidade e afastamento da condensação favorece reduzir correções de volume molecular/interações. Temperatura alta isoladamente ou pressão alta não garantem idealidade.",
+        "unidades": "Sem valores numéricos, escalas ou conversões.",
+        "figuras": "PNG inspecionado: recipiente fechado/isolado, membrana com gás ideal e região externa marcada vácuo. Não contém p,T ou outros números. É ilustração, sem dados indispensáveis à escolha geral; o rótulo gás ideal não demonstra condições reais de idealidade.",
+        "bases_acessiveis": ["#base-gas-modelo"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "No limite diluído, volume próprio e efeitos de interação se tornam pequenos perante o volume e a energia cinética, aproximando pV de nRT. Pressão suficientemente baixa favorece baixa densidade; temperatura suficientemente alta e afastamento da condensação reduzem a relevância de atração e mudança de fase. A combina as condições favoráveis. B/C/D fazem o contrário ou usam critério insuficiente; E nega os desvios reais.",
+        "chave_derivada": "A",
+        "unicidade": "O modal geralmente e o afastamento da condensação delimitam A. Nenhuma outra opção descreve condição favorável geral; não há arredondamento. O desenho não é evidência quantitativa de idealidade."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "baixa pressão e temperatura suficientemente alta.", "correta": true, "demonstracao": "Favorece gás diluído e energia cinética predominante, respeitado o afastamento de condensação.", "erro_plausivel": null, "plausibilidade": "Resposta válida, sem afirmar garantia universal."},
+        {"letra": "B", "texto": "alta pressão como único critério.", "correta": false, "demonstracao": "Pressão alta pode elevar densidade e correções; não é garantia de idealidade.", "erro_plausivel": "Associar maior pressão a comportamento gasoso mais ideal ou à maior precisão da lei, sem considerar proximidade molecular.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "C", "texto": "alta pressão e temperatura próxima da condensação.", "correta": false, "demonstracao": "Favorece efeitos de interação e fase, afastando-se do limite diluído.", "erro_plausivel": "Confundir condições de condensação/armazenamento comprimido com validade do modelo ideal.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "temperatura baixa junto da saturação.", "correta": false, "demonstracao": "Perto da saturação e com menor energia térmica, efeitos de atração/fase não são desprezíveis como regra geral.", "erro_plausivel": "Supor que menor agitação térmica simplifica o gás, ignorando o crescimento relativo das interações.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "qualquer condição, pois todo gás real tem Z = 1.", "correta": false, "demonstracao": "Z=1 é identidade do modelo ideal; gases reais podem apresentar Z diferente de 1.", "erro_plausivel": "Generalizar a equação ideal e o valor Z=1 para qualquer substância/estado real.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "A", "coincide": true, "comentario": "Justificativas corretas. O trecho sobre ler o esquema não deve ser tomado como demonstração de leitura quantitativa: a solução científica depende das condições escritas nas opções, não de dados do desenho."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-23", "uso": "Comando/opções e, depois da derivação, resolução."},
+        {"tipo": "figura_local", "arquivo": "assets/questoes-reais-e1/figura-9d164690a624.png", "sha256": "9d164690a6243cb31b9ea0f734b9a85ad4c6570398b9d5ef9278e4f44332bcc2", "uso": "Inspeção visual direta: sem variáveis numéricas; presença de membrana, gás ideal e vácuo."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-modelo", "origem": "Leitura própria no AV18, mesmo SHA global congelado.", "alcance_reutilizado": "Baixa densidade, pressão baixa, temperatura alta e limites da condensação; nenhuma resposta deste item herdada."}
+      ],
+      "achados": [{"id": "AV23-alt", "natureza": "observacao_nao_bloqueante", "descricao": "Alt diz recipiente com suas variáveis termodinâmicas indicadas; a imagem mostra gás/membrana/vácuo/isolamento, sem p,T ou outras variáveis. A figura é ilustrativa e não contém dado necessário ausente do texto, portanto não invalida suficiência ou unicidade em BAN-07.", "melhoria_objetiva": "Descrever a figura efetiva: recipiente fechado e isolado, gás confinado por membrana e vácuo na região externa. Não contar esta questão como interpretação quantitativa do gráfico."}],
+      "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV24",
+      "id_artigo": "av-e1-24",
+      "sha256_artigo": "8e27e9a89a7e9cd792555923bc8888441ac0ec412520da31a5b29b2379cf79c6",
+      "comando": "Sensor de gás ideal a volume constante, sem alterar massa, passa de 300 a 360 K; achar pfinal/pinicial.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Razão e cinco erros julgados antes da resolução, omitida da extração inicial."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Massa e volume fixos permitem cancelar nR/V. Temperaturas absolutas são fornecidas. Não se requer pressão inicial numérica.",
+        "hipoteses": "Mesmo gás de composição fixa no sensor, modelado ideal. p é pressão termodinâmica absoluta, como definido nas bases de equação de estado; o enunciado não introduz leitura manométrica.",
+        "unidades": "K/K cancela e a razão de pressões é adimensional. Delta T=60 K não é número adimensional; aumento relativo 0,20 difere de razão 1,20.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-gas-modelo", "#base-absolutas"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "p=nRuT/V, com n,V e composição fixos. Logo pfinal/pinicial=360/300=1,20. A variação relativa é (360-300)/300=0,20, mas não é o que o comando pede.",
+        "chave_derivada": "E",
+        "unicidade": "Só E tem 1,20. D arredonda a razão inversa 300/360=0,833333..., sem equivalência com E. A=60 é diferença e B=0,20 é incremento relativo; C=1 omitiria o efeito térmico."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "60,00.", "correta": false, "demonstracao": "360-300=60 K é diferença de temperaturas, sem divisão.", "erro_plausivel": "Trocar a razão solicitada pela diferença entre leituras.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "0,20.", "correta": false, "demonstracao": "(360-300)/300=0,20 é aumento relativo de pressão.", "erro_plausivel": "Responder incremento relativo em lugar do quociente final/inicial.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "1,00.", "correta": false, "demonstracao": "Implicaria pressão invariável apesar do aumento de T com V fixo.", "erro_plausivel": "Supor que massa/volume constantes também fixam pressão ou ignorar a mudança térmica.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "0,833.", "correta": false, "demonstracao": "300/360=0,833333... é inicial/final.", "erro_plausivel": "Inverter os índices do quociente pedido.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "E", "texto": "1,20.", "correta": true, "demonstracao": "360/300=1,20.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Conta e cinco explicações conferem. B distingue corretamente razão de aumento relativo; D identifica a inversão."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-24", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-modelo", "origem": "Leitura própria no AV18, mesmo SHA global congelado.", "alcance_reutilizado": "p/T constante quando n,V,composição fixos; nenhum julgamento deste item herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-absolutas", "origem": "Leitura própria no AV09, mesmo snapshot.", "alcance_reutilizado": "Pressão e temperatura absolutas na equação de estado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Razão final/inicial versus incremento relativo."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV25",
+      "id_artigo": "av-e1-25",
+      "sha256_artigo": "944eadc933945dd04024af4da9585627d9484f9e2095af98a0efb541c9ff8ba1",
+      "comando": "Quantidade fixa de gás ideal com pressão absoluta duplicada e volume aumentado em 50%; determinar a mudança percentual da temperatura absoluta em relação à inicial.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Multiplicadores e percentuais de todas as opções derivados antes do comentário."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "n fixo e dois fatores relativos de p,V bastam para a razão de T; temperaturas numéricas não são necessárias.",
+        "hipoteses": "Mesmo gás de composição constante no modelo ideal. Pressão e temperatura explicitamente absolutas; aumento de 50% significa V2=1,5V1, não 0,5V1.",
+        "unidades": "Razões p2/p1,V2/V1,T2/T1 adimensionais; aumento percentual é (T2/T1-1)×100%.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-gas-modelo"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "pV=nRuT implica T2/T1=(p2/p1)(V2/V1)=2×1,5=3. Portanto Delta T/T1=3-1=2, ou aumento de 200%. A temperatura final é 300% da inicial, expressão diferente de aumento de 300%.",
+        "chave_derivada": "C",
+        "unicidade": "Só C afirma aumento de 200%. B descreve aumento de 300%, isto é T2/T1=4, e não é equivalente à temperatura final igual a 300% da inicial. As demais ignoram parte dos dados ou a relação de estado; não há arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "aumenta 100%.", "correta": false, "demonstracao": "Só o fator 2 da pressão daria T2/T1=2 e aumento 100% se V fosse fixo.", "erro_plausivel": "Aplicar p proporcional a T sem considerar aumento de volume.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "aumenta 300%.", "correta": false, "demonstracao": "3×100%=300% é valor final relativo, mas deve subtrair 100% para obter aumento.", "erro_plausivel": "Confundir razão final/inicial com incremento percentual.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "aumenta 200%.", "correta": true, "demonstracao": "(2×1,5-1)×100%=200%.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "D", "texto": "aumenta 50%.", "correta": false, "demonstracao": "Somente o fator 1,5 do volume daria aumento 50% se pressão fosse fixa.", "erro_plausivel": "Aplicar V proporcional a T ignorando duplicação de pressão.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "E", "texto": "permanece constante.", "correta": false, "demonstracao": "O produto pV triplica com n fixo; T constante exigiria p2V2=p1V1.", "erro_plausivel": "Tratar qualquer transformação de quantidade fixa como isotérmica/Boyle ou confundir quantidade constante com temperatura constante.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "C", "coincide": true, "comentario": "Correto e explícito sobre a diferença entre final de 300% e aumento de 200%. A/D omitem respectivamente volume/pressão; E é refutada pelo produto triplicado."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-25", "uso": "Dados/opções, depois resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-modelo", "origem": "Leitura própria no AV18, mesmo SHA global congelado.", "alcance_reutilizado": "T2/T1=(p2/p1)(V2/V1) e quantidade/composição fixas; nenhuma solução de AV25 herdada."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Razão final/inicial versus aumento percentual."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    }
+  ],
+  "cobertura": {
+    "autoria": "Exame efetivo de /root/auditor_av; cinco derivações e 25 julgamentos próprios.",
+    "ids": ["AV21", "AV22", "AV23", "AV24", "AV25"],
+    "ids_artigo": ["av-e1-21", "av-e1-22", "av-e1-23", "av-e1-24", "av-e1-25"],
+    "itens": 5,
+    "juizos_de_alternativas": 25,
+    "alternativas_por_item": {"AV21": ["A","B","C","D","E"], "AV22": ["A","B","C","D","E"], "AV23": ["A","B","C","D","E"], "AV24": ["A","B","C","D","E"], "AV25": ["A","B","C","D","E"]},
+    "proposicoes_AV21_julgadas": ["I", "II", "III"],
+    "derivacoes_independentes": 5,
+    "confrontos_com_comentario": 5,
+    "dados_modelos_unidades_sinais_restricoes_suficiencia": 5,
+    "unicidade_e_arredondamentos": 5,
+    "figuras": "AV23 inspecionada visualmente, hash registrado; ilustração sem dados quantitativos necessários. Demais artigos sem figuras.",
+    "bases": "Reutilização das leituras próprias por identidade do snapshot e alcance, sem releitura de rotina de arquivos imutáveis.",
+    "limitacao_cegamento": "Chaves dos metadados omitidas, resoluções lidas após derivação de cada item. Não se reivindica experimento formal de cegamento.",
+    "aprovacoes_locais": ["AV21", "AV22", "AV23", "AV24", "AV25"],
+    "itens_com_ajuste_obrigatorio": [],
+    "aceite_global_BAN07": false
+  },
+  "resumo": {
+    "veredito_bloco": "APROVADO_NO_ESCOPO_BAN-07",
+    "ajustes_obrigatorios": [],
+    "observacoes_nao_bloqueantes": ["AV23-alt: a imagem não mostra variáveis termodinâmicas, embora o texto alternativo diga que sim. Corrigir sua descrição é melhoria objetiva; os dados necessários e a resposta da questão conceitual permanecem determinados no texto."],
+    "decisao_de_liberacao": "Sem liberação do próximo ID ou aceite global. Parecer científico parcial para consolidação pelo Auditor principal."
+  }
+}

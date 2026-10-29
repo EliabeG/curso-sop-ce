@@ -1,0 +1,534 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "CR76–CR80",
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "BLOCO_CONCLUIDO; três itens pontuáveis e dois estudos críticos aprovados nos alcances declarados; sem aprovação global",
+  "criterio": "Suficiência, consistência física, comando, unidades, restrições e todas as opções. CR79/80: separar chave documental, interpretações e contramodelos; avaliar roteiro e uso sem nota, sem impor unicidade pontuável a textos reconhecidamente insuficientes.",
+  "base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "extrato_anterior": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+    "metodo": "Parser canônico importado; comandos, dados, opções e avisos anteriores à cr-resolucao lidos primeiro. Derivações iniciais registradas em commentary antes do confronto com comentários. CR80: figura local inspecionada visualmente. Identidades individuais com o extrato conferidas."
+  },
+  "fontes_comuns_lidas": [
+    {
+      "referencia": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "alcance": "Papéis e padrão de aceite; leitura no bloco CR51–55"
+    },
+    {
+      "referencia": "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+      "alcance": "Critérios por formato, herança e estudos críticos; leitura no bloco CR51–55"
+    }
+  ],
+  "registros": [
+    {
+      "id": "cr-e1-76",
+      "sha256_artigo": "d0c7cf75f2aedc3bca09119745417868f7ab2cc7e65239537a37397c7cc9a872",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. Reconhecimento dos mecanismos na terminologia de transferência de calor apresentada na base; nenhuma conta é exigida.",
+      "demonstracao": "Advecção designa o transporte de energia pelo movimento global do fluido, representado por um fluxo associado a velocidade e energia transportada por massa. Não se define por transporte cumulativo na presença de gradiente térmico: um fluido em movimento pode carregar energia mesmo com temperatura espacialmente uniforme, sem acumular energia no volume de controle. Na convecção entre parede e fluido, movimento e difusão térmica atuam juntos; junto à parede impermeável, o transporte normal é difusivo. A primeira definição da proposição é inadequada, e a atribuição apenas do movimento global à convecção não a corrige.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Aceitaria a definição errada de advecção e confundiria transporte pelo escoamento com acumulação/difusão térmica."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "Rejeita a distribuição inadequada dos mecanismos no contexto adotado. O fato de alguns textos usarem convecção e advecção como termos próximos em equações de transporte não valida a definição cumulativa fornecida."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Identifica advecção com movimento global e a transferência convectiva com movimento e difusão, sem afirmar que não exista condução em fluidos.",
+      "criterios": {
+        "dados": "ATENDIDO — conceitual",
+        "consistencia_fisica": "ATENDIDO — transporte, difusão e acumulação distinguidos",
+        "comando": "ATENDIDO — frase inteira examinada",
+        "unidades": "NAO_APLICAVEL — sem valores ou fluxos pedidos",
+        "restricoes": "ATENDIDO — terminologia do contexto de transferência de calor, sem impor sinonímia universal entre áreas",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — confusão de movimento global, difusão e acumulação; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-76",
+          "alcance": "Artigo atual lido em duas etapas; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-transferencia",
+          "alcance": "Trecho inicial relido neste bloco: difusão, convecção de superfície, advecção e parede impermeável"
+        }
+      ],
+      "heranca": "Nenhum parecer anterior substituiu a derivação deste juízo.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-77",
+      "sha256_artigo": "3904164b53402e239cc2b0f3b9de5eb0d61467da12725310a882f4169c0bd661",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. O nome condensador e a posição após o compressor identificam o lado de rejeição de calor do ciclo usual.",
+      "demonstracao": "No ciclo de compressão de vapor, o refrigerante chega ao condensador em alta pressão, normalmente como vapor superaquecido. Ele perde entalpia para a vizinhança, pode dessuperaquecer, condensa de vapor para líquido e pode sub-resfriar. Em regime permanente sem trabalho no condensador e com outras variações desprezíveis, Qdot_rejeitada=mdot*(hentrada-hsaida)>0. Absorver calor e passar de líquido para vapor é função do evaporador, no outro lado do ciclo.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Inverte tanto o sentido do calor quanto o sentido da mudança de fase no condensador."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "O condensador rejeita calor; a descrição de absorção/vaporização pertence ao evaporador."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Localiza vapor de alta pressão, resfriamento/condensação e rejeição, distinguindo o evaporador. Não exige condensação desde o primeiro instante da entrada superaquecida.",
+      "criterios": {
+        "dados": "ATENDIDO — função conceitual",
+        "consistencia_fisica": "ATENDIDO — balanço e mudança de fase coerentes",
+        "comando": "ATENDIDO — duas alegações falsas examinadas",
+        "unidades": "ATENDIDO — kg/s vezes kJ/kg dá kW na demonstração; nenhum número requerido",
+        "restricoes": "ATENDIDO — funcionamento normal do ciclo; hipóteses do balanço declaradas",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — troca de papéis condensador/evaporador; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-77",
+          "alcance": "Artigo atual, enunciado/opções antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-refrigeracao",
+          "alcance": "Trecho relido neste bloco: estados e funções dos quatro equipamentos, balanços e calor rejeitado"
+        }
+      ],
+      "heranca": "Nenhum aceite anterior substituiu a análise das duas alegações.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-78",
+      "sha256_artigo": "bad6704eace3098a21eb19cab01cedc47792d60458e53adae923306116a58d90",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "B",
+      "chave_produto": "B",
+      "suficiencia": "ATENDIDO. Pergunta uma vantagem entre cinco descrições; a contribuição do calor latente é válida sem prometer COP universal ou segurança intrínseca.",
+      "demonstracao": "Na parcela de mudança de fase, Qdot=mdot*hfg. O elevado hfg da amônia permite grande calor retirado por massa e pode reduzir a vazão para uma mesma carga. Isso contribui para desempenho favorável, enquanto COP=qL/wc também depende da compressão e dos estados. O NIST apresenta 23,4 kJ/mol a 239 K e massa molar 17,0305 g/mol, da ordem de 1,37 MJ/kg. Assim B expressa uma vantagem térmica real, sem que hfg sozinho prove superioridade de qualquer instalação. As outras opções atribuem uma vantagem inadequada de pressão ou segurança.",
+      "calculos_de_apoio": {
+        "natureza": "Conferência própria de dados de fonte primária; não são dados ou exigências numéricas da prova",
+        "hfg_kJ_kg_calculado": 1374.0054607909337,
+        "precisao_hfg": "A entrada 23,4 tem três algarismos; interpretar apenas aproximadamente 1,37 MJ/kg, não todos os dígitos da divisão.",
+        "amonia_psat_a_menos50C_bar": 0.4250523041770118,
+        "origem_pressao": "Antoine NIST: log10(P/bar)=3,18757-506,713/(T/K-80,78), válida de 164 a 239,6 K. Resultado aproximadamente 0,425 bar absoluto a 223,15 K."
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "juizo": "INCORRETA",
+          "justificativa": "Operação sob alta pressão não é uma vantagem geral que torne a amônia especialmente indicada para temperaturas arbitrariamente baixas. A pressão de evaporação cai com a temperatura; o exemplo a -50 °C é subatmosférico. O enunciado não fornece comparação de projeto que sustente essa alegação."
+        },
+        {
+          "opcao": "B",
+          "juizo": "CORRETA_COM_LIMITE_EXPLICITO",
+          "justificativa": "Alto calor latente oferece grande efeito por massa e contribui para desempenho energético favorável. Não significa que o calor latente determine sozinho o COP; a resolução reconhece esse limite."
+        },
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Dispersar-se não torna um vazamento seguro. A toxicidade/irritação e os danos por exposição descritos pelo NIOSH refutam a alegação de segurança intrínseca."
+        },
+        {
+          "opcao": "D",
+          "juizo": "INCORRETA",
+          "justificativa": "A amônia não torna soldagem intrinsecamente segura: os perigos de exposição, sistema pressurizado e faixa inflamável contradizem a alegação. Não se inferiu uma autorização de trabalho a quente."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Alta solubilidade não neutraliza risco químico nem justifica descarte direto em esgoto. A EPA registra toxicidade direta à vida aquática; a alegação genérica de descarte seguro não é uma vantagem física válida. Não se substituiu isso por uma regra legal específica de jurisdição."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Explica efeito refrigerante por massa e condiciona a eficiência ao ciclo/equipamentos; rejeita segurança e descarte como vantagens. Não apresenta o exemplo didático da base como propriedade medida da amônia.",
+      "criterios": {
+        "dados": "ATENDIDO — escolha conceitual; referências externas apenas corroboram os juízos",
+        "consistencia_fisica": "ATENDIDO — hfg, efeito por massa e COP distinguidos",
+        "comando": "ATENDIDO — uma vantagem, sem alegar exclusividade causal",
+        "unidades": "ATENDIDO — conversão g/mol para kg/mol; kJ/mol dividido por kg/mol dá kJ/kg; Antoine usa K e bar absoluto",
+        "restricoes": "ATENDIDO — hfg depende do estado; eficiência do ciclo não decorre isoladamente dele; perigos químicos não são eliminados por dispersão/solubilidade",
+        "unicidade": "ATENDIDO — somente B é uma vantagem válida entre as cinco",
+        "arredondamento": "ATENDIDO — sem alternativas numéricas; cálculos auxiliares usados apenas pela ordem de grandeza",
+        "oposicao": "ATENDIDO — pressão/temperatura, dispersão/segurança, soldagem e solubilidade/descarte representam confusões distintas; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-78",
+          "alcance": "Artigo atual e cinco alternativas, lidos antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-calor-latente",
+          "alcance": "Trecho relido neste bloco: definição, hfg, efeito por massa e limitação do COP"
+        },
+        {
+          "referencia": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7664417&Mask=4",
+          "consulta": "2026-10-28",
+          "tipo": "Fonte primária oficial de dados, efetivamente consultada",
+          "alcance": "Massa molar, entalpia de vaporização a 239 K e coeficientes/domínio Antoine; cálculos auxiliares próprios"
+        },
+        {
+          "referencia": "https://www.cdc.gov/niosh/npg/npgd0028.html",
+          "consulta": "2026-10-28",
+          "tipo": "Fonte primária oficial de perigos, efetivamente consultada",
+          "alcance": "Gás liquefeito comprimido, exposição e sintomas, limites explosivos e nota de tratar a amônia como inflamável; não usado para instruir manutenção"
+        },
+        {
+          "referencia": "https://www.epa.gov/wqc/aquatic-life-criteria-ammonia",
+          "consulta": "2026-10-28",
+          "tipo": "Fonte primária oficial, efetivamente consultada",
+          "alcance": "Toxicidade direta da amônia à vida aquática; não é autorização ou regra local de descarte"
+        }
+      ],
+      "heranca": "Nenhuma prova científica anterior herdada; fontes primárias consultadas e juízos das cinco opções produzidos neste bloco. Busca de fabricante com retorno 403 não foi tomada como evidência de aceite.",
+      "achados": [
+        {
+          "tipo": "limite causal já esclarecido",
+          "descricao": "Grande calor latente contribui para a vantagem térmica, mas não determina isoladamente COP.",
+          "novo_impeditivo": false
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-79",
+      "sha256_artigo": "2ebd9eec55b732bd36a78f605d2d68bb156f3f33656cd4ebfe71f18eda6f4550",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "tipo": "estudo crítico sem nota",
+      "chave_documental_produto": "B",
+      "chave_derivada": "Nenhuma alternativa é garantida pelos dados. B é condicional à predominância radiativa da montagem.",
+      "suficiencia": "ATENDIDO PARA ESTUDO CRÍTICO. O enunciado informa alto vácuo e temperatura das paredes, mas não fornece temperatura, emissividade, área do equipamento nem ligações condutoras. Isso impede demonstrar a predominância exigida por B. O aviso/roteiro anteriores à marcação assumem explicitamente a insuficiência e pedem dois contramodelos.",
+      "demonstracao": "Radiação independe de meio material; suportes, fios e contatos sólidos conduzem em alto vácuo. Nas hipóteses usuais, a troca por gás residual/convecção é desprezível, mas não se declara pressão rigorosamente zero. Comparar Qrad=epsilon*sigma*A*(Tcorpo^4-Tparede^4) e Qcond=G*(Tcorpo-Tparede) exige propriedades e geometria ausentes. Os dois casos abaixo mantêm os dados originais e os mesmos parâmetros radiativos, alterando apenas uma ligação sólida possível; um é dominado por radiação e outro por condução. Logo alto vácuo não prova B.",
+      "calculo_independente": {
+        "origem_escolhas": "Parâmetros didáticos e condutâncias escolhidos no comentário do curso, recalculados pelo auditor; não dados originais nem medições.",
+        "Tcorpo_K": 300,
+        "Tparede_K_nominal": 77.14999999999998,
+        "interpretacao_temperatura": "77,15 K é conversão nominal de -196 °C; não confere precisão centesimal ao original por volta de -196 °C.",
+        "area_m2": 0.1,
+        "epsilon": 1,
+        "sigma_W_m2_K4": 5.670374419e-8,
+        "casos": [
+          {
+            "G_W_K": 0.01,
+            "Qcond_W": 2.2285000000000004,
+            "Qrad_W": 45.729144117086804,
+            "predomina": "radiação"
+          },
+          {
+            "G_W_K": 0.5,
+            "Qcond_W": 111.42500000000001,
+            "Qrad_W": 45.729144117086804,
+            "predomina": "condução"
+          }
+        ],
+        "comparacao": "Reproduz aproximadamente 45,73 W radiativos, 2,23 W ou 111,43 W conduzidos. Não houve nova consulta BIPM/CODATA; sigma nominal usado conforme a ilustração do produto, e a lei física foi conferida por fonte já lida."
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "juizo": "NAO_GARANTIDA",
+          "justificativa": "Radiação apenas exclui ligações sólidas possíveis e usuais; alto vácuo não torna os contatos termicamente isolantes."
+        },
+        {
+          "opcao": "B",
+          "juizo": "CHAVE_DOCUMENTAL; TECNICAMENTE_CONDICIONAL",
+          "justificativa": "Inclui os mecanismos relevantes usuais, mas a predominância radiativa exige ligação condutora fraca, como o primeiro caso. O segundo caso a refuta como consequência necessária do enunciado."
+        },
+        {
+          "opcao": "C",
+          "juizo": "NAO_GARANTIDA",
+          "justificativa": "Acrescenta convecção relevante ao cenário usual de alto vácuo e ainda exige predominância radiativa não demonstrada. Troca residual não foi declarada exatamente nula, mas não fundamenta essa opção."
+        },
+        {
+          "opcao": "D",
+          "juizo": "NAO_GARANTIDA",
+          "justificativa": "Não assegura a condução por contatos e inclui convecção sem dados que a sustentem; a predominância radiativa também não foi dada."
+        },
+        {
+          "opcao": "E",
+          "juizo": "NAO_GARANTIDA",
+          "justificativa": "Condução predominante é possível no segundo caso, mas não é inevitável; o primeiro a contradiz. Além disso, convecção não é o mecanismo relevante assegurado no alto vácuo e radiação não desaparece."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Distingue cenário pressuposto da chave B e conclusão segura sobre mecanismos, rotula os números como escolhas autorais e apresenta contramodelos que realmente invertem a predominância. O roteiro exige explicar dados faltantes e não trata a coincidência de letra como correção técnica.",
+      "dados_suplementares": "Tcorpo=300 K, área 0,10 m², superfícies negras, visão completa, G=0,01/0,50 W/K e troca gasosa desprezada são exclusivamente hipóteses ilustrativas declaradas. Não são retroativamente acrescentadas ao enunciado para provar B.",
+      "criterios": {
+        "dados": "ATENDIDO para estudo da insuficiência; insuficiente para predominância quantitativa como questão de nota",
+        "consistencia_fisica": "ATENDIDO — canais condutor e radiativo e contramodelos válidos",
+        "comando": "ATENDIDO — roteiro anterior à letra pede duas montagens e dados diferenciadores",
+        "unidades": "ATENDIDO — K nas quartas potências; sigma*A*delta(T^4) e G*deltaT resultam em W",
+        "restricoes": "ATENDIDO — hipóteses ilustrativas claramente distintas do original; alto vácuo não equivale a isolamento sólido perfeito",
+        "unicidade": "NAO_APLICAVEL como requisito de nota; nenhuma chave técnica incondicional é fabricada",
+        "arredondamento": "ATENDIDO — razões de magnitudes invertem por margem ampla, sem depender de casas decimais",
+        "oposicao": "ATENDIDO — cinco alternativas examinadas, com mecanismos e predominâncias separados"
+      },
+      "uso_sem_nota": {
+        "marcacao_artigo": "data-cr-avaliacao=estudo-critico",
+        "evidencia": "Aviso e botões documentais atuais; código assets/curso.js idêntico ao inspecionado pelo mesmo auditor em CR62.",
+        "sha256_curso_js": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "alcance": "Guard estudoCritico do E1, remoção de data-cr-resultado e exclusão de contagem pontuável. Inspeção de código reutilizada por identidade; não é novo teste de navegador."
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-79",
+          "alcance": "Artigo integral e cinco alternativas; cálculo do comentário reproduzido com atribuição"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-radiacao-vacuo",
+          "alcance": "Leitura no bloco CR66–70: canais sólidos, radiação, limites do alto vácuo e necessidade de dados para predominância; mesmo HTML congelado"
+        },
+        {
+          "referencia": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+          "alcance": "Fonte primária acadêmica efetivamente consultada no bloco CR66–70: emissividade e troca radiativa líquida; não são atribuídos a ela os parâmetros do curso"
+        },
+        {
+          "referencia": "assets/curso.js",
+          "alcance": "Inspeção efetiva no bloco CR61–65; hash atual confirma identidade da evidência de uso sem nota"
+        }
+      ],
+      "heranca": "Somente inspeção própria do código e fontes estáveis reutilizadas por identidade/alcance. A origem oficial de B continua atribuída ao produto, sem nova conferência do PDF pelo auditor.",
+      "achados": [
+        {
+          "tipo": "insuficiência histórica já tratada",
+          "descricao": "A predominância radiativa não decorre de alto vácuo e parede fria sem caracterizar equipamento e contatos.",
+          "novo_impeditivo": false,
+          "tratamento": "Fora da nota, aviso prévio, roteiro e contramodelos explícitos."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_COMO_ESTUDO_CRITICO_SEM_NOTA"
+    },
+    {
+      "id": "cr-e1-80",
+      "sha256_artigo": "5417c9d9ec6a1d853beee3dff2aa9f0c614813aab6436ae3052a55a1ee2e36f8",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "tipo": "estudo crítico sem nota",
+      "chave_documental_produto": "D",
+      "chave_derivada": "D=40 °C apenas com acumulação nula e única troca por convecção; Ts não é determinado em geral.",
+      "suficiencia": "ATENDIDO PARA ESTUDO CRÍTICO. Dimensões, geração e convecção bastam ao balanço condicional, mas uniformidade espacial da face não dá regime permanente. Sem condição inicial/estado temporal e sem delimitar outras trocas na face, não há Ts único. O aviso e roteiro prévios explicitam exatamente essa limitação.",
+      "demonstracao": "A figura mostra face ABCD de 2 m por 2 m e profundidade DH de 1 m: A=4 m² e V=4 m³. Logo Qgen=400 W e hA=40 W/K. Com convecção como única troca, a primeira lei mantém dU/dt=400-40*(Ts-30) W. Impor dU/dt=0 fornece Ts=40 °C. A uniformidade sobre ABCD não impede que a face e o interior evoluam no tempo. Um estado inicial com todo o bloco a 30 °C, espacialmente compatível com as cinco faces isoladas e a face exposta inicialmente em equilíbrio com o ar, tem Ts=30 °C e acumulação inicial de 400 W. É um contramodelo direto à determinação geral de D; condição inicial escolhida pelo auditor, não dado da prova.",
+      "figura": {
+        "arquivo": "assets/questoes-reais-e1/figura-9d73adf962aa.png",
+        "sha256": "9d73adf962aaabecba761c823d3faca4bb4dd463a7009033e7267242bce84cb2",
+        "metodo": "Inspeção visual própria da imagem local recriada; nenhuma nova comparação com PDF oficial alegada.",
+        "leitura": "ABCD é o plano com arestas AD=2 m e DC=2 m. DH=1 m é profundidade transversal, não uma aresta da face exposta.",
+        "A_exposta_m2": 4,
+        "V_m3": 4
+      },
+      "calculo_independente": {
+        "Qgerada_W": 400,
+        "hA_W_K": 40,
+        "Ts_sem_acumulacao_C": 40,
+        "familia_de_balancos": [
+          {
+            "opcao": "A",
+            "Ts_C": 10,
+            "Qconv_saida_W": -800,
+            "acumulacao_W": 1200
+          },
+          {
+            "opcao": "B",
+            "Ts_C": 20,
+            "Qconv_saida_W": -400,
+            "acumulacao_W": 800
+          },
+          {
+            "opcao": "C",
+            "Ts_C": 30,
+            "Qconv_saida_W": 0,
+            "acumulacao_W": 400
+          },
+          {
+            "opcao": "D",
+            "Ts_C": 40,
+            "Qconv_saida_W": 400,
+            "acumulacao_W": 0
+          },
+          {
+            "opcao": "E",
+            "Ts_C": 50,
+            "Qconv_saida_W": 800,
+            "acumulacao_W": -400
+          }
+        ],
+        "alcance": "Taxas de acumulação necessárias para cada temperatura sob única convecção. São estados possíveis de diferentes transientes, não cinco respostas simultâneas. Não se inferiu capacidade térmica, condutividade, tempo ou dTs/dt não fornecidos; a construção de perfis e condições iniciais pertence ao contramodelo."
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "valor": "10 °C",
+          "juizo": "NAO_DETERMINADA; COMPATIVEL_COM_TRANSIENTE",
+          "justificativa": "O ar a 30 °C fornece 800 W à face e a geração acrescenta 400 W: acumulação de 1200 W. Não é solução estacionária do modelo, mas não é excluída como temperatura instantânea por um enunciado sem condição inicial."
+        },
+        {
+          "opcao": "B",
+          "valor": "20 °C",
+          "juizo": "NAO_DETERMINADA; COMPATIVEL_COM_TRANSIENTE",
+          "justificativa": "O balanço exige entrada convectiva de 400 W e acumulação total de 800 W; não há lei que proíba um corpo inicialmente mais frio que o ambiente."
+        },
+        {
+          "opcao": "C",
+          "valor": "30 °C",
+          "juizo": "CONTRAMODELO_TRANSITORIO_EXPLICITO",
+          "justificativa": "Convecção instantânea nula e geração positiva permitem acumular 400 W; o estado inicial uniforme descrito acima satisfaz os dados e não dá D."
+        },
+        {
+          "opcao": "D",
+          "valor": "40 °C",
+          "juizo": "CHAVE_DOCUMENTAL; TECNICAMENTE_CONDICIONAL",
+          "justificativa": "Geração e saída convectiva de 400 W se igualam; é o resultado sob dU/dt=0 e nenhuma outra troca. Não decorre só de Ts uniforme na face."
+        },
+        {
+          "opcao": "E",
+          "valor": "50 °C",
+          "juizo": "NAO_DETERMINADA; COMPATIVEL_COM_TRANSIENTE",
+          "justificativa": "Saem 800 W por convecção enquanto se geram 400 W; a energia interna cai a 400 W. Um corpo inicialmente quente pode resfriar apesar da geração; a frase não fornece condição que exclua essa situação."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Reproduz volume, área e resultado condicional D, retém a acumulação na análise crítica e exige incluir radiação/outras saídas se presentes. Não usa área das cinco faces isoladas e não transforma a justificativa oficial histórica em hipótese adicional fornecida no comando.",
+      "dados_suplementares": "Regime permanente, convecção como única troca e ausência de outras interações são hipóteses da resolução condicional. O estado inicial a 30 °C é contramodelo autoral deste auditor. Não são dados originais retroativamente acrescentados. Material/capacidade térmica e evolução no tempo não foram inventados como propriedades do bloco.",
+      "distincao_documental": "O produto identifica prova atualizada em 11/05/2026 e versão histórica sem efeito com paginações diferentes, e atribui D ao gabarito. Este bloco não iguala as duas versões nem afirma nova inspeção de nenhuma; verifica o texto/figura atuais do curso e a interpretação científica. A existência de justificativa documentada da banca não acrescenta regime permanente ao comando reproduzido.",
+      "criterios": {
+        "dados": "ATENDIDO para o estudo da insuficiência; suficientes apenas para o cálculo estacionário condicional",
+        "consistencia_fisica": "ATENDIDO — geração, área correta, perdas e acumulação distinguidas",
+        "comando": "ATENDIDO — roteiro prévio pede balanço temporal e hipótese de 40 °C",
+        "unidades": "ATENDIDO — W/m³ vezes m³ dá W; W/(m² K) vezes m² e diferença em K ou °C dá W",
+        "restricoes": "ATENDIDO — uniformidade espacial não confundida com constância temporal; outras trocas superficiais reconhecidas",
+        "unicidade": "NAO_APLICAVEL como item sem nota; nenhuma temperatura única é sustentada sem hipótese temporal",
+        "arredondamento": "ATENDIDO — conta condicional resulta exatamente em 40 °C com os dados nominais; espaçamento de 10 °C entre opções não resolve a insuficiência",
+        "oposicao": "ATENDIDO — cinco opções tratadas pelo mesmo balanço, sem chamar transiente fisicamente possível de erro universal"
+      },
+      "uso_sem_nota": {
+        "marcacao_artigo": "data-cr-avaliacao=estudo-critico",
+        "evidencia": "Aviso, roteiro e botões documentais atuais; código idêntico à inspeção própria do bloco CR61–65.",
+        "sha256_curso_js": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "alcance": "Exclusão do placar e de data-cr-resultado e feedback de coincidência documental; inspeção de código por identidade, sem nova execução de navegador."
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-80",
+          "alcance": "Artigo atual completo e cinco opções, antes do confronto com análise"
+        },
+        {
+          "referencia": "assets/questoes-reais-e1/figura-9d73adf962aa.png",
+          "alcance": "Inspeção visual própria, hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-geracao-face",
+          "alcance": "Trecho efetivamente lido neste bloco: área exposta, volume, hipóteses estacionárias e necessidade de acumulação no transiente"
+        },
+        {
+          "referencia": "https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html",
+          "alcance": "Fonte primária efetivamente lida no bloco CR61–65: conservação de energia para volume de controle e convenções; o balanço do sólido e o contramodelo foram derivados pelo revisor"
+        },
+        {
+          "referencia": "assets/curso.js",
+          "alcance": "Inspeção efetiva do bloco CR61–65, com identidade atual por hash"
+        }
+      ],
+      "heranca": "Somente fontes estáveis e inspeção própria do código reutilizadas por identidade/alcance. Nenhum aceite anterior ou justificativa documental foi usado para demonstrar Ts único.",
+      "achados": [
+        {
+          "tipo": "insuficiência histórica já tratada",
+          "descricao": "Uniformidade espacial de Ts não implica acumulação nula; condição temporal e modelo completo de troca não foram dados.",
+          "novo_impeditivo": false,
+          "tratamento": "Fora da nota, aviso prévio, roteiro e análise de balanço condicional."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_COMO_ESTUDO_CRITICO_SEM_NOTA"
+    }
+  ],
+  "limitacoes": [
+    "Somente este bloco; sem aprovação integral de BAN-07 ou liberação de outro ID.",
+    "Sem piloto, revisão humana ou certificação externa.",
+    "Chaves oficiais atribuídas ao produto; não se alegou nova conferência dos PDFs oficiais.",
+    "Produto, controle e checklist não editados."
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "registrados": 5,
+    "ids": [
+      "cr-e1-76",
+      "cr-e1-77",
+      "cr-e1-78",
+      "cr-e1-79",
+      "cr-e1-80"
+    ],
+    "juizos_de_opcoes": 19,
+    "itens_pontuaveis": 3,
+    "estudos_criticos_registrados": 2
+  },
+  "achados_do_bloco": {
+    "novos_impeditivos": 0,
+    "insuficiencias_historicas_cr79_cr80_com_tratamento_explicito": 2,
+    "limite_causal_cr78_exposto": 1,
+    "ajustes_obrigatorios": 0
+  },
+  "decisao_proximo_ID": "NÃO LIBERADO: bloco parcial não constitui aceite integral de BAN-07 nem liberação de outro ID.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "identidades": [
+      {
+        "id": "cr-e1-76",
+        "sha256_artigo": "d0c7cf75f2aedc3bca09119745417868f7ab2cc7e65239537a37397c7cc9a872",
+        "opcoes": 2,
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-77",
+        "sha256_artigo": "3904164b53402e239cc2b0f3b9de5eb0d61467da12725310a882f4169c0bd661",
+        "opcoes": 2,
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-78",
+        "sha256_artigo": "bad6704eace3098a21eb19cab01cedc47792d60458e53adae923306116a58d90",
+        "opcoes": 5,
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-79",
+        "sha256_artigo": "2ebd9eec55b732bd36a78f605d2d68bb156f3f33656cd4ebfe71f18eda6f4550",
+        "opcoes": 5,
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-80",
+        "sha256_artigo": "5417c9d9ec6a1d853beee3dff2aa9f0c614813aab6436ae3052a55a1ee2e36f8",
+        "opcoes": 5,
+        "conferido": true
+      }
+    ],
+    "registros_unicos": 5,
+    "juizos_de_opcoes": 19,
+    "cr79_cr80_marcados_estudo_critico": true,
+    "sha256_curso_js_reconfirmado": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+    "figura_cr80_hash_reconfirmado": true,
+    "escopo_preservado": "Apenas este parecer foi criado pelo auditor neste bloco; produto, controle e checklist não editados."
+  }
+}

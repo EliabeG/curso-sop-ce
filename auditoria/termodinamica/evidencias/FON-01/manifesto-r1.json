@@ -1,0 +1,635 @@
+{
+  "id": "FON-01",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "status": "congelado_para_auditoria_independente",
+  "autoria": "/root/corretor_aaa",
+  "escopo": "80 CR confrontados documentalmente; três substituições de referência CAESB no produto, metadados de origem e hashes derivados. Não aprova o próprio trabalho nem outros critérios.",
+  "produto": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "0bfd16901421a2135216518b8ff56f062b6c9901e4fb3101e7149a279758e8cb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "964e35024daac2e2102f35f80587933225e51a7f8581cb2ab3843f16114c4e18"
+    }
+  ],
+  "arquivos": [
+    {
+      "arquivo": "assets/curso.css",
+      "bytes": 60276,
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "bytes": 106783,
+      "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+    },
+    {
+      "arquivo": "assets/formulario-e1.css",
+      "bytes": 6209,
+      "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629"
+    },
+    {
+      "arquivo": "assets/formulario-e1.js",
+      "bytes": 2938,
+      "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79"
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "bytes": 27032,
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/FON-01-r1.md",
+      "bytes": 7174,
+      "sha256": "922845ea192373538665bc8e4dac608c7409a473954602b323102e0a834b4612"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/CONFERENCIA_80-r1.md",
+      "bytes": 98090,
+      "sha256": "1348fad49d46e63c02886a6d77df1b5b95de1b6490ab9200929364ca85e168de"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/antes/assets/curso.css",
+      "bytes": 60276,
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/antes/assets/curso.js",
+      "bytes": 106783,
+      "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/antes/assets/registro.js",
+      "bytes": 27032,
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/antes/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "bytes": 59143,
+      "sha256": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/antes/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "bytes": 780241,
+      "sha256": "de401cb3f8c56a52db7da18eab7134584cd5d39912fdc797f86b5cc053bdda04"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/antes/downloads/termodinamica/LEIA-ME.md",
+      "bytes": 3515,
+      "sha256": "fad4c200d926cbee7bed03fe0442594143ddf69993155be51016e434fe1e2579"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/antes/downloads/termodinamica/fontes.json",
+      "bytes": 13441,
+      "sha256": "bd76d1b63a253a0c719a19591101e21a852e6fa0a2411efe3baebb5773c7af6b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/antes/modulos/e1-termodinamica.html",
+      "bytes": 1310369,
+      "sha256": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/atos-extracao-r1.json",
+      "bytes": 35908,
+      "sha256": "ab361a44735be5797cd9282925d43f2406e049a4043a3ab88ee1414b80b2dc7d"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/atos-r1.json",
+      "bytes": 53717,
+      "sha256": "91dc9bf470537b61e185c5184ffba55ae0447cf1798ae5d96b6f56ea3c7361ad"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/atos-r1.md",
+      "bytes": 3609,
+      "sha256": "bd4881e58ea6476fd61ec4faa2639f3aac15a50d76e36881dc6467f7ffbdcd59"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json",
+      "bytes": 213775,
+      "sha256": "10f92c8e41a1a508598664ba68a32bf2ba1dcf842c2cea89e525e93c4b000303"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.md",
+      "bytes": 8995,
+      "sha256": "e827e54b791326127846ec729a2f2dae7b2d6ae5795129a47cc44b8bcc519a15"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/extracao-local-apoio-r1.json",
+      "bytes": 97206,
+      "sha256": "dea010b3a4dbd02274b8ccb7ceb75988ef3a2157e1bf847161acf052efea2492"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas-vistas-r1.json",
+      "bytes": 25552,
+      "sha256": "add195230743004d7f1f5aa98106459f709247ea7bee82373af77b517b9c7c14"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ato-itaipu_23-p1.png",
+      "bytes": 469836,
+      "sha256": "2d114ba33de282e4f1c1c584b2b3da1d8aa4b1c635aea1346393a974f7365f8e"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ato-itaipu_23-p4.png",
+      "bytes": 492518,
+      "sha256": "159709b167c3a73ca64311066ebb23b28cdff830e42a0d89adb4b0aae510c4fb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ato-petrobras_23_nm-p1.png",
+      "bytes": 502313,
+      "sha256": "2c14936c31ffa166dcfbe1e93597404d5528957dfb28431cf09b157c7389bce3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ato-petrobras_23_nm-p3.png",
+      "bytes": 511331,
+      "sha256": "b42d3fc101cc23a666e9d3f450840159864918e8cd4ce2429f2e20793812a3a8"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ato-petrobras_23_ntj-p1.png",
+      "bytes": 464904,
+      "sha256": "506d0c7fd71872dbcde156cda8fce660396ee32ee573c4dc0f011162adc084cd"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ato-petrobras_23_ntj-p3.png",
+      "bytes": 531342,
+      "sha256": "c52fdfb4e4d1bd462a6c30111a5c5af1f89cc645ca7520ce2131829ea5fff83b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ato-petrobras_23_ntj-p4.png",
+      "bytes": 483002,
+      "sha256": "81fdc5a2bceb05d458cc74d6b6094860a9962fa3df18603ae732dc82340d6a20"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-gabarito-p1.png",
+      "bytes": 340694,
+      "sha256": "b9e06824f024c1fc7b7493f4d5b68b9b227a2c6a21afbd8f73da2a0842a614e3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-gabarito-p4.png",
+      "bytes": 356220,
+      "sha256": "b57200adb4e746b3bd9b13dde31ddac323ebde4007ad3492dbe8cb071f7dcf96"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-prova-p1.png",
+      "bytes": 610526,
+      "sha256": "8c6187f36eb562cc1f9ed05e2759f7bc40aec8b6cbda24605b483706965229ec"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-prova-p7.png",
+      "bytes": 570485,
+      "sha256": "eaaad3f1bcc071c9709c85e540bab55496589fbc81af31731c007e5fd2adca70"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-prova-p8.png",
+      "bytes": 500476,
+      "sha256": "9322ad945639ab65ce8bd9d36e140ecd873f09095e67d2a6643270b452946ff9"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/inpe-prova-p9.png",
+      "bytes": 582037,
+      "sha256": "a03a31dff461e667a852688fc5620b702a316895dbce6513156bf7a399255813"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ita-gabarito-p1.png",
+      "bytes": 238417,
+      "sha256": "303676c363380b46066025cfffb8c3391f720451dfd86c71fa8a9d3d3e9fa52b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ita-prova-p1.png",
+      "bytes": 991343,
+      "sha256": "7b60efd43b8367f846395422e1ff0c51d77262d59e99cf456d767e11a5d31608"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ita-prova-p2.png",
+      "bytes": 823834,
+      "sha256": "13f4fe19daeccc45011f75625fc9b9e5f222b4de4aeef72cf580962629c686ba"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/ita-prova-p3.png",
+      "bytes": 1196732,
+      "sha256": "08bb5c0d98a0c554a7e2bb0867772f5a6d4fb53f7fd0b09226ade2499f937f8f"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22m-gabarito-p1.png",
+      "bytes": 202932,
+      "sha256": "277f97b3c9c352639ca432d682db64be90c8ec33a93d1f3c415d50aa20736702"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22m-prova-p1.png",
+      "bytes": 1103763,
+      "sha256": "79950d65c59d35e514447e8a3fe4e3ffaa1b148a8f5a54233aa6adf2caa0c6d0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-gabarito-p1.png",
+      "bytes": 200762,
+      "sha256": "518a6ca7c92c4a9f1c1ab7ea9545282b27644725587d7ceb14e78a9775f44523"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png",
+      "bytes": 961869,
+      "sha256": "b14753c62db4280062df46f7c03d0397865b526ae18f132122e8b0bc17c77045"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-gabarito-p1.png",
+      "bytes": 245831,
+      "sha256": "194466e488954c4f016269f026af7dce184974a7dc9c276485ce8b550195fb96"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p1.png",
+      "bytes": 958619,
+      "sha256": "6e776911276182653b56f214676938d0a8a314d8a116d9e0d298a75926e30777"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p2.png",
+      "bytes": 1095207,
+      "sha256": "3df45befef02f65b5d64e17ae61572427542cae3a4343d060cd16d10e785f9fe"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p3.png",
+      "bytes": 1165449,
+      "sha256": "ac247cc3b12e52a3702a81bd0a9ef31f5a1ee496ee7ab71baa58862ecd1f3008"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p23-prova-p4.png",
+      "bytes": 1087577,
+      "sha256": "8c34d1c543a40cee9af245ace814a7c1a68e68fa9913c1ab234afadd64e15afd"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-gabarito-p1.png",
+      "bytes": 189216,
+      "sha256": "9041d06317afd51b76ccebbac1c5d5f6acd7b0e6bba8f4e074a2e041b6a78224"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p1.png",
+      "bytes": 1064435,
+      "sha256": "ddcb1047ab474750ce2abd0eff840666072bf5f7ffb7f50dff4c46b723fe68aa"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p2.png",
+      "bytes": 965406,
+      "sha256": "263d129f814e557a95ff055f3dcc8b9ddd94699d10339776e34050aefec8ce6c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p3.png",
+      "bytes": 982636,
+      "sha256": "54cf6005c2eedd024baa16a95221e0a99062943cb7d80a415db78ee24614cbc8"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p24-prova-p4.png",
+      "bytes": 763433,
+      "sha256": "d6ecd3c5e4ea40dbf28d6a5dd62f578818ec3dffebd0b3f46576c3d1711200ef"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+      "bytes": 589990,
+      "sha256": "563e70deab73fc10c6af355db9a267a5342243427529efc6407a640436278d42"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/atos-complementares-selecionados-r1.json",
+      "bytes": 4701,
+      "sha256": "2fa410c8cf11e9c786184c94da781496d0c8411cd60b63e86cbf15504c13fbe5"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/atos-versoes-r1.json",
+      "bytes": 14735,
+      "sha256": "5b0ca1cc8ddded408ff24d9821fd39c17127b8f664e45748667303bc2de861a1"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/conferencia-40-r1.json",
+      "bytes": 181916,
+      "sha256": "8677b61d4767964e07b350dbc46dd2c8c258ffb43affc922f955deb017b45c79"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/extracao-ato-cpnuje-r1.json",
+      "bytes": 17942,
+      "sha256": "7e6390bf2fbd0fed1dafca8c4b3f2682dccef389a690a64b1299739f410e1ac5"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/extracao-caesb-atualizada-r1.json",
+      "bytes": 94366,
+      "sha256": "a8cfe1c474d5722b8b9c353ac630f915d976ef55539af9902f9b087ee525df6a"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/extracao-local-r1.json",
+      "bytes": 81658,
+      "sha256": "a92f55f309b57316f4b775463dfa803166c59bde93a3f518c70794ecb73973bb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/notas-40-r1.json",
+      "bytes": 6276,
+      "sha256": "0e3dedd8da31451e26560a3e874fe0662dd9b733cabc2a9501d9a45149841ec4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/portal-inpe/comunicado-recursos.pdf",
+      "bytes": 100032,
+      "sha256": "2f8fce5133bd2d6983f14f638f9a9e7d49dcf4711ad31d013a086d529e234a1a"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/portal-inpe/comunicado-tg29.pdf",
+      "bytes": 135478,
+      "sha256": "94020c05f1babb6554220f5921224791eb9b4991bf781df6f8e36242248415a4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/portal-inpe/obtencao.json",
+      "bytes": 1326,
+      "sha256": "f4e87be830bf53b99e69bb8f73b420a8f87a4e303c3761e977b4de8034fd828b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/portal-inpe/portal-inpe.html",
+      "bytes": 139304,
+      "sha256": "8b76193ecf58cbb46b621d3dfa859b140408cc4c9b825e657c3d46e4b210f1af"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/renderizacao-r1.json",
+      "bytes": 6545,
+      "sha256": "6f13b5725e8541615972efee2de35efe80d11e04c0d95642bd55d73cc341d718"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/renderizar-tarefas.json",
+      "bytes": 6647,
+      "sha256": "d31e5b8320ecb03f0d161e3a2f5d1f5313297998ad068f88259bf5431a5f3f3b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/trf6-edital8-texto.json",
+      "bytes": 731,
+      "sha256": "f3510d0ffa9cc7dab47c89c5491ce58d8c1aaa7a56749e8fc011a8ae64ec0feb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/trf6-edital8.pdf",
+      "bytes": 114838,
+      "sha256": "7b72953099a58dd182d9dcbc36639d7380e7c05832d5f9ff7d4bf72d3f155260"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/triagem-titulos-api-r1.json",
+      "bytes": 100864,
+      "sha256": "7ddd5ea2ca61287c85550181a11e2e56393940fe9ca067b1a064deabe26408fa"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/cae-gabarito-p1.png",
+      "bytes": 315903,
+      "sha256": "131a7d7937b3c7b84b88a1c15de35223c9e1b4e2364cb07ab5cb24e24e88e1c3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/cae-prova-p1.png",
+      "bytes": 792662,
+      "sha256": "64f6c2eb8fdb8892f22cc8ebe705c96e7a33051f081be612ab23867fc6c5a3eb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/cae-prova-p4.png",
+      "bytes": 1042402,
+      "sha256": "b04875f4a43f5730e79ba35a1677cff0e461ad2fe58ea5fba107f1321f6f63ed"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/cae-prova-p5.png",
+      "bytes": 1028007,
+      "sha256": "963efba778f8fd1b95485fd4ea6d6be665c90dbe6cdebef5089b8c4c5f941c9e"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tc-gabarito-p1.png",
+      "bytes": 190870,
+      "sha256": "700f91c8bbed672a8d43b7a9377e6e8d0900e1d26b4bec4d7e921152b93796bc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tc-prova-p1.png",
+      "bytes": 876480,
+      "sha256": "ec5bfac8c2232ba495bc592346ce475811adbba620528151855d2a35f2a32038"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tc-prova-p2.png",
+      "bytes": 1047136,
+      "sha256": "b30cd1d66b90757a26e5e2e9e81be40cabca1cb3070ccfe2be2f596f9d553675"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-gabarito-p1.png",
+      "bytes": 190135,
+      "sha256": "fa0e23196c92db5e96e8bcd2ae71f4a1ca4e59a1190d1125fd966ad5bfd952d0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p1.png",
+      "bytes": 944556,
+      "sha256": "6856acd6be7063fb436a35323eaa71b05a74514c988aba7a174d0b1f24aadfa5"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tm-prova-p3.png",
+      "bytes": 881656,
+      "sha256": "49f774202e0e6b940dd0c78e8a37470c3e74974c35f09cf8c7d58e35c19745af"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-gabarito-p1.png",
+      "bytes": 189044,
+      "sha256": "5354d888433c07f5914d0ea4f5167444319b4ec9d60effa5b32990be304b96e1"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p1.png",
+      "bytes": 1096754,
+      "sha256": "18091f6dbcba732849bbd999e23e24742e125adfd6b9ea6bb2de29792633e03e"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p2.png",
+      "bytes": 979488,
+      "sha256": "ce820821c674fd693190d96890e5d56a01e8434e1b3bff0b15733ac1f2e201e4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p3.png",
+      "bytes": 1070005,
+      "sha256": "79f8c22388994556a7f674b44dff1a20a0124ff823be14343e529b65b8aab68e"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/to-prova-p4.png",
+      "bytes": 231545,
+      "sha256": "172418c3980590a716b199e877afb4816a4bb8cfbf44cac48b2046bd95ff385a"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-gabarito-p1.png",
+      "bytes": 257070,
+      "sha256": "64233fb2c8516238cf95fb083f0f2c3b029c181c173d517990f7194d5a4e18f3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/trf-prova-p1.png",
+      "bytes": 955309,
+      "sha256": "5726776fa459fea543551975ba19390759804f9349db78d322d141ecf0b9940e"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tse-gabarito-p1.png",
+      "bytes": 253256,
+      "sha256": "c17507f83038f145ce45e77d51303a2c4f6b0e83ea30b24a069eb10df56cd813"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tse-prova-p1.png",
+      "bytes": 946975,
+      "sha256": "600a2845a3d2022609f7383c0b64ce79298070a3a98a8c41f838b1acc3499cc9"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/visuais/tse-prova-p2.png",
+      "bytes": 1058267,
+      "sha256": "b93b4712e032393ac796fc1a8d6f05aec80c437fb9959d0a20509c15318781c7"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/delta-r1.json",
+      "bytes": 4161,
+      "sha256": "cd0e693867eff801b632f1469b5fbe110c95649ab3d97be1dd596a3858572d42"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/e1-termodinamica.r1.html",
+      "bytes": 1310895,
+      "sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/extrato-80-antes.json",
+      "bytes": 408427,
+      "sha256": "dde15919557132522ed63809b9babdc8fa54107e944cad71cd3bf53371557dc0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/insumo-auditor-versoes-r1.json",
+      "bytes": 20231,
+      "sha256": "1117babdf0b1e48398e779fb996509cb99cba31add9d820cbe8c18f13939f3be"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/navegador-coordenador-r1.md",
+      "bytes": 2033,
+      "sha256": "208498c10313c576da8bd1f98efe70ea1b918a4d8642f7109420bcb31cf7a31c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/plano-r1.md",
+      "bytes": 3007,
+      "sha256": "be7a9d5dcc162e9ebde9b8b4d096f76e9d4566406e8062533033dd5d2f71cce9"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/preservacao-coordenador-r1.json",
+      "bytes": 519,
+      "sha256": "a423c6a4e13779343405583e177ec17b4295831774f33c6ebb0c9092f76478cc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/snapshot-antes.json",
+      "bytes": 10710,
+      "sha256": "86c95649efa634596fbccdcaf62156adc0c88456ba7523ebe5125b32c15fa980"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/triagem-coordenador-r1.json",
+      "bytes": 5402,
+      "sha256": "3d5e2363fc990b5486d6e1ec0b15f60c93272d3b25ea7129f9f799af9228a6ed"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/triagem-coordenador-r1.md",
+      "bytes": 1963,
+      "sha256": "cc5a50db727db0ca1358af24e7130cd3e9106b1fdc26e55f0c36c8a9b3c7d173"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/verificacao-r1.json",
+      "bytes": 56949,
+      "sha256": "aa539ae40355509fd32294714035e397009e4b0788cc02dce3d14abfd32ec7b0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/verificar-r1.mjs",
+      "bytes": 6635,
+      "sha256": "9ad4d0e98d74caf49a8d40b76fed506478ca6944f4930b77b324edee4c65f3a4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "bytes": 60900,
+      "sha256": "964e35024daac2e2102f35f80587933225e51a7f8581cb2ab3843f16114c4e18"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "bytes": 787184,
+      "sha256": "0bfd16901421a2135216518b8ff56f062b6c9901e4fb3101e7149a279758e8cb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario.schema.json",
+      "bytes": 13126,
+      "sha256": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "bytes": 20990,
+      "sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5"
+    },
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "bytes": 242764,
+      "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0"
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "bytes": 1310895,
+      "sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe"
+    }
+  ],
+  "pacotes_referenciados": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/fontes-coordenador/manifesto-proveniencia.json",
+      "sha256": "cedaccc8aad7c580c5f33d15b01e882060814bb18703246fc209b46b0ae863d5",
+      "arquivos": 31,
+      "todos_hashes_conferidos": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/manifesto-portais.json",
+      "sha256": "71eb33910a1fcde27e9f12cb338a47af8e65e4062daa43f61e1e7417ecacd4a5",
+      "arquivos": 30,
+      "todos_hashes_conferidos": true
+    }
+  ],
+  "copias": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/modulos/e1-termodinamica.html",
+      "sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "0bfd16901421a2135216518b8ff56f062b6c9901e4fb3101e7149a279758e8cb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "964e35024daac2e2102f35f80587933225e51a7f8581cb2ab3843f16114c4e18"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+      "sha256": "563e70deab73fc10c6af355db9a267a5342243427529efc6407a640436278d42"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/CONFERENCIA_80-r1.md",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/evidencias/FON-01/CONFERENCIA_80-r1.md",
+      "sha256": "1348fad49d46e63c02886a6d77df1b5b95de1b6490ab9200929364ca85e168de"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/delta-r1.json",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/evidencias/FON-01/delta-r1.json",
+      "sha256": "cd0e693867eff801b632f1469b5fbe110c95649ab3d97be1dd596a3858572d42"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/verificacao-r1.json",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/evidencias/FON-01/verificacao-r1.json",
+      "sha256": "aa539ae40355509fd32294714035e397009e4b0788cc02dce3d14abfd32ec7b0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/verificar-r1.mjs",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/evidencias/FON-01/verificar-r1.mjs",
+      "sha256": "9ad4d0e98d74caf49a8d40b76fed506478ca6944f4930b77b324edee4c65f3a4"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FON-01/corretor/atos-versoes-r1.json",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/evidencias/FON-01/corretor/atos-versoes-r1.json",
+      "sha256": "5b0ca1cc8ddded408ff24d9821fd39c17127b8f664e45748667303bc2de861a1"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/FON-01-r1.md",
+      "copia": "auditoria/termodinamica/evidencias/FON-01/pacote-r1/auditoria/termodinamica/entregas/FON-01-r1.md",
+      "sha256": "922845ea192373538665bc8e4dac608c7409a473954602b323102e0a834b4612"
+    }
+  ],
+  "limites": [
+    "Os pacotes do coordenador entram por manifesto e hash, com todos os 61 arquivos conferidos. Não são duplicados no pacote-r1.",
+    "A presença de arquivo/hashes certifica integridade e identidade, não substitui a leitura declarada por item.",
+    "A entrega independente permanece pendente; nenhum controle/checklist foi alterado pelo Corretor."
+  ]
+}

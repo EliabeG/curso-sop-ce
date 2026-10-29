@@ -1,0 +1,222 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR21–CR40",
+  "data": "2026-10-29",
+  "responsavel_integracao": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERIDO_COM_APOIO_INDEPENDENTE_SEM_DECISAO_FINAL",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+  },
+  "origem_registros": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cr21-25-corretor-r1.json",
+      "sha256": "d80b60f181d1f59b0486396006e3a8a35e941150e444b9e038320ef50d80e0a6"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cr26-30-corretor-r1.json",
+      "sha256": "961375a472a338c7999c78a55c0e884fcef1e8f017eef37d87f0bb212737f4d0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cr31-35-corretor-r1.json",
+      "sha256": "ca8fd68613a7a3dda12eb5fb46917ddef75ffc5b7558710d94e6507e30a19973"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/cr36-40-corretor-r1.json",
+      "sha256": "2068bb7aa1c9542e94ab8909171a55da27a3c3067f5bc4c18c307a069b5707fd"
+    }
+  ],
+  "apoios": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr21-25-r1-independente.md",
+      "sha256": "5503535db0c35d1c72c844f84305bd1582d9a5db881f5f96024d2055d43ad684",
+      "autor": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr26-30-r1-independente.md",
+      "sha256": "572e09fde893f8dc25d4d694a5fef4064c3ce3785a79b2670cdd205a57e0d664",
+      "autor": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "sha256": "026d50300ff19667444130a5a77a7bf076b4b05d4798b4a1e43aa4480569d375",
+      "autor": "/root/auditoria_av61_70, agente automatizado"
+    }
+  ],
+  "verificador": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/verificar-cr21-40-r1.py",
+    "sha256": "18231c9398cb0fce4fcc6a419c4f7d46f7d2927068f5d5c57c889f337a4c4b3a",
+    "resultado": "20 IDs únicos, artigos conferidos contra HTML e inventário e referidos nos apoios; aritmética nominal com frações exatas passa."
+  },
+  "registros": [
+    {
+      "id": "cr-e1-21",
+      "artigo_sha256": "5e112105b6213109cbaf04f2883ae27052a8c9027ed9d808a0fcd627a326784b",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr21-25-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr21-25-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-22",
+      "artigo_sha256": "a4cb5f18bafa792df4cdc4f632c585b8b49b63f20d7e719b36131dc44d34c944",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr21-25-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr21-25-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-23",
+      "artigo_sha256": "5be283e9eeaad31c39004231ee391654e3f476aaede45b5b81f74163628c3405",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr21-25-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr21-25-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-24",
+      "artigo_sha256": "7263887786f48bf00b02289fba4dcccfda7d655546d4c37da44e14a2d01ed438",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr21-25-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr21-25-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-25",
+      "artigo_sha256": "ad3f5a9cb6c50e2cacacb42b7e8d3a14a6c8cb13320c1048aea23cc599d50ed6",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr21-25-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr21-25-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-26",
+      "artigo_sha256": "7c0ed44062bd50045076b2379e2449d24ef23da635ffe8a4d751ae37fb85303f",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr26-30-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr26-30-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-27",
+      "artigo_sha256": "1ff53155f6fc4ea80c3b4b9d15de2e28342db294570f3e745f659a18456164c0",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr26-30-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr26-30-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-28",
+      "artigo_sha256": "3d6384bcf7120175aba311755ad0ad4f36ff896a0894161de88bc45cb8614365",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr26-30-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr26-30-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-29",
+      "artigo_sha256": "f7ba62e87eedc71077825e5be83a5fd8f4dacb08ba29e658a51e99d5fe42fdac",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr26-30-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr26-30-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-30",
+      "artigo_sha256": "6abb421dab137437146a58fdaeb64d35ec7f9a6161d142f0bd29c9e91ac53f8b",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr26-30-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-cr26-30-r1-independente.md",
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-31",
+      "artigo_sha256": "1195cc79755f79294771716075f277cae296343160770608c81367b2c7272bc3",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr31-35-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-32",
+      "artigo_sha256": "91cacfbdd2254fd2ad8c183e18f65d94da3156c40a211242599f800a554f73d9",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr31-35-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-33",
+      "artigo_sha256": "06e5d8361e1d50448ff26839517404fe07244c5ec74c1594371c11da6536997a",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr31-35-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-34",
+      "artigo_sha256": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr31-35-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-35",
+      "artigo_sha256": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr31-35-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-36",
+      "artigo_sha256": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr36-40-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-37",
+      "artigo_sha256": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr36-40-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-38",
+      "artigo_sha256": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr36-40-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-39",
+      "artigo_sha256": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr36-40-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    },
+    {
+      "id": "cr-e1-40",
+      "artigo_sha256": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/cr36-40-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-cr31-40-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado",
+      "limite_apoio": "Apoio ao exame da resolução; decisão do Auditor responsável e aceitação do ID seguem pendentes."
+    }
+  ],
+  "observacoes": [
+    "CR24, CR34, CR35 e CR39 são estudos críticos sem pontuação; chave documental não é justificativa científica da banca.",
+    "CR24 razão de temperaturas exige hipótese de mesma amostra de gás; CR34 sinal de ΔU é distinto da igualdade ΔU=Q; CR35 requer soma de variações macroscópicas nula; CR39 depende da fronteira e das trocas completas.",
+    "CR26 usa suplemento editorial prévio e caloria termoquímica 4,184 kJ/kcal, ao contrário de CR28/39 que usam 4,2 J/cal conforme próprio enunciado.",
+    "Figura CR37 contém marcações de ângulo de manivela, mas nenhuma escala de trabalho necessária à solução; este detalhe provém do apoio independente CR31–40. Figuras e hashes também registrados nos apoios para CR23, CR26, CR30 e CR33.",
+    "Os apoios atribuem a conferência documental à FON-01 ou a trabalho anterior e não alegam nova leitura visual integral dos originais. A revisão científica permanece atribuída aos autores indicados.",
+    "Identidade não substitui conferência científica ou aceite; o Auditor responsável ainda não decidiu e não há liberação automática do ID.",
+    "Sem divergências numéricas concretas localizadas nos vinte artigos; ausência de incerteza instrumental impede alegar tolerância de medição."
+  ]
+}

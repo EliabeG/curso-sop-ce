@@ -1,0 +1,86 @@
+{
+  "estado": "OK_ESTRUTURAL",
+  "escopo": "IDs, hashes, vínculos e delta das candidatas; sem revisão científica independente, aplicação ou aceite.",
+  "erros": [],
+  "html_sha256": "7541e7c4c8314922992e99e8b62b40342c2d938e6edeac67ef9f74b69f86c17c",
+  "inventario_sha256": "44d19642bcf39109edf620e7304580b7a8a686e7c42cfa7101fa3d118a79d054",
+  "relatorios": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnosticos-11-15-corretor-r1.md",
+      "sha256": "579e9e9444cde291d0ac62864a7220fe0c3f9b6d07497f86d402f85997c1f47a"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnosticos-16-20-corretor-r1.md",
+      "sha256": "044036c42a46499c33afb5c0577ab915b9b4e084d077bff3a56b72d5a23c97d0"
+    }
+  ],
+  "itens": [
+    {
+      "diagnostico": 11,
+      "fragmento_sha256": "b03f1c142dc31638a159c7d145d770898d80eccbb10f6c6486c922e34d61891c",
+      "relatorio": "diagnosticos-11-15-corretor-r1.md"
+    },
+    {
+      "diagnostico": 12,
+      "fragmento_sha256": "618ac9f908af2cd203e8c44ff47708b488aa0e80c61111b4a1e5e082c4e35ca7",
+      "relatorio": "diagnosticos-11-15-corretor-r1.md"
+    },
+    {
+      "diagnostico": 13,
+      "fragmento_sha256": "f632a9109e85568ba75dc475cc9c184359520812a962e4cf9874a6d133fbf140",
+      "relatorio": "diagnosticos-11-15-corretor-r1.md"
+    },
+    {
+      "diagnostico": 14,
+      "fragmento_sha256": "d31dc8c7929c0d00feccdf2f5baca49b3d957a5cb81c7ce36fd26a68330df849",
+      "relatorio": "diagnosticos-11-15-corretor-r1.md"
+    },
+    {
+      "diagnostico": 15,
+      "fragmento_sha256": "9ab4057c910696dc3cd65a11173b0e43c0a39435af075fb112b80d781a62013c",
+      "relatorio": "diagnosticos-11-15-corretor-r1.md"
+    },
+    {
+      "diagnostico": 16,
+      "fragmento_sha256": "c532f8d68448e4171a0be85ed5fda8db65f3d2984dbc3e568793842aba4849f6",
+      "relatorio": "diagnosticos-16-20-corretor-r1.md"
+    },
+    {
+      "diagnostico": 17,
+      "fragmento_sha256": "a91c10b174fea3b8d18ea9382e6a3e34404a645706424171164a86f15dc6f7e3",
+      "relatorio": "diagnosticos-16-20-corretor-r1.md"
+    },
+    {
+      "diagnostico": 18,
+      "fragmento_sha256": "5d6ecc42c3790f16642342163647a88760466897f3a95cdc88b0aec1fc53578a",
+      "relatorio": "diagnosticos-16-20-corretor-r1.md"
+    },
+    {
+      "diagnostico": 19,
+      "fragmento_sha256": "345887a5a233fa75a098ddabe3540edd95857c6fc0feea4c11b99fb64f44ea71",
+      "relatorio": "diagnosticos-16-20-corretor-r1.md"
+    },
+    {
+      "diagnostico": 20,
+      "fragmento_sha256": "ad1478f21da750ea01a02368d9a3461193b9b19354ec4eb913d2e22fff048a32",
+      "relatorio": "diagnosticos-16-20-corretor-r1.md"
+    }
+  ],
+  "candidatas": [
+    {
+      "diagnostico": 12,
+      "sha256_arquivo": "c409e88c1b930961bd88567c212d280d36284dfcb845d3579fff2d8321cd3a4a",
+      "sha256_fragmento": "2a5914ed4fd1abd6a5e0c92af1254bb7cb353eda23e4ba232d1f39ac04187d09"
+    },
+    {
+      "diagnostico": 14,
+      "sha256_arquivo": "970ac86ce8d9e207f83271a2554ec92189ddb76d08be8fbd8d62e792fc9c919c",
+      "sha256_fragmento": "ac518b30e57fcbc1e99b461aeedf936b6ac549be41cda580c12b8182f6234e67"
+    },
+    {
+      "diagnostico": 19,
+      "sha256_arquivo": "5256dc8b5a3ebccc904b4f36edf41482424f713c5acb765563f11389ce23c89b",
+      "sha256_fragmento": "9bb600fe48c6e15ed78eb6c2cff4091af810e917a668f15834fa565203de488a"
+    }
+  ]
+}

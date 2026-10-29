@@ -1,0 +1,95 @@
+{
+  "id": "BAN-07",
+  "data": "2026-10-28",
+  "limite": "Identidade dos sete artigos e cinco recursos, somada à releitura integral nesta rodada. Herda cálculos aceitos apenas nesse alcance; não certifica novos itens nem encerra BAN-08.",
+  "artigos": [
+    {
+      "id": "fun01-e1-saturacao",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-01-r2.md",
+      "copia": "auditoria/termodinamica/evidencias/FUN-01/pacote-r2/modulos/e1-termodinamica.html",
+      "sha256_atual": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "sha256_aceito": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "identico": true
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-01-r2.md",
+      "copia": "auditoria/termodinamica/evidencias/FUN-01/pacote-r2/modulos/e1-termodinamica.html",
+      "sha256_atual": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "sha256_aceito": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "identico": true
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-01-r2.md",
+      "copia": "auditoria/termodinamica/evidencias/FUN-01/pacote-r2/modulos/e1-termodinamica.html",
+      "sha256_atual": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "sha256_aceito": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "identico": true
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-01-r2.md",
+      "copia": "auditoria/termodinamica/evidencias/FUN-01/pacote-r2/modulos/e1-termodinamica.html",
+      "sha256_atual": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "sha256_aceito": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "identico": true
+    },
+    {
+      "id": "fun02-e1-caminhos",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-02-r1.md",
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/modulos/e1-termodinamica.html",
+      "sha256_atual": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6",
+      "sha256_aceito": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6",
+      "identico": true
+    },
+    {
+      "id": "fun02-e1-integrabilidade",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-02-r1.md",
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/modulos/e1-termodinamica.html",
+      "sha256_atual": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+      "sha256_aceito": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+      "identico": true
+    },
+    {
+      "id": "fun02-e1-calor-caminho",
+      "parecer": "auditoria/termodinamica/pareceres/FUN-02-r1.md",
+      "copia": "auditoria/termodinamica/evidencias/FUN-02/pacote-r1/modulos/e1-termodinamica.html",
+      "sha256_atual": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+      "sha256_aceito": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+      "identico": true
+    }
+  ],
+  "recursos": [
+    {
+      "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+      "sha256_atual": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+      "sha256_aceito": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+      "identico": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-calculos-v1.mjs",
+      "sha256_atual": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+      "sha256_aceito": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+      "identico": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-dados-v1.json",
+      "sha256_atual": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+      "sha256_aceito": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+      "identico": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-calculos-v1.mjs",
+      "sha256_atual": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+      "sha256_aceito": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+      "identico": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-caminhos-v1.svg",
+      "sha256_atual": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+      "sha256_aceito": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+      "identico": true
+    }
+  ]
+}

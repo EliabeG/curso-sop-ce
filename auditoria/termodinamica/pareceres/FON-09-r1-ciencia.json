@@ -1,0 +1,378 @@
+{
+  "id": "FON-09",
+  "rodada": 1,
+  "revisor": "Agente automatizado /root/auditor_aaa",
+  "data": "2026-10-27",
+  "estado": "auditoria_concluida",
+  "decisao_cientifica": "Atendido no recorte FON-09",
+  "origem": {
+    "metodo": "Inspeção visual efetiva de três PNGs renderizados por Windows.Data.Pdf pelo coordenador, abertos pelo Auditor com view_image; confronto com texto primário web e HTML.",
+    "imagens": [
+      "prova-oficial-p3-r1.png",
+      "caderno-p14-r1.png",
+      "gabarito-oficial-p1-r1.png"
+    ],
+    "constatacoes": [
+      "Densidade literal e cinco linhas iguais na prova/caderno/HTML.",
+      "Coluna85 correspondeC no documento950_PETROBRAS_23_008_01, aplicação24/03/2024.",
+      "Figura recriada no caderno explicitamente atribuída."
+    ]
+  },
+  "fontes": {
+    "nistTabela2": "https://www.nist.gov/document/nistir5078-tab2pdf",
+    "paginaImpressa": 12,
+    "paginaPDF": 2,
+    "webbook": [
+      {
+        "arquivo": "FON-09-r1-webbook-saturacao.html",
+        "sha256": "b8302cde831d53998408e09d9394bdf51fcfb61ee8c50f4b67b2d647a2994dd9",
+        "metodo": "Nova consulta própria Invoke-WebRequest; linhas de dados coincidem com captura entregue."
+      },
+      {
+        "arquivo": "FON-09-r1-webbook-densidade.html",
+        "sha256": "327345115592e235629345c3444bcdc14063b8899bfcc768bc5fff968e479146",
+        "metodo": "Nova consulta própria Invoke-WebRequest; linha de dados coincide com captura entregue."
+      }
+    ]
+  },
+  "referencias": [
+    {
+      "p": 101.325,
+      "T": 99.974296,
+      "vf": 0.0010434411,
+      "vg": 1.6732012,
+      "source": "Consulta própria NIST WebBook, duas fases"
+    },
+    {
+      "p": 150,
+      "T": 111.349,
+      "vf": 0.00105273,
+      "vg": 1.1593,
+      "source": "NISTIR5078 tabela2 p12/PDF2"
+    },
+    {
+      "p": 200,
+      "T": 120.21,
+      "vf": 0.00106052,
+      "vg": 0.88568,
+      "source": "NISTIR5078 tabela2 p12/PDF2"
+    },
+    {
+      "p": 250,
+      "T": 127.411,
+      "vf": 0.00106722,
+      "vg": 0.71866,
+      "source": "NISTIR5078 tabela2 p12/PDF2"
+    },
+    {
+      "p": 300,
+      "T": 133.522,
+      "vf": 0.00107317,
+      "vg": 0.60576,
+      "source": "NISTIR5078 tabela2 p12/PDF2"
+    }
+  ],
+  "celulas": [
+    {
+      "p_kPa": 101.325,
+      "campo": "T_C",
+      "original_visual": "100",
+      "referencia_independente": 99.974296,
+      "diferenca_original": 0.025704000000004612,
+      "meia_unidade_ultima_casa": 0.5,
+      "classificacao": "compativel_com_arredondamento",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 101.325,
+      "campo": "vf_m3kg",
+      "original_visual": "0.00104",
+      "referencia_independente": 0.0010434411,
+      "diferenca_original": -0.0000034411000000001118,
+      "meia_unidade_ultima_casa": 0.000005,
+      "classificacao": "compativel_com_arredondamento",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 101.325,
+      "campo": "vg_m3kg",
+      "original_visual": "1.695",
+      "referencia_independente": 1.6732012,
+      "diferenca_original": 0.021798800000000007,
+      "meia_unidade_ultima_casa": 0.0005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 150,
+      "campo": "T_C",
+      "original_visual": "114",
+      "referencia_independente": 111.349,
+      "diferenca_original": 2.6509999999999962,
+      "meia_unidade_ultima_casa": 0.5,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 150,
+      "campo": "vf_m3kg",
+      "original_visual": "0.00108",
+      "referencia_independente": 0.00105273,
+      "diferenca_original": 0.00002727000000000003,
+      "meia_unidade_ultima_casa": 0.000005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 150,
+      "campo": "vg_m3kg",
+      "original_visual": "0.354",
+      "referencia_independente": 1.1593,
+      "diferenca_original": -0.8053,
+      "meia_unidade_ultima_casa": 0.0005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 200,
+      "campo": "T_C",
+      "original_visual": "128",
+      "referencia_independente": 120.21,
+      "diferenca_original": 7.790000000000006,
+      "meia_unidade_ultima_casa": 0.5,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 200,
+      "campo": "vf_m3kg",
+      "original_visual": "0.00110",
+      "referencia_independente": 0.00106052,
+      "diferenca_original": 0.00003948000000000016,
+      "meia_unidade_ultima_casa": 0.000005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 200,
+      "campo": "vg_m3kg",
+      "original_visual": "0.206",
+      "referencia_independente": 0.88568,
+      "diferenca_original": -0.6796800000000001,
+      "meia_unidade_ultima_casa": 0.0005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 250,
+      "campo": "T_C",
+      "original_visual": "138",
+      "referencia_independente": 127.411,
+      "diferenca_original": 10.588999999999999,
+      "meia_unidade_ultima_casa": 0.5,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 250,
+      "campo": "vf_m3kg",
+      "original_visual": "0.0012",
+      "referencia_independente": 0.00106722,
+      "diferenca_original": 0.00013277999999999988,
+      "meia_unidade_ultima_casa": 0.00005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 250,
+      "campo": "vg_m3kg",
+      "original_visual": "0.138",
+      "referencia_independente": 0.71866,
+      "diferenca_original": -0.58066,
+      "meia_unidade_ultima_casa": 0.0005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 300,
+      "campo": "T_C",
+      "original_visual": "147",
+      "referencia_independente": 133.522,
+      "diferenca_original": 13.478000000000009,
+      "meia_unidade_ultima_casa": 0.5,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 300,
+      "campo": "vf_m3kg",
+      "original_visual": "0.00114",
+      "referencia_independente": 0.00107317,
+      "diferenca_original": 0.00006682999999999993,
+      "meia_unidade_ultima_casa": 0.000005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    },
+    {
+      "p_kPa": 300,
+      "campo": "vg_m3kg",
+      "original_visual": "0.100",
+      "referencia_independente": 0.60576,
+      "diferenca_original": -0.50576,
+      "meia_unidade_ultima_casa": 0.0005,
+      "classificacao": "incompativel_com_precisao_publicada",
+      "valor_corrigido_confere": true,
+      "original_confere": true,
+      "classificacao_confere": true,
+      "diferenca_confere": true,
+      "precisao_confere": true
+    }
+  ],
+  "densidade": {
+    "rho": 997.04764,
+    "T": 25,
+    "p_kPa": 101.325,
+    "v": 0.0010029611,
+    "rho_aproximada": 1000,
+    "erro_relativo_porcento": 0.29611022398086106,
+    "literal_1000kgcm3_kgm3": 999999999.9999999
+  },
+  "bloqueador": {
+    "id": "R1-A",
+    "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra",
+    "esperado": "ok=false; fragmento PDF inválido",
+    "observado": {
+      "ok": true,
+      "curso": "E1",
+      "itens_registrados": 197,
+      "artigos_encontrados": 197,
+      "recursos_verificados": 15,
+      "links_locais_verificados": 1073,
+      "erros": [],
+      "avisos": [],
+      "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+    },
+    "causa": "Desestruturação de reference.split(\"#\") descarta conteúdo após segundo separador antes de validar rawFragment."
+  },
+  "preservacao_cientifica": {
+    "transcricao": "Identificada como histórica e inadequada para cálculos; conjunto corrigido em bloco separado.",
+    "gabarito": "C preservado; resolução só usa emissividade e comparação controlada.",
+    "ocorrencia_tabela_em_artigos": [
+      "cr-e1-68"
+    ],
+    "AV68": "Não consome os dados defeituosos; usa emissividades0,80→0,20 e razão0,25."
+  },
+  "limites": [
+    "Não executado navegador pelo Auditor.",
+    "Inspeção visual de arquivos renderizados não é teste de leitor de tela.",
+    "Não foi reimplementada a equação IAPWS; valores confrontados com referências primárias e conversões refeitas.",
+    "As URLs WebBook falharam via web.run, mas foram obtidas com sucesso via Invoke-WebRequest."
+  ],
+  "veredito": "AJUSTES_OBRIGATORIOS",
+  "ajustes_obrigatorios": [
+    "R1-A"
+  ],
+  "verificacoes_pendentes": [],
+  "integridade_final": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "bytes": 1270749,
+      "confere_manifesto": true,
+      "copia_identica": true
+    },
+    {
+      "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "bytes": 11334,
+      "confere_manifesto": true,
+      "copia_identica": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "af30160109fa7e9e007e6de74eb1836896194ff90888aec75e0f8a4a86675618",
+      "bytes": 748555,
+      "confere_manifesto": true,
+      "copia_identica": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "1505e80c437fdd6dbbea40973155446ec859ba2fb363752217346876a8fb43db",
+      "bytes": 51262,
+      "confere_manifesto": true,
+      "copia_identica": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "114b1a063cb2a88e505c9ecffd2b22c75f29b709419b24e9e533331fa7283b22",
+      "bytes": 20828,
+      "confere_manifesto": true,
+      "copia_identica": true
+    }
+  ],
+  "subauditoria_tecnica": {
+    "parecer": "FON-09-r1-tecnico.md",
+    "evidencia": "FON-09-r1-tecnico.json",
+    "checks_entregues": 470,
+    "casos_contrato": 39,
+    "casos_pdf_entregues": 8,
+    "casos_independentes": 24,
+    "falhas_mesma_causa": 2
+  }
+}

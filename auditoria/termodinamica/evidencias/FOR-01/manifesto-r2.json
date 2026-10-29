@@ -1,0 +1,159 @@
+{
+  "id": "FOR-01",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "estado": "entrega_congelada_para_auditoria",
+  "correcao": "Somente R1-A: quatro condições/buscas e três alvos excluem qualquer trabalho não associado ao escoamento, nos dois sentidos, inclusive elétrico.",
+  "historico": {
+    "manifesto": "auditoria/termodinamica/evidencias/FOR-01/manifesto-r1.json",
+    "sha256": "b8beebf1ee084ce8387f79c104194b44932e9af656889bcddadae94343ce2f5b",
+    "parecer": "auditoria/termodinamica/pareceres/FOR-01-r1.md",
+    "sha256_parecer": "363575e3c97b729560bce956a90902bdf2934f32025c6826a279be96a1d1519f"
+  },
+  "entrega": {
+    "arquivo": "auditoria/termodinamica/entregas/FOR-01-r2.md",
+    "sha256": "06fd14cdcca2d83bf69ddab678f70bf75f25edee5c9cbbcf5fe34c51ad3f7024",
+    "bytes": 2770
+  },
+  "arquivos": [
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+      "bytes": 242764,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/formulas/termodinamica.html",
+      "alterado_desde_r1": true
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+      "bytes": 1310369,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/modulos/e1-termodinamica.html",
+      "alterado_desde_r1": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "de401cb3f8c56a52db7da18eab7134584cd5d39912fdc797f86b5cc053bdda04",
+      "bytes": 780241,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "alterado_desde_r1": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+      "bytes": 59143,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "assets/formulario-e1.js",
+      "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+      "bytes": 2938,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/formulario-e1.js",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "assets/formulario-e1.css",
+      "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+      "bytes": 6209,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/formulario-e1.css",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+      "bytes": 106783,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/curso.js",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "bytes": 27032,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/registro.js",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "assets/curso.css",
+      "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "bytes": 60276,
+      "copia": "auditoria/termodinamica/evidencias/FOR-01/pacote-r2/assets/curso.css",
+      "alterado_desde_r1": false
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/REVISAO_100-r2.md",
+      "sha256": "ae1f1fcde441c7222e5894937de6679f7f1794f6bdc4660637b6ffa7c9cdbac7",
+      "bytes": 119489
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/delta-inventario-r1-r2.json",
+      "sha256": "9144b2abfa67c88479de562332e34e24cf6bbdba4443925472ace4b03edbab41",
+      "bytes": 520
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/deltas-aula-r1-r2.json",
+      "sha256": "ff657d2dc1d75e1b263c14eba3b50005f389cd8468043e5e0b1cba98a228b99e",
+      "bytes": 1633
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/deltas-fichas-r1-r2.json",
+      "sha256": "d5a563cf432c5aeddc81dfe3c622e1c6dd8af772eafc8d31fa6a483452282df8",
+      "bytes": 22976
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/e1-termodinamica.r2.html",
+      "sha256": "41984e9f1c3c55dde663e4c1d7271c59dd12fab9bcb499fae17c7ebcca680917",
+      "bytes": 1310369
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/navegador-coordenador-r2.md",
+      "sha256": "cefeab1b5229dda9c5220cdbea04db5e0d04637e6c9a8b49526f19bf9580912b",
+      "bytes": 3106
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/preservacao-coordenador-r2.json",
+      "sha256": "78ba3006ad718ca2e5ae5323dbb2a3f1806e2e6b47fe121dd13adf6d95dda0c9",
+      "bytes": 768
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/resposta-r1-a-r2.md",
+      "sha256": "2438a96ba3d201abd39be6f146ad49137551be6f1a4584c8860a9c49d54dd728",
+      "bytes": 2535
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/revisao-100-r2.json",
+      "sha256": "9ae3e62d3c609be37ea0f80a2356ec65799c1a6084de434792fbb30077e4c0b1",
+      "bytes": 201249
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/validacao-inventario-r2.json",
+      "sha256": "e9c0b27c4fb03f378c89955d088604acb42ad2935f1cffbbb5ff2006e57bf4e7",
+      "bytes": 333
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/verificacoes-r2.json",
+      "sha256": "c5c155da8dc1c27cb0d1a839c8d895d97cb0fad48bc844a3853bf2e20fb2ade1",
+      "bytes": 11324
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/FOR-01/verificar-for01-r2.mjs",
+      "sha256": "00220a0cc493fc3ad53f0487b1a59165847583ad9955acc460ca97d9eb5e65c3",
+      "bytes": 6972
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/apoio-coordenador/for01-contagem-mathml.json",
+      "sha256": "1652df087c38ba8328d23bb7f3c2bc481449bee914ee17b86bb33e947506ac33",
+      "bytes": 1055
+    }
+  ],
+  "contagem": {
+    "fichas": 100,
+    "elementos_mathml": 191,
+    "fichas_alteradas": 4,
+    "fichas_preservadas_desde_r1": 96,
+    "artigos_e_registros_preservados": 197,
+    "verificacoes_restritas": 91,
+    "erros": 0
+  },
+  "heranca": "Demais critérios científicos, fontes e infraestrutura da r1 herdados por identidade. Documentação r1 e fontes arquivadas permanecem sob seu manifesto. A r2 não repete os 913 testes.",
+  "limites": "Sem teste com alunos, impressão física/PDF ou nova auditoria global de acessibilidade. A aprovação depende do Auditor independente."
+}

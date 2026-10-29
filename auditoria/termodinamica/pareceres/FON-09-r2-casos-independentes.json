@@ -1,0 +1,282 @@
+{
+  "id": "FON-09",
+  "rodada": 2,
+  "revisor": "Auditor AAA, agente automatizado",
+  "metodo": "Node REPL em kernel limpo com URL nova do validador; clones de inventário em memória. Primeira tentativa em lote único atingiu timeout, não foi usada como evidência; todos os 25 casos foram reexecutados em lotes concluídos.",
+  "modulo": "file:///C:/Users/User/Downloads/SOP-CE/auditoria/termodinamica/inventario/validar-inventario.mjs?auditor-fon09-r2-clean-0bd26bcf",
+  "hash_validador": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+  "canonico": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 15,
+    "links_locais_verificados": 1072,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "casos": [
+    {
+      "caso": "página positiva",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "caso": "primeira página",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "caso": "página máxima segura sem conferir total",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740991",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "caso": "PDF maiúsculo",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.PDF#page=3",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "caso": "query antes do fragmento",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf?download=1#page=3",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "caso": "fragmento percent-encoded válido",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page%3D3",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "caso": "página zero",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "página negativa",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=-1",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=-1"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "fração decimal",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1.5",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1.5"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "notação exponencial",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1e2",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1e2"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "sinal positivo explícito",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=+3",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=+3"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "zero à esquerda",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=03",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=03"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "número inseguro",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740992",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740992"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "valor ausente",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page="
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "fragmento arbitrário",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "parâmetro extra ampersand",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3&zoom=100",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3&zoom=100"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "segundo hash com texto",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "segundo hash vazio",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "hash adicional codificado",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3%23extra",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "fragmento com espaço",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3 ",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3 "
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "PDF ausente",
+      "referencia": "downloads/termodinamica/provas/ausente-auditor-fon09.pdf#page=3",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: arquivo inacessível: downloads/termodinamica/provas/ausente-auditor-fon09.pdf (ENOENT: no such file or directory, open 'C:\\Users\\User\\Downloads\\SOP-CE\\downloads\\termodinamica\\provas\\ausente-auditor-fon09.pdf')"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "HTML âncora existente",
+      "referencia": "modulos/e1-termodinamica.html#fundamentos",
+      "esperado_ok": true,
+      "observado_ok": true,
+      "passou": true,
+      "erros": [],
+      "avisos": []
+    },
+    {
+      "caso": "HTML âncora ausente",
+      "referencia": "modulos/e1-termodinamica.html#ausente-auditor-fon09",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: âncora ausente ou duplicada: modulos/e1-termodinamica.html#ausente-auditor-fon09"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "outro recurso sem exceção",
+      "referencia": "assets/termodinamica/fon09-cr68-dados-v1.json#page=3",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: âncora ausente ou duplicada: assets/termodinamica/fon09-cr68-dados-v1.json#page=3"
+      ],
+      "avisos": []
+    },
+    {
+      "caso": "HTML fragmento completo com segundo hash",
+      "referencia": "modulos/e1-termodinamica.html#fundamentos#extra",
+      "esperado_ok": false,
+      "observado_ok": false,
+      "passou": true,
+      "erros": [
+        "cr-e1-68.origem: âncora ausente ou duplicada: modulos/e1-termodinamica.html#fundamentos#extra"
+      ],
+      "avisos": []
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "criterio": "R1-A",
+  "delta_completo_json": [
+    {
+      "campo": "/itens/191/titulo",
+      "antes": "Problema 2 — A mesma temperatura não determina o lote",
+      "depois": "Problema 2 — Quatro lotes e uma hipótese bifásica"
+    },
+    {
+      "campo": "/itens/192/titulo",
+      "antes": "Problema 3 — Quando a leitura garante condição supercrítica?",
+      "depois": "Problema 3 — O rótulo “supercrítico” é sustentado pelos dados?"
+    }
+  ],
+  "delta_completo_resumo": [
+    {
+      "ocorrencias": 1,
+      "antes": "Problema 2 — A mesma temperatura não determina o lote",
+      "depois": "Problema 2 — Quatro lotes e uma hipótese bifásica"
+    },
+    {
+      "ocorrencias": 1,
+      "antes": "Problema 3 — Quando a leitura garante condição supercrítica?",
+      "depois": "Problema 3 — O rótulo “supercrítico” é sustentado pelos dados?"
+    }
+  ],
+  "demais_192_registros_identicos": true,
+  "campos_exceto_titulo_preservados": true,
+  "resumo_delta_reversivel": true,
+  "produto_preservado": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+      "esperado": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f"
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-dados-v1.json",
+      "sha256": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448",
+      "esperado": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+    },
+    {
+      "arquivo": "assets/termodinamica/fun01-calculos-v1.mjs",
+      "sha256": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88",
+      "esperado": "a0fbdc4e6e7291a563db2362d26f4107ad67f56843e741d96eef8eea5a8d2a88"
+    }
+  ],
+  "historicos_r1_preservados": {
+    "calculo-r1.json": "c5b31c60c40328ac1eb6cd60061d2c8967859d790a753d7f7a5d6e02ce441b84",
+    "calculos-coordenador-r1.json": "280b1804d160d42d1cabfac9e7e99a4431ef8cf00b6a1c24b1d948c7c2cf2d8b",
+    "conferencia-cientifica-r1.md": "3b276b2a4ef94dfcff8fa35a7cccfd8237cdc017365760060730f367307df49e",
+    "e1-termodinamica.r1.html": "cacda8c7742eead77aa1e92021b01c085c1b7340201d5cca0ada8ff743a8b04f",
+    "gov-deltas-r1.json": "c3c5a0a3e322214b2eb01231254074b449e3344da7d14f9e1c04b970aca6f7f8",
+    "manifesto-r1.json": "8704f35c5c3609350f3903aecbe8ec90f015ce2d69d7910d4b7ea4090f3ac12a",
+    "navegador-coordenador-r1.md": "4f03816429e387f3c11999071834cada1fa11acdff1533d2bab808fec969b145",
+    "novos-registros-r1.json": "d3eeaf5567eb1f4859456b1a5b882f2216b94f964cd47838fd62afe611824eec",
+    "preparacao-equilibrio-r1.html": "bb316bc7ddf140f016e3cbe77f472f7ccb14e86700ab52506204060659f25230",
+    "problema-4-r1.html": "614ad9f472ac740f9d43db9e680d24b7cd2e9ee1bdd51b29f350be86aed5d69e",
+    "problemas-1-3-r1.html": "aacc3132b02c16cc50ff31868bb422323a90f4166321ce65f7db34a26d319524",
+    "unidade-integrada-r1.html": "18c8443e58688a76d075532bdeb88dad69591da7aa43c4b6be6f69ae1451c7cc",
+    "unidade-teoria-r1.html": "e361e5321ca79d67d34fc991969fdc8766ec3cf79df526563ef3b0a2e9951964",
+    "validacao-inventario-r1.json": "f28786b1df0576f5fc91734a59ce24ac281351ae91bb585780234a4dbcd08fe8",
+    "verificacao-final-r1.json": "3acbd730913b094a35bb2cd95a32bf00dcfbd65207a0f038a0dcecf5f6d3d4d7",
+    "verificar-fun01-r1.mjs": "99887a128099a6c20cd1291e1eef784c313ffc336ceba56c8b7a4b380da392eb"
+  },
+  "titulos_correspondem_ao_h3": true
+}

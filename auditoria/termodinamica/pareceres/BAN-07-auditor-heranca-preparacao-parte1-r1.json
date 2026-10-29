@@ -1,0 +1,899 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "parte": 1,
+  "data": "2026-10-28",
+  "tipo": "FORMALIZACAO_INDIVIDUAL_DE_APLICABILIDADE_DA_PREPARACAO",
+  "revisor_atual": "Agente automatizado independente /root/auditor_ban07_final",
+  "estado": "PARCIAL_8_DE_35",
+  "escopo": "20 Q inalterados e CR01–CR15. Exclui os dez Q modificados, CR16–50 e banco AV. Consolidação atribuída, sem duplicar cobertura do banco e sem parecer global.",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "baseline": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+    "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7"
+  },
+  "fonte_preparacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+    "sha256": "d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913",
+    "revisor": "/root/auditor_aaa, agente automatizado",
+    "metodo_original": "Resolução própria a partir de comando/opções antes de nova consulta ao comentário. CR já haviam sido lidos integralmente para FON02, portanto não se alega cegamento ou desconhecimento prévio de suas soluções. Sem aceite antecipado; leituras e heranças ainda serão confrontadas à entrega congelada.",
+    "natureza": "Memória preliminar; sua identidade não é aprovação automática."
+  },
+  "criterio": "BAN-07: dados suficientes, consistência física, comando, unidades, restrições e resposta única; demonstração e justificativa de cada opção, com plausibilidade teórica. Para estudos críticos: distinguir documento, chave, hipótese e interpretação sem forçar unicidade física ou nota de domínio.",
+  "evidencia_bases_estaveis": {
+    "execucao": "Própria neste turno com parseHtml/isInventoryArticle/sha256 canônicos.",
+    "metodo": "Substituição dos 197 artigos de cada versão por marcadores com seus IDs preservando todo o HTML exterior; comparação byte a byte.",
+    "artigos_atual": 197,
+    "artigos_antecedente": 197,
+    "fora_artigos_identico": true,
+    "sha256_fora_artigos": "46161edb149954fec27bade3067de9bba0ba067672c6705cbc364b88cf885620",
+    "alcance": "Bases, legendas, diagramas embutidos e demais HTML fora dos artigos permanecem idênticos. Recursos externos ao HTML requerem a evidência específica de cada registro; não são comprovados por esta comparação."
+  },
+  "universo_ids": [
+    "q-e1-01",
+    "q-e1-03",
+    "q-e1-04",
+    "q-e1-05",
+    "q-e1-06",
+    "q-e1-07",
+    "q-e1-08",
+    "q-e1-10",
+    "q-e1-11",
+    "q-e1-12",
+    "q-e1-14",
+    "q-e1-17",
+    "q-e1-20",
+    "q-e1-21",
+    "q-e1-22",
+    "q-e1-23",
+    "q-e1-25",
+    "q-e1-27",
+    "q-e1-29",
+    "q-e1-30",
+    "cr-e1-01",
+    "cr-e1-02",
+    "cr-e1-03",
+    "cr-e1-04",
+    "cr-e1-05",
+    "cr-e1-06",
+    "cr-e1-07",
+    "cr-e1-08",
+    "cr-e1-09",
+    "cr-e1-10",
+    "cr-e1-11",
+    "cr-e1-12",
+    "cr-e1-13",
+    "cr-e1-14",
+    "cr-e1-15"
+  ],
+  "fontes_decisoes_atuais": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+      "sha256": "bcb9e0c1ba4522c4a124b70af3a012994ade8863aaefc6a0704c41292dea3d96",
+      "revisor": "Agente automatizado independente /root/auditor_ban07_final"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+      "sha256": "f14253f817b5d59e034e2b9d49dfc60ee760627db37e253f499b69833fddb898",
+      "revisor": "Agente automatizado independente /root/auditor_ban07_final"
+    }
+  ],
+  "registros": [
+    {
+      "id_artigo": "q-e1-04",
+      "sha256_atual": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "sha256_antecedente": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "sha256_baseline": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "formato": "multipla_escolha_5",
+      "origem_cientifica": {
+        "revisor_original": "/root/auditor_aaa",
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+        "demonstracao": "x=(h-hf)/(hg-hf)=500/2000=0,25, admissível entre0e1.",
+        "alternativas": [
+          "A: fração de líquido 1-x.",
+          "B: título fora de[0,1], inversão de razão.",
+          "C: relação de mistura bifásica com propriedades na mesma saturação.",
+          "D: razão h/(hg-hf), omite hf.",
+          "E: razão(h-hf)/hg, confunde hg com hfg."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "confronto_original": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+      },
+      "decisao_atual_da_ressalva": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+        "sha256": "bcb9e0c1ba4522c4a124b70af3a012994ade8863aaefc6a0704c41292dea3d96",
+        "revisor": "Agente automatizado independente /root/auditor_ban07_final",
+        "origem": "heranca_atribuida_da_preparacao_com_confronto_proprio_de_suficiencia_e_distrator_B",
+        "pontos_decididos": [
+          {
+            "ponto": "Propriedades fornecidas tratadas como dados didáticos da mesma mistura saturada, sem inferir água real ou estado p/T não declarado.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "O comando declara mistura saturada e fornece hf=500, hg=2500 e h=1000 kJ/kg para ela. Logo fornece as extremidades e a propriedade intermediária necessárias, com hf<h<hg e hg-hf>0. As bases definem f/g e a relação mássica na mesma saturação. Pressão, temperatura ou nome do fluido não são necessários para essa interpolação já parametrizada; inventá-los ou alegar água real ultrapassaria os dados.",
+            "limite": "São dados didáticos definidos no problema genérico. Não se atesta uma tabela, substância ou estado real, nem se infere p/T inexistente."
+          }
+        ]
+      },
+      "julgamento_individual_de_alcance": "Chave C e comentários atuais concordam com a relação de mistura, a fração líquida e os erros D/E. B é refutada no comentário pelo intervalo físico; esta auditoria fornece o mecanismo teórico adicional que a nota não havia especificado corretamente.",
+      "julgamento_das_opcoes": [
+        {
+          "letra": "A",
+          "texto": "0,75.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e confrontado com comentário atual",
+          "prova": "1-x=0,75 é fração mássica de líquido; confusão entre fração líquida e título de vapor."
+        },
+        {
+          "letra": "B",
+          "texto": "2,00.",
+          "correta": false,
+          "origem": "nova especificação do mecanismo por /root/auditor_ban07_final; não herdada como inversão correta",
+          "prova": "h/hf=1000/500=2 produz a opção ao confundir uma proporção de entalpias com a fração mássica da mistura e ignorar o incremento de saturação. O resultado fora de [0,1] também o refuta.",
+          "decisao_da_nota": "A nota anterior dizia inversão de razão, mas a inversão da razão correta daria 4, não 2. Essa explicação imprecisa não foi adotada; o mecanismo atual é explícito e teoricamente plausível."
+        },
+        {
+          "letra": "C",
+          "texto": "0,25.",
+          "correta": true,
+          "origem": "derivação herdada de /root/auditor_aaa e significado físico confrontado",
+          "prova": "h=(1-x)hf+x hg; o título é 0,25 no intervalo físico."
+        },
+        {
+          "letra": "D",
+          "texto": "0,50.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e confrontado",
+          "prova": "h/(hg-hf)=1000/2000=0,50; omite subtração da entalpia do líquido no numerador."
+        },
+        {
+          "letra": "E",
+          "texto": "0,20.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e confrontado",
+          "prova": "(h-hf)/hg=500/2500=0,20; troca calor latente hg-hf por hg."
+        }
+      ],
+      "notas_e_limites": [
+        "Mistura líquido-vapor saturada no tratamento de substância pura e referência comum. Não é título volumétrico, não se extrapola fora da região bifásica e não se valida estado de água real.",
+        "A preparação foi atribuída, não transformada em execução científica nova integral.",
+        "Plausibilidade é teórica; sem dados de estudantes ou validação empírica."
+      ],
+      "evidencia_de_base": {
+        "preservacao_global": "Fora dos artigos idêntico ao baseline, conforme evidência comum.",
+        "bases_examinadas_na_decisao_atual": [
+          {
+            "href": "#substancias",
+            "alcance": "Trecho Título: fração mássica de vapor, relação y=yf+x(yg-yf), exemplo e interpretação; âncora de estudo anterior às alternativas.",
+            "sha256_trecho": "077a2d1c23c1582d1b2af1ba042e173eb2fb9342a032beefc519d87ac9503f21",
+            "delimitacao": "Do h3 Título até próximo cabeçalho h1–h3."
+          },
+          {
+            "href": "#base-valvula-fase",
+            "alcance": "Propriedades da mesma substância/estado de saturação, referência comum e intervalo físico; não se importa uma válvula para o comando Q04.",
+            "sha256_trecho": "31f66f5d9699f776777ab8a42bdc5fbeed5577eb92887ab8b93a4f4b70409426",
+            "delimitacao": "Do h3 da âncora até próximo cabeçalho h1–h3."
+          }
+        ]
+      },
+      "veredito": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "opcoes_efetivamente_assumidas": 5,
+      "observacao_de_atribuicao": "A ressalva não estava fechada na preparação antiga. Seu fechamento e, quando indicado, precisão de mecanismo vêm da decisão atual citada, não de inferência automática pelo hash."
+    },
+    {
+      "id_artigo": "q-e1-08",
+      "sha256_atual": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "sha256_antecedente": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "sha256_baseline": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "formato": "multipla_escolha_5",
+      "origem_cientifica": {
+        "revisor_original": "/root/auditor_aaa",
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+        "demonstracao": "Wfr=∫p dV=200*(0,3-0,1)=40 kJ; expansão fornece trabalho positivo na convenção produzida.",
+        "alternativas": [
+          "A: área correta.",
+          "B: pVfinal, sem descontar inicial.",
+          "C: sinal de compressão.",
+          "D: confunde pressão constante com trabalho nulo.",
+          "E: pVinicial ou intervalo incorreto."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "confronto_original": "Comentário e todas as justificativas lidos após derivação própria; chave coincide, pendências de suficiência registradas separadamente."
+      },
+      "decisao_atual_da_ressalva": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+        "sha256": "bcb9e0c1ba4522c4a124b70af3a012994ade8863aaefc6a0704c41292dea3d96",
+        "revisor": "Agente automatizado independente /root/auditor_ban07_final",
+        "origem": "heranca_atribuida_da_derivacao_e_cinco_opcoes_com_confronto_proprio_da_pressao_e_processo",
+        "pontos_decididos": [
+          {
+            "ponto": "Pressão constante interpretada como absoluta na relação de fronteira; processo quase estático declarado.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "Quase-estática consta expressamente do comando. A base ligada define p como pressão absoluta antes da tentativa e descreve a pressão na fronteira como conjugada a dV. Portanto 200 kPa é usada diretamente em integral p dV; não se acrescenta pressão atmosférica inexistente nem se calcula somente trabalho contra uma carga manométrica.",
+            "limite": "A expressão usa o processo quase-estático declarado e o trabalho de fronteira total produzido. Não é trabalho útil subtraído do deslocamento da atmosfera nem licença para integrar uma pressão interna arbitrária em processo rápido irreversível."
+          }
+        ]
+      },
+      "julgamento_individual_de_alcance": "Gabarito A, expressão W=p DeltaV, unidade kJ, sinal de expansão e justificativas dos quatro distratores concordam com a prova herdada e a base prévia. A legenda posterior do comentário confirma pressão absoluta, mas não foi usada como único suporte.",
+      "julgamento_das_opcoes": [
+        {
+          "letra": "A",
+          "texto": "40 kJ.",
+          "correta": true,
+          "origem": "prova herdada de /root/auditor_aaa e condições de aplicação agora fechadas",
+          "prova": "Área p(V2-V1) sob a isóbara: resultado positivo do trabalho produzido."
+        },
+        {
+          "letra": "B",
+          "texto": "60 kJ.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, comentário atual conferido",
+          "prova": "pV2=200 vezes 0,3 usa volume final e deixa de subtrair o inicial."
+        },
+        {
+          "letra": "C",
+          "texto": "−40 kJ.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, comentário atual conferido",
+          "prova": "Inverte o sinal da expansão ou usa convenção de trabalho recebido apesar do comando pedir o produzido."
+        },
+        {
+          "letra": "D",
+          "texto": "0 kJ.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, comentário atual conferido",
+          "prova": "Confunde pressão constante com volume constante ou trabalho nulo; p positivo e DeltaV positivo tornam a área não nula."
+        },
+        {
+          "letra": "E",
+          "texto": "20 kJ.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, comentário atual conferido",
+          "prova": "pV1=200 vezes 0,1 usa somente volume inicial no lugar da variação."
+        }
+      ],
+      "notas_e_limites": [
+        "Pressão de fronteira constante e absoluta em expansão quase-estática; nenhuma hipótese de gás ideal, isotermia ou reversibilidade térmica é necessária para a integral de fronteira dada.",
+        "A demonstração numérica e mecanismos anteriores são atribuídos ao revisor original; conferência atual é de alcance/suficiência.",
+        "Plausibilidade teórica, sem piloto."
+      ],
+      "evidencia_de_base": {
+        "preservacao_global": "Fora dos artigos idêntico ao baseline, conforme evidência comum.",
+        "bases_examinadas_na_decisao_atual": [
+          {
+            "href": "#base-trabalho-fronteira",
+            "sha256_trecho": "76fb33734274627b72d4aa35f408cbbdfaeffe9212962a180fedb9db547e5bb2",
+            "delimitacao": "Do h3 até próximo cabeçalho h1–h3.",
+            "alcance": "Pressão na fronteira e mudança de volume no quase-estático; integral e caso p constante. As legendas dd de p dizem Pressão absoluta do gás ou fluido, em kPa. Base ligada antes das alternativas."
+          },
+          {
+            "href": "#base-leitura-matematica",
+            "sha256_trecho": "8b54ff73ba5e375e8b010bc7810d6dc4b6c4546553d4e859384106262d116708",
+            "alcance": "Trechos sobre pressão absoluta/manométrica, Delta final menos inicial e kPa m³=kJ; base ligada antes das alternativas."
+          }
+        ]
+      },
+      "veredito": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "opcoes_efetivamente_assumidas": 5,
+      "observacao_de_atribuicao": "A ressalva não estava fechada na preparação antiga. Seu fechamento e, quando indicado, precisão de mecanismo vêm da decisão atual citada, não de inferência automática pelo hash."
+    },
+    {
+      "id_artigo": "q-e1-11",
+      "sha256_atual": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "sha256_antecedente": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "sha256_baseline": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "formato": "multipla_escolha_5",
+      "origem_cientifica": {
+        "revisor_original": "/root/auditor_aaa",
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+        "demonstracao": "Escoamento estacionário adiabático com ΔEc/ΔEp desprezados: potência líquida=2*(3100-2700)=800 kW.",
+        "alternativas": [
+          "A: dobra novamente a vazão.",
+          "B: soma entalpias de entrada e saída em vez da diferença.",
+          "C: confunde kW com W por fator1000.",
+          "D: balanço de energia correto.",
+          "E: omite a vazão e toma queda específica como potência."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "confronto_original": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+      },
+      "decisao_atual_da_ressalva": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+        "sha256": "bcb9e0c1ba4522c4a124b70af3a012994ade8863aaefc6a0704c41292dea3d96",
+        "revisor": "Agente automatizado independente /root/auditor_ban07_final",
+        "origem": "heranca_atribuida_da_derivacao_e_cinco_opcoes_com_confronto_proprio_do_significado_de_potencia",
+        "pontos_decididos": [
+          {
+            "ponto": "A identificação da potência como trabalho líquido da turbina é coerente; se solução disser apenas potência de eixo, explicitar modelo sem outras modalidades relevantes conforme contexto didático.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "Regime permanente, adiabaticidade e desprezo de DeltaEC/DeltaEP constam do próprio comando. Uma entrada/saída e vazão especificada permitem o balanço da potência líquida de trabalho da turbina, excluído o trabalho de escoamento já incorporado à entalpia. A solução atual diz Potência e potência produzida no contexto da base, sem afirmar que se isolou uma modalidade de eixo de um conjunto com outras modalidades relevantes desconhecidas.",
+            "modalidades": "O balanço determina Wdot_liq, soma algébrica das modalidades de trabalho não associadas ao escoamento. Identificá-la com eixo isolado exigiria ausência de outras modalidades relevantes; não há no item outra modalidade especificada para subtrair ou somar, e o comentário não faz a identificação exclusiva que a ressalva condicionava.",
+            "limite": "Não se converte adiabaticidade em isentropia nem se exige turbina ideal. Não se infere potência de um gerador ou eficiência elétrica. Se uma futura redação pedir potência de eixo com outras modalidades presentes, será necessário declará-las e separar o balanço."
+          }
+        ]
+      },
+      "julgamento_individual_de_alcance": "Chave D e justificativas das cinco opções concordam com a prova herdada e o significado de potência da base prévia. A solução usa a queda de entalpia, não acrescenta trabalho de fluxo nem atribui eficiência isentrópica/elétrica.",
+      "julgamento_das_opcoes": [
+        {
+          "letra": "A",
+          "texto": "1.600 kW.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, confrontada com comentário",
+          "prova": "Aplica a vazão novamente depois de obter 800 kW: mdot²(h1-h2) numericamente dobra o resultado, além de usar base dimensional inadequada."
+        },
+        {
+          "letra": "B",
+          "texto": "11.600 kW.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, confrontada com comentário",
+          "prova": "mdot(h1+h2) soma entalpias de correntes em vez de usar entrada menos saída."
+        },
+        {
+          "letra": "C",
+          "texto": "800 W.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, confrontada com comentário",
+          "prova": "Mantém o número 800, mas troca kJ/s por J/s; erra fator 1000."
+        },
+        {
+          "letra": "D",
+          "texto": "800 kW.",
+          "correta": true,
+          "origem": "derivação herdada de /root/auditor_aaa; alcance do trabalho líquido fechado nesta revisão",
+          "prova": "mdot(h1-h2) com kg/s e kJ/kg fornece kJ/s=kW, positivo na saída."
+        },
+        {
+          "letra": "E",
+          "texto": "400 kW.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa, confrontada com comentário",
+          "prova": "Trata queda entálpica específica de 400 kJ/kg como potência e omite a vazão de 2 kg/s."
+        }
+      ],
+      "notas_e_limites": [
+        "Volume de controle em regime permanente, uma entrada/saída, adiabático, variações cinética/potencial desprezadas; potência líquida de trabalho. Dados de entalpia fornecidos bastam sem idealidade de fluido ou tabela externa.",
+        "Ciência numérica e mecanismos anteriores preservam autoria do revisor original.",
+        "Confronto atual não é teste de turbina real nem de aprendizagem."
+      ],
+      "evidencia_de_base": {
+        "preservacao_global": "Fora dos artigos idêntico ao baseline, conforme evidência comum.",
+        "bases_examinadas_na_decisao_atual": [
+          {
+            "href": "#base-turbina-potencia",
+            "sha256_trecho": "f203664e9ce559a79551447f80f344399e660aa046baa6d2ebe6c907488df9d1",
+            "delimitacao": "Do h4 da âncora até próximo cabeçalho de nível igual ou superior.",
+            "alcance": "Exemplo prévio de turbina adiabática, velocidades/alturas desprezíveis, queda entálpica, Wdot=mdot w, kJ/s=kW e legendas; link anterior às alternativas."
+          },
+          {
+            "href": "#base-leitura-matematica",
+            "sha256_trecho": "8b54ff73ba5e375e8b010bc7810d6dc4b6c4546553d4e859384106262d116708",
+            "alcance": "Trechos previamente lidos: potência como energia por tempo e unidades kW=kJ/s; link anterior às alternativas."
+          }
+        ]
+      },
+      "veredito": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "opcoes_efetivamente_assumidas": 5,
+      "observacao_de_atribuicao": "A ressalva não estava fechada na preparação antiga. Seu fechamento e, quando indicado, precisão de mecanismo vêm da decisão atual citada, não de inferência automática pelo hash."
+    },
+    {
+      "id_artigo": "q-e1-12",
+      "sha256_atual": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "sha256_antecedente": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "sha256_baseline": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "formato": "multipla_escolha_5",
+      "origem_cientifica": {
+        "revisor_original": "/root/auditor_aaa",
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+        "demonstracao": "No modelo de bomba ideal com líquido incompressível, win≈vΔp=0,001*500=0,5 kJ/kg, magnitude positiva.",
+        "alternativas": [
+          "A: fator10 indevido.",
+          "B: fator1000 indevido.",
+          "C: produto de volume específico e incremento de pressão.",
+          "D: contraria magnitude positiva pedida.",
+          "E: omite fator v."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "confronto_original": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+      },
+      "decisao_atual_da_ressalva": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q04-08-11-12-r1.json",
+        "sha256": "bcb9e0c1ba4522c4a124b70af3a012994ade8863aaefc6a0704c41292dea3d96",
+        "revisor": "Agente automatizado independente /root/auditor_ban07_final",
+        "origem": "heranca_atribuida_da_derivacao_com_confronto_proprio_do_modelo_de_bomba_ideal_e_opcoes",
+        "pontos_decididos": [
+          {
+            "ponto": "Bomba ideal deve remeter ao modelo adiabático reversível/energias macroscópicas desprezadas já definido na aula; não inferir universalidade de vΔp.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "A aula define explicitamente Bomba ideal com as hipóteses que a nota exigia. Q12 usa esse nome e fornece v e Delta p; suas bases prévias explicam quando a identidade de entalpia pode produzir v Delta p e separam energias de pressão, velocidade e altura. Logo não se depende somente do comentário para adotar regime permanente, adiabático reversível, v constante e DeltaEc/DeltaEp desprezíveis.",
+            "fechamento_cientifico": "No modelo adiabático reversível, ds=0. Integrar dh=v dp com v constante fornece Delta h≈v Delta p. Pelo balanço permanente sem energias macroscópicas relevantes e sem outros modos relevantes especificados, a magnitude líquida do trabalho de entrada é Delta h. Isto justifica win≈v Delta p; não se identifica toda pressurização real com essa fórmula.",
+            "limite": "Se houvesse velocidades, elevação, perdas, transferência de calor, rendimento não unitário ou outra modalidade relevante, seria necessário o balanço completo. Não se acrescentam esses termos inexistentes ao modelo ideal definido nem se calcula potência a partir de trabalho por kg."
+          }
+        ]
+      },
+      "julgamento_individual_de_alcance": "Gabarito C, aproximação de líquido incompressível, magnitude consumida e quatro justificativas concordam com o modelo antecedente. A distinção C/D é fixada antes da tentativa pelo próprio comando; não há duas chaves por convenção de sinal.",
+      "julgamento_das_opcoes": [
+        {
+          "letra": "A",
+          "texto": "5 kJ/kg.",
+          "correta": false,
+          "origem": "erro decimal herdado de /root/auditor_aaa; operação concreta explicitada por /root/auditor_ban07_final",
+          "prova": "Ler 0,001 como 0,01 m³/kg ou deslocar uma casa no produto leva a 0,01 vezes 500=5. É erro de posição decimal, não outra hipótese física."
+        },
+        {
+          "letra": "B",
+          "texto": "0,0005 kJ/kg.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa e comentário atual confrontado",
+          "prova": "Dividir o produto correto novamente por 1000, embora kPa m³ já forneça kJ, dá 0,0005. Conversão duplicada de unidade."
+        },
+        {
+          "letra": "C",
+          "texto": "0,5 kJ/kg.",
+          "correta": true,
+          "origem": "cálculo herdado de /root/auditor_aaa com alcance do modelo fechado nesta revisão",
+          "prova": "Produto v Delta p nas unidades fornecidas, magnitude positiva de entrada conforme comando."
+        },
+        {
+          "letra": "D",
+          "texto": "−0,5 kJ/kg consumido.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa e comando/comentário atuais confrontados",
+          "prova": "Aplica ao número o sinal de trabalho produzido pelo sistema, mas o comando pede expressamente magnitude do trabalho de entrada, adotada positiva. A palavra consumido não transforma magnitude negativa em resposta válida."
+        },
+        {
+          "letra": "E",
+          "texto": "500 kJ/kg.",
+          "correta": false,
+          "origem": "herdada de /root/auditor_aaa e comentário atual confrontado",
+          "prova": "Usa numericamente Delta p=500 como energia específica, omitindo v=0,001 e a mudança dimensional necessária."
+        }
+      ],
+      "notas_e_limites": [
+        "Bomba ideal no sentido explicitamente definido na aula: regime permanente, adiabático reversível, v aproximadamente constante e energias cinética/potencial desprezadas. Água é o fluido declarado, mas não se inferem p1/T1 ou uma propriedade real adicional. Não se universaliza v Delta p para qualquer bomba ou para energia mecânica com outras parcelas.",
+        "Prova numérica anterior atribuída; nova análise cobre hipóteses, alcance e operações dos distratores.",
+        "Sem ensaio de bomba, piloto ou validação empírica de distratores."
+      ],
+      "evidencia_de_base": {
+        "preservacao_global": "Fora dos artigos idêntico ao baseline, conforme evidência comum.",
+        "bases_examinadas_na_decisao_atual": [
+          {
+            "href": "#base-gibbs",
+            "sha256_trecho": "52cc467ab630fb5f71107265885a1326fa234d4243ca3363a0cb03994b9e097e",
+            "alcance": "Identidade dh=T ds+v dp de substância simples compressível/composição fixa; relação de propriedades não é automaticamente trabalho real; redução isentrópica com v aproximadamente constante e unidades kPa m³/kg=kJ/kg. Link anterior às alternativas."
+          },
+          {
+            "href": "#base-bomba-integrada",
+            "sha256_trecho": "fd717ed5b79c4b6fb29fd83f4b61b953f1db7a0dff394c2bfd281e1072ea823a",
+            "alcance": "Distingue energia por massa, altura, potência hidráulica/de eixo/elétrica; somente quando a altura representa elevação de pressão, gH=v Delta p. Refere-se à bomba ideal ensinada antes. Link anterior às alternativas."
+          },
+          {
+            "href": "#energia",
+            "trecho": "Simplificações por equipamento, do h3 até o h4 base-turbina-potencia",
+            "sha256_trecho": "ff11740c876e36f5c90e83aa532a011269f2de7365d01ba4c3045f64b8173b9b",
+            "alcance": "Linha Bomba ideal lida: regime permanente, adiabático reversível, líquido com v aproximadamente constante, variações cinética/potencial desprezíveis e win≈v Delta p como magnitude consumida. Teoria antecede as questões e está disponível antes da tentativa; não é comentário da resposta."
+          }
+        ]
+      },
+      "veredito": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "opcoes_efetivamente_assumidas": 5,
+      "observacao_de_atribuicao": "A ressalva não estava fechada na preparação antiga. Seu fechamento e, quando indicado, precisão de mecanismo vêm da decisão atual citada, não de inferência automática pelo hash."
+    },
+    {
+      "id_artigo": "q-e1-17",
+      "sha256_atual": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "sha256_antecedente": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "sha256_baseline": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "formato": "multipla_escolha_5",
+      "origem_cientifica": {
+        "revisor_original": "/root/auditor_aaa",
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+        "demonstracao": "Refrigerador cíclico: COP_R=QL/Win=900/300=3;QH=QL+Win=1200 kJ.",
+        "alternativas": [
+          "A: inverte COP e ignora trabalho na rejeição.",
+          "B: confunde grandezas e razão.",
+          "C: subtrai trabalho do calor retirado.",
+          "D: duas grandezas corretas.",
+          "E: COP da bomba de calor(QH/Win=4), não do refrigerador."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "confronto_original": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+      },
+      "decisao_atual_da_ressalva": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+        "sha256": "f14253f817b5d59e034e2b9d49dfc60ee760627db37e253f499b69833fddb898",
+        "revisor": "Agente automatizado independente /root/auditor_ban07_final",
+        "origem": "heranca_atribuida_da_preparacao_com_confronto_proprio_da_base_ciclica_e_opcao_B",
+        "pontos_decididos": [
+          {
+            "ponto": "Valores devem ser trocas na mesma base de operação/ciclo, sem armazenamento; termo refrigerador e definição COP sugerem modelo, mas comando não diz por ciclo.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "O comando vincula retirada de 900 kJ ao consumo de 300 kJ da mesma operação do refrigerador. A base prévia define ambos QL e W em kJ por ciclo e exige mesmo ciclo/fronteiras; assim o contexto avaliativo é cíclico, sem acumulação líquida de energia. DeltaE_ciclo=0 fornece QH=QL+Win. Não foi preciso obter essa hipótese apenas do comentário posterior, embora o comando não repita as palavras por ciclo.",
+            "limite": "Não se calcula calor rejeitado de uma partida transiente com armazenamento desconhecido nem se combinam energias de ciclos/intervalos diferentes. O item é aprovado com a base cíclica ligada, sem afirmação de universalidade para qualquer transiente."
+          }
+        ]
+      },
+      "julgamento_individual_de_alcance": "Chave D, definição de COP_R, balanço cíclico e cinco justificativas concordam com o modelo acessível antes da resposta. COP maior que 1 é admissível porque é razão de calor transportado por trabalho, não eficiência de conversão.",
+      "julgamento_das_opcoes": [
+        {
+          "letra": "A",
+          "texto": "COP = 0,33 e rejeição = 900 kJ.",
+          "correta": false,
+          "origem": "mecanismos herdados de /root/auditor_aaa e comentário atual conferido",
+          "prova": "Win/QL≈0,33 inverte o COP; QH=QL omite a energia do trabalho consumido."
+        },
+        {
+          "letra": "B",
+          "texto": "COP = 1 e rejeição = 300 kJ.",
+          "correta": false,
+          "origem": "mecanismo reexaminado e explicitado por /root/auditor_ban07_final; nota anterior era genérica",
+          "prova": "Omitir a carga fria e tratar o aparelho como simples dissipador do trabalho fornece Q_rej=Win=300 e razão de desempenho equivocada Win/Win=1. É confusão entre o refrigerador que transporta calor e um aparelho que apenas converte trabalho em calor. Viola o balanço do ciclo com QL=900 e a definição de COP_R; o comentário atual indica a omissão do calor retirado."
+        },
+        {
+          "letra": "C",
+          "texto": "COP = 3 e rejeição = 600 kJ.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "Acerta QL/Win, mas usa QH=QL-Win=600, trocando o sinal da energia de trabalho que entra."
+        },
+        {
+          "letra": "D",
+          "texto": "COP = 3 e rejeição = 1.200 kJ.",
+          "correta": true,
+          "origem": "derivação herdada de /root/auditor_aaa; base/modelo fechado nesta revisão",
+          "prova": "O par satisfaz a definição de COP_R e a conservação de energia no mesmo ciclo."
+        },
+        {
+          "letra": "E",
+          "texto": "COP = 4 e rejeição = 1.200 kJ.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "QH/Win=4 é COP da bomba de calor no mesmo ciclo, não COP do refrigerador; calor rejeitado sozinho está correto."
+        }
+      ],
+      "notas_e_limites": [
+        "Refrigerador cíclico, magnitudes na mesma base e fronteira, sem armazenamento líquido. Não exige reversibilidade, ciclo de Carnot ou refrigerante específico. Não há temperaturas para testar limite de Carnot nem dados de eficiência elétrica.",
+        "Plausibilidade é teórica e atribuída por opção; sem observação de estudantes.",
+        "Aceite da versão com a preparação ligada, sem elevar a nota anterior a aprovação automática."
+      ],
+      "evidencia_de_base": {
+        "preservacao_global": "Fora dos artigos idêntico ao baseline, conforme evidência comum.",
+        "bases_examinadas_na_decisao_atual": [
+          {
+            "href": "#base-eficiencia-cop",
+            "sha256_trecho": "cb5072bff6719f50a5047d511b5c74c4da96a35ed3a43aa0c2127cd992de9814",
+            "delimitacao": "Do h3 da âncora até próximo cabeçalho h1–h3.",
+            "alcance": "COP_R=QL/W e COP_BC=QH/W, magnitudes positivas, legendas em kJ por ciclo e condição Mesmo ciclo, mesmas fronteiras. Link cr-estudo está fora da resolução e antes das alternativas."
+          }
+        ]
+      },
+      "veredito": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "opcoes_efetivamente_assumidas": 5,
+      "observacao_de_atribuicao": "Ressalva fechada na decisão atual citada. A memória preliminar antiga não recebeu retroativamente esse veredito."
+    },
+    {
+      "id_artigo": "q-e1-22",
+      "sha256_atual": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "sha256_antecedente": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "sha256_baseline": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "formato": "multipla_escolha_5",
+      "origem_cientifica": {
+        "revisor_original": "/root/auditor_aaa",
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+        "demonstracao": "No modelo de compressão ideal comparável, resfriar entrada do estágio posterior reduz seu trabalho para mesma razão, sob condições mantidas no modelo.",
+        "alternativas": [
+          "A: redução de trabalho não garante eficiência de qualquer ciclo completo.",
+          "B: resfriamento não inverte função de compressão.",
+          "C: efeito correto com ressalva explícita do modelo.",
+          "D: não elimina automaticamente irreversibilidades.",
+          "E: tendência inevitável invertida."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "confronto_original": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+      },
+      "decisao_atual_da_ressalva": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+        "sha256": "f14253f817b5d59e034e2b9d49dfc60ee760627db37e253f499b69833fddb898",
+        "revisor": "Agente automatizado independente /root/auditor_ban07_final",
+        "origem": "heranca_atribuida_da_conclusao_preliminar_com_prova_simbolica_propria_do_modelo_e_distratores",
+        "pontos_decididos": [
+          {
+            "ponto": "Conferir hipóteses no alvo existente: mesmo gás, condições de entrada e razão global, limites de perda de pressão/modelo; não prometer vantagem universal.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "A base prévia declara mesmo gás ideal de composição fixa, cp/cv constantes, mesma vazão e eficiência isentrópica constante, compressores adiabáticos em regime permanente, energias macroscópicas desprezíveis e ausência de quedas de pressão, fase ou separação de massa. Resfriamento devolve a T1 e pressões globais são fixas. C contém expressamente nas hipóteses do modelo, portanto a comparação não promete vantagem para qualquer instalação.",
+            "limite": "Preservam-se gás, entrada inicial, vazão, razão global e modelo de estágios/eficiências. Perdas de pressão, consumo auxiliar, condensação, eficiência alterada ou outro objetivo do ciclo exigem reavaliação."
+          }
+        ]
+      },
+      "julgamento_individual_de_alcance": "Chave C e justificativas concordam com o efeito direto no modelo. A frase sobre aproximar da compressão isotérmica refere-se à redução de trabalho reversível sob comparação adequada, não à eliminação automática de irreversibilidade ou garantia de rendimento global.",
+      "julgamento_das_opcoes": [
+        {
+          "letra": "A",
+          "texto": "Garantia de maior eficiência de qualquer ciclo térmico.",
+          "correta": false,
+          "origem": "juízo herdado de /root/auditor_aaa com mecanismo explicitado no confronto atual",
+          "prova": "Confunde economia de trabalho no compressor com aumento garantido de eta_ciclo=(Wout-Win)/Qin. A temperatura após compressão e o calor a fornecer ao ciclo podem mudar; não há garantia para qualquer ciclo."
+        },
+        {
+          "letra": "B",
+          "texto": "Transformação do compressor em turbina.",
+          "correta": false,
+          "origem": "mecanismo conceitual especificado por /root/auditor_ban07_final e comentário confrontado",
+          "prova": "Confunde queda de temperatura no resfriador com expansão que produz trabalho em uma turbina. O resfriador retira calor, enquanto o estágio posterior ainda eleva pressão, com r2>1 e trabalho de entrada positivo; não muda de função."
+        },
+        {
+          "letra": "C",
+          "texto": "Redução do trabalho de compressão para a mesma razão global, nas hipóteses do modelo.",
+          "correta": true,
+          "origem": "conclusão herdada de /root/auditor_aaa e prova simbólica atual delimitada",
+          "prova": "Segue da dependência positiva do trabalho do estágio em sua temperatura de entrada, sob as condições mantidas."
+        },
+        {
+          "letra": "D",
+          "texto": "Eliminação de toda irreversibilidade.",
+          "correta": false,
+          "origem": "juízo herdado de /root/auditor_aaa, mecanismo precisado no confronto atual",
+          "prova": "Confunde resfriamento perfeito, que restaura T1, com reversibilidade de todos os componentes. A base admite eta_c constante menor que 1; resfriamento não elimina suas perdas."
+        },
+        {
+          "letra": "E",
+          "texto": "Aumento inevitável do trabalho para a mesma razão global.",
+          "correta": false,
+          "origem": "tendência reexaminada por /root/auditor_ban07_final; comentário anterior sozinho não foi prova",
+          "prova": "Pode surgir da confusão entre densidade maior e maior trabalho por kg, mantendo mentalmente um volume em vez da base mássica do modelo. Aqui, a mesma pressão, resfriar aumenta densidade mas reduz v=RT/p e o trabalho do estágio seguinte; a fórmula acima fornece a tendência oposta. Perdas reais de um resfriador não tornam inevitável o aumento e são desprezadas no modelo."
+        }
+      ],
+      "notas_e_limites": [
+        "Comparação de compressão do mesmo gás/entrada e mesma razão global nas condições explícitas da base prévia. Não é promessa universal para equipamentos reais, eficiências diferentes, perdas auxiliares ou ciclo térmico completo.",
+        "Plausibilidade dos mecanismos é teórica, sem psicometria ou dados de alunos.",
+        "Nenhum cálculo de instalação/ciclo real ou teste de compressor executado."
+      ],
+      "evidencia_de_base": {
+        "preservacao_global": "Fora dos artigos idêntico ao baseline, conforme evidência comum.",
+        "bases_examinadas_na_decisao_atual": [
+          {
+            "href": "#base-compressao-estagios",
+            "sha256_trecho": "a35d085fb8c2a5d6df63cf38468fbb118204a700cfe57987881973527ab6088b",
+            "delimitacao": "Do h3 da âncora até próximo cabeçalho h1–h3.",
+            "alcance": "Modelo, expressão de trabalho total, pressões absolutas, igualdade de razões/ótimo e ressalvas de eficiências ou temperaturas diferentes. Link anterior às alternativas."
+          }
+        ]
+      },
+      "veredito": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "opcoes_efetivamente_assumidas": 5,
+      "observacao_de_atribuicao": "Ressalva fechada na decisão atual citada. A memória preliminar antiga não recebeu retroativamente esse veredito."
+    },
+    {
+      "id_artigo": "q-e1-23",
+      "sha256_atual": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "sha256_antecedente": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "sha256_baseline": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "formato": "multipla_escolha_5",
+      "origem_cientifica": {
+        "revisor_original": "/root/auditor_aaa",
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+        "demonstracao": "No modelo estacionário usual de compressão de vapor, qL=h1-h4=150 kJ/kg ewin=h2-h1=50 kJ/kg;COP_R=3.",
+        "alternativas": [
+          "A: usa h1/win=8 e ignora entalpia de entrada do evaporador.",
+          "B: razão indevidamente unitária.",
+          "C: efeito frigorífico sobre trabalho.",
+          "D: inverte razão=1/3.",
+          "E: usa calor rejeitado(h2-h3)=200 sobre trabalho, COP da bomba de calor."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "confronto_original": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+      },
+      "decisao_atual_da_ressalva": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+        "sha256": "f14253f817b5d59e034e2b9d49dfc60ee760627db37e253f499b69833fddb898",
+        "revisor": "Agente automatizado independente /root/auditor_ban07_final",
+        "origem": "heranca_atribuida_das_contas_com_confronto_proprio_do_modelo_previo_e_opcao_B",
+        "pontos_decididos": [
+          {
+            "ponto": "Modelo usual depende de compressor adiabático e trocas adequadas, trabalho/energias macroscópicas negligenciados onde pertinente; já sustentado no alvo, conferir alcance. Dados didáticos de entalpia não provam viabilidade de refrigerante real.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "O comando fornece a posição de cada estado, as quatro entalpias e o modelo estacionário usual. A base ligada define explicitamente as hipóteses que reduzem os balanços a diferenças de entalpia e exclui trabalhos adicionais nos demais componentes. Assim qL/Win é determinado sem buscar hipóteses somente no comentário posterior.",
+            "coerencia": "h3=h4 fornecido é compatível com a válvula adiabática sem trabalho e sem mudança de energia macroscópica. Simbolicamente qH-qL=(h2-h3)-(h1-h4)=h2-h1=wc nessa igualdade; há fechamento energético, sem contar trabalho de escoamento duas vezes.",
+            "limite_dos_dados": "Entalpias são dados didáticos do problema autoral genérico, em referência comum; não identificam refrigerante, pressões, temperaturas, fases ou irreversibilidades. Aprovação do balanço e do COP calculado não atesta viabilidade de um refrigerante real nem segunda lei de um conjunto de estados não fornecido."
+          }
+        ]
+      },
+      "julgamento_individual_de_alcance": "Chave C, diferenças de entalpia, unidades específicas e cinco comentários atuais concordam com os balanços prévios. Não se supõe compressor isentrópico nem se identifica calor transportado com energia absoluta de um estado.",
+      "julgamento_das_opcoes": [
+        {
+          "letra": "A",
+          "texto": "8.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "h1/(h2-h1)=400/50=8 usa entalpia de estado no lugar do efeito h1-h4; resultado depende indevidamente da referência energética."
+        },
+        {
+          "letra": "B",
+          "texto": "1.",
+          "correta": false,
+          "origem": "mecanismo explicitado por /root/auditor_ban07_final a partir do comentário atual e da nota genérica",
+          "prova": "Igualar indevidamente calor útil a trabalho recebido, qL=wc, fornece wc/wc=1. Confunde o transporte de calor de um refrigerador com conversão unitária de trabalho em calor e omite os saltos distintos no evaporador e compressor. A base e os dados não fazem essa igualdade."
+        },
+        {
+          "letra": "C",
+          "texto": "3.",
+          "correta": true,
+          "origem": "cálculo herdado de /root/auditor_aaa; hipóteses e alcance fechados nesta revisão",
+          "prova": "(h1-h4)/(h2-h1)=150/50 no modelo previamente definido."
+        },
+        {
+          "letra": "D",
+          "texto": "0,33.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "wc/qL=50/150≈0,33 inverte a definição de COP_R."
+        },
+        {
+          "letra": "E",
+          "texto": "4.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "qH/wc=(h2-h3)/(h2-h1)=200/50=4 é COP da bomba de calor, com efeito útil na fonte quente."
+        }
+      ],
+      "notas_e_limites": [
+        "Ciclo simples estacionário com uma vazão comum, componentes e trocas delimitados na base. Compressor adiabático, demais modos relevantes excluídos onde indicado; magnitudes específicas por kg e entalpias na mesma referência. Números não provam estados físicos de refrigerante real.",
+        "Ciência numérica herdada permanece de /root/auditor_aaa.",
+        "Sem nova busca de tabelas, modelagem de refrigerante, código de ciclo ou dados de aprendizagem."
+      ],
+      "evidencia_de_base": {
+        "preservacao_global": "Fora dos artigos idêntico ao baseline, conforme evidência comum.",
+        "bases_examinadas_na_decisao_atual": [
+          {
+            "href": "#base-refrigeracao",
+            "sha256_trecho": "0fb93243171cb7f0d71367a1a3a59cb578094694b2e4334c06f6f9b07eb9b59a",
+            "delimitacao": "Do h3 da âncora até próximo cabeçalho h1–h3.",
+            "alcance": "Primeiro parágrafo define mesma vazão, regime estacionário, DeltaEc/DeltaEp desprezíveis, compressor/válvula adiabáticos, ausência de trabalho não associado ao escoamento inclusive elétrico em evaporador/condensador/válvula, p v incluído em h e ligações sem calor relevante. Define wc, qL, qH, h3≈h4 e COP. Base ligada antes das alternativas."
+          }
+        ]
+      },
+      "veredito": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "opcoes_efetivamente_assumidas": 5,
+      "observacao_de_atribuicao": "Ressalva fechada na decisão atual citada. A memória preliminar antiga não recebeu retroativamente esse veredito."
+    },
+    {
+      "id_artigo": "q-e1-27",
+      "sha256_atual": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "sha256_antecedente": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "sha256_baseline": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "formato": "multipla_escolha_5",
+      "origem_cientifica": {
+        "revisor_original": "/root/auditor_aaa",
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+        "demonstracao": "Razões iguais:pi/p1=p2/pi,logo pi²=1*16 e pi=4bar absoluto; raiz negativa inadmissível.",
+        "alternativas": [
+          "A: média geométrica/razões4e4.",
+          "B: média aritmética das pressões.",
+          "C: divide indevidamente raiz ou usa razão incorreta.",
+          "D: sem repartição da compressão em dois estágios.",
+          "E: metade da pressão final, não mesma razão."
+        ],
+        "estado_original": "preliminar; não é veredito da entrega",
+        "confronto_original": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+      },
+      "decisao_atual_da_ressalva": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-ressalvas-q17-22-23-27-r1.json",
+        "sha256": "f14253f817b5d59e034e2b9d49dfc60ee760627db37e253f499b69833fddb898",
+        "revisor": "Agente automatizado independente /root/auditor_ban07_final",
+        "origem": "heranca_atribuida_da_igualdade_de_razoes_com_confronto_proprio_do_criterio_de_minimo",
+        "pontos_decididos": [
+          {
+            "ponto": "A igualdade de razões já determina pi; a afirmação de trabalho mínimo requer condições do modelo ideal com intercooling perfeito do alvo. Não supor mínimo universal para quaisquer capacidades/eficiências diferentes.",
+            "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+            "prova_atual": "O comando declara compressão ideal, resfriamento perfeito e razões iguais; essa igualdade já determina a pressão intermediária. A base ligada antes das opções explicita as condições equivalentes e prova o mínimo do modelo. O comentário atual limita a conclusão a estágios equivalentes, sem prometer ótimo universal.",
+            "limite": "Eficiências ou temperaturas de entrada diferentes, propriedades variáveis, perdas de pressão e outros objetivos/consumos podem deslocar o ótimo. A igualdade de razões não é imposta a qualquer compressor industrial."
+          }
+        ]
+      },
+      "julgamento_individual_de_alcance": "Gabarito A e álgebra da igualdade de razões concordam com a memória. O comentário atual ressalva condições equivalentes e resfriamento perfeito; a demonstração anterior à tentativa no alvo sustenta a palavra minimiza. Não depende apenas de comentário posterior para esse alcance.",
+      "julgamento_das_opcoes": [
+        {
+          "letra": "A",
+          "texto": "4 bar absolutos.",
+          "correta": true,
+          "origem": "derivação herdada de /root/auditor_aaa; alcance do mínimo verificado nesta revisão",
+          "prova": "Raiz positiva de p1 p3. Razões 4 e 4; pressão intermediária interna ao intervalo e minimizante nas condições equivalentes."
+        },
+        {
+          "letra": "B",
+          "texto": "8,5 bar.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "(p1+p3)/2 é média aritmética, que equaliza incrementos de pressão em vez das razões e não minimiza a soma do modelo."
+        },
+        {
+          "letra": "C",
+          "texto": "2 bar.",
+          "correta": false,
+          "origem": "mecanismo precisado por /root/auditor_ban07_final a partir da nota anterior",
+          "prova": "Aplicar mais uma divisão por 2 ao resultado da divisão em duas razões iguais, 4/2=2, conta o número de estágios duas vezes. A pressão proposta gera razões 2 e 8, não iguais. É erro concreto de repartição; a nota anterior não especificava a operação completa."
+        },
+        {
+          "letra": "D",
+          "texto": "16 bar.",
+          "correta": false,
+          "origem": "juízo herdado de /root/auditor_aaa com variável confundida explicitada",
+          "prova": "Confunde pressão intermediária com final; o segundo estágio teria razão 1 e não repartiria a compressão."
+        },
+        {
+          "letra": "E",
+          "texto": "8 bar.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "p3/2 toma metade da pressão final em vez de igualar razões; produz razões 8 e 2."
+        }
+      ],
+      "notas_e_limites": [
+        "Pressões absolutas, dois estágios equivalentes e modelo explicitado na base prévia. Igualdade de razões dá média geométrica; o mínimo exige o mesmo coeficiente positivo de trabalho nos estágios e ausência das perdas excluídas. Não se afirma ótimo geral de instalação real.",
+        "Prova numérica original permanece atribuída; nova prova é simbólica e restrita ao ponto de alcance.",
+        "Sem curva de compressor real, otimização com perdas ou dados de aprendizagem."
+      ],
+      "evidencia_de_base": {
+        "preservacao_global": "Fora dos artigos idêntico ao baseline, conforme evidência comum.",
+        "bases_examinadas_na_decisao_atual": [
+          {
+            "href": "#base-compressao-estagios",
+            "sha256_trecho": "a35d085fb8c2a5d6df63cf38468fbb118204a700cfe57987881973527ab6088b",
+            "alcance": "Mesma base atual lida em Q22: dois compressores adiabáticos permanentes, mesmo gás ideal de composição fixa, cp/cv constantes, mesma vazão/eficiência isentrópica constante, sem perdas de pressão/fase/separação e DeltaEc/DeltaEp desprezíveis; resfriamento devolve a T1, p1/p3 absolutas fixas. Expressão de trabalho e condição de mínimo são fornecidas antes da tentativa."
+          }
+        ]
+      },
+      "veredito": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "opcoes_efetivamente_assumidas": 5,
+      "observacao_de_atribuicao": "Ressalva fechada na decisão atual citada. A memória preliminar antiga não recebeu retroativamente esse veredito."
+    }
+  ],
+  "cobertura": {
+    "previstos": 35,
+    "concluidos": 8,
+    "pendentes": [
+      "q-e1-01",
+      "q-e1-03",
+      "q-e1-05",
+      "q-e1-06",
+      "q-e1-07",
+      "q-e1-10",
+      "q-e1-14",
+      "q-e1-20",
+      "q-e1-21",
+      "q-e1-25",
+      "q-e1-29",
+      "q-e1-30",
+      "cr-e1-01",
+      "cr-e1-02",
+      "cr-e1-03",
+      "cr-e1-04",
+      "cr-e1-05",
+      "cr-e1-06",
+      "cr-e1-07",
+      "cr-e1-08",
+      "cr-e1-09",
+      "cr-e1-10",
+      "cr-e1-11",
+      "cr-e1-12",
+      "cr-e1-13",
+      "cr-e1-14",
+      "cr-e1-15"
+    ],
+    "opcoes_assumidas": 40
+  },
+  "libera_proximo_id": false,
+  "limites": [
+    "Ciência anterior atribuída ao revisor original; novas verificações e decisões são identificadas por registro.",
+    "Sem piloto, psicometria, revisão humana ou certificação externa.",
+    "Produto, controle e pareceres existentes não editados."
+  ]
+}

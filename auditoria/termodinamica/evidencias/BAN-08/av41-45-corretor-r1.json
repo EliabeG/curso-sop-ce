@@ -1,0 +1,143 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV41–AV45",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_COM_PENDENCIAS_SEM_APROVACAO",
+  "metodo": "Leitura integral da versão atual, alternativas e comentários; contas racionais exatas e hipóteses não explícitas destacadas.",
+  "registros": [
+    {
+      "id": "av-e1-41",
+      "artigo_sha256": "a8e35c751d06cd54ab69a365bf3e2e989296dd85b57c4bd8b5f57125f73d0bb9",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-41",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-equilibrio-fases",
+          "#cr-e1-41"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Líquido e vapor de uma substância pura em equilíbrio térmico, mecânico e de fases.",
+      "solucao": "Potencial químico da mesma substância é igual nas duas fases, μlíquido=μvapor.",
+      "resultado": "D.",
+      "comparacao": "A massas das fases não precisam iguais; B densidades podem diferir; C temperaturas diferentes contradizem equilíbrio térmico; D potencial químico igual; E vapor contém moléculas.",
+      "tolerancia": "Sem valores químicos, cálculo ou tolerância numérica.",
+      "limite": "Critério refere-se ao mesmo componente e coexistência em equilíbrio; igualdade isolada não substitui análise geral de estabilidade.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-42",
+      "artigo_sha256": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-42",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-eficiencia-cop",
+          "#cr-e1-42",
+          "auditoria/termodinamica/pareceres/BAN-08-adjudicacao-av42-av45-r1-independente.md"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_HIPOTESE_PENDENTE",
+      "dados": "Trabalho líquido 1000 kJ por ciclo e 4000 kJ de uma fonte quente; totalidade e mesma base do calor não são explicitadas.",
+      "solucao": "Sob hipótese de calor total de 4000 kJ no mesmo ciclo e sem outras trocas relevantes: η=1000/4000=25%; rejeitado=3000 kJ.",
+      "resultado": "E sob hipótese adicional; suficiência pendente de correção.",
+      "comparacao": "A 33,3%=1000/3000 arredondado; B 100%; C 400% é inversa; D 75% é fração rejeitada; E 25%. A e D dependem também do balanço de rejeição.",
+      "tolerancia": "25% exato no modelo, 33,3% aproxima 100/3% com erro <0,05 p.p.; sem incerteza informada.",
+      "limite": "Enunciado atual não estabelece que 4000 kJ sejam toda entrada térmica no mesmo ciclo; contramodelo no parecer adjudicado. Candidata isolada aguarda revisão e aplicação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "PENDENTE_CORRECAO_SUJEITA_A_REVISAO",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-43",
+      "artigo_sha256": "8d32bb5b9ad7673e2a58d15b3e6ea37751add3e2d9b7b3f3376a390cd3c6ba68",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-43",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-entropia",
+          "#cr-e1-43"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "ΔSágua=−0,50 kJ/K, ΔSvizinhança=+0,60 kJ/K; conjunto isolado.",
+      "solucao": "ΔStotal=−0,50+0,60=+0,10 kJ/K≥0, compatível com segunda lei e com geração positiva.",
+      "resultado": "D, +0,10 kJ/K e compatível.",
+      "comparacao": "A soma módulos e afirma reversibilidade; B −0,10 violaria segunda lei do conjunto isolado; C zero não é a soma; D correto; E omite vizinhança.",
+      "tolerancia": "Resultado exato para dados nominais; sem incerteza de medição.",
+      "limite": "Entropia positiva no conjunto não confirma por si outros detalhes do processo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-44",
+      "artigo_sha256": "192525a6985a995bb6e73ab56148c54fd89b7e2ed2dd7315aaba7db5d56386b9",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-44",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-carnot-prova",
+          "#base-trabalho-fronteira",
+          "#cr-e1-44"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_E_LOGICA",
+      "dados": "Sistema fechado retorna ao estado inicial; três afirmações sobre ciclo e adiabaticidade.",
+      "solucao": "ΔU ciclo=0; se todas etapas adiabáticas Qlíq=0; se ΔEc=ΔEp=0, ΔU+ΔEc+ΔEp=Q−W dá Wlíq=0. I, II e III verdadeiras.",
+      "resultado": "A, I/II/III.",
+      "comparacao": "A inclui três verdadeiras; B omite I/III; C omite I; D omite III; E omite II/III.",
+      "tolerancia": "Zeros são exatos para ciclo e hipóteses; sem dados de magnitude ou tolerância.",
+      "limite": "Trabalho líquido nulo depende de retorno das energias macroscópicas; adiabaticidade de etapa isolada não determina ciclo inteiro.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-45",
+      "artigo_sha256": "3babe8cb08138fd4ad42f7358c5208b70974370d17a62d30490075e7b5019b50",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-45",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-carnot-prova",
+          "#base-limite-carnot",
+          "#cr-e1-45",
+          "auditoria/termodinamica/pareceres/BAN-08-adjudicacao-av42-av45-r1-independente.md"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_HIPOTESE_PENDENTE",
+      "dados": "1000 kJ/ciclo de fonte 600 K, fonte fria 300 K; exclusividade de trocas não explicitada no enunciado atual.",
+      "solucao": "Sob duas fontes exclusivamente e calor recebido total 1000 kJ: ηCarnot=1−300/600=50%; Wmáx=500 kJ e Qrejeitado,mín=500 kJ/ciclo.",
+      "resultado": "E sob hipótese adicional; suficiência pendente de correção.",
+      "comparacao": "A 333,3 usa denominador somado; B 1000 pode representar trabalho nulo mas não mínimo; C 300 implica 70%; D zero implica 100%; E 500 é mínimo no modelo.",
+      "tolerancia": "500 exato no modelo nominal; 333,3 aproxima 1000/3 com erro <0,05 kJ; sem incerteza metrológica.",
+      "limite": "Texto atual não exclui outras fontes ou trocas; contramodelo no parecer adjudicado. Candidata isolada aguarda revisão e aplicação.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO_VERSAO_EFETIVA",
+      "estado": "PENDENTE_CORRECAO_SUJEITA_A_REVISAO",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [
+    "AV42: totalidade e base temporal do calor não suficientemente explícitas.",
+    "AV45: exclusividade de fontes e trocas não suficientemente explícita."
+  ],
+  "limites": [
+    "Candidatas isoladas não aplicadas nem aprovadas; não retroatribuir suas hipóteses à versão vigente.",
+    "Itens autorais, origem CR contextualiza e não torna dados da transformação oficiais."
+  ]
+}

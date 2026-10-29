@@ -1,0 +1,195 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV61–AV80",
+  "estado": "CONFERIDO_COM_APOIO_INDEPENDENTE_SEM_DECISAO_FINAL",
+  "data": "2026-10-29",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+  },
+  "registros_origem": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/av61-65-corretor-r1.json",
+      "sha256": "8dbcc2f63f1c06d1a541af2dbed456a32249eb12c42bbebdf6891498d4a13b74"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/av66-70-corretor-r1.json",
+      "sha256": "94bb5775dfa1d9895fd8df877f4f88d5a4f0c7dee0afb76419ff3ff62de1f458"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/av71-75-corretor-r1.json",
+      "sha256": "f9869dfc23fa8c0e9076272c3459d2e51a86fc40cf6926e6ceb4090b4da2cdbb"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/av76-80-corretor-r1.json",
+      "sha256": "d4654f068e55ce893e3ddd1b67364619065ee06adbefed8a87eb635013bfdaaf"
+    }
+  ],
+  "apoios": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "sha256": "5710b176f6c686e48bd23dd9cc1c5089151a999015eb234ac3798be49e7f636b",
+      "autor": "/root/auditoria_av61_70, agente automatizado",
+      "html_examinado_sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "sha256": "de40c7dfecf0d3aab2754ef48c6a27c053e3d6d532bd77e9ddac13cd4ca68991",
+      "autor": "/root/auditoria_av61_70, agente automatizado",
+      "html_examinado_sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+    }
+  ],
+  "verificador": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/verificar-av61-80-r1.py",
+    "sha256": "ab1fe9bb20259763882d76fcae9eff8b2d1a75db5a77093cf4d2f0297e641ab1",
+    "resultado": "20 IDs e hashes atuais conferidos contra inventário e relatórios; contas exatas passam."
+  },
+  "registros": [
+    {
+      "id": "av-e1-61",
+      "artigo_sha256": "2ef609887b7c6e57a7b9a8f38f7760b69c0ffe4377c1c2b43d307101ffd1be86",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av61-65-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-62",
+      "artigo_sha256": "795e127dad4361f30a6056f49479171b12c849388cdcdebde7fc09561be75ae7",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av61-65-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-63",
+      "artigo_sha256": "e5ee106ebb64b6a28b89d824d5ee934c4be36dcde18a147d6d65c94bac558c00",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av61-65-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-64",
+      "artigo_sha256": "d7a2c29feee7ebd705e93fe6d8c6d222c7f365d15e9d5ffd75650f3f900c44df",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av61-65-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-65",
+      "artigo_sha256": "5f993c3d09879d8de3fd56710cb38d657dd3415112868673a9bed285aa473000",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av61-65-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-66",
+      "artigo_sha256": "414e4a69cb79528ed86dcb04c0172f1f99eba044f8975a08ca92bbf212601946",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av66-70-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-67",
+      "artigo_sha256": "c234657d9d082fb9ca732f48724916a7c267b2048c8fca190ae934f62fb6ba84",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av66-70-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-68",
+      "artigo_sha256": "856b39ea9bb6e14936108cc8f0cc0633ac20f6777777c30320e28414e1f6207d",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av66-70-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-69",
+      "artigo_sha256": "f1ade775126752789740119acdb33f04190299cc54d46883e4e0354d7c6e6fee",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av66-70-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-70",
+      "artigo_sha256": "aa3759b74d4479c6c2c7e76f4ad964b19344b6c1b13593c027dac0358a2600da",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av66-70-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av61-70-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-71",
+      "artigo_sha256": "a6822e633557838619c8a4c9fa1790c583776ef03830b6ca475f28ad6b25e2ff",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av71-75-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-72",
+      "artigo_sha256": "9b34292c52fddf0bbfff7573258e810e24f0d3ad6cc86dc0c1eaed9743754e7d",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av71-75-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-73",
+      "artigo_sha256": "0726d64bef732bb8b75a4473a190e14e7b7359155533af25fd5fc6b6c5f0b34a",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av71-75-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-74",
+      "artigo_sha256": "e1cbd2e738cff1e20744251bba5ae94651ec5502fd9dc5808c1627f19b37b032",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av71-75-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-75",
+      "artigo_sha256": "cf84420539a50440af16625535da0e7513c3d3de6362be04a830790f9eb9029c",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av71-75-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-76",
+      "artigo_sha256": "1c62973843285a448a379f2b090961af88e38192c7728fb8d628fe4f7a4b48cb",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av76-80-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-77",
+      "artigo_sha256": "ba4e9d281b7c90b87fa9f88e4d953020a002c8903045cd2fcc0e0e55430b2820",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av76-80-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-78",
+      "artigo_sha256": "eb02ebe932d364e4cd46353e409c2c75a53ec06000a2f3d95929a1289b2af8e4",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av76-80-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-79",
+      "artigo_sha256": "e1bcf99fdeeb7c91da73b8c89d96714294fd1c64234861d3ae7fb0b91cf78bcc",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av76-80-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    },
+    {
+      "id": "av-e1-80",
+      "artigo_sha256": "9586c1757d18d3ba88d59485b308d8e6c92a4dd5859ffe94ff3cd7e3e9ac9a71",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/av76-80-corretor-r1.json",
+      "apoio_independente": "auditoria/termodinamica/pareceres/BAN-08-apoio-independente-av71-80-r1.md",
+      "autor_apoio": "/root/auditoria_av61_70, agente automatizado"
+    }
+  ],
+  "limites": [
+    "Apoios foram realizados sem cegamento antes da aplicação BAN-08 e examinavam HTML de hash anterior; os 20 artigos individuais mantiveram identidade, conferida por hash. A análise científica é atribuída ao revisor, não inferida da identidade.",
+    "AV62 provém de versão revisada BAN-07; AV80 traz explicitamente regime permanente e troca apenas pela face, diferentemente da questão real crítica CR80.",
+    "Não se aprovam BAN-08 nem a versão efetiva; sem teste de estudantes ou incerteza de medição."
+  ]
+}

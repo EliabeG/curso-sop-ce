@@ -1,0 +1,149 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR16–CR20",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos, opções e resolução; verificação das razões e pressão com Fraction e exame dos limites de modelo.",
+  "registros": [
+    {
+      "id": "cr-e1-16",
+      "artigo_sha256": "80a328824d46255663e720f5850480ab96df22ccdba54dc04db4c0e6f205ee32",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-16",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-umidade",
+          "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "Umidade relativa 50% na entrada e 40% na saída; T e pressão constantes; mistura ideal com fator de intensificação desprezado.",
+      "solucao": "φ=pv/psat(T). Mesma temperatura e fase de referência ⇒ psat igual; pv,saída/pv,entrada=0,40/0,50=0,80. A razão inversa vale 0,50/0,40=1,25.",
+      "resultado": "E; razão pedida 0,80.",
+      "comparacao": "C aceitaria 1,25, resultado da inversão; E reconhece 0,80.",
+      "tolerancia": "0,80 e 1,25 são exatos para dados nominais e aproximação, sem informação de incerteza instrumental.",
+      "limite": "Relação usa o modelo editorial de mistura ideal e mesma referência de saturação; não reivindicar exatidão para mistura real.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-17",
+      "artigo_sha256": "5118b0589320c228ac44f78264f918c85c79f9118118fda05fdb020ae7039ec4",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-17",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-umidade",
+          "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "Umidade relativa de entrada 50%; comparação na mesma temperatura, volume e fase de referência; mistura ideal, sem fator de intensificação.",
+      "solucao": "φ=pv/psat=0,50. Por pvV=nvRT no mesmo T e V, nv/nsat=pv/psat=0,50=1/2.",
+      "resultado": "C sob o modelo e comparação definidos.",
+      "comparacao": "C representa metade da quantidade de vapor de saturação; E negaria. Não é metade da massa do ar.",
+      "tolerancia": "A fração 1/2 é exata para os dados e modelo; não há incerteza informada.",
+      "limite": "A expressão corrente sobre o ar suportar água é simplificação; a leitura da quantidade depende de T e V iguais e fase de referência iguais.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-18",
+      "artigo_sha256": "06b0dc953b5579ef19c44e8137895aaecd4e1d6245c44a6b49956cc7445fc6e1",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-18",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "Gás ideal, quantidade fixa; T1=300 K e T2=1200 K; R=0,082 atm·L/(mol·K) não é necessário na razão.",
+      "solucao": "p2V2/(p1V1)=T2/T1=1200/300=4. Se p e V triplicassem, produto seria 3×3=9 e T2=9×300=2700 K.",
+      "resultado": "E; produto quadruplica, não aumenta 9 vezes.",
+      "comparacao": "C exige simultaneamente triplicação de p e V; E reconhece incompatibilidade com 1200 K.",
+      "tolerancia": "Razões 4 e 9 e temperatura hipotética 2700 K são exatas para os dados nominais.",
+      "limite": "Somente o produto pV fica determinado; não se determina p2 ou V2 separadamente sem outra condição.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-19",
+      "artigo_sha256": "3871e235af09e1bdfedc606d42ae3922b3b02eea743895cd42cce446fc9a8a75",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-19",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "n=3 mol, T=330 K, V=85,4 L, R=0,082 atm·L/(mol·K), limiar 0,94 atm; gás ideal.",
+      "solucao": "p=nRT/V=(3×0,082×330)/85,4=81,18/85,4=4059/4270≈0,9505854801 atm; diferença do limiar 113/10675≈0,01058548 atm.",
+      "resultado": "C; p≈0,9506 atm > 0,94 atm.",
+      "comparacao": "C é compatível com o cálculo; E negaria desigualdade.",
+      "tolerancia": "0,9506 é arredondado a quatro casas, erro <0,00005 atm; comparação feita com fração exata dos valores nominais. Não inferir incerteza de medida.",
+      "limite": "R fornecido já está em atm·L/(mol·K); não converter somente volume. Valores de entrada tratados como nominais para exercício.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-20",
+      "artigo_sha256": "2cb07dee73b66b77f5b0bb9b2e7cb494360a2fe28a500c14e2d3fbf709aa6a52",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-20",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-gas-modelo",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "LIMITE_SIMBOLICO",
+      "dados": "Gás ideal com quantidade fixa e pressão constante positiva; extrapolação até zero absoluto.",
+      "solucao": "V=nRT/p; para p>0 fixo e T→0+, V→0; não tende ao infinito.",
+      "resultado": "E no contexto da extrapolação.",
+      "comparacao": "C afirmaria divergência para qualquer pressão; um caminho de pressão fixa positiva já o contradiz.",
+      "tolerancia": "O limite zero é exato no modelo; sem dados medidos ou tolerância.",
+      "limite": "A extrapolação ideal não descreve gases reais até 0 K; pressão zero ou variável exige análise diferente.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem revisão independente desta entrega nem encerramento de BAN-08.",
+    "Fonte e chave oficiais são atribuídas à conferência documental anterior; PDFs e texto ASHRAE não reexaminados nesta execução."
+  ]
+}

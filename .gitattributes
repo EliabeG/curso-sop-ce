@@ -2,3 +2,11 @@
 *.pdf -text
 *.png -text
 *.zip -text
+
+# Preservar bytes de versões e evidências usadas nos hashes SHA-256.
+auditoria/** -text
+modulos/e1-termodinamica.html -text
+formulas/termodinamica.html -text
+assets/curso.js -text
+assets/registro.js -text
+assets/termodinamica/** -text

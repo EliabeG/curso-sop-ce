@@ -1,0 +1,140 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV21–AV25",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco opções e comentários; frações exatas e limites de arredondamento.",
+  "registros": [
+    {
+      "id": "av-e1-21",
+      "artigo_sha256": "d30c611664194c81700bc047dc72f6f1d9242c9552a394616ba605226c6aba73",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-21",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-gas-modelo",
+          "#cr-e1-21"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_E_LOGICA",
+      "dados": "Gás ideal de quantidade e composição fixas, n conhecido; três afirmações.",
+      "solucao": "pV=nRT: I e II verdadeiras, III falsa pois variáveis não são independentes.",
+      "resultado": "B, apenas I e II.",
+      "comparacao": "A contém III e omite I; B correta; C inclui III; D apenas III falsa; E omite II.",
+      "tolerancia": "Sem dados medidos; associação lógica exata, sem tolerância.",
+      "limite": "Determinar terceira variável exige valores fisicamente admissíveis de n e das duas outras.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-22",
+      "artigo_sha256": "a60b027d19ccee5b6445c7865ba43a1732ddb069c63592895d523ebb82738e36",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-22",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-energia",
+          "#base-gas-modelo",
+          "#cr-e1-22"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "pV=180 kJ e nRT=200 kJ; Z definido por pV/nRT.",
+      "solucao": "Z=180/200=0,90; inversa 200/180=10/9≈1,11; diferença 20 kJ não é Z.",
+      "resultado": "B, Z=0,90 e desvio do gás ideal.",
+      "comparacao": "A inverte e chama ideal; B correto; C fornece 1; D diferença 20 kJ tem unidade indevida; E calcula 0,90 mas classifica como exatamente ideal.",
+      "tolerancia": "0,90 exato nominal; 1,11 aproxima 10/9 com erro 0,00111<0,005; sem incerteza de medição.",
+      "limite": "Z adimensional e desvio da equação ideal no estado considerado; proximidade de 1 não prova idealidade de todas as propriedades.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-23",
+      "artigo_sha256": "52ce7c5b255380dd1c2d876058b8965c9ff3feaa6e373c57f6f8e46bd3db529b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-23",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-gas-modelo",
+          "../assets/questoes-reais-e1/figura-9d164690a624.png",
+          "#cr-e1-23"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Condições geralmente favoráveis à aproximação de gás ideal, longe da condensação.",
+      "solucao": "Baixa pressão e temperatura suficientemente alta tendem a reduzir efeito das interações e da proximidade de mudança de fase.",
+      "resultado": "A.",
+      "comparacao": "A representa condição usual; B alta pressão isolada não garante; C alta pressão e proximidade de condensação desfavorecem; D junto da saturação desfavorece; E Z=1 para todos os gases reais é falso.",
+      "tolerancia": "Sem valores de p, T ou Z, não há cálculo ou tolerância.",
+      "limite": "Tendência qualitativa não fornece limiar universal; a figura genérica não fornece dados de estado.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-24",
+      "artigo_sha256": "8e27e9a89a7e9cd792555923bc8888441ac0ec412520da31a5b29b2379cf79c6",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-24",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "#base-absolutas",
+          "#cr-e1-24"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "Gás ideal, volume e massa fixos, T1=300 K, T2=360 K.",
+      "solucao": "p2/p1=T2/T1=360/300=1,20; aumento relativo 0,20; inversa 300/360=5/6≈0,833.",
+      "resultado": "E, 1,20.",
+      "comparacao": "A 60 é diferença em K, não razão; B 0,20 é aumento relativo; C 1 ignora mudança; D 0,833 é inversa; E 1,20.",
+      "tolerancia": "1,20 e 0,20 exatos nominalmente; 0,833 aproxima 5/6 com erro 0,000333<0,0005; sem incerteza instrumental.",
+      "limite": "Razão usa temperaturas absolutas e mesma massa e volume.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-25",
+      "artigo_sha256": "944eadc933945dd04024af4da9585627d9484f9e2095af98a0efb541c9ff8ba1",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-25",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "#cr-e1-25"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Gás ideal, quantidade fixa, pressão absoluta duplica e volume aumenta 50%.",
+      "solucao": "T2/T1=2×1,5=3; temperatura final 300% do inicial e aumento (3−1)×100=200%.",
+      "resultado": "C, aumenta 200%.",
+      "comparacao": "A 100% conta apenas pressão; B 300% confunde valor relativo com aumento; C 200%; D 50% só volume; E constante contradiz produto pV.",
+      "tolerancia": "Razões e percentuais exatos para valores nominais; sem tolerância metrológica.",
+      "limite": "Porcentagens aplicam-se à temperatura absoluta em K, não à escala Celsius.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

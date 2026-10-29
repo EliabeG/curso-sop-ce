@@ -1,0 +1,147 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR46–CR50",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos e alternativas, exame dos modelos e contagem das etapas.",
+  "registros": [
+    {
+      "id": "cr-e1-46",
+      "artigo_sha256": "6db3ea19084b8ebc1743aabcf601f31f82cf56a2d5998e386e7504860cfff1b2",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-46",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-carnot-prova",
+          "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf#page=9",
+          "https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-inpe-tecnologista-retificado-02.08.pdf#page=4",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "CONTAGEM_EXATA",
+      "dados": "Ciclo de Carnot ideal, duas fontes, quatro etapas reversíveis.",
+      "solucao": "Há duas isotérmicas reversíveis com trocas de calor e duas adiabáticas reversíveis que conectam as temperaturas; as últimas são isentrópicas.",
+      "resultado": "E: isotérmicas e adiabáticas.",
+      "comparacao": "A isotérmicas/isobáricas, B isocóricas/isobáricas, C isobáricas/isentrópicas, D isotérmicas/isocóricas não identificam os dois pares.",
+      "tolerancia": "2+2=4 etapas, contagem exata; não há arredondamento nem medida.",
+      "limite": "O ciclo é reversível; não substituir indiscriminadamente adiabático por isentrópico para um processo irreversível.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-47",
+      "artigo_sha256": "8dbbd53e0111efaef76009a38b5c1c9ed437c6f6ecc471c0939147f903ec0786",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-47",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-tipos-compressores",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Comparação de compressores centrífugo e alternativo para grande vazão e baixa pressão de descarga.",
+      "solucao": "Centrífugos usualmente são adequados para altas vazões; alternativos favorecem vazões menores e relações de pressão maiores.",
+      "resultado": "C na comparação geral da prova.",
+      "comparacao": "C apresenta adequação geral; E a negaria.",
+      "tolerancia": "Sem especificações numéricas, cálculo de desempenho ou tolerância.",
+      "limite": "Seleção final depende de gás, pressões de entrada/saída, eficiência e faixa operacional; não é regra universal de projeto.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-48",
+      "artigo_sha256": "d39d25c7b5b9bafac081c3c1f00b129a54f07fceea77f5354bb4632dfd439fd6",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-48",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-brayton",
+          "#base-trocadores",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Trocador em contracorrente entre exaustão da turbina e ar comprimido.",
+      "solucao": "Exaustão mais quente pode transferir calor ao ar antes da combustão, recuperando energia; contracorrente permite diferença favorável ao longo do trocador.",
+      "resultado": "C no cenário possível de regeneração.",
+      "comparacao": "C afirma possibilidade de uso, não ocorrência em todo projeto; E negaria tal possibilidade.",
+      "tolerancia": "Sem temperaturas ou capacidades térmicas numéricas, não se calcula transferência ou tolerância.",
+      "limite": "Recuperação requer exaustão mais quente que ar de saída do compressor; condição operacional e arranjo devem ser verificados.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-49",
+      "artigo_sha256": "8f8f133eddab5ab062c9f3a35ff78b246fa6ccd357de225593890f15c910cf9f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-49",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-brayton-real",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Ciclo Brayton ideal e real, trechos passivos de adição e rejeição de calor.",
+      "solucao": "Idealização usa pressão constante; trocadores reais podem apresentar queda de pressão devido a perdas de escoamento. Rejeição de calor não é compressão que produz aumento de pressão.",
+      "resultado": "E.",
+      "comparacao": "C acrescenta aumento de pressão na rejeição; E rejeita essa descrição de perdas no modelo usual.",
+      "tolerancia": "Sem valores de pressão ou perda, cálculo e tolerância não se aplicam.",
+      "limite": "Comparação considera trocas em componentes passivos e não implica que temperatura ou pressão sejam constantes em qualquer equipamento real.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-50",
+      "artigo_sha256": "b0e25a75cd24dfa1ded90bae33f09ee36222fd5d305d00607be61e818d126d3f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-50",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-isentropica",
+          "#base-brayton-real",
+          "https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Comparação de cada componente adiabático real com referência isentrópica, mesmo fluido e estado de entrada, mesma pressão de saída; regime permanente, uma entrada/saída, ΔEC/ΔEP desprezíveis e trabalho de eixo.",
+      "solucao": "Irreversibilidade eleva trabalho específico do compressor e reduz o trabalho específico da turbina; wlíq=wt−wc diminui e a parcela wc/wt cresce se ambos positivos.",
+      "resultado": "E no modelo declarado.",
+      "comparacao": "C afirma menor parcela consumida pelo compressor; E a rejeita no recorte da comparação.",
+      "tolerancia": "Sem dados de entalpia ou vazão não se determina trabalho, potência ou tolerância numérica.",
+      "limite": "Não exigir temperaturas ou entalpias de saída iguais; comparar o conjunto requer bases de vazão consistentes e condições definidas por componente.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior; PDFs não reexaminados nesta execução."
+  ]
+}

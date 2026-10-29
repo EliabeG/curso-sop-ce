@@ -1,0 +1,87 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "escopo": {
+    "total": 197,
+    "Q": 30,
+    "CR": 80,
+    "AV": 80,
+    "abertos": 7
+  },
+  "regras": [
+    "Ler artigo integral, solucionar a partir do comando/figuras/dados acessíveis antes de usar a resolução. Hipóteses apenas na resolução não sanam automaticamente a suficiência.",
+    "MC: todas as opções, inclusive cada combinação de proposições e comando INCORRETA. Justificar erro e plausibilidade, sem declarar plausível por mera diferença de número.",
+    "C/E: valor lógico sob condições adequadas e razão de a leitura oposta falhar; não fabricar cinco distratores.",
+    "Nove críticos: chave documental e interpretação técnica distinguidas, manutenção do estudo guiado/exclusão da nota justificada.",
+    "Abertos: solução/rubrica e conjunto de respostas admissíveis, sem exigir unicidade literal de rotas. Reuso somente com identidade e alcance documentados.",
+    "Cálculos pertinentes à resposta/unicidade são obrigatórios; não declarar BAN-08 integral concluído.",
+    "Nenhuma edição material nesta fase. Achados e proposta mínima com impacto em identidade antes de implementação."
+  ],
+  "modelo_registro": {
+    "id": "identificador existente",
+    "banco": "inicial/real/avalia/aberto conforme extrato",
+    "sha256_artigo": "do extrato; reconferir se ler produto",
+    "autor_leitura": "nome do agente; apoio não é Auditor",
+    "comando_e_uso": {
+      "tipo": "MC5 / CE / aberto / estudo_critico",
+      "chave_atual": "letra ou não aplicável",
+      "objetivo": "o que o comando pede",
+      "uso_atual": "pontuável / estudo crítico sem nota / rubrica aberta"
+    },
+    "suficiencia": {
+      "dados_e_condicoes_fornecidos": [],
+      "convencoes_ou_modelos_justificados": [],
+      "somente_na_resolucao": [],
+      "faltantes_relevantes": [],
+      "conclusao": "explicação individual"
+    },
+    "consistencia": {
+      "unidades_e_bases": "avaliação individual",
+      "restricoes_fisicas": "avaliação individual",
+      "resultado": "coerente / ponto a corrigir e por quê"
+    },
+    "demonstracao": {
+      "passos": [],
+      "conclusao": "resultado e sua razão",
+      "arredondamento_e_tolerancia": "avaliação pertinente ou não aplicável justificado"
+    },
+    "alternativas": [
+      {
+        "opcao": "A/B/C/D/E ou C/E; vazio só para aberto com justificativa",
+        "valor_logico": "correta/incorreta/condicionada/documental",
+        "justificativa": "demonstração específica",
+        "erro_representado_e_plausibilidade": "erro concreto ou problema de distrator identificado"
+      }
+    ],
+    "unicidade": {
+      "situacao": "única / não única / insuficiente / documental / conjunto aberto",
+      "equivalencias_apos_arredondamento": [],
+      "justificativa": "comparação individual"
+    },
+    "comentarios_existentes": {
+      "coerencia": "confronto com solução e justificativas existentes",
+      "lacunas": []
+    },
+    "reuso": [
+      {
+        "arquivo": "caminho de evidência prévia",
+        "alcance": "campos realmente conferidos; identidade necessária",
+        "identidade": "hash/trecho comparado"
+      }
+    ],
+    "diagnostico": {
+      "decisao": "manter / esclarecer / corrigir / estudo_critico_preservado / dependencia",
+      "achados": [],
+      "proposta_minima": "texto/ação concreta quando necessário",
+      "impacto_identidade": "nenhum se só documentação; se enunciado/alternativa muda, nova digital; não apagar histórico"
+    },
+    "fontes_e_evidencias": []
+  },
+  "entregas": {
+    "coordenador": "auditoria/termodinamica/evidencias/BAN-07/diagnostico-30-q-coordenador-r1.json",
+    "apoio": "auditoria/termodinamica/evidencias/BAN-07/apoio/diagnostico-80-av-r1.json",
+    "corretor": "auditoria/termodinamica/evidencias/BAN-07/corretor/diagnostico-87-cr-abertos-r1.json"
+  },
+  "limite": "Contrato de preenchimento, não dados já examinados. O integrador revisará as leituras e apresentará diagnóstico197 antes de alterar produto."
+}

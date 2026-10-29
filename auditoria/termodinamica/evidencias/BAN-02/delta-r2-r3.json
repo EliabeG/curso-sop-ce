@@ -1,0 +1,23 @@
+{
+  "id": "BAN-02",
+  "rodada": 3,
+  "achado": "R2-A",
+  "fonte_sha256_artigo": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+  "justificativa": "As alternativas D e E têm o mesmo limite matemático zero e diferem na afirmação de validade física para um gás real até 0 K. A distinção é necessária para escolher a alternativa, além dos dois requisitos matemáticos preservados.",
+  "delta_restrito": true,
+  "diferencas": [
+    {
+      "id": "av-e1-20",
+      "campo": "pre_requisitos",
+      "antes": [
+        "Leitura de V=nRT/p com n e p constantes positivos",
+        "Limite de uma proporcionalidade direta quando T tende a zero"
+      ],
+      "depois": [
+        "Leitura de V=nRT/p com n e p constantes positivos",
+        "Limite de uma proporcionalidade direta quando T tende a zero",
+        "Distinção entre extrapolação matemática do modelo ideal e domínio físico de um gás real, incluindo possível mudança de fase ou desvio da idealidade antes de 0 K"
+      ]
+    }
+  ]
+}

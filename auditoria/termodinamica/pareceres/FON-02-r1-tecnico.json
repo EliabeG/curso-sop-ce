@@ -1,0 +1,7190 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado /root/auditor_aaa/tecnica_fon01",
+  "checks": [
+    {
+      "id": "manifesto-congelado",
+      "ok": true
+    },
+    {
+      "id": "hash:modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+        "bytes": 62308
+      }
+    },
+    {
+      "id": "hash:assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "hash:assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "hash:assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "hash:formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "hash:assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "hash:assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/entregas/FON-02-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "9d5936596e2ada28e8e337bcf4c8084c2d361a2654cea92f886644f2268142de",
+        "bytes": 4989
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/PLANO_DIAGNOSTICO-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "33c0775e12ffb30696d115814dc9917980f7a94e8b91a420bb2d65d61f6a6a94",
+        "bytes": 17823
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "cb8752315a13cbd57b20f3cc89adb55571c3b094d1ab78ab071a330f26ba5ebc",
+        "bytes": 57501
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "964e35024daac2e2102f35f80587933225e51a7f8581cb2ab3843f16114c4e18",
+        "bytes": 60900
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0bfd16901421a2135216518b8ff56f062b6c9901e4fb3101e7149a279758e8cb",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+        "bytes": 1310895
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-adiabatica-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "93ffba1b5384ef5de4725f4a63b52aff24b8a4652d1a0786c28cc1ecf290d75f",
+        "bytes": 1014
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-sigma-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "2037da81034805ed884bb1d618e37b43e9e70fa524ae4ae54a7020374f8b96a9",
+        "bytes": 1824
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-unidades-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "28cfc65a1a790ea5250311e1c7a1e77959cf979e1783bff8919bdae46c29d9e0",
+        "bytes": 2177
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio/diagnostico-40-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "9aadf56b60f363b64d799ffe68862032e8cfcfba036c82264a749cb2d85e57f4",
+        "bytes": 130496
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio/diagnostico-40-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "baf675a88d6bc003f4892e68a06106db5e317a1d6d810edd7a02eead1c4c8840",
+        "bytes": 5907
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio/propostas-textuais-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "7fb2479bb88729825f5494a00b0cc6a2f7a69d715594665e5bb4648bebf21565",
+        "bytes": 34115
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/baseline-coordenador-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "4bad9c84cfc9c2f257d4d56d12032e85aba24e2ca7831c901769ffd6b3437e3a",
+        "bytes": 131096
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/corretor/diagnostico-40-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "f7045929d2e14365439206fa82649943db0c429614f9f637e7ede4eac885b3e7",
+        "bytes": 28874
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/corretor/diagnostico-parcial-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "529e9cb55d597e0ba7ac56d3e3411c8d6ffbb69513e5abf65bf1149fd724961e",
+        "bytes": 9361
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/corretor/propostas-textuais-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "591218bcc5fb4f7c27be597a13da98ffd99275c97d96b31bdc94203914c3a8a6",
+        "bytes": 9900
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/delta-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "6044a406abc625fe9c534d667d1340ed940049d2a7546d0022bcb1694ffb2b57",
+        "bytes": 28185
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/diagnostico-80-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "798b6b603bd2e74a242ca1e52cf05d82f77625de1b6ce3a9f7d7c8711a1f2476",
+        "bytes": 147459
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/e1-termodinamica.r1.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/extrato-80-antes.json",
+      "ok": true,
+      "details": {
+        "sha256": "6a0e106f9cdc70a50ab77e9b3bba606e5dc9bee208fba59a7e525d5454dd9262",
+        "bytes": 898235
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/fontes-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "9f03b7bbde7f057a52fce320e54d8b4d57178af8ceea928cdcf235a760693ef8",
+        "bytes": 16850
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/leitura-coordenador-base-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "e1f47371afca3a3fe9b77a3c2a7dcb2125b63f73bf85dc576c8b18c7683027c9",
+        "bytes": 15117
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/navegador-coordenador-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "62336e3ae7ed87ce927296e547b4d779c48d96bf85731438a792bc2785400a26",
+        "bytes": 3423
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/navegador-cr26-r1.jpg",
+      "ok": true,
+      "details": {
+        "sha256": "5dc438f852df70b9aec712c0d3ba6b896a89fddc04e65c912e13965ffbf1d8f1",
+        "bytes": 95352
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/navegador-cr36-r1.jpg",
+      "ok": true,
+      "details": {
+        "sha256": "c17c5361668b5bebe3e8b3ea5a7a90b064d181257aa2f4de3e4b800ce6ab4b2b",
+        "bytes": 98221
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+        "bytes": 62308
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/copias.json",
+      "ok": true,
+      "details": {
+        "sha256": "f8157223b15a09933838192863c4c93881894240e3090ed2c3456ca2b0bcf522",
+        "bytes": 2509
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/preservacao-coordenador-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "b45e9a9dc8dbe9c091e05b06ceb2f20cdd1cdd97a701bd30f374d5b8e56f80a5",
+        "bytes": 6853
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "ffeab0e9324624579772588dd010d2d70ad256e025290d06a0efb474fd5f9170",
+        "bytes": 411403
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/snapshot-antes.json",
+      "ok": true,
+      "details": {
+        "sha256": "bf5bea1de0b60404938ab854c2554dc82c13b899666d4ce28d9070a03393b0be",
+        "bytes": 2505
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/verificacao-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "aa1030c11966550298f17441aadeac829b78fa03cb04e7d7c3109836d829ad61",
+        "bytes": 18894
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/verificar-r1.mjs",
+      "ok": true,
+      "details": {
+        "sha256": "351a393366384e72b19d0df86c62dc7d3d275555875d5cd6f7321d6f88e4ee68",
+        "bytes": 7383
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "copia:modulos/e1-termodinamica.html",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "copia:auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+        "bytes": 62308
+      }
+    },
+    {
+      "id": "copia:auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "copia:assets/curso.js",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "copia:assets/curso.css",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "copia:assets/registro.js",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "copia:formulas/termodinamica.html",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "copia:assets/formulario-e1.js",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "copia:assets/formulario-e1.css",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-01/manifesto-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "91684a6c5dcb945ff9c8841cb6cc02ca82b50c7eb285a2a2b18863eb413dc628",
+        "bytes": 27407
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/pareceres/FON-01-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "997313ef9d2e2137fe0ada9a028699ef29e536f75202780afbca961c0d39bf22",
+        "bytes": 8912
+      }
+    },
+    {
+      "id": "delta-unico:cr-e1-06",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-16",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-17",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-24",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-26",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-27",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-28",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-29",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-30",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-33",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-36",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-37",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-40",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-42",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-44",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-45",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-50",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-57",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-65",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-79",
+      "ok": true
+    },
+    {
+      "id": "delta-unico:cr-e1-80",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-01",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-02",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-03",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-05",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-06",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-07",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-08",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-10",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-11",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-12",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-13",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-14",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-15",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-16",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-17",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-18",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-19",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-20",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-21",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-22",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-23",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-25",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-26",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-27",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-28",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-29",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-30",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-31",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-32",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-33",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-36",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-37",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-38",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-40",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-41",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-42",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-43",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-44",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-45",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-46",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-47",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-48",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-49",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-50",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-51",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-52",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-53",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-54",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-55",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-56",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-57",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-58",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-59",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-60",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-61",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-63",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-64",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-65",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-66",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-67",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-68",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-69",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-70",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-71",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-72",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-73",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-74",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-75",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-76",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-77",
+      "ok": true
+    },
+    {
+      "id": "summary-unico:cr-e1-78",
+      "ok": true
+    },
+    {
+      "id": "html-integral-reconstruido",
+      "ok": true
+    },
+    {
+      "id": "baseline-FON01-identico",
+      "ok": true
+    },
+    {
+      "id": "html-final-identificado",
+      "ok": true
+    },
+    {
+      "id": "197-ids-ordem",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-01",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-02",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-03",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-04",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-05",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-06",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-07",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-08",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-09",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-10",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-11",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-12",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-13",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-14",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-15",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-16",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-17",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-18",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-19",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-20",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-21",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-22",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-23",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-24",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-25",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-26",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-27",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-28",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-29",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-30",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-31",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-32",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-33",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-34",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-35",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-36",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-37",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-38",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-39",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-40",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-41",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-42",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-43",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-44",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-45",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-46",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-47",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-48",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-49",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-50",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-51",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-52",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-53",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-54",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-55",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-56",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-57",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-58",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-59",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-60",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-61",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-62",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-63",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-64",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-65",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-66",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-67",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-68",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-69",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-70",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-71",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-72",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-73",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-74",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-75",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-76",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-77",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-78",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-79",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:cr-e1-80",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-01",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-02",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-03",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-04",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-05",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-06",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-07",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-08",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-09",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-10",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-11",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-12",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-13",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-14",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-15",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-16",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-17",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-18",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-19",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-20",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-21",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-22",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-23",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-24",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-25",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-26",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-27",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-28",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-29",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-30",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-31",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-32",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-33",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-34",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-35",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-36",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-37",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-38",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-39",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-40",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-41",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-42",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-43",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-44",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-45",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-46",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-47",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-48",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-49",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-50",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-51",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-52",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-53",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-54",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-55",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-56",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-57",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-58",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-59",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-60",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-61",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-62",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-63",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-64",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-65",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-66",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-67",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-68",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-69",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-70",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-71",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-72",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-73",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-74",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-75",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-76",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-77",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-78",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-79",
+      "ok": true
+    },
+    {
+      "id": "componentes-digitais:av-e1-80",
+      "ok": true
+    },
+    {
+      "id": "inventario-somente-hashes-e-fonte",
+      "ok": true
+    },
+    {
+      "id": "74-artigos123-preservados",
+      "ok": true
+    },
+    {
+      "id": "734-mathml-preservados",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+        "bytes": 1310895
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0bfd16901421a2135216518b8ff56f062b6c9901e4fb3101e7149a279758e8cb",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "964e35024daac2e2102f35f80587933225e51a7f8581cb2ab3843f16114c4e18",
+        "bytes": 60900
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "hash:assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "hash:assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "hash:assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "hash:formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "hash:assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "hash:assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "canonico-197-29-1236",
+      "ok": true
+    },
+    {
+      "id": "158-vinculos-baseline-preservados-no-curso",
+      "ok": true
+    },
+    {
+      "id": "md80-unicos",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-01:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-01:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-01:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-02:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-02:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-02:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-03:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-03:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-03:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-04:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-04:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-04:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-04:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-05:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-05:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-05:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-06:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-06:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-06:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-06:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-06:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-06:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-07:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-07:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-07:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-08:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-08:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-08:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-09:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-09:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-09:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-09:adicao-md:conversao",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-09:adicao-md:hipotese_condicional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-10:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-10:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-10:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-10:adicao-md:exemplo_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-11:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-11:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-11:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-12:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-12:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-12:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-13:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-13:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-13:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-13:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-14:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-14:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-14:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-14:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-15:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-15:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-15:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-15:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-16:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-16:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-16:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-16:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-16:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-16:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-17:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-17:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-17:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-17:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-17:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-17:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-18:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-18:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-18:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-19:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-19:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-19:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-20:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-20:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-20:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-20:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-21:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-21:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-21:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-21:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-22:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-22:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-22:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-22:adicao-md:definicao_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-23:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-23:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-23:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-23:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-24:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-24:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-24:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-24:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-24:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-24:adicao-md:conversao",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-24:adicao-md:hipotese_condicional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-25:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-25:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-25:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-26:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-26:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-26:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-26:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-26:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-26:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-26:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-26:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-27:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-27:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-27:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-27:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-27:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-27:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-27:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-28:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-28:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-28:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-28:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-28:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-28:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-29:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-29:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-29:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-29:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-29:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-29:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-29:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-30:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-30:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-30:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-30:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-30:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-30:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-30:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-31:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-31:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-31:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-32:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-32:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-32:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-32:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-33:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-33:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-33:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-33:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-33:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-33:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-34:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-34:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-34:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-34:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-34:adicao-md:convencao",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-35:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-35:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-35:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-35:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-35:adicao-md:exemplo_autoral",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-36:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-36:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-36:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-36:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-36:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-36:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-36:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-37:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-37:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-37:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-37:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-37:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-37:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-38:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-38:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-38:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-39:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-39:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-39:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-39:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-40:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-40:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-40:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-40:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-40:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-40:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-41:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-41:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-41:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-42:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-42:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-42:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-42:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-42:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-42:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-43:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-43:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-43:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-43:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-44:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-44:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-44:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-44:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-44:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-44:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-45:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-45:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-45:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-45:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-45:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-45:adicao-md:conversao",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-45:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-46:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-46:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-46:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-47:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-47:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-47:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-47:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-48:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-48:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-48:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-48:adicao-md:hipotese_condicional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-49:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-49:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-49:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-49:adicao-md:modelo_comparativo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-50:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-50:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-50:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-50:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-50:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-50:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-51:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-51:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-51:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-51:adicao-md:modelo_convencional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-52:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-52:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-52:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-52:adicao-md:hipotese_condicional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-53:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-53:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-53:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-53:adicao-md:hipotese_condicional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-54:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-54:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-54:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-54:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-55:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-55:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-55:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-55:adicao-md:modelo_convencional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-56:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-56:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-56:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-56:adicao-md:extensao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-57:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-57:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-57:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-57:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-57:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-57:adicao-md:modelo_quantitativo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-58:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-58:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-58:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-58:adicao-md:exemplo_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-59:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-59:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-59:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-59:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-60:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-60:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-60:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-60:adicao-md:exemplo_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-61:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-61:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-61:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-61:adicao-md:explicacao_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-62:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-62:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-62:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-62:adicao-md:hipotese_condicional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-63:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-63:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-63:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-63:adicao-md:modelo_comparativo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-64:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-64:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-64:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-64:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-65:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-65:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-65:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-65:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-65:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-65:adicao-md:hipotese_modelo",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-66:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-66:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-66:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-67:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-67:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-67:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-68:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-68:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-68:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-68:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-68:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-68:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-68:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-69:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-69:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-69:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-70:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-70:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-70:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-70:adicao-md:relacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-71:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-71:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-71:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-71:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-72:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-72:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-72:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-72:adicao-md:definicao_comparativa",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-73:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-73:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-73:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-73:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-74:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-74:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-74:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-74:adicao-md:explicacao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-75:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-75:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-75:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-75:adicao-md:convencao_e_propriedade_geral",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-76:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-76:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-76:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-76:adicao-md:definicao_conceitual",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-77:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-77:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-77:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-77:adicao-md:modelo_convencional",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-78:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-78:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-78:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-79:adicao-md:undefined",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-80:ids-hashes-matriz",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-80:fontes-primarias-resolvem",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-80:md-decisao-autoria",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-80:trecho-final-no-html",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-80:trecho-final-no-md",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-80:adicao-md:resultados_derivados",
+      "ok": true
+    },
+    {
+      "id": "cr-e1-80:adicao-md:hipotese_condicional",
+      "ok": true
+    },
+    {
+      "id": "resumo-historico-preservado",
+      "ok": true
+    },
+    {
+      "id": "71-9-atributos-preservados",
+      "ok": true
+    },
+    {
+      "id": "9-summaries-criticos-preservados",
+      "ok": true
+    },
+    {
+      "id": "md-resumo-21-59-71-9-74",
+      "ok": true
+    },
+    {
+      "id": "21-ids-exatos-autorizados",
+      "ok": true
+    },
+    {
+      "id": "fontes-rotulos-ancoras-exatos",
+      "ok": false,
+      "details": {
+        "registros_falhos": 80
+      }
+    },
+    {
+      "id": "fontes-cobertura-vinculos-ensino",
+      "ok": false,
+      "details": {
+        "registros_falhos": 50,
+        "ocorrencias_omitidas": 78
+      }
+    }
+  ],
+  "achados": [
+    {
+      "id": "T1",
+      "prioridade": "P2",
+      "natureza": "rastreabilidade_documental",
+      "titulo": "Índice de fontes captura o artigo e descarta destinos",
+      "arquivo": "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r1.json",
+      "campo": "registros[].fontes.ensino_e_fundamentos_ja_vinculados",
+      "alcance": {
+        "rotulos_incorretos": 80,
+        "itens_com_alvo_omitido": 50,
+        "vinculos_ensino_baseline": 158,
+        "alvos_matriz": 80,
+        "omissoes": 78,
+        "internas": 61,
+        "externas": 17,
+        "externas_com_url_no_catalogo_global": 10,
+        "externas_com_url_ausente_catalogo_global": 7
+      },
+      "efeito": "A matriz perde destinos e associa ao primeiro alvo texto de outros links, enunciado, opções, comentários e fontes. Os 158 vínculos continuam presentes no HTML final; não houve regressão de navegação. Markdown omite deliberadamente esse campo e remete ao JSON, portanto não repara o índice.",
+      "causa_observada": "Nos 80 itens, alvo é a primeira âncora e rótulo é exatamente o span da primeira à última âncora com tags removidas; compatível com extração gulosa. Gerador não consta do pacote, então não se atribui linha de código específica.",
+      "ajuste": "Reconstruir a lista por âncora real e texto próprio, incluindo os vínculos pertinentes já existentes, e verificar a cobertura/relações no catálogo. Não exige mudar enunciados, soluções ou links do produto."
+    },
+    {
+      "id": "T2",
+      "prioridade": "P3",
+      "natureza": "formato_documental",
+      "titulo": "Dois hashes literais da tabela têm espaço interno",
+      "arquivo": "auditoria/termodinamica/entregas/FON-02-r1.md",
+      "casos": [
+        {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r1.json",
+          "rotulo_tabela": "revisao-suplementos-80-r1.json",
+          "sha_literal": "ffeab0e 9324624579772588dd010d2d70ad256e025290d06a0efb474fd5f9170",
+          "sha_sem_espaco": "ffeab0e9324624579772588dd010d2d70ad256e025290d06a0efb474fd5f9170",
+          "sha_manifesto": "ffeab0e9324624579772588dd010d2d70ad256e025290d06a0efb474fd5f9170",
+          "confere_sem_espaco": true
+        },
+        {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-02/navegador-coordenador-r1.md",
+          "rotulo_tabela": "navegador-coordenador-r1.md",
+          "sha_literal": "62336e3ae7ed87ce 927296e547b4d779c48d96bf85731438a792bc2785400a26",
+          "sha_sem_espaco": "62336e3ae7ed87ce927296e547b4d779c48d96bf85731438a792bc2785400a26",
+          "sha_manifesto": "62336e3ae7ed87ce927296e547b4d779c48d96bf85731438a792bc2785400a26",
+          "confere_sem_espaco": true
+        }
+      ],
+      "efeito": "Os textos não são SHA-256 literais copiáveis. Remover o espaço recupera exatamente os hashes do manifesto e dos bytes efetivos; não há ambiguidade de versão ou alteração binária.",
+      "ajuste": "Na próxima versão documental, imprimir os 64 dígitos contíguos; isoladamente não constitui impedimento de integridade do pacote."
+    }
+  ],
+  "fontes": {
+    "metodo": "Anchors reais do baseline tokenizado; vínculos locais #... e URLs externas de ensino/fundamentos, excluídas fontes de concurso Cebraspe/FGV. Comparação por ocorrência de item, não deduplicação global de URL.",
+    "registros": [
+      {
+        "id": "cr-e1-01",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-propriedades",
+            "rotulo": "Estado, processo e propriedades"
+          },
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-propriedades",
+            "rotulo_length": 1183,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-02",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-propriedades",
+            "rotulo": "Estado, processo e propriedades"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-propriedades",
+            "rotulo_length": 1235,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-03",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-molecular",
+            "rotulo": "Bagagem: partículas, temperatura e o modelo cinético"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-molecular",
+            "rotulo_length": 831,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-04",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          },
+          {
+            "alvo": "https://faculty.washington.edu/gdrobny/v5-screen.pdf#page=163",
+            "rotulo": "H. DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-medidas",
+            "rotulo_length": 2858,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "https://faculty.washington.edu/gdrobny/v5-screen.pdf#page=163",
+            "rotulo": "H. DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165"
+          }
+        ],
+        "todos_anchors": 7
+      },
+      {
+        "id": "cr-e1-05",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-medidas",
+            "rotulo_length": 872,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-06",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-instrumentos",
+            "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1214,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-instrumentos",
+            "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-07",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-instrumentos",
+            "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-instrumentos",
+            "rotulo_length": 959,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-08",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-instrumentos",
+            "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1032,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-instrumentos",
+            "rotulo": "Bagagem: o que mede o instrumento e como ler sua faixa"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-09",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-absolutas",
+            "rotulo": "Temperatura e pressão absolutas"
+          },
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          },
+          {
+            "alvo": "https://www.bipm.org/en/publications/si-brochure",
+            "rotulo": "BIPM, Brochura do SI, 9ª ed., v4.01 (2026), §2.3.1 e tabela 4"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-absolutas",
+            "rotulo_length": 2922,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          },
+          {
+            "alvo": "https://www.bipm.org/en/publications/si-brochure",
+            "rotulo": "BIPM, Brochura do SI, 9ª ed., v4.01 (2026), §2.3.1 e tabela 4"
+          }
+        ],
+        "todos_anchors": 8
+      },
+      {
+        "id": "cr-e1-10",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          },
+          {
+            "alvo": "#base-propriedades",
+            "rotulo": "Estado, processo e propriedades"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 836,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          },
+          {
+            "alvo": "#base-propriedades",
+            "rotulo": "Estado, processo e propriedades"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-11",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-absolutas",
+            "rotulo": "Temperatura e pressão absolutas"
+          },
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 827,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-absolutas",
+            "rotulo": "Temperatura e pressão absolutas"
+          },
+          {
+            "alvo": "#base-medidas",
+            "rotulo": "Bagagem: unidades, densidade e líquido quase incompressível"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-12",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-quatro-leis",
+            "rotulo": "Bagagem: as quatro leis e o que cada uma responde"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-quatro-leis",
+            "rotulo_length": 1773,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-13",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1029,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-14",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-molecular",
+            "rotulo": "Bagagem: partículas, temperatura e o modelo cinético"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-molecular",
+            "rotulo_length": 748,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-15",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-molecular",
+            "rotulo": "Bagagem: partículas, temperatura e o modelo cinético"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-molecular",
+            "rotulo_length": 768,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-16",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-umidade",
+            "rotulo": "Ar úmido: pressão parcial e umidade relativa"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1082,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-umidade",
+            "rotulo": "Ar úmido: pressão parcial e umidade relativa"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-17",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-umidade",
+            "rotulo": "Ar úmido: pressão parcial e umidade relativa"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-umidade",
+            "rotulo_length": 1049,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-18",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 925,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-19",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 911,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-20",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo_length": 791,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-21",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo_length": 764,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-22",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          },
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1064,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          },
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-23",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo_length": 1001,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-24",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          },
+          {
+            "alvo": "#base-absolutas",
+            "rotulo": "Temperatura e pressão absolutas"
+          },
+          {
+            "alvo": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+            "rotulo": "OpenStax, University Physics 2, §2.1, equação 2.2"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 3104,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          },
+          {
+            "alvo": "#base-absolutas",
+            "rotulo": "Temperatura e pressão absolutas"
+          },
+          {
+            "alvo": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+            "rotulo": "OpenStax, University Physics 2, §2.1, equação 2.2"
+          }
+        ],
+        "todos_anchors": 9
+      },
+      {
+        "id": "cr-e1-25",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1122,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-26",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1133,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-27",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-primeira-lei",
+            "rotulo": "Declare a convenção de sinais"
+          },
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-primeira-lei",
+            "rotulo_length": 949,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-28",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          },
+          {
+            "alvo": "#base-primeira-lei",
+            "rotulo": "Declare a convenção de sinais"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1106,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          },
+          {
+            "alvo": "#base-primeira-lei",
+            "rotulo": "Declare a convenção de sinais"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-29",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-trabalho-fronteira",
+            "rotulo": "Trabalho de fronteira"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1000,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-trabalho-fronteira",
+            "rotulo": "Trabalho de fronteira"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-30",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-trabalho-fronteira",
+            "rotulo": "Trabalho de fronteira"
+          },
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1857,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-trabalho-fronteira",
+            "rotulo": "Trabalho de fronteira"
+          },
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "todos_anchors": 8
+      },
+      {
+        "id": "cr-e1-31",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-termoquimica",
+            "rotulo": "Combustão: calor liberado, PCS, PCI e reação inversa"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-termoquimica",
+            "rotulo_length": 768,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-32",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-termoquimica",
+            "rotulo": "Combustão: calor liberado, PCS, PCI e reação inversa"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-termoquimica",
+            "rotulo_length": 899,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-33",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-expansao-livre",
+            "rotulo": "Expansão livre: volume aumenta, mas não há trabalho contra o vácuo"
+          },
+          {
+            "alvo": "#base-entropia-gas",
+            "rotulo": "Entropia de gás ideal"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-expansao-livre",
+            "rotulo_length": 1027,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-entropia-gas",
+            "rotulo": "Entropia de gás ideal"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-34",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          },
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+            "rotulo": "MIT Unified, §2.1, balanço da energia total"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html",
+            "rotulo": "MIT Unified, §5.4, variação de entropia do gás ideal"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html",
+            "rotulo": "MIT Unified, §5.5, segunda lei e transferência de entropia"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 4749,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          },
+          {
+            "alvo": "#base-gas-energia",
+            "rotulo": "Gás ideal: estado e energia"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+            "rotulo": "MIT Unified, §2.1, balanço da energia total"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html",
+            "rotulo": "MIT Unified, §5.4, variação de entropia do gás ideal"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html",
+            "rotulo": "MIT Unified, §5.5, segunda lei e transferência de entropia"
+          }
+        ],
+        "todos_anchors": 11
+      },
+      {
+        "id": "cr-e1-35",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-primeira-lei",
+            "rotulo": "Declare a convenção de sinais"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+            "rotulo": "MIT Unified, §2.1, balanço da energia total"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 2618,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-primeira-lei",
+            "rotulo": "Declare a convenção de sinais"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+            "rotulo": "MIT Unified, §2.1, balanço da energia total"
+          }
+        ],
+        "todos_anchors": 8
+      },
+      {
+        "id": "cr-e1-36",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-trabalho-fronteira",
+            "rotulo": "Trabalho de fronteira"
+          },
+          {
+            "alvo": "#base-entropia",
+            "rotulo": "Entropia: transferência e geração"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-trabalho-fronteira",
+            "rotulo_length": 879,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-entropia",
+            "rotulo": "Entropia: transferência e geração"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-37",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-exergia",
+            "rotulo": "Disponibilidade e exergia: quanto trabalho útil a energia pode fornecer"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1291,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-exergia",
+            "rotulo": "Disponibilidade e exergia: quanto trabalho útil a energia pode fornecer"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-38",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-limite-carnot",
+            "rotulo": "Carnot: o limite entre duas fontes"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1141,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-limite-carnot",
+            "rotulo": "Carnot: o limite entre duas fontes"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-39",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-segunda-lei",
+            "rotulo": "Conservar energia não basta"
+          },
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          },
+          {
+            "alvo": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+            "rotulo": "OpenStax, University Physics 2, §4.4, Kelvin–Planck"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-segunda-lei",
+            "rotulo_length": 2983,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-balanco-fechado",
+            "rotulo": "Do desenho ao balanço: sinais, energia final e unidades"
+          },
+          {
+            "alvo": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+            "rotulo": "OpenStax, University Physics 2, §4.4, Kelvin–Planck"
+          }
+        ],
+        "todos_anchors": 8
+      },
+      {
+        "id": "cr-e1-40",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-gibbs",
+            "rotulo": "Relação de Gibbs: entalpia, entropia e pressão"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 823,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gibbs",
+            "rotulo": "Relação de Gibbs: entalpia, entropia e pressão"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-41",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-equilibrio-fases",
+            "rotulo": "Equilíbrio de fases: por que temperatura e pressão não bastam"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-equilibrio-fases",
+            "rotulo_length": 877,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-42",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-eficiencia-cop",
+            "rotulo": "Eficiência térmica e COP"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 842,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-eficiencia-cop",
+            "rotulo": "Eficiência térmica e COP"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-43",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-entropia",
+            "rotulo": "Entropia: transferência e geração"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-entropia",
+            "rotulo_length": 829,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-44",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-carnot-prova",
+            "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático"
+          },
+          {
+            "alvo": "#base-trabalho-fronteira",
+            "rotulo": "Trabalho de fronteira"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-carnot-prova",
+            "rotulo_length": 918,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-trabalho-fronteira",
+            "rotulo": "Trabalho de fronteira"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-45",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-carnot-prova",
+            "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático"
+          },
+          {
+            "alvo": "#base-limite-carnot",
+            "rotulo": "Carnot: o limite entre duas fontes"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 926,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-carnot-prova",
+            "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático"
+          },
+          {
+            "alvo": "#base-limite-carnot",
+            "rotulo": "Carnot: o limite entre duas fontes"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-46",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-carnot-prova",
+            "rotulo": "Carnot na prova: etapas, rejeição mínima e ciclo adiabático"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-carnot-prova",
+            "rotulo_length": 1071,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-47",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-tipos-compressores",
+            "rotulo": "Compressores: mecanismo de compressão e seleção preliminar"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-tipos-compressores",
+            "rotulo_length": 984,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-48",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-brayton",
+            "rotulo": "Brayton · potência com gás"
+          },
+          {
+            "alvo": "#base-trocadores",
+            "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-brayton",
+            "rotulo_length": 878,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-49",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo_length": 779,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-50",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-isentropica",
+            "rotulo": "Eficiência isentrópica: cuidado com a ordem"
+          },
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-isentropica",
+            "rotulo_length": 844,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-51",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-brayton",
+            "rotulo": "Brayton · potência com gás"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+            "rotulo": "MIT Unified, §3.7, quatro processos do Brayton"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-brayton",
+            "rotulo_length": 1740,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+            "rotulo": "MIT Unified, §3.7, quatro processos do Brayton"
+          }
+        ],
+        "todos_anchors": 7
+      },
+      {
+        "id": "cr-e1-52",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 884,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-53",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 931,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-54",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-tipos-compressores",
+            "rotulo": "Compressores: mecanismo de compressão e seleção preliminar"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-tipos-compressores",
+            "rotulo_length": 1080,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-55",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-brayton",
+            "rotulo": "Brayton · potência com gás"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+            "rotulo": "MIT Unified, §3.7, quatro processos do Brayton"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-brayton",
+            "rotulo_length": 1962,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+            "rotulo": "MIT Unified, §3.7, quatro processos do Brayton"
+          }
+        ],
+        "todos_anchors": 7
+      },
+      {
+        "id": "cr-e1-56",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-comparar-ciclos",
+            "rotulo": "Reconhecer o ciclo pelo equipamento e pela transformação"
+          },
+          {
+            "alvo": "#base-rankine",
+            "rotulo": "Rankine · potência com vapor"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-comparar-ciclos",
+            "rotulo_length": 820,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-rankine",
+            "rotulo": "Rankine · potência com vapor"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-57",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-brayton",
+            "rotulo": "Brayton · potência com gás"
+          },
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 916,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-brayton",
+            "rotulo": "Brayton · potência com gás"
+          },
+          {
+            "alvo": "#base-brayton-real",
+            "rotulo": "Brayton real: trabalho líquido, perdas e regeneração"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-58",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 838,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-gas-modelo",
+            "rotulo": "Gás ideal: quantidade de matéria, proporções e limites"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-59",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-valvulas-compressor",
+            "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-valvulas-compressor",
+            "rotulo_length": 797,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-60",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-valvulas-compressor",
+            "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-valvulas-compressor",
+            "rotulo_length": 753,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-61",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-eficiencia-volumetrica",
+            "rotulo": "Eficiência volumétrica: quanto do deslocamento virou admissão"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 907,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-eficiencia-volumetrica",
+            "rotulo": "Eficiência volumétrica: quanto do deslocamento virou admissão"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-62",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-valvulas-compressor",
+            "rotulo": "Compressor alternativo: admissão, compressão, descarga e reexpansão"
+          },
+          {
+            "alvo": "https://gunt.de/en/products/fluid-machinery/driven-machines/fans-and-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-752:pr-240",
+            "rotulo": "GUNT, ET 508, princípio da reexpansão no compressor alternativo"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-valvulas-compressor",
+            "rotulo_length": 2721,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "https://gunt.de/en/products/fluid-machinery/driven-machines/fans-and-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-752:pr-240",
+            "rotulo": "GUNT, ET 508, princípio da reexpansão no compressor alternativo"
+          }
+        ],
+        "todos_anchors": 7
+      },
+      {
+        "id": "cr-e1-63",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-comparar-ciclos",
+            "rotulo": "Reconhecer o ciclo pelo equipamento e pela transformação"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-comparar-ciclos",
+            "rotulo_length": 1008,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-64",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-tipos-compressores",
+            "rotulo": "Compressores: mecanismo de compressão e seleção preliminar"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-tipos-compressores",
+            "rotulo_length": 950,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-65",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-turbina-potencia",
+            "rotulo": "Exemplo resolvido · Turbina e potência"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 949,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-turbina-potencia",
+            "rotulo": "Exemplo resolvido · Turbina e potência"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-66",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo_length": 902,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-67",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-dilatacao",
+            "rotulo": "Tubulação aquecida: dilatação e juntas de expansão"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 937,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-dilatacao",
+            "rotulo": "Tubulação aquecida: dilatação e juntas de expansão"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-68",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-radiacao-vacuo",
+            "rotulo": "Ponte para E2: emissividade, radiação e alto vácuo"
+          },
+          {
+            "alvo": "#cr-e1-68-dados-corrigidos",
+            "rotulo": "conjunto físico corrigido"
+          },
+          {
+            "alvo": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+            "rotulo": "NIST WebBook, consulta a 25 °C e 101,325 kPa"
+          },
+          {
+            "alvo": "https://www.nist.gov/document/nistir5078-tab2pdf#page=2",
+            "rotulo": "NISTIR 5078 (1998), tabela 2, p. impressa 12 / p. 2 do PDF"
+          },
+          {
+            "alvo": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+            "rotulo": "consulta direta de saturação no NIST WebBook a 0,101325 MPa"
+          },
+          {
+            "alvo": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+            "rotulo": "OpenStax, University Physics 2, §1.6, radiação líquida"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 6721,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-radiacao-vacuo",
+            "rotulo": "Ponte para E2: emissividade, radiação e alto vácuo"
+          },
+          {
+            "alvo": "#cr-e1-68-dados-corrigidos",
+            "rotulo": "conjunto físico corrigido"
+          },
+          {
+            "alvo": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+            "rotulo": "NIST WebBook, consulta a 25 °C e 101,325 kPa"
+          },
+          {
+            "alvo": "https://www.nist.gov/document/nistir5078-tab2pdf#page=2",
+            "rotulo": "NISTIR 5078 (1998), tabela 2, p. impressa 12 / p. 2 do PDF"
+          },
+          {
+            "alvo": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+            "rotulo": "consulta direta de saturação no NIST WebBook a 0,101325 MPa"
+          },
+          {
+            "alvo": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+            "rotulo": "OpenStax, University Physics 2, §1.6, radiação líquida"
+          }
+        ],
+        "todos_anchors": 16
+      },
+      {
+        "id": "cr-e1-69",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo_length": 999,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-70",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-transferencia",
+            "rotulo": "Ponte para E2: condução, convecção e advecção"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-transferencia",
+            "rotulo_length": 776,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-71",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-transferencia",
+            "rotulo": "Ponte para E2: condução, convecção e advecção"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-transferencia",
+            "rotulo_length": 782,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-72",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo_length": 821,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-73",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo_length": 862,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-74",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-trocadores",
+            "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 955,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-trocadores",
+            "rotulo": "Ponte para E2: parede, arranjo, área e incrustação"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-75",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-transferencia",
+            "rotulo": "Ponte para E2: condução, convecção e advecção"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 1050,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-transferencia",
+            "rotulo": "Ponte para E2: condução, convecção e advecção"
+          }
+        ],
+        "todos_anchors": 5
+      },
+      {
+        "id": "cr-e1-76",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-transferencia",
+            "rotulo": "Ponte para E2: condução, convecção e advecção"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-transferencia",
+            "rotulo_length": 1017,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-77",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-refrigeracao",
+            "rotulo": "Refrigeração por compressão de vapor"
+          },
+          {
+            "alvo": "#base-eficiencia-cop",
+            "rotulo": "Eficiência térmica e COP"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 934,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-refrigeracao",
+            "rotulo": "Refrigeração por compressão de vapor"
+          },
+          {
+            "alvo": "#base-eficiencia-cop",
+            "rotulo": "Eficiência térmica e COP"
+          }
+        ],
+        "todos_anchors": 6
+      },
+      {
+        "id": "cr-e1-78",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-calor-latente",
+            "rotulo": "Refrigerante: por que o calor latente importa"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-calor-latente",
+            "rotulo_length": 1293,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [],
+        "todos_anchors": 4
+      },
+      {
+        "id": "cr-e1-79",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-radiacao-vacuo",
+            "rotulo": "Ponte para E2: emissividade, radiação e alto vácuo"
+          },
+          {
+            "alvo": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+            "rotulo": "NASA, Thermal Control (07/05/2026), §§7.2.1 e 7.2.3"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-radiacao-vacuo",
+            "rotulo_length": 3730,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+            "rotulo": "NASA, Thermal Control (07/05/2026), §§7.2.1 e 7.2.3"
+          }
+        ],
+        "todos_anchors": 7
+      },
+      {
+        "id": "cr-e1-80",
+        "links_ensino_baseline": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo": "Antes das contas: grandezas, símbolos e leitura matemática"
+          },
+          {
+            "alvo": "#base-geracao-face",
+            "rotulo": "Ler a figura: geração por volume e calor pela face exposta"
+          },
+          {
+            "alvo": "#base-transferencia",
+            "rotulo": "Ponte para E2: condução, convecção e advecção"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+            "rotulo": "MIT Unified, §2.1, balanço da energia total"
+          }
+        ],
+        "links_matriz": [
+          {
+            "alvo": "#base-leitura-matematica",
+            "rotulo_length": 3470,
+            "rotulo_corresponde_ancora": false
+          }
+        ],
+        "omitidos": [
+          {
+            "alvo": "#base-geracao-face",
+            "rotulo": "Ler a figura: geração por volume e calor pela face exposta"
+          },
+          {
+            "alvo": "#base-transferencia",
+            "rotulo": "Ponte para E2: condução, convecção e advecção"
+          },
+          {
+            "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+            "rotulo": "MIT Unified, §2.1, balanço da energia total"
+          }
+        ],
+        "todos_anchors": 12
+      }
+    ],
+    "cobertura_externas": [
+      {
+        "id": "cr-e1-04",
+        "alvo": "https://faculty.washington.edu/gdrobny/v5-screen.pdf#page=163",
+        "rotulo": "H. DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-09",
+        "alvo": "https://www.bipm.org/en/publications/si-brochure",
+        "rotulo": "BIPM, Brochura do SI, 9ª ed., v4.01 (2026), §2.3.1 e tabela 4",
+        "presente_catalogo_global": false,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-24",
+        "alvo": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+        "rotulo": "OpenStax, University Physics 2, §2.1, equação 2.2",
+        "presente_catalogo_global": false,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-34",
+        "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+        "rotulo": "MIT Unified, §2.1, balanço da energia total",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-34",
+        "alvo": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html",
+        "rotulo": "MIT Unified, §5.4, variação de entropia do gás ideal",
+        "presente_catalogo_global": false,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-34",
+        "alvo": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html",
+        "rotulo": "MIT Unified, §5.5, segunda lei e transferência de entropia",
+        "presente_catalogo_global": false,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-35",
+        "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+        "rotulo": "MIT Unified, §2.1, balanço da energia total",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-39",
+        "alvo": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+        "rotulo": "OpenStax, University Physics 2, §4.4, Kelvin–Planck",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-51",
+        "alvo": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+        "rotulo": "MIT Unified, §3.7, quatro processos do Brayton",
+        "presente_catalogo_global": false,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-55",
+        "alvo": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+        "rotulo": "MIT Unified, §3.7, quatro processos do Brayton",
+        "presente_catalogo_global": false,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-62",
+        "alvo": "https://gunt.de/en/products/fluid-machinery/driven-machines/fans-and-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-752:pr-240",
+        "rotulo": "GUNT, ET 508, princípio da reexpansão no compressor alternativo",
+        "presente_catalogo_global": false,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-68",
+        "alvo": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+        "rotulo": "NIST WebBook, consulta a 25 °C e 101,325 kPa",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-68",
+        "alvo": "https://www.nist.gov/document/nistir5078-tab2pdf#page=2",
+        "rotulo": "NISTIR 5078 (1998), tabela 2, p. impressa 12 / p. 2 do PDF",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-68",
+        "alvo": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+        "rotulo": "consulta direta de saturação no NIST WebBook a 0,101325 MPa",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-68",
+        "alvo": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+        "rotulo": "OpenStax, University Physics 2, §1.6, radiação líquida",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-79",
+        "alvo": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+        "rotulo": "NASA, Thermal Control (07/05/2026), §§7.2.1 e 7.2.3",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": false
+      },
+      {
+        "id": "cr-e1-80",
+        "alvo": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+        "rotulo": "MIT Unified, §2.1, balanço da energia total",
+        "presente_catalogo_global": true,
+        "presente_primaria_item": true
+      }
+    ],
+    "padrao_extracao": [
+      {
+        "id": "cr-e1-01",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-02",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-03",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-04",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-05",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-06",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-07",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-08",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-09",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-10",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-11",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-12",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-13",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-14",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-15",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-16",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-17",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-18",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-19",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-20",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-21",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-22",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-23",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-24",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-25",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-26",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-27",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-28",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-29",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-30",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-31",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-32",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-33",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-34",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-35",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-36",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-37",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-38",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-39",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-40",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-41",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-42",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-43",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-44",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-45",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-46",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-47",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-48",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-49",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-50",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-51",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-52",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-53",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-54",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-55",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-56",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-57",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-58",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-59",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-60",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-61",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-62",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-63",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-64",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-65",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-66",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-67",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-68",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-69",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-70",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-71",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-72",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-73",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-74",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-75",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-76",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-77",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-78",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-79",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      },
+      {
+        "id": "cr-e1-80",
+        "alvo_primeira_ancora": true,
+        "rotulo_span_primeira_ate_ultima": true
+      }
+    ],
+    "preservacao_html": [
+      {
+        "id": "cr-e1-01",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-02",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-03",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-04",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-05",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-06",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-07",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-08",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-09",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-10",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-11",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-12",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-13",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-14",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-15",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-16",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-17",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-18",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-19",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-20",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-21",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-22",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-23",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-24",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-25",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-26",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-27",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-28",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-29",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-30",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-31",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-32",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-33",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-34",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-35",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-36",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-37",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-38",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-39",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-40",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-41",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-42",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-43",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-44",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-45",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-46",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-47",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-48",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-49",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-50",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-51",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-52",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-53",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-54",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-55",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-56",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-57",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-58",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-59",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-60",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-61",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-62",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-63",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-64",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-65",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-66",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-67",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-68",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-69",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-70",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-71",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-72",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-73",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-74",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-75",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-76",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-77",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-78",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-79",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      },
+      {
+        "id": "cr-e1-80",
+        "alvos_baseline_preservados": true,
+        "internos_resolvem": true
+      }
+    ]
+  },
+  "integridade": {
+    "manifesto_sha256": "25c420ff6f7650c982c402b3715c623ca7e68866f72e26bbbf0565fc6e065224",
+    "html_antes_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+    "html_entregue_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "matriz_sha256": "ffeab0e9324624579772588dd010d2d70ad256e025290d06a0efb474fd5f9170",
+    "arquivos": 55,
+    "copias_finais": 9,
+    "vinculos_FON01": 2
+  },
+  "preservacao": {
+    "ids": 197,
+    "alterados": 74,
+    "identicos": 123,
+    "conteudos_esclarecidos": 21,
+    "summaries_autoria": 71,
+    "estudos_criticos": 9,
+    "mathml": 734,
+    "componentes_digitais": [
+      {
+        "id": "cr-e1-01",
+        "preservados": true,
+        "sha256": "9e9f122ad42f0cbd8c1ad820ff140366ba8615c273c490e3cea4c488f9e2fa8b"
+      },
+      {
+        "id": "cr-e1-02",
+        "preservados": true,
+        "sha256": "e9bed7847a7f81f6e055e24c4daf00cf40c6262e565689e41d700e8503458538"
+      },
+      {
+        "id": "cr-e1-03",
+        "preservados": true,
+        "sha256": "cf0ac06b78c9c46e63539274c7eabccdfa0b827911bf772ba25e898c047ac7cc"
+      },
+      {
+        "id": "cr-e1-04",
+        "preservados": true,
+        "sha256": "899147d0769f08a42a36084270d7f1468a71ee98ae593f30002be30dcbac67be"
+      },
+      {
+        "id": "cr-e1-05",
+        "preservados": true,
+        "sha256": "90ea08def0e451abb29711b7794a5968f37c60544a474ceb815a6c2534e0057b"
+      },
+      {
+        "id": "cr-e1-06",
+        "preservados": true,
+        "sha256": "6c516a58f8fab338dee4ae9c687ceb24f7de0d9e634fe549fccc39601aa8807e"
+      },
+      {
+        "id": "cr-e1-07",
+        "preservados": true,
+        "sha256": "a5b628f87a7f8c65f125518c26c5377f31873b5134b5b70ddecf6180bb3c4fb3"
+      },
+      {
+        "id": "cr-e1-08",
+        "preservados": true,
+        "sha256": "13e40ebfc16beec685b4e166dbaabde4cfdbe0aa3b3f1a8b7f6da372a5fd311b"
+      },
+      {
+        "id": "cr-e1-09",
+        "preservados": true,
+        "sha256": "5cabd771c3612ad3e8211d38edde0e29b443dd03e85a1a86d8345e89934b9292"
+      },
+      {
+        "id": "cr-e1-10",
+        "preservados": true,
+        "sha256": "bce33740f4c6b8a797b581f875fe4fab9687446059e4e85e73df4e74c80c7554"
+      },
+      {
+        "id": "cr-e1-11",
+        "preservados": true,
+        "sha256": "a93f162c36a7fde2a41b35f8fb16be61ff9736ec9713cdce7b1f71abb379a28e"
+      },
+      {
+        "id": "cr-e1-12",
+        "preservados": true,
+        "sha256": "34a9b66fe8944292633932e9c994496307b03b864f3ea6d98a637ca80ad32fe9"
+      },
+      {
+        "id": "cr-e1-13",
+        "preservados": true,
+        "sha256": "fb38a7cebce19bbbb95196c66e8e02d8d4140349c1340d9bf662f680f29f9992"
+      },
+      {
+        "id": "cr-e1-14",
+        "preservados": true,
+        "sha256": "5152a038ccefd6d9f114dbe413bc8aebf36527a9dc807ed904f30416ba149398"
+      },
+      {
+        "id": "cr-e1-15",
+        "preservados": true,
+        "sha256": "d72edafbd769ea30b5807cfae175eea07cb52ac92fb9d5eba4a47d6d3e905bd6"
+      },
+      {
+        "id": "cr-e1-16",
+        "preservados": true,
+        "sha256": "8f6ffe1d81682ea5482deb963301efab223e0cea43f430d132aecef459a379e1"
+      },
+      {
+        "id": "cr-e1-17",
+        "preservados": true,
+        "sha256": "853c7800b8f954dfb298bb1e4fc4da6ed60ba73d806154dc2e5e84fcef2109c7"
+      },
+      {
+        "id": "cr-e1-18",
+        "preservados": true,
+        "sha256": "9884c357445f4d3cd644c93951bb269f3ef3587ab68d3dc06f76882312719b1d"
+      },
+      {
+        "id": "cr-e1-19",
+        "preservados": true,
+        "sha256": "4257ed4065db8f55977348e53b89ed2b4f8ca77d2999a1aa026f9d4bc887e061"
+      },
+      {
+        "id": "cr-e1-20",
+        "preservados": true,
+        "sha256": "d229da8d75ccdf16d7c02c3ab71d34addeb16fd5d3edfd8615772689d49631dd"
+      },
+      {
+        "id": "cr-e1-21",
+        "preservados": true,
+        "sha256": "c1b4a16edc9ef866c114445db6e412e20c5544da0430972b2db09da7c0866e48"
+      },
+      {
+        "id": "cr-e1-22",
+        "preservados": true,
+        "sha256": "383cd1bc9f1114e52c02191d00fee206bc8e6076ba5fe905caad1b8a09ef44db"
+      },
+      {
+        "id": "cr-e1-23",
+        "preservados": true,
+        "sha256": "e44ba174e8ce8eef06709c0d07d065e4909d56544f9215b0f5782bdb1a03a3f3"
+      },
+      {
+        "id": "cr-e1-24",
+        "preservados": true,
+        "sha256": "0247571227a0a17521fe212cd080e87694f723775dc491a2667c72e380121805"
+      },
+      {
+        "id": "cr-e1-25",
+        "preservados": true,
+        "sha256": "ad7242c7f671acc9596a6231fa841db319dcfcae718de072923114771cb93a17"
+      },
+      {
+        "id": "cr-e1-26",
+        "preservados": true,
+        "sha256": "be14923c6f494267133f85b1d183cf195ab383b578fbaf17d6ee48cde518c477"
+      },
+      {
+        "id": "cr-e1-27",
+        "preservados": true,
+        "sha256": "27940b03e388b04550ca7df472b9da03fbb7ff42e882f7e71aac2ff3c60da339"
+      },
+      {
+        "id": "cr-e1-28",
+        "preservados": true,
+        "sha256": "8078ec813b25653a048f7fee45e42c9dc3f7fa49bbaf308e83a80b47f111ce55"
+      },
+      {
+        "id": "cr-e1-29",
+        "preservados": true,
+        "sha256": "d5b3cef08b5e8ba2c9c5beb64e00f1e8ced766267eb4f76aa99a96903555613e"
+      },
+      {
+        "id": "cr-e1-30",
+        "preservados": true,
+        "sha256": "28b85ada5b94eb567a9fc1bb59b59514cafd7a69e2c9a85c39c69480dbd53cc8"
+      },
+      {
+        "id": "cr-e1-31",
+        "preservados": true,
+        "sha256": "225f33df3babcd04a549fdbeb1e7911cee8f1d5cac479136b40b3d463c0fb778"
+      },
+      {
+        "id": "cr-e1-32",
+        "preservados": true,
+        "sha256": "47ed1ed3564162f37b6dd4d5cfc3bcd184fb70a46788192ea750280aac33f626"
+      },
+      {
+        "id": "cr-e1-33",
+        "preservados": true,
+        "sha256": "99fd8eef669956dd72dd105ad7ff8a58e32435271a950a1c19dde491d3066670"
+      },
+      {
+        "id": "cr-e1-34",
+        "preservados": true,
+        "sha256": "75cd0603f71b72603fb16607b1c71a896cb52f8295cee6f8890c9acdfd03e360"
+      },
+      {
+        "id": "cr-e1-35",
+        "preservados": true,
+        "sha256": "293cc160db9e3e596ead3d1e3e8f92afdc3786cfb022481ff25aa9a41955a08d"
+      },
+      {
+        "id": "cr-e1-36",
+        "preservados": true,
+        "sha256": "eff78410dd4a88ac00ebf9747df85eb7bf7874bc4fc5177262733099ff16634d"
+      },
+      {
+        "id": "cr-e1-37",
+        "preservados": true,
+        "sha256": "53dec429941c1f309560a928f3e417098623c683872055cac7ed6f0eb1211f76"
+      },
+      {
+        "id": "cr-e1-38",
+        "preservados": true,
+        "sha256": "ab18020b96a6b07a4299725e685329fe13d67d44ce2fa8c3efe4cd909368009b"
+      },
+      {
+        "id": "cr-e1-39",
+        "preservados": true,
+        "sha256": "4c79fc494bbc22982555c5657c9659eb82782fcb7ff6569c71306d4bdac32b98"
+      },
+      {
+        "id": "cr-e1-40",
+        "preservados": true,
+        "sha256": "d405253db9d3aa0c754c997d66ccc297a44ddd3a571f55caa7dc35631b193e01"
+      },
+      {
+        "id": "cr-e1-41",
+        "preservados": true,
+        "sha256": "f4b0d3a1823533452de317cf4cc508ed920a8cbc635b230980590cb2faf1d6e4"
+      },
+      {
+        "id": "cr-e1-42",
+        "preservados": true,
+        "sha256": "36351341496f2409cad8da190920e69f5b942398a43600f3efc4e92a9639fcaf"
+      },
+      {
+        "id": "cr-e1-43",
+        "preservados": true,
+        "sha256": "a69df9cc078c29c8ca07a931a028de3af5131b480717db92a7eac2d3e57ce76e"
+      },
+      {
+        "id": "cr-e1-44",
+        "preservados": true,
+        "sha256": "d5119fecbee67a36606a24a80db5a24f3c30bd9d5acc60fb6fdc988e2998d2f9"
+      },
+      {
+        "id": "cr-e1-45",
+        "preservados": true,
+        "sha256": "ac042bc3b6c9d4deb73803408647599b2bc285058cf2a2e41b01791381fad4bd"
+      },
+      {
+        "id": "cr-e1-46",
+        "preservados": true,
+        "sha256": "d11ce7ad6853129cb9903e3b21085c669cfbf863dce49c0f6dddbceefb60e1b5"
+      },
+      {
+        "id": "cr-e1-47",
+        "preservados": true,
+        "sha256": "6233236cdf2f264103a7ddc7d3bea69ae066ad43729c89bc0ea3b855ced618c2"
+      },
+      {
+        "id": "cr-e1-48",
+        "preservados": true,
+        "sha256": "ef68690b22e1c1e12f3a18c400818cd19e32fec8062ef55941772f3bb159616b"
+      },
+      {
+        "id": "cr-e1-49",
+        "preservados": true,
+        "sha256": "56b5a0684c44546b3524789c94feacb905f9d373f63e98f169ef1e430c5fdef6"
+      },
+      {
+        "id": "cr-e1-50",
+        "preservados": true,
+        "sha256": "bfba270d625215f7cf76db38afa05d2e0800b834ddf58ac37bf1fc259f0fad3d"
+      },
+      {
+        "id": "cr-e1-51",
+        "preservados": true,
+        "sha256": "5f71b46845a5286c157bc487006e681125c2993de5cd61d804cb0d7bb21d6182"
+      },
+      {
+        "id": "cr-e1-52",
+        "preservados": true,
+        "sha256": "dd2ff39421f5c87dabf3f0227a76588386cf5009d63fb04776b100f2e0f693bc"
+      },
+      {
+        "id": "cr-e1-53",
+        "preservados": true,
+        "sha256": "262998692649f39488ab0f43716e514d1d43c4b9c08b4d24169b58bf80609421"
+      },
+      {
+        "id": "cr-e1-54",
+        "preservados": true,
+        "sha256": "0e8dc6576c9d8e8128945e231b882c378f846a149f46ca70bdfceac53fb6eec9"
+      },
+      {
+        "id": "cr-e1-55",
+        "preservados": true,
+        "sha256": "745e5b88adb242e5e8e92bdfa108c4049e3220ab680e5976674cfc32004d864a"
+      },
+      {
+        "id": "cr-e1-56",
+        "preservados": true,
+        "sha256": "0a97d2db0e8afa6072da574b768f86410aefcff0834da874d7b5595d8df851be"
+      },
+      {
+        "id": "cr-e1-57",
+        "preservados": true,
+        "sha256": "2018be2f583046e8fa8668d112ee3fd3a363516ef56619de36f6fdbaac0bfe6e"
+      },
+      {
+        "id": "cr-e1-58",
+        "preservados": true,
+        "sha256": "26bdef18c7c3427d2ed0d508113a276a8b7ce6811fa8936a62c1591322812556"
+      },
+      {
+        "id": "cr-e1-59",
+        "preservados": true,
+        "sha256": "b917d9cd9354f87ca38c4a29eb1d9d071df4d73bbc847c03a1e69c0f99095d98"
+      },
+      {
+        "id": "cr-e1-60",
+        "preservados": true,
+        "sha256": "8d0abcdfa62245948874db8b60fa08ab2df7a303fc436e953c23a15ed8496fba"
+      },
+      {
+        "id": "cr-e1-61",
+        "preservados": true,
+        "sha256": "1a44310e78025fb7f2fbc23d3603ecca369b95c7aba1573851b47fc3c1a3ba49"
+      },
+      {
+        "id": "cr-e1-62",
+        "preservados": true,
+        "sha256": "46daf35fb8b5ff4928f2ce063e95ef0bdaa32d4edd1fe783a164a3e1b7fbc780"
+      },
+      {
+        "id": "cr-e1-63",
+        "preservados": true,
+        "sha256": "ae92256c1198657ac3fba9bc78eeb88e92b40a653f9423ca342583922a3590fe"
+      },
+      {
+        "id": "cr-e1-64",
+        "preservados": true,
+        "sha256": "e0725c91e50f4b11ea16ae585b088924d741806c8f01779f7fb451fca7264c93"
+      },
+      {
+        "id": "cr-e1-65",
+        "preservados": true,
+        "sha256": "2eb60678ed804cf74e2544cd7bd6fa6a872e5994233157cda6fcb2bd772382dd"
+      },
+      {
+        "id": "cr-e1-66",
+        "preservados": true,
+        "sha256": "32b3f986936a4c718aea5cb8fa348dc6681aa8193e334a80a1d58bc6f771bbc3"
+      },
+      {
+        "id": "cr-e1-67",
+        "preservados": true,
+        "sha256": "b08961b545f7c0f0852d766eeac9f921031e728a393681f55172ec3afab7dbf1"
+      },
+      {
+        "id": "cr-e1-68",
+        "preservados": true,
+        "sha256": "a19592bf30cbadd3a5e80c050834479f7cfb5514098006ad7c9b0b9f04807c2e"
+      },
+      {
+        "id": "cr-e1-69",
+        "preservados": true,
+        "sha256": "6775ab547ff6b0cd641d188da26bcd4040bdfe4eca7aae0e734a384646c06015"
+      },
+      {
+        "id": "cr-e1-70",
+        "preservados": true,
+        "sha256": "7b1f9682167bfb70bc52b2f4e74165fbf63803497ca78f990ee73564c2a0f49a"
+      },
+      {
+        "id": "cr-e1-71",
+        "preservados": true,
+        "sha256": "7e08f2155fb9ca910e60b2909ef164fafd3c50994332a91f153af5184b364082"
+      },
+      {
+        "id": "cr-e1-72",
+        "preservados": true,
+        "sha256": "4d400c1f1db42f3a971f3f8fe940f0734e9967812f23037a3e2259a6cb097a0c"
+      },
+      {
+        "id": "cr-e1-73",
+        "preservados": true,
+        "sha256": "3826448dfb23fa56269b6194a034b961ad005827513b534b1ff599161f9fcbe0"
+      },
+      {
+        "id": "cr-e1-74",
+        "preservados": true,
+        "sha256": "4b76b30cc160517607dfd9a384b139f7b2c3985267635a08dfdd4c7f931eba2c"
+      },
+      {
+        "id": "cr-e1-75",
+        "preservados": true,
+        "sha256": "34a30763031fddd7a4766c8e56aac4b26b109e38f66ef05da5c3fd625a341a1f"
+      },
+      {
+        "id": "cr-e1-76",
+        "preservados": true,
+        "sha256": "d5da12bd4abe93fb42f3614d578afcd4ac7719c31886be3c11423c57f8b15627"
+      },
+      {
+        "id": "cr-e1-77",
+        "preservados": true,
+        "sha256": "484b2fd46bf01d55cf3ea3bf7bdfcb8a465ac084705c1732bdc98789c131bf03"
+      },
+      {
+        "id": "cr-e1-78",
+        "preservados": true,
+        "sha256": "409e78e7e9f68f36436d9a7ac35099333373b16649aeab56dbfc85479eab308b"
+      },
+      {
+        "id": "cr-e1-79",
+        "preservados": true,
+        "sha256": "aa823b5591f9d7a31a3d30bbab8fe44d65bc6c444f4d9d406e2ef4c2020caf4a"
+      },
+      {
+        "id": "cr-e1-80",
+        "preservados": true,
+        "sha256": "ea435062bade769d3df2d058c3034476bc9d996e95235deb5a3c5cf319c41223"
+      },
+      {
+        "id": "av-e1-01",
+        "preservados": true,
+        "sha256": "fc6f977bd6e4d431c0522071493ab2e66190dbad19c382f84325db51e4c5cdec"
+      },
+      {
+        "id": "av-e1-02",
+        "preservados": true,
+        "sha256": "525b8ac5b9764ddf96e9b50b08923ea0155f379553fd6588d99eccb796daecaf"
+      },
+      {
+        "id": "av-e1-03",
+        "preservados": true,
+        "sha256": "573599fb787e82fbd2f6056a35df7d56aff182dceef2f9d18ad29abb74e59ae6"
+      },
+      {
+        "id": "av-e1-04",
+        "preservados": true,
+        "sha256": "390e5967c1355afa563026a2b336d83e74b31a42fefc8db98889292766e08b29"
+      },
+      {
+        "id": "av-e1-05",
+        "preservados": true,
+        "sha256": "4412f700aa03a9b5ada398c71911fecdc7f607e8edc0956f820acc5a2b1827e3"
+      },
+      {
+        "id": "av-e1-06",
+        "preservados": true,
+        "sha256": "8d8c9557159ab255cf4304752394e79860a27b1f28f340ba70e228d59a3624e0"
+      },
+      {
+        "id": "av-e1-07",
+        "preservados": true,
+        "sha256": "c348a5606804af7a53150d9896d693297985650d95b18ea6972d05ebdafbf58c"
+      },
+      {
+        "id": "av-e1-08",
+        "preservados": true,
+        "sha256": "088014bf798aa9213712f789ba12eae15554f0da490c5494e11ef6e265e86fee"
+      },
+      {
+        "id": "av-e1-09",
+        "preservados": true,
+        "sha256": "b3c04c3bb6cb5343b765c6176793c48971e5324ac0af19af8e32fb591968804a"
+      },
+      {
+        "id": "av-e1-10",
+        "preservados": true,
+        "sha256": "ffa867cde7314a01c208541847e82262bfc93a518de351cb904d8187b9ef4de4"
+      },
+      {
+        "id": "av-e1-11",
+        "preservados": true,
+        "sha256": "60d1b1006d8a832d0cc55f2a0a68b6e96e4c1120693fea59654fc2e2ed5ef1fb"
+      },
+      {
+        "id": "av-e1-12",
+        "preservados": true,
+        "sha256": "89be84033a943be516360e9dcddc9048c93ac5416cdb0bbf6c3024b05b5d88e9"
+      },
+      {
+        "id": "av-e1-13",
+        "preservados": true,
+        "sha256": "c225d22bf220a33e4eac2551f836ee3c7f3ffa69b0b057e40cb70b19a348001a"
+      },
+      {
+        "id": "av-e1-14",
+        "preservados": true,
+        "sha256": "f182dc460c11f4e82518a795377fd64c685520b3393ca83a6d253cbca2398111"
+      },
+      {
+        "id": "av-e1-15",
+        "preservados": true,
+        "sha256": "e7b74f45f80bdec348823d3b81f443f0f300a5d57d637107adf5728a1b7ac843"
+      },
+      {
+        "id": "av-e1-16",
+        "preservados": true,
+        "sha256": "f2fcfd1cd8397863d1adc803ed16f3da20c35d684be752046710ec7db5f906ca"
+      },
+      {
+        "id": "av-e1-17",
+        "preservados": true,
+        "sha256": "8bac6a652558f0ef468ca009b338c60bf3c6bdc34d29444bb7a53ea344624082"
+      },
+      {
+        "id": "av-e1-18",
+        "preservados": true,
+        "sha256": "c290740a1fed47af6455e8eefab21a0d07e3b50250a8c24f287e375127746239"
+      },
+      {
+        "id": "av-e1-19",
+        "preservados": true,
+        "sha256": "c08476934738e30b87023883fcc782456de416b80735d28db1fec392297488e8"
+      },
+      {
+        "id": "av-e1-20",
+        "preservados": true,
+        "sha256": "da0b095f9219af18214dbb3a8e5135c94a72cdd8a2eefd53950a787878d8007a"
+      },
+      {
+        "id": "av-e1-21",
+        "preservados": true,
+        "sha256": "d8b92d733d44b0178c9a8e68a4534bddcaf2f55625e9da85a1a12fa51c6b7e85"
+      },
+      {
+        "id": "av-e1-22",
+        "preservados": true,
+        "sha256": "04dc20b27bddb238c36068566206b8a4d4a8c1acef2768214569cffbb4e20aae"
+      },
+      {
+        "id": "av-e1-23",
+        "preservados": true,
+        "sha256": "0bce543a97d1e7b4056d7ea22d5272737bd459a0cc2fe5d4fd687e63297f0528"
+      },
+      {
+        "id": "av-e1-24",
+        "preservados": true,
+        "sha256": "de110be048e135fd13566df303f784e8eca16014a1988d541317ac4afc79e62f"
+      },
+      {
+        "id": "av-e1-25",
+        "preservados": true,
+        "sha256": "9f685cdb7294b7375209a5620c8443689fe60c9de86c91e729b46796687a95bd"
+      },
+      {
+        "id": "av-e1-26",
+        "preservados": true,
+        "sha256": "97b227b953991526a62f178928906a86b4c913cb46d3ebd82037365fbc28c949"
+      },
+      {
+        "id": "av-e1-27",
+        "preservados": true,
+        "sha256": "9217fc0317f0be94a127fb9ffec0c839bf73db519cb30553db22f94e36b456f9"
+      },
+      {
+        "id": "av-e1-28",
+        "preservados": true,
+        "sha256": "5c8cf7553b86b54eb7d8e4d893e62e2e8f509f9898d52c8ae49c0ce08968c661"
+      },
+      {
+        "id": "av-e1-29",
+        "preservados": true,
+        "sha256": "26f4d6c83209c9435eefd43bad13ff73987f6ee172c629fe1aea00ef5529a1a8"
+      },
+      {
+        "id": "av-e1-30",
+        "preservados": true,
+        "sha256": "192b1ba6f75e32beecce86401dd930ce69d40c23041047d97982476e20640b8a"
+      },
+      {
+        "id": "av-e1-31",
+        "preservados": true,
+        "sha256": "6cdf74809642f6274f3875ddda2c74b1d4d42c468616139d17d0d3ba37b9082b"
+      },
+      {
+        "id": "av-e1-32",
+        "preservados": true,
+        "sha256": "85e9dceacadaefefd96c9f12117ac3cd485c3f59a09aa220515d1d4406c4a63c"
+      },
+      {
+        "id": "av-e1-33",
+        "preservados": true,
+        "sha256": "0fd53dfc6469fd1c8ded34e17c887aa75f628513d61776ef8ae69481b70c470a"
+      },
+      {
+        "id": "av-e1-34",
+        "preservados": true,
+        "sha256": "f4c8ac87b9f78409e842a0412ca60fbbe7f68580be07e3953e07e283570caa44"
+      },
+      {
+        "id": "av-e1-35",
+        "preservados": true,
+        "sha256": "628d93dd152c9e9c843c467f422753556ca50a562222eeba645b6b37e6fabf22"
+      },
+      {
+        "id": "av-e1-36",
+        "preservados": true,
+        "sha256": "ed8e9c20afa1828982488eb9a669f3324a1902f4f67206684223b30928e24bd3"
+      },
+      {
+        "id": "av-e1-37",
+        "preservados": true,
+        "sha256": "12794fb70285ae7a15bd57e345d753e6d1cb3dad93f086c7c5e1481485d66c75"
+      },
+      {
+        "id": "av-e1-38",
+        "preservados": true,
+        "sha256": "733d99543f688b17ec2d508f5e5008a1825bcb8f4ada0750988a075001ca440a"
+      },
+      {
+        "id": "av-e1-39",
+        "preservados": true,
+        "sha256": "a0a60921779a8d666586384a26cf82b08cad721085380fd91b1e471701ba1e7d"
+      },
+      {
+        "id": "av-e1-40",
+        "preservados": true,
+        "sha256": "969cdd09b3c6f5175be07f96c37a401772e5c5a7ce193aad5dec2923e6bf8878"
+      },
+      {
+        "id": "av-e1-41",
+        "preservados": true,
+        "sha256": "2f454fc86eb9eafadc8447f9ad34605e97bce139514a87239275b0f329226451"
+      },
+      {
+        "id": "av-e1-42",
+        "preservados": true,
+        "sha256": "9111da53764394ed9aba220005fd3f77924cf035e7a358574191a0893b642cf0"
+      },
+      {
+        "id": "av-e1-43",
+        "preservados": true,
+        "sha256": "6a07abd0be79897fa586c384dfedd321f483b54aa00f58e627b0d3fe37b94b12"
+      },
+      {
+        "id": "av-e1-44",
+        "preservados": true,
+        "sha256": "1cb878c12be263720e5c228ef5cd33b4e70116792b9238288ec427be64e7e414"
+      },
+      {
+        "id": "av-e1-45",
+        "preservados": true,
+        "sha256": "7672f4ec2c2edcd9e8847b2be918b9e8f76c6ffb4f679a14f06b5a645f291f40"
+      },
+      {
+        "id": "av-e1-46",
+        "preservados": true,
+        "sha256": "06c5fc497187472c5937d8347c63eb4ae261c94af492a684fd5ff2e9539e89f4"
+      },
+      {
+        "id": "av-e1-47",
+        "preservados": true,
+        "sha256": "dea9f339f2c9f3ddd5ac96e21f9649bda181901453c2067b9ae57fcbe92098cf"
+      },
+      {
+        "id": "av-e1-48",
+        "preservados": true,
+        "sha256": "56708cbe62dad90e866724c005d5e90fef0f535581558fc1453ac9afbde99a5f"
+      },
+      {
+        "id": "av-e1-49",
+        "preservados": true,
+        "sha256": "85a37ac05e8a0ff950b17c6b692202df6045f3a22d11237fa41c213106bd60b0"
+      },
+      {
+        "id": "av-e1-50",
+        "preservados": true,
+        "sha256": "7e60cb6004825137f194a94891db5291b4fa9d899b55c140872dd9bb0b3ac659"
+      },
+      {
+        "id": "av-e1-51",
+        "preservados": true,
+        "sha256": "709683f63ce5ea6f63e90a083cebe59851d091186594f38cbcd239b1193c62c5"
+      },
+      {
+        "id": "av-e1-52",
+        "preservados": true,
+        "sha256": "4a862ad6a20c6f74b87809038269dec4156b6a646d522a84a978ef381b8e3470"
+      },
+      {
+        "id": "av-e1-53",
+        "preservados": true,
+        "sha256": "37de02cbf0637f8852064377f4b1a66a679c6ffab76ff6d7fd3deabfeafe1b73"
+      },
+      {
+        "id": "av-e1-54",
+        "preservados": true,
+        "sha256": "d6f408f353f2f1722f2ba6060f9cde2ddd924751c068ea1142d670c844529c2a"
+      },
+      {
+        "id": "av-e1-55",
+        "preservados": true,
+        "sha256": "d81acb11e8959b2b6ec5602b650cabafcee252dbf22adec7754e1b50518069f8"
+      },
+      {
+        "id": "av-e1-56",
+        "preservados": true,
+        "sha256": "efadafbcc39cca84ebbe23cc67064f21008b3e5b538413a9dd759d0ee0ac72dd"
+      },
+      {
+        "id": "av-e1-57",
+        "preservados": true,
+        "sha256": "a8206067988a9da216ea2399c69524f371376613a537e8d90d439f0054827890"
+      },
+      {
+        "id": "av-e1-58",
+        "preservados": true,
+        "sha256": "72e0aa20e7313d88fd3649988e17b936ebec28a7bc33bee59ebc556bb8e33ffb"
+      },
+      {
+        "id": "av-e1-59",
+        "preservados": true,
+        "sha256": "070294fb673e993c4a2fc980bd63a461fb755020316fa35c7b9abd57735f0edd"
+      },
+      {
+        "id": "av-e1-60",
+        "preservados": true,
+        "sha256": "8951995b4744b02b0cdd7bc728ba8ab7e54eabfcfcd21bd68cd86b29213476e0"
+      },
+      {
+        "id": "av-e1-61",
+        "preservados": true,
+        "sha256": "b6bf1135309745cdd9a6d0da8009e7fecde3a462b936e2f6124b2d63264d21c5"
+      },
+      {
+        "id": "av-e1-62",
+        "preservados": true,
+        "sha256": "5d8cf956b77292618c1a134c3653f364e288858ba0b507569c633208cafd1e0a"
+      },
+      {
+        "id": "av-e1-63",
+        "preservados": true,
+        "sha256": "249c6b8fe06cdea07e0edf8ad789d615eaf830e33b691e648d1c2dac63d2c5e9"
+      },
+      {
+        "id": "av-e1-64",
+        "preservados": true,
+        "sha256": "e7c10b15e9fd43636072d82a994b395314615f464f8a83305bef2e615f7f19b0"
+      },
+      {
+        "id": "av-e1-65",
+        "preservados": true,
+        "sha256": "a6c27eae2518786d7b1bda1eb8b0f3e06413b42ccd8f61c26f8948e5dd379f20"
+      },
+      {
+        "id": "av-e1-66",
+        "preservados": true,
+        "sha256": "3340a68017a88e3d70c1b07ffedcf39140698ac8f61666506de6ce6a6821ac09"
+      },
+      {
+        "id": "av-e1-67",
+        "preservados": true,
+        "sha256": "deec568babf4be034132e7b9f5d2e6b9f516a6a1a19889dda46b5759eeef79d7"
+      },
+      {
+        "id": "av-e1-68",
+        "preservados": true,
+        "sha256": "1de6dcdd18ae785e9b26e7edb4b7c0ff410966f3b1fc7fb28c5f416568a5d862"
+      },
+      {
+        "id": "av-e1-69",
+        "preservados": true,
+        "sha256": "98f7cd908ddd9044079499f33ebeea1d46798d7a28fe38596ca6b2f5b427924b"
+      },
+      {
+        "id": "av-e1-70",
+        "preservados": true,
+        "sha256": "02bb1ad89c296387bac16f931d1c3668d385f186a78d24db7755838b0731f357"
+      },
+      {
+        "id": "av-e1-71",
+        "preservados": true,
+        "sha256": "ab2ff492928941dd6bf7f94a3a00658f31b4f7a3613cd045917874ab4256b680"
+      },
+      {
+        "id": "av-e1-72",
+        "preservados": true,
+        "sha256": "b11bf5da91983037dae134cc0a9fbec1a4232339255adeacaee34d6b62d44e67"
+      },
+      {
+        "id": "av-e1-73",
+        "preservados": true,
+        "sha256": "2ba98527f255ea38237d935eddc2cf66ae7175da12a566d57c85a4852f2e25d4"
+      },
+      {
+        "id": "av-e1-74",
+        "preservados": true,
+        "sha256": "2ee4f7364287b8165427d0a6484df6df3b398ea8ce91cdeccca3255d6f622189"
+      },
+      {
+        "id": "av-e1-75",
+        "preservados": true,
+        "sha256": "d0fd797d84c4d8d59f7cf584fe2ba445d31209ace57aeaaca1225d5a5f2a2d05"
+      },
+      {
+        "id": "av-e1-76",
+        "preservados": true,
+        "sha256": "396b3ee284f014e0c772ff92b881ba2d1fa921f5feaeb8752b089cc749c32c09"
+      },
+      {
+        "id": "av-e1-77",
+        "preservados": true,
+        "sha256": "24b38029e230ecca8807c1e297c2ecf9174705691599496080ec7e8440242f35"
+      },
+      {
+        "id": "av-e1-78",
+        "preservados": true,
+        "sha256": "924ce1c52005cb87a4583b5a8617d5f13755168655fd0e57f73167303f748729"
+      },
+      {
+        "id": "av-e1-79",
+        "preservados": true,
+        "sha256": "c5aecde9168e07ec94ed1796d16b731085d3a7a9a71d7c05cfb6975e62be15fa"
+      },
+      {
+        "id": "av-e1-80",
+        "preservados": true,
+        "sha256": "c59f0e51d616cc5e2c9feb0a47ef4e3eea4c105c95632a295a3a3015cf1b382c"
+      }
+    ],
+    "registros_pedagogicos": "Campos individuais preservados integralmente após normalizar somente sha256_artigo; fonte.sha256/snapshot sincronizados."
+  },
+  "canonico": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1236,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "reproducao_autor": {
+    "script_sha256": "351a393366384e72b19d0df86c62dc7d3d275555875d5cd6f7321d6f88e4ee68",
+    "adaptador": "auditoria/termodinamica/pareceres/FON-02-r1-tecnico-reproduzir.mjs",
+    "saida": "auditoria/termodinamica/pareceres/FON-02-r1-tecnico-autor-reproduzido.json",
+    "resultado_identico": true,
+    "verificacoes": 205,
+    "sha256_saida": "aa1030c11966550298f17441aadeac829b78fa03cb04e7d7c3109836d829ad61",
+    "limite": "As 205 verificações do autor não comparam rótulos/cobertura de ensino_e_fundamentos_ja_vinculados; seu sucesso não elimina T1."
+  },
+  "markdown": {
+    "blocos": 80,
+    "coerencia": "Decisões, autoria, diagnósticos de adições, 21 trechos finais e contagens correspondem ao JSON e ao HTML. Campo de vínculos não é renderizado no Markdown.",
+    "resumo_inventario": "Corpo anterior preservado integralmente; título acrescido de FON-02 r1 e apêndice compatível com delta e inventário."
+  },
+  "limites": [
+    "Sem auditoria científica das fontes ou dos80 diagnósticos; responsabilidade do Auditor principal.",
+    "Sem nova suíte dinâmica de persistência. Identidade das digitais demonstrada por componentes byte a byte iguais e função/infraestrutura rastreada preservada.",
+    "Sem alegar inspeção visual dos PDFs, imagens de navegador ou consultas remotas nesta frente.",
+    "Sem editar produto, inventário, controle, manifesto ou evidências do autor; todas as escritas ficam em pareceres."
+  ],
+  "resultado": "AJUSTE_DOCUMENTAL_RECOMENDADO_POR_T1",
+  "gate": "Não emitido pelo subagente; consolidar com análise do Auditor principal.",
+  "verificacoes": 721,
+  "falhas": [
+    {
+      "id": "fontes-rotulos-ancoras-exatos",
+      "ok": false,
+      "details": {
+        "registros_falhos": 80
+      }
+    },
+    {
+      "id": "fontes-cobertura-vinculos-ensino",
+      "ok": false,
+      "details": {
+        "registros_falhos": 50,
+        "ocorrencias_omitidas": 78
+      }
+    }
+  ]
+}

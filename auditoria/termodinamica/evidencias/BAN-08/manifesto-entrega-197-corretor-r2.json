@@ -1,0 +1,44 @@
+{
+  "id": "BAN-08",
+  "estado": "ENTREGA_CORRETOR_AGUARDANDO_AUDITORIA",
+  "rodada": 2,
+  "autor": "/root/inspect_repo, agente automatizado",
+  "data": "2026-10-29",
+  "contagens": {
+    "q": 30,
+    "cr": 80,
+    "av": 80,
+    "abertos": 7
+  },
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+  },
+  "inventario_json": {
+    "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+    "sha256": "adb2f7edd0bdfbf6d1f0ec0bc8aefd46b22d6728a0aa59fc3981281aac93fbcd"
+  },
+  "inventario_resumo": {
+    "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+    "sha256": "7824dcd17e20d14b54db2c339310e6100cebaf8e7df59051d636844c7dc3be7d"
+  },
+  "consolidado": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/consolidado-197-corretor-r1.json",
+    "sha256": "d8be445efd5b6a3939dbe6fb58fc042793f722347b8ff4c0ce722e046b6114a3"
+  },
+  "manifesto_anterior": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/manifesto-entrega-197-corretor-r1.json",
+    "sha256": "75f684d6a7008c953e5b9374b1d7dc7faf8eef65d221d26b872ff3ea1807d34d"
+  },
+  "correcao_editorial": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-resumo-historico-r1/manifesto-r1.json",
+    "sha256": "346bf0e84b339f61a321097476e4c3bf2e20c1ce0026c2aa94847694b4755992",
+    "validacao_estrutural": "auditoria/termodinamica/evidencias/BAN-08/aplicacao-resumo-historico-r1/validacao-r1.json",
+    "sha256_validacao": "c5c3ecfad7bf026bc6705be579d35aebe9ebb071a1d7bf44907e5bfb86a49e65"
+  },
+  "limites": [
+    "A correção editorial de duas frases está sujeita à revisão independente da versão efetiva; não alterou HTML, inventário JSON ou registros científicos.",
+    "Os apoios são parciais e atribuídos; BAN-08 e a liberação do próximo ID aguardam Auditor e coordenação.",
+    "Sem teste de estudantes, navegador real ou certificação externa."
+  ]
+}

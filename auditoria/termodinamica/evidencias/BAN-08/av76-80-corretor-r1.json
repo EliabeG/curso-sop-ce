@@ -1,0 +1,114 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV76–AV80",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco alternativas, modelos e comentários; balanços e geometria.",
+  "registros": [
+    {
+      "id": "av-e1-76",
+      "artigo_sha256": "1c62973843285a448a379f2b090961af88e38192c7728fb8d628fe4f7a4b48cb",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-76",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "CONTAGEM_E_LOGICA",
+      "dados": "Três afirmações sobre advecção, convecção e condutividade em interface.",
+      "solucao": "I e II verdadeiras: movimento global e difusão; III falsa porque condução normal usa k positivo. Sequência V–V–F.",
+      "resultado": "C.",
+      "comparacao": "A V–F–V erra II/III; B F–V–V erra I/III; C correto; D F–F–V inverte todas; E V–V–V aceita III.",
+      "tolerancia": "Três juízos lógicos; sem valores ou tolerância.",
+      "limite": "Sinal da lei de Fourier representa direção; condutividade não precisa ser negativa.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-77",
+      "artigo_sha256": "ba4e9d281b7c90b87fa9f88e4d953020a002c8903045cd2fcc0e0e55430b2820",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-77",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Refrigeração permanente, Q̇evap=12 kW, Ẇcomp=3 kW, outras trocas/perdas desprezadas.",
+      "solucao": "Q̇cond=12+3=15 kW; COP=12/3=4 adimensional.",
+      "resultado": "C, 15 kW.",
+      "comparacao": "A 3 ignora calor retirado; B 9 subtrai trabalho recebido; C 15; D 12 omite trabalho; E 4 é COP sem unidade, não potência.",
+      "tolerancia": "Valores nominais exatos; sem incerteza de medição.",
+      "limite": "Balanço exige condições e fronteira dadas; 4 não possui unidade kW.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-78",
+      "artigo_sha256": "eb02ebe932d364e4cd46353e409c2c75a53ec06000a2f3d95929a1289b2af8e4",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-78",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Amônia em comparação de refrigerantes; calor latente elevado.",
+      "solucao": "Pode permitir grande efeito de evaporação por massa; eficiência global depende do ciclo e equipamentos.",
+      "resultado": "A.",
+      "comparacao": "A expressa vantagem térmica; B eficiência 100% não decorre; C descarte não é autorizado pela propriedade; D nega absorção na vaporização; E segurança e detecção seguem necessárias.",
+      "tolerancia": "Sem propriedade de estado, massa ou COP numérico, sem tolerância.",
+      "limite": "Não inferir COP a partir apenas de calor latente ou quantificar amônia sem estado e propriedades.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-79",
+      "artigo_sha256": "e1bcf99fdeeb7c91da73b8c89d96714294fd1c64234861d3ae7fb0b91cf78bcc",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-79",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Equipamento em alto vácuo ligado por cabos/suportes sólidos; transporte gasoso residual desprezível.",
+      "solucao": "Radiação atravessa vácuo e condução persiste nos contatos sólidos.",
+      "resultado": "E.",
+      "comparacao": "A convecção intensa incompatível com hipótese; B vácuo não elimina transferência; C ignora condução; D radiação não precisa de ar; E reúne ambos.",
+      "tolerancia": "Sem áreas, emissividades ou condutâncias, não há fluxos nem tolerância.",
+      "limite": "Não se afirma qual mecanismo predomina; isso depende de geometria e propriedades.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-80",
+      "artigo_sha256": "9586c1757d18d3ba88d59485b308d8e6c92a4dd5859ffe94ff3cd7e3e9ac9a71",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-80",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "Dimensões 2×2×1 m, face ABCD 2×2 m, geração 150 W/m³, h=10 W/(m² K), T∞=25 °C; permanente, cinco faces isoladas e radiação desprezada.",
+      "solucao": "V=4 m³, Aface=4 m², Q̇ger=600 W; ΔT=600/(10×4)=15 K, Ts=25+15=40 °C; área total=2(4+2+2)=16 m².",
+      "resultado": "E, 40 °C.",
+      "comparacao": "A 25 ignora diferença exigida; B 85 usa área 1 m²; C 28,75 usa área total 16 m²; D 15 confunde incremento K com temperatura; E 40.",
+      "tolerancia": "Cálculos exatos com dados nominais; sem incerteza instrumental.",
+      "limite": "Uniformidade espacial e regime permanente são dados; exemplo não aprova generalização sem acumulação a CR80 histórico.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

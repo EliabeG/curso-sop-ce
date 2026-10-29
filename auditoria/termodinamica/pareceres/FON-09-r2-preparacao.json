@@ -1,0 +1,168 @@
+{
+  "id": "FON-09",
+  "rodada": 2,
+  "tipo": "preparacao_sem_aceite",
+  "estado": "aguardando_entrega_congelada",
+  "escopo": "Reauditoria exclusiva de R1-A; não repetir consultas físicas ou alterar produto.",
+  "criterios": [
+    "Parser preserva e valida todo o fragmento após o primeiro #.",
+    "Rejeição dos dois negativos R1-A e do fragmento HTML adicional; contrato anterior mantido.",
+    "Quatro arquivos de conteúdo/dados/inventário/resumo idênticos à r1.",
+    "Pacote, snapshots e evidências r1 preservados; hashes e cópias r2 coerentes."
+  ],
+  "base_manifesto_sha256": "d054c3eb9a8337c59959eed9e78c2028b9e2c68f36293e3ed8076a3c01fd2b4d",
+  "conteudo_a_preservar": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "6ed5c74f03b2ce449f88e79d143c904442c524166a83afce8f12441d391a6625",
+      "bytes": 1270749,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/modulos/e1-termodinamica.html"
+    },
+    {
+      "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "bytes": 11334,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/assets/termodinamica/fon09-cr68-dados-v1.json"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "af30160109fa7e9e007e6de74eb1836896194ff90888aec75e0f8a4a86675618",
+      "bytes": 748555,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "1505e80c437fdd6dbbea40973155446ec859ba2fb363752217346876a8fb43db",
+      "bytes": 51262,
+      "copia": "auditoria/termodinamica/evidencias/FON-09/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md"
+    }
+  ],
+  "casos": [
+    {
+      "caso": "página positiva",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3",
+      "esperado_ok": true
+    },
+    {
+      "caso": "primeira página",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1",
+      "esperado_ok": true
+    },
+    {
+      "caso": "página máxima segura sem conferir total",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740991",
+      "esperado_ok": true
+    },
+    {
+      "caso": "PDF maiúsculo",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.PDF#page=3",
+      "esperado_ok": true
+    },
+    {
+      "caso": "query antes do fragmento",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf?download=1#page=3",
+      "esperado_ok": true
+    },
+    {
+      "caso": "fragmento percent-encoded válido",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page%3D3",
+      "esperado_ok": true
+    },
+    {
+      "caso": "página zero",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0",
+      "esperado_ok": false
+    },
+    {
+      "caso": "página negativa",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=-1",
+      "esperado_ok": false
+    },
+    {
+      "caso": "fração decimal",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1.5",
+      "esperado_ok": false
+    },
+    {
+      "caso": "notação exponencial",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=1e2",
+      "esperado_ok": false
+    },
+    {
+      "caso": "sinal positivo explícito",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=+3",
+      "esperado_ok": false
+    },
+    {
+      "caso": "zero à esquerda",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=03",
+      "esperado_ok": false
+    },
+    {
+      "caso": "número inseguro",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740992",
+      "esperado_ok": false
+    },
+    {
+      "caso": "valor ausente",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=",
+      "esperado_ok": false
+    },
+    {
+      "caso": "fragmento arbitrário",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao",
+      "esperado_ok": false
+    },
+    {
+      "caso": "parâmetro extra ampersand",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3&zoom=100",
+      "esperado_ok": false
+    },
+    {
+      "caso": "segundo hash com texto",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra",
+      "esperado_ok": false
+    },
+    {
+      "caso": "segundo hash vazio",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#",
+      "esperado_ok": false
+    },
+    {
+      "caso": "hash adicional codificado",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3%23extra",
+      "esperado_ok": false
+    },
+    {
+      "caso": "fragmento com espaço",
+      "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3 ",
+      "esperado_ok": false
+    },
+    {
+      "caso": "PDF ausente",
+      "referencia": "downloads/termodinamica/provas/ausente-auditor-fon09.pdf#page=3",
+      "esperado_ok": false
+    },
+    {
+      "caso": "HTML âncora existente",
+      "referencia": "modulos/e1-termodinamica.html#fundamentos",
+      "esperado_ok": true
+    },
+    {
+      "caso": "HTML âncora ausente",
+      "referencia": "modulos/e1-termodinamica.html#ausente-auditor-fon09",
+      "esperado_ok": false
+    },
+    {
+      "caso": "outro recurso sem exceção",
+      "referencia": "assets/termodinamica/fon09-cr68-dados-v1.json#page=3",
+      "esperado_ok": false
+    },
+    {
+      "caso": "HTML fragmento completo com segundo hash",
+      "referencia": "modulos/e1-termodinamica.html#fundamentos#extra",
+      "esperado_ok": false
+    }
+  ],
+  "execucao_planejada": "Após congelamento, importar validador por URL nova para evitar cache; executar casos em clones em memória, validação canônica e contrato anterior pertinente. Conferir scripts antes de executá-los. Sem teste ou resultado novo alegado neste preflight."
+}

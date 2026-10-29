@@ -1,0 +1,147 @@
+[
+  [
+    3,
+    null,
+    null,
+    "base-balanco-fechado",
+    "Conferir calorias e sinais"
+  ],
+  [
+    5,
+    null,
+    null,
+    "base-leitura-matematica",
+    "Retomar força por área"
+  ],
+  [
+    7,
+    "Nestas relações, U, H e S são totais; u, h e s são por unidade de massa."
+  ],
+  [
+    9,
+    "Resposta linear; X₂ ≠ X₁ e Y₂ ≠ Y₁ para as razões. Proporcionalidade direta exige a = 0.",
+    "X, Y: leituras simultâneas; 1 e 2: pontos de calibração; a: deslocamento, na unidade de X; b: ganho, unidade de X por unidade de Y."
+  ],
+  [
+    11,
+    null,
+    "C: fração volumétrica de CO₂; Cppm: concentração em ppm; G: geração volumétrica de CO₂ (m³/h ou m³/s); N: número de pessoas; geração por pessoa: mesma unidade de vazão por pessoa."
+  ],
+  [
+    13,
+    null,
+    "p: pressão absoluta (Pa ou kPa); V: m³; v: m³/kg; m: kg; n: mol; T: K; R: J/(kg·K) ou kJ/(kg·K); Ru: J/(mol·K) ou kJ/(mol·K), compatíveis com pV."
+  ],
+  [
+    14,
+    "Mesma quantidade e composição de gás ideal; use a mesma unidade de pressão nos dois estados e a mesma unidade de volume."
+  ],
+  [
+    15,
+    "Gás ideal com quantidade e composição fixas; imponha somente a restrição declarada.",
+    "cte: constante; p: pressão absoluta (Pa ou kPa); V: m³; T: K; mantenha as unidades entre estados."
+  ],
+  [
+    16,
+    null,
+    "Z: adimensional; p: pressão absoluta (Pa); v: m³/kg; V: m³; n: mol; T: K; R: J/(kg·K); Ru: J/(mol·K). Também se pode usar kPa e kJ de forma coerente."
+  ],
+  [
+    18,
+    "Gás ideal de composição fixa e calores específicos constantes na faixa; a relação para ΔU pressupõe massa fixa."
+  ],
+  [
+    21,
+    "Substância pura em equilíbrio líquido–vapor, abaixo do ponto crítico; x = 0 e x = 1 são os limites saturados. Título é fração mássica."
+  ],
+  [
+    22,
+    "Substância pura em equilíbrio líquido–vapor; f e g na mesma saturação. A inversão exige yg ≠ yf, excluindo o ponto crítico.",
+    "y: v (m³/kg), u ou h (kJ/kg), ou s (kJ/(kg·K)); f: líquido saturado; g: vapor saturado; x: título adimensional."
+  ],
+  [
+    23,
+    "Vaporização completa de substância pura, de líquido a vapor saturados, a pressão fixa. Para Q: massa fechada, só trabalho pV; para Q̇: escoamento permanente sem trabalho de eixo. Despreze variações cinética e potencial.",
+    "hf, hg, hfg: kJ/kg; m: massa vaporizada (kg); Q: calor recebido (kJ); Q̇: kW; ṁ: kg/s."
+  ],
+  [
+    24,
+    "Mesma pressão e região de fase; Ta ≠ Tb e T entre os dois valores. Aproximação local, sem atravessar transição de fase."
+  ],
+  [
+    25,
+    "Aproximação de ar úmido ideal, desprezando o fator de intensificação. A razão final exige mesma temperatura e pv1 ≠ 0 (φ1 ≠ 0).",
+    "φ: fração, por exemplo 50% = 0,50; pv: pressão parcial do vapor; psat(T): pressão de saturação da água pura sobre a fase de referência escolhida. Pressões na mesma unidade."
+  ],
+  [
+    27,
+    "Conjunto isolado; capacidades constantes; sem trabalho relevante, reação ou mudança de fase. Despreze energia de mistura e variações cinética/potencial."
+  ],
+  [
+    28,
+    "Capacidades constantes; sem reação ou mudança de fase; energia de mistura e variações cinética/potencial desprezíveis. Inclua o recipiente uma vez e as trocas externas com sinal.",
+    "Ci: capacidade de cada porção; Crec: capacidade do recipiente (J/K); Ti e Trec: temperaturas iniciais; Tf: final, na mesma escala. Eext = Qext − Wext (J), com calor entrando e trabalho saindo positivos."
+  ],
+  [
+    29,
+    "Mudança de fase a pressão fixa, só trabalho de fronteira e variações cinética/potencial desprezíveis; fusão/vaporização recebem calor, suas inversas o liberam.",
+    "m: massa efetivamente transformada (kg); ℓ: calor latente específico positivo (J/kg ou kJ/kg); |Qfase|: magnitude do calor (J ou kJ)."
+  ],
+  [
+    30,
+    "Massa fixa, movimento de translação não relativístico; g aproximadamente constante na diferença de altura."
+  ],
+  [
+    33,
+    "Sistema fechado; ΔEC e ΔEP desprezíveis; adiabático não significa W = 0.",
+    "Q: calor recebido; ΔU: variação da energia interna; W: trabalho realizado pelo sistema. Mesma unidade de energia (J ou kJ).",
+    "base-balanco-fechado",
+    "Retomar casos do balanço fechado"
+  ],
+  [
+    34,
+    null,
+    "W: trabalho de fronteira (kJ); p: pressão absoluta na fronteira (kPa); V: m³. Expansão → W positivo; compressão → negativo."
+  ],
+  [
+    35,
+    null,
+    "p: pressão absoluta constante (kPa); V: m³; W: trabalho de fronteira (kJ)."
+  ],
+  [
+    36,
+    "Gás ideal de massa e composição fixas, transformação isotérmica reversível, só trabalho de fronteira; ΔEC/ΔEP desprezíveis."
+  ],
+  [
+    37,
+    "Gás ideal de massa e composição fixas, calores específicos constantes, só trabalho de fronteira; isobárico quase estático; ΔEC/ΔEP desprezíveis.",
+    "Q: calor recebido e W: trabalho de fronteira (kJ); m: kg; cp, cv: kJ/(kg·K); ΔT: K ou intervalo em °C; p: kPa; V: m³."
+  ],
+  [
+    39,
+    "Gás ideal em recipiente externo rígido, fechado e isolado; expansão para vácuo, sem outros trabalhos; estados de equilíbrio com ΔEC/ΔEP desprezíveis."
+  ],
+  [
+    40,
+    "Qp = ΔH: sistema fechado, pressão constante, só trabalho pV e ΔEC/ΔEP desprezíveis. Inversão entre os mesmos estados."
+  ],
+  [
+    42,
+    "Volume de controle fixo em regime permanente, com uma entrada e uma saída representativas; q entra e w sai positivos.",
+    "q: calor e w: trabalho não associado ao escoamento (kJ/kg); h: kJ/kg, já inclui pv; vel: m/s; z: m; g: m/s². Os divisores convertem J/kg em kJ/kg."
+  ],
+  [
+    48,
+    "Volume de controle fixo; inclua todas as entradas e saídas. Regime permanente exige acumulação nula."
+  ],
+  [
+    49,
+    "Volume de controle fixo; energias cinética/potencial desprezíveis no armazenamento e nas correntes. Ẇ exclui trabalho de escoamento já incluído em h.",
+    "UVC: energia interna armazenada (kJ); Q̇: calor entrando e Ẇ: trabalho saindo (kW); ṁ: kg/s; h: kJ/kg, representativa de cada corrente."
+  ],
+  [
+    50,
+    "Volume de controle fixo; h constante em cada corrente; energias cinética/potencial desprezíveis. Se h variar, integre ṁh no tempo.",
+    "U1/U2: energia interna armazenada; Q: calor entrando e W: trabalho não associado ao escoamento saindo (kJ); min/mout: kg atravessando no intervalo; h: kJ/kg."
+  ]
+]

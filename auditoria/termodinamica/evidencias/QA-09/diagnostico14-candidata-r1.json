@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-diagnostico-14",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_DECISAO_FORMAL_E_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "7541e7c4c8314922992e99e8b62b40342c2d938e6edeac67ef9f74b69f86c17c",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r4.json",
+    "sha256": "44d19642bcf39109edf620e7304580b7a8a686e7c42cfa7101fa3d118a79d054"
+  },
+  "apoio_preliminar": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-diagnosticos-11-15-apoio-independente-r1.md",
+    "estado": "Ressalva, não decisão formal"
+  },
+  "original_sha256_fragmento": "d31dc8c7929c0d00feccdf2f5baca49b3d957a5cb81c7ce36fd26a68330df849",
+  "candidata_sha256_fragmento": "ac518b30e57fcbc1e99b461aeedf936b6ac549be41cda580c12b8182f6234e67",
+  "original_sha256_arquivo": "8d52f26e4898c51564fbe98c853416a861e00a211c8ab56514f55c2b88b2700e",
+  "candidata_sha256_arquivo": "970ac86ce8d9e207f83271a2554ec92189ddb76d08be8fbd8d62e792fc9c919c",
+  "antes": "apenas a face de 2 m × 1 m está exposta. Com h = 6 W/(m²·K) e ambiente a 18 °C, estime a temperatura dessa face, em regime permanente, sem radiação.",
+  "depois": "apenas a face de 2 m × 1 m está exposta; as demais faces são termicamente isoladas. Com h = 6 W/(m²·K) e ambiente a 18 °C, estime a temperatura média dessa face, em regime permanente, sem radiação.",
+  "limite": "Preparação isolada com nova linha nos arquivos, nenhum produto alterado; aguardam-se decisão formal e revisão independente."
+}

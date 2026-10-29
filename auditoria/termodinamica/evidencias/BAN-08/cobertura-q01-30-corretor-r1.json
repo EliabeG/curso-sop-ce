@@ -1,0 +1,268 @@
+{
+  "id": "BAN-08",
+  "escopo": "Q01–Q30",
+  "estado": "COBERTURA_DO_CORRETOR_NAO_APROVADA",
+  "corretor": "/root/inspect_repo, agente automatizado",
+  "total": 30,
+  "categorias": {
+    "NAO_NUMERICO_JUSTIFICADO": 5,
+    "NUMERICO": 15,
+    "SIMBOLICO_COM_LIMITES_NUMERICOS": 1,
+    "NUMERICO_COM_FIGURA": 1,
+    "SIMBOLICO_SEM_RESULTADO_NUMERICO": 2,
+    "SIMBOLICO_COM_ZERO": 2,
+    "SIMBOLICO_COM_CONTAGEM_EXATA": 1,
+    "CONCEITUAL_SEM_RESULTADO_NUMERICO": 1,
+    "NUMERICO_COM_MODELO_OTIMIZACAO": 1,
+    "SIMBOLICO_COM_LIMITE_ZERO": 1
+  },
+  "registros": [
+    {
+      "id": "q-e1-01",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q01-05-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-02",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "c3ecee12ab0cbc10cefd6eb96a2c0272b7847413506e8add5ad21b453d846525",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q01-05-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-03",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q01-05-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-04",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q01-05-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-05",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q01-05-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-06",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q06-10-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-07",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q06-10-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-08",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q06-10-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-09",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "16501a81d69977300456240e97fcc15906ca07738d3bb91c6eae68a7e8d3e657",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q06-10-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-10",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q06-10-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-11",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q11-15-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-12",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q11-15-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-13",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "e25596232664c876ba489c4a81be704e052bcc84411f8279d1446ddece384824",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q11-15-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-14",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q11-15-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-15",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "d86c0c96e11141353e39bc7e0de5480482b69d077f72b9da92e76d81b04ca311",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q11-15-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-16",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "0abb8b399a04e4d326aecf0334de8de50be99883c3646216a91bfe894363ec5d",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q16-20-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-17",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q16-20-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-18",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "8db8ecd7e18c8f2d2fc68d28a568ba88c2f1645c2ca7473ea2ab745be4f29adb",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q16-20-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-19",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "95ccddfe325cd576db6efa180c4141e6b4898a73683241e2961399cd973e39c9",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q16-20-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-20",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q16-20-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-21",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q21-25-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-22",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q21-25-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-23",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q21-25-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-24",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "6215c6a02392e33e0ac74907fea506a63ecb92d171eccb65502ebf8d5867db14",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q21-25-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-25",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q21-25-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-26",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "df61bd3ca6a30a77fe477e04e50ba87b515c3fa89a652d33e3f8d2f5cb27ba86",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q26-30-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-27",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q26-30-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-28",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "15be288e8d94b47776947cc8a41b9005f054033334bfcb6fc611bc98dc06d7c9",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q26-30-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-29",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q26-30-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    },
+    {
+      "id": "q-e1-30",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "artigo_sha256": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q26-30-corretor-r1.json",
+      "revisor_independente_final": "PENDENTE"
+    }
+  ],
+  "blocos": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q01-05-corretor-r1.json",
+      "sha256": "ce9886438b97ab9e88ea2dd43242908b8532b200067de73a6bc5304c3ab2c032"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q06-10-corretor-r1.json",
+      "sha256": "fabdefc7efef1edc638a6f22b6fc7601c7380e8d7f546a3495a09423c3ac2a41"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q11-15-corretor-r1.json",
+      "sha256": "f18c2eba124bb16fefea34aded33c59a8afdc0e8913af5d17f9c29b496c1882d"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q16-20-corretor-r1.json",
+      "sha256": "51ef7fdc8d4bd22dd70924986ffedc5a05594e88245039c4e6b63731370b1e21"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q21-25-corretor-r1.json",
+      "sha256": "c032f8a8e221e7fa0d7929f3b6a4ce18c3d7e7fa388c33ff728f34c3c3e7235c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/q26-30-corretor-r1.json",
+      "sha256": "66f1f16e7821e65ed2a20f960276b85d18a7182a2edd7fe32f836921af170d75"
+    }
+  ],
+  "calculos": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/calculos-q01-30-r1.json",
+    "sha256": "20bd3b3f0465833f91c73eb05d714a6f922abf7062486f4ff08de078c818ec47",
+    "fonte_executavel": "auditoria/termodinamica/evidencias/BAN-08/verificar-q01-30-r1.py",
+    "sha256_executavel": "0e859f9f40a3c0fb5ccfd03fa5bef1b763d94c30ad9f709f60caee487a149ff3"
+  },
+  "divergencias_numericas_identificadas": [],
+  "limites": [
+    "Apoio independente Q11–Q20 e apoio do coordenador Q21–30 são atribuídos no arquivo de cálculos, não são aceite global.",
+    "Ainda faltam os outros 167 artigos e parecer final independente; produto e controle não foram alterados."
+  ]
+}

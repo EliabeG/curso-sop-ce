@@ -1,0 +1,209 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "AV26–AV30",
+  "data": "2026-10-28",
+  "revisor": {"agente": "/root/auditor_av", "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07", "autor_corretor": false, "poder_de_aprovacao": "Somente vereditos locais; não aprova BAN-07 globalmente."},
+  "produto": {"arquivo": "modulos/e1-termodinamica.html", "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80", "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"},
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "escopo": {"previsto": ["AV26", "AV27", "AV28", "AV29", "AV30"], "examinado": ["AV26", "AV27", "AV28", "AV29", "AV30"], "opcoes_examinadas": 25, "fora_de_escopo": "Demais artigos, produto, controle/checklist e outros IDs; blocos anteriores preservados."},
+  "metodo": "parseHtml/decodeHtml do validador para artigos atuais; comando, figuras e derivação com cinco alternativas antes do comentário. Bases próprias imutáveis reutilizadas por identidade do SHA global e alcance. Plausibilidade de erros teórica, sem piloto; nenhum aceite herdado da narrativa do Corretor.",
+  "itens": [
+    {
+      "item": "AV26",
+      "id_artigo": "av-e1-26",
+      "sha256_artigo": "2d44c7a93a3d7cbe464d96fab7a2427fab1ee039ef3eeb272539d7eefe421a74",
+      "comando": "Tanque fechado com agitador: entram 600 kJ por eixo, saem 150 kJ por calor, sem trabalho de fronteira e com Delta EC/EP desprezíveis; determinar Delta U do conjunto tanque–fluido.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Figura vista e balanço/sinais das cinco opções julgados antes da resolução; metadados da chave omitidos."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Fronteira tanque–fluido, fechamento, ausência de trabalho de fronteira e descarte de EC/EP delimitam o balanço. Os 600 kJ são o trabalho que efetivamente cruza a fronteira pelo eixo; não se precisa de eficiência do motor.",
+        "hipoteses": "Só as transferências energéticas especificadas no modelo. Não se substitui eixo por trabalho de fronteira nulo; rigidez não impede trabalho de agitador.",
+        "unidades": "Todas as interações em kJ; pede energia interna total, não por kg. Na convenção Q entra positivo e W sai positivo, Q=-150 kJ e W=-600 kJ.",
+        "figuras": "Imagem inspecionada: tanque metálico com motor/misturador e conexões, sem setas/valores do balanço. Alt corresponde ao aparato. Ilustração coerente com semelhante ao mostrado; tubulações visíveis não introduzem fluxo no sistema fechado explicitamente declarado.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-balanco-fechado"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Delta E=Eentra-Esai=600-150=450 kJ. Com Delta EC e Delta EP desprezíveis, Delta U=+450 kJ. Equivalentemente, Delta U=Q-W=-150-(-600)=450 kJ. Sinal positivo porque a entrada supera a saída.",
+        "chave_derivada": "A",
+        "unicidade": "Só A é +450 kJ. B omite perda, C inverte saldo, D/E usam sinais errados. Valores/sinais distintos sem equivalência por arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "+450 kJ.", "correta": true, "demonstracao": "600-150=450 kJ.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "B", "texto": "+600 kJ.", "correta": false, "demonstracao": "Conta apenas o trabalho de entrada e omite 150 kJ de saída.", "erro_plausivel": "Confundir tanque fechado com adiabático ou desprezar a perda térmica dada.", "plausibilidade": "Plausível conceitualmente e numericamente."},
+        {"letra": "C", "texto": "−450 kJ.", "correta": false, "demonstracao": "150-600=-450 usa saída menos entrada.", "erro_plausivel": "Inverter a definição da variação ou o saldo líquido de energia.", "plausibilidade": "Plausível e reproduzível."},
+        {"letra": "D", "texto": "−750 kJ.", "correta": false, "demonstracao": "-150-600=-750 trata trabalho recebido como positivo para fora na fórmula Q-W.", "erro_plausivel": "Inserir módulo de W sem atribuir o sinal de trabalho de entrada.", "plausibilidade": "Plausível e reproduzível."},
+        {"letra": "E", "texto": "+750 kJ.", "correta": false, "demonstracao": "600+150=750 conta calor de saída como entrada.", "erro_plausivel": "Somar módulos de todas as interações sem distinguir suas direções.", "plausibilidade": "Plausível e reproduzível."}
+      ],
+      "confronto": {"gabarito_publicado": "A", "coincide": true, "comentario": "Balanço e todas as refutações correspondem às opções. A imagem não é quantitativamente necessária, mas não contraria fronteira ou dados do modelo textual."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-26", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "figura_local", "arquivo": "assets/questoes-reais-e1/figura-4c355dba6054.png", "sha256": "4c355dba6054f57fc26e5872ffdc1b83738a52345f31b8f994c26486651c2995", "uso": "Inspeção visual direta do aparato e descrição."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-balanco-fechado", "origem": "Leitura própria no AV02, mesmo SHA global congelado.", "alcance_reutilizado": "Convenções Q/W, tanque rígido com agitador e primeira lei; nenhum julgamento de AV26 herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Unidades e variação final menos inicial."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV27",
+      "id_artigo": "av-e1-27",
+      "sha256_artigo": "1cac59ad0421ba447b5d28ea97a5b47d99889dda7e6283c3d56d3a4eb05d5db1",
+      "comando": "Massa fixa de ar ideal comprimida em cilindro termicamente isolado; gás recebe trabalho, Delta EC/EP desprezíveis; escolher consequência.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Primeira lei, relação u(T) e todas as opções julgadas antes do comentário."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Isolamento térmico fixa Q=0, trabalho recebido fixa entrada líquida positiva, e massa/EC/EP estão delimitadas.",
+        "hipoteses": "Ar ideal de composição fixa com cv positivo. Para a tendência de T não se exige cv constante nem processo reversível ou pV elevado a k constante. Não se confunde isolamento térmico com isolamento de todo trabalho.",
+        "unidades": "Sem números; Q/W/Delta U têm mesma dimensão de energia. Na convenção da base, W realizado pelo gás é negativo na compressão com trabalho recebido.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-primeira-lei", "#base-gas-energia"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Sistema de massa fixa: Delta U=Q-W. Adiabático dá Q=0; trabalho recebido implica W<0, logo Delta U=-W>0. Para ar ideal, Delta U=m integral(cv(T)dT), com cv positivo; portanto Delta U positiva corresponde a T2>T1. Ambas aumentam.",
+        "chave_derivada": "E",
+        "unicidade": "A confunde adiabático/isotérmico; B contradiz a entrada de energia; C confunde calor/trabalho; D contradiz massa fixa. Só E é verdadeira. Sem arredondamentos."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "a temperatura fica constante por ser adiabático.", "correta": false, "demonstracao": "Q=0 não fixa T; entrada de trabalho aumenta U e T.", "erro_plausivel": "Confundir ausência de calor com ausência de variação de temperatura.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "a energia interna diminui porque o volume diminui.", "correta": false, "demonstracao": "O trabalho recebido aumenta U; para gás ideal u depende de T, não isoladamente de V.", "erro_plausivel": "Associar menor volume a menor energia armazenada ou errar o sinal do trabalho de compressão.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "C", "texto": "o trabalho é nulo porque o cilindro é isolado termicamente.", "correta": false, "demonstracao": "Isolamento térmico impede Q, não interação mecânica; o comando afirma trabalho recebido.", "erro_plausivel": "Tomar isolamento térmico como isolamento energético completo.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "o gás necessariamente perde massa durante a compressão.", "correta": false, "demonstracao": "Massa fixa foi explicitamente declarada; volume pode cair sem perda de massa, aumentando densidade.", "erro_plausivel": "Interpretar compressão como expulsão obrigatória de parte do gás ou confundir volume com quantidade.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "a energia interna e a temperatura do gás aumentam.", "correta": true, "demonstracao": "Delta U=-W>0 e cv positivo implica Delta T>0.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Correto. A/C distinguem calor de temperatura/trabalho, B observa energia de entrada e D respeita massa fixa. Não se invoca reversibilidade indevidamente."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-27", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-primeira-lei", "uso": "Lida nesta execução: convenção, sistema fechado e descarte de EC/EP."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-energia", "origem": "Leitura própria no AV13, mesmo SHA global congelado.", "alcance_reutilizado": "u(T) do gás ideal e relação com cv; nenhum julgamento de AV27 herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV28",
+      "id_artigo": "av-e1-28",
+      "sha256_artigo": "5ba6b332f4915122f681d9e816a36d869ac678a9ce1921e5b5d22dac5bfa35ed",
+      "comando": "Gás de massa fixa: Ui=100 J, recebe 200 cal, realiza 350 J; 1 cal=4,2 J e Delta EC/EP desprezíveis; achar energia interna final.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Conversão, balanço, valor final e cinco alternativas derivados antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Energia inicial e duas interações fornecidas, massa fixa e descarte de EC/EP explícitos; basta a primeira lei.",
+        "hipoteses": "Sistema fechado com transferências descritas. Não se exige gás ideal, calor específico ou caminho do processo para este balanço.",
+        "unidades": "Converter Q=200 cal×4,2 J/cal=840 J antes de somar. O fator 4,2 foi expressamente fixado; não usar 4,184 para modificar o resultado pretendido. Trabalho realizado pelo gás é saída, positivo na convenção W da base.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-balanco-fechado", "#base-primeira-lei"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Q=+840 J, W=+350 J. Delta U=Q-W=490 J. Como o comando pede Uf, Uf=Ui+Delta U=100+490=590 J. A variação e o valor final são distintos.",
+        "chave_derivada": "D",
+        "unicidade": "Só D tem 590 J. A=1290, B=490, C=940, E=-50 J provêm de erros diferentes. Separação mínima de 100 J não desaparece por arredondamento; o fator de conversão é fixado."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "1.290 J.", "correta": false, "demonstracao": "100+840+350=1290 soma trabalho produzido.", "erro_plausivel": "Tratar trabalho que sai como energia recebida, ou usar Q+W com W sem adaptar a convenção.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "490 J.", "correta": false, "demonstracao": "840-350=490 é Delta U, sem energia inicial.", "erro_plausivel": "Responder variação em lugar de energia final solicitada.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "940 J.", "correta": false, "demonstracao": "100+840=940 omite trabalho de saída.", "erro_plausivel": "Considerar apenas aquecimento ou esquecer a interação mecânica no balanço.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "D", "texto": "590 J.", "correta": true, "demonstracao": "100+200×4,2-350=590 J.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "E", "texto": "−50 J.", "correta": false, "demonstracao": "100+200-350=-50 soma cal diretamente como J.", "erro_plausivel": "Omitir conversão de unidade apesar de reconhecer corretamente os sinais.", "plausibilidade": "Plausível e numericamente reproduzível."}
+      ],
+      "confronto": {"gabarito_publicado": "D", "coincide": true, "comentario": "Conversão, Delta U, Uf e as quatro refutações conferem precisamente. O comentário B respeita o comando de energia final."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-28", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-primeira-lei", "uso": "Lida no AV27 desta execução; convenção e balanço fechado, mesmo snapshot."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-balanco-fechado", "origem": "Leitura própria no AV02, mesmo SHA global congelado.", "alcance_reutilizado": "Uf=Ui+Q-W e conversão expressamente indicada; nenhum julgamento de AV28 herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Unidades compatíveis e diferença versus valor final."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV29",
+      "id_artigo": "av-e1-29",
+      "sha256_artigo": "20636340c4eaf5d0230b128cbb6d530369b7b690ff55043e10c36ea77ef0b3a4",
+      "comando": "Compressão quase estática em sistema fechado a 100 kPa absolutos, redução de V de 0,010 m³ e perda de 5 kJ por calor; só trabalho de fronteira, Delta EC/EP desprezíveis; achar Delta U.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Trabalho, conversão dimensional, saldo e cinco opções julgados antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "A pressão indicada é a constante da compressão quase estática; redução de volume dá Delta V=-0,010 m³. Somente trabalho de fronteira e descarte EC/EP são explícitos.",
+        "hipoteses": "Sistema fechado, pressão na fronteira compatível com o processo quase estático e constante. Não se exige gás ideal nem calores específicos para a primeira lei.",
+        "unidades": "100 kPa×(-0,010 m³)=-1 kJ, pois kPa·m³=kJ. Calor perdido Q=-5 kJ; W realizado pelo gás é negativo em compressão.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-trabalho-fronteira", "#base-balanco-fechado"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "W=integral(p dV)=p Delta V=-1 kJ. Delta U=Q-W=-5-(-1)=-4 kJ. Como alternativa independente de convenção, energia entra por trabalho em 1 kJ e sai por calor em 5 kJ: saldo 1-5=-4 kJ.",
+        "chave_derivada": "E",
+        "unicidade": "Só E tem -4 kJ. As demais erram módulo/sinal ou omitem trabalho. -4 e +4 não são equivalentes; não há arredondamento dos dados que gere segunda resposta."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "−6 kJ.", "correta": false, "demonstracao": "-5-1=-6 trata compressão como trabalho que sai.", "erro_plausivel": "Aplicar módulo p vezes redução de volume como W positivo na convenção de saída.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "+6 kJ.", "correta": false, "demonstracao": "5+1=6 soma como entradas o calor perdido e o trabalho recebido.", "erro_plausivel": "Ignorar direção da transferência térmica ao somar módulos de energia.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "−5 kJ.", "correta": false, "demonstracao": "Conta apenas Q=-5 kJ e omite trabalho de compressão de 1 kJ.", "erro_plausivel": "Desprezar trabalho de fronteira ou confundir sistema fechado com ausência de trabalho.", "plausibilidade": "Plausível conceitualmente e numericamente."},
+        {"letra": "D", "texto": "+4 kJ.", "correta": false, "demonstracao": "5-1=4 usa energia de saída menos entrada, oposta à variação do sistema.", "erro_plausivel": "Inverter o saldo ou a ordem final menos inicial.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "E", "texto": "−4 kJ.", "correta": true, "demonstracao": "-5-(-1)=-4 kJ.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Trabalho negativo para compressão e calor negativo corretos. A/B/C/D correspondem exatamente aos mecanismos calculados. A perda supera trabalho recebido, por isso U cai."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-29", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-trabalho-fronteira", "uso": "Lida nesta execução; alcance p dV em processo quase estático e p Delta V em pressão constante. A figura de ciclo da base não é necessária nem usada como dado deste item."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-balanco-fechado", "origem": "Leitura própria no AV02, mesmo SHA global congelado.", "alcance_reutilizado": "Q-W e sinais; nenhum julgamento de AV29 herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "kPa·m³=kJ e definição de variação."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV30",
+      "id_artigo": "av-e1-30",
+      "sha256_artigo": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01",
+      "comando": "Transição isotérmica A→B de gás ideal em sistema fechado, só trabalho de fronteira, recebe Q=300 kJ e Delta EC/EP desprezíveis; achar trabalho realizado pelo gás.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Figura inspecionada antes da derivação e da resolução. Ela própria contém Q=Delta U+W e marca Delta U=0, informação legítima disponível antes do comentário; a derivação abaixo também justifica isso por u(T)."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Idealidade e isotermia bastam para Delta U=0; primeira lei e Q dado determinam W sem n,R ou valores de volume/pressão.",
+        "hipoteses": "Massa/composição fixas no sistema fechado ideal. A conclusão por balanço não exige reversibilidade nem cv constante; não se está afirmando conversão integral de calor em trabalho em um ciclo completo.",
+        "unidades": "Q positivo de entrada em kJ; W realizado pelo gás positivo para fora, também kJ. Delta U=0 não implica W=0.",
+        "figuras": "Painel A tem eixos pressão/volume, isotermas ordenadas T1<T2<T3<T4<T5 e A→B na mesma curva com aumento de V e queda de p. Painel B mostra calor entrando, trabalho saindo e Q=Delta U+W com Delta U=0. Sem valores numéricos de 300 kJ ou escalas; esse dado vem do texto. Alt identifica os painéis/estados e sentidos térmico/mecânico, mas omite a fórmula/anotação.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-trabalho-fronteira", "#base-gas-energia", "#base-balanco-fechado"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Gás ideal de composição fixa tem u=u(T). T_B=T_A implica Delta U=0. Na primeira lei fechada, Delta U=Q-W=0, portanto W=Q=+300 kJ. O desenho confirma expansão A→B e sentido do trabalho positivo; não é necessário medir área da curva.",
+        "chave_derivada": "D",
+        "unicidade": "D une valor correto à justificativa Delta U nula. A erra sinal, B duplica calor, C impõe aumento de U incompatível com isotermia ideal e E confunde U com W. Sem arredondamentos."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "−300 kJ, porque se trata de expansão.", "correta": false, "demonstracao": "Na convenção da base, expansão com trabalho realizado pelo gás tem W positivo; Q=+300 e Delta U=0 exigem +300.", "erro_plausivel": "Usar a convenção de trabalho recebido positivo sem adaptar o sinal ao trabalho realizado pedido.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "600 kJ, porque se somam calor e trabalho.", "correta": false, "demonstracao": "Somar 300+300 conta duas vezes a mesma energia que entra por calor e sai por trabalho.", "erro_plausivel": "Interpretar Q e W como contribuições a somar em vez de interações ligadas pelo balanço.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "150 kJ, porque metade do calor aumenta a energia interna.", "correta": false, "demonstracao": "A partilha arbitrária Q/2 daria 150 para U e W, mas Delta U é zero no gás ideal isotérmico.", "erro_plausivel": "Dividir calor igualmente entre armazenamento e trabalho sem usar a restrição de estado.", "plausibilidade": "Plausível como modelo mental incorreto de partilha energética."},
+        {"letra": "D", "texto": "300 kJ, porque a variação da energia interna é nula.", "correta": true, "demonstracao": "W=Q-Delta U=300-0=300 kJ.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "E", "texto": "zero, porque a temperatura é constante.", "correta": false, "demonstracao": "T constante fixa U do gás ideal, mas o volume varia e há Q=300 kJ; W deve equilibrar Q.", "erro_plausivel": "Confundir Delta U=0 com ausência de todas as transferências ou supor trabalho só quando T muda.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "D", "coincide": true, "comentario": "Correto. Distingue etapa isotérmica de ciclo completo e refuta todos os valores/justificativas efetivos. A convenção de trabalho positivo na expansão concorda com a base e a figura."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-30", "uso": "Comando/opções e, após derivação, resolução."},
+        {"tipo": "figura_local", "arquivo": "assets/questoes-reais-e1/figura-de4ee7b16ed4.png", "sha256": "de4ee7b16ed42d37537a23bbcf6cf7aee66cb447e11bb950b3c783e3a859aa1b", "uso": "Inspeção direta dos dois painéis, direção A→B, setas Q/W e anotação de Delta U=0."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-trabalho-fronteira", "uso": "Lida no AV29 desta execução; sinal na expansão e distinção etapa/ciclo, mesma identidade."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-energia", "origem": "Leitura própria no AV13, mesmo SHA global congelado.", "alcance_reutilizado": "u(T) no gás ideal; nenhum julgamento de AV30 herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-balanco-fechado", "origem": "Leitura própria no AV02, mesmo snapshot.", "alcance_reutilizado": "Q-W e hipótese isotérmica ideal."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Leitura de eixos, setas e unidades."}
+      ],
+      "achados": [{"id": "AV30-alt", "natureza": "observacao_nao_bloqueante", "descricao": "A descrição alternativa é correta sobre painéis e sentidos de Q/W, mas não transcreve Q=Delta U+W nem a anotação Delta U=0 presente no painel B. Não é impeditivo em BAN-07: o texto declara gás ideal isotérmico e as bases acessíveis fornecem u(T) e a primeira lei, determinando resposta única sem esse auxílio visual.", "melhoria_objetiva": "Acrescentar ao alt que o painel B mostra Q=Delta U+W com Delta U marcado zero. A equivalência descritiva completa é observação de apresentação, não dado numérico indispensável faltante."}],
+      "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    }
+  ],
+  "cobertura": {
+    "autoria": "Exame efetivo de /root/auditor_av; cinco derivações e 25 julgamentos próprios.",
+    "ids": ["AV26", "AV27", "AV28", "AV29", "AV30"],
+    "ids_artigo": ["av-e1-26", "av-e1-27", "av-e1-28", "av-e1-29", "av-e1-30"],
+    "itens": 5,
+    "juizos_de_alternativas": 25,
+    "alternativas_por_item": {"AV26": ["A","B","C","D","E"], "AV27": ["A","B","C","D","E"], "AV28": ["A","B","C","D","E"], "AV29": ["A","B","C","D","E"], "AV30": ["A","B","C","D","E"]},
+    "derivacoes_independentes": 5,
+    "confrontos_com_comentario": 5,
+    "dados_modelos_unidades_sinais_restricoes_suficiencia": 5,
+    "unicidade_e_arredondamentos": 5,
+    "figuras": "AV26 e AV30 inspecionadas visualmente, hashes e descrições registrados. Demais artigos sem figuras.",
+    "bases": "Leituras novas apenas de bases ainda não examinadas; reutilização própria por identidade e alcance declarados.",
+    "limitacao_cegamento": "Chaves omitidas e resoluções lidas após derivação. A figura de AV30 já fornece Delta U=0 antes do comentário, e isso é explicitamente declarado; não se reivindica cegamento experimental.",
+    "aprovacoes_locais": ["AV26", "AV27", "AV28", "AV29", "AV30"],
+    "itens_com_ajuste_obrigatorio": [],
+    "aceite_global_BAN07": false
+  },
+  "resumo": {
+    "veredito_bloco": "APROVADO_NO_ESCOPO_BAN-07",
+    "ajustes_obrigatorios": [],
+    "observacoes_nao_bloqueantes": ["AV30-alt: transcrever a equação e a indicação Delta U=0 do painel B melhoraria equivalência descritiva. O comando e as bases já contêm dados e teoria suficientes, sem invalidar BAN-07."],
+    "decisao_de_liberacao": "Sem liberação do próximo ID ou aceite global. Apoio científico parcial para consolidação pelo Auditor principal."
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR36–CR40",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos e estudo crítico; exame das expressões, unidades e hipótese de ciclo; cálculo exato com Fraction.",
+  "registros": [
+    {
+      "id": "cr-e1-36",
+      "artigo_sha256": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-36",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-trabalho-fronteira",
+          "#base-entropia",
+          "#base-balanco-fechado",
+          "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node17.html",
+          "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/988_CPNUJE_009_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/cpnuje_24/arquivos/GAB_DEFINITIVO_988_CPNUJE_009_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Processo adiabático reversível; exemplo de pistão com massa fixa, sem outros trabalhos ou variação macroscópica de energia.",
+      "solucao": "Adiabático impõe Q=0, não W=0. No exemplo, expansão produz W>0 e ΔU=−W; para gás ideal de calores específicos constantes, pV^k=constante, k=cp/cv.",
+      "resultado": "E.",
+      "comparacao": "C impõe trabalho nulo universalmente; E é sustentado pelo exemplo de expansão adiabática reversível com trabalho.",
+      "tolerancia": "Sem valor de p, V, calor específico ou trabalho a calcular; relações simbólicas.",
+      "limite": "pV^k requer gás ideal, composição fixa e calores específicos constantes; é ilustração adicional, não condição geral.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-37",
+      "artigo_sha256": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-37",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-exergia",
+          "../assets/questoes-reais-e1/figura-222735fab01e.png",
+          "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_014_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_UNIDADES",
+      "dados": "Mesmo estado inicial e final, condições e restrições, ambiente de referência a T0 constante em K.",
+      "solucao": "Gouy–Stodola: Wperdido=T0 Sger≥0; [K][J/K]=J. Maior geração de entropia implica menor trabalho útil comparado à mesma referência reversível.",
+      "resultado": "E.",
+      "comparacao": "C afirma mais trabalho com mais irreversibilidade; E a rejeita na comparação de referência estabelecida.",
+      "tolerancia": "Nenhuma T0 ou Sger numérica dada; sem cálculo e tolerância de medição.",
+      "limite": "A comparação exige mesmo ambiente e restrições; não comparar indiscriminadamente processos e fronteiras distintos.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-38",
+      "artigo_sha256": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-38",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-limite-carnot",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_014_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Máquina cíclica entre dois reservatórios térmicos, Tquente>Tfria>0 em K, processos reversíveis.",
+      "solucao": "ηCarnot=1−Tfria/Tquente; máquinas reversíveis entre as mesmas fontes atingem o mesmo máximo, reais não o superam.",
+      "resultado": "C.",
+      "comparacao": "C afirma o limite; E negaria. A unicidade de construção não é necessária.",
+      "tolerancia": "Expressão adimensional; nenhum valor de temperaturas ou arredondamento a calcular.",
+      "limite": "Os reservatórios e temperaturas devem ser os mesmos; aplica-se a motor térmico operando em ciclo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-39",
+      "artigo_sha256": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-39",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-segunda-lei",
+          "#base-balanco-fechado",
+          "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "../downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf#page=1",
+          "../downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf#page=1"
+        ]
+      },
+      "aplicabilidade": "ESTUDO_CRITICO_SEM_NOTA",
+      "dados": "350 cal de calor e 1470 J de trabalho; fator oficial 1 cal=4,2 J. Fronteira, totalidade das trocas e trabalho líquido não são explicitados integralmente.",
+      "solucao": "350×4,2=1470 J. Se Qentra=1470 J é todo calor de uma única fonte e Wlíq=1470 J de ciclo sem outros efeitos, Qrejeitado=0 e η=1 contradiz Kelvin–Planck.",
+      "resultado": "Chave documental C no modelo de máquina cíclica térmica fechado; estudo crítico sem nota.",
+      "comparacao": "C é coerente sob o modelo condicionado; fluxos de massa, energia química ou outras trocas tornam os números insuficientes para balanço completo.",
+      "tolerancia": "Conversão 1470 J e η=1 exatas sob dados nominais e hipótese do modelo; sem incerteza informada.",
+      "limite": "Não atribuir fronteira escolhida ou justificativa técnica à banca; não declarar anulação oficial.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-40",
+      "artigo_sha256": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-40",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gibbs",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Substância simples compressível de composição fixa, estados equilibrados e processo isentrópico.",
+      "solucao": "dh=Tds+vdp; ds=0 dá dh=vdp. Como v>0, aumento de p ao longo da isentrópica produz aumento de h: Δh=∫v dp>0.",
+      "resultado": "C no modelo explicitado.",
+      "comparacao": "C associa crescimento de pressão com aumento de entalpia na isentrópica; E o negaria.",
+      "tolerancia": "Sem valores de pressão ou volume específico; não há resultado quantitativo nem tolerância.",
+      "limite": "A relação exige sistema simples compressível e composição fixa; não presume entalpia constante ou processo necessariamente reversível.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão independente final nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior, sem nova leitura visual de PDFs nesta execução."
+  ]
+}

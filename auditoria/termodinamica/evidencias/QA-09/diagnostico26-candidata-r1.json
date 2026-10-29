@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-diagnostico-26",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO_INDEPENDENTE",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "7541e7c4c8314922992e99e8b62b40342c2d938e6edeac67ef9f74b69f86c17c",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r4.json",
+    "sha256": "44d19642bcf39109edf620e7304580b7a8a686e7c42cfa7101fa3d118a79d054"
+  },
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-diagnosticos-26-28-independente-r1.md",
+    "sha256": "68869eb1cf952661bcc8d36c4e9f3ba2d96948d5b94337299f99e6a87ef5b3cb"
+  },
+  "original_sha256_fragmento": "5782e55fa0b6b01146e8f1aecc6a39d659b53ff3d23b99ea0f236757801fce1b",
+  "candidata_sha256_fragmento": "a82e00538d8a780dddb23b2699f75fb915b546c308c12fd5d44f6d62a74f1e1a",
+  "original_sha256_arquivo": "4b0d7fbf8f7f18c6287bbed5f1235eea08dc865488ef3112e35a94f039014460",
+  "candidata_sha256_arquivo": "cf7c549f37b623338d5155a19eeba01e89575a8e5a49f45cbbc56982ffe15f1b",
+  "antes": "Qual rendimento e qual rejeição fecham o balanço?",
+  "depois": "Esses são todos os trabalhos do ciclo e todo o calor externo recebido, referidos à mesma massa; considere a rejeição como a única transferência térmica restante para o exterior. Qual rendimento e qual rejeição fecham o balanço?",
+  "limite": "Preparação isolada, arquivos têm nova linha final; sem edição do produto/controle ou aceite."
+}

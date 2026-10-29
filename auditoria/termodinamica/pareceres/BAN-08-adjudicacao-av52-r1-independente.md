@@ -1,0 +1,21 @@
+# BAN-08 — adjudicação pontual de suficiência AV52
+
+Data 29/10/2026. Revisor: agente automatizado independente `/root/auditor_ban08_novo`. **Juízo localizado: ajuste de suficiência proposto**, sujeito à decisão do Auditor principal sobre a versão efetivamente apresentada. Não é aprovação global BAN-08 nem liberação do próximo ID. Não editei produto ou controle.
+
+## Objeto e hipótese da base
+
+HTML `modulos/e1-termodinamica.html` SHA-256 `80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0`; trecho bruto UTF-8 AV52 `857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8`. Li o enunciado, cinco alternativas, resolução e bases `#base-leitura-matematica` e `#base-brayton-real`. No comando, uma unidade recebe 200 kW por calor, turbina produz 100 kW, compressor passa de 40 para 50 kW mantendo outros valores. A base afirma explicitamente “a potência útil do conjunto é a diferença” turbina–compressor **desprezando outros consumos**. É hipótese legítima para o exemplo apresentado; o artigo em si não diz que a comparação exclui todos os demais consumos. O comentário usa essa hipótese sem mencioná-la. O apoio inicial deste revisor `BAN-08-apoio-av51-55-r1-independente.md`, SHA-256 `3e196ecfc6191a43eeb260acd4e9d1bd7a5404532b66a82f0115a9ae04c0ee85`, identificou o problema; aqui ele é decidido.
+
+## Conta convencional e contramodelo
+
+Se a única potência subtraída é compressor e se 200 kW é calor total recebido, Ẇlíq inicial=100−40=60 kW e final=100−50=50 kW. As razões são 60/200=30% e 50/200=25%, alternativa D, igual à solução publicada. Os distractores e o cálculo são corretos nesse modelo; não há erro aritmético.
+
+O texto permite, se não se impuser exclusão de outros consumos, um auxiliar elétrico constante de 10 kW que acompanha a unidade em ambas situações. Turbina e compressor mantêm todos os valores do enunciado e o auxiliar também permanece constante. A potência líquida útil passa de 100−40−10=50 kW para 100−50−10=40 kW; com os mesmos 200 kW de entrada total as eficiências são **25% e 20%**, respectivamente, par ausente das opções. O auxiliar é um contramodelo editorial do revisor, não intenção ou dado atribuído ao autor. As potências e temperaturas não são propriedade de uma instalação real validada.
+
+Para verificar que não há impossibilidade termodinâmica escondida, tome como exemplo fontes a 600 K e 300 K, regime estacionário, rejeição total 150 kW inicialmente e 160 kW posteriormente. O balanço fecha: 200−150=50 kW e 200−160=40 kW; o termo auxiliar é computado no conjunto. A variação de entropia dos reservatórios é, respectivamente, 150/300−200/600=1/6 kW/K e 160/300−200/600=1/5 kW/K, ambas positivas; 25% e 20% são menores que o limite de Carnot de 50%. A segunda lei, portanto, não elimina o contramodelo. As temperaturas são apenas escolhas do exemplo, não dados do problema.
+
+## Decisão e ajuste
+
+A base ensina explicitamente a condição “desprezando outros consumos”, mas não declara que essa hipótese é imposta ao caso do enunciado. Segundo o padrão aplicado a CR45 e registrado em `BAN-08-adjudicacao-av42-av45-r1-independente.md`, SHA `40135fea3ac4c3dc0695b731a436eea2f16832ff34fb2f453665d29882ce524f`, uma hipótese de modelo cuja omissão altera a única resposta deve estar comunicada como condição do problema antes da tentativa; não basta uma base geral que mostra quando um modelo é válido. A diferença de AV52 é um consumo de trabalho auxiliar, não uma fonte térmica extra: o mesmo princípio de suficiência se aplica.
+
+**Ajuste proposto:** declarar no comando que a potência líquida útil da unidade é a potência da turbina menos somente o consumo do compressor, com quaisquer outros consumos desprezíveis, e que os 200 kW são o calor total recebido na comparação; preservar esses valores em ambos estados. A solução D então é única no modelo. Atualizar a resolução e o registro por ID, confrontar os impactos no aceite BAN-07, calcular hash/digital e verificar histórico/pontuação proporcionalmente na integração. Outra formulação explícita equivalente é aceitável mediante nova auditoria; a presente recomendação não edita a questão nem substitui entrega. Não se reivindica teste de navegador, aluno ou certificação externa.

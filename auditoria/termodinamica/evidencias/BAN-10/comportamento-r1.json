@@ -1,0 +1,81 @@
+{
+  "id": "BAN-10",
+  "rodada": 1,
+  "ok": true,
+  "verificacoes": 18,
+  "checks": [
+    {
+      "nome": "sem resposta: denominador exclui crítico",
+      "ok": true
+    },
+    {
+      "nome": "concordância crítica não vira acerto",
+      "ok": true
+    },
+    {
+      "nome": "feedback crítico concordante e neutro",
+      "ok": true
+    },
+    {
+      "nome": "crítico preserva marcação e abre análise",
+      "ok": true
+    },
+    {
+      "nome": "regular entra no numerador e denominador",
+      "ok": true
+    },
+    {
+      "nome": "feedback regular preservado",
+      "ok": true
+    },
+    {
+      "nome": "refazer crítico não apaga regular",
+      "ok": true
+    },
+    {
+      "nome": "divergência crítica não vira erro",
+      "ok": true
+    },
+    {
+      "nome": "filtro pendentes respeita ambas marcações",
+      "ok": true
+    },
+    {
+      "nome": "link direto revela crítico e limpa filtros",
+      "ok": true
+    },
+    {
+      "nome": "busca não altera agregados",
+      "ok": true
+    },
+    {
+      "nome": "resposta antiga crítica reclassificada ao carregar",
+      "ok": true
+    },
+    {
+      "nome": "resposta histórica não reconhecida preservada na gravação",
+      "ok": true
+    },
+    {
+      "nome": "sincronização outra aba aplica exclusão",
+      "ok": true
+    },
+    {
+      "nome": "armazenamento negado mantém exclusão local e aviso",
+      "ok": true
+    },
+    {
+      "nome": "banco só crítico não inventa denominador/percentual",
+      "ok": true
+    },
+    {
+      "nome": "outro módulo ignora marcador E1 e mantém resultado",
+      "ok": true
+    },
+    {
+      "nome": "E1 sem marcador mantém lógica anterior",
+      "ok": true
+    }
+  ],
+  "limites": "Execução da função iniciarBanco real em DOM e armazenamento controlados; digitais fornecidas como fixture. Preservação das digitais reais e navegador documentados separadamente."
+}

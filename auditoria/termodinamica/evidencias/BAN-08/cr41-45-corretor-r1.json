@@ -1,0 +1,151 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR41–CR45",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral e exame de modelos e hipóteses, com cálculos racionais exatos.",
+  "registros": [
+    {
+      "id": "cr-e1-41",
+      "artigo_sha256": "f4c503ea9b326caa519bbdd2cd70ae85279d9d03996adcfe8de703f77fd18e64",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-41",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-equilibrio-fases",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Fases coexistentes em equilíbrio térmico e mecânico; potencial químico de cada componente.",
+      "solucao": "Para cada componente i com transferência permitida, μ_i^α=μ_i^β; não se exige μ_i=μ_j para componentes distintos.",
+      "resultado": "C sob interpretação por componente.",
+      "comparacao": "C expressa igualdade de potencial para uma mesma espécie entre fases; E a negaria.",
+      "tolerancia": "Sem dados numéricos ou tolerância na resolução.",
+      "limite": "Diferenciar componentes e fases; os potenciais relevantes devem referir-se ao mesmo componente.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-42",
+      "artigo_sha256": "a43aea2e5d81accad6559fadfeefb77adf5e5653628f674856c501e795ce48ea",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-42",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-eficiencia-cop",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "Trabalho líquido 1000 J e calor total recebido 3000 J na mesma base; fonte quente a 750 K.",
+      "solucao": "η=Wlíq/Qin=1000/3000=1/3≈33,3%; 1/3 < 35/100.",
+      "resultado": "C, aproximadamente 33,3% <35%.",
+      "comparacao": "C condiz com desigualdade; E a negaria. Temperatura quente isolada não é suficiente para calcular Carnot.",
+      "tolerancia": "Exibição 33,3% arredonda a 0,1 ponto percentual; erro 0,0333 ponto percentual, abaixo de 0,05. Sem incerteza experimental.",
+      "limite": "Interpretação de trabalho líquido e calor total é do curso; temperatura fria não é informada.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-43",
+      "artigo_sha256": "1a934a1bd574e1b535a5a922cb0814a17d58079a7640b3f4d4c5c493af29c17b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-43",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-entropia",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_019_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_019_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Congelamento de quantidade de água com troca de calor para vizinhança.",
+      "solucao": "Água perde entropia enquanto vizinhança ganha; ΔS_total≥0, igualdade reversível ideal e valor positivo com geração de entropia.",
+      "resultado": "C.",
+      "comparacao": "C distingue entropia local decrescente de entropia total não decrescente; E ignoraria vizinhança.",
+      "tolerancia": "Sinal e zero são relações ideais; nenhuma quantidade numérica para calcular ou tolerância.",
+      "limite": "A comparação é do sistema com todas as vizinhanças relevantes; depende do processo e estados considerados.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-44",
+      "artigo_sha256": "73982b41be7659f3a23f320d7ae6414c019750db4778f91c75674c20e0d53875",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-44",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-carnot-prova",
+          "#base-trabalho-fronteira",
+          "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_019_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_019_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_REFERENCIA_EXATA",
+      "dados": "Máquina cíclica fechada de duas fontes finitas positivas e temperatura constante; etapa adiabática significa Q=0 nessa etapa.",
+      "solucao": "Etapa adiabática não determina rendimento do ciclo. Ciclo inteiramente adiabático com ΔU=ΔEc=ΔEp=0 satisfaz Wlíq=0. Para motor entre fontes, η≤1−Tc/Th<1.",
+      "resultado": "E; não se estabelece 100% de rendimento.",
+      "comparacao": "C infere rendimento total de adiabaticidade; E rejeita a inferência.",
+      "tolerancia": "100%=1 e zeros são exatos no modelo; sem temperaturas numéricas ou tolerância instrumental.",
+      "limite": "Se Qentrada=0, eficiência W/Qentrada não é definida; não confundir etapa com ciclo completo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-45",
+      "artigo_sha256": "3b7e1013014ca169f810aba4973e03c1b98a8972c5648289a996b523d63ff448",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-45",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-carnot-prova",
+          "#base-limite-carnot",
+          "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0",
+          "https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle",
+          "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_ARREDONDAMENTO",
+      "dados": "Suplemento editorial: máquina fechada cíclica, duas fontes e trabalho líquido apenas, Qh=900 kJ e Qc=90 kJ no mesmo ciclo; Th=477°C, Tc=27°C.",
+      "solucao": "W=900−90=810 kJ; η=810/900=0,90; Th=750,15 K, Tc=300,15 K; ηCarnot=1−300,15/750,15=1000/1667≈0,599880=59,988%.",
+      "resultado": "C: η=90% supera limite de cerca de 60%, impossibilitando a máquina no modelo.",
+      "comparacao": "C rejeita funcionamento; E não considera a segunda lei. Energia fecha, mas 90% excede o limite em ≈30,012 pontos percentuais.",
+      "tolerancia": "60% arredondado ao ponto percentual mais próximo tem erro ≈0,012 ponto percentual; entradas nominais, sem incerteza de medição.",
+      "limite": "Suplemento é editorial anterior à tentativa e especifica mesmo ciclo; não atribuí-lo ao texto oficial.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior; PDFs não reexaminados nesta execução."
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "html": {
+    "sha256_antes": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+    "sha256_depois": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "substituicoes": [
+      {
+        "id": "cr-e1-06",
+        "antes": "<p>Uma escala linear pode mudar o ponto de origem e o tamanho da unidade. O coeficiente a desloca a origem e b muda a proporção entre os intervalos. Dois pontos conhecidos determinam ambos. Exemplo: a conversão Celsius–Fahrenheit usa TF = 32 + 1,8TC.</p>",
+        "depois": "<p>Uma escala linear pode mudar o ponto de origem e o tamanho da unidade. O coeficiente a desloca a origem e b muda a proporção entre os intervalos. Dois pontos conhecidos determinam ambos. <strong>Exemplo autoral independente, não dado da figura:</strong> a conversão Celsius–Fahrenheit relaciona os valores numéricos tF em °F e tC em °C por tF = 32 + 1,8tC, conforme a <a href=\"https://www.nist.gov/pml/owm/si-units-temperature\" rel=\"noopener noreferrer\" target=\"_blank\">conversão exata Celsius–Fahrenheit do NIST</a>. Esses coeficientes não são valores fornecidos para as escalas X e Y da prova.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-16",
+        "antes": "<p>A umidade relativa é φ = pv/psat, onde pv é a pressão parcial do vapor e psat é sua pressão de saturação à temperatura do ar. Como a temperatura permanece constante, psat não muda. Logo, a razão é 0,40/0,50 = 0,80. O valor 1,25 resulta de inverter entrada e saída.</p>",
+        "depois": "<p><strong>Modelo da resolução do curso:</strong> mistura ideal de ar seco e vapor, desprezando o fator de intensificação, conforme a <a href=\"#base-umidade\">aula de umidade</a> e a <a href=\"https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">ASHRAE, capítulo 1, §§5–6</a>. Nessa aproximação, φ = pv/psat, onde pv é a pressão parcial do vapor e psat é a pressão de saturação da água pura na temperatura do ar, na mesma fase de referência. Como a temperatura permanece constante, psat não muda. Logo, a razão é 0,40/0,50 = 0,80. O valor 1,25 resulta de inverter entrada e saída.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-17",
+        "antes": "<p>Para o mesmo volume e temperatura, a quantidade de vapor é proporcional à sua pressão parcial. Se pv é metade de psat, a quantidade também é metade da quantidade na saturação. Isso não significa que metade da massa do ar seja água. A expressão cotidiana “o ar suporta água” é apenas uma simplificação.</p>",
+        "depois": "<p><strong>Modelo da resolução do curso:</strong> aproximação de mistura ideal de ar seco e vapor, com fator de intensificação desprezado, conforme a <a href=\"#base-umidade\">aula de umidade</a> e a <a href=\"https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">ASHRAE, capítulo 1, §§5–6</a>. Compara-se o vapor atual com a saturação na mesma temperatura, volume e fase de referência. No modelo ideal, a quantidade de vapor é proporcional à sua pressão parcial. Se pv é metade de psat, a quantidade também é metade da quantidade na saturação. Isso não significa que metade da massa do ar seja água. A expressão cotidiana “o ar suporta água” é apenas uma simplificação.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-24",
+        "antes": "Essa conta pressupõe que o ponto triplo da água seja somente a referência térmica.",
+        "depois": "Essa conta pressupõe que o ponto triplo da água seja somente a referência térmica. <strong>Conversão adotada na resolução:</strong> T/K = t/°C + 273,15, conforme <a href=\"https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0\" rel=\"noopener noreferrer\" target=\"_blank\">BIPM, Brochura SI, 9ª edição, V3.01 (2024), p. 133</a>. Assim, 373,15 K e 273,16 K são conversões dos valores nominais 100 °C e 0,01 °C do original; o segundo não é uma definição exata atual do kelvin.",
+        "justificativa": "Rastrear conversão sem atribuir novos dados à prova.",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-26",
+        "antes": "<p>Adote calor positivo para dentro e trabalho positivo realizado pelo sistema. O agitador fornece trabalho, portanto W = −1.400 kcal. Usando 1 kcal ≈ 4,184 kJ: Q ≈ −95,6 kcal. Assim, ΔU = Q − W ≈ −95,6 + 1.400 = 1.304,4 kcal. Há aumento, mas muito inferior ao valor proposto.</p>",
+        "depois": "<p><strong>Convenções e hipóteses da resolução do curso:</strong> sistema fechado, variações de energia cinética e potencial desprezíveis e apenas as transferências de energia indicadas. Calor que entra é positivo; trabalho realizado pelo sistema é positivo. Adota-se a <a href=\"https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes\" rel=\"noopener noreferrer\" target=\"_blank\">caloria termoquímica, NIST SP811, nota 9</a>: 1 kcal = 4,184 kJ exatamente nessa convenção, não informada no original.</p><p>O agitador fornece trabalho, portanto W = −1.400 kcal. Convertendo o calor que sai: Q ≈ −95,6 kcal. Assim, ΔU = Q − W ≈ −95,6 + 1.400 = 1.304,4 kcal. Esses resultados decimais são arredondados. Há aumento, mas muito inferior ao valor proposto.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-27",
+        "antes": "<p>No modelo de compressão considerado, sem perda de calor nem mudanças relevantes de energia cinética ou potencial, o trabalho fornecido fica como aumento de energia interna. Para um gás ideal, elevar a energia interna eleva a temperatura. É o aquecimento percebido em uma bomba manual ao comprimir ar.</p>",
+        "depois": "<p><strong>Modelo da resolução do curso:</strong> massa fixa de gás ideal de composição fixa, com trabalho líquido de compressão entrando e variações de energia cinética e potencial desprezíveis. A compressão adiabática é dada no enunciado, portanto não há transferência de calor. Nesse modelo, o trabalho fornecido aumenta a energia interna e a temperatura. É o aquecimento percebido em uma bomba manual ao comprimir ar.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-28",
+        "antes": "<p>Primeiro converta o calor: Q = 200 × 4,2 = 840 J. Pela primeira lei, ΔU = Q − W = 840 − 350 = 490 J. Esse número é a variação. A energia final é Uf = Ui + ΔU = 100 + 490 = 590 J.</p>",
+        "depois": "<p><strong>Hipóteses da resolução do curso:</strong> sistema fechado, variações de energia cinética e potencial desprezíveis e apenas as trocas indicadas; Q&gt;0 entra e W&gt;0 sai. O próprio enunciado fornece 1 cal = 4,2 J. Assim, Q = 200 × 4,2 = 840 J. Pela primeira lei, ΔU = Q − W = 840 − 350 = 490 J. Esse número é a variação. A energia final é Uf = Ui + ΔU = 100 + 490 = 590 J.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-29",
+        "antes": "<p>O trabalho realizado pelo gás é W = pΔV = 1.000 × (−0,1) = −100 J. O calor que sai tem sinal negativo: Q = −1.000 J. Assim, ΔU = Q − W = −1.000 − (−100) = −900 J. O gás recebe trabalho, mas perde mais energia por calor.</p>",
+        "depois": "<p><strong>Hipóteses da resolução do curso:</strong> sistema fechado, compressão quase estática, pressão informada usada como pressão absoluta na fronteira, apenas trabalho de fronteira e variações de energia cinética e potencial desprezíveis. Adotam-se Q&gt;0 para dentro e W&gt;0 para fora. O trabalho realizado pelo gás é W = pΔV = 1.000 × (−0,1) = −100 J. O calor que sai tem sinal negativo: Q = −1.000 J. Assim, ΔU = Q − W = −1.000 − (−100) = −900 J. O gás recebe trabalho, mas perde mais energia por calor.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-30",
+        "antes": "<p>A temperatura constante mantém constante a energia interna do gás ideal. Desprezando mudanças de energia cinética e potencial, ΔU = 0 e Q = W. Trata-se de um processo, não de uma máquina operando em ciclo completo; por isso não contradiz Kelvin–Planck.</p>",
+        "depois": "<p><strong>Leitura da resolução do curso:</strong> acompanha-se uma massa fixa de composição fixa. O gás ideal e a isoterma A → B são dados originais; nesse modelo, a temperatura constante mantém constante a energia interna. Desprezando mudanças de energia cinética e potencial, ΔU = 0 e Q = W. Trata-se de um processo, não de uma máquina operando em ciclo completo; por isso não contradiz Kelvin–Planck.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-33",
+        "antes": "<p>A fronteira externa é rígida e não há trabalho de expansão contra o vácuo. O isolamento fornece Q = 0. Logo, ΔU = 0 e, para gás ideal, ΔT = 0. A expansão é irreversível e a entropia aumenta, mesmo sem mudança de temperatura.</p>",
+        "depois": "<p>A fronteira externa é rígida e não há trabalho de expansão contra o vácuo. O isolamento fornece Q = 0. <strong>Modelo da resolução:</strong> com a massa e a composição fixas, sem outras interações de trabalho e desprezando variações das energias cinética e potencial macroscópicas entre os equilíbrios inicial e final, o <a href=\"https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html\" rel=\"noopener noreferrer\" target=\"_blank\">balanço de energia</a> reduz-se a ΔU = Q − W = 0. Para gás ideal, ΔT = 0. A expansão é irreversível e a entropia aumenta, mesmo sem mudança de temperatura.</p>",
+        "justificativa": "Distinguir condições adicionais de redução do balanço das condições já fornecidas.",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-36",
+        "antes": "<p>A condição adiabática zera o calor, não o trabalho. Um gás pode empurrar um pistão isolado termicamente, realizando trabalho e reduzindo sua energia interna. No modelo ideal reversível, pVᵏ é constante e a expansão geralmente diminui a temperatura.</p>",
+        "depois": "<p>A condição adiabática zera o calor, não o trabalho. <strong>Exemplo autoral:</strong> uma massa fixa de gás pode empurrar um pistão isolado termicamente; se não houver outro trabalho nem variações relevantes de energia cinética e potencial macroscópicas, ΔU = −W e a energia interna diminui na expansão que produz trabalho. Como ilustração adicional, pVᵏ é constante para massa e composição fixas de gás ideal, com cₚ e cᵥ constantes, k = cₚ/cᵥ, numa compressão ou expansão simples adiabática reversível. Nesse modelo a expansão diminui T. A <a href=\"https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node17.html\" rel=\"noopener noreferrer\" target=\"_blank\">derivação do MIT, §2.4.2</a> delimita essa relação suplementar; ela não é necessária para rejeitar a afirmação geral W = 0.</p>",
+        "justificativa": "Delimitar modelo calorífico e exemplo sem enriquecimento do enunciado.",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-37",
+        "antes": "<p>Atrito, mistura e transferência de calor com diferença finita de temperatura geram entropia. Na comparação entre as mesmas condições de operação, eles destroem capacidade de produzir trabalho útil. A relação de Gouy–Stodola expressa essa perda como trabalho perdido = temperatura ambiente absoluta × entropia gerada.</p>",
+        "depois": "<p>Atrito, mistura e transferência de calor com diferença finita de temperatura geram entropia. <strong>Relação usada na resolução do curso:</strong> pela <a href=\"https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html\" rel=\"noopener noreferrer\" target=\"_blank\">relação de Gouy–Stodola, MIT, §6.6</a>, o trabalho útil perdido em relação à referência reversível apropriada é Wperdido = T0 × Sger. T0 é a temperatura absoluta constante do ambiente de referência, em K, e Sger é a entropia gerada; com Sger em J/K, Wperdido fica em J. A comparação exige os mesmos estados, condições e restrições. Nesse recorte, maior geração de entropia reduz o trabalho útil disponível.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-40",
+        "antes": "<p>Para uma substância simples compressível de composição fixa, a relação fundamental é dh = T ds + v dp. Aqui h é a entalpia específica, s a entropia específica e v o volume específico. Como ds = 0 e v é positivo, dh tem o mesmo sinal de dp.</p>",
+        "depois": "<p><strong>Modelo da resolução do curso:</strong> substância simples compressível de composição fixa, entre estados de equilíbrio. Nesse recorte, a relação fundamental é dh = T ds + v dp. Aqui h é a entalpia específica, s a entropia específica e v o volume específico. A isentropia dada no enunciado implica ds = 0; como v é positivo, dh tem o mesmo sinal de dp.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-42",
+        "antes": "<p>A eficiência efetiva é η = W/Qrecebido = 1.000/3.000 = 1/3 ≈ 33,3%. Para essa conta, a temperatura da fonte é dispensável. Ela seria necessária, junto da temperatura fria, para calcular o limite de Carnot.</p>",
+        "depois": "<p><strong>Leitura da resolução do curso:</strong> 1.000 J representam o trabalho líquido e 3.000 J o calor total recebido pela máquina na mesma base de operação. Assim, η = W/Qrecebido = 1.000/3.000 = 1/3 ≈ 33,3%. Para essa conta, a temperatura da fonte é dispensável. Ela seria necessária, junto da temperatura fria, para calcular o limite de Carnot.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-44",
+        "antes": "<p>Uma etapa adiabática não garante rendimento total ao ciclo. Uma máquina térmica operando entre fontes finitas precisa rejeitar calor. Se o ciclo inteiro fosse adiabático, ΔU no ciclo seria zero e Qlíquido também: pela primeira lei, o trabalho líquido seria zero.</p>",
+        "depois": "<p>Uma etapa adiabática não garante rendimento total ao ciclo. <strong>Modelo usado na explicação:</strong> uma máquina térmica cíclica fechada, com apenas dois reservatórios a temperaturas absolutas constantes, finitas e positivas, tem rendimento limitado por <a href=\"https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle\" rel=\"noopener noreferrer\" target=\"_blank\">Carnot</a> e rejeita calor ao produzir trabalho líquido. Se uma massa fechada completasse um ciclo inteiramente adiabático, retornando também aos mesmos estados cinético e potencial macroscópicos, ΔU = ΔEcin = ΔEpot = 0 e Qlíquido = 0; pela primeira lei, Wlíquido = 0. Essas condições explicativas não transformam uma etapa isolada em um ciclo completo.</p>",
+        "justificativa": "Definir modelo cíclico e temperaturas das fontes sem ambiguidade de capacidade térmica.",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-45",
+        "antes": "<p>O trabalho proposto é 900 − 90 = 810 kJ e a eficiência é 810/900 = 90%. Convertendo as fontes: Tquente = 750,15 K e Tfria = 300,15 K. Carnot limita η a 1 − 300,15/750,15 ≈ 60%. O rendimento de 90% excede o limite, embora conserve energia.</p>",
+        "depois": "<p><strong>Leitura adotada na resolução:</strong> máquina cíclica fechada, com somente as duas trocas de calor indicadas e trabalho líquido, retornando ao mesmo estado energético a cada ciclo. O trabalho proposto é 900 − 90 = 810 kJ e a eficiência é 810/900 = 90%. Pela <a href=\"https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0\" rel=\"noopener noreferrer\" target=\"_blank\">conversão Celsius–kelvin do SI</a>, somam-se 273,15 aos valores numéricos em °C: Tquente = 750,15 K e Tfria = 300,15 K. Para os dois reservatórios, <a href=\"https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle\" rel=\"noopener noreferrer\" target=\"_blank\">Carnot</a> limita η a 1 − 300,15/750,15 ≈ 60%. O rendimento de 90% excede o limite, embora conserve energia nesse balanço.</p>",
+        "justificativa": "Separar modelo e conversão dos resultados derivados dos valores originais.",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-50",
+        "antes": "<p>Para a mesma comparação de estados e razão de pressões, as irreversibilidades aumentam o trabalho necessário no compressor e reduzem o produzido na turbina. A parcela consumida pelo compressor tende a aumentar, diminuindo o trabalho líquido do conjunto.</p>",
+        "depois": "<p><strong>Comparação adotada na resolução:</strong> para cada componente, compara-se o escoamento real com a referência isentrópica, mantendo o mesmo fluido, o mesmo estado de entrada e a mesma pressão de saída. Usam-se regime permanente, uma entrada e uma saída, operação adiabática, variações cinética e potencial desprezíveis e somente trabalho de eixo além do trabalho de escoamento já incluído em h. Nesse <a href=\"https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html\" rel=\"noopener noreferrer\" target=\"_blank\">balanço de volume de controle</a>, as irreversibilidades elevam o trabalho específico exigido pelo compressor e reduzem o produzido pela turbina. Não se impõem iguais entalpias ou temperaturas de saída entre os casos real e isentrópico. Na comparação do conjunto sob essas condições, aumenta a parcela consumida pelo compressor e diminui o trabalho líquido.</p>",
+        "justificativa": "Precisar grandezas mantidas e balanço; não igualar estados finais incompatíveis.",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-57",
+        "antes": "<p>No modelo ideal de ar com calores específicos constantes, η = 1 − 1/rp^((k−1)/k). rp é a razão de pressões do compressor e k = cp/cv. Para k maior que 1, elevar rp aumenta essa eficiência. A conclusão não autoriza aumentos ilimitados em uma turbina real com temperatura máxima fixada.</p>",
+        "depois": "<p><strong>Relação suplementar da resolução:</strong> para o <a href=\"https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html\" rel=\"noopener noreferrer\" target=\"_blank\">Brayton ideal, MIT §3.7</a> com ar tratado como gás ideal de composição e calores específicos constantes, compressão e expansão isentrópicas e trocas de calor isobáricas, η = 1 − 1/rp^((k−1)/k). rp é a razão de pressões do compressor e k = cp/cv. Para k maior que 1, elevar rp aumenta essa eficiência no domínio de operação do ciclo motor. A conclusão não autoriza aumentos ilimitados em uma turbina real com temperatura máxima fixada.</p>",
+        "justificativa": "Identificar relação e condições sem fornecer parâmetros inexistentes.",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-65",
+        "antes": "<p>No modelo de escoamento permanente com perdas de calor e variações cinética e potencial desprezíveis, a potência produzida é vazão mássica × queda de entalpia. A entalpia do vapor diminui ao fornecer trabalho ao eixo. Uma turbina real pode ser aproximadamente adiabática sem ser reversível.</p>",
+        "depois": "<p><strong>Modelo da resolução:</strong> <a href=\"https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html\" rel=\"noopener noreferrer\" target=\"_blank\">escoamento permanente</a> com uma entrada e uma saída, trocas de calor e variações cinética e potencial desprezíveis, e nenhuma interação de trabalho relevante além da de eixo e da de escoamento. Como o trabalho de escoamento pv já está incluído em h, a potência de eixo produzida é vazão mássica × queda de entalpia. A entalpia do vapor diminui ao fornecer esse trabalho. Uma turbina real pode ser aproximadamente adiabática sem ser reversível.</p>",
+        "justificativa": "Justificar redução à potência de eixo.",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-79",
+        "antes": "<p>A condução por suportes/cabos pode competir com a radiação; alto vácuo não fixa essa razão. <strong>Contramodelo autoral, não dado da prova:</strong> corpo a 300 K, área 0,10 m², superfícies negras e grande parede a 77,15 K dão aproximadamente 45,73 W radiativos. Se a ligação sólida à parede tiver condutância G = 0,01 W/K, conduz cerca de 2,23 W; com G = 0,50 W/K, conduz 111,43 W. As duas montagens respeitam o contexto térmico, mas invertem a predominância. A chave B corresponde à primeira leitura, sem ser demonstrada pelos dados originais. A troca gasosa foi desprezada nesse contramodelo; não se afirma pressão residual rigorosamente nula.</p>",
+        "depois": "<p>A condução por suportes/cabos pode competir com a radiação; alto vácuo não fixa essa razão. <strong>Contramodelo autoral, não dado da prova:</strong> escolhem-se corpo a 300 K, área de troca 0,10 m², superfícies negras (ε = 1) e visão completa de uma grande parede. Para o exemplo, adota-se nominalmente a temperatura de parede −196 °C do enunciado: −196 + 273,15 = 77,15 K, pela <a href=\"https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0#page=19\" rel=\"noopener noreferrer\" target=\"_blank\">conversão Celsius–kelvin, BIPM, 9ª ed., V3.01 (2024), p. 133</a>. Isso não atribui precisão de 0,01 K à expressão original “por volta de −196°C”.</p><p>Usa-se σ ≈ 5,670374419 × 10⁻⁸ W/(m²·K⁴), aproximação decimal da constante exata no SI listada em <a href=\"https://physics.nist.gov/cuu/pdf/all.pdf#page=6\" rel=\"noopener noreferrer\" target=\"_blank\">CODATA 2022, p. 6</a>. O modelo Q̇rad = σA(Tcorpo⁴ − Tparede⁴) fornece aproximadamente 45,73 W. Escolhem-se também duas condutâncias efetivas constantes da ligação sólida à parede: G = 0,01 W/K e G = 0,50 W/K. Por Q̇cond = G(Tcorpo − Tparede), elas conduzem, respectivamente, cerca de 2,23 W e 111,43 W. Área, temperatura do corpo, superfícies negras e condutâncias são escolhas didáticas do curso. As duas montagens invertem a predominância sem contrariar os dados originais. A chave B corresponde à primeira leitura, sem ser demonstrada pelos dados originais. A troca gasosa foi desprezada nesse contramodelo; não se afirma pressão residual rigorosamente nula.</p>",
+        "justificativa": "Esclarecimento de proveniência e condições conforme diagnóstico individual.",
+        "autoria_proposta": "/root/corretor_aaa/apoio_fun01",
+        "revisao_integracao": "/root/corretor_aaa",
+        "tipo": "conteudo_da_resolucao"
+      },
+      {
+        "id": "cr-e1-80",
+        "antes": "justificativa oficial, PDF p. 5</a>, também iguala geração e convecção para chegar a 40 °C; essa é uma justificativa documentada da banca, mas não acrescenta regime permanente ao comando da p. 4.",
+        "depois": "justificativa oficial na versão histórica (sem efeito), PDF p. 5</a>, também iguala geração e convecção para chegar a 40 °C; essa é uma justificativa documentada da banca, mas não acrescenta regime permanente ao comando da p. 4 dessa versão histórica.",
+        "justificativa": "Identificar versão consultada sem alterar interpretação ou página.",
+        "tipo": "conteudo_da_resolucao"
+      }
+    ],
+    "resumos": {
+      "antes": "<summary>Ver gabarito e resolução</summary>",
+      "depois": "<summary>Ver gabarito oficial e resolução autoral</summary>",
+      "ids": [
+        "cr-e1-01",
+        "cr-e1-02",
+        "cr-e1-03",
+        "cr-e1-05",
+        "cr-e1-06",
+        "cr-e1-07",
+        "cr-e1-08",
+        "cr-e1-10",
+        "cr-e1-11",
+        "cr-e1-12",
+        "cr-e1-13",
+        "cr-e1-14",
+        "cr-e1-15",
+        "cr-e1-16",
+        "cr-e1-17",
+        "cr-e1-18",
+        "cr-e1-19",
+        "cr-e1-20",
+        "cr-e1-21",
+        "cr-e1-22",
+        "cr-e1-23",
+        "cr-e1-25",
+        "cr-e1-26",
+        "cr-e1-27",
+        "cr-e1-28",
+        "cr-e1-29",
+        "cr-e1-30",
+        "cr-e1-31",
+        "cr-e1-32",
+        "cr-e1-33",
+        "cr-e1-36",
+        "cr-e1-37",
+        "cr-e1-38",
+        "cr-e1-40",
+        "cr-e1-41",
+        "cr-e1-42",
+        "cr-e1-43",
+        "cr-e1-44",
+        "cr-e1-45",
+        "cr-e1-46",
+        "cr-e1-47",
+        "cr-e1-48",
+        "cr-e1-49",
+        "cr-e1-50",
+        "cr-e1-51",
+        "cr-e1-52",
+        "cr-e1-53",
+        "cr-e1-54",
+        "cr-e1-55",
+        "cr-e1-56",
+        "cr-e1-57",
+        "cr-e1-58",
+        "cr-e1-59",
+        "cr-e1-60",
+        "cr-e1-61",
+        "cr-e1-63",
+        "cr-e1-64",
+        "cr-e1-65",
+        "cr-e1-66",
+        "cr-e1-67",
+        "cr-e1-68",
+        "cr-e1-69",
+        "cr-e1-70",
+        "cr-e1-71",
+        "cr-e1-72",
+        "cr-e1-73",
+        "cr-e1-74",
+        "cr-e1-75",
+        "cr-e1-76",
+        "cr-e1-77",
+        "cr-e1-78"
+      ]
+    }
+  },
+  "limite": "Somente resoluções de CR; componentes oficiais, estados de pontuação e infraestrutura preservados."
+}

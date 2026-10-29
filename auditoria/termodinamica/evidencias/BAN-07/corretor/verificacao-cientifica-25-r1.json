@@ -1,0 +1,1130 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autor": "/root/corretor_aaa",
+  "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+  "artigos": 25,
+  "opcoes": 125,
+  "numericos": 16,
+  "conceituais": 9,
+  "registros": [
+    {
+      "id": "q-e1-02",
+      "sha256_artigo": "c3ecee12ab0cbc10cefd6eb96a2c0272b7847413506e8add5ad21b453d846525",
+      "chave": "B",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "200+100",
+        "resultado": 300,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 300.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "C",
+            "valor": 200.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 2.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": -100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "B"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "D",
+          "resultado_do_erro": 2.0,
+          "erro": "200/100: razão indevida sem unidade"
+        }
+      ]
+    },
+    {
+      "id": "q-e1-09",
+      "sha256_artigo": "16501a81d69977300456240e97fcc15906ca07738d3bb91c6eae68a7e8d3e657",
+      "chave": "B",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "Área horária(200−100)(3−1)=200kJ",
+        "resultado": 200,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 600.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 200.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "C",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 0.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": -200.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "B"
+        ]
+      },
+      "distratores_recalculados": []
+    },
+    {
+      "id": "q-e1-13",
+      "sha256_artigo": "e25596232664c876ba489c4a81be704e052bcc84411f8279d1446ddece384824",
+      "chave": "C",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "Vetor(F,V,V): calor/trabalho dependem do caminho; h=u+pv define entalpia; U retorna no ciclo. C(IIeIII) é a única combinação completa. As cinco combinações finais são refutadas individualmente."
+    },
+    {
+      "id": "q-e1-15",
+      "sha256_artigo": "d86c0c96e11141353e39bc7e0de5480482b69d077f72b9da92e76d81b04ca311",
+      "chave": "A",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "(1000−650)/1000×100",
+        "resultado": 35.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 35.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "B",
+            "valor": 54.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 165.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 65.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "A"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "C",
+          "resultado_do_erro": 165.0,
+          "erro": "Soma indevida dos fluxos"
+        }
+      ]
+    },
+    {
+      "id": "q-e1-16",
+      "sha256_artigo": "0abb8b399a04e4d326aecf0334de8de50be99883c3646216a91bfe894363ec5d",
+      "chave": "A",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "(1−300/600)×100",
+        "resultado": 50.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 50.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "B",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 0.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 200.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 33.3,
+            "casas_decimais": 1,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "A"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "D",
+          "resultado_do_erro": 200.0,
+          "erro": "Razão invertida e sem complemento"
+        },
+        {
+          "opcao": "E",
+          "resultado_do_erro": 33.33333333333333,
+          "erro": "Soma indevida das temperaturas no denominador"
+        }
+      ]
+    },
+    {
+      "id": "q-e1-18",
+      "sha256_artigo": "8db8ecd7e18c8f2d2fc68d28a568ba88c2f1645c2ca7473ea2ab745be4f29adb",
+      "chave": "D",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "Vetor(V,F,V): entropia isolada pode aumentar; adiabático irreversível não implica isentrópico; parte de um sistema pode perder entropia. SomenteD(VFV) corresponde ao vetor."
+    },
+    {
+      "id": "q-e1-19",
+      "sha256_artigo": "95ccddfe325cd576db6efa180c4141e6b4898a73683241e2961399cd973e39c9",
+      "chave": "A",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "400/500×100",
+        "resultado": 80.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 80.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "B",
+            "valor": 125.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 44.4,
+            "casas_decimais": 1,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 20.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "A"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "C",
+          "resultado_do_erro": 44.44444444444444,
+          "erro": "Soma indevida das quedas no denominador"
+        }
+      ]
+    },
+    {
+      "id": "q-e1-24",
+      "sha256_artigo": "6215c6a02392e33e0ac74907fea506a63ecb92d171eccb65502ebf8d5867db14",
+      "chave": "C",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "Caldeira flamotubular conduz gases quentes dentro dos tubos e água ao redor. A troca com aquatubular, a identificação de superaquecedor, a mistura direta e a alimentação de combustível representam quatro erros distintos; C permanece única."
+    },
+    {
+      "id": "q-e1-26",
+      "sha256_artigo": "df61bd3ca6a30a77fe477e04e50ba87b515c3fa89a652d33e3f8d2f5cb27ba86",
+      "chave": "B",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "2800+0,30×200",
+        "resultado": 2860.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 3060.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 2860.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "C",
+            "valor": 2830.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 2900.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 840.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "B"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "A",
+          "resultado_do_erro": 3060.0,
+          "erro": "Referência final indevida"
+        }
+      ]
+    },
+    {
+      "id": "q-e1-28",
+      "sha256_artigo": "15be288e8d94b47776947cc8a41b9005f054033334bfcb6fc611bc98dc06d7c9",
+      "chave": "E",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "(3200−2400)/(3200−2200)×100",
+        "resultado": 80.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 125.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 68.75,
+            "casas_decimais": 2,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 75.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 80.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "E"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "B",
+          "resultado_do_erro": 68.75,
+          "erro": "Razão de entalpias de estado em vez de quedas"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-08",
+      "sha256_artigo": "2cbb9953a0ca46eda6b4cf9144bd13b7d0849822d9ed02ecaa0c6d010f3b7d07",
+      "chave": "C",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "LS=LI+span=20+80",
+        "resultado": 100,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 80.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 20.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "D",
+            "valor": 180.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 60.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "C"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "D",
+          "resultado_do_erro": 180,
+          "erro": "Span confundido com semiamplitude"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-10",
+      "sha256_artigo": "a4e565a479f34fa4e36835bcb186f5b99d0f3ce3000b500f458c4c1c1863032e",
+      "chave": "B",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [
+        "B/E têm mesmo valor800kg/m³, mas classificação intensiva/extensiva distinta; sóB responde ao par pedido. A também troca a grandeza/unidade para volume específico."
+      ],
+      "demonstracao_numerica": {
+        "expressao": "ρ=m/V=12/0,015",
+        "resultado": 800.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 0.00125,
+            "casas_decimais": 5,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": false,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 800.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "C",
+            "valor": 80.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 0.18,
+            "casas_decimais": 2,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": false,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 800.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": false,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "B"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "D",
+          "resultado_do_erro": 0.18,
+          "erro": "Produto em vez de razão; unidade e classificação indevidas"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-17",
+      "sha256_artigo": "440d7b7f9d75ef0adb436c16b01f0e82a4459d58d037f8ec914a0ae6653e7b7a",
+      "chave": "D",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "φ=pv/psat(T); φ=0,5 implicaD. Quantidade de vapor fixa não fixa sua pressão: pv=nvRT/V no modelo ideal. A referência de volume fixo é contraexemplo à independência universal de T, não dado acrescentado à pergunta."
+    },
+    {
+      "id": "av-e1-18",
+      "sha256_artigo": "5a61747eec81b5caadab8e61895235bd4cce053076ba3f9eed4a90ded57dea46",
+      "chave": "C",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "200×450/300",
+        "resultado": 300.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 600.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 200.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 300.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "D",
+            "valor": 450.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 133.3,
+            "casas_decimais": 1,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "C"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "A",
+          "resultado_do_erro": 600.0,
+          "erro": "ΔT em vez de T1 absoluta"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-33",
+      "sha256_artigo": "18647f755fc3deb6a9a4aafcb815851a9fcc1244ff0288b0117c8c0620349d1f",
+      "chave": "D",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "Q=0; Wfronteira=0 por recipiente rígido e expansão contra vácuo; outros trabalhos e energia da membrana explicitamente excluídos. ΔU=0 dá ΔT=0 no gás ideal. ΔS=mRln(Vf/Vi)>0. I,II,III verdadeiras; IV falsa; somenteD."
+    },
+    {
+      "id": "av-e1-35",
+      "sha256_artigo": "17b85fe40845327cbdfba0bd7d354a5f394034351617d0f22d23e80af6eb4300",
+      "chave": "B",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "W=−ΔU=+120kJ",
+        "resultado": 120,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": -0.12,
+            "casas_decimais": 3,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 120.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "C",
+            "valor": 0.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": -120.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 0.12,
+            "casas_decimais": 3,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "B"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "A",
+          "resultado_do_erro": -0.12,
+          "erro": "Conversão indevida e sinal invertido"
+        },
+        {
+          "opcao": "E",
+          "resultado_do_erro": 0.12,
+          "erro": "Conversão indevida de valor já em kJ"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-37",
+      "sha256_artigo": "b741f7c26e317df09eaf7984e2065f881464ffc7367202fa2968b4ce30efe928",
+      "chave": "C",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "T0Sger=300×0,20",
+        "resultado": 60.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 0.2,
+            "casas_decimais": 2,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 5.37,
+            "casas_decimais": 2,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 60.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "D",
+            "valor": -60.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 300.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "C"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "B",
+          "resultado_do_erro": 5.3700000000000045,
+          "erro": "Temperatura Celsius no produto que exige kelvin"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-38",
+      "sha256_artigo": "bde32c401ca98314f5217325508776fef07fca3eddb42b7a689a588fe973dfd4",
+      "chave": "E",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "(1−300/500)×100",
+        "resultado": 40.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 60.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 66.7,
+            "casas_decimais": 1,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 25.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 40.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "E"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "D",
+          "resultado_do_erro": 25.0,
+          "erro": "Soma indevida no denominador"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-45",
+      "sha256_artigo": "3babe8cb08138fd4ad42f7358c5208b70974370d17a62d30490075e7b5019b50",
+      "chave": "E",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "Qfria mínimo=1000×300/600",
+        "resultado": 500.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 333.3,
+            "casas_decimais": 1,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": 1000.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 300.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 0.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 500.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "E"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "A",
+          "resultado_do_erro": 333.3333333333333,
+          "erro": "Soma indevida no denominador"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-48",
+      "sha256_artigo": "810f21fc17823ad01aee37087182a58186ca27b6c46afcf0a1c12f3dabd26f87",
+      "chave": "A",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "Para aquecer passivamente o ar comprimido, exaustão precisa ser mais quente na entrada do regenerador; A. Mistura não é obrigatória, compressão mantém consumo, sentido inverso não aquece como pedido e igualdade térmica em todo equipamento elimina força motriz."
+    },
+    {
+      "id": "av-e1-50",
+      "sha256_artigo": "a81b2fc4861de1cbe533079250396bc9c268ca3b02f3d2f7a9956b1434a4d8a3",
+      "chave": "C",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "Adiabatismo e regime permanente dão wc=h2−h1 e wt=h3−h4 por massa, EC/EP desprezíveis. Para entrada e pressão de saída iguais, geração de entropia eleva h de saída em relação à referência isentrópica (dh=Tds a p fixa e T>0). Assim wc sobe e wt cai; C. O enunciado final exclui compressor resfriado da classe comparada."
+    },
+    {
+      "id": "av-e1-57",
+      "sha256_artigo": "64d1d119452a69f00cbae2a69c844bd047558d33064fcbd0a7ec7172e4c73f73",
+      "chave": "D",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "(1−1/2)×100",
+        "resultado": 50.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "B",
+            "valor": -100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 0.5,
+            "casas_decimais": 2,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 50.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "E",
+            "valor": 200.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "D"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "C",
+          "resultado_do_erro": 0.5,
+          "erro": "Fração0,50 rotulada como% sem multiplicar100"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-58",
+      "sha256_artigo": "6a7534ee1978a5572870ce9206be5c77578e5c6f308255f9a4f9fef7230825b3",
+      "chave": "A",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_numerica": {
+        "expressao": "p2=p1V1/V2=100×0,20/0,050",
+        "resultado": 400.0,
+        "opcoes": [
+          {
+            "opcao": "A",
+            "valor": 400.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": true,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": true
+          },
+          {
+            "opcao": "B",
+            "valor": 100.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "C",
+            "valor": 25.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "D",
+            "valor": 300.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          },
+          {
+            "opcao": "E",
+            "valor": 200.0,
+            "casas_decimais": 0,
+            "compatibilidade_numerica": false,
+            "compatibilidade_unidade_classificacao": true,
+            "compatibilidade_com_resposta": false
+          }
+        ],
+        "equivalencias_correta_apos_arredondamento": [
+          "A"
+        ]
+      },
+      "distratores_recalculados": [
+        {
+          "opcao": "D",
+          "resultado_do_erro": 300.0,
+          "erro": "Incremento de pressão confundido com pressão final"
+        }
+      ]
+    },
+    {
+      "id": "av-e1-64",
+      "sha256_artigo": "d7a2c29feee7ebd705e93fe6d8c6d222c7f365d15e9d5ffd75650f3f900c44df",
+      "chave": "D",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "Pistão e parafuso reduzem volume aprisionado; D. Nos dinâmicos, rotor fornece energia e difusor converte energia cinética em pressão. Não se valida literalmente pás no difusor ao refutarC; A/B/E contradizem o mecanismo ou sua energia."
+    },
+    {
+      "id": "av-e1-73",
+      "sha256_artigo": "0726d64bef732bb8b75a4473a190e14e7b7359155533af25fd5fc6b6c5f0b34a",
+      "chave": "A",
+      "opcoes_examinadas": 5,
+      "resultado": "coerente na releitura do Corretor",
+      "observacoes": [],
+      "demonstracao_conceitual": "A razão elevada de área de troca/volume caracteriza compactação e explica o objetivo. B inverte essa razão; C confunde troca e armazenamento; D aumenta resistência à condução para mesmo material/área; E nega a função térmica das aletas. SomenteA responde. Não há promessa de perda de pressão ou desempenho invariáveis."
+    }
+  ],
+  "limites": [
+    "Conferência científica do próprio Corretor; não é parecer independente.",
+    "Plausibilidade dos erros é teórica, sem piloto com estudantes.",
+    "Tolerância de meia unidade da última casa é critério de arredondamento das opções, não incerteza física.",
+    "Cálculos necessários ao gabarito/unicidade; não encerra BAN-08 integral."
+  ]
+}

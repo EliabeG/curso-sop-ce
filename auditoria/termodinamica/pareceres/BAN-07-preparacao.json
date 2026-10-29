@@ -1,0 +1,101 @@
+{
+  "id": "BAN-07",
+  "rodada_planejada": 1,
+  "data": "2026-10-28",
+  "auditor": "Agente automatizado independente /root/auditor_aaa",
+  "estado": "PREPARACAO; sem aceite antecipado",
+  "criterio_original": "Conferir dados suficientes, consistência física, comando, unidades, restrições e resposta única, incluindo distratores plausíveis baseados em erros reais. Aceite: cada item tem demonstração do gabarito e justificativa dos distratores; detectar alternativas equivalentes após arredondamento.",
+  "base": {
+    "html": "modulos/e1-termodinamica.html",
+    "inventario": "auditoria/termodinamica/inventario/inventario-questoes.json",
+    "total": 197,
+    "bancos": {
+      "Q": 30,
+      "CR": 80,
+      "AV": 80,
+      "abertos": 7
+    },
+    "formatos": {
+      "multipla_escolha": 117,
+      "certo_errado": 73,
+      "resposta_aberta": 7
+    },
+    "sha256_html": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "sha256_inventario": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e"
+  },
+  "dependencias": {
+    "conclusao": "Nenhuma dependência impeditiva conhecida para diagnosticar e corrigir o banco existente neste recorte.",
+    "disponiveis": [
+      "Inventário individual e IDs estáveis BAN-02.",
+      "Fonte oficial e versões FON-01, suplementos FON-02 e dados físicos CR68 FON-09.",
+      "Decisões de estudos críticos BAN-10 e sete problemas FUN-01/FUN-02 com resolução/revisão próprias."
+    ],
+    "condicionais": [
+      "Se uma chave exigir propriedade/fonte ainda não reconstruível, resolver e documentar esse dado antes do aceite do item afetado; a ausência não pode ser preenchida por suposição oculta.",
+      "Se houver novo defeito científico em conteúdo herdado, registrar a evidência e limitar a correção ao alcance necessário; avisar o coordenador se invalidar aceite anterior."
+    ],
+    "nao_exigidas_para_inicio": [
+      "Núcleo avançado completo, GOV-02, BAN-06 ou banco reservado BAN-13.",
+      "Fechamento global BAN-08/QA-09; cálculos indispensáveis à demonstração e unicidade continuam obrigatórios no BAN-07."
+    ]
+  },
+  "metodo": [
+    "Confirmar cobertura por ID e hash de todos os197 artigos; sem amostragem no fechamento.",
+    "Ler primeiro comando/dados/figura/opções visíveis ao aluno; derivar resposta ou família de respostas antes de depender do comentário e da chave.",
+    "Examinar modelo, sistema, estados, domínio, sinais, bases por massa/mol/total, unidades, consistência física, suficiência e informações redundantes.",
+    "Para números, recalcular o necessário para decidir chave, ordem e equivalência das opções; registrar arredondamento/tolerância pertinente aos dados e ao comando, sem uma tolerância universal arbitrária.",
+    "Confrontar depois comentários/justificativas e fontes; diferença entre gabarito oficial e interpretação científica deve permanecer explícita.",
+    "Produzir registro individual com demonstração, análise de cada alternativa ou juízo C/E, hipótese necessária e onde é fornecida, conclusão, alteração proposta e fonte/revisor.",
+    "Verificar sincronização produto/inventário/registro.js/digitais se uma alteração afetar respostas ou identidade, com regressão proporcional ao delta."
+  ],
+  "por_formato": {
+    "multipla_escolha": [
+      "Uma resposta válida no modelo autorizado pelo enunciado; alternativas distintas semanticamente e após arredondamento.",
+      "Para INCORRETA, provar o conjunto de verdade das demais e a falsidade única exigida; para combinações I/II/III, conferir cada proposição e cada combinação.",
+      "Distratores devem representar erros plausíveis demonstráveis. Sem piloto, plausibilidade é análise teórica, não comportamento observado."
+    ],
+    "certo_errado": [
+      "Demonstrar a proposição verdadeira ou refutar a falsa com condição/contramodelo físico válido.",
+      "Qualificadores como sempre/somente/independente importam; não avaliar somente uma leitura conveniente.",
+      "Não fabricar cinco alternativas para um formato binário."
+    ],
+    "abertos": [
+      "Conferir suficiência e consistência dos dados, requisitos e rubrica para a família de soluções válidas; não exigir um caminho único quando construção livre é intencional.",
+      "Herança dos pareceres FUN-01/FUN-02 apenas por identidade do enunciado/dados/rubrica e pelo critério efetivamente examinado; lacunas de BAN-07 não são aprovadas por extensão."
+    ]
+  },
+  "criticos": {
+    "ids": [
+      "cr-e1-04",
+      "cr-e1-09",
+      "cr-e1-24",
+      "cr-e1-34",
+      "cr-e1-35",
+      "cr-e1-39",
+      "cr-e1-62",
+      "cr-e1-79",
+      "cr-e1-80"
+    ],
+    "tratamento": [
+      "Continuam em cobertura integral; não são dispensados porque não pontuam.",
+      "Preservar transcrição, opções, figura e chave oficial identificadas; avaliar a análise técnica, condições, interpretações/contramodelos e roteiro do estudo.",
+      "Unicidade do item histórico é não aplicável como requisito de pontuação quando já reconhecidamente inválido; justificar isso por ID e manter fora da nota. Não inventar uma demonstração da chave oficial incompatível com a ciência.",
+      "CR34 é estudo de esclarecimento de modelos, não caso de invalidação demonstrada de C; preservar essa distinção.",
+      "Se aparecer nova ambiguidade em item pontuável, não escondê-la em comentário nem mudar silenciosamente o original; propor tratamento explícito e informar impacto à coordenação."
+    ]
+  },
+  "alerta_principal": "Uma hipótese autoral acrescentada só na resolução, ainda que corretamente rotulada por FON-02, não torna automaticamente suficiente o comando de um item pontuável. Avaliar as informações disponíveis antes da resposta e a legitimidade das convenções/modelos implícitos.",
+  "herancas": [
+    "BAN-01: permutação e coerência dos30 itens, sem confundir com aceite científico global.",
+    "BAN-02: inventário e classificação, sem demonstração de gabaritos.",
+    "FON-01/02/09: origem, separação e dados dentro do alcance; fonte oficial não substitui demonstração científica.",
+    "BAN-10: decisões e exclusão de nove estudos, mediante identidade e ausência de novo achado.",
+    "FUN-01/FUN-02: sete problemas com revisão científica/numérica e rubricas, conforme alcance registrado."
+  ],
+  "limites": [
+    "BAN-08 permanece aberto: seu registro numérico integral não é fechado por esses resultados, embora se possam reaproveitar cálculos identificados no futuro.",
+    "BAN-03/04/05/06/09/11/13/14 não são fechados por extensão; não exigir crescimento do banco ou piloto para esta verificação do banco existente.",
+    "§3.2 aplica registro de responsável/revisor/data/arquivos/fontes/evidência e coerência pertinente; não se exige criar uma nova unidade curricular por cada correção de alternativa.",
+    "Auditor não altera produto, controle, checklist ou evidências do Corretor. Gate final somente após pacote congelado e exame integral."
+  ]
+}

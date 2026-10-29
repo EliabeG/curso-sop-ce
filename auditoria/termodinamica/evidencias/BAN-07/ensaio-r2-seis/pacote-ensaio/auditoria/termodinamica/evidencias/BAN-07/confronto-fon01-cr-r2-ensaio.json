@@ -1,0 +1,26 @@
+{
+  "estado": "CONFRONTO_DE_IDENTIDADE_NAO_REVALIDACAO_DOCUMENTAL",
+  "fonte_fon01": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+  "sha256_fonte_fon01": "563e70deab73fc10c6af355db9a267a5342243427529efc6407a640436278d42",
+  "criterio": "Nos três fragmentos, remover somente parágrafo editorial recupera o artigo r1 byte a byte, inclusive transcrição, figuras, alternativas e chaves. Não houve nova leitura dos PDFs nem declaração de aceite FON-01 para r2.",
+  "registros": [
+    {
+      "id": "cr-e1-06",
+      "sha256_antes": "69c0e38652f6be60ce26064942c5df1ef936193d8f6c3b79bd6530c28e29f31e",
+      "sha256_candidata": "873e51481bc440721e17c233292535fdf7367670ba819c954987b7c263d8420b",
+      "remocao_editorial_reconstroi_r1": true
+    },
+    {
+      "id": "cr-e1-26",
+      "sha256_antes": "4799e28ca9e9aa74d19aa5bac1560323e7d4d71e74a98e63561068afb3b802c8",
+      "sha256_candidata": "7c0ed44062bd50045076b2379e2449d24ef23da635ffe8a4d751ae37fb85303f",
+      "remocao_editorial_reconstroi_r1": true
+    },
+    {
+      "id": "cr-e1-45",
+      "sha256_antes": "382306e2bd0381e3614cfefd799d12a1b90a06b3b78e1f2171bc5c9c67c4ba4d",
+      "sha256_candidata": "3b7e1013014ca169f810aba4973e03c1b98a8972c5648289a996b523d63ff448",
+      "remocao_editorial_reconstroi_r1": true
+    }
+  ]
+}

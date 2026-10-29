@@ -1,0 +1,39 @@
+{
+  "id": "BAN-08-42",
+  "item": "av-e1-42",
+  "autoria": "/root/inspect_repo, agente automatizado",
+  "estado": "CANDIDATA_ISOLADA_NAO_APLICADA_NAO_APROVADA",
+  "fonte_adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-08-adjudicacao-av42-av45-r1-independente.md",
+    "sha256": "40135fea3ac4c3dc0695b731a436eea2f16832ff34fb2f453665d29882ce524f"
+  },
+  "base": {
+    "produto": "modulos/e1-termodinamica.html",
+    "sha256_produto": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+    "sha256_artigo": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+    "digital": "d0b32333"
+  },
+  "candidata": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/propostas-av42-av45-r1/AV42-candidata.html",
+    "sha256": "81c755c3fbc510b3d5c1ff5678e5c14c548239a2563346a33b28bdedd650491e",
+    "digital": "595a0614",
+    "chave": "E"
+  },
+  "alteracao": "Somente enunciado.",
+  "demonstracao": "Qtotal=4000 kJ/ciclo, Wlíq=1000 kJ/ciclo, Qrejeitado=3000 kJ/ciclo; η=1000/4000=0,25=25%.",
+  "cinco_opcoes": {
+    "A": "33,3%≈1000/3000: razão sobre calor rejeitado, não sobre entrada total; erro de arredondamento de 0,0333 p.p.",
+    "B": "100% ignoraria que apenas 25% do calor de entrada é convertido em trabalho.",
+    "C": "400% inverte 4000/1000.",
+    "D": "75%=3000/4000 é fração rejeitada.",
+    "E": "25%=1000/4000 é a única eficiência proposta correta."
+  },
+  "limites": "Condição editorial define duas fontes e única outra troca como trabalho; não se atribui a restrição ao enunciado anterior.",
+  "impacto": "Enunciado muda a digital, logo histórico anterior permanece armazenado como versão anterior e deixa de contar para item atual se adotada, conforme leitura do código; não foi executado teste de navegador. Revisar inventário JSON e Markdown, evidência numérica e aceites BAN-07 após eventual aplicação.",
+  "verificacao": "verificar-delta.py e verificar-digitais.mjs; sem colisão no banco AV atual candidato e digitais históricas conhecidas BAN-07 r1. Sem acesso ao armazenamento de usuários nem teste empírico de estudantes.",
+  "pendencias": [
+    "Revisão científica e editorial independente, sem autoaprovação.",
+    "Decisão do Auditor principal sobre versão e dependências de BAN-07/BAN-08.",
+    "Qualquer aplicação requer liberação do coordenador e verificação de colisões, persistência e inventário na versão efetivamente aplicada."
+  ]
+}

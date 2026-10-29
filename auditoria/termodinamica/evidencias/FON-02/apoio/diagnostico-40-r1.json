@@ -1,0 +1,1995 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "natureza": "Diagnóstico anterior às alterações; lote de apoio com 40 artigos individualmente lidos",
+  "autoria": "/root/corretor_aaa/apoio_fun01",
+  "escopo": {
+    "familias": [
+      "p22m",
+      "p22p",
+      "p23",
+      "p24",
+      "ita",
+      "inpe"
+    ],
+    "quantidade": 40,
+    "produto_editado": false,
+    "criterio": "Identificar cada constante, propriedade ou hipótese acrescentada ao original; suplemento separado e justificado, sem atribuir versão enriquecida à banca."
+  },
+  "base": {
+    "extrato": "auditoria/termodinamica/evidencias/FON-02/extrato-80-antes.json",
+    "extrato_sha256": "6a0e106f9cdc70a50ab77e9b3bba606e5dc9bee208fba59a7e525d5454dd9262",
+    "html_copia": "auditoria/termodinamica/evidencias/FON-02/antes/modulos/e1-termodinamica.html",
+    "html_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+    "conferencia": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json",
+    "conferencia_sha256": "10f92c8e41a1a508598664ba68a32bf2ba1dcf842c2cea89e525e93c4b000303"
+  },
+  "metodo": [
+    "Lidos critério FON-02 e os 40 artigos completos, incluindo contexto, comando, alternativas, notas, resolução e referências; não classificação por palavras-chave.",
+    "Lidas as comparações FON-01 correspondentes e confirmada identidade dos 40 hashes de artigo; seis PDFs originais atuais coincidem com os hashes declarados nas conferências.",
+    "Lidos conteúdos das seções teóricas efetivamente usadas para rastrear modelos e constantes. Consulta não ampliada às unidades futuras.",
+    "Separadas adições de dados/modelos, derivações numéricas do original e explicações conceituais. Valores de exemplos/contramodelos têm autoria própria; resultados desses exemplos não foram contados como propriedades medidas.",
+    "Não se exige fonte experimental de parâmetros escolhidos em contramodelo declarado. Uma fórmula de resolução, sozinha, não é classificada como dado novo; suas condições de aplicação são registradas quando acrescentadas.",
+    "Nenhuma nova consulta externa nesta rodada. Fontes primárias já publicadas e apoio do coordenador são atribuídos expressamente; lacunas locais estão registradas."
+  ],
+  "classificacao_decisoes": {
+    "manter": "Separação/modelo suficiente para este diagnóstico, ou ausência de suplemento factual após leitura.",
+    "preservar_fon09": "Dados aprovados e rastreáveis, a preservar integralmente.",
+    "reforco_local": "Tornar explícita no artigo uma condição ou dado autoral já identificado na resolução/ensino vinculado; não significa que a versão original esteja infiel ou que a questão seja inválida.",
+    "ajuste_minimo": "Fator/convenção ou conjunto de condições da conta precisa ser explicitado para rastrear o suplemento aplicado."
+  },
+  "resumo": {
+    "por_decisao": {
+      "manter": [
+        "cr-e1-01",
+        "cr-e1-02",
+        "cr-e1-03",
+        "cr-e1-04",
+        "cr-e1-05",
+        "cr-e1-07",
+        "cr-e1-08",
+        "cr-e1-11",
+        "cr-e1-12",
+        "cr-e1-13",
+        "cr-e1-14",
+        "cr-e1-15",
+        "cr-e1-18",
+        "cr-e1-19",
+        "cr-e1-20",
+        "cr-e1-21",
+        "cr-e1-25",
+        "cr-e1-31",
+        "cr-e1-32",
+        "cr-e1-38",
+        "cr-e1-39",
+        "cr-e1-41",
+        "cr-e1-46",
+        "cr-e1-66",
+        "cr-e1-67",
+        "cr-e1-69",
+        "cr-e1-78"
+      ],
+      "reforco_local": [
+        "cr-e1-06",
+        "cr-e1-16",
+        "cr-e1-17",
+        "cr-e1-27",
+        "cr-e1-28",
+        "cr-e1-30",
+        "cr-e1-37",
+        "cr-e1-40",
+        "cr-e1-42",
+        "cr-e1-79"
+      ],
+      "ajuste_minimo": [
+        "cr-e1-26",
+        "cr-e1-29"
+      ],
+      "preservar_fon09": [
+        "cr-e1-68"
+      ]
+    },
+    "sem_suplemento_factual": [
+      "cr-e1-01",
+      "cr-e1-02",
+      "cr-e1-03",
+      "cr-e1-05",
+      "cr-e1-07",
+      "cr-e1-08",
+      "cr-e1-11",
+      "cr-e1-12",
+      "cr-e1-18",
+      "cr-e1-19",
+      "cr-e1-25",
+      "cr-e1-31",
+      "cr-e1-38",
+      "cr-e1-41",
+      "cr-e1-46",
+      "cr-e1-66",
+      "cr-e1-67",
+      "cr-e1-69",
+      "cr-e1-78"
+    ],
+    "adicoes_misturadas_ao_texto_oficial_encontradas": 0
+  },
+  "fontes_disponiveis": {
+    "aula_instrumentos": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-instrumentos",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Escalas lineares, relação afim e dois pontos de calibração; não contém fonte primária específica Celsius–Fahrenheit."
+    },
+    "aula_gas_energia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-gas-energia",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "u/h de gás ideal e condição de calores específicos constantes."
+    },
+    "aula_molecular": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-molecular",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Modelo cinético elementar, volume molecular desprezível e colisões elásticas."
+    },
+    "aula_umidade": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-umidade",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Mistura ideal, fator de intensificação desprezado, φ=pv/psat e comparação no mesmo V,T."
+    },
+    "aula_gas_estado": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-gas-modelo",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Quantidade/composição fixas, equação de estado e limite formal a T→0."
+    },
+    "aula_balanco": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-balanco-fechado",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Sinais e balanço reduzido; condições de massa fixa, energias macroscópicas desprezíveis e trabalho de fronteira explicitadas na teoria."
+    },
+    "aula_primeira_lei": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-primeira-lei",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Balanço geral de sistema fechado e redução quando ΔEc/ΔEp são desprezíveis."
+    },
+    "aula_trabalho": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-trabalho-fronteira",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Trabalho com pressão de fronteira e condição quase estática."
+    },
+    "aula_termoquimica": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-termoquimica",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Pressão constante, apenas trabalho de expansão e estados correspondentes para sinais de ΔH."
+    },
+    "aula_exergia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-exergia",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Ambiente de referência, T0 constante, Sger e comparação sob mesmas restrições."
+    },
+    "aula_gibbs": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-gibbs",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Substância simples compressível de composição fixa entre estados de equilíbrio."
+    },
+    "aula_eficiencia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-eficiencia-cop",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "W líquido e QH total recebido na mesma base por ciclo."
+    },
+    "aula_radiacao": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-radiacao-vacuo",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Superfície pequena, grande entorno, temperaturas uniformes, visão do entorno e σ≈5,67×10⁻⁸ W/(m²·K⁴)."
+    },
+    "devoe_7_1": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://faculty.washington.edu/gdrobny/v5-screen.pdf#page=163",
+      "localizacao": "DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165",
+      "uso": "Fundamentação já publicada junto da análise CR04. Nesta rodada foi lido o artigo e sua citação; não houve nova abertura externa."
+    },
+    "ashrae_psicrometria": {
+      "tipo": "fonte_primaria_ja_vinculada",
+      "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+      "localizacao": "Capítulo 1, §§5–6, conforme link e descrição em #base-umidade",
+      "uso": "Referência existente para limites da aproximação psicrométrica. Texto da aula foi lido; fonte externa não reaberta."
+    },
+    "nist_cal": {
+      "tipo": "leitura_primaria_atribuida_ao_coordenador",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes",
+      "localizacao": "Nota 9",
+      "evidencia": "auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-unidades-r1.json",
+      "uso": "Caloria termoquímica=4,184 J exatamente; caloria International Table=4,1868 J. Evidência do coordenador lida nesta rodada; não é nova consulta própria."
+    },
+    "apoio_unidades": {
+      "tipo": "evidencia_local_lida",
+      "arquivo": "auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-unidades-r1.json",
+      "sha256": "28cfc65a1a790ea5250311e1c7a1e77959cf979e1783bff8919bdae46c29d9e0"
+    },
+    "bipm_celsius": {
+      "tipo": "leitura_primaria_atribuida_ao_coordenador",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0",
+      "localizacao": "p. impressa 133 / PDF p. 19, conforme apoio do coordenador",
+      "uso": "Deslocamento 273,15 K da conversão Celsius–kelvin; sem nova consulta externa própria."
+    },
+    "openstax_kelvin_planck": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+      "localizacao": "§4.4, Kelvin–Planck",
+      "uso": "Fundamento já citado na análise CR39; não reaberto nesta rodada."
+    },
+    "openstax_radiacao": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+      "localizacao": "§1.6, radiação líquida",
+      "uso": "Fundamento já citado na análise CR68; não reaberto nesta rodada."
+    },
+    "nasa_thermal": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+      "localizacao": "Thermal Control (07/05/2026), §§7.2.1 e 7.2.3, conforme citação local",
+      "uso": "Fundamento já citado na análise CR79 para mecanismos; não é origem dos valores didáticos de A,Tcorpo ou G e não foi reaberto nesta rodada."
+    },
+    "analise_autoral_ban10": {
+      "tipo": "autoria_didatica",
+      "arquivo": "modulos/e1-termodinamica.html#cr-e1-79",
+      "uso": "Dados escolhidos pelo curso, visivelmente rotulados como contramodelo. Não são medidos nem derivados da prova."
+    },
+    "fon09_dados": {
+      "tipo": "conjunto_aprovado_preservado",
+      "arquivo": "assets/termodinamica/fon09-cr68-dados-v1.json",
+      "sha256": "828b967f1318924742e8b30aca8575549301afcccaad395f9ed5bcee2fc46456",
+      "parecer": "auditoria/termodinamica/pareceres/FON-09-r2.md",
+      "uso": "Hash coincide com o parecer r2 lido. Reuso delimitado aos dados e sua proveniência; não repetição da auditoria científica."
+    },
+    "nist_densidade": {
+      "id": "nist-webbook-densidade",
+      "url": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+      "captura": "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-densidade-25c-101325.html",
+      "sha256_captura": "7bc6b02309d877723dd721a9eab8f9f2ee817d8fa2008c7b4c7de12373f5a01e",
+      "modelo": "IAPWS-95 citado pelo WebBook",
+      "condicao": "Líquido a25°C e0,101325MPa; Type=IsoTherm.",
+      "url_captura_html": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Load&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa%2As&STUnit=N%2Fm",
+      "data_consulta": "2026-10-27"
+    },
+    "nist_saturacao": {
+      "id": "nist-webbook-saturacao",
+      "url": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+      "captura": "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-saturacao-101325.html",
+      "sha256_captura": "ccbfe0998477db30e1acd2c81acb035df65e5aea580dd8147accb5b6f4d88b34",
+      "modelo": "IAPWS-95, Wagner e Pruss(2002), release2016 citada pelo WebBook",
+      "condicao": "Saturação à pressão0,101325MPa; duas fases listadas; Type=SatT na API.",
+      "url_captura_html": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Load&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa%2As&STUnit=N%2Fm",
+      "data_consulta": "2026-10-27"
+    },
+    "nistir5078": {
+      "id": "nistir5078-tabela2",
+      "url": "https://www.nist.gov/document/nistir5078-tab2pdf",
+      "titulo": "NISTIR5078 (1998), Table2, Saturation(Pressure)",
+      "paginas_impressas": [
+        11,
+        12
+      ],
+      "pagina_pdf_dados": 2,
+      "unidades_originais": {
+        "p": "MPa",
+        "T": "°C",
+        "v": "cm³/g"
+      }
+    }
+  },
+  "registros": [
+    {
+      "id": "cr-e1-01",
+      "numero": 1,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "b0bd5a4a2f5eaea1f0addd8ed696110ba14d99f10577a411ab0144510090d030",
+        "sha256_calculado": "b0bd5a4a2f5eaea1f0addd8ed696110ba14d99f10577a411ab0144510090d030",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-01",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+          "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+          "pagina_fisica": 1,
+          "item": 51
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Definição de fase homogênea, estados e propriedades macroscópicas; original 51 diz que propriedades intensivas independem da massa.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "A divisão de uma amostra homogênea em metades ilustra a definição de intensividade. Metade da massa não é medição ou parâmetro acrescentado ao problema. Após leitura integral, não foi encontrado suplemento factual de cálculo.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-02",
+      "numero": 2,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "88330f46201ca197d70fd6060f876cc410a9e7aa2acd355df530ced0e3998266",
+        "sha256_calculado": "88330f46201ca197d70fd6060f876cc410a9e7aa2acd355df530ced0e3998266",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-02",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+          "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+          "pagina_fisica": 1,
+          "item": 52
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Mesmo contexto de fase/estado; original 52 atribui mais de um valor à propriedade conforme o caminho.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Valor único de propriedade num estado de equilíbrio e distinção calor/trabalho versus energia armazenada são a explicação conceitual do erro, não novo conjunto de dados.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-03",
+      "numero": 3,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "3c6cec66df34c03177c210d957f91842d50148d7d63e506e654b5c82a0b60e6d",
+        "sha256_calculado": "3c6cec66df34c03177c210d957f91842d50148d7d63e506e654b5c82a0b60e6d",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-03",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 51
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Contexto de materiais gasosos e líquidos; original 51 restringe energia cinética às partículas de gases.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Movimento nos líquidos e vibrações nos sólidos são explicação conceitual da resolução. Não se introduz velocidade, energia, temperatura ou modelo numérico de um material específico.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-04",
+      "numero": 4,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+        "sha256_calculado": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-04",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 68
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 68 compara sensibilidade do volume específico do líquido a temperatura e pressão, sem indicar escalas/faixa.",
+      "adicoes": [
+        {
+          "tipo": "hipoteses_de_analise_autoral",
+          "trecho": "Para massa fixa de líquido em uma fase",
+          "local": "Interpretação técnica autoral — BAN-10, dentro de details.cr-resolucao",
+          "funcao": "Definir o domínio da relação dv/v = α dT − κT dp usada na crítica.",
+          "justificativa": "Massa fixa/fase única pertencem à interpretação autoral, não foram inseridas na frase da banca; escalas |αΔT| e |κTΔp| são propostas de comparação, sem valores inventados.",
+          "fontes_disponiveis": [
+            "devoe_7_1"
+          ],
+          "pendencia": "Nenhuma de separação; preservar o caráter condicional."
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Definições de α e κT, suas dimensões e a comparação de efeitos são relações teóricas, não propriedades tabeladas acrescentadas.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Preservar o bloco autoral e a fonte já presentes.",
+      "separacao": "Aviso antes do original, roteiro autoral e análise BAN-10 dentro da resolução explicitam a autoria e a exclusão de pontuação.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-05",
+      "numero": 5,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "0e756b1237367af6d0380d6935ccd0b0bd11fda5fbe0e5dc733f4954759a13c0",
+        "sha256_calculado": "0e756b1237367af6d0380d6935ccd0b0bd11fda5fbe0e5dc733f4954759a13c0",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-05",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+          "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+          "pagina_fisica": 2,
+          "item": 59
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 59 fornece uma lista de sete unidades, com minuto e grau Celsius entre as supostas unidades de base.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Segundo/kelvin corrigem uma classificação conceitual. A distinção entre unidade aceita e unidade de base não acrescenta uma constante ao enunciado.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum; eventual ampliação de referências SI pertence à rastreabilidade conceitual, não a alteração dos dados desta pergunta.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-06",
+      "numero": 6,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+        "sha256_calculado": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-06",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+          "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+          "pagina_fisica": 4,
+          "item": 75
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 75 e figura fornecem duas escalas X/Y sem números, dilação constante e relação afim TX=a+bTY.",
+      "adicoes": [
+        {
+          "tipo": "exemplo_numerico_autoral_independente",
+          "trecho": "Exemplo: a conversão Celsius–Fahrenheit usa TF = 32 + 1,8TC.",
+          "local": "details.cr-resolucao",
+          "funcao": "Ilustrar deslocamento da origem e mudança de escala.",
+          "justificativa": "32 e 1,8 são da conversão convencional escolhida para o exemplo, não derivam da figura X/Y nem são necessários para responder ao original.",
+          "fontes_disponiveis": [
+            "aula_instrumentos"
+          ],
+          "pendencia": "Não há referência primária local específica para a conversão Fahrenheit no artigo; a origem do exemplo é clara, mas convém identificá-lo como exemplo do curso e usar notação de valores numéricos em °C e °F."
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Dois pontos fixam os coeficientes de uma função afim; isso explica a forma proposta pelo original.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "Trocar “Exemplo:” por “Exemplo autoral independente (valores numéricos em °C e °F):”. Se mantido como constante de consulta, acrescentar fonte de conversão verificada; não atribuir 32 e 1,8 à figura original.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-07",
+      "numero": 7,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "7370a26429d6879438fcf43c0c5200bdd1a64f8318d13de099bad14c957573f1",
+        "sha256_calculado": "7370a26429d6879438fcf43c0c5200bdd1a64f8318d13de099bad14c957573f1",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-07",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 2,
+          "item": 62
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 62 descreve suposto tubo de Bourdon como termômetro de líquido em vidro.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Identificação de manômetro de pressão e princípio de deformação do tubo é explicação conceitual. Não foi introduzida propriedade do material, faixa ou coeficiente do instrumento.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-08",
+      "numero": 8,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "9f993bc1a26e2239421f1504bf758851b25e5f8e25d4761498d47c6c61528f35",
+        "sha256_calculado": "9f993bc1a26e2239421f1504bf758851b25e5f8e25d4761498d47c6c61528f35",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-08",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 2,
+          "item": 65
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 65 já fornece span de 100 °C, limite inferior de 50 °C e conclusão de 150 °C.",
+      "adicoes": [],
+      "derivacoes_do_original": [
+        "50+100=150 °C e faixa 50–150 °C procedem dos dados originais.",
+        "A equivalência de intervalos 100 °C=100 K é conversão da escala, sem acrescentar temperatura de um estado."
+      ],
+      "explicacao_conceitual_nao_transcricao": "Definições de faixa e alcance explicam o cálculo; não há dado externo de calibração.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-11",
+      "numero": 11,
+      "familia": "ita",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "25f574ce82e77fd539abacb0d0a60d84bebed544b5a2d39bb494901b3e3c98e7",
+        "sha256_calculado": "25f574ce82e77fd539abacb0d0a60d84bebed544b5a2d39bb494901b3e3c98e7",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-11",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-01-21_itaipu-tecnico-em-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/924_ITAIPU_028_01.PDF",
+          "sha256": "df3742fe8e7802f77aa6c6c4fec53ea31a869be83a0b6aeee8adb720c0035761",
+          "pagina_fisica": 2,
+          "item": 35
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 35 pergunta pela unidade SI de temperatura termodinâmica; alternativas Fahrenheit, kelvin, Celsius, watt e joule.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Explicar os significados de K, W e J e citar usos de temperatura absoluta não adiciona parâmetros ao problema. A referência a Carnot/gás ideal é exemplo conceitual de uso.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-12",
+      "numero": 12,
+      "familia": "ita",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "a25e2c7ffcfd139ecdebb4cdfa23c003c524f926171f16a18d4de4fc0f197740",
+        "sha256_calculado": "a25e2c7ffcfd139ecdebb4cdfa23c003c524f926171f16a18d4de4fc0f197740",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-12",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-01-21_itaipu-tecnico-em-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/itaipu_23/arquivos/924_ITAIPU_028_01.PDF",
+          "sha256": "df3742fe8e7802f77aa6c6c4fec53ea31a869be83a0b6aeee8adb720c0035761",
+          "pagina_fisica": 3,
+          "item": 40
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 40 traz as quatro proposições e já menciona substância cristalina pura, ordem molecular máxima e zero absoluto na IV.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "“Cristal perfeito puro” explicita a leitura da condição de referência descrita na IV; não foi fornecida uma substância, entropia tabelada ou temperatura nova. A redistribuição das leis I–III é explicação conceitual.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum no escopo FON-02.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-13",
+      "numero": 13,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "d038caddab08159beae96c99df97efae278396af24bd3be56009e68c4e311ca1",
+        "sha256_calculado": "d038caddab08159beae96c99df97efae278396af24bd3be56009e68c4e311ca1",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-13",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+          "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+          "pagina_fisica": 1,
+          "item": 56
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 56 já define gás perfeito a baixa densidade e pergunta se pressão fixa determina u independentemente de T.",
+      "adicoes": [
+        {
+          "tipo": "hipotese_de_exemplo_na_resolucao",
+          "trecho": "Com calor específico constante, Δu = cv × ΔT",
+          "local": "details.cr-resolucao",
+          "funcao": "Apresentar a forma simplificada da variação de energia interna.",
+          "justificativa": "Constância de cv é condição adicional explicitamente marcada; não é necessária para a afirmação mais geral u=u(T) nem representa propriedade numérica de um gás.",
+          "fontes_disponiveis": [
+            "aula_gas_energia"
+          ],
+          "pendencia": null
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "A dependência u(T) decorre do modelo ideal já dado; pressão constante com aquecimento é um exemplo explicativo, sem novos estados numéricos.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Manter “Com calor específico constante”; não transformá-lo em hipótese atribuída ao enunciado.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-14",
+      "numero": 14,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "b892b8303e9bb256c4c34e22804bd33c9dcd18f033b4daefa1987eb035f3e4c9",
+        "sha256_calculado": "b892b8303e9bb256c4c34e22804bd33c9dcd18f033b4daefa1987eb035f3e4c9",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-14",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 52
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 52 diz que materiais gasosos ocupam todo o espaço disponível e têm movimento livre.",
+      "adicoes": [
+        {
+          "tipo": "modelo_conceitual_autoral",
+          "trecho": "Sem uma barreira ou outro impedimento [...] No modelo de gás ideal",
+          "local": "details.cr-resolucao",
+          "funcao": "Delimitar a explicação do preenchimento do recipiente e do volume molecular desprezível.",
+          "justificativa": "A ressalva de acesso ao recipiente e a identificação explícita do modelo pertencem à resolução; não alteram a descrição oficial. Não foi acrescentado volume numérico.",
+          "fontes_disponiveis": [
+            "aula_molecular"
+          ],
+          "pendencia": null
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Deslocamento entre colisões e volume próprio desprezível são explicações do modelo, sem novo dado de cálculo.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum; preservar a delimitação explícita.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-15",
+      "numero": 15,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "6312f29aa7d400f3a1d317df01fe81ccc8ba856aa8a29219f823275145c39e7b",
+        "sha256_calculado": "6312f29aa7d400f3a1d317df01fe81ccc8ba856aa8a29219f823275145c39e7b",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-15",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 53
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 53 fala genericamente de partículas gasosas rápidas e choques inelásticos, no contexto gasosos/líquidos.",
+      "adicoes": [
+        {
+          "tipo": "modelo_usado_na_interpretacao",
+          "trecho": "O modelo cinético elementar do gás ideal adota colisões elásticas",
+          "local": "details.cr-resolucao",
+          "funcao": "Delimitar o modelo sob o qual a resolução explica a chave E.",
+          "justificativa": "A idealização é enunciada na resolução e ensinada no alvo vinculado. Não foi escrita como se constasse do original nem foi atribuído um coeficiente de restituição medido a gás real.",
+          "fontes_disponiveis": [
+            "aula_molecular"
+          ],
+          "pendencia": null
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Conservação da energia cinética total numa colisão elástica explica o conceito; não é novo conjunto de dados.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum de separação. O alcance científico desse modelo em enunciado genérico continua distinto de BAN-07/BAN-08.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-16",
+      "numero": 16,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+        "sha256_calculado": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-16",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 54
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Contexto original fornece umidades relativas de 50% e 40%; item 54 fixa pressão e temperatura e propõe razão saída/entrada de 1,25.",
+      "adicoes": [
+        {
+          "tipo": "modelo_operativo_da_resolucao",
+          "trecho": "A umidade relativa é φ = pv/psat",
+          "local": "details.cr-resolucao",
+          "funcao": "Usar razão de pressões parciais para calcular a mudança de umidade relativa.",
+          "justificativa": "A aula vinculada declara aproximação de mistura ideal de ar seco/vapor e fator de intensificação desprezado. Essa hipótese não aparece na frase local da resolução, apresentada como definição sem qualificação.",
+          "fontes_disponiveis": [
+            "aula_umidade",
+            "ashrae_psicrometria"
+          ],
+          "pendencia": "Repetir localmente a aproximação já ensinada; não se trata de buscar valor tabelado de psat."
+        }
+      ],
+      "derivacoes_do_original": [
+        "0,40/0,50=0,80 e o inverso 1,25 são resultados dos dados originais; não são suplementos numéricos."
+      ],
+      "explicacao_conceitual_nao_transcricao": "A invariância de psat na mesma temperatura decorre da relação escolhida; não há pressão de saturação externa inserida.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "Iniciar a explicação com “Na aproximação de mistura ideal de ar seco e vapor, desprezando o fator de intensificação, usamos φ=pv/psat(T), como na aula vinculada.” Identificar isso como modelo da resolução.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-17",
+      "numero": 17,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+        "sha256_calculado": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-17",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 55
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Contexto original 50%→40%; item 55 compara a quantidade antes do aparelho com metade da quantidade na saturação, na temperatura indicada.",
+      "adicoes": [
+        {
+          "tipo": "condicao_de_comparacao_e_modelo",
+          "trecho": "Para o mesmo volume e temperatura, a quantidade de vapor é proporcional à sua pressão parcial.",
+          "local": "details.cr-resolucao",
+          "funcao": "Comparar quantidades de vapor com a saturação numa mesma base de volume.",
+          "justificativa": "Mesmo V e T são condições explícitas da comparação autoral. A proporcionalidade quantidade–pressão usa vapor ideal; o alvo #base-umidade a declara, mas a frase do artigo omite essa condição.",
+          "fontes_disponiveis": [
+            "aula_umidade",
+            "ashrae_psicrometria"
+          ],
+          "pendencia": "Dizer “no modelo ideal” junto da proporcionalidade, sem supor volume do escoamento dado pela prova."
+        }
+      ],
+      "derivacoes_do_original": [
+        "Metade da quantidade na mesma base V,T é consequência do 50% original dentro da aproximação declarada."
+      ],
+      "explicacao_conceitual_nao_transcricao": "Distinguir umidade relativa de fração mássica e explicar a expressão “o ar suporta” são comentários conceituais.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "“Na comparação autoral entre o estado atual e a saturação no mesmo volume e temperatura, usando a aproximação de vapor ideal, a quantidade é proporcional à pressão parcial.”",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-18",
+      "numero": 18,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "1ab626bbec5308efdd2a087d9b63f67e6a67022028ba420e91a84e9aa38dd1ea",
+        "sha256_calculado": "1ab626bbec5308efdd2a087d9b63f67e6a67022028ba420e91a84e9aa38dd1ea",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-18",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 69
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "O original já fornece gás ideal, R=0,082 atm·L·mol⁻¹·K⁻¹, certa quantidade de gás, 300→1.200 K e a hipótese de triplicar p e V.",
+      "adicoes": [],
+      "derivacoes_do_original": [
+        "T2/T1=4; produto triplicado de p e V dá fator 9; 300×9=2.700 K é uma consequência contrafactual dos números originais, não temperatura externa acrescentada."
+      ],
+      "explicacao_conceitual_nao_transcricao": "pV=nRT é a relação do modelo ideal explicitamente dado; não introduz R novo.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-19",
+      "numero": 19,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "605a3f5541abb9d8c34bd02e8963dfc8ba6e18dc30a01b473946c84bc9d72597",
+        "sha256_calculado": "605a3f5541abb9d8c34bd02e8963dfc8ba6e18dc30a01b473946c84bc9d72597",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-19",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 70
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "O original fornece gás ideal, R=0,082 atm·L·mol⁻¹·K⁻¹, n=3 mol, T=330 K, V=85,4 L e comparação com 0,94 atm.",
+      "adicoes": [],
+      "derivacoes_do_original": [
+        "81,18 atm·L e aproximadamente 0,9506 atm são resultados da multiplicação/divisão dos dados originais."
+      ],
+      "explicacao_conceitual_nao_transcricao": "Isolar p e orientar compatibilidade de unidades não são suplementos de propriedade.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-20",
+      "numero": 20,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "1da42a8241671bf9ed59d7c960412f5ed805e2fbb8ee0c5c210092111704e623",
+        "sha256_calculado": "1da42a8241671bf9ed59d7c960412f5ed805e2fbb8ee0c5c210092111704e623",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-20",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 2,
+          "item": 73
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 73 afirma que o volume tende a infinito no zero absoluto sob qualquer pressão.",
+      "adicoes": [
+        {
+          "tipo": "extrapolacao_matematica_identificada",
+          "trecho": "Pela extrapolação de pV = nRT a pressão constante e positiva",
+          "local": "details.cr-resolucao",
+          "funcao": "Contrapor a alegação de infinito usando o limite formal de um modelo.",
+          "justificativa": "Gás ideal e pressão positiva constante são o recorte da explicação; o texto diz extrapolação e imediatamente limita a validade em gases reais. Não se introduz uma propriedade física real em 0 K.",
+          "fontes_disponiveis": [
+            "aula_gas_estado"
+          ],
+          "pendencia": null
+        }
+      ],
+      "derivacoes_do_original": [
+        "V→0 é limite formal do modelo para quantidade fixa e p>0; não é medição de volume no zero absoluto."
+      ],
+      "explicacao_conceitual_nao_transcricao": "Mudança de fase e limites de validade são comentários conceituais.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Opcionalmente explicitar “para quantidade fixa” na mesma frase; preservar que se trata de extrapolação, não estado real.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-21",
+      "numero": 21,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "3338053d71662c8528680b4b7449ca65d314abfb71a83b05940f5adb6adefa31",
+        "sha256_calculado": "3338053d71662c8528680b4b7449ca65d314abfb71a83b05940f5adb6adefa31",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-21",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 2,
+          "item": 75
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 75 apenas identifica p,V,T como variáveis particularmente usadas na descrição dos gases.",
+      "adicoes": [
+        {
+          "tipo": "exemplo_de_modelo_condicional",
+          "trecho": "Para quantidade e composição fixas de gás ideal, pV = nRT.",
+          "local": "details.cr-resolucao",
+          "funcao": "Mostrar que p,V,T não são três variáveis independentes nesse modelo.",
+          "justificativa": "As condições são explicitamente autorais e condicionais; a resolução não afirma que a banca forneceu n ou composição, nem exige um gás real específico.",
+          "fontes_disponiveis": [
+            "aula_gas_estado"
+          ],
+          "pendencia": null
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "A contagem de duas variáveis independentes é consequência do modelo explicitado, não dado de composição acrescentado.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-25",
+      "numero": 25,
+      "familia": "inpe",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "75a9939ea48fec2f6568b7a474df1051f7cb5ccaebf5eaab5e2cdf6a3f59705e",
+        "sha256_calculado": "75a9939ea48fec2f6568b7a474df1051f7cb5ccaebf5eaab5e2cdf6a3f59705e",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-25",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+          "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+          "pagina_fisica": 8,
+          "item": 33
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 33 já fixa número de mols, gás ideal, pressão duplicada e volume aumentado em 50%.",
+      "adicoes": [],
+      "derivacoes_do_original": [
+        "T2/T1=2×1,5=3 e aumento de 200% procedem integralmente do original."
+      ],
+      "explicacao_conceitual_nao_transcricao": "Uso de temperatura absoluta e distinção entre valor final e aumento percentual não acrescentam temperatura inicial/final externa.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-26",
+      "numero": 26,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+        "sha256_calculado": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-26",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+          "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+          "pagina_fisica": 1,
+          "item": 53
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 53 dá sistema tanque+fluido, calor saindo de 400 kJ, trabalho do misturador de 1.400 kcal e comparação com 5.500 kcal; a figura não fornece mais dados.",
+      "adicoes": [
+        {
+          "tipo": "convencao_de_sinais",
+          "trecho": "Adote calor positivo para dentro e trabalho positivo realizado pelo sistema.",
+          "local": "details.cr-resolucao",
+          "funcao": "Atribuir Q<0 e W<0 ao agitador.",
+          "justificativa": "Convenção do curso explicitamente adotada na resolução; é escolha de representação, não afirmação da banca.",
+          "fontes_disponiveis": [
+            "aula_balanco",
+            "aula_primeira_lei"
+          ],
+          "pendencia": null
+        },
+        {
+          "tipo": "constante_de_conversao_externa",
+          "trecho": "Usando 1 kcal ≈ 4,184 kJ",
+          "local": "details.cr-resolucao",
+          "funcao": "Converter os 400 kJ do original para kcal antes do balanço.",
+          "justificativa": "O fator não consta do original. 4,184 corresponde à caloria termoquímica; nessa convenção a igualdade é exata, enquanto 95,6 e 1.304,4 são arredondados.",
+          "fontes_disponiveis": [
+            "nist_cal",
+            "apoio_unidades"
+          ],
+          "pendencia": "Falta nomear a convenção termoquímica e ligar a fonte; não tratar todas as calorias como universalmente 4,184 J."
+        },
+        {
+          "tipo": "hipoteses_implicitas_do_balanco",
+          "trecho": "Assim, ΔU = Q − W",
+          "local": "details.cr-resolucao",
+          "funcao": "Converter a diferença entre calor e trabalho em variação de energia interna.",
+          "justificativa": "A forma reduzida supõe sistema fechado, variações cinética/potencial desprezíveis e que os intercâmbios indicados completam o balanço. A prova define tanque+fluido, mas não declara esses descartes em palavras. A aula ensina as condições.",
+          "fontes_disponiveis": [
+            "aula_balanco",
+            "aula_primeira_lei"
+          ],
+          "pendencia": "Declarar como hipóteses da resolução, sem inseri-las na transcrição."
+        }
+      ],
+      "derivacoes_do_original": [
+        "W=−1.400 kcal usa o valor original com a convenção adotada.",
+        "Q≈−95,6 kcal e ΔU≈1.304,4 kcal derivam dos dados originais mais a conversão identificada; não são propriedades tabeladas."
+      ],
+      "explicacao_conceitual_nao_transcricao": "A imagem recriada é contextual e já identificada; não introduz nova geometria quantitativa.",
+      "decisao": "ajuste_minimo",
+      "ajuste_minimo_proposto": "Acrescentar fora de .cr-enunciado: “Convenções e hipóteses da resolução do curso: sistema fechado, variações de energia cinética e potencial desprezíveis e apenas as transferências indicadas; Q>0 entra e W>0 sai. Adota-se caloria termoquímica: 1 kcal=4,184 kJ exatamente (NIST SP811, nota 9); os resultados decimais abaixo são arredondados.” Preservar números/texto oficiais.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-27",
+      "numero": 27,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+        "sha256_calculado": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-27",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 64
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 64 afirma aumento de temperatura por compressão adiabática; o contexto já fornece 1 cal=4,2 J, embora não usado neste item.",
+      "adicoes": [
+        {
+          "tipo": "modelo_e_descartes_da_resolucao",
+          "trecho": "No modelo de compressão considerado, sem perda de calor nem mudanças relevantes de energia cinética ou potencial [...] Para um gás ideal",
+          "local": "details.cr-resolucao",
+          "funcao": "Explicar a retenção de trabalho como U e relacionar U a T.",
+          "justificativa": "Adiabaticidade vem do original; ΔEc/ΔEp desprezíveis e recorte de gás ideal são explicitamente adicionados pela resolução. O fator 4,2 é original, não deve receber rótulo de dado novo.",
+          "fontes_disponiveis": [
+            "aula_primeira_lei",
+            "aula_gas_energia"
+          ],
+          "pendencia": "A expressão “No modelo” já separa o recorte; se houver nota comum, registrar também sistema fechado e trabalho líquido entrando."
+        },
+        {
+          "tipo": "massa_e_composicao_do_modelo",
+          "trecho": "o trabalho fornecido fica como aumento de energia interna. Para um gás ideal",
+          "local": "details.cr-resolucao",
+          "funcao": "Relacionar o balanço total ao aquecimento de uma mesma amostra.",
+          "justificativa": "Massa fixa, composição fixa e trabalho líquido entrando são hipóteses da interpretação didática. Adiabaticidade já vem do original; não deve ser contada como condição externa.",
+          "fontes_disponiveis": [
+            "aula_primeira_lei",
+            "aula_gas_energia"
+          ],
+          "pendencia": "Explicitar o caráter autoral dessas condições, sem acrescentá-las ao original."
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "O exemplo da bomba manual é ilustração cotidiana, sem temperatura ou eficiência adotada.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "“Na interpretação desta resolução, acompanha-se uma massa fixa de gás ideal de composição fixa, com trabalho líquido de compressão entrando e variações de energia cinética e potencial desprezíveis.” A adiabaticidade e 1 cal=4,2 J são originais; não substituir essa conversão pela termoquímica.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-28",
+      "numero": 28,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+        "sha256_calculado": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-28",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 65
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 65 e seu contexto já fornecem 1 cal=4,2 J, Ui=100 J, Q=200 cal absorvido, W=350 J produzido e energia final alegada de 490 J.",
+      "adicoes": [
+        {
+          "tipo": "hipoteses_implicitas_do_balanco",
+          "trecho": "Pela primeira lei, ΔU = Q − W",
+          "local": "details.cr-resolucao",
+          "funcao": "Distinguir variação de energia interna da energia final.",
+          "justificativa": "A resolução usa forma de sistema fechado com ΔEc/ΔEp desprezíveis e toma o trabalho informado como trabalho total. As condições são ensinadas nos alvos vinculados, mas não aparecem localmente no artigo.",
+          "fontes_disponiveis": [
+            "aula_balanco",
+            "aula_primeira_lei"
+          ],
+          "pendencia": "Explicitar as hipóteses da resolução sem rotular a conversão 4,2 J/cal como suplemento."
+        }
+      ],
+      "derivacoes_do_original": [
+        "840 J=200×4,2 usa a conversão original.",
+        "490 J de variação e 590 J de energia final são resultados derivados; não constituem dados novos."
+      ],
+      "explicacao_conceitual_nao_transcricao": "ΔU versus Uf é a explicação central, não alteração dos números da pergunta.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "Antes da conta: “Na resolução do curso, modelamos uma massa fixa, com variações cinética e potencial desprezíveis e somente as trocas de energia indicadas; adotamos Q>0 para dentro e W>0 para fora.”",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-29",
+      "numero": 29,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+        "sha256_calculado": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-29",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+          "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+          "pagina_fisica": 2,
+          "item": 67
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 67 dá gás ideal, compressão isobárica, diminuição de 0,1 m³, p=10³ N/m² e perda de 10³ J.",
+      "adicoes": [
+        {
+          "tipo": "hipoteses_do_modelo_de_trabalho",
+          "trecho": "O trabalho realizado pelo gás é W = pΔV",
+          "local": "details.cr-resolucao",
+          "funcao": "Usar a pressão fornecida como pressão de fronteira no cálculo do trabalho.",
+          "justificativa": "O original dá isobárica, mas a igualdade com a pressão do gás e a ausência de outros trabalhos são condições da leitura quase estática ensinada em #base-trabalho-fronteira.",
+          "fontes_disponiveis": [
+            "aula_trabalho",
+            "aula_balanco"
+          ],
+          "pendencia": "Declarar pressão de fronteira/quase estaticidade e apenas trabalho de fronteira na resolução; isobárico sozinho não enuncia essas hipóteses."
+        },
+        {
+          "tipo": "hipoteses_implicitas_do_balanco",
+          "trecho": "Assim, ΔU = Q − W",
+          "local": "details.cr-resolucao",
+          "funcao": "Atribuir o saldo à energia interna.",
+          "justificativa": "Sistema fechado e variações cinética/potencial desprezíveis completam o recorte aplicado; Q>0 entrando e W>0 saindo são a convenção usada.",
+          "fontes_disponiveis": [
+            "aula_primeira_lei",
+            "aula_balanco"
+          ],
+          "pendencia": "Condições estão no ensino vinculado, porém precisam ficar rastreáveis no artigo."
+        }
+      ],
+      "derivacoes_do_original": [
+        "−100 J vem de 1.000×(−0,1); −1.000 J é o calor original com sinal; −900 J é o saldo calculado."
+      ],
+      "explicacao_conceitual_nao_transcricao": "Não foi introduzido cv, temperatura ou propriedade de um gás específico.",
+      "decisao": "ajuste_minimo",
+      "ajuste_minimo_proposto": "Acrescentar nota da resolução: “Adota-se massa fixa, compressão quase estática com a pressão informada na fronteira, apenas trabalho de fronteira e variações de energia cinética e potencial desprezíveis. Q>0 entra; W>0 sai.” Não reescrever o original nem inferir nova validade científica global.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-30",
+      "numero": 30,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+        "sha256_calculado": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-30",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+          "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+          "pagina_fisica": 3,
+          "item": 74
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 74 já traz gás ideal, A→B isotérmico e a figura com Q=ΔU+W e ΔU indicado como zero, além da tabela histórica de processos.",
+      "adicoes": [
+        {
+          "tipo": "descarte_explicitado_na_resolucao",
+          "trecho": "Desprezando mudanças de energia cinética e potencial",
+          "local": "details.cr-resolucao",
+          "funcao": "Delimitar o balanço que produz Q=W.",
+          "justificativa": "A condição está escrita na resolução e corresponde ao balanço reduzido representado na própria figura; não é novo dado numérico.",
+          "fontes_disponiveis": [
+            "aula_primeira_lei",
+            "aula_balanco"
+          ],
+          "pendencia": null
+        },
+        {
+          "tipo": "massa_e_composicao_do_modelo",
+          "trecho": "A temperatura constante mantém constante a energia interna do gás ideal.",
+          "local": "details.cr-resolucao",
+          "funcao": "Concluir ΔU=0 para a massa acompanhada.",
+          "justificativa": "Gás ideal, isoterma A→B e o diagrama ΔU=0 são originais; acompanhar a mesma massa/composição é o recorte usado na explicação. O texto explicita ausência de massa em A→C, não como declaração separada de A→B.",
+          "fontes_disponiveis": [
+            "aula_gas_energia",
+            "aula_primeira_lei"
+          ],
+          "pendencia": "Pode-se tornar explícita a leitura de massa/composição fixas na resolução sem reescrever a figura ou o enunciado."
+        }
+      ],
+      "derivacoes_do_original": [
+        "Temperatura constante e modelo ideal dados sustentam ΔU=0; Q=W aparece no esquema original e é explicado pela resolução."
+      ],
+      "explicacao_conceitual_nao_transcricao": "A distinção processo/ciclo e Kelvin–Planck é comentário conceitual, não uma segunda máquina acrescentada.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "“Para a massa fixa de gás ideal de composição fixa representada na leitura da resolução, a isoterma A→B mantém U constante. Com variações cinética e potencial desprezíveis, Q=W.” Os dados do gás ideal, da isoterma e o esquema ΔU=0 são originais, não suplementos.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-31",
+      "numero": 31,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "e33a863be630fc055c5af33bcb8c7d0cde6f2f3fcff3f43b83814e943e70552e",
+        "sha256_calculado": "e33a863be630fc055c5af33bcb8c7d0cde6f2f3fcff3f43b83814e943e70552e",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-31",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 2,
+          "item": 71
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 71 atribui o poder calorífico ao calor de absorção.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "A resolução define poder calorífico e distingue PCS/PCI, sem escolher combustível, composição, calor latente ou valor numérico. Após leitura integral, não há suplemento factual de cálculo.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-32",
+      "numero": 32,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "4677e514a72bd2d54fcf930116afe6551ca3cc75d4b32db373c47e7ab0c16541",
+        "sha256_calculado": "4677e514a72bd2d54fcf930116afe6551ca3cc75d4b32db373c47e7ab0c16541",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-32",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 2,
+          "item": 72
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 72 fala de reação reversível exotérmica num sentido/endotérmica no oposto e define liberação/absorção de calor.",
+      "adicoes": [
+        {
+          "tipo": "condicoes_para_interpretar_entalpia",
+          "trecho": "Mantidas as condições e os estados inicial e final correspondentes [...] A pressão constante e com apenas trabalho de expansão",
+          "local": "details.cr-resolucao",
+          "funcao": "Relacionar sinais de calor e de ΔH e a inversão de estados.",
+          "justificativa": "As condições são introduzidas explicitamente na resolução, necessárias à interpretação por entalpia, sem supor uma reação ou entalpia de formação específica.",
+          "fontes_disponiveis": [
+            "aula_termoquimica"
+          ],
+          "pendencia": null
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Inverter ΔH entre estados correspondentes é propriedade de estado; não há um valor de ΔH acrescentado.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Preservar as condições explícitas; não transformar a dica final em dado físico de uma reação não especificada.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-37",
+      "numero": 37,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+        "sha256_calculado": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-37",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+          "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+          "pagina_fisica": 1,
+          "item": 54
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 54 é qualitativo sobre irreversibilidade e trabalho; gráfico traz rótulos e ângulo, sem escala numérica vertical para obter energia.",
+      "adicoes": [
+        {
+          "tipo": "condicoes_de_comparacao_autoral",
+          "trecho": "Na comparação entre as mesmas condições de operação",
+          "local": "details.cr-resolucao",
+          "funcao": "Fixar a base ao relacionar irreversibilidade a trabalho útil perdido.",
+          "justificativa": "A resolução condiciona a comparação; a aula #base-exergia explicita ambiente de referência a T0 constante e restrições comparáveis. Não se escolhe T0 numérico no artigo.",
+          "fontes_disponiveis": [
+            "aula_exergia"
+          ],
+          "pendencia": "T0 absoluto e constante, Sger e mesmas restrições estão no ensino vinculado; repetir esses qualificadores localmente facilita rastrear o modelo autoral."
+        }
+      ],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Gouy–Stodola é relação explicativa, não temperatura ambiente ou entropia externa inserida. O redesenho qualitativo do gráfico não fornece dados para integrar uma área como energia.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "“Relação usada na resolução do curso: Xdestruída=T0 Sger, com T0 absoluto e constante do ambiente de referência e Sger a entropia gerada. A comparação de trabalho útil é feita com a referência reversível apropriada, sob as mesmas condições e restrições.” Não criar T0 ou Sger numéricos nem interpretar área do gráfico como trabalho.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-38",
+      "numero": 38,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "8895b72f34bb0fd12fcad536db449144757e5fef1bcdf29dd409236ee3e8333c",
+        "sha256_calculado": "8895b72f34bb0fd12fcad536db449144757e5fef1bcdf29dd409236ee3e8333c",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-38",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-equipamentos-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF",
+          "sha256": "900b6b5a1cf6b3d66d676ef43de2b6f043b83da4c5367717b6ce17a268c7c9ab",
+          "pagina_fisica": 1,
+          "item": 55
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 55 já dá Carnot, dois reservatórios a temperaturas constantes e processos reversíveis; contexto inclui enunciado de Clausius.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "η=1−Tfria/Tquente é relação do modelo já dado. Não se acrescentam temperaturas, eficiência experimental ou nova hipótese de irreversibilidade.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-39",
+      "numero": 39,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+        "sha256_calculado": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-39",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 66
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 66 traz motor que opera em ciclos, Q=350 cal, W=1.470 J; contexto já dá 1 cal=4,2 J.",
+      "adicoes": [
+        {
+          "tipo": "hipoteses_de_leitura_condicionada",
+          "trecho": "350 cal são todo o calor recebido de uma única fonte e 1.470 J são o trabalho líquido de um ciclo, sem outros efeitos",
+          "local": "Interpretação técnica autoral — BAN-10",
+          "funcao": "Delimitar a aplicação de Kelvin–Planck.",
+          "justificativa": "Fonte única, totalidade das trocas e trabalho líquido são explicitamente separados como modelo convencional do comentário autoral; são justamente o objeto do roteiro crítico, não palavras acrescidas ao original.",
+          "fontes_disponiveis": [
+            "openstax_kelvin_planck"
+          ],
+          "pendencia": null
+        }
+      ],
+      "derivacoes_do_original": [
+        "350×4,2=1.470 J usa valores oficiais; η=1 e Qrejeitado=0 decorrem do modelo condicionado, não são dados da prova."
+      ],
+      "explicacao_conceitual_nao_transcricao": "Entradas/saídas de massa e energia química são contraste conceitual de fronteiras; nenhum valor de combustível foi introduzido.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Preservar a distinção entre texto oficial, leitura convencional e contraste de fronteiras.",
+      "separacao": "Aviso de estudo crítico, roteiro autoral e análise condicionada separam os suplementos do texto oficial e da chave.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-40",
+      "numero": 40,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+        "sha256_calculado": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-40",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 67
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 67 afirma aumento de entalpia quando a pressão aumenta numa transformação isentrópica.",
+      "adicoes": [
+        {
+          "tipo": "dominio_da_identidade_usada",
+          "trecho": "Para uma substância simples compressível de composição fixa",
+          "local": "details.cr-resolucao",
+          "funcao": "Delimitar dh=Tds+vdp.",
+          "justificativa": "A resolução enuncia o modelo adicional e define h,s,v; a aula vinculada o apresenta como identidade entre estados de equilíbrio. Não há valor de v ou composição presumida.",
+          "fontes_disponiveis": [
+            "aula_gibbs"
+          ],
+          "pendencia": "Estados de equilíbrio constam do alvo teórico, mas não da frase local; pode-se explicitá-los junto da composição fixa."
+        }
+      ],
+      "derivacoes_do_original": [
+        "ds=0 vem de isentropia; v>0 e dp>0 permitem inferir sinal de dh no modelo declarado."
+      ],
+      "explicacao_conceitual_nao_transcricao": "A identidade é teoria, não dado tabelado ou calor de processo fornecido pelo original.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "“Na interpretação da resolução, para uma substância simples compressível de composição fixa, entre estados de equilíbrio, dh=Tds+vdp.” Isentropia e aumento de pressão já são dados originais.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-41",
+      "numero": 41,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "c07f4425a20d5839dd7caa63ac3ecbab78ab16beb4df77b4e84d0af011d11b3e",
+        "sha256_calculado": "c07f4425a20d5839dd7caa63ac3ecbab78ab16beb4df77b4e84d0af011d11b3e",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-41",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3",
+          "pagina_fisica": 1,
+          "item": 73
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 73 afirma igualdade de potencial químico em equilíbrio de fases.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Explicitar que a igualdade compara o mesmo componente entre fases, além dos equilíbrios térmico/mecânico, esclarece a condição conceitual. Não se acrescentam mistura identificada, composição, campo externo, potenciais tabelados ou estado numérico. A resolução não usa o exemplo hipotético numérico da aula.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum em FON-02; o alcance físico geral das condições de equilíbrio não é reauditado neste diagnóstico.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-42",
+      "numero": 42,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+        "sha256_calculado": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-42",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 2,
+          "item": 64
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 64 fornece trabalho de 1.000 J, calor retirado de 3.000 J, fonte a 750 K e comparação com 35%.",
+      "adicoes": [
+        {
+          "tipo": "leitura_operativa_de_eficiencia",
+          "trecho": "A eficiência efetiva é η = W/Qrecebido",
+          "local": "details.cr-resolucao",
+          "funcao": "Interpretar trabalho e calor do original como as grandezas do rendimento térmico.",
+          "justificativa": "Na aula vinculada W é trabalho líquido e QH é calor total recebido na mesma operação/ciclo. Não há outra fonte ou troca numérica inventada, mas a interpretação não é nomeada localmente.",
+          "fontes_disponiveis": [
+            "aula_eficiencia"
+          ],
+          "pendencia": "Reforço útil para registrar a leitura de W líquido e Q recebido total; não declarar invalidade da questão por isso."
+        }
+      ],
+      "derivacoes_do_original": [
+        "1/3≈33,3% é resultado direto de 1.000/3.000."
+      ],
+      "explicacao_conceitual_nao_transcricao": "A temperatura fria é mencionada como dado que seria necessário a Carnot, porém não recebe valor. Logo, não há temperatura suplementar.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "“Na leitura de máquina térmica da resolução, 1.000 J são o trabalho líquido e 3.000 J o calor total recebido na mesma operação/ciclo.” Manter o cálculo existente.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-46",
+      "numero": 46,
+      "familia": "inpe",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "0bb0f9cd0768570ab457e4ac9c9f3b61af6c1bf59570d242df01cca495353831",
+        "sha256_calculado": "0bb0f9cd0768570ab457e4ac9c9f3b61af6c1bf59570d242df01cca495353831",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-46",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+          "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+          "pagina_fisica": 9,
+          "item": 35
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 35 identifica explicitamente o ciclo ideal de Carnot e pergunta seus pares de transformações.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Reversibilidade das duas isotermas e das duas adiabáticas é característica definidora do modelo nomeado, não hipótese externa para resolver um ciclo não especificado. Não há dado novo de temperatura, pressão ou fluido.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-66",
+      "numero": 66,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "4b194eda06c6ee5215c05177f00ca8f01bbf490fc06d9f53b65df372a45c0bae",
+        "sha256_calculado": "4b194eda06c6ee5215c05177f00ca8f01bbf490fc06d9f53b65df372a45c0bae",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-66",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+          "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+          "pagina_fisica": 4,
+          "item": 82
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 82 descreve permutador casco/tubo e afirma mistura de fluidos.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Caminhos dentro/fora dos tubos, condução na parede e convecção nos lados são explicação do equipamento. Referência a vazamento/contato direto é contraste conceitual; não se assume vazamento real no item nem se fornece coeficiente de transferência.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-67",
+      "numero": 67,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "ecddb0148ddc0cbb74ff06eff3e47032ba240626e6c35c01905724ce06026043",
+        "sha256_calculado": "ecddb0148ddc0cbb74ff06eff3e47032ba240626e6c35c01905724ce06026043",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-67",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2023-04-30_petrobras-tecnico-operacao-2023-1_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF",
+          "sha256": "316cbcef37c0b0f7521e4d864d5e3f0ee44a16c62d0c627b9a8385df2e917b53",
+          "pagina_fisica": 4,
+          "item": 84
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 84 descreve a finalidade das juntas de expansão em expansão/contração térmica.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Impedimento total de deslocamento é exemplo condicional para explicar tensões, não hipótese atribuída à instalação da prova. Não foram atribuídos material, coeficiente de dilatação, comprimento ou ΔT.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-68",
+      "numero": 68,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "868e2438c1a4c020a75209fd26c9bcf0cd08c67fc4b4c7d037f90eff3d5c70f6",
+        "sha256_calculado": "868e2438c1a4c020a75209fd26c9bcf0cd08c67fc4b4c7d037f90eff3d5c70f6",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-68",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 3,
+          "item": 85
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Contexto original traz g=10 m/s², atmosfera=101,325 kPa abs, água a 25 °C em 1/2, densidade defeituosa 1.000 kg/cm³, bomba 74 kPa, T3=133 °C, altura 5 m, perda de água desprezível e tabela histórica. Esses valores são originais, inclusive os defeitos; item 85 é qualitativo sobre emissividade.",
+      "adicoes": [
+        {
+          "tipo": "aproximacao_didatica_identificada",
+          "trecho": "ρ≈1.000 kg/m³ (1 g/cm³)",
+          "local": "#cr-e1-68-dados-corrigidos: parágrafo Densidade",
+          "funcao": "Oferecer aproximação de líquido incompressível perto de 25 °C e atmosfera.",
+          "justificativa": "Explicitamente aproximada, distinguida do erro original e do valor real de referência. Não se afirma que p1/p2 sejam atmosféricas.",
+          "fontes_disponiveis": [
+            "fon09_dados",
+            "nist_densidade"
+          ],
+          "pendencia": null
+        },
+        {
+          "tipo": "propriedade_de_modelo_externa",
+          "trecho": "997,04764 kg/m³ a 25 °C e 101,325 kPa",
+          "local": "#cr-e1-68-dados-corrigidos: parágrafo Densidade",
+          "funcao": "Quantificar a referência física da água líquida e a diferença da aproximação 1.000.",
+          "justificativa": "Consulta NIST WebBook/IAPWS-95 identificada por condição e link; conjunto aprovado FON-09 preserva captura/hash.",
+          "fontes_disponiveis": [
+            "fon09_dados",
+            "nist_densidade"
+          ],
+          "pendencia": null
+        },
+        {
+          "tipo": "tabela_de_propriedades_externa",
+          "trecho": "Água pura saturada — conjunto corrigido FON-09 v1.0; pressão absoluta",
+          "local": "#cr-e1-68-dados-corrigidos: tabela de saturação",
+          "funcao": "Substituir para consulta física as 15 células defeituosas/arredondadas da tabela histórica.",
+          "justificativa": "Fonte por linha, água pura, equilíbrio líquido–vapor, pressão absoluta, unidades e precisão estão declaradas. A primeira linha veio de consulta direta, não de interpolação.",
+          "fontes_disponiveis": [
+            "fon09_dados",
+            "nist_saturacao",
+            "nistir5078"
+          ],
+          "pendencia": null,
+          "valores_publicados": [
+            {
+              "p_kPa_abs": 101.325,
+              "T_C": 99.974,
+              "vf_m3_kg": 0.00104344,
+              "vg_m3_kg": 1.6732,
+              "origem": "NIST WebBook, consulta direta a 0,101325 MPa"
+            },
+            {
+              "p_kPa_abs": 150,
+              "T_C": 111.349,
+              "vf_m3_kg": 0.00105273,
+              "vg_m3_kg": 1.1593,
+              "origem": "NISTIR 5078, tabela 2, p. impressa 12 / PDF p. 2"
+            },
+            {
+              "p_kPa_abs": 200,
+              "T_C": 120.21,
+              "vf_m3_kg": 0.00106052,
+              "vg_m3_kg": 0.88568,
+              "origem": "NISTIR 5078, tabela 2, p. impressa 12 / PDF p. 2"
+            },
+            {
+              "p_kPa_abs": 250,
+              "T_C": 127.411,
+              "vf_m3_kg": 0.00106722,
+              "vg_m3_kg": 0.71866,
+              "origem": "NISTIR 5078, tabela 2, p. impressa 12 / PDF p. 2"
+            },
+            {
+              "p_kPa_abs": 300,
+              "T_C": 133.522,
+              "vf_m3_kg": 0.00107317,
+              "vg_m3_kg": 0.60576,
+              "origem": "NISTIR 5078, tabela 2, p. impressa 12 / PDF p. 2"
+            }
+          ],
+          "precisao_declarada": "Na primeira linha, consulta retorna 99,974296 °C; 0,0010434411 m³/kg; 1,6732012 m³/kg. Exibição arredondada. Demais linhas mantêm casas da fonte após conversão exata; 120,210 conserva três casas decimais no HTML. Os números JSON são valores, não especificadores de casas significativas."
+        },
+        {
+          "tipo": "hipoteses_de_modelo_radiativo",
+          "trecho": "superfície cinzenta diante de grande vizinhança isotérmica [...] Com Ts > Tv e demais fatores mantidos",
+          "local": "Interpretação técnica autoral — BAN-10",
+          "funcao": "Justificar a possibilidade de reduzir a parcela radiativa ao reduzir ε.",
+          "justificativa": "Condições explícitas no comentário autoral BAN-10; não implicam redução igual de condução/convecção nem Ts fixa automaticamente na instalação real. Nenhum valor de σ é utilizado no julgamento qualitativo.",
+          "fontes_disponiveis": [
+            "openstax_radiacao",
+            "aula_radiacao"
+          ],
+          "pendencia": null
+        }
+      ],
+      "derivacoes_do_original": [
+        "1.000 kg/cm³=10⁹ kg/m³ é conversão do erro histórico, não densidade real adotada.",
+        "Diferença de cerca de 0,296% entre 1.000 e 997,04764 é resultado derivado.",
+        "MPa→kPa (×1.000), cm³/g→m³/kg (×0,001), conversão/recíproco e arredondamentos descritos no arquivo são operações sobre dados da fonte, não novas medições."
+      ],
+      "explicacao_conceitual_nao_transcricao": "A lei de Stefan–Boltzmann aparece simbolicamente para o julgamento; densidade/saturação não entram na resposta do item 85.",
+      "decisao": "preservar_fon09",
+      "ajuste_minimo_proposto": "Nenhum; não alterar o suplemento, a transcrição ou as precisões aprovadas. Reaproveitamento por identidade do JSON de dados e pelo confronto documental FON-01, não nova auditoria da água.",
+      "separacao": "Aviso editorial antes do comando; seção “Dados físicos corrigidos, origem e precisão”; tabela com origem por linha; transcrição inválida recolhida em details com advertência; fonte e link para JSON. Separação suficiente e explícita.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-69",
+      "numero": 69,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "6c621ff003b12f2f67ca92d9a51d8b9ab38ac2ff98588b05e78108f88dbeda9b",
+        "sha256_calculado": "6c621ff003b12f2f67ca92d9a51d8b9ab38ac2ff98588b05e78108f88dbeda9b",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-69",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+          "pagina_fisica": 4,
+          "item": 90
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 90 já descreve casco/tubos, caminhos de ambos os fluidos e condução/convecção através das paredes.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "Resistências em série e depósito como resistência adicional são explicação conceitual da resolução. Não há espessura, condutividade, coeficiente convectivo, fator de incrustação ou hipótese numérica acrescentados.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-78",
+      "numero": 78,
+      "familia": "inpe",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "cd13d18ed248d752ad0ab84a4504f3782370596c1d564070d9151fd5726dabb8",
+        "sha256_calculado": "cd13d18ed248d752ad0ab84a4504f3782370596c1d564070d9151fd5726dabb8",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-78",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+          "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+          "pagina_fisica": 7,
+          "item": 25
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 25 e alternativas já citam alto calor latente da amônia como vantagem e apresentam alegações de segurança/descarte.",
+      "adicoes": [],
+      "derivacoes_do_original": [],
+      "explicacao_conceitual_nao_transcricao": "A resolução explica calor retirado por massa e ressalva que o desempenho depende do ciclo/equipamento, sem atribuir valor a hfg, COP ou estado de saturação. Comentários sobre alternativas não criam parâmetros operacionais novos.",
+      "decisao": "manter",
+      "ajuste_minimo_proposto": "Nenhum.",
+      "separacao": "A resolução está em details.cr-resolucao, depois do enunciado e das alternativas; não integra a transcrição oficial.",
+      "sem_suplemento_factual": true,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    },
+    {
+      "id": "cr-e1-79",
+      "numero": 79,
+      "familia": "inpe",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+        "sha256_calculado": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+        "igual_conferencia_fon01": true,
+        "fon01_registro": "auditoria/termodinamica/evidencias/FON-01/apoio/conferencia-40-r1.json#cr-e1-79",
+        "prova": {
+          "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+          "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe",
+          "pagina_fisica": 8,
+          "item": 30
+        },
+        "metodo_reuso": "Conferência documental FON-01 reaproveitada por identidade exata do artigo e hash atual do PDF. Artigo completo relido nesta rodada; imagens/alternativas/contextos comparados em FON-01 não foram novamente renderizados."
+      },
+      "dados_originais": "Original 30 fornece equipamento instrumentado, câmara em alto vácuo e parede por volta de −196 °C; não fornece temperatura do corpo, área, emissividades ou condutâncias.",
+      "adicoes": [
+        {
+          "tipo": "dados_didaticos_de_contramodelo",
+          "trecho": "Contramodelo autoral, não dado da prova: corpo a 300 K, área 0,10 m²",
+          "local": "Interpretação técnica autoral — BAN-10",
+          "funcao": "Construir um exemplo com duas relações distintas entre perdas radiativas e condutivas.",
+          "justificativa": "300 K e 0,10 m² são escolhas autorais para demonstrar não unicidade da predominância; não são propriedades do equipamento real nem precisam de fonte de medição.",
+          "fontes_disponiveis": [
+            "analise_autoral_ban10"
+          ],
+          "pendencia": null
+        },
+        {
+          "tipo": "hipoteses_didaticas_de_contramodelo",
+          "trecho": "superfícies negras e grande parede a 77,15 K [...] A troca gasosa foi desprezada nesse contramodelo",
+          "local": "Interpretação técnica autoral — BAN-10",
+          "funcao": "Definir o modelo radiativo e excluir contribuição gasosa apenas no exemplo.",
+          "justificativa": "Superfícies negras (ε=1), grande entorno e gás residual desprezado são escolhas declaradas. 77,15 K decorre da conversão de −196 °C tomada como referência nominal do exemplo; a prova diz “por volta”, não precisão metrológica de 0,01 K.",
+          "fontes_disponiveis": [
+            "aula_radiacao",
+            "bipm_celsius",
+            "analise_autoral_ban10"
+          ],
+          "pendencia": "Convém explicitar que −196 °C é adotado nominalmente no contramodelo; isso evita transformar o arredondamento original em precisão física nova."
+        },
+        {
+          "tipo": "parametros_didaticos_de_contramodelo",
+          "trecho": "G = 0,01 W/K [...] G = 0,50 W/K",
+          "local": "Interpretação técnica autoral — BAN-10",
+          "funcao": "Comparar montagem pouco condutiva com outra mais condutiva.",
+          "justificativa": "São duas condutâncias efetivas escolhidas pelo autor, claramente externas ao original. Não são valores tabelados de um material; G agrega a ligação entre corpo e parede.",
+          "fontes_disponiveis": [
+            "analise_autoral_ban10",
+            "nasa_thermal"
+          ],
+          "pendencia": null
+        },
+        {
+          "tipo": "constante_fisica_usada_no_calculo",
+          "trecho": "aproximadamente 45,73 W radiativos",
+          "local": "Interpretação técnica autoral — BAN-10",
+          "funcao": "Quantificar o termo radiativo do contramodelo.",
+          "justificativa": "O artigo não escreve o σ adotado, mas o alvo #base-radiacao-vacuo dá σ≈5,67×10⁻⁸ W/(m²·K⁴) e a equação; NASA já é citada como fundamento dos mecanismos.",
+          "fontes_disponiveis": [
+            "aula_radiacao",
+            "nasa_thermal"
+          ],
+          "pendencia": "Explicitar σ e as equações de Qrad e Qcond junto ao contramodelo para tornar a origem dos resultados localmente reproduzível; não apresentar os resultados como dados de prova."
+        }
+      ],
+      "derivacoes_do_original": [
+        "77,15 K é conversão do valor nominal −196 °C para o exemplo.",
+        "45,73 W, 2,23 W e 111,43 W são resultados calculados do contramodelo, não constantes/propriedades medidas; este diagnóstico não constitui reexecução BAN-08."
+      ],
+      "explicacao_conceitual_nao_transcricao": "A enumeração dos mecanismos e a insuficiência de “alto vácuo” para garantir predominância são interpretação autoral, já separada e fundamentada.",
+      "decisao": "reforco_local",
+      "ajuste_minimo_proposto": "Acrescentar ao contramodelo: “Para este exemplo, toma-se nominalmente −196 °C=77,15 K, sem atribuir essa precisão à prova. Usa-se σ≈5,67×10⁻⁸ W/(m²·K⁴), Qrad=σA(Tcorpo⁴−Tparede⁴) e Qcond=G(Tcorpo−Tparede), com G efetiva constante de cada ligação.” Vincular a aula já disponível; preservar dados e resultados do contramodelo.",
+      "separacao": "Texto oficial, roteiro e “Contramodelo autoral, não dado da prova” estão separados e identificados. A ressalva sobre gás residual e a fonte NASA são visíveis ao abrir a análise.",
+      "sem_suplemento_factual": false,
+      "limite": "Diagnóstico de proveniência e separação das adições. Não é aprovação FON-02 nem auditoria científica ou numérica integral BAN-07/BAN-08."
+    }
+  ],
+  "limites": [
+    "Não foram alterados produto, inventário, controles, pacotes congelados ou fontes.",
+    "Não há pretensão de sanar conceitos globais, reauditar todos os gabaritos, reexecutar ciência BAN-08 ou aprovar FON-02.",
+    "Ações propostas se restringem a notas/resoluções fora da transcrição; o Corretor decide a integração e a consistência do conjunto 80.",
+    "CR68: somente identificação do suplemento e preservação por identidade; nenhum valor, fonte ou precisão do conjunto FON-09 foi substituído."
+  ]
+}

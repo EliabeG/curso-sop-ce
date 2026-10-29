@@ -1,0 +1,66 @@
+{
+  "estado": "APLICADO_PENDENTE_AUDITORIA",
+  "autor": "/root/inspect_repo",
+  "antes": {
+    "html": "7541e7c4c8314922992e99e8b62b40342c2d938e6edeac67ef9f74b69f86c17c",
+    "inventario_json": "6910b7b3ec783040859302bc21ebbd463a8faf447ddfce36bf745b5a261d0d55",
+    "inventario_md": "e4b2a2db2aae0d574fc0fe2f44801a27edbd99a57cb75d2e2648da7c1e4a9be2"
+  },
+  "depois": {
+    "html": "49b0df4fe59dfd01913f4d41a5e6869705f4bf4d6ded251060f940cd5d12c91b",
+    "inventario_json": "9102ed042ff940c71604eadc361dcd3b4006a3bc1dc2a0e336cc0f2de0508edf",
+    "inventario_md": "898830d59f4162be64954315f13a85aa27e53efbcadc61f25cd82b22901425ab"
+  },
+  "candidatas": [
+    {
+      "id": 12,
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico12-candidata-r1.html",
+      "sha256": "c409e88c1b930961bd88567c212d280d36284dfcb845d3579fff2d8321cd3a4a",
+      "fragmento": "2a5914ed4fd1abd6a5e0c92af1254bb7cb353eda23e4ba232d1f39ac04187d09"
+    },
+    {
+      "id": 14,
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico14-candidata-r1.html",
+      "sha256": "970ac86ce8d9e207f83271a2554ec92189ddb76d08be8fbd8d62e792fc9c919c",
+      "fragmento": "ac518b30e57fcbc1e99b461aeedf936b6ac549be41cda580c12b8182f6234e67"
+    },
+    {
+      "id": 19,
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico19-candidata-r1.html",
+      "sha256": "5256dc8b5a3ebccc904b4f36edf41482424f713c5acb765563f11389ce23c89b",
+      "fragmento": "9bb600fe48c6e15ed78eb6c2cff4091af810e917a668f15834fa565203de488a"
+    },
+    {
+      "id": 26,
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico26-candidata-r1.html",
+      "sha256": "cf7c549f37b623338d5155a19eeba01e89575a8e5a49f45cbbc56982ffe15f1b",
+      "fragmento": "a82e00538d8a780dddb23b2699f75fb915b546c308c12fd5d44f6d62a74f1e1a"
+    },
+    {
+      "id": 27,
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico27-candidata-r1.html",
+      "sha256": "ad1453bc4d440a752197f3294d53b0148002ce00fdbded58c4013af62f6015a1",
+      "fragmento": "f464a072c29b5744c8fff6663d902628d84e5f8a28f51c68306f3a8a8e242962"
+    },
+    {
+      "id": 28,
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico28-candidata-r1.html",
+      "sha256": "11b15f66c44187f84bb13e77c2cd8a3be3302e9eec9d7005072316c25f1dd7b9",
+      "fragmento": "d19ea80ff8c3ea479fc09548943bb1bed8c40d129ae265f24aec7f04cba162ed"
+    }
+  ],
+  "pareceres": [
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/QA-09-diagnosticos-12-14-19-revisao-candidatas-independente-r1.md",
+      "sha256": "f18ab2020d36cbaa7494b62e16aa2b12436e1bd370c83347c9ee343479670d01"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/QA-09-diagnosticos-26-28-revisao-candidatas-independente-r1.md",
+      "sha256": "a05268e50dcb43fb4331b25ae3f217ce332df6c6a63dab0b504db925af51db95"
+    }
+  ],
+  "artigos_byte_a_byte_iguais": 197,
+  "snapshot_anterior": "auditoria/termodinamica/evidencias/QA-09/aplicacao-diagnosticos-seis-r1/antes/e1-termodinamica.html",
+  "snapshot_atual": "auditoria/termodinamica/evidencias/QA-09/aplicacao-diagnosticos-seis-r1/e1-termodinamica-depois.html",
+  "limite": "Aplicação requer auditoria independente; QA-09 não aprovado."
+}

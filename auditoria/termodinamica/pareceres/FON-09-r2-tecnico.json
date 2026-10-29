@@ -1,0 +1,610 @@
+{
+  "natureza": "Subchecagem técnica independente delimitada FON-09 r2; sem decisão geral de aceite",
+  "data": "2026-10-27",
+  "escopo": "Reexecução dos 20 testes PDF/HTML/outros recursos entregues, 39 casos anteriores e validação canônica. Preservação/delta e casos independentes adicionais ficaram com o Auditor principal.",
+  "metodo": {
+    "ambiente": "Node REPL",
+    "cache": "Kernel reiniciado via js_reset antes de qualquer importação. Módulos carregados pela URL canônica somente após conferir SHA-256 do validador r2; não havia módulo r1 no cache dessa sessão. Todas as importações relativas dos scripts usam o mesmo módulo r2.",
+    "seguranca": "Scripts lidos antes da execução: testes PDF usam clones em memória; contrato escreve exclusivamente fixtures em mkdtemp(os.tmpdir()). Nenhum arquivo canônico foi escrito.",
+    "importacoes_concluidas": true
+  },
+  "hashes": {
+    "manifesto_r2": "2432e805d567c6c773763a902505ce524b56b4b09c944ee592431241c3aabf88",
+    "validador_esperado": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+    "validador_antes": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+    "validador_depois": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+    "scripts": [
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FON-09/testar-pdf-r2.mjs",
+        "sha256": "903ff7555c57ccb84b3bb5e15abb4f4c33c1d563b77d1333d253b8705e6d6f92",
+        "bytes": 3007
+      },
+      {
+        "arquivo": "auditoria/termodinamica/evidencias/FON-09/reexecutar-contrato-r1.mjs",
+        "sha256": "860d9154ede19c54c83c15664baae0caabf54575c8c44d1bfa8b3306f1496ce1",
+        "bytes": 29630
+      }
+    ]
+  },
+  "resultados": {
+    "pdf": {
+      "ok": true,
+      "total": 20,
+      "resultados": [
+        {
+          "nome": "PDF com página positiva",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "nome": "PDF com fragmento permitido codificado",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page%3D3",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "nome": "PDF sem fragmento",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "nome": "PDF com query e página",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf?versao=1#page=3",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "nome": "PDF com página zero",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=0"
+          ]
+        },
+        {
+          "nome": "PDF com página não numérica",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=tres",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=tres"
+          ]
+        },
+        {
+          "nome": "PDF com página negativa",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=-3",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=-3"
+          ]
+        },
+        {
+          "nome": "PDF com fração",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3.5",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3.5"
+          ]
+        },
+        {
+          "nome": "PDF com inteiro inseguro",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740992",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=9007199254740992"
+          ]
+        },
+        {
+          "nome": "PDF com fragmento arbitrário",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#secao"
+          ]
+        },
+        {
+          "nome": "R1-A: PDF com segundo # e sufixo",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra"
+          ]
+        },
+        {
+          "nome": "R1-A: PDF com segundo # vazio",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#"
+          ]
+        },
+        {
+          "nome": "PDF com segundo # codificado e sufixo",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3%23extra",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#extra"
+          ]
+        },
+        {
+          "nome": "PDF com segundo # codificado vazio",
+          "referencia": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3%23",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: fragmento PDF inválido (esperado page=N inteiro positivo): downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf#page=3#"
+          ]
+        },
+        {
+          "nome": "Arquivo PDF ausente",
+          "referencia": "downloads/termodinamica/provas/ausente-fon09.pdf#page=3",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: arquivo inacessível: downloads/termodinamica/provas/ausente-fon09.pdf (ENOENT: no such file or directory, open 'C:\\Users\\User\\Downloads\\SOP-CE\\downloads\\termodinamica\\provas\\ausente-fon09.pdf')"
+          ]
+        },
+        {
+          "nome": "Âncora HTML existente",
+          "referencia": "modulos/e1-termodinamica.html#fundamentos",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "nome": "Âncora HTML ausente",
+          "referencia": "modulos/e1-termodinamica.html#ausente-fon09",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: âncora ausente ou duplicada: modulos/e1-termodinamica.html#ausente-fon09"
+          ]
+        },
+        {
+          "nome": "HTML com fragmento completo inexistente",
+          "referencia": "modulos/e1-termodinamica.html#fundamentos#extra",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: âncora ausente ou duplicada: modulos/e1-termodinamica.html#fundamentos#extra"
+          ]
+        },
+        {
+          "nome": "HTML com fragmento completo codificado inexistente",
+          "referencia": "modulos/e1-termodinamica.html#fundamentos%23extra",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: âncora ausente ou duplicada: modulos/e1-termodinamica.html#fundamentos#extra"
+          ]
+        },
+        {
+          "nome": "Outro recurso não recebe exceção PDF",
+          "referencia": "assets/termodinamica/fon09-cr68-dados-v1.json#page=3",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "cr-e1-68.origem: âncora ausente ou duplicada: assets/termodinamica/fon09-cr68-dados-v1.json#page=3"
+          ]
+        }
+      ],
+      "limite": "PDF: sintaxe integral page=N inteiro positivo seguro e arquivo existente; não verifica quantidade real de páginas. Nenhum fixture modifica o produto."
+    },
+    "contrato": {
+      "natureza": "reexecução técnica em FON-09 do contrato BAN-02, sem decisão de aceite",
+      "schema_version": "1.1",
+      "passou": true,
+      "total": 39,
+      "fixtures_temporarios": "C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-nPkcyh",
+      "resultados": [
+        {
+          "caso": "estado atual, ID longo, 3 opções, aberto e projeto",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "caso": "estados realizados/verificados com evidência Markdown existente",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "caso": "ajustes obrigatórios com evidência existente",
+          "esperado_ok": true,
+          "observado_ok": true,
+          "passou": true,
+          "erros": []
+        },
+        {
+          "caso": "ID duplicado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: ID duplicado no inventário"
+          ]
+        },
+        {
+          "caso": "artigo sem registro",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "projeto-e1-1: artigo da fonte sem registro no inventário"
+          ]
+        },
+        {
+          "caso": "registro extra inexistente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-999: localização precisa identificar um único article existente"
+          ]
+        },
+        {
+          "caso": "hash artigo alterado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: hash do artigo desatualizado; reler enunciado, alternativas, comentários, notas e recursos"
+          ]
+        },
+        {
+          "caso": "hash fonte alterado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.fonte.sha256: fonte atual modificada; revisão dos registros necessária",
+            "$.fonte.snapshot: snapshot difere do hash registrado da fonte"
+          ]
+        },
+        {
+          "caso": "recurso omitido",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: recurso usado sem hash no registro: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "recurso hash alterado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: recurso alterado: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "etapas divergentes",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: numero_etapas difere do tamanho de etapas"
+          ]
+        },
+        {
+          "caso": "nível sem justificativa",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].nivel.justificativa: não atende ao padrão \\S"
+          ]
+        },
+        {
+          "caso": "nível pendente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: item ainda não classificado; registro incompleto para BAN-02"
+          ]
+        },
+        {
+          "caso": "campo desconhecido",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0]: campo não previsto: errado"
+          ]
+        },
+        {
+          "caso": "alternativas divergentes",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: alternativas no HTML=3, registro=5"
+          ]
+        },
+        {
+          "caso": "competência inválida",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].competencias[0]: não atende ao padrão ^C(?:0[1-9]|10)$"
+          ]
+        },
+        {
+          "caso": "banco divergente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: banco diverge do prefixo ou data-banco do artigo"
+          ]
+        },
+        {
+          "caso": "relação inexistente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.exposicao_previa: âncora ausente ou duplicada: modulos/e1.html#ausente"
+          ]
+        },
+        {
+          "caso": "snapshot igual fonte",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.fonte.snapshot: snapshot deve ser uma cópia preservada distinta da fonte"
+          ]
+        },
+        {
+          "caso": "caminho fora raiz",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].localizacao.recursos[0].arquivo: não atende ao padrão ^(?![A-Za-z]:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+          ]
+        },
+        {
+          "caso": "tipo formato inválido",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "aberto-e1-1: múltipla escolha exige pelo menos duas alternativas",
+            "aberto-e1-1: formato diverge do data-formato do artigo",
+            "aberto-e1-1: banco aberto exige resposta_aberta"
+          ]
+        },
+        {
+          "caso": "fonte local inexistente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.origem: arquivo inacessível: modulos/ausente.html (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-nPkcyh\\modulos\\ausente.html')"
+          ]
+        },
+        {
+          "caso": "data impossível",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.atualizado_em: data inválida; use AAAA-MM-DD"
+          ]
+        },
+        {
+          "caso": "realizada sem evidência",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem: campo obrigatório ausente: evidencia_conferencia"
+          ]
+        },
+        {
+          "caso": "verificado sem evidência",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].revisao: campo obrigatório ausente: evidencia_gabarito"
+          ]
+        },
+        {
+          "caso": "ajustes sem evidência",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].revisao: campo obrigatório ausente: evidencia_gabarito"
+          ]
+        },
+        {
+          "caso": "evidência vazia",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão \\S"
+          ]
+        },
+        {
+          "caso": "evidência arquivo ausente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.origem.evidencia_conferencia: arquivo inacessível: pareceres/ausente.md (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-nPkcyh\\pareceres\\ausente.md')"
+          ]
+        },
+        {
+          "caso": "evidência âncora ausente",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.revisao.evidencia_gabarito: âncora ausente ou duplicada: pareceres/fixture.md#ausente"
+          ]
+        },
+        {
+          "caso": "evidência remota",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+          ]
+        },
+        {
+          "caso": "evidência somente fragmento",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+          ]
+        },
+        {
+          "caso": "estado não enumerado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.conferencia_oficial: fora dos valores permitidos: \"aprovado\""
+          ]
+        },
+        {
+          "caso": "versão antiga",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.schema_version: esperado \"1.1\""
+          ]
+        },
+        {
+          "caso": "evidência opcional inválida",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.origem.evidencia_conferencia: arquivo inacessível: pareceres/ausente.md (ENOENT: no such file or directory, open 'C:\\Users\\User\\AppData\\Local\\Temp\\ban02-validator-repro-nPkcyh\\pareceres\\ausente.md')"
+          ]
+        },
+        {
+          "caso": "recurso em disco mudou sem tocar HTML",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100: recurso alterado: assets/a.svg"
+          ]
+        },
+        {
+          "caso": "item novo adicionado ao HTML",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.fonte.sha256: fonte atual modificada; revisão dos registros necessária",
+            "q-e1-101: artigo da fonte sem registro no inventário"
+          ]
+        },
+        {
+          "caso": "snapshot modificado",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.fonte.snapshot: snapshot difere do hash registrado da fonte"
+          ]
+        },
+        {
+          "caso": "href local quebrado mesmo com hashes atualizados",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "q-e1-100.link: âncora ausente ou duplicada: modulos/e1.html#ausente"
+          ]
+        },
+        {
+          "caso": "schema isolado rejeita evidência remota",
+          "esperado_ok": false,
+          "observado_ok": false,
+          "passou": true,
+          "erros": [
+            "$.itens[0].origem.evidencia_conferencia: não atende ao padrão ^(?![A-Za-z][A-Za-z0-9+.-]*:)(?!/)(?!.*\\\\)(?!.*(?:^|/)\\.\\.(?:/|$))[^#]+(?:#[^#\\s]+)?$"
+          ]
+        }
+      ]
+    },
+    "validacao": {
+      "ok": true,
+      "curso": "E1",
+      "itens_registrados": 197,
+      "artigos_encontrados": 197,
+      "recursos_verificados": 15,
+      "links_locais_verificados": 1072,
+      "erros": [],
+      "avisos": [],
+      "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+    }
+  },
+  "comparacao_com_resultados_entregues": {
+    "pdf": true,
+    "contrato_apos_normalizar_nome_fixture": true,
+    "validacao": true
+  },
+  "limites": [
+    "Sem execução por Node CLI.",
+    "Não foram repetidas ciência, navegador, preservação/delta nem testes próprios adicionais.",
+    "Validação PDF verifica sintaxe e existência de arquivo; não determina número real de páginas."
+  ],
+  "arquivos_permanentes_escritos": [
+    "auditoria/termodinamica/pareceres/FON-09-r2-tecnico.json"
+  ]
+}

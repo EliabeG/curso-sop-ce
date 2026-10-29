@@ -1,0 +1,58 @@
+{
+  "id": "BAN-08",
+  "bloco": "FUN01 saturação e mistura",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_SEM_APROVACAO",
+  "metodo": "Leitura integral do enunciado, referência e rubrica, cálculo próprio por frações e confronto com apoio independente atribuído.",
+  "registros": [
+    {
+      "id": "fun01-e1-saturacao",
+      "aplicabilidade": "NUMERICO_FAMILIA_DE_RESPOSTAS_ABERTA",
+      "dados": "Água pura bifásica, m=2 kg, V=0,900 m³, p=0,20 MPa e T=120,210 °C; sensores h=1800±2 kJ/kg e referência com tolerância editorial ±1 kJ/kg.",
+      "solucao": "v=0,450 m³/kg; x=(v−0,00106052)/(0,88568−0,00106052)=0,507494454; mv=1,01498891 kg; h=1621,94904 kJ/kg. (p,T) redundante e insuficiente; (p,v) e (T,x) suficientes sob coexistência; (p,T,v) suficiente com redundância.",
+      "resultado": "Previsão [1620,94904;1622,94904], sensor [1798;1802] kJ/kg; afastamento mínimo 175,05096 kJ/kg, diferença central 178,05096. Incompatíveis, sem identificar qual sensor falhou.",
+      "comparacao": "Rubrica 3+3+2+2=10 pontos; exige proposta de medida independente e revisão de modelo; repetição p/T não fixa x.",
+      "tolerancia": "Arredondamento do texto compatível; rubrica aceita 0,1% preservando decisão. ±1 é tolerância editorial, ±2 dado de sensor, não incerteza NIST.",
+      "limite": "Água pura, equilíbrio, tabela NIST e dados nominais; sem acusar sensor específico.",
+      "artigo_sha256": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+        "dados": "assets/termodinamica/fun01-dados-v1.json",
+        "sha256_dados": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+      },
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA"
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "aplicabilidade": "NUMERICO_FAMILIA_DE_RESPOSTAS_ABERTA",
+      "dados": "Mistura fictícia ideal A/B a 350 K, psat A=150 e B=50 kPa; lotes I 100 kPa z=.4, II 80 kPa z=.4 n=10, III 80 kPa z=.8, IV 80 kPa z não informado.",
+      "solucao": "pbolha=50+100z, porvalho=1/(z/150+(1−z)/50). Para z=.4: 90 e 68,181818 kPa; z=.8: 130 e 107,142857 kPa. I líquido, II bifásico, III vapor. Em II xA=.30, yA=.5625, β=8/21, nv=80/21 e nl=130/21 mol; balanço A=4 mol.",
+      "resultado": "Raízes bifásicas forçadas: I β=−0,4 e III β=40/21 inadmissíveis. IV, se bifásico, x=.30, y=.5625 e .30<z<.5625, mas T,p não provam coexistência; z=.35→β=4/21 e z=.50→16/21. β=.5 implicaria z=.43125, incompatível com II.",
+      "comparacao": "F=2 para C=P=2; T,p fixam extremos condicionados, não z ou β; total de 10 mol e A=4 mol fecham. Rubrica 3+2+2+2+1=10 pontos; β molar não é título mássico.",
+      "tolerancia": "Exatidão racional dos dados nominais e arredondamento coerente; rubrica aceita 0,1%, sem aceitar β fora de [0,1].",
+      "limite": "Parâmetros fictícios e leis de Raoult/Dalton; T,p,z não fornecem h/v sem outros modelos e massa molar é necessária para título mássico.",
+      "artigo_sha256": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+        "dados": "assets/termodinamica/fun01-dados-v1.json",
+        "sha256_dados": "a73b4d6140219cbd6b005216bb7a44db0a68b05f21ca51b7ac4b1ca782dd1448"
+      },
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA"
+    }
+  ],
+  "apoio": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun01-saturacao-mistura-r1-independente.md",
+    "autor": "/root/auditor_ban08_novo",
+    "sha256": "35062626cd84b31eb3bddc9febbf00c138391720d909840523576edd00a32676"
+  },
+  "limites": [
+    "Apoio examinou HTML anterior; artigo idêntico deve ser verificado por hash.",
+    "Sem reauditoria global, teste de estudantes ou medição experimental."
+  ]
+}

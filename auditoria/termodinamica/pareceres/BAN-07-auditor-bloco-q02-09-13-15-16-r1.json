@@ -1,0 +1,965 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "Q02, Q09, Q13, Q15, Q16 modificados",
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "BLOCO_CONCLUIDO; cinco artigos atuais examinados e aprovados somente no escopo BAN-07; sem aprovação global",
+  "criterio": "Resolver comando atual e analisar todas as 25 opções, plausibilidade de erros, dados, figuras, unidades, domínio e equivalência por arredondamento. Comparar os componentes com a preparação sem transferir o hash/aceite do artigo antigo ao novo.",
+  "base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "extrato_preparacao": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+    "sha256_extrato": "9a29bd732b390dd2cb330278622144ced38ecf81937e28ddf887a1fde521e5bc",
+    "html_preparacao_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+    "metodo": "Parser canônico importado; comandos/opções lidos antes dos comentários; soluções iniciais anunciadas em commentary. Comparação por filho direto e abertura do artigo; hashes atuais e antigos separados. Q09: SVG inspecionado por render temporário com suas classes CSS do curso."
+  },
+  "comparacao_componentes": {
+    "q-e1-02": {
+      "sha256_atual": "c3ecee12ab0cbc10cefd6eb96a2c0272b7847413506e8add5ad21b453d846525",
+      "sha256_anterior": "ab8e322acf56c6c18183c82d5b8b0b2b8e895c134e6ea7581a0d0b8ccb4d5d4f",
+      "artigo_inteiro_identico": false,
+      "abertura_artigo_identica": true,
+      "chave_atual": "B",
+      "chave_anterior": "B",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "07a10f42ca5964ee1e25667b3ca707859849735bc05ed4869e16c65f4fb68731",
+          "sha256_anterior": "07a10f42ca5964ee1e25667b3ca707859849735bc05ed4869e16c65f4fb68731",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "5038300f2403f2916077bfbef30e374f41ef06f9e4e2108cc2c7d03af1b5550b",
+          "sha256_anterior": "5038300f2403f2916077bfbef30e374f41ef06f9e4e2108cc2c7d03af1b5550b",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "37b5c335114c96808c2dd0837fd55a2dc8ac822ba6dfcdb3f5a2a6847b3f2087",
+          "sha256_anterior": "0aa3d6186ec401c9dfc1b9ca74d5d4957a5b42d627c9a35a8ec9f94f8a4924fc",
+          "identico": false
+        },
+        {
+          "tag": "div",
+          "classe": "legenda-formula legenda-formula-compacta",
+          "id": "e1-legenda-077",
+          "sha256_atual": "9de2f0447c8c40ce5ab4be7a65f8cecfecdd9077935068f866f3391df80a5a57",
+          "sha256_anterior": "9de2f0447c8c40ce5ab4be7a65f8cecfecdd9077935068f866f3391df80a5a57",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "f1725e498704bf76217cafc6cbfcac064bc90c714d3e6f1850b096945c425af7",
+          "sha256_anterior": "f1725e498704bf76217cafc6cbfcac064bc90c714d3e6f1850b096945c425af7",
+          "identico": true
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "c6494e24ed86639660cf0808446d04694a2e8d0ab42a743fb5458229564b89f1",
+          "sha256_anterior": "8021f5942cff05c01ea04b44c5f571c437f50d2ef9e32f65c27b3337bf673a6f",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "f035b01cfed18e7869c80967d3efc5606158234bc8f403cf9aadd0731c52b8b8",
+          "sha256_anterior": "f035b01cfed18e7869c80967d3efc5606158234bc8f403cf9aadd0731c52b8b8",
+          "identica": true
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "14c1ad952d9688973c892f7fa58bfca7a30259bcb7a41d4ad0e3a53b28197a92",
+          "sha256_anterior": "14c1ad952d9688973c892f7fa58bfca7a30259bcb7a41d4ad0e3a53b28197a92",
+          "identica": true
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "6dc9cc7d10a0d77eb2dd2f4da2ceeec068e27bb2581575ec0150acbbd293bd13",
+          "sha256_anterior": "6dc9cc7d10a0d77eb2dd2f4da2ceeec068e27bb2581575ec0150acbbd293bd13",
+          "identica": true
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "df8b8a078273fb11a092d4adb0b8def4be70e17e8e58b5de909c1af0f1511d20",
+          "sha256_anterior": "df8b8a078273fb11a092d4adb0b8def4be70e17e8e58b5de909c1af0f1511d20",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "074d41a0ec03461053165b57c6e86d3c9638dc01ba629ab63fc1aa6b7ea58dca",
+          "sha256_anterior": "074d41a0ec03461053165b57c6e86d3c9638dc01ba629ab63fc1aa6b7ea58dca",
+          "identica": true
+        }
+      ]
+    },
+    "q-e1-09": {
+      "sha256_atual": "16501a81d69977300456240e97fcc15906ca07738d3bb91c6eae68a7e8d3e657",
+      "sha256_anterior": "0599ef026688971f3ddf099fd55133e22b51f6eaf2ac070acacdcf32f11e8732",
+      "artigo_inteiro_identico": false,
+      "abertura_artigo_identica": true,
+      "chave_atual": "B",
+      "chave_anterior": "B",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "d235fea8ab5aa69ff629a5e2019e9305509578eaa695ba96248e2fa27b9dd4f3",
+          "sha256_anterior": "d235fea8ab5aa69ff629a5e2019e9305509578eaa695ba96248e2fa27b9dd4f3",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "79f7cb83d997bea9cdd8ae76d5dd7d5b87de2747a164888c7d3b8c5f79a01f91",
+          "sha256_anterior": "79f7cb83d997bea9cdd8ae76d5dd7d5b87de2747a164888c7d3b8c5f79a01f91",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "fa399954933b93a3b8e78fc64e9a7163efdfdd705c770fd460a7a1418e4580cc",
+          "sha256_anterior": "8e28a92882329d30dd630a3778e468b07eacd260efd96f88a95e2d0c9a5b16d4",
+          "identico": false
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "7dcc5dad2a9e3db08e724a529d71916d6cdea94a9d58db2dd4d4bc7d2a76d714",
+          "sha256_anterior": "7dcc5dad2a9e3db08e724a529d71916d6cdea94a9d58db2dd4d4bc7d2a76d714",
+          "identico": true
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "c74466eff8cbad38c3ab02ff98cb28b52ad32857cf8c845812e37dd75c889219",
+          "sha256_anterior": "c74466eff8cbad38c3ab02ff98cb28b52ad32857cf8c845812e37dd75c889219",
+          "identico": true
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "8ca2ae646623164da4e5e073ee1caa5a10f8d86974b2f2078f45316cc41d8462",
+          "sha256_anterior": "8ca2ae646623164da4e5e073ee1caa5a10f8d86974b2f2078f45316cc41d8462",
+          "identica": true
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "6d1ae2e44e94e316b8b26ae07ac23ee1a6c68b4d605fe8f0b2475bf9ae6ec3ff",
+          "sha256_anterior": "6d1ae2e44e94e316b8b26ae07ac23ee1a6c68b4d605fe8f0b2475bf9ae6ec3ff",
+          "identica": true
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "04c82baaea2d3ca3caa1edebb334ae1cfc6bc5c4bba44d6de8fd8f584229c2ad",
+          "sha256_anterior": "04c82baaea2d3ca3caa1edebb334ae1cfc6bc5c4bba44d6de8fd8f584229c2ad",
+          "identica": true
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "0d8c97e9e41713ffece89b982d0c7724a42e6a25bc3b45fd6c8600b94afded8f",
+          "sha256_anterior": "0d8c97e9e41713ffece89b982d0c7724a42e6a25bc3b45fd6c8600b94afded8f",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "f4e3c5515d832fcc03478861776dfeff59d99bba140ca3cbd540690c7662afca",
+          "sha256_anterior": "f4e3c5515d832fcc03478861776dfeff59d99bba140ca3cbd540690c7662afca",
+          "identica": true
+        }
+      ]
+    },
+    "q-e1-13": {
+      "sha256_atual": "e25596232664c876ba489c4a81be704e052bcc84411f8279d1446ddece384824",
+      "sha256_anterior": "405d677239ba33e510f59cc11d22251c794fad0ba3f5ecd8c3c1d632c0b80a6f",
+      "artigo_inteiro_identico": false,
+      "abertura_artigo_identica": true,
+      "chave_atual": "C",
+      "chave_anterior": "C",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "a9f02406fe74f01c1ff6ec6f2f99e7c9e9067c9e70283184dfca6ab800521abc",
+          "sha256_anterior": "a9f02406fe74f01c1ff6ec6f2f99e7c9e9067c9e70283184dfca6ab800521abc",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "2d102697937a09e9b969c4bcf39636fc2a22e606d874370eaf97ad8ae05a76da",
+          "sha256_anterior": "2d102697937a09e9b969c4bcf39636fc2a22e606d874370eaf97ad8ae05a76da",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "030212ff612f0fe02badfcc0272d9c01c670f20e7dad8ee570d48d13efed2941",
+          "sha256_anterior": "030212ff612f0fe02badfcc0272d9c01c670f20e7dad8ee570d48d13efed2941",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "legenda-formula legenda-formula-compacta",
+          "id": "e1-legenda-098",
+          "sha256_atual": "6a4e423249f7d60474b47494966ff1cfb9bc7779ce03c450169a3d80f32e311f",
+          "sha256_anterior": "6a4e423249f7d60474b47494966ff1cfb9bc7779ce03c450169a3d80f32e311f",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "f22561080290c98dbfb40ee8a0dc04eaf6b48e1f67b590f0455521ecfff632ce",
+          "sha256_anterior": "f22561080290c98dbfb40ee8a0dc04eaf6b48e1f67b590f0455521ecfff632ce",
+          "identico": true
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "552d75f68efbe7d1d95b2438f1e7f42319b3161af011440feddf9b0ce67d23e6",
+          "sha256_anterior": "a44652acf56108c882e57836b3a1b115923c1d5c4da42c92435b58f9ec9836cd",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "e6b043e020368ecf9c152b838546ee4c67cfd0d9a8ef2e9bf8cc4b873ac253a9",
+          "sha256_anterior": "e6b043e020368ecf9c152b838546ee4c67cfd0d9a8ef2e9bf8cc4b873ac253a9",
+          "identica": true
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "a76bdc7b5e46ae54a8044553237af52de745b16b87bad239fe0dc2d57381042b",
+          "sha256_anterior": "a76bdc7b5e46ae54a8044553237af52de745b16b87bad239fe0dc2d57381042b",
+          "identica": true
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "915797e70c45e010a4260185b41417f20301057dbb0e18f0772230c1fe5da568",
+          "sha256_anterior": "915797e70c45e010a4260185b41417f20301057dbb0e18f0772230c1fe5da568",
+          "identica": true
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "0ac9b38762832fbc787ef9abb92e65d440642b007d669031b0b653302cfe579a",
+          "sha256_anterior": "0ac9b38762832fbc787ef9abb92e65d440642b007d669031b0b653302cfe579a",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "b64705b313236c1a71eb34ab65afb4564486592ac0c118c3751618e7f820b6b9",
+          "sha256_anterior": "b64705b313236c1a71eb34ab65afb4564486592ac0c118c3751618e7f820b6b9",
+          "identica": true
+        }
+      ]
+    },
+    "q-e1-15": {
+      "sha256_atual": "d86c0c96e11141353e39bc7e0de5480482b69d077f72b9da92e76d81b04ca311",
+      "sha256_anterior": "67967ac19a16d6167266255da06d674c528b9ae5aaaf8209650fe58a28b1e6f7",
+      "artigo_inteiro_identico": false,
+      "abertura_artigo_identica": true,
+      "chave_atual": "A",
+      "chave_anterior": "A",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "379509cd7e270669684b8725607f46435633736d4bf5c2d3c45213d76c722746",
+          "sha256_anterior": "379509cd7e270669684b8725607f46435633736d4bf5c2d3c45213d76c722746",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "b7619a2bf554b7e8015ca8e4652be165cd17f2cb219fe95c8610abc4ed22d80c",
+          "sha256_anterior": "b7619a2bf554b7e8015ca8e4652be165cd17f2cb219fe95c8610abc4ed22d80c",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "1bf1eadd67b769917cb6faa1025304b47297076f4ea68d03d77fb7fdec60422c",
+          "sha256_anterior": "1bf1eadd67b769917cb6faa1025304b47297076f4ea68d03d77fb7fdec60422c",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "3f48ca3be4c3f3eee8fde4cace06841878bfd2f838937fdda78af9f6d102a341",
+          "sha256_anterior": "50259712c6d7614c3573905e6116710b310f415b14c05de5f0d73767213932f6",
+          "identico": false
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "ccd73ce83388f625300ace4f35ad7dd3838b0b9afecd1d7a88ec2d3ba4d8d3ef",
+          "sha256_anterior": "e9273ba9eff14dc0a8740e8fe03f08d9148770e64596afb796370c7fee2c3f59",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "6931bf18dd3771ab091734e5d88e6ea04918a23283123c4e9d84cfd135fdbc5d",
+          "sha256_anterior": "6931bf18dd3771ab091734e5d88e6ea04918a23283123c4e9d84cfd135fdbc5d",
+          "identica": true
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "b876b68b64c0c998c071d8649f812046559ef01f7f4c3d0d113944e29162ea27",
+          "sha256_anterior": "b876b68b64c0c998c071d8649f812046559ef01f7f4c3d0d113944e29162ea27",
+          "identica": true
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "bfca4f0830acd761b1e35838414595cebde100a81ffb80730b528e9ec78ba28e",
+          "sha256_anterior": "5f63f1fe67b50b5027dd95fc24101f8bcf805c347244990047c088e4be22fa2d",
+          "identica": false,
+          "texto_anterior": "135%",
+          "texto_atual": "165%"
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "80be731125eec4d070e91a6fd1ca94fb932fa15c135fba0d86f842045808b868",
+          "sha256_anterior": "80be731125eec4d070e91a6fd1ca94fb932fa15c135fba0d86f842045808b868",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "95381dac5030e0ea6015be93d1f24daf471b618dc25c80e3e53697da685e1612",
+          "sha256_anterior": "95381dac5030e0ea6015be93d1f24daf471b618dc25c80e3e53697da685e1612",
+          "identica": true
+        }
+      ]
+    },
+    "q-e1-16": {
+      "sha256_atual": "0abb8b399a04e4d326aecf0334de8de50be99883c3646216a91bfe894363ec5d",
+      "sha256_anterior": "25c2b67fc2b4b2021dbb5240ceea18631b5423417121e4e41ea83f56677867e4",
+      "artigo_inteiro_identico": false,
+      "abertura_artigo_identica": true,
+      "chave_atual": "A",
+      "chave_anterior": "A",
+      "componentes": [
+        {
+          "tag": "header",
+          "classe": "q-cabecalho",
+          "id": null,
+          "sha256_atual": "dce9c32f6f10b04fcdc5cf91206feb6daf8721eacfa6ea9b7806ec0828faadfd",
+          "sha256_anterior": "dce9c32f6f10b04fcdc5cf91206feb6daf8721eacfa6ea9b7806ec0828faadfd",
+          "identico": true
+        },
+        {
+          "tag": "p",
+          "classe": "cr-estudo",
+          "id": null,
+          "sha256_atual": "5c001fc6431b2eb6188e90faa49cf7c57c05d0f38986efc65d73a3b2c0c157d9",
+          "sha256_anterior": "5c001fc6431b2eb6188e90faa49cf7c57c05d0f38986efc65d73a3b2c0c157d9",
+          "identico": true
+        },
+        {
+          "tag": "div",
+          "classe": "q-enunciado",
+          "id": null,
+          "sha256_atual": "af4b89222db853ffe64691d518e040ed1c0800a0d0c37676f95afab5002e653b",
+          "sha256_anterior": "af4b89222db853ffe64691d518e040ed1c0800a0d0c37676f95afab5002e653b",
+          "identico": true
+        },
+        {
+          "tag": "ol",
+          "classe": "q-alternativas",
+          "id": null,
+          "sha256_atual": "8031e2c12e2479103e4dc140550a009d0830de1c7786317087bd66b034643665",
+          "sha256_anterior": "fbfb3d7eb684caa8175a5f9b8df6bddfa7e2c756fc2fd71cea607677e0407d07",
+          "identico": false
+        },
+        {
+          "tag": "details",
+          "classe": "q-resolucao",
+          "id": null,
+          "sha256_atual": "89f69307a08ea22441962f9b91f2687423293e2cc9179401f2c0f626a4daffa6",
+          "sha256_anterior": "ee10ff034f8573861feb2391587720c53a91abac11309344141682225aa2d064",
+          "identico": false
+        }
+      ],
+      "opcoes_individuais": [
+        {
+          "opcao": "A",
+          "sha256_atual": "cc4be7aabf72f53458f27c683c203b606da3236f995cd061434c25e39c95bc00",
+          "sha256_anterior": "cc4be7aabf72f53458f27c683c203b606da3236f995cd061434c25e39c95bc00",
+          "identica": true
+        },
+        {
+          "opcao": "B",
+          "sha256_atual": "6369942bf7f37751e0495a80c17cc1f5cd57eb2f307dde420c9ee5cdeb4725d9",
+          "sha256_anterior": "6369942bf7f37751e0495a80c17cc1f5cd57eb2f307dde420c9ee5cdeb4725d9",
+          "identica": true
+        },
+        {
+          "opcao": "C",
+          "sha256_atual": "d5523854cfdfc30b74e3bd2963c99d83cb9e4ce837302287008b5741905fdfb9",
+          "sha256_anterior": "d5523854cfdfc30b74e3bd2963c99d83cb9e4ce837302287008b5741905fdfb9",
+          "identica": true
+        },
+        {
+          "opcao": "D",
+          "sha256_atual": "dda6509f7dad3c84c087fb82810b556fcbd603a6f7086bc704a1ff52a9d38ae3",
+          "sha256_anterior": "dda6509f7dad3c84c087fb82810b556fcbd603a6f7086bc704a1ff52a9d38ae3",
+          "identica": true
+        },
+        {
+          "opcao": "E",
+          "sha256_atual": "7596fdc3bf3d88727aeb06df7c8f773070dc73ac3b5d537ad1f15fc8e6de26f9",
+          "sha256_anterior": "0d16b2c56ab9e209b5eb164cbb7e87ff0a94e415b1b96d1016e37e2b64c9de67",
+          "identica": false,
+          "texto_anterior": "25%",
+          "texto_atual": "33,3%"
+        }
+      ]
+    }
+  },
+  "fontes_comuns_lidas": [
+    {
+      "referencia": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "alcance": "Papéis e padrão de aceite; leitura no bloco CR51–55"
+    },
+    {
+      "referencia": "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+      "alcance": "Critérios BAN-07 e limite de pressupostos na resolução; leitura no bloco CR51–55"
+    }
+  ],
+  "registros": [
+    {
+      "id": "q-e1-02",
+      "sha256_artigo": "c3ecee12ab0cbc10cefd6eb96a2c0272b7847413506e8add5ad21b453d846525",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "B",
+      "chave_produto": "B",
+      "suficiencia": "ATENDIDO. O comando atual especifica leitura manométrica positiva relativa à atmosfera e fornece essa referência local; não depende de adivinhar o tipo do instrumento.",
+      "demonstracao": "p_man=p_abs-p_atm; portanto p_abs=+200+100=300 kPa. A equação pv=RT requer pressão absoluta. Os valores de v, R e T não são necessários para converter a referência de pressão.",
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "100 kPa",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Usar apenas a pressão atmosférica, descartando o excesso medido."
+        },
+        {
+          "opcao": "B",
+          "texto": "300 kPa",
+          "juizo": "CORRETA",
+          "demonstracao": "Soma do excesso manométrico à referência atmosférica."
+        },
+        {
+          "opcao": "C",
+          "texto": "200 kPa",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Substituir diretamente a leitura manométrica na equação de estado como se absoluta fosse."
+        },
+        {
+          "opcao": "D",
+          "texto": "2 kPa",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Calcular 200/100=2 como uma pressão relativa e atribuir-lhe kPa, confundindo razão de pressões com mudança de referência. O erro dimensional é explicitamente discutido no comentário."
+        },
+        {
+          "opcao": "E",
+          "texto": "-100 kPa",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Fazer p_atm-p_man=100-200 em vez da soma; além de ordem errada, gera pressão absoluta negativa incompatível com os dados."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Demonstra a soma e individualiza as quatro confusões, inclusive a razão adimensional da opção D. As justificativas não tratam os distratores como fisicamente admissíveis.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-02",
+        "enunciado_anterior": "Um manômetro indica 200 kPa e a pressão atmosférica local é 100 kPa. Qual pressão usar em pv=RT?",
+        "enunciado_atual": "Leitura agora explicitamente manométrica de +200 kPa em relação à atmosfera local; a referência de 100 kPa permanece.",
+        "efeito": "Remove ambiguidade do tipo/referência de leitura antes da resposta.",
+        "opcoes": "As cinco opções são byte a byte idênticas às anteriores.",
+        "resolucao": "Mudou a explicação de D: explicita a operação 200/100 e o erro de atribuir unidade a uma razão.",
+        "demais_componentes": "Abertura, cabeçalho, link de base e legenda de símbolos preservados por hashes individuais; o artigo completo tem novo hash."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — duas pressões e referência explícitas",
+        "consistencia_fisica": "ATENDIDO — pressão absoluta positiva e leitura manométrica distinta",
+        "comando": "ATENDIDO — pergunta referência necessária à equação",
+        "unidades": "ATENDIDO — soma em kPa; pv em kPa m³/kg é kJ/kg, coerente com R em kJ/(kg K)",
+        "restricoes": "ATENDIDO — valor manométrico positivo e atmosfera local declarados antes da tentativa",
+        "unicidade": "ATENDIDO — somente 300 kPa",
+        "arredondamento": "ATENDIDO — 100, 300, 200, 2 e -100 kPa são distintos, sem coincidência na precisão dada",
+        "plausibilidade": "ATENDIDO — quatro operações/conceitos incorretos identificados; análise teórica, sem piloto"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-02",
+          "alcance": "Comando, legenda, cinco opções e comentário atuais"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-02",
+          "alcance": "Artigo anterior efetivamente lido por parser para identidade/delta, sem transferência de aceite científico"
+        }
+      ],
+      "heranca": "Nenhum aceite antigo herdado; solução e opções atuais reexaminadas. A identidade do OL não é usada como prova autônoma de plausibilidade.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-09",
+      "sha256_artigo": "16501a81d69977300456240e97fcc15906ca07738d3bb91c6eae68a7e8d3e657",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "B",
+      "chave_produto": "B",
+      "suficiencia": "ATENDIDO. O comando agora fornece sistema fechado de fronteira móvel, limite de equilíbrio mecânico sem atrito, pressão de fronteira conjugada a V e nenhum outro modo de trabalho. Assim a área assinada do ciclo fornece exatamente o trabalho líquido realizado pelo sistema.",
+      "demonstracao": "W=integral_ciclo(p_fronteira dV). AB: expansão a 200 kPa de 1 para 3 m³ produz 400 kJ; BC é isocórico e não trabalha. CD comprime a 100 kPa de 3 para 1 m³, produzindo -200 kJ; DA é isocórico. Soma=+200 kJ. A orientação horária confirma trabalho líquido produzido. O retorno ao estado inicial dá deltaU=0, sem impor W=0.",
+      "calculo_independente": {
+        "trabalhos_por_trecho": {
+          "AB_kJ": 400,
+          "BC_kJ": 0,
+          "CD_kJ": -200,
+          "DA_kJ": 0
+        },
+        "W_liquido_kJ": 200,
+        "via_area_retangulo_kJ": 200
+      },
+      "figura": {
+        "tipo": "SVG nativo incorporado ao enunciado",
+        "sha256_svg_atual": "7a2416c26f6cea301ff82212451f8204adfaf0ac99de33b8e9dc4f99d12eacb0",
+        "sha256_svg_preparacao": "7a2416c26f6cea301ff82212451f8204adfaf0ac99de33b8e9dc4f99d12eacb0",
+        "identico": true,
+        "inspecao_visual": "Render temporário por sharp/librsvg com as classes .sv-traco/.sv-acento/.sv-texto/.sv-texto-2 e cores claras efetivas do CSS do curso; traçados e textos corretos. A primeira tentativa sem o CSS foi descartada, sem atribuir defeito ao produto.",
+        "leitura": "A(1 m³,200 kPa), B(3,200), C(3,100), D(1,100); setas AB para a direita, BC para baixo, CD para a esquerda, DA para cima. Desenho sem escala explicitado.",
+        "render_temporario": "C:/Users/User/AppData/Local/Temp/ban07-q09-auditor-com-css.png",
+        "sha256_css_inspecionado": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa"
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "600 kJ produzidos",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Usar p_alta*V_final=200*3=600 em vez da área entre os quatro ramos; também é a soma das magnitudes 400+200, descartando o sinal da compressão. A explicação do curso identifica a primeira operação."
+        },
+        {
+          "opcao": "B",
+          "texto": "200 kJ produzidos",
+          "juizo": "CORRETA",
+          "demonstracao": "400-200=+200 kJ; área assinada do retângulo."
+        },
+        {
+          "opcao": "C",
+          "texto": "100 kJ produzidos",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Usar apenas 200-100=100, confundindo altura do gráfico com área e omitindo deltaV=2 m³; o valor de pressão isolado não ganha unidade de energia."
+        },
+        {
+          "opcao": "D",
+          "texto": "0 kJ, pois retorna ao estado inicial",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Aplicar ao trabalho a propriedade de estado de U; deltaU=0 não torna a integral de trabalho nula."
+        },
+        {
+          "opcao": "E",
+          "texto": "200 kJ consumidos",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Obter a magnitude correta e inverter a convenção/sentido: consumo corresponderia a W_pelo_sistema=-200 kJ, não ao ciclo horário dado."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Área, unidade e sinal corretos; todos os erros indicados levam às respectivas opções. O texto antigo da resolução já era adequado à conta, mas as hipóteses físicas agora foram fornecidas no comando, antes da tentativa.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-09",
+        "enunciado": "A redação antiga só nomeava o ciclo/gráfico e perguntava trabalho líquido; a atual explicita as condições mecânicas, o sistema fechado, ausência de outros trabalhos e que a grandeza pedida é o trabalho realizado pelo sistema.",
+        "figura": "SVG byte a byte idêntico, conferido separadamente de seu contêiner q-enunciado alterado.",
+        "opcoes_e_resolucao": "Ambos os componentes são byte a byte idênticos. Foram reexaminados cientificamente neste bloco; a identidade não é um aceite presumido.",
+        "demais_componentes": "Cabeçalho e link de base preservados; chave B preservada; artigo completo com hash novo."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — coordenadas e percurso completos",
+        "consistencia_fisica": "ATENDIDO — pressão conjugada e trabalho de fronteira autorizados",
+        "comando": "ATENDIDO — trabalho pelo sistema, não só magnitude",
+        "unidades": "ATENDIDO — 1 kPa m³=1 kJ; pressão e volume do gráfico explicitados",
+        "restricoes": "ATENDIDO — condições mecânicas e nenhum outro trabalho declarados antes da tentativa; não se exige gás ideal",
+        "unicidade": "ATENDIDO — somente B",
+        "arredondamento": "ATENDIDO — B e E têm mesma magnitude mas sinais físicos opostos; não são equivalentes no comando. 600,100,0 diferem de +200.",
+        "plausibilidade": "ATENDIDO — área incorreta, altura sem largura, função de estado e sinal são erros identificáveis; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-09",
+          "alcance": "Artigo atual integral e SVG, comando antes do comentário"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-09",
+          "alcance": "Comando anterior e identidade de SVG, opções e resolução"
+        },
+        {
+          "referencia": "assets/curso.css",
+          "alcance": "Regras SVG e cores claras efetivamente lidas para render fiel; não teste de navegador"
+        }
+      ],
+      "heranca": "Nenhum aceite antigo transferido ao artigo novo; cálculo e figura atuais conferidos pelo revisor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-13",
+      "sha256_artigo": "e25596232664c876ba489c4a81be704e052bcc84411f8279d1446ddece384824",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. A questão fornece as três proposições, a definição dos símbolos e as cinco combinações. As conclusões são conceituais, sem requerer propriedades numéricas.",
+      "demonstracao": "I é falsa: calor e trabalho são transferências de energia dependentes do processo. Um ciclo com trabalho não nulo já impede tratá-los como diferenças de propriedades que retornam ao mesmo valor. II é verdadeira: h=H/m=(U+pV)/m=u+pv por definição da entalpia específica. III é verdadeira: U é propriedade de estado; retornar ao mesmo estado no ciclo implica deltaU=0. A combinação completa é II e III.",
+      "proposicoes": [
+        {
+          "id": "I",
+          "verdade": false,
+          "fundamento": "Dependência do caminho de calor/trabalho, não propriedades contidas no sistema."
+        },
+        {
+          "id": "II",
+          "verdade": true,
+          "fundamento": "Definição de entalpia por unidade de massa; nenhuma equação de gás ideal é exigida."
+        },
+        {
+          "id": "III",
+          "verdade": true,
+          "fundamento": "Variação de propriedade entre estados inicial/final iguais é nula, embora trabalho e calor do ciclo possam ser não nulos."
+        }
+      ],
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "Somente II",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Reconhece a definição de h, mas supõe que trabalho/calor no ciclo permitam deltaU diferente de zero e omite III."
+        },
+        {
+          "opcao": "B",
+          "texto": "Somente I",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Trata calor/trabalho como energia armazenada do estado e rejeita as propriedades/definições de II e III. É uma combinação de erros conceituais, não uma afirmação parcialmente correta."
+        },
+        {
+          "opcao": "C",
+          "texto": "II e III",
+          "juizo": "CORRETA",
+          "demonstracao": "Inclui exatamente as duas proposições verdadeiras e exclui I."
+        },
+        {
+          "opcao": "D",
+          "texto": "I e III",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Reconhece o retorno de U, mas inclui calor/trabalho entre propriedades e não reconhece a definição de h em II."
+        },
+        {
+          "opcao": "E",
+          "texto": "I e II",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Aceita h e também calor/trabalho como propriedades, mas omite o fechamento de U no ciclo; confunde transferência e armazenamento."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. A resolução demonstra os três juízos e agora confere cada combinação, apontando proposições falsas incluídas e verdadeiras omitidas. Não trata uma combinação incompleta como suficiente para responder quais são corretas.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-13",
+        "enunciado_opcoes_legenda_e_demais": "Todos byte a byte idênticos aos componentes da preparação, incluindo chave C e legenda específica/total.",
+        "resolucao": "O conteúdo anterior foi preservado e foi acrescentado o bloco Conferência de cada alternativa, com análise de A–E. A diferença textual normalizada é somente essa inserção final, conferida independentemente.",
+        "efeito": "Completa a justificativa das combinações sem mudar a proposição ou a identidade de resposta; o artigo novo não recebe o hash antigo."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — conceitos e símbolos fornecidos",
+        "consistencia_fisica": "ATENDIDO — transferências, funções de estado e entalpia distinguidos",
+        "comando": "ATENDIDO — exige o conjunto completo das proposições verdadeiras",
+        "unidades": "ATENDIDO — u,h em kJ/kg e pv em kPa m³/kg=kJ/kg; deltaU total em kJ é separado da energia específica",
+        "restricoes": "ATENDIDO — definição de ciclo como retorno ao estado; não depende de idealização de gás",
+        "unicidade": "ATENDIDO — somente C corresponde à verdade I falsa, II/III verdadeiras",
+        "arredondamento": "NAO_APLICAVEL — combinações sem números e semanticamente distintas",
+        "plausibilidade": "ATENDIDO — combinações representam confusão entre energia transferida, armazenamento, definição de h e fechamento do ciclo; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-13",
+          "alcance": "Comando, legenda, proposições e cinco opções atuais antes da resolução"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-13",
+          "alcance": "Identidade dos componentes preservados e inserção na resolução; não prova científica herdada"
+        }
+      ],
+      "heranca": "Nenhum aceite anterior estendido ao novo artigo; verdade das três proposições e composição das cinco alternativas reexaminadas neste bloco.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-15",
+      "sha256_artigo": "d86c0c96e11141353e39bc7e0de5480482b69d077f72b9da92e76d81b04ca311",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "A",
+      "chave_produto": "A",
+      "suficiencia": "ATENDIDO. Máquina térmica por ciclo e magnitudes de calor recebido/rejeitado bastam para trabalho líquido e eficiência; temperaturas das fontes não são necessárias para essa conta de energia.",
+      "demonstracao": "No ciclo deltaU=0. Com magnitudes de calor fornecidas, Wliq=Qh-Qrejeitado=1000-650=350 kJ/ciclo. eta=Wliq/Qh=350/1000=0,35=35%. A rejeição é positiva e inferior ao recebimento, coerente com trabalho líquido produzido.",
+      "calculo_independente": {
+        "Qh_kJ_ciclo": 1000,
+        "Qrejeitado_kJ_ciclo": 650,
+        "Wliq_kJ_ciclo": 350,
+        "eta": 0.35,
+        "eta_percentual": 35,
+        "operacoes_dos_erros": {
+          "B_percentual": 53.84615384615385,
+          "C_percentual": 165,
+          "D_percentual": 100,
+          "E_percentual": 65
+        }
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "35%",
+          "juizo": "CORRETA",
+          "demonstracao": "350/1000, trabalho líquido dividido pelo calor recebido."
+        },
+        {
+          "opcao": "B",
+          "texto": "54%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "350/650=53,846...%, arredondado a 54%: troca a base do rendimento pelo calor rejeitado."
+        },
+        {
+          "opcao": "C",
+          "texto": "165%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "(1000+650)/1000=1,65: soma as magnitudes recebida e rejeitada em vez de subtrair, ignorando seus sentidos físicos. O resultado maior que 100% é consequência do erro, não uma eficiência admissível."
+        },
+        {
+          "opcao": "D",
+          "texto": "100%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Assume que todo calor recebido se torna trabalho e despreza os 650 kJ explicitamente rejeitados."
+        },
+        {
+          "opcao": "E",
+          "texto": "65%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "650/1000: informa a fração rejeitada em vez da fração convertida em trabalho."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Balanço, denominador e porcentagem corretos, com operações explícitas para cada erro. O novo valor de C coincide com a soma que a explicação descreve.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-15",
+        "enunciado_e_demais": "Comando, cabeçalho, link de base, abertura e chave A preservados por identidade.",
+        "opcao_modificada": "Somente C mudou de 135% para 165%; as demais quatro mantiveram texto/posição.",
+        "resolucao": "A justificativa de C passou de afirmação genérica de que somar os fluxos não calcula eficiência para a operação explícita (1000+650)/1000=165% e a indicação de que trabalho líquido é diferença, não soma.",
+        "efeito": "Relaciona o distrator novo a um erro de sinal/operação reproduzível, sem alterar resposta correta."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — dois calores por ciclo na mesma base",
+        "consistencia_fisica": "ATENDIDO — Wliq positivo, calor rejeitado positivo e eta entre 0 e 1",
+        "comando": "ATENDIDO — eficiência térmica, não COP nem fração rejeitada",
+        "unidades": "ATENDIDO — kJ/ciclo no balanço; rendimento adimensional e conversão por 100 para porcentagem",
+        "restricoes": "ATENDIDO — sentido recebido/rejeitado explícito e operação cíclica convencional",
+        "unicidade": "ATENDIDO — somente A",
+        "arredondamento": "ATENDIDO — 35% exato com dados nominais; 53,846...% arredonda a 54%, sem equivalência com 35%. 165%,100%,65% distintos.",
+        "plausibilidade": "ATENDIDO — denominador errado, soma em vez de diferença, rejeição ignorada e fração rejeitada são mecanismos identificáveis; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-15",
+          "alcance": "Comando e cinco opções atuais antes da resolução; demonstrações recalculadas"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-15",
+          "alcance": "Comando preservado, C anterior de 135% e justificativa anterior confrontados; não há aceite científico presumido"
+        }
+      ],
+      "heranca": "Nenhum aceite anterior herdado; balanço e cada opção atual calculados pelo auditor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "q-e1-16",
+      "sha256_artigo": "0abb8b399a04e4d326aecf0334de8de50be99883c3646216a91bfe894363ec5d",
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "A",
+      "chave_produto": "A",
+      "suficiencia": "ATENDIDO. O motor é reversível e as duas temperaturas já são absolutas em K; o comando de limite e o vínculo à base de Carnot autorizam o modelo convencional entre duas fontes.",
+      "demonstracao": "Para um motor cíclico reversível entre fontes Th e Tc, o balanço de entropia exige Qc/Tc=Qh/Th, usando magnitudes positivas. Então eta=(Qh-Qc)/Qh=1-Tc/Th=1-300/600=0,50. Um motor irreversível entre as mesmas fontes não pode superar esse valor. O limite vale independentemente de uma substância específica ou de valores absolutos de Qh.",
+      "calculo_independente": {
+        "Th_K": 600,
+        "Tc_K": 300,
+        "eta": 0.5,
+        "eta_percentual": 50,
+        "operacoes_dos_erros": {
+          "B_percentual": 100,
+          "C_percentual": 0,
+          "D_razao_Th_Tc_percentual": 200,
+          "D_inversao_apenas_dentro_da_formula_percentual": -100,
+          "E_deltaT_sobre_soma_percentual": 33.333333333333336
+        }
+      },
+      "opcoes": [
+        {
+          "opcao": "A",
+          "texto": "50%",
+          "juizo": "CORRETA",
+          "demonstracao": "1-300/600=0,5, convertido em 50%."
+        },
+        {
+          "opcao": "B",
+          "texto": "100%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Confundir reversibilidade com conversão integral do calor recebido, ignorando a rejeição exigida para a fonte fria positiva. Aqui Qc=0,5Qh, e não zero."
+        },
+        {
+          "opcao": "C",
+          "texto": "0%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Confundir reversibilidade com equilíbrio térmico entre fontes iguais, ou o retorno cíclico de U com ausência de trabalho. As fontes dadas diferem e o limite reversível é positivo."
+        },
+        {
+          "opcao": "D",
+          "texto": "200%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Tomar Th/Tc=600/300=2 diretamente como rendimento. Apenas inverter a razão dentro de 1-Tc/Th daria -100%, não esta opção; a explicação atual distingue precisamente esses erros."
+        },
+        {
+          "opcao": "E",
+          "texto": "33,3%",
+          "juizo": "INCORRETA",
+          "erro_plausivel": "Usar diferença de temperaturas dividida pela soma: (600-300)/(600+300)=1/3≈33,3%, em vez de dividir a diferença pela temperatura absoluta quente."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Usa K, fornece o limite e esclarece exatamente as operações associadas a D e E. A explicação de 100% equivale a suprimir a fonte fria efetiva, não a negar que o comando tenha duas fontes disponíveis.",
+      "delta_examinado": {
+        "referencia_hashes": "comparacao_componentes.q-e1-16",
+        "enunciado_e_demais": "Comando, cabeçalho, vínculo à base, abertura e chave A preservados por identidade.",
+        "opcao_modificada": "Somente E mudou de 25% para 33,3%; as outras quatro mantiveram texto/posição.",
+        "resolucao_D": "A justificativa antiga dizia apenas inverter a razão; agora explicita 600/300=200% e adverte que uma inversão dentro da fórmula produziria -100%.",
+        "resolucao_E": "A explicação genérica foi substituída pela operação (600-300)/(600+300)≈33,3% e pela correção do denominador.",
+        "efeito": "Relaciona valor e operação real de erro em D/E, sem mudar o comando ou a chave."
+      },
+      "criterios": {
+        "dados": "ATENDIDO — reversibilidade e duas temperaturas positivas dadas",
+        "consistencia_fisica": "ATENDIDO — balanços de energia e entropia compatíveis, com rejeição positiva",
+        "comando": "ATENDIDO — limite de eficiência, não razão direta de temperaturas",
+        "unidades": "ATENDIDO — temperaturas em K; razões e eta adimensionais, porcentagem por fator 100",
+        "restricoes": "ATENDIDO — motor reversível entre duas fontes no modelo usual; não pressupõe um gás ideal ou valor de calor não fornecido",
+        "unicidade": "ATENDIDO — somente A",
+        "arredondamento": "ATENDIDO — 50% exato nominal; E=33,333...% arredonda a 33,3%, distinto de 50%. 100%,0%,200% também distintos.",
+        "plausibilidade": "ATENDIDO — rejeição ignorada, reversibilidade confundida com equilíbrio, razão direta e normalização pela soma têm mecanismos identificáveis; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#q-e1-16",
+          "alcance": "Comando e cinco opções atuais antes da resolução; balanço reversível derivado pelo revisor"
+        },
+        {
+          "referencia": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json#q-e1-16",
+          "alcance": "Comando preservado, E anterior de 25% e justificativas anteriores D/E confrontados, sem herdar aceite científico"
+        }
+      ],
+      "heranca": "Nenhum aceite antigo herdado; limite e todos os erros foram demonstrados para o artigo atual.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    }
+  ],
+  "limitacoes": [
+    "Nenhuma aprovação científica antiga é presumida para estes artigos novos; componentes idênticos apenas identificam o que foi preservado.",
+    "Sem piloto, revisão humana, certificação externa ou alegação de erro observado em alunos; plausibilidade é análise teórica.",
+    "Sem aprovação global, liberação de outro ID ou edição de produto/controle/checklist.",
+    "Arquivos temporários fora do projeto foram usados somente para inspecionar o SVG de Q09; a primeira extração sem CSS não foi tomada como defeito do produto."
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "registrados": 5,
+    "ids": [
+      "q-e1-02",
+      "q-e1-09",
+      "q-e1-13",
+      "q-e1-15",
+      "q-e1-16"
+    ],
+    "opcoes_examinadas": 25,
+    "artigos_modificados_examinados": 5
+  },
+  "achados_do_bloco": {
+    "novos_impeditivos": 0,
+    "ajustes_obrigatorios": 0
+  },
+  "decisao_proximo_ID": "NÃO LIBERADO: bloco parcial não aprova o conjunto BAN-07 nem outro ID.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "artigos": [
+      {
+        "id": "q-e1-02",
+        "sha256_artigo": "c3ecee12ab0cbc10cefd6eb96a2c0272b7847413506e8add5ad21b453d846525",
+        "opcoes_conferidas": 5,
+        "opcoes_alteradas": []
+      },
+      {
+        "id": "q-e1-09",
+        "sha256_artigo": "16501a81d69977300456240e97fcc15906ca07738d3bb91c6eae68a7e8d3e657",
+        "opcoes_conferidas": 5,
+        "opcoes_alteradas": []
+      },
+      {
+        "id": "q-e1-13",
+        "sha256_artigo": "e25596232664c876ba489c4a81be704e052bcc84411f8279d1446ddece384824",
+        "opcoes_conferidas": 5,
+        "opcoes_alteradas": []
+      },
+      {
+        "id": "q-e1-15",
+        "sha256_artigo": "d86c0c96e11141353e39bc7e0de5480482b69d077f72b9da92e76d81b04ca311",
+        "opcoes_conferidas": 5,
+        "opcoes_alteradas": [
+          "C"
+        ]
+      },
+      {
+        "id": "q-e1-16",
+        "sha256_artigo": "0abb8b399a04e4d326aecf0334de8de50be99883c3646216a91bfe894363ec5d",
+        "opcoes_conferidas": 5,
+        "opcoes_alteradas": [
+          "E"
+        ]
+      }
+    ],
+    "artigos_unicos": 5,
+    "opcoes_examinadas_e_conferidas_no_produto": 25,
+    "chaves_derivadas_conferem": true,
+    "svg_q09_inspecionado": true,
+    "escopo_preservado": "Nenhuma edição de produto, controle ou checklist; somente este parecer no projeto e render temporário de inspeção fora dele."
+  }
+}

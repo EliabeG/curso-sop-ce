@@ -1,0 +1,93 @@
+{
+  "id": "BAN-08",
+  "estado": "DIAGNOSTICO_E_PLANO_NAO_APROVADO",
+  "data_utc": "2026-10-29T17:27:41.453494+00:00",
+  "corretor": "/root/inspect_repo, agente automatizado",
+  "criterio": "190 resoluções atuais e futuras, sem fechamento por amostra; registro por ID de solução, resultado, tolerância, fonte e revisor.",
+  "cobertura_mapeada": {
+    "questoes": 190,
+    "problemas_abertos_adicionais": 7,
+    "total": 197,
+    "estudos_criticos_sem_nota": 9
+  },
+  "recortes_da_amostra": {
+    "ids": [
+      "q-e1-01",
+      "q-e1-06",
+      "cr-e1-26",
+      "cr-e1-39",
+      "av-e1-31",
+      "fun01-e1-saturacao"
+    ],
+    "limite": "Somente partes exemplares; todos os 197 continuam com registro de auditoria integral pendente; FUN01 examinado parcialmente."
+  },
+  "artefatos": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/PLANO_DIAGNOSTICO-r1.md",
+      "sha256": "2976b2f94c387cd02159c533e883a8bfb1f2d03114515f04673ba6bd36301b76"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/inventariar-r1.mjs",
+      "sha256": "70b1010e4756fb8cd1a00e36762f37357d3632f8c95b66150a3141c11a8bb80f"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/inventario-numerico-197-r1.json",
+      "sha256": "5b56e8280d35d590bf11ddbff9b0e789faed257fafe1cad9c4854cc5ac5fd99f"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/recalcular-amostra-r1.py",
+      "sha256": "6ec95abd2fca07decca74a9d697d21800b00f8b8881fcc8c907b580f7514d499"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/amostra-inicial-r1.json",
+      "sha256": "ed92021aff8cb6fb518f3df7ee97e92a5c846f61d89639e094bd07439d24e4ca"
+    }
+  ],
+  "produto_r3_preservado": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256_esperado": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+      "sha256_ao_fim": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256_esperado": "486c53c5aa6c432831599c4eca170e4620d089b4eb15b480dbfb2cbfaf54c9ce",
+      "sha256_ao_fim": "486c53c5aa6c432831599c4eca170e4620d089b4eb15b480dbfb2cbfaf54c9ce",
+      "preservado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256_esperado": "35df191e2f7964adfb7b975668491e8ba39d983a5df93640a35d3d96ae142df8",
+      "sha256_ao_fim": "35df191e2f7964adfb7b975668491e8ba39d983a5df93640a35d3d96ae142df8",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/curso.js",
+      "sha256_esperado": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+      "sha256_ao_fim": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+      "preservado": true
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "sha256_esperado": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+      "sha256_ao_fim": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+      "preservado": true
+    }
+  ],
+  "validacao_atual": {
+    "ok": true,
+    "registros": 197,
+    "artigos": 197,
+    "recursos": 29,
+    "links": 1261,
+    "erros": 0,
+    "avisos": 0,
+    "alcance": "Estrutura; não certifica cálculo ou aprendizagem."
+  },
+  "restricoes": [
+    "Nenhuma decisão de aprovação de BAN-08, conclusão por amostra ou liberação de outro ID.",
+    "Todos os números detectados automaticamente são pistas e exigem leitura integral.",
+    "Sem alterações de produto ou controle."
+  ]
+}

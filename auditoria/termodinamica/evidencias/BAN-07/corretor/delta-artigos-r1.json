@@ -1,0 +1,441 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "base_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+  "resultado_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+  "artigos": [
+    "q-e1-02",
+    "q-e1-09",
+    "q-e1-13",
+    "q-e1-15",
+    "q-e1-16",
+    "q-e1-18",
+    "q-e1-19",
+    "q-e1-24",
+    "q-e1-26",
+    "q-e1-28",
+    "av-e1-08",
+    "av-e1-10",
+    "av-e1-17",
+    "av-e1-18",
+    "av-e1-33",
+    "av-e1-35",
+    "av-e1-37",
+    "av-e1-38",
+    "av-e1-45",
+    "av-e1-48",
+    "av-e1-50",
+    "av-e1-57",
+    "av-e1-58",
+    "av-e1-64",
+    "av-e1-73"
+  ],
+  "substituicoes": [
+    {
+      "id": "q-e1-02",
+      "antes": "Um manômetro indica 200 kPa e a pressão atmosférica local é 100 kPa.",
+      "depois": "Um manômetro indica uma pressão manométrica de +200 kPa em relação à atmosfera local. A pressão atmosférica local é 100 kPa.",
+      "ocorrencias": 1,
+      "motivo": "Declarar a referência manométrica antes da tentativa."
+    },
+    {
+      "id": "q-e1-09",
+      "antes": "Na figura, o ciclo é A → B → C → D → A. Com pressão em kPa e volume em m³, qual é o trabalho líquido?",
+      "depois": "Um sistema fechado com fronteira móvel percorre o ciclo A → B → C → D → A. O processo ocorre no limite de equilíbrio mecânico, sem atrito e sem outros modos de trabalho; a pressão do gráfico é a pressão de fronteira conjugada à variação de volume. Com pressão em kPa e volume em m³, qual é o trabalho líquido realizado pelo sistema?",
+      "ocorrencias": 1,
+      "motivo": "Delimitar o trabalho de fronteira representado pela área orientada."
+    },
+    {
+      "id": "q-e1-15",
+      "antes": "<li data-letra=\"C\">135%.</li>",
+      "depois": "<li data-letra=\"C\">165%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Distrator reproduzível pela soma indevida dos fluxos."
+    },
+    {
+      "id": "q-e1-15",
+      "antes": "Somar os dois fluxos não calcula eficiência.",
+      "depois": "Somar os dois fluxos e dividir pelo calor recebido dá (1.000 + 650)/1.000 = 165%. O trabalho líquido é a diferença entre calor recebido e rejeitado, não a soma.",
+      "ocorrencias": 1,
+      "motivo": "Sincronizar a refutação com o valor da alternativa."
+    },
+    {
+      "id": "q-e1-16",
+      "antes": "<li data-letra=\"E\">25%.</li>",
+      "depois": "<li data-letra=\"E\">33,3%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Erro de normalização pela soma das temperaturas."
+    },
+    {
+      "id": "q-e1-16",
+      "antes": "A razão indicada não corresponde à expressão de Carnot.",
+      "depois": "Usar (600 − 300)/(600 + 300) dá aproximadamente 33,3%. O denominador do rendimento de Carnot é a temperatura absoluta da fonte quente, não a soma das temperaturas.",
+      "ocorrencias": 1,
+      "motivo": "Explicar o erro concreto de E."
+    },
+    {
+      "id": "q-e1-16",
+      "antes": "Inverte a razão entre as temperaturas.",
+      "depois": "A razão 600/300, escrita como porcentagem, dá 200%, mas omite o complemento 1 − Tfria/Tquente. Apenas inverter a razão dentro da fórmula daria −100%, não esta alternativa.",
+      "ocorrencias": 1,
+      "motivo": "Distinguir os erros que realmente produzem 200%."
+    },
+    {
+      "id": "q-e1-19",
+      "antes": "<li data-letra=\"C\">45%.</li>",
+      "depois": "<li data-letra=\"C\">44,4%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Distrator real/(real+ideal) calculável."
+    },
+    {
+      "id": "q-e1-19",
+      "antes": "Somar ou tirar média das quedas não calcula eficiência.",
+      "depois": "Dividir a queda real pela soma das quedas dá 400/(400 + 500) ≈ 44,4%. A eficiência da turbina compara queda real com queda isentrópica, sem somá-las no denominador.",
+      "ocorrencias": 1,
+      "motivo": "Relacionar alternativa e erro de definição."
+    },
+    {
+      "id": "q-e1-28",
+      "antes": "<li data-letra=\"B\">60%.</li>",
+      "depois": "<li data-letra=\"B\">68,75%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Razão de entalpias de estado confundida com razão de quedas."
+    },
+    {
+      "id": "q-e1-28",
+      "antes": "Não corresponde às diferenças de entalpia dadas.",
+      "depois": "A razão 2.200/3.200 = 68,75% usa a entalpia da saída isentrópica dividida pela de entrada. A eficiência compara quedas de entalpia; não usa essa razão de valores de estado.",
+      "ocorrencias": 1,
+      "motivo": "Explicar o distrator de entalpia de saída isentrópica."
+    },
+    {
+      "id": "q-e1-13",
+      "antes": "<ul class=\"q-justificativas\"><li data-item=\"1\"><p>I — Falsa: calor e trabalho dependem do caminho, não apenas dos estados inicial e final.</p></li><li data-item=\"2\"><p>II — Verdadeira: a soma <math class=\"matematica\" data-formula-original=\"u + pv\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>u</mi><mo>+</mo><mi>p</mi><mi>v</mi></mrow></semantics></math> define entalpia específica.</p></li><li data-item=\"3\"><p>III — Verdadeira: U é propriedade e retorna ao mesmo valor no ciclo.</p></li></ul>",
+      "depois": "<ul class=\"q-justificativas\"><li data-item=\"1\"><p>I — Falsa: calor e trabalho dependem do caminho, não apenas dos estados inicial e final.</p></li><li data-item=\"2\"><p>II — Verdadeira: a soma <math class=\"matematica\" data-formula-original=\"u + pv\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>u</mi><mo>+</mo><mi>p</mi><mi>v</mi></mrow></semantics></math> define entalpia específica.</p></li><li data-item=\"3\"><p>III — Verdadeira: U é propriedade e retorna ao mesmo valor no ciclo.</p></li></ul><h4>Conferência de cada alternativa</h4><ul class=\"q-justificativas\"><li data-letra=\"A\"><p>II é verdadeira, mas III também é; a alternativa omite uma afirmação correta.</p></li><li data-letra=\"B\"><p>I é falsa: calor e trabalho são transferências dependentes do caminho, não propriedades. Além disso, omite II e III.</p></li><li data-letra=\"C\"><p>II e III são verdadeiras e I é falsa. Esta é a combinação completa.</p></li><li data-letra=\"D\"><p>III é verdadeira, mas I é falsa; a alternativa também omite II.</p></li><li data-letra=\"E\"><p>II é verdadeira, mas I é falsa; a alternativa também omite III.</p></li></ul>",
+      "ocorrencias": 1,
+      "motivo": "Justificar individualmente as cinco combinações, conservando a análise das proposições."
+    },
+    {
+      "id": "q-e1-18",
+      "antes": "<ul class=\"q-justificativas\"><li data-item=\"1\"><p>I — Verdadeira: <math class=\"matematica\" data-formula-original=\"S_gerada\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mrow><mi mathvariant=\"normal\">g</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi></mrow></msub></mrow></semantics></math> positiva eleva a entropia do sistema isolado.</p></li><li data-item=\"2\"><p>II — Falsa: processo adiabático irreversível não é isentrópico.</p></li><li data-item=\"3\"><p>III — Verdadeira: a entropia pode sair de uma parte com transferência de calor.</p></li></ul>",
+      "depois": "<ul class=\"q-justificativas\"><li data-item=\"1\"><p>I — Verdadeira: <math class=\"matematica\" data-formula-original=\"S_gerada\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mrow><mi mathvariant=\"normal\">g</mi><mi mathvariant=\"normal\">e</mi><mi mathvariant=\"normal\">r</mi></mrow></msub></mrow></semantics></math> positiva eleva a entropia do sistema isolado.</p></li><li data-item=\"2\"><p>II — Falsa: processo adiabático irreversível não é isentrópico.</p></li><li data-item=\"3\"><p>III — Verdadeira: a entropia pode sair de uma parte com transferência de calor.</p></li></ul><h4>Conferência de cada alternativa</h4><ul class=\"q-justificativas\"><li data-letra=\"A\"><p>Erra II: adiabaticidade não elimina geração de entropia, portanto a segunda posição é F.</p></li><li data-letra=\"B\"><p>Erra I: a entropia pode aumentar em um sistema isolado irreversível, portanto a primeira posição é V.</p></li><li data-letra=\"C\"><p>Erra III: uma parte pode perder entropia ao rejeitar calor, portanto a terceira posição é V.</p></li><li data-letra=\"D\"><p>As três posições estão corretas: V, F, V. Isolamento permite geração, adiabaticidade não implica isentropia e uma parte pode perder entropia.</p></li><li data-letra=\"E\"><p>Erra as três posições: I permite aumento de entropia, II não é universalmente verdadeira e III descreve uma possibilidade válida.</p></li></ul>",
+      "ocorrencias": 1,
+      "motivo": "Justificar individualmente as cinco combinações, conservando a análise das proposições."
+    },
+    {
+      "id": "q-e1-02",
+      "antes": "Não há divisão por 100 nessa soma.",
+      "depois": "Dividir 200 por 100 dá 2, uma razão sem unidade. Atribuir kPa a esse resultado não converte pressão manométrica em absoluta; a conversão exige somar as duas pressões.",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "<li data-letra=\"A\">Refrigerante do evaporador.</li>",
+      "depois": "<li data-letra=\"A\">Água líquida, aquecida pelos gases que passam por fora dos tubos.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "A questão trata de caldeira, não do ciclo de refrigeração.",
+      "depois": "Essa disposição coloca água dentro dos tubos e gases por fora, como na caldeira aquatubular. Na flamotubular, os gases quentes percorrem o interior dos tubos.",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "<li data-letra=\"B\">Somente óleo lubrificante.</li>",
+      "depois": "<li data-letra=\"B\">Apenas vapor produzido, pois esses tubos funcionam como superaquecedores.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "Lubrificante não é o fluido de troca térmica principal descrito.",
+      "depois": "Confunde os tubos pelos quais passam os gases com um superaquecedor, no qual circula vapor. Os tubos aquecedores da flamotubular contêm os gases da combustão.",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "<li data-letra=\"D\">Ar medicinal purificado.</li>",
+      "depois": "<li data-letra=\"D\">Mistura de água e gases de combustão em contato direto.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "Não corresponde ao aquecimento de água pela combustão.",
+      "depois": "Ignora a parede dos tubos que separa gases e água. A troca de calor ocorre através dessa parede, sem exigir mistura entre os dois fluidos.",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "<li data-letra=\"E\">Água e vapor necessariamente.</li>",
+      "depois": "<li data-letra=\"E\">Combustível antes da queima, pois esses tubos alimentam os queimadores.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-24",
+      "antes": "Essa descrição corresponde à aquatubular.",
+      "depois": "Confunde a tubulação que alimenta combustível aos queimadores com os tubos aquecedores. Estes recebem gases quentes depois da combustão, não combustível antes da queima.",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-26",
+      "antes": "<li data-letra=\"A\">3.030 kJ/kg.</li>",
+      "depois": "<li data-letra=\"A\">3.060 kJ/kg.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "q-e1-26",
+      "antes": "Parte do valor final e ultrapassa o intervalo.",
+      "depois": "Usar 3.000 + 0,30 × (3.000 − 2.800) = 3.060 kJ/kg parte da referência final errada e ultrapassa o intervalo. O incremento deve ser somado a 2.800 kJ/kg.",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-08",
+      "antes": "<strong>D.</strong> 160 °C.</span>",
+      "depois": "<strong>D.</strong> 180 °C.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-08",
+      "antes": "<strong>D — Comentário:</strong> Não há fundamento para duplicar o alcance.</li>",
+      "depois": "<strong>D — Comentário:</strong> Calcular 20 + 2 × 80 = 180 °C trata o alcance como semiamplitude e duplica indevidamente o intervalo. O span já é a diferença completa entre os limites: basta somá-lo a 20 °C.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-10",
+      "antes": "<strong>D.</strong> 180 kg/m³ e extensiva.</span>",
+      "depois": "<strong>D.</strong> 0,18 kg/m³ e extensiva.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-10",
+      "antes": "<strong>D — Comentário:</strong> Multiplica grandezas que deveriam ser divididas e erra a classificação.</li>",
+      "depois": "<strong>D — Comentário:</strong> O produto indevido 12 × 0,015 dá 0,18, mas sua unidade seria kg·m³, não kg/m³. A massa específica exige dividir massa por volume; também é falsa a classificação extensiva, pois essa propriedade é intensiva.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-17",
+      "antes": "<strong>B — Comentário:</strong> A umidade relativa muda quando a pressão de saturação muda com a temperatura.</li>",
+      "depois": "<strong>B — Comentário:</strong> Quantidade fixa de vapor não torna sua pressão parcial independente da temperatura. No modelo ideal, pv = nvRT/V; a volume fixo, aumentar T aumenta pv. A alternativa confunde quantidade fixa com pressão parcial constante.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-18",
+      "antes": "<strong>A — Comentário:</strong> Duplica o resultado correto sem justificativa.</li>",
+      "depois": "<strong>A — Comentário:</strong> Usar 450 − 300 = 150 K no denominador, em vez de T1 = 300 K, gera 200 × 450/150 = 600 kPa. A relação exige a temperatura inicial absoluta, não a variação de temperatura.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-33",
+      "antes": "Após a ruptura da membrana, analise os estados de equilíbrio inicial e final, desprezando alterações cinéticas e potenciais.",
+      "depois": "Não há outros modos de trabalho nem interação energética relevante com a membrana. Após sua ruptura, analise os estados de equilíbrio inicial e final, desprezando alterações cinéticas e potenciais.",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-35",
+      "antes": "<strong>A.</strong> −240 kJ.</span>",
+      "depois": "<strong>A.</strong> −0,120 kJ.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-35",
+      "antes": "<strong>E.</strong> +240 kJ.</span>",
+      "depois": "<strong>E.</strong> +0,120 kJ.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-35",
+      "antes": "<strong>A — Comentário:</strong> Erra simultaneamente sinal e magnitude.</li>",
+      "depois": "<strong>A — Comentário:</strong> Divide indevidamente 120 por 1.000, embora a energia já esteja em kJ, e ainda troca o sinal do trabalho realizado pelo sistema. O valor correto é +120 kJ.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-35",
+      "antes": "<strong>E — Comentário:</strong> Duplica a variação sem motivo.</li>",
+      "depois": "<strong>E — Comentário:</strong> Dividir 120 por 1.000 como se o dado estivesse em joules produz 0,120. O dado já está em kJ; essa conversão indevida reduz o trabalho por um fator mil.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-37",
+      "antes": "<strong>B.</strong> 1,5 kJ.</span>",
+      "depois": "<strong>B.</strong> 5,37 kJ.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-37",
+      "antes": "<strong>B — Comentário:</strong> Não corresponde ao trabalho perdido: 300 K × 0,20 kJ/K = 60 kJ. Dividir temperatura por entropia também seria dimensionalmente inválido e não produziria o valor desta alternativa.</li>",
+      "depois": "<strong>B — Comentário:</strong> Converter 300 K para 26,85 °C e usar esse número na multiplicação dá 26,85 × 0,20 = 5,37. Gouy–Stodola exige a temperatura ambiente absoluta em kelvin; por isso a perda é 60 kJ.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-38",
+      "antes": "<strong>D.</strong> 20%.</span>",
+      "depois": "<strong>D.</strong> 25%.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-38",
+      "antes": "<strong>D — Comentário:</strong> A diferença de 200 K não deve ser dividida por um valor arbitrário de 1.000 K.</li>",
+      "depois": "<strong>D — Comentário:</strong> Usar (500 − 300)/(500 + 300) dá 25%. O denominador de Carnot é a temperatura absoluta da fonte quente, não a soma das temperaturas.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-45",
+      "antes": "<strong>A.</strong> 100 kJ.</span>",
+      "depois": "<strong>A.</strong> 333,3 kJ.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-45",
+      "antes": "<strong>A — Comentário:</strong> Daria eficiência de 90%, acima do limite.</li>",
+      "depois": "<strong>A — Comentário:</strong> Usar 1.000 × 300/(600 + 300) dá aproximadamente 333,3 kJ, por colocar a soma das temperaturas no denominador. Isso daria eficiência de cerca de 66,7%, superior ao limite de Carnot de 50%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-48",
+      "antes": "<strong>E.</strong> a temperatura seja medida exclusivamente em Fahrenheit.</span>",
+      "depois": "<strong>E.</strong> as duas correntes tenham a mesma temperatura em todo o regenerador.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-48",
+      "antes": "<strong>E — Comentário:</strong> A condição física não depende da escala usada para expressar as temperaturas.</li>",
+      "depois": "<strong>E — Comentário:</strong> Temperaturas iguais em toda a troca anulam a diferença térmica necessária à transferência passiva. Confundir equilíbrio térmico com a condição de funcionamento impede o aquecimento pretendido.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-50",
+      "antes": "Duas turbinas a gás são comparadas para as mesmas condições de entrada, mesma razão de pressões e mesma temperatura de entrada da turbina. Em relação ao modelo ideal isentrópico, as irreversibilidades tendem a",
+      "depois": "Duas turbinas a gás são comparadas. Considere seus compressores e turbinas adiabáticos, em regime permanente, sem diferenças relevantes de energia cinética ou potencial. Compare trabalhos por unidade de massa: para cada componente, mantenha os mesmos estados de entrada e as mesmas pressões de saída ao comparar o equipamento real com sua referência ideal isentrópica. Nessas condições, as irreversibilidades tendem a",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-50",
+      "antes": "O compressor real requer mais trabalho para a mesma elevação de pressão; a turbina real extrai menos trabalho para a mesma expansão. O trabalho líquido diminui.",
+      "depois": "Nas condições adiabáticas declaradas e para as mesmas referências de entrada e pressão de saída, o trabalho consumido por unidade de massa é wc = h2 − h1 no compressor e o produzido é wt = h3 − h4 na turbina. As irreversibilidades elevam a entalpia de saída relativamente à referência isentrópica: o compressor consome mais e a turbina produz menos. O trabalho líquido específico diminui. Essa comparação não estabelece mínimo irrestrito para compressores refrigerados.",
+      "ocorrencias": 2,
+      "motivo": "Sincronizar solução e comentário da chave com a classe térmica de comparação."
+    },
+    {
+      "id": "av-e1-57",
+      "antes": "<strong>C.</strong> 25%.</span>",
+      "depois": "<strong>C.</strong> 0,50%.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-57",
+      "antes": "<strong>C — Comentário:</strong> Aplica uma divisão adicional por 2 sem fundamento.</li>",
+      "depois": "<strong>C — Comentário:</strong> Escrever a fração 0,50 diretamente com o símbolo % esquece a multiplicação por 100. A fração 0,50 corresponde a 50%, não a 0,50%.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-58",
+      "antes": "<strong>D.</strong> 800 kPa.</span>",
+      "depois": "<strong>D.</strong> 300 kPa.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-58",
+      "antes": "<strong>D — Comentário:</strong> Duplica indevidamente o resultado.</li>",
+      "depois": "<strong>D — Comentário:</strong> 300 kPa é o aumento p2 − p1 = 400 − 100. O comando pede a pressão absoluta final, 400 kPa, não o incremento de pressão.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-64",
+      "antes": "<strong>C — Comentário:</strong> Isso corresponde ao princípio de equipamentos dinâmicos.</li>",
+      "depois": "<strong>C — Comentário:</strong> Nos compressores dinâmicos, o rotor transfere energia ao escoamento e o difusor ajuda a converter energia cinética em pressão; não se deve atribuir esse fornecimento de energia a pás no difusor. Pistão e parafuso comprimem volumes aprisionados, por mecanismo distinto.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "<strong>B.</strong> ausência de superfície de contato térmico.</span>",
+      "depois": "<strong>B.</strong> baixa área de transferência de calor por unidade de volume.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "<strong>B — Comentário:</strong> Transferência entre correntes e superfícies requer área disponível.</li>",
+      "depois": "<strong>B — Comentário:</strong> Confunde pequeno volume externo com pequena área térmica. A compactação requer área elevada por volume; reduzir essa razão não explica a capacidade de troca pretendida.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "<strong>C.</strong> isolamento térmico completo entre todos os fluidos.</span>",
+      "depois": "<strong>C.</strong> grande volume de material para armazenar calor como definição de compactação.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "<strong>C — Comentário:</strong> Isolamento completo impediria a troca desejada.</li>",
+      "depois": "<strong>C — Comentário:</strong> Confunde transferência entre correntes com armazenamento térmico. Capacidade térmica do material não define a razão área de troca por volume que caracteriza a compactação.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "<strong>D.</strong> coeficiente de transferência necessariamente nulo.</span>",
+      "depois": "<strong>D.</strong> paredes necessariamente mais espessas para aumentar a condução.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "<strong>D — Comentário:</strong> Coeficiente nulo eliminaria a capacidade de trocar calor.</li>",
+      "depois": "<strong>D — Comentário:</strong> Para mesmo material e área, aumentar a espessura aumenta a resistência à condução. A espessura não é o critério de compactação e pode depender de requisitos mecânicos.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "<strong>E.</strong> redução obrigatória da área interna para zero.</span>",
+      "depois": "<strong>E.</strong> aletas com função apenas estrutural, sem aumento da área térmica.</span>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    },
+    {
+      "id": "av-e1-73",
+      "antes": "<strong>E — Comentário:</strong> Contraria a finalidade de aumentar a área disponível.</li>",
+      "depois": "<strong>E — Comentário:</strong> Ignora a função térmica das aletas, que ampliam a superfície disponível. Essa ampliação não garante sozinha desempenho ilimitado nem perda de pressão invariável.</li>",
+      "ocorrencias": 1,
+      "motivo": "Esclarecer modelo ou relacionar distrator a erro concreto conforme plano aprovado."
+    }
+  ]
+}

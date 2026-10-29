@@ -1,0 +1,33 @@
+{
+  "estado": "OK_ESTRUTURAL_E_CONTAS_CONDICIONAIS",
+  "limite": "Confronto literal e aritmético do Corretor; não é revisão independente ou aceite das hipóteses nem aplicação.",
+  "fonte_sha256": "49b0df4fe59dfd01913f4d41a5e6869705f4bf4d6ded251060f940cd5d12c91b",
+  "secao_sha256": "332973ea8904d02ceb2e6c54d8713924c517975ce0749f09ee9f1b8ba07d56c2",
+  "erros": [],
+  "candidatas": [
+    {
+      "id": "estado-exemplo",
+      "original": "ab5095512ce0582b481d1e94c74c0c7dbd7a3228c2016c3b17c7fd611823d84b",
+      "candidata": "dec11b70113935a4f763cde64bc6b371159284b364e370c6519a6a4f1fc72af2",
+      "arquivo": "62418797ab11205ff619196e60fcb65b22f4528d0afc912f63a15f5579886642"
+    },
+    {
+      "id": "trabalho-diagnostico",
+      "original": "bdfc904faec68456481748c2f0d18c46f00b5ab7e421c9e24145e55e1b1bf707",
+      "candidata": "8b0baf719dc32ff52efba1a6968b8bef82804e1aad8f26f5949e9258fa50e841",
+      "arquivo": "24ca90cb4d0e120a0c13f26e3fbbc9afca276c4d1a037f915b6d84fce46c24bc"
+    },
+    {
+      "id": "balancos-turbina",
+      "original": "80a44fade53998980ceb1c75d07a023798b126ea4ca8f30835bfc1de6745b75d",
+      "candidata": "ddbee308b1684a4eb8d5884a17a056582016563cc61ba735105eb0d433fe6acd",
+      "arquivo": "9f662cf7872e5dddb5cad0d7ba3fc10b795db3ffb53002f7f20cd46b32bf8247"
+    },
+    {
+      "id": "balancos-compressor",
+      "original": "9dfddd65f621b05df619ec763ce6fdbffab23fecd60190739feda0871778834a",
+      "candidata": "7b45170eba005fecfbd7b39dc6e96656fa8d294f07a93339e2f59a92945e2ae5",
+      "arquivo": "0b65f6057c08fca38cd06acb9a46907acbdb385c78833b739f828686258b8ced"
+    }
+  ]
+}

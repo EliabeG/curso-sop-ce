@@ -1,0 +1,131 @@
+{
+  "id": "BAN-08",
+  "bloco": "sete problemas abertos",
+  "estado": "CONFERIDO_COM_APOIO_INDEPENDENTE_SEM_DECISAO_FINAL",
+  "data": "2026-10-29",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55"
+  },
+  "arquivos": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/fun01-saturacao-mistura-corretor-r1.json",
+      "sha256": "d05d223185fcb75348fe2dd5c481f91deb23b577b9886230a39182c4cdaa67e6"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/fun01-supercritico-equilibrio-corretor-r1.json",
+      "sha256": "5e0a5f8e0ea05bf1ce28133295b661c38363d939c12fcc34d3fd7f4822d2a749"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/fun02-caminhos-corretor-r1.json",
+      "sha256": "962c87336389d91f38cd62d44661db1adef5093c081b71daa033957085dd1c67"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-08/fun02-integrabilidade-calor-corretor-r1.json",
+      "sha256": "29c48bbadaaf982fadb961320ae150445b82b61741cda9705b66114402168158"
+    }
+  ],
+  "verificador": {
+    "arquivo": "auditoria/termodinamica/evidencias/BAN-08/verificar-abertos-r1.py",
+    "sha256": "714f173ae7e2f614666cc437997684d330b2eb78dafae40511362937a76f230d",
+    "resultado": "Sete IDs, hashes de artigos e fontes de dados, cálculos representativos conferidos."
+  },
+  "registros": [
+    {
+      "id": "fun01-e1-saturacao",
+      "artigo_sha256": "07b62072f8f3bbf46abf33e1997c4b2695faad50bdeced42bfdc34cec24fd6f2",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/fun01-saturacao-mistura-corretor-r1.json",
+      "apoio": [
+        {
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun01-saturacao-mistura-r1-independente.md",
+          "autor": "/root/auditor_ban08_novo",
+          "sha256": "35062626cd84b31eb3bddc9febbf00c138391720d909840523576edd00a32676"
+        }
+      ],
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "id": "fun01-e1-mistura",
+      "artigo_sha256": "c6a2a5430bdee022dc9db6eb9d0e3c50c33086736b37154dd97d2749f53d4e53",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/fun01-saturacao-mistura-corretor-r1.json",
+      "apoio": [
+        {
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun01-saturacao-mistura-r1-independente.md",
+          "autor": "/root/auditor_ban08_novo",
+          "sha256": "35062626cd84b31eb3bddc9febbf00c138391720d909840523576edd00a32676"
+        }
+      ],
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "id": "fun01-e1-supercritico",
+      "artigo_sha256": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/fun01-supercritico-equilibrio-corretor-r1.json",
+      "apoio": [
+        {
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun01-supercritico-r1-independente.md",
+          "autor": "/root/auditor_ban08_novo",
+          "sha256": "64edcb1f41d1ee0e07140d59da5411a234af35798ec61fc0c8c330b9cd4106a0"
+        }
+      ],
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "id": "fun01-e1-equilibrio",
+      "artigo_sha256": "0fedd2cbca9364a9c1da8f6caa2e2d90d8729dcb9a120c636cad56dc2d54d206",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/fun01-supercritico-equilibrio-corretor-r1.json",
+      "apoio": [
+        {
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun01-equilibrio-r1-independente.md",
+          "autor": "/root/auditor_ban08_novo",
+          "sha256": "ce82f24d04122f571a136a91d4c7673c165d725a884c6c77b407e0f16ae3badf"
+        }
+      ],
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "id": "fun02-e1-caminhos",
+      "artigo_sha256": "58f67911ef4f418f33fccc525f7f244e31fe451d23f2523b8ccc2319273731a6",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/fun02-caminhos-corretor-r1.json",
+      "apoio": [
+        {
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun02-caminhos-r1-independente.md",
+          "sha256": "2df3f6f9b705965b1fded6f5cbbb55e192c17e367a6c4bd7f41647ab45240fec",
+          "autor": "/root/auditor_ban08_novo"
+        }
+      ],
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "id": "fun02-e1-integrabilidade",
+      "artigo_sha256": "17621376b554fe092fb9f880c910dd447b1f6716448ace454ac31f4427e9fcd2",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/fun02-integrabilidade-calor-corretor-r1.json",
+      "apoio": [
+        {
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun02-integrabilidade-r1-independente.md",
+          "autor": "/root/auditor_ban08_novo",
+          "sha256": "cf2605ddaa8b514b7900f9796ff4e1bd59db1c828dece6e4b0bb05dc8b904dfb"
+        }
+      ],
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado"
+    },
+    {
+      "id": "fun02-e1-calor-caminho",
+      "artigo_sha256": "936a8ba00043cc49ad22d047338a78ae65b9c9e531dba634a5d943cfbd194a6c",
+      "registro_corretor": "auditoria/termodinamica/evidencias/BAN-08/fun02-integrabilidade-calor-corretor-r1.json",
+      "apoio": [
+        {
+          "arquivo": "auditoria/termodinamica/pareceres/BAN-08-apoio-fun02-calor-caminho-r1-independente.md",
+          "autor": "/root/auditor_ban08_novo",
+          "sha256": "323f6184addba6d55e1b82ffa8661ff5a24a16fc8c45001e75cd2b0dc84daeb4"
+        }
+      ],
+      "autor_apoio": "/root/auditor_ban08_novo, agente automatizado"
+    }
+  ],
+  "limites": [
+    "Os apoios sem cegamento examinaram HTML anterior; sete artigos mantêm identidade e seus cálculos foram atribuídos aos seus autores. A identidade não substitui exame da solução e rubrica.",
+    "Não se aprova BAN-08 ou se assegura desempenho empírico; tolerâncias pedagógicas não são incertezas de medição."
+  ]
+}

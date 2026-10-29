@@ -1,0 +1,29 @@
+{
+  "id": "BAN-08",
+  "estado": "SINCRONIZADO_COM_PARECER_INDEPENDENTE_SEM_ACEITE_BAN08",
+  "parecer": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-revalidacao-av42-av45-av52-r1-independente.md",
+    "sha256": "86e9edc229e31fa2c798ad5ae1b89d595ddf74b080652f9a435c515517380c08"
+  },
+  "produto_html_sha256": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+  "alteracoes": [
+    "Somente revisao.gabarito e revisao.evidencia_gabarito de AV42, AV45 e AV52, atualizados para verificado com referência ao parecer independente.",
+    "Resumo Markdown acrescido de referência à nova revalidação e à evidência histórica de AV45, sem confundir versões."
+  ],
+  "arquivos": [
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256_antes": "5e83ef8b27e4596e9d8d154aa19df1e8f836863a4ff76acac0ba5ea66e9af72c",
+      "sha256_depois": "adb2f7edd0bdfbf6d1f0ec0bc8aefd46b22d6728a0aa59fc3981281aac93fbcd"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256_antes": "1eba9f02611dcb1b1a58690a876a0541d9fe5eb57714496415306f95d5564e29",
+      "sha256_depois": "f0fb7899fbf628515de624873ad3ef253ae08f0a3c1ec8f1154c941b11d573e4"
+    }
+  ],
+  "limites": [
+    "Aceite localizado é BAN-07, não BAN-08; decisão de controle pertence à coordenação.",
+    "Validação estrutural e revisão do delta pendentes em evidência complementar."
+  ]
+}

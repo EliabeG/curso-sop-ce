@@ -1,0 +1,132 @@
+{
+  "id": "BAN-08",
+  "bloco": "Q26–Q30",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos cinco artigos; Decimal para Q26–29, prova de mínimo de Q27 no modelo explicitado e análise simbólica Q30.",
+  "registros": [
+    {
+      "id": "q-e1-26",
+      "artigo_sha256": "df61bd3ca6a30a77fe477e04e50ba87b515c3fa89a652d33e3f8d2f5cb27ba86",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-26",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-interpolacao"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "h=2800 kJ/kg a 200 °C e h=3000 kJ/kg a 300 °C; pressão fixa e interpolação linear a 230 °C.",
+      "solucao": "f=(230−200)/(300−200)=30/100=0,30; h=2800+0,30(3000−2800)=2860 kJ/kg.",
+      "resultado": "B=2860 kJ/kg.",
+      "comparacao": "A=3000+0,30×200=3060 parte do extremo errado; C=2800+30=2830 troca intervalo térmico pelo de h; D=2900 é o ponto médio a 250 °C; E=2800×0,30=840 omite base.",
+      "tolerancia": "Valores são exatos na tabela didática e no modelo linear; alternativas distintas.",
+      "limite": "Não validar propriedade real fora de faixa ou entre fases; a interpolação requer pressão fixa e mesma região de fase.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-27",
+      "artigo_sha256": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-27",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-compressao-estagios"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_COM_MODELO_OTIMIZACAO",
+      "dados": "Dois estágios ideais equivalentes, intercooling perfeito, pressões absolutas 1 e 16 bar, razões iguais.",
+      "solucao": "pi/1=16/pi implica pi²=16 bar² e raiz física pi=4 bar, com razões 4 e 4. No modelo da base, o trabalho por massa é proporcional a r1^a+r2^a−2, a>0, e r1r2=16; por AM-GM, a soma é mínima em r1=r2.",
+      "resultado": "A=4 bar absolutos.",
+      "comparacao": "B=(1+16)/2=8,5 usa média aritmética; C=2 gera razões 2 e 8; D=16 gera 16 e 1; E=8 gera 8 e 2.",
+      "tolerancia": "Raiz positiva exata com dados; demais escolhas não igualam as razões.",
+      "limite": "Mínimo depende de estágios equivalentes, mesma condição de entrada após resfriamento, propriedades e eficiências do modelo; não é ótimo de qualquer instalação real.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-28",
+      "artigo_sha256": "15be288e8d94b47776947cc8a41b9005f054033334bfcb6fc611bc98dc06d7c9",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-28",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-isentropica"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "Turbina adiabática: h1=3200, h2is=2200, h2real=2400 kJ/kg.",
+      "solucao": "Queda real=3200−2400=800; ideal=3200−2200=1000 kJ/kg; ηt=800/1000=0,8=80%.",
+      "resultado": "E=80%.",
+      "comparacao": "A=1000/800=125%; B=2200/3200=68,75%; C assume 100%; D=2400/3200=75%; nenhuma usa corretamente as duas quedas.",
+      "tolerancia": "Todos os quocientes citados são exatos nos dados, e as alternativas diferem.",
+      "limite": "Mesma entrada e pressão de saída de referência, trabalho específico sob hipóteses da base; não igualar eficiência de compressor.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-29",
+      "artigo_sha256": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-29",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-entropia-escoamento"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "Duas correntes a 1 kg/s, Δs=−0,20 e +0,30 kJ/(kg·K); regime permanente, conjunto sem calor externo.",
+      "solucao": "Sger=ΣṁΔs=1×(−0,20)+1×0,30=0,10 kJ/(s·K)=0,10 kW/K.",
+      "resultado": "C=0,10 kW/K.",
+      "comparacao": "A=0 confunde adiabático com reversível; B=0,10 kW tem unidade errada; D=0,50 soma módulos; E=−0,10 inverte sinal.",
+      "tolerancia": "Soma exata com decimais fornecidos; B e C têm mesmo valor numérico, mas unidades diferentes, sem equivalência dimensional.",
+      "limite": "Δs é saída menos entrada e Sger é do conjunto; ponto duplo “::” é editorial, não altera a conta.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-30",
+      "artigo_sha256": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-30",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-valvula-fase",
+          "#base-escolha-modelo"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_LIMITE_ZERO",
+      "dados": "Afirmações de modelos termodinâmicos; pede INCORRETA.",
+      "solucao": "Adiabático fixa Q=0, não Sger=0; válvula de estrangulamento pode ser irreversível. Segunda lei requer Sger≥0.",
+      "resultado": "B é incorreta.",
+      "comparacao": "A exige cuidado com fase; C usa pressão absoluta em razão termodinâmica; D expressa limite não negativo; E define calor por diferença de temperatura.",
+      "tolerancia": "Q=0 e limite Sger≥0 são condições do modelo, sem valores numéricos aproximados.",
+      "limite": "h≈constante somente para válvula estacionária sem trabalho e com calor/energias macroscópicas desprezíveis, não toda válvula adiabática.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "observacoes_editoriais": [
+    "Q29 duplica dois-pontos antes da fórmula; sem impacto nas contas."
+  ],
+  "limites": [
+    "Sem revisão independente, alunos, histórico real ou fechamento do ID."
+  ]
+}

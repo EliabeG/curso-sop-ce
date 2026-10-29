@@ -1,0 +1,86 @@
+{
+  "data_local": "2026-10-27",
+  "revisor": "Coordenador automatizado /root",
+  "metodo": "PDFs renderizados por Windows.Data.Pdf em PowerShell inline e PNGs efetivamente abertos com view_image. Não é OCR nem screenshot de navegador. Não foram instalados pacotes nem alteradas políticas de execução.",
+  "limites_ferramentas": "Browser integrado não renderizou PDF local; web screenshot retornou referências sem pixels. Esses retornos não foram contados como leitura visual. Arquivo .ps1 é bloqueado pela política existente, e os comandos de renderização foram executados inline sem alterar configuração.",
+  "documentos": [
+    {
+      "papel": "prova_oficial",
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/prova-oficial-obtida-r1.pdf",
+      "origem": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+      "pagina": 3,
+      "paginas": 4,
+      "png": "auditoria/termodinamica/evidencias/FON-09/prova-oficial-p3-r1.png",
+      "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3",
+      "bytes": 344114,
+      "sha256_png": "54cf6005c2eedd024baa16a95221e0a99062943cb7d80a415db78ee24614cbc8",
+      "largura_png": 2250,
+      "altura_png": 3184
+    },
+    {
+      "papel": "gabarito_definitivo",
+      "arquivo": "auditoria/termodinamica/evidencias/FON-09/gabarito-oficial-obtido-r1.pdf",
+      "origem": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF",
+      "pagina": 1,
+      "paginas": 1,
+      "png": "auditoria/termodinamica/evidencias/FON-09/gabarito-oficial-p1-r1.png",
+      "sha256": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071",
+      "bytes": 48271,
+      "sha256_png": "9041d06317afd51b76ccebbac1c5d5f6acd7b0e6bba8f4e074a2e041b6a78224",
+      "largura_png": 2250,
+      "altura_png": 3183
+    },
+    {
+      "papel": "caderno_fornecido",
+      "arquivo": "assets/questoes-reais-e1/caderno-fornecido.pdf",
+      "origem": "Arquivo entregue no projeto",
+      "pagina": 14,
+      "paginas": 31,
+      "png": "auditoria/termodinamica/evidencias/FON-09/caderno-p14-r1.png",
+      "sha256": "bea6174ad3eee9a6880274597f444a7a20b05663dd4595d722d1a924532153b0",
+      "bytes": 3793082,
+      "sha256_png": "d5b56a741accdfe775008dfda298ae7ccda16cc8d419633387fba8a665449696",
+      "largura_png": 2250,
+      "altura_png": 3182
+    }
+  ],
+  "leitura": {
+    "densidade_original": "1.000 kg/cm³ consta na prova oficial p3 e no caderno p14; não foi introduzida exclusivamente pelo HTML.",
+    "tabela_original": [
+      [
+        "101,325",
+        "100",
+        "0,00104",
+        "1,695"
+      ],
+      [
+        "150",
+        "114",
+        "0,00108",
+        "0,354"
+      ],
+      [
+        "200",
+        "128",
+        "0,00110",
+        "0,206"
+      ],
+      [
+        "250",
+        "138",
+        "0,0012",
+        "0,138"
+      ],
+      [
+        "300",
+        "147",
+        "0,00114",
+        "0,100"
+      ]
+    ],
+    "colunas": "p absoluta(kPa),T(°C),vf(m³/kg),vg(m³/kg)",
+    "figura": "Caderno/HTML usam figura recriada; a prova tem diagrama original da unidade de vapor. Reservatório aberto, bomba, fornalha/caldeira e pontos1/2/3 estão identificados. Não constitui auditoria de escala ou de todos os itens80–84.",
+    "gabarito": "No documento definitivo 950_PETROBRAS_23_008_01, aplicação24/03/2024, Ênfase8Operação, a coluna85 contémC. Conferência restrita ao item85; não equivale à auditoria integral FON01.",
+    "alcance": "A presença do erro no documento oficial identifica origem documental; não comprova intenção do elaborador nem constitui errata oficial. Dados defeituosos não são usados para concluir sobre emissividade."
+  }
+}

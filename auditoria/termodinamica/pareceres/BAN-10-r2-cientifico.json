@@ -1,0 +1,82 @@
+{
+  "id": "BAN-10",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "auditor": "Agente automatizado independente /root/auditor_aaa",
+  "escopo": "Reauditoria restrita do único achado R1-A e derivados, sem repetir critérios intactos ou auditorias globais.",
+  "resultado_cientifico": "R1-A_ATENDIDO",
+  "manifesto_sha256": "9e7acb7fc3b6a3a8870aa7822d3ad97b947b93770dc4ccdc325cf10759b2dc95",
+  "hashes": {
+    "html": "843e16728129811b00a873fdbd42b7233e60bc41afe051a9c87a79d6a2956a14",
+    "inventario": "8703e30d4dba156b83178a4b60f29f39fbdd6a75917b38b95cab0ffc1545a3d1",
+    "resumo": "b68f4f29ee9aa19753abb41c70d8052df6625cc0222072be08260fc15eeb9745",
+    "artigo_cr34": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5"
+  },
+  "leitura_independente": [
+    "Artigo CR34 integral: nota, original, roteiro, resolução elementar, análise, autocorreção, fontes.",
+    "Registro canônico CR34 integral e duas representações no resumo.",
+    "Decisão e triagem atuais, revisão/alcance/histórico e entrega.",
+    "Relatório de navegador do coordenador, com autoria e limites discriminados."
+  ],
+  "criterios": [
+    {
+      "id": "R1-A-1",
+      "resultado": "atendido",
+      "fundamento": "O original é reconhecido como ΔU>0. A condição exata no balanço adotado é W+ΔEc+ΔEp=0 para ΔU=Q; cada termo nulo é somente suficiente. Nenhuma inferência de invalidade de C decorre apenas da presença de outro trabalho."
+    },
+    {
+      "id": "R1-A-2",
+      "resultado": "atendido",
+      "fundamento": "A inferência do sinal usa massa/composição fixas, gás ideal simples, estados de equilíbrio no mesmo volume, cv(T)>0, calor exclusivamente entrando não nulo e Tb finitas positivas. O balanço ΔS=∫δQ/Tb+Sger>0 e a identidade de estado com v2=v1 implicam T2>T1 e ΔU>0. O texto não substitui automaticamente Tb por T do gás nem exige caminho reversível."
+    },
+    {
+      "id": "R1-A-3",
+      "resultado": "atendido",
+      "fundamento": "CR34 é mantido sem nota por esclarecimento pedagógico; explicita C coerente e ausência de contraprova. Rubrica não atribui ΔU=Q ao original nem aceita W arbitrário como processo admissível."
+    },
+    {
+      "id": "R1-A-4",
+      "resultado": "atendido",
+      "fundamento": "Comando exige combinar energia e entropia em demonstração guiada: estimativa intermediária, C03/C04 e três etapas são proporcionais. Pré-requisitos/hypóteses/limites acompanham a tarefa; sem alegação de descoberta independente ou domínio avançado."
+    },
+    {
+      "id": "R1-A-5",
+      "resultado": "atendido",
+      "fundamento": "Decisão, triagem atual e resumo removem a justificativa invalidante; r1 continua histórica. Ambiguidades conhecidas vazias em CR34 são coerentes com a decisão atual, sem apagar o histórico."
+    }
+  ],
+  "comparacoes_proprias": {
+    "html_reconstruido_integralmente_por_troca_de_um_artigo": true,
+    "registros_alterados": [
+      "cr-e1-34"
+    ],
+    "decisoes_alteradas": [
+      "cr-e1-34"
+    ],
+    "triagens_alteradas": [
+      "cr-e1-34"
+    ],
+    "estatisticas_recontadas": {
+      "iniciante": 169,
+      "intermediario": 24,
+      "avancado": 4
+    },
+    "linhas_cr34_resumo": [
+      "| [34. Aquecimento isocórico](../../../modulos/e1-termodinamica.html#cr-e1-34) | C03, C04 | intermediario | 3 | Integra o balanço energético e a restrição de entropia para distinguir condição da igualdade e sinal de ΔU. As hipóteses e a demonstração são fornecidas na análise, e o roteiro pede acompanhá-las: é estudo intermediário guiado, sem construção independente de processo nem evidência de autonomia avançada. |",
+      "| [cr-e1-34](../../../modulos/e1-termodinamica.html#cr-e1-34) | C | Estudo crítico sem pontuação | Estudo pedagógico de modelos: distinguir a desigualdade ΔU>0 afirmada pelo original da identidade adicional ΔU=Q. Não foi demonstrada invalidade da chave C pela presença de outros trabalhos. |"
+    ]
+  },
+  "fontes_herdadas": "As três fontes MIT são exatamente as consultadas pelo Auditor para R1-A em r1 (node14 SPRING; node40 e41 FALL). As páginas oficiais/contexto/chave53C foram vistos em PNG na r1 e seus arquivos permanecem sob conferência de identidade. Não repeti consultas externas sem novo motivo.",
+  "limites": [
+    "Não repeti a revisão científica dos196 registros ou a suíte comportamental doJS intacto.",
+    "Navegador r2 executado pelo coordenador; não pelo Auditor.",
+    "Sem aplicação com alunos, acessibilidade integral ou certificação global."
+  ],
+  "pendencias_cientificas": [],
+  "decisao": "APROVADO",
+  "evidencia_tecnica": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-10-r2-tecnico.json",
+    "sha256": "5a1b461f5f6523f82098d353d5a7aefa5e87131ee6c9be812f95fb4378b5081a",
+    "resultado": "99/99 verificações;197/29/1166 sem erros/avisos; import limpo e igualdade integral com evidência entregue;26entradas e9cópias;delta19campos e preservação r1."
+  }
+}

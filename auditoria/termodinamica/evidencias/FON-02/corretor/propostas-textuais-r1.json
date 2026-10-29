@@ -1,0 +1,56 @@
+[
+  {
+    "id": "cr-e1-24",
+    "antes": "Essa conta pressupõe que o ponto triplo da água seja somente a referência térmica.",
+    "depois": "Essa conta pressupõe que o ponto triplo da água seja somente a referência térmica. <strong>Conversão adotada na resolução:</strong> T/K = t/°C + 273,15, conforme <a href=\"https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0\" rel=\"noopener noreferrer\" target=\"_blank\">BIPM, Brochura SI, 9ª edição, V3.01 (2024), p. 133</a>. Assim, 373,15 K e 273,16 K são conversões dos valores nominais 100 °C e 0,01 °C do original; o segundo não é uma definição exata atual do kelvin.",
+    "justificativa": "Rastrear conversão sem atribuir novos dados à prova."
+  },
+  {
+    "id": "cr-e1-33",
+    "antes": "<p>A fronteira externa é rígida e não há trabalho de expansão contra o vácuo. O isolamento fornece Q = 0. Logo, ΔU = 0 e, para gás ideal, ΔT = 0. A expansão é irreversível e a entropia aumenta, mesmo sem mudança de temperatura.</p>",
+    "depois": "<p>A fronteira externa é rígida e não há trabalho de expansão contra o vácuo. O isolamento fornece Q = 0. <strong>Modelo da resolução:</strong> com a massa e a composição fixas, sem outras interações de trabalho e desprezando variações das energias cinética e potencial macroscópicas entre os equilíbrios inicial e final, o <a href=\"https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html\" rel=\"noopener noreferrer\" target=\"_blank\">balanço de energia</a> reduz-se a ΔU = Q − W = 0. Para gás ideal, ΔT = 0. A expansão é irreversível e a entropia aumenta, mesmo sem mudança de temperatura.</p>",
+    "justificativa": "Distinguir condições adicionais de redução do balanço das condições já fornecidas."
+  },
+  {
+    "id": "cr-e1-36",
+    "antes": "<p>A condição adiabática zera o calor, não o trabalho. Um gás pode empurrar um pistão isolado termicamente, realizando trabalho e reduzindo sua energia interna. No modelo ideal reversível, pVᵏ é constante e a expansão geralmente diminui a temperatura.</p>",
+    "depois": "<p>A condição adiabática zera o calor, não o trabalho. <strong>Exemplo autoral:</strong> uma massa fixa de gás pode empurrar um pistão isolado termicamente; se não houver outro trabalho nem variações relevantes de energia cinética e potencial macroscópicas, ΔU = −W e a energia interna diminui na expansão que produz trabalho. Como ilustração adicional, pVᵏ é constante para massa e composição fixas de gás ideal, com cₚ e cᵥ constantes, k = cₚ/cᵥ, numa compressão ou expansão simples adiabática reversível. Nesse modelo a expansão diminui T. A <a href=\"https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node17.html\" rel=\"noopener noreferrer\" target=\"_blank\">derivação do MIT, §2.4.2</a> delimita essa relação suplementar; ela não é necessária para rejeitar a afirmação geral W = 0.</p>",
+    "justificativa": "Delimitar modelo calorífico e exemplo sem enriquecimento do enunciado."
+  },
+  {
+    "id": "cr-e1-44",
+    "antes": "<p>Uma etapa adiabática não garante rendimento total ao ciclo. Uma máquina térmica operando entre fontes finitas precisa rejeitar calor. Se o ciclo inteiro fosse adiabático, ΔU no ciclo seria zero e Qlíquido também: pela primeira lei, o trabalho líquido seria zero.</p>",
+    "depois": "<p>Uma etapa adiabática não garante rendimento total ao ciclo. <strong>Modelo usado na explicação:</strong> uma máquina térmica cíclica fechada, com apenas dois reservatórios a temperaturas absolutas constantes, finitas e positivas, tem rendimento limitado por <a href=\"https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle\" rel=\"noopener noreferrer\" target=\"_blank\">Carnot</a> e rejeita calor ao produzir trabalho líquido. Se uma massa fechada completasse um ciclo inteiramente adiabático, retornando também aos mesmos estados cinético e potencial macroscópicos, ΔU = ΔEcin = ΔEpot = 0 e Qlíquido = 0; pela primeira lei, Wlíquido = 0. Essas condições explicativas não transformam uma etapa isolada em um ciclo completo.</p>",
+    "justificativa": "Definir modelo cíclico e temperaturas das fontes sem ambiguidade de capacidade térmica."
+  },
+  {
+    "id": "cr-e1-45",
+    "antes": "<p>O trabalho proposto é 900 − 90 = 810 kJ e a eficiência é 810/900 = 90%. Convertendo as fontes: Tquente = 750,15 K e Tfria = 300,15 K. Carnot limita η a 1 − 300,15/750,15 ≈ 60%. O rendimento de 90% excede o limite, embora conserve energia.</p>",
+    "depois": "<p><strong>Leitura adotada na resolução:</strong> máquina cíclica fechada, com somente as duas trocas de calor indicadas e trabalho líquido, retornando ao mesmo estado energético a cada ciclo. O trabalho proposto é 900 − 90 = 810 kJ e a eficiência é 810/900 = 90%. Pela <a href=\"https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0\" rel=\"noopener noreferrer\" target=\"_blank\">conversão Celsius–kelvin do SI</a>, somam-se 273,15 aos valores numéricos em °C: Tquente = 750,15 K e Tfria = 300,15 K. Para os dois reservatórios, <a href=\"https://openstax.org/books/university-physics-volume-2/pages/4-5-the-carnot-cycle\" rel=\"noopener noreferrer\" target=\"_blank\">Carnot</a> limita η a 1 − 300,15/750,15 ≈ 60%. O rendimento de 90% excede o limite, embora conserve energia nesse balanço.</p>",
+    "justificativa": "Separar modelo e conversão dos resultados derivados dos valores originais."
+  },
+  {
+    "id": "cr-e1-50",
+    "antes": "<p>Para a mesma comparação de estados e razão de pressões, as irreversibilidades aumentam o trabalho necessário no compressor e reduzem o produzido na turbina. A parcela consumida pelo compressor tende a aumentar, diminuindo o trabalho líquido do conjunto.</p>",
+    "depois": "<p><strong>Comparação adotada na resolução:</strong> para cada componente, compara-se o escoamento real com a referência isentrópica, mantendo o mesmo fluido, o mesmo estado de entrada e a mesma pressão de saída. Usam-se regime permanente, uma entrada e uma saída, operação adiabática, variações cinética e potencial desprezíveis e somente trabalho de eixo além do trabalho de escoamento já incluído em h. Nesse <a href=\"https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html\" rel=\"noopener noreferrer\" target=\"_blank\">balanço de volume de controle</a>, as irreversibilidades elevam o trabalho específico exigido pelo compressor e reduzem o produzido pela turbina. Não se impõem iguais entalpias ou temperaturas de saída entre os casos real e isentrópico. Na comparação do conjunto sob essas condições, aumenta a parcela consumida pelo compressor e diminui o trabalho líquido.</p>",
+    "justificativa": "Precisar grandezas mantidas e balanço; não igualar estados finais incompatíveis."
+  },
+  {
+    "id": "cr-e1-57",
+    "antes": "<p>No modelo ideal de ar com calores específicos constantes, η = 1 − 1/rp^((k−1)/k). rp é a razão de pressões do compressor e k = cp/cv. Para k maior que 1, elevar rp aumenta essa eficiência. A conclusão não autoriza aumentos ilimitados em uma turbina real com temperatura máxima fixada.</p>",
+    "depois": "<p><strong>Relação suplementar da resolução:</strong> para o <a href=\"https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html\" rel=\"noopener noreferrer\" target=\"_blank\">Brayton ideal, MIT §3.7</a> com ar tratado como gás ideal de composição e calores específicos constantes, compressão e expansão isentrópicas e trocas de calor isobáricas, η = 1 − 1/rp^((k−1)/k). rp é a razão de pressões do compressor e k = cp/cv. Para k maior que 1, elevar rp aumenta essa eficiência no domínio de operação do ciclo motor. A conclusão não autoriza aumentos ilimitados em uma turbina real com temperatura máxima fixada.</p>",
+    "justificativa": "Identificar relação e condições sem fornecer parâmetros inexistentes."
+  },
+  {
+    "id": "cr-e1-65",
+    "antes": "<p>No modelo de escoamento permanente com perdas de calor e variações cinética e potencial desprezíveis, a potência produzida é vazão mássica × queda de entalpia. A entalpia do vapor diminui ao fornecer trabalho ao eixo. Uma turbina real pode ser aproximadamente adiabática sem ser reversível.</p>",
+    "depois": "<p><strong>Modelo da resolução:</strong> <a href=\"https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html\" rel=\"noopener noreferrer\" target=\"_blank\">escoamento permanente</a> com uma entrada e uma saída, trocas de calor e variações cinética e potencial desprezíveis, e nenhuma interação de trabalho relevante além da de eixo e da de escoamento. Como o trabalho de escoamento pv já está incluído em h, a potência de eixo produzida é vazão mássica × queda de entalpia. A entalpia do vapor diminui ao fornecer esse trabalho. Uma turbina real pode ser aproximadamente adiabática sem ser reversível.</p>",
+    "justificativa": "Justificar redução à potência de eixo."
+  },
+  {
+    "id": "cr-e1-80",
+    "antes": "justificativa oficial, PDF p. 5</a>, também iguala geração e convecção para chegar a 40 °C; essa é uma justificativa documentada da banca, mas não acrescenta regime permanente ao comando da p. 4.",
+    "depois": "justificativa oficial na versão histórica (sem efeito), PDF p. 5</a>, também iguala geração e convecção para chegar a 40 °C; essa é uma justificativa documentada da banca, mas não acrescenta regime permanente ao comando da p. 4 dessa versão histórica.",
+    "justificativa": "Identificar versão consultada sem alterar interpretação ou página."
+  }
+]

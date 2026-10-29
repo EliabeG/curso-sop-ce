@@ -1,0 +1,27 @@
+# BAN-08 — confronto independente Q21–Q25
+
+Data 29/10/2026. Revisor e autor das contas abaixo: agente automatizado `/root/auditor_ban08_novo`; leitura sem cegamento. Documento parcial de apoio; não aprova BAN-08 nem libera outro ID. Confrontei individualmente enunciados, cinco opções, comentários e bases no `modulos/e1-termodinamica.html` SHA-256 `80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0`. Hashes por ID abaixo são dos artigos brutos UTF-8; são questões autorais pontuáveis. A autoria das contas do Corretor é `/root/inspect_repo`, `auditoria/termodinamica/evidencias/BAN-08/q21-25-corretor-r1.json` SHA-256 `c032f8a8e221e7fa0d7929f3b6a4ce18c3d7e7fa388c33ff728f34c3c3e7235c`; o apoio preliminar do coordenador `/root` é `pareceres/BAN-08-apoio-coordenador-q21-30.json`, SHA-256 `b473e175e28d19fbd39701766c1b7193c286573339edba8ffdc2cc08db77d099`. Não reutilizo sua aritmética como se fosse execução própria: as demonstrações a seguir são minhas e confrontam ambas peças.
+
+Fontes de modelo: bases do próprio HTML identificadas por ID; MIT OCW, Unified Engineering §5.3 https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_5.htm e 2.611 aula Diesel https://www.ocw.mit.edu/courses/2-611-marine-power-and-propulsion-fall-2006/7392279a5ce43fe2a653d6b4a8f58de8_14basic_diesel.pdf para modelos ar-padrão; DOE, *Guide to Combined Heat and Power Systems for Boiler Owners and Operators*, §4, p. 85 https://www.energy.gov/sites/prod/files/2014/05/f15/guide_chp_boiler.pdf para disposição dos tubos; MIT OCW 2.60J aula 2 p. 14 https://ocw.mit.edu/courses/2-60j-fundamentals-of-advanced-energy-conversion-spring-2020/54a791b898a31befeea178f796efcd9c_MIT2_60s20_lec2.pdf para h aproximadamente constante em estrangulamento. Acesso 29/10/2026. Dados numéricos do exercício são didáticos, não propriedades de refrigerante real verificadas em tabela.
+
+## Q21 — E
+
+Hash `0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01`; bases `#base-comparar-ciclos`, `#ciclos`. Sob ar-padrão, adição de calor Otto a volume constante, Diesel a pressão constante; compressão e expansão são isentrópicas. A incorretamente impõe adição isentrópica; B troca modelos; C atribui apenas isotérmicas ao Otto; D elimina rejeição; E distingue. A observação C sobre Carnot contém duas isotermas e duas adiabáticas reversíveis: 2+2=4 processos, contagem exata. Sem outra grandeza medida; tolerância numérica não aplicável às classificações. Concordo com Corretor e coordenador; resultado localizado sem divergência.
+
+## Q22 — C
+
+Hash `df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57`; base `#base-compressao-estagios`: gás ideal, mesmos cp/cv, eficiência isentrópica, vazão, pressão intermediária e condições dos estágios, sem perdas no resfriador, com resfriamento à temperatura inicial. Para uma mesma razão r>1 e propriedades fixas, w_estágio=(cp T_entrada/ηc)(r^a−1), a=(k−1)/k>0; resfriamento diminui T_entrada no estágio seguinte e, portanto, seu trabalho positivo; reduz v=RT/p na sucção. Comparação exige a mesma razão de cada estágio e modelo, não prova aumento universal da eficiência do ciclo completo. A generaliza ciclo completo, B transforma equivocadamente máquina, D elimina perdas, E inverte sinal do efeito; C é correta. Não há grandezas para calcular redução numérica; tolerância não aplicável, desigualdade estrita para resfriamento efetivo e r>1. Concordo com ambas peças, com essa condição explícita.
+
+## Q23 — C
+
+Hash `65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf`; base `#base-refrigeracao`: uma vazão, regime estacionário, compressor e válvula adiabáticos, variações macroscópicas e trabalhos dos demais equipamentos desprezíveis. Em kJ/kg qL=400−250=150, wc=450−400=50, qH=450−250=200; qH=qL+wc. COP_R=150/50=3 adimensional; publicado 150, 50 e 3, diferenças nominais 0. A=400/50=8 usa entalpia de referência; B=1 não calcula saltos; D=50/150=1/3≈0,33; E=200/50=4 é COP de aquecimento. Os valores exatos são separados; em D o arredondamento ao centésimo mais próximo, empates para cima, admite [0,325;0,335), contém 1/3, erro ≈0,003333. Não é margem metrológica. Concordo com cálculos e fonte didática das duas peças.
+
+## Q24 — C
+
+Hash `6215c6a02392e33e0ac74907fea506a63ecb92d171eccb65502ebf8d5867db14`; base `#base-vapor-industrial`. Gases de combustão circulam pelos tubos aquecedores rodeados por água, paredes separam fluidos; C. A descreve aquatubular; B confunde com superaquecedor; D supõe mistura em contato direto; E confunde combustível antes da combustão com gases após a queima. Sem números ou relações quantitativas na resolução, resultado e tolerância numéricos não aplicáveis por classificação geométrica. Concordo com as peças e com a referência DOE; não excluo outros tubos de finalidade diferente em instalações.
+
+## Q25 — E
+
+Hash `c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3`; bases `#base-balanco-transiente`, `#base-bocal-difusor`, `#base-valvula-fase`. Permanente significa ∂/∂t=0 em cada ponto fixo, não uniformidade espacial: E é incorreta. A/B são possibilidades para turbina/bocal sob balanços usuais; C h=u+pv é definição dimensionalmente exata; D é possível com calor, trabalho e variações de energias macroscópicas desprezíveis. Sem dados numéricos a comparar; tolerância numérica não aplicável às relações simbólicas. Concordo com Corretor e coordenador.
+
+Nenhuma divergência numérica localizada neste bloco. Não há piloto com estudantes, validação de fluido real ou decisão global; produto e controle não foram alterados.

@@ -1,0 +1,379 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "CR61–CR65",
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "BLOCO_CONCLUIDO; quatro itens pontuáveis e um estudo crítico aprovados em seus escopos; sem aprovação global",
+  "criterio": "Suficiência, consistência física, comando, unidades e restrições; demonstração da chave e oposição C/E. Em CR62 separar chave oficial, análise técnica e uso sem nota; unicidade de pontuação não se aplica ao estudo crítico.",
+  "base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "extrato_anterior": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+    "metodo": "Importação do parser canônico e extração filtrada por ID. Primeiro lidos somente os textos anteriores aos details de comentário; chaves técnicas derivadas e anunciadas, depois lidos os comentários separadamente. Identidade individual conferida com o extrato."
+  },
+  "fontes_comuns_lidas": [
+    {
+      "referencia": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "alcance": "Papéis e padrão de aceite; lido no bloco CR51–55"
+    },
+    {
+      "referencia": "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+      "alcance": "Critérios por formato, limites de herança e nove estudos críticos; lido no bloco CR51–55"
+    }
+  ],
+  "registros": [
+    {
+      "id": "cr-e1-61",
+      "sha256_artigo": "745cde3da24b14b573ac4b3fb6cca25d7e1cf90b099d9a8f05adcbd86bb86143",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. A palavra sempre pode ser refutada por um compressor usual com folga e reexpansão; não exige valores de vazão ou propriedade do gás natural.",
+      "demonstracao": "A eficiência volumétrica é volume de gás fresco admitido nas condições de sucção dividido pelo volume varrido. O gás retido na folga após a descarga reexpande antes de abrir a admissão, consumindo parte do aumento de volume sem entrada de gás fresco. Logo a razão pode ser menor que 1 mesmo sem vazamento. Exemplo limite isoterma/gás ideal: volume varrido 1 L, folga 0,05 L e razão de pressões absolutas 4. O residual reexpande a 0,20 L; a admissão vai desse volume até 1,05 L, recebendo 0,85 L na referência de sucção. eta_v=0,85, refutando sempre igual a 1.",
+      "calculo_independente": {
+        "natureza": "Contramodelo autoral; não são dados atribuídos à prova",
+        "volume_varrido_L": 1,
+        "volume_folga_L": 0.05,
+        "razao_p_absolutas": 4,
+        "volume_reabertura_L": 0.2,
+        "volume_fresco_succao_L": 0.8500000000000001,
+        "eta_v": 0.8500000000000001
+      },
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Confunde deslocamento geométrico com volume fresco efetivamente admitido; valor unitário de uma idealização não é regra universal."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "A folga fornece contramodelo direto, e outras perdas podem alterar ainda mais a eficiência."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Apresenta reexpansão, aquecimento, válvulas e vazamentos como fatores e admite eta_v unitária apenas em idealização.",
+      "criterios": {
+        "dados": "ATENDIDO — refutação de alegação universal",
+        "consistencia_fisica": "ATENDIDO — reexpansão e referência de sucção",
+        "comando": "ATENDIDO — qualificador sempre considerado",
+        "unidades": "ATENDIDO — volumes na mesma referência e por ciclo; eta_v adimensional",
+        "restricoes": "ATENDIDO — exemplo isoterma apenas demonstra possibilidade física, não presume modelo exato do gás natural",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "ATENDIDO — 0,85 difere claramente de 1; sem equivalência de opções",
+        "oposicao": "ATENDIDO — deslocamento geométrico versus admissão real; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-61",
+          "alcance": "Artigo atual em duas leituras separadas; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-eficiencia-volumetrica",
+          "alcance": "Div completo lido neste bloco: definição, referência de sucção e perdas"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-valvulas-compressor",
+          "alcance": "Base integral lida no bloco CR56–60: reexpansão antes da nova admissão"
+        }
+      ],
+      "heranca": "Nenhum parecer científico herdado; contramodelo derivado pelo revisor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-62",
+      "sha256_artigo": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "tipo": "estudo crítico sem pontuação",
+      "chave_documental_produto": "C",
+      "chave_derivada": "Sem chave técnica incondicional: C na admissão efetiva em orientação convencional; E para toda a descida quando há folga e reexpansão.",
+      "suficiencia": "ATENDIDO PARA O ESTUDO CRÍTICO. O aviso anterior à marcação declara a ambiguidade e a ausência de nota; o roteiro pede distinguir retorno/reexpansão e admissão. Não se aprova o texto isolado como item pontuável de resposta científica única.",
+      "demonstracao": "Após a descarga, o residual de alta pressão permanece no volume de folga. Ao aumentar o volume, primeiro reexpande com ambas as válvulas fechadas até cair à condição de abertura da admissão. Só então há entrada de gás, com admissão aberta e descarga fechada. Logo a frase pode descrever corretamente a admissão efetiva, mas não todo o curso de retorno. A direção descer pressupõe um desenho e não é condição física universal; aumento do volume e diferença de pressão são as referências adequadas.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CHAVE_DOCUMENTAL; TECNICAMENTE_CONDICIONAL",
+          "justificativa": "Compatível com o intervalo de entrada efetiva de gás e a orientação usual; não prova que toda a descida tem a admissão aberta."
+        },
+        {
+          "opcao": "E",
+          "juizo": "DEFENSAVEL_NA_LEITURA_DO_CURSO_INTEIRO",
+          "justificativa": "Com folga positiva, no início da descida pode haver reexpansão sem entrada, ambas as válvulas fechadas. A geometria descer também não universaliza a condição."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. A resolução de referência é explicitamente condicionada; a análise posterior distingue as duas leituras e a orientação, sem afirmar anulação/errata oficial. O critério de autocorreção pede exatamente as distinções físicas relevantes.",
+      "uso_sem_nota": {
+        "tipo_evidencia": "Inspeção do artigo e do código atual; não é teste de navegador nem piloto",
+        "marcacao_artigo": "data-cr-avaliacao=estudo-critico",
+        "codigo": "assets/curso.js",
+        "sha256_codigo": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "verificacao": "estudoCritico exige módulo e1 e o atributo estudo-critico; mostrarResposta remove data-cr-resultado e informa somente coincidência com a chave oficial. filtrar conta críticos à parte e os exclui de respondidas/certas/incorretas e do denominador pontuável.",
+        "resultado": "Compatível com uso exclusivamente documental e estudo sem nota."
+      },
+      "criterios": {
+        "dados": "ATENDIDO para explorar a ambiguidade; insuficiente para uma chave técnica incondicional se pontuado",
+        "consistencia_fisica": "ATENDIDO na análise crítica; não endossa generalização falsa da chave oficial",
+        "comando": "ATENDIDO — roteiro crítico anterior à resposta e autocorreção",
+        "unidades": "NAO_APLICAVEL",
+        "restricoes": "ATENDIDO — intervalo, folga e orientação explicitados",
+        "unicidade": "NAO_APLICAVEL ao estudo sem nota; duas leituras técnicas registradas",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — ambas as letras confrontadas por condição física, sem inventar distratores adicionais"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-62",
+          "alcance": "Aviso, texto, marcação documental, roteiro e análise atual; hash acima. Chave oficial atribuída ao produto, sem nova conferência do PDF."
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-valvulas-compressor",
+          "alcance": "Div integral lido no bloco CR56–60: reexpansão, válvulas e dependência da orientação"
+        },
+        {
+          "referencia": "assets/curso.js",
+          "alcance": "Inspeção neste bloco das funções estudoCritico, mostrarResposta e filtrar; hash declarado na evidência de uso sem nota"
+        },
+        {
+          "referencia": "https://gunt.de/en/products/fluid-machinery/driven-machines/fans-and-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-752:pr-240",
+          "consulta": "2026-10-28",
+          "alcance": "GUNT ET508: demonstração de residual na folga que reexpande antes de abrir a admissão. O exemplo de ar atmosférico não foi transformado em hipótese de sucção atmosférica para gás natural."
+        }
+      ],
+      "heranca": "Não foi herdada nova comprovação da chave documental; a decisão BAN-10 permanece atribuída no produto e a ciência foi rederivada.",
+      "achados": [
+        {
+          "tipo": "ambiguidade histórica já exposta",
+          "descricao": "Admissão efetiva versus curso inteiro de retorno, além de orientação geométrica.",
+          "novo_impeditivo": false,
+          "tratamento": "Roteiro, análise condicionada e exclusão da nota presentes."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07_COMO_ESTUDO_CRITICO_SEM_NOTA"
+    },
+    {
+      "id": "cr-e1-63",
+      "sha256_artigo": "777d85e75efa77ab3c17204d511d215d72be4519ee59f4b06e371c9d9bc30695",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. Identifica a turbina a gás convencional e nomeia incorretamente seu ciclo; nenhum dado numérico ou hipótese adicional é necessário para refutar a atribuição a Stirling.",
+      "demonstracao": "O modelo convencional de turbina a gás é Brayton: compressor, fornecimento de calor/combustão, expansão na turbina e rejeição/exaustão. Stirling ideal é um ciclo de massa fechada com duas isotermas e duas isocóricas regenerativas; combustão interna e exaustão do fluido de trabalho não formam sua sequência. A troca do nome do ciclo basta para tornar a proposição falsa.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "A presença de gás como fluido não torna o equipamento uma realização do Stirling; processos e mecanismos diferem."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "Rejeita a atribuição da sequência convencional da turbina a gás ao ciclo Stirling."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Corrige a associação para Brayton e descreve corretamente o Stirling ideal sem alegar que toda máquina com gás siga o mesmo ciclo.",
+      "criterios": {
+        "dados": "ATENDIDO — reconhecimento de modelo",
+        "consistencia_fisica": "ATENDIDO — ciclos e equipamento distinguidos",
+        "comando": "ATENDIDO — proposição falsa por nome/processos do ciclo",
+        "unidades": "NAO_APLICAVEL",
+        "restricoes": "ATENDIDO — turbina a gás convencional; não depende de desempenho ideal exato",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — confusão entre gás como fluido e identidade do ciclo; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-63",
+          "alcance": "Enunciado e opções lidos antes do comentário; artigo atual por hash"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-comparar-ciclos",
+          "alcance": "Div completo lido no bloco CR56–60: Brayton e Stirling com seus processos e equipamentos"
+        },
+        {
+          "referencia": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+          "alcance": "Fonte acadêmica efetivamente lida no bloco CR56–60: Brayton representa a turbina a gás; não foi alegada uma descrição de Stirling nessa página"
+        }
+      ],
+      "heranca": "Nenhum parecer anterior tomado como prova científica; fonte já lida reutilizada apenas no alcance descrito.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-64",
+      "sha256_artigo": "5cb37f5064e8114789a60496810e7ebd847a164bcb798385e5c0f5b37fef7313",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. A analogia é delimitada pelo próprio enunciado: aprisionar gás e reduzir seu volume, sem afirmar movimento ou curvas operacionais idênticos.",
+      "demonstracao": "No compressor de pistão, a câmara aprisionada diminui pela translação do pistão; no parafuso, a rotação dos rotores faz diminuir os bolsões de gás entre os perfis e a carcaça durante seu transporte à descarga. Ambos empregam deslocamento positivo e trabalho mecânico sobre volume decrescente. O movimento rotativo dos parafusos não os torna compressores dinâmicos de pás/difusor.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "A descrição identifica corretamente o mecanismo de deslocamento positivo comum a pistão e parafuso."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Confundiria a diferença cinemática entre rotação e translação com diferença de princípio de compressão; a analogia não exige que ambos tenham pistões."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Nomeia a câmara do pistão e os bolsões entre rotores/carcaça, contrastando o princípio com o de compressores dinâmicos.",
+      "criterios": {
+        "dados": "ATENDIDO — classificação de mecanismo",
+        "consistencia_fisica": "ATENDIDO — bolsões aprisionados com redução de volume",
+        "comando": "ATENDIDO — alcance da analogia explicitado",
+        "unidades": "NAO_APLICAVEL",
+        "restricoes": "ATENDIDO — analogia pelo princípio, sem identidade operacional total",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — rotação não implica ação dinâmica; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-64",
+          "alcance": "Enunciado e opções antes do comentário; artigo atual por hash"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-tipos-compressores",
+          "alcance": "Div completo lido no bloco CR51–55: parafuso e pistão em deslocamento positivo, redução de volume e distinção dos dinâmicos"
+        }
+      ],
+      "heranca": "Nenhum parecer anterior tomado como prova científica; descrição do mecanismo conferida independentemente.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-65",
+      "sha256_artigo": "9322946ef9f40d87e6ff05c7a9d49c484260044be286ecbe9153b3a05dedeeda",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C no modelo usual de turbina com troca térmica desprezível",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO como reconhecimento do modelo termodinâmico usual de expansão em turbina a vapor. A base vinculada antes da tentativa exemplifica turbina adiabática. Não há promessa de que toda turbina real tenha exatamente zero perda de calor.",
+      "demonstracao": "Na expansão através da turbina, o vapor entrega trabalho de eixo. No modelo adiabático estacionário, Qdot=0; a primeira lei dá Wdot_out=mdot[(h1-h2)+(V1²-V2²)/2+g(z1-z2)]. Quando as variações cinética e potencial são desprezíveis, a queda de entalpia fornece Wdot_out=mdot(h1-h2)>0. Adiabático elimina a transferência de calor, não o trabalho. Reversibilidade não é exigida: a entropia pode aumentar em uma turbina adiabática real.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA_NO_MODELO_USUAL",
+          "justificativa": "A expansão adiabática com produção de trabalho é o modelo convencional do equipamento; não é necessário confundir adiabática com isentrópica."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA_NO_MODELO_USUAL",
+          "justificativa": "Negaria o modelo de turbina ou trataria Q=0 como trabalho nulo. Perdas térmicas de uma máquina concreta exigiriam dados específicos e não tornam falsa a descrição convencional do ciclo."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Lista hipóteses somente para a expressão simplificada de potência, inclui pv na entalpia e afirma que uma turbina real pode ser aproximadamente adiabática sem reversibilidade. Não exige gás ideal para o vapor nem cp constante.",
+      "criterios": {
+        "dados": "ATENDIDO — identificação de processo, sem cálculo de propriedade requerido",
+        "consistencia_fisica": "ATENDIDO — balanço de energia de volume de controle e trabalho de eixo",
+        "comando": "ATENDIDO como descrição convencional, sem o qualificador universal sempre",
+        "unidades": "ATENDIDO — mdot em kg/s e h em kJ/kg dão kW; V²/2 e gz requerem a mesma base energética",
+        "restricoes": "ATENDIDO — convenção adiabática da base; hipóteses adicionais do comentário servem à simplificação da potência, não são dados ocultos necessários ao juízo conceitual",
+        "unicidade": "ATENDIDO no domínio usual — somente C",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — confundir ausência de calor com ausência de trabalho, ou adiabático com reversível; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-65",
+          "alcance": "Enunciado e opções antes do comentário; artigo atual por hash"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-turbina-potencia",
+          "alcance": "Div completo lido neste bloco: vapor, modelo adiabático e balanço de potência com unidades"
+        },
+        {
+          "referencia": "https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node18.html",
+          "consulta": "2026-10-28",
+          "alcance": "Fonte acadêmica primária efetivamente aberta; equação de energia em escoamento permanente e entalpia incluindo trabalho de escoamento. A aplicação à turbina foi rederivada pelo revisor."
+        }
+      ],
+      "heranca": "Nenhum parecer anterior tomado como prova científica; fonte e base efetivamente lidas neste bloco.",
+      "achados": [
+        {
+          "tipo": "limite do modelo usual",
+          "descricao": "C não significa isolamento térmico perfeito em toda máquina real, nem transformação necessariamente isentrópica.",
+          "novo_impeditivo": false
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    }
+  ],
+  "limitacoes": [
+    "Bloco parcial; sem aprovação de BAN-07 integral, próximo ID ou classificação global.",
+    "Sem piloto, revisão humana ou certificação externa.",
+    "Não foi refeito o cotejo dos PDFs oficiais; as chaves documentais são atribuídas ao produto e não substituem a demonstração física.",
+    "Produto, controle e checklist não editados."
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "registrados": 5,
+    "ids": [
+      "cr-e1-61",
+      "cr-e1-62",
+      "cr-e1-63",
+      "cr-e1-64",
+      "cr-e1-65"
+    ],
+    "juizos_de_opcoes": 10,
+    "itens_pontuaveis": 4,
+    "estudos_criticos_registrados": 1
+  },
+  "achados_do_bloco": {
+    "novos_impeditivos": 0,
+    "ambiguidade_historica_cr62_com_tratamento_explicito": 1,
+    "limite_de_modelo_usual_cr65": 1,
+    "ajustes_obrigatorios": 0
+  },
+  "decisao_proximo_ID": "NÃO LIBERADO: bloco parcial; não constitui aceite global de BAN-07 nem avanço de ID.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "identidades": [
+      {
+        "id": "cr-e1-61",
+        "sha256_artigo": "745cde3da24b14b573ac4b3fb6cca25d7e1cf90b099d9a8f05adcbd86bb86143",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-62",
+        "sha256_artigo": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-63",
+        "sha256_artigo": "777d85e75efa77ab3c17204d511d215d72be4519ee59f4b06e371c9d9bc30695",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-64",
+        "sha256_artigo": "5cb37f5064e8114789a60496810e7ebd847a164bcb798385e5c0f5b37fef7313",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-65",
+        "sha256_artigo": "9322946ef9f40d87e6ff05c7a9d49c484260044be286ecbe9153b3a05dedeeda",
+        "conferido": true
+      }
+    ],
+    "registros_unicos": 5,
+    "juizos_de_opcoes": 10,
+    "cr62_marcado_estudo_critico": true,
+    "codigo_sem_nota_hash_reconfirmado": true,
+    "escopo_preservado": "Apenas este parecer foi criado pelo auditor no bloco; produto, controle e checklist não editados."
+  }
+}

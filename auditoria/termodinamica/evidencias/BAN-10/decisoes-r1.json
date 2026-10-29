@@ -1,0 +1,489 @@
+{
+  "id": "BAN-10",
+  "rodada": 1,
+  "data": "2026-10-27",
+  "autor": "Corretor AAA, agente automatizado",
+  "alcance": "Decisões editoriais localizadas; não são anulações oficiais, parecer de aprovação ou auditoria global BAN07/BAN08/FON01.",
+  "divergencia_cr39": "O apoio considerou o modelo usual suficiente. O Corretor escolhe exclusão conservadora por não explicitar totalidade das trocas e fronteira do motor de combustão; a chave C é coerente sob modelo térmico convencional declarado.",
+  "criticos": [
+    "cr-e1-04",
+    "cr-e1-09",
+    "cr-e1-24",
+    "cr-e1-34",
+    "cr-e1-35",
+    "cr-e1-39",
+    "cr-e1-62",
+    "cr-e1-79",
+    "cr-e1-80"
+  ],
+  "mantidos": [
+    "cr-e1-51",
+    "cr-e1-55",
+    "cr-e1-68"
+  ],
+  "itens": [
+    {
+      "n": "04",
+      "critico": true,
+      "fonte": "volume",
+      "original": 68,
+      "key": "C",
+      "doc": "p22p",
+      "pagina": 1,
+      "motivo": "Sensibilidades a grandezas de dimensões diferentes não são ordenáveis sem definir estado, escalas e perturbações.",
+      "nota": "A chave oficial C representa a comparação qualitativa usual para líquidos. O texto não define a faixa nem como comparar perturbações de temperatura e pressão; por isso esta pergunta será estudada criticamente, sem entrar no placar.",
+      "pergunta": "Identifique a condição omitida na comparação. É possível ordenar diretamente uma derivada por kelvin e outra por pascal? Explique como formular uma comparação física verificável.",
+      "analise": "Para massa fixa de líquido em uma fase, dv/v = α dT − κ<sub>T</sub> dp, com α = (1/v)(∂v/∂T)<sub>p</sub> e κ<sub>T</sub> = −(1/v)(∂v/∂p)<sub>T</sub>. α tem unidade K⁻¹ e κ<sub>T</sub>, Pa⁻¹. Devem-se comparar efeitos como |αΔT| e |κ<sub>T</sub>Δp|, na mesma faixa e com propriedades adequadas. Baixa compressibilidade não prova uma desigualdade universal entre esses efeitos. A leitura usual da chave é plausível, mas as escalas necessárias não foram especificadas.",
+      "criterio": "Reconhecer a leitura usual C, recusar a comparação direta entre dimensões diferentes e indicar estado/faixa e perturbações necessárias. Uma discordância fundamentada não recebe erro no placar.",
+      "id": "cr-e1-04",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "aa320df8fa7a4638c8a2befa39aac3ce9ea2f8b0b685375ac530e8911c99ea3a",
+      "sha256_artigo_depois": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+      "fontes_tecnicas": [
+        {
+          "titulo": "H. DeVoe, Thermodynamics and Chemistry, 2ª ed., v5 (2014), §7.1, pp. 163–165",
+          "url": "https://faculty.washington.edu/gdrobny/v5-screen.pdf#page=163",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8"
+        }
+      ]
+    },
+    {
+      "n": "09",
+      "critico": true,
+      "fonte": "si",
+      "original": 39,
+      "key": "E",
+      "doc": "tc",
+      "pagina": 1,
+      "motivo": "O item omite a restrição a temperatura termodinâmica/unidade de base; grau Celsius também é unidade SI.",
+      "nota": "O original e a chave E são preservados. A expressão unidade de temperatura no SI não especifica a unidade de base da temperatura termodinâmica. A leitura com essa restrição é diferente da leitura literal sobre unidades SI.",
+      "pergunta": "Diferencie temperatura termodinâmica e temperatura Celsius. Explique em qual leitura a chave E é coerente e por que isso não permite afirmar que °C esteja fora do SI.",
+      "analise": "A temperatura termodinâmica usa o kelvin como unidade de base. A temperatura Celsius é t = T − 273,15 K e sua unidade SI é o grau Celsius. A chave E é coerente ao restringir a frase à unidade de base da temperatura termodinâmica; a restrição não aparece expressamente no comando. O curso não atribui essa interpretação à banca como justificativa documentada.",
+      "criterio": "Nomear as duas grandezas/unidades, localizar a restrição adicional e preservar a distinção entre chave documental e interpretação técnica.",
+      "id": "cr-e1-09",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "13a9f322f73a5e0da456eaa3b8accc36d53cc56bafea42eb7c41d07d1b93a1e7",
+      "sha256_artigo_depois": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780",
+      "fontes_tecnicas": [
+        {
+          "titulo": "BIPM, Brochura do SI, 9ª ed., v4.01 (2026), §2.3.1 e tabela 4",
+          "url": "https://www.bipm.org/en/publications/si-brochure",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_019_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "ff13fb949d16969fb9b5cff2802a04e00a7673425d61be5efb5252c4a7b64c6a"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_019_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "7ec433277a8229d31c145b09fcefa3dacbc53c49bfcff4617e9782623241d45e"
+        }
+      ]
+    },
+    {
+      "n": "24",
+      "critico": true,
+      "fonte": "gas",
+      "original": 52,
+      "key": "E",
+      "doc": "trf",
+      "pagina": 1,
+      "motivo": "A razão literal entre pressão de gás e pressão de água não é determinada; a interpretação de termômetro exige a mesma amostra de gás.",
+      "nota": "A frase oficial compara pressões de substâncias diferentes. O quociente entre temperaturas somente resolve outra leitura, em que o ponto triplo é uma referência térmica para a mesma amostra gasosa.",
+      "pergunta": "Escreva a razão pedida na leitura literal e identifique o dado ausente. Depois declare explicitamente a hipótese que permite usar 373,15/273,16.",
+      "analise": "Na leitura literal, p<sub>gás</sub>/p<sub>água</sub> = (nR·373,15/V)/p<sub>água</sub>: falta n/V, mesmo se a pressão da água no ponto triplo fosse conhecida. O número 1 não pode ser julgado pela razão de temperaturas de substâncias diferentes. <strong>Suplemento autoral:</strong> se forem pressões da mesma amostra ideal, com n e V constantes, em equilíbrio térmico a 373,15 K e 273,16 K, então p₂/p₁ ≈ 1,366. Essa é uma leitura condicionada compatível com E, não uma emenda silenciosa ao original nem uma definição atual do kelvin.",
+      "criterio": "Apontar n/V ausente na leitura literal e distinguir a pressão da água da pressão do gás termométrico; só aplicar a razão térmica após declarar mesma amostra e volume.",
+      "id": "cr-e1-24",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "971cdc5e085473152882d4c3b22358f7cfbab8b44206cd60bc0c7f399f2a45b2",
+      "sha256_artigo_depois": "887ced079ca74bcde28b91d067b1e6cba6b74e5269fb42c4210952f8e96ae398",
+      "fontes_tecnicas": [
+        {
+          "titulo": "OpenStax, University Physics 2, §2.1, equação 2.2",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "0b5abca04a6892f48c7541018106445f6619f5f5863e061f631f0249899795e3"
+        }
+      ]
+    },
+    {
+      "n": "34",
+      "critico": true,
+      "fonte": "energia",
+      "original": 53,
+      "key": "C",
+      "doc": "trf",
+      "pagina": 1,
+      "motivo": "Volume constante elimina trabalho de fronteira, mas não exclui outros trabalhos nem mudanças macroscópicas de energia.",
+      "nota": "A leitura elementar que sustenta C usa massa fixa, somente trabalho de expansão e ausência de variações de energia cinética/potencial. O comando fornece volume constante, mas não todas essas restrições.",
+      "pergunta": "Qual parcela de trabalho desaparece por ser isocórico? Quais hipóteses adicionais são necessárias para concluir ΔU = Q > 0?",
+      "analise": "Para sistema fechado, ΔU + ΔE<sub>c</sub> + ΔE<sub>p</sub> = Q − W. Volume constante zera o trabalho de fronteira, não necessariamente trabalhos elétricos ou de eixo. Com massa fixa, esses outros trabalhos ausentes e ΔE<sub>c</sub> = ΔE<sub>p</sub> = 0, chega-se a ΔU = Q > 0 e, no gás ideal com capacidade térmica positiva, a aumento de T. Essas são condições da interpretação, não informações expressas no original.",
+      "criterio": "Separar trabalho de fronteira de trabalho total e declarar as condições de massa/energia. Não inferir W total nulo apenas de ΔV = 0.",
+      "id": "cr-e1-34",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "a47876e8910efad89a0cd2db57be4ec07676c9c5d145b139d8e1f6fc76c47f94",
+      "sha256_artigo_depois": "8d5968b24cde31d6374c6ec7e1b29bd550aa198ff44ee76906eeaecf57c80170",
+      "fontes_tecnicas": [
+        {
+          "titulo": "MIT Unified, §2.1, balanço da energia total",
+          "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "0b5abca04a6892f48c7541018106445f6619f5f5863e061f631f0249899795e3"
+        }
+      ]
+    },
+    {
+      "n": "35",
+      "critico": true,
+      "fonte": "energia",
+      "original": 54,
+      "key": "C",
+      "doc": "trf",
+      "pagina": 1,
+      "motivo": "A conclusão usa energia interna onde a lei geral envolve energia total; faltam condições de energia cinética/potencial.",
+      "nota": "A chave C é coerente com o modelo em que as energias cinética e potencial não variam. Fechado e adiabático, por si sós, não impõem essas duas condições.",
+      "pergunta": "Reescreva o balanço antes de desprezar parcelas. Uma elevação do sistema, com trabalho recebido e sem calor, precisa aumentar sua energia interna?",
+      "analise": "Com Q = 0, o balanço é ΔU + ΔE<sub>c</sub> + ΔE<sub>p</sub> = −W. Portanto ΔU = −W apenas se a soma das variações macroscópicas for nula. Num levantamento ideal sem mudança de velocidade ou estado interno, o trabalho recebido pode corresponder a ΔE<sub>p</sub>, com ΔU = 0. O exemplo é um contramodelo autoral, não dado da prova. A chave conserva sentido no modelo usual de sistema em repouso e sem alteração de elevação.",
+      "criterio": "Manter a convenção W produzido positivo, escrever o balanço total e explicar a condição de redução a ΔU = −W.",
+      "id": "cr-e1-35",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "d53be4ae75a24d7c7369d8b408adf0a4e49cf51e9b315951a1029f3dc0cc4986",
+      "sha256_artigo_depois": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa",
+      "fontes_tecnicas": [
+        {
+          "titulo": "MIT Unified, §2.1, balanço da energia total",
+          "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "74a764fdb11ca13d527674c39206f44cbd4b5b1392cdee1f8bce9d8016ac4d79"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "0b5abca04a6892f48c7541018106445f6619f5f5863e061f631f0249899795e3"
+        }
+      ]
+    },
+    {
+      "n": "39",
+      "critico": true,
+      "fonte": "segunda",
+      "original": 66,
+      "key": "C",
+      "doc": "p22p",
+      "pagina": 1,
+      "motivo": "A conclusão de Kelvin–Planck exige explicitar calor total, trabalho líquido e ausência de outros efeitos; motor de combustão real não é automaticamente uma massa fechada cíclica.",
+      "nota": "O cálculo 350 × 4,2 = 1.470 J é inequívoco. O passo que conclui violação da segunda lei pressupõe uma máquina térmica cíclica ideal com essas trocas totais, não qualquer fronteira de um motor de combustão.",
+      "pergunta": "Declare a fronteira e o significado de calor recebido e trabalho. Em que condições a igualdade entre os dois números contradiz Kelvin–Planck? O que mudaria com fluxos de massa ou outras trocas?",
+      "analise": "No modelo convencional, 350 cal são todo o calor recebido de uma única fonte e 1.470 J são o trabalho líquido de um ciclo, sem outros efeitos. Então Q<sub>entra</sub> = W<sub>líq</sub>, Q<sub>rejeitado</sub> = 0, e Kelvin–Planck impede essa conversão integral. A chave C é coerente nesse recorte. Num motor de combustão real, a fronteira pode ter entrada/saída de massa e energia química; os dois números isolados não definem o balanço completo. A exclusão editorial evita premiar somente a escolha tácita de uma fronteira.",
+      "criterio": "Fazer a conversão correta, declarar totalidade das trocas e ciclo líquido, e distinguir modelo térmico de balanço de combustão com massa.",
+      "id": "cr-e1-39",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "fc8dd066d4dec28e64f9692d21fca0e40e33b418816c05b1af4fb8fcc6b7c5af",
+      "sha256_artigo_depois": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "fontes_tecnicas": [
+        {
+          "titulo": "OpenStax, University Physics 2, §4.4, Kelvin–Planck",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8"
+        }
+      ]
+    },
+    {
+      "n": "51",
+      "critico": false,
+      "fonte": "brayton",
+      "original": 98,
+      "key": "C",
+      "doc": "to",
+      "pagina": 4,
+      "motivo": "O ciclo nomeado é tomado em seu modelo ideal convencional, cujos quatro processos não são isotérmicos; não se afirma isso para todas as modificações ou máquinas reais.",
+      "nota": "Mantido no treino: a identificação do ciclo Brayton remete ao modelo ideal convencional ensinado na base. A chave C refere-se a esse ciclo com processos não degenerados; não é uma afirmação sobre toda modificação tecnológica ou turbina real.",
+      "analise": "Compressão/expansão isentrópicas e aquecimento/resfriamento isobáricos formam o Brayton ideal convencional. A descrição do ciclo nomeado é suficiente para a leitura de reconhecimento aqui adotada; versões modificadas devem ser identificadas à parte. Não se acrescenta uma medida de autonomia avançada por reconhecer esse modelo.",
+      "id": "cr-e1-51",
+      "decisao": "manter_treino_delimitado",
+      "sha256_artigo_antes": "e6b795e6c83ad2c125e36b42750e131ddf7da5254fa6cc62f6284b1d5770c098",
+      "sha256_artigo_depois": "fa9b521938d9944137be722345b961fe7f5d2b8aa8acf9ed2dfd2789d7d4256d",
+      "fontes_tecnicas": [
+        {
+          "titulo": "MIT Unified, §3.7, quatro processos do Brayton",
+          "url": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-engenheiro-junior-operacoes_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF",
+          "pagina_pdf": 4,
+          "sha256": "53a8bc2a9cf4142dc548da37f1fa1fe57f46b51408df9de69a0c53bd9d75f356"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2023-10-15_tbg-engenheiro-junior-operacoes_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "680734f6b47d1381d312a1792ec4818d034812d02661ed1933f477697b399a78"
+        }
+      ]
+    },
+    {
+      "n": "55",
+      "critico": false,
+      "fonte": "brayton",
+      "original": 47,
+      "key": "E",
+      "doc": "tm",
+      "pagina": 1,
+      "motivo": "Há expressão anômala oficial, porém o resfriamento isocórico já torna falsa a descrição do Brayton convencional independentemente dela.",
+      "nota": "Mantido no treino com ressalva documental: a expressão “pressão isentrópica” já consta da prova oficial. Não foi criada pelo curso e não é silenciosamente substituída. O resfriamento a volume constante, também escrito no original, basta para rejeitar a descrição do Brayton ideal.",
+      "analise": "A expressão “pressão isentrópica” não nomeia adequadamente um processo e não revela, por si, o que o autor pretendia. Independentemente de sua possível leitura, a rejeição de calor isocórica contradiz o Brayton ideal convencional, que a realiza a pressão constante. Assim E permanece justificável sem adivinhar uma correção tipográfica. Não há aqui errata oficial ou declaração de intenção da banca.",
+      "id": "cr-e1-55",
+      "decisao": "manter_treino_delimitado",
+      "sha256_artigo_antes": "cb970e9fdfa77c97a03cb84a6f337676bdd3cbb626819688c2e001c1b98d386a",
+      "sha256_artigo_depois": "f32de84a31a24cebe70f9d4920a27997f64b170b7bee0723c7b2d01727950230",
+      "fontes_tecnicas": [
+        {
+          "titulo": "MIT Unified, §3.7, quatro processos do Brayton",
+          "url": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "1ebd87b8d6d1cd8a679b575de3a0e901d1283c8b6b92e7a916e775d7cdeb9f7d"
+        }
+      ]
+    },
+    {
+      "n": "62",
+      "critico": true,
+      "fonte": "compressor",
+      "original": 59,
+      "key": "C",
+      "doc": "tm",
+      "pagina": 1,
+      "motivo": "Durante esse movimento pode designar a etapa de admissão ou toda a descida, que pode incluir reexpansão com ambas as válvulas fechadas.",
+      "nota": "A chave C descreve a fase em que há admissão. A leitura de “durante esse movimento” como toda a descida do pistão não é equivalente quando existe volume residual.",
+      "pergunta": "Distinga o movimento de aumento do volume e o intervalo em que efetivamente entra gás. O que ocorre com as válvulas antes da admissão quando há gás residual?",
+      "analise": "Após a descarga, o gás retido na folga reexpande no início do retorno do pistão. Nessa parte, as duas válvulas podem permanecer fechadas; a admissão só começa quando a diferença de pressão a permite. Durante a admissão propriamente dita, a entrada está aberta e a descarga fechada, coerente com C. Sem delimitar o intervalo, o texto comporta essas duas leituras. “Desce” também depende da orientação; a referência física é o aumento do volume da câmara.",
+      "criterio": "Separar retorno/reexpansão de admissão, identificar as válvulas em cada fase e evitar transformar direção geométrica em condição universal.",
+      "id": "cr-e1-62",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "3a2c154691493e54a0f5d4cf7ce38cbedfe11f945938d20cc59d4189217db6b6",
+      "sha256_artigo_depois": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a",
+      "fontes_tecnicas": [
+        {
+          "titulo": "GUNT, ET 508, princípio da reexpansão no compressor alternativo",
+          "url": "https://gunt.de/en/products/fluid-machinery/driven-machines/fans-and-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-752:pr-240",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-mecanica_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "154317cd7e60869143739bba27d18d33fdc788b0269a09be2dd873b33dbf5cc4"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-mecanica_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "1ebd87b8d6d1cd8a679b575de3a0e901d1283c8b6b92e7a916e775d7cdeb9f7d"
+        }
+      ]
+    },
+    {
+      "n": "68",
+      "critico": false,
+      "fonte": "radiacao",
+      "original": 85,
+      "key": "C",
+      "doc": "p24",
+      "pagina": 3,
+      "motivo": "A afirmação de possibilidade de reduzir perda radiativa é válida para superfície quente com demais condições comparáveis, independentemente dos dados de água defeituosos.",
+      "nota": "Mantido no treino — BAN-10: a afirmação fala em possibilidade de reduzir perdas. Para uma superfície mais quente que a vizinhança, mantendo temperaturas, área e geometria comparáveis, reduzir emissividade reduz a parcela radiativa. Os dados de água não entram nesse julgamento.",
+      "analise": "No modelo de superfície cinzenta diante de grande vizinhança isotérmica, Q̇<sub>rad</sub> = εσA(T<sub>s</sub>⁴ − T<sub>v</sub>⁴). Com T<sub>s</sub> > T<sub>v</sub> e demais fatores mantidos, a redução de ε diminui essa parcela. Isso fundamenta a possibilidade expressa pela chave C, sem prometer redução igual de convecção/condução ou manter automaticamente T<sub>s</sub> num equipamento real. O conjunto corrigido FON-09 e sua transcrição histórica continuam separados e preservados.",
+      "id": "cr-e1-68",
+      "decisao": "manter_treino_delimitado",
+      "sha256_artigo_antes": "7cca4d60d34457a5bccb41efe003b4e1012bdac03df25ebfb77458547af3e81a",
+      "sha256_artigo_depois": "868e2438c1a4c020a75209fd26c9bcf0cd08c67fc4b4c7d037f90eff3d5c70f6",
+      "fontes_tecnicas": [
+        {
+          "titulo": "OpenStax, University Physics 2, §1.6, radiação líquida",
+          "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+          "pagina_pdf": 3,
+          "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF",
+          "pagina_pdf": 1,
+          "sha256": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071"
+        }
+      ]
+    },
+    {
+      "n": "79",
+      "critico": true,
+      "fonte": "vacuo",
+      "original": 30,
+      "key": "B",
+      "doc": "inpe",
+      "pagina": 8,
+      "gabPagina": 4,
+      "motivo": "Alto vácuo reduz troca gasosa, mas não fixa predominância radiativa frente à condução por suportes e cabos.",
+      "nota": "O original e a alternativa oficial B são preservados como documento. A predominância radiativa não decorre apenas de alto vácuo e da temperatura das paredes; faltam as ligações térmicas, propriedades e geometria do equipamento.",
+      "pergunta": "Quais mecanismos continuam possíveis? Construa duas montagens compatíveis com o enunciado, uma com radiação predominante e outra com condução predominante. Quais dados distinguiriam as duas?",
+      "analise": "A condução por suportes/cabos pode competir com a radiação; alto vácuo não fixa essa razão. <strong>Contramodelo autoral, não dado da prova:</strong> corpo a 300 K, área 0,10 m², superfícies negras e grande parede a 77,15 K dão aproximadamente 45,73 W radiativos. Se a ligação sólida à parede tiver condutância G = 0,01 W/K, conduz cerca de 2,23 W; com G = 0,50 W/K, conduz 111,43 W. As duas montagens respeitam o contexto térmico, mas invertem a predominância. A chave B corresponde à primeira leitura, sem ser demonstrada pelos dados originais. A troca gasosa foi desprezada nesse contramodelo; não se afirma pressão residual rigorosamente nula.",
+      "criterio": "Reconhecer radiação e condução sólida, apresentar condição/contramodelo que altere sua razão e não usar apenas a palavra vácuo como prova de predominância.",
+      "id": "cr-e1-79",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "88ff393f3f2f11423f9d378da4ac20ac9f1aeaa9a9897d66712e1ba4def13b35",
+      "sha256_artigo_depois": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+      "fontes_tecnicas": [
+        {
+          "titulo": "NASA, Thermal Control (07/05/2026), §§7.2.1 e 7.2.3",
+          "url": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_prova.pdf",
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf",
+          "pagina_pdf": 8,
+          "sha256": "75b0b08db3579c4fcd2111cdf562263f1ce963c6a62bc3295e54ebf8e5280efe"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2024-06-09_inpe-tecnologista-junior-tg15-tipo-1_gabarito.pdf",
+          "url": "https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-inpe-tecnologista-retificado-02.08.pdf",
+          "pagina_pdf": 4,
+          "sha256": "52ff779aca0042f68c4f24f6a5ef615cb4c259c070962ae1bfbb8a9e55a1358b"
+        }
+      ]
+    },
+    {
+      "n": "80",
+      "critico": true,
+      "fonte": "energia",
+      "original": 38,
+      "key": "D",
+      "doc": "cae",
+      "pagina": 4,
+      "motivo": "Uniformidade espacial da superfície não determina acumulação nula; o valor único usa regime permanente e convecção como única troca exposta.",
+      "nota": "A chave D usa um balanço sem acumulação, com convecção como única troca da face exposta. A uniformidade espacial de Tₛ declarada no texto não estabelece constância no tempo.",
+      "pergunta": "Escreva o balanço com acumulação antes de usar as dimensões. Qual hipótese leva a 40 °C? Uma face espacialmente uniforme pode aquecer no tempo?",
+      "analise": "Com as dimensões fornecidas, V = 4 m³, A = 4 m² e geração = 400 W. No modelo de única saída por convecção, dU/dt = 400 − 40(T<sub>s</sub> − 30) W. Se dU/dt = 0, T<sub>s</sub> = 40 °C, a chave D. A igualdade espacial de temperatura sobre a face não impõe essa condição temporal. Se houver radiação ou outra saída, seu termo também deve entrar no balanço. A resolução de referência é válida sob essas hipóteses adicionais, não como determinação geral a partir da uniformidade da face.",
+      "criterio": "Manter o termo de acumulação, separar uniformidade espacial de regime permanente e explicitar o modelo de troca superficial antes de obter 40 °C.",
+      "id": "cr-e1-80",
+      "decisao": "estudo_critico_sem_pontuacao",
+      "sha256_artigo_antes": "50990bf926512b426c3bfe32a82653a3054ede8d738391c674bb23457b8601ae",
+      "sha256_artigo_depois": "68280c9a67d95bdb9eed7cb3ad0ede1506723d88fd968babed76495e7d05e221",
+      "fontes_tecnicas": [
+        {
+          "titulo": "MIT Unified, §2.1, balanço da energia total",
+          "url": "https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+          "consulta": "2026-10-27"
+        }
+      ],
+      "fontes_oficiais": [
+        {
+          "arquivo": "downloads/termodinamica/provas/2025-06-22_caesb-engenheiro-mecanico_prova-com-justificativas.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/MATRIZ_039_CAESB_009_00_Com Justificativas_OK.PDF",
+          "pagina_pdf": 4,
+          "sha256": "84ae0602e23691a27529b1f96e7c58803ad82982550301724345cb0b5d690df5"
+        },
+        {
+          "arquivo": "downloads/termodinamica/gabaritos/2025-06-22_caesb-engenheiro-mecanico_gabarito.pdf",
+          "url": "https://cdn.cebraspe.org.br/concursos/caesb_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_009_00.PDF",
+          "pagina_pdf": 1,
+          "sha256": "2cbc3da0947186e5e9e998151fb887b47852c46837a4c03a3e7a3cc547349456"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "data": "2026-10-29",
+  "responsavel": "/root, coordenador na retomada",
+  "evento": "Reexecução inadvertidamente regravou evidência anterior",
+  "arquivo": "auditoria/termodinamica/evidencias/BAN-07/persistencia-q-coordenador-r1.json",
+  "sha256_manifesto_anterior": "4222422dbc719f456570a166486f903f5e023a44ea4b8064cbd583594c3bb0b3",
+  "sha256_apos_reexecucao": "0e28bcaf00b3ccae143e87ea0898bf1290f5b792603e9c464c8485c7a6aa0c23",
+  "explicacao": "O script de teste escreve no mesmo arquivo e usa o relógio em um campo atualizado. Inicialmente a evidência anterior foi sobrescrita; posteriormente foi reconstruída e recuperada por comparação com o SHA-256 original do manifesto, conforme registrado em recuperacao. A nova saída registra 15 testes sem falhas, em arquivo separado; a data interna fixa do script não representa a data da reexecução. O manifesto não foi alterado.",
+  "impacto": "Evidência original recuperada byte a byte pelo hash do manifesto; resultado reexecutado preservado separadamente. Nenhum arquivo do produto r1 foi alterado.",
+  "recuperacao": {
+    "estado": "RECUPERADO_POR_IDENTIDADE_CRIPTOGRAFICA",
+    "metodo": "Reconstrução do único campo atualizado por busca de timestamp próximo à criação do arquivo e conferência SHA-256 com o manifesto original.",
+    "sha256_restaurado": "4222422dbc719f456570a166486f903f5e023a44ea4b8064cbd583594c3bb0b3",
+    "copia_da_reexecucao": "auditoria/termodinamica/evidencias/BAN-07/persistencia-q-reexecucao-2026-10-29.json",
+    "sha256_reexecucao": "0e28bcaf00b3ccae143e87ea0898bf1290f5b792603e9c464c8485c7a6aa0c23"
+  }
+}

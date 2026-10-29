@@ -1,0 +1,140 @@
+{
+  "revisor": "Agente automatizado /root/auditor_aaa",
+  "metodo": "P1/P3 resolvidos diretamente dos enunciados congelados antes da consulta às soluções/código/dados de resultados do Corretor ou coordenador. P2 reusa resolução preliminar própria após reconferência de dados e comandos.",
+  "htmlSHA": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+  "resultados": {
+    "P1": {
+      "pA_Pa": 249419.99999999997,
+      "pB_Pa": 187065,
+      "intermediarioI": {
+        "T_K": 600,
+        "V_m3": 0.02,
+        "p_Pa": 249419.99999999997
+      },
+      "intermediarioII": {
+        "T_K": 300,
+        "V_m3": 0.02,
+        "p_Pa": 124709.99999999999
+      },
+      "trajetoI": [
+        {
+          "name": "isobárico pA",
+          "T1": 300,
+          "T2": 600,
+          "V1": 0.01,
+          "V2": 0.02,
+          "W_J": 2494.2,
+          "dU_J": 3741.3,
+          "Q_J": 6235.5,
+          "residuo_J": 0
+        },
+        {
+          "name": "isocórico VB",
+          "T1": 600,
+          "T2": 450,
+          "V1": 0.02,
+          "V2": 0.02,
+          "W_J": 0,
+          "dU_J": -1870.65,
+          "Q_J": -1870.65,
+          "residuo_J": 0
+        }
+      ],
+      "trajetoII": [
+        {
+          "name": "isotérmico TA",
+          "T1": 300,
+          "T2": 300,
+          "V1": 0.01,
+          "V2": 0.02,
+          "W_J": 1728.8476977526154,
+          "dU_J": 0,
+          "Q_J": 1728.8476977526154,
+          "residuo_J": 0
+        },
+        {
+          "name": "isocórico VB",
+          "T1": 300,
+          "T2": 450,
+          "V1": 0.02,
+          "V2": 0.02,
+          "W_J": 0,
+          "dU_J": 1870.65,
+          "Q_J": 1870.65,
+          "residuo_J": 0
+        }
+      ],
+      "totalI": {
+        "W_J": 2494.2,
+        "dU_J": 1870.65,
+        "Q_J": 4364.85
+      },
+      "totalII": {
+        "W_J": 1728.8476977526154,
+        "dU_J": 1870.65,
+        "Q_J": 3599.4976977526157
+      },
+      "faixasT": [
+        [
+          300,
+          600
+        ],
+        [
+          300,
+          450
+        ]
+      ],
+      "terceiroCaminho": {
+        "T_intermediario": 225,
+        "admissivel": false,
+        "motivo": "225 K viola limite inferior250 K."
+      },
+      "cicloIdaIRetornoII": {
+        "W_J": 765.3523022473844,
+        "Q_J": 765.3523022473846,
+        "dU_J": 0
+      },
+      "alternativas": {
+        "V450_T450": {
+          "W_J": 2593.2715466289233
+        },
+        "P_A_ate450_T450": {
+          "V_C": 0.015,
+          "W_J": 2323.4049376638477
+        },
+        "T300_atepB_PB": {
+          "V_C": 0.013333333333333332,
+          "W_J": 1964.6366251092318
+        }
+      },
+      "adiabatica": "Se processos adiabáticos entre estados dados forem admissíveis, W=−ΔU sob as hipóteses de energia; isso não implica que os estados A/B deste caso sejam ligados por uma adiabat reversível. Aqui ΔS>0, e ambas as rotas construídas trocam calor."
+    },
+    "P3": {
+      "T2_K": 600,
+      "p1_Pa": 124709.99999999999,
+      "p2_Pa": 997679.9999999999,
+      "K": 352.73314672709733,
+      "TdeV": "T(V)=T1*sqrt(V1/V), n e K fixos",
+      "derivadaT": "dT/dV|K,n=−T/(2V)",
+      "W_J": -4988.4,
+      "dU_J": 3741.3,
+      "Q_J": -1247.0999999999995,
+      "residuo_J": 0,
+      "CV_JK": 12.471,
+      "cv_m_JmolK": 12.471,
+      "CP_JK": 20.785,
+      "cp_m_JmolK": 20.785,
+      "Ccaminho_JK": -4.157,
+      "QporDeltaT_JK": -4.156999999999998,
+      "dS_JK": -2.881412829587692,
+      "dS_peloCaminho_JK": -2.8814128295876924,
+      "QporT1_JK": -4.156999999999998,
+      "exatidao": {
+        "deltaQ": "M=n cv, N=nRT/V; M_V=0, N_T=nR/V≠0.",
+        "deltaQSobreT": "M=n cv/T, N=nR/V; derivadas cruzadas zero no quadrante positivo; S=n cv ln(T/Tref)+nR ln(V/Vref)+constante."
+      },
+      "interpretacao": "Compressão fornece4988.4 J de trabalho,3741.3 J elevamU e1247.1 J saemcomo calor; capacidade de caminho negativa não altera CV>0. Expoente3/2 difere de gamma5/3."
+    }
+  },
+  "p2": "FUN-02-p2-preliminar.md e FUN-02-p2-preliminar-calculos.json"
+}

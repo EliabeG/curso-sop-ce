@@ -1,0 +1,54 @@
+{
+  "id": "FOR-01",
+  "data": "2026-10-28",
+  "autor": "coordenador, agente automatizado",
+  "base": "PUBLICACAO.json histórica de 106 arquivos; não regenerada",
+  "total": 106,
+  "iguais": 102,
+  "diferentes": [
+    {
+      "arquivo": "assets/curso.js",
+      "original": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+      "atual": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+      "igual": false
+    },
+    {
+      "arquivo": "assets/registro.js",
+      "original": "d55c275daf98a485574c40661155b02d25d1636d90ec2cb856d635df0b4f95fc",
+      "atual": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+      "igual": false
+    },
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "original": "07e4b579c437c2ae0feefc8e2260607da827e335ca6694b1d583181632851e96",
+      "atual": "e74b3b3a80bd003914c16bd46afd9ec2bc8abba6f374042da21cbf983a5c88fd",
+      "igual": false
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "original": "10c3d92ef94136069dc94ee102fc0ff6e30b94cda82a66edf62de7d5346c015f",
+      "atual": "dcb29695129041b0dea7383396d2af85f1d656d6414658f8983042bec1f598dd",
+      "igual": false
+    }
+  ],
+  "interpretacao": "As diferenças históricas esperadas são E1, formulário E1 e dois scripts com alterações previamente aprovadas (registro.js BAN01 e curso.js BAN10). Neste ID, esses scripts e os CSS permanecem intactos. Novos materiais/evidências de E1 não integram o manifesto histórico.",
+  "preservacao_for01": {
+    "fichas": 100,
+    "ids_e_ordem_preservados": true,
+    "fichas_alteradas": 61,
+    "fichas_mantidas": 39,
+    "MathML_diferentes": [],
+    "artigos_antes": 197,
+    "artigos_depois": 197,
+    "artigos_diferentes": [],
+    "hashes_observados": {
+      "formulas/termodinamica.html": "e74b3b3a80bd003914c16bd46afd9ec2bc8abba6f374042da21cbf983a5c88fd",
+      "modulos/e1-termodinamica.html": "dcb29695129041b0dea7383396d2af85f1d656d6414658f8983042bec1f598dd",
+      "assets/formulario-e1.js": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+      "assets/formulario-e1.css": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+      "assets/curso.js": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+      "assets/curso.css": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+      "assets/registro.js": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2"
+    }
+  }
+}

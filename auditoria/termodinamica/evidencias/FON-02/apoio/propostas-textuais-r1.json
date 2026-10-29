@@ -1,0 +1,474 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autoria": "/root/corretor_aaa/apoio_fun01 — apoio de implementação do Corretor; não Auditor independente",
+  "natureza": "Propostas textuais, sem aplicação ao produto",
+  "escopo": "12 resoluções dos artigos CR06/16/17/26/27/28/29/30/37/40/42/79. Nenhuma mudança a enunciado, alternativas, chave, status ou componentes da digital.",
+  "base": {
+    "extrato": "auditoria/termodinamica/evidencias/FON-02/extrato-80-antes.json",
+    "sha256_extrato": "6a0e106f9cdc70a50ab77e9b3bba606e5dc9bee208fba59a7e525d5454dd9262",
+    "diagnostico": "auditoria/termodinamica/evidencias/FON-02/apoio/diagnostico-40-r1.json",
+    "sha256_diagnostico": "9aadf56b60f363b64d799ffe68862032e8cfcfba036c82264a749cb2d85e57f4"
+  },
+  "contrato_de_aplicacao": [
+    "Localizar o artigo pelo ID; conferir o hash base e exigir uma única ocorrência literal de antes dentro de details.cr-resolucao.",
+    "Substituir somente essa ocorrência por depois. Cada registro contém HTML completo do trecho a substituir.",
+    "Se o artigo corrente divergir do hash base, revisar antes da aplicação; não executar substituição global sem contexto.",
+    "CR26 adota explicitamente caloria termoquímica. As ocorrências de 4,2 J/cal dos originais CR27/28/39 permanecem fora da alteração.",
+    "CR68 não é alvo e seu suplemento FON-09 permanece intacto.",
+    "As fontes BIPM, MIT, NIST e CODATA indicam suas atribuições reais de leitura; não se declara consulta externa própria nesta tarefa."
+  ],
+  "fontes": {
+    "aula_instrumentos": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-instrumentos",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Escalas lineares, relação afim e dois pontos de calibração; não contém fonte primária específica Celsius–Fahrenheit."
+    },
+    "nist_celsius_fahrenheit": {
+      "tipo": "fonte_primaria_lida_pelo_corretor",
+      "url": "https://www.nist.gov/pml/owm/si-units-temperature",
+      "localizacao": "Tabela Temperature Conversion (Exact), linha Celsius→Fahrenheit",
+      "metodo": "Leitura via web atribuída ao Corretor em mensagem de 28/10/2026; não nova abertura própria deste apoio.",
+      "conteudo_utilizado": "Valor em °F=(valor em °C×1,8)+32; conversão exata."
+    },
+    "aula_umidade": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-umidade",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Mistura ideal, fator de intensificação desprezado, φ=pv/psat e comparação no mesmo V,T."
+    },
+    "ashrae_psicrometria": {
+      "tipo": "fonte_primaria_ja_vinculada",
+      "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+      "localizacao": "Capítulo 1, §§5–6, conforme link e descrição em #base-umidade",
+      "uso": "Referência existente para limites da aproximação psicrométrica. Texto da aula foi lido; fonte externa não reaberta."
+    },
+    "nist_cal": {
+      "tipo": "leitura_primaria_atribuida_ao_coordenador",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes",
+      "localizacao": "Nota 9",
+      "evidencia": "auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-unidades-r1.json",
+      "uso": "Caloria termoquímica=4,184 J exatamente; caloria International Table=4,1868 J. Evidência do coordenador lida nesta rodada; não é nova consulta própria."
+    },
+    "aula_balanco": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-balanco-fechado",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Sinais e balanço reduzido; condições de massa fixa, energias macroscópicas desprezíveis e trabalho de fronteira explicitadas na teoria."
+    },
+    "aula_primeira_lei": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-primeira-lei",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Balanço geral de sistema fechado e redução quando ΔEc/ΔEp são desprezíveis."
+    },
+    "aula_gas_energia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-gas-energia",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "u/h de gás ideal e condição de calores específicos constantes."
+    },
+    "aula_trabalho": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-trabalho-fronteira",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Trabalho com pressão de fronteira e condição quase estática."
+    },
+    "mit_gouy": {
+      "tipo": "fonte_primaria_lida_pelo_corretor",
+      "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html",
+      "localizacao": "§6.6 Lost Work versus Reversible Work",
+      "metodo": "Leitura via web atribuída ao Corretor em mensagem de 28/10/2026; não nova abertura própria deste apoio.",
+      "conteudo_utilizado": "Temperatura T0 do ambiente constante; trabalho perdido e comparação com referência reversível sob mesmos estados/condições."
+    },
+    "aula_exergia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-exergia",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Ambiente de referência, T0 constante, Sger e comparação sob mesmas restrições."
+    },
+    "aula_gibbs": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-gibbs",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Substância simples compressível de composição fixa entre estados de equilíbrio."
+    },
+    "aula_eficiencia": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-eficiencia-cop",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "W líquido e QH total recebido na mesma base por ciclo."
+    },
+    "sigma_codata2022": {
+      "tipo": "fonte_primaria_e_calculo_atribuidos_ao_coordenador",
+      "url": "https://physics.nist.gov/cuu/pdf/all.pdf#page=6",
+      "titulo": "2022 CODATA adjustment — Fundamental Physical Constants, Extensive Listing",
+      "localizacao": "PDF p.6, linha Stefan–Boltzmann",
+      "evidencia": "auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-sigma-r1.json",
+      "sha256_evidencia": "2037da81034805ed884bb1d618e37b43e9e70fa524ae4ae54a7020374f8b96a9",
+      "metodo": "Texto da página oficial aberto e trecho localizado/lido via web; não é inspeção visual.",
+      "valor_da_fonte": "5.670374419… ×10^-8 W m^-2 K^-4",
+      "natureza": "Constante exata no SI; a expansão decimal apresentada é truncada, e o decimal finito usado no cálculo é aproximação.",
+      "decimal_usado": 5.670374419e-8,
+      "resultado": "O apoio do coordenador lido reproduz 45,729144117086804 W; 2,2285 W; 111,425 W. As propostas preservam 45,73 W, 2,23 W e 111,43 W publicados."
+    },
+    "bipm_v301_2024": {
+      "tipo": "fonte_primaria_com_identidade_atribuida_ao_coordenador",
+      "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0",
+      "url_usada_na_proposta": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0#page=19",
+      "titulo_efetivo": "The International System of Units (SI), 9th edition, V3.01, August 2024",
+      "localizacao": "p. impressa 133 / PDF p. 19",
+      "metodo": "URL já registrada no apoio de unidades; Corretor informou em 28/10/2026 que o root verificou a capa V3.01/agosto2024 efetivamente devolvida. Não se infere edição pelo parâmetro version=4.0 e não houve nova consulta própria.",
+      "conteudo_utilizado": "Deslocamento 273,15 na conversão Celsius–kelvin. O número 77,15 K do contramodelo é derivação nominal de −196 °C, não precisão adicional da prova."
+    },
+    "nasa_thermal": {
+      "tipo": "fonte_primaria_ja_citada",
+      "url": "https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+      "localizacao": "Thermal Control (07/05/2026), §§7.2.1 e 7.2.3, conforme citação local",
+      "uso": "Fundamento já citado na análise CR79 para mecanismos; não é origem dos valores didáticos de A,Tcorpo ou G e não foi reaberto nesta rodada."
+    },
+    "aula_radiacao": {
+      "tipo": "ensino_autoral_existente",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "ancora": "base-radiacao-vacuo",
+      "base_sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+      "metodo": "Conteúdo integral da seção lido na cópia FON-02/antes; não apenas o título ou href.",
+      "resultado": "Superfície pequena, grande entorno, temperaturas uniformes, visão do entorno e σ≈5,67×10⁻⁸ W/(m²·K⁴)."
+    }
+  },
+  "substituicoes": [
+    {
+      "id": "cr-e1-06",
+      "numero": 6,
+      "sha256_artigo_base": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>Uma escala linear pode mudar o ponto de origem e o tamanho da unidade. O coeficiente a desloca a origem e b muda a proporção entre os intervalos. Dois pontos conhecidos determinam ambos. Exemplo: a conversão Celsius–Fahrenheit usa TF = 32 + 1,8TC.</p>",
+      "depois": "<p>Uma escala linear pode mudar o ponto de origem e o tamanho da unidade. O coeficiente a desloca a origem e b muda a proporção entre os intervalos. Dois pontos conhecidos determinam ambos. <strong>Exemplo autoral independente, não dado da figura:</strong> a conversão Celsius–Fahrenheit relaciona os valores numéricos tF em °F e tC em °C por tF = 32 + 1,8tC, conforme a <a href=\"https://www.nist.gov/pml/owm/si-units-temperature\" rel=\"noopener noreferrer\" target=\"_blank\">conversão exata Celsius–Fahrenheit do NIST</a>. Esses coeficientes não são valores fornecidos para as escalas X e Y da prova.</p>",
+      "motivo": "Identificar a calibração conhecida como exemplo independente e definir as escalas dos números, sem atribuí-los à figura.",
+      "fontes": [
+        "aula_instrumentos",
+        "nist_celsius_fahrenheit"
+      ]
+    },
+    {
+      "id": "cr-e1-16",
+      "numero": 16,
+      "sha256_artigo_base": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>A umidade relativa é φ = pv/psat, onde pv é a pressão parcial do vapor e psat é sua pressão de saturação à temperatura do ar. Como a temperatura permanece constante, psat não muda. Logo, a razão é 0,40/0,50 = 0,80. O valor 1,25 resulta de inverter entrada e saída.</p>",
+      "depois": "<p><strong>Modelo da resolução do curso:</strong> mistura ideal de ar seco e vapor, desprezando o fator de intensificação, conforme a <a href=\"#base-umidade\">aula de umidade</a> e a <a href=\"https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">ASHRAE, capítulo 1, §§5–6</a>. Nessa aproximação, φ = pv/psat, onde pv é a pressão parcial do vapor e psat é a pressão de saturação da água pura na temperatura do ar, na mesma fase de referência. Como a temperatura permanece constante, psat não muda. Logo, a razão é 0,40/0,50 = 0,80. O valor 1,25 resulta de inverter entrada e saída.</p>",
+      "motivo": "Nomear localmente a aproximação já ensinada; os números continuam derivados das umidades originais.",
+      "fontes": [
+        "aula_umidade",
+        "ashrae_psicrometria"
+      ]
+    },
+    {
+      "id": "cr-e1-17",
+      "numero": 17,
+      "sha256_artigo_base": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>Para o mesmo volume e temperatura, a quantidade de vapor é proporcional à sua pressão parcial. Se pv é metade de psat, a quantidade também é metade da quantidade na saturação. Isso não significa que metade da massa do ar seja água. A expressão cotidiana “o ar suporta água” é apenas uma simplificação.</p>",
+      "depois": "<p><strong>Modelo da resolução do curso:</strong> aproximação de mistura ideal de ar seco e vapor, com fator de intensificação desprezado, conforme a <a href=\"#base-umidade\">aula de umidade</a> e a <a href=\"https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx\" rel=\"noopener noreferrer\" target=\"_blank\">ASHRAE, capítulo 1, §§5–6</a>. Compara-se o vapor atual com a saturação na mesma temperatura, volume e fase de referência. No modelo ideal, a quantidade de vapor é proporcional à sua pressão parcial. Se pv é metade de psat, a quantidade também é metade da quantidade na saturação. Isso não significa que metade da massa do ar seja água. A expressão cotidiana “o ar suporta água” é apenas uma simplificação.</p>",
+      "motivo": "Explicitar o modelo de proporcionalidade e a base comum de comparação; não acrescentar volume numérico à prova.",
+      "fontes": [
+        "aula_umidade",
+        "ashrae_psicrometria"
+      ]
+    },
+    {
+      "id": "cr-e1-26",
+      "numero": 26,
+      "sha256_artigo_base": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>Adote calor positivo para dentro e trabalho positivo realizado pelo sistema. O agitador fornece trabalho, portanto W = −1.400 kcal. Usando 1 kcal ≈ 4,184 kJ: Q ≈ −95,6 kcal. Assim, ΔU = Q − W ≈ −95,6 + 1.400 = 1.304,4 kcal. Há aumento, mas muito inferior ao valor proposto.</p>",
+      "depois": "<p><strong>Convenções e hipóteses da resolução do curso:</strong> sistema fechado, variações de energia cinética e potencial desprezíveis e apenas as transferências de energia indicadas. Calor que entra é positivo; trabalho realizado pelo sistema é positivo. Adota-se a <a href=\"https://www.nist.gov/pml/special-publication-811/nist-guide-si-footnotes\" rel=\"noopener noreferrer\" target=\"_blank\">caloria termoquímica, NIST SP811, nota 9</a>: 1 kcal = 4,184 kJ exatamente nessa convenção, não informada no original.</p><p>O agitador fornece trabalho, portanto W = −1.400 kcal. Convertendo o calor que sai: Q ≈ −95,6 kcal. Assim, ΔU = Q − W ≈ −95,6 + 1.400 = 1.304,4 kcal. Esses resultados decimais são arredondados. Há aumento, mas muito inferior ao valor proposto.</p>",
+      "motivo": "Separar a convenção externa da caloria e as condições do balanço; manter os resultados existentes.",
+      "fontes": [
+        "nist_cal",
+        "aula_balanco",
+        "aula_primeira_lei"
+      ]
+    },
+    {
+      "id": "cr-e1-27",
+      "numero": 27,
+      "sha256_artigo_base": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>No modelo de compressão considerado, sem perda de calor nem mudanças relevantes de energia cinética ou potencial, o trabalho fornecido fica como aumento de energia interna. Para um gás ideal, elevar a energia interna eleva a temperatura. É o aquecimento percebido em uma bomba manual ao comprimir ar.</p>",
+      "depois": "<p><strong>Modelo da resolução do curso:</strong> massa fixa de gás ideal de composição fixa, com trabalho líquido de compressão entrando e variações de energia cinética e potencial desprezíveis. A compressão adiabática é dada no enunciado, portanto não há transferência de calor. Nesse modelo, o trabalho fornecido aumenta a energia interna e a temperatura. É o aquecimento percebido em uma bomba manual ao comprimir ar.</p>",
+      "motivo": "Distinguir adiabaticidade original das condições adotadas para relacionar trabalho, U e T. A conversão original 1 cal=4,2 J fica intacta.",
+      "fontes": [
+        "aula_primeira_lei",
+        "aula_gas_energia"
+      ]
+    },
+    {
+      "id": "cr-e1-28",
+      "numero": 28,
+      "sha256_artigo_base": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>Primeiro converta o calor: Q = 200 × 4,2 = 840 J. Pela primeira lei, ΔU = Q − W = 840 − 350 = 490 J. Esse número é a variação. A energia final é Uf = Ui + ΔU = 100 + 490 = 590 J.</p>",
+      "depois": "<p><strong>Hipóteses da resolução do curso:</strong> sistema fechado, variações de energia cinética e potencial desprezíveis e apenas as trocas indicadas; Q&gt;0 entra e W&gt;0 sai. O próprio enunciado fornece 1 cal = 4,2 J. Assim, Q = 200 × 4,2 = 840 J. Pela primeira lei, ΔU = Q − W = 840 − 350 = 490 J. Esse número é a variação. A energia final é Uf = Ui + ΔU = 100 + 490 = 590 J.</p>",
+      "motivo": "Identificar as condições da forma reduzida sem alterar ou reclassificar a conversão original.",
+      "fontes": [
+        "aula_primeira_lei",
+        "aula_balanco"
+      ]
+    },
+    {
+      "id": "cr-e1-29",
+      "numero": 29,
+      "sha256_artigo_base": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>O trabalho realizado pelo gás é W = pΔV = 1.000 × (−0,1) = −100 J. O calor que sai tem sinal negativo: Q = −1.000 J. Assim, ΔU = Q − W = −1.000 − (−100) = −900 J. O gás recebe trabalho, mas perde mais energia por calor.</p>",
+      "depois": "<p><strong>Hipóteses da resolução do curso:</strong> sistema fechado, compressão quase estática, pressão informada usada como pressão absoluta na fronteira, apenas trabalho de fronteira e variações de energia cinética e potencial desprezíveis. Adotam-se Q&gt;0 para dentro e W&gt;0 para fora. O trabalho realizado pelo gás é W = pΔV = 1.000 × (−0,1) = −100 J. O calor que sai tem sinal negativo: Q = −1.000 J. Assim, ΔU = Q − W = −1.000 − (−100) = −900 J. O gás recebe trabalho, mas perde mais energia por calor.</p>",
+      "motivo": "Rastrear as hipóteses de W=pΔV e de ΔU=Q−W, sem afirmar que a prova as declara todas.",
+      "fontes": [
+        "aula_trabalho",
+        "aula_primeira_lei",
+        "aula_balanco"
+      ]
+    },
+    {
+      "id": "cr-e1-30",
+      "numero": 30,
+      "sha256_artigo_base": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>A temperatura constante mantém constante a energia interna do gás ideal. Desprezando mudanças de energia cinética e potencial, ΔU = 0 e Q = W. Trata-se de um processo, não de uma máquina operando em ciclo completo; por isso não contradiz Kelvin–Planck.</p>",
+      "depois": "<p><strong>Leitura da resolução do curso:</strong> acompanha-se uma massa fixa de composição fixa. O gás ideal e a isoterma A → B são dados originais; nesse modelo, a temperatura constante mantém constante a energia interna. Desprezando mudanças de energia cinética e potencial, ΔU = 0 e Q = W. Trata-se de um processo, não de uma máquina operando em ciclo completo; por isso não contradiz Kelvin–Planck.</p>",
+      "motivo": "Distinguir as condições de massa/composição da leitura do gás ideal e da isoterma já dados.",
+      "fontes": [
+        "aula_gas_energia",
+        "aula_primeira_lei"
+      ]
+    },
+    {
+      "id": "cr-e1-37",
+      "numero": 37,
+      "sha256_artigo_base": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>Atrito, mistura e transferência de calor com diferença finita de temperatura geram entropia. Na comparação entre as mesmas condições de operação, eles destroem capacidade de produzir trabalho útil. A relação de Gouy–Stodola expressa essa perda como trabalho perdido = temperatura ambiente absoluta × entropia gerada.</p>",
+      "depois": "<p>Atrito, mistura e transferência de calor com diferença finita de temperatura geram entropia. <strong>Relação usada na resolução do curso:</strong> pela <a href=\"https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node49.html\" rel=\"noopener noreferrer\" target=\"_blank\">relação de Gouy–Stodola, MIT, §6.6</a>, o trabalho útil perdido em relação à referência reversível apropriada é Wperdido = T0 × Sger. T0 é a temperatura absoluta constante do ambiente de referência, em K, e Sger é a entropia gerada; com Sger em J/K, Wperdido fica em J. A comparação exige os mesmos estados, condições e restrições. Nesse recorte, maior geração de entropia reduz o trabalho útil disponível.</p>",
+      "motivo": "Nomear origem e condições da relação autoral, sem escolher T0/Sger numéricos nem ampliar o problema para nova análise de exergia.",
+      "fontes": [
+        "mit_gouy",
+        "aula_exergia"
+      ]
+    },
+    {
+      "id": "cr-e1-40",
+      "numero": 40,
+      "sha256_artigo_base": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>Para uma substância simples compressível de composição fixa, a relação fundamental é dh = T ds + v dp. Aqui h é a entalpia específica, s a entropia específica e v o volume específico. Como ds = 0 e v é positivo, dh tem o mesmo sinal de dp.</p>",
+      "depois": "<p><strong>Modelo da resolução do curso:</strong> substância simples compressível de composição fixa, entre estados de equilíbrio. Nesse recorte, a relação fundamental é dh = T ds + v dp. Aqui h é a entalpia específica, s a entropia específica e v o volume específico. A isentropia dada no enunciado implica ds = 0; como v é positivo, dh tem o mesmo sinal de dp.</p>",
+      "motivo": "Separar o domínio da identidade de Gibbs da isentropia já fornecida.",
+      "fontes": [
+        "aula_gibbs"
+      ]
+    },
+    {
+      "id": "cr-e1-42",
+      "numero": 42,
+      "sha256_artigo_base": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+      "local": "details.cr-resolucao",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>A eficiência efetiva é η = W/Qrecebido = 1.000/3.000 = 1/3 ≈ 33,3%. Para essa conta, a temperatura da fonte é dispensável. Ela seria necessária, junto da temperatura fria, para calcular o limite de Carnot.</p>",
+      "depois": "<p><strong>Leitura da resolução do curso:</strong> 1.000 J representam o trabalho líquido e 3.000 J o calor total recebido pela máquina na mesma base de operação. Assim, η = W/Qrecebido = 1.000/3.000 = 1/3 ≈ 33,3%. Para essa conta, a temperatura da fonte é dispensável. Ela seria necessária, junto da temperatura fria, para calcular o limite de Carnot.</p>",
+      "motivo": "Tornar explícita a interpretação das duas magnitudes usadas no rendimento, sem inserir temperatura fria ou Carnot no cálculo.",
+      "fontes": [
+        "aula_eficiencia"
+      ]
+    },
+    {
+      "id": "cr-e1-79",
+      "numero": 79,
+      "sha256_artigo_base": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+      "local": "details.cr-resolucao > #cr-e1-79-analise-ban10",
+      "ocorrencias_esperadas": 1,
+      "antes": "<p>A condução por suportes/cabos pode competir com a radiação; alto vácuo não fixa essa razão. <strong>Contramodelo autoral, não dado da prova:</strong> corpo a 300 K, área 0,10 m², superfícies negras e grande parede a 77,15 K dão aproximadamente 45,73 W radiativos. Se a ligação sólida à parede tiver condutância G = 0,01 W/K, conduz cerca de 2,23 W; com G = 0,50 W/K, conduz 111,43 W. As duas montagens respeitam o contexto térmico, mas invertem a predominância. A chave B corresponde à primeira leitura, sem ser demonstrada pelos dados originais. A troca gasosa foi desprezada nesse contramodelo; não se afirma pressão residual rigorosamente nula.</p>",
+      "depois": "<p>A condução por suportes/cabos pode competir com a radiação; alto vácuo não fixa essa razão. <strong>Contramodelo autoral, não dado da prova:</strong> escolhem-se corpo a 300 K, área de troca 0,10 m², superfícies negras (ε = 1) e visão completa de uma grande parede. Para o exemplo, adota-se nominalmente a temperatura de parede −196 °C do enunciado: −196 + 273,15 = 77,15 K, pela <a href=\"https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0#page=19\" rel=\"noopener noreferrer\" target=\"_blank\">conversão Celsius–kelvin, BIPM, 9ª ed., V3.01 (2024), p. 133</a>. Isso não atribui precisão de 0,01 K à expressão original “por volta de −196°C”.</p><p>Usa-se σ ≈ 5,670374419 × 10⁻⁸ W/(m²·K⁴), aproximação decimal da constante exata no SI listada em <a href=\"https://physics.nist.gov/cuu/pdf/all.pdf#page=6\" rel=\"noopener noreferrer\" target=\"_blank\">CODATA 2022, p. 6</a>. O modelo Q̇rad = σA(Tcorpo⁴ − Tparede⁴) fornece aproximadamente 45,73 W. Escolhem-se também duas condutâncias efetivas constantes da ligação sólida à parede: G = 0,01 W/K e G = 0,50 W/K. Por Q̇cond = G(Tcorpo − Tparede), elas conduzem, respectivamente, cerca de 2,23 W e 111,43 W. Área, temperatura do corpo, superfícies negras e condutâncias são escolhas didáticas do curso. As duas montagens invertem a predominância sem contrariar os dados originais. A chave B corresponde à primeira leitura, sem ser demonstrada pelos dados originais. A troca gasosa foi desprezada nesse contramodelo; não se afirma pressão residual rigorosamente nula.</p>",
+      "motivo": "Distinguir escolhas autorais, conversão nominal e constante física; tornar os três resultados reproduzíveis sem alterá-los.",
+      "fontes": [
+        "sigma_codata2022",
+        "bipm_v301_2024",
+        "nasa_thermal",
+        "aula_radiacao"
+      ]
+    }
+  ],
+  "validacao_em_memoria": {
+    "resultado": "12/12 ocorrências únicas e confinadas às resoluções; resto de cada artigo, chave e MathML preservados.",
+    "produto_escrito": false,
+    "casos": [
+      {
+        "id": "cr-e1-06",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+        "sha256_artigo_simulado": "47e70e7d7e5174c40670a54d32e6fa6ffd4f4eb8da473298a76b64c290970bcc"
+      },
+      {
+        "id": "cr-e1-16",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+        "sha256_artigo_simulado": "b77e26814b9ed58498123fb1d12db0f99fcdd278b0f71a086177bcbb9ddf19ff"
+      },
+      {
+        "id": "cr-e1-17",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+        "sha256_artigo_simulado": "a97fba19895860f6f50cd0a994d183f278b600eb858273b025a8ee124a47d702"
+      },
+      {
+        "id": "cr-e1-26",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+        "sha256_artigo_simulado": "a7135f15a8f68690724e45232be7df2ba24bd2fe0057d6d4f5823c1fa81765a6"
+      },
+      {
+        "id": "cr-e1-27",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+        "sha256_artigo_simulado": "c27a456aa881d90be8acd4677356e97ffc460ff4eb9bb6b06da1b32100a48e78"
+      },
+      {
+        "id": "cr-e1-28",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+        "sha256_artigo_simulado": "88bf16b89f6c0853e16b55352dd8437f3e6c764931b2b12bc4fa0d093816bc9a"
+      },
+      {
+        "id": "cr-e1-29",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+        "sha256_artigo_simulado": "6bdaf01105e7cfada426d23fde71c93b033d164a1aeba85bfcbc07edcb7d9ecf"
+      },
+      {
+        "id": "cr-e1-30",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+        "sha256_artigo_simulado": "0e5830a49af736705ead1979d889b299b37bb53b1968449955d0228bade4aebd"
+      },
+      {
+        "id": "cr-e1-37",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+        "sha256_artigo_simulado": "b190b6364d344b643bdb97e7ac7009e2566b0a7ebfb22cdc65845498e37ce813"
+      },
+      {
+        "id": "cr-e1-40",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+        "sha256_artigo_simulado": "527da874d64982821793abff94ce50490e3e2a200edb1ef47e92f6db8c1904dd"
+      },
+      {
+        "id": "cr-e1-42",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+        "sha256_artigo_simulado": "b73b747b290088a7b8fdd4b22e9d2b8996786100bedc68fb7d4fc54d55c30717"
+      },
+      {
+        "id": "cr-e1-79",
+        "ocorrencias_antes": 1,
+        "alvo_inteiro_dentro_da_resolucao": true,
+        "restante_artigo_identico": true,
+        "mathml_identico": true,
+        "quantidade_mathml_original": 0,
+        "chave_preservada": true,
+        "sha256_artigo_base": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+        "sha256_artigo_simulado": "2ebd9eec55b732bd36a78f605d2d68bb156f3f33656cd4ebfe71f18eda6f4550"
+      }
+    ]
+  },
+  "limites": [
+    "Os textos são propostas para integração/revisão pelo Corretor; não mudam controles nem aprovam FON-02.",
+    "Não houve nova pesquisa ampla nem reauditoria científica/numérica global. CR79 usa a reprodução atribuída ao coordenador.",
+    "O novo exemplo/hipótese permanece autoral e não é apresentado como palavra do enunciado original."
+  ]
+}

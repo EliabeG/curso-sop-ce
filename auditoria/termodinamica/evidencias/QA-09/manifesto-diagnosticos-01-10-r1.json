@@ -1,0 +1,88 @@
+{
+  "id": "QA-09",
+  "autor": "/root/inspect_repo",
+  "estado": "CORRECAO_01_APLICADA_AUDITORIA_PENDENTE; CANDIDATAS_06_09_PENDENTES; CALCULOS_01_10_SEM_ACEITE",
+  "artefatos": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnosticos-01-05-corretor-r1.md",
+      "sha256": "36df96f21d434ce749ca02a7b5e65f753c60e6b36c15a5c5f40b5f7b4eb32447"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnosticos-06-10-corretor-r1.md",
+      "sha256": "2bdffbb79cfb1082a43602dc9b7df814c2bcf74c90fe75a504eb051e9e748879"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnosticos-01-10-reconciliacao-r1.md",
+      "sha256": "8561636c781f9357df61b00e948833cf021a89e456c376907c1d7fb47adde7a3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/validacao-diagnosticos-01-10-r1.json",
+      "sha256": "059775a53ef5be5248a6c34957dae45bfdf9280e07c5e9e564583b6cd7a25ca7"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico01-esclarecimento-manifesto-r1.md",
+      "sha256": "743f411ed270cc1e3a8e1441fdbec7218dcf2df37c1b6e1b2c32592560802954"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico06-original-r1.html",
+      "sha256": "470266ea5dd47ee9674f9bd1c4db8c3e6036f0b1e79db69579219110408f255a"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico06-candidata-r1.html",
+      "sha256": "7e4642e6323e1c01e799b535e1672bf4ec557f287e7d2d7022b594dc1b28654e"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico06-candidata-r1.json",
+      "sha256": "c52eb1378607fdee0fc1d76b0ae5688aa491b5bad9e3ccef1744b5555f734fc7"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico06-analise-candidata-r1.md",
+      "sha256": "ad21d05a04cde1543ff0f99fcb803328978d41c2bde2038822219b45ca43aa7a"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico09-original-r1.html",
+      "sha256": "29dfa5aba6389f9d0b1b57b02344fb83ad9628a939e104a8aaaf2a601a9dfc8c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico09-candidata-r1.html",
+      "sha256": "01dc8874860961ea2d8ee239fa00da8ab31a41f5b0e7e8587114bfa325e7d8e8"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico09-candidata-r1.json",
+      "sha256": "75ddabf5fabd1e9afec00f838c29954be614eb9ddacf993f79d14ee92f8fdbfc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/diagnostico09-analise-candidata-r1.md",
+      "sha256": "9d1b4e364eedda5aaf2613472d2e66a8fffb5f32613a04ba6e03132919a91e41"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r3.json",
+      "sha256": "3074ab8fdf511d68dce73ec97bacca9dd9d5b0bbc3fe07a7d4ce329669b8b446"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/validacao-levantamento-r2.json",
+      "sha256": "b55c6bfee472a837f777b08ad1745b7ed86f67305c31b61fd681a674fa402373"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/mapa-correspondencia-inventario-r2-r3-r1.json",
+      "sha256": "fc78b2b1bb7cecba974dda14ba50edfb7872a4a3b41074b5354dbe0cebe3423c"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/aplicacao-diagnostico01-r1/manifesto-r1.json",
+      "sha256": "5648f384c2902e16d9633cb31a79b06c7cc7bf839bfa4fe08cd59014cef0827e"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/aplicacao-diagnostico01-r1/verificacao-r1.json",
+      "sha256": "e07a83e7798e81f62a1f581770fcb6637c616dc8d4909780b833c4ccf6834455"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/aplicacao-diagnostico01-r1/entrega-r2.md",
+      "sha256": "7cdf5dd8545fa786b3d477ad6d601f581167f68f1b31ad9163e26f9aa5c71bcc"
+    }
+  ],
+  "limites": [
+    "Mapeamento por contexto e hash não transfere automaticamente os juízos.",
+    "Validação estrutural e simulação de persistência não constituem revisão independente nem teste em navegador real.",
+    "Diagnósticos 06 e 09 carecem de revisão e aplicação; 01 aplicado carece de revisão."
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "id": "FUN-02",
+  "rodada": 1,
+  "data": "2026-10-27",
+  "revisor": "Agente automatizado /root/auditor_aaa",
+  "veredito": "APROVADO",
+  "ajustes_obrigatorios": [],
+  "arquivos": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "719a53ef86075dd3be9c7d9603faca620ec07416d1e97a5017740abb5b74c01a",
+      "bytes": 1264701
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-dados-v1.json",
+      "sha256": "511aac986e9122e5498cdf69609274685791000a19f140a09d539fca01676319",
+      "bytes": 3497
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-calculos-v1.mjs",
+      "sha256": "2fdd0e498c41db2f7f8e90d5114dcd015f5377e00901e6274f25262e13c79a70",
+      "bytes": 6351
+    },
+    {
+      "arquivo": "assets/termodinamica/fun02-caminhos-v1.svg",
+      "sha256": "f324acce9060eb15eeab58958649392f4e5b667fbaf2ad9b63e3c68fbe3eae35",
+      "bytes": 11269
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "c577058429375c11196eb99ae6bd01a9020f5258d3981d72c58896829ed900a2",
+      "bytes": 746652
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "c650d94556d527725595dfc86b1feaa055a32a2d9060e9b4680f1a152e11cca4",
+      "bytes": 49611
+    }
+  ],
+  "parecer": {
+    "arquivo": "auditoria/termodinamica/pareceres/FUN-02-r1.md",
+    "sha256": "3518816f3bb65ff601ece5198f4fc7cfe2fec3bcd966b9074d36f1c9c4982524"
+  },
+  "metodo": "Leitura integral científica/pedagógica e dos três registros; resolução própria P1/P3 anterior à consulta de soluções; P2 resolvido em enunciado isolado e reconferido na versão congelada; apoio técnico independente; navegador somente do coordenador.",
+  "evidencias": [
+    "FUN-02-r1-calculos-independentes.json",
+    "FUN-02-p2-preliminar.md",
+    "FUN-02-p2-preliminar-calculos.json",
+    "FUN-02-r1-tecnico.md",
+    "FUN-02-r1-tecnico.json"
+  ],
+  "confronto_solucoes": {
+    "P1": "Concordante, incluindo cinco ordenações admissíveis, proposta225K rejeitada, ciclo orientado e adiabaticidade condicional.",
+    "P2": "Concordante: potencial, teste global/local, κ0.200, cancelamento de ciclo, caminhos e condição mantida.",
+    "P3": "Concordante: calor negativo com T crescente, capacidades/bases, exatidão, entropia e irreversibilidade interna/externa."
+  },
+  "svg": {
+    "metodo": "Conferência estática dos pontos, escala e área; inspeção visual atribuída ao coordenador.",
+    "pontos_isoterma": 161,
+    "max_residuo_p_kPa": 0.0005159438769055669,
+    "trabalho_ciclo_J": 765.3523022473844
+  },
+  "liberacao": "Gate FUN-02 liberado; somente coordenador autoriza próximo ID.",
+  "proxima_dependencia": "FON-09 pode ser tratada no recorte CR68 sem fechamento global prévio de FON-01/BAN-10; nota atual não constitui aceite.",
+  "limites": [
+    "Não certifica curso inteiro avançado.",
+    "Sem piloto, validação empírica, certificação humana ou auditoria integral de acessibilidade.",
+    "Navegador não executado pelo Auditor; evidência do coordenador identificada.",
+    "Timeout web no cap6 Purdue; alternativa primária Wassgren §3.6.7 consultada integralmente. Extração local cap6 não executada com sucesso."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "estado": "APLICADO_AGUARDANDO_AUDITORIA",
+  "origem_stage": "C:\\Users\\User\\AppData\\Local\\Temp\\ban07-r2-preparacao-IMI4AK",
+  "origem_preparacao": "auditoria/termodinamica/evidencias/BAN-07/preparacao-r2-definitiva/resultado-preparacao-r2.json",
+  "arquivos": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+      "sha256": "71ac07e042aa65675fc3d4b69d8d0ae11cb66df967d45e66b1a88f4f1350e074"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "sha256": "35df191e2f7964adfb7b975668491e8ba39d983a5df93640a35d3d96ae142df8"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/e1-termodinamica.r2.html",
+      "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/revisao-fon02-complementar-r2.json",
+      "sha256": "42ce5afe33e0481562c7673daaf25b359b8580b30276d9df75a1965adaa68399"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/triagem-ban10-complementar-r2.json",
+      "sha256": "cc03d1fdf3a2401c93ea193ce99ed44d79c5a937d908e202ca03ee914b9d819d"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/confronto-fon01-cr-r2.json",
+      "sha256": "d7fb0464f2c33701da8396a400c489dcde5096fc66de8c7d3e4d143ee7def9e4"
+    }
+  ],
+  "backup": "auditoria/termodinamica/evidencias/BAN-07/aplicacao-r2/antes-r2",
+  "historicos": {
+    "fon02": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1",
+    "ban10": "b7e64034b3d1c6b31897948369c901a4a05648e53f30f91c6d553a7eb6d29147"
+  },
+  "controle_antes": "012943624ec4e3ce79352878a36f5b582f663a4dc83e8ea38e4f67f666fc1114"
+}

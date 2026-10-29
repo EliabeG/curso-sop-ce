@@ -1,0 +1,149 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR56–CR60",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos; exame de modelos e derivada da eficiência ideal.",
+  "registros": [
+    {
+      "id": "cr-e1-56",
+      "artigo_sha256": "0827dbbe91757cc711b1bc5541b5ef5033bf65d648faf25b5e6b57d62e12f347",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-56",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-comparar-ciclos",
+          "#base-rankine",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Usinas de geração elétrica com turbinas a gás e possível recuperação de exaustão.",
+      "solucao": "Turbina a gás pode acionar gerador; ciclo combinado aproveita exaustão em ciclo a vapor, usualmente Rankine.",
+      "resultado": "C; Brayton é aplicado na geração elétrica.",
+      "comparacao": "C descreve aplicação frequente; E negaria esse uso.",
+      "tolerancia": "Sem dados de geração, potência ou tolerância numérica.",
+      "limite": "Brayton representa núcleo termodinâmico da turbina a gás; ciclo a vapor é distinto.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-57",
+      "artigo_sha256": "4de64cfa27817be86c14aea29e1086c4269d4d69e281b4ce6685f176e6605f49",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-57",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-brayton",
+          "#base-brayton-real",
+          "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Brayton ideal com gás ideal de composição e cp, cv constantes, etapas isentrópicas e isobáricas; rp>1 no domínio de motor e k=cp/cv>1.",
+      "solucao": "η=1−rp^−a, a=(k−1)/k>0; dη/drp=a rp^(−a−1)>0. Logo η aumenta com rp dentro desse modelo.",
+      "resultado": "C no modelo ideal e no domínio motor.",
+      "comparacao": "C corresponde à monotonicidade ideal; E a negaria sem considerar as hipóteses.",
+      "tolerancia": "Sem razão de pressão nem k numéricos; não há eficiência ou tolerância a calcular.",
+      "limite": "Não extrapolar sem limite para turbina real ou operação com temperatura máxima imposta; potência específica também não necessariamente cresce.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-58",
+      "artigo_sha256": "ebb927a87245d7870f70f4daa59aa4b76fa312deefdfdee32b6a31de87850ffd",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-58",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_SEM_DADOS_NUMERICOS",
+      "dados": "Gás aprisionado na fase de compressão de compressor alternativo; exemplo ideal isotérmico de massa fixa.",
+      "solucao": "pV=nRT=constante para T e n fixos; reduzindo V, p cresce até abertura da descarga nas condições usuais.",
+      "resultado": "E.",
+      "comparacao": "C afirma que pressão não cresce ao comprimir; E a rejeita no mecanismo usual e exemplo ideal.",
+      "tolerancia": "Sem valores de p ou V; relação de sinal não requer tolerância numérica.",
+      "limite": "Modelo isotérmico fornece exemplo e não garante monotonicidade em todo processo real concebível.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-59",
+      "artigo_sha256": "e1068e2195cb3859bae9d9b3f1bf524ef05a0af60607b57b07fb19eeb2cd8175",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-59",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-valvulas-compressor",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Etapas de compressor alternativo: compressão da massa aprisionada e descarga.",
+      "solucao": "Durante compressão propriamente dita ambas válvulas fechadas; após pressão interna superar pressão e resistência de descarga, abre a descarga.",
+      "resultado": "E.",
+      "comparacao": "C mantém ambas abertas durante compressão; E reconhece fechamento das válvulas.",
+      "tolerancia": "Sem dados de pressão, tempo ou vazão; sem tolerância numérica.",
+      "limite": "Sentido geométrico da subida depende da orientação; a análise identifica a etapa de compressão, não impõe orientação universal.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-60",
+      "artigo_sha256": "79f50d9f0b7801b9b4fa1cf9a70c1dd267bc6421fa72ca8cdfb431e971f6380f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-60",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-valvulas-compressor",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Descarga de compressor alternativo por movimento cíclico do pistão.",
+      "solucao": "A descarga ocorre em partes do ciclo e a vazão instantânea pulsa; múltiplos cilindros ou reservatório podem suavizar saída.",
+      "resultado": "E.",
+      "comparacao": "C afirma descarga constante; E distingue vazão média e instantânea.",
+      "tolerancia": "Sem frequências ou vazões fornecidas; sem tolerância numérica.",
+      "limite": "A descrição da pulsação refere-se à descarga do mecanismo; não impede regularização posterior do fornecimento.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior; PDFs não reexaminados nesta execução."
+  ]
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "ancora": "base-calor-latente",
+    "antes": "Para evaporar uma massa m sob as hipóteses apropriadas, o calor dessa mudança é Q = mh<sub>fg</sub>.",
+    "depois": "Para uma massa fechada que passa de líquido saturado a vapor saturado a pressão constante, com apenas trabalho de fronteira pV e variações cinética/potencial desprezíveis, Q = ΔH = mh<sub>fg</sub>. Em um vaporizador de escoamento permanente, sem trabalho de eixo e com essas variações desprezíveis, Q̇ = ṁh<sub>fg</sub>.",
+    "motivo": "Explicitar quando a diferença de entalpias coincide com o calor."
+  },
+  {
+    "ancora": "base-umidade",
+    "antes": "A umidade relativa compara essa pressão com a pressão de saturação da água <strong>na mesma temperatura</strong>.",
+    "depois": "Aqui usamos a aproximação de mistura ideal de ar seco e vapor, desprezando o fator de intensificação: a umidade relativa compara essa pressão com a pressão de saturação da água pura <strong>na mesma temperatura e na mesma fase de referência</strong> (água líquida ou gelo). Na descrição real, a saturação do ar úmido também depende da pressão total; veja <a href=\"https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx\">ASHRAE, capítulo 1, §§5–6</a>.",
+    "motivo": "Delimitar a aproximação psicrométrica."
+  },
+  {
+    "ancora": "base-umidade",
+    "antes": "<p class=\"equacao-titulo\">Definição de umidade relativa</p>",
+    "depois": "<p class=\"equacao-titulo\">Umidade relativa na aproximação ideal</p>",
+    "motivo": "Título compatível com o modelo."
+  },
+  {
+    "ancora": "base-primeira-lei",
+    "antes": "<h3 id=\"base-primeira-lei\">Declare a convenção de sinais</h3>",
+    "depois": "<h3 id=\"base-primeira-lei\">Declare a convenção de sinais</h3><p>Para massa fixa em translação não relativística, ΔE<sub>C</sub> = m(vel₂² − vel₁²)/2. Em campo gravitacional aproximadamente uniforme, ΔE<sub>P</sub> = mg(z₂ − z₁). Com m em kg, vel em m/s, g em m/s² e z em m, os resultados são J; divida por 1.000 para usar kJ. O primeiro termo acompanha a velocidade do conjunto no referencial escolhido, não a agitação molecular já incluída em U. Essas relações vêm do trabalho mecânico (<a href=\"https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy\">energia cinética</a> e <a href=\"https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system\">potencial gravitacional</a>).</p>",
+    "motivo": "Ensinar as duas relações da ficha 30 no alvo já existente."
+  },
+  {
+    "ancora": "base-expansao-livre",
+    "antes": "Considere todo o recipiente externo, rígido, fechado e isolado, com gás ideal em um compartimento e vácuo no outro.",
+    "depois": "Considere todo o recipiente externo, rígido, fechado e isolado, com gás ideal em um compartimento e vácuo no outro. Entre os estados inicial e final de equilíbrio, despreze as variações de energia cinética e potencial do conjunto.",
+    "motivo": "Completar as hipóteses que permitem ΔU = 0."
+  },
+  {
+    "ancora": "energia",
+    "antes": "<tr><th data-rotulo=\"Equipamento\" scope=\"row\">Bomba ideal</th><td data-rotulo=\"Hipóteses principais\">Líquido quase incompressível.</td>",
+    "depois": "<tr><th data-rotulo=\"Equipamento\" scope=\"row\">Bomba ideal</th><td data-rotulo=\"Hipóteses principais\">Regime permanente, adiabático reversível; líquido com v aproximadamente constante; variações cinética/potencial desprezíveis.</td>",
+    "motivo": "Alinhar a simplificação da bomba ao balanço estacionário e à relação isentrópica."
+  },
+  {
+    "ancora": "base-balanco-transiente",
+    "antes": "Tanque rígido, inicialmente sem massa, uma entrada, nenhuma saída, Q = W = 0, energias cinética/potencial e capacidade térmica das paredes desprezíveis. Segunda relação: gás ideal com cp/cv constantes; temperaturas em K.",
+    "depois": "Tanque rígido, inicialmente sem massa, uma entrada de entalpia constante, nenhuma saída, Q = W = 0, energias cinética/potencial e capacidade térmica das paredes desprezíveis. Segunda relação: mesmo gás ideal de composição fixa, cp e cv constantes e temperatura de entrada constante; temperaturas em K.",
+    "motivo": "Explicitar a condição necessária para retirar h da integral."
+  },
+  {
+    "ancora": "base-entropia",
+    "antes": "A temperatura é absoluta e corresponde à fronteira onde ocorre a transferência de calor.",
+    "depois": "A expressão representa um contato térmico de temperatura uniforme na área, que pode variar no tempo. A temperatura absoluta é a da fronteira do lado do sistema onde passa esse calor. Para vários contatos, some as integrais de δQj/Tb,j; se a temperatura variar sobre a área, integre também localmente. Não divida o calor líquido por uma temperatura arbitrária. A geração interna depende da fronteira escolhida; diferença de temperatura no exterior não implica, sozinha, geração dentro do sistema.",
+    "motivo": "Distinguir cada transferência e preservar a nuance ensinada em FUN-02."
+  },
+  {
+    "ancora": "base-rankine",
+    "antes": "<h3 id=\"base-rankine\">Rankine · potência com vapor</h3>",
+    "depois": "<h3 id=\"base-rankine\">Rankine · potência com vapor</h3><p>Para os balanços do Rankine simples, sem extrações, numere 1 após o condensador, 2 após a bomba, 3 após a caldeira e 4 após a turbina. Considere a mesma vazão em regime permanente, variações cinética/potencial desprezíveis, bomba/turbina adiabáticas e caldeira/condensador sem trabalho de eixo. Aplicar q − w = h<sub>saída</sub> − h<sub>entrada</sub> a cada equipamento dá w<sub>t</sub> = h₃ − h₄, w<sub>b</sub> = h₂ − h₁, q<sub>in</sub> = h₃ − h₂ e q<sub>out</sub> = h₄ − h₁, em kJ/kg. Aqui trabalhos produzido/consumido e calores recebido/rejeitado são magnitudes positivas. A soma fornece q<sub>in</sub> − q<sub>out</sub> = w<sub>t</sub> − w<sub>b</sub>; a eficiência abaixo exige q<sub>in</sub> &gt; 0. Esses balanços não tornam uma turbina real isentrópica; essa é uma hipótese adicional do ciclo ideal.</p>",
+    "motivo": "Ensinar os quatro balanços e a numeração adotada na ficha 79."
+  },
+  {
+    "ancora": "base-refrigeracao",
+    "antes": "<h3 id=\"base-refrigeracao\">Refrigeração por compressão de vapor</h3>",
+    "depois": "<h3 id=\"base-refrigeracao\">Refrigeração por compressão de vapor</h3><p>Nos balanços abaixo, o ciclo simples é estacionário, com a mesma vazão e variações cinética/potencial desprezíveis. O compressor é adiabático; evaporador e condensador não produzem trabalho; a válvula é adiabática sem trabalho e as ligações não trocam calor relevante. Assim, em kJ/kg, w<sub>c</sub> = h₂ − h₁, q<sub>L</sub> = h₁ − h₄, q<sub>H</sub> = h₂ − h₃ e h₃ ≈ h₄. As três primeiras são magnitudes: trabalho recebido, calor absorvido e calor rejeitado. Somar os balanços dá Q̇<sub>H</sub> = Q̇<sub>L</sub> + Ẇ<sub>in</sub>. O COP divide o calor útil pelo trabalho recebido positivo.</p>",
+    "motivo": "Explicitar os balanços já consultados nas fichas 84–85."
+  },
+  {
+    "ancora": "aprofundamento-aplicado",
+    "antes": "Com resfriamento intermediário perfeito até a temperatura inicial, estágios de mesma eficiência e perdas desprezíveis, o trabalho mínimo ocorre com razões de pressão iguais.",
+    "depois": "Considere dois compressores adiabáticos em regime permanente, mesmo gás ideal de composição fixa, cp e cv constantes, mesma vazão e mesma eficiência isentrópica ηc constante. Despreze variações cinética/potencial, quedas de pressão, mudança de fase e separação de massa. O resfriador devolve o gás à temperatura inicial T₁. Para p₁ e p₃ absolutas fixas, com p₃ &gt; p₁ &gt; 0, o trabalho total é w<sub>total</sub> = (cpT₁/ηc)[(pᵢ/p₁)<sup>a</sup> + (p₃/pᵢ)<sup>a</sup> − 2], onde a = (k − 1)/k &gt; 0 e k = cp/cv. Cada parcela vem do trabalho adiabático do estágio e da relação isentrópica ideal. O produto dos dois termos elevados a a é fixo: (p₃/p₁)<sup>a</sup>. Sua soma positiva é mínima quando são iguais, logo pᵢ/p₁ = p₃/pᵢ e pᵢ = √(p₁p₃). Eficiências ou temperaturas de entrada diferentes podem deslocar esse ótimo.",
+    "motivo": "Justificar quantitativamente o ótimo nas hipóteses da ficha 88."
+  },
+  {
+    "ancora": "aplicacoes",
+    "antes": "<h3>Trabalho no modelo politrópico</h3>",
+    "depois": "<h3>Trabalho no modelo politrópico</h3><p>A expressão seguinte usa gás ideal de composição fixa em escoamento permanente internamente reversível, com variações cinética/potencial desprezíveis. O expoente n é constante, n &gt; 0 e n ≠ 1; p₂ &gt; p₁ &gt; 0. O trabalho consumido é o de eixo por massa, obtido de ∫v dp; não é o trabalho de fronteira ∫p dV de uma massa fechada.</p>",
+    "motivo": "Excluir também n = 0 e manter a distinção entre trabalho de escoamento e massa fechada."
+  },
+  {
+    "ancora": "base-trocadores",
+    "antes": "Para os arranjos que exigem fator de correção, ΔTm = FΔTlm; não use qualquer diferença de temperatura sem verificar o método.",
+    "depois": "No modelo estacionário sem troca externa relevante e com U aproximadamente constante, ΔTlm é a diferença média logarítmica de referência. Para arranjos compatíveis com o método, ΔTm = FΔTlm, com fator F próprio do arranjo e de seus perfis térmicos. Não use uma média arbitrária; variação importante das propriedades pode exigir segmentação ou outro modelo.",
+    "motivo": "Definir a média usada na ficha 94 e seu domínio."
+  },
+  {
+    "ancora": "base-trocadores",
+    "antes": "No modelo plano com a mesma área de referência, resistências por área somam:",
+    "depois": "No modelo plano de área constante, condução unidimensional permanente, kt constante e sem geração, resistências referidas à mesma área somam:",
+    "motivo": "Delimitar a resistência plana."
+  },
+  {
+    "ancora": "base-trocadores",
+    "antes": "Em tubos de áreas interna e externa diferentes, é necessário converter para a mesma área antes de somar.",
+    "depois": "Em tubos, a resistência de condução deve ser a cilíndrica e cada película usa sua própria área. Depois, converta as resistências para uma área comum ao obter U. Apenas converter áreas na expressão plana não corrige a geometria; uma aproximação de parede fina precisa ser justificada.",
+    "motivo": "Impedir aplicação da resistência plana a tubos sem aproximação."
+  },
+  {
+    "ancora": "base-dilatacao",
+    "antes": "A hipótese é expansão livre e aquecimento uniforme na faixa considerada.",
+    "depois": "A hipótese é expansão livre e aquecimento uniforme, em aproximação linear para pequena variação relativa do comprimento: |αLΔT| ≪ 1.",
+    "motivo": "Delimitar a linearização da dilatação."
+  },
+  {
+    "ancora": "base-geracao-face",
+    "antes": "Admite-se temperatura uniforme da face, sem radiação ou outras perdas, nas hipóteses indicadas.",
+    "depois": "Use q‴ uniforme ou sua média no volume; hc uniforme ou médio na face, com temperaturas da face e do fluido externo uniformes. Não há radiação ou outras perdas; as demais faces estão isoladas. A expressão resolvida para Ts exige hc &gt; 0 e Aexposta &gt; 0.",
+    "motivo": "Delimitar as médias que permitem retirar propriedades das integrais."
+  }
+]

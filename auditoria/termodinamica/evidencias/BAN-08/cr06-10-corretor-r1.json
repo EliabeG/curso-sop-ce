@@ -1,0 +1,156 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR06–CR10",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos, opções, resoluções e suplementos; cálculos exatos por Fraction; CR09 como estudo crítico sem nota. Conversões conferidas na página NIST indicada.",
+  "registros": [
+    {
+      "id": "cr-e1-06",
+      "artigo_sha256": "873e51481bc440721e17c233292535fdf7367670ba819c954987b7c263d8420b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-06",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-instrumentos",
+          "../assets/questoes-reais-e1/figura-922604ee21ac.png",
+          "https://www.nist.gov/pml/owm/si-units-temperature",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF#page=4",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/GAB_DEFINITIVO_822_PETROBRAS_23_007_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "https://www.nist.gov/pml/owm/si-units-temperature (consulta em 29/10/2026: conversões de temperatura)"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_E_EXEMPLO_NUMERICO",
+      "dados": "Suplemento editorial anterior à tentativa: X e Y são lineares e variam com a altura h; exemplo de Celsius e Fahrenheit não é dado da figura.",
+      "solucao": "X=ax+bx h, Y=ay+by h; by ≠ 0, logo X=(ax−bx ay/by)+(bx/by)Y. No exemplo autoral tF=32+(9/5)tC: 0 °C → 32 °F e 100 °C → 212 °F.",
+      "resultado": "C sob a hipótese editorial; exemplo 32 °F e 212 °F.",
+      "comparacao": "C descreve relação afim, E a negaria; coeficientes do exemplo não são das escalas da prova.",
+      "tolerancia": "32, 9/5 e os dois resultados do exemplo são exatos; nenhuma tolerância numérica.",
+      "limite": "Hipótese é editorial, não transcrição oficial; não atribuir a hipótese de linearidade à banca nem a identidade da questão alterada como aceite automático.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-07",
+      "artigo_sha256": "c6e1989e4dc002b751cc23ab3e0c032df264bab82f79972bc059fa2799f072cc",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-07",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-instrumentos",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Afirmação identifica tubo de Bourdon como tubo de vidro para líquido termométrico.",
+      "solucao": "Bourdon deforma-se sob diferença de pressão; o termômetro de líquido em vidro utiliza dilatação de líquido e escala.",
+      "resultado": "E.",
+      "comparacao": "C aceitaria a caracterização do tubo de Bourdon como tubo de vidro termométrico; E a rejeita.",
+      "tolerancia": "Não se aplica: não há cálculo na resolução.",
+      "limite": "Pode haver montagem termométrica indireta com Bourdon; isso não torna correta a descrição de tubo de vidro do item.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-08",
+      "artigo_sha256": "62f6c64f663b2a2901ad832b08768de5304186911da068e4ac48bbe0d2aeae3a",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-08",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-instrumentos",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Limite inferior 50 °C; alcance ou span de 100 °C, intervalo de temperatura.",
+      "solucao": "Limite superior = 50 °C + 100 °C = 150 °C; 100 °C de intervalo = 100 K de intervalo.",
+      "resultado": "C; faixa 50–150 °C.",
+      "comparacao": "C confere o limite superior de 150 °C; E rejeitaria a igualdade.",
+      "tolerancia": "Exato com os dados dados; 100 K refere-se à diferença, não à temperatura absoluta.",
+      "limite": "A convenção de span é diferença entre limites; a incerteza instrumental não é informada.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-09",
+      "artigo_sha256": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-09",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-absolutas",
+          "#base-medidas",
+          "https://www.bipm.org/en/publications/si-brochure",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_019_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_019_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "../downloads/termodinamica/provas/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_prova.pdf#page=1",
+          "../downloads/termodinamica/gabaritos/2023-10-15_tbg-tecnico-gasoduto-construcao-e-montagem_gabarito.pdf#page=1",
+          "https://www.nist.gov/pml/owm/si-units-temperature (consulta em 29/10/2026: conversões de temperatura)"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_ESTUDO_CRITICO_SEM_NOTA",
+      "dados": "Item oficial fala de unidade de temperatura no SI sem explicitar grandeza ou unidade de base.",
+      "solucao": "T(K)=t(°C)+273,15 e ΔT(K)=Δt(°C); kelvin é unidade de base da temperatura termodinâmica; grau Celsius é unidade SI para temperatura Celsius.",
+      "resultado": "Chave documental E; estudo crítico sem pontuação.",
+      "comparacao": "E é coerente se a frase restringir-se à unidade de base; essa restrição não aparece explicitamente. A chave não é justificativa documentada da banca.",
+      "tolerancia": "273,15 e a igualdade de tamanhos dos intervalos são exatos; não há resultado experimental.",
+      "limite": "O tratamento crítico preserva ambas as leituras e não declara anulação oficial; análise independente não é aceite de todo o ID.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-10",
+      "artigo_sha256": "abe9bc623cad60bc7f3c99fe1f57d2ceda566ce7fba6166afaac0df113ef66a2",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-10",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-medidas",
+          "#base-propriedades",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_023_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_023_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_FATOR_EXATO",
+      "dados": "Amostra homogênea no mesmo estado, duplicada.",
+      "solucao": "ρ=m/V; com m e V duplicados, ρ′=2m/(2V)=ρ.",
+      "resultado": "C; fator de duplicação 2 cancela.",
+      "comparacao": "C identifica propriedade intensiva; E negaria a independência da quantidade.",
+      "tolerancia": "O fator 2 e o cancelamento são exatos no modelo; sem tolerância metrológica.",
+      "limite": "Homogeneidade e estado iguais; não extrapolar para amostras heterogêneas.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem revisão independente desta entrega nem encerramento de BAN-08.",
+    "A transcrição e o gabarito oficiais são atribuídos à conferência documental anterior; não foram reexaminados no PDF nesta execução."
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "id": "FOR-01",
+  "rodada": "r1",
+  "escopo": "Revisão textual das notas do Corretor referentes às fichas 01–50; sem nova auditoria científica, consulta de fontes ou alteração do produto.",
+  "data": "2026-10-28",
+  "arquivos_lidos": [
+    "anotacoes-corretor-01-50-r1.json",
+    "alteracoes-fichas-01-50-r1.json"
+  ],
+  "bases_sha256": {
+    "anotacoes": "77f44889b5ec692d5876a83ad63ea7bcfcee177f9bd3a07d2ea9c5a9a3010156",
+    "alteracoes": "b82a98e9a043391684e4b430d2d0b1807376ae0aed5a99ca1f0f92b976dbccf1"
+  },
+  "observacoes": [
+    "A decisão preliminar original foi preservada como referência histórica. A existência de alteração prevista é informada separadamente; a revisão textual não decide aprovação.",
+    "Os campos expressao, simbolos_unidades, hipoteses e vinculo foram reescritos com espaços e frases completas, alinhados às alterações propostas.",
+    "Ficha 07: a convenção de grandezas totais e específicas está restrita a U/H/S e u/h/s.",
+    "Ficha 39: Q=W=0 implica ΔU=−ΔEc−ΔEp; concluir ΔU=0 requer desprezar essas variações.",
+    "As propostas são descritas como previstas ou necessárias; não se afirma que já foram aplicadas."
+  ],
+  "itens": [
+    {
+      "numero": 1,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "A definição ΔX = X₂ − X₁ e o rearranjo X₂ = X₁ + ΔX estão corretos.",
+      "simbolos_unidades": "ΔX tem a mesma unidade de X; os índices identificam os estados inicial e final.",
+      "hipoteses": "É uma definição de variação, sem hipótese adicional sobre o processo.",
+      "vinculo": "A aula define ΔX, exemplifica seu sinal e distingue variação de valor final."
+    },
+    {
+      "numero": 2,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "Q/Δt e W/Δt representam taxas médias; multiplicar a taxa média pela duração recupera a energia transferida.",
+      "simbolos_unidades": "A equivalência kJ/s = kW e o intervalo de tempo em segundos estão definidos.",
+      "hipoteses": "A condição distingue taxa média de taxa constante. A expressão não deve ser interpretada como definição de taxa instantânea.",
+      "vinculo": "A aula apresenta o caso de um aquecedor de potência constante e a conversão entre potência e energia."
+    },
+    {
+      "numero": 3,
+      "decisao_preliminar_original": "corrigir_vinculo",
+      "alteracao_prevista": true,
+      "expressao": "Os fatores de conversão entre múltiplos de mil, unidades cúbicas, litros e calorias termoquímicas estão corretos. O valor 4,184 corresponde à caloria termoquímica.",
+      "simbolos_unidades": "J, kJ, W, kW, Pa, kPa, L, mm e cm³ usam conversões compatíveis.",
+      "hipoteses": "Preservar a aproximação explicitamente fornecida no enunciado, quando houver.",
+      "vinculo": "O alvo atual ensina o SI e os produtos de unidades. A alteração prevista acrescenta #base-balanco-fechado, que trata de cal e kcal, com o texto “Conferir calorias e sinais”."
+    },
+    {
+      "numero": 4,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "O deslocamento de 273,15 entre as escalas e a igualdade numérica dos intervalos em Celsius e kelvin estão corretos.",
+      "simbolos_unidades": "T e t distinguem temperatura absoluta e temperatura em graus Celsius.",
+      "hipoteses": "A necessidade de usar temperaturas absolutas em razões está explicitada.",
+      "vinculo": "A aula explica a lei zero, a conversão de escalas e o exemplo de 10 °C = 283,15 K."
+    },
+    {
+      "numero": 5,
+      "decisao_preliminar_original": "corrigir_vinculo",
+      "alteracao_prevista": true,
+      "expressao": "p_abs = p_man + p_atm e p = F_normal/A estão corretos nas condições indicadas.",
+      "simbolos_unidades": "N/m² = Pa; usar kPa exige a conversão correspondente. A pressão é uniforme ou representa uma média sobre a área.",
+      "hipoteses": "As pressões somadas devem estar na mesma unidade; a força considerada é normal à superfície.",
+      "vinculo": "#base-absolutas ensina a referência de pressão. A alteração prevista acrescenta #base-leitura-matematica para p = F/A, com o texto “Retomar força por área”."
+    },
+    {
+      "numero": 6,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "ρ = m/V e v = V/m = 1/ρ estão corretos.",
+      "simbolos_unidades": "As unidades kg/m³ e m³/kg estão explicitadas.",
+      "hipoteses": "As razões se referem à mesma amostra e ao mesmo estado; a interpretação de um sistema homogêneo é ensinada.",
+      "vinculo": "A aula divide uma amostra e verifica que sua densidade permanece a mesma."
+    },
+    {
+      "numero": 7,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": true,
+      "expressao": "u = U/m, h = H/m e s = S/m dividem corretamente cada propriedade total pela massa.",
+      "simbolos_unidades": "U e H são energias totais; S é entropia total. Com m em kg, u e h ficam em kJ/kg e s em kJ/(kg·K).",
+      "hipoteses": "A condição prevista deve ser lida apenas para estas relações: U, H e S são totais; u, h e s são por unidade de massa. Não é uma regra universal de letras maiúsculas e minúsculas e não exige gás ideal.",
+      "vinculo": "A aula ensina a divisão de uma propriedade extensiva pela massa. Essa explicação também cobre s, mesmo sem uma linha separada para a entropia."
+    },
+    {
+      "numero": 8,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "Span = L_sup − L_inf e seu rearranjo estão corretos.",
+      "simbolos_unidades": "O intervalo e os limites usam a mesma unidade; os limites são identificados.",
+      "hipoteses": "O span é distinguido do limite superior da faixa.",
+      "vinculo": "A aula define o span e usa o exemplo L_sup = −10 °C + 120 °C = 110 °C."
+    },
+    {
+      "numero": 9,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "A interpolação afim e o ganho b = (X₂ − X₁)/(Y₂ − Y₁) estão corretos quando os denominadores são não nulos.",
+      "simbolos_unidades": "A alteração prevista define a como deslocamento, na unidade de X, e b como ganho, na unidade de X por unidade de Y; 1 e 2 são pontos de calibração.",
+      "hipoteses": "A forma fracionária exige X₂ ≠ X₁ e Y₂ ≠ Y₁. A resposta é linear; proporcionalidade direta exige a = 0. As origens das escalas não precisam coincidir.",
+      "vinculo": "A aula deriva ganho e deslocamento e apresenta um exemplo. O vínculo deve ser mantido."
+    },
+    {
+      "numero": 10,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "As expressões calculam aumento e redução em relação ao valor de referência, respeitando a orientação dos sinais.",
+      "simbolos_unidades": "As razões são adimensionais e sua apresentação em porcentagem está explicitada.",
+      "hipoteses": "A exigência de X₁ inicial positivo evita denominador nulo e uma referência inadequada para a interpretação percentual proposta.",
+      "vinculo": "A aula distingue valor final igual a 140% do inicial de aumento de 40%, além de apresentar a redução percentual."
+    },
+    {
+      "numero": 11,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "A conversão C = C_ppm × 10⁻⁶ e o produto para somar a geração de fontes iguais estão corretos.",
+      "simbolos_unidades": "A alteração prevista define C como fração volumétrica, G como taxa volumétrica total de geração de CO₂, N como número de pessoas e a geração individual em unidade de vazão por pessoa.",
+      "hipoteses": "As vazões volumétricas devem usar as mesmas condições de referência. O produto N vezes a geração por pessoa pressupõe que todas as pessoas tenham a geração individual adotada.",
+      "vinculo": "#base-balanco-co2 ensina a geração total, as unidades e o exemplo com 16 pessoas. Os valores do exercício não são apresentados como limites normativos."
+    },
+    {
+      "numero": 12,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "n = m/M, R = Rᵤ/M e os valores aproximados de Rᵤ estão corretos. O número de Avogadro apresentado é exato.",
+      "simbolos_unidades": "M em kg/mol é compatível com m em kg e n em mol. R usa energia por kg e por kelvin; Rᵤ usa energia por mol e por kelvin.",
+      "hipoteses": "A compatibilidade entre as bases mássica e molar está explicitada.",
+      "vinculo": "A aula explica o mol, a conversão entre as constantes por massa e por mol e um cálculo em atm·L."
+    },
+    {
+      "numero": 13,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "pV = mRT = nRᵤT e pv = RT estão corretos para o modelo indicado.",
+      "simbolos_unidades": "A alteração prevista completa m em kg, V em m³, v em m³/kg, n em mol e T em K. R e Rᵤ usam J ou kJ por sua respectiva base, de modo compatível com pV em Pa·m³ ou kPa·m³.",
+      "hipoteses": "O modelo de gás ideal e o uso de pressão e temperatura absolutas já estão declarados; a composição determina a constante específica R.",
+      "vinculo": "#base-gas-modelo deriva as bases mássica e molar; #base-gas-energia também explicita as unidades."
+    },
+    {
+      "numero": 14,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "A relação combinada entre estados e o produto das razões de pressão e volume estão corretos.",
+      "simbolos_unidades": "A alteração prevista exige a mesma unidade entre p₁ e p₂ e entre V₁ e V₂. As temperaturas permanecem em kelvin.",
+      "hipoteses": "A mesma quantidade de gás ideal e a mesma composição devem ser mantidas nos dois estados.",
+      "vinculo": "A aula apresenta a derivação da relação e um exemplo de aumento percentual composto."
+    },
+    {
+      "numero": 15,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "As três reduções da equação de estado estão corretas para as restrições indicadas.",
+      "simbolos_unidades": "A alteração prevista identifica cte como constante, p como pressão absoluta em Pa ou kPa, V em m³ e T em K, mantendo as unidades entre estados.",
+      "hipoteses": "Além da quantidade de gás, a composição deve permanecer fixa. Impõe-se apenas a restrição declarada para cada relação.",
+      "vinculo": "A aula exige quantidade e composição fixas e explica por que reação ou vazamento podem invalidar a relação simplificada."
+    },
+    {
+      "numero": 16,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "Z = pV/(nRᵤT) = pv/(RT) e Z = 1 no modelo ideal estão corretos.",
+      "simbolos_unidades": "A alteração prevista substitui a remissão genérica por símbolos locais: Z adimensional, pressão absoluta, volumes total e específico, quantidade de matéria, temperatura e constantes em bases compatíveis.",
+      "hipoteses": "Z pode ser calculado para um gás real. Encontrar Z = 1 em um estado não comprova, sozinho, toda a idealidade das propriedades energéticas.",
+      "vinculo": "A aula calcula Z = 0,80 e interpreta o desvio em relação à equação de estado ideal."
+    },
+    {
+      "numero": 17,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "cp − cv = R para gás ideal e k = cp/cv estão corretos.",
+      "simbolos_unidades": "Os calores específicos e R usam a mesma base, J/(kg·K) ou kJ/(kg·K); k é adimensional.",
+      "hipoteses": "A restrição da diferença cp − cv ao gás ideal e a comparação na mesma temperatura estão explicitadas.",
+      "vinculo": "A aula apresenta as relações e o uso de k nas relações isentrópicas."
+    },
+    {
+      "numero": 18,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "Δu = cvΔT, Δh = cpΔT e ΔU = mcvΔT estão corretos no modelo indicado.",
+      "simbolos_unidades": "As grandezas totais e específicas estão distinguidas; o intervalo de temperatura está identificado.",
+      "hipoteses": "A alteração prevista explicita massa fixa para a expressão de ΔU. Gás ideal, composição fixa e calores específicos constantes na faixa já delimitam o restante do modelo.",
+      "vinculo": "A aula separa a dependência de u e h com a temperatura da aproximação de calor específico constante; o balanço fechado mostra o fator massa."
+    },
+    {
+      "numero": 19,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "A energia cinética translacional média de (3/2)kBT está correta no modelo cinético clássico de gás ideal.",
+      "simbolos_unidades": "O resultado é energia por molécula em J; kB tem unidade J/K e T é dada em K.",
+      "hipoteses": "A ficha não confunde a contribuição translacional com toda a energia interna molecular; esse limite está explícito.",
+      "vinculo": "A aula discute rotação, vibração, colisões elásticas e valores médios, sem afirmar que todas as moléculas têm a mesma velocidade."
+    },
+    {
+      "numero": 20,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "As integrais de cv(T) e cp(T), de T₁ a T₂, estão corretas.",
+      "simbolos_unidades": "Calores específicos em kJ/(kg·K) e temperatura em K produzem variações de energia específica em kJ/kg.",
+      "hipoteses": "Gás ideal e composição fixa estão explícitos; as relações não são estendidas automaticamente a gases reais.",
+      "vinculo": "A aula integra uma expressão linear de cp, obtém 196 kJ/kg e compara aproximações."
+    },
+    {
+      "numero": 21,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "x = mg/(mf + mg), com 0 ≤ x ≤ 1, define corretamente a fração mássica de vapor.",
+      "simbolos_unidades": "x é adimensional; as massas devem usar a mesma unidade.",
+      "hipoteses": "A alteração prevista delimita substância pura em equilíbrio líquido–vapor abaixo do ponto crítico. x = 0 e x = 1 representam os limites saturados.",
+      "vinculo": "A seção #substancias ensina a fração mássica e a coexistência em equilíbrio; FUN-01 distingue mistura bifásica e estado supercrítico."
+    },
+    {
+      "numero": 22,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "A média ponderada pelas massas e sua inversão para obter x estão corretas.",
+      "simbolos_unidades": "A alteração prevista especifica v em m³/kg, u e h em kJ/kg, s em kJ/(kg·K), além de x adimensional e dos índices f e g.",
+      "hipoteses": "A substância deve ser pura, em equilíbrio líquido–vapor, com f e g na mesma condição de saturação. A inversão exige yg ≠ yf e exclui o ponto crítico.",
+      "vinculo": "A seção explica propriedades específicas e traz um exemplo com entalpia. A regra não deve ser usada para interpolar temperatura ou pressão pelo título."
+    },
+    {
+      "numero": 23,
+      "decisao_preliminar_original": "corrigir_modelo_e_aula",
+      "alteracao_prevista": true,
+      "expressao": "hfg = hg − hf está correto. As expressões de calor e taxa de calor exigem os modelos reduzidos explicitados nas alterações.",
+      "simbolos_unidades": "A alteração prevista identifica as entalpias específicas em kJ/kg, a massa vaporizada em kg, Q em kJ, Q̇ em kW e ṁ em kg/s. hf e hg correspondem aos estados saturados de líquido e vapor.",
+      "hipoteses": "Trata-se de vaporização completa, a pressão fixa, de substância pura entre líquido e vapor saturados. Para Q, usar massa fechada com apenas trabalho pV; para Q̇, escoamento permanente sem trabalho de eixo. Desprezar variações cinética e potencial.",
+      "vinculo": "#base-calor-latente menciona hipóteses apropriadas sem enumerá-las. A aula precisa explicitar essas condições no próprio trecho, dentro do mesmo recorte."
+    },
+    {
+      "numero": 24,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "A interpolação linear local está correta.",
+      "simbolos_unidades": "A propriedade mantém sua unidade e as três temperaturas usam a mesma escala.",
+      "hipoteses": "A alteração prevista exige Ta ≠ Tb e T entre os dois valores conhecidos. A pressão e a região de fase permanecem as mesmas, sem atravessar uma transição de fase.",
+      "vinculo": "O alvo amplo contém a fórmula e o exemplo de 230 °C, que resulta em 2.860 kJ/kg. A orientação sobre não atravessar uma mudança de fase está presente."
+    },
+    {
+      "numero": 25,
+      "decisao_preliminar_original": "corrigir_modelo_e_aula",
+      "alteracao_prevista": true,
+      "expressao": "φ = pv/psat e a razão entre umidades à mesma temperatura são válidas na aproximação de ar úmido ideal adotada; não devem ser apresentadas como definição geral de uma mistura real.",
+      "simbolos_unidades": "A alteração prevista define φ como fração, pv como pressão parcial do vapor e psat(T) como pressão de saturação da água pura sobre a fase de referência escolhida. As pressões usam a mesma unidade.",
+      "hipoteses": "Explicitar a aproximação ideal e o desprezo do fator de intensificação. A razão final exige a mesma temperatura e pv₁ ≠ 0, equivalentemente φ₁ ≠ 0.",
+      "vinculo": "#base-umidade apresenta a razão como definição e deve receber a mesma delimitação. Esse ajuste não exige implementar psicrometria de misturas reais."
+    },
+    {
+      "numero": 26,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "C = mc e Qsens = mcΔT estão corretos no modelo de calor sensível delimitado.",
+      "simbolos_unidades": "Capacidade térmica total em J/K, calor específico em J/(kg·K) e massa em kg estão distinguidos.",
+      "hipoteses": "Uma única fase, calor específico constante, sólidos ou líquidos e efeitos de trabalho e pressão desprezíveis já estão explicitados.",
+      "vinculo": "A aula delimita o modelo e calcula 252 kJ e 157,5 s sem confundir energia com potência."
+    },
+    {
+      "numero": 27,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "O balanço ΣCi(Tf − Ti) = 0 e a temperatura final como média ponderada estão corretos.",
+      "simbolos_unidades": "Ci = mici tem unidade J/K; as temperaturas usam a mesma escala e as capacidades são positivas.",
+      "hipoteses": "A alteração prevista explicita conjunto isolado, capacidades constantes, ausência de trabalho relevante, reação e mudança de fase, além de energia de mistura e variações cinética e potencial desprezíveis. Excluir apenas reação não elimina a energia de mistura.",
+      "vinculo": "A aula apresenta Tf = 50 °C e já ressalva a entalpia de mistura ao final. O vínculo deve ser mantido."
+    },
+    {
+      "numero": 28,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "A contribuição do recipiente deve ser somada uma única vez. Eext = Qext − Wext está correto na convenção adotada.",
+      "simbolos_unidades": "A alteração prevista define Ci e Crec em J/K, as temperaturas iniciais de cada porção e do recipiente, a temperatura final e Eext em J. Calor entrando e trabalho saindo são positivos.",
+      "hipoteses": "Usar capacidades constantes, sem reação ou mudança de fase, e desprezar energia de mistura e variações cinética e potencial. Incluir as trocas externas com seus sinais.",
+      "vinculo": "A aula calcula 44 °C incluindo o recipiente e explica como tratar perdas, agitador e entalpia de mistura."
+    },
+    {
+      "numero": 29,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "|Qfase| = mℓ está correto para o calor da mudança de fase nas condições indicadas; não representa qualquer variação de energia interna.",
+      "simbolos_unidades": "m é a massa efetivamente transformada; ℓ é o calor latente específico positivo, em J/kg ou kJ/kg. |Qfase| é a magnitude do calor na unidade correspondente.",
+      "hipoteses": "A alteração prevista delimita pressão fixa, apenas trabalho de fronteira e variações cinética e potencial desprezíveis. Fusão e vaporização recebem calor; os processos inversos o liberam.",
+      "vinculo": "A aula fixa a pressão, separa as etapas e exemplifica fusão parcial. A condição local deve impedir que Q seja interpretado como uma energia genérica."
+    },
+    {
+      "numero": 30,
+      "decisao_preliminar_original": "corrigir_vinculo_aula",
+      "alteracao_prevista": true,
+      "expressao": "ΔEc = m(vel₂² − vel₁²)/2 e ΔEp = mg(z₂ − z₁) estão corretos para o movimento macroscópico de translação considerado.",
+      "simbolos_unidades": "Massa em kg, velocidade em m/s, g em m/s² e altura em m produzem energia em J; converter antes de somar a termos em kJ.",
+      "hipoteses": "A alteração prevista explicita massa fixa, translação não relativística e g aproximadamente constante na diferença de altura. As alturas usam a mesma referência e a velocidade descreve o movimento macroscópico do conjunto.",
+      "vinculo": "#base-primeira-lei nomeia Ec e Ep, mas não apresenta essas expressões. O alvo precisa de uma recapitulação delimitada ou de vínculo para um trecho existente que as ensine."
+    },
+    {
+      "numero": 31,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "O balanço total de energia de um sistema fechado está correto e preserva as variações de energia cinética e potencial.",
+      "simbolos_unidades": "Todos os termos devem usar a mesma unidade de energia.",
+      "hipoteses": "A convenção de calor entrando e trabalho saindo positivos está explícita; trabalho recebido pelo sistema tem sinal negativo.",
+      "vinculo": "A aula distingue o balanço total de sua redução ΔU = Q − W, atendendo ao cuidado central do critério P0."
+    },
+    {
+      "numero": 32,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "ΔU = Q − W e U₂ = U₁ + Q − W são coerentes nas condições indicadas.",
+      "simbolos_unidades": "Estados e transferências usam J ou kJ. A variação de energia não deve ser confundida com a energia final.",
+      "hipoteses": "Sistema fechado e variações de energia cinética e potencial desprezíveis estão explicitados.",
+      "vinculo": "A aula apresenta o caso do agitador e o cálculo da energia final, com conversões de unidades."
+    },
+    {
+      "numero": 33,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "Q = 0 e ΔU = −W estão corretos para a redução indicada do balanço fechado.",
+      "simbolos_unidades": "A alteração prevista define Q como calor recebido, ΔU como variação da energia interna e W como trabalho realizado pelo sistema, todos na mesma unidade, J ou kJ.",
+      "hipoteses": "A ficha deve explicitar sistema fechado e ΔEc e ΔEp desprezíveis. Ser adiabático não significa que W seja nulo.",
+      "vinculo": "A alteração prevista acrescenta #base-balanco-fechado, com o texto “Retomar casos do balanço fechado”, para apoiar as condições da redução."
+    },
+    {
+      "numero": 34,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "A integral de p dV está correta para o trabalho de fronteira na trajetória quase estática indicada.",
+      "simbolos_unidades": "A alteração prevista define W como trabalho de fronteira em kJ, p como pressão absoluta na fronteira em kPa e V em m³.",
+      "hipoteses": "A pressão deve corresponder à fronteira no modelo adotado. Expansão dá trabalho positivo e compressão, negativo; a expressão não representa todos os modos de trabalho.",
+      "vinculo": "A aula ensina a integral, a área no diagrama e a convenção de sinais. FUN-02 aprofunda o assunto sem precisar ser alterado neste ajuste."
+    },
+    {
+      "numero": 35,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "W = p(V₂ − V₁) está correto quando a pressão de fronteira permanece constante.",
+      "simbolos_unidades": "A alteração prevista define p como pressão absoluta constante em kPa, V em m³ e W como trabalho de fronteira em kJ.",
+      "hipoteses": "A trajetória quase estática e isobárica está explicitada; a pressão usada é a pressão absoluta na fronteira.",
+      "vinculo": "A aula integra a pressão constante e contrasta esse caso com a transformação isotérmica."
+    },
+    {
+      "numero": 36,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "W = mRT ln(V₂/V₁) e ΔU = 0 estão corretos para o gás ideal em transformação isotérmica. Concluir Q = W também exige que W represente o único modo de trabalho considerado no balanço reduzido.",
+      "simbolos_unidades": "R em kJ/(kg·K), m em kg e T em K produzem trabalho em kJ; V₂/V₁ é adimensional.",
+      "hipoteses": "A alteração prevista explicita massa e composição fixas, transformação isotérmica reversível, apenas trabalho de fronteira e variações cinética e potencial desprezíveis.",
+      "vinculo": "A aula ensina a expressão. O trecho de balanço fechado declara a hipótese de apenas trabalho de fronteira para os processos apresentados."
+    },
+    {
+      "numero": 37,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "Qisocórico = mcvΔT e Qisobárico = mcpΔT estão corretos nas condições indicadas.",
+      "simbolos_unidades": "A alteração prevista define Q e W em kJ, m em kg, cp e cv em kJ/(kg·K), ΔT em K ou intervalo em °C, p em kPa e V em m³. W é trabalho de fronteira.",
+      "hipoteses": "Usar gás ideal de massa e composição fixas, calores específicos constantes e apenas trabalho de fronteira. A etapa isobárica deve ser quase estática; desprezar variações cinética e potencial.",
+      "vinculo": "A aula deriva Qp = ΔU + pΔV e a tabela declara a hipótese de trajetória quase estática."
+    },
+    {
+      "numero": 38,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "ΔU no ciclo é zero e Qlíq = Wlíq está correto quando o sistema retorna ao estado inicial e não há variação líquida de energia mecânica.",
+      "simbolos_unidades": "As transferências são somas algébricas por ciclo, em kJ, conforme definido.",
+      "hipoteses": "Calor e trabalho não precisam ser nulos em cada etapa. A condição explicita o tratamento das variações cinética e potencial.",
+      "vinculo": "A aula explica o retorno de uma propriedade ao valor inicial e a interpretação do ciclo horário."
+    },
+    {
+      "numero": 39,
+      "decisao_preliminar_original": "corrigir_modelo_e_aula",
+      "alteracao_prevista": true,
+      "expressao": "Na expansão livre do gás ideal, Q = W = 0. Pelo balanço total de energia, isso implica ΔU = −ΔEc − ΔEp. Somente com essas variações desprezíveis se conclui ΔU = 0 e, no modelo indicado, T₂ = T₁. A expressão ΔS = mR ln(V₂/V₁) = Sger então está correta.",
+      "simbolos_unidades": "Q e W são transferências de energia; ΔU é a variação de energia interna; ΔEc e ΔEp são as variações cinética e potencial, todas em unidades de energia compatíveis. T₁ e T₂ são temperaturas absolutas; ΔS e Sger são entropias.",
+      "hipoteses": "A alteração prevista explicita gás ideal em recipiente externo rígido, fechado e isolado, expansão para o vácuo, ausência de outros trabalhos e estados de equilíbrio com ΔEc e ΔEp desprezíveis. Q = W = 0, sozinho, não permite concluir ΔU = 0.",
+      "vinculo": "A aula deriva ΔU = 0 sem nomear as variações cinética e potencial. É necessário explicitar o desprezo desses termos na hipótese inicial; a rigidez da parede externa, isoladamente, não elimina variações macroscópicas de energia."
+    },
+    {
+      "numero": 40,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "Qp = ΔH e a inversão do sinal para a reação inversa entre os mesmos estados estão corretos no modelo indicado.",
+      "simbolos_unidades": "A energia corresponde à quantidade de reação especificada; não deve ser tratada automaticamente como energia por mol.",
+      "hipoteses": "A alteração prevista explicita sistema fechado, pressão constante, apenas trabalho pV e variações cinética e potencial desprezíveis. A inversão deve manter os mesmos estados e referências.",
+      "vinculo": "A aula trata de reação exotérmica e de sua inversa, além de comparar PCS e PCI sem mudar a base da comparação."
+    },
+    {
+      "numero": 41,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "h = u + pv é a definição correta de entalpia específica; ela não depende da idealidade do gás.",
+      "simbolos_unidades": "u e h em kJ/kg, p em kPa e v em m³/kg tornam pv compatível com kJ/kg.",
+      "hipoteses": "Não é necessário supor gás ideal ou regime permanente para definir h. A condição atual apenas interpreta seu uso no escoamento.",
+      "vinculo": "O bloco de energia explica entalpia e escoamento sem restringir a definição a máquinas."
+    },
+    {
+      "numero": 42,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "q − w = Δh + (vel₂² − vel₁²)/2000 + gΔz/1000 está correto na base de kJ/kg.",
+      "simbolos_unidades": "Os divisores 2000 e 1000 combinam o fator da energia cinética e a conversão de J/kg para kJ/kg. A alteração prevista define q como calor específico e w como trabalho específico não associado ao escoamento; h já inclui pv.",
+      "hipoteses": "Usar volume de controle fixo em regime permanente, com uma entrada e uma saída representativas. Calor entrando e trabalho saindo são positivos; o trabalho de escoamento não deve ser somado novamente.",
+      "vinculo": "A aula apresenta a forma em J/kg e explica a divisão por 1000. O vínculo apoia a prevenção de somas indevidas entre J/kg e kJ/kg."
+    },
+    {
+      "numero": 43,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "wt = h₁ − h₂ e a potência ṁ(h₁ − h₂) estão corretos.",
+      "simbolos_unidades": "kg/s multiplicado por kJ/kg resulta em kW; as magnitudes produzidas estão declaradas.",
+      "hipoteses": "Regime permanente, turbina adiabática e variações de energia cinética e potencial desprezíveis estão explícitos. Não é necessário exigir isentropia para esse balanço.",
+      "vinculo": "O exemplo de 800 kW fornece os estados e as convenções utilizadas."
+    },
+    {
+      "numero": 44,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "O consumo específico como magnitude h₂ − h₁ e a potência correspondente estão corretos; o sentido do trabalho é oposto ao da turbina.",
+      "simbolos_unidades": "kJ/kg, kg/s e kW estão definidos de forma completa.",
+      "hipoteses": "Regime permanente, compressor adiabático e variações de energia cinética e potencial desprezíveis estão explícitos.",
+      "vinculo": "A tabela no alvo define a magnitude consumida e não a confunde com eficiência isentrópica."
+    },
+    {
+      "numero": 45,
+      "decisao_preliminar_original": "corrigir_aula",
+      "alteracao_prevista": false,
+      "expressao": "wb,s ≈ vΔp e a potência correspondente estão corretos para líquido aproximadamente incompressível no caminho isentrópico.",
+      "simbolos_unidades": "m³/kg multiplicado por kPa resulta em kJ/kg; as magnitudes consumidas estão identificadas.",
+      "hipoteses": "A ficha já declara regime permanente, processo adiabático reversível, v aproximadamente constante e variações cinética e potencial desprezíveis.",
+      "vinculo": "A tabela da aula menciona apenas líquido quase incompressível sob o rótulo “Bomba ideal”. O alvo precisa explicitar as hipóteses que a ficha já apresenta corretamente."
+    },
+    {
+      "numero": 46,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "h₁ ≈ h₂ está correto na aproximação de estrangulamento delimitada.",
+      "simbolos_unidades": "h é dado em kJ/kg; igualdade de entalpia não exige temperatura constante.",
+      "hipoteses": "Regime permanente, ausência de calor e trabalho de eixo e variações cinética e potencial desprezíveis estão explícitos.",
+      "vinculo": "A tabela ensina o processo aproximadamente isoentálpico e alerta que a temperatura pode variar. #base-valvula-fase apresenta uma aplicação adicional."
+    },
+    {
+      "numero": 47,
+      "decisao_preliminar_original": "manter",
+      "alteracao_prevista": false,
+      "expressao": "A energia perdida pela corrente quente igual à energia recebida pela corrente fria está correta para duas correntes sem trocas externas relevantes.",
+      "simbolos_unidades": "Cada lado tem dimensão de potência: kg/s × kJ/kg = kW. Os índices quente/frio e entrada/saída estão definidos.",
+      "hipoteses": "Regime permanente, somente duas correntes, ausência de trabalho e calor externos e variações cinética e potencial desprezíveis estão explicitados. O conjunto adiabático não impede a troca de calor entre as correntes.",
+      "vinculo": "A aula declara isolamento externo e balanço entre as correntes, sem impor ausência de transferência interna."
+    },
+    {
+      "numero": 48,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "dmVC/dt = Σṁin − Σṁout está correto por conservação de massa.",
+      "simbolos_unidades": "Ambos os lados têm unidade kg/s e os índices estão definidos.",
+      "hipoteses": "A alteração prevista explicita volume de controle fixo e inclusão de todas as entradas e saídas. Regime permanente exige acumulação de massa nula; acumulação de massa nula, sozinha, não prova que todas as propriedades estejam em regime permanente.",
+      "vinculo": "A aula sobre enchimento do tanque distingue rigidez, adiabaticidade e regime permanente, preservando o termo de acumulação."
+    },
+    {
+      "numero": 49,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "dUVC/dt = Q̇ − Ẇ + Σin ṁh − Σout ṁh está correto quando as contribuições cinética e potencial são desprezadas. É um balanço reduzido, não a forma universal.",
+      "simbolos_unidades": "kJ/s = kW. A alteração prevista define UVC armazenada em kJ, Q̇ entrando e Ẇ saindo em kW, ṁ em kg/s e h em kJ/kg. Ẇ exclui o trabalho de escoamento já incluído em h.",
+      "hipoteses": "Usar volume de controle fixo, com entalpia representativa de cada corrente. Desprezar energia cinética e potencial tanto no armazenamento quanto nas correntes.",
+      "vinculo": "A aula delimita o desprezo de energia cinética e potencial e define o trabalho empregado; não apresenta a redução como um balanço universal."
+    },
+    {
+      "numero": 50,
+      "decisao_preliminar_original": "corrigir_metadados",
+      "alteracao_prevista": true,
+      "expressao": "Integrar os termos ṁh com h constante em cada corrente produz as parcelas mh. A massa dessas parcelas é a que atravessa a fronteira no intervalo.",
+      "simbolos_unidades": "As energias são totais em kJ, as massas atravessadas em kg e as entalpias em kJ/kg. A alteração prevista define Q entrando e W saindo, excluindo o trabalho de escoamento.",
+      "hipoteses": "Usar volume de controle fixo e o mesmo recorte de energia da ficha 49. Cada corrente deve manter h constante; se h variar, integrar ṁh no tempo.",
+      "vinculo": "A aula distingue a massa inicialmente armazenada da massa que atravessa a fronteira e exige integração quando a entalpia da corrente varia."
+    }
+  ]
+}

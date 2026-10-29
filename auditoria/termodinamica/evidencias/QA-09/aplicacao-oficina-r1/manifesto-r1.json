@@ -1,0 +1,48 @@
+{
+  "estado": "APLICADO_PENDENTE_AUDITORIA",
+  "autor": "/root/inspect_repo",
+  "antes": {
+    "html": "49b0df4fe59dfd01913f4d41a5e6869705f4bf4d6ded251060f940cd5d12c91b",
+    "inventario_json": "9102ed042ff940c71604eadc361dcd3b4006a3bc1dc2a0e336cc0f2de0508edf",
+    "inventario_md": "898830d59f4162be64954315f13a85aa27e53efbcadc61f25cd82b22901425ab"
+  },
+  "depois": {
+    "html": "dd47dc9dbc5c22f6f74a4fa67bd28b495cff775ff8ca04cec2c76c405dfefd1a",
+    "inventario_json": "f80a1c6b542b3db14272ea8a0a1c710d8e4dd1906f4436dfc12b93547895fdf1",
+    "inventario_md": "f3578d669fd2cc7393879a293279fb5697d8bd8dd5a0fdb75adb57f53c704bfb"
+  },
+  "candidatas": [
+    {
+      "id": "estado-exemplo",
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/oficina-estado-exemplo-candidata-r1.html",
+      "sha256": "62418797ab11205ff619196e60fcb65b22f4528d0afc912f63a15f5579886642",
+      "fragmento": "dec11b70113935a4f763cde64bc6b371159284b364e370c6519a6a4f1fc72af2"
+    },
+    {
+      "id": "trabalho-diagnostico",
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/oficina-trabalho-diagnostico-candidata-r1.html",
+      "sha256": "24ca90cb4d0e120a0c13f26e3fbbc9afca276c4d1a037f915b6d84fce46c24bc",
+      "fragmento": "8b0baf719dc32ff52efba1a6968b8bef82804e1aad8f26f5949e9258fa50e841"
+    },
+    {
+      "id": "balancos-turbina",
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/oficina-balancos-turbina-candidata-r1.html",
+      "sha256": "9f662cf7872e5dddb5cad0d7ba3fc10b795db3ffb53002f7f20cd46b32bf8247",
+      "fragmento": "ddbee308b1684a4eb8d5884a17a056582016563cc61ba735105eb0d433fe6acd"
+    },
+    {
+      "id": "balancos-compressor",
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/oficina-balancos-compressor-candidata-r1.html",
+      "sha256": "0b65f6057c08fca38cd06acb9a46907acbdb385c78833b739f828686258b8ced",
+      "fragmento": "7b45170eba005fecfbd7b39dc6e96656fa8d294f07a93339e2f59a92945e2ae5"
+    }
+  ],
+  "parecer": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-oficina-8-1-revisao-candidatas-independente-r1.md",
+    "sha256": "a9ef64c60c99c456fa1574007711576ccb3ce1b60214ef7df0ad360bea42de43"
+  },
+  "artigos_byte_a_byte_iguais": 197,
+  "snapshot_anterior": "auditoria/termodinamica/evidencias/QA-09/aplicacao-oficina-r1/antes/e1-termodinamica.html",
+  "snapshot_atual": "auditoria/termodinamica/evidencias/QA-09/aplicacao-oficina-r1/e1-termodinamica-depois.html",
+  "limite": "Aplicação requer auditoria independente; QA-09 não aprovado."
+}

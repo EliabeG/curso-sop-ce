@@ -1,0 +1,1247 @@
+{
+  "responsavel": "coordenador /root; insumo a revisar e integrar pelo Corretor",
+  "fonte_sha256": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e",
+  "metodo": "Leitura integral dos enunciados, alternativas, notas e comentários dos 30 artigos. Nível estimado, sem piloto; não é auditoria BAN-08.",
+  "itens": [
+    {
+      "id": "q-e1-01",
+      "competencias": [
+        "C01"
+      ],
+      "pre_requisitos": [
+        "Sistema fechado, aberto e isolado",
+        "Distinção entre fluxo de massa e movimento da fronteira"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Reconhece a classe de fronteira a partir de vedação e trocas já declaradas; não escolhe um modelo.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Concluir que a ausência de passagem de massa com calor e possível trabalho caracteriza sistema fechado."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Recipiente vedado",
+          "Pistão móvel",
+          "Pode receber calor"
+        ],
+        "implicitas": [
+          "Fronteira acompanha o recipiente e o pistão"
+        ],
+        "limites": [
+          "Movimento da fronteira não implica entrada de massa"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Reconhecimento de classe de sistema, parte elementar de C01."
+      }
+    },
+    {
+      "id": "q-e1-02",
+      "competencias": [
+        "C02",
+        "C08"
+      ],
+      "pre_requisitos": [
+        "Pressão manométrica e absoluta",
+        "Soma de grandezas na mesma unidade"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Uma conversão de referência de pressão, com ambas as parcelas fornecidas.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Somar 200 kPa manométricos a 100 kPa atmosféricos para obter a pressão absoluta usada na equação de estado."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Leitura de 200 kPa",
+          "Pressão atmosférica local 100 kPa"
+        ],
+        "implicitas": [
+          "O manômetro mede pressão relativa à atmosfera local"
+        ],
+        "limites": [
+          "Não determina um estado completo nem verifica a validade do gás ideal"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Conversão de referência necessária a C02/C08."
+      }
+    },
+    {
+      "id": "q-e1-03",
+      "competencias": [
+        "C02"
+      ],
+      "pre_requisitos": [
+        "Propriedades intensivas e extensivas",
+        "Propriedades totais versus específicas"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Pede apenas reconhecer duas propriedades intensivas.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Selecionar temperatura e pressão por sua independência da quantidade de matéria, em contraste com as grandezas totais."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [],
+        "implicitas": [
+          "Comparação de amostras no mesmo estado"
+        ],
+        "limites": [
+          "Não pede independência termodinâmica entre p e T"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Vocabulário de propriedades que apoia C02."
+      }
+    },
+    {
+      "id": "q-e1-04",
+      "competencias": [
+        "C02"
+      ],
+      "pre_requisitos": [
+        "Mistura saturada e título mássico",
+        "Relação h=hf+x(hg−hf)",
+        "Álgebra de razão"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Região e três entalpias já são dadas; basta isolar x, sem buscar tabela.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Usar x=(1000−500)/(2500−500)=0,25 e conferir o intervalo de 0 a 1."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Mistura saturada",
+          "hf=500, hg=2500 e h=1000 kJ/kg"
+        ],
+        "implicitas": [
+          "Valores de ambas as fases correspondem ao mesmo estado de saturação",
+          "Propriedades fornecidas são dados didáticos"
+        ],
+        "limites": [
+          "Título é fração de massa de vapor, não de volume; não vale para vapor superaquecido"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Cálculo direto de título, suporte de seleção de propriedades em C02."
+      }
+    },
+    {
+      "id": "q-e1-05",
+      "competencias": [
+        "C02"
+      ],
+      "pre_requisitos": [
+        "Regiões de substância pura",
+        "Significado dos limites x=0 e x=1"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Reconhece o domínio de definição do título entre afirmações prontas.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Identificar como incorreta a extensão do título a qualquer vapor superaquecido."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Substância pura"
+        ],
+        "implicitas": [
+          "Coexistência líquido–vapor em equilíbrio nas afirmações sobre saturação"
+        ],
+        "limites": [
+          "Não demonstra a escolha de pares de propriedades independentes nem consulta propriedades reais"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Reconhecimento da região de fase que apoia C02."
+      }
+    },
+    {
+      "id": "q-e1-06",
+      "competencias": [
+        "C02",
+        "C08"
+      ],
+      "pre_requisitos": [
+        "Equação pV=mRT",
+        "Unidades kPa·m³=kJ",
+        "Rearranjo algébrico"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Modelo, massa, volume, temperatura e R fornecidos; substituição única na equação de estado.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Aplicar p=mRT/V com os dados fornecidos e reconhecer 100 kJ/m³ como 100 kPa."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Ar ideal",
+          "m=1 kg, V=0,861 m³, T=300 K",
+          "R=0,287 kJ/(kg·K)"
+        ],
+        "implicitas": [
+          "Estado homogêneo representável pelos valores dados"
+        ],
+        "limites": [
+          "Não seleciona nem valida a aproximação ideal"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Aplicação elementar de equação de estado e unidades, apoio a C02/C08."
+      }
+    },
+    {
+      "id": "q-e1-07",
+      "competencias": [
+        "C03"
+      ],
+      "pre_requisitos": [
+        "Primeira lei de sistema fechado",
+        "Convenção calor recebido/trabalho produzido positivos"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Balanço fechado com termos negligenciados já indicados e somente uma diferença de energias.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Aplicar ΔU=Q−W com calor recebido e trabalho produzido: 500−200=300 kJ."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Sistema fechado",
+          "Recebe 500 kJ e realiza 200 kJ",
+          "Variações cinética e potencial desprezadas"
+        ],
+        "implicitas": [
+          "Só as transferências de energia informadas participam do processo"
+        ],
+        "limites": [
+          "Não inclui escolha de fronteira, massa ou transiente de volume de controle"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Balanço elementar de C03."
+      }
+    },
+    {
+      "id": "q-e1-08",
+      "competencias": [
+        "C03",
+        "C08"
+      ],
+      "pre_requisitos": [
+        "Trabalho de fronteira",
+        "Integral de pressão constante",
+        "Unidade kPa·m³=kJ"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Trajetória quase estática e pressão constante explicitadas; aplica W=pΔV.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Calcular W=200(0,3−0,1)=40 kJ, positivo para expansão na convenção de trabalho produzido."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Expansão quase estática",
+          "p=200 kPa constante",
+          "Volumes 0,1 e 0,3 m³"
+        ],
+        "implicitas": [
+          "Pressão informada representa a pressão de fronteira do modelo"
+        ],
+        "limites": [
+          "Não exige integração de pressão variável nem comparação de caminhos"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Trabalho de fronteira simples de C03 e controle de unidades de C08."
+      }
+    },
+    {
+      "id": "q-e1-09",
+      "competencias": [
+        "C03",
+        "C08"
+      ],
+      "pre_requisitos": [
+        "Leitura de diagrama p–V",
+        "Trabalho líquido como integral cíclica",
+        "Sentido do ciclo e convenção de sinal"
+      ],
+      "nivel": {
+        "estimado": "intermediario",
+        "justificativa": "Integra leitura gráfica e sinal de uma integral de caminho, ainda em geometria retangular elementar.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "integracao_etapas",
+        "etapas": [
+          "Ler da figura os níveis 200/100 kPa e os volumes 1/3 m³; reconhecer o percurso horário.",
+          "Obter o trabalho produzido pela área orientada (200−100)(3−1)=200 kJ."
+        ],
+        "numero_etapas": 2
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Percurso A→B→C→D→A",
+          "Pressão em kPa e volume em m³",
+          "Figura esquemática sem escala"
+        ],
+        "implicitas": [
+          "Trajetória p–V representa trabalho de fronteira quase estático; segmentos seguem o retângulo indicado"
+        ],
+        "limites": [
+          "Não obtém estados termodinâmicos nem resolve um ciclo de potência completo"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Leitura de caminho e energia, evidência restrita de C03/C08."
+      }
+    },
+    {
+      "id": "q-e1-10",
+      "competencias": [
+        "C03"
+      ],
+      "pre_requisitos": [
+        "Balanço estacionário de energia em escoamento",
+        "Entalpia e trabalho de escoamento"
+      ],
+      "nivel": {
+        "estimado": "intermediario",
+        "justificativa": "A seleção da relação decorre de simplificar um balanço com hipóteses dadas; não exige obter propriedades.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Eliminar calor, trabalho e variações cinética/potencial no balanço permanente de uma válvula para obter h1≈h2."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Regime permanente",
+          "Válvula adiabática",
+          "Sem trabalho",
+          "Pequenas mudanças de velocidade e altura"
+        ],
+        "implicitas": [
+          "Uma entrada e uma saída, sem outras correntes nem armazenamento de massa no regime permanente"
+        ],
+        "limites": [
+          "Conservar h não implica conservar s, T ou u em qualquer fluido"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Simplificação orientada de balanço de C03."
+      }
+    },
+    {
+      "id": "q-e1-11",
+      "competencias": [
+        "C03",
+        "C08"
+      ],
+      "pre_requisitos": [
+        "Balanço de turbina estacionária",
+        "Potência versus trabalho específico",
+        "kJ/s=kW"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Entalpias, vazão e simplificações são fornecidas; cálculo direto de potência.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Usar potência=ṁ(h1−h2)=2(3100−2700)=800 kW."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Turbina adiabática em regime permanente",
+          "Vazão 2 kg/s",
+          "Entalpias 3100 e 2700 kJ/kg",
+          "Variações cinética e potencial desprezadas"
+        ],
+        "implicitas": [
+          "Uma corrente de entrada e uma de saída"
+        ],
+        "limites": [
+          "Não busca propriedades nem calcula eficiência isentrópica"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Balanço direto de C03 e unidades de C08."
+      }
+    },
+    {
+      "id": "q-e1-12",
+      "competencias": [
+        "C03",
+        "C02"
+      ],
+      "pre_requisitos": [
+        "Trabalho específico de bomba ideal",
+        "Aproximação de líquido incompressível",
+        "kPa·m³/kg=kJ/kg"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Aplicação de vΔp com volume e aumento de pressão dados e sinal já delimitado.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Calcular magnitude de trabalho consumido vΔp=0,001×500=0,5 kJ/kg."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Bomba ideal",
+          "Água com v=0,001 m³/kg",
+          "Δp=500 kPa",
+          "Magnitude do trabalho de entrada adotada positiva"
+        ],
+        "implicitas": [
+          "Líquido aproximadamente incompressível e volume específico constante",
+          "Modelo estacionário ideal, mudanças cinética/potencial desprezíveis"
+        ],
+        "limites": [
+          "A expressão é aproximada e não inclui perdas nem variação significativa de v"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Trabalho simples de bombeamento, apoio a C03 e hipótese de propriedades de C02."
+      }
+    },
+    {
+      "id": "q-e1-13",
+      "competencias": [
+        "C02",
+        "C03"
+      ],
+      "pre_requisitos": [
+        "Função de estado e função de caminho",
+        "Definição h=u+pv",
+        "Retorno ao mesmo estado em ciclo"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Três reconhecimentos conceituais independentes; número de afirmações não cria modelagem avançada.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Classificar calor e trabalho como transferências dependentes do caminho, tornando I falsa.",
+          "Reconhecer h=u+pv, tornando II verdadeira.",
+          "Reconhecer ΔU=0 em ciclo, tornando III verdadeira."
+        ],
+        "numero_etapas": 3
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Ciclo retorna ao estado inicial na proposição III"
+        ],
+        "implicitas": [
+          "Grandezas específicas usam a mesma base de massa"
+        ],
+        "limites": [
+          "Não exige construir balanço nem calcular processo"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Definições fundamentais de C02/C03."
+      }
+    },
+    {
+      "id": "q-e1-14",
+      "competencias": [
+        "C04",
+        "C09"
+      ],
+      "pre_requisitos": [
+        "Enunciados de Clausius e Kelvin–Planck",
+        "Papel do trabalho em refrigeração"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Escolhe o dispositivo permitido por enunciado da segunda lei em alternativas explícitas.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Reconhecer que transferir calor do frio ao quente com consumo de trabalho não corresponde ao efeito único proibido por Clausius."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Refrigerador da alternativa correta consome trabalho"
+        ],
+        "implicitas": [
+          "Leitura usual dos enunciados para dispositivos cíclicos e fontes térmicas"
+        ],
+        "limites": [
+          "Não calcula geração de entropia nem julga uma instalação nova"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Reconhecimento da restrição de C04 e julgamento elementar de C09."
+      }
+    },
+    {
+      "id": "q-e1-15",
+      "competencias": [
+        "C03",
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Primeira lei em ciclo",
+        "Definição de eficiência térmica",
+        "Razões e porcentagem"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Dois resultados encadeados por relações usuais com fluxos já dados; não há determinação de estados.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Obter trabalho líquido pelo balanço do ciclo: 1000−650=350 kJ.",
+          "Dividir trabalho pelo calor recebido: 350/1000=35%."
+        ],
+        "numero_etapas": 2
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Recebe 1000 kJ e rejeita 650 kJ por ciclo"
+        ],
+        "implicitas": [
+          "Máquina cíclica, demais transferências não mencionadas ausentes"
+        ],
+        "limites": [
+          "Não permite comparar com Carnot sem temperaturas das fontes"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Balanço e eficiência elementares que apoiam C03/C06."
+      }
+    },
+    {
+      "id": "q-e1-16",
+      "competencias": [
+        "C04",
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Eficiência de Carnot",
+        "Temperatura absoluta",
+        "Razão e porcentagem"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Fontes em kelvin e reversibilidade já declaradas; aplica uma expressão conhecida.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Calcular limite reversível η=1−300/600=0,50."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Motor reversível",
+          "Fontes a 600 e 300 K"
+        ],
+        "implicitas": [
+          "Operação cíclica entre somente as duas fontes do modelo"
+        ],
+        "limites": [
+          "Não avalia irreversibilidades de máquina real nem determina estados do ciclo"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Limite básico de segunda lei e ciclos, apoio a C04/C06."
+      }
+    },
+    {
+      "id": "q-e1-17",
+      "competencias": [
+        "C03",
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Balanço de energia em refrigerador cíclico",
+        "Definição de COP de refrigeração"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Solicita dois cálculos diretos com calor e trabalho informados, sem modelagem de estados.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Calcular COP de refrigeração como 900/300=3.",
+          "Aplicar o balanço cíclico para obter rejeição 900+300=1200 kJ."
+        ],
+        "numero_etapas": 2
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Retira 900 kJ do recinto",
+          "Consome 300 kJ"
+        ],
+        "implicitas": [
+          "Valores correspondem ao mesmo ciclo ou intervalo de operação sem acumulação líquida"
+        ],
+        "limites": [
+          "COP maior que um não é eficiência térmica maior que 100%"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Balanço e desempenho simples de C03/C06."
+      }
+    },
+    {
+      "id": "q-e1-18",
+      "competencias": [
+        "C04"
+      ],
+      "pre_requisitos": [
+        "Balanço de entropia",
+        "Sistema isolado versus adiabático",
+        "Transferência de entropia por calor"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Três juízos conceituais, sem calcular propriedades ou geração.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Reconhecer geração possível em sistema isolado irreversível: I verdadeira.",
+          "Distinguir ausência de calor de ausência de geração: II falsa.",
+          "Reconhecer que uma parte pode perder entropia com calor rejeitado: III verdadeira."
+        ],
+        "numero_etapas": 3
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Proposição I: sistema isolado",
+          "Proposição II: processo adiabático",
+          "Proposição III: parte que rejeita calor"
+        ],
+        "implicitas": [
+          "Entropia transferida e gerada devem ser distinguidas no balanço de cada sistema"
+        ],
+        "limites": [
+          "Não calcula a entropia total de uma situação nova"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Fundamentos conceituais de C04."
+      }
+    },
+    {
+      "id": "q-e1-19",
+      "competencias": [
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Definição de eficiência isentrópica da turbina",
+        "Razão entre quedas real e isentrópica"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "As duas quedas já estão prontas; basta escolher a ordem da razão.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Calcular eficiência da turbina por queda real/queda isentrópica=400/500=0,80."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Queda isentrópica 500 kJ/kg",
+          "Queda real 400 kJ/kg"
+        ],
+        "implicitas": [
+          "Mesma entrada e pressão de saída para comparar referências",
+          "Modelo adiabático estacionário com variações cinética/potencial desprezíveis"
+        ],
+        "limites": [
+          "Não determina a saída isentrópica por propriedades nem analisa um ciclo completo"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Indicador isolado de componente, apoio a C06."
+      }
+    },
+    {
+      "id": "q-e1-20",
+      "competencias": [
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Funções da bomba, caldeira, turbina e condensador",
+        "Sequência do Rankine ideal"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Reconhece a ordem dos quatro equipamentos.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Ordenar bomba→caldeira→turbina→condensador acompanhando a fase adequada a cada equipamento."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Ciclo Rankine ideal",
+          "Início da sequência na bomba"
+        ],
+        "implicitas": [
+          "Configuração simples sem regeneração ou reaquecimento"
+        ],
+        "limites": [
+          "Não pede estados, trabalho ou eficiência"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Vocabulário e organização básica de C06."
+      }
+    },
+    {
+      "id": "q-e1-21",
+      "competencias": [
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Modelos ar-padrão Otto e Diesel",
+        "Processos de adição de calor idealizados"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Contrasta duas definições de ciclo, sem derivação nem cálculo.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Distinguir adição de calor a volume constante no Otto e a pressão constante no Diesel."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Ciclos ideais Otto e Diesel"
+        ],
+        "implicitas": [
+          "Modelos ar-padrão; não uma descrição literal da combustão real"
+        ],
+        "limites": [
+          "Não compara eficiências para restrições equivalentes"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Reconhecimento de modelos que apoia C06."
+      }
+    },
+    {
+      "id": "q-e1-22",
+      "competencias": [
+        "C06",
+        "C03"
+      ],
+      "pre_requisitos": [
+        "Compressão de gases e volume específico",
+        "Resfriamento intermediário e hipóteses do modelo"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Reconhece efeito qualitativo do intercooling sob modelo já ensinado; não otimiza nem calcula estágios.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Associar menor temperatura/volume específico na entrada do estágio seguinte à redução do trabalho para a mesma razão global."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Compressão de ar em estágios",
+          "Comparação à mesma razão global",
+          "Validade nas hipóteses do modelo"
+        ],
+        "implicitas": [
+          "Comparação ideal com condições equivalentes, sem perdas adicionais que alterem a conclusão do modelo"
+        ],
+        "limites": [
+          "Não garante maior eficiência de qualquer ciclo nem elimina irreversibilidades"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Tendência física de componente que apoia C03/C06."
+      }
+    },
+    {
+      "id": "q-e1-23",
+      "competencias": [
+        "C03",
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Balanços do evaporador e compressor",
+        "Definição de COP de refrigeração",
+        "Identificação dos estados numerados"
+      ],
+      "nivel": {
+        "estimado": "intermediario",
+        "justificativa": "Relaciona estados a dois componentes e combina os respectivos balanços; propriedades continuam totalmente fornecidas.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "integracao_etapas",
+        "etapas": [
+          "Relacionar o efeito refrigerante ao evaporador h1−h4 e o trabalho ao compressor h2−h1.",
+          "Combinar os dois resultados no COP=(400−250)/(450−400)=3."
+        ],
+        "numero_etapas": 2
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Estados 1,2,3,4 definidos no circuito",
+          "Modelo estacionário usual",
+          "h1=400,h2=450,h3=h4=250 kJ/kg"
+        ],
+        "implicitas": [
+          "Compressor adiabático, sem outros trabalhos e variações cinética/potencial relevantes",
+          "Mesma vazão no circuito simples"
+        ],
+        "limites": [
+          "Não obtém entalpias por tabelas nem seleciona refrigerante ou pressão de operação"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Integração curta de dois balanços, alcance parcial de C03/C06."
+      }
+    },
+    {
+      "id": "q-e1-24",
+      "competencias": [
+        "C01",
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Nomenclatura flamotubular e aquatubular",
+        "Identificação de correntes em gerador de vapor"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Pergunta factual sobre qual corrente passa nos tubos.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Reconhecer gases de combustão no interior dos tubos da caldeira flamotubular."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Caldeira flamotubular",
+          "Tubos aquecedores"
+        ],
+        "implicitas": [],
+        "limites": [
+          "Não constitui dimensionamento de caldeira nem balanço termodinâmico"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Conhecimento de equipamento como apoio indireto à identificação de correntes e ciclos em C01/C06."
+      }
+    },
+    {
+      "id": "q-e1-25",
+      "competencias": [
+        "C01",
+        "C03"
+      ],
+      "pre_requisitos": [
+        "Regime permanente versus uniformidade espacial",
+        "Entalpia em escoamento",
+        "Funções de turbina, bocal e válvula"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "A proposição incorreta é uma distinção conceitual entre tempo e espaço, sem cálculo.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Confrontar as proposições com o balanço estacionário e identificar que ausência de variação temporal não exige igualdade espacial de p e T."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Escoamentos estacionários",
+          "Turbina adiabática em uma proposição",
+          "Relação aproximadamente isoentálpica para válvula"
+        ],
+        "implicitas": [
+          "Modelos usuais de componente; bocal adiabático sem trabalho para a conversão indicada; válvula com calor/trabalho e mudanças cinética/potencial desprezíveis"
+        ],
+        "limites": [
+          "Não pede resolver um volume de controle transiente nem determinar campos espaciais"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Regime e energia em nível conceitual para C01/C03."
+      }
+    },
+    {
+      "id": "q-e1-26",
+      "competencias": [
+        "C02",
+        "C08"
+      ],
+      "pre_requisitos": [
+        "Interpolação linear",
+        "Uso de propriedades em pressão fixa",
+        "Região de fase única"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Uma interpolação com pontos e valor-alvo fornecidos; repete o exemplo disponível.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Interpolar h=2800+(230−200)/(300−200)×(3000−2800)=2860 kJ/kg."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Tabela didática a pressão fixa",
+          "h=2800 a 200 °C e h=3000 a 300 °C",
+          "Interpolação linear a 230 °C"
+        ],
+        "implicitas": [
+          "Mesmo ramo/região termodinâmica e variação aproximadamente linear no intervalo"
+        ],
+        "limites": [
+          "Dados didáticos, sem identificação de fluido ou rastreio de tabela real",
+          "Não é evidência independente de consulta a propriedades"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Fixação de interpolação em apoio a C02/C08."
+      },
+      "exposicao_previa": {
+        "relacoes": [
+          {
+            "id_ou_ancora": "base-interpolacao",
+            "tipo": "exemplo_reutilizado",
+            "evidencia": "O exemplo e a questão usam 200/300 °C, 2800/3000 kJ/kg e consulta a 230 °C, dando 2860 kJ/kg."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-27",
+      "competencias": [
+        "C03",
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Razões de pressão absoluta",
+        "Média geométrica",
+        "Modelo de compressão em dois estágios com intercooling perfeito"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "O enunciado já fornece razões iguais; resolve a relação algébrica, sem demonstrar o mínimo.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Igualar pi/1=16/pi e escolher a raiz física positiva pi=4 bar absolutos."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Compressão ideal em dois estágios",
+          "Resfriamento perfeito",
+          "Razões iguais",
+          "Pressões 1 e 16 bar absolutas"
+        ],
+        "implicitas": [
+          "Condições equivalentes entre os estágios e ausência de perdas de pressão do modelo"
+        ],
+        "limites": [
+          "Não realiza a otimização por derivada nem modela compressor industrial"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Fixação da pressão intermediária ideal, apoio a C03/C06."
+      },
+      "exposicao_previa": {
+        "relacoes": [
+          {
+            "id_ou_ancora": "base-compressao-estagios",
+            "tipo": "exemplo_reutilizado",
+            "evidencia": "A aula de compressão em dois estágios usa as mesmas pressões inicial 1 bar e final 16 bar e resultado intermediário 4 bar."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-28",
+      "competencias": [
+        "C06"
+      ],
+      "pre_requisitos": [
+        "Eficiência isentrópica de turbina",
+        "Diferenças de entalpia",
+        "Referências real e isentrópica"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Escolhe e aplica razão de diferenças de entalpia já dadas; dispensa obter estados.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "aplicacao_direta",
+        "etapas": [
+          "Calcular ηt=(3200−2400)/(3200−2200)=0,80, com mesma referência de entrada."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Turbina adiabática",
+          "h1=3200,h2s=2200,h2real=2400 kJ/kg",
+          "Saída isentrópica de referência na mesma pressão de saída, indicada na legenda"
+        ],
+        "implicitas": [
+          "Regime permanente e variações cinética/potencial desprezíveis"
+        ],
+        "limites": [
+          "Não busca h2s em tabela nem mede perda exergética"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Eficiência de componente com propriedades prontas, apoio a C06."
+      },
+      "exposicao_previa": {
+        "relacoes": [
+          {
+            "id_ou_ancora": "q-e1-19",
+            "tipo": "mesma_transformacao",
+            "evidencia": "Ambas pedem razão trabalho real/isentrópico com resultado 80%; Q19 já fornece as quedas 400/500 e Q28 exige diferenças 800/1000. Relação de procedimento, não igualdade de dados."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-29",
+      "competencias": [
+        "C01",
+        "C04"
+      ],
+      "pre_requisitos": [
+        "Fronteira envolvendo o trocador inteiro",
+        "Balanço estacionário de entropia",
+        "Vazão de entropia e sinal das variações"
+      ],
+      "nivel": {
+        "estimado": "intermediario",
+        "justificativa": "Reúne duas correntes e o balanço do conjunto; a prática repete os dados do exemplo.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "integracao_etapas",
+        "etapas": [
+          "Escolher o conjunto dos dois fluidos para eliminar transferência externa de calor e acumulação de entropia.",
+          "Somar fluxos líquidos ṁΔs=1(−0,20)+1(0,30)=0,10 kW/K e verificar geração não negativa."
+        ],
+        "numero_etapas": 2
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Duas correntes de 1 kg/s cada",
+          "Regime permanente",
+          "Sem calor para o ambiente",
+          "Variações específicas −0,20 e +0,30 kJ/(kg·K)"
+        ],
+        "implicitas": [
+          "As correntes não se misturam e a fronteira inclui todo o trocador"
+        ],
+        "limites": [
+          "Variações de entropia são fornecidas; não calcula propriedades",
+          "Repetição de exemplo não comprova transferência para situação inédita"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Fixação orientada de fronteira e balanço de entropia, apoio a C01/C04."
+      },
+      "exposicao_previa": {
+        "relacoes": [
+          {
+            "id_ou_ancora": "base-entropia-escoamento",
+            "tipo": "exemplo_reutilizado",
+            "evidencia": "O exemplo e a questão usam 1 kg/s para cada fluido e variações −0,20/+0,30 kJ/(kg·K), dando 0,10 kW/K."
+          }
+        ]
+      }
+    },
+    {
+      "id": "q-e1-30",
+      "competencias": [
+        "C02",
+        "C04",
+        "C09"
+      ],
+      "pre_requisitos": [
+        "Domínio da interpolação",
+        "Diferença entre adiabático e isentrópico",
+        "Pressão absoluta",
+        "Geração de entropia e calor"
+      ],
+      "nivel": {
+        "estimado": "iniciante",
+        "justificativa": "Reconhecimento da afirmação falsa sobre válvulas entre conceitos já expostos, sem modelagem independente.",
+        "validacao_empirica": "nao_realizada"
+      },
+      "raciocinio": {
+        "categoria": "reconhecimento",
+        "etapas": [
+          "Identificar o erro de inferir isentropia de toda válvula adiabática e distinguir as demais proposições usuais de modelos."
+        ],
+        "numero_etapas": 1
+      },
+      "hipoteses": {
+        "explicitadas": [
+          "Conceitos dos modelos do laboratório",
+          "Afirmação sobre toda válvula adiabática"
+        ],
+        "implicitas": [
+          "Modelo usual estacionário de estrangulamento admite irreversibilidades e geração positiva de entropia"
+        ],
+        "limites": [
+          "Não resolve um balanço de segunda lei nem julga dados novos de instalação"
+        ]
+      },
+      "vinculo_competencias": {
+        "tipo": "apoio_fundamental",
+        "alcance": "Reconhecimento de limites de modelos e segunda lei, apoio a C02/C04/C09."
+      }
+    }
+  ]
+}

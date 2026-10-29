@@ -1,0 +1,312 @@
+{
+  "id": "E1-FON09-CR68",
+  "versao": "1.0",
+  "data": "2026-10-27",
+  "natureza": "Conjunto editorial corrigido; não é errata oficial da banca.",
+  "escopo": "Dados associados a CR68; não alteram o comando nem o gabarito de emissividade. Não reavaliam os demais itens da prova.",
+  "modelo": "Água pura em equilíbrio líquido-vapor nas linhas de saturação. Tabelas NISTIR5078 e consulta NIST WebBook de água baseada em IAPWS-95; não são gás ideal nem tabela de líquido a25°C.",
+  "conversoes": {
+    "MPa_para_kPa": 1000,
+    "cm3_por_g_para_m3_por_kg": 0.001,
+    "kg_por_cm3_para_kg_por_m3": 1000000
+  },
+  "precisao": "A exibição mantém as casas publicadas na NISTIR5078 após conversão exata de unidades; linha101,325 arredondada a0,001°C,10^-8m³/kg(líquido) e10^-4m³/kg(vapor). JSON conserva algarismos retornados pelo WebBook. Algarismos impressos não representam incerteza metrológica. Não houve interpolação, ajuste ou recálculo próprio da equação de estado.",
+  "fontes": [
+    {
+      "id": "prova",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF",
+      "arquivo_local": "downloads/termodinamica/provas/2024-03-24_petrobras-tecnico-operacao-2023-2_prova.pdf",
+      "pagina_pdf": 3,
+      "sha256": "54ac87a4aa4f73687e45698a7ee065e4d2331b58862265bef1fa1002abf3f7a3"
+    },
+    {
+      "id": "caderno",
+      "arquivo_local": "assets/questoes-reais-e1/caderno-fornecido.pdf",
+      "pagina_pdf": 14,
+      "sha256": "bea6174ad3eee9a6880274597f444a7a20b05663dd4595d722d1a924532153b0",
+      "atribuicao": "Caderno fornecido: questões redigitadas e figuras recriadas."
+    },
+    {
+      "id": "gabarito",
+      "url": "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF",
+      "arquivo_local": "downloads/termodinamica/gabaritos/2024-03-24_petrobras-tecnico-operacao-2023-2_gabarito.pdf",
+      "pagina_pdf": 1,
+      "sha256": "93d28c3a53eaf1b102081ba57971ed7b049920c1945bb71b3e14e45cb2ba6071",
+      "item": 85,
+      "letra": "C"
+    },
+    {
+      "id": "nistir5078-tabela2",
+      "url": "https://www.nist.gov/document/nistir5078-tab2pdf",
+      "titulo": "NISTIR5078 (1998), Table2, Saturation(Pressure)",
+      "paginas_impressas": [
+        11,
+        12
+      ],
+      "pagina_pdf_dados": 2,
+      "unidades_originais": {
+        "p": "MPa",
+        "T": "°C",
+        "v": "cm³/g"
+      }
+    },
+    {
+      "id": "nist-webbook-saturacao",
+      "url": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+      "captura": "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-saturacao-101325.html",
+      "sha256_captura": "ccbfe0998477db30e1acd2c81acb035df65e5aea580dd8147accb5b6f4d88b34",
+      "modelo": "IAPWS-95, Wagner e Pruss(2002), release2016 citada pelo WebBook",
+      "condicao": "Saturação à pressão0,101325MPa; duas fases listadas; Type=SatT na API.",
+      "url_captura_html": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Load&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa%2As&STUnit=N%2Fm",
+      "data_consulta": "2026-10-27"
+    },
+    {
+      "id": "nist-webbook-densidade",
+      "url": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+      "captura": "auditoria/termodinamica/evidencias/FON-09/apoio-webbook-densidade-25c-101325.html",
+      "sha256_captura": "7bc6b02309d877723dd721a9eab8f9f2ee817d8fa2008c7b4c7de12373f5a01e",
+      "modelo": "IAPWS-95 citado pelo WebBook",
+      "condicao": "Líquido a25°C e0,101325MPa; Type=IsoTherm.",
+      "url_captura_html": "https://webbook.nist.gov/cgi/fluid.cgi?Action=Load&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa%2As&STUnit=N%2Fm",
+      "data_consulta": "2026-10-27"
+    }
+  ],
+  "densidade": {
+    "transcricao": "1.000 kg/cm³",
+    "valor_literal_kgm3": 1000000000,
+    "modelo_editorial_aproximado": {
+      "rho_kgm3": 1000,
+      "condicao": "Aproximação didática de líquido incompressível perto de25°C e pressão atmosférica; não valor exato ou saturado.",
+      "erro_relativo_porcento": 0.29611022398086106
+    },
+    "referencia_fisica": {
+      "T_C": 25,
+      "p_kPa": 101.325,
+      "rho_kgm3": 997.04764,
+      "v_m3kg": 0.0010029611,
+      "fase": "liquid",
+      "fonte": "nist-webbook-densidade"
+    },
+    "limite": "A pressão dos pontos1/2 não é fixada aqui em101,325kPa: o número físico é referência na condição declarada. Não se deduz a intenção do autor nem se impõe densidade constante como propriedade exata."
+  },
+  "saturacao": [
+    {
+      "p_kPa": 101.325,
+      "original": {
+        "T_C": "100",
+        "vf_m3kg": "0.00104",
+        "vg_m3kg": "1.695"
+      },
+      "correto": {
+        "T_C": 99.974296,
+        "vf_m3kg": 0.0010434411,
+        "vg_m3kg": 1.6732012
+      },
+      "exibicao": {
+        "p": "101,325",
+        "T": "99,974",
+        "vf": "0,00104344",
+        "vg": "1,6732"
+      },
+      "fonte": "nist-webbook-saturacao",
+      "metodo": "Consulta direta à pressão0,101325MPa; sem interpolação editorial.",
+      "comparacao": {
+        "T_C": {
+          "diferenca_original_menos_referencia": 0.025704000000004612,
+          "meia_unidade_ultima_casa": 0.5,
+          "classificacao": "compativel_com_arredondamento"
+        },
+        "vf_m3kg": {
+          "diferenca_original_menos_referencia": -0.0000034411000000001118,
+          "meia_unidade_ultima_casa": 0.000005,
+          "classificacao": "compativel_com_arredondamento"
+        },
+        "vg_m3kg": {
+          "diferenca_original_menos_referencia": 0.021798800000000007,
+          "meia_unidade_ultima_casa": 0.0005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        }
+      }
+    },
+    {
+      "p_kPa": 150,
+      "original": {
+        "T_C": "114",
+        "vf_m3kg": "0.00108",
+        "vg_m3kg": "0.354"
+      },
+      "fonte_original": {
+        "p_MPa": 0.15,
+        "T_C": 111.349,
+        "vf_cm3g": 1.05273,
+        "vg_cm3g": 1159.3
+      },
+      "correto": {
+        "T_C": 111.349,
+        "vf_m3kg": 0.00105273,
+        "vg_m3kg": 1.1593
+      },
+      "exibicao": {
+        "p": "150",
+        "T": "111,349",
+        "vf": "0,00105273",
+        "vg": "1,1593"
+      },
+      "fonte": "nistir5078-tabela2",
+      "pagina_impressa": 12,
+      "pagina_pdf": 2,
+      "comparacao": {
+        "T_C": {
+          "diferenca_original_menos_referencia": 2.6509999999999962,
+          "meia_unidade_ultima_casa": 0.5,
+          "classificacao": "incompativel_com_precisao_publicada"
+        },
+        "vf_m3kg": {
+          "diferenca_original_menos_referencia": 0.00002727000000000003,
+          "meia_unidade_ultima_casa": 0.000005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        },
+        "vg_m3kg": {
+          "diferenca_original_menos_referencia": -0.8053,
+          "meia_unidade_ultima_casa": 0.0005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        }
+      }
+    },
+    {
+      "p_kPa": 200,
+      "original": {
+        "T_C": "128",
+        "vf_m3kg": "0.00110",
+        "vg_m3kg": "0.206"
+      },
+      "fonte_original": {
+        "p_MPa": 0.2,
+        "T_C": 120.21,
+        "vf_cm3g": 1.06052,
+        "vg_cm3g": 885.68
+      },
+      "correto": {
+        "T_C": 120.21,
+        "vf_m3kg": 0.00106052,
+        "vg_m3kg": 0.88568
+      },
+      "exibicao": {
+        "p": "200",
+        "T": "120,210",
+        "vf": "0,00106052",
+        "vg": "0,88568"
+      },
+      "fonte": "nistir5078-tabela2",
+      "pagina_impressa": 12,
+      "pagina_pdf": 2,
+      "comparacao": {
+        "T_C": {
+          "diferenca_original_menos_referencia": 7.790000000000006,
+          "meia_unidade_ultima_casa": 0.5,
+          "classificacao": "incompativel_com_precisao_publicada"
+        },
+        "vf_m3kg": {
+          "diferenca_original_menos_referencia": 0.00003948000000000016,
+          "meia_unidade_ultima_casa": 0.000005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        },
+        "vg_m3kg": {
+          "diferenca_original_menos_referencia": -0.6796800000000001,
+          "meia_unidade_ultima_casa": 0.0005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        }
+      }
+    },
+    {
+      "p_kPa": 250,
+      "original": {
+        "T_C": "138",
+        "vf_m3kg": "0.0012",
+        "vg_m3kg": "0.138"
+      },
+      "fonte_original": {
+        "p_MPa": 0.25,
+        "T_C": 127.411,
+        "vf_cm3g": 1.06722,
+        "vg_cm3g": 718.66
+      },
+      "correto": {
+        "T_C": 127.411,
+        "vf_m3kg": 0.00106722,
+        "vg_m3kg": 0.71866
+      },
+      "exibicao": {
+        "p": "250",
+        "T": "127,411",
+        "vf": "0,00106722",
+        "vg": "0,71866"
+      },
+      "fonte": "nistir5078-tabela2",
+      "pagina_impressa": 12,
+      "pagina_pdf": 2,
+      "comparacao": {
+        "T_C": {
+          "diferenca_original_menos_referencia": 10.588999999999999,
+          "meia_unidade_ultima_casa": 0.5,
+          "classificacao": "incompativel_com_precisao_publicada"
+        },
+        "vf_m3kg": {
+          "diferenca_original_menos_referencia": 0.00013277999999999988,
+          "meia_unidade_ultima_casa": 0.00005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        },
+        "vg_m3kg": {
+          "diferenca_original_menos_referencia": -0.58066,
+          "meia_unidade_ultima_casa": 0.0005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        }
+      }
+    },
+    {
+      "p_kPa": 300,
+      "original": {
+        "T_C": "147",
+        "vf_m3kg": "0.00114",
+        "vg_m3kg": "0.100"
+      },
+      "fonte_original": {
+        "p_MPa": 0.3,
+        "T_C": 133.522,
+        "vf_cm3g": 1.07317,
+        "vg_cm3g": 605.76
+      },
+      "correto": {
+        "T_C": 133.522,
+        "vf_m3kg": 0.00107317,
+        "vg_m3kg": 0.60576
+      },
+      "exibicao": {
+        "p": "300",
+        "T": "133,522",
+        "vf": "0,00107317",
+        "vg": "0,60576"
+      },
+      "fonte": "nistir5078-tabela2",
+      "pagina_impressa": 12,
+      "pagina_pdf": 2,
+      "comparacao": {
+        "T_C": {
+          "diferenca_original_menos_referencia": 13.478000000000009,
+          "meia_unidade_ultima_casa": 0.5,
+          "classificacao": "incompativel_com_precisao_publicada"
+        },
+        "vf_m3kg": {
+          "diferenca_original_menos_referencia": 0.00006682999999999993,
+          "meia_unidade_ultima_casa": 0.000005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        },
+        "vg_m3kg": {
+          "diferenca_original_menos_referencia": -0.50576,
+          "meia_unidade_ultima_casa": 0.0005,
+          "classificacao": "incompativel_com_precisao_publicada"
+        }
+      }
+    }
+  ]
+}

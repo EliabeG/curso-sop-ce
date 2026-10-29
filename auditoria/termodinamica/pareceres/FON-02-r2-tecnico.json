@@ -1,0 +1,2759 @@
+{
+  "id": "FON-02",
+  "rodada": 2,
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado /root/auditor_aaa/tecnica_fon01",
+  "escopo": "Reauditoria restrita de integridade, preservação e representação documental; sem repetir ciência, confronto das listas com HTML baseline ou verificador.",
+  "checks": [
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/manifesto-r2.json",
+      "ok": true,
+      "details": {
+        "sha256": "da44635be39e5fac7151fac8f6975c0b42b70de8ad3ce15f3559c8b6de48391d",
+        "bytes": 6694
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/reconstruir-vinculos-r2.mjs",
+      "ok": true,
+      "details": {
+        "sha256": "7db9fc134ed70bcaf62ad43ca32760563a2bec2dd818ff6e1b423a84dc420ea6",
+        "bytes": 5469
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/comparar-vinculos-r2.py",
+      "ok": true,
+      "details": {
+        "sha256": "3d3c2cc5308c91970308e7b6f6d62becbf845b38871f82be4b74e594d5ff3e03",
+        "bytes": 5150
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/comparacao-vinculos-r2.json",
+      "ok": true,
+      "details": {
+        "sha256": "091bde1da79de0c8c2259e1d573881d80548d684cd5d429dd0b423abd53b393d",
+        "bytes": 47749
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/delta-r2.json",
+      "ok": true,
+      "details": {
+        "sha256": "a3dbdf11532163c76670d83cf9057d36d64d7d0bd32871a50751c4759c03a8d2",
+        "bytes": 153788
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r2.json",
+      "ok": true,
+      "details": {
+        "sha256": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1",
+        "bytes": 317008
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r2.md",
+      "ok": true,
+      "details": {
+        "sha256": "81b610407bc2c04a187878d04013e6d42c93ca517158e5c8c82cca2d7986eda2",
+        "bytes": 30185
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/vinculos-base-coordenador-r2.json",
+      "ok": true,
+      "details": {
+        "sha256": "e604e7f8e831b14f39ffde3d69afd8bd9bf906c6d67e9c48773c1f0a393daf77",
+        "bytes": 28495
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/confronto-vinculos-coordenador-r2.json",
+      "ok": true,
+      "details": {
+        "sha256": "7381865c31ce30f7ccf1f7e3e2499fc68db485118265f7dbdc02fea6a8aa7635",
+        "bytes": 1447
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r2/auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r2.json",
+      "ok": true,
+      "details": {
+        "sha256": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1",
+        "bytes": 317008
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r2/auditoria/termodinamica/evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r2.md",
+      "ok": true,
+      "details": {
+        "sha256": "81b610407bc2c04a187878d04013e6d42c93ca517158e5c8c82cca2d7986eda2",
+        "bytes": 30185
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r2/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r2/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+        "bytes": 62308
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r2/copias.json",
+      "ok": true,
+      "details": {
+        "sha256": "f3aea4f9ccca61c473295bf206e8dcc0a888e0f4feb989a58707785f51d07e40",
+        "bytes": 1708
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r2/modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/entregas/FON-02-r2.md",
+      "ok": true,
+      "details": {
+        "sha256": "8b08a9e53b9478961484e33bd44a3d52ef66626ee08f8cc0013ad24ab1e8f256",
+        "bytes": 3358
+      }
+    },
+    {
+      "id": "hash:modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+        "bytes": 62308
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/fontes-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "9f03b7bbde7f057a52fce320e54d8b4d57178af8ceea928cdcf235a760693ef8",
+        "bytes": 16850
+      }
+    },
+    {
+      "id": "copia-r2:modulos/e1-termodinamica.html",
+      "ok": true
+    },
+    {
+      "id": "copia-r2:auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "id": "copia-r2:auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "id": "copia-r2:auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r2.json",
+      "ok": true
+    },
+    {
+      "id": "copia-r2:auditoria/termodinamica/evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r2.md",
+      "ok": true
+    },
+    {
+      "id": "hash:modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+        "bytes": 62308
+      }
+    },
+    {
+      "id": "hash:assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "hash:assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "hash:assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "hash:formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "hash:assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "hash:assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/entregas/FON-02-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "9d5936596e2ada28e8e337bcf4c8084c2d361a2654cea92f886644f2268142de",
+        "bytes": 4989
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/PLANO_DIAGNOSTICO-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "33c0775e12ffb30696d115814dc9917980f7a94e8b91a420bb2d65d61f6a6a94",
+        "bytes": 17823
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "cb8752315a13cbd57b20f3cc89adb55571c3b094d1ab78ab071a330f26ba5ebc",
+        "bytes": 57501
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "964e35024daac2e2102f35f80587933225e51a7f8581cb2ab3843f16114c4e18",
+        "bytes": 60900
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0bfd16901421a2135216518b8ff56f062b6c9901e4fb3101e7149a279758e8cb",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/antes/modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "81eedea9f3731979125724ebb52d839ca68930164b7d7570a2a646d6f5bed2fe",
+        "bytes": 1310895
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-adiabatica-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "93ffba1b5384ef5de4725f4a63b52aff24b8a4652d1a0786c28cc1ecf290d75f",
+        "bytes": 1014
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-sigma-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "2037da81034805ed884bb1d618e37b43e9e70fa524ae4ae54a7020374f8b96a9",
+        "bytes": 1824
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio-coordenador-unidades-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "28cfc65a1a790ea5250311e1c7a1e77959cf979e1783bff8919bdae46c29d9e0",
+        "bytes": 2177
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio/diagnostico-40-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "9aadf56b60f363b64d799ffe68862032e8cfcfba036c82264a749cb2d85e57f4",
+        "bytes": 130496
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio/diagnostico-40-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "baf675a88d6bc003f4892e68a06106db5e317a1d6d810edd7a02eead1c4c8840",
+        "bytes": 5907
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/apoio/propostas-textuais-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "7fb2479bb88729825f5494a00b0cc6a2f7a69d715594665e5bb4648bebf21565",
+        "bytes": 34115
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/baseline-coordenador-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "4bad9c84cfc9c2f257d4d56d12032e85aba24e2ca7831c901769ffd6b3437e3a",
+        "bytes": 131096
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/corretor/diagnostico-40-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "f7045929d2e14365439206fa82649943db0c429614f9f637e7ede4eac885b3e7",
+        "bytes": 28874
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/corretor/diagnostico-parcial-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "529e9cb55d597e0ba7ac56d3e3411c8d6ffbb69513e5abf65bf1149fd724961e",
+        "bytes": 9361
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/corretor/propostas-textuais-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "591218bcc5fb4f7c27be597a13da98ffd99275c97d96b31bdc94203914c3a8a6",
+        "bytes": 9900
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/delta-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "6044a406abc625fe9c534d667d1340ed940049d2a7546d0022bcb1694ffb2b57",
+        "bytes": 28185
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/diagnostico-80-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "798b6b603bd2e74a242ca1e52cf05d82f77625de1b6ce3a9f7d7c8711a1f2476",
+        "bytes": 147459
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/e1-termodinamica.r1.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/extrato-80-antes.json",
+      "ok": true,
+      "details": {
+        "sha256": "6a0e106f9cdc70a50ab77e9b3bba606e5dc9bee208fba59a7e525d5454dd9262",
+        "bytes": 898235
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/fontes-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "9f03b7bbde7f057a52fce320e54d8b4d57178af8ceea928cdcf235a760693ef8",
+        "bytes": 16850
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/leitura-coordenador-base-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "e1f47371afca3a3fe9b77a3c2a7dcb2125b63f73bf85dc576c8b18c7683027c9",
+        "bytes": 15117
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/navegador-coordenador-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "62336e3ae7ed87ce927296e547b4d779c48d96bf85731438a792bc2785400a26",
+        "bytes": 3423
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/navegador-cr26-r1.jpg",
+      "ok": true,
+      "details": {
+        "sha256": "5dc438f852df70b9aec712c0d3ba6b896a89fddc04e65c912e13965ffbf1d8f1",
+        "bytes": 95352
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/navegador-cr36-r1.jpg",
+      "ok": true,
+      "details": {
+        "sha256": "c17c5361668b5bebe3e8b3ea5a7a90b064d181257aa2f4de3e4b800ce6ab4b2b",
+        "bytes": 98221
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/curso.css",
+      "ok": true,
+      "details": {
+        "sha256": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+        "bytes": 60276
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/curso.js",
+      "ok": true,
+      "details": {
+        "sha256": "6a450cbfb7049b22e999e3390238fec511c2da24caa3e228871c5a3128121de6",
+        "bytes": 106783
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/formulario-e1.css",
+      "ok": true,
+      "details": {
+        "sha256": "b9bde9396ac54ee811df76640cab8df91f78a134da0a0bd0190ff75273f8c629",
+        "bytes": 6209
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/formulario-e1.js",
+      "ok": true,
+      "details": {
+        "sha256": "90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79",
+        "bytes": 2938
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/assets/registro.js",
+      "ok": true,
+      "details": {
+        "sha256": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+        "bytes": 27032
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true,
+      "details": {
+        "sha256": "4c0b477b9479c6c546507535a194bb75805b2adf1bceaaa34337a20d02e3294e",
+        "bytes": 62308
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true,
+      "details": {
+        "sha256": "0faacb0d84482e53afae1f8e481ce676f0e68e793376a9d4ad35a4aa6a93af8e",
+        "bytes": 787184
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/copias.json",
+      "ok": true,
+      "details": {
+        "sha256": "f8157223b15a09933838192863c4c93881894240e3090ed2c3456ca2b0bcf522",
+        "bytes": 2509
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/formulas/termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "bytes": 242764
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/pacote-r1/modulos/e1-termodinamica.html",
+      "ok": true,
+      "details": {
+        "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+        "bytes": 1320100
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/preservacao-coordenador-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "b45e9a9dc8dbe9c091e05b06ceb2f20cdd1cdd97a701bd30f374d5b8e56f80a5",
+        "bytes": 6853
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/revisao-suplementos-80-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "ffeab0e9324624579772588dd010d2d70ad256e025290d06a0efb474fd5f9170",
+        "bytes": 411403
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/snapshot-antes.json",
+      "ok": true,
+      "details": {
+        "sha256": "bf5bea1de0b60404938ab854c2554dc82c13b899666d4ce28d9070a03393b0be",
+        "bytes": 2505
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/verificacao-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "aa1030c11966550298f17441aadeac829b78fa03cb04e7d7c3109836d829ad61",
+        "bytes": 18894
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/verificar-r1.mjs",
+      "ok": true,
+      "details": {
+        "sha256": "351a393366384e72b19d0df86c62dc7d3d275555875d5cd6f7321d6f88e4ee68",
+        "bytes": 7383
+      }
+    },
+    {
+      "id": "copia-r1:modulos/e1-termodinamica.html",
+      "ok": true
+    },
+    {
+      "id": "copia-r1:auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "id": "copia-r1:auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "id": "copia-r1:assets/curso.js",
+      "ok": true
+    },
+    {
+      "id": "copia-r1:assets/curso.css",
+      "ok": true
+    },
+    {
+      "id": "copia-r1:assets/registro.js",
+      "ok": true
+    },
+    {
+      "id": "copia-r1:formulas/termodinamica.html",
+      "ok": true
+    },
+    {
+      "id": "copia-r1:assets/formulario-e1.js",
+      "ok": true
+    },
+    {
+      "id": "copia-r1:assets/formulario-e1.css",
+      "ok": true
+    },
+    {
+      "id": "hash:auditoria/termodinamica/evidencias/FON-02/manifesto-r1.json",
+      "ok": true,
+      "details": {
+        "sha256": "25c420ff6f7650c982c402b3715c623ca7e68866f72e26bbbf0565fc6e065224",
+        "bytes": 14593
+      }
+    },
+    {
+      "id": "hash:auditoria/termodinamica/pareceres/FON-02-r1.md",
+      "ok": true,
+      "details": {
+        "sha256": "6adee65b34459934c0c037bae3d9df0adfc8e8a69ba0f35ccbd1d52a878f03bf",
+        "bytes": 6422
+      }
+    },
+    {
+      "id": "matriz-somente-80-arrays",
+      "ok": true,
+      "details": {
+        "ids": [
+          "cr-e1-01",
+          "cr-e1-02",
+          "cr-e1-03",
+          "cr-e1-04",
+          "cr-e1-05",
+          "cr-e1-06",
+          "cr-e1-07",
+          "cr-e1-08",
+          "cr-e1-09",
+          "cr-e1-10",
+          "cr-e1-11",
+          "cr-e1-12",
+          "cr-e1-13",
+          "cr-e1-14",
+          "cr-e1-15",
+          "cr-e1-16",
+          "cr-e1-17",
+          "cr-e1-18",
+          "cr-e1-19",
+          "cr-e1-20",
+          "cr-e1-21",
+          "cr-e1-22",
+          "cr-e1-23",
+          "cr-e1-24",
+          "cr-e1-25",
+          "cr-e1-26",
+          "cr-e1-27",
+          "cr-e1-28",
+          "cr-e1-29",
+          "cr-e1-30",
+          "cr-e1-31",
+          "cr-e1-32",
+          "cr-e1-33",
+          "cr-e1-34",
+          "cr-e1-35",
+          "cr-e1-36",
+          "cr-e1-37",
+          "cr-e1-38",
+          "cr-e1-39",
+          "cr-e1-40",
+          "cr-e1-41",
+          "cr-e1-42",
+          "cr-e1-43",
+          "cr-e1-44",
+          "cr-e1-45",
+          "cr-e1-46",
+          "cr-e1-47",
+          "cr-e1-48",
+          "cr-e1-49",
+          "cr-e1-50",
+          "cr-e1-51",
+          "cr-e1-52",
+          "cr-e1-53",
+          "cr-e1-54",
+          "cr-e1-55",
+          "cr-e1-56",
+          "cr-e1-57",
+          "cr-e1-58",
+          "cr-e1-59",
+          "cr-e1-60",
+          "cr-e1-61",
+          "cr-e1-62",
+          "cr-e1-63",
+          "cr-e1-64",
+          "cr-e1-65",
+          "cr-e1-66",
+          "cr-e1-67",
+          "cr-e1-68",
+          "cr-e1-69",
+          "cr-e1-70",
+          "cr-e1-71",
+          "cr-e1-72",
+          "cr-e1-73",
+          "cr-e1-74",
+          "cr-e1-75",
+          "cr-e1-76",
+          "cr-e1-77",
+          "cr-e1-78",
+          "cr-e1-79",
+          "cr-e1-80"
+        ]
+      }
+    },
+    {
+      "id": "md-80-blocos-unicos",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-01",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-02",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-03",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-04",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-05",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-06",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-07",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-08",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-09",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-10",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-11",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-12",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-13",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-14",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-15",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-16",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-17",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-18",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-19",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-20",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-21",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-22",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-23",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-24",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-25",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-26",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-27",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-28",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-29",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-30",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-31",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-32",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-33",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-34",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-35",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-36",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-37",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-38",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-39",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-40",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-41",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-42",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-43",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-44",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-45",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-46",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-47",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-48",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-49",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-50",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-51",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-52",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-53",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-54",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-55",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-56",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-57",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-58",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-59",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-60",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-61",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-62",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-63",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-64",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-65",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-66",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-67",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-68",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-69",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-70",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-71",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-72",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-73",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-74",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-75",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-76",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-77",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-78",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-79",
+      "ok": true
+    },
+    {
+      "id": "md-matriz:cr-e1-80",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:REVISAO_SUPLEMENTOS_80-r1.md",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:revisao-suplementos-80-r2.json",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:fontes-r1.json",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-propriedades",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-medidas",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-propriedades",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-molecular",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-medidas",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://faculty.washington.edu/gdrobny/v5-screen.pdf#page=163",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-medidas",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-instrumentos",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-instrumentos",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-instrumentos",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-absolutas",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-medidas",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://www.bipm.org/en/publications/si-brochure",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-medidas",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-propriedades",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-absolutas",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-medidas",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-quatro-leis",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-molecular",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-molecular",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-umidade",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-umidade",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-absolutas",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-primeira-lei",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-primeira-lei",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trabalho-fronteira",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trabalho-fronteira",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-termoquimica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-termoquimica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-expansao-livre",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-entropia-gas",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node40.html",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node41.html",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-primeira-lei",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trabalho-fronteira",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-entropia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-exergia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-limite-carnot",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-segunda-lei",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://openstax.org/books/university-physics-volume-2/pages/4-4-statements-of-the-second-law-of-thermodynamics",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gibbs",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-equilibrio-fases",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-eficiencia-cop",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-entropia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-carnot-prova",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trabalho-fronteira",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-carnot-prova",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-limite-carnot",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-carnot-prova",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-tipos-compressores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-isentropica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-tipos-compressores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-comparar-ciclos",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-rankine",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-valvulas-compressor",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-valvulas-compressor",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-eficiencia-volumetrica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-valvulas-compressor",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://gunt.de/en/products/fluid-machinery/driven-machines/fans-and-compressors/simulation-of-a-two-stage-air-compressor/061.50800/et508/glct-1:pa-148:ca-752:pr-240",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-comparar-ciclos",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-tipos-compressores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-turbina-potencia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-dilatacao",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-radiacao-vacuo",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#cr-e1-68-dados-corrigidos",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=IsoTherm&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&T=25&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://www.nist.gov/document/nistir5078-tab2pdf#page=2",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://webbook.nist.gov/cgi/fluid.cgi?Action=Data&Wide=on&ID=C7732185&Type=SatT&Digits=8&PLow=0.101325&PHigh=0.101325&PInc=0.001&RefState=DEF&TUnit=C&PUnit=MPa&DUnit=kg%2Fm3&HUnit=kJ%2Fkg&WUnit=m%2Fs&VisUnit=uPa*s&STUnit=N%2Fm",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-refrigeracao",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-eficiencia-cop",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-calor-latente",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-radiacao-vacuo",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://www.nasa.gov/smallsat-institute/sst-soa/thermal-control/",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-geracao-face",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "ok": true
+    },
+    {
+      "id": "url-md:https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node14.html",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md:delta-r2.json",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../evidencias/FON-02/revisao-suplementos-80-r2.json",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r2.md",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../evidencias/FON-02/reconstruir-vinculos-r2.mjs",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../evidencias/FON-02/comparar-vinculos-r2.py",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../evidencias/FON-02/comparacao-vinculos-r2.json",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../evidencias/FON-02/delta-r2.json",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../evidencias/FON-02/confronto-vinculos-coordenador-r2.json",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../pareceres/FON-02-r1.md",
+      "ok": true
+    },
+    {
+      "id": "link-local-md:auditoria\\termodinamica\\entregas\\FON-02-r2.md:../evidencias/FON-02/manifesto-r2.json",
+      "ok": true
+    },
+    {
+      "id": "O1-hash-tabela:Matriz r2",
+      "ok": true
+    },
+    {
+      "id": "O1-hash-tabela:Resumo de vínculos r2",
+      "ok": true
+    },
+    {
+      "id": "O1-hash-tabela:HTML preservado",
+      "ok": true
+    },
+    {
+      "id": "O1-hash-tabela:Inventário preservado",
+      "ok": true
+    },
+    {
+      "id": "O1-hash-tabela:Resumo canônico preservado",
+      "ok": true
+    },
+    {
+      "id": "O1-hash-tabela:Fontes novas r1 preservadas",
+      "ok": true
+    },
+    {
+      "id": "O1-hash-tabela:Comparação independente",
+      "ok": true
+    }
+  ],
+  "dados": {
+    "entradas_r2": 19,
+    "copias_r2": 5,
+    "arquivos_r1": 55,
+    "copias_r1": 9,
+    "arrays_alterados": 80,
+    "demais_campos_identicos": true,
+    "blocos_md": 80,
+    "vinculos_md": 158,
+    "vinculos_internos": 141,
+    "vinculos_externos": 17,
+    "hashes_tabela": 7,
+    "links_locais": 154
+  },
+  "links_locais": [
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "REVISAO_SUPLEMENTOS_80-r1.md",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "revisao-suplementos-80-r2.json",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "fontes-r1.json",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-propriedades",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-medidas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-propriedades",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-molecular",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-medidas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-medidas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-instrumentos",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-instrumentos",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-instrumentos",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-absolutas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-medidas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-medidas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-propriedades",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-absolutas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-medidas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-quatro-leis",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-molecular",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-molecular",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-umidade",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-umidade",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-absolutas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-primeira-lei",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-primeira-lei",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trabalho-fronteira",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trabalho-fronteira",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-termoquimica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-termoquimica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-expansao-livre",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-entropia-gas",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-energia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-primeira-lei",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trabalho-fronteira",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-entropia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-exergia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-limite-carnot",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-segunda-lei",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-balanco-fechado",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gibbs",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-equilibrio-fases",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-eficiencia-cop",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-entropia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-carnot-prova",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trabalho-fronteira",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-carnot-prova",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-limite-carnot",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-carnot-prova",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-tipos-compressores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-isentropica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-tipos-compressores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-comparar-ciclos",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-rankine",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-brayton-real",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-gas-modelo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-valvulas-compressor",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-valvulas-compressor",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-eficiencia-volumetrica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-valvulas-compressor",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-comparar-ciclos",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-tipos-compressores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-turbina-potencia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-dilatacao",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-radiacao-vacuo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#cr-e1-68-dados-corrigidos",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-trocadores",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-refrigeracao",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-eficiencia-cop",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-calor-latente",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-radiacao-vacuo",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-leitura-matematica",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-geracao-face",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "../../../../modulos/e1-termodinamica.html#base-transferencia",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\evidencias\\FON-02\\REVISAO_SUPLEMENTOS_80-r2.md",
+      "href": "delta-r2.json",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../evidencias/FON-02/revisao-suplementos-80-r2.json",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../evidencias/FON-02/REVISAO_SUPLEMENTOS_80-r2.md",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../evidencias/FON-02/reconstruir-vinculos-r2.mjs",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../evidencias/FON-02/comparar-vinculos-r2.py",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../evidencias/FON-02/comparacao-vinculos-r2.json",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../evidencias/FON-02/delta-r2.json",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../evidencias/FON-02/confronto-vinculos-coordenador-r2.json",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../pareceres/FON-02-r1.md",
+      "presente": true,
+      "fragmento_valido": true
+    },
+    {
+      "de": "auditoria\\termodinamica\\entregas\\FON-02-r2.md",
+      "href": "../evidencias/FON-02/manifesto-r2.json",
+      "presente": true,
+      "fragmento_valido": true
+    }
+  ],
+  "resultado": "SEM_IMPEDIMENTO_TECNICO_NO_RECORTE_REAUDITADO",
+  "falhas": [],
+  "verificacoes": 351,
+  "versoes": {
+    "entrega_sha256": "8b08a9e53b9478961484e33bd44a3d52ef66626ee08f8cc0013ad24ab1e8f256",
+    "manifesto_sha256": "da44635be39e5fac7151fac8f6975c0b42b70de8ad3ce15f3559c8b6de48391d",
+    "matriz_sha256": "4401889a58d96cad02ed12c703e180a645bf47b428fe4959d2decba5d8e2d9d1"
+  },
+  "limites": [
+    "Comparação independente das 80 listas/158 âncoras com HTML baseline e reprodução do verificador são atribuições do Auditor principal; não executadas por este subagente nesta rodada.",
+    "Ciência, navegador, digitais e validador canônico são herdados por identidade dos arquivos da r1. Não foram repetidos.",
+    "O Markdown foi confrontado com a matriz r2; links locais e âncoras foram conferidos, URLs externas apenas quanto à forma, sem consulta HTTP.",
+    "Nenhum produto, controle, pacote ou evidência do autor foi alterado. Apenas este JSON e o MD correspondente foram criados em pareceres."
+  ]
+}

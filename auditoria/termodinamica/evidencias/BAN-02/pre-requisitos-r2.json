@@ -1,0 +1,1340 @@
+{
+  "id": "BAN-02",
+  "rodada": 2,
+  "achado": "R1-C",
+  "metodo": "Revisão individual dos 80 comandos, alternativas, demanda e dados disponíveis. Pré-requisito é conhecimento necessário para responder ao item atual; contexto opcional e conteúdo apenas da CR de origem não foram mantidos. Fórmula fornecida exige sua leitura/aplicação, não sua derivação ou memorização prévia.",
+  "itens": [
+    {
+      "id": "av-e1-01",
+      "fonte_sha256_artigo": "fef921d85b9f61c1e2a63b23fa1df1a9479973608dea0c768045e221f31390b5",
+      "comando_lido": "Na manutenção de um reservatório de água de um prédio público, uma amostra homogênea em equilíbrio é dividida em duas partes iguais, mantidas à mesma temperatura e pressão. Assinale o par de propriedades que conserva seus valores em cada parte, em relação à amostra inicial.",
+      "tarefa": [
+        "Selecionar o par de intensivas que conserva valores ao dividir a amostra"
+      ],
+      "antes": [
+        "Propriedade intensiva/extensiva",
+        "Estado homogêneo"
+      ],
+      "depois": [
+        "Distinção entre propriedades intensivas e extensivas",
+        "Significado de manter estado e composição ao dividir amostra homogênea"
+      ]
+    },
+    {
+      "id": "av-e1-02",
+      "fonte_sha256_artigo": "8b7328a79ca6b50995426770504df6de88f6bf37cf7a3038fef9709847d6bc20",
+      "comando_lido": "Em um parecer sobre um sistema térmico, o engenheiro distingue propriedades de estado e transferências de energia. Assinale a alternativa INCORRETA.",
+      "tarefa": [
+        "Identificar a afirmação que atribui dependência do caminho à energia interna final"
+      ],
+      "antes": [
+        "Propriedade de estado",
+        "Calor e trabalho como transferências"
+      ],
+      "depois": [
+        "Propriedade de estado versus dependência do caminho",
+        "Calor e trabalho como transferências de energia"
+      ]
+    },
+    {
+      "id": "av-e1-03",
+      "fonte_sha256_artigo": "6e8bc6e49193f08a8c5f0ae6b4271720a23a29e7888ecfe6cf83faaa63ff85fa",
+      "comando_lido": "Para interpretar aquecimento e mudanças de fase em instalações, julgue as afirmações e assinale a sequência correta.I. Moléculas de um líquido possuem movimento microscópico.II. Partículas de um sólido podem vibrar em torno de posições de equilíbrio.III. A energia cinética microscópica existe somente em gases.",
+      "tarefa": [
+        "Julgar presença de movimento em líquidos e sólidos e rejeitar exclusividade dos gases"
+      ],
+      "antes": [
+        "Energia cinética microscópica",
+        "Estados físicos"
+      ],
+      "depois": [
+        "Movimento microscópico de partículas em sólidos, líquidos e gases",
+        "Relação entre movimento microscópico e energia cinética"
+      ]
+    },
+    {
+      "id": "av-e1-04",
+      "fonte_sha256_artigo": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+      "comando_lido": "Em uma estimativa de bombeamento de água líquida, longe da região crítica e em uma faixa moderada de pressão e temperatura, adota-se o modelo de líquido incompressível. Essa hipótese significa que",
+      "tarefa": [
+        "Interpretar modelo incompressível como volume específico aproximadamente constante"
+      ],
+      "antes": [
+        "Volume específico",
+        "Compressibilidade e dilatação"
+      ],
+      "depois": [
+        "Significado de volume específico e massa específica",
+        "Aproximação de volume específico constante no modelo incompressível"
+      ]
+    },
+    {
+      "id": "av-e1-05",
+      "fonte_sha256_artigo": "8860a27c54eebc598b479ab61197026acb81cf4d81a143876bfe55fea2a6fa4c",
+      "comando_lido": "Um memorial de cálculo deve expressar tempo, temperatura termodinâmica e quantidade de matéria nas unidades de base do SI. Assinale a associação correta, nessa ordem.",
+      "tarefa": [
+        "Associar tempo, temperatura e quantidade de matéria a segundo, kelvin e mol"
+      ],
+      "antes": [
+        "Unidades de base SI",
+        "Tempo e temperatura"
+      ],
+      "depois": [
+        "Correspondência entre tempo, temperatura termodinâmica e quantidade de matéria",
+        "Segundo, kelvin e mol como unidades de base do SI"
+      ]
+    },
+    {
+      "id": "av-e1-06",
+      "fonte_sha256_artigo": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d",
+      "comando_lido": "Duas escalas lineares X e Y, ilustradas no esquema, são usadas na calibração de um sensor. Para esta questão, os pontos de calibração são: X = 0 quando Y = 20 e X = 100 quando Y = 70. O valor de X correspondente a Y = 45 éEscalas X e Y · figura recriada no caderno fornecido. Clique para ampliar.",
+      "tarefa": [
+        "Interpolar na relação afim entre os dois pontos de calibração para Y=45"
+      ],
+      "antes": [
+        "Função afim",
+        "Escalas de temperatura"
+      ],
+      "depois": [
+        "Interpolação linear entre dois pontos",
+        "Identificação dos valores correspondentes nas escalas X e Y"
+      ]
+    },
+    {
+      "id": "av-e1-07",
+      "fonte_sha256_artigo": "f6c6439615c358a02d91c7dbc1450c5550f193cc38a4af0f5e8c8a2958804251",
+      "comando_lido": "Durante a vistoria de uma linha de ar comprimido, observa-se um instrumento com tubo metálico curvo que se deforma sob a ação do fluido e movimenta um ponteiro. Trata-se de um manômetro de Bourdon, destinado à medição de",
+      "tarefa": [
+        "Identificar pressão como grandeza associada à deformação do Bourdon"
+      ],
+      "antes": [
+        "Grandezas medidas",
+        "Princípio do manômetro Bourdon"
+      ],
+      "depois": [
+        "Pressão como grandeza medida por manômetro",
+        "Princípio qualitativo de deformação do tubo de Bourdon"
+      ]
+    },
+    {
+      "id": "av-e1-08",
+      "fonte_sha256_artigo": "5cfa5c0bb56e0ccc235b369110a5343cffd16dbc7d35de410a2d9432355a7d55",
+      "comando_lido": "Um transmissor de temperatura de uma instalação tem limite inferior de 20 °C e alcance (span) de 80 °C. Seu limite superior de medição é",
+      "tarefa": [
+        "Somar limite inferior e span para obter limite superior"
+      ],
+      "antes": [
+        "Faixa e span",
+        "Intervalo versus temperatura absoluta"
+      ],
+      "depois": [
+        "Alcance ou span como diferença entre limites de medição",
+        "Soma do limite inferior e do intervalo na mesma unidade"
+      ]
+    },
+    {
+      "id": "av-e1-09",
+      "fonte_sha256_artigo": "c132589fa0387abc5108633a2b130632334db4cebf0479b9442bc9158ae78f30",
+      "comando_lido": "Na análise de um sistema de climatização, considere:I. A unidade de base de temperatura termodinâmica é o kelvin.II. Uma variação de 10 °C equivale a uma variação de 10 K.III. Uma temperatura de 10 °C corresponde a uma temperatura absoluta de 10 K.Está correto o que se afirma em",
+      "tarefa": [
+        "Distinguir unidade de base, intervalo térmico e temperatura absoluta nas três afirmações"
+      ],
+      "antes": [
+        "Temperatura termodinâmica e Celsius",
+        "Unidade SI versus unidade de base"
+      ],
+      "depois": [
+        "Kelvin como unidade de base de temperatura termodinâmica",
+        "Diferença entre valor de temperatura e variação de temperatura",
+        "Relação Celsius–kelvin e igualdade dos tamanhos dos intervalos"
+      ]
+    },
+    {
+      "id": "av-e1-10",
+      "fonte_sha256_artigo": "a19c2c5e9dbf69121d4cd0d182b8e7da45130ea405096ad53451e230c79d11a8",
+      "comando_lido": "Uma amostra de fluido de 12 kg ocupa 0,015 m³. O valor de sua massa específica e a classificação dessa propriedade são, respectivamente,",
+      "tarefa": [
+        "Calcular ρ=m/V e reconhecer a intensividade da razão"
+      ],
+      "antes": [
+        "Massa específica ρ=m/V",
+        "Intensividade"
+      ],
+      "depois": [
+        "Definição de massa específica como massa dividida por volume",
+        "Classificação de massa específica como propriedade intensiva"
+      ]
+    },
+    {
+      "id": "av-e1-11",
+      "fonte_sha256_artigo": "574b95a7bc7d26adf5ccc8a100cba3b30a3f5f34b9c76a670190cd7c43c5a165",
+      "comando_lido": "Um tanque de gás de uma instalação apresenta temperatura de 27 °C. Para aplicar a equação de estado de gás ideal, adote T(K) = t(°C) + 273. A temperatura a inserir na equação é",
+      "tarefa": [
+        "Aplicar a conversão fornecida de 27 °C para kelvin"
+      ],
+      "antes": [
+        "Unidades de temperatura",
+        "Unidades de potência e energia",
+        "Conversão Celsius–kelvin"
+      ],
+      "depois": [
+        "Leitura da relação de conversão Celsius–kelvin fornecida",
+        "Substituição numérica e adição com identificação da unidade final"
+      ]
+    },
+    {
+      "id": "av-e1-12",
+      "fonte_sha256_artigo": "6d4d741b3c2f0be508022e5f24ba0cdbb360c3f0c2ddbb72aca59aebf3efcd6f",
+      "comando_lido": "Relacione as leis da termodinâmica às descrições:1. Lei zero.2. Primeira lei.3. Segunda lei.4. Terceira lei.( ) Conservação da energia.( ) Equilíbrio térmico transitivo.( ) Limites de conversão de calor em trabalho em ciclos.( ) Entropia de um cristal perfeito puro igual a zero a 0 K.A sequência correta é",
+      "tarefa": [
+        "Associar quatro descrições às leis zero, primeira, segunda e terceira"
+      ],
+      "antes": [
+        "Leis zero, primeira, segunda e terceira",
+        "Cristal perfeito"
+      ],
+      "depois": [
+        "Correspondência das leis zero, primeira, segunda e terceira com equilíbrio, conservação, limite de conversão e referência de entropia",
+        "Condição de cristal perfeito puro a zero kelvin na terceira lei"
+      ]
+    },
+    {
+      "id": "av-e1-13",
+      "fonte_sha256_artigo": "67a3276e7a96d89fd1c93db9f3dad1f417bb62dff584b34c4e5df1a406651543",
+      "comando_lido": "Uma massa de 2 kg de ar, tratada como gás ideal, é aquecida de 300 K para 350 K. Sendo o calor específico a volume constante igual a 0,72 kJ/(kg·K), a variação da energia interna total é",
+      "tarefa": [
+        "Obter variação total de energia interna pela relação mcvΔT"
+      ],
+      "antes": [
+        "Modelo de gás ideal",
+        "u(T)",
+        "Calor específico cv",
+        "Energia total versus específica"
+      ],
+      "depois": [
+        "Energia interna de gás ideal como função da temperatura",
+        "Relação ΔU=mcvΔT com cv constante",
+        "Distinção entre energia total e específica"
+      ]
+    },
+    {
+      "id": "av-e1-14",
+      "fonte_sha256_artigo": "3c811cd41a5553c76a3d79539c529fc0700861c827165f1a490339f0a41b6fcd",
+      "comando_lido": "Uma pequena quantidade de gás é liberada em um recipiente rígido evacuado, que é então fechado. No equilíbrio, sem barreiras internas e desprezando variações gravitacionais, o gás",
+      "tarefa": [
+        "Identificar ocupação de todo volume acessível após equilíbrio"
+      ],
+      "antes": [
+        "Comportamento macroscópico do gás"
+      ],
+      "depois": [
+        "Ocupação do volume acessível por gás em equilíbrio sem barreiras"
+      ]
+    },
+    {
+      "id": "av-e1-15",
+      "fonte_sha256_artigo": "aabe5d8c80218bb2762758349c567671cb06794100899eb42e6c2906cae487a9",
+      "comando_lido": "Sobre o modelo cinético elementar de um gás ideal, assinale a sequência correta.I. O volume próprio das moléculas é desprezado perante o volume ocupado pelo gás.II. As colisões entre moléculas são consideradas elásticas.III. Cada colisão necessariamente dissipa a energia cinética total das moléculas envolvidas.",
+      "tarefa": [
+        "Julgar volume molecular desprezível e colisões elásticas do modelo ideal"
+      ],
+      "antes": [
+        "Teoria cinética elementar",
+        "Colisão elástica"
+      ],
+      "depois": [
+        "Hipóteses da teoria cinética elementar de gás ideal",
+        "Colisão elástica como conservação da energia cinética total da colisão"
+      ]
+    },
+    {
+      "id": "av-e1-16",
+      "fonte_sha256_artigo": "48ae42d26499f4389ca87b570e9864234c58223277b8b4a16302f7ba808ebdee",
+      "comando_lido": "Em uma análise de controle de umidade de um arquivo público, a temperatura do ar permanece constante enquanto a umidade relativa cai de 60% para 45%. Admitindo a mesma pressão de saturação nas duas condições, a razão entre a pressão parcial do vapor na saída e na entrada é",
+      "tarefa": [
+        "Calcular pv2/pv1=45/60 usando psat comum"
+      ],
+      "antes": [
+        "Umidade relativa φ=pv/psat",
+        "Razão saída/entrada"
+      ],
+      "depois": [
+        "Umidade relativa como razão entre pressão parcial do vapor e pressão de saturação",
+        "Cancelamento da mesma pressão de saturação na razão saída/entrada"
+      ]
+    },
+    {
+      "id": "av-e1-17",
+      "fonte_sha256_artigo": "c66e9cab79853753be699d582b606617cf4c832a063a013977b1a5e8d87aa90b",
+      "comando_lido": "Um higrômetro indica umidade relativa de 50% em uma sala climatizada. Essa indicação significa que a pressão parcial do vapor de água é",
+      "tarefa": [
+        "Traduzir 50% em pv=0,5psat à temperatura da sala"
+      ],
+      "antes": [
+        "Umidade relativa",
+        "Proporcionalidade entre pressão parcial e quantidade de vapor"
+      ],
+      "depois": [
+        "Definição de umidade relativa φ=pv/psat na mesma temperatura",
+        "Interpretação de cinquenta por cento como metade da pressão de referência"
+      ]
+    },
+    {
+      "id": "av-e1-18",
+      "fonte_sha256_artigo": "6feba70ee87aff9199ffad1ac540bf98a3f1ac0c02b450069b0aff19de0a6f7e",
+      "comando_lido": "Um recipiente rígido e fechado contém gás ideal inicialmente a 200 kPa absolutos e 300 K. Após aquecimento, a temperatura chega a 450 K. Mantidas a massa e o volume, a pressão absoluta final é",
+      "tarefa": [
+        "Aplicar p/T constante para determinar pressão final"
+      ],
+      "antes": [
+        "Equação pV=nRT",
+        "Razões de estado"
+      ],
+      "depois": [
+        "Relação de gás ideal pV=nRT",
+        "Proporcionalidade p/T quando quantidade e volume permanecem constantes"
+      ]
+    },
+    {
+      "id": "av-e1-19",
+      "fonte_sha256_artigo": "13db446f2d53ba81a62449e2e82b81d5ddea5db59e27873088c024f9663794c3",
+      "comando_lido": "Um cilindro contém 2 mol de gás ideal a 300 K em um volume de 49,2 L. Use R = 0,082 atm·L/(mol·K). A pressão absoluta do gás é",
+      "tarefa": [
+        "Calcular nRT/V nas unidades compatíveis fornecidas"
+      ],
+      "antes": [
+        "Gás ideal",
+        "Compatibilidade de unidades de R"
+      ],
+      "depois": [
+        "Equação de estado pV=nRT e isolamento algébrico de p",
+        "Compatibilidade das unidades fornecidas de quantidade, volume, temperatura e R"
+      ]
+    },
+    {
+      "id": "av-e1-20",
+      "fonte_sha256_artigo": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+      "comando_lido": "Na extrapolação matemática do modelo pV = nRT para quantidade fixa de gás ideal e pressão positiva constante, quando a temperatura absoluta tende a zero, o volume tende a",
+      "tarefa": [
+        "Conectar V proporcional a T ao limite zero e rejeitar extrapolação física irrestrita"
+      ],
+      "antes": [
+        "Lei dos gases ideais",
+        "Extrapolação e limite do modelo"
+      ],
+      "depois": [
+        "Leitura de V=nRT/p com n e p constantes positivos",
+        "Limite de uma proporcionalidade direta quando T tende a zero"
+      ]
+    },
+    {
+      "id": "av-e1-21",
+      "fonte_sha256_artigo": "d30c611664194c81700bc047dc72f6f1d9242c9552a394616ba605226c6aba73",
+      "comando_lido": "Para uma quantidade fixa de gás ideal de composição constante, avalie:I. Pressão, volume e temperatura estão relacionados pela equação de estado.II. Conhecer duas dessas variáveis permite determinar a terceira, conhecido o número de mols.III. As três variáveis podem assumir quaisquer valores independentemente umas das outras.Está correto o que se afirma em",
+      "tarefa": [
+        "Conferir dependência de p,V,T para n conhecido nas três afirmações"
+      ],
+      "antes": [
+        "Equação de estado",
+        "Pressão, volume e temperatura"
+      ],
+      "depois": [
+        "Equação de estado pV=nRT para quantidade e composição fixas",
+        "Dependência entre p,V,T e isolamento de uma variável conhecidas as demais"
+      ]
+    },
+    {
+      "id": "av-e1-22",
+      "fonte_sha256_artigo": "a60b027d19ccee5b6445c7865ba43a1732ddb069c63592895d523ebb82738e36",
+      "comando_lido": "Para um gás real, mediu-se pV = 180 kJ e calculou-se nRT = 200 kJ nas mesmas condições. O fator de compressibilidade Z e a conclusão correta são",
+      "tarefa": [
+        "Obter Z=180/200 e comparar com 1"
+      ],
+      "antes": [
+        "Definição de Z",
+        "Modelo ideal"
+      ],
+      "depois": [
+        "Definição do fator de compressibilidade Z=pV/(nRT)",
+        "Valor Z=1 como referência de gás ideal"
+      ]
+    },
+    {
+      "id": "av-e1-23",
+      "fonte_sha256_artigo": "52ce7c5b255380dd1c2d876058b8965c9ff3feaa6e373c57f6f8e46bd3db529b",
+      "comando_lido": "O esquema mostra um recipiente contendo gás. Para empregar a aproximação de gás ideal em cálculos de instalações, a condição geralmente mais favorável, longe da condensação, éRecipiente fechado e isolado · figura recriada no caderno fornecido. Clique para ampliar.",
+      "tarefa": [
+        "Selecionar baixa pressão e temperatura suficientemente alta longe da condensação"
+      ],
+      "antes": [
+        "Densidade molecular",
+        "Limites do gás ideal"
+      ],
+      "depois": [
+        "Limites qualitativos de validade do modelo de gás ideal",
+        "Efeito de baixa densidade e afastamento da condensação sobre interações moleculares"
+      ]
+    },
+    {
+      "id": "av-e1-24",
+      "fonte_sha256_artigo": "8e27e9a89a7e9cd792555923bc8888441ac0ec412520da31a5b29b2379cf79c6",
+      "comando_lido": "Um sensor usa gás ideal em volume constante. Ao variar a temperatura de 300 K para 360 K, sem alterar a massa, a razão pfinal/pinicial é",
+      "tarefa": [
+        "Calcular pfinal/pinicial=360/300"
+      ],
+      "antes": [
+        "pV=nRT",
+        "Temperatura absoluta",
+        "Mesma substância versus referência térmica"
+      ],
+      "depois": [
+        "Equação do gás ideal para massa e volume constantes",
+        "Proporcionalidade entre pressão e temperatura absoluta"
+      ]
+    },
+    {
+      "id": "av-e1-25",
+      "fonte_sha256_artigo": "944eadc933945dd04024af4da9585627d9484f9e2095af98a0efb541c9ff8ba1",
+      "comando_lido": "Uma quantidade fixa de gás ideal sofre uma transformação em que a pressão absoluta duplica e o volume aumenta 50%. Em relação ao valor inicial, a temperatura absoluta",
+      "tarefa": [
+        "Relacionar T2/T1=2×1,5 com aumento de 200%"
+      ],
+      "antes": [
+        "Razões de gases ideais",
+        "Percentual de aumento"
+      ],
+      "depois": [
+        "Relação entre razões de estados pV/T para quantidade fixa de gás ideal",
+        "Conversão entre fator multiplicativo e aumento percentual"
+      ]
+    },
+    {
+      "id": "av-e1-26",
+      "fonte_sha256_artigo": "2d44c7a93a3d7cbe464d96fab7a2427fab1ee039ef3eeb272539d7eefe421a74",
+      "comando_lido": "Em um tanque fechado com agitador, semelhante ao mostrado, entram 600 kJ de energia por trabalho de eixo e saem 150 kJ por calor. Não há trabalho de fronteira, e as variações de energia cinética e potencial são desprezíveis. A variação da energia interna do conjunto tanque–fluido éTanque e misturador · figura recriada no caderno fornecido. Clique para ampliar.",
+      "tarefa": [
+        "Computar aumento líquido de energia interna a partir de entrada por eixo menos calor saído"
+      ],
+      "antes": [
+        "Primeira lei",
+        "Sinais de calor e trabalho",
+        "Conversão kcal/kJ"
+      ],
+      "depois": [
+        "Balanço de energia de sistema fechado com ΔEC e ΔEP desprezíveis",
+        "Sinais de energia recebida por trabalho de eixo e perdida por calor"
+      ]
+    },
+    {
+      "id": "av-e1-27",
+      "fonte_sha256_artigo": "1cac59ad0421ba447b5d28ea97a5b47d99889dda7e6283c3d56d3a4eb05d5db1",
+      "comando_lido": "Uma massa fixa de ar ideal é comprimida em um cilindro termicamente isolado. O gás recebe trabalho e não há alterações relevantes de energia cinética ou potencial. É correto afirmar que",
+      "tarefa": [
+        "Relacionar trabalho recebido sem calor ao aumento de U e T do gás ideal"
+      ],
+      "antes": [
+        "Adiabaticidade",
+        "Trabalho de compressão",
+        "u(T)"
+      ],
+      "depois": [
+        "Adiabaticidade como calor externo nulo",
+        "Primeira lei de sistema fechado sob trabalho recebido",
+        "Aumento de energia interna e temperatura para gás ideal de composição fixa"
+      ]
+    },
+    {
+      "id": "av-e1-28",
+      "fonte_sha256_artigo": "5ba6b332f4915122f681d9e816a36d869ac678a9ce1921e5b5d22dac5bfa35ed",
+      "comando_lido": "Uma massa fixa de gás tem energia interna inicial de 100 J, recebe 200 cal de calor e realiza 350 J de trabalho. Adote 1 cal = 4,2 J e despreze alterações cinéticas e potenciais. Sua energia interna final é",
+      "tarefa": [
+        "Compatibilizar calor e trabalho para calcular ΔU",
+        "Adicionar Ui para obter Uf"
+      ],
+      "antes": [
+        "Conversão cal/J",
+        "Primeira lei",
+        "Valor final versus variação"
+      ],
+      "depois": [
+        "Aplicação do fator de conversão cal/J fornecido",
+        "Primeira lei com calor recebido e trabalho produzido",
+        "Distinção entre variação de energia e energia interna final"
+      ]
+    },
+    {
+      "id": "av-e1-29",
+      "fonte_sha256_artigo": "20636340c4eaf5d0230b128cbb6d530369b7b690ff55043e10c36ea77ef0b3a4",
+      "comando_lido": "Um gás em sistema fechado sofre compressão quase estática a 100 kPa absolutos, com redução de volume de 0,010 m³ e perda de 5 kJ por calor. Há somente trabalho de fronteira, e as variações cinéticas e potenciais são desprezíveis. A variação da energia interna é",
+      "tarefa": [
+        "Calcular W negativo na compressão isobárica",
+        "Usar Q negativo e W na primeira lei para obter ΔU"
+      ],
+      "antes": [
+        "Trabalho isobárico",
+        "Convenção de sinais",
+        "Primeira lei"
+      ],
+      "depois": [
+        "Trabalho de fronteira quase estático a pressão constante W=pΔV",
+        "Sinais de compressão e calor rejeitado",
+        "Primeira lei de sistema fechado e equivalência kPa·m³=kJ"
+      ]
+    },
+    {
+      "id": "av-e1-30",
+      "fonte_sha256_artigo": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01",
+      "comando_lido": "Considere a transição isotérmica A → B do gás ideal mostrada no diagrama. O sistema é fechado, realiza apenas trabalho de fronteira e recebe 300 kJ por calor. Desprezando variações cinéticas e potenciais, o trabalho realizado pelo gás nessa transição éDiagramas A e B · figura recriada no caderno fornecido. Clique para ampliar.",
+      "tarefa": [
+        "Usar isotermia de gás ideal para ΔU=0 e obter W=Q=300 kJ"
+      ],
+      "antes": [
+        "Gás ideal u(T)",
+        "Isotermia",
+        "Primeira lei",
+        "Leitura p–V"
+      ],
+      "depois": [
+        "Isotermia como temperatura constante",
+        "Energia interna de gás ideal como função da temperatura",
+        "Primeira lei de sistema fechado com calor e trabalho de fronteira"
+      ]
+    },
+    {
+      "id": "av-e1-31",
+      "fonte_sha256_artigo": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+      "comando_lido": "Na comparação de combustíveis para um gerador térmico, a diferença entre poder calorífico superior (PCS) e inferior (PCI) está associada principalmente",
+      "tarefa": [
+        "Distinguir PCS de PCI pela recuperação do calor de condensação da água formada"
+      ],
+      "antes": [
+        "Combustão",
+        "Energia liberada versus absorvida",
+        "PCS versus PCI"
+      ],
+      "depois": [
+        "Significado de poder calorífico superior e inferior",
+        "Papel da recuperação do calor de condensação da água dos produtos"
+      ]
+    },
+    {
+      "id": "av-e1-32",
+      "fonte_sha256_artigo": "5d53de738a3e1b78ce907920d3ee56add57516359d4b4f36880aa2caa7d6e500",
+      "comando_lido": "Uma reação química tem variação de entalpia de −80 kJ para a quantidade indicada. Para a reação inversa, entre os mesmos estados e nas mesmas condições, a variação de entalpia e a classificação são",
+      "tarefa": [
+        "Inverter o sinal de −80 kJ e associar +80 kJ a reação endotérmica"
+      ],
+      "antes": [
+        "Reação exotérmica/endotérmica",
+        "Entalpia de reação"
+      ],
+      "depois": [
+        "Entalpia como função de estado e inversão do sinal na reação inversa",
+        "Associação de ΔH positivo e negativo à classificação endo/exotérmica nas condições indicadas"
+      ]
+    },
+    {
+      "id": "av-e1-33",
+      "fonte_sha256_artigo": "80f3f23218940626a28e00d2090cbfbc30f8ed21cacc9a4600451e0927ae1f12",
+      "comando_lido": "O recipiente externo da figura é rígido, fechado e termicamente isolado. Um gás ideal inicialmente ocupa um compartimento; o outro contém vácuo. Após a ruptura da membrana, analise os estados de equilíbrio inicial e final, desprezando alterações cinéticas e potenciais.I. O calor trocado com o exterior é nulo.II. O trabalho de expansão contra o vácuo é nulo.III. A temperatura final do gás ideal é igual à inicial.IV. A entropia do gás permanece constante.Estão corretasRecipiente fechado e isolado · figura recriada no caderno fornecido. Clique para ampliar.",
+      "tarefa": [
+        "Identificar Q=0 e W=0 e inferir T final pela energia do gás ideal",
+        "Julgar irreversibilidade e aumento de entropia para selecionar as proposições"
+      ],
+      "antes": [
+        "Expansão livre",
+        "Primeira lei",
+        "u(T) do gás ideal"
+      ],
+      "depois": [
+        "Expansão livre contra vácuo sem trabalho de fronteira externo",
+        "Primeira lei de sistema fechado isolado",
+        "Energia interna de gás ideal como função da temperatura",
+        "Segunda lei e aumento de entropia na expansão livre irreversível de um sistema isolado",
+        "Distinção entre temperatura constante e entropia constante"
+      ]
+    },
+    {
+      "id": "av-e1-34",
+      "fonte_sha256_artigo": "3ae8bcce339a9cfb8899c0dda553455c5cc89fbd8cb6fd39b753b96f7cbcbc20",
+      "comando_lido": "Um tanque rígido e fechado contém 2 kg de gás ideal com cv = 0,72 kJ/(kg·K). O gás recebe 144 kJ por calor, sem outros modos de trabalho e sem alterações cinéticas ou potenciais. O aumento de temperatura é",
+      "tarefa": [
+        "Anular trabalho no tanque rígido fechado e relacionar Q a ΔU",
+        "Usar ΔU=mcvΔT para determinar elevação de temperatura"
+      ],
+      "antes": [
+        "Isocoria",
+        "Trabalho de fronteira",
+        "Primeira lei",
+        "Energia interna mcvΔT"
+      ],
+      "depois": [
+        "Volume constante e ausência de trabalho de fronteira no tanque rígido",
+        "Primeira lei de sistema fechado",
+        "Relação ΔU=mcvΔT para gás ideal com cv constante"
+      ]
+    },
+    {
+      "id": "av-e1-35",
+      "fonte_sha256_artigo": "93e57e67f34546f1cf930966cb7afd71fc3a659850be1456bfdb78d22e54d337",
+      "comando_lido": "Um sistema fechado adiabático reduz sua energia interna em 120 kJ. Sem alterações cinéticas ou potenciais, e adotando trabalho positivo quando realizado pelo sistema, o trabalho líquido é",
+      "tarefa": [
+        "Aplicar W=-ΔU com ΔU=-120 kJ"
+      ],
+      "antes": [
+        "Primeira lei",
+        "Convenção W produzido positivo"
+      ],
+      "depois": [
+        "Adiabaticidade como Q=0",
+        "Primeira lei de sistema fechado",
+        "Convenção de trabalho produzido positivo e variação de energia como final menos inicial"
+      ]
+    },
+    {
+      "id": "av-e1-36",
+      "fonte_sha256_artigo": "6b740a5a219f82f11f8e03899fb670df2cc54663545c07731f48643f1edb7285",
+      "comando_lido": "Sobre uma expansão adiabática reversível de gás ideal em sistema fechado, com apenas trabalho de fronteira e alterações cinéticas e potenciais desprezíveis, assinale a alternativa INCORRETA.",
+      "tarefa": [
+        "Identificar a proposição que confunde Q=0 com W=0 usando as condições dadas"
+      ],
+      "antes": [
+        "Calor versus trabalho",
+        "Adiabaticidade"
+      ],
+      "depois": [
+        "Distinção entre calor e trabalho em processo adiabático",
+        "Primeira lei e relação u(T) do gás ideal na expansão",
+        "Adiabático reversível como isentrópico"
+      ]
+    },
+    {
+      "id": "av-e1-37",
+      "fonte_sha256_artigo": "ccefde48db15ca2082dd9167469f4953d0ca0778b051d7e6eac6e886ab39e951",
+      "comando_lido": "O gráfico ilustra a perda de disponibilidade associada às irreversibilidades. Em uma análise independente dos valores das curvas, um processo gera 0,20 kJ/K de entropia, com ambiente a 300 K. Pela relação de Gouy–Stodola, trabalho perdido = temperatura ambiente × entropia gerada. O trabalho útil perdido éDisponibilidade e irreversibilidade · figura recriada no caderno fornecido. Clique para ampliar.",
+      "tarefa": [
+        "Aplicar trabalho perdido=T0Sger aos valores fornecidos"
+      ],
+      "antes": [
+        "Irreversibilidade",
+        "Trabalho útil",
+        "Entropia gerada"
+      ],
+      "depois": [
+        "Identificação da temperatura ambiente e entropia gerada na relação fornecida",
+        "Multiplicação das grandezas e cancelamento de K em K·kJ/K"
+      ]
+    },
+    {
+      "id": "av-e1-38",
+      "fonte_sha256_artigo": "4be6c519786ca604598c0799748297d8487fc6b566a57276d02998979e071ffc",
+      "comando_lido": "Um estudo de viabilidade considera uma máquina térmica entre fontes a 500 K e 300 K. O limite superior de eficiência térmica entre essas fontes é",
+      "tarefa": [
+        "Calcular limite de Carnot entre 500 K e 300 K"
+      ],
+      "antes": [
+        "Teorema de Carnot",
+        "Reversibilidade"
+      ],
+      "depois": [
+        "Eficiência máxima de máquina entre duas fontes ηCarnot=1−TL/TH",
+        "Uso das temperaturas absolutas na razão"
+      ]
+    },
+    {
+      "id": "av-e1-39",
+      "fonte_sha256_artigo": "42ffe7852ec1c612a414d4403674cecde23d4f79aea495c7e0feb68d7dd7cf6b",
+      "comando_lido": "Um fornecedor propõe um motor cíclico cujo único efeito seria retirar 1.000 kJ de uma única fonte térmica e produzir 1.000 kJ de trabalho, sem qualquer outro efeito sobre a vizinhança. A avaliação correta é que a proposta",
+      "tarefa": [
+        "Verificar conservação de energia pela igualdade Q=W",
+        "Aplicar Kelvin–Planck ao único efeito cíclico proposto"
+      ],
+      "antes": [
+        "Conversão cal/J",
+        "Balanço de ciclo",
+        "Kelvin–Planck"
+      ],
+      "depois": [
+        "Balanço de energia de máquina cíclica",
+        "Enunciado de Kelvin–Planck e significado de único efeito e única fonte"
+      ]
+    },
+    {
+      "id": "av-e1-40",
+      "fonte_sha256_artigo": "b0eea6e50cfc5d5c03befe2871587f01f350784667829c280e90723526ed7ef8",
+      "comando_lido": "Em uma estimativa isentrópica de uma substância simples compressível, use dh = T ds + v dp. O volume específico é aproximadamente constante em 0,002 m³/kg e a pressão aumenta 500 kPa. A variação aproximada de entalpia específica é",
+      "tarefa": [
+        "Anular ds e aplicar Δh≈vΔp com sinal e unidades"
+      ],
+      "antes": [
+        "Relação dh=Tds+vdp",
+        "Isentropia",
+        "Sinal de volume específico"
+      ],
+      "depois": [
+        "Isentropia como ds=0",
+        "Leitura e redução da identidade diferencial fornecida",
+        "Aproximação Δh≈vΔp para v constante e equivalência kPa·m³/kg=kJ/kg"
+      ]
+    },
+    {
+      "id": "av-e1-41",
+      "fonte_sha256_artigo": "a8e35c751d06cd54ab69a365bf3e2e989296dd85b57c4bd8b5f57125f73d0bb9",
+      "comando_lido": "Em um equipamento com líquido e vapor de uma substância pura coexistindo em equilíbrio térmico, mecânico e de fases, a condição de equilíbrio de fases exige",
+      "tarefa": [
+        "Reconhecer igualdade do potencial químico da substância nas duas fases em equilíbrio"
+      ],
+      "antes": [
+        "Potencial químico",
+        "Equilíbrio de fases"
+      ],
+      "depois": [
+        "Potencial químico como critério de equilíbrio entre fases da mesma substância pura"
+      ]
+    },
+    {
+      "id": "av-e1-42",
+      "fonte_sha256_artigo": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+      "comando_lido": "Um motor recebe 4.000 kJ de uma fonte quente e produz 1.000 kJ de trabalho líquido por ciclo. Sua eficiência térmica é",
+      "tarefa": [
+        "Aplicar η=Wlíquido/QH ao trabalho de 1000 kJ e calor de 4000 kJ por ciclo"
+      ],
+      "antes": [
+        "Eficiência térmica W/QH",
+        "Percentuais"
+      ],
+      "depois": [
+        "Definição de eficiência térmica como trabalho líquido dividido pelo calor recebido",
+        "Conversão de razão adimensional em porcentagem"
+      ]
+    },
+    {
+      "id": "av-e1-43",
+      "fonte_sha256_artigo": "8d32bb5b9ad7673e2a58d15b3e6ea37751add3e2d9b7b3f3376a390cd3c6ba68",
+      "comando_lido": "Durante o congelamento de água em uma instalação, a entropia da água diminui 0,50 kJ/K e a da vizinhança aumenta 0,60 kJ/K. Considerando o conjunto água–vizinhança isolado, a variação de entropia total e a conclusão são",
+      "tarefa": [
+        "Somar as variações de entropia da água e do ambiente e aplicar o critério ΔStotal≥0"
+      ],
+      "antes": [
+        "Entropia de sistema e vizinhança",
+        "Congelamento"
+      ],
+      "depois": [
+        "Entropia do conjunto como soma das entropias de suas partes",
+        "Critério da segunda lei ΔStotal≥0 para conjunto isolado"
+      ]
+    },
+    {
+      "id": "av-e1-44",
+      "fonte_sha256_artigo": "192525a6985a995bb6e73ab56148c54fd89b7e2ed2dd7315aaba7db5d56386b9",
+      "comando_lido": "Em um sistema fechado que retorna ao estado inicial ao final de cada ciclo, considere:I. A variação de energia interna no ciclo é zero.II. Se todas as etapas forem adiabáticas, o calor líquido no ciclo é zero.III. Se todas as etapas forem adiabáticas e não houver variações líquidas de energia cinética ou potencial, o trabalho líquido no ciclo é zero.Estão corretas",
+      "tarefa": [
+        "Julgar as três proposições usando retorno ao estado inicial e balanço cíclico de energia"
+      ],
+      "antes": [
+        "Processo versus ciclo",
+        "Adiabaticidade",
+        "Eficiência térmica"
+      ],
+      "depois": [
+        "Energia interna como propriedade de estado que retorna ao valor inicial em ciclo",
+        "Adiabaticidade como ausência de calor",
+        "Primeira lei de sistema fechado em um ciclo"
+      ]
+    },
+    {
+      "id": "av-e1-45",
+      "fonte_sha256_artigo": "0772a1835ec9df7838cf240588d074230a013f24dcfa7b55f67eee3743fb0dc1",
+      "comando_lido": "Uma máquina térmica recebe 1.000 kJ por ciclo de uma fonte a 600 K e opera com fonte fria a 300 K. Para não ultrapassar o limite de Carnot, a quantidade mínima de calor rejeitado por ciclo é",
+      "tarefa": [
+        "Determinar o limite de eficiência reversível entre 600 K e 300 K",
+        "Relacionar esse limite ao mínimo calor rejeitado para QH=1000 kJ"
+      ],
+      "antes": [
+        "Balanço energético do ciclo",
+        "Carnot",
+        "Conversão °C/K"
+      ],
+      "depois": [
+        "Limite de Carnot ηmáxima=1−TL/TH com temperaturas absolutas",
+        "Balanço energético cíclico QH=Wlíquido+QL e relação entre eficiência máxima e calor rejeitado mínimo"
+      ]
+    },
+    {
+      "id": "av-e1-46",
+      "fonte_sha256_artigo": "0c048ab1b4c1148d9a424b0a9b55a2ddb097ba7fc79dc6a22b04c6447538721b",
+      "comando_lido": "No ciclo de Carnot reversível de uma máquina térmica, as trocas de calor com as duas fontes e as etapas que conectam suas temperaturas ocorrem, respectivamente, por",
+      "tarefa": [
+        "Identificar duas isotérmicas e duas adiabáticas reversíveis no ciclo de Carnot"
+      ],
+      "antes": [
+        "Transformações isotérmica e adiabática",
+        "Carnot"
+      ],
+      "depois": [
+        "Definições de transformações isotérmica e adiabática reversível",
+        "Composição do ciclo de Carnot por dois processos de cada tipo"
+      ]
+    },
+    {
+      "id": "av-e1-47",
+      "fonte_sha256_artigo": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+      "comando_lido": "No estudo preliminar de fornecimento de ar para uma instalação de grande vazão e razão de pressão moderada, deseja-se distinguir compressores dinâmicos e alternativos. Como orientação geral, sem substituir a consulta às curvas do fabricante, é correto afirmar que",
+      "tarefa": [
+        "Selecionar a tendência de aplicação de centrífugos para grandes vazões e de alternativos para menores vazões e maiores razões de pressão"
+      ],
+      "antes": [
+        "Compressores dinâmicos e volumétricos",
+        "Vazão e pressão"
+      ],
+      "depois": [
+        "Princípios de compressores centrífugos e alternativos",
+        "Tendências usuais de aplicação quanto a vazão e razão de pressão"
+      ]
+    },
+    {
+      "id": "av-e1-48",
+      "fonte_sha256_artigo": "334ccfa79935dfb95f1a430e582f35966b6baf3a666aa2fb3516d0f76e6d1c60",
+      "comando_lido": "Uma turbina a gás tem regenerador que aquece o ar na saída do compressor usando os gases de exaustão. Para que haja esse reaproveitamento de calor sem acionamento de uma bomba de calor, é necessário que",
+      "tarefa": [
+        "Comparar temperaturas do escape e do ar comprimido para regeneração espontânea"
+      ],
+      "antes": [
+        "Regeneração",
+        "Diferença de temperatura",
+        "Contracorrente"
+      ],
+      "depois": [
+        "Finalidade de recuperar calor do escape para o ar comprimido em regenerador",
+        "Transferência espontânea de calor de maior para menor temperatura"
+      ]
+    },
+    {
+      "id": "av-e1-49",
+      "fonte_sha256_artigo": "ba294a58c27857ff270db5bc1300c7823b7bee36997791c77c678e9ecb04d7d1",
+      "comando_lido": "Ao comparar o ciclo Brayton ideal com uma instalação real de turbina a gás, assinale a alternativa INCORRETA.",
+      "tarefa": [
+        "Identificar como incorreta a alegação de que rejeição passiva de calor eleva necessariamente a pressão e substitui compressão"
+      ],
+      "antes": [
+        "Brayton ideal e real",
+        "Perda de pressão em escoamento"
+      ],
+      "depois": [
+        "Trocas de calor isobáricas no Brayton ideal",
+        "Perdas de pressão em componentes reais",
+        "Distinção entre rejeição passiva de calor e elevação de pressão por compressão"
+      ]
+    },
+    {
+      "id": "av-e1-50",
+      "fonte_sha256_artigo": "c10f8ecf5ea5e1579ac8b39b5fd05ae01d6b225a1f95f0404e5c06a494f35d9b",
+      "comando_lido": "Duas turbinas a gás são comparadas para as mesmas condições de entrada, mesma razão de pressões e mesma temperatura de entrada da turbina. Em relação ao modelo ideal isentrópico, as irreversibilidades tendem a",
+      "tarefa": [
+        "Comparar o efeito das irreversibilidades sobre trabalho de compressor e turbina"
+      ],
+      "antes": [
+        "Eficiência isentrópica",
+        "Trabalho de compressor e turbina"
+      ],
+      "depois": [
+        "Efeito qualitativo das irreversibilidades sobre trabalho de compressor e turbina",
+        "Comparação real/isentrópica sob mesmas condições de entrada e pressão de saída"
+      ]
+    },
+    {
+      "id": "av-e1-51",
+      "fonte_sha256_artigo": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+      "comando_lido": "No ciclo Brayton ideal convencional, assinale a sequência correta.I. Compressão e expansão são isentrópicas.II. Adição e rejeição de calor são isobáricas.III. O ciclo contém obrigatoriamente duas etapas isotérmicas.",
+      "tarefa": [
+        "Julgar V/V/F pelas transformações do Brayton ideal convencional"
+      ],
+      "antes": [
+        "Processos do Brayton convencional"
+      ],
+      "depois": [
+        "Processos isentrópicos e isobáricos do Brayton ideal convencional",
+        "Distinção entre processo isentrópico e isotérmico"
+      ]
+    },
+    {
+      "id": "av-e1-52",
+      "fonte_sha256_artigo": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+      "comando_lido": "Uma unidade térmica recebe 200 kW por calor, e sua turbina produz 100 kW. Antes de uma alteração, o compressor consome 40 kW; depois, passa a consumir 50 kW, mantendo-se os outros valores. A eficiência térmica passa de",
+      "tarefa": [
+        "Obter trabalhos líquidos subtraindo potência de compressão da de expansão em cada cenário",
+        "Comparar eficiências com a mesma taxa de calor recebida"
+      ],
+      "antes": [
+        "Wlíquido=Wt−Wc",
+        "Eficiência térmica"
+      ],
+      "depois": [
+        "Potência líquida como potência de turbina menos potência consumida pelo compressor",
+        "Eficiência térmica como potência líquida dividida pela taxa de calor recebida"
+      ]
+    },
+    {
+      "id": "av-e1-53",
+      "fonte_sha256_artigo": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+      "comando_lido": "Após instalar um regenerador, uma unidade mantém trabalho líquido de 90 kJ por ciclo, mas o calor externo necessário cai de 300 kJ para 240 kJ. A redução percentual desse calor externo é",
+      "tarefa": [
+        "Calcular redução relativa do calor externo de 300 para 240 kJ"
+      ],
+      "antes": [
+        "Regeneração de Brayton",
+        "Recuperação de calor"
+      ],
+      "depois": [
+        "Redução percentual como diferença entre valor inicial e final dividida pelo inicial"
+      ]
+    },
+    {
+      "id": "av-e1-54",
+      "fonte_sha256_artigo": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+      "comando_lido": "No cadastro de equipamentos de uma instalação, use 1 para compressores dinâmicos e 2 para compressores de deslocamento positivo. Classifique, nessa ordem: axial, centrífugo, alternativo de pistão e parafuso. A sequência correta é",
+      "tarefa": [
+        "Classificar axial e centrífugo como dinâmicos e pistão e parafuso como deslocamento positivo"
+      ],
+      "antes": [
+        "Compressores de fluxo e volumétricos",
+        "Razão de pressão"
+      ],
+      "depois": [
+        "Princípio de compressores dinâmicos versus deslocamento positivo",
+        "Associação de axial e centrífugo à primeira família e pistão e parafuso à segunda"
+      ]
+    },
+    {
+      "id": "av-e1-55",
+      "fonte_sha256_artigo": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+      "comando_lido": "Quanto aos processos do ciclo Brayton ideal convencional, assinale a alternativa INCORRETA.",
+      "tarefa": [
+        "Reconhecer como incorreta a rejeição de calor a volume constante no Brayton ideal"
+      ],
+      "antes": [
+        "Brayton ideal",
+        "Isobaria versus isocoria"
+      ],
+      "depois": [
+        "Sequência de processos do Brayton ideal",
+        "Distinção entre transferência de calor isobárica e isocórica"
+      ]
+    },
+    {
+      "id": "av-e1-56",
+      "fonte_sha256_artigo": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+      "comando_lido": "Uma usina de ciclo combinado utiliza a exaustão de uma turbina a gás para gerar vapor que aciona outra turbina. Os modelos termodinâmicos usualmente associados à parte a gás e à parte a vapor são, respectivamente,",
+      "tarefa": [
+        "Associar turbina a gás a Brayton e circuito de vapor a Rankine"
+      ],
+      "antes": [
+        "Turbina a gás",
+        "Gerador",
+        "Brayton"
+      ],
+      "depois": [
+        "Associação de turbina a gás ao modelo Brayton",
+        "Associação do circuito de geração de vapor e turbina a vapor ao Rankine"
+      ]
+    },
+    {
+      "id": "av-e1-57",
+      "fonte_sha256_artigo": "0e7279567efbcd2caf5a82d8082573029f15570a1806b11a554d3ab30f96f1fa",
+      "comando_lido": "Para o Brayton ideal com calores específicos constantes, considere η = 1 − 1/rp^((k−1)/k), em que rp é a razão de pressões e k = cp/cv. Em um ponto de operação, rp^((k−1)/k) = 2. A eficiência ideal é",
+      "tarefa": [
+        "Substituir o fator já avaliado como 2 na expressão η=1−1/fator"
+      ],
+      "antes": [
+        "Razão de pressões",
+        "Expressão ideal de eficiência Brayton"
+      ],
+      "depois": [
+        "Substituição do fator fornecido na expressão de rendimento",
+        "Operações com fração 1/2 e conversão para porcentagem"
+      ]
+    },
+    {
+      "id": "av-e1-58",
+      "fonte_sha256_artigo": "ed7991b384a31713d5cf3e2963b51f3e23c81e676a922f4a01264f86d678c46c",
+      "comando_lido": "Durante uma idealização isotérmica da compressão de uma massa fixa de ar, a pressão absoluta inicial é 100 kPa e o volume passa de 0,20 m³ para 0,050 m³. Para gás ideal, a pressão absoluta final é",
+      "tarefa": [
+        "Aplicar p1V1=p2V2 aos volumes de 0,20 e 0,050 m³ e p1=100 kPa"
+      ],
+      "antes": [
+        "Compressão de gás",
+        "Relação pressão-volume"
+      ],
+      "depois": [
+        "Relação de gás ideal pV constante em processo isotérmico de massa fixa",
+        "Rearranjo de p1V1=p2V2 para a pressão final"
+      ]
+    },
+    {
+      "id": "av-e1-59",
+      "fonte_sha256_artigo": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+      "comando_lido": "Sobre as válvulas de um compressor alternativo, considere:I. Na compressão propriamente dita, antes da abertura da descarga, admissão e descarga ficam fechadas.II. A descarga pode abrir quando a pressão interna supera a pressão de descarga e a resistência de abertura da válvula.III. Na admissão, as duas válvulas devem ficar abertas para o gás atravessar livremente o cilindro.Está correto o que se afirma em",
+      "tarefa": [
+        "Julgar posições de válvulas durante compressão, descarga e admissão"
+      ],
+      "antes": [
+        "Fases do compressor alternativo",
+        "Válvulas de admissão e descarga"
+      ],
+      "depois": [
+        "Etapas de admissão, compressão e descarga do compressor alternativo",
+        "Abertura e fechamento de válvulas automáticas por diferença de pressão"
+      ]
+    },
+    {
+      "id": "av-e1-60",
+      "fonte_sha256_artigo": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+      "comando_lido": "Uma linha de ar comprimido apresenta pulsações decorrentes da descarga de um compressor alternativo. A função de um reservatório adequadamente dimensionado, nesse contexto, é",
+      "tarefa": [
+        "Distinguir suavização das pulsações na linha de eliminação das pulsações no cilindro"
+      ],
+      "antes": [
+        "Compressor alternativo",
+        "Vazão instantânea e média"
+      ],
+      "depois": [
+        "Caráter pulsante da descarga do compressor alternativo",
+        "Função qualitativa do reservatório em amortecer variações na linha"
+      ]
+    },
+    {
+      "id": "av-e1-61",
+      "fonte_sha256_artigo": "2ef609887b7c6e57a7b9a8f38f7760b69c0ffe4377c1c2b43d307101ffd1be86",
+      "comando_lido": "Em um compressor alternativo, o volume efetivamente admitido por ciclo, referido às condições de sucção, é 0,008 m³; o volume deslocado pelo pistão é 0,010 m³. A eficiência volumétrica, definida pela razão desses volumes, é",
+      "tarefa": [
+        "Aplicar a razão definida de volume admitido a volume deslocado"
+      ],
+      "antes": [
+        "Eficiência volumétrica",
+        "Volume morto e reexpansão"
+      ],
+      "depois": [
+        "Identificação do numerador e denominador na definição de eficiência fornecida",
+        "Divisão de volumes na mesma unidade e conversão da razão para porcentagem"
+      ]
+    },
+    {
+      "id": "av-e1-62",
+      "fonte_sha256_artigo": "3afa637b59ec0aa48e6885ab0877b0ed1bada0bcebe86c841d221e1559235148",
+      "comando_lido": "Na etapa de admissão de um compressor alternativo, a câmara aumenta de volume e sua pressão permite a entrada de gás da linha de sucção. A condição normal das válvulas é",
+      "tarefa": [
+        "Identificar admissão aberta e descarga fechada quando há entrada normal de gás"
+      ],
+      "antes": [
+        "Admissão",
+        "Diferença de pressão",
+        "Válvulas"
+      ],
+      "depois": [
+        "Função das válvulas de admissão e descarga em compressor alternativo",
+        "Entrada de gás pela diferença de pressão na etapa de admissão"
+      ]
+    },
+    {
+      "id": "av-e1-63",
+      "fonte_sha256_artigo": "e5ee106ebb64b6a28b89d824d5ee934c4be36dcde18a147d6d65c94bac558c00",
+      "comando_lido": "Assinale a associação correta entre os modelos ideais e os equipamentos ou processos característicos.",
+      "tarefa": [
+        "Associar turbina a gás e duas isentrópicas e duas isobáricas ao Brayton ideal"
+      ],
+      "antes": [
+        "Brayton",
+        "Stirling",
+        "Ciclos de turbina a gás"
+      ],
+      "depois": [
+        "Associação da turbina a gás ao ciclo Brayton",
+        "Reconhecimento de duas isentrópicas e duas isobáricas no modelo ideal"
+      ]
+    },
+    {
+      "id": "av-e1-64",
+      "fonte_sha256_artigo": "a7967a8d0853d244b89a8898dbd430e487abef40363cda93bb9a51bcb8a2e07a",
+      "comando_lido": "Um parecer descreve dois compressores: um de pistão e outro de parafuso. Apesar de seus movimentos distintos, ambos são classificados como de deslocamento positivo porque",
+      "tarefa": [
+        "Identificar redução do volume aprisionado como princípio comum de pistão e parafuso"
+      ],
+      "antes": [
+        "Deslocamento positivo",
+        "Compressor parafuso e alternativo"
+      ],
+      "depois": [
+        "Princípio de deslocamento positivo por redução do volume aprisionado",
+        "Funcionamento qualitativo de compressores de pistão e parafuso"
+      ]
+    },
+    {
+      "id": "av-e1-65",
+      "fonte_sha256_artigo": "5f993c3d09879d8de3fd56710cb38d657dd3415112868673a9bed285aa473000",
+      "comando_lido": "Uma turbina a vapor opera em regime permanente com vazão de 2 kg/s. A entalpia específica cai de 3.200 kJ/kg na entrada para 2.800 kJ/kg na saída. Desprezando calor e variações cinéticas e potenciais, a potência produzida é",
+      "tarefa": [
+        "Aplicar potência=ṁ(hentrada−hsaída) com entalpias e vazão dadas"
+      ],
+      "antes": [
+        "Turbina",
+        "Entalpia de escoamento",
+        "Adiabaticidade"
+      ],
+      "depois": [
+        "Balanço estacionário de energia de uma turbina adiabática com ΔEC e ΔEP desprezíveis",
+        "Relação entre vazão mássica, queda de entalpia específica e potência",
+        "Equivalência kJ/s=kW"
+      ]
+    },
+    {
+      "id": "av-e1-66",
+      "fonte_sha256_artigo": "414e4a69cb79528ed86dcb04c0172f1f99eba044f8975a08ca92bbf212601946",
+      "comando_lido": "Na inspeção de um trocador de calor de casco e tubos em boas condições, sem vazamentos, assinale a alternativa INCORRETA.",
+      "tarefa": [
+        "Identificar como incorreta a necessidade de mistura das duas correntes em casco e tubos"
+      ],
+      "antes": [
+        "Trocador casco e tubos",
+        "Convecção e condução",
+        "Contato direto"
+      ],
+      "depois": [
+        "Separação das correntes por parede de tubos em trocador casco e tubos",
+        "Condução na parede e convecção entre fluidos e parede"
+      ]
+    },
+    {
+      "id": "av-e1-67",
+      "fonte_sha256_artigo": "c234657d9d082fb9ca732f48724916a7c267b2048c8fca190ae934f62fb6ba84",
+      "comando_lido": "Uma tubulação metálica de 20 m sofre aquecimento uniforme de 50 K. Seu coeficiente de dilatação linear é 12 × 10⁻⁶ K⁻¹. Admitindo dilatação livre, o aumento de comprimento é",
+      "tarefa": [
+        "Aplicar ΔL=αLΔT e expressar o resultado em milímetros"
+      ],
+      "antes": [
+        "Dilatação térmica",
+        "Restrição mecânica"
+      ],
+      "depois": [
+        "Relação de dilatação linear livre ΔL=αLΔT",
+        "Conversão de metros em milímetros"
+      ]
+    },
+    {
+      "id": "av-e1-68",
+      "fonte_sha256_artigo": "856b39ea9bb6e14936108cc8f0cc0633ac20f6777777c30320e28414e1f6207d",
+      "comando_lido": "Na unidade térmica ilustrada, um revestimento reduz a emissividade de uma superfície quente de 0,80 para 0,20. Adote o modelo de uma superfície cinza pequena cercada por um grande ambiente aproximadamente negro, com troca líquida Q̇rad = εσA(Ts⁴ − Tamb⁴). Mantidas a área, as temperaturas absolutas e a geometria, a perda líquida por radiação passa a serUnidade geradora de vapor · figura recriada no caderno fornecido. Clique para ampliar.",
+      "tarefa": [
+        "Comparar perdas pela razão entre emissividades 0,20/0,80 e distinguir fração remanescente de redução"
+      ],
+      "antes": [
+        "Emissividade",
+        "Radiação térmica",
+        "Comparação controlada"
+      ],
+      "depois": [
+        "Leitura da proporcionalidade entre perda radiativa e emissividade na fórmula fornecida",
+        "Razão entre valor final e inicial e distinção entre fração remanescente e redução percentual"
+      ]
+    },
+    {
+      "id": "av-e1-69",
+      "fonte_sha256_artigo": "f1ade775126752789740119acdb33f04190299cc54d46883e4e0354d7c6e6fee",
+      "comando_lido": "Em um trocador com fluidos separados por uma parede metálica, o caminho térmico do fluido quente até o fluido frio envolve, nessa ordem,",
+      "tarefa": [
+        "Identificar sequência convecção–condução–convecção entre fluidos separados por parede"
+      ],
+      "antes": [
+        "Convecção",
+        "Condução",
+        "Trocador casco-tubo"
+      ],
+      "depois": [
+        "Convecção na interface entre fluido e parede",
+        "Condução através da parede sólida que separa os fluidos"
+      ]
+    },
+    {
+      "id": "av-e1-70",
+      "fonte_sha256_artigo": "aa3759b74d4479c6c2c7e76f4ad964b19344b6c1b13593c027dac0358a2600da",
+      "comando_lido": "Uma parede plana tem uma face a 80 °C e a outra a 20 °C. Em regime permanente, sem geração interna, o sentido espontâneo da transferência de calor por condução é",
+      "tarefa": [
+        "Identificar condução espontânea de 80 °C para 20 °C"
+      ],
+      "antes": [
+        "Sentido espontâneo de calor",
+        "Gradiente de temperatura"
+      ],
+      "depois": [
+        "Comparação de temperaturas na mesma escala",
+        "Sentido espontâneo da condução do quente para o frio"
+      ]
+    },
+    {
+      "id": "av-e1-71",
+      "fonte_sha256_artigo": "a6822e633557838619c8a4c9fa1790c583776ef03830b6ca475f28ad6b25e2ff",
+      "comando_lido": "Em uma instalação predial, um ventilador promove o escoamento de ar sobre uma serpentina e uma bomba faz água circular em uma tubulação. A transferência convectiva associada a esses escoamentos é classificada como",
+      "tarefa": [
+        "Classificar como forçada a convecção de escoamentos acionados por ventilador e bomba"
+      ],
+      "antes": [
+        "Convecção natural e forçada",
+        "Bombas e ventiladores"
+      ],
+      "depois": [
+        "Distinção entre movimento do fluido por acionamento externo e por empuxo",
+        "Convecção forçada associada a ventiladores e bombas"
+      ]
+    },
+    {
+      "id": "av-e1-72",
+      "fonte_sha256_artigo": "9b34292c52fddf0bbfff7573258e810e24f0d3ad6cc86dc0c1eaed9743754e7d",
+      "comando_lido": "Em um trocador de tubos concêntricos, compare as configurações de fluxo paralelo e contracorrente. Quanto às extremidades de entrada das correntes quente e fria, elas são, respectivamente,",
+      "tarefa": [
+        "Associar entradas na mesma extremidade a paralelo e em extremidades opostas a contracorrente"
+      ],
+      "antes": [
+        "Escoamento paralelo e contracorrente"
+      ],
+      "depois": [
+        "Definições geométricas de escoamento paralelo e contracorrente em tubos concêntricos"
+      ]
+    },
+    {
+      "id": "av-e1-73",
+      "fonte_sha256_artigo": "6112aaaabbba78b71fbc5b7d5c216ddc3b56a62fa2ebeab34bca6645567521d1",
+      "comando_lido": "Uma serpentina aletada de climatização é projetada para proporcionar grande capacidade de troca em um volume reduzido. A característica de um trocador compacto que explica essa finalidade é",
+      "tarefa": [
+        "Associar compacidade à alta razão de área de troca por volume"
+      ],
+      "antes": [
+        "Densidade de área",
+        "Trocador compacto"
+      ],
+      "depois": [
+        "Significado de área de transferência por unidade de volume",
+        "Compacidade como grande área térmica disponível em volume reduzido"
+      ]
+    },
+    {
+      "id": "av-e1-74",
+      "fonte_sha256_artigo": "e1cbd2e738cff1e20744251bba5ae94651ec5502fd9dc5808c1627f19b37b032",
+      "comando_lido": "Após formação de depósitos, o coeficiente global de um trocador cai de 500 para 250 W/(m²·K). Mantidas a área de 10 m² e a diferença média de temperatura de 20 K, a taxa de transferência de calor passa de",
+      "tarefa": [
+        "Aplicar Q̇=UAΔTm às duas condições com U de 500 e 250 W/(m²·K)"
+      ],
+      "antes": [
+        "Resistência térmica",
+        "Incrustação",
+        "Coeficiente global"
+      ],
+      "depois": [
+        "Relação de taxa térmica Q̇=UAΔTm com coeficiente global, área e diferença média fornecidos",
+        "Conversão de watts em quilowatts"
+      ]
+    },
+    {
+      "id": "av-e1-75",
+      "fonte_sha256_artigo": "cf84420539a50440af16625535da0e7513c3d3de6362be04a830790f9eb9029c",
+      "comando_lido": "Em condução unidimensional, a condutividade é 10 W/(m·K) e o gradiente na direção positiva x vale dT/dx = −20 K/m. Pela lei de Fourier, q″x = −k dT/dx. O fluxo térmico na direção x é",
+      "tarefa": [
+        "Substituir condutividade e gradiente na lei de Fourier mantendo sinal e unidade de fluxo"
+      ],
+      "antes": [
+        "Gradiente",
+        "Lei de Fourier",
+        "Sinal vetorial"
+      ],
+      "depois": [
+        "Leitura da componente de fluxo e do gradiente na lei unidimensional fornecida",
+        "Multiplicação de números com sinal",
+        "Distinção entre unidade de fluxo W/m² e potência W"
+      ]
+    },
+    {
+      "id": "av-e1-76",
+      "fonte_sha256_artigo": "1c62973843285a448a379f2b090961af88e38192c7728fb8d628fe4f7a4b48cb",
+      "comando_lido": "Na análise de transporte térmico em uma tubulação, assinale a sequência correta.I. Advecção é o transporte associado ao movimento global do fluido.II. A descrição da transferência convectiva inclui o movimento do fluido e a difusão térmica.III. Na interface com a parede, o calor só pode ser transmitido por colisões do fluido se sua condutividade for negativa.",
+      "tarefa": [
+        "Julgar definições de advecção e convecção e rejeitar exigência de condutividade negativa"
+      ],
+      "antes": [
+        "Advecção",
+        "Convecção",
+        "Difusão térmica"
+      ],
+      "depois": [
+        "Advecção como transporte pelo movimento global do fluido",
+        "Convecção como combinação de transporte por movimento e difusão térmica",
+        "Condutividade térmica positiva e papel do sinal de Fourier no sentido do fluxo"
+      ]
+    },
+    {
+      "id": "av-e1-77",
+      "fonte_sha256_artigo": "ba4e9d281b7c90b87fa9f88e4d953020a002c8903045cd2fcc0e0e55430b2820",
+      "comando_lido": "Um sistema de refrigeração retira 12 kW do ambiente climatizado, e seu compressor recebe 3 kW de potência. Em regime permanente e desprezando outras trocas e perdas, o calor rejeitado no condensador é",
+      "tarefa": [
+        "Aplicar balanço do ciclo para somar calor retirado de 12 kW e potência recebida de 3 kW"
+      ],
+      "antes": [
+        "Condensador e evaporador",
+        "Calor e mudança de fase"
+      ],
+      "depois": [
+        "Primeira lei aplicada ao ciclo de refrigeração em regime permanente",
+        "Identificação de calor retirado no evaporador, potência recebida e calor rejeitado no condensador"
+      ]
+    },
+    {
+      "id": "av-e1-78",
+      "fonte_sha256_artigo": "eb02ebe932d364e4cd46353e409c2c75a53ec06000a2f3d95929a1289b2af8e4",
+      "comando_lido": "Em uma análise comparativa de refrigerantes para instalações industriais, o alto calor latente de vaporização da amônia pode favorecer",
+      "tarefa": [
+        "Relacionar calor latente alto à energia absorvida por massa evaporada"
+      ],
+      "antes": [
+        "Calor latente",
+        "Refrigeração",
+        "Diferença entre propriedade e desempenho global"
+      ],
+      "depois": [
+        "Calor latente de vaporização como energia absorvida por unidade de massa evaporada"
+      ]
+    },
+    {
+      "id": "av-e1-79",
+      "fonte_sha256_artigo": "e1bcf99fdeeb7c91da73b8c89d96714294fd1c64234861d3ae7fb0b91cf78bcc",
+      "comando_lido": "Um equipamento está em uma câmara de alto vácuo, ligado por suportes e cabos sólidos à estrutura. Quais mecanismos precisam ser considerados no balanço térmico, admitindo que o gás residual tenha efeito desprezível?",
+      "tarefa": [
+        "Identificar radiação entre superfícies e condução nos suportes e cabos"
+      ],
+      "antes": [
+        "Radiação no vácuo",
+        "Condução por contatos",
+        "Dados para comparação de mecanismos"
+      ],
+      "depois": [
+        "Radiação como transferência possível sem meio material",
+        "Condução por suportes e cabos sólidos mesmo sob vácuo"
+      ]
+    },
+    {
+      "id": "av-e1-80",
+      "fonte_sha256_artigo": "9586c1757d18d3ba88d59485b308d8e6c92a4dd5859ffe94ff3cd7e3e9ac9a71",
+      "comando_lido": "O bloco da figura tem dimensões de 2 m × 2 m × 1 m e gera calor uniformemente à taxa de 150 W/m³. Cinco faces são isoladas; somente a face ABCD, de 2 m × 2 m, perde calor por convecção para o ambiente a 25 °C. Sendo h = 10 W/(m²·K), a temperatura uniforme dessa face, em regime permanente e desprezando radiação, éBloco com geração interna de calor · figura recriada no caderno fornecido. Clique para ampliar.",
+      "tarefa": [
+        "Obter volume de geração e área da única face exposta pelas dimensões",
+        "Igualar geração total à convecção estacionária e determinar temperatura da face"
+      ],
+      "antes": [
+        "Volume e área de paralelepípedo",
+        "Balanço estacionário",
+        "Convecção"
+      ],
+      "depois": [
+        "Volume de paralelepípedo e área da face exposta a partir de dimensões fornecidas",
+        "Conversão da geração por volume em potência total",
+        "Balanço estacionário sem acumulação e relação convectiva Q̇=hA(Ts−Tamb)"
+      ]
+    }
+  ]
+}

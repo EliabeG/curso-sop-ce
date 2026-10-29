@@ -1,0 +1,136 @@
+{
+  "id": "BAN-07",
+  "data": "2026-10-28",
+  "responsavel": "/root, coordenador",
+  "ocorrencia": "Erro terminal do Auditor /root/auditor_ban07 ao compactar contexto; erro de transporte reportado pelo serviço.",
+  "retomada": {
+    "auditor": "/root/auditor_ban07_final",
+    "primeiro_escopo": "Somente decisão AV04, contexto novo e enxuto.",
+    "demais_pendencias": [
+      "Examinar herança dos três FUN-02.",
+      "Decidir oito ressalvas Q inalterados e notas CR17/27; aceitar ou corrigir o alcance da preparação anterior de 70.",
+      "Revisar AV61–80; apoio continua AV01–60.",
+      "Adjudicar AV31 e observações AV23/30 ao integrar provas do apoio.",
+      "Confrontar pacote técnico/congelado e emitir parecer integral de BAN-07; nenhum próximo ID antes de APROVADO."
+    ]
+  },
+  "limites": [
+    "Nenhuma decisão AV04 foi inventada ou recuperada sem arquivo.",
+    "Registros e execuções anteriores pertencem aos seus revisores; não serão atribuídos ao novo Auditor.",
+    "Não houve edição de produto ou liberação de outro ID."
+  ],
+  "evidencia_persistida": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-heranca-fun01-r1.json",
+    "sha256": "9614b1c1abb3837fc81e5dbb6bde9311ce22d5c54b874ce7d4cb8fef099a80b6",
+    "copia_preservada": "auditoria/termodinamica/evidencias/BAN-07/heranca-fun01-parcial-retomada-final-r1.json",
+    "estado": "CONCLUIDO_COM_HERANCA_FUN01_ACEITA_E_AJUSTE_OBRIGATORIO_AV04",
+    "registros": [
+      {
+        "id": "fun01-e1-saturacao",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA",
+        "origem_revisao": "heranca_cientifica_por_identidade_e_alcance"
+      },
+      {
+        "id": "fun01-e1-mistura",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA",
+        "origem_revisao": "heranca_cientifica_por_identidade_e_alcance"
+      },
+      {
+        "id": "fun01-e1-supercritico",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA",
+        "origem_revisao": "heranca_cientifica_por_identidade_e_alcance"
+      },
+      {
+        "id": "fun01-e1-equilibrio",
+        "veredito_item": "APROVADO_NO_ESCOPO_BAN07_POR_HERANCA_CIENTIFICA",
+        "origem_revisao": "heranca_cientifica_por_identidade_e_alcance"
+      }
+    ],
+    "decisao_av04": {
+      "item": "AV04",
+      "id_artigo": "av-e1-04",
+      "sha256_artigo": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+      "origem_revisao": "confronto_proprio_de_achado_de_apoio_independente",
+      "revisor_decisor": "Agente automatizado independente /root/auditor_ban07",
+      "fonte_apoio": {
+        "arquivo": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av01-05-r1.json",
+        "sha256": "213a688f21a8ebdf0933c978cd374190ad496418903eca93c2bd9bc018ac7d59",
+        "revisor": "/root/auditor_av",
+        "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07",
+        "sha256_artigo_examinado_pelo_apoio": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+        "veredito_original": "AJUSTES_OBRIGATORIOS",
+        "achado_original": "AV04-E; ajuste obrigatório por plausibilidade não demonstrada."
+      },
+      "identidade": "Hash do artigo atual conferido independentemente e idêntico à prova do apoio. Comando e cinco opções lidos antes do comentário e do achado detalhado do apoio; não há figura.",
+      "comando_atual": "Modelo de líquido incompressível para água líquida longe da região crítica em faixa moderada de pressão e temperatura; identificar o significado da hipótese.",
+      "derivacao_propria_de_contexto": "v=1/rho pode ser aproximado por constante na faixa analisada. Isso não impõe massa armazenada constante em um volume de controle, pressão constante na bomba ou volume específico zero, nem uma temperatura particular. Só D expressa a definição. A base-medidas acessível antes da resposta explica essa faixa e a distinção entre pressão variável e densidade quase constante.",
+      "opcoes_consideradas_no_confronto": [
+        {
+          "opcao": "A",
+          "juizo": "Falsa; confusão entre propriedade do material e inventário de massa do volume de controle. Um enchimento a densidade aproximadamente constante é contramodelo adequado."
+        },
+        {
+          "opcao": "B",
+          "juizo": "Falsa; pressão pode subir na bomba sem variação relevante de v."
+        },
+        {
+          "opcao": "C",
+          "juizo": "Falsa; confunde variação desprezível de v com v nulo."
+        },
+        {
+          "opcao": "D",
+          "juizo": "Correta; v aproximadamente constante na faixa é precisamente a aproximação pedida."
+        },
+        {
+          "opcao": "E",
+          "juizo": "Falsa, mas erro plausível da redação temperatura igual a zero não demonstrado."
+        }
+      ],
+      "criterio_aplicado": {
+        "referencia": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md, BAN-07; protocolo e preparação já lidos",
+        "exigencia": "Distratores plausíveis baseados em erros reais e justificativa de cada opção. Ser apenas falso não satisfaz automaticamente esse critério. Não se exige piloto empírico."
+      },
+      "analise_propria_da_plausibilidade_E": "A cadeia mais próxima identificável seria confundir incompressibilidade com isotermia, isto é, deltaT=0. A redação atual exige ainda trocar variação por valor de T e escolher um zero sem escala; nenhum dado, definição ou operação do comando/base/comentário sustenta essa passagem específica. Erros combinados não são proibidos, mas não basta imaginar uma cadeia arbitrária para declarar plausível um valor não motivado. O comentário atual somente refuta a condição nula e não oferece o mecanismo exigido. Não foi encontrada base concreta para refutar o apontamento do apoio.",
+      "decisao": "CONFIRMADO_AJUSTE_OBRIGATORIO_AV04_E",
+      "fundamento_da_decisao": "A chave D e sua unicidade são cientificamente sustentadas, porém a plausibilidade de E permanece não demonstrada na versão congelada. O achado do apoio foi examinado e aceito neste alcance, não convertido em execução própria das demais revisões AV01–05.",
+      "observacao_A": {
+        "origem": "AV04-A-precisao, apoio /root/auditor_av",
+        "decisao": "Mantida como observação não bloqueante neste confronto.",
+        "fundamento": "Entrada/saída por si só não implica variação de inventário; o feedback não afirma essa implicação universal. Um exemplo explícito de enchimento deixaria a refutação mais direta. A plausibilidade de A e sua falsidade já são demonstráveis pelo modelo, sem alterar a chave."
+      },
+      "ajustes_obrigatorios": [
+        {
+          "id": "AV04-E",
+          "acao": "Substituir E por alternativa falsa com confusão conceitual concreta ligada à incompressibilidade e sincronizar seu comentário.",
+          "exemplo_de_direcao_admissivel": "Confusão incompressibilidade/isotermia, como exigir temperatura necessariamente constante durante o bombeamento; é sugestão de mecanismo, não alteração implementada nem aceite de uma futura redação.",
+          "evidencia_necessaria": "Artigo reapresentado com novo hash; conferir comando/faixa operacional, todas as cinco alternativas, plausibilidade e comentário; demonstrar que apenas D continua correta.",
+          "limite": "Não substituir por outra afirmação arbitrária nem usar somente uma refutação para provar plausibilidade."
+        }
+      ],
+      "fontes_efetivamente_examinadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#av-e1-04",
+          "alcance": "Comando, cinco opções e comentário atuais"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-medidas",
+          "alcance": "Trecho efetivamente lido neste turno: rho/v, faixa de incompressibilidade, pressão de bomba e temperatura"
+        },
+        {
+          "referencia": "auditoria/termodinamica/pareceres/BAN-07-auditor-bloco-av01-05-r1.json",
+          "alcance": "Somente registro AV04, autoria/metadados e prova do achado; demais itens não reexaminados neste turno"
+        }
+      ],
+      "limites": [
+        "Decisão de qualidade de distrator é teórica, sem alegar erro observado em alunos ou validação empírica.",
+        "AV04 pertence à cobertura do apoio AV01–05; esta decisão separada não acrescenta um segundo registro de cobertura para o mesmo artigo.",
+        "Nenhuma edição de produto foi feita e a r1 permanece congelada."
+      ]
+    }
+  },
+  "retificacao": {
+    "data": "2026-10-28",
+    "descricao": "A inspeção atual constatou que o arquivo foi concluído antes do erro: quatro heranças FUN-01 aceitas e decisão AV04 registrada. A alegação inicial de ausência usou checkpoint anterior; não descrevia os bytes preservados após o erro.",
+    "sha256_completo": "9614b1c1abb3837fc81e5dbb6bde9311ce22d5c54b874ce7d4cb8fef099a80b6"
+  }
+}

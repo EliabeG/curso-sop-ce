@@ -1,0 +1,330 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "CR71–CR75",
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "BLOCO_CONCLUIDO; cinco itens aprovados nos alcances examinados; sem aprovação global",
+  "criterio": "Conferir suficiência, consistência física, comando, unidades, restrições, unicidade e demonstração da chave com oposição C/E; arredondamento quando pertinente.",
+  "base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "extrato_anterior": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+    "metodo": "Parser canônico importado; comando/opções anteriores à cr-resolucao extraídos e lidos primeiro; chaves derivadas anunciadas antes da leitura dos comentários. Não há figuras nem dados numéricos nos cinco comandos. Hash individual comparado com o extrato."
+  },
+  "fontes_comuns_lidas": [
+    {
+      "referencia": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "alcance": "Papéis e padrão de aceite; leitura no bloco CR51–55"
+    },
+    {
+      "referencia": "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+      "alcance": "Critérios e método; leitura no bloco CR51–55"
+    },
+    {
+      "referencia": "modulos/e1-termodinamica.html#base-transferencia",
+      "alcance": "Leitura efetiva no bloco CR66–70: convecção forçada/natural, Fourier, unidades e interpretação do sinal. Mesmo HTML congelado."
+    },
+    {
+      "referencia": "modulos/e1-termodinamica.html#base-trocadores",
+      "alcance": "Leitura efetiva no bloco CR66–70: paralelo/contracorrente, área por volume, mecanismos e resistência de depósitos. Mesmo HTML congelado."
+    }
+  ],
+  "registros": [
+    {
+      "id": "cr-e1-71",
+      "sha256_artigo": "e2bcbf820c2b4d9def629ac7407c88c182d0a6bd4f32f3c744c5d95e1fe6dee3",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. Reconhecimento do agente externo que movimenta o fluido; não pede taxa de calor, vazão ou coeficiente convectivo.",
+      "demonstracao": "Uma bomba ou ventilador fornece energia mecânica para manter escoamento em um duto. Quando há troca térmica entre esse fluido e a parede, o movimento imposto caracteriza convecção forçada. A classificação depende da causa do escoamento, e não de a tubulação ter orientação particular ou de o fluido ser quente ou frio. Na convecção natural, o empuxo por diferenças de densidade é o agente do movimento.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "Bombas e ventiladores são meios usuais de impor o escoamento responsável pela convecção forçada."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Confundiria o escoamento imposto por uma máquina com aquele movido por empuxo, ou negaria a aplicação em tubulações."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Distingue equipamentos para mover líquidos/gases do mecanismo natural por densidade e gravidade. Não afirma que apenas ligar a máquina crie transferência de calor sem diferença térmica.",
+      "criterios": {
+        "dados": "ATENDIDO — classificação conceitual",
+        "consistencia_fisica": "ATENDIDO — movimento imposto e empuxo distinguidos",
+        "comando": "ATENDIDO — utilização dos equipamentos, sem exclusividade",
+        "unidades": "NAO_APLICAVEL",
+        "restricoes": "ATENDIDO — troca térmica com escoamento imposto; não exige fenômeno exclusivamente forçado em qualquer situação real",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — causa do movimento em convecção forçada/natural; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-71",
+          "alcance": "Artigo atual, enunciado/opções antes do comentário; hash acima"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-transferencia",
+          "alcance": "Reutilização da leitura prévia da base estável no alcance declarado em fontes comuns"
+        }
+      ],
+      "heranca": "Nenhuma aprovação de outro item estendida a este; classificação física rederivada.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-72",
+      "sha256_artigo": "e452baf8904d916bcc65de691be44b0d1343a527847b0e94f44fa2d4ff615ce4",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. A configuração paralela de tubos concêntricos determina as entradas, sem depender de valores térmicos.",
+      "demonstracao": "No arranjo paralelo ou cocorrente, uma corrente percorre o tubo interno e outra o anel, ambas no mesmo sentido axial. Assim ambas entram pela mesma extremidade e saem pela outra. Se entrassem por extremidades opostas com sentidos axiais opostos, o arranjo seria contracorrente.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "É a definição geométrica e de escoamento do arranjo paralelo em tubos concêntricos."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Confundiria paralelo/cocorrente com contracorrente ou consideraria paralelo apenas a posição dos tubos, ignorando o sentido dos fluidos."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Define entrada pelo mesmo lado e sentido igual; distingue a configuração contrária sem introduzir uma fórmula ou dado desnecessário.",
+      "criterios": {
+        "dados": "ATENDIDO — configuração especificada",
+        "consistencia_fisica": "ATENDIDO — percursos e entradas coerentes",
+        "comando": "ATENDIDO — extremidade de entrada",
+        "unidades": "NAO_APLICAVEL",
+        "restricoes": "ATENDIDO — tubos concêntricos em configuração paralela, sem generalizar para outros arranjos",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — paralelo versus contracorrente; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-72",
+          "alcance": "Artigo atual; comando/opções antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-trocadores",
+          "alcance": "Leitura prévia reutilizada apenas na descrição de paralelo e contracorrente"
+        }
+      ],
+      "heranca": "Nenhuma aprovação anterior transferida; configuração deduzida pela direção dos dois escoamentos.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-73",
+      "sha256_artigo": "e0f92d950ca09e2beac1db4e1e2448e15f0d1ceb3590d41a4d9c4a9823211980",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. O item confronta a finalidade e a característica de compactação, sem exigir comparar dois projetos específicos.",
+      "demonstracao": "A grande densidade de tubos aletados ou placas é compatível com um trocador compacto. Sua característica é alta razão beta=A_transferencia/V_equipamento. Aletas e placas permitem mais superfície de contato em um volume limitado. Portanto é falsa a conclusão de que essa construção se define por obter menor superfície de transferência. Pode haver projetos com menor área total para determinado serviço se U e as condições mudarem, mas isso não é uma consequência necessária nem a definição de compacto.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Aceitaria a segunda cláusula falsa, confundindo volume/ocupação reduzidos com objetivo geral de reduzir área térmica; a primeira cláusula compatível não torna a frase inteira verdadeira."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "Rejeita a conclusão sobre menor superfície, preservando a característica correta de grande área por volume."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Identifica a razão área/volume e não afirma que todo trocador compacto tenha área absoluta maior que qualquer trocador convencional.",
+      "criterios": {
+        "dados": "ATENDIDO — propriedade de classe de equipamentos",
+        "consistencia_fisica": "ATENDIDO — área térmica, volume e ocupação distinguidos",
+        "comando": "ATENDIDO — ambas as cláusulas consideradas",
+        "unidades": "ATENDIDO — beta tem unidade m²/m³=m^-1; não é superfície externa ocupada",
+        "restricoes": "ATENDIDO — sem impor uma ordem universal de áreas totais de projetos diferentes",
+        "unicidade": "ATENDIDO — somente E para a conclusão geral apresentada",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — compactação geométrica versus redução de área de troca; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-73",
+          "alcance": "Artigo atual; enunciado/opções antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-trocadores",
+          "alcance": "Leitura prévia estável: compactos com grande área de transferência por volume e distinção de pequena superfície"
+        }
+      ],
+      "heranca": "Não se reutilizou automaticamente um aceite anterior; as duas cláusulas foram examinadas neste bloco.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-74",
+      "sha256_artigo": "6c9f14a73c2d633dfb45bc594b7815e9c9a8b0747272ba3deebb6adcc432c7ab",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. Reconhece fatores operacionais de incrustação, sem pedir uma resistência numérica ou afirmar que apenas esses fatores a determinem.",
+      "demonstracao": "Uma camada de depósito introduz resistência por área aproximadamente R_f=delta_deposito/k_deposito no modelo plano local. A espessura e a estrutura resultam da deposição e remoção acumuladas. A temperatura pode alterar solubilidade, reações e propriedades; a velocidade afeta transporte até a superfície e remoção por cisalhamento; o tempo de serviço permite evolução da camada. Portanto a resistência depende das condições mencionadas, além da composição e de outros fatores. Não se deduz uma relação monotônica universal de cada variável.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "Temperatura, velocidade e tempo influenciam a formação e a evolução do depósito e, assim, sua resistência térmica."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Trataria a resistência de incrustação como constante independente da operação, ignorando a evolução física do depósito."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Relaciona condições e características do fluido à camada e à resistência adicional. A afirmação sobre redução do coeficiente global deve manter as demais resistências comparáveis, como a base explicita; o comentário não exige uma lei universal de crescimento.",
+      "criterios": {
+        "dados": "ATENDIDO — dependência qualitativa, sem dimensionamento",
+        "consistencia_fisica": "ATENDIDO — camada, transporte, deposição e remoção distinguidos",
+        "comando": "ATENDIDO — dependência, sem exclusividade ou monotonicidade",
+        "unidades": "ATENDIDO — R_f por área em m² K/W; resistência total em K/W requer dividir por área no modelo indicado",
+        "restricoes": "ATENDIDO — expressão plana local apenas ilustrativa; não se impõe espessura uniforme ou fluido específico à prova",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — fator fixo independente do serviço versus depósito evolutivo; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-74",
+          "alcance": "Artigo atual; comando/opções antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-trocadores",
+          "alcance": "Leitura prévia estável: resistência adicional, fatores de formação, limites da comparação de U e modelo de resistências"
+        }
+      ],
+      "heranca": "Nenhum parecer anterior substitui a análise; influência de cada variável nomeada explicitada pelo revisor.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    },
+    {
+      "id": "cr-e1-75",
+      "sha256_artigo": "c27f54317f1d4fa5d40d5eb82811cb626f44f7c0f5f3167c40dc53a0caa5b0ab",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. A frase completa especifica expressamente o sinal negativo no produto, dispensando números para decidir o sentido físico.",
+      "demonstracao": "Na lei de Fourier unidimensional, q_s=-k*dT/ds para k>0. Se s cresce na direção do calor, dT/ds<0 e q_s>0. O gradiente aponta para a direção de maior temperatura, e o fluxo passivo tem o sentido oposto. Assim o sinal negativo é necessário para representar calor indo à temperatura decrescente. A primeira cláusula sobre produto deve ser lida com a segunda, que explicita esse sinal.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "O enunciado completo reúne a proporcionalidade ao gradiente e a oposição de sentidos que requer o sinal negativo."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Ignoraria o sinal explicitado na segunda cláusula ou atribuiria o sentido do calor a uma condutividade negativa; ambas as leituras contrariam a lei usual."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Explica gradiente crescente, calor decrescente e condutividade positiva, com convenção de eixo consistente.",
+      "criterios": {
+        "dados": "ATENDIDO — interpretação de sinal, sem cálculo numérico",
+        "consistencia_fisica": "ATENDIDO — produto com sinal negativo explicitado no texto inteiro",
+        "comando": "ATENDIDO — direção e sinal de Fourier",
+        "unidades": "ATENDIDO — k em W/(m K) e gradiente em K/m resultam em fluxo W/m², não em potência total",
+        "restricoes": "ATENDIDO — condução passiva no modelo de Fourier com condutividade positiva",
+        "unicidade": "ATENDIDO — somente C para a frase integral",
+        "arredondamento": "NAO_APLICAVEL",
+        "oposicao": "ATENDIDO — ignorar o sinal, confundir fluxo/gradiente ou condutividade; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-75",
+          "alcance": "Artigo atual; comando completo e opções antes do comentário"
+        },
+        {
+          "referencia": "modulos/e1-termodinamica.html#base-transferencia",
+          "alcance": "Leitura prévia estável: Fourier e interpretação de sinal, unidades e reversão do eixo"
+        }
+      ],
+      "heranca": "A conclusão de CR70 não foi tomada como aceite deste artigo; a redação integral de CR75 foi examinada independentemente.",
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07"
+    }
+  ],
+  "limitacoes": [
+    "Somente cinco itens; sem aceite integral de BAN-07, de outro ID ou do curso como avançado.",
+    "Sem piloto, revisão humana ou certificação externa.",
+    "Chaves documentais atribuídas ao produto; não houve nova conferência dos PDFs oficiais.",
+    "Produto, controle e checklist não editados."
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "registrados": 5,
+    "ids": [
+      "cr-e1-71",
+      "cr-e1-72",
+      "cr-e1-73",
+      "cr-e1-74",
+      "cr-e1-75"
+    ],
+    "juizos_de_opcoes": 10,
+    "estudos_criticos_neste_bloco": 0
+  },
+  "achados_do_bloco": {
+    "novos_impeditivos": 0,
+    "ajustes_obrigatorios": 0
+  },
+  "decisao_proximo_ID": "NÃO LIBERADO: bloco parcial de BAN-07 não aprova o conjunto nem libera outro ID.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "identidades": [
+      {
+        "id": "cr-e1-71",
+        "sha256_artigo": "e2bcbf820c2b4d9def629ac7407c88c182d0a6bd4f32f3c744c5d95e1fe6dee3",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-72",
+        "sha256_artigo": "e452baf8904d916bcc65de691be44b0d1343a527847b0e94f44fa2d4ff615ce4",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-73",
+        "sha256_artigo": "e0f92d950ca09e2beac1db4e1e2448e15f0d1ceb3590d41a4d9c4a9823211980",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-74",
+        "sha256_artigo": "6c9f14a73c2d633dfb45bc594b7815e9c9a8b0747272ba3deebb6adcc432c7ab",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-75",
+        "sha256_artigo": "c27f54317f1d4fa5d40d5eb82811cb626f44f7c0f5f3167c40dc53a0caa5b0ab",
+        "conferido": true
+      }
+    ],
+    "registros_unicos": 5,
+    "juizos_de_opcoes": 10,
+    "chaves_derivadas_conferem_com_produto": true,
+    "escopo_preservado": "Apenas este parecer foi criado pelo auditor neste bloco; produto, controle e checklist não editados."
+  }
+}

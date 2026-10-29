@@ -1,0 +1,963 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "metodo": "Preservação exata, delta integral, completude documental e validação canônica. Não substitui a revisão científica independente nem testa aprendizagem.",
+  "ok": true,
+  "verificacoes": 205,
+  "falhas": [],
+  "resumo": {
+    "artigos": 197,
+    "conteudos_esclarecidos": 21,
+    "artigos_alterados": 74,
+    "artigos_identicos": 123,
+    "registros_CR": 80,
+    "summaries_autoria": 71,
+    "criticos": 9,
+    "MathML": 734
+  },
+  "canonico": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1236,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "checks": [
+    {
+      "nome": "snapshot:modulos/e1-termodinamica.html",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:auditoria/termodinamica/inventario/inventario-questoes.json",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:assets/curso.js",
+      "ok": true
+    },
+    {
+      "nome": "infraestrutura-preservada:assets/curso.js",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:assets/curso.css",
+      "ok": true
+    },
+    {
+      "nome": "infraestrutura-preservada:assets/curso.css",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:assets/registro.js",
+      "ok": true
+    },
+    {
+      "nome": "infraestrutura-preservada:assets/registro.js",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:formulas/termodinamica.html",
+      "ok": true
+    },
+    {
+      "nome": "infraestrutura-preservada:formulas/termodinamica.html",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:assets/formulario-e1.js",
+      "ok": true
+    },
+    {
+      "nome": "infraestrutura-preservada:assets/formulario-e1.js",
+      "ok": true
+    },
+    {
+      "nome": "snapshot:assets/formulario-e1.css",
+      "ok": true
+    },
+    {
+      "nome": "infraestrutura-preservada:assets/formulario-e1.css",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-06",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-16",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-17",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-24",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-26",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-27",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-28",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-29",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-30",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-33",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-36",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-37",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-40",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-42",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-44",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-45",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-50",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-57",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-65",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-79",
+      "ok": true
+    },
+    {
+      "nome": "delta-ocorrencia:cr-e1-80",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-01",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-02",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-03",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-05",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-06",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-07",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-08",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-10",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-11",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-12",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-13",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-14",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-15",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-16",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-17",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-18",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-19",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-20",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-21",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-22",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-23",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-25",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-26",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-27",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-28",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-29",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-30",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-31",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-32",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-33",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-36",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-37",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-38",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-40",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-41",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-42",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-43",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-44",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-45",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-46",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-47",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-48",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-49",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-50",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-51",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-52",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-53",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-54",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-55",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-56",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-57",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-58",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-59",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-60",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-61",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-63",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-64",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-65",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-66",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-67",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-68",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-69",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-70",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-71",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-72",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-73",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-74",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-75",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-76",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-77",
+      "ok": true
+    },
+    {
+      "nome": "summary-ocorrencia:cr-e1-78",
+      "ok": true
+    },
+    {
+      "nome": "delta-reconstroi-todo-html",
+      "ok": true
+    },
+    {
+      "nome": "hashes-base-final",
+      "ok": true
+    },
+    {
+      "nome": "snapshot-final",
+      "ok": true
+    },
+    {
+      "nome": "197-ids-e-ordem",
+      "ok": true
+    },
+    {
+      "nome": "somente21-conteudos-autorizados",
+      "ok": true,
+      "detalhe": [
+        "cr-e1-06",
+        "cr-e1-16",
+        "cr-e1-17",
+        "cr-e1-24",
+        "cr-e1-26",
+        "cr-e1-27",
+        "cr-e1-28",
+        "cr-e1-29",
+        "cr-e1-30",
+        "cr-e1-33",
+        "cr-e1-36",
+        "cr-e1-37",
+        "cr-e1-40",
+        "cr-e1-42",
+        "cr-e1-44",
+        "cr-e1-45",
+        "cr-e1-50",
+        "cr-e1-57",
+        "cr-e1-65",
+        "cr-e1-79",
+        "cr-e1-80"
+      ]
+    },
+    {
+      "nome": "74-artigos-alterados123-identicos",
+      "ok": true,
+      "detalhe": [
+        "cr-e1-01",
+        "cr-e1-02",
+        "cr-e1-03",
+        "cr-e1-05",
+        "cr-e1-06",
+        "cr-e1-07",
+        "cr-e1-08",
+        "cr-e1-10",
+        "cr-e1-11",
+        "cr-e1-12",
+        "cr-e1-13",
+        "cr-e1-14",
+        "cr-e1-15",
+        "cr-e1-16",
+        "cr-e1-17",
+        "cr-e1-18",
+        "cr-e1-19",
+        "cr-e1-20",
+        "cr-e1-21",
+        "cr-e1-22",
+        "cr-e1-23",
+        "cr-e1-24",
+        "cr-e1-25",
+        "cr-e1-26",
+        "cr-e1-27",
+        "cr-e1-28",
+        "cr-e1-29",
+        "cr-e1-30",
+        "cr-e1-31",
+        "cr-e1-32",
+        "cr-e1-33",
+        "cr-e1-36",
+        "cr-e1-37",
+        "cr-e1-38",
+        "cr-e1-40",
+        "cr-e1-41",
+        "cr-e1-42",
+        "cr-e1-43",
+        "cr-e1-44",
+        "cr-e1-45",
+        "cr-e1-46",
+        "cr-e1-47",
+        "cr-e1-48",
+        "cr-e1-49",
+        "cr-e1-50",
+        "cr-e1-51",
+        "cr-e1-52",
+        "cr-e1-53",
+        "cr-e1-54",
+        "cr-e1-55",
+        "cr-e1-56",
+        "cr-e1-57",
+        "cr-e1-58",
+        "cr-e1-59",
+        "cr-e1-60",
+        "cr-e1-61",
+        "cr-e1-63",
+        "cr-e1-64",
+        "cr-e1-65",
+        "cr-e1-66",
+        "cr-e1-67",
+        "cr-e1-68",
+        "cr-e1-69",
+        "cr-e1-70",
+        "cr-e1-71",
+        "cr-e1-72",
+        "cr-e1-73",
+        "cr-e1-74",
+        "cr-e1-75",
+        "cr-e1-76",
+        "cr-e1-77",
+        "cr-e1-78",
+        "cr-e1-79",
+        "cr-e1-80"
+      ]
+    },
+    {
+      "nome": "734-MathML-identicos",
+      "ok": true
+    },
+    {
+      "nome": "80-componentes-oficiais-atributos-identicos",
+      "ok": true
+    },
+    {
+      "nome": "digitais-preservadas-por-identidade-dos-componentes",
+      "ok": true,
+      "detalhe": "digitalDoBanco lê enunciado/imagens, opções e chave; esses componentes e a função permanecem idênticos. Não é simulação de resposta de estudante."
+    },
+    {
+      "nome": "71-treino9-estudos-criticos",
+      "ok": true
+    },
+    {
+      "nome": "nove-summaries-criticos-preservados",
+      "ok": true
+    },
+    {
+      "nome": "71-summaries-autoria",
+      "ok": true
+    },
+    {
+      "nome": "inventario-somente-hashes-e-fonte",
+      "ok": true
+    },
+    {
+      "nome": "123-registros-identicos",
+      "ok": true
+    },
+    {
+      "nome": "matriz80-ids-exatos",
+      "ok": true
+    },
+    {
+      "nome": "matriz-hash-final",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-01:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-02:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-03:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-04:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-05:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-06:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-07:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-08:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-09:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-10:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-11:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-12:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-13:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-14:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-15:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-16:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-17:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-18:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-19:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-20:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-21:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-22:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-23:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-24:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-25:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-26:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-27:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-28:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-29:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-30:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-31:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-32:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-33:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-34:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-35:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-36:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-37:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-38:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-39:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-40:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-41:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-42:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-43:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-44:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-45:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-46:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-47:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-48:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-49:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-50:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-51:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-52:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-53:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-54:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-55:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-56:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-57:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-58:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-59:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-60:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-61:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-62:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-63:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-64:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-65:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-66:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-67:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-68:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-69:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-70:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-71:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-72:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-73:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-74:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-75:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-76:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-77:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-78:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-79:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "cr-e1-80:registro-completo",
+      "ok": true
+    },
+    {
+      "nome": "manifesto-FON01-preservado",
+      "ok": true
+    },
+    {
+      "nome": "validador-canonico",
+      "ok": true,
+      "detalhe": {
+        "ok": true,
+        "curso": "E1",
+        "itens_registrados": 197,
+        "artigos_encontrados": 197,
+        "recursos_verificados": 29,
+        "links_locais_verificados": 1236,
+        "erros": [],
+        "avisos": [],
+        "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+      }
+    }
+  ]
+}

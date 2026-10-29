@@ -1,0 +1,220 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "AV11–AV15",
+  "data": "2026-10-28",
+  "revisor": {
+    "agente": "/root/auditor_av",
+    "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07",
+    "autor_corretor": false,
+    "poder_de_aprovacao": "Somente vereditos locais dos itens examinados; sem aceite global de BAN-07."
+  },
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "escopo": {
+    "previsto": ["AV11", "AV12", "AV13", "AV14", "AV15"],
+    "examinado": ["AV11", "AV12", "AV13", "AV14", "AV15"],
+    "opcoes_examinadas": 25,
+    "fora_de_escopo": "Demais itens, produto, controle/checklist, outros IDs e classificação global; blocos anteriores preservados."
+  },
+  "metodo": "Artigos atuais extraídos por parseHtml/decodeHtml do validador. Comando, recursos e bases antes do comentário; derivação própria, cinco opções e confronto posterior. Fontes anteriores só reutilizadas com origem, identidade do snapshot e alcance explicitados. Plausibilidade teórica, sem piloto empírico.",
+  "itens": [
+    {
+      "item": "AV11",
+      "id_artigo": "av-e1-11",
+      "sha256_artigo": "574b95a7bc7d26adf5ccc8a100cba3b30a3f5f34b9c76a670190cd7c43c5a165",
+      "comando": "Converter 27 °C para a temperatura a usar na equação de gás ideal, adotando expressamente T(K)=t(°C)+273.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "A extração parou antes de details e omitiu os atributos do article; a soma e os distratores foram julgados antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Temperatura Celsius e regra de conversão aproximada fornecidas; nenhum dado de gás é necessário para converter a escala.",
+        "hipoteses": "A equação pV=mRT requer temperatura absoluta. O item não solicita validar o gás ideal em uma condição específica, apenas preparar a temperatura.",
+        "unidades": "Kelvin, K, para temperatura absoluta. O comando fixa 273, embora o deslocamento exato seja 273,15; usar a regra dada produz 300 K e não ambiguidade com outro valor oferecido.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-absolutas", "#base-medidas"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "T=27+273=300 K pela regra expressa. Na conversão exata seriam 300,15 K, que arredondam a 300 K; isso não altera a escolha. Uma temperatura pontual exige deslocamento da origem, ao contrário de um intervalo.",
+        "chave_derivada": "A",
+        "unicidade": "A é a única opção 300 K. As demais são 327,27,273,246 K; o afastamento mínimo é 27 K e não há equivalência por arredondamento pertinente."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "300 K.", "correta": true, "demonstracao": "27+273=300.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "B", "texto": "327 K.", "correta": false, "demonstracao": "27+300=327 usa deslocamento incorreto.", "erro_plausivel": "Confundir a aproximação de temperatura ambiente 300 K com o deslocamento de origem 273 K e somar 27 a esse valor.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "27 K.", "correta": false, "demonstracao": "Repete o valor Celsius sem somar o deslocamento.", "erro_plausivel": "Trocar somente o símbolo de unidade, tratando Celsius e kelvin como valores iguais.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "273 K.", "correta": false, "demonstracao": "É o valor de 0 °C pela aproximação dada; omite os 27 °C.", "erro_plausivel": "Usar o ponto de referência de conversão como resultado, sem acrescentar a leitura.", "plausibilidade": "Plausível como erro de aplicação da fórmula."},
+        {"letra": "E", "texto": "246 K.", "correta": false, "demonstracao": "273-27=246 inverte o sinal da leitura em relação ao deslocamento.", "erro_plausivel": "Subtrair a leitura do deslocamento por confusão com a conversão inversa.", "plausibilidade": "Plausível e numericamente reproduzível."}
+      ],
+      "confronto": {"gabarito_publicado": "A", "coincide": true, "comentario": "Conta correta. B/C/D/E reproduzem o uso de deslocamento 300, a ausência de conversão, o ponto de referência 273 e a subtração indevida. A orientação final sobre energia/temperatura é genérica, mas não introduz erro na solução."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-11", "uso": "Comando/opções e, após a derivação, resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-absolutas", "origem": "Leitura própria no AV09, mesmo SHA global congelado.", "alcance_reutilizado": "Conversão Celsius/kelvin e necessidade de temperatura absoluta; nenhuma resposta de AV11 herdada."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-medidas", "origem": "Leitura própria no bloco AV01–AV05, mesmo snapshot.", "alcance_reutilizado": "Temperatura pontual versus intervalo."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Somar valores e interpretar o comando."},
+        {"tipo": "fonte_primaria_externa_reutilizada", "titulo": "BIPM — A concise summary of the International System of Units, SI", "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-concise-EN.pdf/2fda4656-e236-0fcb-3867-36ca74eea4e3?download=true&t=1682577856452&version=1.9", "acesso": "2026-10-28", "origem": "Consulta própria no AV05.", "alcance_reutilizado": "Página 3: deslocamento exato 273,15 e mesma magnitude de intervalo; comando atual autoriza 273."}
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV12",
+      "id_artigo": "av-e1-12",
+      "sha256_artigo": "6d4d741b3c2f0be508022e5f24ba0cdbb360c3f0c2ddbb72aca59aebf3efcd6f",
+      "comando": "Relacionar 1=lei zero, 2=primeira, 3=segunda, 4=terceira às descrições: conservação de energia; equilíbrio térmico transitivo; limites de conversão calor/trabalho em ciclos; entropia zero de cristal perfeito puro a 0 K.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Sequência deduzida a partir do comando e da base antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "As quatro descrições correspondem a funções distintas das leis. A condição de cristal perfeito puro impede a generalização de entropia zero a qualquer substância.",
+        "hipoteses": "Terceira lei na referência ideal de cristal perfeitamente ordenado em 0 K; não afirma que se possa atingir experimentalmente 0 K. Segunda lei limita conversão em ciclos, enquanto a primeira conserva energia sem decidir sozinha viabilidade.",
+        "unidades": "0 K é zero absoluto; não 0 °C. Nenhuma conversão ou cálculo numérico é solicitado.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-quatro-leis"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "A conservação de energia é primeira lei, código 2. Se A e B estão em equilíbrio térmico com C, estão entre si: lei zero, código 1. A impossibilidade de conversão integral de calor de uma única fonte em trabalho como único efeito de um ciclo é restrição da segunda lei, código 3. A referência de entropia do cristal perfeito puro em zero absoluto é terceira lei, código 4. Ordem final: 2,1,3,4.",
+        "chave_derivada": "C",
+        "unicidade": "Só C apresenta as quatro associações corretas. São códigos nominais; não há equivalência numérica ou arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "2 – 1 – 4 – 3.", "correta": false, "demonstracao": "Acerta energia/equilíbrio, mas atribui limites à terceira e referência entrópica à segunda.", "erro_plausivel": "Trocar segunda e terceira leis por ambas tratarem de entropia.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "1 – 2 – 3 – 4.", "correta": false, "demonstracao": "Troca primeira e lei zero nas duas primeiras descrições.", "erro_plausivel": "Seguir a ordem dos números sem considerar que a lista inclui a lei zero ou confundir equilíbrio térmico com conservação de energia.", "plausibilidade": "Plausível como erro de associação e numeração."},
+        {"letra": "C", "texto": "2 – 1 – 3 – 4.", "correta": true, "demonstracao": "Corresponde a conservação, transitividade, limites de conversão e referência entrópica, respectivamente.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "D", "texto": "3 – 1 – 2 – 4.", "correta": false, "demonstracao": "Troca primeira/segunda: põe conservação na segunda e limites de conversão na primeira.", "erro_plausivel": "Tratar balanço de energia como critério suficiente de viabilidade e não distinguir conservação de restrições de conversão.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "2 – 3 – 1 – 4.", "correta": false, "demonstracao": "Atribui transitividade à segunda e limites de conversão à lei zero.", "erro_plausivel": "Confundir equilíbrio/temperatura com direção térmica e restrições da segunda lei.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "C", "coincide": true, "comentario": "Associações corretas e todas as refutações apontam exatamente as trocas presentes nas opções. A bagagem final resume corretamente o papel das quatro leis."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-12", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-quatro-leis", "uso": "Lida nesta execução: quatro funções e condições da terceira lei."},
+        {"tipo": "fonte_primaria_externa", "titulo": "IUPAC Gold Book — entropy, E02149", "url": "https://goldbook.iupac.org/terms/view/E02149", "acesso": "2026-10-28", "uso": "Confirma entropia zero para cristal idealmente ordenado a 0 K; fonte terminológica primária, não narrativa do Corretor."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV13",
+      "id_artigo": "av-e1-13",
+      "sha256_artigo": "67a3276e7a96d89fd1c93db9f3dad1f417bb62dff584b34c4e5df1a406651543",
+      "comando": "Ar ideal de 2 kg aquecido de 300 a 350 K, com cv=0,72 kJ/(kg·K); determinar a variação da energia interna total.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Extração anterior a details; cálculo, sinal e alternativas julgados antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Massa, temperaturas e cv fornecidos determinam Delta U no modelo ideal. O valor único de cv é tratado como constante/representativo do intervalo, conforme a base.",
+        "hipoteses": "Composição e massa de ar fixas; gás ideal com cv constante no intervalo. Não exige processo isocórico: para gás ideal u=u(T), e cv é propriedade de derivada, não imposição de trajetória. Não é preciso conhecer p,V,Q ou W.",
+        "unidades": "kg × kJ/(kg·K) × K = kJ; energia específica teria unidade kJ/kg. Delta T=50 K, positivo.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-gas-energia", "#base-balanco-fechado"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Delta U=m integral(cv dT). Com cv constante, Delta U=m cv(T2-T1)=2×0,72×(350-300)=72 kJ. Delta u=0,72×50=36 kJ/kg; multiplicar por 2 kg fornece a total. Aquecimento com cv positivo aumenta U.",
+        "chave_derivada": "C",
+        "unicidade": "Só C tem 72 kJ positivos. 144,-72,720,36 kJ diferem por sinal ou fatores 2/10, sem equivalência por arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "144 kJ.", "correta": false, "demonstracao": "2×(2×0,72×50)=144 conta a massa de 2 kg duas vezes.", "erro_plausivel": "Multiplicar por massa novamente após já calcular a energia total.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "−72 kJ.", "correta": false, "demonstracao": "T1-T2=-50 K produz -72 kJ e contradiz aquecimento com cv positivo.", "erro_plausivel": "Inverter final menos inicial ou confundir convenção de trabalho com sinal de Delta U.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "C", "texto": "72 kJ.", "correta": true, "demonstracao": "2×0,72×50=72 kJ.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "D", "texto": "720 kJ.", "correta": false, "demonstracao": "2×7,2×50=720; cv dado é 0,72, não 7,2.", "erro_plausivel": "Deslocar a vírgula de cv/resultado ou perder uma potência de dez no cálculo.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "E", "texto": "36 kJ.", "correta": false, "demonstracao": "0,72×50=36 kJ/kg é Delta u, a ser multiplicada por 2 kg para Delta U.", "erro_plausivel": "Omitir massa e responder energia específica como total, copiando unidade inadequada.", "plausibilidade": "Plausível conceitualmente e numericamente."}
+      ],
+      "confronto": {"gabarito_publicado": "C", "coincide": true, "comentario": "Correto e coerente com hipóteses da base. A duplica massa, B inverte sinal, D aponta fator dez e E distingue 36 kJ/kg de 72 kJ totais."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-13", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-energia", "uso": "Lida nesta execução: u(T), Delta u=cv Delta T e cv constante."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-balanco-fechado", "origem": "Leitura própria no AV02, mesmo SHA global congelado.", "alcance_reutilizado": "Sinal final menos inicial e massa na energia total; nenhum gabarito herdado."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo snapshot.", "alcance_reutilizado": "Unidades e definição de variação."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV14",
+      "id_artigo": "av-e1-14",
+      "sha256_artigo": "3c811cd41a5553c76a3d79539c529fc0700861c827165f1a490339f0a41b6fcd",
+      "comando": "Pequena quantidade de gás liberada em recipiente rígido evacuado e fechado; em equilíbrio, sem barreiras internas e com gravidade desprezível, identificar sua ocupação.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Comando e opções extraídos sem resolução; distribuição e todos os distratores julgados antes do comentário."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "O espaço acessível é todo o interior. Estado final de equilíbrio, ausência de barreiras e gravidade desprezível removem os mecanismos propostos de confinamento a região particular.",
+        "hipoteses": "Gás como fase gasosa no modelo macroscópico elementar da base, sem mecanismos adicionais de adsorção ou condensação introduzidos. Não exige massa, pressão ou temperatura numéricas para reconhecer a propriedade de ocupação.",
+        "unidades": "Sem valores ou conversões; volume ocupado pelo gás é o volume disponível do recipiente, não o volume próprio das moléculas.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-molecular"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Moléculas em movimento atravessam o espaço conectado. Uma concentração restrita ao ponto de entrada ou à metade inferior manteria um gradiente sem barreira ou campo que o sustente; ela não é o equilíbrio descrito. O gás se distribui pelo volume acessível. Pouca quantidade reduz a densidade/pressão para condições dadas, mas não cria volume próprio fixo. Equilíbrio macroscópico não significa partículas paradas.",
+        "chave_derivada": "B",
+        "unicidade": "A e D impõem confinamento sem mecanismo; C atribui volume próprio ao gás; E confunde equilíbrio com repouso microscópico. Só B atende as condições. Sem arredondamentos."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "ocupa somente a metade inferior do recipiente.", "correta": false, "demonstracao": "Nenhuma superfície ou campo gravitacional sustenta essa ocupação parcial do gás.", "erro_plausivel": "Transferir para o gás a representação de um líquido com superfície livre ou supor assentamento apesar da restrição gravitacional.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "ocupa todo o volume disponível no recipiente.", "correta": true, "demonstracao": "O espaço conectado inteiro é acessível às partículas em movimento no equilíbrio.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "C", "texto": "mantém obrigatoriamente o volume que tinha antes da liberação.", "correta": false, "demonstracao": "Gás não mantém volume próprio da porção original; pode expandir até o espaço disponível.", "erro_plausivel": "Confundir conservação de massa com conservação do volume ocupado ou tratar gás como líquido de volume quase fixo.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "permanece apenas próximo ao ponto de entrada.", "correta": false, "demonstracao": "O movimento molecular dispersa a concentração inicial; o ponto de entrada não é barreira nem potencial de confinamento.", "erro_plausivel": "Tomar o estado transitório de injeção como equilíbrio e omitir difusão/movimento molecular.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "possui moléculas em repouso absoluto.", "correta": false, "demonstracao": "A ausência de escoamento macroscópico não anula velocidades microscópicas.", "erro_plausivel": "Interpretar equilíbrio térmico/mecânico como imobilidade de partículas.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "B", "coincide": true, "comentario": "Correto: define volume macroscópico disponível, distingue comportamento de líquido, perda de memória do volume inicial e movimento molecular no equilíbrio."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-14", "uso": "Comando/opções e, após derivação, resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-molecular", "origem": "Leitura própria no AV03, mesmo SHA global congelado.", "alcance_reutilizado": "Movimento microscópico e ocupação do espaço acessível por gás sem barreiras em equilíbrio; nenhum gabarito de AV14 herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV15",
+      "id_artigo": "av-e1-15",
+      "sha256_artigo": "aabe5d8c80218bb2762758349c567671cb06794100899eb42e6c2906cae487a9",
+      "comando": "No modelo cinético elementar de gás ideal, julgar volume molecular desprezível, colisões elásticas e dissipação necessária da energia cinética total a cada colisão; selecionar sequência V/F.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "As três proposições e as cinco sequências foram julgadas antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "O domínio é explicitamente o modelo cinético elementar ideal. Não são necessários números para julgar suas hipóteses.",
+        "hipoteses": "Partículas com volume próprio desprezível diante do recipiente e colisões elásticas. A conservação se refere ao conjunto de moléculas envolvidas; cada uma pode mudar velocidade e energia individual. Não se generaliza para qualquer colisão de gases reais ou modelo com processos internos adicionais.",
+        "unidades": "Sem cálculo numérico. A energia cinética total seria expressa como soma de termos mv²/2, com a mesma unidade antes e depois da colisão.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-molecular"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "I é verdadeira como hipótese de partículas pontuais do modelo. II é verdadeira porque o modelo adota colisões elásticas. Por definição de elasticidade, K_total,antes=K_total,depois para as partículas da colisão idealizada; logo III, que exige dissipação total a cada colisão, é falsa. Velocidade individual pode mudar sem perda da soma das energias cinéticas. Sequência V,V,F.",
+        "chave_derivada": "E",
+        "unicidade": "Só E coincide com os três julgamentos. A difere em I; B inverte todos; C erra III; D erra II/III. Códigos lógicos, sem arredondamentos."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "F – V – F.", "correta": false, "demonstracao": "II e III corretas, mas I é verdadeira no modelo.", "erro_plausivel": "Rejeitar o volume molecular desprezível porque moléculas reais têm tamanho finito, sem distinguir idealização e realidade.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "F – F – V.", "correta": false, "demonstracao": "Inverte os três valores lógicos.", "erro_plausivel": "Importar do mundo macroscópico partículas de tamanho apreciável e choques inelásticos que perdem energia, omitindo o domínio ideal.", "plausibilidade": "Plausível como modelo mental de colisões reais aplicado ao modelo ideal."},
+        {"letra": "C", "texto": "V – V – V.", "correta": false, "demonstracao": "III contradiz a conservação da energia cinética total em colisões elásticas.", "erro_plausivel": "Reconhecer o termo elástica sem sua consequência energética, ou confundir mudança da energia de uma molécula com perda da soma.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "V – F – V.", "correta": false, "demonstracao": "I correta; II deveria ser V e III F.", "erro_plausivel": "Aceitar partículas pontuais, mas conservar a ideia de impactos dissipativos por analogia com colisões inelásticas cotidianas.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "V – V – F.", "correta": true, "demonstracao": "Corresponde às duas hipóteses e à conservação energética da colisão idealizada.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Explicita corretamente o domínio ideal e a energia total, não velocidades individuais invariáveis. As refutações A/B/C/D correspondem aos erros efetivos de cada sequência."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-15", "uso": "Comando/opções e, após derivação, resolução."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-molecular", "origem": "Leitura própria no AV03, mesmo SHA global congelado.", "alcance_reutilizado": "Volume molecular desprezível, colisões elásticas e conservação de energia cinética total; nenhum julgamento deste item foi herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    }
+  ],
+  "cobertura": {
+    "autoria": "Exame efetivamente realizado por /root/auditor_av; cinco derivações e 25 decisões de opções próprias.",
+    "ids": ["AV11", "AV12", "AV13", "AV14", "AV15"],
+    "ids_artigo": ["av-e1-11", "av-e1-12", "av-e1-13", "av-e1-14", "av-e1-15"],
+    "itens": 5,
+    "juizos_de_alternativas": 25,
+    "alternativas_por_item": {"AV11": ["A","B","C","D","E"], "AV12": ["A","B","C","D","E"], "AV13": ["A","B","C","D","E"], "AV14": ["A","B","C","D","E"], "AV15": ["A","B","C","D","E"]},
+    "associacoes_AV12_julgadas": 4,
+    "proposicoes_AV15_julgadas": ["I", "II", "III"],
+    "derivacoes_independentes": 5,
+    "confrontos_com_comentario": 5,
+    "dados_modelos_unidades_restricoes_suficiencia": 5,
+    "unicidade_e_arredondamentos": 5,
+    "figuras": "Nenhuma nos cinco artigos; bases acessíveis identificadas, com leitura nova ou reutilização própria por identidade do snapshot e alcance.",
+    "limitacao_cegamento": "Chaves dos metadados omitidas e comentários lidos após cada derivação nesta execução. Não se reivindica experimento formal de cegamento.",
+    "aprovacoes_locais": ["AV11", "AV12", "AV13", "AV14", "AV15"],
+    "itens_com_ajuste_obrigatorio": [],
+    "aceite_global_BAN07": false
+  },
+  "resumo": {
+    "veredito_bloco": "APROVADO_NO_ESCOPO_BAN-07",
+    "ajustes_obrigatorios": [],
+    "observacoes": "Plausibilidade teórica dos distratores, sem piloto. Os modelos de gás ideal e cinético elementar foram delimitados, sem exigir isocoria em AV13 nem repouso microscópico em AV14.",
+    "decisao_de_liberacao": "Sem liberação do próximo ID ou aceite global. Apoio científico parcial para consolidação pelo Auditor principal."
+  }
+}

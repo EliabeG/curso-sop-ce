@@ -1,0 +1,140 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV06–AV10",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura das cinco alternativas e comentários; cálculos com frações exatas.",
+  "registros": [
+    {
+      "id": "av-e1-06",
+      "artigo_sha256": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-06",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-instrumentos",
+          "../assets/questoes-reais-e1/figura-922604ee21ac.png",
+          "#cr-e1-06"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Escalas lineares; X=0 em Y=20 e X=100 em Y=70; pede Y=45.",
+      "solucao": "Inclinação (100−0)/(70−20)=2; X=2(Y−20), logo X=50.",
+      "resultado": "C, X=50.",
+      "comparacao": "A repete 45; B repete segundo Y=70; C 50 correto; D 2×45=90 ignora origem; E 45−20=25 omite inclinação.",
+      "tolerancia": "Razões e valores exatos para dados nominais, sem incerteza de calibração.",
+      "limite": "Pontos são autorais do enunciado; a figura herdada não fornece essas calibrações numéricas.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-07",
+      "artigo_sha256": "f6c6439615c358a02d91c7dbc1450c5550f193cc38a4af0f5e8c8a2958804251",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-07",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-instrumentos",
+          "#cr-e1-07"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Manômetro Bourdon de tubo metálico curvo em linha de ar comprimido.",
+      "solucao": "Diferença de pressão deforma tubo e move ponteiro, medindo pressão.",
+      "resultado": "E.",
+      "comparacao": "A descreve termômetro de mercúrio; B energia interna não é medida diretamente; C não há mecanismo de umidade; D rotações indicam outro tipo de vazão; E pressão.",
+      "tolerancia": "Sem pressão, leitura ou resultado numérico; sem tolerância.",
+      "limite": "Um elemento Bourdon pode integrar sistema termométrico indireto, mas instrumento identificado aqui é manômetro.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-08",
+      "artigo_sha256": "2cbb9953a0ca46eda6b4cf9144bd13b7d0849822d9ed02ecaa0c6d010f3b7d07",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-08",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-instrumentos",
+          "#cr-e1-08"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Limite inferior 20 °C, span 80 °C de intervalo.",
+      "solucao": "Superior=20+80=100 °C.",
+      "resultado": "C.",
+      "comparacao": "A 80 confunde span e limite; B repete 20; C 100; D 20+2×80=180 duplica intervalo; E 80−20=60 usa operação indevida.",
+      "tolerancia": "Valores exatos para dados nominais; sem incerteza do instrumento.",
+      "limite": "80 °C é diferença de temperatura, não valor absoluto.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-09",
+      "artigo_sha256": "c132589fa0387abc5108633a2b130632334db4cebf0479b9442bc9158ae78f30",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-09",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-absolutas",
+          "#base-medidas",
+          "#cr-e1-09"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "I unidade de base da temperatura termodinâmica; II intervalo 10 °C; III temperatura 10 °C.",
+      "solucao": "I verdadeira, II verdadeira porque intervalos K e °C são iguais, III falsa pois 10+273,15=283,15 K.",
+      "resultado": "B, apenas I e II.",
+      "comparacao": "A aceita III; B I e II; C omite II; D aceita III e omite I/II; E aceita III e omite I.",
+      "tolerancia": "Conversão 273,15 e intervalo 10 exatos por definição; nenhuma incerteza de medida.",
+      "limite": "Não aplicar deslocamento de origem a intervalos; grau Celsius também é unidade SI.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-10",
+      "artigo_sha256": "a4e565a479f34fa4e36835bcb186f5b99d0f3ce3000b500f458c4c1c1863032e",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-10",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-medidas",
+          "#base-propriedades",
+          "#cr-e1-10"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "m=12 kg, V=0,015 m³, amostra homogênea.",
+      "solucao": "ρ=m/V=12/0,015=800 kg/m³ e v=V/m=0,00125 m³/kg; 12×0,015=0,18 kg·m³.",
+      "resultado": "B, 800 kg/m³ e intensiva.",
+      "comparacao": "A é volume específico 0,00125 m³/kg; B densidade intensiva; C 80 erra fator 10; D produto 0,18 com unidade e classificação incorretas; E 800 mas extensiva incorreta.",
+      "tolerancia": "Todas as operações exatas para valores nominais; sem precisão metrológica atribuída.",
+      "limite": "Intensividade pressupõe estado e composição homogêneos; produto tem unidade kg·m³.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; a questão de origem fornece contexto, não prova documental da alternativa autoral."
+  ]
+}

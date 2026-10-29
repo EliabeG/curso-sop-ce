@@ -1,0 +1,224 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "AV16–AV20",
+  "data": "2026-10-28",
+  "revisor": {"agente": "/root/auditor_av", "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07", "autor_corretor": false, "poder_de_aprovacao": "Somente vereditos locais; sem aceite global de BAN-07."},
+  "produto": {"arquivo": "modulos/e1-termodinamica.html", "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80", "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"},
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "escopo": {"previsto": ["AV16", "AV17", "AV18", "AV19", "AV20"], "examinado": ["AV16", "AV17", "AV18", "AV19", "AV20"], "opcoes_examinadas": 25, "fora_de_escopo": "Demais artigos, produto, controle/checklist e outros IDs; blocos anteriores preservados."},
+  "metodo": "Artigos atuais por parseHtml/decodeHtml do validador; comando, bases e figuras antes da resolução. Derivação e cinco julgamentos próprios, depois confronto com comentário. AV17/18 comparados diretamente com artigos anteriores. Plausibilidade teórica, sem piloto. Herança de fontes limitada a identidade e alcance declarados.",
+  "itens": [
+    {
+      "item": "AV16",
+      "id_artigo": "av-e1-16",
+      "sha256_artigo": "48ae42d26499f4389ca87b570e9864234c58223277b8b4a16302f7ba808ebdee",
+      "comando": "Umidade relativa cai de 60% para 45% a temperatura constante, admitida mesma pressão de saturação; achar razão pv,saída/pv,entrada.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Extração encerrou antes de details e omitiu chave do article. Conta e opções julgadas antes da resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "A mesma pressão de saturação cancela na razão; não se precisa de temperatura numérica nem tabela de saturação.",
+        "hipoteses": "Umidade relativa definida na aproximação da base por phi=pv/psat(T), mistura ideal e fator de intensificação desprezado; mesma fase/referência de saturação. O texto admite explicitamente o mesmo denominador. Não se generaliza essa simplificação a mudanças de temperatura ou à formulação real com pressões de saturação distintas.",
+        "unidades": "Umidades em frações 0,60 e 0,45; pressões na mesma unidade. A razão é adimensional. Usar percentuais 45/60 também cancela o fator 100.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-umidade"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "pv,1=0,60 psat e pv,2=0,45 psat. Então pv,2/pv,1=0,45/0,60=0,75. É queda relativa de 25%, diferente da diferença de 15 pontos percentuais de umidade relativa.",
+        "chave_derivada": "E",
+        "unicidade": "Só E traz 0,75. 1,00,1,33,0,60,0,15 são distintos; 1,33 é aproximação da razão inversa 4/3, sem equivalência por arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "1,00.", "correta": false, "demonstracao": "Confunde psat constante com pv constante; a queda de phi impede pv,2=pv,1.", "erro_plausivel": "Supor que manter temperatura fixa mantém toda pressão associada ao vapor, mesmo sem saturação.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "1,33.", "correta": false, "demonstracao": "0,60/0,45=1,333... é entrada/saída.", "erro_plausivel": "Inverter numerador e denominador da razão pedida.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "0,60.", "correta": false, "demonstracao": "É phi de entrada, não razão entre pressões parciais.", "erro_plausivel": "Copiar a fração inicial ou usar pressão de saturação como denominador quando o pedido é pressão parcial de entrada.", "plausibilidade": "Plausível como erro de referência/leitura."},
+        {"letra": "D", "texto": "0,15.", "correta": false, "demonstracao": "0,60-0,45=0,15 é diferença de frações, não o quociente pedido.", "erro_plausivel": "Trocar razão por diferença ou redução em pontos percentuais.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "E", "texto": "0,75.", "correta": true, "demonstracao": "(0,45 psat)/(0,60 psat)=0,75.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Razão correta e refutações A–D correspondentes aos erros efetivos. A solução usa a mesma pressão de saturação admitida pelo comando, no domínio da base."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-16", "uso": "Comando/opções e, após derivação, resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-umidade", "uso": "Lida nesta execução: phi=pv/psat, fases de referência e limite da aproximação ideal."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo SHA global congelado.", "alcance_reutilizado": "Razões, diferenças e percentuais; nenhum gabarito herdado."},
+        {"tipo": "fonte_primaria_externa", "titulo": "ASHRAE Handbook—Fundamentals 2021, SI, Chapter 1: Psychrometrics", "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx", "acesso": "2026-10-28", "local": "Seções 5–6, definição de umidade relativa e relações de gás perfeito.", "uso": "Confirma a razão de pressões e a distinção da formulação real com fator de intensificação; não se importam dados de tabela para a conta."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV17",
+      "id_artigo": "av-e1-17",
+      "sha256_artigo": "440d7b7f9d75ef0adb436c16b01f0e82a4459d58d037f8ec914a0ae6653e7b7a",
+      "comando": "Higrômetro indica 50% de umidade relativa; identificar o significado para a pressão parcial do vapor.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Comandos/opções atual e anterior extraídos sem details; definição e refutações julgadas antes de ambas as resoluções."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "O comando pede relação, não pressão numérica. A temperatura da sala fixa a referência de saturação; não é necessário conhecer seu valor.",
+        "hipoteses": "A base acessível delimita mistura ideal e despreza fator de intensificação: phi=pv/psat(T), mesma fase de referência. A quantidade de vapor fixa em B não fixa pressão sem restrições adicionais; volume fixo é um contraexemplo suficiente à independência afirmada.",
+        "unidades": "50%=0,50 adimensional; pv e psat são pressões na mesma unidade. Pressão parcial não pode ser uma massa, e umidade relativa não é fração mássica.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-umidade"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "phi=pv/psat(T)=0,50 implica pv=0,50 psat(T), que é D. O denominador é pressão de saturação, não atmosférica; igualdade pv=psat daria phi=1. Para refutar B diretamente, no modelo ideal pv=nv Ru T/V. Com nv e V fixos, dobrar T dobra pv: fixar apenas quantidade não torna pv independente de T.",
+        "chave_derivada": "D",
+        "unicidade": "Só D é a definição de 50% na referência indicada. B não é consequência dessa leitura nem lei geral; haver um processo particular com V proporcional a T não estabelece independência. Não há arredondamento."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "metade da pressão atmosférica.", "correta": false, "demonstracao": "Substitui psat(T) pela pressão total; não corresponde a phi.", "erro_plausivel": "Confundir umidade relativa com fração molar de vapor/Dalton e usar pressão total no denominador.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "independente da temperatura quando a quantidade de vapor é fixa.", "correta": false, "demonstracao": "pv=nv Ru T/V; fixar nv não elimina a dependência de T, como mostra V fixo.", "erro_plausivel": "Tratar quantidade de vapor como determinante único da pressão parcial, esquecendo temperatura e volume.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "C", "texto": "metade da massa total do ar.", "correta": false, "demonstracao": "Equipara pressão a massa e interpreta umidade relativa como fração mássica.", "erro_plausivel": "Tomar a expressão cotidiana 50% de umidade como metade do ar composta por água em massa.", "plausibilidade": "Plausível como erro conceitual comum, embora dimensionalmente facilmente rejeitável."},
+        {"letra": "D", "texto": "metade da pressão de saturação do vapor à temperatura da sala.", "correta": true, "demonstracao": "pv=0,5 psat(T).", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "E", "texto": "igual à pressão de saturação.", "correta": false, "demonstracao": "pv=psat representa 100%, não 50%.", "erro_plausivel": "Confundir presença de vapor/umidade com estado saturado, ignorando o valor percentual.", "plausibilidade": "Plausível conceitualmente."}
+      ],
+      "confronto": {"gabarito_publicado": "D", "coincide": true, "comentario": "A/C/E corretos. B agora enfrenta pressão parcial e quantidade fixa, explicita modelo ideal e usa corretamente volume fixo como contraexemplo; não se limita à dependência da umidade relativa com psat."},
+      "delta_conferido": {
+        "origem": "Comparação direta própria por parseHtml/decodeHtml; não herança da narrativa do Corretor.",
+        "arquivo_anterior": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+        "sha256_artigo_anterior": "c66e9cab79853753be699d582b606617cf4c832a063a013977b1a5e8d87aa90b",
+        "sha256_artigo_atual": "440d7b7f9d75ef0adb436c16b01f0e82a4459d58d037f8ec914a0ae6653e7b7a",
+        "comando_opcoes": "Textos extraídos preservados, incluindo a afirmação B sobre pressão parcial independente da temperatura com quantidade fixa.",
+        "alteracao_comentario": "B antes dizia apenas que umidade relativa muda com pressão de saturação. Agora refuta pv independente de T com pv=nvRT/V e V fixo.",
+        "resultado": "Feedback atual cientificamente correto e pertinente ao erro realmente escrito em B; D continua única correta."
+      },
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-17", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "baseline_local", "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html", "ancora": "#av-e1-17", "uso": "Delta direto, hashes próprios."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-umidade", "uso": "Lida nesta execução no AV16; mesmo snapshot, alcance restrito à definição e modelo."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-energia", "origem": "Leitura própria no AV13, mesmo SHA global congelado.", "alcance_reutilizado": "Equação ideal de estado; aplicação a pv derivada novamente."},
+        {"tipo": "fonte_primaria_externa_reutilizada", "titulo": "ASHRAE Handbook—Fundamentals 2021, SI, Chapter 1", "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx", "acesso": "2026-10-28", "origem": "Consulta própria no AV16 desta execução.", "alcance_reutilizado": "Seções 5–6, definição e mistura de gases perfeitos; sem herdar julgamento de AV17."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV18",
+      "id_artigo": "av-e1-18",
+      "sha256_artigo": "5a61747eec81b5caadab8e61895235bd4cce053076ba3f9eed4a90ded57dea46",
+      "comando": "Gás ideal em recipiente rígido/fechado: p1=200 kPa absolutos, T1=300 K, T2=450 K; massa e volume mantidos; achar pressão absoluta final.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Comandos/opções atual e anterior lidos antes dos comentários; conta e cinco refutações próprias anteriores à resolução."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Pressões/temperaturas absolutas e restrições de massa/volume são explícitas. R, massa numérica e volume numérico cancelam.",
+        "hipoteses": "Mesmo gás de composição fixa no modelo ideal; nenhuma reação ou vazamento introduzido. Rigidez fixa volume e fechamento fixa quantidade, não pressão.",
+        "unidades": "450/300 é razão de temperaturas absolutas em K. Multiplicada por 200 kPa produz kPa absolutos. Delta T=150 K não substitui T1 na razão.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-gas-modelo"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "pV=mRT em cada estado. Com m,R,V constantes, p2/p1=T2/T1=450/300=1,5. Portanto p2=200×1,5=300 kPa absolutos. O aumento é 100 kPa, mas o comando pede o valor final.",
+        "chave_derivada": "C",
+        "unicidade": "C é a única pressão final 300 kPa. A/B/D/E são 600,200,450,133,3 kPa; o inverso em E arredonda 133,333..., sem equivalência com a correta."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "600 kPa.", "correta": false, "demonstracao": "200×450/(450-300)=600 usa a diferença de temperaturas no denominador.", "erro_plausivel": "Confundir temperatura inicial absoluta com variação ao organizar a razão entre estados.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "B", "texto": "200 kPa.", "correta": false, "demonstracao": "Manter p1 ignora o fator 1,5 de aquecimento com V fixo.", "erro_plausivel": "Confundir recipiente rígido com pressão constante ou supor que ausência de expansão impede aumento de pressão.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "C", "texto": "300 kPa.", "correta": true, "demonstracao": "200×450/300=300 kPa.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "D", "texto": "450 kPa.", "correta": false, "demonstracao": "Copia o número de T2, sem relação dimensional ou fator p1/T1.", "erro_plausivel": "Confundir as leituras de temperatura e pressão após reconhecer apenas que ambas aumentam.", "plausibilidade": "Plausível como erro de leitura/unidade, mais fraco que um erro algébrico."},
+        {"letra": "E", "texto": "133,3 kPa.", "correta": false, "demonstracao": "200×300/450=133,333... inverte a razão térmica e dá queda apesar do aquecimento.", "erro_plausivel": "Aplicar proporcionalidade inversa ou inverter os índices 1/2.", "plausibilidade": "Plausível e numericamente reproduzível."}
+      ],
+      "confronto": {"gabarito_publicado": "C", "coincide": true, "comentario": "Relação e conta corretas. A atual reproduz exatamente 600 por uso de 150 K no denominador e distingue temperatura absoluta de variação. B/D/E correspondem a manter p1, copiar T2 e inverter a razão."},
+      "delta_conferido": {
+        "origem": "Comparação direta dos dois artigos por parseHtml/decodeHtml, não narrativa do Corretor.",
+        "arquivo_anterior": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+        "sha256_artigo_anterior": "6feba70ee87aff9199ffad1ac540bf98a3f1ac0c02b450069b0aff19de0a6f7e",
+        "sha256_artigo_atual": "5a61747eec81b5caadab8e61895235bd4cce053076ba3f9eed4a90ded57dea46",
+        "comando_opcoes": "Textos extraídos preservados.",
+        "alteracao_comentario": "A antes dizia duplicar resultado sem justificativa. Agora calcula 200×450/150=600, trocando T1 por Delta T.",
+        "resultado": "O feedback atual identifica mecanismo de erro pertinente e preserva C como única correta."
+      },
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-18", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "baseline_local", "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html", "ancora": "#av-e1-18", "uso": "Delta direto e hashes próprios."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-modelo", "uso": "Lida nesta execução: estado por mol, razão entre estados e necessidade de quantidade/composição fixas."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo SHA global congelado.", "alcance_reutilizado": "Razões versus variações e unidades; nenhum julgamento herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV19",
+      "id_artigo": "av-e1-19",
+      "sha256_artigo": "13db446f2d53ba81a62449e2e82b81d5ddea5db59e27873088c024f9663794c3",
+      "comando": "2 mol de gás ideal a 300 K e volume 49,2 L, R=0,082 atm·L/(mol·K); achar pressão absoluta.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Cálculo, unidades e cinco opções examinados antes da resolução, omitida na extração inicial."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "n,T,V e R compatíveis são todos fornecidos. Não é necessário conhecer identidade do gás, massa ou massa molar.",
+        "hipoteses": "Estado de gás ideal com temperatura absoluta; R tem base molar pelas unidades explícitas, mesmo sendo chamado apenas R no comando.",
+        "unidades": "mol × atm·L/(mol·K) × K / L = atm. 49,2 L deve ser usado com R em atm·L; para m³, também converter R. Na notação portuguesa usada nas opções, 1.000 atm significa mil atm, distinto de 1,00 atm.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-leitura-matematica", "#base-gas-modelo"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "p=nRT/V=(2×0,082×300)/49,2=49,2/49,2=1,00 atm absoluto. Verificação alternativa: volume molar V/n=24,6 L/mol e RT=24,6 atm·L/mol, dando a mesma pressão.",
+        "chave_derivada": "A",
+        "unicidade": "Só A é 1,00 atm. 0,50,10,1000,2 atm diferem por fatores 2,10 ou1000. O arredondamento de R foi fixado no comando e não produz qualquer segunda resposta."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "1,00 atm.", "correta": true, "demonstracao": "49,2/49,2=1 atm.", "erro_plausivel": null, "plausibilidade": "Resposta válida."},
+        {"letra": "B", "texto": "0,50 atm.", "correta": false, "demonstracao": "0,082×300/49,2=0,5 omite n=2.", "erro_plausivel": "Usar p=RT/V com volume total como se houvesse um mol.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "C", "texto": "10,00 atm.", "correta": false, "demonstracao": "2×0,082×300/4,92=10 troca a posição decimal do volume; R=0,82 também produziria esse fator.", "erro_plausivel": "Perder uma potência de dez no volume, constante ou divisão.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "D", "texto": "1.000 atm.", "correta": false, "demonstracao": "2×0,082×300/0,0492=1000 combina numericamente R em atm·L com V em m³, ignorando o fator L/m³ residual.", "erro_plausivel": "Converter L para m³ por hábito sem adaptar a unidade de R.", "plausibilidade": "Plausível e numericamente reproduzível."},
+        {"letra": "E", "texto": "2,00 atm.", "correta": false, "demonstracao": "2×(2×0,082×300/49,2)=2 conta n novamente.", "erro_plausivel": "Multiplicar por quantidade de matéria duas vezes após já aplicá-la na fórmula.", "plausibilidade": "Plausível e numericamente reproduzível."}
+      ],
+      "confronto": {"gabarito_publicado": "A", "coincide": true, "comentario": "Conta e unidades corretas. B/C/D/E identificam respectivamente omissão de n, fator decimal, conversão parcial L→m³ e duplicação de n. O fator 1000 em D corresponde à opção escrita na convenção portuguesa."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-19", "uso": "Comando/opções e, após a derivação, resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-modelo", "uso": "Lida no AV18 desta execução; mesma identidade, alcance da equação molar e compatibilidade de R com unidades."},
+        {"tipo": "base_acessivel_reutilizada", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-leitura-matematica", "origem": "Leitura própria no AV06, mesmo SHA global congelado.", "alcance_reutilizado": "Conversões L/m³ e potências de dez; nenhum gabarito herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV20",
+      "id_artigo": "av-e1-20",
+      "sha256_artigo": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+      "comando": "Extrapolar matematicamente pV=nRT com quantidade fixa de gás ideal e pressão positiva constante quando T absoluta tende a zero; escolher limite e interpretação.",
+      "leitura_previa": {"comentario_lido_antes_da_derivacao": false, "chave_metadata_vista_antes_da_derivacao": false, "nota": "Limite, domínio e cinco opções julgados antes da resolução, omitida na extração inicial."},
+      "dados_hipoteses_unidades": {
+        "suficiencia": "n fixo e p constante positiva tornam nR/p constante e finita; não se precisa de valores numéricos para o limite.",
+        "hipoteses": "Modelo ideal extrapolado formalmente na escala absoluta, T→0 pela região positiva. A operação matemática não estabelece viabilidade experimental nem permanência de fase gasosa real. Não se supõe volume próprio molecular nulo como propriedade real.",
+        "unidades": "nRT/p tem unidade de volume; R deve ser consistente com a base molar e pressão. Sem conversão numérica ou arredondamento.",
+        "figuras": "Nenhuma no artigo.",
+        "bases_acessiveis": ["#base-gas-modelo"]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "V=(nR/p)T. Como nR/p é positivo e constante, lim(T→0+)V=0+. Isso é limite da equação ideal. Ao resfriar e elevar densidade, interações, volume molecular e efeitos de fase deixam de ser desprezíveis; a extrapolação não demonstra que um material real continue gás até 0 K. Portanto E, que contém limite correto e ressalva física.",
+        "chave_derivada": "E",
+        "unicidade": "A/B/C têm limites errados. D compartilha limite zero, mas acrescenta conclusão falsa universal sobre gases reais; E é a única alternativa integralmente correta. D/E não são respostas equivalentes por terem o mesmo primeiro termo."
+      },
+      "opcoes": [
+        {"letra": "A", "texto": "infinito, porque a pressão é constante.", "correta": false, "demonstracao": "V é diretamente proporcional a T para p fixo; T→0 reduz V, não o faz divergir.", "erro_plausivel": "Inverter proporcionalidade ou confundir o limite T→0 com p→0 na equação.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "B", "texto": "um valor negativo.", "correta": false, "demonstracao": "n,R,p,T positivos produzem V positivo e limite zero, sem sinal negativo.", "erro_plausivel": "Usar temperaturas Celsius negativas como se fossem absolutas ou prolongar a reta para domínio não solicitado.", "plausibilidade": "Plausível como erro de escala/domínio."},
+        {"letra": "C", "texto": "seu valor inicial, porque a massa é constante.", "correta": false, "demonstracao": "Quantidade fixa mantém n, mas não impede V variar linearmente com T a pressão constante.", "erro_plausivel": "Confundir conservação de quantidade/massa com conservação do volume ocupado.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "D", "texto": "zero, o que prova que todo gás real permanece gasoso a 0 K.", "correta": false, "demonstracao": "O limite da equação está certo, mas nenhuma propriedade de validade do modelo garante fase gasosa real até 0 K.", "erro_plausivel": "Tratar extrapolação de modelo ideal como previsão universal do material real, ignorando mudança de fase e limites de validade.", "plausibilidade": "Plausível conceitualmente."},
+        {"letra": "E", "texto": "zero, embora essa extrapolação não descreva um gás real até 0 K.", "correta": true, "demonstracao": "Combina V→0 do modelo com a limitação física da extrapolação.", "erro_plausivel": null, "plausibilidade": "Resposta válida."}
+      ],
+      "confronto": {"gabarito_publicado": "E", "coincide": true, "comentario": "Correto: cálculo do limite e mudança de fase/invalidade separados. A/B/C/D refutam precisamente inversão de proporcionalidade, sinal, massa versus volume e extrapolação universal."},
+      "fontes_usadas": [
+        {"tipo": "produto_atual", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#av-e1-20", "uso": "Comando/opções, depois resolução."},
+        {"tipo": "base_acessivel", "arquivo": "modulos/e1-termodinamica.html", "ancora": "#base-gas-modelo", "uso": "Lida no AV18 desta execução, mesma identidade; alcance da equação, condições de idealidade e limite formal T→0. Nenhum julgamento de AV20 herdado."}
+      ],
+      "achados": [], "ajustes_obrigatorios": [], "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    }
+  ],
+  "cobertura": {
+    "autoria": "Exame efetivamente realizado por /root/auditor_av; cinco soluções e 25 julgamentos próprios.",
+    "ids": ["AV16", "AV17", "AV18", "AV19", "AV20"],
+    "ids_artigo": ["av-e1-16", "av-e1-17", "av-e1-18", "av-e1-19", "av-e1-20"],
+    "itens": 5,
+    "juizos_de_alternativas": 25,
+    "alternativas_por_item": {"AV16": ["A","B","C","D","E"], "AV17": ["A","B","C","D","E"], "AV18": ["A","B","C","D","E"], "AV19": ["A","B","C","D","E"], "AV20": ["A","B","C","D","E"]},
+    "derivacoes_independentes": 5,
+    "confrontos_com_comentario": 5,
+    "dados_modelos_unidades_sinal_restricoes_suficiencia": 5,
+    "unicidade_e_arredondamentos": 5,
+    "deltas_conferidos_diretamente": ["AV17", "AV18"],
+    "figuras": "Nenhuma nos cinco artigos.",
+    "bases": "Bases acessíveis lidas ou reutilizadas por identidade do snapshot e alcance declarado, sem herdar julgamentos.",
+    "limitacao_cegamento": "Chaves em metadados omitidas; comentários lidos após cada derivação nesta execução. Não se reivindica experimento formal de cegamento.",
+    "aprovacoes_locais": ["AV16", "AV17", "AV18", "AV19", "AV20"],
+    "itens_com_ajuste_obrigatorio": [],
+    "aceite_global_BAN07": false
+  },
+  "resumo": {
+    "veredito_bloco": "APROVADO_NO_ESCOPO_BAN-07",
+    "ajustes_obrigatorios": [],
+    "observacoes": "Plausibilidade de erros teórica, sem aplicação empírica. Comentários finais de AV17/18 agora refutam o texto efetivo dos distratores com mecanismos corretos.",
+    "decisao_de_liberacao": "Sem liberação do próximo ID ou aceite global. Parecer parcial para consolidação pelo Auditor principal."
+  }
+}

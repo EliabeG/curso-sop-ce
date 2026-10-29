@@ -1,0 +1,625 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autoria": "/root/corretor_aaa",
+  "estado": "diagnostico_sem_edicao_de_produto",
+  "metodo": "Leitura integral dos40artigos e reuso da comparação oficial FON01 por identidade; distingue dados originais, derivados, convenções e modelos/conteúdos autorais. Nenhuma decisão de aprovação própria.",
+  "registros": [
+    {
+      "id": "cr-e1-09",
+      "adicoes": [
+        {
+          "classe": "conversao",
+          "conteudo": "T=t+273,15 K; igualdade dos intervalos de 1 °C e 1 K.",
+          "local": "resolução de referência e análise autoral",
+          "origem": "Não é dado do enunciado; relação entre escalas definida no SI.",
+          "justificativa": "Permite distinguir grandeza e unidade sem atribuir ao original a restrição de unidade de base.",
+          "fonte": "BIPM já vinculado; apoio-coordenador-unidades-r1.json confirma offset exato.",
+          "separacao": "Análise crítica e comentário explicitamente autorais; adequada."
+        },
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Interpretar unidade como unidade de base da temperatura termodinâmica.",
+          "local": "nota/roteiro/análise BAN-10",
+          "justificativa": "Apresentada como leitura condicionada da chave E, não como frase oficial.",
+          "separacao": "Adequada; já esclarece que a restrição não aparece no comando."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Original não recebeu dado numérico; o offset pertence à explicação."
+    },
+    {
+      "id": "cr-e1-10",
+      "adicoes": [
+        {
+          "classe": "exemplo_conceitual",
+          "conteudo": "Duplicar amostra homogênea no mesmo estado.",
+          "local": "resolução",
+          "justificativa": "Demonstra caráter intensivo de m/V; não fornece entrada extra a cálculo ou julgamento.",
+          "separacao": "Exemplo verbal explicitamente apresentado como duplicação, fora do original."
+        }
+      ],
+      "acao": "manter",
+      "nota": "A relação ρ=m/V é definição; duplicação é argumento autoral, não propriedade numérica acrescentada."
+    },
+    {
+      "id": "cr-e1-22",
+      "adicoes": [
+        {
+          "classe": "definicao_modelo",
+          "conteudo": "Z=pV/(nRT), p e T absolutos; Z=1 para gás ideal.",
+          "local": "resolução",
+          "justificativa": "Define o parâmetro usado pelo próprio original e delimita as variáveis; não acrescenta valores externos.",
+          "separacao": "Fórmula identificada como definição fora do enunciado."
+        }
+      ],
+      "acao": "manter",
+      "nota": "O número 1 já está no original; pV=ZnRT é rearranjo da definição, não dado suplementar."
+    },
+    {
+      "id": "cr-e1-23",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Baixa pressão, temperatura suficientemente alta e afastamento da condensação.",
+          "local": "resolução",
+          "justificativa": "Explica por que alta pressão não autoriza a generalização; não estabelece estado numérico novo.",
+          "separacao": "Texto de resolução, distinguível do comando/figura oficiais."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Não há constante/propriedade numérica suplementar. Vácuo/gás ideal da figura original não devem ser contados como adição."
+    },
+    {
+      "id": "cr-e1-24",
+      "adicoes": [
+        {
+          "classe": "conversao",
+          "conteudo": "100 °C→373,15 K e 0,01 °C→273,16 K; razão≈1,366.",
+          "local": "roteiro/análise/resolução",
+          "justificativa": "Temperaturas derivadas dos números originais pelo offset SI273,15; razão é cálculo, não propriedade pesquisada.",
+          "separacao": "Suplemento autoral explícito, mas convém tornar origem da conversão e valor adotado inequívocos.",
+          "fonte": "Apoio BIPM do coordenador; OpenStax2.1 já fundamenta equação de estado."
+        },
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Mesma amostra gasosa ideal, n/V constantes; ponto triplo apenas referência térmica, estados em equilíbrio térmico.",
+          "local": "suplemento autoral BAN-10",
+          "justificativa": "São condições da leitura termométrica, ausentes da leitura literal. O item já informa a insuficiência literal.",
+          "separacao": "Adequada, sem atribuição à banca."
+        }
+      ],
+      "acao": "precisar_conversao",
+      "nota": "Manter valores e crítica já aprovados. Acrescentar localizador BIPM e esclarecer que273,16 resulta do0,01°C adotado no original, não de definição exata atual."
+    },
+    {
+      "id": "cr-e1-33",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Ausência de outros trabalhos e variações macroscópicas cinética/potencial ao concluir ΔU=0.",
+          "local": "resolução após Q=0 e fronteira rígida",
+          "justificativa": "Rigidez elimina trabalho de fronteira; para reduzir o balanço total à energia interna, esses termos adicionais precisam ser explicitados.",
+          "separacao": "Não aparece explicitamente; suplemento de modelo da resolução deve ficar fora do original.",
+          "fonte": "MIT Unified primeira lei, já usada no curso e aprovada FOR-01."
+        }
+      ],
+      "acao": "explicitar_modelo_na_resolucao",
+      "nota": "Gás ideal/vácuo/rigidez/fechamento/isolamento são dados originais ou da figura, não suplementos. ΔT=0 e aumento de S são conclusões do modelo, não dados novos."
+    },
+    {
+      "id": "cr-e1-34",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Rota elementar: massa fixa, somente trabalho de expansão, ΔEc=ΔEp=0. Prova guiada: massa/composição fixas, gás ideal simples, estados de equilíbrio, mesmo V, cv(T)>0, calor exclusivamente entrando em quantidade não nula, Tb finita e positiva.",
+          "local": "resolução e análise crítica BAN-10r2",
+          "justificativa": "As condições suficientes da igualdade são separadas da prova do sinal; todas explicitadas como escolhas da análise autoral.",
+          "separacao": "Adequada e aprovada; não modificar."
+        },
+        {
+          "classe": "convencao",
+          "conteudo": "Q entrando positivo, W saindo positivo; Tb na fronteira; Sger≥0.",
+          "local": "análise autoral",
+          "justificativa": "Define termos das leis usadas; não acrescenta dado de prova ou valor arbitrário.",
+          "separacao": "Explícita."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Relações e integrais são demonstração guiada, não suplementos numéricos. Não reabrir distinção ΔU>0 versusΔU=Q."
+    },
+    {
+      "id": "cr-e1-35",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "ΔEc+ΔEp=0 para ΔU=−W; sistema em repouso/mesmaelevação como escolha suficiente.",
+          "local": "nota/análise autoral",
+          "justificativa": "A condição reduz balanço total; explicitada e não confundida com fechado/adiabático."
+        },
+        {
+          "classe": "exemplo_autoral",
+          "conteudo": "Levantamento ideal sem variação de velocidade/estado interno, trabalho recebido convertido em potencial.",
+          "local": "análise crítica",
+          "justificativa": "Contramodelo explicitamente denominado autoral, sem números ou pretensão de ser dado oficial."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sinal W produzido positivo já vem da redação original; não atribuir novamente como suplemento inventado. A análise deixa claro o alcance."
+    },
+    {
+      "id": "cr-e1-36",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Exemplo de pistão isolado e relação pV^k constante.",
+          "local": "resolução",
+          "justificativa": "A relação é suplementar: exige gás ideal e calores específicos constantes, k=cp/cv, além de expansão adiabática reversível do modelo simples.",
+          "separacao": "A redação diz apenas modelo ideal reversível, sem nomear gás/calores/k; precisa delimitação local.",
+          "fonte": "Aula gás ideal/adiabática e fonte primária do modelo a localizar na documentação já arquivada."
+        },
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Redução de U ao fornecer trabalho: massa fechada, demais energias/trabalhos excluídos.",
+          "local": "exemplo na resolução",
+          "justificativa": "A conclusão decorre do balanço reduzido; o contraexemplo à afirmação W=0 não exige universalizar esse balanço."
+        }
+      ],
+      "acao": "delimitar_exemplo_e_relacao",
+      "nota": "Não mudar original, chave E ou exigência de julgamento; fazer claro que a relação extra é ilustração, não dado fornecido pela prova."
+    },
+    {
+      "id": "cr-e1-43",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Vizinhança recebe calor; compensação no limite reversível e soma positiva no irreversível.",
+          "local": "resolução",
+          "justificativa": "Explicita a aplicação da segunda lei a sistema+vizinhança; nenhum parâmetro externo é usado.",
+          "separacao": "Limite reversível é declarado como ideal, fora do original."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Não há dado numérico nem hipótese silenciosa necessária a uma conta."
+    },
+    {
+      "id": "cr-e1-44",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Ciclo completo adiabático, trabalho líquido nulo; comparação com máquina entre fontes.",
+          "local": "resolução",
+          "justificativa": "O balanço reduzido pressupõe a massa de trabalho em ciclo e ausência de outras alterações de energia; o original menciona apenas um processo adiabático.",
+          "separacao": "É explicação fora do original, mas convém explicitar massa fechada em ciclo e temperaturas absolutas positivas para a ilustração.",
+          "fonte": "MIT primeira lei e enunciado de Kelvin–Planck, já arquivados."
+        }
+      ],
+      "acao": "delimitar_modelo_ciclico",
+      "nota": "Distinguir processo de ciclo; não introduzir números ou testar novo cenário de avaliação."
+    },
+    {
+      "id": "cr-e1-45",
+      "adicoes": [
+        {
+          "classe": "conversao",
+          "conteudo": "477°C→750,15K;27°C→300,15K.",
+          "local": "resolução",
+          "justificativa": "Derivado dos dados oficiais com offset SI273,15; não são propriedades externas.",
+          "fonte": "BIPM, apoio do coordenador."
+        },
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Máquina cíclica com as duas trocas térmicas indicadas como únicas e sem outros efeitos.",
+          "local": "cálculo W=900−90 e comparação Carnot",
+          "justificativa": "Delimita a comparação da solução; usar Carnot requer temperaturas absolutas das fontes.",
+          "separacao": "Acrescentar frase curta de escopo autoral; números810,90% e≈60% são resultados, não suplementos."
+        }
+      ],
+      "acao": "explicitar_conversao_e_modelo",
+      "nota": "Preservar todos os números e o julgamento."
+    },
+    {
+      "id": "cr-e1-47",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Alternativos favorecidos em menores vazões/maiores razões; seleção também depende de gás/faixa/eficiência.",
+          "local": "resolução",
+          "justificativa": "Contrasta famílias de máquinas e delimita a indicação geral, sem introduzir limite numérico de seleção.",
+          "separacao": "Uso de costumam/seleção final deixa explícito o caráter geral."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem constante ou propriedade adicional usada em conta."
+    },
+    {
+      "id": "cr-e1-48",
+      "adicoes": [
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Exaustão mais quente que o ar comprimido.",
+          "local": "resolução",
+          "justificativa": "Condição física para aquecer o ar por regeneração; escrita como exigência da explicação, não dado medido da prova.",
+          "separacao": "Já explícita: Isso exige que…"
+        }
+      ],
+      "acao": "manter",
+      "nota": "Nenhuma temperatura numérica acrescentada."
+    },
+    {
+      "id": "cr-e1-49",
+      "adicoes": [
+        {
+          "classe": "modelo_comparativo",
+          "conteudo": "Trocas isobáricas no Brayton ideal e perdas de pressão nos trechos reais.",
+          "local": "resolução",
+          "justificativa": "A comparação diferencia modelos em vez de atribuir pressão constante ao ciclo real do original.",
+          "separacao": "Modelo ideal nomeado explicitamente."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem propriedade externa ou valor novo."
+    },
+    {
+      "id": "cr-e1-50",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Comparar compressor/turbina reais com referências isentrópicas nas mesmas condições de entrada e pressões de saída; adiabaticidade, estacionariedade e energias cinética/potencial desprezíveis.",
+          "local": "resolução: mesma comparação de estados e razão de pressões",
+          "justificativa": "A fórmula verbal sobre aumento/redução de trabalho depende de comparação bem definida; estados de saída completos não podem ser mantidos iguais ao variar eficiência.",
+          "separacao": "Esclarecer que são estados de entrada/pressões de saída e o modelo de potência; não afirmar que o original explicita todas essas condições.",
+          "fonte": "MIT Brayton real/eficiência e balanço de volume de controle; usar fontes já presentes."
+        }
+      ],
+      "acao": "delimitar_comparacao",
+      "nota": "Ajuste de hipótese da análise, sem alterar E ou demandar auditoria global de desempenho."
+    },
+    {
+      "id": "cr-e1-51",
+      "adicoes": [
+        {
+          "classe": "modelo_convencional",
+          "conteudo": "Brayton ideal convencional, processos não degenerados, isentrópicas+isobáricas.",
+          "local": "nota e interpretação BAN-10",
+          "justificativa": "A origem é o ciclo nomeado; o curso identifica expressamente o modelo adotado e não universaliza a turbinas reais.",
+          "separacao": "Adequada, com fonte MIT3.7."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Não tratar idealidade como palavra presente no enunciado."
+    },
+    {
+      "id": "cr-e1-52",
+      "adicoes": [
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Isolar aumento de consumo do compressor mantendo a turbina sem mudança.",
+          "local": "resolução",
+          "justificativa": "Exemplo verbal para mostrar insuficiência de uma variável; a condição se está escrita.",
+          "separacao": "Condicional explícita, sem cálculo de eficiência fictícia."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Wlíquido e eficiência são relações da explicação; não há novo dado numérico."
+    },
+    {
+      "id": "cr-e1-53",
+      "adicoes": [
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Diferença de temperatura adequada e mesma temperatura desejada à entrada da turbina/combustão.",
+          "local": "resolução",
+          "justificativa": "Delimita a economia de combustível na explicação de regeneração; o comentário também reconhece perdas de pressão.",
+          "separacao": "Condição Quando… explícita."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Nenhum valor de propriedade ou temperatura pesquisado."
+    },
+    {
+      "id": "cr-e1-54",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Dinâmicos/grandes vazões e volumétricos/altas razões, dependentes da faixa e gás.",
+          "local": "resolução",
+          "justificativa": "Explicação qualitativa da inversão no original; não fornece fronteiras numéricas de seleção.",
+          "separacao": "Indicação geral e dependência explicitadas."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem constante/modelo numérico adicional."
+    },
+    {
+      "id": "cr-e1-55",
+      "adicoes": [
+        {
+          "classe": "modelo_convencional",
+          "conteudo": "Brayton ideal com rejeição isobárica; comparação com Otto.",
+          "local": "resolução/análise BAN-10",
+          "justificativa": "A crítica é explicitamente autoral e não corrige silenciosamente a expressão oficial pressão isentrópica.",
+          "separacao": "Já suficiente; fonte MIT3.7."
+        }
+      ],
+      "acao": "manter",
+      "nota": "A expressão defeituosa pertence ao original e não é suplemento do curso."
+    },
+    {
+      "id": "cr-e1-56",
+      "adicoes": [
+        {
+          "classe": "extensao_conceitual",
+          "conteudo": "Exemplo de ciclo combinado: recuperação de exaustão e ciclo Rankine.",
+          "local": "resolução",
+          "justificativa": "Ilustra aplicação do Brayton, sem novo enunciado ou dados de projeto.",
+          "separacao": "Texto explicativo após chave; autoria local será clara no summary comum."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem parâmetros externos."
+    },
+    {
+      "id": "cr-e1-57",
+      "adicoes": [
+        {
+          "classe": "modelo_quantitativo",
+          "conteudo": "η=1−1/rp^((k−1)/k), ar ideal, calores constantes, k=cp/cv>1, Brayton ideal convencional.",
+          "local": "resolução",
+          "justificativa": "A expressão é suplemento explicativo e não equação fornecida pela banca; vale para compressão/expansão isentrópicas e trocas isobáricas do modelo.",
+          "separacao": "Parte das hipóteses já explícita; identificar como ilustração autoral e apontar derivação/fonte, sem expandir o ciclo.",
+          "fonte": "MIT Unified3.7 e base Brayton já existente."
+        }
+      ],
+      "acao": "identificar_formula_e_modelo",
+      "nota": "rp/k simbólicos; não há valores numéricos a cadastrar. Manter limitação sobre máquina real/Tmáx."
+    },
+    {
+      "id": "cr-e1-58",
+      "adicoes": [
+        {
+          "classe": "exemplo_modelo",
+          "conteudo": "Gás aprisionado ideal em compressão isotérmica, pVconstante.",
+          "local": "resolução",
+          "justificativa": "Ilustração explicitamente nomeada como modelo isotérmico; a massa aprisionada corresponde à fase de válvulas fechadas.",
+          "separacao": "Não atribui isotermia ao original; exemplo está fora do enunciado."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Relação simbólica e efeito de aquecimento são explicações, não novos dados."
+    },
+    {
+      "id": "cr-e1-59",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Válvulas fechadas na compressão e abertura quando diferença de pressão supera resistência.",
+          "local": "resolução",
+          "justificativa": "Descreve operação usual da máquina nomeada, sem limiar quantitativo escolhido.",
+          "separacao": "Sem propriedade numérica disfarçada de dado oficial."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Não há suplemento de entrada no problema."
+    },
+    {
+      "id": "cr-e1-60",
+      "adicoes": [
+        {
+          "classe": "exemplo_conceitual",
+          "conteudo": "Mais cilindros/reservatórios podem suavizar vazão pulsante.",
+          "local": "resolução",
+          "justificativa": "Exemplo de arranjo, sem número de cilindros nem dado adotado.",
+          "separacao": "Possibilidade declarada, não especificação da máquina original."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem dado ou constante acrescentados."
+    },
+    {
+      "id": "cr-e1-61",
+      "adicoes": [
+        {
+          "classe": "explicacao_modelo",
+          "conteudo": "Folga/reexpansão, aquecimento, perdas e vazamentos; valor unitário apenas idealização.",
+          "local": "resolução",
+          "justificativa": "Lista mecanismos que invalidam o sempre=1; não assume volume residual ou eficiência numéricos.",
+          "separacao": "Idealização e variáveis reais são distinguidas."
+        }
+      ],
+      "acao": "manter",
+      "nota": "O1 é da afirmação original, não valor novo do curso."
+    },
+    {
+      "id": "cr-e1-62",
+      "adicoes": [
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Existência de volume residual; intervalo de admissão separado do retorno/reexpansão; orientação do pistão.",
+          "local": "nota/roteiro/análise BAN-10",
+          "justificativa": "Condições expressamente usadas para distinguir duas leituras e não apresentadas como especificações oficiais.",
+          "separacao": "Adequada, fonte GUNT e autoria explícita."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Preservar estudo crítico e chaveC."
+    },
+    {
+      "id": "cr-e1-63",
+      "adicoes": [
+        {
+          "classe": "modelo_comparativo",
+          "conteudo": "Stirling ideal: duas isotermas e duas isócoras com regeneração; turbina convencional/Brayton.",
+          "local": "resolução",
+          "justificativa": "Contrasta modelos nomeados e não enriquece dados de uma máquina específica.",
+          "separacao": "Stirling ideal e turbina convencional delimitados."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem propriedade numérica externa."
+    },
+    {
+      "id": "cr-e1-64",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Geometria de câmara entre rotores/carcaça e contraste com ação dinâmica das pás.",
+          "local": "resolução",
+          "justificativa": "Explica o mecanismo do tipo de máquina sem adicionar geometria, eficiência ou estado numérico.",
+          "separacao": "Comentário didático fora do comando."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem suplemento de entrada."
+    },
+    {
+      "id": "cr-e1-65",
+      "adicoes": [
+        {
+          "classe": "hipotese_modelo",
+          "conteudo": "Escoamento permanente, uma entrada/uma saída, adiabático aproximado, ΔEc/ΔEp desprezíveis, único trabalho não associado ao escoamento é o de eixo.",
+          "local": "resolução: potência=mdot×queda de h",
+          "justificativa": "A redução do balanço é suplemento autoral. Regime permanente/perdas de calor/energias já estão explícitos; faltam uma entrada/saída e exclusão de outros trabalhos.",
+          "separacao": "Completar frase local e citar balanço; pV está incorporado na entalpia.",
+          "fonte": "MIT primeira lei para volume de controle; aula/ FOR-01 aprovados."
+        }
+      ],
+      "acao": "delimitar_trabalho_e_entradas",
+      "nota": "Não confundir adiabático com isentrópico; manter distinção já escrita."
+    },
+    {
+      "id": "cr-e1-70",
+      "adicoes": [
+        {
+          "classe": "relacao_conceitual",
+          "conteudo": "q″=−k dT/dx, forma unidimensional da lei de Fourier, kcondutividade.",
+          "local": "resolução",
+          "justificativa": "Equação de apoio simbólica para explicação do sentido; a unidimensionalidade é declarada.",
+          "separacao": "Não há k numérico acrescentado nem propriedade de material inventada."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Modelo/forma estão identificados; summary autoral basta para autoria local."
+    },
+    {
+      "id": "cr-e1-71",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Convecção natural por diferenças de densidade sob gravidade.",
+          "local": "resolução",
+          "justificativa": "Contraste com o acionamento externo do original; gravidade explicitada no comentário, sem dado numérico.",
+          "separacao": "Mecanismos são apresentados como explicação."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem suplemento factual usado como entrada."
+    },
+    {
+      "id": "cr-e1-72",
+      "adicoes": [
+        {
+          "classe": "definicao_comparativa",
+          "conteudo": "Contracorrente entra por lados opostos; orientação afeta perfil térmico.",
+          "local": "resolução",
+          "justificativa": "Define arranjo alternativo para explicar paralelo; não escolhe perfil/temperatura/correlação.",
+          "separacao": "Definição fora do original, sem enriquecimento de dados."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem número/propriedade adicional."
+    },
+    {
+      "id": "cr-e1-73",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Alta área por volume, aletas/passagens pequenas.",
+          "local": "resolução",
+          "justificativa": "Explica compacto qualitativamente, sem limite de área por volume adotado.",
+          "separacao": "Não há valor de projeto suplementar."
+        }
+      ],
+      "acao": "manter",
+      "nota": "O contraste área/volume é raciocínio, não nova medição."
+    },
+    {
+      "id": "cr-e1-74",
+      "adicoes": [
+        {
+          "classe": "explicacao_conceitual",
+          "conteudo": "Resistência de depósito reduz U e pode aumentar consumo.",
+          "local": "resolução",
+          "justificativa": "Consequência qualitativa da incrustação; não usa Rf, U ou propriedade numérica.",
+          "separacao": "Possibilidade de consumo é modal pode, não dado do original."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem suplemento numérico."
+    },
+    {
+      "id": "cr-e1-75",
+      "adicoes": [
+        {
+          "classe": "convencao_e_propriedade_geral",
+          "conteudo": "kpositivo; se Tdecresce em+x, fluxo nessa direção positivo.",
+          "local": "resolução",
+          "justificativa": "Explica sinal/direção no modelo escalar de Fourier tratado pelo próprio comando; não é constante empírica extra.",
+          "separacao": "Exemplo de orientação hipotética explícito."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Não cadastrar um valor de k inexistente."
+    },
+    {
+      "id": "cr-e1-76",
+      "adicoes": [
+        {
+          "classe": "definicao_conceitual",
+          "conteudo": "Advecção=movimento global; difusão/condução na interface.",
+          "local": "resolução",
+          "justificativa": "Definições explicam o erro da frase; sem condições de escoamento ou propriedades escolhidas.",
+          "separacao": "Comentário fora do enunciado."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem suplemento de dado."
+    },
+    {
+      "id": "cr-e1-77",
+      "adicoes": [
+        {
+          "classe": "modelo_convencional",
+          "conteudo": "Refrigerante normalmente chega como vapor de alta pressão e condensa; evaporador vaporiza.",
+          "local": "resolução",
+          "justificativa": "Modelo usual de compressão de vapor; não atribui substância, pressão ou entalpia extra.",
+          "separacao": "Normalmente identifica a descrição convencional, sem cálculo de ciclo específico."
+        }
+      ],
+      "acao": "manter",
+      "nota": "Sem constante/propriedade numérica."
+    },
+    {
+      "id": "cr-e1-80",
+      "adicoes": [
+        {
+          "classe": "resultados_derivados",
+          "conteudo": "V4m³,A4m²,geração400W,coeficiente hA40W/K eTs40°C.",
+          "local": "resolução/análise",
+          "justificativa": "Derivados das dimensões/100Wm−3/h10/Tamb30 originais; não dados acrescentados.",
+          "separacao": "O texto já declara origem geométrica."
+        },
+        {
+          "classe": "hipotese_condicional",
+          "conteudo": "Sem acumulação e convecção como única saída da face exposta; sem radiação/outras saídas.",
+          "local": "nota/roteiro/análise crítica",
+          "justificativa": "Hipóteses adicionais explicitamente identificadas; balanço com dU/dt mostra o papel delas.",
+          "separacao": "Adequada, não modificar modelo aprovado."
+        }
+      ],
+      "acao": "manter_modelo_e_precisar_historico",
+      "nota": "A frase que cita comando p4/justificativa p5 remete à versão histórica local; propor somente identificar esse histórico, após ciência do coordenador. Não é alteração científica."
+    }
+  ]
+}

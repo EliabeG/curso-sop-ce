@@ -1,0 +1,390 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "CR51–CR55",
+  "data": "2026-10-28",
+  "revisor": "Agente automatizado independente /root/auditor_ban07",
+  "estado": "BLOCO_CONCLUIDO; cinco itens aprovados somente no escopo BAN-07; BAN-07 global não aprovado",
+  "criterio": "Dados suficientes, consistência física, comando, unidades, restrições, demonstração da chave e de todas as opções; verificar unicidade e equivalência após arredondamento. Nove estudos críticos continuam fora da nota.",
+  "base": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "extrato_anterior": "auditoria/termodinamica/evidencias/BAN-07/extrato-197-antes.json",
+    "metodo": "Importação do parseHtml/decodeHtml/sha256 do validador canônico; localização por id; leitura filtrada de artigos atuais e comparação do hash de cada artigo com o extrato. Resolução física independente, seguida de confronto com comentário e chave do produto."
+  },
+  "fontes_comuns_efetivamente_lidas": [
+    "auditoria/termodinamica/PROTOCOLO_AAA.md",
+    "auditoria/termodinamica/pareceres/BAN-07-preparacao.json",
+    "auditoria/termodinamica/entregas/BAN-07-r1.md"
+  ],
+  "registros": [
+    {
+      "id": "cr-e1-51",
+      "sha256_artigo": "7e5dcdfa88bcadee0a8fc31599e350b92e33d0ff055dab57b879b9ceaf82bf23",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "comando": "Julgar a ausência de processo isotérmico no ciclo Brayton.",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. O aviso anterior à tentativa delimita o Brayton ideal convencional e processos não degenerados; isso exclui versões modificadas e limite de razão de pressão unitária. Não são necessários dados numéricos.",
+      "demonstracao_independente": "No Brayton ideal com gás ideal e gamma>1, a compressão isentrópica não degenerada satisfaz T2/T1=(p2/p1)^((gamma-1)/gamma)>1; a expansão isentrópica reduz T pelo mesmo princípio. Nos dois ramos isobáricos, o aquecimento/resfriamento não nulo exige variação de entalpia e de T (cp>0). Portanto nenhum dos quatro ramos é isotérmico. A própria delimitação preambular é suficiente para o nível de reconhecimento do item.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "Decorre dos quatro processos e de suas variações não nulas de temperatura no modelo explicitado."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Exigiria introduzir uma compressão/expansão isotérmica ou tratar pressão constante como temperatura constante; ambas alteram o modelo fornecido. O limite degenerado foi excluído antes da resposta."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. O comentário identifica os quatro ramos, distingue modificações e não usa a chave oficial como prova física. Sua palavra 'normalmente' é complementada pela restrição não degenerada anterior à tentativa.",
+      "criterios": {
+        "dados": "ATENDIDO — questão conceitual e modelo delimitado previamente",
+        "consistencia_fisica": "ATENDIDO — não há isoterma no ciclo especificado",
+        "comando": "ATENDIDO — julgamento binário inequívoco",
+        "unidades": "NAO_APLICAVEL — sem valores; temperaturas absolutas na demonstração",
+        "restricoes": "ATENDIDO — ideal convencional e não degenerado visíveis previamente",
+        "unicidade": "ATENDIDO — somente C no domínio explicitado",
+        "arredondamento": "NAO_APLICAVEL — proposição conceitual",
+        "plausibilidade_distrator": "ATENDIDO — confusão isobárico/isotérmico e extrapolação de variantes; plausibilidade teórica, sem piloto"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "tipo": "produto_atual",
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-51",
+          "alcance": "Enunciado, aviso prévio, opções, comentário e chave; hash acima."
+        },
+        {
+          "tipo": "primaria_academica_consultada",
+          "referencia": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "titulo": "MIT Unified — 3.7 Brayton Cycle",
+          "consulta": "2026-10-28",
+          "alcance": "Definição dos ramos isobáricos e adiabáticos reversíveis e relações termodinâmicas; sustentação física, sem atribuir intenção à banca."
+        }
+      ],
+      "heranca_documental": "Nenhuma prova oficial herdada foi tomada como demonstração científica. A identidade com o extrato é somente controle da versão.",
+      "achados": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "ajustes_obrigatorios": []
+    },
+    {
+      "id": "cr-e1-52",
+      "sha256_artigo": "27afcb168f30452326940a382af7a5b8834ab4f8d0d8137efe80b65464e9de3f",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "comando": "Julgar se aumentar a potência consumida pelo compressor basta para elevar a eficiência Brayton.",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. É uma alegação de suficiência universal, refutável por um único ciclo fisicamente admissível. Não exige prescrever a alteração operacional nem receber números.",
+      "demonstracao_independente": "eta=(Wt-Wc)/Qin, com potências positivas de produção e consumo. Um aumento de Wc sozinho não fixa Wt ou Qin e não garante aumento da razão. Contramodelo: Brayton com gás ideal de cp=1 kJ/(kg K), gamma=1,4, vazão 1 kg/s, T1=300 K, T3=1200 K, razão rp=2^(gamma/(gamma-1))=11,3137 e turbina isentrópica. Então T2s=600 K e T4=600 K. Piorar a eficiência isentrópica do compressor de 0,9 para 0,8 aumenta seu consumo, mantendo a mesma razão de pressão e a turbina. Os balanços abaixo dão eta menor. Estados positivos, aquecimento e trabalho líquido positivos em ambos os ciclos; a perda no compressor gera entropia e não viola a segunda lei.",
+      "calculo_independente": {
+        "natureza": "Contramodelo autoral de auditoria; não são dados atribuídos à prova",
+        "modelo": "Gas ideal caloricamente perfeito; R=0,285714 kJ/(kg K); sem perdas de pressão, turbina isentrópica, compressor irreversível",
+        "casos": [
+          {
+            "eta_c": 0.9,
+            "T2_K": 633.3333333333333,
+            "Wc_kW": 333.33333333333326,
+            "Wt_kW": 600,
+            "Qin_kW": 566.6666666666667,
+            "Wnet_kW": 266.66666666666674,
+            "eta": 0.4705882352941177
+          },
+          {
+            "eta_c": 0.8,
+            "T2_K": 675,
+            "Wc_kW": 375,
+            "Wt_kW": 600,
+            "Qin_kW": 525,
+            "Wnet_kW": 225,
+            "eta": 0.42857142857142855
+          }
+        ]
+      },
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "O contramodelo aumenta Wc de 333,333 para 375 kW e reduz eta de 47,0588% para 42,8571%; logo não é condição suficiente."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "A definição de eficiência exige avaliar o ciclo completo; maior consumo pode inclusive diminuir sua eficiência."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Relaciona eficiência ao trabalho líquido/calor, adverte que mudar a razão de pressões altera o conjunto e não promete monotonicidade. A demonstração acima considera a alteração concomitante de Qin, evitando supô-lo constante sem justificativa.",
+      "criterios": {
+        "dados": "ATENDIDO — proposição conceitual refutada por contramodelo",
+        "consistencia_fisica": "ATENDIDO — balanços e estados admissíveis demonstrados",
+        "comando": "ATENDIDO — alegação de suficiência clara",
+        "unidades": "ATENDIDO — kW no cálculo, K nos estados, cp em kJ/(kg K); eta adimensional",
+        "restricoes": "ATENDIDO — nenhuma condição omitida é necessária para refutar a suficiência",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "ATENDIDO — diferenças de potência e eficiência amplas; sem equivalência C/E",
+        "plausibilidade_distrator": "ATENDIDO — confundir gasto de potência com desempenho global; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "tipo": "produto_atual",
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-52",
+          "alcance": "Enunciado, opções, comentário e chave; hash acima."
+        },
+        {
+          "tipo": "primaria_academica_consultada",
+          "referencia": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "titulo": "MIT Unified — 3.7.1 Work and Efficiency",
+          "consulta": "2026-10-28",
+          "alcance": "Balanço do ciclo, definição de eficiência e processos; contramodelo e números calculados independentemente pelo revisor."
+        }
+      ],
+      "heranca_documental": "Não usada como prova científica; identidade com o extrato controla a versão.",
+      "achados": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "ajustes_obrigatorios": []
+    },
+    {
+      "id": "cr-e1-53",
+      "sha256_artigo": "80ac5d12a11ec45683516e0c70a561d76d73d3408b4057bb733158542ba1dff0",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "comando": "Identificar a regeneração Brayton como recuperação dos gases de exaustão para preaquecer o ar antes da combustão.",
+      "chave_derivada": "C",
+      "chave_produto": "C",
+      "suficiencia": "ATENDIDO. O item identifica a função de um equipamento, sem alegar que toda instalação permita regeneração ou ganho de eficiência. Não é necessário conhecer temperaturas para reconhecer essa definição.",
+      "demonstracao_independente": "Considere o ar comprimido entrando no recuperador no estado 2 e saindo no estado 5 antes da câmara; exaustão da turbina entra quente no outro lado no estado 4. Se T4>T2, há transferência passiva possível do escape para o ar comprimido. Sem mistura e com cp positivo constante, qreg=cp(T5-T2)>0, T2<T5<=T4; com T3 fixada, o calor externo cai de cp(T3-T2) para cp(T3-T5), redução igual a qreg. Esse é precisamente o aproveitamento descrito. Se T4<=T2 não há recuperação útil nessa direção, mas isso limita sua aplicação, não altera sua definição.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "CORRETA",
+          "justificativa": "O equipamento utiliza energia da exaustão no preaquecer do ar comprimido que alimenta a combustão, como demonstrado pelo balanço."
+        },
+        {
+          "opcao": "E",
+          "juizo": "INCORRETA",
+          "justificativa": "Negaria a função definidora do regenerador ou confundiria regeneração com reaquecimento após expansão; não decorre do limite T4>T2, pois a frase não promete operação útil para todas as temperaturas."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Declara a diferença de temperatura adequada, a redução do combustível para a mesma temperatura de entrada da turbina e perdas de pressão no equipamento real. Não promete ganho líquido incondicional.",
+      "criterios": {
+        "dados": "ATENDIDO — identificação conceitual",
+        "consistencia_fisica": "ATENDIDO — recuperação e redução de calor externo derivadas do balanço",
+        "comando": "ATENDIDO — proposição binária de definição",
+        "unidades": "NAO_APLICAVEL aos dados; demonstração usa energias específicas em unidades coerentes, cp em kJ/(kg K) e T em K",
+        "restricoes": "ATENDIDO — limite térmico explicitado na base e comentário, sem ser hipótese oculta necessária à definição",
+        "unicidade": "ATENDIDO — somente C",
+        "arredondamento": "NAO_APLICAVEL — sem opções numéricas",
+        "plausibilidade_distrator": "ATENDIDO — confusão com reaquecimento ou omissão da função de recuperação; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "tipo": "produto_atual",
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-53",
+          "alcance": "Enunciado, opções, comentário e chave; hash acima."
+        },
+        {
+          "tipo": "base_didatica_atual_inspecionada",
+          "referencia": "modulos/e1-termodinamica.html#base-brayton-real",
+          "alcance": "Div completo do título lido via parser: correntes sem mistura, diferença de temperatura necessária, perdas de pressão e relação entre calor externo e eficiência."
+        },
+        {
+          "tipo": "primaria_academica_consultada",
+          "referencia": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "titulo": "MIT Unified — 3.7.1 Work and Efficiency",
+          "consulta": "2026-10-28",
+          "alcance": "Relação entre entalpia, cp, aquecimento e eficiência; o balanço do recuperador foi derivado pelo revisor, não atribuído a uma descrição ausente nessa página."
+        }
+      ],
+      "heranca_documental": "Não usada como demonstração científica; identidade com o extrato controla a versão.",
+      "achados": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "ajustes_obrigatorios": []
+    },
+    {
+      "id": "cr-e1-54",
+      "sha256_artigo": "262063cf196b649e8c5dc1e33f3cae14ee1554424fabee4087ef6345deac3d3c",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "comando": "Julgar a regra geral que atribui baixas vazões e altas razões de compressão aos dinâmicos e pequenas diferenças de pressão aos volumétricos.",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO. A expressão de um modo geral pede uma orientação preliminar, não seleção de um compressor específico. Não exige inventar faixas universais de pressão ou vazão.",
+      "demonstracao_independente": "Um alternativo aprisiona gás e reduz seu volume; estágios em série permitem dividir uma elevada razão total de pressão, controlando a temperatura e as cargas. Não é uma família restrita a pequenas diferenças de pressão. Dinâmicos transferem energia pelo rotor ao escoamento; axiais e centrífugos são usados em grandes vazões, enquanto pressão por estágio e estabilidade limitam sua seleção. A regra declarada troca as tendências gerais e é falsa. Como confirmação concreta, o fabricante Atlas Copco apresenta os alternativos P com 3/4 estágios e pressão de trabalho 25–42 bar(g); a Kaeser descreve centrífugos como apropriados a grandes volumes em serviço contínuo. Esses exemplos não definem fronteiras universais entre tecnologias.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Endossaria uma orientação geral invertida, contradita pela aplicação de alternativos multietapas de alta pressão e pela capacidade de grandes vazões dos dinâmicos."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "Rejeita corretamente a regra. Altas razões totais podem ocorrer também em dinâmicos multietapas; isso não valida a distribuição geral baixa vazão/dinâmicos e pequena diferença/volumétricos do enunciado."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. Usa associados e podem, destaca alternativos em estágios e condiciona a seleção à faixa operacional e ao gás; não faz da tendência uma proibição absoluta.",
+      "criterios": {
+        "dados": "ATENDIDO — proposição geral de seleção preliminar",
+        "consistencia_fisica": "ATENDIDO — mecanismos e aplicações não foram confundidos",
+        "comando": "ATENDIDO — julgamento claro de uma regra geral",
+        "unidades": "ATENDIDO — nenhum número exigido; bar(g) citado só como pressão manométrica de fabricante, sem convertê-la indevidamente em razão de pressão",
+        "restricoes": "ATENDIDO — tendência geral, gás, estágios e curvas considerados",
+        "unicidade": "ATENDIDO — somente E",
+        "arredondamento": "NAO_APLICAVEL — sem opções numéricas",
+        "plausibilidade_distrator": "ATENDIDO — inversão realista de seleção por vazão e pressão; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "tipo": "produto_atual",
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-54",
+          "alcance": "Enunciado, opções, comentário e chave; hash acima."
+        },
+        {
+          "tipo": "base_didatica_atual_inspecionada",
+          "referencia": "modulos/e1-termodinamica.html#base-tipos-compressores",
+          "alcance": "Div completo lido via parser; distinção de mecanismos e orientação relativa de seleção."
+        },
+        {
+          "tipo": "primaria_fabricante_consultada",
+          "referencia": "https://www.atlascopco.com/en-lt/compressors/products/air-compressor/oil-free-air-compressors/high-pressure-reciprocating-air-compressor-p",
+          "titulo": "Atlas Copco — High pressure reciprocating air compressor P",
+          "consulta": "2026-10-28",
+          "alcance": "Configuração de 3/4 estágios e pressão de trabalho manométrica 25–42 bar; contraprova à limitação dos alternativos a pequenas diferenças de pressão."
+        },
+        {
+          "tipo": "primaria_fabricante_consultada",
+          "referencia": "https://us.kaeser.com/compressed-air-resources/compressed-air-tips/getting-the-most-for-your-money/types-of-air-compressors.aspx",
+          "titulo": "Kaeser — What are some types of air compressors",
+          "consulta": "2026-10-28",
+          "alcance": "Seção Dynamic/Centrifugal Compressors: mecanismo e aplicação em grande vazão; seleção depende das condições da aplicação."
+        }
+      ],
+      "heranca_documental": "Não usada como demonstração científica; identidade com o extrato controla a versão.",
+      "achados": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "ajustes_obrigatorios": []
+    },
+    {
+      "id": "cr-e1-55",
+      "sha256_artigo": "7f28f1504c5296dc0387a4a7b150a253c5f5385008d94cae86afe4e716eae4f3",
+      "identico_ao_extrato_anterior": true,
+      "revisor": "Agente automatizado independente /root/auditor_ban07",
+      "comando": "Julgar a lista de quatro processos atribuída ao Brayton, incluindo a expressão pressão isentrópica e resfriamento a volume constante.",
+      "chave_derivada": "E",
+      "chave_produto": "E",
+      "suficiencia": "ATENDIDO para julgar E. Antes da tentativa há aviso que identifica a expressão defeituosa e mantém o texto. A rejeição isocórica por si refuta a lista sem adivinhar o significado da primeira expressão. Não são necessários números nem uma correção tipográfica implícita.",
+      "demonstracao_independente": "No Brayton ideal convencional, 1→2 e 3→4 são isentrópicos; 2→3 e 4→1 são isobáricos. Em particular p4=p1 e qout=cp(T4-T1)>0 na rejeição não degenerada. Para gás ideal a pressão constante, v=RT/p e portanto T4 diferente de T1 implica v4 diferente de v1. O resfriamento não se realiza a volume constante. Como a proposição descreve o conjunto de processos, essa incompatibilidade basta para torná-la falsa, independentemente da expressão pressão isentrópica.",
+      "opcoes": [
+        {
+          "opcao": "C",
+          "juizo": "INCORRETA",
+          "justificativa": "Exigiria aceitar rejeição de calor a volume constante no Brayton convencional, em contradição com seu ramo isobárico. O defeito da primeira expressão não restaura a validade da última."
+        },
+        {
+          "opcao": "E",
+          "juizo": "CORRETA",
+          "justificativa": "Pelo menos o resfriamento isocórico é incompatível com o ciclo nomeado; nenhuma suposição sobre uma possível errata é necessária."
+        }
+      ],
+      "confronto_com_comentario": "COERENTE. O comentário descreve os quatro processos convencionais; a interpretação técnica distingue a expressão inadequada, não atribui intenção à banca e demonstra E pelo ramo de rejeição de calor. O aviso relevante está antes da tentativa.",
+      "criterios": {
+        "dados": "ATENDIDO — ciclo identificado e refutação suficiente mesmo com defeito lexical",
+        "consistencia_fisica": "ATENDIDO — o enunciado é falso, como esperado para E; explicação técnica correta",
+        "comando": "ATENDIDO — julgamento da lista inteira",
+        "unidades": "NAO_APLICAVEL — sem valores; equações empregam energia específica e temperatura absoluta",
+        "restricoes": "ATENDIDO — modelo convencional e defeito lexical explicitados antes da resposta",
+        "unicidade": "ATENDIDO — somente E sem reconstruir uma errata",
+        "arredondamento": "NAO_APLICAVEL — sem opções numéricas",
+        "plausibilidade_distrator": "ATENDIDO — confusão entre rejeição isobárica do Brayton e isocórica de modelos como Otto; plausibilidade teórica"
+      },
+      "fontes_efetivamente_usadas": [
+        {
+          "tipo": "produto_atual",
+          "referencia": "modulos/e1-termodinamica.html#cr-e1-55",
+          "alcance": "Texto, aviso prévio, opções, comentário e interpretação técnica; hash acima. A declaração documental do curso não foi confundida com nova conferência do PDF pelo revisor."
+        },
+        {
+          "tipo": "primaria_academica_consultada",
+          "referencia": "https://web.mit.edu/16.unified/www/SPRING/propulsion/notes/node27.html",
+          "titulo": "MIT Unified — 3.7 Brayton Cycle",
+          "consulta": "2026-10-28",
+          "alcance": "Ramos isobáricos e adiabáticos reversíveis, balanço de calor; base da refutação independente."
+        }
+      ],
+      "heranca_documental": "Não reutilizada como prova neste bloco. A origem oficial da expressão permanece atribuída à declaração BAN-10 exposta no produto; esta revisão não afirma ter conferido o PDF original nem reabre o aceite documental.",
+      "achados": [
+        {
+          "id": "CR55-LEXICO-JA-EXPOSTO",
+          "tipo": "limitação histórica já explícita; sem nova pendência",
+          "descricao": "Pressão isentrópica não é nome adequado de processo. O produto mostra a ressalva antes da tentativa e E é demonstrável pela rejeição isocórica, sem corrigir silenciosamente o texto.",
+          "impacto": "Não impede o juízo binário único neste item; nenhuma nova errata oficial foi alegada."
+        }
+      ],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "ajustes_obrigatorios": []
+    }
+  ],
+  "cobertura": {
+    "previstos": 5,
+    "registrados": 5,
+    "ids": [
+      "cr-e1-51",
+      "cr-e1-52",
+      "cr-e1-53",
+      "cr-e1-54",
+      "cr-e1-55"
+    ],
+    "juizos_de_opcoes": 10,
+    "estudos_criticos_neste_bloco": 0
+  },
+  "limitacoes": [
+    "Sem aprovação de BAN-07 integral ou do curso como avançado.",
+    "Sem teste humano, piloto com estudantes ou certificação externa.",
+    "Produto, controle e checklist não editados."
+  ],
+  "achados_do_bloco": {
+    "novos_impeditivos": 0,
+    "limitações_ja_expostas": 1,
+    "ajustes_obrigatorios": 0
+  },
+  "decisao_proximo_ID": "NÃO LIBERADO: bloco parcial de 5/197; a liberação exige auditoria integral do pacote congelado e decisão do coordenador.",
+  "verificacao_final": {
+    "data": "2026-10-28",
+    "html_sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "congelamento_confirmado": true,
+    "identidades": [
+      {
+        "id": "cr-e1-51",
+        "sha256_artigo": "7e5dcdfa88bcadee0a8fc31599e350b92e33d0ff055dab57b879b9ceaf82bf23",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-52",
+        "sha256_artigo": "27afcb168f30452326940a382af7a5b8834ab4f8d0d8137efe80b65464e9de3f",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-53",
+        "sha256_artigo": "80ac5d12a11ec45683516e0c70a561d76d73d3408b4057bb733158542ba1dff0",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-54",
+        "sha256_artigo": "262063cf196b649e8c5dc1e33f3cae14ee1554424fabee4087ef6345deac3d3c",
+        "conferido": true
+      },
+      {
+        "id": "cr-e1-55",
+        "sha256_artigo": "7f28f1504c5296dc0387a4a7b150a253c5f5385008d94cae86afe4e716eae4f3",
+        "conferido": true
+      }
+    ],
+    "registros_unicos": 5,
+    "juizos_de_opcoes": 10,
+    "fontes": "Somente fontes efetivamente lidas declaradas; nenhuma conferência documental ou execução humana inferida.",
+    "escopo_preservado": "Apenas este arquivo de parecer foi criado pelo auditor neste bloco. Produto, controle e checklist não editados."
+  }
+}

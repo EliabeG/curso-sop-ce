@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-diagnostico-12",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_DECISAO_FORMAL_E_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "7541e7c4c8314922992e99e8b62b40342c2d938e6edeac67ef9f74b69f86c17c",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r4.json",
+    "sha256": "44d19642bcf39109edf620e7304580b7a8a686e7c42cfa7101fa3d118a79d054"
+  },
+  "apoio_preliminar": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-diagnosticos-11-15-apoio-independente-r1.md",
+    "estado": "Ressalva, não decisão formal"
+  },
+  "original_sha256_fragmento": "618ac9f908af2cd203e8c44ff47708b488aa0e80c61111b4a1e5e082c4e35ca7",
+  "candidata_sha256_fragmento": "2a5914ed4fd1abd6a5e0c92af1254bb7cb353eda23e4ba232d1f39ac04187d09",
+  "original_sha256_arquivo": "40f7dac84a26a64eace5e48268d110dd811b73f8c81d933ce7468a6277d2428b",
+  "candidata_sha256_arquivo": "c409e88c1b930961bd88567c212d280d36284dfcb845d3579fff2d8321cd3a4a",
+  "antes": "Uma turbina produz 140 kW, o compressor consome 50 kW e o calor recebido é 300 kW.",
+  "depois": "Uma turbina produz 140 kW, o compressor consome 50 kW, não há outros consumos de potência e o calor total recebido é 300 kW.",
+  "limite": "Preparação isolada com nova linha nos arquivos, nenhum produto alterado; aguardam-se decisão formal e revisão independente."
+}

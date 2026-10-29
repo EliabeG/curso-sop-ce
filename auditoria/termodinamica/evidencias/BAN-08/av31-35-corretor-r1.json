@@ -1,0 +1,139 @@
+{
+  "id": "BAN-08",
+  "bloco": "AV31–AV35",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das cinco opções e comentários; exame de modelos e frações exatas.",
+  "registros": [
+    {
+      "id": "av-e1-31",
+      "artigo_sha256": "2b2015e4ce0ec1bbea95c3da375ec316239d427f44454cfa43ca007c777fff7a",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-31",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-termoquimica",
+          "#cr-e1-31"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "PCS e PCI com mesma referência, comparando estado da água formada na combustão.",
+      "solucao": "PCS considera água líquida e parcela de condensação; PCI considera vapor nas mesmas condições de referência.",
+      "resultado": "E.",
+      "comparacao": "A inverte PCS e PCI; B atribui diferença a referências térmicas distintas com mesma fase; C afirma igualdade universal; D gasto de bomba não define diferença; E reconhece condensação.",
+      "tolerancia": "Sem poder calorífico, massa ou resultado de cálculo; tolerância numérica não se aplica.",
+      "limite": "Diferença depende de combustível formar água e das condições de referência; comentário B é versão corrigida BAN-07, sem pressupor aceite numérico por identidade.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-32",
+      "artigo_sha256": "5d53de738a3e1b78ce907920d3ee56add57516359d4b4f36880aa2caa7d6e500",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-32",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-termoquimica",
+          "#cr-e1-32"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Reação direta ΔH=−80 kJ para quantidade especificada; inversa entre mesmos estados.",
+      "solucao": "ΔH inversa=−ΔH direta=+80 kJ; positiva indica endotérmica na convenção de calor a pressão constante sem outros trabalhos.",
+      "resultado": "E, +80 kJ e endotérmica.",
+      "comparacao": "A −160 inverte magnitude e sinal errado; B +80 classifica exotérmica; C zero elimina diferença; D −80 mantém sinal direto; E correto.",
+      "tolerancia": "Valor exato para dado nominal; sem incerteza experimental.",
+      "limite": "Comparar mesmos estados, quantidade e referência; a identificação de calor com ΔH usa condições do modelo.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-33",
+      "artigo_sha256": "18647f755fc3deb6a9a4aafcb815851a9fcc1244ff0288b0117c8c0620349d1f",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-33",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-expansao-livre",
+          "#base-entropia-gas",
+          "../assets/questoes-reais-e1/figura-9d164690a624.png",
+          "#cr-e1-33"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_E_LOGICA",
+      "dados": "Recipiente rígido fechado isolado, gás ideal e vácuo; outros trabalhos e energia da membrana desprezíveis, estados de equilíbrio.",
+      "solucao": "Q=W=0 → ΔU=0 → ΔT=0 para gás ideal com cv>0; aumento de volume produz ΔS=nR ln(Vf/Vi)>0. I–III verdadeiras, IV falsa.",
+      "resultado": "D, I/II/III apenas.",
+      "comparacao": "A omite III; B omite II e inclui IV; C inclui IV; D correto; E inclui IV e omite I/III.",
+      "tolerancia": "Zeros e sinais exatos no modelo; sem volumes para cálculo numérico ou tolerância.",
+      "limite": "Expansão é irreversível; não aplicar trabalho de fronteira reversível ao caminho real.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-34",
+      "artigo_sha256": "3ae8bcce339a9cfb8899c0dda553455c5cc89fbd8cb6fd39b753b96f7cbcbc20",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-34",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-balanco-fechado",
+          "#base-gas-energia",
+          "#cr-e1-34"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "Tanque rígido fechado, m=2 kg, cv=0,72 kJ/(kg K), Q=144 kJ, nenhum outro trabalho ou ΔEc/ΔEp.",
+      "solucao": "W=0; ΔT=144/(2×0,72)=100 K.",
+      "resultado": "B, 100 K.",
+      "comparacao": "A 50 duplica massa; B 100; C 200 omite massa; D 144 copia energia como temperatura; E zero confunde rigidez com isotermia.",
+      "tolerancia": "Exato para dados nominais e cv constante; sem incerteza de medição.",
+      "limite": "Rigidez só elimina trabalho de fronteira; exclusão de outros trabalhos é dada e necessária para Q=ΔU.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "av-e1-35",
+      "artigo_sha256": "17b85fe40845327cbdfba0bd7d354a5f394034351617d0f22d23e80af6eb4300",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#av-e1-35",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-primeira-lei",
+          "#cr-e1-35"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO",
+      "dados": "Sistema fechado adiabático, ΔU=−120 kJ e ΔEc=ΔEp=0; W positivo produzido.",
+      "solucao": "Q=0 e ΔU=−W; W=+120 kJ.",
+      "resultado": "B, +120 kJ.",
+      "comparacao": "A −0,120 divide por mil e troca sinal; B +120; C zero confunde adiabático com ausência de trabalho; D −120 inverte sinal; E +0,120 divide indevidamente por mil.",
+      "tolerancia": "Valores e sinais exatos com dados nominais; sem incerteza informada.",
+      "limite": "Condição de variações macroscópicas nulas e convenção de trabalho são explícitas.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão do Auditor responsável nem encerramento BAN-08.",
+    "Itens autorais; origem CR contextualiza, não torna dados da transformação oficiais."
+  ]
+}

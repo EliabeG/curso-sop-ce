@@ -1,0 +1,433 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "RESSALVAS_Q17_Q22_Q23_Q27",
+  "data": "2026-10-28",
+  "revisor_atual": "Agente automatizado independente /root/auditor_ban07_final",
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "versao": "BAN-07 r1 congelada",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "estado": "CONCLUIDO_4_ITENS_SEM_NOVOS_AJUSTES_OBRIGATORIOS",
+  "escopo": "Exclusivamente quatro Q inalterados e os pontos de preparação; sem parecer global.",
+  "fonte_anterior": {
+    "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+    "sha256": "d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913",
+    "revisor": "/root/auditor_aaa, agente automatizado",
+    "natureza": "Preparação científica preliminar, não parecer da entrega."
+  },
+  "criterio": {
+    "referencia": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md, BAN-07; protocolo AAA e regra comum pertinente",
+    "exigencia": "Suficiência de dados/modelos, consistência física, comando, unidades, restrições, chave única e cinco justificativas com distratores plausíveis. Identidade é condição de herança, não aprovação automática."
+  },
+  "metodo_atual": [
+    "Extração delimitada e identidade própria com parseHtml/sha256 canônicos.",
+    "Leitura de comando, cinco opções, comentário e bases ligadas disponíveis antes da tentativa. Chave/comentário conhecidos: sem alegar cegamento.",
+    "Ciência numérica anterior atribuída; novas demonstrações limitadas a ressalvas e mecanismos insuficientemente especificados."
+  ],
+  "registros": [
+    {
+      "item": "Q17",
+      "id_artigo": "q-e1-17",
+      "sha256_artigo": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "origem_revisao": "heranca_atribuida_da_preparacao_com_confronto_proprio_da_base_ciclica_e_opcao_B",
+      "nota_anterior": {
+        "id": "q-e1-17",
+        "sha256_artigo": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+        "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+        "chave_derivada": "D",
+        "demonstracao": "Refrigerador cíclico: COP_R=QL/Win=900/300=3;QH=QL+Win=1200 kJ.",
+        "alternativas": [
+          "A: inverte COP e ignora trabalho na rejeição.",
+          "B: confunde grandezas e razão.",
+          "C: subtrai trabalho do calor retirado.",
+          "D: duas grandezas corretas.",
+          "E: COP da bomba de calor(QH/Win=4), não do refrigerador."
+        ],
+        "pontos_a_verificar": [
+          "Valores devem ser trocas na mesma base de operação/ciclo, sem armazenamento; termo refrigerador e definição COP sugerem modelo, mas comando não diz por ciclo."
+        ],
+        "estado": "preliminar; não é veredito da entrega",
+        "confronto_comentario": "Comentário/justificativas lidos depois da derivação; chave coincide. Q13/Q18 justificam proposições, das quais se inferem todas as combinações."
+      },
+      "identidade_e_alcance": {
+        "artigo_atual_igual_preparacao": true,
+        "metodo": "Hash integral próprio coincide com o salvo na nota; comando, opções e comentário atuais relidos. Memória anterior permanecia preliminar.",
+        "derivacao_herdada": "De /root/auditor_aaa: refrigerador cíclico, COP_R=QL/Win=900/300=3 e QH=QL+Win=1200 kJ. Não foi reexecutada rotina numérica."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#base-eficiencia-cop",
+          "sha256_trecho": "cb5072bff6719f50a5047d511b5c74c4da96a35ed3a43aa0c2127cd992de9814",
+          "delimitacao": "Do h3 da âncora até próximo cabeçalho h1–h3.",
+          "alcance": "COP_R=QL/W e COP_BC=QH/W, magnitudes positivas, legendas em kJ por ciclo e condição Mesmo ciclo, mesmas fronteiras. Link cr-estudo está fora da resolução e antes das alternativas."
+        }
+      ],
+      "pontos_decididos": [
+        {
+          "ponto": "Valores devem ser trocas na mesma base de operação/ciclo, sem armazenamento; termo refrigerador e definição COP sugerem modelo, mas comando não diz por ciclo.",
+          "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+          "prova_atual": "O comando vincula retirada de 900 kJ ao consumo de 300 kJ da mesma operação do refrigerador. A base prévia define ambos QL e W em kJ por ciclo e exige mesmo ciclo/fronteiras; assim o contexto avaliativo é cíclico, sem acumulação líquida de energia. DeltaE_ciclo=0 fornece QH=QL+Win. Não foi preciso obter essa hipótese apenas do comentário posterior, embora o comando não repita as palavras por ciclo.",
+          "limite": "Não se calcula calor rejeitado de uma partida transiente com armazenamento desconhecido nem se combinam energias de ciclos/intervalos diferentes. O item é aprovado com a base cíclica ligada, sem afirmação de universalidade para qualquer transiente."
+        }
+      ],
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "COP = 0,33 e rejeição = 900 kJ.",
+          "correta": false,
+          "origem": "mecanismos herdados de /root/auditor_aaa e comentário atual conferido",
+          "prova": "Win/QL≈0,33 inverte o COP; QH=QL omite a energia do trabalho consumido."
+        },
+        {
+          "letra": "B",
+          "texto": "COP = 1 e rejeição = 300 kJ.",
+          "correta": false,
+          "origem": "mecanismo reexaminado e explicitado por /root/auditor_ban07_final; nota anterior era genérica",
+          "prova": "Omitir a carga fria e tratar o aparelho como simples dissipador do trabalho fornece Q_rej=Win=300 e razão de desempenho equivocada Win/Win=1. É confusão entre o refrigerador que transporta calor e um aparelho que apenas converte trabalho em calor. Viola o balanço do ciclo com QL=900 e a definição de COP_R; o comentário atual indica a omissão do calor retirado."
+        },
+        {
+          "letra": "C",
+          "texto": "COP = 3 e rejeição = 600 kJ.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "Acerta QL/Win, mas usa QH=QL-Win=600, trocando o sinal da energia de trabalho que entra."
+        },
+        {
+          "letra": "D",
+          "texto": "COP = 3 e rejeição = 1.200 kJ.",
+          "correta": true,
+          "origem": "derivação herdada de /root/auditor_aaa; base/modelo fechado nesta revisão",
+          "prova": "O par satisfaz a definição de COP_R e a conservação de energia no mesmo ciclo."
+        },
+        {
+          "letra": "E",
+          "texto": "COP = 4 e rejeição = 1.200 kJ.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "QH/Win=4 é COP da bomba de calor no mesmo ciclo, não COP do refrigerador; calor rejeitado sozinho está correto."
+        }
+      ],
+      "confronto_comentario": "Chave D, definição de COP_R, balanço cíclico e cinco justificativas concordam com o modelo acessível antes da resposta. COP maior que 1 é admissível porque é razão de calor transportado por trabalho, não eficiência de conversão.",
+      "modelos_e_limites": "Refrigerador cíclico, magnitudes na mesma base e fronteira, sem armazenamento líquido. Não exige reversibilidade, ciclo de Carnot ou refrigerante específico. Não há temperaturas para testar limite de Carnot nem dados de eficiência elétrica.",
+      "unicidade": "D única como par de resultados. A aproximação 0,33 não a torna equivalente a 3; pares C/E têm apenas uma componente correta.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Plausibilidade é teórica e atribuída por opção; sem observação de estudantes.",
+        "Aceite da versão com a preparação ligada, sem elevar a nota anterior a aprovação automática."
+      ]
+    },
+    {
+      "item": "Q22",
+      "id_artigo": "q-e1-22",
+      "sha256_artigo": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "origem_revisao": "heranca_atribuida_da_conclusao_preliminar_com_prova_simbolica_propria_do_modelo_e_distratores",
+      "nota_anterior": {
+        "id": "q-e1-22",
+        "sha256_artigo": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+        "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+        "chave_derivada": "C",
+        "demonstracao": "No modelo de compressão ideal comparável, resfriar entrada do estágio posterior reduz seu trabalho para mesma razão, sob condições mantidas no modelo.",
+        "alternativas": [
+          "A: redução de trabalho não garante eficiência de qualquer ciclo completo.",
+          "B: resfriamento não inverte função de compressão.",
+          "C: efeito correto com ressalva explícita do modelo.",
+          "D: não elimina automaticamente irreversibilidades.",
+          "E: tendência inevitável invertida."
+        ],
+        "pontos_a_verificar": [
+          "Conferir hipóteses no alvo existente: mesmo gás, condições de entrada e razão global, limites de perda de pressão/modelo; não prometer vantagem universal."
+        ],
+        "estado": "preliminar; não é veredito da entrega",
+        "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+      },
+      "identidade_e_alcance": {
+        "artigo_atual_igual_preparacao": true,
+        "metodo": "Hash integral próprio coincide; comando, cinco opções e comentário atuais relidos. A conclusão qualitativa do revisor anterior é herdada apenas no alcance do modelo agora conferido.",
+        "ciencia_herdada": "De /root/auditor_aaa: resfriar a entrada do estágio posterior reduz o trabalho para mesma razão no modelo ideal comparável. Não se alega cálculo numérico novo."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#base-compressao-estagios",
+          "sha256_trecho": "a35d085fb8c2a5d6df63cf38468fbb118204a700cfe57987881973527ab6088b",
+          "delimitacao": "Do h3 da âncora até próximo cabeçalho h1–h3.",
+          "alcance": "Modelo, expressão de trabalho total, pressões absolutas, igualdade de razões/ótimo e ressalvas de eficiências ou temperaturas diferentes. Link anterior às alternativas."
+        }
+      ],
+      "pontos_decididos": [
+        {
+          "ponto": "Conferir hipóteses no alvo existente: mesmo gás, condições de entrada e razão global, limites de perda de pressão/modelo; não prometer vantagem universal.",
+          "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+          "prova_atual": "A base prévia declara mesmo gás ideal de composição fixa, cp/cv constantes, mesma vazão e eficiência isentrópica constante, compressores adiabáticos em regime permanente, energias macroscópicas desprezíveis e ausência de quedas de pressão, fase ou separação de massa. Resfriamento devolve a T1 e pressões globais são fixas. C contém expressamente nas hipóteses do modelo, portanto a comparação não promete vantagem para qualquer instalação.",
+          "limite": "Preservam-se gás, entrada inicial, vazão, razão global e modelo de estágios/eficiências. Perdas de pressão, consumo auxiliar, condensação, eficiência alterada ou outro objetivo do ciclo exigem reavaliação."
+        }
+      ],
+      "demonstracao_atual": {
+        "autor": "/root/auditor_ban07_final",
+        "natureza": "Verificação simbólica pontual necessária para fechar comparação; sem repetição numérica",
+        "prova": "Para cada estágio ideal de gás com eficiência eta_c positiva constante, w_j=cp T_entrada,j(r_j^a-1)/eta_c, com a=(k-1)/k>0. Compare os mesmos estágios, r1/r2 e estado inicial, com e sem resfriamento sem perda de pressão. O primeiro trabalho não muda. Para r2>1, o fator cp(r2^a-1)/eta_c é positivo; reduzir T_entrada,2 reduz w2. Sem resfriamento, a saída da primeira compressão é mais quente que T1; resfriar de volta a T1 diminui a soma. Isso é o efeito direto afirmado em C.",
+        "alcance": "Não se extrapola redução do trabalho específico de compressão a aumento garantido de eficiência de qualquer ciclo completo."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Garantia de maior eficiência de qualquer ciclo térmico.",
+          "correta": false,
+          "origem": "juízo herdado de /root/auditor_aaa com mecanismo explicitado no confronto atual",
+          "prova": "Confunde economia de trabalho no compressor com aumento garantido de eta_ciclo=(Wout-Win)/Qin. A temperatura após compressão e o calor a fornecer ao ciclo podem mudar; não há garantia para qualquer ciclo."
+        },
+        {
+          "letra": "B",
+          "texto": "Transformação do compressor em turbina.",
+          "correta": false,
+          "origem": "mecanismo conceitual especificado por /root/auditor_ban07_final e comentário confrontado",
+          "prova": "Confunde queda de temperatura no resfriador com expansão que produz trabalho em uma turbina. O resfriador retira calor, enquanto o estágio posterior ainda eleva pressão, com r2>1 e trabalho de entrada positivo; não muda de função."
+        },
+        {
+          "letra": "C",
+          "texto": "Redução do trabalho de compressão para a mesma razão global, nas hipóteses do modelo.",
+          "correta": true,
+          "origem": "conclusão herdada de /root/auditor_aaa e prova simbólica atual delimitada",
+          "prova": "Segue da dependência positiva do trabalho do estágio em sua temperatura de entrada, sob as condições mantidas."
+        },
+        {
+          "letra": "D",
+          "texto": "Eliminação de toda irreversibilidade.",
+          "correta": false,
+          "origem": "juízo herdado de /root/auditor_aaa, mecanismo precisado no confronto atual",
+          "prova": "Confunde resfriamento perfeito, que restaura T1, com reversibilidade de todos os componentes. A base admite eta_c constante menor que 1; resfriamento não elimina suas perdas."
+        },
+        {
+          "letra": "E",
+          "texto": "Aumento inevitável do trabalho para a mesma razão global.",
+          "correta": false,
+          "origem": "tendência reexaminada por /root/auditor_ban07_final; comentário anterior sozinho não foi prova",
+          "prova": "Pode surgir da confusão entre densidade maior e maior trabalho por kg, mantendo mentalmente um volume em vez da base mássica do modelo. Aqui, a mesma pressão, resfriar aumenta densidade mas reduz v=RT/p e o trabalho do estágio seguinte; a fórmula acima fornece a tendência oposta. Perdas reais de um resfriador não tornam inevitável o aumento e são desprezadas no modelo."
+        }
+      ],
+      "confronto_comentario": "Chave C e justificativas concordam com o efeito direto no modelo. A frase sobre aproximar da compressão isotérmica refere-se à redução de trabalho reversível sob comparação adequada, não à eliminação automática de irreversibilidade ou garantia de rendimento global.",
+      "modelos_e_limites": "Comparação de compressão do mesmo gás/entrada e mesma razão global nas condições explícitas da base prévia. Não é promessa universal para equipamentos reais, eficiências diferentes, perdas auxiliares ou ciclo térmico completo.",
+      "unicidade": "Somente C é verdadeira no alcance expresso. Os demais itens generalizam rendimento, trocam função de equipamento, confundem resfriamento com reversibilidade ou invertem o efeito de trabalho.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Plausibilidade dos mecanismos é teórica, sem psicometria ou dados de alunos.",
+        "Nenhum cálculo de instalação/ciclo real ou teste de compressor executado."
+      ]
+    },
+    {
+      "item": "Q23",
+      "id_artigo": "q-e1-23",
+      "sha256_artigo": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "origem_revisao": "heranca_atribuida_das_contas_com_confronto_proprio_do_modelo_previo_e_opcao_B",
+      "nota_anterior": {
+        "id": "q-e1-23",
+        "sha256_artigo": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+        "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+        "chave_derivada": "C",
+        "demonstracao": "No modelo estacionário usual de compressão de vapor, qL=h1-h4=150 kJ/kg ewin=h2-h1=50 kJ/kg;COP_R=3.",
+        "alternativas": [
+          "A: usa h1/win=8 e ignora entalpia de entrada do evaporador.",
+          "B: razão indevidamente unitária.",
+          "C: efeito frigorífico sobre trabalho.",
+          "D: inverte razão=1/3.",
+          "E: usa calor rejeitado(h2-h3)=200 sobre trabalho, COP da bomba de calor."
+        ],
+        "pontos_a_verificar": [
+          "Modelo usual depende de compressor adiabático e trocas adequadas, trabalho/energias macroscópicas negligenciados onde pertinente; já sustentado no alvo, conferir alcance. Dados didáticos de entalpia não provam viabilidade de refrigerante real."
+        ],
+        "estado": "preliminar; não é veredito da entrega",
+        "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+      },
+      "identidade_e_alcance": {
+        "artigo_atual_igual_preparacao": true,
+        "metodo": "Hash integral próprio coincide com a nota; comando, cinco opções e comentário lidos. O alcance físico e os dados didáticos foram julgados além da identidade.",
+        "derivacao_herdada": "De /root/auditor_aaa: no modelo estacionário usual, qL=h1-h4=150 kJ/kg, win=h2-h1=50 kJ/kg e COP_R=3. Mecanismos numéricos A/D/E também registrados anteriormente; sem rotina numérica repetida."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#base-refrigeracao",
+          "sha256_trecho": "0fb93243171cb7f0d71367a1a3a59cb578094694b2e4334c06f6f9b07eb9b59a",
+          "delimitacao": "Do h3 da âncora até próximo cabeçalho h1–h3.",
+          "alcance": "Primeiro parágrafo define mesma vazão, regime estacionário, DeltaEc/DeltaEp desprezíveis, compressor/válvula adiabáticos, ausência de trabalho não associado ao escoamento inclusive elétrico em evaporador/condensador/válvula, p v incluído em h e ligações sem calor relevante. Define wc, qL, qH, h3≈h4 e COP. Base ligada antes das alternativas."
+        }
+      ],
+      "pontos_decididos": [
+        {
+          "ponto": "Modelo usual depende de compressor adiabático e trocas adequadas, trabalho/energias macroscópicas negligenciados onde pertinente; já sustentado no alvo, conferir alcance. Dados didáticos de entalpia não provam viabilidade de refrigerante real.",
+          "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+          "prova_atual": "O comando fornece a posição de cada estado, as quatro entalpias e o modelo estacionário usual. A base ligada define explicitamente as hipóteses que reduzem os balanços a diferenças de entalpia e exclui trabalhos adicionais nos demais componentes. Assim qL/Win é determinado sem buscar hipóteses somente no comentário posterior.",
+          "coerencia": "h3=h4 fornecido é compatível com a válvula adiabática sem trabalho e sem mudança de energia macroscópica. Simbolicamente qH-qL=(h2-h3)-(h1-h4)=h2-h1=wc nessa igualdade; há fechamento energético, sem contar trabalho de escoamento duas vezes.",
+          "limite_dos_dados": "Entalpias são dados didáticos do problema autoral genérico, em referência comum; não identificam refrigerante, pressões, temperaturas, fases ou irreversibilidades. Aprovação do balanço e do COP calculado não atesta viabilidade de um refrigerante real nem segunda lei de um conjunto de estados não fornecido."
+        }
+      ],
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "8.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "h1/(h2-h1)=400/50=8 usa entalpia de estado no lugar do efeito h1-h4; resultado depende indevidamente da referência energética."
+        },
+        {
+          "letra": "B",
+          "texto": "1.",
+          "correta": false,
+          "origem": "mecanismo explicitado por /root/auditor_ban07_final a partir do comentário atual e da nota genérica",
+          "prova": "Igualar indevidamente calor útil a trabalho recebido, qL=wc, fornece wc/wc=1. Confunde o transporte de calor de um refrigerador com conversão unitária de trabalho em calor e omite os saltos distintos no evaporador e compressor. A base e os dados não fazem essa igualdade."
+        },
+        {
+          "letra": "C",
+          "texto": "3.",
+          "correta": true,
+          "origem": "cálculo herdado de /root/auditor_aaa; hipóteses e alcance fechados nesta revisão",
+          "prova": "(h1-h4)/(h2-h1)=150/50 no modelo previamente definido."
+        },
+        {
+          "letra": "D",
+          "texto": "0,33.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "wc/qL=50/150≈0,33 inverte a definição de COP_R."
+        },
+        {
+          "letra": "E",
+          "texto": "4.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "qH/wc=(h2-h3)/(h2-h1)=200/50=4 é COP da bomba de calor, com efeito útil na fonte quente."
+        }
+      ],
+      "confronto_comentario": "Chave C, diferenças de entalpia, unidades específicas e cinco comentários atuais concordam com os balanços prévios. Não se supõe compressor isentrópico nem se identifica calor transportado com energia absoluta de um estado.",
+      "modelos_e_limites": "Ciclo simples estacionário com uma vazão comum, componentes e trocas delimitados na base. Compressor adiabático, demais modos relevantes excluídos onde indicado; magnitudes específicas por kg e entalpias na mesma referência. Números não provam estados físicos de refrigerante real.",
+      "unicidade": "C única; 8 e 4 usam numeradores diferentes, 0,33 é a razão inversa e 1 impõe igualdade falsa. Não há equivalência após arredondamento.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Ciência numérica herdada permanece de /root/auditor_aaa.",
+        "Sem nova busca de tabelas, modelagem de refrigerante, código de ciclo ou dados de aprendizagem."
+      ]
+    },
+    {
+      "item": "Q27",
+      "id_artigo": "q-e1-27",
+      "sha256_artigo": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "origem_revisao": "heranca_atribuida_da_igualdade_de_razoes_com_confronto_proprio_do_criterio_de_minimo",
+      "nota_anterior": {
+        "id": "q-e1-27",
+        "sha256_artigo": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+        "etapa": "enunciado_e_alternativas_lidos_antes_do_comentario",
+        "chave_derivada": "A",
+        "demonstracao": "Razões iguais:pi/p1=p2/pi,logo pi²=1*16 e pi=4bar absoluto; raiz negativa inadmissível.",
+        "alternativas": [
+          "A: média geométrica/razões4e4.",
+          "B: média aritmética das pressões.",
+          "C: divide indevidamente raiz ou usa razão incorreta.",
+          "D: sem repartição da compressão em dois estágios.",
+          "E: metade da pressão final, não mesma razão."
+        ],
+        "pontos_a_verificar": [
+          "A igualdade de razões já determina pi; a afirmação de trabalho mínimo requer condições do modelo ideal com intercooling perfeito do alvo. Não supor mínimo universal para quaisquer capacidades/eficiências diferentes."
+        ],
+        "estado": "preliminar; não é veredito da entrega",
+        "confronto_comentario": "Comentário/justificativas lidos após derivação; chave coincide. Pontos de suficiência, plausibilidade e escopo permanecem anotados para diagnóstico, sem veredito."
+      },
+      "identidade_e_alcance": {
+        "artigo_atual_igual_preparacao": true,
+        "metodo": "Hash integral próprio coincide com a preparação; comando, cinco opções e comentário atuais lidos. O resultado da igualdade de razões é herdado, e a afirmação de mínimo foi julgada pelo modelo prévio, não pela identidade.",
+        "derivacao_herdada": "De /root/auditor_aaa: pi/p1=p3/pi implica pi²=p1 p3; pressões 1 e 16 bar absolutos dão pi=4 bar absolutos, com raiz negativa inadmissível. Não se repetiu uma rotina numérica."
+      },
+      "bases_antes_da_tentativa": [
+        {
+          "href": "#base-compressao-estagios",
+          "sha256_trecho": "a35d085fb8c2a5d6df63cf38468fbb118204a700cfe57987881973527ab6088b",
+          "alcance": "Mesma base atual lida em Q22: dois compressores adiabáticos permanentes, mesmo gás ideal de composição fixa, cp/cv constantes, mesma vazão/eficiência isentrópica constante, sem perdas de pressão/fase/separação e DeltaEc/DeltaEp desprezíveis; resfriamento devolve a T1, p1/p3 absolutas fixas. Expressão de trabalho e condição de mínimo são fornecidas antes da tentativa."
+        }
+      ],
+      "pontos_decididos": [
+        {
+          "ponto": "A igualdade de razões já determina pi; a afirmação de trabalho mínimo requer condições do modelo ideal com intercooling perfeito do alvo. Não supor mínimo universal para quaisquer capacidades/eficiências diferentes.",
+          "decisao": "RESOLVIDO_SEM_AJUSTE_OBRIGATORIO",
+          "prova_atual": "O comando declara compressão ideal, resfriamento perfeito e razões iguais; essa igualdade já determina a pressão intermediária. A base ligada antes das opções explicita as condições equivalentes e prova o mínimo do modelo. O comentário atual limita a conclusão a estágios equivalentes, sem prometer ótimo universal.",
+          "limite": "Eficiências ou temperaturas de entrada diferentes, propriedades variáveis, perdas de pressão e outros objetivos/consumos podem deslocar o ótimo. A igualdade de razões não é imposta a qualquer compressor industrial."
+        }
+      ],
+      "demonstracao_atual": {
+        "autor": "/root/auditor_ban07_final",
+        "natureza": "Conferência simbólica pontual do alcance de trabalho mínimo; não nova execução do cálculo preservado",
+        "prova_do_minimo": "Na expressão prévia wtotal=K[(pi/p1)^a+(p3/pi)^a-2], K=cp T1/eta_c>0 e a=(k-1)/k>0. Defina X=(pi/p1)^a e Y=(p3/pi)^a. XY=(p3/p1)^a é fixo e positivo; X+Y>=2 sqrt(XY), com igualdade apenas X=Y. Assim, com p1<pi<p3, o mínimo global do modelo ocorre para pi/p1=p3/pi, levando à média geométrica positiva da memória anterior.",
+        "eficiencias_diferentes": "Com coeficientes distintos A=cp T_entrada,1/eta1 e B=cp T_entrada,2/eta2, o termo a minimizar teria forma A X+B Y. A condição de igualdade ponderada é A X=B Y, que só reduz a X=Y se A=B. Isto demonstra o motivo de não universalizar o mínimo a eficiências/temperaturas distintas, sem inventar um caso numérico novo.",
+        "alcance": "Não é necessário assumir reversibilidade para todo compressor de eficiência comum constante; o comando ideal é caso compatível. A prova não usa pressão manométrica nem confunde média de pressões com igualdade de razões."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "4 bar absolutos.",
+          "correta": true,
+          "origem": "derivação herdada de /root/auditor_aaa; alcance do mínimo verificado nesta revisão",
+          "prova": "Raiz positiva de p1 p3. Razões 4 e 4; pressão intermediária interna ao intervalo e minimizante nas condições equivalentes."
+        },
+        {
+          "letra": "B",
+          "texto": "8,5 bar.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "(p1+p3)/2 é média aritmética, que equaliza incrementos de pressão em vez das razões e não minimiza a soma do modelo."
+        },
+        {
+          "letra": "C",
+          "texto": "2 bar.",
+          "correta": false,
+          "origem": "mecanismo precisado por /root/auditor_ban07_final a partir da nota anterior",
+          "prova": "Aplicar mais uma divisão por 2 ao resultado da divisão em duas razões iguais, 4/2=2, conta o número de estágios duas vezes. A pressão proposta gera razões 2 e 8, não iguais. É erro concreto de repartição; a nota anterior não especificava a operação completa."
+        },
+        {
+          "letra": "D",
+          "texto": "16 bar.",
+          "correta": false,
+          "origem": "juízo herdado de /root/auditor_aaa com variável confundida explicitada",
+          "prova": "Confunde pressão intermediária com final; o segundo estágio teria razão 1 e não repartiria a compressão."
+        },
+        {
+          "letra": "E",
+          "texto": "8 bar.",
+          "correta": false,
+          "origem": "mecanismo herdado de /root/auditor_aaa e comentário atual conferido",
+          "prova": "p3/2 toma metade da pressão final em vez de igualar razões; produz razões 8 e 2."
+        }
+      ],
+      "confronto_comentario": "Gabarito A e álgebra da igualdade de razões concordam com a memória. O comentário atual ressalva condições equivalentes e resfriamento perfeito; a demonstração anterior à tentativa no alvo sustenta a palavra minimiza. Não depende apenas de comentário posterior para esse alcance.",
+      "modelos_e_limites": "Pressões absolutas, dois estágios equivalentes e modelo explicitado na base prévia. Igualdade de razões dá média geométrica; o mínimo exige o mesmo coeficiente positivo de trabalho nos estágios e ausência das perdas excluídas. Não se afirma ótimo geral de instalação real.",
+      "unicidade": "A única satisfaz a igualdade de razões e o mínimo delimitado. Demais alternativas não são equivalentes por unidade ou arredondamento.",
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN07",
+      "obrigacoes": [],
+      "limites": [
+        "Prova numérica original permanece atribuída; nova prova é simbólica e restrita ao ponto de alcance.",
+        "Sem curva de compressor real, otimização com perdas ou dados de aprendizagem."
+      ]
+    }
+  ],
+  "cobertura": {
+    "previstos": 4,
+    "concluidos": 4,
+    "ids_concluidos": [
+      "q-e1-17",
+      "q-e1-22",
+      "q-e1-23",
+      "q-e1-27"
+    ],
+    "pendentes": [],
+    "opcoes_examinadas": 20,
+    "pontos_a_verificar_decididos": 4,
+    "novos_ajustes_obrigatorios": 0
+  },
+  "libera_proximo_id": false,
+  "limites": [
+    "Somente este parecer JSON é editado; produto, controle e outros pareceres preservados.",
+    "Sem aprovação global de BAN-07, classificação avançada do curso, piloto ou certificação externa."
+  ],
+  "resumo": "Q17 aceito na base cíclica comum sem armazenamento; Q22 na comparação de compressão com condições/perdas delimitadas; Q23 pelo modelo estacionário prévio e dados didáticos, sem validar refrigerante real; Q27 por igualdade de razões e mínimo do modelo de estágios equivalentes. Memórias anteriores atribuídas e mecanismos que eram genéricos foram explicitados. Nenhum ajuste obrigatório novo neste bloco.",
+  "decisao_de_liberacao": "NÃO: quatro itens concluídos no alcance declarado, sem parecer global de BAN-07 ou liberação de outro ID."
+}

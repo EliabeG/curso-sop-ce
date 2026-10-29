@@ -1,0 +1,3592 @@
+{
+  "versao": "BAN-02 r1",
+  "decisao": "AJUSTES_OBRIGATORIOS",
+  "auditor": "Agente automatizado independente /root/auditor_aaa",
+  "data": "2026-10-27",
+  "fonte_sha256": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e",
+  "inventario_sha256": "740792085cfede3b91131187ebf40ce614b943e296991e05af5d601498ca287f",
+  "metodo": "Confronto manual independente dos190 registros com enunciados, alternativas, notas e resoluções, usando190 notas preparatórias. As7 imagens PNG foram inspecionadas localmente; isso não é teste de navegador. Formato/origem/identificadores/URLs/hashes e testes de infraestrutura têm evidência técnica separada do agente de apoio independente. Julgamentos semânticos abaixo são leitura do Auditor, não resultado automático do validador.",
+  "verificacoes_automaticas_locais": {
+    "registros": 190,
+    "ids_unicos": 190,
+    "campos_presentes": true,
+    "etapas_contagem_coerente": true,
+    "artigos_iguais_a_base": true,
+    "niveis_declarados": {
+      "iniciante": 168,
+      "intermediario": 22
+    },
+    "estimativas_sem_piloto": true,
+    "apoio_fundamental": true
+  },
+  "hashes": {
+    "modulos/e1-termodinamica.html": "b4e2d672c6feecb4289ad73bb9c16000ff5156720698f10153ff93fa0b788a8e",
+    "assets/registro.js": "444a13658e0b869760296826be30267215293b18c3074f283b2a1ea252e828a2",
+    "assets/curso.js": "81728c9fd1e96b738410e6b51cf4ab3ed785fb17753e68a988c1dcf236d8f899",
+    "assets/curso.css": "b8ded6abc4548f378daab2e299a8a55ba81e8841c41049133a84d93848ee3eaa",
+    "auditoria/termodinamica/inventario/inventario-questoes.json": "740792085cfede3b91131187ebf40ce614b943e296991e05af5d601498ca287f",
+    "auditoria/termodinamica/inventario/inventario.schema.json": "c71033464d54e71e61d4dcbae56847a88720e5ff937c1e1f7179005ab22d149b",
+    "auditoria/termodinamica/inventario/validar-inventario.mjs": "ddc8a6831422a868fb5a8b15b2f6653325f6644acf4f5c64dbf35bb0d2369fdd",
+    "auditoria/termodinamica/inventario/LEIA-ME.md": "cdcd7e965bdc4a998b6e2fa784a53f84f295abcf9ade2d06ce62fff71d072449",
+    "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md": "508d0d2f17d8220d9b69eee8bd60e71c6999bb56ffdd7ff9547dc26174a94c2d"
+  },
+  "achados": [
+    {
+      "id": "R1-A",
+      "itens": [
+        "q-e1-16",
+        "cr-e1-45",
+        "av-e1-45"
+      ],
+      "campos": [
+        "exposicao_previa.relacoes.evidencia",
+        "raciocinio.etapas",
+        "hipoteses.explicitadas",
+        "vinculo_competencias.alcance"
+      ],
+      "problema": "A fonte AV45 tem QH=1000 kJ e rejeição mínima500 kJ. Q16/CR45/AV45 descrevem1000 J e/ou500 J, erro por fator1000, repetido em passos/hipóteses/alcance e relações.",
+      "acao": "Corrigir apenas metadados derivados relativos a AV45 para kJ e regenerar resumo; preservar números corretos de outros itens como CR42 (1000J/3000J).",
+      "fonte": "av-e1-45"
+    },
+    {
+      "id": "R1-B",
+      "itens": [
+        "cr-e1-09",
+        "cr-e1-24",
+        "cr-e1-79"
+      ],
+      "campos": [
+        "nivel",
+        "raciocinio",
+        "vinculo_competencias.alcance",
+        "metodo",
+        "INVENTARIO_QUESTOES.md"
+      ],
+      "problema": "A estimativa intermediária conta crítica das ressalvas e reconhecimento de insuficiência como etapas exigidas/avaliadas, mas CR09/CR24 recebem somente C/E e CR79 uma alternativa. Notas e comentário fornecem a crítica; não há resposta que peça/avalie sua formulação. A ressalva global não torna esse enriquecimento uma tarefa medida pelo item.",
+      "acao": "Classificar o nível e enumerar etapas pela tarefa atualmente solicitada, sob a leitura condicionada esperada da prova. Preservar ambiguidade, interpretação e valor da leitura crítica nos campos de revisão/hipóteses/limites, separados de capacidade exigida ou avaliada. Recalcular estatísticas; não criar um instrumento novo neste ID."
+    },
+    {
+      "id": "R1-C",
+      "itens": [
+        "av-e1-11",
+        "av-e1-26",
+        "av-e1-30",
+        "av-e1-33",
+        "av-e1-39",
+        "av-e1-45",
+        "av-e1-53",
+        "av-e1-56",
+        "av-e1-61",
+        "av-e1-77"
+      ],
+      "campos": [
+        "pre_requisitos"
+      ],
+      "problema": "Pré-requisitos foram parcialmente herdados da CR de origem e não revisados para a tarefa AV. AV11 inclui unidades de potência/energia; AV26 conversão kcal/kJ; AV30 leitura pV, embora processo e dados bastem no texto; AV39 conversão cal/J; AV45 conversão °C/K; AV61 volume morto/reexpansão apesar de declarar que não exige esse modelo. Há omissões materiais: AV33 requer entropia/segunda lei, AV53 redução percentual, AV56 Rankine e AV77 balanço cíclico/primeira lei.",
+      "acao": "Revisar os pré-requisitos individuais acima: retirar exigências ausentes da tarefa ou identificá-las apenas como contexto opcional fora do campo obrigatório; incluir conhecimentos necessários omitidos. Rever as demais AV pelo mesmo critério para não propagar listas por pareamento. Não basta citar genericamente o tema; o guia exige conhecimento necessário."
+    },
+    {
+      "id": "R1-D",
+      "itens": [
+        "av-e1-57"
+      ],
+      "campos": [
+        "hipoteses.explicitadas"
+      ],
+      "problema": "A fonte restringe expressamente a fórmula ao Brayton ideal com calores específicos constantes. O campo explicitadas registra só fórmula e fator de pressão e omite a restrição de calores constantes; limites não a recuperam.",
+      "acao": "Registrar o modelo Brayton ideal e calores específicos constantes como hipóteses expressas da fonte, mantendo que a tarefa efetiva é uma substituição com fator já dado."
+    }
+  ],
+  "itens": [
+    {
+      "id": "q-e1-01",
+      "sha256_artigo": "5b00514a00ab632fdfa07f26d110c2bf0c6c41f28214191977b2fe6f0ae402d7",
+      "sha256_metadados": "95b547a0d10b8536ce2f630cb81dd65cde45b1932f4bf5adcb9dd471f1638aba",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Recipiente vedado móvel que recebe calor: fechado com energia permitida, não isolado. Fronteira já descrita."
+    },
+    {
+      "id": "q-e1-02",
+      "sha256_artigo": "ab8e322acf56c6c18183c82d5b8b0b2b8e895c134e6ea7581a0d0b8ccb4d5d4f",
+      "sha256_metadados": "89f4b6dce76ff99f74687419cf202239443523451fe6fd0e4e6a64be75fa0268",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Manométrica200+atmosférica100=absoluta300 kPa para EOS."
+    },
+    {
+      "id": "q-e1-03",
+      "sha256_artigo": "39eb37eee9d29359a2140b9d94c28278c685cf05b99d17f766b53d7cbdb05616",
+      "sha256_metadados": "d95605631977a506c7b11081d922229942dd8a22bb03ea45c836a751c5258045",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "T e p são intensivas; distinguir de massa/energia/volume total."
+    },
+    {
+      "id": "q-e1-04",
+      "sha256_artigo": "48ca2eb118a4ce3b945daf608a0b41e67338ec05f803fb3b29bcc300ed8f142b",
+      "sha256_metadados": "1f8f34267bab36cb9e85a7df58aead158da855b6df5d1d574fb449b7a52c233c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Mistura saturada já declarada; hf500,hg2500,h1000 dados: x=0,25. Sem localizar estado ou consultar tabela."
+    },
+    {
+      "id": "q-e1-05",
+      "sha256_artigo": "c0b44390dd3bfc46730f2308f252d2b6aa870114f336df0b6d28004c0fbc96fb",
+      "sha256_metadados": "5616f4234b8c6b8ba6c322fd7e56aeaf6b85890266916071f3dd463834b9ef71",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Título não definido para vapor superaquecido; identificar afirmação incorreta."
+    },
+    {
+      "id": "q-e1-06",
+      "sha256_artigo": "b5198addbf901253a2fa8f0bd10483417ee502426480ebd9db042379bd911892",
+      "sha256_metadados": "6d08cb1907e40d85aa1eba418e12695d6d2006fe58e4176c967cbfdcb2a307d0",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "p=mRT/V com todos dados/R fornecidos:100 kPa; compatibilidade kJ/m³."
+    },
+    {
+      "id": "q-e1-07",
+      "sha256_artigo": "d5f76870b3e0ce1e099b232f0f407f771a06182210946fabc70af3e7f878825a",
+      "sha256_metadados": "e25fadc7d3533a266ad4281d55f99cac939bee420f56fc1fd3f5bb1d8cd3ab3e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Fechado recebe Q500 e produz W200, EC/EP desprezíveis: ΔU300. Sem escolher fronteira/modelo."
+    },
+    {
+      "id": "q-e1-08",
+      "sha256_artigo": "38c9be48585810f0334e07dd3869a1ea469dd7efdb9a869a406a8f42aa2bd4e7",
+      "sha256_metadados": "3e8108cdac1b180aa9aed2da93a42e739f97c0704b7c8314d091a1d66cb84eb8",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Expansão quasiestática isobárica, p200 ΔV0,2: W40 kJ."
+    },
+    {
+      "id": "q-e1-09",
+      "sha256_artigo": "0599ef026688971f3ddf099fd55133e22b51f6eaf2ac070acacdcf32f11e8732",
+      "sha256_metadados": "d4a8751a4289eb781b96e35530496ef1aff0050c25596888d2929950bb4874f2",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Retângulo pV horário: extrair diferenças 100kPa e2m³, área200kJ produzidos. Figura/SVG contém dados necessários também descritos no texto acessível."
+    },
+    {
+      "id": "q-e1-10",
+      "sha256_artigo": "aeb427a4ebc2b42fd02903a576e77183f7055790b47ba3c4ffc0afef33917af0",
+      "sha256_metadados": "73529391b2f8be00870c5361a9b0a5cf221b81c1fe5dd1688b8ceeccd679a275",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Válvula permanente adiabática sem trabalho e mudanças EC/EP pequenas explícitas: h1≈h2. Ajuste BAN01 preservado."
+    },
+    {
+      "id": "q-e1-11",
+      "sha256_artigo": "7a21a192afaf512a12dbd8cf14a0a46a56fb72cc58234672fdc686dcd4263b58",
+      "sha256_metadados": "e349b838b865e98396cd5c818d175e79b1fc160b678195751674d4fab9b5b749",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Turbina permanente adiabática, EC/EP desprezíveis e h dadas:2×400=800kW."
+    },
+    {
+      "id": "q-e1-12",
+      "sha256_artigo": "ecbcb65310fd3e093135525a3457cba8a465411d89e605a80494d666bcd40913",
+      "sha256_metadados": "f5fe6b04a4bbbc7c92090ec350d4f31b63e5a09a0363029dbaba714d9e3579eb",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Bomba ideal com v fornecido, aproximação incompressível na solução: win magnitude positiva=0,001×500=0,5. Ajuste de sinal BAN01 preservado."
+    },
+    {
+      "id": "q-e1-13",
+      "sha256_artigo": "405d677239ba33e510f59cc11d22251c794fad0ba3f5ecd8c3c1d632c0b80a6f",
+      "sha256_metadados": "b58a0712ed030aba00579e059f24cb8cabc9dc935aa20e726bbaad10d7745fad",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Julgar calor/trabalho de caminho, h=u+pv e ΔU do ciclo zero; três conceitos, sem modelar sistema novo."
+    },
+    {
+      "id": "q-e1-14",
+      "sha256_artigo": "45dc49893b507c9b3dfe093bde574d3728673f2206998b2539523eb2a38a46e0",
+      "sha256_metadados": "b429699bf762a80465525bc45d7d5b6862fbc4f506eed41271ddc74d00b25380",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Clausius permite refrigerador frio→quente com trabalho; sem cálculo de desempenho."
+    },
+    {
+      "id": "q-e1-15",
+      "sha256_artigo": "67967ac19a16d6167266255da06d674c528b9ae5aaaf8209650fe58a28b1e6f7",
+      "sha256_metadados": "14aa5c7daceb3e7169d9ae5a769d9b73d6e1a403ef36410b63c074d95c4eaac3",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "QH1000 QL650→W350 eη35%."
+    },
+    {
+      "id": "q-e1-16",
+      "sha256_artigo": "25c2b67fc2b4b2021dbb5240ceea18631b5423417121e4e41ea83f56677867e4",
+      "sha256_metadados": "3ec6a5c797b334c039294f8f98ce5138b8cd573030d51ddec9f7ebb9b51a4a06",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-A"
+      ],
+      "observacao_independente": "Carnot entre600/300 K:50%."
+    },
+    {
+      "id": "q-e1-17",
+      "sha256_artigo": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "sha256_metadados": "0408e2ad8c76945f8cb1c17e949008b4b97dc8ce0a53fc598b11d14caaed364c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "COP900/300=3 e calor rejeitado900+300=1200."
+    },
+    {
+      "id": "q-e1-18",
+      "sha256_artigo": "d67f69d7ad9efaf52be364edaf5731708736f05d2bd0d8de09b8ff1e0f6ae788",
+      "sha256_metadados": "2d53e1211d78d7e24df04ac91fa81e36664427d7bb8a9476cc94f088f76c8eb5",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Isolado pode gerar S; adiabático não implica isentrópico; parte pode perder S com calor."
+    },
+    {
+      "id": "q-e1-19",
+      "sha256_artigo": "78f91e1d3d64a4e588f3cbbc33402a3d0d588ef41c7380cfb3d0e0dc41c5e66a",
+      "sha256_metadados": "f7f433d775cfcb3fcd469174e1dd969b767771c0a3d3729010d78cf6d5096dde",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Quedas isentrópica500/real400 dadas:ηt0,80."
+    },
+    {
+      "id": "q-e1-20",
+      "sha256_artigo": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "sha256_metadados": "94991f10589db01e753b83e9a3ac7f74da56b2939adb2a402091c1dc76cca9d0",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Ordem dos equipamentos do Rankine a partir da bomba, sem calcular estados."
+    },
+    {
+      "id": "q-e1-21",
+      "sha256_artigo": "0e539a41f3b40e630c62319298dcc52790982c81ce2c35a43bd03d805c84df01",
+      "sha256_metadados": "a5cd7d67afda0f6063fcf8394bf648b4e5135302efb51f332d2aaaa629af7fb4",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Otto calor aV constante, Diesel ap constante no modelo ar-padrão."
+    },
+    {
+      "id": "q-e1-22",
+      "sha256_artigo": "df7f3739cb394038367ec8cb2a70e4f03193852c8a5b8f455a174406483a8f57",
+      "sha256_metadados": "beff79a0ba337b341fcc14bde86d76e380d6b2bb5e31ce8a0ed1c5e1a7bf08ce",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Inter-resfriamento reduz trabalho para mesma razão nas hipóteses do modelo; não implica eficiência universal."
+    },
+    {
+      "id": "q-e1-23",
+      "sha256_artigo": "65390ab455d4c1fbea3befd46c2913b37c09c62390c0ab549b80eca138b4d8bf",
+      "sha256_metadados": "41a5f8436492399856387e81a3ea756ee8304a45dbcdcd7348b023e6db835716",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Quatro h e mapeamento de estados dados: efeito150, trabalho50, COP3. Sem tabela ou localização de fases."
+    },
+    {
+      "id": "q-e1-24",
+      "sha256_artigo": "653acf125a0c0167a333397610ebba48686c34dc006e501218a6082f08b1d0b7",
+      "sha256_metadados": "a761f8e56b6c0fc220e497233c10229b89298e1ccbb5740ccb6600164c936aa8",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Flamotubular: gases quentes dentro dos tubos."
+    },
+    {
+      "id": "q-e1-25",
+      "sha256_artigo": "c9d499d677bada891b2a9e0ed1d094bc954faa4493bff3bd8fdfddacf52853c3",
+      "sha256_metadados": "ff50465a8d8e67f9db18599cd043a4b6d5d4ee5fea9fac4a19212788cd9e4717",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Permanência é invariância temporal local, não uniformidade espacial."
+    },
+    {
+      "id": "q-e1-26",
+      "sha256_artigo": "349edf6854043fc2e81514636b02628cb1700fee1d58f08adaad23b3712a4035",
+      "sha256_metadados": "b4d494da8f5f41f810d9bea3670af7bbaaa091c9e3aa1d86c824a7f04e2cbf6e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Mesmos números do exemplo resolvido:230°C entre200/300, h2800/3000→2860; não busca tabela real nem caracteriza incerteza."
+    },
+    {
+      "id": "q-e1-27",
+      "sha256_artigo": "2f4941b345371fa0af2d920359a9d82fcca3f09b952dcbe62a563d58f6347345",
+      "sha256_metadados": "cafacdeb43f8ce719096ac9dfedd27f49d53a263dd0b2674cb006cbab0027dae",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Mesma compressão1→16bar do exemplo, dois estágios ideais/resfriamento perfeito/razões iguais dados:pi4bar. Sem derivar ótimo, hipótese de equivalência na solução."
+    },
+    {
+      "id": "q-e1-28",
+      "sha256_artigo": "6ed99a9e44352032d32fc41461384f252986f25f801f6d4af63ac342760f7776",
+      "sha256_metadados": "07ad963f1d55063236f78959d71fc9dfdab16cec94d902d4c9aa68476e2bc60a",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "h3200,h2is2200,h2real2400→queda800/1000=η0,8. Sem buscar saída isentrópica."
+    },
+    {
+      "id": "q-e1-29",
+      "sha256_artigo": "94ae0dde913bc9f2022847ebed6f8e10aca3349bc8b3eb987ca4bf376445b245",
+      "sha256_metadados": "cdeeb3c339974b4c8483afb03bbc9155a55638ec77df12ef70aba7df36f760cb",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Reproduz exemplo do trocador, dois fluxos1kg/s eΔs dados−0,20/+0,30→Sger0,10kW/K. Sem obter s de propriedades."
+    },
+    {
+      "id": "q-e1-30",
+      "sha256_artigo": "5ee3b3c1f13e80613d8d2592796a029ea55bd51e66138c6a17487becefe0033d",
+      "sha256_metadados": "45e56a5e01f958affcd81d8de89c386f5aaa3cf1cc8a2c14c354a8bacb8c2ad3",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Válvula adiabática não é necessariamente isentrópica; quatro demais regras conceituais sem projeto/modelagem."
+    },
+    {
+      "id": "cr-e1-01",
+      "sha256_artigo": "b0bd5a4a2f5eaea1f0addd8ed696110ba14d99f10577a411ab0144510090d030",
+      "sha256_metadados": "5c88279f88bfb513ece340d440694ba70400303f448c9046f280b3765f9d249b",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Intensivas independem da massa; mesma amostra homogênea/estado."
+    },
+    {
+      "id": "cr-e1-02",
+      "sha256_artigo": "88330f46201ca197d70fd6060f876cc410a9e7aa2acd355df530ced0e3998266",
+      "sha256_metadados": "1f50f2033720e76d4a18ee2626ca7f6f69f4557684d4d97122a5d353c7e76cbb",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Propriedade de estado tem valor único; contraste com calor/trabalho de caminho."
+    },
+    {
+      "id": "cr-e1-03",
+      "sha256_artigo": "3c6cec66df34c03177c210d957f91842d50148d7d63e506e654b5c82a0b60e6d",
+      "sha256_metadados": "d93b07a4887dfecf483c5a4a99300f56cc90811d8f46a142dc1a8f66cca19fcd",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Energia cinética microscópica também em líquidos/sólidos; não exige cálculo molecular."
+    },
+    {
+      "id": "cr-e1-04",
+      "sha256_artigo": "aa320df8fa7a4638c8a2befa39aac3ce9ea2f8b0b685375ac530e8911c99ea3a",
+      "sha256_metadados": "73a68892ee9719269add4ceb094dfb6213b90402cc1f23026974042f0d91dbcb",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Comparar compressibilidade/dilatação usual; a faixa não está quantificada e a solução restringe condições."
+    },
+    {
+      "id": "cr-e1-05",
+      "sha256_artigo": "0e756b1237367af6d0380d6935ccd0b0bd11fda5fbe0e5dc733f4954759a13c0",
+      "sha256_metadados": "c198629d0e342548dc6177e68025c2de59d911e0fa9f575eea46f1294a897349",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Confrontar lista SI: segundo e kelvin; minuto/Celsius não são unidades de base."
+    },
+    {
+      "id": "cr-e1-06",
+      "sha256_artigo": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+      "sha256_metadados": "e8566cc11701cc89c65f0971c85854c95265e684757154ea6429ae5d07778ba7",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Forma afim de duas escalas lineares; figura ilustra, não fornece dados necessários à resposta."
+    },
+    {
+      "id": "cr-e1-07",
+      "sha256_artigo": "7370a26429d6879438fcf43c0c5200bdd1a64f8318d13de099bad14c957573f1",
+      "sha256_metadados": "02c71cb37a71d6ff41dcbaf432feee70df51928f1198bcaa71a4d5d45dc8f247",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Bourdon mede pressão, não temperatura por líquido em vidro."
+    },
+    {
+      "id": "cr-e1-08",
+      "sha256_artigo": "9f993bc1a26e2239421f1504bf758851b25e5f8e25d4761498d47c6c61528f35",
+      "sha256_metadados": "79618cd39dea4461433e0fdfda4c2fbc55c373571d64b5666a489c981ae05913",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Usar span=superior−inferior: 50+100=150 °C; intervalo."
+    },
+    {
+      "id": "cr-e1-09",
+      "sha256_artigo": "13a9f322f73a5e0da456eaa3b8accc36d53cc56bafea42eb7c41d07d1b93a1e7",
+      "sha256_metadados": "2aba2966b7c517e0804b131d90b4736db1e7b776750b1030b04fc214887a5d2c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-B"
+      ],
+      "observacao_independente": "Ambiguidade SI versus unidade de base explicitada em nota; gabarito oficial não resolve redação."
+    },
+    {
+      "id": "cr-e1-10",
+      "sha256_artigo": "a2f8e4e1407748aa1e52b5aa4b9dfcb53ce561c81993d96af7752ef8a0de0a1b",
+      "sha256_metadados": "fe7cce85e721dcd7ffbda435d9d6200873142aba1fb66c137a8349dc2d8233d6",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Densidade intensiva pela invariância m/V ao dividir amostra homogênea."
+    },
+    {
+      "id": "cr-e1-11",
+      "sha256_artigo": "25f574ce82e77fd539abacb0d0a60d84bebed544b5a2d39bb494901b3e3c98e7",
+      "sha256_metadados": "fc5e89572b9e0365ca4df9e62dae5dd54d4acfda59c13069f72a43bceb604289",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Kelvin como unidade de temperatura termodinâmica."
+    },
+    {
+      "id": "cr-e1-12",
+      "sha256_artigo": "a25e2c7ffcfd139ecdebb4cdfa23c003c524f926171f16a18d4de4fc0f197740",
+      "sha256_metadados": "5b757615c5d7f713584bfcd96c537b12c86a83308da8441275457f4c796f7278",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Julgar quatro proposições sobre leis e selecionar apenas IV; várias frases não tornam avançado."
+    },
+    {
+      "id": "cr-e1-13",
+      "sha256_artigo": "d038caddab08159beae96c99df97efae278396af24bd3be56009e68c4e311ca1",
+      "sha256_metadados": "24a1cdc5a9a73268f9610f9d80a35bbc6dd83bbeaa58591ea17710e07ea0daa1",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Gás ideal: u depende de T; pressão isolada não fixa u."
+    },
+    {
+      "id": "cr-e1-14",
+      "sha256_artigo": "b892b8303e9bb256c4c34e22804bd33c9dcd18f033b4daefa1987eb035f3e4c9",
+      "sha256_metadados": "c8c298b4bc1e8ee57a764de6db43c06ee4943517741cf08c427053e23b905c12",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Gás ocupa volume disponível sob ausência de impedimentos; não é análise de expansão."
+    },
+    {
+      "id": "cr-e1-15",
+      "sha256_artigo": "6312f29aa7d400f3a1d317df01fe81ccc8ba856aa8a29219f823275145c39e7b",
+      "sha256_metadados": "9317faf92ee5b2938ca3fd53284ba54d508021933871384e6134f3852be722fc",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Modelo cinético elementar usa colisões elásticas; texto genericamente diz materiais gasosos."
+    },
+    {
+      "id": "cr-e1-16",
+      "sha256_artigo": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+      "sha256_metadados": "e0e16e93de90d8447be1feb529e2f824e9158575c47053d55b95958969703cad",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Mesma T fixa psat; razão pv=40/50=0,80, compara 1,25."
+    },
+    {
+      "id": "cr-e1-17",
+      "sha256_artigo": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+      "sha256_metadados": "4be0fe260d3006649a157cf80eb3534d8afd6614db6c4b93e666834011ffbe13",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "50% de umidade corresponde metade do vapor de saturação para mesma T e V; não fração da massa do ar."
+    },
+    {
+      "id": "cr-e1-18",
+      "sha256_artigo": "1ab626bbec5308efdd2a087d9b63f67e6a67022028ba420e91a84e9aa38dd1ea",
+      "sha256_metadados": "8b5d56a691a21595f06a1d3ab67e4260fb05c41b8b3f7aeda16a10290941c29e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "pV deve crescer4; triplicar p e V daria9; massa fixa, processo não determinado."
+    },
+    {
+      "id": "cr-e1-19",
+      "sha256_artigo": "605a3f5541abb9d8c34bd02e8963dfc8ba6e18dc30a01b473946c84bc9d72597",
+      "sha256_metadados": "1dbc5dba2bc971822803d9b0a0f40014d29cd86f8bc9a204d6e990dc2a67f5de",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Calcular p=nRT/V≈0,9506 atm, comparar0,94; unidades R fornecidas."
+    },
+    {
+      "id": "cr-e1-20",
+      "sha256_artigo": "1da42a8241671bf9ed59d7c960412f5ed805e2fbb8ee0c5c210092111704e623",
+      "sha256_metadados": "c23be12dde0de2111cb159a10005f1b386eec0d124e2558ae0280035133e5846",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Extrapolação ideal a p constante positiva dariaV→0; não descreve gás real até0K."
+    },
+    {
+      "id": "cr-e1-21",
+      "sha256_artigo": "3338053d71662c8528680b4b7449ca65d314abfb71a83b05940f5adb6adefa31",
+      "sha256_metadados": "c8697695fbf779e88a7bb3c89d4ded0821549eb11e8b2079ec771372fd0a8c1c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "p,V,T descrevem gás; quantidade/composição fixas reduzem independência."
+    },
+    {
+      "id": "cr-e1-22",
+      "sha256_artigo": "4039582bcec1fcbb3f7baf160416f14892244955a67594c583c4660adf138a80",
+      "sha256_metadados": "8023607261a1bcf4fa5d92328182b92ef78f17fce4a25e9ef4cb27eebd2f4c80",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Interpretar Z≠1 como desvio ideal, sem calcular propriedades reais."
+    },
+    {
+      "id": "cr-e1-23",
+      "sha256_artigo": "2d802855e9017eea01af0f2a2e3f14d68e5a8ce7c02f49fc9ffeabceab716a6e",
+      "sha256_metadados": "66c7d83b841bad08014aabc942be7cc16a460b8bc66791a2ea6e93d6421867b3",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Condições usuais de idealidade: baixa pressão/alta T; recipiente desenhado não é necessário."
+    },
+    {
+      "id": "cr-e1-24",
+      "sha256_artigo": "971cdc5e085473152882d4c3b22358f7cfbab8b44206cd60bc0c7f399f2a45b2",
+      "sha256_metadados": "95bc4cd277d481bc8717ed839d5a143f739f59846b491dfab83cb06fcdaba206",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-B"
+      ],
+      "observacao_independente": "Literal compara gás e água sem dados; interpretação termométrica exige mesmo gás/n fixo, conversãoK e razão."
+    },
+    {
+      "id": "cr-e1-25",
+      "sha256_artigo": "75a9939ea48fec2f6568b7a474df1051f7cb5ccaebf5eaab5e2cdf6a3f59705e",
+      "sha256_metadados": "22c08cf3e8f6e282883fc1abf0fb82b8c90159ed3914c1560f897d4f7af04422",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "T2/T1=2×1,5=3; distinguir final300% de aumento200%; gás ideal n fixo, temperaturas absolutas."
+    },
+    {
+      "id": "cr-e1-26",
+      "sha256_artigo": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+      "sha256_metadados": "0f3b13555b1ad7a9be43fe6d0056213296df77eb60fe387514afd02b8cc42e5b",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Converter400kJ→kcal, trabalho entra e calor sai, calcularΔU, comparar limite; despreza EC/EP implícito."
+    },
+    {
+      "id": "cr-e1-27",
+      "sha256_artigo": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+      "sha256_metadados": "c0531ee1a1cab428524d4d0b0fa8785ed302f31a4d808f2eb1d50e70e176cde0",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Q0 e trabalho de compressão elevaU/T no gás ideal; idealidade e EC/EP só resolução."
+    },
+    {
+      "id": "cr-e1-28",
+      "sha256_artigo": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+      "sha256_metadados": "72a66d0dd0fdd3b994ca6f43795cc80c0110a9a180f7d33850f0ca39b617681c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Converter200cal, calcularΔU490, somarUi100→Uf590; fonte de quase duplicação AV28."
+    },
+    {
+      "id": "cr-e1-29",
+      "sha256_artigo": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+      "sha256_metadados": "5f2f3cf8c46c319883d8767c6d0558d79cb40755fa6b29d7a6b881e2ddfafeb5",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "W=pΔV negativo, Q negativo, ΔU=−900J; comparar sinal/valor."
+    },
+    {
+      "id": "cr-e1-30",
+      "sha256_artigo": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+      "sha256_metadados": "e1214bf645838b8e61f40d89a36cd4004aa5cd27c1da88580c0f70789f0bc2f7",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Identificar isotérmico em tabela/figura e gás ideal⇒ΔU0, Q=W; distinguir processo de ciclo."
+    },
+    {
+      "id": "cr-e1-31",
+      "sha256_artigo": "e33a863be630fc055c5af33bcb8c7d0cde6f2f3fcff3f43b83814e943e70552e",
+      "sha256_metadados": "c3c7dee3dde4669a5bf59b92d5253916541473e1862b3ff296ae3bd45983ef28",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Poder calorífico é calor liberado não absorvido; PCS/PCI ampliado na resolução."
+    },
+    {
+      "id": "cr-e1-32",
+      "sha256_artigo": "4677e514a72bd2d54fcf930116afe6551ca3cc75d4b32db373c47e7ab0c16541",
+      "sha256_metadados": "e3feb6d1948f5f93c0274047699e329b05437bb90e111469f39c96effc95aa4e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Reação inversa troca sinal deΔH com estados correspondentes; Q=ΔH exigepconst e só trabalho expansão."
+    },
+    {
+      "id": "cr-e1-33",
+      "sha256_artigo": "5f4e940c5e6629741675ba3ad6a93add2967221e8535181e7562beb91464da9b",
+      "sha256_metadados": "fb5f40606d637a90999cdbab3c31724dd64b5441f524ee5fa9ea31281eb0dc60",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Recipiente rígido/isolado e gás ideal⇒Q=W=0 eΔT0; figura/vácuo deve ser registrado como informação visual."
+    },
+    {
+      "id": "cr-e1-34",
+      "sha256_artigo": "a47876e8910efad89a0cd2db57be4ec07676c9c5d145b139d8e1f6fc76c47f94",
+      "sha256_metadados": "926e7bd66f0f423ede74e2cb71269c2f7f34aa3a5f85c55dbd7126e01c3012c7",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Isocórico elimina só trabalho de fronteira; inferênciaΔU=Q requer não haver outros trabalhos, declarado apenas solução."
+    },
+    {
+      "id": "cr-e1-35",
+      "sha256_artigo": "d53be4ae75a24d7c7369d8b408adf0a4e49cf51e9b315951a1029f3dc0cc4986",
+      "sha256_metadados": "93aad8e9cb48bcfb22bca680248e16df5cfad84feac386475495906b2142ddb9",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Adiabático fechado⇒ΔU=−W seΔEC/EP desprezíveis; condição aparece só solução."
+    },
+    {
+      "id": "cr-e1-36",
+      "sha256_artigo": "c5785d05c646b64b1c74d9421e8acda5274eac695fb1d3d6625ad24a6ff19689",
+      "sha256_metadados": "74d1413503e23d106c5f54ba21c6713c5e45f7904e506a93f90f1315f9cfb506",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Adiabático zera calor, não trabalho; contraexemplo pistão isolado."
+    },
+    {
+      "id": "cr-e1-37",
+      "sha256_artigo": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+      "sha256_metadados": "32d189a0c80796d9f12951b21e686af0b2d46fb52c937f7a553936b3dc0603a2",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Mais irreversibilidade reduz capacidade útil sob mesmas condições; gráfico não necessário a cálculo algum."
+    },
+    {
+      "id": "cr-e1-38",
+      "sha256_artigo": "8895b72f34bb0fd12fcad536db449144757e5fef1bcdf29dd409236ee3e8333c",
+      "sha256_metadados": "4b05bbc114e5f13a9d02a67dae52b925924f09f124aad2f50decd606d7275ebd",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Carnot limite entre dois reservatórios e processos reversíveis; não exige derivação."
+    },
+    {
+      "id": "cr-e1-39",
+      "sha256_artigo": "fc8dd066d4dec28e64f9692d21fca0e40e33b418816c05b1af4fb8fcc6b7c5af",
+      "sha256_metadados": "59f002099c5ad905e7e70a1c0ec4d3965f76f1b685a914e9f9d40847074410d8",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Converter350cal=1470J, identificarη1/Qrejeitado0, aplicarKelvinPlanck; única fonte/únicoefeito condicionados."
+    },
+    {
+      "id": "cr-e1-40",
+      "sha256_artigo": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+      "sha256_metadados": "e2218ad15b0e69f336c394e165f5ff4cf0a5576c96a976746d9565ca68cd4dc9",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Usar dh=Tds+vdp, ds0 e vpositivo para sinal; substância simples compressível/composição fixa assumidas."
+    },
+    {
+      "id": "cr-e1-41",
+      "sha256_artigo": "c07f4425a20d5839dd7caa63ac3ecbab78ab16beb4df77b4e84d0af011d11b3e",
+      "sha256_metadados": "fc83812c8974099c78938dd8ddbaff6c1ea755a0b888deecf37f86bf48e24d7d",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Equilíbrio fases: potenciais químicos iguais do mesmo componente; condições térmicas/mecânicas só solução; sem cálculoGibbs."
+    },
+    {
+      "id": "cr-e1-42",
+      "sha256_artigo": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+      "sha256_metadados": "71e9b27efa6391d6307e728201fdaff4475216c19c118406403ff9a82ea4510e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "η1000/3000=33,3%<35%; T750K distrator, não precisaCarnot."
+    },
+    {
+      "id": "cr-e1-43",
+      "sha256_artigo": "3b8417f1d9e4dc6f2c1658d03178ba8bc87cd7c5d2776e0e0af55105554c80f0",
+      "sha256_metadados": "bd03a8172e30cd7b1a075e9a363fb352947cea9a73965af27c871fd21f5648a4",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Entropia da água pode cair com rejeição calor sem violar soma sistema+vizinhança."
+    },
+    {
+      "id": "cr-e1-44",
+      "sha256_artigo": "505d85a9d656cf593526e85643c8cab8269f9bac8c23b2f5c4736b700afaf3f2",
+      "sha256_metadados": "f7e994010400ff49d31f11d2d48980e369e5e8e17032c3516b385afceb9364fb",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Distinguir etapa adiabática de rendimento ciclo; ciclo todoQ0 implicaWlíq0."
+    },
+    {
+      "id": "cr-e1-45",
+      "sha256_artigo": "9065ac5761995d907afcf86d54c6d04d7e7dd2bd8d7dd70628c8a0c4be31b8ac",
+      "sha256_metadados": "19d03b7b9932846880547bf8a72cc2019954430e62f5bd06da908721ded10cc5",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-A"
+      ],
+      "observacao_independente": "ηreal=(900−90)/900; converter fontesK;ηCarnot≈60%;comparar90%; integra duas leis com dados completos."
+    },
+    {
+      "id": "cr-e1-46",
+      "sha256_artigo": "0bb0f9cd0768570ab457e4ac9c9f3b61af6c1bf59570d242df01cca495353831",
+      "sha256_metadados": "2d8d6781bdc7d70298ff0a5066fa6a9eb52b61ccdde52db1a2976786d2344cb8",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Carnot duas isotérmicas e duas adiabáticas reversíveis."
+    },
+    {
+      "id": "cr-e1-47",
+      "sha256_artigo": "8a99cb5355045fe2477c6438fd7b20b81c7dcc56469a21be72f57806f89f1c7b",
+      "sha256_metadados": "a10c15f472862ec6a720e236bc24ff3e5e7ed3ec193e016ec8bbee03d5bc461c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Seleção geral centrífugo alta vazão versus alternativo; não projeto/otimização."
+    },
+    {
+      "id": "cr-e1-48",
+      "sha256_artigo": "e7585a8c58fabc658d7c57c28e3b2b067a196f8425e8dd2fa569e9ca36a9face",
+      "sha256_metadados": "290bbb2208c5f84227d34a2f4722b02c78cb72b768daed016ebd7205fd0e4636",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Regenerador aquece ar comprimido por exaustão maisquente; condição deT aparece solução."
+    },
+    {
+      "id": "cr-e1-49",
+      "sha256_artigo": "d1d8cab6e7cc2b0a7ac70e6d16fc6112d2aecb30345213927e0a4247d0d948d9",
+      "sha256_metadados": "1bf5b3e84047686b9a2114b3bae535466f10f60141325247093ae8d0e5efcd98",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Perdas de pressão reais nos trechos de troca, rejeição não compressor."
+    },
+    {
+      "id": "cr-e1-50",
+      "sha256_artigo": "b1fd08abfa0ff599e2d0202bf2a471e1972d00d1ea6921e2df2a8bf09d37611c",
+      "sha256_metadados": "a8bd4dd29ae72ff84cdae8ea534466412350c8383929952cde6e4fa77b54bf1d",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Irreversibilidade aumenta compressor e reduz turbina sob mesma base; comparação deestados/rp assumida."
+    },
+    {
+      "id": "cr-e1-51",
+      "sha256_artigo": "e6b795e6c83ad2c125e36b42750e131ddf7da5254fa6cc62f6284b1d5770c098",
+      "sha256_metadados": "de1d9045124ae2755e7d6522c051829295d577c00678300255cf3735cff1514b",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Brayton ideal convencional: isentrópicas/isobáricas, não isotérmicas; idealidade explicitada só solução."
+    },
+    {
+      "id": "cr-e1-52",
+      "sha256_artigo": "0a1e2c76406a3ffa58de5677e0bbec9d7cd938cd89ea83776712f6f2dfa3363d",
+      "sha256_metadados": "cd76fd592fe1bfe3294888e3bc7d9e517f92bf8c32b5762e8090bea48b8de234",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Consumo compressor isolado não garanteη; contraexemplo Wt/Qmantidos, sem modelagem aberta."
+    },
+    {
+      "id": "cr-e1-53",
+      "sha256_artigo": "88a3ce14dae670334b9a1c277c31fd539b3249ab6b9d87865392798967a299b9",
+      "sha256_metadados": "24564f19fb3725a602ebe5e0141817f7effcda86452710432735b7e12152f146",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Regeneração por exaustão preaquece ar; demanda diferençaT adequada."
+    },
+    {
+      "id": "cr-e1-54",
+      "sha256_artigo": "bb4985d1b74f411b0a581709e552f79e82658f88e51bdc208cdf8b2b8e15bc6b",
+      "sha256_metadados": "b8512b499c28fc7293d5d72c6f7be7f9378de90cf0a43ed109f653b246b8fe3e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Características dinâmicos/volumétricos invertidas; seleção qualitativa."
+    },
+    {
+      "id": "cr-e1-55",
+      "sha256_artigo": "cb970e9fdfa77c97a03cb84a6f337676bdd3cbb626819688c2e001c1b98d386a",
+      "sha256_metadados": "bd68722d249fa0fb800f06cdaa5de95af0bb7eb58135cb5de07d517d2da5dcae",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Confrontar quatro processos Brayton; rejeição isobárica; texto tempressão isentrópica em vez compressão."
+    },
+    {
+      "id": "cr-e1-56",
+      "sha256_artigo": "e454a08aa8d566d15fd40d8301e5a41be923c5b8f1b4f5682df242b1df809a25",
+      "sha256_metadados": "881784268fb6aa8c96d5303e7275b3919c346de8b6169cbf489c6c6fc196f5ed",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Associar turbina gásBrayton a geração elétrica."
+    },
+    {
+      "id": "cr-e1-57",
+      "sha256_artigo": "9ec32a8405951828d2a5d18681730df40d18778a177c8a4021f26abf853385a0",
+      "sha256_metadados": "abc02ca2896ddf5c1ad58be9db6263e90b2be10779dd3c291778f9b787abcb45",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "ηBrayton crescecomrp no ideal/kconst; condições limitantes só solução."
+    },
+    {
+      "id": "cr-e1-58",
+      "sha256_artigo": "eab62eaa7a838747c40e753a4ef8229e016ec0ced56a013c098263eb5b36ea08",
+      "sha256_metadados": "a9614b0003cfa44439f2a37111577f02b57498f58fc0e0fbfa372928250a851c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Fase compressão diminuiV aumenta pressão até descarga."
+    },
+    {
+      "id": "cr-e1-59",
+      "sha256_artigo": "4bbfd2e74eed80002b59704eef4106bba6864e504e80864ea9e9a0f562607348",
+      "sha256_metadados": "922bb416007d3d7ab142ffae88e28b389ba7bcef0d3398ea250aa3bec1a0061e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Na compressão propriamente dita ambasválvulas fechadas; sobe depende orientação."
+    },
+    {
+      "id": "cr-e1-60",
+      "sha256_artigo": "2e5d313e3cc3f01ba79fe2854a3bb19e8409d78b7cb02a38a423f0f72ec0d1b7",
+      "sha256_metadados": "ff3fcaeadf9785ef88f262d72f76ba0e92570411041dfa9280c91ec622a0624f",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Descarga alternativo pulsante, distinguir vazão média da instantânea."
+    },
+    {
+      "id": "cr-e1-61",
+      "sha256_artigo": "6196d3ecfd0f16b8c35118d7c02ff27b86b9bceee5b88a8be606550d9bc3b5e0",
+      "sha256_metadados": "a491e4b95d5e9afa5a74e0c6934fe2cff3a1b0671ee4091944091f4dc22635a2",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "ηvol não é sempre1; volume morto/reexpansão e perdas, sem cálculo."
+    },
+    {
+      "id": "cr-e1-62",
+      "sha256_artigo": "3a2c154691493e54a0f5d4cf7ce38cbedfe11f945938d20cc59d4189217db6b6",
+      "sha256_metadados": "aed8e55617053394dcc8b703e9288aab3ee391f35cb4dce6db6fd08013b4abc5",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Na admissão V cresce, admissão aberta/descarga fechada; desce depende orientação."
+    },
+    {
+      "id": "cr-e1-63",
+      "sha256_artigo": "08934e196ed8815785afcb9d000fcc56326e7527b250d5f51f169c0844883f11",
+      "sha256_metadados": "f4ba44f6e207667bc36b037e06051c28b198bf092fe7a79c798e0ee451f7d1ab",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Turbina gás convencionalBrayton e nãoStirling; associação de processos."
+    },
+    {
+      "id": "cr-e1-64",
+      "sha256_artigo": "8d2a2179f5ccc824e3ffbe6c5ffad76e16ad7455b56e283c9be3d2f90834a210",
+      "sha256_metadados": "67a6b777a4ed9586bda780862eba32e0e3a46623e6342a896b7920cf49db3808",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Parafuso ealternativo deslocamento positivo reduzemvolume; sem dimensionamento."
+    },
+    {
+      "id": "cr-e1-65",
+      "sha256_artigo": "7d2096286200bc4cafcfb512f081b4c5515c7e3a290dcb87582567c1170f8522",
+      "sha256_metadados": "693fef176adfbf28be6d6a787d26d13a8dc787b5b2e39d7806eb21466342cec1",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Turbina adiabática produz trabalho com queda h; estacionário/EC/EP declarados só solução."
+    },
+    {
+      "id": "cr-e1-66",
+      "sha256_artigo": "4b194eda06c6ee5215c05177f00ca8f01bbf490fc06d9f53b65df372a45c0bae",
+      "sha256_metadados": "1512924bca99999851d3dc7018af08a7f568e59b1315768d64dce1cee6e1997e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Casco/tubos separa fluidos porparede, não mistura direta."
+    },
+    {
+      "id": "cr-e1-67",
+      "sha256_artigo": "ecddb0148ddc0cbb74ff06eff3e47032ba240626e6c35c01905724ce06026043",
+      "sha256_metadados": "d22bfb9d42a987513e960c7514d1884771cfc4bf31beecf95ca1bddfffbfb83b",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Juntas acomodam dilatação/contração; não calcula tensões ou projeto mecânico."
+    },
+    {
+      "id": "cr-e1-68",
+      "sha256_artigo": "db7da36b75e047ef81dc83ebbfe33ce499b6a2f4c97314ac9a4d5ab5fd9bdaaf",
+      "sha256_metadados": "4f2e2e38afd70b2818479120181fd8f3b294c4e2a6fcd23fa62ae6c846611f42",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Baixa emissividade reduz radiação sob mesmasT/geometria; tabela/densidade defeituosas dispensáveis à pergunta; FON09 aberto."
+    },
+    {
+      "id": "cr-e1-69",
+      "sha256_artigo": "6c621ff003b12f2f67ca92d9a51d8b9ab38ac2ff98588b05e78108f88dbeda9b",
+      "sha256_metadados": "0fa1aba4ddf32aed964e8918aadca2d15c066e8ea94617465a7ede5142f1eafc",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Convecção fluido→parede, condução parede, convecção→outrofluido."
+    },
+    {
+      "id": "cr-e1-70",
+      "sha256_artigo": "f581577d62634979ee5d025e93d96b40bfa4b68dd7c4b70f7c6b71a61444446a",
+      "sha256_metadados": "f2c30645d93c615608e772d8e94f0e6ac4fba351d3d7ea5aa1b9622c07a62cda",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Sentido espontâneo quente→frio, sinal Fourier oposto gradiente."
+    },
+    {
+      "id": "cr-e1-71",
+      "sha256_artigo": "ef1f1de0d3aba6c166381fe3af769f819fe9b9445651a1016de91944291375f2",
+      "sha256_metadados": "a7385f0c62c136424117f0517cdb3adb001e95ca3627c83071ccd7742255e356",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Ventilador/bomba provocam escoamento forçado; não calcula coeficiente."
+    },
+    {
+      "id": "cr-e1-72",
+      "sha256_artigo": "1f8978ee9f14297e3ca0b8323a8c2622d06f2c6b9f921d026ca6bb75d22a0dd4",
+      "sha256_metadados": "dfec005cae23b9da82df889a8db23e5d4ad8a9e331c84d47432264231dbdbf0e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Paralelo entradas mesmoextremo/direção; contraposto contracorrente."
+    },
+    {
+      "id": "cr-e1-73",
+      "sha256_artigo": "c65b0368e6572bc3505c3aac6b1676072cfae06cc781807fe6b96a8ee270420a",
+      "sha256_metadados": "0b1cd909a68094070cbef7e4c9a87e86dd692b93f649c97519e8c669727ce6e5",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Compacto maximiza área porvolume, não minimizaárea."
+    },
+    {
+      "id": "cr-e1-74",
+      "sha256_artigo": "fc277c15bccdcd3178cf209367e5d7f5eb6fadc7446b1a409e5d2b2f90d1bbbd",
+      "sha256_metadados": "8c264a168d1e4eddfb6ac4dc17dde2cfd64e9a5749cdc4104e5a5c123eac7543",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Incrustação dependeoperação/tempo; resistência adicional, semmodelo quantificado."
+    },
+    {
+      "id": "cr-e1-75",
+      "sha256_artigo": "90300e7354993e382db2a2ac18a4f26e6b7055b7e073176542095e436b67e8dd",
+      "sha256_metadados": "509e05b5d89a8d2c52f5adc70014dc480dcb0095befc74f56c2765e68c51c731",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Sinal negativoFourier indica fluxo oposto gradiente, kpositivo."
+    },
+    {
+      "id": "cr-e1-76",
+      "sha256_artigo": "43598c42f864bae79295cfee191095dd8fe691b64a59ffca3a4e4588907a475f",
+      "sha256_metadados": "70d59dd65e06a032f81f15ed21a1d4d777c0d3cfcd3f73f6d59ff157a0ba014f",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Distinguir advecção movimento global de convecção combinada; termos invertidos."
+    },
+    {
+      "id": "cr-e1-77",
+      "sha256_artigo": "902e8ca91003f7f3529280b54cf81b5f91d425a91a142b1bb09ca7876042c6b4",
+      "sha256_metadados": "a119c24c9b5ed09d54361cce8b320b7d0fa4c1c7c07978165e197d22745edc62",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Condensador rejeita calor/condensa; descrição mistura evaporador."
+    },
+    {
+      "id": "cr-e1-78",
+      "sha256_artigo": "cd13d18ed248d752ad0ab84a4504f3782370596c1d564070d9151fd5726dabb8",
+      "sha256_metadados": "3fed7a1bbde43a277727ee203c2fa2c5320e156afb6a7d78c10f02176f4b74e7",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Calor latente alto contribui capacidade; não garante eficiência do sistema, questões desegurança não avaliadas aqui."
+    },
+    {
+      "id": "cr-e1-79",
+      "sha256_artigo": "88ff393f3f2f11423f9d378da4ac20ac9f1aeaa9a9897d66712e1ba4def13b35",
+      "sha256_metadados": "8e3ab8f13d68140ebe7333494ba4d4fdfad38465a4898450fd3ef653baf8af67",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-B"
+      ],
+      "observacao_independente": "Vácuo reduz gás; condução sólida/radiação persistem; predominância radiativa assumida, dados insuficientespara quantificar."
+    },
+    {
+      "id": "cr-e1-80",
+      "sha256_artigo": "50990bf926512b426c3bfe32a82653a3054ede8d738391c674bb23457b8601ae",
+      "sha256_metadados": "e6f722645d7251d87d6b225f0e9a2ba88d79544a51edf8437b35eb7c190346b7",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Extrair V4/A4 dafigura, Qger400W, balancear convecção eTs40°C; semacumulação somente solução."
+    },
+    {
+      "id": "av-e1-01",
+      "sha256_artigo": "fef921d85b9f61c1e2a63b23fa1df1a9479973608dea0c768045e221f31390b5",
+      "sha256_metadados": "3db8906cc0208cd46530fd6cd1196e6493cbc057fc8d222fd6f0b8f4e7e3c0a2",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Selecionar intensivas ao dividir amostra homogênea; mesmas T/p explícitas."
+    },
+    {
+      "id": "av-e1-02",
+      "sha256_artigo": "8b7328a79ca6b50995426770504df6de88f6bf37cf7a3038fef9709847d6bc20",
+      "sha256_metadados": "5f2b490880dd5793246c8872f4d87894d7f5efe9178207c719f3d1ef9b8e8961",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Encontrar afirmação incorreta sobre estado versus caminho; versão do conceito CR02."
+    },
+    {
+      "id": "av-e1-03",
+      "sha256_artigo": "6e8bc6e49193f08a8c5f0ae6b4271720a23a29e7888ecfe6cf83faaa63ff85fa",
+      "sha256_metadados": "143908025c7d8285a7eda2a5f412f2bac8e2cbdfb547dd86497facef40f8d28f",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Julgar três proposições sobre movimento em líquidos/sólidos/gases."
+    },
+    {
+      "id": "av-e1-04",
+      "sha256_artigo": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+      "sha256_metadados": "ad332b182747ccf12c8886479f78062ba381cc5868821df047d1453c2ebdfaaa",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Interpretar incompressibilidade com faixa moderada e longe do crítico explícitas."
+    },
+    {
+      "id": "av-e1-05",
+      "sha256_artigo": "8860a27c54eebc598b479ab61197026acb81cf4d81a143876bfe55fea2a6fa4c",
+      "sha256_metadados": "5ab0ad672ac124929375815808e15ec9b947d9af70b980a7ddb4312bb41ef9d5",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Associar tempo, temperatura e quantidade às três unidades SI."
+    },
+    {
+      "id": "av-e1-06",
+      "sha256_artigo": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d",
+      "sha256_metadados": "eb8882b5a09d6e5ea1e6fe596eba1796b306b19c1c5d0723695003ddd9c2fe1d",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Derivar escala afim por dois pontos e avaliar Y45; pontos numéricos estão no texto, figura não necessária."
+    },
+    {
+      "id": "av-e1-07",
+      "sha256_artigo": "f6c6439615c358a02d91c7dbc1450c5550f193cc38a4af0f5e8c8a2958804251",
+      "sha256_metadados": "683122d0c40a8ca2160e821ebcc4415e6d8e60d7a8cb1cb6f645f49105e5a287",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Instrumento já nomeado Bourdon; identificar pressão."
+    },
+    {
+      "id": "av-e1-08",
+      "sha256_artigo": "5cfa5c0bb56e0ccc235b369110a5343cffd16dbc7d35de410a2d9432355a7d55",
+      "sha256_metadados": "802573ae0bf31fa472a7dd5956627a50222c571b04ad4abd87d47e2126195f71",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Somar limite inferior20 e span80=100°C."
+    },
+    {
+      "id": "av-e1-09",
+      "sha256_artigo": "c132589fa0387abc5108633a2b130632334db4cebf0479b9442bc9158ae78f30",
+      "sha256_metadados": "be234ff3ceef7627c317ee52173f41b6cbb5125c8e0c697ea7cc4efe7f9a387c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Unidade de base e intervalo iguais; converter10°C=283,15K para refutarIII."
+    },
+    {
+      "id": "av-e1-10",
+      "sha256_artigo": "a19c2c5e9dbf69121d4cd0d182b8e7da45130ea405096ad53451e230c79d11a8",
+      "sha256_metadados": "618b32d3bb7a14ece358f677a162b71faf13f075569791328d86baee6c8d82d6",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Calcularρ12/0,015=800 e reconhecer intensiva."
+    },
+    {
+      "id": "av-e1-11",
+      "sha256_artigo": "574b95a7bc7d26adf5ccc8a100cba3b30a3f5f34b9c76a670190cd7c43c5a165",
+      "sha256_metadados": "5c47e6f84c79146628573f6ba6447c79fec125196944c21f445963b3d93a9916",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Relação T=t+273 fornecida;27+273=300K."
+    },
+    {
+      "id": "av-e1-12",
+      "sha256_artigo": "6d4d741b3c2f0be508022e5f24ba0cdbb360c3f0c2ddbb72aca59aebf3efcd6f",
+      "sha256_metadados": "9c54b22c9116723b34a1f893167d9f620a4b58179076cdc3a5f3e11367cdee76",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Associar quatro leis a descrições; não exige balanços."
+    },
+    {
+      "id": "av-e1-13",
+      "sha256_artigo": "67a3276e7a96d89fd1c93db9f3dad1f417bb62dff584b34c4e5df1a406651543",
+      "sha256_metadados": "6f9375d1de1ae55c9c297ef7623bb2209b75bd87e5b92faa5fbcdb4f1b5a6adb",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "ΔU=mcvΔT; gás ideal e cv dado constante,2×0,72×50=72kJ."
+    },
+    {
+      "id": "av-e1-14",
+      "sha256_artigo": "3c811cd41a5553c76a3d79539c529fc0700861c827165f1a490339f0a41b6fcd",
+      "sha256_metadados": "30f8eb60e9efc1bd5a19f7a4b897a294b319e7e7947fdb1f3b769099670a4a8d",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Gás ocupa volume acessível; equilíbrio, ausência barreiras/gravidade explícitos."
+    },
+    {
+      "id": "av-e1-15",
+      "sha256_artigo": "aabe5d8c80218bb2762758349c567671cb06794100899eb42e6c2906cae487a9",
+      "sha256_metadados": "1cc719987cf53dfd6973f62461ee2d42a91b272d2f332093d9c503202730a23b",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Três hipóteses do modelo cinético ideal; colisões elásticas e volume molecular desprezível."
+    },
+    {
+      "id": "av-e1-16",
+      "sha256_artigo": "48ae42d26499f4389ca87b570e9864234c58223277b8b4a16302f7ba808ebdee",
+      "sha256_metadados": "934fb6f40db182722e85b8d9b44cc112cf7ad1028910d6115ce49453b07418ae",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "MesmaT/psat fornecidas; razão60→45=0,75."
+    },
+    {
+      "id": "av-e1-17",
+      "sha256_artigo": "c66e9cab79853753be699d582b606617cf4c832a063a013977b1a5e8d87aa90b",
+      "sha256_metadados": "1e132a15fb570377992de463da8b99fc5b89427769f8b44418991326c09baeee",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "φ50% significa pv=0,5psat(T), não metade massa/pressão total."
+    },
+    {
+      "id": "av-e1-18",
+      "sha256_artigo": "6feba70ee87aff9199ffad1ac540bf98a3f1ac0c02b450069b0aff19de0a6f7e",
+      "sha256_metadados": "9cbc444256852add6b3d33e2c02753dbe885265845cadcb4ad124bdc57e7f112",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Massa eV fixos explícitos; p2=200×450/300=300kPa."
+    },
+    {
+      "id": "av-e1-19",
+      "sha256_artigo": "13db446f2d53ba81a62449e2e82b81d5ddea5db59e27873088c024f9663794c3",
+      "sha256_metadados": "5d17ff13358eead174ec6a4125f516878793243ddd8e94d74ba9e70deb7b34d7",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "p=nRT/V; n,T,V,R compatíveis fornecidos, resultado1atm."
+    },
+    {
+      "id": "av-e1-20",
+      "sha256_artigo": "94f3566318685b05df3cfa5faea26b69850d53ca9290da962c2c9a7acb8aedc3",
+      "sha256_metadados": "bd1fb407aeeae1bca1e813537b6e1442e69d6e1497212837074be4f7cbd0edbc",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Limite V→0 no ideal a p,n constantes; recusar extrapolação física até0K."
+    },
+    {
+      "id": "av-e1-21",
+      "sha256_artigo": "d30c611664194c81700bc047dc72f6f1d9242c9552a394616ba605226c6aba73",
+      "sha256_metadados": "3c8e910db86c097b65e5bd386ca305e0701c93a7ac055f4a65b35301c893799c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Massa/composição fixas: relação pVT deixa duas propriedades independentes; três proposições, sem obter propriedades."
+    },
+    {
+      "id": "av-e1-22",
+      "sha256_artigo": "a60b027d19ccee5b6445c7865ba43a1732ddb069c63592895d523ebb82738e36",
+      "sha256_metadados": "692e22ae75b064ba803e5a83b32e7954416dfb18ccbd146c5c77d0a9ef4bf74f",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Z=180/200=0,9; interpretar afastamento da idealidade. Medidas fornecidas, sem EOS ou estimação."
+    },
+    {
+      "id": "av-e1-23",
+      "sha256_artigo": "52ce7c5b255380dd1c2d876058b8965c9ff3feaa6e373c57f6f8e46bd3db529b",
+      "sha256_metadados": "419d4baa61a2657ad3ed34fc715290bbe26cb0b8c13ebdad7ef4edce63ccd3c7",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Baixa pressão e temperatura alta longe da condensação; figura dispensável para selecionar regime ideal."
+    },
+    {
+      "id": "av-e1-24",
+      "sha256_artigo": "8e27e9a89a7e9cd792555923bc8888441ac0ec412520da31a5b29b2379cf79c6",
+      "sha256_metadados": "1f2046d42e5a6b559fa111b757b9cc8e0dfeefca9aea21b45a2607fc09fdfb28",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Sensor ideal, massa e volume fixos explicitados: p2/p1=360/300=1,2. Remove a ambiguidade física de CR24."
+    },
+    {
+      "id": "av-e1-25",
+      "sha256_artigo": "944eadc933945dd04024af4da9585627d9484f9e2095af98a0efb541c9ff8ba1",
+      "sha256_metadados": "7ac9f95cfffe474b1217522d00e68b3fa0e5f85378ab7db57ca7ab10a4ca7f8c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Mesma transformação de CR25: p dobra, V aumenta 50%, T triplica, aumento de 200%. Não constitui transferência inédita."
+    },
+    {
+      "id": "av-e1-26",
+      "sha256_artigo": "2d44c7a93a3d7cbe464d96fab7a2427fab1ee039ef3eeb272539d7eefe421a74",
+      "sha256_metadados": "114aa7ceca11ad2a66aa3171fdaa42a6ad2c345ece4d4cdb83a8bb5853c07473",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Tanque fechado: trabalho de eixo recebido 600, calor rejeitado 150, sem fronteira/EC/EP; ΔU=450. Figura não acrescenta dado necessário."
+    },
+    {
+      "id": "av-e1-27",
+      "sha256_artigo": "1cac59ad0421ba447b5d28ea97a5b47d99889dda7e6283c3d56d3a4eb05d5db1",
+      "sha256_metadados": "e8ac9fd110fee20ea63788cff0db34e2fd2fe51f3f8cbc045887e326383fcd6f",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Gás ideal fixo adiabático, trabalho recebido e EC/EP desprezíveis explícitos: U/T aumentam. Hipóteses mais completas que CR27."
+    },
+    {
+      "id": "av-e1-28",
+      "sha256_artigo": "5ba6b332f4915122f681d9e816a36d869ac678a9ce1921e5b5d22dac5bfa35ed",
+      "sha256_metadados": "8b3b1404fb5473db6d30340b2acc336552a3f0d3cc2c691ec09bdfc8ddbb334e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Mesmos dados e operações de CR28: Ui=100, Q=200 cal com 4,2 J/cal, W=350 J; Uf=590 J."
+    },
+    {
+      "id": "av-e1-29",
+      "sha256_artigo": "20636340c4eaf5d0230b128cbb6d530369b7b690ff55043e10c36ea77ef0b3a4",
+      "sha256_metadados": "e5652855d250b20928ed22a44cff1281df30370dbb948170d9a3d8838f1237ba",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Fronteira quasiestática p=100 kPa e ΔV=-0,010 m³: W=-1 kJ; Q=-5 leva ΔU=-4. Todas hipóteses fornecidas."
+    },
+    {
+      "id": "av-e1-30",
+      "sha256_artigo": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01",
+      "sha256_metadados": "c80e90f134a05c84e8c0ddb8bbe11f5af8e6eb11396626588e030003bffd4116",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Gás ideal isotérmico, só trabalho de fronteira, EC/EP desprezíveis: ΔU=0 e W=Q=300 kJ. Processo, não ciclo."
+    },
+    {
+      "id": "av-e1-31",
+      "sha256_artigo": "5ad8025f710d611c6b661937f00ff0ab4c9acc366056f9b12fa80fa81c7b8faf",
+      "sha256_metadados": "dcaeb7bab1dcd731c88793619c9547400c4a80bbb8c6b810e48f17defb89cb73",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "PCS versus PCI pelo calor de condensação da água; não exige balanço reativo."
+    },
+    {
+      "id": "av-e1-32",
+      "sha256_artigo": "5d53de738a3e1b78ce907920d3ee56add57516359d4b4f36880aa2caa7d6e500",
+      "sha256_metadados": "6272d0d997562ca5e5f0354cee93ad3d6d637ed4a98fa25554f65dd3df44b807",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Reação inversa entre os mesmos estados: ΔH passa de -80 a +80 e é endotérmica."
+    },
+    {
+      "id": "av-e1-33",
+      "sha256_artigo": "80f3f23218940626a28e00d2090cbfbc30f8ed21cacc9a4600451e0927ae1f12",
+      "sha256_metadados": "d8b7f3f99121b1e0206c298f1352d2879dae7ebc9d01613ffe93720356f3cdb8",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Membrana em tanque rígido isolado com gás ideal/vácuo explicitados: Q=W=0, T constante e S aumenta. Figura ilustrativa; não há cálculo de entropia/propriedades."
+    },
+    {
+      "id": "av-e1-34",
+      "sha256_artigo": "3ae8bcce339a9cfb8899c0dda553455c5cc89fbd8cb6fd39b753b96f7cbcbc20",
+      "sha256_metadados": "6e3dff48df5e9f91ed293cbcdc27fcb9d4a2e5f8a19906043567884ecf6871d8",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Tanque rígido fechado ideal, cv constante fornecido, sem outro trabalho: W=0 e ΔT=144/(2×0,72)=100 K."
+    },
+    {
+      "id": "av-e1-35",
+      "sha256_artigo": "93e57e67f34546f1cf930966cb7afd71fc3a659850be1456bfdb78d22e54d337",
+      "sha256_metadados": "b7adebb3c1af8c7c31f4ef45a7f6347f8b90c2cbf047c1177f0e23bcd1d57597",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Fechado adiabático, EC/EP desprezíveis, ΔU=-120: trabalho produzido positivo +120."
+    },
+    {
+      "id": "av-e1-36",
+      "sha256_artigo": "6b740a5a219f82f11f8e03899fb670df2cc54663545c07731f48643f1edb7285",
+      "sha256_metadados": "750c7fef4c82a94e3d6504c21c61312f3b2dce425aeb1acd8bc6df7717cdffac",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Expansão ideal adiabática reversível: W não é zero; Q=0, U/T caem e S constante; localizar afirmação incorreta."
+    },
+    {
+      "id": "av-e1-37",
+      "sha256_artigo": "ccefde48db15ca2082dd9167469f4953d0ca0778b051d7e6eac6e886ab39e951",
+      "sha256_metadados": "dc1c75aff930f99f3a51057534965839b174a4d8e214db76fb93b881290c0f9e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Fórmula de trabalho perdido T0 Sger fornecida: 300×0,2=60 kJ. Enunciado dispensa gráfico; não mede análise gráfica/exergética avançada."
+    },
+    {
+      "id": "av-e1-38",
+      "sha256_artigo": "4be6c519786ca604598c0799748297d8487fc6b566a57276d02998979e071ffc",
+      "sha256_metadados": "a0e47381b0f9e987898d48d3216b1eb4e9658acb681ac349ca1f9af623c2b1b1",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Carnot 500/300 K: η=40%; sem análise de ciclo real."
+    },
+    {
+      "id": "av-e1-39",
+      "sha256_artigo": "42ffe7852ec1c612a414d4403674cecde23d4f79aea495c7e0feb68d7dd7cf6b",
+      "sha256_metadados": "1f8cfa962a045108002f7b70c9579e44308b46a5530603066b889d50b51eedb5",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Ciclo de efeito único Q=W de uma fonte: primeira lei fecha, segunda proíbe. Não exige modelagem aberta."
+    },
+    {
+      "id": "av-e1-40",
+      "sha256_artigo": "b0eea6e50cfc5d5c03befe2871587f01f350784667829c280e90723526ed7ef8",
+      "sha256_metadados": "822b65e49969ff3b24b43c14c6e0586c4513893ff0c594287dfcffa16d07108a",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "dh=Tds+vdp fornecida; simples compressível isentrópico e v constante explícitos, Δh=0,002×500=1 kJ/kg. Não deriva relações de propriedades."
+    },
+    {
+      "id": "av-e1-41",
+      "sha256_artigo": "a8e35c751d06cd54ab69a365bf3e2e989296dd85b57c4bd8b5f57125f73d0bb9",
+      "sha256_metadados": "dc0ce57a3aa851ee3b00bf685d3769492652621054144fe46128f8bf57c48b36",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Equilíbrio líquido/vapor de substância pura: potenciais químicos iguais, sem derivação ou solução de equilíbrio."
+    },
+    {
+      "id": "av-e1-42",
+      "sha256_artigo": "83c8604cddfbc4d5f0d6782bd8605ff8eb9d462661716b4d69fc2abbdfbb89a9",
+      "sha256_metadados": "b394732472777489a8398d36b36ddbf1bb8fda04817ac3e94654e41f91e12bb1",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Eficiência=1000/4000=25%, dados completos e razão única."
+    },
+    {
+      "id": "av-e1-43",
+      "sha256_artigo": "8d32bb5b9ad7673e2a58d15b3e6ea37751add3e2d9b7b3f3376a390cd3c6ba68",
+      "sha256_metadados": "22b53e2d48539f3acb31f7ab2280e4d3957a3eb5aac580305c1dfe966ad75c1f",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Somar -0,50 da água e +0,60 da vizinhança isolada: +0,10, compatível com segunda lei. Sem calcular entropias a partir de estados."
+    },
+    {
+      "id": "av-e1-44",
+      "sha256_artigo": "192525a6985a995bb6e73ab56148c54fd89b7e2ed2dd7315aaba7db5d56386b9",
+      "sha256_metadados": "3d6a37107ad286f66b1ef6756bdff8ac77ab87a053654e78eb1f093704a8dd21",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Ciclo fechado retorna ao estado inicial, ΔU=0; todas etapas adiabáticas dão Qlíq=0 e, com EC/EP nulas, Wlíq=0. Três proposições."
+    },
+    {
+      "id": "av-e1-45",
+      "sha256_artigo": "0772a1835ec9df7838cf240588d074230a013f24dcfa7b55f67eee3743fb0dc1",
+      "sha256_metadados": "d43f1d5f8bf1b7d3379cc73d73a08fdf2ef7d96100267d92c041a1e26db2520f",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-A",
+        "R1-C"
+      ],
+      "observacao_independente": "Carnot 600/300 dá ηmáx=0,5; QH=1000 limita W a 500 e QL mínimo500. Temperaturas e calor fornecidos."
+    },
+    {
+      "id": "av-e1-46",
+      "sha256_artigo": "0c048ab1b4c1148d9a424b0a9b55a2ddb097ba7fc79dc6a22b04c6447538721b",
+      "sha256_metadados": "ce438130abe383d9ade9d8204060517d1939df304f7633ebc9a9c106abea45da",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Ciclo de Carnot: duas isotérmicas reversíveis e duas adiabáticas reversíveis."
+    },
+    {
+      "id": "av-e1-47",
+      "sha256_artigo": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+      "sha256_metadados": "2239f3ceeda7e0d735e84e1ef2d95bd137897cf4ab9f9f77890d423db7479469",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Orientação geral: centrífugo grande vazão, alternativo vazão menor/alta razão; ressalva explícita sobre curvas. Não seleciona equipamento em curvas."
+    },
+    {
+      "id": "av-e1-48",
+      "sha256_artigo": "334ccfa79935dfb95f1a430e582f35966b6baf3a666aa2fb3516d0f76e6d1c60",
+      "sha256_metadados": "98229bb0a7ac1527a38ef988f973c11d3532b64d3255997e73d3979689613edb",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Exaustão deve estar mais quente que ar comprimido para regeneração passiva; sem efetividade/otimização."
+    },
+    {
+      "id": "av-e1-49",
+      "sha256_artigo": "ba294a58c27857ff270db5bc1300c7823b7bee36997791c77c678e9ecb04d7d1",
+      "sha256_metadados": "9860f98c8e3c6aa426be29a8238f963dbf965b5bfa85fb9626648aa0636eb35c",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Identificar falsa substituição do compressor por trocador passivo; perdas de pressão reais versus isobáricas ideais."
+    },
+    {
+      "id": "av-e1-50",
+      "sha256_artigo": "c10f8ecf5ea5e1579ac8b39b5fd05ae01d6b225a1f95f0404e5c06a494f35d9b",
+      "sha256_metadados": "5c88dc9ba8f8cf9553dbd44ddb4dbb093dabc8fd133fec181b212ad6bc2140dd",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Mesmas entradas/razão de pressão/T da turbina: compressor real consome mais e turbina fornece menos; sem quantificar eficiências."
+    },
+    {
+      "id": "av-e1-51",
+      "sha256_artigo": "f1b1e42824eccf9cdf5c8b7eaec9559bef617e430741ccd7b29b376b20d02445",
+      "sha256_metadados": "cdaaba62a17a9bb0a0aa333769c6c4a5f5d6bec0f2d5a540f1919f94f53aba25",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Brayton ideal: duas isentrópicas e duas isobáricas, não isotérmicas obrigatórias."
+    },
+    {
+      "id": "av-e1-52",
+      "sha256_artigo": "857e03ade94e02060d1f4db104c7e7f11de8396182589d3d1bc64be59351c7a8",
+      "sha256_metadados": "110e427510b6de550a4173a69ebdc2b6f190095ac828f598664922431a19c836",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Trabalho líquido 100-40 e 100-50, divididos por calor200: eficiência de30% a25%; demais valores fixos."
+    },
+    {
+      "id": "av-e1-53",
+      "sha256_artigo": "3c859fe13b792cf611e2971086fa04d5d89e137e1e4dbeef904897984d37378b",
+      "sha256_metadados": "853e1d92d6c429e6df56fc492a2289b9cb28c05d99a058488ba218f3232fcba2",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Calor externo cai300→240, redução20%. Trabalho90 é desnecessário para a pergunta; não calcula regeneração ou otimiza ciclo."
+    },
+    {
+      "id": "av-e1-54",
+      "sha256_artigo": "9aca957e90b81abf02e4e582b4ac3d63b73fb540f3b1267dce8b24430ca28897",
+      "sha256_metadados": "d9b3100b7e2d91518a638c0e95e22f33816769f0484467ca3d480b8c9fbee90b",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Axial/centrífugo dinâmicos; pistão/parafuso deslocamento positivo. Quatro associações, não quatro cálculos."
+    },
+    {
+      "id": "av-e1-55",
+      "sha256_artigo": "0aab46ed4a0d48a252b7fcd59ebe6d60f5e7c40c5da0b0e9a743053145249817",
+      "sha256_metadados": "e662422f95a477f99dfba046b16f072671328c342cec6c464b56bb82ce37cc6b",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Localizar rejeição isocórica falsa no Brayton ideal; nenhuma análise de estados."
+    },
+    {
+      "id": "av-e1-56",
+      "sha256_artigo": "392079edd6f95dca04874ac89e9ffaa072beb28605bb71ffb2db4de735cb2881",
+      "sha256_metadados": "6039a2367d850dc14f1b940ef41732410ec59d3a6f9355bc4977ef548730b1c5",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Associar gás a Brayton e vapor a Rankine no ciclo combinado; não calcula o combinado."
+    },
+    {
+      "id": "av-e1-57",
+      "sha256_artigo": "0e7279567efbcd2caf5a82d8082573029f15570a1806b11a554d3ab30f96f1fa",
+      "sha256_metadados": "0a534d1af75fbead6602c8e6e4a8ee13482a03b4521443d4276bb8d8282bd140",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-D"
+      ],
+      "observacao_independente": "Fórmula η=1-1/rp^((k-1)/k) e potência igual2 já dadas: η=50%. Não calcular expoente, pressão ótima ou efeito de k(T)."
+    },
+    {
+      "id": "av-e1-58",
+      "sha256_artigo": "ed7991b384a31713d5cf3e2963b51f3e23c81e676a922f4a01264f86d678c46c",
+      "sha256_metadados": "a16925dded17ed94d8df8262ccf866d9c6720de5242d06a5625c650a23ad4e3b",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Massa fixa ideal isotérmica: p2=100×0,20/0,050=400 kPa; pressões absolutas explícitas."
+    },
+    {
+      "id": "av-e1-59",
+      "sha256_artigo": "60f53dd036c9dd2bc5b6fadf39576dd736148816b7f378aeec8d1f6009020fc4",
+      "sha256_metadados": "998596013758ac85bc0f0ca90e6252e7f8d2f80a7e7aee03a1b29108fc131d3a",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Distinguir válvulas na compressão, abertura por diferença de pressão e admissão; três proposições."
+    },
+    {
+      "id": "av-e1-60",
+      "sha256_artigo": "bbcb2f5fcba62390bc4b8015b9d417a1a31a018e9028f5e93d1a9f7523786db6",
+      "sha256_metadados": "b76869261863dcd33d468128a61a011543e208336a77bae027b968b401d96902",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Reservatório suaviza pulsações na linha sem tornar descarga instantânea do cilindro constante. Não dimensiona reservatório."
+    },
+    {
+      "id": "av-e1-61",
+      "sha256_artigo": "2ef609887b7c6e57a7b9a8f38f7760b69c0ffe4377c1c2b43d307101ffd1be86",
+      "sha256_metadados": "71f20feae264d35aff38c1704f8f93acafa16b0a8e1e4d01c627c258fbb29099",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Eficiência volumétrica definida no enunciado: 0,008/0,010=80%; referência à sucção explícita."
+    },
+    {
+      "id": "av-e1-62",
+      "sha256_artigo": "3afa637b59ec0aa48e6885ab0877b0ed1bada0bcebe86c841d221e1559235148",
+      "sha256_metadados": "6d72e5e84a718666a03fe5929da6207d1714392f24be7929a6e22b7ea00fbfc7",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Admissão com câmara expandindo: válvula de admissão aberta, descarga fechada; independe da orientação do desenho."
+    },
+    {
+      "id": "av-e1-63",
+      "sha256_artigo": "e5ee106ebb64b6a28b89d824d5ee934c4be36dcde18a147d6d65c94bac558c00",
+      "sha256_metadados": "31a52d220009b567a055991747ad05b375a4b41f44dc6caddd15ad5f4f3f7c84",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Brayton/turbina a gás com duas isentrópicas e duas isobáricas."
+    },
+    {
+      "id": "av-e1-64",
+      "sha256_artigo": "a7967a8d0853d244b89a8898dbd430e487abef40363cda93bb9a51bcb8a2e07a",
+      "sha256_metadados": "63930260217e12629c8ce0f74438e45d981a905eef238407dad83b86a3fa232a",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Pistão e parafuso reduzem volume aprisionado, classificação deslocamento positivo."
+    },
+    {
+      "id": "av-e1-65",
+      "sha256_artigo": "5f993c3d09879d8de3fd56710cb38d657dd3415112868673a9bed285aa473000",
+      "sha256_metadados": "4bdc265b0659924ceadd74201d5458867c3aafff5cc8007bf462e114776c4654",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Regime permanente, adiabático, EC/EP desprezíveis explícitos, entalpias dadas: 2×(3200-2800)=800 kW. Sem tabela de vapor."
+    },
+    {
+      "id": "av-e1-66",
+      "sha256_artigo": "414e4a69cb79528ed86dcb04c0172f1f99eba044f8975a08ca92bbf212601946",
+      "sha256_metadados": "981e24dd6817ddad9c852eb871ab6845feb038a91d57fba896d578d5cb7f0550",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Casco e tubos sem vazamentos: correntes não precisam misturar, parede separa; localizar afirmação incorreta."
+    },
+    {
+      "id": "av-e1-67",
+      "sha256_artigo": "c234657d9d082fb9ca732f48724916a7c267b2048c8fca190ae934f62fb6ba84",
+      "sha256_metadados": "f591e960261098657ad2abff4168c6eb117619759e4ae60fdf9e5b8876dd396e",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Dilatação livre uniforme, α fornecido: 12×10^-6×20×50=0,012 m=12 mm. Não analisa tensão térmica/junta."
+    },
+    {
+      "id": "av-e1-68",
+      "sha256_artigo": "856b39ea9bb6e14936108cc8f0cc0633ac20f6777777c30320e28414e1f6207d",
+      "sha256_metadados": "e041edb9afcf1d4fe9d7e8912f15d839335250ec126d7734aab02701895e35f9",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Modelo radiativo completo e demais fatores fixos explícitos: ε0,80→0,20 dá25% de perda, redução75%. Figura dispensável. Não classificar como cálculo radiativo complexo."
+    },
+    {
+      "id": "av-e1-69",
+      "sha256_artigo": "f1ade775126752789740119acdb33f04190299cc54d46883e4e0354d7c6e6fee",
+      "sha256_metadados": "56f55e78505b95a38343034c241b94d1e5426657cd78c441c92d1aaf1651704d",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Sequência convecção quente/condução na parede/convecção fria. Não soma resistências."
+    },
+    {
+      "id": "av-e1-70",
+      "sha256_artigo": "aa3759b74d4479c6c2c7e76f4ad964b19344b6c1b13593c027dac0358a2600da",
+      "sha256_metadados": "95e8b29e2d8eb2ccdc5cfde44282c574db17f5bcd38cde1d00117c2c22f8adc3",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Parede80→20 °C, regime permanente sem geração: sentido quente→frio. Celsius basta para ordenar."
+    },
+    {
+      "id": "av-e1-71",
+      "sha256_artigo": "a6822e633557838619c8a4c9fa1790c583776ef03830b6ca475f28ad6b25e2ff",
+      "sha256_metadados": "3e0754092d7c0fd71963876e9361a0491a3cc508c3fca07a0500254c7826c694",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Ventilador e bomba impõem movimento: convecção forçada. Sem correlações ou número adimensional."
+    },
+    {
+      "id": "av-e1-72",
+      "sha256_artigo": "9b34292c52fddf0bbfff7573258e810e24f0d3ad6cc86dc0c1eaed9743754e7d",
+      "sha256_metadados": "3e8cbd69711e1927eb70ba759a35e6b8136766d13dc1964f880f999444110f83",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Paralelo entra mesma extremidade; contracorrente em extremidades opostas. Sem LMTD/efetividade."
+    },
+    {
+      "id": "av-e1-73",
+      "sha256_artigo": "6112aaaabbba78b71fbc5b7d5c216ddc3b56a62fa2ebeab34bca6645567521d1",
+      "sha256_metadados": "0e838e22c6d7aba36f532c86549c14f2a92346f6988c007411e6466a0ee267fa",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Compacto tem alta área/volume; não dimensiona serpentina."
+    },
+    {
+      "id": "av-e1-74",
+      "sha256_artigo": "e1cbd2e738cff1e20744251bba5ae94651ec5502fd9dc5808c1627f19b37b032",
+      "sha256_metadados": "b19b93d29cf34d5436e6373aaa882e276a1676da58f123c9a4b66c0a0e93571f",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "UAΔTm com área10 e ΔTm20 dados, U500→250: 100→50 kW. Sem determinar U ou diferença média."
+    },
+    {
+      "id": "av-e1-75",
+      "sha256_artigo": "cf84420539a50440af16625535da0e7513c3d3de6362be04a830790f9eb9029c",
+      "sha256_metadados": "4a47918a414bfd04df2140eca7cfc096be8505203d87b810bcbf1b664306f9a1",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Fourier dado qx=-k dT/dx, k10 e gradiente-20: +200 W/m². Não resolve perfil de temperatura."
+    },
+    {
+      "id": "av-e1-76",
+      "sha256_artigo": "1c62973843285a448a379f2b090961af88e38192c7728fb8d628fe4f7a4b48cb",
+      "sha256_metadados": "3a52a9e6985fd59ae1400f857fe5602e642de353b21b85108f4390a87ec4b904",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Advecção por movimento global, convecção com difusão, k não negativo; três proposições conceituais."
+    },
+    {
+      "id": "av-e1-77",
+      "sha256_artigo": "ba4e9d281b7c90b87fa9f88e4d953020a002c8903045cd2fcc0e0e55430b2820",
+      "sha256_metadados": "f875b2415b43fd6b7b2393d95ffe56920169fc535defd6aedd9d3dc5db482703",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [
+        "R1-C"
+      ],
+      "observacao_independente": "Refrigeração permanente, outras perdas/trocas desprezíveis: condensador=12+3=15 kW. Não calcula estados ou propriedades."
+    },
+    {
+      "id": "av-e1-78",
+      "sha256_artigo": "eb02ebe932d364e4cd46353e409c2c75a53ec06000a2f3d95929a1289b2af8e4",
+      "sha256_metadados": "1553dd2a2dc0eeded963e1ef96cf113253952f74f8afeb2556d1ee91eacbfb7d",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Calor latente elevado da amônia favorece absorção por massa evaporada; não garante eficiência nem dispensa controle de vazamento."
+    },
+    {
+      "id": "av-e1-79",
+      "sha256_artigo": "e1bcf99fdeeb7c91da73b8c89d96714294fd1c64234861d3ae7fb0b91cf78bcc",
+      "sha256_metadados": "e2e5df5b64dd0a7426118371283cada7a6a6721dbe404d342ecbecaacc392a39",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Alto vácuo com efeito residual desprezível, suportes/cabos explícitos: radiação e condução; corrige ambiguidade da predominância de CR79."
+    },
+    {
+      "id": "av-e1-80",
+      "sha256_artigo": "9586c1757d18d3ba88d59485b308d8e6c92a4dd5859ffe94ff3cd7e3e9ac9a71",
+      "sha256_metadados": "55ba8c31dfd5e68cfa25d48b54d8424603933d4e6a294a5d57b650a49247d6fe",
+      "leitura_semantica_individual_concluida": true,
+      "campos_confrontados": [
+        "competencias",
+        "pre_requisitos",
+        "origem",
+        "formato",
+        "nivel",
+        "raciocinio",
+        "hipoteses",
+        "exposicao_previa"
+      ],
+      "achados": [],
+      "observacao_independente": "Dimensões/face/isolamento/estado permanente/radiação desprezível explícitos: V4, A4, geração600, Ts=25+600/(10×4)=40 °C. Figura redundante porque dados geométricos constam do texto."
+    }
+  ],
+  "recursos_inspecionados": [
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-922604ee21ac.png",
+      "sha256": "922604ee21ac25fec713806a3102c7b775b9cd16ba2c77054cb45d976226b17e"
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-9d164690a624.png",
+      "sha256": "9d164690a6243cb31b9ea0f734b9a85ad4c6570398b9d5ef9278e4f44332bcc2"
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-4c355dba6054.png",
+      "sha256": "4c355dba6054f57fc26e5872ffdc1b83738a52345f31b8f994c26486651c2995"
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-de4ee7b16ed4.png",
+      "sha256": "de4ee7b16ed42d37537a23bbcf6cf7aee66cb447e11bb950b3c783e3a859aa1b"
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-222735fab01e.png",
+      "sha256": "222735fab01e54a81e34f3bb54cfd7097a8cbc1391ebe6420d60df8b2513a9cb"
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-b8d543e37fc8.png",
+      "sha256": "b8d543e37fc85224e69507c5bf2aa35d6ac5aeb3eb5ae37879c4806e229f30b8"
+    },
+    {
+      "arquivo": "assets/questoes-reais-e1/figura-9d73adf962aa.png",
+      "sha256": "9d73adf962aaabecba761c823d3faca4bb4dd463a7009033e7267242bce84cb2"
+    }
+  ],
+  "ressalvas": [
+    "Nenhuma aprovação global do curso ou de outros IDs.",
+    "Pré-requisitos e níveis não são certificados por testes estruturais.",
+    "Fonte externa de prova não foi validada novamente.",
+    "AV30 foi reconferido:300kJ é correto na fonte e no inventário; erro estava na nota própria preliminar, agora retificada.",
+    "QA do navegador comunicado pelo coordenador refere-se a abertura/GOV01, não substitui BAN02 e não foi executado pelo Auditor."
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "id": "BAN-08",
+  "bloco": "Q16–Q20",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral das opções, solução e comentários; Decimal para Q16/17/19, inclusive arredondamentos das opções C/E; Q18 e Q20 são simbólico e conceitual.",
+  "registros": [
+    {
+      "id": "q-e1-16",
+      "artigo_sha256": "0abb8b399a04e4d326aecf0334de8de50be99883c3646216a91bfe894363ec5d",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-16",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-limite-carnot"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "Máquina reversível entre TH=600 K e TL=300 K.",
+      "solucao": "ηCarnot=1−TL/TH=1−300/600=0,5=50%.",
+      "resultado": "A=50%.",
+      "comparacao": "B=100% omite rejeição; C=0 requer fontes iguais; D=600/300=2=200%, sem complemento; E=(600−300)/(600+300)=1/3≈33,3%. Usar razão invertida na própria fórmula daria −100%, não 200%.",
+      "tolerancia": "50% é exato; 33,333…% arredonda para 33,3% com erro 0,0333 ponto percentual <0,05.",
+      "limite": "Fontes térmicas ideais a temperaturas absolutas; máquinas reais sob as mesmas fontes não excedem o limite.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-17",
+      "artigo_sha256": "e6b294a9f7bfd74832e8d4bf3ea3ce6366e6a0d8d040587709b33581090f6c5d",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-17",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-eficiencia-cop"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "QL=900 kJ retirados, W=300 kJ consumidos por ciclo de refrigerador.",
+      "solucao": "COP_R=QL/W=900/300=3; QH=QL+W=1200 kJ.",
+      "resultado": "D=(3,1200 kJ).",
+      "comparacao": "A inverte COP 300/900≈0,33 e omite trabalho em QH; B usa razão 1 e QH=300; C usa 900−300=600 na rejeição; E usa COP_H=1200/300=4 com QH correta.",
+      "tolerancia": "3 e 1200 são exatos nos dados; 0,333… arredonda a 0,33 com erro <0,005; nenhum par alternativo equivale ao gabarito.",
+      "limite": "COP de refrigerador não é eficiência térmica e pode superar 1.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-18",
+      "artigo_sha256": "8db8ecd7e18c8f2d2fc68d28a568ba88c2f1645c2ca7473ea2ab745be4f29adb",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-18",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-entropia",
+          "#base-expansao-livre"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_ZERO",
+      "dados": "I entropia de isolado pode aumentar; II todo adiabático isentrópico; III parte pode diminuir entropia ao rejeitar calor.",
+      "solucao": "I V por Sger≥0 e possibilidade irreversível; II F pois Q=0 não elimina Sger; III V por transferência de entropia.",
+      "resultado": "D=(V,F,V).",
+      "comparacao": "A erra II; B erra I; C erra III; E erra as três.",
+      "tolerancia": "Q=0 é igualdade ideal e não dado numérico arredondado; demais proposições são lógicas.",
+      "limite": "A entropia da parte pode diminuir quando a entropia total respeita a segunda lei.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-19",
+      "artigo_sha256": "95ccddfe325cd576db6efa180c4141e6b4898a73683241e2961399cd973e39c9",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-19",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-isentropica"
+        ]
+      },
+      "aplicabilidade": "NUMERICO",
+      "dados": "Queda isentrópica 500 kJ/kg, queda real 400 kJ/kg.",
+      "solucao": "ηt=400/500=0,8=80%; redução relativa=(500−400)/500=0,2=20%.",
+      "resultado": "A=80%.",
+      "comparacao": "B=500/400=1,25=125%; C=400/(400+500)=4/9≈44,4%; D=redução de 20%; E=100% supõe quedas iguais.",
+      "tolerancia": "80% exato; 4/9=44,444…% arredonda 44,4% a uma casa; alternativas distintas.",
+      "limite": "Eficiência de turbina usa queda real sobre isentrópica, mesmo estado de entrada e pressão de saída conforme base.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "q-e1-20",
+      "artigo_sha256": "9949c577364f3452945a08fe48abdecdb2645df63358cf69035edeb0816ad6b6",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#q-e1-20",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases": [
+          "#base-rankine"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Sequência do Rankine ideal a partir da bomba.",
+      "solucao": "Bomba pressuriza líquido → caldeira fornece calor → turbina expande → condensador devolve líquido.",
+      "resultado": "A.",
+      "comparacao": "B põe turbina antes da bomba e sem condensação; C coloca bomba após caldeira; D põe condensador após bomba e turbina antes de caldeira; E descreve refrigeração por compressão.",
+      "tolerancia": "Não aplicável: sequência de equipamentos, sem cálculo numérico.",
+      "limite": "Rankine simples ideal conforme base, sem extrações ou ciclos com equipamentos adicionais.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem revisão independente, estudantes ou fechamento BAN-08."
+  ]
+}

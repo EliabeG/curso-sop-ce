@@ -1,0 +1,25 @@
+{
+  "data": "2026-10-28",
+  "revisor": "agente automatizado /root",
+  "pdf": {
+    "arquivo": "auditoria/termodinamica/evidencias/FON-01/portais-coordenador/prova-caesb_24-atualizada.pdf",
+    "sha256": "767b22affb2fe53295ccf8a4f66dd9e4a4cae55ba36d1a49b1dc980dc7efa9b5",
+    "paginas": 16
+  },
+  "metodo": "Duas páginas renderizadas com Windows.Data.Pdf e efetivamente vistas com view_image, detalhe original.",
+  "paginasVistas": [
+    {
+      "paginaFisica": 1,
+      "imagem": "caesb-atualizada-p1.png",
+      "observacao": "Cabeçalho com CEBRASPE, CAESB e Edital 2024; não há cargo 9 explícito nessa folha. A associação ao cargo 9 vem da listagem oficial da API. Não foi auditado o conteúdo de outros módulos mostrado na página.",
+      "sha256": "8e7715c1533e676805f5ce4222ad12f95646e1208ed45fc64ed5986bb744dbaa"
+    },
+    {
+      "paginaFisica": 5,
+      "imagem": "caesb-atualizada-p5.png",
+      "observacao": "Questão 38 completa: contexto, figura, cinco alternativas e justificativa. Geração de 100 W/m³, h=10 W/(m²·K), ambiente a 30 °C; AD=2 m, DH=1 m, HG=2 m; face ABCD. Alternativa D, 40 °C, permanece na justificativa. Esta leitura isolada não conclui se todos os itens CAESB e atos permanecem iguais.",
+      "sha256": "a62243e412d83d2efb692c44ea34617241458068fe547e99de84782b9fba3429"
+    }
+  ],
+  "limites": "Nenhuma outra página deste PDF foi lida pelo root neste lote. Comparação integral dos itens atribuída ao Corretor e ao Auditor. Nenhuma alteração de chave foi inferida apenas pelo novo hash."
+}

@@ -1,0 +1,668 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autor": "/root/auditor_av_continuacao",
+  "natureza": "Apoio científico automatizado independente do Corretor; não é revisão humana ou certificação externa.",
+  "escopo": "Somente AV46–AV50, cinco artigos e 25 alternativas, sob coordenação de /root e auditor principal /root/auditor_ban07_final.",
+  "estado": "CONCLUIDO_SEM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "html_examinado": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "criterios": {
+    "BAN_07": "Dados suficientes, consistência física, comando, unidades, restrições, resposta única, demonstração da chave, distratores teoricamente plausíveis por erros concretos e equivalências após arredondamento.",
+    "regra_comum": "Seção 3.2 lida. Aplicada à rastreabilidade, hipóteses e revisão no alcance da auditoria de itens existentes; não se exige artificialmente uma unidade curricular nova para cada alternativa.",
+    "protocolo": "PROTOCOLO_AAA.md lido. Apoio não implementa correções, não concede aceite global e não libera próximo ID."
+  },
+  "controle_lido": {
+    "correcao_atual": "BAN-07",
+    "auditor": "/root/auditor_ban07_final",
+    "apoio": "/root/auditor_av_continuacao",
+    "andamento": "Campo não presente/nulo na projeção solicitada; não alterado."
+  },
+  "metodo_exposicao": "Primeira extração via parseHtml/sha256 mostrou apenas comandos/opções, títulos, temas e links das bases; omitiu os atributos data-cr-gabarito e details. As respostas B/A/A/C/C foram concluídas antes da segunda extração de chaves/comentários. Títulos, temas e o conhecimento de quais itens foram alterados são metadados conhecidos: não se alega cegamento total. Nenhuma execução de AV01–AV45 é atribuída a este agente.",
+  "bases_verificadas": [
+    {
+      "id": "base-carnot-prova",
+      "sha256_trecho_do_h3_ate_proximo_h123_ou_fim_pai": "b54c28b26945c8d602650741e2e5b42d1a807aa700120967705a29d6a5ff7e4b",
+      "antes_dos_itens": true,
+      "em_details": false,
+      "figuras": 0
+    },
+    {
+      "id": "base-tipos-compressores",
+      "sha256_trecho_do_h3_ate_proximo_h123_ou_fim_pai": "486a6d180603628f1e5c02d4a65968a818e36bc35c5784d47c31043ebd8a2cc3",
+      "antes_dos_itens": true,
+      "em_details": false,
+      "figuras": 0
+    },
+    {
+      "id": "base-brayton",
+      "sha256_trecho_do_h3_ate_proximo_h123_ou_fim_pai": "5de557929e5287d248ed1a7e58046e4d1e3b837f22c4e46559c3df2dc226ad90",
+      "antes_dos_itens": true,
+      "em_details": false,
+      "figuras": 0
+    },
+    {
+      "id": "base-trocadores",
+      "sha256_trecho_do_h3_ate_proximo_h123_ou_fim_pai": "ee1bdb80909ed46504fd9e8122770531c8048dd26a85f323ea89da1d45634d3a",
+      "antes_dos_itens": true,
+      "em_details": false,
+      "figuras": 0
+    },
+    {
+      "id": "base-brayton-real",
+      "sha256_trecho_do_h3_ate_proximo_h123_ou_fim_pai": "840ca605e8b6e949dd3a4f4daf4a386e0289ef9363d3aad0fbc4325e319d593b",
+      "antes_dos_itens": true,
+      "em_details": false,
+      "figuras": 0
+    },
+    {
+      "id": "base-isentropica",
+      "sha256_trecho_do_h3_ate_proximo_h123_ou_fim_pai": "591c0abedb7c708989e377fbbd098c3d28b71e53c0515716c9e9454edee194ef",
+      "antes_dos_itens": true,
+      "em_details": false,
+      "figuras": 0
+    }
+  ],
+  "itens": [
+    {
+      "item": "AV46",
+      "id_artigo": "av-e1-46",
+      "sha256_artigo": "0c048ab1b4c1148d9a424b0a9b55a2ddb097ba7fc79dc6a22b04c6447538721b",
+      "comando": "No ciclo de Carnot reversível de uma máquina térmica, as trocas de calor com as duas fontes e as etapas que conectam suas temperaturas ocorrem, respectivamente, por",
+      "demonstracao_independente": {
+        "ordem": "Comando e cinco alternativas lidos com atributos de chave e details suprimidos. Conclusão B formulada antes de ler a chave e os comentários.",
+        "passos": [
+          "Para haver troca de calor reversível com cada reservatório térmico, a substância trabalha à temperatura constante daquela fonte: uma isoterma na fonte quente e outra na fria.",
+          "A ligação entre temperaturas ocorre sem troca de calor e sem geração de entropia: duas adiabáticas reversíveis, logo isentrópicas (ds=δq_rev/T=0).",
+          "B reúne as quatro etapas exigidas. A e D substituem as etapas de calor; C elimina as duas temperaturas distintas; E contradiz a reversibilidade declarada."
+        ],
+        "resposta": "B",
+        "suficiencia": "Questão qualitativa sobre ciclo de Carnot reversível; duas fontes e reversibilidade constam do comando. Nenhuma propriedade numérica, equação de estado específica ou hipótese oculta é necessária.",
+        "unidades_sinais_dominio": "Sem grandezas numéricas. Distinguidos Q=0 e S_ger=0; adiabático isoladamente não equivale a isentrópico.",
+        "unicidade_equivalencias": "Somente B satisfaz simultaneamente as duas classes de processo e a reversibilidade. D não é equivalente: isocórica não equivale a isotérmica para a etapa de calor. Sem arredondamento aplicável.",
+        "bases_antes_tentativa": [
+          "base-carnot-prova"
+        ],
+        "figuras": "Nenhuma no artigo nem na base vinculada."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "duas isobáricas e duas isocóricas.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Confundir calor trocado com reservatório a temperatura fixa com aquecimento/resfriamento a pressão ou volume constantes; seleciona um ciclo retangular p–V em lugar das duas isotermas. A associação de fonte a p ou V constantes é o erro concreto, não mera falsidade.",
+          "plausibilidade": "teórica; mecanismo de erro especificado, sem dado empírico"
+        },
+        {
+          "letra": "B",
+          "texto": "duas isotérmicas reversíveis e duas adiabáticas reversíveis.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: corresponde à decomposição reversível de Carnot.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "C",
+          "texto": "quatro isotérmicas na mesma temperatura.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Estender a temperatura constante das etapas de troca de calor às quatro etapas, supondo que reversibilidade implique isotermia única. Assim desaparecem as duas temperaturas e as conexões adiabáticas.",
+          "plausibilidade": "teórica; mecanismo de erro especificado, sem dado empírico"
+        },
+        {
+          "letra": "D",
+          "texto": "duas isocóricas e duas isentrópicas.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Transferir a composição do ciclo Otto ideal (duas isocóricas e duas isentrópicas) ao Carnot; confusão nominal entre ciclos motores.",
+          "plausibilidade": "teórica; mecanismo de erro especificado, sem dado empírico"
+        },
+        {
+          "letra": "E",
+          "texto": "duas isotérmicas e duas adiabáticas necessariamente irreversíveis.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Tratar adiabático (Q=0) como sinônimo de irreversível, esquecendo que geração de entropia pode ser nula e que todas as etapas de Carnot são reversíveis.",
+          "plausibilidade": "teórica; mecanismo de erro especificado, sem dado empírico"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "B",
+        "concorda": true,
+        "comentarios": "Lidos após a conclusão independente. A solução identifica calor isotérmico e conexões adiabáticas reversíveis. Os cinco comentários são compatíveis; as justificativas de erros acima são desta revisão, mais explícitas que as refutações curtas do produto.",
+        "delta_r1": "Artigo não listado como alterado; não é inferida aprovação de identidade diferente.",
+        "identidade_preservada": {
+          "html_antes_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "sha256_artigo_antes": "0c048ab1b4c1148d9a424b0a9b55a2ddb097ba7fc79dc6a22b04c6447538721b",
+          "mesmo_artigo_na_r1": true,
+          "verificacao": "Comparação direta deste Auditor via parseHtml/sha256; não herda aprovação científica de parecer anterior."
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto examinado",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "localizador": "#av-e1-46 e #base-carnot-prova",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+        },
+        {
+          "tipo": "fonte primária acadêmica",
+          "titulo": "MIT Unified Engineering — 3.3 The Carnot Cycle",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node24.html",
+          "consulta": "2026-10-28",
+          "alcance": "Confirma as duas isotermas e as duas adiabáticas reversíveis; solução e juízo de plausibilidade elaborados pelo revisor."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV47",
+      "id_artigo": "av-e1-47",
+      "sha256_artigo": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+      "comando": "No estudo preliminar de fornecimento de ar para uma instalação de grande vazão e razão de pressão moderada, deseja-se distinguir compressores dinâmicos e alternativos. Como orientação geral, sem substituir a consulta às curvas do fabricante, é correto afirmar que",
+      "demonstracao_independente": {
+        "ordem": "Resposta A concluída antes da exposição à chave, aos comentários e ao diagnóstico anterior do Corretor.",
+        "passos": [
+          "Um alternativo de deslocamento positivo admite gás, reduz o volume aprisionado e descarrega a pressão maior; a existência do retorno do pistão não elimina a compressão entregue ao coletor.",
+          "Um centrífugo transfere energia ao escoamento e transforma parte dela em aumento de pressão; sua aplicação industrial é compatível com grande vazão. Alternativos permitem razões de pressão elevadas, inclusive por estágios, em faixas relativas de vazão menores.",
+          "O comando pede orientação preliminar e preserva a consulta às curvas. A exprime associação geral; as outras quatro opções eliminam função essencial, parâmetros de seleção, variabilidade de capacidade ou de rendimento."
+        ],
+        "resposta": "A",
+        "suficiencia": "Grande vazão e razão moderada são orientação qualitativa, não dados para dimensionamento. A não impõe exclusividade nem um limite numérico inexistente. Gás e faixa operacional permanecem necessários na seleção definitiva.",
+        "unidades_sinais_dominio": "Nenhum número para conversão ou rendimento a calcular. Não se infere escolha final por ausência de vazão referenciada, composição e curvas, pois isso não foi pedido.",
+        "unicidade_equivalencias": "A é a única proposição correta como orientação geral; B/C/D/E não são equivalentes a A ou entre si. Arredondamento não aplicável.",
+        "bases_antes_tentativa": [
+          "base-tipos-compressores"
+        ],
+        "figuras": "Nenhuma no artigo ou na base vinculada."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "compressores centrífugos são associados a grandes vazões, enquanto alternativos podem atender vazões menores e razões de pressão elevadas.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: orientação geral relativa, delimitada pelo comando e pela necessidade de curvas.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "B",
+          "texto": "um compressor alternativo não consegue elevar a pressão.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Tomar o movimento de ida e volta do pistão como compressão seguida de descompressão da mesma massa fechada, sem representar válvulas de admissão/descarga. Nesse modelo incorreto, o gás retorna à pressão de início e o leitor conclui que a máquina não consegue fornecer gás pressurizado. O erro identificável é confundir ciclo mecânico do pistão com evolução de uma massa fechada; plausibilidade inferida por este revisor, não observada em estudantes.",
+          "plausibilidade": "teórica; erro de mecanismo/modelo identificável, sem dados de alunos"
+        },
+        {
+          "letra": "C",
+          "texto": "a seleção pode ignorar o gás e a faixa operacional.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Selecionar equipamento apenas pela vazão nominal, transferindo uma indicação de catálogo a qualquer gás e faixa operacional, sem considerar composição/propriedades e o mapa de operação.",
+          "plausibilidade": "teórica; erro de mecanismo/modelo identificável, sem dados de alunos"
+        },
+        {
+          "letra": "D",
+          "texto": "todo compressor centrífugo atende somente vazões pequenas.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Inverter a associação entre famílias: atribuir aos centrífugos a faixa relativa de menor vazão usualmente associada aos alternativos, e ainda convertê-la em limite universal.",
+          "plausibilidade": "teórica; erro de mecanismo/modelo identificável, sem dados de alunos"
+        },
+        {
+          "letra": "E",
+          "texto": "grande vazão garante automaticamente que qualquer compressor terá o mesmo rendimento.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Confundir capacidade/vazão de fornecimento com eficiência energética e supor que satisfazer a mesma demanda torna os rendimentos iguais, independentemente de projeto e ponto de operação.",
+          "plausibilidade": "teórica; erro de mecanismo/modelo identificável, sem dados de alunos"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "A",
+        "concorda": true,
+        "comentarios": "Solução preserva caráter preliminar. Comentário B: “A elevação de pressão é sua função.” É refutação curta, não demonstra por si só a plausibilidade; o mecanismo de massa fechada sem válvulas foi examinado independentemente acima. C/D/E e a solução são cientificamente coerentes.",
+        "diagnostico_anterior": {
+          "autoria": "/root/corretor_aaa/apoio_ban07 — apoio do Corretor, não deste Auditor",
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/apoio/diagnostico-80-av-r1.json",
+          "sha256": "59fb1dfe1f0c83ce9626a67ad638bf358df329b54eae7c5d2c504cdd3e92ad4e",
+          "identidade_artigo": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+          "alcance": "Somente registro AV47 consultado após solução própria. A frase anterior “Confundir deslocar gás com impedir elevação de pressão” não foi tomada como prova suficiente. Identidade do artigo coincide; explicitação atual do mecanismo é autoria deste revisor."
+        },
+        "delta_r1": "AV47 não consta entre os artigos alterados.",
+        "identidade_preservada": {
+          "html_antes_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "sha256_artigo_antes": "afa4aa8e9dea38573de54e969025a80d66d7aa08af3cb3f4d98f4d8ff996e280",
+          "mesmo_artigo_na_r1": true,
+          "verificacao": "Comparação direta deste Auditor via parseHtml/sha256; não herda aprovação científica de parecer anterior."
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto examinado",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "localizador": "#av-e1-47 e #base-tipos-compressores",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+        },
+        {
+          "tipo": "fonte primária técnica",
+          "titulo": "U.S. Department of Energy — Improving Compressed Air System Performance, 2nd ed.",
+          "url": "https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/compressed_air_sourcebook.pdf",
+          "localizador": "Seção 1: tipos e princípios, p. 3–8; seção 2, tópico 7, p. 47–48 impressas.",
+          "consulta": "2026-10-28",
+          "alcance": "Princípios de deslocamento positivo/dinâmicos, faixas gerais e dependência de condições; o mecanismo de erro de B é inferência do Auditor."
+        }
+      ],
+      "achados": [
+        {
+          "tipo": "observacao_nao_bloqueante",
+          "descricao": "B é simples e sua plausibilidade não decorre da falsidade. A hipótese errada de massa fechada sem válvulas fornece um percurso concreto até ela, portanto não se exige substituição por facilidade ou ausência de piloto. Dificuldade/discriminação empíricas pertencem a BAN-14 e não foram alegadas."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV48",
+      "id_artigo": "av-e1-48",
+      "sha256_artigo": "810f21fc17823ad01aee37087182a58186ca27b6c46afcf0a1c12f3dabd26f87",
+      "comando": "Uma turbina a gás tem regenerador que aquece o ar na saída do compressor usando os gases de exaustão. Para que haja esse reaproveitamento de calor sem acionamento de uma bomba de calor, é necessário que",
+      "demonstracao_independente": {
+        "ordem": "Resposta A e mecanismo das demais opções formulados antes da chave, comentários e leitura dos deltas.",
+        "passos": [
+          "Considere δQ>0 saindo da exaustão à temperatura T_h e entrando no ar a T_c. A contribuição entrópica é δS_total=δQ(1/T_c−1/T_h)≥0, sem bomba de calor. Para aquecimento passivo efetivo é necessário que a corrente doadora seja mais quente.",
+          "Logo, a exaustão na entrada do regenerador deve superar a temperatura do ar que chega do compressor. A é condição necessária; o comando não a apresenta como garantia suficiente de qualquer desempenho ou ausência de perdas.",
+          "Mistura não é necessária em regenerador de superfície. O compressor continua comprimindo. Se o ar fosse mais quente em todo o trecho, o fluxo de calor seria contrário. Temperaturas locais iguais em todo o equipamento anulam o fluxo para condutância finita."
+        ],
+        "resposta": "A",
+        "suficiencia": "O sentido de aquecimento, as duas correntes e a exclusão de bomba de calor estão explícitos. Não é exigido dimensionamento, efetividade, vazão ou área. A base apresenta recuperação quando T_escape>T_compressor e explica a separação entre correntes.",
+        "unidades_sinais_dominio": "Comparação de temperatura independe de usar °C ou K; a expressão entrópica utiliza temperaturas absolutas. Q positivo foi definido no sentido exaustão→ar. Não foi assumido que a regeneração sempre eleve rendimento com perdas arbitrárias.",
+        "unicidade_equivalencias": "Somente A atende à condição térmica necessária. D inverte o sentido; E impõe ∆T=0 em toda a troca, não apenas aproximação terminal no limite de área crescente. As opções não se tornam equivalentes por arredondamento; não há dados numéricos.",
+        "bases_antes_tentativa": [
+          "base-brayton",
+          "base-trocadores"
+        ],
+        "figuras": "Sem figuras nos artigos ou trechos de base. As setas escritas em #base-trocadores descrevem corretamente contracorrente como sentidos opostos e não implicam mistura."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "os gases de exaustão estejam mais quentes que o ar comprimido na entrada do regenerador.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: estabelece o sentido da diferença de temperatura necessário à transferência passiva desejada.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "B",
+          "texto": "as duas correntes se misturem obrigatoriamente.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Confundir regenerador/trocador de superfície com aquecedor por contato direto, supondo que transportar energia térmica exija misturar massas.",
+          "plausibilidade": "teórica; percurso de erro indicado, sem piloto"
+        },
+        {
+          "letra": "C",
+          "texto": "o compressor deixe de consumir trabalho.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Confundir recuperação de calor (reduz calor externo no aquecedor) com recuperação integral de trabalho do eixo, apagando o consumo do compressor.",
+          "plausibilidade": "teórica; percurso de erro indicado, sem piloto"
+        },
+        {
+          "letra": "D",
+          "texto": "o ar comprimido esteja mais quente que a exaustão em toda a troca.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Escolher a corrente de ar como doadora porque a compressão a aquece e ignorar o sentido exigido pelo comando: ar mais quente em toda a troca perderia calor para a exaustão, em vez de ser aquecido.",
+          "plausibilidade": "teórica; percurso de erro indicado, sem piloto"
+        },
+        {
+          "letra": "E",
+          "texto": "as duas correntes tenham a mesma temperatura em todo o regenerador.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Confundir a condição final de equilíbrio térmico com condição de funcionamento, ou interpretar “boa troca/contracorrente” como igualdade de temperaturas em todo o comprimento. Com diferença local nula em toda a área, o modelo passivo de condutância finita fornece troca nula.",
+          "plausibilidade": "teórica; percurso de erro indicado, sem piloto"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "A",
+        "concorda": true,
+        "comentarios": "Comentário principal e A associam recuperação ao sentido quente→frio. B/C/D/E estão coerentes. E agora explica equilíbrio térmico versus transferência; o juízo foi confrontado com a expressão local, não aceito por simples narrativa.",
+        "delta_direto": {
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/delta-artigos-r1.json",
+          "sha256": "9654b4c2a62d95776ec084b1d6c777d8551a0b81c5aea43fe1e71eb57126a6e4",
+          "autor_dos_deltas": "/root/corretor_aaa; reconstrução executada por /root/auditor_av_continuacao",
+          "html_antes_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "sha256_artigo_antes": "334ccfa79935dfb95f1a430e582f35966b6baf3a666aa2fb3516d0f76e6d1c60",
+          "sha256_artigo_depois": "810f21fc17823ad01aee37087182a58186ca27b6c46afcf0a1c12f3dabd26f87",
+          "substituicoes": [
+            {
+              "antes": "<strong>E.</strong> a temperatura seja medida exclusivamente em Fahrenheit.</span>",
+              "depois": "<strong>E.</strong> as duas correntes tenham a mesma temperatura em todo o regenerador.</span>",
+              "ocorrencias_declaradas": 1,
+              "ocorrencias_antes": 1,
+              "ocorrencias_depois_no_atual": 1
+            },
+            {
+              "antes": "<strong>E — Comentário:</strong> A condição física não depende da escala usada para expressar as temperaturas.</li>",
+              "depois": "<strong>E — Comentário:</strong> Temperaturas iguais em toda a troca anulam a diferença térmica necessária à transferência passiva. Confundir equilíbrio térmico com a condição de funcionamento impede o aquecimento pretendido.</li>",
+              "ocorrencias_declaradas": 1,
+              "ocorrencias_antes": 1,
+              "ocorrencias_depois_no_atual": 1
+            }
+          ],
+          "reconstrucao_exata": true,
+          "resultado": "Conferidas as duas substituições, uma vez cada: Fahrenheit foi substituído por igualdade das correntes e o comentário E foi sincronizado. Enunciado, chave A e outras opções não foram alterados pelo delta deste artigo."
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto examinado e base instrucional acessível",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "localizador": "#av-e1-48; #base-brayton; #base-trocadores",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+          "alcance": "Condições de regeneração, correntes separadas e Q̇=UA∆T_m. Demonstração entrópica e análise de opções elaboradas pelo revisor."
+        },
+        {
+          "tipo": "prova de versão",
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+          "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "alcance": "Somente AV48 foi extraído para a reconstrução deste item."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV49",
+      "id_artigo": "av-e1-49",
+      "sha256_artigo": "ba294a58c27857ff270db5bc1300c7823b7bee36997791c77c678e9ecb04d7d1",
+      "comando": "Ao comparar o ciclo Brayton ideal com uma instalação real de turbina a gás, assinale a alternativa INCORRETA .",
+      "demonstracao_independente": {
+        "ordem": "Identificada C como afirmação INCORRETA antes de ler chave e comentários.",
+        "passos": [
+          "No Brayton ideal convencional, 1→2 e 3→4 são compressão/expansão isentrópicas; 2→3 e 4→1 são adição/rejeição de calor a pressão constante. Portanto A e B são verdadeiras.",
+          "Trocadores reais podem dissipar pressão total por atrito e restrições; D é verdadeira. O compressor de turbina a gás recebe trabalho de eixo para elevar pressão: E é verdadeira.",
+          "Um resfriador passivo não produz necessariamente elevação de pressão nem assume a função de compressor de eixo. C atribui necessariamente essa elevação à rejeição e substitui o compressor: é a única falsa e a resposta pedida."
+        ],
+        "resposta": "C",
+        "suficiencia": "A comparação ideal/real e o comando INCORRETA estão explícitos. O Brayton convencional está identificado na base antes da questão; não são necessários gás, temperaturas ou números para esse juízo.",
+        "unidades_sinais_dominio": "Questão qualitativa. Trabalho recebido pelo compressor é consumo. Queda de pressão em trocador real é possibilidade em D, sem um número ou regra universal sobre qualquer geometria passiva.",
+        "restricao_importante": "Um difusor pode recuperar pressão estática às custas de velocidade; isso não torna verdadeira a afirmação de aumento necessário pela rejeição de calor nem permite substituir o compressor. O exame não usa a generalização indevida de que qualquer dispositivo passivo jamais eleva pressão estática.",
+        "unicidade_equivalencias": "Valores lógicos A/B/D/E verdadeiros e C falso; comando negativo faz de C a única opção correta para a tarefa. Não há equivalência semântica nem arredondamento numérico aplicável.",
+        "bases_antes_tentativa": [
+          "base-brayton-real"
+        ],
+        "figuras": "Nenhuma no artigo ou no trecho de base vinculado."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "O modelo ideal representa a adição de calor a pressão constante.",
+          "juizo": "afirmação verdadeira; resposta incorreta ao comando INCORRETA",
+          "erro_plausivel": "A afirmação é verdadeira; marcá-la decorre de transferir perdas de pressão da instalação real ao modelo ideal indicado expressamente em A, ou de perder a negação do comando.",
+          "plausibilidade": "teórica: erro de modelo, componente ou leitura do comando identificado"
+        },
+        {
+          "letra": "B",
+          "texto": "O modelo ideal representa a rejeição de calor a pressão constante.",
+          "juizo": "afirmação verdadeira; resposta incorreta ao comando INCORRETA",
+          "erro_plausivel": "A afirmação é verdadeira no Brayton ideal convencional. Pode ser rejeitada por confundir a rejeição a pressão constante com a rejeição isocórica de Otto, ou por aplicar o escoamento real ao modelo ideal.",
+          "plausibilidade": "teórica: erro de modelo, componente ou leitura do comando identificado"
+        },
+        {
+          "letra": "C",
+          "texto": "A rejeição de calor em um trocador passivo eleva necessariamente a pressão e substitui o compressor.",
+          "juizo": "afirmação falsa; única resposta correta ao comando INCORRETA",
+          "erro_plausivel": "Não se aplica como distrator: é a afirmação falsa requerida. O erro físico da frase é atribuir ao resfriador passivo a recompressão do gás, confundindo restauração de temperatura no fechamento ideal com restauração de pressão por trabalho.",
+          "plausibilidade": "não se aplica como distrator; erro da proposição explicitado"
+        },
+        {
+          "letra": "D",
+          "texto": "Na instalação real, o escoamento pode apresentar perdas de pressão nos trocadores.",
+          "juizo": "afirmação verdadeira; resposta incorreta ao comando INCORRETA",
+          "erro_plausivel": "A afirmação é verdadeira; selecioná-la supõe que a idealização isobárica proíba perdas nos trocadores reais, exatamente a confusão entre domínio ideal e real que o comando pede distinguir.",
+          "plausibilidade": "teórica: erro de modelo, componente ou leitura do comando identificado"
+        },
+        {
+          "letra": "E",
+          "texto": "O compressor necessita receber trabalho para elevar a pressão do gás.",
+          "juizo": "afirmação verdadeira; resposta incorreta ao comando INCORRETA",
+          "erro_plausivel": "A afirmação é verdadeira. Selecioná-la pode decorrer de considerar que um compressor acionado pela turbina não recebe trabalho porque não há motor elétrico externo, confundindo origem do trabalho com ausência de consumo no componente.",
+          "plausibilidade": "teórica: erro de modelo, componente ou leitura do comando identificado"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "C",
+        "concorda": true,
+        "comentarios": "Solução marca C como falsa e associa perdas ao escoamento real. Comentários A/B/D/E dizem expressamente que são verdadeiras; não invertem o comando. A refutação de C fala em ausência de trabalho de compressão e pressão disponível, compatível com o limite de pressão estática indicado acima.",
+        "delta_r1": "Artigo não listado como alterado.",
+        "identidade_preservada": {
+          "html_antes_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "sha256_artigo_antes": "ba294a58c27857ff270db5bc1300c7823b7bee36997791c77c678e9ecb04d7d1",
+          "mesmo_artigo_na_r1": true,
+          "verificacao": "Comparação direta deste Auditor via parseHtml/sha256; não herda aprovação científica de parecer anterior."
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto examinado e base antes da tentativa",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "localizador": "#av-e1-49 e #base-brayton-real",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+        },
+        {
+          "tipo": "fonte primária acadêmica",
+          "titulo": "MIT Unified Engineering — 3.7 Brayton Cycle",
+          "url": "https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node28.html",
+          "consulta": "2026-10-28",
+          "alcance": "Etapas do modelo Brayton, trabalho da turbina para o compressor, variantes aberta/fechada. Juízos de opção e limite sobre pressão estática são análise do Auditor."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    },
+    {
+      "item": "AV50",
+      "id_artigo": "av-e1-50",
+      "sha256_artigo": "a81b2fc4861de1cbe533079250396bc9c268ca3b02f3d2f7a9956b1434a4d8a3",
+      "comando": "Duas turbinas a gás são comparadas. Considere seus compressores e turbinas adiabáticos, em regime permanente, sem diferenças relevantes de energia cinética ou potencial. Compare trabalhos por unidade de massa: para cada componente, mantenha os mesmos estados de entrada e as mesmas pressões de saída ao comparar o equipamento real com sua referência ideal isentrópica. Nessas condições, as irreversibilidades tendem a",
+      "demonstracao_independente": {
+        "ordem": "Resposta C concluída antes de ler a chave e comentários; as condições do enunciado atual, não a narrativa do Corretor, foram usadas.",
+        "passos": [
+          "Por componente adiabático estacionário sem diferenças relevantes de energia cinética/potencial: wc=h2−h1 como consumo positivo e wt=h3−h4 como produção positiva. Todas são energias específicas.",
+          "A referência isentrópica tem s_saida,s=s_entrada. Com irreversibilidade adiabática, s_saida,r=s_entrada+s_ger>s_saida,s. Como as pressões de saída são as mesmas e, para o gás de composição fixa, dh=Tds+vdp, a comparação na mesma isóbara dá h_saida,r>h_saida,s para T>0.",
+          "Logo wc_r>wc_s e wt_r<wt_s. Aumentar o consumo e reduzir a produção também reduz a diferença wt−wc, quando essa comparação líquida específica é formada sob as referências declaradas. C é a única combinação correta."
+        ],
+        "resposta": "C",
+        "suficiencia": "O comando atual fornece adiabaticidade, regime permanente, energias cinética/potencial desprezíveis, base por unidade de massa e igualdade dos estados de entrada e pressões de saída em cada comparação. Não depende de hipótese nova só na resolução. Não é preciso impor gás ideal com cp constante para a direção das desigualdades.",
+        "unidades_sinais_dominio": "wc e wt como magnitudes positivas, em J/kg ou kJ/kg se as entalpias usam essas unidades. Não se confundem potência e trabalho específico. Igualdade é o limite reversível; irreversibilidade positiva dá o sentido indicado.",
+        "restricoes": "O resultado é para a classe adiabática declarada. Não implica mínimo irrestrito perante compressor refrigerado; não se extrapola a quaisquer máquinas com condições de entrada/pressões diferentes.",
+        "unicidade_equivalencias": "C correta. D inverte simultaneamente ambas as desigualdades; B impõe igualdade apesar da irreversibilidade; A/E negam consumo/limite físico. Nenhuma equivalência semântica ou numérica após arredondamento; não há números no comando.",
+        "bases_antes_tentativa": [
+          "base-isentropica",
+          "base-brayton-real"
+        ],
+        "figuras": "Nenhuma no artigo ou nos trechos de base. A hipótese de erro em E não exige figura escondida para a resposta; é justificativa teórica do distrator."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "eliminar o consumo do compressor.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Confundir trabalho útil perdido com trabalho de entrada requerido: aplicar ao consumo do compressor a noção de que irreversibilidade destrói a capacidade de produzir trabalho e concluir, erroneamente, que o consumo desaparece. Outra leitura do mesmo erro de fronteira é tratar acionamento pela turbina como compressor sem consumo. Não é consequência da primeira lei sob pressão de saída fixada.",
+          "plausibilidade": "teórica; erro de grandeza, modelo ou relação algébrica explicitado"
+        },
+        {
+          "letra": "B",
+          "texto": "manter obrigatoriamente ambos os trabalhos iguais aos ideais.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Acreditar que mesmos estado de entrada e pressão final fixam também a entalpia final e os trabalhos, ignorando a geração de entropia; assim usa a referência isentrópica como se fosse o estado real.",
+          "plausibilidade": "teórica; erro de grandeza, modelo ou relação algébrica explicitado"
+        },
+        {
+          "letra": "C",
+          "texto": "aumentar o trabalho necessário no compressor e reduzir o trabalho produzido pela turbina.",
+          "juizo": "correta e única",
+          "erro_plausivel": "Não se aplica: combina os efeitos corretos para os componentes adiabáticos nas referências fixadas.",
+          "plausibilidade": "não se aplica à chave"
+        },
+        {
+          "letra": "D",
+          "texto": "reduzir o trabalho do compressor e aumentar o da turbina.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Inverter as definições de eficiência isentrópica: escrever wc_real=ηc·wc_s e wt_real=wt_s/ηt para η<1 produz exatamente compressor consumindo menos e turbina produzindo mais. A ordem correta é wc_real=wc_s/ηc e wt_real=ηt·wt_s.",
+          "plausibilidade": "teórica; erro de grandeza, modelo ou relação algébrica explicitado"
+        },
+        {
+          "letra": "E",
+          "texto": "converter a turbina em fonte de eficiência superior à reversível.",
+          "juizo": "incorreta",
+          "erro_plausivel": "Interpretar o deslocamento da curva real para maior entropia em T–s como área adicional inteiramente convertível em trabalho, ou tratar energia dissipada como energia útil adicional. Isso pode conduzir a atribuir eficiência maior ao equipamento irreversível; confunde ∫Tds reversível/transferência térmica com trabalho adiabático. É percurso teórico, sem alegação de frequência entre alunos.",
+          "plausibilidade": "teórica; erro de grandeza, modelo ou relação algébrica explicitado"
+        }
+      ],
+      "confronto": {
+        "chave_produto": "C",
+        "concorda": true,
+        "comentarios": "Comentário principal e C aplicam as relações adiabáticas sob as referências declaradas; distinguem o caso refrigerado. A/B/D/E refutam os respectivos erros sem contradizer o comando. A prova por ds e dh desta revisão sustenta o sentido de h_saida,r−h_saida,s.",
+        "delta_direto": {
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/corretor/delta-artigos-r1.json",
+          "sha256": "9654b4c2a62d95776ec084b1d6c777d8551a0b81c5aea43fe1e71eb57126a6e4",
+          "autor_dos_deltas": "/root/corretor_aaa; reconstrução executada por /root/auditor_av_continuacao",
+          "html_antes_sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "sha256_artigo_antes": "c10f8ecf5ea5e1579ac8b39b5fd05ae01d6b225a1f95f0404e5c06a494f35d9b",
+          "sha256_artigo_depois": "a81b2fc4861de1cbe533079250396bc9c268ca3b02f3d2f7a9956b1434a4d8a3",
+          "substituicoes": [
+            {
+              "antes": "Duas turbinas a gás são comparadas para as mesmas condições de entrada, mesma razão de pressões e mesma temperatura de entrada da turbina. Em relação ao modelo ideal isentrópico, as irreversibilidades tendem a",
+              "depois": "Duas turbinas a gás são comparadas. Considere seus compressores e turbinas adiabáticos, em regime permanente, sem diferenças relevantes de energia cinética ou potencial. Compare trabalhos por unidade de massa: para cada componente, mantenha os mesmos estados de entrada e as mesmas pressões de saída ao comparar o equipamento real com sua referência ideal isentrópica. Nessas condições, as irreversibilidades tendem a",
+              "ocorrencias_declaradas": 1,
+              "ocorrencias_antes": 1,
+              "ocorrencias_depois_no_atual": 1
+            },
+            {
+              "antes": "O compressor real requer mais trabalho para a mesma elevação de pressão; a turbina real extrai menos trabalho para a mesma expansão. O trabalho líquido diminui.",
+              "depois": "Nas condições adiabáticas declaradas e para as mesmas referências de entrada e pressão de saída, o trabalho consumido por unidade de massa é wc = h2 − h1 no compressor e o produzido é wt = h3 − h4 na turbina. As irreversibilidades elevam a entalpia de saída relativamente à referência isentrópica: o compressor consome mais e a turbina produz menos. O trabalho líquido específico diminui. Essa comparação não estabelece mínimo irrestrito para compressores refrigerados.",
+              "ocorrencias_declaradas": 2,
+              "ocorrencias_antes": 2,
+              "ocorrencias_depois_no_atual": 2
+            }
+          ],
+          "reconstrucao_exata": true,
+          "resultado": "Conferida uma substituição no comando e duas ocorrências da substituição de solução/comentário da chave. O novo comando tornou as condições acessíveis antes da tentativa; a solução passou a usar trabalho específico adiabático e limite de alcance. Opções e chave C permanecem iguais."
+        }
+      },
+      "fontes": [
+        {
+          "tipo": "produto examinado e bases acessíveis",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "localizador": "#av-e1-50; #base-isentropica; #base-brayton-real",
+          "sha256_html": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+        },
+        {
+          "tipo": "fonte primária acadêmica",
+          "titulo": "MIT Unified Engineering — 11.6.5 Effect of Departures from Ideal Behavior",
+          "url": "https://web.mit.edu/16.unified/OldFiles/www/FALL/thermodynamics/notes/node85.html",
+          "localizador": "Seção 11.6.5, definições de eficiência adiabática para as mesmas razões de pressão e discussão após Fig. 11.21.",
+          "consulta": "2026-10-28",
+          "alcance": "Corrobora sentido das perdas e ordem das razões de eficiência. Demonstração por dh=Tds+vdp e plausibilidade de opções são análise própria; a questão conceitual sobre área em T–s não foi apresentada como estudo empírico."
+        },
+        {
+          "tipo": "prova de versão",
+          "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+          "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7",
+          "alcance": "Somente AV50 foi extraído para esta reconstrução."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN_07"
+    }
+  ],
+  "atualizado_em": "2026-10-28T23:08:39.795Z",
+  "cobertura": {
+    "artigos": 5,
+    "opcoes": 25,
+    "ids": [
+      "av-e1-46",
+      "av-e1-47",
+      "av-e1-48",
+      "av-e1-49",
+      "av-e1-50"
+    ],
+    "demonstracoes_independentes": 5,
+    "confrontos_de_chave_e_comentarios": 5,
+    "deltas_diretos_reconstruidos": [
+      "av-e1-48",
+      "av-e1-50"
+    ],
+    "preservacoes_de_artigo_conferidas": [
+      "av-e1-46",
+      "av-e1-47",
+      "av-e1-49"
+    ],
+    "bases_vinculadas_inspecionadas": 6,
+    "figuras_em_artigos_e_trechos_de_base": 0,
+    "ajustes_obrigatorios": 0,
+    "fora_da_faixa": "AV01–AV45 não reexaminados; AV51–AV80 não antecipados."
+  },
+  "verificacao_final": {
+    "data": "2026-10-28T23:08:39.789Z",
+    "metodo": "Parser canônico parseHtml, hashes sha256 e conferência de cada comando/opção do parecer contra o artigo atual; reconstrução por substituições apenas em AV48/AV50.",
+    "parser_arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+    "parser_sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5",
+    "html_frozen_sha256_confirmado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "itens": [
+      {
+        "id": "av-e1-46",
+        "hash_conferido": true,
+        "cinco_opcoes_textuais_conferidas": true,
+        "chave_compativel": true,
+        "figuras_no_artigo": 0,
+        "alterado_na_r1": false
+      },
+      {
+        "id": "av-e1-47",
+        "hash_conferido": true,
+        "cinco_opcoes_textuais_conferidas": true,
+        "chave_compativel": true,
+        "figuras_no_artigo": 0,
+        "alterado_na_r1": false
+      },
+      {
+        "id": "av-e1-48",
+        "hash_conferido": true,
+        "cinco_opcoes_textuais_conferidas": true,
+        "chave_compativel": true,
+        "figuras_no_artigo": 0,
+        "alterado_na_r1": true
+      },
+      {
+        "id": "av-e1-49",
+        "hash_conferido": true,
+        "cinco_opcoes_textuais_conferidas": true,
+        "chave_compativel": true,
+        "figuras_no_artigo": 0,
+        "alterado_na_r1": false
+      },
+      {
+        "id": "av-e1-50",
+        "hash_conferido": true,
+        "cinco_opcoes_textuais_conferidas": true,
+        "chave_compativel": true,
+        "figuras_no_artigo": 0,
+        "alterado_na_r1": true
+      }
+    ]
+  },
+  "limites_e_autoria": {
+    "executor_deste_arquivo": "/root/auditor_av_continuacao, agente automatizado de apoio independente",
+    "auditor_principal": "/root/auditor_ban07_final",
+    "coordenacao": "/root",
+    "trabalho_anterior": "AV01–AV45 pertencem ao apoio anterior /root/auditor_av; não foram reexecutados ou atribuídos ao autor deste arquivo.",
+    "fonte_anterior_consultada": "Somente registro AV47 do diagnóstico anterior do apoio do Corretor, atribuído em confronto, por identidade exata de artigo e após solução própria. Não constitui evidência independente por si.",
+    "tipo_de_evidencia": "Inspeção estática do artigo e das bases, demonstração termodinâmica própria e comparação de bytes; fontes primárias acadêmicas/técnicas usadas como corroboradoras identificadas. Não houve teste com estudantes ou revisão humana.",
+    "plausibilidade": "Juízo teórico dos distratores, com erro reproduzível indicado para cada opção; não foram alegadas frequências reais de erro ou discriminação medida. A observação em AV47 é não bloqueante pelo mecanismo concreto registrado, não por ser uma opção falsa.",
+    "sem_arredondamento": "Cinco comandos qualitativos sem resultado numérico; equivalências semânticas foram verificadas. Não é encerramento de BAN-08 numérico global.",
+    "nao_executado": "Navegador, persistência, acessibilidade global, piloto, validação psicométrica, outros 192 itens ou requisitos curriculares novos.",
+    "decisao_limitada": "Os cinco vereditos são locais ao escopo BAN-07 e aos hashes registrados. Não constituem aprovação global de BAN-07, do curso ou liberação de qualquer ID.",
+    "arquivos_modificados": "Somente este parecer JSON. Produto, controle, checklist e pareceres de outros agentes não foram editados."
+  }
+}

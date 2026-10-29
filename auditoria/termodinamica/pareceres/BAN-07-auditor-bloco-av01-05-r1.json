@@ -1,0 +1,649 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "bloco": "AV01–AV05",
+  "data": "2026-10-28",
+  "revisor": {
+    "agente": "/root/auditor_av",
+    "natureza": "agente automatizado; apoio científico independente ao Auditor /root/auditor_ban07",
+    "autor_corretor": false,
+    "poder_de_aprovacao": "somente veredito dos itens examinados; não aprova BAN-07 globalmente"
+  },
+  "produto": {
+    "arquivo": "modulos/e1-termodinamica.html",
+    "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+    "sha256_esperado": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+  },
+  "escopo": {
+    "previsto": [
+      "AV01",
+      "AV02",
+      "AV03",
+      "AV04",
+      "AV05"
+    ],
+    "examinado": [
+      "AV01",
+      "AV02",
+      "AV03",
+      "AV04",
+      "AV05"
+    ],
+    "opcoes_examinadas": 25,
+    "fora_de_escopo": "Demais itens, implementação, controle/checklist, BAN-08 e classificação global de nível avançado."
+  },
+  "metodo": "Leitura dos artigos atuais pelo parseHtml/decodeHtml do validador de inventário; comando e bases antes da resolução; derivação própria, exame de todas as opções e só então confronto com comentário. Registros do Corretor não usados como prova científica exclusiva. Plausibilidade de distratores é teórica, sem piloto empírico.",
+  "itens": [
+    {
+      "item": "AV01",
+      "id_artigo": "av-e1-01",
+      "sha256_artigo": "fef921d85b9f61c1e2a63b23fa1df1a9479973608dea0c768045e221f31390b5",
+      "comando": "Amostra homogênea em equilíbrio é dividida em duas partes iguais, à mesma temperatura e pressão; identificar o par de propriedades que conserva seu valor.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": true,
+        "nota": "A primeira inspeção estrutural mostrou inadvertidamente data-cr-gabarito=C. Não há alegação de cegamento completo; a solução abaixo foi deduzida pelo critério de extensividade antes da leitura da resolução."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Suficientes. Homogeneidade, equilíbrio e manutenção de T e p fixam o estado; divisão em partes iguais permite comparar extensivas.",
+        "hipoteses": "Termodinâmica macroscópica usual, sem efeitos interfaciais ou alteração de composição/fase introduzidos pela divisão.",
+        "unidades": "Sem cálculo numérico ou necessidade de unidades; massa específica designa m/V, e os termos total distinguem grandezas extensivas.",
+        "figuras": "Nenhuma figura no artigo.",
+        "bases_acessiveis": [
+          "#base-propriedades",
+          "#base-medidas"
+        ]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Se a amostra inicial tem m,V,U,H, cada metade homogênea no mesmo estado tem m/2,V/2,U/2,H/2. Temperatura é a mesma por condição explícita. A razão rho=(m/2)/(V/2)=m/V conserva-se. Portanto somente temperatura e massa específica formam um par em que ambos os valores permanecem.",
+        "chave_derivada": "C",
+        "unicidade": "A, B e D contêm apenas propriedades extensivas; E contém massa. Só C contém duas intensivas conservadas. Não há arredondamento nem opções numericamente equivalentes."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Massa e volume total.",
+          "correta": false,
+          "demonstracao": "m e V caem à metade.",
+          "erro_plausivel": "Confundir conservação global da matéria com manutenção da massa e do volume de cada subsistema.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "B",
+          "texto": "Energia interna total e massa.",
+          "correta": false,
+          "demonstracao": "U=mu e m são extensivas; ambos se reduzem por 2 no mesmo estado.",
+          "erro_plausivel": "Confundir energia interna específica u, conservada no mesmo estado, com energia interna total U.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "C",
+          "texto": "Temperatura e massa específica.",
+          "correta": true,
+          "demonstracao": "T é mantida e rho=m/V conserva-se quando numerador e denominador caem igualmente.",
+          "erro_plausivel": null,
+          "plausibilidade": "Resposta válida."
+        },
+        {
+          "letra": "D",
+          "texto": "Entalpia total e volume total.",
+          "correta": false,
+          "demonstracao": "H=mh e V=mv caem à metade.",
+          "erro_plausivel": "Tratar propriedades totais como se fossem específicas h e v.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "E",
+          "texto": "Massa e temperatura.",
+          "correta": false,
+          "demonstracao": "T conserva-se, mas m é reduzida à metade.",
+          "erro_plausivel": "Aceitar o par ao reconhecer apenas a temperatura ou tomar a massa de cada parte como a massa original.",
+          "plausibilidade": "Plausível conceitualmente."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "C",
+        "coincide": true,
+        "comentario": "Correto e coerente para todas as opções. A/B/D explicitam extensividade; E distingue o componente conservado do que muda. Não depende de número ou dado ausente."
+      },
+      "fontes_usadas": [
+        {
+          "tipo": "criterio",
+          "arquivo": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md",
+          "local": "BAN-07 e regra 3.2; aplicação específica de verificação"
+        },
+        {
+          "tipo": "protocolo",
+          "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+          "local": "papel do Auditor e padrão de aprovação"
+        },
+        {
+          "tipo": "produto_atual",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-01",
+          "uso": "Comando, opções e, após a derivação, resolução."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-propriedades",
+          "uso": "Propriedades intensivas/extensivas e específicas."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-medidas",
+          "uso": "Densidade m/V e divisão homogênea."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV02",
+      "id_artigo": "av-e1-02",
+      "sha256_artigo": "8b7328a79ca6b50995426770504df6de88f6bf37cf7a3038fef9709847d6bc20",
+      "comando": "Distinguir propriedades de estado de transferências de energia; assinalar a alternativa INCORRETA.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": true,
+        "nota": "A inspeção estrutural inicial do bloco mostrou data-cr-gabarito=A. Comando e bases foram examinados sem a resolução; não se alega cegamento completo."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Suficientes para uma questão conceitual. Os mesmos estados significam estados do mesmo sistema, incluindo quantidade e composição pertinentes.",
+        "hipoteses": "Estados termodinâmicos de equilíbrio; trabalho pode depender do caminho, sem alegar que obrigatoriamente difere em todo par de caminhos.",
+        "unidades": "Não há grandezas numéricas ou conversões.",
+        "figuras": "Nenhuma no artigo; a base acessível contém exemplo p–V, mas a definição resolve o item.",
+        "bases_acessiveis": [
+          "#base-propriedades",
+          "#base-balanco-fechado"
+        ]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "U é propriedade de estado: U2=U(estado 2), e a diferença U2−U1 fica fixada pelos extremos. Calor Q e trabalho W são transferências dependentes do caminho; na convenção Q−W=Delta U, mudar W entre dois caminhos muda Q de forma correspondente. Por exemplo, os mesmos extremos podem ser conectados por expansão isobárica a p_alta seguida de trecho isocórico, ou por trecho isocórico seguido de expansão a p_baixa; W1=p_alta Delta V e W2=p_baixa Delta V. Logo a dependência de U final do caminho, apesar de mesmo estado final, é a única afirmação falsa.",
+        "chave_derivada": "A",
+        "unicidade": "B, C, D e E são verdadeiras; A é falsa. INCORRETA está destacado no comando. Não há arredondamento/equivalência numérica."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "A energia interna final depende do caminho, mesmo quando o estado final é o mesmo.",
+          "correta": true,
+          "valor_logico": "Falso; é a opção solicitada.",
+          "demonstracao": "U2 é fixada pelo estado final; Q e W individuais podem variar, U2 não.",
+          "erro_plausivel": "Transferir para U a dependência de caminho de Q e W.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "B",
+          "texto": "A pressão de equilíbrio é uma propriedade de estado.",
+          "correta": false,
+          "valor_logico": "Verdadeiro.",
+          "demonstracao": "Pressão de equilíbrio caracteriza o estado, sem memória do trajeto.",
+          "erro_plausivel": "Confundir um instrumento/processo de medição com a definição da propriedade.",
+          "plausibilidade": "Distrator adequado ao comando de escolher a incorreta."
+        },
+        {
+          "letra": "C",
+          "texto": "Calor e trabalho são formas de transferência de energia.",
+          "correta": false,
+          "valor_logico": "Verdadeiro.",
+          "demonstracao": "Descrevem energia que cruza a fronteira, e não propriedades armazenadas.",
+          "erro_plausivel": "Tomar calor como quantidade armazenada ou excluir trabalho de transferências de energia.",
+          "plausibilidade": "Distrator adequado ao erro conceitual comum."
+        },
+        {
+          "letra": "D",
+          "texto": "O trabalho pode diferir entre caminhos que ligam os mesmos estados.",
+          "correta": false,
+          "valor_logico": "Verdadeiro.",
+          "demonstracao": "A integral p dV depende do trajeto; p_alta Delta V e p_baixa Delta V podem diferir.",
+          "erro_plausivel": "Tratar trabalho como função de estado ao ler apenas os estados extremos.",
+          "plausibilidade": "Distrator adequado e modal pode evita generalização excessiva."
+        },
+        {
+          "letra": "E",
+          "texto": "Dois processos entre os mesmos estados têm a mesma variação de energia interna.",
+          "correta": false,
+          "valor_logico": "Verdadeiro.",
+          "demonstracao": "Delta U=U2−U1 é a diferença de uma propriedade de estado.",
+          "erro_plausivel": "Confundir a variação da propriedade com as transferências que a produzem.",
+          "plausibilidade": "Distrator adequado ao objetivo."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "A",
+        "coincide": true,
+        "comentario": "Correto: a alternativa do gabarito é falsa porque U é de estado; os comentários B–E corretamente os classificam como verdadeiros. Não troca valor lógico com a letra pedida."
+      },
+      "fontes_usadas": [
+        {
+          "tipo": "produto_atual",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-02",
+          "uso": "Comando e opções; comentário lido depois da derivação."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-propriedades",
+          "uso": "Definição de estado e dependência do caminho."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-balanco-fechado",
+          "uso": "Primeira lei, convenções e dois caminhos p–V."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV03",
+      "id_artigo": "av-e1-03",
+      "sha256_artigo": "6e8bc6e49193f08a8c5f0ae6b4271720a23a29e7888ecfe6cf83faaa63ff85fa",
+      "comando": "Julgar movimento microscópico em líquido, vibrações em sólido e exclusividade da energia cinética microscópica aos gases; selecionar a sequência V/F.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": true,
+        "nota": "A inspeção estrutural inicial do bloco mostrou data-cr-gabarito=B. Não se alega cegamento completo; as três proposições foram julgadas antes da resolução."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Suficientes para modelo microscópico elementar nas condições usuais de instalações térmicas.",
+        "hipoteses": "Movimento microscópico não se confunde com translação macroscópica do equipamento; a proposição II diz podem vibrar, não exige movimento translacional livre no sólido.",
+        "unidades": "Sem cálculo, constantes ou conversões.",
+        "figuras": "Nenhuma figura no artigo.",
+        "bases_acessiveis": [
+          "#base-molecular"
+        ]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "I é verdadeira: partículas em líquidos apresentam movimento térmico microscópico, ainda que interajam e permaneçam próximas. II é verdadeira: vibração de partículas em torno de posições de equilíbrio é compatível com sólido e implica movimento microscópico. III é falsa: energia cinética é associada a esse movimento; não se limita à translação livre de gases e inclui movimentos em líquidos e vibrações de sólidos. A sequência é V,V,F.",
+        "chave_derivada": "B",
+        "unicidade": "Somente B coincide com os três julgamentos. Não há números nem arredondamentos."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "V – F – V.",
+          "correta": false,
+          "demonstracao": "I correta; II deveria ser V e III deveria ser F.",
+          "erro_plausivel": "Confundir rigidez de um sólido com imobilidade microscópica e restringir a expressão energia cinética à translação de gás.",
+          "plausibilidade": "Teórica: pode combinar reconhecimento do movimento em líquidos com falta de ligação entre movimento e energia."
+        },
+        {
+          "letra": "B",
+          "texto": "V – V – F.",
+          "correta": true,
+          "demonstracao": "Representa corretamente I,II,III.",
+          "erro_plausivel": null,
+          "plausibilidade": "Resposta válida."
+        },
+        {
+          "letra": "C",
+          "texto": "F – F – V.",
+          "correta": false,
+          "demonstracao": "Inverte os três valores: líquidos se movem, sólidos podem vibrar e energia cinética não é exclusiva dos gases.",
+          "erro_plausivel": "Modelo mental de que só o estado gasoso tem partículas em movimento.",
+          "plausibilidade": "Teoricamente forte como concepção equivocada coerente."
+        },
+        {
+          "letra": "D",
+          "texto": "V – V – V.",
+          "correta": false,
+          "demonstracao": "Apenas III está errada: movimentos nas fases condensadas também têm componente cinética.",
+          "erro_plausivel": "Reconhecer movimento em líquidos/sólidos, mas associar o termo energia cinética somente à fórmula translacional do gás ideal.",
+          "plausibilidade": "Teórica: erro de vinculação entre conceito de energia e movimento, ou aceitação automática de todas as afirmações."
+        },
+        {
+          "letra": "E",
+          "texto": "F – V – V.",
+          "correta": false,
+          "demonstracao": "II correta; I deve ser V e III F.",
+          "erro_plausivel": "Negar movimento em líquido enquanto admite vibração em sólido, e tratar energia cinética como exclusiva dos gases.",
+          "plausibilidade": "Teórica, menos forte que C; exige concepções fragmentadas de movimento e energia."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "B",
+        "coincide": true,
+        "comentario": "Os julgamentos e as refutações A,C,D,E conferem. A explicação de III relaciona corretamente movimento às outras fases. O comentário não afirma que toda energia interna seja somente cinética."
+      },
+      "fontes_usadas": [
+        {
+          "tipo": "produto_atual",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-03",
+          "uso": "Proposições e sequências; comentário depois da derivação."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-molecular",
+          "uso": "Movimento de líquidos/sólidos e limites do modelo cinético de gás ideal."
+        }
+      ],
+      "achados": [
+        {
+          "natureza": "observacao_nao_bloqueante",
+          "descricao": "A, C, D e E têm III=V; só B tem III=F. Conhecer a falsidade de III basta para resolver sem decidir I e II. Isso preserva validade científica e unicidade em BAN-07, mas limita a evidência de que o aluno julgou as três proposições. A plausibilidade é teórica, especialmente para sequências com afirmações fragmentadas sobre movimento e energia."
+        }
+      ],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    },
+    {
+      "item": "AV04",
+      "id_artigo": "av-e1-04",
+      "sha256_artigo": "25f60f37c5a530e2a2d19a9f0743d8941e83178ebb6663947566fd34f0bbfead",
+      "comando": "Interpretar o modelo de água líquida incompressível em bombeamento, longe da região crítica e em faixa moderada de pressão e temperatura.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": true,
+        "nota": "A inspeção estrutural inicial do bloco mostrou data-cr-gabarito=D. Não se alega cegamento completo; a definição física foi derivada antes da resolução."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Suficientes. A restrição de faixa operacional e distância da região crítica torna explícito o caráter aproximado do modelo.",
+        "hipoteses": "v aproximadamente constante, finito e positivo para água líquida na faixa estudada; isso não fixa p, T ou a massa de líquido de um volume de controle arbitrário.",
+        "unidades": "Sem valores numéricos necessários. O zero da temperatura em E sequer identifica a escala; em qualquer interpretação não é condição de incompressibilidade.",
+        "figuras": "Nenhuma figura no artigo.",
+        "bases_acessiveis": [
+          "#base-medidas"
+        ]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "Incompressibilidade idealiza rho=constante, equivalendo a v=1/rho aproximadamente constante na faixa declarada. A compressibilidade isotérmica é kappa_T=−(1/v)(dv/dp)_T; desprezar kappa_T despreza a variação de v com p, não v. A aproximação de v na faixa de temperatura foi delimitada pelo enunciado. Uma bomba pode elevar p com trabalho específico aproximadamente v Delta p; não é necessário p constante nem T=0. A massa de líquido armazenada pode variar, por exemplo durante enchimento de tanque, pois o volume ocupado por esse líquido pode aumentar sem mudar sua densidade. Assim D é a resposta.",
+        "chave_derivada": "D",
+        "unicidade": "A impõe conservação de inventário que não decorre do material; B proíbe a finalidade da bomba; C anula o volume em vez de sua variação; E impõe temperatura especial ausente da hipótese. Só D é verdadeira. Sem arredondamentos."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "a massa do líquido não pode variar em um volume de controle.",
+          "correta": false,
+          "demonstracao": "dM_liq/dt=rho dV_liq/dt pode ser não nulo durante enchimento, embora rho permaneça constante. Em VC fixo inteiramente preenchido pela mesma fase incompressível, M pode ser constante, mas isso depende da fronteira e ocupação, não é a definição universal da hipótese.",
+          "erro_plausivel": "Confundir incompressibilidade com sistema fechado ou com regime permanente.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "B",
+          "texto": "a pressão não pode variar ao atravessar uma bomba.",
+          "correta": false,
+          "demonstracao": "A bomba pode produzir Delta p>0 mantendo v aproximadamente constante; w recebido é da ordem de v Delta p.",
+          "erro_plausivel": "Confundir volume específico constante com pressão constante.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "C",
+          "texto": "o volume específico é nulo.",
+          "correta": false,
+          "demonstracao": "v=1/rho permanece positivo; desprezar dv/dp não implica v=0.",
+          "erro_plausivel": "Confundir derivada ou variação desprezível com a própria grandeza nula.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "D",
+          "texto": "o volume específico pode ser tratado como aproximadamente constante na faixa analisada.",
+          "correta": true,
+          "demonstracao": "Corresponde à idealização física delimitada pelo comando.",
+          "erro_plausivel": null,
+          "plausibilidade": "Resposta válida."
+        },
+        {
+          "letra": "E",
+          "texto": "a temperatura do líquido deve ser igual a zero.",
+          "correta": false,
+          "demonstracao": "Nenhuma relação do modelo exige T=0 ou t=0; água líquida pode ser modelada incompressível em diversas temperaturas operacionais.",
+          "erro_plausivel": "Não há mecanismo suficientemente sustentado para passar de volume específico aproximadamente constante a temperatura nula. A confusão reconhecível seria com Delta T=0/isotermia, o que esta opção não diz.",
+          "plausibilidade": "Não demonstrada. A formulação parece artificial e a ausência de escala agrava sua pouca relação com o conceito."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "D",
+        "coincide": true,
+        "comentario": "As refutações são cientificamente corretas, porém E apenas informa que o modelo não exige temperatura nula: não justifica um erro plausível. A poderia refutar a mudança do inventário mais diretamente com exemplo de enchimento; entrada/saída por si só também pode ocorrer em regime permanente com massa armazenada constante."
+      },
+      "fontes_usadas": [
+        {
+          "tipo": "produto_atual",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-04",
+          "uso": "Comando e alternativas; comentário depois da derivação."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-medidas",
+          "uso": "v=1/rho e delimitação do líquido quase incompressível."
+        },
+        {
+          "tipo": "criterio",
+          "arquivo": "AUDITORIA_TERMODINAMICA_NIVEL_AVANCADO.md",
+          "local": "BAN-07",
+          "uso": "Exigência de distratores plausíveis baseados em erros reais."
+        }
+      ],
+      "achados": [
+        {
+          "id": "AV04-E",
+          "natureza": "ajuste_obrigatorio",
+          "descricao": "Distrator E falso, porém sem erro físico plausível bem identificado. Não é preciso piloto empírico, mas deve haver uma concepção equivocada reconhecível ligada ao conteúdo."
+        },
+        {
+          "id": "AV04-A-precisao",
+          "natureza": "observacao_nao_bloqueante",
+          "descricao": "Para maior precisão do feedback A, usar exemplo de variação do inventário de líquido (enchimento) e explicitar a fronteira; a mera existência de entrada e saída não implica mudança da massa armazenada."
+        }
+      ],
+      "ajustes_obrigatorios": [
+        {
+          "id": "AV04-E",
+          "acao": "Substituir E por distrator falso baseado em confusão conceitual identificável e atualizar o comentário correspondente. Exemplo admissível: a temperatura permanece necessariamente constante durante o bombeamento, a ser refutado distinguindo incompressibilidade de isotermia.",
+          "evidencia_reapresentacao": "Artigo atualizado e hash; nova conferência das cinco alternativas e demonstração de que só D continua correta. Manter a faixa operacional e não converter hipótese de v constante em exigência de T constante."
+        }
+      ],
+      "veredito_item": "AJUSTES_OBRIGATORIOS"
+    },
+    {
+      "item": "AV05",
+      "id_artigo": "av-e1-05",
+      "sha256_artigo": "8860a27c54eebc598b479ab61197026acb81cf4d81a143876bfe55fea2a6fa4c",
+      "comando": "Associar, nessa ordem, tempo, temperatura termodinâmica e quantidade de matéria às respectivas unidades de base do SI.",
+      "leitura_previa": {
+        "comentario_lido_antes_da_derivacao": false,
+        "chave_metadata_vista_antes_da_derivacao": true,
+        "nota": "A inspeção estrutural inicial do bloco mostrou data-cr-gabarito=B. Não se alega cegamento completo; a associação dimensional foi conferida na base acessível e em fonte primária antes da resolução."
+      },
+      "dados_hipoteses_unidades": {
+        "suficiencia": "Suficientes. O comando distingue unidades de base, temperatura termodinâmica e quantidade de matéria, evitando ambiguidade com temperatura Celsius, massa ou unidades não SI aceitas para uso com SI.",
+        "hipoteses": "Classificação vigente do SI em unidades de base e derivadas, mantida por conveniência após a revisão de 2018.",
+        "unidades": "Tempo: s; temperatura termodinâmica: K; quantidade de matéria: mol. Não há números ou arredondamento.",
+        "figuras": "Nenhuma figura no artigo.",
+        "bases_acessiveis": [
+          "#base-medidas"
+        ]
+      },
+      "demonstracao_independente": {
+        "raciocinio": "A classificação das grandezas dá tempo→segundo (s), temperatura termodinâmica→kelvin (K), quantidade de matéria→mol (mol). A tabela oficial BIPM confirma os três. Minuto e hora não são unidades de base; grau Celsius é unidade SI com nome especial para temperatura Celsius, mas a unidade de base de temperatura termodinâmica é kelvin. Joule tem dimensão de energia kg m² s⁻²; quilograma é massa; newton é força kg m s⁻². Logo apenas B apresenta as três unidades pedidas na ordem correta.",
+        "chave_derivada": "B",
+        "unicidade": "Todas as opções distintas são nominais e correspondem a grandezas/classes de unidade diferentes; conversões possíveis de tempo ou temperatura não as tornam unidades de base equivalentes. Só B atende o comando."
+      },
+      "opcoes": [
+        {
+          "letra": "A",
+          "texto": "Minuto; grau Celsius; mol.",
+          "correta": false,
+          "demonstracao": "Mol está correto, mas minuto não é unidade de base e grau Celsius não é a unidade de base da temperatura termodinâmica.",
+          "erro_plausivel": "Selecionar unidades familiares/usuais em vez de unidades de base e confundir temperatura Celsius com temperatura termodinâmica.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "B",
+          "texto": "Segundo; kelvin; mol.",
+          "correta": true,
+          "demonstracao": "As três associações coincidem com as unidades de base respectivas na ordem pedida.",
+          "erro_plausivel": null,
+          "plausibilidade": "Resposta válida."
+        },
+        {
+          "letra": "C",
+          "texto": "Segundo; joule; mol.",
+          "correta": false,
+          "demonstracao": "Joule mede energia, não temperatura; tempo e quantidade de matéria estão corretos.",
+          "erro_plausivel": "Confundir temperatura com energia térmica ou calor.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "D",
+          "texto": "Segundo; grau Fahrenheit; quilograma.",
+          "correta": false,
+          "demonstracao": "Fahrenheit não é unidade de base SI; kg mede massa, não quantidade de matéria.",
+          "erro_plausivel": "Usar escala conhecida de temperatura e tratar quantidade de matéria como sinônimo de massa.",
+          "plausibilidade": "Plausível conceitualmente."
+        },
+        {
+          "letra": "E",
+          "texto": "Hora; kelvin; newton.",
+          "correta": false,
+          "demonstracao": "Kelvin está correto; hora não é unidade de base e newton mede força, não quantidade de matéria.",
+          "erro_plausivel": "Preferir unidade usual de tempo e confundir quantidade de matéria com peso/força.",
+          "plausibilidade": "Plausível conceitualmente."
+        }
+      ],
+      "confronto": {
+        "gabarito_publicado": "B",
+        "coincide": true,
+        "comentario": "Coerente com a derivação e a fonte primária. A é corretamente negada por não satisfazer a exigência de unidade de base; o texto não comete o erro de excluir grau Celsius do SI. C,D,E distinguem corretamente energia, massa e força da grandeza pedida."
+      },
+      "fontes_usadas": [
+        {
+          "tipo": "produto_atual",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#av-e1-05",
+          "uso": "Comando e alternativas; comentário lido depois da derivação."
+        },
+        {
+          "tipo": "base_acessivel",
+          "arquivo": "modulos/e1-termodinamica.html",
+          "ancora": "#base-medidas",
+          "uso": "Sete unidades de base e distinções kelvin/Celsius e massa/quantidade de matéria."
+        },
+        {
+          "tipo": "fonte_primaria_externa",
+          "titulo": "BIPM — SI base units",
+          "url": "https://www.bipm.org/en/measurement-units/si-base-units",
+          "acesso": "2026-10-28",
+          "local": "Tabela: time, thermodynamic temperature, amount of substance.",
+          "uso": "Confirmação independente de segundo, kelvin, mol."
+        },
+        {
+          "tipo": "fonte_primaria_externa",
+          "titulo": "BIPM — A concise summary of the International System of Units, SI",
+          "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-concise-EN.pdf/2fda4656-e236-0fcb-3867-36ca74eea4e3?download=true&t=1682577856452&version=1.9",
+          "acesso": "2026-10-28",
+          "local": "Página 2, tabelas 1–2; página 3, temperatura Celsius.",
+          "uso": "Unidades de base, joule para energia, newton para força e Celsius como unidade SI de temperatura Celsius."
+        }
+      ],
+      "achados": [],
+      "ajustes_obrigatorios": [],
+      "veredito_item": "APROVADO_NO_ESCOPO_BAN-07"
+    }
+  ],
+  "estado": "CONCLUIDO_COM_AJUSTES_OBRIGATORIOS_NO_BLOCO",
+  "cobertura": {
+    "autoria": "Exame efetivamente realizado por /root/auditor_av; não herdado de registros do Corretor.",
+    "ids": [
+      "AV01",
+      "AV02",
+      "AV03",
+      "AV04",
+      "AV05"
+    ],
+    "ids_artigo": [
+      "av-e1-01",
+      "av-e1-02",
+      "av-e1-03",
+      "av-e1-04",
+      "av-e1-05"
+    ],
+    "itens": 5,
+    "juizos_de_alternativas": 25,
+    "alternativas_por_item": {
+      "AV01": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "AV02": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "AV03": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "AV04": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "AV05": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
+    },
+    "proposicoes_AV03_julgadas": [
+      "I",
+      "II",
+      "III"
+    ],
+    "derivacoes_independentes": 5,
+    "confrontos_com_comentario": 5,
+    "dados_unidades_restricoes_suficiencia": 5,
+    "unicidade_e_arredondamentos": 5,
+    "figuras": "Nenhuma nos cinco artigos; bases acessíveis identificadas e lidas.",
+    "limitacao_cegamento": "Chaves em metadados foram vistas na primeira inspeção estrutural dos cinco artigos. As resoluções foram lidas após a derivação de cada item. Não se reivindica cegamento completo.",
+    "aprovacoes_locais": [
+      "AV01",
+      "AV02",
+      "AV03",
+      "AV05"
+    ],
+    "itens_com_ajuste_obrigatorio": [
+      "AV04"
+    ],
+    "aceite_global_BAN07": false
+  },
+  "resumo": {
+    "veredito_bloco": "AJUSTES_OBRIGATORIOS",
+    "ajustes_obrigatorios": [
+      {
+        "item": "AV04",
+        "id": "AV04-E",
+        "resumo": "Substituir distrator sobre temperatura igual a zero por erro conceitual plausível e atualizar a justificativa; reapresentar cinco alternativas com hash atualizado."
+      }
+    ],
+    "observacoes_nao_bloqueantes": [
+      "AV03 permite atalho por III, pois todos os distratores têm III=V.",
+      "AV04-A pode tornar mais direta a refutação da conservação do inventário usando enchimento e fronteira definida."
+    ],
+    "decisao_de_liberacao": "Não emite liberação do próximo ID nem aceite global. Parecer parcial científico para consolidação pelo Auditor principal."
+  }
+}

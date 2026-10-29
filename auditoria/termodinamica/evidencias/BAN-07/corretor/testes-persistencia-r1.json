@@ -1,0 +1,72 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "autor": "/root/corretor_aaa",
+  "metodo": "Node/VM com funções reais e camada real de armazenamento de curso.js; localStorage e DOM mínimo simulados. Não é teste de navegador.",
+  "sha256_curso_js": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+  "casos": 15,
+  "falhas": [],
+  "resultados": [
+    {
+      "criterio": "E1 conserva respostas/erros/marcações antigas sem contá-las; gravação seguinte e portal concordam",
+      "ok": true
+    },
+    {
+      "criterio": "E1 apenas histórico não é estado vazio e não é apagado por gravação sem novas respostas",
+      "ok": true
+    },
+    {
+      "criterio": "Resumo de simulado usa somente marcações das digitais vigentes",
+      "ok": true
+    },
+    {
+      "criterio": "E1 sem histórico não mostra aviso de versões anteriores",
+      "ok": true
+    },
+    {
+      "criterio": "E1 preserva disco ilegível e duas tentativas novas em memória: {invalido",
+      "ok": true
+    },
+    {
+      "criterio": "E1 preserva disco ilegível e duas tentativas novas em memória: null",
+      "ok": true
+    },
+    {
+      "criterio": "E1 preserva disco ilegível e duas tentativas novas em memória: []",
+      "ok": true
+    },
+    {
+      "criterio": "E1 preserva disco ilegível e duas tentativas novas em memória: {\"v\":9,\"respostas\":{}}",
+      "ok": true
+    },
+    {
+      "criterio": "E1 preserva disco ilegível e duas tentativas novas em memória: {\"v\":2,\"respostas\":[]}",
+      "ok": true
+    },
+    {
+      "criterio": "Leitura bloqueada com dados anteriores nunca sobrescreve o disco",
+      "ok": true
+    },
+    {
+      "criterio": "Falha de gravação conserva disco e histórico, com nova resposta na página",
+      "ok": true
+    },
+    {
+      "criterio": "Outro módulo conserva filtragem anterior por digitais vigentes",
+      "ok": true
+    },
+    {
+      "criterio": "Entradas inválidas não entram no histórico preservado",
+      "ok": true
+    },
+    {
+      "criterio": "AV conserva histórico sem preencher versão nova, avisa e salva a próxima resposta sem migrar letra",
+      "ok": true
+    },
+    {
+      "criterio": "AV JSON inválido e leitura bloqueada preservam original com nova ação pendente",
+      "ok": true
+    }
+  ]
+}

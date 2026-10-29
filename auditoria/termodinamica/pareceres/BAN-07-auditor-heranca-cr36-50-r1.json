@@ -1,0 +1,453 @@
+{
+  "id": "BAN-07",
+  "rodada": 1,
+  "tipo": "REVISAO_INDEPENDENTE_HERANCA_CR36_50",
+  "data": "2026-10-29",
+  "revisor": "Agente automatizado /root/inspect_repo",
+  "escopo": "CR36–CR50, 15 artigos, 14 C/E (incluindo um documental sem nota) e um item de cinco alternativas. Não abrange candidatos próprios ou demais itens; não é parecer integral.",
+  "criterio": "BAN-07: suficiência, consistência física, comando, unidades, restrições e justificativas; nos estudos críticos, separar chave oficial, hipótese e interpretação sem impor nota ou unicidade não demonstrada.",
+  "metodo": "Leitura direta dos artigos e comentários r1, bases vinculadas pertinentes e provas preliminares de /root/auditor_aaa. Chaves e comentários estavam conhecidos; sem alegar cegamento. Comparação de identidade dos 15 artigos com baseline e preparação executada também com parseHtml/sha256 canônicos; identidade não é aprovação automática.",
+  "fontes_e_hashes": [
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "sha256": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-07/antes/modulos/e1-termodinamica.html",
+      "sha256": "0fc12a96fd30d366770a56c366fb61bc6a9fa7bd761e81fb40242a30f6dd78c7"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/BAN-07-leitura-base.json",
+      "sha256": "d71452ed79437c69f454706c7645b47b5e3b7f2a41e228f0ea37ac078a2a9913"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/PROTOCOLO_AAA.md",
+      "sha256": "18f1f299556e8e60c926a1921987f6d2c10cc939aa4aef4487117dc66c344afc"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/entregas/BAN-07-r1.md",
+      "sha256": "9dfa2059b10be96615bbdc0c42d596c756910bbbd2791636ad061870dd96a893"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/BAN-10/decisoes-r1.json",
+      "sha256": "9624fa164d6cb564f5758a3af1b3ff3866710ddb0a26cea830ebcc3e8c1243f3"
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "sha256": "0bd26bcf6288b3bd159ac7c167bfeb4a1a49bbebe784d26a3a93739fcb7790d5"
+    }
+  ],
+  "registros": [
+    {
+      "id_artigo": "cr-e1-36",
+      "sha256_artigo_r1": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e",
+      "sha256_artigo_baseline": "bcef62876e9bdf18b1a5a82bab92e3522b3afb08a57d62ff7690ba6567c0a69e",
+      "mesma_identidade_preparacao": true,
+      "chave": "E",
+      "prova_atual": "Uma expansão reversível adiabática em pistão produz W=∫p dV>0; Q=0 não impõe W=0.",
+      "juizo_alternativas": "C afirma zero para todo caso, refutado pelo contraexemplo; E identifica a afirmação como falsa.",
+      "confronto_comentario": "Comentário distingue Q e W, e atribui pV^k à hipótese adicional de gás ideal com capacidades constantes; relação suplementar não é necessária à refutação.",
+      "limites": "Não implica que todo processo adiabático tenha trabalho não nulo.",
+      "bases_vinculadas": [
+        "base-trabalho-fronteira",
+        "base-entropia",
+        "base-balanco-fechado"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Contraexemplo admissível: expansão reversível adiabática ideal num pistão comV2>V1 temW=∫pdV>0 eT/U caem. Q=0 não éW=0.",
+        "limites_anteriores": "Não é preciso presumircp/cv constantes para demonstrar existência; se usar pV^k constante, declarar capacidades constantes e modelo ideal.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-37",
+      "sha256_artigo_r1": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73",
+      "sha256_artigo_baseline": "e3a49cb2403795ae867f5cd76694cc11c71f3ff7c24f31727407420bdcc5fe73",
+      "mesma_identidade_preparacao": true,
+      "chave": "E",
+      "prova_atual": "Para mesmos estados, condições, restrições e ambiente a T0 constante, Wperdido=T0 Sger; maior geração reduz trabalho útil em relação à referência reversível.",
+      "juizo_alternativas": "C aceita associação inversa e universal; E rejeita.",
+      "confronto_comentario": "Comentário explicita referência reversível, restrições, T0 e Sger; não confunde entropia gerada com variação do sistema.",
+      "limites": "Figura visualizada diretamente: gráfico de disponibilidade versus ângulo e indicação de irreversibilidade; não é necessária leitura quantitativa para refutar a regra. Comparações fora das mesmas condições não são cobertas.",
+      "bases_vinculadas": [
+        "base-leitura-matematica",
+        "base-exergia"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Para mesma mudança de estado/referência ambiental e comparação de trabalho útil produzido, geração de entropia destrói exergia:Wperdido=T0Sgen≥0.",
+        "limites_anteriores": "Contexto motor distingue trabalho produzido de consumo de compressor; não comparar processos com entradas/restrições diferentes sem qualificação.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO",
+      "figura": {
+        "arquivo": "assets/questoes-reais-e1/figura-222735fab01e.png",
+        "sha256": "222735fab01e54a81e34f3bb54cfd7097a8cbc1391ebe6420d60df8b2513a9cb",
+        "inspecao": "Imagem efetivamente aberta; exibe ângulo de manivela, disponibilidade e irreversibilidade. Sem validação de fidelidade à figura da prova nesta execução."
+      }
+    },
+    {
+      "id_artigo": "cr-e1-38",
+      "sha256_artigo_r1": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402",
+      "sha256_artigo_baseline": "5233e8a9930268d3f0da527f4d83e641ffa6d2a760fd04e0a61eeb1883e82402",
+      "mesma_identidade_preparacao": true,
+      "chave": "C",
+      "prova_atual": "Teorema de Carnot estabelece η≤1−TL/TH para as mesmas fontes constantes; uma máquina reversível alcança o limite.",
+      "juizo_alternativas": "C aceita limite; E o nega.",
+      "confronto_comentario": "Resolução identifica escala kelvin e igualdade de rendimento de outras reversíveis.",
+      "limites": "Temperaturas absolutas positivas e as mesmas duas fontes; não implica desenho ou fluido único.",
+      "bases_vinculadas": [
+        "base-leitura-matematica",
+        "base-limite-carnot"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Pelo teorema deCarnot, nenhuma máquina entre duas fontes constantes excede rendimento reversível1−TL/TH. Carnot realiza esse limite.",
+        "limites_anteriores": "Não é exclusividade de um único fluido ou único desenho; todas reversíveis nas mesmas fontes têm igual rendimento.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-39",
+      "sha256_artigo_r1": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "sha256_artigo_baseline": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+      "mesma_identidade_preparacao": true,
+      "chave": "C_documental",
+      "prova_atual": "350×4,2=1470 J. Se QH for o único calor recebido, W=1470 J o trabalho líquido e a máquina fechada completar ciclo sem outros efeitos, QL=0, e Kelvin–Planck proíbe conversão integral.",
+      "juizo_alternativas": "C é chave documental oficial e coerente sob essa hipótese; E não é tratada como erro pontuável sob uma fronteira de motor com fluxos e outros efeitos não especificados.",
+      "confronto_comentario": "Roteiro e análise autoral diferenciam hipótese, chave oficial e avaliação sem nota; texto da resolução aparece explicitamente enquadrado nas hipóteses discutidas.",
+      "limites": "A igualdade numérica isolada não determina todas as trocas de uma fronteira aberta de motor de combustão. Classificação fora da pontuação é editorial, não anulação ou errata oficial.",
+      "bases_vinculadas": [
+        "base-segunda-lei",
+        "base-balanco-fechado"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "350cal*4,2=1470J. Em máquina térmica fechada cíclica, apenasQH eWlíquido,η=1 exigeQL=0, contrariandoKelvin–Planck entre fontes finitas.",
+        "limites_anteriores": "Motor de combustão com fronteira aberta/outrosfluxos não se reduz silenciosamente a essa máquina; manter alcance condicionado e análise autoral.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "ESTUDO_CRITICO_FORA_DE_NOTA_COM_CHAVE_DOCUMENTAL_C",
+      "conferencia_documental": {
+        "execucao": "Inspeção visual direta nesta revisão das páginas PNG de prova e gabarito, já renderizadas pela evidência FON-01. Prova exibe item 66 e dados; gabarito definitivo exibe C. Não re-renderizei PDF nem revalidei origem web.",
+        "imagens": [
+          {
+            "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-prova-p1.png",
+            "sha256": "b14753c62db4280062df46f7c03d0397865b526ae18f132122e8b0bc17c77045"
+          },
+          {
+            "arquivo": "auditoria/termodinamica/evidencias/FON-01/apoio/paginas/p22p-gabarito-p1.png",
+            "sha256": "518a6ca7c92c4a9f1c1ab7ea9545282b27644725587d7ceb14e78a9775f44523"
+          }
+        ],
+        "pdfs_locais": [
+          {
+            "arquivo": "downloads/termodinamica/provas/2022-02-20_petrobras-engenharia-de-processamento_prova.pdf",
+            "sha256": "1219213183d7a5ae1454ab297e7182d4eedf2d1f32847d0c1cfc0831ed70cbd3"
+          },
+          {
+            "arquivo": "downloads/termodinamica/gabaritos/2022-02-20_petrobras-engenharia-de-processamento_gabarito.pdf",
+            "sha256": "62fd95ad9eb441180cbf28fbc6704a0b19c1609b034a550a184d789b270688d8"
+          }
+        ],
+        "distincao": "Chave documental não é demonstração técnica nem anulação; análise do curso está condicionada. Não se declara teste de placar ou persistência nesta revisão."
+      }
+    },
+    {
+      "id_artigo": "cr-e1-40",
+      "sha256_artigo_r1": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909",
+      "sha256_artigo_baseline": "afc6cc711c91366246bbc7f1d20b52e217ec4bda325a90e34a346ae7a2afa909",
+      "mesma_identidade_preparacao": true,
+      "chave": "C",
+      "prova_atual": "Na substância simples compressível de composição fixa, dh=T ds+v dp; ds=0 e v>0 implicam Δh=∫v dp>0 para aumento de pressão na trajetória de equilíbrio.",
+      "juizo_alternativas": "C aceita resultado no modelo, E o negaria.",
+      "confronto_comentario": "Comentário explicita composição fixa e estados de equilíbrio e não confunde isentropia com isoentalpia.",
+      "limites": "A relação não cobre automaticamente mudanças de composição, reação, campos ou trabalho de estado adicional.",
+      "bases_vinculadas": [
+        "base-leitura-matematica",
+        "base-gibbs"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "dh=Tds+vdp;ds=0 e v>0 ⇒dh=vdp>0 para aumento de pressão ao longo de estados de equilíbrio de substância simples compressível/composição fixa.",
+        "limites_anteriores": "Não tratar relação simples como universal com reação ou campos/trabalhos adicionais de estado; condição do modelo está identificada na resolução.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-41",
+      "sha256_artigo_r1": "f4c503ea9b326caa519bbdd2cd70ae85279d9d03996adcfe8de703f77fd18e64",
+      "sha256_artigo_baseline": "f4c503ea9b326caa519bbdd2cd70ae85279d9d03996adcfe8de703f77fd18e64",
+      "mesma_identidade_preparacao": true,
+      "chave": "C",
+      "prova_atual": "Sob equilíbrio térmico/mecânico, a transferência do componente i entre fases implica μ_i^α=μ_i^β; em substância pura reduz-se a igualdade do potencial nas fases.",
+      "juizo_alternativas": "C é compatível com igualdade do mesmo componente entre fases em equilíbrio completo; E negaria essa condição.",
+      "confronto_comentario": "Comentário explicita comparações por componente e condições térmicas e mecânicas.",
+      "limites": "Não igualar potenciais de componentes distintos; igualdade química isolada sem T e p comuns não garante equilíbrio completo. O original genérico é interpretado nesse contexto, não como teorema suficiente isolado.",
+      "bases_vinculadas": [
+        "base-equilibrio-fases"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Condição química é μ_i^α=μ_i^β para cada componente transferível, junto do equilíbrio térmico e mecânico.",
+        "limites_anteriores": "Não exigir μ de componentes diferentes iguais nem tratar uma igualdade isolada como suficiente sob T/p distintos. Comentário faz as distinções.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-42",
+      "sha256_artigo_r1": "a43aea2e5d81accad6559fadfeefb77adf5e5653628f674856c501e795ce48ea",
+      "sha256_artigo_baseline": "a43aea2e5d81accad6559fadfeefb77adf5e5653628f674856c501e795ce48ea",
+      "mesma_identidade_preparacao": true,
+      "chave": "C",
+      "prova_atual": "η=Wlíq/Qin=1000/3000=1/3≈33,33%, inferior a 35%.",
+      "juizo_alternativas": "C aceita 33,33%<35%; E nega.",
+      "confronto_comentario": "Comentário define trabalho líquido e calor total na mesma base e distingue limite de Carnot.",
+      "limites": "Leitura de máquina térmica convencional; 750 K e ausência de fonte fria não determinam limite de Carnot. Não se provou viabilidade de estados.",
+      "bases_vinculadas": [
+        "base-leitura-matematica",
+        "base-eficiencia-cop"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Na base térmica usual,η=Wliq/QH=1000/3000=0,3333<0,35.",
+        "limites_anteriores": "750K é dado desnecessário paraηefetiva;semTL não calcular Carnot. Papel de trabalho líquido/calor total delimitado.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-43",
+      "sha256_artigo_r1": "1a934a1bd574e1b535a5a922cb0814a17d58079a7640b3f4d4c5c493af29c17b",
+      "sha256_artigo_baseline": "1a934a1bd574e1b535a5a922cb0814a17d58079a7640b3f4d4c5c493af29c17b",
+      "mesma_identidade_preparacao": true,
+      "chave": "C",
+      "prova_atual": "Congelamento pode reduzir entropia da água enquanto calor transferido aumenta a entropia da vizinhança; ΔS total≥0.",
+      "juizo_alternativas": "C aceita coexistência entre queda local e segunda lei; E toma queda local como violação.",
+      "confronto_comentario": "Comentário compara água e meio e distingue reversível de irreversível.",
+      "limites": "Não se afirma ΔS≥0 para cada subsistema ou valor de Sger sem dados.",
+      "bases_vinculadas": [
+        "base-entropia"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Congelamento libera calor;ΔSágua<0 pode ser compensado por aumento da vizinhança, com Sgen≥0 no conjunto.",
+        "limites_anteriores": "Segunda lei não impõeΔS≥0 a qualquer subsistema aberto à transferência de entropia.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-44",
+      "sha256_artigo_r1": "73982b41be7659f3a23f320d7ae6414c019750db4778f91c75674c20e0d53875",
+      "sha256_artigo_baseline": "73982b41be7659f3a23f320d7ae6414c019750db4778f91c75674c20e0d53875",
+      "mesma_identidade_preparacao": true,
+      "chave": "E",
+      "prova_atual": "Uma etapa adiabática não define η do ciclo. Para ciclo fechado todo adiabático retornando ao mesmo estado energético, Qlíq=0 e Wlíq=0.",
+      "juizo_alternativas": "C infere η=100% apenas de Q=0; E rejeita inferência.",
+      "confronto_comentario": "Comentário distingue etapa e ciclo e condiciona Carnot a dois reservatórios com temperaturas finitas positivas.",
+      "limites": "No ciclo totalmente adiabático η=W/QH teria denominador zero: não se atribui eficiência zero nem 100% por 0/0.",
+      "bases_vinculadas": [
+        "base-carnot-prova",
+        "base-trabalho-fronteira"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Uma etapaQ=0 não garanteηciclo1. Ciclo fechado inteiramente adiabático e energia total retornando temWliq=0;ηtérmica comQH=0 não se torna100%.",
+        "limites_anteriores": "Distinguir etapa de ciclo e energia transferida de rendimento;não afirmarη=0 quando definição dá0/0.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-45",
+      "sha256_artigo_r1": "382306e2bd0381e3614cfefd799d12a1b90a06b3b78e1f2171bc5c9c67c4ba4d",
+      "sha256_artigo_baseline": "382306e2bd0381e3614cfefd799d12a1b90a06b3b78e1f2171bc5c9c67c4ba4d",
+      "mesma_identidade_preparacao": true,
+      "chave": "C",
+      "prova_atual": "No modelo de duas trocas totais: W=900−90=810 kJ, η=90%; TH=750,15 K, TL=300,15 K e ηCarnot≈59,99%.",
+      "juizo_alternativas": "C aceita impossibilidade dessa máquina no recorte; E nega o limite.",
+      "confronto_comentario": "Resolução explicita duas trocas e trabalho líquido e converte para kelvin; balanço de energia e segunda lei não são confundidos.",
+      "limites": "Original não explicita outras trocas; conclusão física da solução fica condicionada a essa leitura convencional declarada, não pretende excluir dispositivo com fontes ou efeitos adicionais.",
+      "bases_vinculadas": [
+        "base-leitura-matematica",
+        "base-carnot-prova",
+        "base-limite-carnot"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "ηproposta=(900−90)/900=0,9;ηCarnot=1−300,15/750,15≈0,59988. Equivalentemente90/300,15−900/750,15<0 viola entropia total.",
+        "limites_anteriores": "Dados incompatíveis com máquina térmica entre essas duas fontes. UsarK e mesma base de ciclo.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-46",
+      "sha256_artigo_r1": "6db3ea19084b8ebc1743aabcf601f31f82cf56a2d5998e386e7504860cfff1b2",
+      "sha256_artigo_baseline": "6db3ea19084b8ebc1743aabcf601f31f82cf56a2d5998e386e7504860cfff1b2",
+      "mesma_identidade_preparacao": true,
+      "chave": "E",
+      "prova_atual": "Carnot contém duas isotermas reversíveis e duas adiabáticas reversíveis, estas últimas isentrópicas.",
+      "juizo_alternativas": "A troca adiabáticas por isobáricas; B propõe isocóricas/isobáricas; C propõe isobáricas/isentrópicas; D troca adiabáticas por isocóricas; E traz isotérmicas/adiabáticas.",
+      "confronto_comentario": "Resolução identifica os pares corretos e explica que adiabáticas reversíveis são isentrópicas; rejeita substituição por pressão/volume constantes.",
+      "limites": "Modelo Carnot genérico de máquina entre duas fontes. Cinco alternativas distintas; sem arredondamento.",
+      "bases_vinculadas": [
+        "base-carnot-prova"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Carnot combina duas isotermas reversíveis para troca com fontes e duas adiabáticas reversíveis entre temperaturas.",
+        "limites_anteriores": "A substitui adiabáticas porisobáricas;B nãotemisotermas/adiabáticas;C éparestípicoBrayton;D substitui adiabáticas porisocóricas;E correta.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-47",
+      "sha256_artigo_r1": "8dbbd53e0111efaef76009a38b5c1c9ed437c6f6ecc471c0939147f903ec0786",
+      "sha256_artigo_baseline": "8dbbd53e0111efaef76009a38b5c1c9ed437c6f6ecc471c0939147f903ec0786",
+      "mesma_identidade_preparacao": true,
+      "chave": "C",
+      "prova_atual": "Na comparação preliminar de famílias, centrífugos são empregados em vazões elevadas e alternativos frequentemente atendem razões de pressão maiores em vazões menores.",
+      "juizo_alternativas": "C concorda como orientação geral; E rejeitaria a tendência apresentada.",
+      "confronto_comentario": "Comentário qualifica seleção por propriedades, operação e eficiência.",
+      "limites": "Baixa pressão absoluta de descarga não define sozinha razão de pressão; sobreposição de faixas, projeto, número de estágios e condições reais impedem regra universal. Pesquisa primária de apoio permanece atribuída à preparação, não foi repetida.",
+      "bases_vinculadas": [
+        "base-tipos-compressores"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Seleção preliminar favorece centrífugo para maiores vazões e alternativo para menores vazões/maiores razões de pressão;há sobreposição e projeto depende de gás/ponto operacional.",
+        "limites_anteriores": "Não interpretar pressão de descarga baixa como limite absoluto ou seleção garantida sem pressão de sucção. Corroboração primária deCAGI/fabricante registrada separadamente.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-48",
+      "sha256_artigo_r1": "d39d25c7b5b9bafac081c3c1f00b129a54f07fceea77f5354bb4632dfd439fd6",
+      "sha256_artigo_baseline": "d39d25c7b5b9bafac081c3c1f00b129a54f07fceea77f5354bb4632dfd439fd6",
+      "mesma_identidade_preparacao": true,
+      "chave": "C",
+      "prova_atual": "Se exaustão de turbina for mais quente que ar comprimido, trocador contracorrente pode recuperar calor para pré-aquecê-lo.",
+      "juizo_alternativas": "C aceita possibilidade; E a negaria.",
+      "confronto_comentario": "Comentário estabelece condição de temperatura e descreve transferência sem alegar que toda operação permite regeneração.",
+      "limites": "Pode não significa sempre; não se extrapola a balanço, tamanho ou viabilidade quantitativa sem dados.",
+      "bases_vinculadas": [
+        "base-brayton",
+        "base-trocadores"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Exaustão de turbina mais quente pode aquecer arcomprimido antes da combustão em recuperador contracorrente;opção é fisicamente realizável.",
+        "limites_anteriores": "Pode não significa sempre:quandoTexaustão≤Tcompressor não há aquecimento útil comessa fonte.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-49",
+      "sha256_artigo_r1": "8f8f133eddab5ab062c9f3a35ff78b246fa6ccd357de225593890f15c910cf9f",
+      "sha256_artigo_baseline": "8f8f133eddab5ab062c9f3a35ff78b246fa6ccd357de225593890f15c910cf9f",
+      "mesma_identidade_preparacao": true,
+      "chave": "E",
+      "prova_atual": "No modelo usual de Brayton real, trechos passivos de aquecimento e rejeição sofrem queda de pressão; rejeição não é compressão.",
+      "juizo_alternativas": "C aceita aumento de pressão na rejeição, incompatível com modelo usual; E rejeita.",
+      "confronto_comentario": "Comentário distingue isóbaras ideais de perdas nos equipamentos reais.",
+      "limites": "Não se generaliza a todo escoamento compressível com atrito, aceleração e troca de calor ou a trocadores ativos.",
+      "bases_vinculadas": [
+        "base-brayton-real"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Na representação Brayton real convencional, perdas reduzem pressão nos equipamentos de adição/rejeição de calor;rejeição não é etapa de compressão.",
+        "limites_anteriores": "Não estender regra de pressão a todos escoamentos variáveis/efeitoRayleigh;contexto é modelodeperdas doBrayton simples.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    },
+    {
+      "id_artigo": "cr-e1-50",
+      "sha256_artigo_r1": "b0e25a75cd24dfa1ded90bae33f09ee36222fd5d305d00607be61e818d126d3f",
+      "sha256_artigo_baseline": "b0e25a75cd24dfa1ded90bae33f09ee36222fd5d305d00607be61e818d126d3f",
+      "mesma_identidade_preparacao": true,
+      "chave": "E",
+      "prova_atual": "Para cada componente com mesma entrada e pressão de saída, escoamento adiabático e termos cinéticos/potenciais desprezíveis, irreversibilidade aumenta wc e reduz wt perante referência isentrópica; sob comparação consistente, wc/wt aumenta.",
+      "juizo_alternativas": "C afirma menor fração consumida no real; E a rejeita na comparação convencional.",
+      "confronto_comentario": "Comentário explicita balanços, condições correspondentes e não iguala temperaturas ou entalpias de saída.",
+      "limites": "Comparação depende de entrada, pressões e vazões compatíveis; não é lei universal sobre todos os ciclos, controles e perdas de instalação.",
+      "bases_vinculadas": [
+        "base-isentropica",
+        "base-brayton-real"
+      ],
+      "preparacao_atribuida": {
+        "autor": "/root/auditor_aaa",
+        "demonstracao": "Mesma entrada e pressão de saída;atpfixoΔs>0 implica maiorhout em processo real estável. Compressor pede mais trabalho;turbinaproduz menos, elevando fração consumida sob comparação equivalente.",
+        "limites_anteriores": "Não igualar entalpias/temperaturas de saída;comparação de ciclo requer condições de entrada/razões equivalentes. Brayton nomeado sustenta leitura convencional sem afirmar universalidade para todo arranjo.",
+        "estado": "preliminar; sem parecer"
+      },
+      "decisao_local": "SEM_AJUSTE_OBRIGATORIO_IDENTIFICADO_NESTE_ESCOPO"
+    }
+  ],
+  "cobertura": {
+    "artigos": 15,
+    "opcoes_examinadas": 33,
+    "estudo_critico_documental": [
+      "cr-e1-39"
+    ],
+    "opcoes_documentais_sem_nota": 2,
+    "ajustes_obrigatorios_identificados": [],
+    "observacoes": [
+      "CR45: enunciado original não expressa totalidade das trocas; leitura da resolução é explicitamente condicionada ao modelo de duas fontes, não uma prova para aparelhos com fontes ou efeitos adicionais.",
+      "CR47: indicação de família é tendência, não regra de dimensionamento ou conclusão pela pressão de descarga isolada."
+    ]
+  },
+  "preservacao_produto_r1": {
+    "todos_preservados": true,
+    "arquivos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256_r1": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+        "sha256_ao_fim": "de614a44d796ca04268915f89f502060db2772835c072036a990802eff912b80",
+        "preservado": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/inventario-questoes.json",
+        "sha256_r1": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+        "sha256_ao_fim": "7d35b07b31c7faa13eb3f98a8c73c3a9bd1c2cf146534464dfdd202e0074e4a7",
+        "preservado": true
+      },
+      {
+        "arquivo": "auditoria/termodinamica/inventario/INVENTARIO_QUESTOES.md",
+        "sha256_r1": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+        "sha256_ao_fim": "dba046a5781f6bb82fef14b52af8f3285063c815b130f580edc817e9bd589fb1",
+        "preservado": true
+      },
+      {
+        "arquivo": "assets/curso.js",
+        "sha256_r1": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "sha256_ao_fim": "a20f4d19158073a9a1c48aabdfba8fa863b02063e16061c00b16448a6ccc2e13",
+        "preservado": true
+      },
+      {
+        "arquivo": "assets/registro.js",
+        "sha256_r1": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+        "sha256_ao_fim": "46da94527d6639fe0265bd766286f1ef39623966105e00bda3b31f21ca2c247c",
+        "preservado": true
+      }
+    ]
+  },
+  "libera_proximo_id": false,
+  "limites": [
+    "Sem inspeção independente de todos os PDFs oficiais deste bloco; CR39 foi confrontado visualmente em imagens locais de prova e gabarito.",
+    "Sem novo teste de armazenamento, navegador, pontuação efetiva ou com estudantes; exclusão de CR39 é observação do artigo e da decisão BAN-10, não teste funcional realizado nesta revisão.",
+    "Revisor preparou candidatas AV31, AV62 e AV69, não examinadas aqui; não se aprova produto inteiro, estado de controle ou próximo ID.",
+    "Produto e controle não foram alterados."
+  ]
+}

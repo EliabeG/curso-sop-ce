@@ -1,0 +1,205 @@
+{
+  "id": "BAN-01",
+  "rodada": 1,
+  "tipo": "Verificacao estatica reproduzivel; nao e teste de navegador",
+  "itens_verificados": 30,
+  "sequencia": "CBECCDEABEDCCEAADDAAECCCEBAECB",
+  "contagens": {
+    "A": 6,
+    "B": 4,
+    "C": 9,
+    "D": 4,
+    "E": 7
+  },
+  "periodos_globais_1_a_15": [],
+  "alteracoes_fora_do_escopo": false,
+  "colisoes_de_digitais": 0,
+  "sha256": {
+    "html_antes": "10c3d92ef94136069dc94ee102fc0ff6e30b94cda82a66edf62de7d5346c015f",
+    "html_depois": "d375695006edf96cbb709b7e85e7ebb84e94474333505768a3cccec0e94119a4",
+    "registro_antes": "d55c275daf98a485574c40661155b02d25d1636d90ec2cb856d635df0b4f95fc",
+    "registro_depois": "234cb179c3a7c81043d9d66ee65116b2f07503999aac6a45c433dccd51545055"
+  },
+  "itens": [
+    {
+      "id": "q-e1-01",
+      "gabarito": "C",
+      "digital": "e930ca81",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-02",
+      "gabarito": "B",
+      "digital": "6203aefa",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-03",
+      "gabarito": "E",
+      "digital": "cf88eb64",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-04",
+      "gabarito": "C",
+      "digital": "5536626e",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-05",
+      "gabarito": "C",
+      "digital": "73bfe299",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-06",
+      "gabarito": "D",
+      "digital": "2928b00e",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-07",
+      "gabarito": "E",
+      "digital": "68354c35",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-08",
+      "gabarito": "A",
+      "digital": "00b407a9",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-09",
+      "gabarito": "B",
+      "digital": "bcf0d5a6",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-10",
+      "gabarito": "E",
+      "digital": "1877b147",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-11",
+      "gabarito": "D",
+      "digital": "47b7c73d",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-12",
+      "gabarito": "C",
+      "digital": "0e39d656",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-13",
+      "gabarito": "C",
+      "digital": "b4be7154",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-14",
+      "gabarito": "E",
+      "digital": "52ba659f",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-15",
+      "gabarito": "A",
+      "digital": "b8785dda",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-16",
+      "gabarito": "A",
+      "digital": "8e16cef7",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-17",
+      "gabarito": "D",
+      "digital": "331b7140",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-18",
+      "gabarito": "D",
+      "digital": "4186c808",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-19",
+      "gabarito": "A",
+      "digital": "eb5a52f1",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-20",
+      "gabarito": "A",
+      "digital": "eaefd913",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-21",
+      "gabarito": "E",
+      "digital": "2524d70e",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-22",
+      "gabarito": "C",
+      "digital": "6354135c",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-23",
+      "gabarito": "C",
+      "digital": "1a65c85f",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-24",
+      "gabarito": "C",
+      "digital": "0fb7f391",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-25",
+      "gabarito": "E",
+      "digital": "cf4982cb",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-26",
+      "gabarito": "B",
+      "digital": "a20296a6",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-27",
+      "gabarito": "A",
+      "digital": "9a57c870",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-28",
+      "gabarito": "E",
+      "digital": "e121d324",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-29",
+      "gabarito": "C",
+      "digital": "56b391ea",
+      "status": "verificado"
+    },
+    {
+      "id": "q-e1-30",
+      "gabarito": "B",
+      "digital": "66de2ee1",
+      "status": "verificado"
+    }
+  ]
+}

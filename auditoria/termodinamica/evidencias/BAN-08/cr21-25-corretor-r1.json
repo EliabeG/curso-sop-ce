@@ -1,0 +1,154 @@
+{
+  "id": "BAN-08",
+  "bloco": "CR21–CR25",
+  "autor": "/root/inspect_repo, agente automatizado",
+  "estado": "CONFERENCIA_CORRETOR_SEM_APROVACAO",
+  "metodo": "Leitura integral dos artigos, alternativas e estudo crítico; aritmética exata com Fraction.",
+  "registros": [
+    {
+      "id": "cr-e1-21",
+      "artigo_sha256": "5e112105b6213109cbaf04f2883ae27052a8c9027ed9d808a0fcd627a326784b",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-21",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-gas-modelo",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/950_PETROBRAS_23_008_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/petrobras_23_ntj/arquivos/GAB_DEFINITIVO_950_PETROBRAS_23_008_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO",
+      "dados": "Volume, pressão e temperatura de quantidade e composição fixas de gás ideal.",
+      "solucao": "pV=nRT; conhecidos n e R, duas variáveis de estado independentes definem a terceira.",
+      "resultado": "C; três variáveis descrevem o gás, mas não são três dados independentes com n fixo.",
+      "comparacao": "C reconhece as três variáveis; E rejeita.",
+      "tolerancia": "Não há valores nem precisão numérica a calcular.",
+      "limite": "Para gás real outra equação de estado pode ser necessária; é preciso conhecer composição e quantidade.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-22",
+      "artigo_sha256": "a4cb5f18bafa792df4cdc4f632c585b8b49b63f20d7e719b36131dc44d34c944",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-22",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-energia",
+          "#base-gas-modelo",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=2",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "SIMBOLICO_COM_REFERENCIA_EXATA",
+      "dados": "Fator Z=pV/(nRT) com p e T absolutos.",
+      "solucao": "Para gás ideal Z=1; Z≠1 indica desvio da equação de estado ideal; pV=ZnRT.",
+      "resultado": "C; valor de referência 1 adimensional.",
+      "comparacao": "C descreve desvio significativo de 1; E negaria.",
+      "tolerancia": "1 é referência exata no modelo; não há valor de Z medido ou tolerância informada.",
+      "limite": "Z próximo de 1 isoladamente não garante idealidade de todas as propriedades.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-23",
+      "artigo_sha256": "5be283e9eeaad31c39004231ee391654e3f476aaede45b5b81f74163628c3405",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-23",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-gas-modelo",
+          "../assets/questoes-reais-e1/figura-9d164690a624.png",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/888_TBG_017_01.PDF#page=3",
+          "https://cdn.cebraspe.org.br/concursos/tbg_23/arquivos/GAB_DEFINITIVO_888_TBG_017_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NAO_NUMERICO_JUSTIFICADO",
+      "dados": "Gás real sob altas pressão e temperatura; enunciado apresenta figura de recipiente isolado.",
+      "solucao": "Baixa pressão e temperatura suficientemente alta, longe da condensação, são condições usualmente favoráveis à aproximação ideal; alta pressão não garante idealidade.",
+      "resultado": "E.",
+      "comparacao": "C generalizaria idealidade a alta pressão e temperatura; E a rejeita.",
+      "tolerancia": "Sem números, resultado quantitativo ou tolerância na resolução.",
+      "limite": "A resposta é qualitativa; combinações particulares podem ocorrer próximas de Z=1; ausência de escala ou espécie não permite decisão por valor numérico.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-24",
+      "artigo_sha256": "7263887786f48bf00b02289fba4dcccfda7d655546d4c37da44e14a2d01ed438",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-24",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "#base-absolutas",
+          "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf/2d2b50bf-f2b4-9661-f402-5f9d66e4b507?version=4.0",
+          "https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas",
+          "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/034_TRF6_011_01.PDF#page=1",
+          "https://cdn.cebraspe.org.br/concursos/trf6_24/arquivos/GAB_DEFINITIVO_034_TRF6_011_01.PDF#page=1",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf",
+          "../downloads/termodinamica/provas/2025-01-19_trf6-analista-engenharia-mecanica_prova.pdf#page=1",
+          "../downloads/termodinamica/gabaritos/2025-01-19_trf6-analista-engenharia-mecanica_gabarito.pdf#page=1"
+        ]
+      },
+      "aplicabilidade": "ESTUDO_CRITICO_SEM_NOTA",
+      "dados": "Texto oficial compara pressão do gás ideal em 100 °C com pressão da água no ponto triplo a 0,01 °C; falta n/V do gás.",
+      "solucao": "Literalmente pgás/págua=(nR×373,15/V)/págua, sem n/V não é determinado. Para a mesma amostra gasosa ideal e volume constante, razão de pressões=373,15/273,16=37315/27316≈1,366.",
+      "resultado": "Chave documental E; estudo crítico sem nota; razão 1,366 só sob hipótese adicional.",
+      "comparacao": "C estabelece razão 1 sem dados suficientes na leitura literal; E é compatível com modelo condicionado mas não decorre automaticamente do literal.",
+      "tolerancia": "Arredondamento a 3 casas tem erro <0,0005; conversões nominais são exatas e não definem atualmente o kelvin.",
+      "limite": "A referência térmica da água não transforma sua pressão na pressão da amostra de gás. Não se declara anulação oficial.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    },
+    {
+      "id": "cr-e1-25",
+      "artigo_sha256": "ad3f5a9cb6c50e2cacacb42b7e8d3a14a6c8cb13320c1048aea23cc599d50ed6",
+      "fonte": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "ancora": "#cr-e1-25",
+        "sha256": "80eff701a851145bdcf84e27b5f34abe7e7f371ac6bdf803e689dd6c117663d0",
+        "bases_e_documentos": [
+          "#base-leitura-matematica",
+          "#base-gas-modelo",
+          "https://conhecimento.fgv.br/sites/default/files/concursos/tg15.pdf#page=8",
+          "https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-inpe-tecnologista-retificado-02.08.pdf#page=4",
+          "../assets/questoes-reais-e1/caderno-fornecido.pdf"
+        ]
+      },
+      "aplicabilidade": "NUMERICO_EXATO_NO_MODELO",
+      "dados": "p2/p1=2, V2/V1=1,5; gás ideal de quantidade fixa e temperaturas absolutas.",
+      "solucao": "T2/T1=2×1,5=3; aumento percentual=(3−1)×100%=200%; valor final=300% do inicial.",
+      "resultado": "D: aumenta 200%.",
+      "comparacao": "A −50%, B 0%, C +50% e E +300% não equivalem a +200%.",
+      "tolerancia": "Razões e percentuais exatos para dados nominais.",
+      "limite": "Usar K, não razão de valores Celsius; pressupõe quantidade fixa e temperaturas positivas.",
+      "revisor_corretor": "/root/inspect_repo, agente automatizado",
+      "revisor_independente": "PENDENTE_DECISAO",
+      "estado": "CONFERIDO_PELO_CORRETOR_SUJEITO_A_AUDITORIA",
+      "data": "2026-10-29"
+    }
+  ],
+  "divergencias_identificadas": [],
+  "limites": [
+    "Sem decisão independente final nem encerramento BAN-08.",
+    "Provas e chaves oficiais atribuídas à conferência documental anterior, sem nova leitura visual de PDFs nesta execução."
+  ]
+}

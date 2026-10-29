@@ -1,0 +1,22 @@
+{
+  "id": "QA-09-EX-011",
+  "estado": "CANDIDATA_ISOLADA_PENDENTE_REVISAO",
+  "autor": "/root/inspect_repo",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "dd47dc9dbc5c22f6f74a4fa67bd28b495cff775ff8ca04cec2c76c405dfefd1a",
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r6.json",
+    "sha256": "a38b60799c23cf88fb0085e7c9bd82b4f22f58a4c7f89b6b418f8b3f5ae5d1aa"
+  },
+  "adjudicacao": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-adjudicacao-exemplos-011-013-independente-r1.md",
+    "sha256": "b367184a6a866928efeaa0e9a25dc91599ff0624b6bd0e9b0cedd018533bb3d7"
+  },
+  "original_sha256_fragmento": "b0259df0ccfb9755fe447a080f0b4f4ae5b79a797ca924a7ad4611e8781c8c27",
+  "candidata_sha256_fragmento": "8ec6ce4013a1be49c569b5e3b8ab5e80b899cb9d250396be6023b1eecfa2d3c9",
+  "original_sha256_arquivo": "695433219fd2c4760bb36bb0faf19e4fa33707762a5d0650eaee9a286fef05b7",
+  "candidata_sha256_arquivo": "384fa7aa002d9fac75a876f034ae4b751acd0969916121b1fbd18a266688199d",
+  "antes": "Um tanque rígido recebe 250 kJ por eixo e perde 40 kJ por calor.",
+  "depois": "Um tanque rígido recebe 250 kJ por eixo como única transferência de trabalho e apresenta perda líquida de calor de 40 kJ.",
+  "limite": "Arquivos incluem nova linha; isolada, sem aplicação ou aceite."
+}

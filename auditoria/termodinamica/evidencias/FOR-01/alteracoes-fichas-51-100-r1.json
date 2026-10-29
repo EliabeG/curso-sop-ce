@@ -1,0 +1,157 @@
+[
+  [
+    51,
+    "Tanque rígido inicialmente evacuado, uma entrada e nenhuma saída; entalpia de entrada constante; Q=W=0; armazenamento na parede e EC/EP desprezíveis. Para T₂: mesmo gás ideal de composição fixa, cp e cv constantes e T_in constante.",
+    "u₂: energia interna específica final no tanque; h_in: entalpia específica na entrada, ambas em kJ/kg e na mesma referência. T₂ e T_in: K. cp e cv: calores específicos, em kJ/(kg·K); cp/cv é adimensional."
+  ],
+  [
+    52,
+    "Ambiente bem misturado, CO₂ diluído, volume/densidade constantes; vazões de entrada/saída iguais e na mesma referência T,p; sem outras fontes, remoções ou zonas.",
+    "V: volume do ambiente (m³); Ci e Ce: frações volumétricas de CO₂ no interior e exterior; G: taxa volumétrica de geração de CO₂ (m³/h); V̇: vazão de ar exterior, igual à vazão de saída (m³/h); t: h. Pode-se usar s com todas as taxas compatíveis."
+  ],
+  [
+    53,
+    "Zona única bem misturada e estacionária; CO₂ diluído, volume/densidade constantes, vazões de entrada/saída iguais e na mesma referência T,p, sem outras fontes/remoções. G>0, V̇>0 e Ci>Ce. Se fornecido o excesso, ele já é Ci−Ce.",
+    "G: geração volumétrica de CO₂; V̇: vazão de ar exterior, ambas em m³/h ou ambas em m³/s. Ci/Ce: frações volumétricas interna/exterior, após converter ppm."
+  ],
+  [
+    55,
+    "Bomba em regime permanente com líquido aproximadamente incompressível; H é a carga total acrescentada ao líquido. Potências como magnitudes positivas. Para potência elétrica, incluir o rendimento do motor.",
+    "Ph: potência hidráulica útil; Peixo: potência recebida no eixo (W). ρ: densidade do líquido (kg/m³); g: aceleração gravitacional (m/s²); V̇: vazão do líquido (m³/s); H: altura manométrica total (m); ηb: rendimento adimensional."
+  ],
+  [
+    56,
+    "Regime permanente; EC/EP desprezíveis; Q̇ entra e Ẇ sai positivos. A média de entalpias exige Q̇=Ẇ=0 e vazão total positiva. Com reação, inclua energia química nas propriedades.",
+    "ṁ: kg/s; h: kJ/kg na mesma referência; Q̇: calor recebido e Ẇ: trabalho entregue (kW); 1/2 entram e 3 sai."
+  ],
+  [
+    62,
+    "Máquina cíclica entre apenas dois reservatórios fixos com TH>TL>0, para calor recebido QH>0 fixado. Wmax e QL,min são limites atingidos pelo ciclo reversível.",
+    "QH: magnitude do calor recebido; Wmax: máximo trabalho líquido produzido; QL,min: mínima magnitude de calor rejeitado, na mesma unidade de energia por ciclo. TH e TL: temperaturas dos reservatórios quente/frio (K)."
+  ],
+  [
+    63,
+    "Refrigerador ou bomba de calor reversível, movido a trabalho entre os mesmos dois reservatórios fixos; TH>TL>0.",
+    "TH e TL: temperaturas absolutas dos reservatórios quente/frio (K). COP_R,C e COP_BC,C: coeficientes de desempenho reversíveis de refrigeração e aquecimento; adimensionais. C: Carnot."
+  ],
+  [
+    64,
+    "Sistema fechado com um contato térmico uniforme a Tb; calor entrando positivo. Para vários contatos, some as integrais locais; nunca divida calor líquido por uma temperatura arbitrária. Sger = 0 no processo internamente reversível.",
+    "ΔS=S₂−S₁ e Sger: kJ/K; δQ: calor elementar no contato (kJ); Tb: temperatura absoluta da fronteira nesse contato (K), podendo variar no tempo."
+  ],
+  [
+    68,
+    null,
+    "Δs=s₂−s₁: variação de entropia específica; cp: calor específico a pressão constante; R: constante específica do gás, todos em kJ/(kg·K). T₁/T₂: temperaturas inicial/final em K; p₁/p₂: pressões absolutas inicial/final na mesma unidade."
+  ],
+  [
+    69,
+    null,
+    "Δs=s₂−s₁: variação de entropia específica; cv: calor específico a volume constante; R: constante específica do gás, em kJ/(kg·K). T₁/T₂: K; v₁/v₂: volumes específicos por massa (m³/kg), inicial/final; razões adimensionais."
+  ],
+  [
+    70,
+    "Mesmo gás ideal de composição fixa em sequência de estados isentrópicos, com cp e cv constantes.",
+    "T₁/T₂: temperaturas em K; p₁/p₂: pressões absolutas na mesma unidade; v₁/v₂: volumes específicos (m³/kg). k=cp/cv>1, adimensional e constante; 1/2: estados inicial/final. A constante em pv^k depende das unidades escolhidas."
+  ],
+  [
+    71,
+    "Turbina em regime permanente, adiabática, com ΔEC/ΔEP desprezíveis. Comparar a mesma entrada e mesma pressão de saída; referência s isentrópica. Denominador h₁−h₂,s>0.",
+    "h₁, h₂,real e h₂,s: entalpias específicas de entrada, saída real e saída isentrópica, em kJ/kg. p₂,s=p₂,real e s₂,s=s₁; ηt é adimensional."
+  ],
+  [
+    72,
+    "Compressor em regime permanente, adiabático, com ΔEC/ΔEP desprezíveis. Mesma entrada e pressão de saída na referência isentrópica; h₂,real−h₁>0.",
+    "h₁, h₂,real e h₂,s: entalpias específicas de entrada, saída real e saída isentrópica (kJ/kg). p₂,s=p₂,real e s₂,s=s₁; ηc: adimensional."
+  ],
+  [
+    73,
+    "Volume de controle estacionário. Q̇j positivo entrando por contato j de temperatura uniforme Tj>0. Se a temperatura variar ao longo da fronteira, integrar Q̇/T localmente; Ṡger≥0.",
+    "ṁ: vazão mássica de cada corrente (kg/s); s: entropia específica (kJ/(kg·K)); Q̇j: taxa de calor no contato j (kW); Tj: temperatura da fronteira nesse contato (K); Ṡger: geração de entropia por tempo (kW/K)."
+  ],
+  [
+    76,
+    "Substância simples compressível de composição fixa, estados de equilíbrio ao longo de uma isentrópica. A forma finita exige v aproximadamente constante; caso contrário, usar Δh=∫ₚ₁^ₚ₂ v dp nessa isentrópica.",
+    "h: entalpia específica (kJ/kg); s: entropia específica (kJ/(kg·K)); v: volume específico (m³/kg); p₁/p₂: pressões inicial/final (kPa)."
+  ],
+  [
+    77,
+    "Transferência infinitesimal do mesmo componente entre fases líquida f e vapor g em um conjunto fechado a T,p fixas; somente trabalho pV, sem campos/interfícies relevantes. Outras quantidades independentes mantidas fixas. A igualdade de μ é necessária ao equilíbrio entre fases presentes com troca permitida.",
+    "G: energia de Gibbs; H: entalpia (J); S: entropia (J/K); T: K. μf/μg: potenciais químicos do mesmo componente no líquido/vapor (J/mol); dn: quantidade transferida de f para g (mol)."
+  ],
+  [
+    78,
+    null,
+    "Δs=s₂−s₁: variação de entropia específica (kJ/(kg·K)); cp(T): calor específico a pressão constante; R: constante específica do gás, ambos em kJ/(kg·K). T₁/T₂: temperaturas inicial/final em K; p₁/p₂: pressões absolutas na mesma unidade."
+  ],
+  [
+    79,
+    "Rankine simples sem extrações, mesma vazão em todos os componentes, regime permanente e ΔEC/ΔEP desprezíveis; bomba/turbina adiabáticas, caldeira/condensador sem trabalho de eixo. qin>0 e trabalho líquido positivo.",
+    "1: saída do condensador; 2: saída da bomba; 3: entrada da turbina; 4: saída da turbina. wt: trabalho produzido; wb: consumido; qin/qout: calor recebido/rejeitado, magnitudes em kJ/kg. h: kJ/kg; η: adimensional."
+  ],
+  [
+    83,
+    "Diesel ar-padrão ideal com cp e cv constantes: compressão/expansão isentrópicas, adição isobárica e rejeição isocórica. r>1, k>1 e 1<rc<r no ciclo convencional não degenerado.",
+    "r=Vmax/Vmin: razão volumétrica de compressão; rc=V₃/V₂: razão de corte; 2/3: início/fim da adição de calor; V em mesma unidade. k=cp/cv e ηD: razão de calores e rendimento Diesel; todos adimensionais."
+  ],
+  [
+    84,
+    "Ciclo simples estacionário com mesma vazão; ΔEC/ΔEP desprezíveis. Compressor adiabático; condensador/evaporador sem trabalho de eixo; válvula adiabática sem trabalho. Desprezar trocas nas ligações. wc>0.",
+    "1: entrada do compressor; 2: saída do compressor; 3: saída do condensador; 4: saída da válvula. qL: calor absorvido; qH: rejeitado; wc: trabalho consumido, magnitudes em kJ/kg. h: kJ/kg; COP_R: adimensional."
+  ],
+  [
+    85,
+    null,
+    null
+  ],
+  [
+    88,
+    "Mínimo trabalho total de dois estágios adiabáticos: mesmo gás ideal, cp/cv constantes, mesma eficiência isentrópica constante; resfriamento até T₁ sem perda de pressão, mesma vazão, sem mudança de fase. ΔEC/ΔEP desprezíveis; p₃>p₁>0 fixas.",
+    "p₁: pressão na entrada do primeiro estágio; pi: pressão comum à saída do primeiro e entrada do segundo; p₃: saída final, absolutas e na mesma unidade. pi é ótimo para mínimo trabalho nas hipóteses, não pressão universal de operação."
+  ],
+  [
+    89,
+    "Gás ideal de composição fixa em compressão estacionária internamente reversível, pv^np constante com np constante >0 e np≠1; p₂>p₁>0; ΔEC/ΔEP desprezíveis.",
+    "np: expoente politrópico adimensional, não quantidade de matéria; R: constante específica do gás (kJ/(kg·K)); T₁: temperatura de entrada (K); p₁/p₂: pressões absolutas na mesma unidade; win: trabalho de eixo recebido por massa, positivo (kJ/kg)."
+  ],
+  [
+    91,
+    "Condução unidimensional de Fourier, kt>0. Para Q̇=q″xA, fluxo uniforme na área perpendicular a x. Q̇ e q″x são positivos em +x.",
+    "q″x: componente do fluxo térmico (W/m²); kt: condutividade (W/(m·K)); x: posição (m); dT/dx: K/m; A: área perpendicular a x (m²); Q̇: taxa assinada de calor (W)."
+  ],
+  [
+    92,
+    "Parede plana de área constante, condução unidimensional permanente, kt constante e sem geração interna. x cresce da face 1 para a face 2. Q̇ é positivo no sentido 1→2; dT/dx pode ser negativo.",
+    "L: espessura (m); T₁=T(0) e T₂=T(L): temperaturas em K ou °C na mesma escala; dT/dx: K/m; kt: W/(m·K); A: área perpendicular a x (m²); Q̇: taxa assinada em W."
+  ],
+  [
+    93,
+    "Ts e T∞ uniformes na área considerada; hc uniforme ou médio sobre essa área. Q̇ positivo da superfície para o fluido; diferença de temperatura em K ou °C.",
+    "hc: coeficiente convectivo médio na área A (W/(m²·K)); A: área exposta (m²); Ts: temperatura superficial; T∞: temperatura do fluido distante, na mesma escala; Q̇: taxa assinada de calor (W)."
+  ],
+  [
+    94,
+    "Trocador estacionário, sem trocas externas relevantes, U aproximadamente constante. Use média logarítmica e fator F válidos para o arranjo e os perfis térmicos; A deve corresponder à referência de U.",
+    "Q̇: taxa de calor do fluido quente para o frio (W); U: coeficiente global (W/(m²·K)); A: área correspondente a U (m²); ΔTm: diferença média efetiva (K); ΔTlm: diferença média logarítmica de referência (K); F: fator de correção do arranjo, adimensional."
+  ],
+  [
+    95,
+    "Parede plana em regime permanente, condução 1D, kt constante, sem geração; resistências em série na mesma área. Tubos exigem resistência cilíndrica e áreas próprias; converter a área não torna válida a expressão plana.",
+    "U: coeficiente global; hq/hf: coeficientes convectivos dos lados quente/frio (W/(m²·K)); L: espessura da parede (m); kt: condutividade (W/(m·K)); R″dep: soma das resistências dos depósitos referidas à área comum (m²·K/W)."
+  ],
+  [
+    96,
+    "Superfície cinza pequena, uniforme, com visão completa de grande entorno aproximadamente negro e isotérmico; meio intermediário não participante. Q̇rad positivo da superfície para o entorno.",
+    "ε: emissividade hemisférica da superfície cinza (0 a 1); σ: constante de Stefan–Boltzmann; A: área que troca radiação (m²); Ts/Tamb: temperaturas absolutas (K); Q̇rad: taxa líquida de calor (W)."
+  ],
+  [
+    98,
+    "Dilatação livre e aquecimento uniforme. Aproximação linear para |αLΔT|≪1, com coeficiente de dilatação aproximadamente constante na faixa.",
+    "αL: coeficiente de dilatação linear (K⁻¹); L₀: comprimento inicial; ΔL=L₂−L₀: variação; L₂: final (m). ΔT=T₂−T₁: K ou intervalo em °C."
+  ],
+  [
+    99,
+    "Regime permanente; q‴ uniforme ou média no volume; Ts e T∞ uniformes, hc médio na face. Demais faces isoladas, sem radiação ou outras perdas; hc>0 e Aexp>0.",
+    "q‴: geração volumétrica de energia (W/m³); V: volume gerador (m³); hc: coeficiente convectivo médio (W/(m²·K)); Aexp: área efetivamente exposta (m²); Ts/T∞: temperaturas da face/fluido na mesma escala."
+  ]
+]

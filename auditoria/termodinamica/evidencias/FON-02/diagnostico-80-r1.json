@@ -1,0 +1,2676 @@
+{
+  "id": "FON-02",
+  "rodada": 1,
+  "data": "2026-10-28",
+  "estado": "diagnostico_pre_edicao",
+  "escopo": "80 CR; identificação de adições autorais e condições de validade, sem auditoria global de gabaritos.",
+  "resumo": {
+    "lidos": 80,
+    "corretor": 40,
+    "apoio": 40,
+    "ajustes_de_conteudo_local": 21,
+    "conteudos_preservados": 59,
+    "resumos_genericos_a_identificar": 71,
+    "resumos_criticos_preservados": 9
+  },
+  "categorias": [
+    "dado oficial",
+    "resultado derivado",
+    "conversão ou convenção",
+    "definição ou modelo",
+    "hipótese adicional ou condicional",
+    "exemplo autoral"
+  ],
+  "registros": [
+    {
+      "id": "cr-e1-01",
+      "numero": 1,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "b0bd5a4a2f5eaea1f0addd8ed696110ba14d99f10577a411ab0144510090d030",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-01"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Definição de fase homogênea, estados e propriedades macroscópicas; original 51 diz que propriedades intensivas independem da massa.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "A divisão de uma amostra homogênea em metades ilustra a definição de intensividade. Metade da massa não é medição ou parâmetro acrescentado ao problema. Após leitura integral, não foi encontrado suplemento factual de cálculo.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-02",
+      "numero": 2,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "88330f46201ca197d70fd6060f876cc410a9e7aa2acd355df530ced0e3998266",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-02"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Mesmo contexto de fase/estado; original 52 atribui mais de um valor à propriedade conforme o caminho.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Valor único de propriedade num estado de equilíbrio e distinção calor/trabalho versus energia armazenada são a explicação conceitual do erro, não novo conjunto de dados.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-03",
+      "numero": 3,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "3c6cec66df34c03177c210d957f91842d50148d7d63e506e654b5c82a0b60e6d",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-03"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Contexto de materiais gasosos e líquidos; original 51 restringe energia cinética às partículas de gases.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Movimento nos líquidos e vibrações nos sólidos são explicação conceitual da resolução. Não se introduz velocidade, energia, temperatura ou modelo numérico de um material específico.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-04",
+      "numero": 4,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "616b41c635e4c6c0938de410c1cb8ba0b1854efcfdf4855b586a3fc3c0ff8a12",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-04"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 68 compara sensibilidade do volume específico do líquido a temperatura e pressão, sem indicar escalas/faixa.",
+        "adicoes": [
+          {
+            "tipo": "hipoteses_de_analise_autoral",
+            "trecho": "Para massa fixa de líquido em uma fase",
+            "local": "Interpretação técnica autoral — BAN-10, dentro de details.cr-resolucao",
+            "funcao": "Definir o domínio da relação dv/v = α dT − κT dp usada na crítica.",
+            "justificativa": "Massa fixa/fase única pertencem à interpretação autoral, não foram inseridas na frase da banca; escalas |αΔT| e |κTΔp| são propostas de comparação, sem valores inventados.",
+            "fontes_disponiveis": [
+              "devoe_7_1"
+            ],
+            "pendencia": "Nenhuma de separação; preservar o caráter condicional."
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Definições de α e κT, suas dimensões e a comparação de efeitos são relações teóricas, não propriedades tabeladas acrescentadas.",
+        "decisao": "manter",
+        "justificativa": "Preservar o bloco autoral e a fonte já presentes."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-05",
+      "numero": 5,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "0e756b1237367af6d0380d6935ccd0b0bd11fda5fbe0e5dc733f4954759a13c0",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-05"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 59 fornece uma lista de sete unidades, com minuto e grau Celsius entre as supostas unidades de base.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Segundo/kelvin corrigem uma classificação conceitual. A distinção entre unidade aceita e unidade de base não acrescenta uma constante ao enunciado.",
+        "decisao": "manter",
+        "justificativa": "Nenhum; eventual ampliação de referências SI pertence à rastreabilidade conceitual, não a alteração dos dados desta pergunta."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-06",
+      "numero": 6,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "51ff3febc1d4a8fc7ef6c63852b2ce20ee8f1aeb59d0e3f47680b900385ee45a",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-06"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 75 e figura fornecem duas escalas X/Y sem números, dilação constante e relação afim TX=a+bTY.",
+        "adicoes": [
+          {
+            "tipo": "exemplo_numerico_autoral_independente",
+            "trecho": "Exemplo: a conversão Celsius–Fahrenheit usa TF = 32 + 1,8TC.",
+            "local": "details.cr-resolucao",
+            "funcao": "Ilustrar deslocamento da origem e mudança de escala.",
+            "justificativa": "32 e 1,8 são da conversão convencional escolhida para o exemplo, não derivam da figura X/Y nem são necessários para responder ao original.",
+            "fontes_disponiveis": [
+              "aula_instrumentos"
+            ],
+            "pendencia": "Não há referência primária local específica para a conversão Fahrenheit no artigo; a origem do exemplo é clara, mas convém identificá-lo como exemplo do curso e usar notação de valores numéricos em °C e °F."
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Dois pontos fixam os coeficientes de uma função afim; isso explica a forma proposta pelo original.",
+        "decisao": "reforco_local",
+        "justificativa": "Trocar “Exemplo:” por “Exemplo autoral independente (valores numéricos em °C e °F):”. Se mantido como constante de consulta, acrescentar fonte de conversão verificada; não atribuir 32 e 1,8 à figura original."
+      },
+      "plano": "Trocar “Exemplo:” por “Exemplo autoral independente (valores numéricos em °C e °F):”. Se mantido como constante de consulta, acrescentar fonte de conversão verificada; não atribuir 32 e 1,8 à figura original."
+    },
+    {
+      "id": "cr-e1-07",
+      "numero": 7,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "7370a26429d6879438fcf43c0c5200bdd1a64f8318d13de099bad14c957573f1",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-07"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 62 descreve suposto tubo de Bourdon como termômetro de líquido em vidro.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Identificação de manômetro de pressão e princípio de deformação do tubo é explicação conceitual. Não foi introduzida propriedade do material, faixa ou coeficiente do instrumento.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-08",
+      "numero": 8,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "9f993bc1a26e2239421f1504bf758851b25e5f8e25d4761498d47c6c61528f35",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-08"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 65 já fornece span de 100 °C, limite inferior de 50 °C e conclusão de 150 °C.",
+        "adicoes": [],
+        "derivacoes_do_original": [
+          "50+100=150 °C e faixa 50–150 °C procedem dos dados originais.",
+          "A equivalência de intervalos 100 °C=100 K é conversão da escala, sem acrescentar temperatura de um estado."
+        ],
+        "explicacao_conceitual": "Definições de faixa e alcance explicam o cálculo; não há dado externo de calibração.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-09",
+      "numero": 9,
+      "familia": "tc",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "a98b54e3d64455c906534239a2bd566b2b6d29e6ec0df545bc8493c93bd5e780",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-09"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "conversao",
+            "conteudo": "T=t+273,15 K; igualdade dos intervalos de 1 °C e 1 K.",
+            "local": "resolução de referência e análise autoral",
+            "origem": "Não é dado do enunciado; relação entre escalas definida no SI.",
+            "justificativa": "Permite distinguir grandeza e unidade sem atribuir ao original a restrição de unidade de base.",
+            "fonte": "BIPM já vinculado; apoio-coordenador-unidades-r1.json confirma offset exato.",
+            "separacao": "Análise crítica e comentário explicitamente autorais; adequada."
+          },
+          {
+            "classe": "hipotese_condicional",
+            "conteudo": "Interpretar unidade como unidade de base da temperatura termodinâmica.",
+            "local": "nota/roteiro/análise BAN-10",
+            "justificativa": "Apresentada como leitura condicionada da chave E, não como frase oficial.",
+            "separacao": "Adequada; já esclarece que a restrição não aparece no comando."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Original não recebeu dado numérico; o offset pertence à explicação."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-10",
+      "numero": 10,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "a2f8e4e1407748aa1e52b5aa4b9dfcb53ce561c81993d96af7752ef8a0de0a1b",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-10"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "exemplo_conceitual",
+            "conteudo": "Duplicar amostra homogênea no mesmo estado.",
+            "local": "resolução",
+            "justificativa": "Demonstra caráter intensivo de m/V; não fornece entrada extra a cálculo ou julgamento.",
+            "separacao": "Exemplo verbal explicitamente apresentado como duplicação, fora do original."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "A relação ρ=m/V é definição; duplicação é argumento autoral, não propriedade numérica acrescentada."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-11",
+      "numero": 11,
+      "familia": "ita",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "25f574ce82e77fd539abacb0d0a60d84bebed544b5a2d39bb494901b3e3c98e7",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-11"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 35 pergunta pela unidade SI de temperatura termodinâmica; alternativas Fahrenheit, kelvin, Celsius, watt e joule.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Explicar os significados de K, W e J e citar usos de temperatura absoluta não adiciona parâmetros ao problema. A referência a Carnot/gás ideal é exemplo conceitual de uso.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-12",
+      "numero": 12,
+      "familia": "ita",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "a25e2c7ffcfd139ecdebb4cdfa23c003c524f926171f16a18d4de4fc0f197740",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-12"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 40 traz as quatro proposições e já menciona substância cristalina pura, ordem molecular máxima e zero absoluto na IV.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "“Cristal perfeito puro” explicita a leitura da condição de referência descrita na IV; não foi fornecida uma substância, entropia tabelada ou temperatura nova. A redistribuição das leis I–III é explicação conceitual.",
+        "decisao": "manter",
+        "justificativa": "Nenhum no escopo FON-02."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-13",
+      "numero": 13,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "d038caddab08159beae96c99df97efae278396af24bd3be56009e68c4e311ca1",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-13"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 56 já define gás perfeito a baixa densidade e pergunta se pressão fixa determina u independentemente de T.",
+        "adicoes": [
+          {
+            "tipo": "hipotese_de_exemplo_na_resolucao",
+            "trecho": "Com calor específico constante, Δu = cv × ΔT",
+            "local": "details.cr-resolucao",
+            "funcao": "Apresentar a forma simplificada da variação de energia interna.",
+            "justificativa": "Constância de cv é condição adicional explicitamente marcada; não é necessária para a afirmação mais geral u=u(T) nem representa propriedade numérica de um gás.",
+            "fontes_disponiveis": [
+              "aula_gas_energia"
+            ],
+            "pendencia": null
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "A dependência u(T) decorre do modelo ideal já dado; pressão constante com aquecimento é um exemplo explicativo, sem novos estados numéricos.",
+        "decisao": "manter",
+        "justificativa": "Manter “Com calor específico constante”; não transformá-lo em hipótese atribuída ao enunciado."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-14",
+      "numero": 14,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "b892b8303e9bb256c4c34e22804bd33c9dcd18f033b4daefa1987eb035f3e4c9",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-14"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 52 diz que materiais gasosos ocupam todo o espaço disponível e têm movimento livre.",
+        "adicoes": [
+          {
+            "tipo": "modelo_conceitual_autoral",
+            "trecho": "Sem uma barreira ou outro impedimento [...] No modelo de gás ideal",
+            "local": "details.cr-resolucao",
+            "funcao": "Delimitar a explicação do preenchimento do recipiente e do volume molecular desprezível.",
+            "justificativa": "A ressalva de acesso ao recipiente e a identificação explícita do modelo pertencem à resolução; não alteram a descrição oficial. Não foi acrescentado volume numérico.",
+            "fontes_disponiveis": [
+              "aula_molecular"
+            ],
+            "pendencia": null
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Deslocamento entre colisões e volume próprio desprezível são explicações do modelo, sem novo dado de cálculo.",
+        "decisao": "manter",
+        "justificativa": "Nenhum; preservar a delimitação explícita."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-15",
+      "numero": 15,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "6312f29aa7d400f3a1d317df01fe81ccc8ba856aa8a29219f823275145c39e7b",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-15"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 53 fala genericamente de partículas gasosas rápidas e choques inelásticos, no contexto gasosos/líquidos.",
+        "adicoes": [
+          {
+            "tipo": "modelo_usado_na_interpretacao",
+            "trecho": "O modelo cinético elementar do gás ideal adota colisões elásticas",
+            "local": "details.cr-resolucao",
+            "funcao": "Delimitar o modelo sob o qual a resolução explica a chave E.",
+            "justificativa": "A idealização é enunciada na resolução e ensinada no alvo vinculado. Não foi escrita como se constasse do original nem foi atribuído um coeficiente de restituição medido a gás real.",
+            "fontes_disponiveis": [
+              "aula_molecular"
+            ],
+            "pendencia": null
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Conservação da energia cinética total numa colisão elástica explica o conceito; não é novo conjunto de dados.",
+        "decisao": "manter",
+        "justificativa": "Nenhum de separação. O alcance científico desse modelo em enunciado genérico continua distinto de BAN-07/BAN-08."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-16",
+      "numero": 16,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "79435524402c6e4cfea10e5667ec248336dbacbf9c51006c8ef6df2de84efd65",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-16"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Contexto original fornece umidades relativas de 50% e 40%; item 54 fixa pressão e temperatura e propõe razão saída/entrada de 1,25.",
+        "adicoes": [
+          {
+            "tipo": "modelo_operativo_da_resolucao",
+            "trecho": "A umidade relativa é φ = pv/psat",
+            "local": "details.cr-resolucao",
+            "funcao": "Usar razão de pressões parciais para calcular a mudança de umidade relativa.",
+            "justificativa": "A aula vinculada declara aproximação de mistura ideal de ar seco/vapor e fator de intensificação desprezado. Essa hipótese não aparece na frase local da resolução, apresentada como definição sem qualificação.",
+            "fontes_disponiveis": [
+              "aula_umidade",
+              "ashrae_psicrometria"
+            ],
+            "pendencia": "Repetir localmente a aproximação já ensinada; não se trata de buscar valor tabelado de psat."
+          }
+        ],
+        "derivacoes_do_original": [
+          "0,40/0,50=0,80 e o inverso 1,25 são resultados dos dados originais; não são suplementos numéricos."
+        ],
+        "explicacao_conceitual": "A invariância de psat na mesma temperatura decorre da relação escolhida; não há pressão de saturação externa inserida.",
+        "decisao": "reforco_local",
+        "justificativa": "Iniciar a explicação com “Na aproximação de mistura ideal de ar seco e vapor, desprezando o fator de intensificação, usamos φ=pv/psat(T), como na aula vinculada.” Identificar isso como modelo da resolução."
+      },
+      "plano": "Iniciar a explicação com “Na aproximação de mistura ideal de ar seco e vapor, desprezando o fator de intensificação, usamos φ=pv/psat(T), como na aula vinculada.” Identificar isso como modelo da resolução."
+    },
+    {
+      "id": "cr-e1-17",
+      "numero": 17,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "4f198ea8ffa9cb2004f31ca08b3fc78a0cf134c435d34a1ae2be04efad13e58f",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-17"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Contexto original 50%→40%; item 55 compara a quantidade antes do aparelho com metade da quantidade na saturação, na temperatura indicada.",
+        "adicoes": [
+          {
+            "tipo": "condicao_de_comparacao_e_modelo",
+            "trecho": "Para o mesmo volume e temperatura, a quantidade de vapor é proporcional à sua pressão parcial.",
+            "local": "details.cr-resolucao",
+            "funcao": "Comparar quantidades de vapor com a saturação numa mesma base de volume.",
+            "justificativa": "Mesmo V e T são condições explícitas da comparação autoral. A proporcionalidade quantidade–pressão usa vapor ideal; o alvo #base-umidade a declara, mas a frase do artigo omite essa condição.",
+            "fontes_disponiveis": [
+              "aula_umidade",
+              "ashrae_psicrometria"
+            ],
+            "pendencia": "Dizer “no modelo ideal” junto da proporcionalidade, sem supor volume do escoamento dado pela prova."
+          }
+        ],
+        "derivacoes_do_original": [
+          "Metade da quantidade na mesma base V,T é consequência do 50% original dentro da aproximação declarada."
+        ],
+        "explicacao_conceitual": "Distinguir umidade relativa de fração mássica e explicar a expressão “o ar suporta” são comentários conceituais.",
+        "decisao": "reforco_local",
+        "justificativa": "“Na comparação autoral entre o estado atual e a saturação no mesmo volume e temperatura, usando a aproximação de vapor ideal, a quantidade é proporcional à pressão parcial.”"
+      },
+      "plano": "“Na comparação autoral entre o estado atual e a saturação no mesmo volume e temperatura, usando a aproximação de vapor ideal, a quantidade é proporcional à pressão parcial.”"
+    },
+    {
+      "id": "cr-e1-18",
+      "numero": 18,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "1ab626bbec5308efdd2a087d9b63f67e6a67022028ba420e91a84e9aa38dd1ea",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-18"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "O original já fornece gás ideal, R=0,082 atm·L·mol⁻¹·K⁻¹, certa quantidade de gás, 300→1.200 K e a hipótese de triplicar p e V.",
+        "adicoes": [],
+        "derivacoes_do_original": [
+          "T2/T1=4; produto triplicado de p e V dá fator 9; 300×9=2.700 K é uma consequência contrafactual dos números originais, não temperatura externa acrescentada."
+        ],
+        "explicacao_conceitual": "pV=nRT é a relação do modelo ideal explicitamente dado; não introduz R novo.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-19",
+      "numero": 19,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "605a3f5541abb9d8c34bd02e8963dfc8ba6e18dc30a01b473946c84bc9d72597",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-19"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "O original fornece gás ideal, R=0,082 atm·L·mol⁻¹·K⁻¹, n=3 mol, T=330 K, V=85,4 L e comparação com 0,94 atm.",
+        "adicoes": [],
+        "derivacoes_do_original": [
+          "81,18 atm·L e aproximadamente 0,9506 atm são resultados da multiplicação/divisão dos dados originais."
+        ],
+        "explicacao_conceitual": "Isolar p e orientar compatibilidade de unidades não são suplementos de propriedade.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-20",
+      "numero": 20,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "1da42a8241671bf9ed59d7c960412f5ed805e2fbb8ee0c5c210092111704e623",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-20"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 73 afirma que o volume tende a infinito no zero absoluto sob qualquer pressão.",
+        "adicoes": [
+          {
+            "tipo": "extrapolacao_matematica_identificada",
+            "trecho": "Pela extrapolação de pV = nRT a pressão constante e positiva",
+            "local": "details.cr-resolucao",
+            "funcao": "Contrapor a alegação de infinito usando o limite formal de um modelo.",
+            "justificativa": "Gás ideal e pressão positiva constante são o recorte da explicação; o texto diz extrapolação e imediatamente limita a validade em gases reais. Não se introduz uma propriedade física real em 0 K.",
+            "fontes_disponiveis": [
+              "aula_gas_estado"
+            ],
+            "pendencia": null
+          }
+        ],
+        "derivacoes_do_original": [
+          "V→0 é limite formal do modelo para quantidade fixa e p>0; não é medição de volume no zero absoluto."
+        ],
+        "explicacao_conceitual": "Mudança de fase e limites de validade são comentários conceituais.",
+        "decisao": "manter",
+        "justificativa": "Opcionalmente explicitar “para quantidade fixa” na mesma frase; preservar que se trata de extrapolação, não estado real."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-21",
+      "numero": 21,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "3338053d71662c8528680b4b7449ca65d314abfb71a83b05940f5adb6adefa31",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-21"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 75 apenas identifica p,V,T como variáveis particularmente usadas na descrição dos gases.",
+        "adicoes": [
+          {
+            "tipo": "exemplo_de_modelo_condicional",
+            "trecho": "Para quantidade e composição fixas de gás ideal, pV = nRT.",
+            "local": "details.cr-resolucao",
+            "funcao": "Mostrar que p,V,T não são três variáveis independentes nesse modelo.",
+            "justificativa": "As condições são explicitamente autorais e condicionais; a resolução não afirma que a banca forneceu n ou composição, nem exige um gás real específico.",
+            "fontes_disponiveis": [
+              "aula_gas_estado"
+            ],
+            "pendencia": null
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "A contagem de duas variáveis independentes é consequência do modelo explicitado, não dado de composição acrescentado.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-22",
+      "numero": 22,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "4039582bcec1fcbb3f7baf160416f14892244955a67594c583c4660adf138a80",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-22"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "definicao_modelo",
+            "conteudo": "Z=pV/(nRT), p e T absolutos; Z=1 para gás ideal.",
+            "local": "resolução",
+            "justificativa": "Define o parâmetro usado pelo próprio original e delimita as variáveis; não acrescenta valores externos.",
+            "separacao": "Fórmula identificada como definição fora do enunciado."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "O número 1 já está no original; pV=ZnRT é rearranjo da definição, não dado suplementar."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-23",
+      "numero": 23,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "2d802855e9017eea01af0f2a2e3f14d68e5a8ce7c02f49fc9ffeabceab716a6e",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-23"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Baixa pressão, temperatura suficientemente alta e afastamento da condensação.",
+            "local": "resolução",
+            "justificativa": "Explica por que alta pressão não autoriza a generalização; não estabelece estado numérico novo.",
+            "separacao": "Texto de resolução, distinguível do comando/figura oficiais."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Não há constante/propriedade numérica suplementar. Vácuo/gás ideal da figura original não devem ser contados como adição."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-24",
+      "numero": 24,
+      "familia": "trf",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "887ced079ca74bcde28b91d067b1e6cba6b74e5269fb42c4210952f8e96ae398",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-24"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "conversao",
+            "conteudo": "100 °C→373,15 K e 0,01 °C→273,16 K; razão≈1,366.",
+            "local": "roteiro/análise/resolução",
+            "justificativa": "Temperaturas derivadas dos números originais pelo offset SI273,15; razão é cálculo, não propriedade pesquisada.",
+            "separacao": "Suplemento autoral explícito, mas convém tornar origem da conversão e valor adotado inequívocos.",
+            "fonte": "Apoio BIPM do coordenador; OpenStax2.1 já fundamenta equação de estado."
+          },
+          {
+            "classe": "hipotese_condicional",
+            "conteudo": "Mesma amostra gasosa ideal, n/V constantes; ponto triplo apenas referência térmica, estados em equilíbrio térmico.",
+            "local": "suplemento autoral BAN-10",
+            "justificativa": "São condições da leitura termométrica, ausentes da leitura literal. O item já informa a insuficiência literal.",
+            "separacao": "Adequada, sem atribuição à banca."
+          }
+        ],
+        "decisao": "precisar_conversao",
+        "justificativa": "Manter valores e crítica já aprovados. Acrescentar localizador BIPM e esclarecer que273,16 resulta do0,01°C adotado no original, não de definição exata atual."
+      },
+      "plano": "Manter valores e crítica já aprovados. Acrescentar localizador BIPM e esclarecer que273,16 resulta do0,01°C adotado no original, não de definição exata atual."
+    },
+    {
+      "id": "cr-e1-25",
+      "numero": 25,
+      "familia": "inpe",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "75a9939ea48fec2f6568b7a474df1051f7cb5ccaebf5eaab5e2cdf6a3f59705e",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-25"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 33 já fixa número de mols, gás ideal, pressão duplicada e volume aumentado em 50%.",
+        "adicoes": [],
+        "derivacoes_do_original": [
+          "T2/T1=2×1,5=3 e aumento de 200% procedem integralmente do original."
+        ],
+        "explicacao_conceitual": "Uso de temperatura absoluta e distinção entre valor final e aumento percentual não acrescentam temperatura inicial/final externa.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-26",
+      "numero": 26,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "21e450d190441118c2bea3b87d3f1b14df62400ca25632ff234112a0db8812b6",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-26"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 53 dá sistema tanque+fluido, calor saindo de 400 kJ, trabalho do misturador de 1.400 kcal e comparação com 5.500 kcal; a figura não fornece mais dados.",
+        "adicoes": [
+          {
+            "tipo": "convencao_de_sinais",
+            "trecho": "Adote calor positivo para dentro e trabalho positivo realizado pelo sistema.",
+            "local": "details.cr-resolucao",
+            "funcao": "Atribuir Q<0 e W<0 ao agitador.",
+            "justificativa": "Convenção do curso explicitamente adotada na resolução; é escolha de representação, não afirmação da banca.",
+            "fontes_disponiveis": [
+              "aula_balanco",
+              "aula_primeira_lei"
+            ],
+            "pendencia": null
+          },
+          {
+            "tipo": "constante_de_conversao_externa",
+            "trecho": "Usando 1 kcal ≈ 4,184 kJ",
+            "local": "details.cr-resolucao",
+            "funcao": "Converter os 400 kJ do original para kcal antes do balanço.",
+            "justificativa": "O fator não consta do original. 4,184 corresponde à caloria termoquímica; nessa convenção a igualdade é exata, enquanto 95,6 e 1.304,4 são arredondados.",
+            "fontes_disponiveis": [
+              "nist_cal",
+              "apoio_unidades"
+            ],
+            "pendencia": "Falta nomear a convenção termoquímica e ligar a fonte; não tratar todas as calorias como universalmente 4,184 J."
+          },
+          {
+            "tipo": "hipoteses_implicitas_do_balanco",
+            "trecho": "Assim, ΔU = Q − W",
+            "local": "details.cr-resolucao",
+            "funcao": "Converter a diferença entre calor e trabalho em variação de energia interna.",
+            "justificativa": "A forma reduzida supõe sistema fechado, variações cinética/potencial desprezíveis e que os intercâmbios indicados completam o balanço. A prova define tanque+fluido, mas não declara esses descartes em palavras. A aula ensina as condições.",
+            "fontes_disponiveis": [
+              "aula_balanco",
+              "aula_primeira_lei"
+            ],
+            "pendencia": "Declarar como hipóteses da resolução, sem inseri-las na transcrição."
+          }
+        ],
+        "derivacoes_do_original": [
+          "W=−1.400 kcal usa o valor original com a convenção adotada.",
+          "Q≈−95,6 kcal e ΔU≈1.304,4 kcal derivam dos dados originais mais a conversão identificada; não são propriedades tabeladas."
+        ],
+        "explicacao_conceitual": "A imagem recriada é contextual e já identificada; não introduz nova geometria quantitativa.",
+        "decisao": "ajuste_minimo",
+        "justificativa": "Acrescentar fora de .cr-enunciado: “Convenções e hipóteses da resolução do curso: sistema fechado, variações de energia cinética e potencial desprezíveis e apenas as transferências indicadas; Q>0 entra e W>0 sai. Adota-se caloria termoquímica: 1 kcal=4,184 kJ exatamente (NIST SP811, nota 9); os resultados decimais abaixo são arredondados.” Preservar números/texto oficiais."
+      },
+      "plano": "Acrescentar fora de .cr-enunciado: “Convenções e hipóteses da resolução do curso: sistema fechado, variações de energia cinética e potencial desprezíveis e apenas as transferências indicadas; Q>0 entra e W>0 sai. Adota-se caloria termoquímica: 1 kcal=4,184 kJ exatamente (NIST SP811, nota 9); os resultados decimais abaixo são arredondados.” Preservar números/texto oficiais."
+    },
+    {
+      "id": "cr-e1-27",
+      "numero": 27,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "d84258c94579d08e126e2b3b5a81edb8c58b2c3d9851059dbf07169d9e5c5e6a",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-27"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 64 afirma aumento de temperatura por compressão adiabática; o contexto já fornece 1 cal=4,2 J, embora não usado neste item.",
+        "adicoes": [
+          {
+            "tipo": "modelo_e_descartes_da_resolucao",
+            "trecho": "No modelo de compressão considerado, sem perda de calor nem mudanças relevantes de energia cinética ou potencial [...] Para um gás ideal",
+            "local": "details.cr-resolucao",
+            "funcao": "Explicar a retenção de trabalho como U e relacionar U a T.",
+            "justificativa": "Adiabaticidade vem do original; ΔEc/ΔEp desprezíveis e recorte de gás ideal são explicitamente adicionados pela resolução. O fator 4,2 é original, não deve receber rótulo de dado novo.",
+            "fontes_disponiveis": [
+              "aula_primeira_lei",
+              "aula_gas_energia"
+            ],
+            "pendencia": "A expressão “No modelo” já separa o recorte; se houver nota comum, registrar também sistema fechado e trabalho líquido entrando."
+          },
+          {
+            "tipo": "massa_e_composicao_do_modelo",
+            "trecho": "o trabalho fornecido fica como aumento de energia interna. Para um gás ideal",
+            "local": "details.cr-resolucao",
+            "funcao": "Relacionar o balanço total ao aquecimento de uma mesma amostra.",
+            "justificativa": "Massa fixa, composição fixa e trabalho líquido entrando são hipóteses da interpretação didática. Adiabaticidade já vem do original; não deve ser contada como condição externa.",
+            "fontes_disponiveis": [
+              "aula_primeira_lei",
+              "aula_gas_energia"
+            ],
+            "pendencia": "Explicitar o caráter autoral dessas condições, sem acrescentá-las ao original."
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "O exemplo da bomba manual é ilustração cotidiana, sem temperatura ou eficiência adotada.",
+        "decisao": "reforco_local",
+        "justificativa": "“Na interpretação desta resolução, acompanha-se uma massa fixa de gás ideal de composição fixa, com trabalho líquido de compressão entrando e variações de energia cinética e potencial desprezíveis.” A adiabaticidade e 1 cal=4,2 J são originais; não substituir essa conversão pela termoquímica."
+      },
+      "plano": "“Na interpretação desta resolução, acompanha-se uma massa fixa de gás ideal de composição fixa, com trabalho líquido de compressão entrando e variações de energia cinética e potencial desprezíveis.” A adiabaticidade e 1 cal=4,2 J são originais; não substituir essa conversão pela termoquímica."
+    },
+    {
+      "id": "cr-e1-28",
+      "numero": 28,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "3bb060e0c31121f4ea9d9c60f90970243efa2e4a7d027ae16d0d7f021ceff904",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-28"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 65 e seu contexto já fornecem 1 cal=4,2 J, Ui=100 J, Q=200 cal absorvido, W=350 J produzido e energia final alegada de 490 J.",
+        "adicoes": [
+          {
+            "tipo": "hipoteses_implicitas_do_balanco",
+            "trecho": "Pela primeira lei, ΔU = Q − W",
+            "local": "details.cr-resolucao",
+            "funcao": "Distinguir variação de energia interna da energia final.",
+            "justificativa": "A resolução usa forma de sistema fechado com ΔEc/ΔEp desprezíveis e toma o trabalho informado como trabalho total. As condições são ensinadas nos alvos vinculados, mas não aparecem localmente no artigo.",
+            "fontes_disponiveis": [
+              "aula_balanco",
+              "aula_primeira_lei"
+            ],
+            "pendencia": "Explicitar as hipóteses da resolução sem rotular a conversão 4,2 J/cal como suplemento."
+          }
+        ],
+        "derivacoes_do_original": [
+          "840 J=200×4,2 usa a conversão original.",
+          "490 J de variação e 590 J de energia final são resultados derivados; não constituem dados novos."
+        ],
+        "explicacao_conceitual": "ΔU versus Uf é a explicação central, não alteração dos números da pergunta.",
+        "decisao": "reforco_local",
+        "justificativa": "Antes da conta: “Na resolução do curso, modelamos uma massa fixa, com variações cinética e potencial desprezíveis e somente as trocas de energia indicadas; adotamos Q>0 para dentro e W>0 para fora.”"
+      },
+      "plano": "Antes da conta: “Na resolução do curso, modelamos uma massa fixa, com variações cinética e potencial desprezíveis e somente as trocas de energia indicadas; adotamos Q>0 para dentro e W>0 para fora.”"
+    },
+    {
+      "id": "cr-e1-29",
+      "numero": 29,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "c4b18afaa2b96590f190cf351a672493b185cbb8bcef0f81e0398a8323a32739",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-29"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 67 dá gás ideal, compressão isobárica, diminuição de 0,1 m³, p=10³ N/m² e perda de 10³ J.",
+        "adicoes": [
+          {
+            "tipo": "hipoteses_do_modelo_de_trabalho",
+            "trecho": "O trabalho realizado pelo gás é W = pΔV",
+            "local": "details.cr-resolucao",
+            "funcao": "Usar a pressão fornecida como pressão de fronteira no cálculo do trabalho.",
+            "justificativa": "O original dá isobárica, mas a igualdade com a pressão do gás e a ausência de outros trabalhos são condições da leitura quase estática ensinada em #base-trabalho-fronteira.",
+            "fontes_disponiveis": [
+              "aula_trabalho",
+              "aula_balanco"
+            ],
+            "pendencia": "Declarar pressão de fronteira/quase estaticidade e apenas trabalho de fronteira na resolução; isobárico sozinho não enuncia essas hipóteses."
+          },
+          {
+            "tipo": "hipoteses_implicitas_do_balanco",
+            "trecho": "Assim, ΔU = Q − W",
+            "local": "details.cr-resolucao",
+            "funcao": "Atribuir o saldo à energia interna.",
+            "justificativa": "Sistema fechado e variações cinética/potencial desprezíveis completam o recorte aplicado; Q>0 entrando e W>0 saindo são a convenção usada.",
+            "fontes_disponiveis": [
+              "aula_primeira_lei",
+              "aula_balanco"
+            ],
+            "pendencia": "Condições estão no ensino vinculado, porém precisam ficar rastreáveis no artigo."
+          }
+        ],
+        "derivacoes_do_original": [
+          "−100 J vem de 1.000×(−0,1); −1.000 J é o calor original com sinal; −900 J é o saldo calculado."
+        ],
+        "explicacao_conceitual": "Não foi introduzido cv, temperatura ou propriedade de um gás específico.",
+        "decisao": "ajuste_minimo",
+        "justificativa": "Acrescentar nota da resolução: “Adota-se massa fixa, compressão quase estática com a pressão informada na fronteira, apenas trabalho de fronteira e variações de energia cinética e potencial desprezíveis. Q>0 entra; W>0 sai.” Não reescrever o original nem inferir nova validade científica global."
+      },
+      "plano": "Acrescentar nota da resolução: “Adota-se massa fixa, compressão quase estática com a pressão informada na fronteira, apenas trabalho de fronteira e variações de energia cinética e potencial desprezíveis. Q>0 entra; W>0 sai.” Não reescrever o original nem inferir nova validade científica global."
+    },
+    {
+      "id": "cr-e1-30",
+      "numero": 30,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "dc6a78e6de6e86e659903e1ed402bad32d127f23f7c1d6b1ba11402f4b65363b",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-30"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 74 já traz gás ideal, A→B isotérmico e a figura com Q=ΔU+W e ΔU indicado como zero, além da tabela histórica de processos.",
+        "adicoes": [
+          {
+            "tipo": "descarte_explicitado_na_resolucao",
+            "trecho": "Desprezando mudanças de energia cinética e potencial",
+            "local": "details.cr-resolucao",
+            "funcao": "Delimitar o balanço que produz Q=W.",
+            "justificativa": "A condição está escrita na resolução e corresponde ao balanço reduzido representado na própria figura; não é novo dado numérico.",
+            "fontes_disponiveis": [
+              "aula_primeira_lei",
+              "aula_balanco"
+            ],
+            "pendencia": null
+          },
+          {
+            "tipo": "massa_e_composicao_do_modelo",
+            "trecho": "A temperatura constante mantém constante a energia interna do gás ideal.",
+            "local": "details.cr-resolucao",
+            "funcao": "Concluir ΔU=0 para a massa acompanhada.",
+            "justificativa": "Gás ideal, isoterma A→B e o diagrama ΔU=0 são originais; acompanhar a mesma massa/composição é o recorte usado na explicação. O texto explicita ausência de massa em A→C, não como declaração separada de A→B.",
+            "fontes_disponiveis": [
+              "aula_gas_energia",
+              "aula_primeira_lei"
+            ],
+            "pendencia": "Pode-se tornar explícita a leitura de massa/composição fixas na resolução sem reescrever a figura ou o enunciado."
+          }
+        ],
+        "derivacoes_do_original": [
+          "Temperatura constante e modelo ideal dados sustentam ΔU=0; Q=W aparece no esquema original e é explicado pela resolução."
+        ],
+        "explicacao_conceitual": "A distinção processo/ciclo e Kelvin–Planck é comentário conceitual, não uma segunda máquina acrescentada.",
+        "decisao": "reforco_local",
+        "justificativa": "“Para a massa fixa de gás ideal de composição fixa representada na leitura da resolução, a isoterma A→B mantém U constante. Com variações cinética e potencial desprezíveis, Q=W.” Os dados do gás ideal, da isoterma e o esquema ΔU=0 são originais, não suplementos."
+      },
+      "plano": "“Para a massa fixa de gás ideal de composição fixa representada na leitura da resolução, a isoterma A→B mantém U constante. Com variações cinética e potencial desprezíveis, Q=W.” Os dados do gás ideal, da isoterma e o esquema ΔU=0 são originais, não suplementos."
+    },
+    {
+      "id": "cr-e1-31",
+      "numero": 31,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "e33a863be630fc055c5af33bcb8c7d0cde6f2f3fcff3f43b83814e943e70552e",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-31"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 71 atribui o poder calorífico ao calor de absorção.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "A resolução define poder calorífico e distingue PCS/PCI, sem escolher combustível, composição, calor latente ou valor numérico. Após leitura integral, não há suplemento factual de cálculo.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-32",
+      "numero": 32,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "4677e514a72bd2d54fcf930116afe6551ca3cc75d4b32db373c47e7ab0c16541",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-32"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 72 fala de reação reversível exotérmica num sentido/endotérmica no oposto e define liberação/absorção de calor.",
+        "adicoes": [
+          {
+            "tipo": "condicoes_para_interpretar_entalpia",
+            "trecho": "Mantidas as condições e os estados inicial e final correspondentes [...] A pressão constante e com apenas trabalho de expansão",
+            "local": "details.cr-resolucao",
+            "funcao": "Relacionar sinais de calor e de ΔH e a inversão de estados.",
+            "justificativa": "As condições são introduzidas explicitamente na resolução, necessárias à interpretação por entalpia, sem supor uma reação ou entalpia de formação específica.",
+            "fontes_disponiveis": [
+              "aula_termoquimica"
+            ],
+            "pendencia": null
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Inverter ΔH entre estados correspondentes é propriedade de estado; não há um valor de ΔH acrescentado.",
+        "decisao": "manter",
+        "justificativa": "Preservar as condições explícitas; não transformar a dica final em dado físico de uma reação não especificada."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-33",
+      "numero": 33,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "5f4e940c5e6629741675ba3ad6a93add2967221e8535181e7562beb91464da9b",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-33"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "Ausência de outros trabalhos e variações macroscópicas cinética/potencial ao concluir ΔU=0.",
+            "local": "resolução após Q=0 e fronteira rígida",
+            "justificativa": "Rigidez elimina trabalho de fronteira; para reduzir o balanço total à energia interna, esses termos adicionais precisam ser explicitados.",
+            "separacao": "Não aparece explicitamente; suplemento de modelo da resolução deve ficar fora do original.",
+            "fonte": "MIT Unified primeira lei, já usada no curso e aprovada FOR-01."
+          }
+        ],
+        "decisao": "explicitar_modelo_na_resolucao",
+        "justificativa": "Gás ideal/vácuo/rigidez/fechamento/isolamento são dados originais ou da figura, não suplementos. ΔT=0 e aumento de S são conclusões do modelo, não dados novos."
+      },
+      "plano": "Gás ideal/vácuo/rigidez/fechamento/isolamento são dados originais ou da figura, não suplementos. ΔT=0 e aumento de S são conclusões do modelo, não dados novos."
+    },
+    {
+      "id": "cr-e1-34",
+      "numero": 34,
+      "familia": "trf",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "ba60d9d912f78315cdfe332ad32107d522a0167da5efa18185add0caa81030c5",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-34"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "Rota elementar: massa fixa, somente trabalho de expansão, ΔEc=ΔEp=0. Prova guiada: massa/composição fixas, gás ideal simples, estados de equilíbrio, mesmo V, cv(T)>0, calor exclusivamente entrando em quantidade não nula, Tb finita e positiva.",
+            "local": "resolução e análise crítica BAN-10r2",
+            "justificativa": "As condições suficientes da igualdade são separadas da prova do sinal; todas explicitadas como escolhas da análise autoral.",
+            "separacao": "Adequada e aprovada; não modificar."
+          },
+          {
+            "classe": "convencao",
+            "conteudo": "Q entrando positivo, W saindo positivo; Tb na fronteira; Sger≥0.",
+            "local": "análise autoral",
+            "justificativa": "Define termos das leis usadas; não acrescenta dado de prova ou valor arbitrário.",
+            "separacao": "Explícita."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Relações e integrais são demonstração guiada, não suplementos numéricos. Não reabrir distinção ΔU>0 versusΔU=Q."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-35",
+      "numero": 35,
+      "familia": "trf",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "62dea14902c59a5cfb2927125583531b5d1f6e5ccd43c796765d774171bfaafa",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-35"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "ΔEc+ΔEp=0 para ΔU=−W; sistema em repouso/mesmaelevação como escolha suficiente.",
+            "local": "nota/análise autoral",
+            "justificativa": "A condição reduz balanço total; explicitada e não confundida com fechado/adiabático."
+          },
+          {
+            "classe": "exemplo_autoral",
+            "conteudo": "Levantamento ideal sem variação de velocidade/estado interno, trabalho recebido convertido em potencial.",
+            "local": "análise crítica",
+            "justificativa": "Contramodelo explicitamente denominado autoral, sem números ou pretensão de ser dado oficial."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sinal W produzido positivo já vem da redação original; não atribuir novamente como suplemento inventado. A análise deixa claro o alcance."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-36",
+      "numero": 36,
+      "familia": "tse",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "c5785d05c646b64b1c74d9421e8acda5274eac695fb1d3d6625ad24a6ff19689",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-36"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "Exemplo de pistão isolado e relação pV^k constante.",
+            "local": "resolução",
+            "justificativa": "A relação é suplementar: exige gás ideal e calores específicos constantes, k=cp/cv, além de expansão adiabática reversível do modelo simples.",
+            "separacao": "A redação diz apenas modelo ideal reversível, sem nomear gás/calores/k; precisa delimitação local.",
+            "fonte": "Aula gás ideal/adiabática e fonte primária do modelo a localizar na documentação já arquivada."
+          },
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "Redução de U ao fornecer trabalho: massa fechada, demais energias/trabalhos excluídos.",
+            "local": "exemplo na resolução",
+            "justificativa": "A conclusão decorre do balanço reduzido; o contraexemplo à afirmação W=0 não exige universalizar esse balanço."
+          }
+        ],
+        "decisao": "delimitar_exemplo_e_relacao",
+        "justificativa": "Não mudar original, chave E ou exigência de julgamento; fazer claro que a relação extra é ilustração, não dado fornecido pela prova."
+      },
+      "plano": "Não mudar original, chave E ou exigência de julgamento; fazer claro que a relação extra é ilustração, não dado fornecido pela prova."
+    },
+    {
+      "id": "cr-e1-37",
+      "numero": 37,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "8d9806314d0c649ad10497c163bf7be6089d465cc09b7bfa8fdcbda70d0bf4f6",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-37"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 54 é qualitativo sobre irreversibilidade e trabalho; gráfico traz rótulos e ângulo, sem escala numérica vertical para obter energia.",
+        "adicoes": [
+          {
+            "tipo": "condicoes_de_comparacao_autoral",
+            "trecho": "Na comparação entre as mesmas condições de operação",
+            "local": "details.cr-resolucao",
+            "funcao": "Fixar a base ao relacionar irreversibilidade a trabalho útil perdido.",
+            "justificativa": "A resolução condiciona a comparação; a aula #base-exergia explicita ambiente de referência a T0 constante e restrições comparáveis. Não se escolhe T0 numérico no artigo.",
+            "fontes_disponiveis": [
+              "aula_exergia"
+            ],
+            "pendencia": "T0 absoluto e constante, Sger e mesmas restrições estão no ensino vinculado; repetir esses qualificadores localmente facilita rastrear o modelo autoral."
+          }
+        ],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Gouy–Stodola é relação explicativa, não temperatura ambiente ou entropia externa inserida. O redesenho qualitativo do gráfico não fornece dados para integrar uma área como energia.",
+        "decisao": "reforco_local",
+        "justificativa": "“Relação usada na resolução do curso: Xdestruída=T0 Sger, com T0 absoluto e constante do ambiente de referência e Sger a entropia gerada. A comparação de trabalho útil é feita com a referência reversível apropriada, sob as mesmas condições e restrições.” Não criar T0 ou Sger numéricos nem interpretar área do gráfico como trabalho."
+      },
+      "plano": "“Relação usada na resolução do curso: Xdestruída=T0 Sger, com T0 absoluto e constante do ambiente de referência e Sger a entropia gerada. A comparação de trabalho útil é feita com a referência reversível apropriada, sob as mesmas condições e restrições.” Não criar T0 ou Sger numéricos nem interpretar área do gráfico como trabalho."
+    },
+    {
+      "id": "cr-e1-38",
+      "numero": 38,
+      "familia": "p22m",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "8895b72f34bb0fd12fcad536db449144757e5fef1bcdf29dd409236ee3e8333c",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-38"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 55 já dá Carnot, dois reservatórios a temperaturas constantes e processos reversíveis; contexto inclui enunciado de Clausius.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "η=1−Tfria/Tquente é relação do modelo já dado. Não se acrescentam temperaturas, eficiência experimental ou nova hipótese de irreversibilidade.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-39",
+      "numero": 39,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "f91445144bcaca237b211f17563fcb1c4524da45c0e007944ea1038301bc8c54",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-39"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 66 traz motor que opera em ciclos, Q=350 cal, W=1.470 J; contexto já dá 1 cal=4,2 J.",
+        "adicoes": [
+          {
+            "tipo": "hipoteses_de_leitura_condicionada",
+            "trecho": "350 cal são todo o calor recebido de uma única fonte e 1.470 J são o trabalho líquido de um ciclo, sem outros efeitos",
+            "local": "Interpretação técnica autoral — BAN-10",
+            "funcao": "Delimitar a aplicação de Kelvin–Planck.",
+            "justificativa": "Fonte única, totalidade das trocas e trabalho líquido são explicitamente separados como modelo convencional do comentário autoral; são justamente o objeto do roteiro crítico, não palavras acrescidas ao original.",
+            "fontes_disponiveis": [
+              "openstax_kelvin_planck"
+            ],
+            "pendencia": null
+          }
+        ],
+        "derivacoes_do_original": [
+          "350×4,2=1.470 J usa valores oficiais; η=1 e Qrejeitado=0 decorrem do modelo condicionado, não são dados da prova."
+        ],
+        "explicacao_conceitual": "Entradas/saídas de massa e energia química são contraste conceitual de fronteiras; nenhum valor de combustível foi introduzido.",
+        "decisao": "manter",
+        "justificativa": "Preservar a distinção entre texto oficial, leitura convencional e contraste de fronteiras."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-40",
+      "numero": 40,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "8c3660a063f5428a5c8d470bbe5b23573f09682e79e9faceecaf6105d4a44ef5",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-40"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 67 afirma aumento de entalpia quando a pressão aumenta numa transformação isentrópica.",
+        "adicoes": [
+          {
+            "tipo": "dominio_da_identidade_usada",
+            "trecho": "Para uma substância simples compressível de composição fixa",
+            "local": "details.cr-resolucao",
+            "funcao": "Delimitar dh=Tds+vdp.",
+            "justificativa": "A resolução enuncia o modelo adicional e define h,s,v; a aula vinculada o apresenta como identidade entre estados de equilíbrio. Não há valor de v ou composição presumida.",
+            "fontes_disponiveis": [
+              "aula_gibbs"
+            ],
+            "pendencia": "Estados de equilíbrio constam do alvo teórico, mas não da frase local; pode-se explicitá-los junto da composição fixa."
+          }
+        ],
+        "derivacoes_do_original": [
+          "ds=0 vem de isentropia; v>0 e dp>0 permitem inferir sinal de dh no modelo declarado."
+        ],
+        "explicacao_conceitual": "A identidade é teoria, não dado tabelado ou calor de processo fornecido pelo original.",
+        "decisao": "reforco_local",
+        "justificativa": "“Na interpretação da resolução, para uma substância simples compressível de composição fixa, entre estados de equilíbrio, dh=Tds+vdp.” Isentropia e aumento de pressão já são dados originais."
+      },
+      "plano": "“Na interpretação da resolução, para uma substância simples compressível de composição fixa, entre estados de equilíbrio, dh=Tds+vdp.” Isentropia e aumento de pressão já são dados originais."
+    },
+    {
+      "id": "cr-e1-41",
+      "numero": 41,
+      "familia": "p22p",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "c07f4425a20d5839dd7caa63ac3ecbab78ab16beb4df77b4e84d0af011d11b3e",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-41"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 73 afirma igualdade de potencial químico em equilíbrio de fases.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Explicitar que a igualdade compara o mesmo componente entre fases, além dos equilíbrios térmico/mecânico, esclarece a condição conceitual. Não se acrescentam mistura identificada, composição, campo externo, potenciais tabelados ou estado numérico. A resolução não usa o exemplo hipotético numérico da aula.",
+        "decisao": "manter",
+        "justificativa": "Nenhum em FON-02; o alcance físico geral das condições de equilíbrio não é reauditado neste diagnóstico."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-42",
+      "numero": 42,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "e725f3a0231f26257e13a43e88e65340d086089c64d349351e6681a622c00b10",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-42"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 64 fornece trabalho de 1.000 J, calor retirado de 3.000 J, fonte a 750 K e comparação com 35%.",
+        "adicoes": [
+          {
+            "tipo": "leitura_operativa_de_eficiencia",
+            "trecho": "A eficiência efetiva é η = W/Qrecebido",
+            "local": "details.cr-resolucao",
+            "funcao": "Interpretar trabalho e calor do original como as grandezas do rendimento térmico.",
+            "justificativa": "Na aula vinculada W é trabalho líquido e QH é calor total recebido na mesma operação/ciclo. Não há outra fonte ou troca numérica inventada, mas a interpretação não é nomeada localmente.",
+            "fontes_disponiveis": [
+              "aula_eficiencia"
+            ],
+            "pendencia": "Reforço útil para registrar a leitura de W líquido e Q recebido total; não declarar invalidade da questão por isso."
+          }
+        ],
+        "derivacoes_do_original": [
+          "1/3≈33,3% é resultado direto de 1.000/3.000."
+        ],
+        "explicacao_conceitual": "A temperatura fria é mencionada como dado que seria necessário a Carnot, porém não recebe valor. Logo, não há temperatura suplementar.",
+        "decisao": "reforco_local",
+        "justificativa": "“Na leitura de máquina térmica da resolução, 1.000 J são o trabalho líquido e 3.000 J o calor total recebido na mesma operação/ciclo.” Manter o cálculo existente."
+      },
+      "plano": "“Na leitura de máquina térmica da resolução, 1.000 J são o trabalho líquido e 3.000 J o calor total recebido na mesma operação/ciclo.” Manter o cálculo existente."
+    },
+    {
+      "id": "cr-e1-43",
+      "numero": 43,
+      "familia": "tc",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "3b8417f1d9e4dc6f2c1658d03178ba8bc87cd7c5d2776e0e0af55105554c80f0",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-43"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Vizinhança recebe calor; compensação no limite reversível e soma positiva no irreversível.",
+            "local": "resolução",
+            "justificativa": "Explicita a aplicação da segunda lei a sistema+vizinhança; nenhum parâmetro externo é usado.",
+            "separacao": "Limite reversível é declarado como ideal, fora do original."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Não há dado numérico nem hipótese silenciosa necessária a uma conta."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-44",
+      "numero": 44,
+      "familia": "tc",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "505d85a9d656cf593526e85643c8cab8269f9bac8c23b2f5c4736b700afaf3f2",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-44"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "Ciclo completo adiabático, trabalho líquido nulo; comparação com máquina entre fontes.",
+            "local": "resolução",
+            "justificativa": "O balanço reduzido pressupõe a massa de trabalho em ciclo e ausência de outras alterações de energia; o original menciona apenas um processo adiabático.",
+            "separacao": "É explicação fora do original, mas convém explicitar massa fechada em ciclo e temperaturas absolutas positivas para a ilustração.",
+            "fonte": "MIT primeira lei e enunciado de Kelvin–Planck, já arquivados."
+          }
+        ],
+        "decisao": "delimitar_modelo_ciclico",
+        "justificativa": "Distinguir processo de ciclo; não introduzir números ou testar novo cenário de avaliação."
+      },
+      "plano": "Distinguir processo de ciclo; não introduzir números ou testar novo cenário de avaliação."
+    },
+    {
+      "id": "cr-e1-45",
+      "numero": 45,
+      "familia": "trf",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "9065ac5761995d907afcf86d54c6d04d7e7dd2bd8d7dd70628c8a0c4be31b8ac",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-45"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "conversao",
+            "conteudo": "477°C→750,15K;27°C→300,15K.",
+            "local": "resolução",
+            "justificativa": "Derivado dos dados oficiais com offset SI273,15; não são propriedades externas.",
+            "fonte": "BIPM, apoio do coordenador."
+          },
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "Máquina cíclica com as duas trocas térmicas indicadas como únicas e sem outros efeitos.",
+            "local": "cálculo W=900−90 e comparação Carnot",
+            "justificativa": "Delimita a comparação da solução; usar Carnot requer temperaturas absolutas das fontes.",
+            "separacao": "Acrescentar frase curta de escopo autoral; números810,90% e≈60% são resultados, não suplementos."
+          }
+        ],
+        "decisao": "explicitar_conversao_e_modelo",
+        "justificativa": "Preservar todos os números e o julgamento."
+      },
+      "plano": "Preservar todos os números e o julgamento."
+    },
+    {
+      "id": "cr-e1-46",
+      "numero": 46,
+      "familia": "inpe",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "0bb0f9cd0768570ab457e4ac9c9f3b61af6c1bf59570d242df01cca495353831",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-46"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 35 identifica explicitamente o ciclo ideal de Carnot e pergunta seus pares de transformações.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Reversibilidade das duas isotermas e das duas adiabáticas é característica definidora do modelo nomeado, não hipótese externa para resolver um ciclo não especificado. Não há dado novo de temperatura, pressão ou fluido.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-47",
+      "numero": 47,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "8a99cb5355045fe2477c6438fd7b20b81c7dcc56469a21be72f57806f89f1c7b",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-47"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Alternativos favorecidos em menores vazões/maiores razões; seleção também depende de gás/faixa/eficiência.",
+            "local": "resolução",
+            "justificativa": "Contrasta famílias de máquinas e delimita a indicação geral, sem introduzir limite numérico de seleção.",
+            "separacao": "Uso de costumam/seleção final deixa explícito o caráter geral."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem constante ou propriedade adicional usada em conta."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-48",
+      "numero": 48,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "e7585a8c58fabc658d7c57c28e3b2b067a196f8425e8dd2fa569e9ca36a9face",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-48"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_condicional",
+            "conteudo": "Exaustão mais quente que o ar comprimido.",
+            "local": "resolução",
+            "justificativa": "Condição física para aquecer o ar por regeneração; escrita como exigência da explicação, não dado medido da prova.",
+            "separacao": "Já explícita: Isso exige que…"
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Nenhuma temperatura numérica acrescentada."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-49",
+      "numero": 49,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "d1d8cab6e7cc2b0a7ac70e6d16fc6112d2aecb30345213927e0a4247d0d948d9",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-49"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "modelo_comparativo",
+            "conteudo": "Trocas isobáricas no Brayton ideal e perdas de pressão nos trechos reais.",
+            "local": "resolução",
+            "justificativa": "A comparação diferencia modelos em vez de atribuir pressão constante ao ciclo real do original.",
+            "separacao": "Modelo ideal nomeado explicitamente."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem propriedade externa ou valor novo."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-50",
+      "numero": 50,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "b1fd08abfa0ff599e2d0202bf2a471e1972d00d1ea6921e2df2a8bf09d37611c",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-50"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "Comparar compressor/turbina reais com referências isentrópicas nas mesmas condições de entrada e pressões de saída; adiabaticidade, estacionariedade e energias cinética/potencial desprezíveis.",
+            "local": "resolução: mesma comparação de estados e razão de pressões",
+            "justificativa": "A fórmula verbal sobre aumento/redução de trabalho depende de comparação bem definida; estados de saída completos não podem ser mantidos iguais ao variar eficiência.",
+            "separacao": "Esclarecer que são estados de entrada/pressões de saída e o modelo de potência; não afirmar que o original explicita todas essas condições.",
+            "fonte": "MIT Brayton real/eficiência e balanço de volume de controle; usar fontes já presentes."
+          }
+        ],
+        "decisao": "delimitar_comparacao",
+        "justificativa": "Ajuste de hipótese da análise, sem alterar E ou demandar auditoria global de desempenho."
+      },
+      "plano": "Ajuste de hipótese da análise, sem alterar E ou demandar auditoria global de desempenho."
+    },
+    {
+      "id": "cr-e1-51",
+      "numero": 51,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "fa9b521938d9944137be722345b961fe7f5d2b8aa8acf9ed2dfd2789d7d4256d",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-51"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "modelo_convencional",
+            "conteudo": "Brayton ideal convencional, processos não degenerados, isentrópicas+isobáricas.",
+            "local": "nota e interpretação BAN-10",
+            "justificativa": "A origem é o ciclo nomeado; o curso identifica expressamente o modelo adotado e não universaliza a turbinas reais.",
+            "separacao": "Adequada, com fonte MIT3.7."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Não tratar idealidade como palavra presente no enunciado."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-52",
+      "numero": 52,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "0a1e2c76406a3ffa58de5677e0bbec9d7cd938cd89ea83776712f6f2dfa3363d",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-52"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_condicional",
+            "conteudo": "Isolar aumento de consumo do compressor mantendo a turbina sem mudança.",
+            "local": "resolução",
+            "justificativa": "Exemplo verbal para mostrar insuficiência de uma variável; a condição se está escrita.",
+            "separacao": "Condicional explícita, sem cálculo de eficiência fictícia."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Wlíquido e eficiência são relações da explicação; não há novo dado numérico."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-53",
+      "numero": 53,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "88a3ce14dae670334b9a1c277c31fd539b3249ab6b9d87865392798967a299b9",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-53"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_condicional",
+            "conteudo": "Diferença de temperatura adequada e mesma temperatura desejada à entrada da turbina/combustão.",
+            "local": "resolução",
+            "justificativa": "Delimita a economia de combustível na explicação de regeneração; o comentário também reconhece perdas de pressão.",
+            "separacao": "Condição Quando… explícita."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Nenhum valor de propriedade ou temperatura pesquisado."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-54",
+      "numero": 54,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "bb4985d1b74f411b0a581709e552f79e82658f88e51bdc208cdf8b2b8e15bc6b",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-54"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Dinâmicos/grandes vazões e volumétricos/altas razões, dependentes da faixa e gás.",
+            "local": "resolução",
+            "justificativa": "Explicação qualitativa da inversão no original; não fornece fronteiras numéricas de seleção.",
+            "separacao": "Indicação geral e dependência explicitadas."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem constante/modelo numérico adicional."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-55",
+      "numero": 55,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "f32de84a31a24cebe70f9d4920a27997f64b170b7bee0723c7b2d01727950230",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-55"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "modelo_convencional",
+            "conteudo": "Brayton ideal com rejeição isobárica; comparação com Otto.",
+            "local": "resolução/análise BAN-10",
+            "justificativa": "A crítica é explicitamente autoral e não corrige silenciosamente a expressão oficial pressão isentrópica.",
+            "separacao": "Já suficiente; fonte MIT3.7."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "A expressão defeituosa pertence ao original e não é suplemento do curso."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-56",
+      "numero": 56,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "e454a08aa8d566d15fd40d8301e5a41be923c5b8f1b4f5682df242b1df809a25",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-56"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "extensao_conceitual",
+            "conteudo": "Exemplo de ciclo combinado: recuperação de exaustão e ciclo Rankine.",
+            "local": "resolução",
+            "justificativa": "Ilustra aplicação do Brayton, sem novo enunciado ou dados de projeto.",
+            "separacao": "Texto explicativo após chave; autoria local será clara no summary comum."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem parâmetros externos."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-57",
+      "numero": 57,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "9ec32a8405951828d2a5d18681730df40d18778a177c8a4021f26abf853385a0",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-57"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "modelo_quantitativo",
+            "conteudo": "η=1−1/rp^((k−1)/k), ar ideal, calores constantes, k=cp/cv>1, Brayton ideal convencional.",
+            "local": "resolução",
+            "justificativa": "A expressão é suplemento explicativo e não equação fornecida pela banca; vale para compressão/expansão isentrópicas e trocas isobáricas do modelo.",
+            "separacao": "Parte das hipóteses já explícita; identificar como ilustração autoral e apontar derivação/fonte, sem expandir o ciclo.",
+            "fonte": "MIT Unified3.7 e base Brayton já existente."
+          }
+        ],
+        "decisao": "identificar_formula_e_modelo",
+        "justificativa": "rp/k simbólicos; não há valores numéricos a cadastrar. Manter limitação sobre máquina real/Tmáx."
+      },
+      "plano": "rp/k simbólicos; não há valores numéricos a cadastrar. Manter limitação sobre máquina real/Tmáx."
+    },
+    {
+      "id": "cr-e1-58",
+      "numero": 58,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "eab62eaa7a838747c40e753a4ef8229e016ec0ced56a013c098263eb5b36ea08",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-58"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "exemplo_modelo",
+            "conteudo": "Gás aprisionado ideal em compressão isotérmica, pVconstante.",
+            "local": "resolução",
+            "justificativa": "Ilustração explicitamente nomeada como modelo isotérmico; a massa aprisionada corresponde à fase de válvulas fechadas.",
+            "separacao": "Não atribui isotermia ao original; exemplo está fora do enunciado."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Relação simbólica e efeito de aquecimento são explicações, não novos dados."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-59",
+      "numero": 59,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "4bbfd2e74eed80002b59704eef4106bba6864e504e80864ea9e9a0f562607348",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-59"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Válvulas fechadas na compressão e abertura quando diferença de pressão supera resistência.",
+            "local": "resolução",
+            "justificativa": "Descreve operação usual da máquina nomeada, sem limiar quantitativo escolhido.",
+            "separacao": "Sem propriedade numérica disfarçada de dado oficial."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Não há suplemento de entrada no problema."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-60",
+      "numero": 60,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "2e5d313e3cc3f01ba79fe2854a3bb19e8409d78b7cb02a38a423f0f72ec0d1b7",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-60"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "exemplo_conceitual",
+            "conteudo": "Mais cilindros/reservatórios podem suavizar vazão pulsante.",
+            "local": "resolução",
+            "justificativa": "Exemplo de arranjo, sem número de cilindros nem dado adotado.",
+            "separacao": "Possibilidade declarada, não especificação da máquina original."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem dado ou constante acrescentados."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-61",
+      "numero": 61,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "6196d3ecfd0f16b8c35118d7c02ff27b86b9bceee5b88a8be606550d9bc3b5e0",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-61"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_modelo",
+            "conteudo": "Folga/reexpansão, aquecimento, perdas e vazamentos; valor unitário apenas idealização.",
+            "local": "resolução",
+            "justificativa": "Lista mecanismos que invalidam o sempre=1; não assume volume residual ou eficiência numéricos.",
+            "separacao": "Idealização e variáveis reais são distinguidas."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "O1 é da afirmação original, não valor novo do curso."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-62",
+      "numero": 62,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "5f44da84f65dd8f11782a7923c5b3741171d0b8e5529d77273820740c7348b1a",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-62"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_condicional",
+            "conteudo": "Existência de volume residual; intervalo de admissão separado do retorno/reexpansão; orientação do pistão.",
+            "local": "nota/roteiro/análise BAN-10",
+            "justificativa": "Condições expressamente usadas para distinguir duas leituras e não apresentadas como especificações oficiais.",
+            "separacao": "Adequada, fonte GUNT e autoria explícita."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Preservar estudo crítico e chaveC."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-63",
+      "numero": 63,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "08934e196ed8815785afcb9d000fcc56326e7527b250d5f51f169c0844883f11",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-63"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "modelo_comparativo",
+            "conteudo": "Stirling ideal: duas isotermas e duas isócoras com regeneração; turbina convencional/Brayton.",
+            "local": "resolução",
+            "justificativa": "Contrasta modelos nomeados e não enriquece dados de uma máquina específica.",
+            "separacao": "Stirling ideal e turbina convencional delimitados."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem propriedade numérica externa."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-64",
+      "numero": 64,
+      "familia": "tm",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "8d2a2179f5ccc824e3ffbe6c5ffad76e16ad7455b56e283c9be3d2f90834a210",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-64"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Geometria de câmara entre rotores/carcaça e contraste com ação dinâmica das pás.",
+            "local": "resolução",
+            "justificativa": "Explica o mecanismo do tipo de máquina sem adicionar geometria, eficiência ou estado numérico.",
+            "separacao": "Comentário didático fora do comando."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem suplemento de entrada."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-65",
+      "numero": 65,
+      "familia": "tse",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "7d2096286200bc4cafcfb512f081b4c5515c7e3a290dcb87582567c1170f8522",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-65"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "hipotese_modelo",
+            "conteudo": "Escoamento permanente, uma entrada/uma saída, adiabático aproximado, ΔEc/ΔEp desprezíveis, único trabalho não associado ao escoamento é o de eixo.",
+            "local": "resolução: potência=mdot×queda de h",
+            "justificativa": "A redução do balanço é suplemento autoral. Regime permanente/perdas de calor/energias já estão explícitos; faltam uma entrada/saída e exclusão de outros trabalhos.",
+            "separacao": "Completar frase local e citar balanço; pV está incorporado na entalpia.",
+            "fonte": "MIT primeira lei para volume de controle; aula/ FOR-01 aprovados."
+          }
+        ],
+        "decisao": "delimitar_trabalho_e_entradas",
+        "justificativa": "Não confundir adiabático com isentrópico; manter distinção já escrita."
+      },
+      "plano": "Não confundir adiabático com isentrópico; manter distinção já escrita."
+    },
+    {
+      "id": "cr-e1-66",
+      "numero": 66,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "4b194eda06c6ee5215c05177f00ca8f01bbf490fc06d9f53b65df372a45c0bae",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-66"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 82 descreve permutador casco/tubo e afirma mistura de fluidos.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Caminhos dentro/fora dos tubos, condução na parede e convecção nos lados são explicação do equipamento. Referência a vazamento/contato direto é contraste conceitual; não se assume vazamento real no item nem se fornece coeficiente de transferência.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-67",
+      "numero": 67,
+      "familia": "p23",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "ecddb0148ddc0cbb74ff06eff3e47032ba240626e6c35c01905724ce06026043",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-67"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 84 descreve a finalidade das juntas de expansão em expansão/contração térmica.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Impedimento total de deslocamento é exemplo condicional para explicar tensões, não hipótese atribuída à instalação da prova. Não foram atribuídos material, coeficiente de dilatação, comprimento ou ΔT.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-68",
+      "numero": 68,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "868e2438c1a4c020a75209fd26c9bcf0cd08c67fc4b4c7d037f90eff3d5c70f6",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-68"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Contexto original traz g=10 m/s², atmosfera=101,325 kPa abs, água a 25 °C em 1/2, densidade defeituosa 1.000 kg/cm³, bomba 74 kPa, T3=133 °C, altura 5 m, perda de água desprezível e tabela histórica. Esses valores são originais, inclusive os defeitos; item 85 é qualitativo sobre emissividade.",
+        "adicoes": [
+          {
+            "tipo": "aproximacao_didatica_identificada",
+            "trecho": "ρ≈1.000 kg/m³ (1 g/cm³)",
+            "local": "#cr-e1-68-dados-corrigidos: parágrafo Densidade",
+            "funcao": "Oferecer aproximação de líquido incompressível perto de 25 °C e atmosfera.",
+            "justificativa": "Explicitamente aproximada, distinguida do erro original e do valor real de referência. Não se afirma que p1/p2 sejam atmosféricas.",
+            "fontes_disponiveis": [
+              "fon09_dados",
+              "nist_densidade"
+            ],
+            "pendencia": null
+          },
+          {
+            "tipo": "propriedade_de_modelo_externa",
+            "trecho": "997,04764 kg/m³ a 25 °C e 101,325 kPa",
+            "local": "#cr-e1-68-dados-corrigidos: parágrafo Densidade",
+            "funcao": "Quantificar a referência física da água líquida e a diferença da aproximação 1.000.",
+            "justificativa": "Consulta NIST WebBook/IAPWS-95 identificada por condição e link; conjunto aprovado FON-09 preserva captura/hash.",
+            "fontes_disponiveis": [
+              "fon09_dados",
+              "nist_densidade"
+            ],
+            "pendencia": null
+          },
+          {
+            "tipo": "tabela_de_propriedades_externa",
+            "trecho": "Água pura saturada — conjunto corrigido FON-09 v1.0; pressão absoluta",
+            "local": "#cr-e1-68-dados-corrigidos: tabela de saturação",
+            "funcao": "Substituir para consulta física as 15 células defeituosas/arredondadas da tabela histórica.",
+            "justificativa": "Fonte por linha, água pura, equilíbrio líquido–vapor, pressão absoluta, unidades e precisão estão declaradas. A primeira linha veio de consulta direta, não de interpolação.",
+            "fontes_disponiveis": [
+              "fon09_dados",
+              "nist_saturacao",
+              "nistir5078"
+            ],
+            "pendencia": null,
+            "valores_publicados": [
+              {
+                "p_kPa_abs": 101.325,
+                "T_C": 99.974,
+                "vf_m3_kg": 0.00104344,
+                "vg_m3_kg": 1.6732,
+                "origem": "NIST WebBook, consulta direta a 0,101325 MPa"
+              },
+              {
+                "p_kPa_abs": 150,
+                "T_C": 111.349,
+                "vf_m3_kg": 0.00105273,
+                "vg_m3_kg": 1.1593,
+                "origem": "NISTIR 5078, tabela 2, p. impressa 12 / PDF p. 2"
+              },
+              {
+                "p_kPa_abs": 200,
+                "T_C": 120.21,
+                "vf_m3_kg": 0.00106052,
+                "vg_m3_kg": 0.88568,
+                "origem": "NISTIR 5078, tabela 2, p. impressa 12 / PDF p. 2"
+              },
+              {
+                "p_kPa_abs": 250,
+                "T_C": 127.411,
+                "vf_m3_kg": 0.00106722,
+                "vg_m3_kg": 0.71866,
+                "origem": "NISTIR 5078, tabela 2, p. impressa 12 / PDF p. 2"
+              },
+              {
+                "p_kPa_abs": 300,
+                "T_C": 133.522,
+                "vf_m3_kg": 0.00107317,
+                "vg_m3_kg": 0.60576,
+                "origem": "NISTIR 5078, tabela 2, p. impressa 12 / PDF p. 2"
+              }
+            ],
+            "precisao_declarada": "Na primeira linha, consulta retorna 99,974296 °C; 0,0010434411 m³/kg; 1,6732012 m³/kg. Exibição arredondada. Demais linhas mantêm casas da fonte após conversão exata; 120,210 conserva três casas decimais no HTML. Os números JSON são valores, não especificadores de casas significativas."
+          },
+          {
+            "tipo": "hipoteses_de_modelo_radiativo",
+            "trecho": "superfície cinzenta diante de grande vizinhança isotérmica [...] Com Ts > Tv e demais fatores mantidos",
+            "local": "Interpretação técnica autoral — BAN-10",
+            "funcao": "Justificar a possibilidade de reduzir a parcela radiativa ao reduzir ε.",
+            "justificativa": "Condições explícitas no comentário autoral BAN-10; não implicam redução igual de condução/convecção nem Ts fixa automaticamente na instalação real. Nenhum valor de σ é utilizado no julgamento qualitativo.",
+            "fontes_disponiveis": [
+              "openstax_radiacao",
+              "aula_radiacao"
+            ],
+            "pendencia": null
+          }
+        ],
+        "derivacoes_do_original": [
+          "1.000 kg/cm³=10⁹ kg/m³ é conversão do erro histórico, não densidade real adotada.",
+          "Diferença de cerca de 0,296% entre 1.000 e 997,04764 é resultado derivado.",
+          "MPa→kPa (×1.000), cm³/g→m³/kg (×0,001), conversão/recíproco e arredondamentos descritos no arquivo são operações sobre dados da fonte, não novas medições."
+        ],
+        "explicacao_conceitual": "A lei de Stefan–Boltzmann aparece simbolicamente para o julgamento; densidade/saturação não entram na resposta do item 85.",
+        "decisao": "preservar_fon09",
+        "justificativa": "Nenhum; não alterar o suplemento, a transcrição ou as precisões aprovadas. Reaproveitamento por identidade do JSON de dados e pelo confronto documental FON-01, não nova auditoria da água."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-69",
+      "numero": 69,
+      "familia": "p24",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "6c621ff003b12f2f67ca92d9a51d8b9ab38ac2ff98588b05e78108f88dbeda9b",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-69"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 90 já descreve casco/tubos, caminhos de ambos os fluidos e condução/convecção através das paredes.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "Resistências em série e depósito como resistência adicional são explicação conceitual da resolução. Não há espessura, condutividade, coeficiente convectivo, fator de incrustação ou hipótese numérica acrescentados.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-70",
+      "numero": 70,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "f581577d62634979ee5d025e93d96b40bfa4b68dd7c4b70f7c6b71a61444446a",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-70"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "relacao_conceitual",
+            "conteudo": "q″=−k dT/dx, forma unidimensional da lei de Fourier, kcondutividade.",
+            "local": "resolução",
+            "justificativa": "Equação de apoio simbólica para explicação do sentido; a unidimensionalidade é declarada.",
+            "separacao": "Não há k numérico acrescentado nem propriedade de material inventada."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Modelo/forma estão identificados; summary autoral basta para autoria local."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-71",
+      "numero": 71,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "ef1f1de0d3aba6c166381fe3af769f819fe9b9445651a1016de91944291375f2",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-71"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Convecção natural por diferenças de densidade sob gravidade.",
+            "local": "resolução",
+            "justificativa": "Contraste com o acionamento externo do original; gravidade explicitada no comentário, sem dado numérico.",
+            "separacao": "Mecanismos são apresentados como explicação."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem suplemento factual usado como entrada."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-72",
+      "numero": 72,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "1f8978ee9f14297e3ca0b8323a8c2622d06f2c6b9f921d026ca6bb75d22a0dd4",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-72"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "definicao_comparativa",
+            "conteudo": "Contracorrente entra por lados opostos; orientação afeta perfil térmico.",
+            "local": "resolução",
+            "justificativa": "Define arranjo alternativo para explicar paralelo; não escolhe perfil/temperatura/correlação.",
+            "separacao": "Definição fora do original, sem enriquecimento de dados."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem número/propriedade adicional."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-73",
+      "numero": 73,
+      "familia": "to",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "c65b0368e6572bc3505c3aac6b1676072cfae06cc781807fe6b96a8ee270420a",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-73"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Alta área por volume, aletas/passagens pequenas.",
+            "local": "resolução",
+            "justificativa": "Explica compacto qualitativamente, sem limite de área por volume adotado.",
+            "separacao": "Não há valor de projeto suplementar."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "O contraste área/volume é raciocínio, não nova medição."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-74",
+      "numero": 74,
+      "familia": "trf",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "fc277c15bccdcd3178cf209367e5d7f5eb6fadc7446b1a409e5d2b2f90d1bbbd",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-74"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "explicacao_conceitual",
+            "conteudo": "Resistência de depósito reduz U e pode aumentar consumo.",
+            "local": "resolução",
+            "justificativa": "Consequência qualitativa da incrustação; não usa Rf, U ou propriedade numérica.",
+            "separacao": "Possibilidade de consumo é modal pode, não dado do original."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem suplemento numérico."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-75",
+      "numero": 75,
+      "familia": "trf",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "90300e7354993e382db2a2ac18a4f26e6b7055b7e073176542095e436b67e8dd",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-75"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "convencao_e_propriedade_geral",
+            "conteudo": "kpositivo; se Tdecresce em+x, fluxo nessa direção positivo.",
+            "local": "resolução",
+            "justificativa": "Explica sinal/direção no modelo escalar de Fourier tratado pelo próprio comando; não é constante empírica extra.",
+            "separacao": "Exemplo de orientação hipotética explícito."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Não cadastrar um valor de k inexistente."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-76",
+      "numero": 76,
+      "familia": "trf",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "43598c42f864bae79295cfee191095dd8fe691b64a59ffca3a4e4588907a475f",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-76"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "definicao_conceitual",
+            "conteudo": "Advecção=movimento global; difusão/condução na interface.",
+            "local": "resolução",
+            "justificativa": "Definições explicam o erro da frase; sem condições de escoamento ou propriedades escolhidas.",
+            "separacao": "Comentário fora do enunciado."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem suplemento de dado."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-77",
+      "numero": 77,
+      "familia": "tse",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "902e8ca91003f7f3529280b54cf81b5f91d425a91a142b1bb09ca7876042c6b4",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-77"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "modelo_convencional",
+            "conteudo": "Refrigerante normalmente chega como vapor de alta pressão e condensa; evaporador vaporiza.",
+            "local": "resolução",
+            "justificativa": "Modelo usual de compressão de vapor; não atribui substância, pressão ou entalpia extra.",
+            "separacao": "Normalmente identifica a descrição convencional, sem cálculo de ciclo específico."
+          }
+        ],
+        "decisao": "manter",
+        "justificativa": "Sem constante/propriedade numérica."
+      },
+      "plano": "Manter o conteúdo; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-78",
+      "numero": 78,
+      "familia": "inpe",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "cd13d18ed248d752ad0ab84a4504f3782370596c1d564070d9151fd5726dabb8",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-78"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 25 e alternativas já citam alto calor latente da amônia como vantagem e apresentam alegações de segurança/descarte.",
+        "adicoes": [],
+        "derivacoes_do_original": [],
+        "explicacao_conceitual": "A resolução explica calor retirado por massa e ressalva que o desempenho depende do ciclo/equipamento, sem atribuir valor a hfg, COP ou estado de saturação. Comentários sobre alternativas não criam parâmetros operacionais novos.",
+        "decisao": "manter",
+        "justificativa": "Nenhum."
+      },
+      "plano": "Manter o conteúdo e a separação já explícita; identificar localmente a autoria da resolução quando o resumo ainda é genérico."
+    },
+    {
+      "id": "cr-e1-79",
+      "numero": 79,
+      "familia": "inpe",
+      "autoria": "/root/corretor_aaa/apoio_fun01 — apoio diagnóstico do Corretor; não Auditor independente",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "8d270260a0df52166acebc799bc2453650825183635a81522487f164b561e682",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-79"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "dados_originais": "Original 30 fornece equipamento instrumentado, câmara em alto vácuo e parede por volta de −196 °C; não fornece temperatura do corpo, área, emissividades ou condutâncias.",
+        "adicoes": [
+          {
+            "tipo": "dados_didaticos_de_contramodelo",
+            "trecho": "Contramodelo autoral, não dado da prova: corpo a 300 K, área 0,10 m²",
+            "local": "Interpretação técnica autoral — BAN-10",
+            "funcao": "Construir um exemplo com duas relações distintas entre perdas radiativas e condutivas.",
+            "justificativa": "300 K e 0,10 m² são escolhas autorais para demonstrar não unicidade da predominância; não são propriedades do equipamento real nem precisam de fonte de medição.",
+            "fontes_disponiveis": [
+              "analise_autoral_ban10"
+            ],
+            "pendencia": null
+          },
+          {
+            "tipo": "hipoteses_didaticas_de_contramodelo",
+            "trecho": "superfícies negras e grande parede a 77,15 K [...] A troca gasosa foi desprezada nesse contramodelo",
+            "local": "Interpretação técnica autoral — BAN-10",
+            "funcao": "Definir o modelo radiativo e excluir contribuição gasosa apenas no exemplo.",
+            "justificativa": "Superfícies negras (ε=1), grande entorno e gás residual desprezado são escolhas declaradas. 77,15 K decorre da conversão de −196 °C tomada como referência nominal do exemplo; a prova diz “por volta”, não precisão metrológica de 0,01 K.",
+            "fontes_disponiveis": [
+              "aula_radiacao",
+              "bipm_celsius",
+              "analise_autoral_ban10"
+            ],
+            "pendencia": "Convém explicitar que −196 °C é adotado nominalmente no contramodelo; isso evita transformar o arredondamento original em precisão física nova."
+          },
+          {
+            "tipo": "parametros_didaticos_de_contramodelo",
+            "trecho": "G = 0,01 W/K [...] G = 0,50 W/K",
+            "local": "Interpretação técnica autoral — BAN-10",
+            "funcao": "Comparar montagem pouco condutiva com outra mais condutiva.",
+            "justificativa": "São duas condutâncias efetivas escolhidas pelo autor, claramente externas ao original. Não são valores tabelados de um material; G agrega a ligação entre corpo e parede.",
+            "fontes_disponiveis": [
+              "analise_autoral_ban10",
+              "nasa_thermal"
+            ],
+            "pendencia": null
+          },
+          {
+            "tipo": "constante_fisica_usada_no_calculo",
+            "trecho": "aproximadamente 45,73 W radiativos",
+            "local": "Interpretação técnica autoral — BAN-10",
+            "funcao": "Quantificar o termo radiativo do contramodelo.",
+            "justificativa": "O artigo não escreve o σ adotado, mas o alvo #base-radiacao-vacuo dá σ≈5,67×10⁻⁸ W/(m²·K⁴) e a equação; NASA já é citada como fundamento dos mecanismos.",
+            "fontes_disponiveis": [
+              "aula_radiacao",
+              "nasa_thermal"
+            ],
+            "pendencia": "Explicitar σ e as equações de Qrad e Qcond junto ao contramodelo para tornar a origem dos resultados localmente reproduzível; não apresentar os resultados como dados de prova."
+          }
+        ],
+        "derivacoes_do_original": [
+          "77,15 K é conversão do valor nominal −196 °C para o exemplo.",
+          "45,73 W, 2,23 W e 111,43 W são resultados calculados do contramodelo, não constantes/propriedades medidas; este diagnóstico não constitui reexecução BAN-08."
+        ],
+        "explicacao_conceitual": "A enumeração dos mecanismos e a insuficiência de “alto vácuo” para garantir predominância são interpretação autoral, já separada e fundamentada.",
+        "decisao": "reforco_local",
+        "justificativa": "Acrescentar ao contramodelo: “Para este exemplo, toma-se nominalmente −196 °C=77,15 K, sem atribuir essa precisão à prova. Usa-se σ≈5,67×10⁻⁸ W/(m²·K⁴), Qrad=σA(Tcorpo⁴−Tparede⁴) e Qcond=G(Tcorpo−Tparede), com G efetiva constante de cada ligação.” Vincular a aula já disponível; preservar dados e resultados do contramodelo."
+      },
+      "plano": "Acrescentar ao contramodelo: “Para este exemplo, toma-se nominalmente −196 °C=77,15 K, sem atribuir essa precisão à prova. Usa-se σ≈5,67×10⁻⁸ W/(m²·K⁴), Qrad=σA(Tcorpo⁴−Tparede⁴) e Qcond=G(Tcorpo−Tparede), com G efetiva constante de cada ligação.” Vincular a aula já disponível; preservar dados e resultados do contramodelo."
+    },
+    {
+      "id": "cr-e1-80",
+      "numero": 80,
+      "familia": "cae",
+      "autoria": "/root/corretor_aaa",
+      "leitura_integral": true,
+      "identidade": {
+        "sha256_artigo_antes": "5390d7c70005822548d2922ef764d627d9c93794c3b79e043a3f47606da29184",
+        "conferencia_oficial_reutilizada": {
+          "arquivo": "auditoria/termodinamica/evidencias/FON-01/conferencia-80-r1.json",
+          "id": "cr-e1-80"
+        },
+        "metodo": "Artigo completo relido em FON-02; confronto oficial FON-01 reutilizado por identidade. Não se declara nova renderização dos PDFs nesta etapa."
+      },
+      "diagnostico": {
+        "adicoes": [
+          {
+            "classe": "resultados_derivados",
+            "conteudo": "V4m³,A4m²,geração400W,coeficiente hA40W/K eTs40°C.",
+            "local": "resolução/análise",
+            "justificativa": "Derivados das dimensões/100Wm−3/h10/Tamb30 originais; não dados acrescentados.",
+            "separacao": "O texto já declara origem geométrica."
+          },
+          {
+            "classe": "hipotese_condicional",
+            "conteudo": "Sem acumulação e convecção como única saída da face exposta; sem radiação/outras saídas.",
+            "local": "nota/roteiro/análise crítica",
+            "justificativa": "Hipóteses adicionais explicitamente identificadas; balanço com dU/dt mostra o papel delas.",
+            "separacao": "Adequada, não modificar modelo aprovado."
+          }
+        ],
+        "decisao": "manter_modelo_e_precisar_historico",
+        "justificativa": "A frase que cita comando p4/justificativa p5 remete à versão histórica local; propor somente identificar esse histórico, após ciência do coordenador. Não é alteração científica."
+      },
+      "plano": "A frase que cita comando p4/justificativa p5 remete à versão histórica local; propor somente identificar esse histórico, após ciência do coordenador. Não é alteração científica."
+    }
+  ],
+  "limites": [
+    "FON-01 reaproveitado por identidade, sem alegação de nova inspeção visual dos PDFs.",
+    "Não conclui BAN-07, BAN-08 ou FON-10.",
+    "Diagnóstico não é aprovação do Auditor."
+  ]
+}

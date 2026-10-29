@@ -1,0 +1,23 @@
+{
+  "id": "BAN-08",
+  "estado": "TESTE_CONTROLADO_SEM_ACEITE",
+  "digitais_anteriores": [
+    "d0b32333",
+    "95231db6",
+    "d95e6b2d"
+  ],
+  "digitais_novas": [
+    "595a0614",
+    "10df36ad",
+    "0619ab1f"
+  ],
+  "passou": [
+    "histórico preservado sem migração de resposta",
+    "contador de três itens só soma respostas novas",
+    "aviso de versões anteriores",
+    "gravação e releitura das três respostas novas",
+    "refazer remove só digital atual",
+    "falhas de leitura/gravação não sobrescrevem armazenamento"
+  ],
+  "limite": "Funções reais de curso.js com DOM e localStorage simulados; não é navegador real nem acesso a dados pessoais."
+}

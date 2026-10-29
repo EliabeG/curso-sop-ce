@@ -1,0 +1,27 @@
+{
+  "estado": "APLICADO_PENDENTE_AUDITORIA",
+  "autor": "/root/inspect_repo",
+  "alteracao": {
+    "antes": "em quatro partes nas mesmas condições",
+    "depois": "em quatro partes de massas iguais nas mesmas condições"
+  },
+  "artigos_197_preservados": true,
+  "antes": {
+    "html": "9ec10053e40640feeb977baea742da3cbe4d546659f772f0256c6b3cb0720a55",
+    "inventario_json": "adb2f7edd0bdfbf6d1f0ec0bc8aefd46b22d6728a0aa59fc3981281aac93fbcd",
+    "inventario_md": "7824dcd17e20d14b54db2c339310e6100cebaf8e7df59051d636844c7dc3be7d"
+  },
+  "depois": {
+    "html": "0de7342b99b9ebef8c1526f0b8eefb3544f000a4546d7b500558550d178285eb",
+    "inventario_json": "6276476a66629d50406c08eb23fb185a5828a48c0a175d54bba8227679ecd396",
+    "inventario_md": "d9b944f1d02d9d21aa74e3d66389479be210f194ec61633e929199d565e7e493"
+  },
+  "candidata_arquivo": "105196333d9b8092d7f56401b296f86a6ed9ef7ad6796fe31a091cd7c6b2b506",
+  "parecer_independente": {
+    "arquivo": "auditoria/termodinamica/pareceres/QA-09-diagnostico01-revisao-candidata-independente-r1.md",
+    "sha256": "5703126d921eb3dabce975331ac4b0047665fdb029da14181a4c6e763529f3ec"
+  },
+  "snapshot_antes": "auditoria/termodinamica/evidencias/QA-09/aplicacao-diagnostico01-r1/antes/e1-termodinamica.html",
+  "snapshot_depois": "auditoria/termodinamica/evidencias/QA-09/aplicacao-diagnostico01-r1/e1-termodinamica-depois.html",
+  "limite": "Sem aprovação global QA-09; teste estático de artigos não substitui auditoria ou teste de persistência."
+}
