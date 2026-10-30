@@ -71,6 +71,8 @@ A [triagem de escala r30](evidencias/QA-09/planejamento-escala-r30/proposta.md) 
 
 O [ledger de fichas r30](evidencias/QA-09/ledger-fichas-r30-r1/LEIA-ME.md) e o [parecer independente](evidencias/QA-09/auditoria-ledger-fichas-r30/parecer.md) reconciliam 100 fichas: 22 já integradas e 78 novas, com oito fichas e 11 contextos alterados reavaliados segundo os pareceres citados. O escopo é de rastreabilidade delimitada, não uma nova auditoria científica integral ou aprovação de QA-09. Uma divergência de digitação em hash histórico foi preservada e recebeu [errata](evidencias/QA-09/auditoria-formulas-r28-lote5-errata-next-theory-20261030/errata.md); o alcance do parecer 45–66 foi [esclarecido](evidencias/QA-09/esclarecimento-auditoria-formulas-r28-lote3/parecer.md).
 
+O [ledger dos 50 exemplos r30](evidencias/QA-09/ledger-exemplos-r30-r1/LEIA-ME.md) e o [parecer independente](evidencias/QA-09/auditoria-ledger-exemplos-r30-next-formulas-20261030/parecer.md) reconciliam 15 exemplos já integrados e 35 adicionais com os mapas e pareceres identificados. Cinco fragmentos e seis contextos alterados foram reavaliados; EX028 teve três legendas alteradas, mas sua candidata opcional de enunciado não foi aplicada. O resultado é restrito à rastreabilidade dos exemplos e não encerra QA-09.
+
 Próximas ações dentro de QA-09:
 
 1. Reconciliar a fotografia e os pareceres atuais, incluindo as aplicações EX011/EX013 e das quatro correções de 30/10, e verificar eventuais mudanças desde este documento.
