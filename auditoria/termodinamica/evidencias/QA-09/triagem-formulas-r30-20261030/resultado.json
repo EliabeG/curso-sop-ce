@@ -1,0 +1,146 @@
+{
+  "ok": true,
+  "contas": {
+    "w_motor": 400,
+    "eficiencia": 0.4,
+    "cop_r": 3,
+    "q_h": 800,
+    "cop_bc": 4,
+    "entropia_motor_600_300": 0.33333333333333326,
+    "entropia_ref_270_300": 0.4444444444444442
+  },
+  "foto_sha256": "c719adae3464fb56ed2b0ad7014e0721c0aab2da444fb484ec0b40c5c0c8fbd4",
+  "inventario_sha256": "1ce69fc1ab71850abc3ab8dc3df82b04e78788b9e62a55919c609a708a7979b4",
+  "ledger_sha256": "58d31ac8b26366c543cc439b3b4dc0c7c9428d191949c8ac49d801b4a459dc12",
+  "contextos_distintos": 43,
+  "categorias": {
+    "texto_direto": {
+      "total": 9512,
+      "contido_objeto": 1401,
+      "contido_contexto": 2479,
+      "fora_objetos_e_contextos": 6018
+    },
+    "atributos_significativos": {
+      "total": 807,
+      "contido_objeto": 30,
+      "contido_contexto": 65,
+      "fora_objetos_e_contextos": 720
+    },
+    "secao": {
+      "total": 32,
+      "contido_objeto": 0,
+      "contido_contexto": 1,
+      "fora_objetos_e_contextos": 31
+    },
+    "tabela": {
+      "total": 37,
+      "contido_objeto": 4,
+      "contido_contexto": 12,
+      "fora_objetos_e_contextos": 25
+    },
+    "mathml": {
+      "total": 711,
+      "contido_objeto": 93,
+      "contido_contexto": 246,
+      "fora_objetos_e_contextos": 407
+    },
+    "equacao_contextualizada": {
+      "total": 99,
+      "contido_objeto": 8,
+      "contido_contexto": 67,
+      "fora_objetos_e_contextos": 32
+    },
+    "exemplo_ou_diagnostico": {
+      "total": 78,
+      "contido_objeto": 43,
+      "contido_contexto": 42,
+      "fora_objetos_e_contextos": 8
+    },
+    "figura": {
+      "total": 8,
+      "contido_objeto": 8,
+      "contido_contexto": 8,
+      "fora_objetos_e_contextos": 0
+    },
+    "caso_oficina": {
+      "total": 4,
+      "contido_objeto": 0,
+      "contido_contexto": 0,
+      "fora_objetos_e_contextos": 4
+    },
+    "flashcard": {
+      "total": 21,
+      "contido_objeto": 0,
+      "contido_contexto": 0,
+      "fora_objetos_e_contextos": 21
+    },
+    "ficha_formula": {
+      "total": 100,
+      "contido_objeto": 22,
+      "contido_contexto": 0,
+      "fora_objetos_e_contextos": 78
+    }
+  },
+  "selecionados": [
+    {
+      "id": "modulos/e1-termodinamica.html:375817:equacao_contextualizada",
+      "inicio_utf16": 375817,
+      "fim_utf16": 376702,
+      "sha256": "848f684c37ed56107212e7c9078366f33eb0560f58e552a94258a4414b2bbc8b",
+      "trecho": "Balanço W = 1 000 − 600 = 400 k J Nesta fórmula W Trabalho líquido produzido pela máquina térmica no ciclo. Unidade: kJ por ciclo."
+    },
+    {
+      "id": "modulos/e1-termodinamica.html:376747:equacao_contextualizada",
+      "inicio_utf16": 376747,
+      "fim_utf16": 378370,
+      "sha256": "a1228cc14388c3600903900c53676b023944b8ac7b8a4055e4dbfdc6a4b97c42",
+      "trecho": "Fração convertida em trabalho η = 400 1 000 = 0,40 = 40 % Nesta fórmula η Eficiência térmica: fração do calor recebido convertida em trabalho líquido. Unidade: Adimensional (sem unidade); multiplique por 100 para obter %. W Trabalho líquido produzido pela máquina térmica no ciclo. Unidade: kJ por ciclo. Q H Magnitude do calor recebido da fonte quen"
+    },
+    {
+      "id": "modulos/e1-termodinamica.html:378744:equacao_contextualizada",
+      "inicio_utf16": 378744,
+      "fim_utf16": 380525,
+      "sha256": "01eb4b64c1c1076e1cccffd2d3f13de92e79e28d9e2f1416cc2eebb9c7b59f01",
+      "trecho": "Efeito útil na fonte fria C O P R = 600 200 = 3 Nesta fórmula C O P R Coeficiente de desempenho do refrigerador; R indica refrigeração. Unidade: Adimensional (sem unidade). Q L Magnitude do calor retirado da fonte fria pelo evaporador. Unidade: kJ por ciclo. W Trabalho líquido total recebido pelo ciclo de refrigeração ou pela bomba de calor, positi"
+    },
+    {
+      "id": "modulos/e1-termodinamica.html:380581:equacao_contextualizada",
+      "inicio_utf16": 380581,
+      "fim_utf16": 382221,
+      "sha256": "ccaf7227cece3d79b29d27853aa9eb09a49debf849caa56f46e9d687cfd5c087",
+      "trecho": "Balanço Q H = 600 + 200 = 800 k J Nesta fórmula Q H Magnitude do calor entregue à fonte quente pelo condensador. Unidade: kJ por ciclo. Q L Magnitude do calor retirado da fonte fria pelo evaporador. Unidade: kJ por ciclo. W Trabalho líquido total recebido pelo ciclo de refrigeração ou pela bomba de calor, positivo: entradas menos saídas de trabalho"
+    },
+    {
+      "id": "modulos/e1-termodinamica.html:382269:equacao_contextualizada",
+      "inicio_utf16": 382269,
+      "fim_utf16": 384105,
+      "sha256": "a7bf9eb973cfd707b4eaeb4bb2000bb3207fab19bfc2a921a92b885d9e9f4542",
+      "trecho": "Efeito útil na fonte quente C O P B C = 800 200 = 4 Nesta fórmula C O P B C Coeficiente de desempenho da bomba de calor; BC indica bomba de calor. Unidade: Adimensional (sem unidade). Q H Magnitude do calor entregue à fonte quente pelo condensador. Unidade: kJ por ciclo. W Trabalho líquido total recebido pelo ciclo de refrigeração ou pela bomba de "
+    }
+  ],
+  "contexto": {
+    "id": "base-refrigeracao",
+    "inicio_utf16": 370901,
+    "fim_utf16": 384308,
+    "sha256": "467b2324a8e742e6c0cb60565ccf3d74480f434d3fb044eefe5eb78f2377a4b7"
+  },
+  "colecoes": {
+    "ocorrencias": {
+      "total": 11409,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "referencias": {
+      "total": 816,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "recursos": {
+      "total": 138,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "ativos_especificos": {
+      "total": 6,
+      "estado_padrao": "pendente_de_integracao"
+    }
+  },
+  "limite": "Contenção em objetos e contextos do ledger direto r30; não classifica toda revisão histórica nem validade científica; conjuntos de contagem sobrepostos."
+}
