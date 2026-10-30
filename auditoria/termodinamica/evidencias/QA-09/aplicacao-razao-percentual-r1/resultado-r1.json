@@ -1,0 +1,248 @@
+{
+  "estado": "AGUARDANDO_AUDITORIA_INDEPENDENTE",
+  "html_antes": "200f9b773050594d762cc596a5a89297024b245fc4f504081fc77baaed3db95f",
+  "html_depois": "57b13f0d6386764f1cc46ce543013b0eb75f7bfa97ffbd63ea331f38bfc5af8c",
+  "inventario_antes": "c240148429da2f2a295e6a97bce2f466a255fdc5f5fef1858aaed2fc2a687e89",
+  "inventario_depois": "554608968c6fa031fd13a008215dba4c825377422d68bfc5a74db33667756b2c",
+  "artigos_preservados": 197,
+  "geracao": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r8.json",
+    "sha256": "ae75a258398c385398567457d98ebd49b9838c0c9a4eedc69ea8d2d72981b687",
+    "resumo": {
+      "diagnosticos": 28,
+      "exemplos_incluindo_diagnosticos": 78,
+      "casos_oficina": 4,
+      "flashcards": 21,
+      "fichas": 100,
+      "mathml": 711,
+      "figuras": 8,
+      "textos_diretos": 9499,
+      "referencias": 815,
+      "recursos_unicos": 20
+    },
+    "documentos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "57b13f0d6386764f1cc46ce543013b0eb75f7bfa97ffbd63ea331f38bfc5af8c",
+        "total_nos": 24116,
+        "nos_fora": 10836,
+        "artigos_excluidos": 197,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 21,
+          "tabela": 37,
+          "mathml": 520,
+          "equacao_contextualizada": 99,
+          "exemplo_ou_diagnostico": 78,
+          "figura": 8,
+          "caso_oficina": 4,
+          "flashcard": 21
+        }
+      },
+      {
+        "arquivo": "formulas/termodinamica.html",
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "total_nos": 5452,
+        "nos_fora": 5452,
+        "artigos_excluidos": 0,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 11,
+          "ficha_formula": 100,
+          "mathml": 191
+        }
+      }
+    ]
+  },
+  "mapa": {
+    "estado": "MAPEAMENTO_ESTRUTURAL",
+    "limite": "Pares por ordem, documento e contexto; deslocamento verificado fora dos blocos alterados. Dentro dos blocos exige revisão individual de identidade. Hash igual não garante dependências ou transfere aceite. Referências conferidas por campos e início fora de blocos; registros de recursos comparados; visual e dinâmica requerem revisão.",
+    "base_r7": "5090b9897a4698e0ad090f45182afba5880361aabc9fd3c3bdf848d971a85a1a",
+    "base_r8": "ae75a258398c385398567457d98ebd49b9838c0c9a4eedc69ea8d2d72981b687",
+    "html_r7": "200f9b773050594d762cc596a5a89297024b245fc4f504081fc77baaed3db95f",
+    "html_r8": "57b13f0d6386764f1cc46ce543013b0eb75f7bfa97ffbd63ea331f38bfc5af8c",
+    "edicoes": [
+      {
+        "id": "candidata-razao-percentual-20261030",
+        "original": "auditoria/termodinamica/evidencias/QA-09/candidata-razao-percentual-20261030/original.html",
+        "candidata": "auditoria/termodinamica/evidencias/QA-09/candidata-razao-percentual-20261030/candidata.html",
+        "original_sha256": "8a084ef1539e7b1a4b427ad5da7865c67876ca80a4dafef72cf1e991ecba2b8c",
+        "candidata_sha256": "96b658b0b27f4e4d9f14a146a926906219078f252461bfaaf5d3bb639f891739",
+        "inicio": 36056,
+        "fim": 36216,
+        "delta": 45
+      },
+      {
+        "id": "candidata-fracao-molar-massica-20261030",
+        "original": "auditoria/termodinamica/evidencias/QA-09/candidata-fracao-molar-massica-20261030/original.html",
+        "candidata": "auditoria/termodinamica/evidencias/QA-09/candidata-fracao-molar-massica-20261030/candidata.html",
+        "original_sha256": "8fa3fc141421746dcdb71f2dbf11d00201c00fdd09b6ff51b1ec0579feb745d2",
+        "candidata_sha256": "541ec23acd9a6e81e66034c432227bd20934bfa72105b734854d6a995f848cb4",
+        "inicio": 102479,
+        "fim": 103112,
+        "delta": 132
+      },
+      {
+        "id": "fun01-parecer-candidata-20261030",
+        "original": "auditoria/termodinamica/evidencias/QA-09/fun01-parecer-candidata-20261030/original.html",
+        "candidata": "auditoria/termodinamica/evidencias/QA-09/fun01-parecer-candidata-20261030/candidata.html",
+        "original_sha256": "bdcd77b078906b6727248748ec8a21ff50fb891522a0aa61b62fc5cddd07294f",
+        "candidata_sha256": "7bc490923640adfe4d11c52c12ac26f4281bd51a46c348d1836e8807eed886d4",
+        "inicio": 114112,
+        "fim": 114778,
+        "delta": 27
+      },
+      {
+        "id": "exemplo-031-candidata-20261030",
+        "original": "auditoria/termodinamica/evidencias/QA-09/exemplo-031-candidata-20261030/original.html",
+        "candidata": "auditoria/termodinamica/evidencias/QA-09/exemplo-031-candidata-20261030/candidata.html",
+        "original_sha256": "fa0b22cc94dc24f3c4fc2493c719f30ab4a0484149f081b681497f81d73536e6",
+        "candidata_sha256": "fdbd8e2cc5d4212af40051f854dca99420ae4ef7b1c887a82c9540fdae2a3d6a",
+        "inicio": 381086,
+        "fim": 381963,
+        "delta": 207
+      }
+    ],
+    "total": 11396,
+    "hash_diferente": 8,
+    "ids_deslocados": 7186,
+    "dentro_dos_blocos": 18,
+    "referencias": 815,
+    "recursos": 138,
+    "artigos": 197,
+    "alterados": [
+      {
+        "id_r7": "modulos/e1-termodinamica.html:24691:secao",
+        "id_r8": "modulos/e1-termodinamica.html:24691:secao",
+        "arquivo": "modulos/e1-termodinamica.html",
+        "tipo": "secao",
+        "tag": "section",
+        "secao": "fundamentos",
+        "ancora": "fundamentos",
+        "inicio_r7": 24691,
+        "inicio_r8": 24691,
+        "sha256_fragmento_r7": "17bb6772f24581cbe629cfce6feddc2007e17e70fa7bd54daf5a040d65dbd693",
+        "sha256_fragmento_r8": "1f8d1cc22ae54b7cb2506a175fcebe36d71874a060eea06a0710a749f7b18685",
+        "dentro_do_bloco_editado": false,
+        "correspondencia": "CONTEUDO_ALTERADO_OU_ANCESTRAL"
+      },
+      {
+        "id_r7": "modulos/e1-termodinamica.html:36056:texto",
+        "id_r8": "modulos/e1-termodinamica.html:36056:texto",
+        "arquivo": "modulos/e1-termodinamica.html",
+        "tipo": "texto_direto",
+        "tag": "li",
+        "secao": "fundamentos",
+        "ancora": "fundamentos",
+        "inicio_r7": 36056,
+        "inicio_r8": 36056,
+        "sha256_fragmento_r7": "722fd0a7f8460a76179598367038dd3f84024e4189f9617cb5bfd54f2aa2d0ed",
+        "sha256_fragmento_r8": "4cf997c0cbf99c226afa4541a6469b7265f5b3315af889e3080cd7212716da11",
+        "dentro_do_bloco_editado": true,
+        "correspondencia": "CONTEUDO_ALTERADO_OU_ANCESTRAL"
+      },
+      {
+        "id_r7": "modulos/e1-termodinamica.html:88869:secao",
+        "id_r8": "modulos/e1-termodinamica.html:88914:secao",
+        "arquivo": "modulos/e1-termodinamica.html",
+        "tipo": "secao",
+        "tag": "section",
+        "secao": "fun01-estado-equilibrio",
+        "ancora": "fun01-estado-equilibrio",
+        "inicio_r7": 88869,
+        "inicio_r8": 88914,
+        "sha256_fragmento_r7": "9a6a471eb920a0f4bdc811af5811d97ab4ecef8ed72038505ba9bbad288a6039",
+        "sha256_fragmento_r8": "f663f261ab2203f2814d7112cb987b6af317b44cb0e9bad4b42be30f7f1b8079",
+        "dentro_do_bloco_editado": false,
+        "correspondencia": "CONTEUDO_ALTERADO_OU_ANCESTRAL"
+      },
+      {
+        "id_r7": "modulos/e1-termodinamica.html:102479:texto",
+        "id_r8": "modulos/e1-termodinamica.html:102524:texto",
+        "arquivo": "modulos/e1-termodinamica.html",
+        "tipo": "texto_direto",
+        "tag": "p",
+        "secao": "fun01-estado-equilibrio",
+        "ancora": "fun01-fases",
+        "inicio_r7": 102479,
+        "inicio_r8": 102524,
+        "sha256_fragmento_r7": "1d15dea75bd4e687abb16e7876566a8501413ea3797640c4fca0eb3402945508",
+        "sha256_fragmento_r8": "2a4def6a061e9ddaa7cdbfa041c03739639e51fc16c47815a9df8f1e03b0251c",
+        "dentro_do_bloco_editado": true,
+        "correspondencia": "CONTEUDO_ALTERADO_OU_ANCESTRAL"
+      },
+      {
+        "id_r7": "modulos/e1-termodinamica.html:114112:texto",
+        "id_r8": "modulos/e1-termodinamica.html:114289:texto",
+        "arquivo": "modulos/e1-termodinamica.html",
+        "tipo": "texto_direto",
+        "tag": "p",
+        "secao": "fun01-estado-equilibrio",
+        "ancora": "fun01-parecer",
+        "inicio_r7": 114112,
+        "inicio_r8": 114289,
+        "sha256_fragmento_r7": "83069e3d23f6c8e2a5f1f1d98cdf4df71e23980a0aa6ef3ef192bec67097f6e4",
+        "sha256_fragmento_r8": "7c5fba09d96e5649afb4895bca1d6d0615672bb27c1c88af1efdfc44e883c463",
+        "dentro_do_bloco_editado": true,
+        "correspondencia": "CONTEUDO_ALTERADO_OU_ANCESTRAL"
+      },
+      {
+        "id_r7": "modulos/e1-termodinamica.html:345148:secao",
+        "id_r8": "modulos/e1-termodinamica.html:345352:secao",
+        "arquivo": "modulos/e1-termodinamica.html",
+        "tipo": "secao",
+        "tag": "section",
+        "secao": "ciclos",
+        "ancora": "ciclos",
+        "inicio_r7": 345148,
+        "inicio_r8": 345352,
+        "sha256_fragmento_r7": "28eba59ceea99e04e5ae615e43756dc006da5d03bb89181b69d31ed1f4f27e98",
+        "sha256_fragmento_r8": "dd725ed7d8559986f106d5ab4cacd6eff28e7b9eb904fc250ded589bfa8e5afd",
+        "dentro_do_bloco_editado": false,
+        "correspondencia": "CONTEUDO_ALTERADO_OU_ANCESTRAL"
+      },
+      {
+        "id_r7": "modulos/e1-termodinamica.html:381086:exemplo_ou_diagnostico",
+        "id_r8": "modulos/e1-termodinamica.html:381290:exemplo_ou_diagnostico",
+        "arquivo": "modulos/e1-termodinamica.html",
+        "tipo": "exemplo_ou_diagnostico",
+        "tag": "div",
+        "secao": "ciclos",
+        "ancora": "ciclos",
+        "inicio_r7": 381086,
+        "inicio_r8": 381290,
+        "sha256_fragmento_r7": "fa0b22cc94dc24f3c4fc2493c719f30ab4a0484149f081b681497f81d73536e6",
+        "sha256_fragmento_r8": "fdbd8e2cc5d4212af40051f854dca99420ae4ef7b1c887a82c9540fdae2a3d6a",
+        "dentro_do_bloco_editado": true,
+        "correspondencia": "CONTEUDO_ALTERADO_OU_ANCESTRAL"
+      },
+      {
+        "id_r7": "modulos/e1-termodinamica.html:381186:texto",
+        "id_r8": "modulos/e1-termodinamica.html:381390:texto",
+        "arquivo": "modulos/e1-termodinamica.html",
+        "tipo": "texto_direto",
+        "tag": "p",
+        "secao": "ciclos",
+        "ancora": "ciclos",
+        "inicio_r7": 381186,
+        "inicio_r8": 381390,
+        "sha256_fragmento_r7": "aaf4322455b995b2b8cf40b728d2689c6ce0d7181337e03a5ace41b55ee7ff6b",
+        "sha256_fragmento_r8": "0d30460fac43f1944591e457c4da58067b7825d9ddc1370791d321d392c16fe1",
+        "dentro_do_bloco_editado": true,
+        "correspondencia": "CONTEUDO_ALTERADO_OU_ANCESTRAL"
+      }
+    ]
+  },
+  "validador": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1263,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "limites": "Não representa auditoria independente, teste em navegador ou aceite integral QA-09."
+}

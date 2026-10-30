@@ -12,7 +12,9 @@
     "apoio_auditor_av_anterior": "/root/auditor_av",
     "corretor_anterior": "/root/corretor_aaa",
     "corretor_qa09_exemplos": "/root/corretor",
-    "auditor_qa09_exemplos": "/root/auditor"
+    "auditor_qa09_exemplos": "/root/auditor",
+    "corretor_qa09_quatro_candidatas": "/root/qa_teoria",
+    "auditor_qa09_quatro_candidatas": "/root/qa_diagnosticos"
   },
   "itens": [
     {
@@ -2395,12 +2397,13 @@
     "data": "2026-10-30",
     "fase": "QA09_em_correcao",
     "estado": "em_execucao",
-    "em_exame": "QA-09: nove diagnósticos, quatro ajustes da oficina e exemplos EX011/EX013 aplicados e auditados no alcance localizado; recálculo do restante continua pendente.",
-    "entrega_localizada": "auditoria/termodinamica/evidencias/QA-09/aplicacao-exemplos-011-013-r1/entrega-r1.md",
-    "parecer_localizado": "auditoria/termodinamica/pareceres/QA-09-aplicacao-exemplos-011-013-auditoria-independente-r1.md",
-    "parecer_sha256": "30971b46f9ffe605dd355d2b5b244ef9ef6e806a4d9292759985db167ca62471",
-    "html_sha256": "200f9b773050594d762cc596a5a89297024b245fc4f504081fc77baaed3db95f",
-    "inventario_qa09": "auditoria/termodinamica/evidencias/QA-09/inventario-r7.json",
-    "proximo_ID": "Bloqueado até parecer APROVADO para QA-09 integral e liberação do coordenador."
+    "em_exame": "QA-09: correções de quatro trechos da aula, sete cartões/resumo e ficha 80 aplicadas e auditadas no alcance localizado; inventário e recálculo integral e revalidações de alcance continuam pendentes.",
+    "entrega_localizada": "auditoria/termodinamica/evidencias/QA-09/aplicacao-flashcards-ficha80-r1/entrega-r1.md",
+    "parecer_localizado": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+    "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a",
+    "html_sha256": "2d6b8fb2f9c99e04d22c19d7b32bbc3eb20577459d9132e506f9c0acef3f2fc2",
+    "inventario_qa09": "auditoria/termodinamica/evidencias/QA-09/inventario-r9.json",
+    "proximo_ID": "Bloqueado até parecer APROVADO para QA-09 integral e liberação do coordenador.",
+    "formulario_sha256": "cda652563a79c49a6c3d527ad1400c7f7597d33c9b8523ed8a26047b25c69feb"
   }
 }

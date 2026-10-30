@@ -1,0 +1,30 @@
+# QA-09 — auditoria independente de flashcards e resumo
+
+Data: 30/10/2026. Revisor: agente automatizado independente `/root/qa_diagnosticos`. **Veredito: AJUSTES OBRIGATÓRIOS** nas hipóteses dos cartões de válvula, compressor e trocador, e delimitação do alcance no resumo. O restante de QA-09 e os demais cartões não foram cobertos; não se libera outro ID.
+
+## Critério e fotografia
+
+QA-09 requer conferir valores, sinais, modelos, hipóteses e conteúdo numérico além dos 197 artigos. Examinei os nove cartões e uma frase de resumo identificados no relatório `auditoria/termodinamica/evidencias/QA-09/flashcards-resumo-lote-20261030/relatorio.md`, SHA-256 `8682d0c85c31c6d561844ede50bf6b2f2bcbd0e8924420b062787651643d3bb5`. A fonte `modulos/e1-termodinamica.html` SHA-256 `57b13f0d6386764f1cc46ce543013b0eb75f7bfa97ffbd63ea331f38bfc5af8c`; inventário r8 `ae75a258398c385398567457d98ebd49b9838c0c9a4eedc69ea8d2d72981b687`. As posições seguintes são UTF-16 r8 e não são IDs permanentes. Nenhuma conclusão de item curricular integral decorre desta amostra.
+
+Li diretamente no HTML o texto, a estrutura MathML, os símbolos e o contexto das dez ocorrências. O script de leitura `verificar.mjs`, SHA-256 `868529bc2542a5f5eeee19bd9a74a6e2f9ace2cbc5472d765b7c26a01b6fedb6`, verificou os hashes dos nove fragmentos de cartão e do texto de resumo e retornou `ok=true`; não o uso como substituto da análise científica. Exemplos numéricos abaixo são construções de balanço, não medições.
+
+## Resultados e ajustes
+
+1. **Válvula, 1265937:** o cartão cita ausência de calor/trabalho e variações cinética/potencial desprezíveis, mas não limita acumulação nem vazões. Para uma entrada e saída, o balanço transiente é `dE/dt=ṁ₁h₁−ṁ₂h₂`; se ṁ₁=2, ṁ₂=1 kg/s e h₁=300, h₂=250 kJ/kg, admite dE/dt=350 kW e dm/dt=1 kg/s, sem forçar h₁=h₂. São valores que satisfazem o balanço, não especificação de válvula real. Explicitar o modelo usual de regime permanente, uma entrada e uma saída, calor e trabalho não associado ao escoamento desprezíveis e variações cinética/potencial desprezíveis. A [Purdue ME 200, exercício de válvula](https://engineering.purdue.edu/ME200/files/homework/HW16/ME200-Spring2020-HW16-web.html), seção Assumptions e equações, emprega essas condições.
+2. **Compressor, 1267176:** o cartão fornece razão de variações de entalpia sem explicitar o modelo de eficiência de trabalho que a justifica. Para entrada única e saída única estacionárias, q=−20 kJ/kg, h₁=300 e h₂,real=340 kJ/kg, a primeira lei dá w_in=Δh−q=60 kJ/kg. Se a compressão isentrópica de referência à mesma pressão final dá h₂,s=330 kJ/kg e é adiabática, w_in,s=30 kJ/kg. A razão de trabalhos é 0,50, enquanto a razão das entalpias é 30/40=0,75. Indicar o modelo adiabático e estacionário, mesmas condições de entrada e pressão de saída na referência e mudanças cinética/potencial desprezíveis, além da convenção de eficiência. O exemplo é apenas contramodelo de balanço; não constitui teste de equipamento.
+3. **Trocador, 1273639:** a soma `ΣṁΔs` dos fluidos dá a taxa de geração em volume de controle global externamente adiabático **em regime permanente**, com uma entrada e uma saída representativas por corrente e mesma vazão em cada par. Em geral `Ṡgen=dSVC/dt + Σsaídas ṁs − Σentradas ṁs` quando não há troca externa de calor. Se a acumulação fosse 2 kW/K e o saldo de fluxo 1 kW/K, seriam 3 kW/K, não 1 kW/K. Indicar as hipóteses no cartão; o exemplo ilustra o balanço, não um projeto de trocador.
+4. **Resumo, 1283434:** a frase “adiabático e internamente reversível implica isentrópico” é correta para a entropia de uma massa fixa submetida a esse processo; em seção que também aborda volumes de controle, precisa delimitar o objeto para não atribuir automaticamente entropia total ou média constante a um volume de massa variável. Para uma entrada e sem saída, adiabático e sem geração, `dSVC/dt=ṁs_in` e `dm/dt=ṁ`; se SVC=m s̄, então `m ds̄/dt=ṁ(s_in−s̄)`. A equação demonstra que acumulação de massa precisa ser considerada; ela não prova a realizabilidade de qualquer enchimento hipotético como reversível. Distinguir explicitamente massa de controle e, para fluxo representativo, a conclusão isentrópica no modelo estacionário de uma entrada e saída. Adiabático sozinho não basta.
+
+## Demais verificações e limites
+
+Nos outros seis cartões, `h=u+pv` e `ΔU+ΔEC+ΔEP=Q−W` conferem com as unidades e convenções informadas. O limite de eficiência térmica reversível entre duas fontes `1−T_L/T_H` exige temperaturas absolutas e, para máquina térmica, T_H>T_L>0; com 600 e 300 K resulta 0,5. A interpolação de entalpia em pressão fixada e mesma região fornece 2.800+(230−200)/(300−200)×200=2.860 kJ/kg para os dados sintéticos, sem fazer afirmação sobre fluido real. Os dois cartões de pressão intermediária dão √(1×16)=4 bar absolutos no modelo de dois estágios com resfriamento perfeito e hipóteses equivalentes. A expressão deve ser aplicada dentro do modelo da aula, não como ótima universal para qualquer compressor real; a breve expressão “hipóteses equivalentes” no cartão depende do conteúdo associado e merece melhor explicitação da finalidade e do modelo ao preparar futura candidata, sem que esta ressalva isolada demonstre erro numérico.
+
+| Critério localizado | Resultado |
+|---|---|
+| Identidade de nove cartões e um texto em r8 | Atendido no método e limites descritos. |
+| Cálculos e modelos da amostra | Seis cartões sem erro identificado sob os modelos; três exigem hipóteses de validade explícitas. |
+| Resumo adiabático/reversível | Delimitar objeto do balanço; o enunciado é correto em massa de controle, mas amplo para o contexto aberto. |
+| Candidatas e versão efetiva corrigida | Ainda não realizadas; preparar, revisar e, se aplicadas, reconstruir e auditar a nova fotografia. |
+| QA-09 integral e próximo ID | Não atendidos; permanecem bloqueados. |
+
+Não houve teste em navegador real, inspeção com leitor de tela, revisão humana ou aplicação com alunos. A revisão de uma amostra não caracteriza a cobertura do curso inteiro.

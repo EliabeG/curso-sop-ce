@@ -1,0 +1,82 @@
+{
+  "estado": "AGUARDANDO_AUDITORIA_INDEPENDENTE",
+  "data": "2026-10-30",
+  "autor": "agente automatizado /root/qa_fichas",
+  "documento": "formulas/termodinamica.html",
+  "sha256_documento": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+  "identificadores": [
+    {
+      "ficha": "70",
+      "id": "formula-isentro-gas",
+      "offset_bytes": 164770,
+      "bytes": 3036,
+      "sha256_fragmento": "2ae694b39a0a0c45134a4d68c050fef6793bc23830516045a553af1cac42d47c",
+      "mathml_texto_sem_espacos": [
+        "T2T1=(p2p1)(k−1)/k",
+        "pvk=cte",
+        "T2T1=(v1v2)k−1"
+      ]
+    },
+    {
+      "ficha": "81",
+      "id": "formula-brayton-ideal",
+      "offset_bytes": 193619,
+      "bytes": 2279,
+      "sha256_fragmento": "d5e024a0a04d5c2b38210227074b7a01611a3c060a3d6e7d15cbadecf2b00853",
+      "mathml_texto_sem_espacos": [
+        "rp=paltapbaixa",
+        "ηB=1−1rp(k−1)/k"
+      ]
+    },
+    {
+      "ficha": "82",
+      "id": "formula-otto",
+      "offset_bytes": 195898,
+      "bytes": 1954,
+      "sha256_fragmento": "1e41a8c5d4109aac8bd9c36b8b732fde99107cba6f0447cb080253b015f836a0",
+      "mathml_texto_sem_espacos": [
+        "r=VmaxVmin",
+        "ηO=1−1rk−1"
+      ]
+    },
+    {
+      "ficha": "83",
+      "id": "formula-diesel",
+      "offset_bytes": 197852,
+      "bytes": 2554,
+      "sha256_fragmento": "456a1998671f57541829e5921a50ed8b79d70320e505d32336c0681f83c9edb1",
+      "mathml_texto_sem_espacos": [
+        "rc=V3V2",
+        "ηD=1−1rk−1rck−1k(rc−1)"
+      ]
+    },
+    {
+      "ficha": "89",
+      "id": "formula-politropico",
+      "offset_bytes": 213362,
+      "bytes": 3213,
+      "sha256_fragmento": "91881f7785f5e195bc3dccc1418f93ea39fb3152ae8ed7b3ff1f9eff85071b49",
+      "mathml_texto_sem_espacos": [
+        "win=npnp−1RT1×[(p2p1)(np−1)/np−1]"
+      ]
+    },
+    {
+      "ficha": "90",
+      "id": "formula-compressao-isotermica",
+      "offset_bytes": 216575,
+      "bytes": 1815,
+      "sha256_fragmento": "0dcf693d5afbaa5fd65de8cedfcfd4a2748c15fdd9900d3befe30a2dec53942e",
+      "mathml_texto_sem_espacos": [
+        "win=RTln⁡(p2p1)"
+      ]
+    }
+  ],
+  "testes_artificiais": {
+    "brayton": 0.5,
+    "otto": 0.75,
+    "diesel": 0.6111111111111112,
+    "politropico_kJ_kg": 200.0,
+    "isotermico_kJ_kg": 100.0
+  },
+  "limites": "Exemplos artificiais para teste da álgebra, não dados de casos do curso nem propriedades reais. Texto MathML linearizado não representa toda a estrutura; ver entrega. QA-09 permanece pendente."
+}

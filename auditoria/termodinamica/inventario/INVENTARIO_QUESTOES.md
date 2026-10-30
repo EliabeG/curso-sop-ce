@@ -389,3 +389,11 @@ Quatro blocos da oficina tiveram a atribuição de temperatura e as condições 
 ## QA-09 — aplicação localizada dos exemplos 011 e 013
 
 Os exemplos de tanque e compressão explicitam exclusividade de trabalho e calor líquido, preservando as soluções. Os 197 artigos e registros individuais mantêm-se idênticos; o JSON aponta à nova fotografia. A [entrega](../evidencias/QA-09/aplicacao-exemplos-011-013-r1/entrega-r1.md) registra a versão, os testes e os limites. A aplicação aguarda auditoria independente e não aprova QA-09.
+
+## QA-09 — aplicação localizada de correções de conteúdo
+
+Aplicação de candidatas revisadas; os 197 artigos e registros individuais foram preservados. Consulte as edições e sua revisão na pasta `aplicacao-razao-percentual-r1`. A aplicação requer auditoria independente e não encerra QA-09.
+
+## QA-09 — aplicação localizada em flashcards, resumo e ficha 80
+
+Foram esclarecidas hipóteses em sete trechos de revisão e na ficha 80. Os 197 artigos e registros, 99 fichas não alvo e MathML do formulário foram preservados na verificação estática. Esta aplicação requer auditoria independente e não encerra QA-09.

@@ -1,0 +1,82 @@
+{
+  "fonte_sha256": "57b13f0d6386764f1cc46ce543013b0eb75f7bfa97ffbd63ea331f38bfc5af8c",
+  "inventario_sha256": "ae75a258398c385398567457d98ebd49b9838c0c9a4eedc69ea8d2d72981b687",
+  "bases": [
+    [
+      "base-gas-modelo",
+      "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333"
+    ],
+    [
+      "base-umidade",
+      "8abffd37dfbfa4a223b0d49d2cec00e31b827fed0191f855d61823f4e05fa464"
+    ],
+    [
+      "base-equilibrio-fases",
+      "9dcee90f44c7cad186eeb40d4c890635ea943a985709b97fa5f68dfe2125d633"
+    ],
+    [
+      "base-calor-variavel",
+      "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de"
+    ],
+    [
+      "base-turbina-potencia",
+      "a9a8a163cb667a472acb0475a598541bf38353f6278153f4f590f4e58ae2588e"
+    ]
+  ],
+  "ocorrencias": [
+    {
+      "id": "EX-006",
+      "inicio_utf16": 78812,
+      "fim_utf16": 79109,
+      "sha256": "970c9a8833e77acc9698666061ad82bd30b67b3a14834b725651d5498925477d"
+    },
+    {
+      "id": "EX-007",
+      "inicio_utf16": 82334,
+      "fim_utf16": 82696,
+      "sha256": "c7c99c848fd6996e969d10ff02cfe899adf246f670e9fe9b6d9996e9c73e0633"
+    },
+    {
+      "id": "EX-008",
+      "inicio_utf16": 84971,
+      "fim_utf16": 85311,
+      "sha256": "6f8bc6349f77405cbe30e9bb2948a72fb851e48210d1092e9732891cbac8da37"
+    },
+    {
+      "id": "EX-009",
+      "inicio_utf16": 88061,
+      "fim_utf16": 88445,
+      "sha256": "f3cd5c1a32226e578a7801f4e7e2b75cf1c362190f8658a2801e1518e4c1c056"
+    },
+    {
+      "id": "EX-010",
+      "inicio_utf16": 186567,
+      "fim_utf16": 193867,
+      "sha256": "6b8de18f7009c2e090fa9958088ee99f39ce40bf3895c4ef71115db686b5d030"
+    }
+  ],
+  "resultados": {
+    "EX-006": {
+      "razao": 1.8,
+      "aumento_percentual": 80
+    },
+    "EX-007": {
+      "razao": 0.75,
+      "queda_relativa_percentual": 25,
+      "diferenca_pontos_percentuais": 20
+    },
+    "EX-008": {
+      "dG_kJ": 0.04,
+      "dG_J": 40
+    },
+    "EX-009": {
+      "integral_kJ_kg": 196,
+      "aproximacao_entrada_kJ_kg": 192
+    },
+    "EX-010": {
+      "trabalho_kJ_kg": 400,
+      "potencia_kW": 800
+    }
+  },
+  "limite": "Contas e hashes verificáveis; exige revisão independente e não encerra QA-09."
+}
