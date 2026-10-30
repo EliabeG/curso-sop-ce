@@ -466,3 +466,8 @@ Foram delimitados os modelos e bases no resumo e no glossário. Os 197 artigos e
 ## QA-09 — equilíbrio FUN-01 na fotografia r24
 
 Foram delimitados os modelos de gases e líquido e o potencial total com gravidade em FUN-01. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — equilíbrio de fases FUN-01 na fotografia r25
+
+Foram explicitados o domínio da regra de alavanca e o caso degenerado em equilíbrio de fases. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
