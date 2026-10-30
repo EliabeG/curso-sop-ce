@@ -441,3 +441,8 @@ Foram explicitados balanços na ficha 60 e no exemplo 027, o efeito líquido de 
 ## QA-09 — aplicação notação e fichas r19, 30/10/2026
 
 Aplicadas candidatas aprovadas de notação e das fichas 61/80; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver `auditoria/termodinamica/evidencias/QA-09/aplicacao-notacao-fichas-r19-r1/`.
+
+
+## QA-09 — modelos de mistura e fase na fotografia r20
+
+Foram explicitados o balanço sensível em mistura térmica e o domínio do calor latente na etapa de fase. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
