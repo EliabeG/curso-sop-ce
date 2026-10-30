@@ -426,3 +426,8 @@ O endereço WIKA da lista de fontes foi atualizado à página brasileira dos mod
 ## QA-09 — aplicação conjunta r16, 30/10/2026
 
 Aplicadas cinco candidatas aprovadas na aula e no formulário; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver evidências em `auditoria/termodinamica/evidencias/QA-09/aplicacao-conjunta-r16-r1/`.
+
+
+## QA-09 — aplicação intercooling r17, 30/10/2026
+
+Aplicada candidata aprovada em teoria; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver evidências em `auditoria/termodinamica/evidencias/QA-09/aplicacao-intercooling-r17-r1/`.
