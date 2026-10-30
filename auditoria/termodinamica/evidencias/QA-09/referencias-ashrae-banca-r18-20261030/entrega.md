@@ -1,0 +1,24 @@
+# QA-09 — triagem de referências ASHRAE e Cebraspe, r18
+
+Data de consulta: 30/10/2026. Corretor automatizado `/root/reference_triage`. **Aguardando auditoria independente.** Sete ocorrências da fotografia r18, índices de referências em base zero: 117 e 639–644. Escopo: a referência de psicrometria no corpo didático e três pares de prova/gabarito na lista de consulta; não são sete avaliações da correção das questões. Não altera produto e não encerra QA-09.
+
+## Identidade e reprodução
+
+Aula `modulos/e1-termodinamica.html` SHA-256 `7f09b3f0e53e4f3ed69225adf3ce8e03fda93f132e78a1e884ca5757cc995cca`; inventário r18 SHA-256 `717f00621d1740b4c71aeb6e9f492a621489fc86b5c1cffca59cf9584a964acc`. [identidades.json](identidades.json), SHA `25a14c596bfed1c69f17c816417e549f504b917601c63b170a883474e7b6838e`, registra posição UTF-16, URL, texto, seção e hash de cada elemento âncora. Na raiz, `node auditoria/termodinamica/evidencias/QA-09/referencias-ashrae-banca-r18-20261030/gerar-identidades.mjs` retornou `ok: 7 identidades exatas`; script SHA `52bb391f68ce92c32c661a6ac1b72ed78537497682525923e3ea919fd94d0e83`. O script é local, sem acesso de rede; não certifica o conteúdo remoto. Reconciliação em versão posterior exige conferir conteúdo e identidade, sem transferência automática do aceite.
+
+## Consulta localizada às fontes
+
+A abertura foi feita pela ferramenta de pesquisa web em 30/10/2026; os PDFs são documentos disponibilizados sob domínio da organizadora, fonte primária documental para prova e gabarito, não autoridade científica automática. A leitura textual pode fundir colunas ou não extrair figuras; não foram salvas cópias binárias desta consulta.
+
+| Índice | Vínculo | Constatação e limite |
+|---:|---|---|
+| 117 | [ASHRAE, Psychrometrics, F21 SI, capítulo 1](https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx), manual técnico da entidade, que cita modelos de autores | Abriu; §5 define a saturação do ar úmido à mesma temperatura e pressão e descreve o fator de intensificação como dependente de ambas; §6 apresenta o modelo de mistura de gases perfeitos e sua relação de umidade. Apoia a distinção apresentada na aula. A própria fonte distingue a faixa normal e uma faixa estendida de umidade relativa; não generalizar a fórmula simplificada da aula para condições extremas. Equações estão em imagens e não foram integralmente examinadas visualmente; não se verificou a exatidão de todas as aplicações da aula. |
+| 639–640 | [Petrobras 014: caderno](https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_014_01.PDF) e [gabarito](https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_014_01.PDF) | Abriram, respectivamente 6 e 1 páginas. O caderno indica Petrobras, edital 2021 e conhecimentos específicos; o gabarito indica aplicação 20/02/2022, ênfase 14, Engenharia de Equipamentos — Mecânica, e código 658_PETROBRAS_014_01. |
+| 641–642 | [Petrobras 017: caderno](https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/658_PETROBRAS_017_01.PDF) e [gabarito](https://cdn.cebraspe.org.br/concursos/petrobras_21_ns/arquivos/GAB_DEFINITIVO_658_PETROBRAS_017_01.PDF) | Abriram, respectivamente 4 e 1 páginas. O caderno indica Petrobras, edital 2021, código 658017_01; o gabarito registra aplicação 20/02/2022, ênfase 17, Engenharia de Processamento e código 658_PETROBRAS_017_01. |
+| 643–644 | [Petrobras 007: caderno](https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/822_PETROBRAS_23_007_01.PDF) e [gabarito](https://cdn.cebraspe.org.br/concursos/petrobras_23_nm/arquivos/GAB_DEFINITIVO_822_PETROBRAS_23_007_01.PDF) | Abriram, respectivamente 5 e 1 páginas. O caderno indica Petrobras, edital 2023 e código 82200701; o gabarito identifica PSP RH 2023.1, aplicação 30/04/2023, ênfase 7 Operação e código 822_PETROBRAS_23_007_01. |
+
+Os três gabaritos se identificam como oficiais definitivos e incluem a legenda de item anulado. Nesta triagem não foram contadas as questões de cada prova no banco, nem cotejados todos os enunciados, números, figuras, respostas ou eventual retificação posterior; a lista serve como navegação para documentos da organizadora. Extração textual juntou respostas adjacentes: conferir a apresentação visual antes de usar qualquer chave. A disponibilidade observada nesta ferramenta não garante acesso por todos os usuários ou no futuro. As seis referências são diferentes das âncoras nos artigos, que estão fora desta triagem e cujo mérito depende da auditoria correspondente.
+
+## Pendências
+
+Solicita-se Auditor distinto para confrontar identidade, fonte, delimitação e condição da fórmula. Outros vínculos do inventário, cálculos, materiais visuais, acessibilidade, licenças e eventual revisão de retificações não foram verificados nesta entrega. Os acessos externos não equivalem a ensaio em navegador do curso, nem a revisão humana ou teste com estudantes.
