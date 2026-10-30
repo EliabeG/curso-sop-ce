@@ -385,3 +385,7 @@ Foram explicitadas as condições dos balanços, preservando as resoluções e o
 ## QA-09 — aplicação localizada na oficina 8.1
 
 Quatro blocos da oficina tiveram a atribuição de temperatura e as condições de balanço esclarecidas; os 197 artigos foram preservados. O JSON aponta à fotografia efetiva, e a [entrega](../evidencias/QA-09/aplicacao-oficina-r1/entrega-r1.md) registra hashes, limites e versões. A aplicação requer auditoria independente; QA-09 não está aprovado.
+
+## QA-09 — aplicação localizada dos exemplos 011 e 013
+
+Os exemplos de tanque e compressão explicitam exclusividade de trabalho e calor líquido, preservando as soluções. Os 197 artigos e registros individuais mantêm-se idênticos; o JSON aponta à nova fotografia. A [entrega](../evidencias/QA-09/aplicacao-exemplos-011-013-r1/entrega-r1.md) registra a versão, os testes e os limites. A aplicação aguarda auditoria independente e não aprova QA-09.
