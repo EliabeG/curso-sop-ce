@@ -1,0 +1,24 @@
+# QA-09 — dez diagnósticos adicionais na fotografia r27
+
+30/10/2026. Corretor automatizado `/root/next_graphics`. **Aguardando Auditor independente.** Recorte de D06–D10 e D21–D25 em `#preparacao-questoes`, fora dos 197 artigos, diferente do lote `graficos-r28`. Esses diagnósticos têm pareceres históricos em fotos anteriores; não são inéditos. No ledger parcial r27 de 18 registros ainda não foram integrados: esta é nova conferência localizada da r27, não transferência automática de aceite anterior. Não alterei produto ou controle.
+
+Fotografia r27 `aplicacao-carnot-flashcards-r27-r1/resultado/depois-aula.html` SHA-256 `9af8e2c9ffe509e40594d086a9ef4ad75127fb4ca873efb305d3144e08f3fc49`; inventário r27 `a58d7f0b0a5f097eef83ad83026ef49e801457b87f7cf2b2345c3dd915597c7c`. O arquivo `identidades.json` SHA `7e0c1603e26dde8c95a26c0866717e9b4c7f6bd44158628a356627a1e48e4f68` registra para cada bloco posição UTF-16, hash e âncoras de retomada. Os resultados são valores didáticos nominais, não incertezas de medições.
+
+## Modelos e recálculos
+
+- **D06:** Q=−30 kJ e trabalho de eixo recebido W=−180 kJ; ΔU=−30−(−180)=150 kJ e U₂=650 kJ. Sistema fechado e sem outras transferências ou variações de energia conforme enunciado.
+- **D07:** gás ideal em expansão livre para vácuo, recinto rígido e isolado, sem outros trabalhos; Q=W=0, ΔU=0 e T final de equilíbrio igual à inicial. O aumento de entropia acompanha aumento de volume, sem afirmar que o caminho real é reversível.
+- **D08:** a reação inversa nas mesmas condições de referência troca o sinal de −30 para +30 kJ; PCS inclui o calor de condensação recuperável conforme estado de referência dos produtos. Não se atribui o número a combustível específico.
+- **D09:** fontes 900 K/300 K e 900 kJ recebidos: eficiência de Carnot 2/3 e rejeição mínima de 300 kJ; rejeitar 100 kJ viola a segunda lei. Redução de entropia da água ao congelar é compatível com segunda lei quando a variação da vizinhança compensa.
+- **D10:** 280 K×0,15 kJ/K = 42 kJ de exergia destruída; ds=0 e volume específico aproximado constante de 0,001 m³/kg dão Δh≈vΔp=0,60 kJ/kg para 600 kPa, sob a relação de Gibbs e modelo da base, com composição fixa e estados de equilíbrio.
+- **D21:** tanque rígido inicialmente vazio, sem trabalho, calor ou saída e desprezando energias indicadas; U₂=m_in h_in. Para gás ideal de composição fixa e capacidades constantes/referência compatível, T₂=(cp/cv)T_in=1,25×320=400 K; enchimento tem acumulação, não é permanente.
+- **D22:** ∫₃₀₀⁴⁰⁰(0,80+0,001T)dT=80+35=115 kJ/kg; manter cp(300)=1,10 resulta 110 kJ/kg. O coeficiente de T tem unidade kJ/(kg·K²), temperatura em K; c_p médio de ponto central só é exato aqui pela linearidade.
+- **D23:** os dois valores de entrada estão agora nomeados no próprio enunciado como entalpias específicas; a ambiguidade que motivou o parecer r13 foi corrigida em aplicação posterior e não é presumida sanada somente por hash. Com duas entradas de 2 e 1 kg/s, uma saída e as hipóteses da base, h₃=200 kJ/kg adiabático e 210 kJ/kg ao receber 30 kW. A mistura exige referências/modelos de entalpia compatíveis; calcular h não determina sozinho T ou fase.
+- **D24:** no bocal sob hipótese de balanço estacionário/adiabático, sem trabalho e variação de cota relevante, vel₂²=100²+2×1000×75=160.000, logo vel₂=400 m/s; desprezar entrada daria 387,30 m/s. Conservação não exige reversibilidade.
+- **D25:** no modelo de válvula da base, h₂≈h₁; com hf=500 e hg=2500 kJ/kg, h₂=1000 resulta x=0,25 para substância pura em mistura saturada em equilíbrio. Para h₂=2700, a fração algébrica 1,10 está fora de [0,1]; não é título nem deve ser truncada, devendo-se consultar a região apropriada na pressão de saída.
+
+As hipóteses dos modelos de escoamento e a referência comum da entalpia são essenciais; não se generalizam para quaisquer componentes ou fronteiras. [MIT, aplicações da primeira lei](https://web.mit.edu/16.unified/OldFiles/www/FALL/thermodynamics/notes/node17.html), §§2.3.1 e 2.3.3, e [MIT, balanço em escoamento](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm) foram consultados em 30/10/2026; sustentam modelos, não os valores inventados. Para trabalho perdido e entropia consultei [MIT §6.6](https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node48.html), sem considerá-lo fonte dos números.
+
+## Reprodução e limites
+
+`python3 auditoria/termodinamica/evidencias/QA-09/diagnosticos-r28-2/verificar.py` SHA `9ce71584f4f6528ddc5ffe1c85d0f03e5271f50b22ba9cdb61ddc8a71ae6a6e8` confere fotografia, inventário, identidade dos dez recortes, unicidade das âncoras e cálculos selecionados. O teste de link não reavalia por si o conteúdo integral da base, nem os estados de registros adjacentes. A leitura científica dos modelos é minha e requer Auditor distinto. Sem navegador real, leitor de tela, alunos, revisão humana ou certificação externa; não encerra QA-09.

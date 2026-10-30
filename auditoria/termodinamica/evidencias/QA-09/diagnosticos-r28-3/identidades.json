@@ -1,0 +1,53 @@
+{
+  "ok": true,
+  "fotografia": "r27",
+  "diagnosticos": [
+    {
+      "numero": 1,
+      "inicio_utf16": 529102,
+      "fim_utf16": 529671,
+      "sha256": "a3a7267bc9169ae0293ec449143d14f82144612793631c5a33537d7f71511896",
+      "links": [
+        "base-medidas"
+      ]
+    },
+    {
+      "numero": 2,
+      "inicio_utf16": 529671,
+      "fim_utf16": 530263,
+      "sha256": "5b08c714ad542c5600f719f98de0a8503f1cf50ce691fdb2f0c58ec64da167f9",
+      "links": [
+        "base-instrumentos"
+      ]
+    },
+    {
+      "numero": 3,
+      "inicio_utf16": 530263,
+      "fim_utf16": 530760,
+      "sha256": "6fd490b0cff43fea858d50beaa6fdc80161e2833c6bd6b73aa316aebcdbb2a6d",
+      "links": [
+        "base-gas-modelo"
+      ]
+    },
+    {
+      "numero": 4,
+      "inicio_utf16": 530760,
+      "fim_utf16": 531380,
+      "sha256": "9118d8379790c653f6349fbcb6aabe2579e744d660e851614947abe326f5563a",
+      "links": [
+        "base-molecular",
+        "base-gas-modelo"
+      ]
+    },
+    {
+      "numero": 5,
+      "inicio_utf16": 531380,
+      "fim_utf16": 531899,
+      "sha256": "d5ec3a9b054e4bfff87766699524a5650626779710e12b4e443aad5e01ced4e0",
+      "links": [
+        "base-umidade"
+      ]
+    }
+  ],
+  "sem_escrita_em_produto": true
+}

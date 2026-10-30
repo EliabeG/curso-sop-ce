@@ -481,3 +481,8 @@ Foram delimitadas hipóteses de quatro bases FUN-02, do COP de refrigeração e 
 ## QA-09 — aplicação Carnot e flashcards r27, 30/10/2026
 
 Aplicadas candidatas aprovadas de Carnot e três flashcards; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver `auditoria/termodinamica/evidencias/QA-09/aplicacao-carnot-flashcards-r27-r1/`.
+
+
+## QA-09 — pressão, substâncias, ciclos e fichas de máquinas na fotografia r28
+
+As condições das três bases e seis fichas foram delimitadas; os 197 artigos e seus registros foram preservados. A aplicação requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.

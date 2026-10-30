@@ -1,0 +1,108 @@
+{
+  "ok": true,
+  "blocos": [
+    {
+      "id": "fun02-entrada",
+      "versoes": [
+        {
+          "inicio": 237165,
+          "fim": 238954,
+          "sha256": "410031cc3a11314eb1daa9af0de7068ee779ea1bc76c1d38c632a4785a70ff94"
+        },
+        {
+          "inicio": 238202,
+          "fim": 240115,
+          "sha256": "11bfbcbcc09a03c859f6ee6fd34114a08c2ce9496e5044eb8dc02591e0660d0c"
+        }
+      ]
+    },
+    {
+      "id": "fun02-parciais",
+      "versoes": [
+        {
+          "inicio": 238955,
+          "fim": 240480,
+          "sha256": "33791e35d3185d5f40dba65bcae931e5cf84575ebe23200cc57628bf5d4b9e3f"
+        },
+        {
+          "inicio": 240116,
+          "fim": 241842,
+          "sha256": "a9737bdb18847b7de96de465f84e4dbce7c560c695441bcd18a4afcef433708d"
+        }
+      ]
+    },
+    {
+      "id": "fun02-exatidao",
+      "versoes": [
+        {
+          "inicio": 240481,
+          "fim": 243579,
+          "sha256": "64dbc20d4ed342039c45c91d758b6fa291047c6554bdaad94b32c501efc7acad"
+        },
+        {
+          "inicio": 241843,
+          "fim": 244941,
+          "sha256": "64dbc20d4ed342039c45c91d758b6fa291047c6554bdaad94b32c501efc7acad"
+        }
+      ]
+    },
+    {
+      "id": "fun02-processos",
+      "versoes": [
+        {
+          "inicio": 243580,
+          "fim": 248914,
+          "sha256": "3f4e203a7e6bbdd2c43f3a19b25a645adfa498b93946ef3a66ec8c66bc58cf00"
+        },
+        {
+          "inicio": 244942,
+          "fim": 250364,
+          "sha256": "e3905ea3ea7116cb31257572eced5f5b0f55d60056b73780aaca51cf4aba7419"
+        }
+      ]
+    },
+    {
+      "id": "fun02-fator",
+      "versoes": [
+        {
+          "inicio": 248915,
+          "fim": 251802,
+          "sha256": "b25b40982f97def4e5f0567e0a30bfe86489210b08dd17f766eb382a8fd02233"
+        },
+        {
+          "inicio": 250365,
+          "fim": 253295,
+          "sha256": "97df457279cab158d35e0c2a48f98f9b1b5125df3448f509cd7a131339389993"
+        }
+      ]
+    },
+    {
+      "id": "fun02-dados",
+      "versoes": [
+        {
+          "inicio": 254805,
+          "fim": 255937,
+          "sha256": "74cc9120e87cf05cfd2b144f7f968d02258f8c92642098d1bc2cdef6c7d879b3"
+        },
+        {
+          "inicio": 256298,
+          "fim": 257430,
+          "sha256": "74cc9120e87cf05cfd2b144f7f968d02258f8c92642098d1bc2cdef6c7d879b3"
+        }
+      ]
+    }
+  ],
+  "calculos": {
+    "unidades": 0.48,
+    "parcial": 4,
+    "total": 12,
+    "circuito": 6.283185307180012,
+    "potencial": 14,
+    "dphi_dtheta": 15,
+    "dphi_dnu": 2,
+    "trabalho_linear": 0.36,
+    "isoW": 1728.8476977526154,
+    "estado_s": 18.249356715693793
+  },
+  "limite": "Identidades e testes numéricos; avaliação de hipóteses, gráficos e aplicação exige revisão humana/independente."
+}
