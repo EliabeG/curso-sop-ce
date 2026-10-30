@@ -1,0 +1,13 @@
+# QA-09 — parecer independente da candidata da ficha 59, r25
+
+Data 30/10/2026. Auditor `/root/reference_triage`; Corretor `/root/next_formulas`. **APROVADA a candidata isolada** da ficha 59 na fotografia r25. Não é aprovação da aplicação nem encerra QA-09.
+
+A candidata mantém COPR=QL/Win para refrigerador acionado por trabalho sem outra fonte de acionamento e define QL como magnitude do calor retirado da fonte fria, Win>0 como trabalho líquido total recebido, entradas menos saídas, com mesma fronteira, ciclo, período e unidades. A divisão é adimensional e o COP pode exceder 1. Essas condições resolvem a ambiguidade apontada no [parecer anterior](QA-09-fichas-ciclos-latente-r25-auditoria-reference-triage-20261030.md); não confundem trabalho de entrada bruto com líquido.
+
+No contramodelo sintético, 100 kJ de entrada e 20 kJ de saída resultam em Win=80 kJ. Com QL=300 kJ e QH=380 kJ, QH=QL+Win e COPR=3,75; a soma de entropias dos reservatórios a 300 e 350 K é 3/35 kJ/K. Isso demonstra consistência dos balanços enunciados, não a existência de equipamento específico. A [definição DOE/FEMP](https://www.energy.gov/cmei/femp/incorporate-minimum-efficiency-requirements-heating-and-cooling-products-federal), consultada diretamente em 30/10/2026, associa COP ao efeito útil e trabalho líquido de entrada, em unidades coerentes.
+
+Formulário r25 SHA `694ee3d26e8f5679d565986cfb0ad8c10aa98667fc8ffb62a569a87679847a58`, inventário SHA `6798d317db30bd69435ed14862cc03cd0f0c6313e40408dd8831052285984116`; análise SHA `ae807814cc121467c66a26c695d7ff1d6af64b2f0c69c40906f379d9b4475e0a`; manifesto SHA `228c16439f800be7b4753b728c42f4a856f88c18b2528b18d8b588c53c82743e`. Ficha original e candidata, sem quebra terminal dos arquivos isolados, SHA `01431774d85f42da5c9e5432875512a5ecba403b9b36c82bc403547045ec8f3b` e `4766d58c6dfa016a7593bfcab77ec4a052da7edce7a4a218fbf312380c2d4578`.
+
+O [verificador independente](../evidencias/QA-09/auditoria-candidata-ficha59-r25-reference-triage-20261030/verificar.py), SHA `742d522d188fde2c3373e10139d9cd2ef6ef676ba770896f2992641821be7b9a`, confirmou offsets UTF-16, hashes e dois deltas, cada qual aplicado ao texto visível e ao atributo de busca. Reconstrução sem gravação produziu formulário hipotético SHA `16329b7369c4ba927f5f7da30551f86934aad1f6a6e55627443dea5cb9fe0c02`; os outros 99 cartões, 191 MathML, 121 href e 431 IDs permanecem em ordem. O teste textual não é navegação, ensaio de acessibilidade nem prova física automática.
+
+Antes de aplicar, conferir a base efetiva; após, fotografar, reconciliar inventário e submeter resultado a auditoria independente. Não foram testados navegador, leitor de tela, estudantes ou outras fichas.

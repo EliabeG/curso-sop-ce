@@ -471,3 +471,8 @@ Foram delimitados os modelos de gases e líquido e o potencial total com gravida
 ## QA-09 — equilíbrio de fases FUN-01 na fotografia r25
 
 Foram explicitados o domínio da regra de alavanca e o caso degenerado em equilíbrio de fases. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — FUN-02, ficha 59 e EX-010 na fotografia r26
+
+Foram delimitadas hipóteses de quatro bases FUN-02, do COP de refrigeração e da tabela de equipamentos com EX-010. Os 197 artigos e registros foram preservados. A aplicação requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
