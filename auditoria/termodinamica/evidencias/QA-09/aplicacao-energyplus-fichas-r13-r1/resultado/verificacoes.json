@@ -1,0 +1,96 @@
+{
+  "estado": "AGUARDANDO_AUDITORIA_INDEPENDENTE",
+  "parecer_fichas": {
+    "path": "auditoria/termodinamica/pareceres/QA-09-candidatas-fichas-88-99-r12-auditoria-independente-20261030.md",
+    "sha256": "31c7ff0b55c26953e7caf3c42eed464520e51a8085bda5b26d78c4745c747c74"
+  },
+  "aula_antes_sha256": "f76c39a3e1d8c349ebf0df72cc20a3ab21c68960c8451799bad90a9dcc4bd8c7",
+  "aula_depois_sha256": "f19000a7ddb1f3552b9633b0efec266fb3f6c5e5065808505a2f65b2005aefbc",
+  "formulario_antes_sha256": "6857fd83e0b2e49c804903cff1dea4128a665ab22eb27bac4ab15d6c557ff756",
+  "formulario_depois_sha256": "5f3f31a4801f96a2b78b40c75d37392f6b16d264901ac313ac00458901970285",
+  "inventario_r13_sha256": "0df99b79bcc2350581fcdded72435d30d07858de237a549e6228ca73682f8d9b",
+  "mapa_sha256": "3f198c327e0bbb5d28c116fa5b1d655224e6ad9e24505556397d6c3586169671",
+  "fichas_alteradas": [
+    "formula-intermediaria",
+    "formula-geracao"
+  ],
+  "demais_fichas_inalteradas": 98,
+  "artigos_preservados": 197,
+  "registros_preservados": 197,
+  "refs_alteradas": 1,
+  "mapa": {
+    "status": "ok",
+    "r12": 11397,
+    "r13": 11397,
+    "referencias": 815,
+    "recursos": 138,
+    "classificacao": {
+      "PAREADO_EXTERNO": 11320,
+      "PAREADO_INTERNO_CONFERIR": 77
+    }
+  },
+  "validacao": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1263,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "gerador": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r13.json",
+    "sha256": "0df99b79bcc2350581fcdded72435d30d07858de237a549e6228ca73682f8d9b",
+    "resumo": {
+      "diagnosticos": 28,
+      "exemplos_incluindo_diagnosticos": 78,
+      "casos_oficina": 4,
+      "flashcards": 21,
+      "fichas": 100,
+      "mathml": 711,
+      "figuras": 8,
+      "textos_diretos": 9500,
+      "referencias": 815,
+      "recursos_unicos": 20
+    },
+    "documentos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "f19000a7ddb1f3552b9633b0efec266fb3f6c5e5065808505a2f65b2005aefbc",
+        "total_nos": 24117,
+        "nos_fora": 10837,
+        "artigos_excluidos": 197,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 21,
+          "tabela": 37,
+          "mathml": 520,
+          "equacao_contextualizada": 99,
+          "exemplo_ou_diagnostico": 78,
+          "figura": 8,
+          "caso_oficina": 4,
+          "flashcard": 21
+        }
+      },
+      {
+        "arquivo": "formulas/termodinamica.html",
+        "sha256": "5f3f31a4801f96a2b78b40c75d37392f6b16d264901ac313ac00458901970285",
+        "total_nos": 5452,
+        "nos_fora": 5452,
+        "artigos_excluidos": 0,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 11,
+          "ficha_formula": 100,
+          "mathml": 191
+        }
+      }
+    ]
+  },
+  "limites": [
+    "Sem navegador, revisão humana ou estudantes.",
+    "Não transacional: preservar snapshots em falha e examinar estado."
+  ]
+}

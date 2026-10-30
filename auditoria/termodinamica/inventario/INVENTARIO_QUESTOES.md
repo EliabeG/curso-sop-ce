@@ -406,3 +406,8 @@ Foram esclarecidas hipóteses em trechos da aula e nas fichas 40/67. Os 197 arti
 ## QA-09 — FUN-01 P3: redação sobre origem das colunas
 
 O parágrafo da solução diferencia redundância ρ/v de afirmação sobre a origem instrumental dos dados; enunciado, dados e rubrica são preservados. Atualizou-se apenas o hash do artigo P3 no inventário oficial. A aplicação está sujeita a auditoria independente da versão efetiva e revalidação localizada de FUN-01, BAN-02, BAN-07 e BAN-08. QA-09 integral continua em correção.
+
+
+## QA-09 — vínculo EnergyPlus 24.1 e condições em fichas 88/99
+
+O vínculo de CO₂ foi atualizado para a seção HTML correspondente do EnergyPlus 24.1, e as fichas 88/99 tiveram hipóteses de regime permanente e de fontes térmicas explicitadas. Os 197 artigos e registros individuais foram preservados. Aplicação sujeita a auditoria independente e revalidação localizada; QA-09 integral continua em correção.
