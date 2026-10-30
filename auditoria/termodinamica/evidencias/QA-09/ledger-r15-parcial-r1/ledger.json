@@ -1,0 +1,61 @@
+{
+  "versao": "r15-parcial-r1",
+  "data": "2026-10-30",
+  "estado_global": "QA09_EM_CORRECAO_NAO_APROVADO",
+  "fotografia": {
+    "modulos/e1-termodinamica.html": "f6c461f1d6039ea47dc7e97f9ad734bb0ea3fcb902f01ffdbf18d18d88e08d0e",
+    "formulas/termodinamica.html": "3ea110fda92c74253b69d89f5a6e62b288aa3bd99db6a51b54a6c67c8af82fce",
+    "auditoria/termodinamica/evidencias/QA-09/inventario-r15.json": "c8c9c3a3e141eba47a16e9f85c69f97c6e8b8a55aab689c6120ef1a0070c9d9c"
+  },
+  "colecoes": {
+    "ocorrencias": {
+      "total": 11399,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "referencias": {
+      "total": 816,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "recursos": {
+      "total": 138,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "ativos_especificos": {
+      "total": 6,
+      "estado_padrao": "pendente_de_integracao"
+    }
+  },
+  "registros_explicitamente_revisados": [
+    {
+      "colecao": "referencias",
+      "indice_base_zero": 681,
+      "identidade_r15": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "fontes",
+        "ancora": "fontes",
+        "tag": "a",
+        "inicio_utf16": 1301201,
+        "fim_utf16": 1301335,
+        "linha": 3639,
+        "atributo": "href",
+        "valor": "https://www.wika.com/pt-br/111_16_111_26.WIKA",
+        "texto": "WIKA — manômetro de tubo Bourdon"
+      },
+      "fragmento_sha256": "ee131b01bfbd456225c70ff5bc175f28762c2aa1d0e3bb9f66c297cefe86bbd6",
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Identidade da troca, rótulo e adequação da página WIKA para os modelos 111.16 e 111.26 e seu princípio Bourdon, conforme parecer. Não valida outras afirmações ou acessibilidade futura.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-wika-r15-auditoria-independente-20261030.md",
+      "parecer_sha256": "711c80a65248c1bc160f01abb15ab6d0718d8f43af7638bc618542d4fa5af278",
+      "autor_parecer": "/root/planning",
+      "entrega": "auditoria/termodinamica/evidencias/QA-09/aplicacao-wika-r15-r1/entrega-r1.md",
+      "entrega_sha256": "92741203699f138eecce7631f405862d7736e6bd623656847c9fd116176583b6"
+    }
+  ],
+  "limites": [
+    "Todos os outros registros permanecem pendentes de integração, independentemente de revisão histórica.",
+    "A classificação cobre exclusivamente a referência individual e o alcance do parecer; não se estende a ocorrências, recursos, ativos, pais ou filhos.",
+    "Não há transferência automática a partir de r9, mapas ou hash igual; revisões anteriores permanecem no histórico.",
+    "As coleções se sobrepõem, não são contagens de cálculos nem um percentual de conclusão.",
+    "Os 197 artigos têm tratamento separado; sua preservação estrutural não aprova o restante de QA-09."
+  ]
+}

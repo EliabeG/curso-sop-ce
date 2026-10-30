@@ -421,3 +421,8 @@ Foram explicitadas as hipóteses nas fichas 23, 58 e 59 e na base de eficiência
 ## QA-09 — referência WIKA na fotografia r15
 
 O endereço WIKA da lista de fontes foi atualizado à página brasileira dos modelos 111.16 e 111.26. Os 197 artigos e seus registros individuais foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral permanece aberto.
+
+
+## QA-09 — aplicação conjunta r16, 30/10/2026
+
+Aplicadas cinco candidatas aprovadas na aula e no formulário; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver evidências em `auditoria/termodinamica/evidencias/QA-09/aplicacao-conjunta-r16-r1/`.

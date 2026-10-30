@@ -1,0 +1,53 @@
+{
+  "estado": "CANDIDATAS_NAO_APLICADAS",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-wika-r15-r1/resultado/depois-aula.html",
+  "documento": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "f6c461f1d6039ea47dc7e97f9ad734bb0ea3fcb902f01ffdbf18d18d88e08d0e",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r15.json",
+  "inventario_sha256": "c8c9c3a3e141eba47a16e9f85c69f97c6e8b8a55aab689c6120ef1a0070c9d9c",
+  "itens": [
+    {
+      "id": "base-eficiencia-cop",
+      "inicio": 299262,
+      "fim": 308797,
+      "original": "d69c923666e5cbc712349c4dfe9e6a18f3ffdd7b5f6fe271dc745b29238c44f9",
+      "edits": [
+        {
+          "antes": "Nesta comparação, os calores e o trabalho são magnitudes positivas.</p>",
+          "depois": "Nesta comparação, os calores e o trabalho são magnitudes positivas.</p><p>Para os indicadores do refrigerador e da bomba de calor abaixo, considere ciclo acionado somente por trabalho líquido W &gt; 0, com QL retirado da fonte fria e QH entregue à fonte quente, na mesma fronteira e período, sem outros aportes ou rejeições de energia. Assim, QH = QL + W; a relação entre COPs abaixo vale para esse modelo.</p>"
+        }
+      ],
+      "candidata": "0f15c4e1b21d3a1c66e128205c9aee70840594a5397ce541eaa987831929e170"
+    },
+    {
+      "id": "base-limite-carnot",
+      "inicio": 308797,
+      "fim": 315231,
+      "original": "382a2daf360ad0a04bfb9245f0746d547d8f5fa2d28e6b5b93d53621cb96bcfd",
+      "edits": [
+        {
+          "antes": "Aproximar as temperaturas das fontes melhora o COP de refrigeração.",
+          "depois": "Aumentar TL mantendo TH fixa, ou reduzir TH mantendo TL fixa, eleva o COP de Carnot de refrigeração, desde que TH &gt; TL &gt; 0. Essa conclusão é sobre o limite reversível; não garante melhora do COP real."
+        }
+      ],
+      "candidata": "510390ee33497cd22eeb65633460eba8de1f44a28cacce03100fa83c13e93509"
+    },
+    {
+      "id": "base-brayton-real",
+      "inicio": 377906,
+      "fim": 381233,
+      "original": "ff66d7377eff5357668aae739c6390e23a38ad954acdd1b6af92447575e944a0",
+      "edits": [
+        {
+          "antes": "Para as mesmas condições de entrada, razão de pressões e temperatura de entrada da turbina, irreversibilidades elevam o trabalho exigido pelo compressor e reduzem o produzido pela turbina perante as referências isentrópicas.",
+          "depois": "Compare cada componente real com sua referência isentrópica: mesmo fluido de composição fixa, sem reação ou mistura, mesmo estado de entrada e mesma pressão de saída; regime permanente, uma entrada e uma saída, componentes reais e de referência adiabáticos, apenas trabalho de eixo e variações cinética e potencial desprezíveis. Nesse modelo, irreversibilidades elevam o trabalho específico exigido pelo compressor e reduzem o produzido pela turbina."
+        },
+        {
+          "antes": "Nas referências adiabáticas, com velocidades e alturas desprezíveis, o compressor consome",
+          "depois": "Na mesma comparação adiabática, com velocidades e alturas desprezíveis, o compressor consome"
+        }
+      ],
+      "candidata": "9795a00e2a3363aff4d55a6ae06aef91b45a2fe328ae327d42865aeaf685f94c"
+    }
+  ]
+}
