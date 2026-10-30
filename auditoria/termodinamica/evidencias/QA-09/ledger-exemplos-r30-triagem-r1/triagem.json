@@ -1,0 +1,1392 @@
+{
+  "versao": "exemplos-r30-triagem-r1",
+  "estado": "TRIAGEM_ESTRUTURAL_SEM_ACEITE",
+  "fotografia": {
+    "aula": "c719adae3464fb56ed2b0ad7014e0721c0aab2da444fb484ec0b40c5c0c8fbd4",
+    "formulario": "949c44fc5b96703929770b2881383d449af890616d34b9ab10b998ca96c75749",
+    "inventario": "1ce69fc1ab71850abc3ab8dc3df82b04e78788b9e62a55919c609a708a7979b4"
+  },
+  "base_anterior": {
+    "ledger": "auditoria/termodinamica/evidencias/QA-09/ledger-fichas-r30-r1/ledger.json",
+    "sha256": "08829096cacc3e90842fca2be7c80f89bbdc12311844880e0d828ee81cb5e9d2",
+    "parecer": "auditoria/termodinamica/evidencias/QA-09/auditoria-ledger-fichas-r30/parecer.md",
+    "sha256_parecer": "90a518be77f31b09f05665efcbfeed8c4aec37ac5410971fbf7b14ea0545be59"
+  },
+  "exemplos": [
+    {
+      "id": "EX-001",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:39057:exemplo_ou_diagnostico",
+        "inicio_utf16": 39057,
+        "fim_utf16": 39383,
+        "sha256": "6a992834b2c455d4432b96b0d885fc7092fa3c034ced4947c7b2738ff78de535"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-medidas",
+          "sha256_r28": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "sha256_r29": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "sha256_r30": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-001",
+        "juizo_local_r30": "900 kg/m³ em ambas metades homogêneas.",
+        "efeito_deltas_r29_r30": "O modelo, os dados e bases registradas permanecem; a alteração do compressor de refrigeração não acrescenta troca ao balanço deste objeto.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-002",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:41417:exemplo_ou_diagnostico",
+        "inicio_utf16": 41417,
+        "fim_utf16": 41620,
+        "sha256": "570d1bac8f5a29ec4350c974fbcc797810b3b5a6255f9a543c194c57eb9f96ae"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-instrumentos",
+          "sha256_r28": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r29": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r30": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-002",
+        "juizo_local_r30": "−10+120=110 °C; span não é incerteza.",
+        "efeito_deltas_r29_r30": "O modelo, os dados e bases registradas permanecem; a alteração do compressor de refrigeração não acrescenta troca ao balanço deste objeto.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-003",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:42132:exemplo_ou_diagnostico",
+        "inicio_utf16": 42132,
+        "fim_utf16": 42482,
+        "sha256": "0a78231e1675ba3b239b70b393c4136f645777d039bcfa5ba975b299c6426b39"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-instrumentos",
+          "sha256_r28": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r29": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r30": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-003",
+        "juizo_local_r30": "10+(30/40)×80=70; interpolação afim.",
+        "efeito_deltas_r29_r30": "O modelo, os dados e bases registradas permanecem; a alteração do compressor de refrigeração não acrescenta troca ao balanço deste objeto.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-004",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:56081:exemplo_ou_diagnostico",
+        "inicio_utf16": 56081,
+        "fim_utf16": 61947,
+        "sha256": "25c4b655ec5aa4c0d743f6d52e378254643a4e06716b19b0333dbe515ab618f6"
+      },
+      "contextos_registrados": [
+        {
+          "id": "titulo-ex004",
+          "sha256_r28": "9f03f42941073468e8a0844a7806e53a92903b8ee5523dadbad4ce33a9ea8079",
+          "sha256_r29": "9f03f42941073468e8a0844a7806e53a92903b8ee5523dadbad4ce33a9ea8079",
+          "sha256_r30": "9f03f42941073468e8a0844a7806e53a92903b8ee5523dadbad4ce33a9ea8079",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-004",
+        "juizo_local_r30": "(900−400)/(2400−400)=0,25; fração mássica em equilíbrio saturado.",
+        "efeito_deltas_r29_r30": "O modelo, os dados e bases registradas permanecem; a alteração do compressor de refrigeração não acrescenta troca ao balanço deste objeto.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-005",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:79224:exemplo_ou_diagnostico",
+        "inicio_utf16": 79224,
+        "fim_utf16": 79468,
+        "sha256": "cf1e98634d3a42d137ab84e055555bb5bedb3962304fc7fbc8c58134a6b406c7"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r30": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-005",
+        "juizo_local_r30": "0,082×320/26,24=1 atm no modelo ideal.",
+        "efeito_deltas_r29_r30": "O modelo, os dados e bases registradas permanecem; a alteração do compressor de refrigeração não acrescenta troca ao balanço deste objeto.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-006",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:78930:exemplo_ou_diagnostico",
+        "inicio_utf16": 78930,
+        "fim_utf16": 79227,
+        "sha256": "970c9a8833e77acc9698666061ad82bd30b67b3a14834b725651d5498925477d"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:79769:exemplo_ou_diagnostico",
+        "inicio_utf16": 79769,
+        "fim_utf16": 80066,
+        "sha256": "970c9a8833e77acc9698666061ad82bd30b67b3a14834b725651d5498925477d"
+      },
+      "contexto": {
+        "id": "base-gas-modelo",
+        "sha256_anterior": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+        "sha256_r30": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-007",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:82452:exemplo_ou_diagnostico",
+        "inicio_utf16": 82452,
+        "fim_utf16": 82814,
+        "sha256": "c7c99c848fd6996e969d10ff02cfe899adf246f670e9fe9b6d9996e9c73e0633"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:83291:exemplo_ou_diagnostico",
+        "inicio_utf16": 83291,
+        "fim_utf16": 83653,
+        "sha256": "c7c99c848fd6996e969d10ff02cfe899adf246f670e9fe9b6d9996e9c73e0633"
+      },
+      "contexto": {
+        "id": "base-umidade",
+        "sha256_anterior": "8abffd37dfbfa4a223b0d49d2cec00e31b827fed0191f855d61823f4e05fa464",
+        "sha256_r30": "8abffd37dfbfa4a223b0d49d2cec00e31b827fed0191f855d61823f4e05fa464",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-008",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:85089:exemplo_ou_diagnostico",
+        "inicio_utf16": 85089,
+        "fim_utf16": 85429,
+        "sha256": "6f8bc6349f77405cbe30e9bb2948a72fb851e48210d1092e9732891cbac8da37"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:85928:exemplo_ou_diagnostico",
+        "inicio_utf16": 85928,
+        "fim_utf16": 86268,
+        "sha256": "6f8bc6349f77405cbe30e9bb2948a72fb851e48210d1092e9732891cbac8da37"
+      },
+      "contexto": {
+        "id": "base-equilibrio-fases",
+        "sha256_anterior": "9dcee90f44c7cad186eeb40d4c890635ea943a985709b97fa5f68dfe2125d633",
+        "sha256_r30": "9dcee90f44c7cad186eeb40d4c890635ea943a985709b97fa5f68dfe2125d633",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-009",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:88179:exemplo_ou_diagnostico",
+        "inicio_utf16": 88179,
+        "fim_utf16": 88563,
+        "sha256": "f3cd5c1a32226e578a7801f4e7e2b75cf1c362190f8658a2801e1518e4c1c056"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:89018:exemplo_ou_diagnostico",
+        "inicio_utf16": 89018,
+        "fim_utf16": 89402,
+        "sha256": "f3cd5c1a32226e578a7801f4e7e2b75cf1c362190f8658a2801e1518e4c1c056"
+      },
+      "contexto": {
+        "id": "base-calor-variavel",
+        "sha256_anterior": "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de",
+        "sha256_r30": "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-010",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:188213:exemplo_ou_diagnostico",
+        "inicio_utf16": 188213,
+        "fim_utf16": 195513,
+        "sha256": "6b8de18f7009c2e090fa9958088ee99f39ce40bf3895c4ef71115db686b5d030"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:189825:exemplo_ou_diagnostico",
+        "inicio_utf16": 189825,
+        "fim_utf16": 197389,
+        "sha256": "699c9cc475fd5d923be5fe6527e3045f1fee00024014b4b06ba2b44772d1d442"
+      },
+      "contexto": {
+        "id": "base-turbina-potencia",
+        "sha256_anterior": "a9a8a163cb667a472acb0475a598541bf38353f6278153f4f590f4e58ae2588e",
+        "sha256_r30": "74c5c0d0bf34eb8253ac30ed3c858ba3b4df6cd5a88b0608a96ee7479fc41d1a",
+        "alterado": true
+      },
+      "fragmento_alterado": true,
+      "contexto_alterado": true,
+      "alteracoes_mapa": [
+        {
+          "de": "r25",
+          "para": "r26",
+          "estado": "PAREADO_INTERNO_CONFERIR",
+          "sha256_antes": "6b8de18f7009c2e090fa9958088ee99f39ce40bf3895c4ef71115db686b5d030",
+          "sha256_depois": "699c9cc475fd5d923be5fe6527e3045f1fee00024014b4b06ba2b44772d1d442"
+        }
+      ],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-011",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:196416:exemplo_ou_diagnostico",
+        "inicio_utf16": 196416,
+        "fim_utf16": 196713,
+        "sha256": "8ec6ce4013a1be49c569b5e3b8ab5e80b899cb9d250396be6023b1eecfa2d3c9"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:198292:exemplo_ou_diagnostico",
+        "inicio_utf16": 198292,
+        "fim_utf16": 198589,
+        "sha256": "8ec6ce4013a1be49c569b5e3b8ab5e80b899cb9d250396be6023b1eecfa2d3c9"
+      },
+      "contexto": {
+        "id": "base-balanco-fechado",
+        "sha256_anterior": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "sha256_r30": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-012",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:196713:exemplo_ou_diagnostico",
+        "inicio_utf16": 196713,
+        "fim_utf16": 196987,
+        "sha256": "dd7fb304ab302b97efbe4fc6363ca74557cce0d05ca16e4c29e40d52625668e7"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:198589:exemplo_ou_diagnostico",
+        "inicio_utf16": 198589,
+        "fim_utf16": 198863,
+        "sha256": "dd7fb304ab302b97efbe4fc6363ca74557cce0d05ca16e4c29e40d52625668e7"
+      },
+      "contexto": {
+        "id": "base-balanco-fechado",
+        "sha256_anterior": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "sha256_r30": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-013",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:196987:exemplo_ou_diagnostico",
+        "inicio_utf16": 196987,
+        "fim_utf16": 197525,
+        "sha256": "7438f121e00f4c757b695c3de6f881d295128696b48bad8f5d387b0e6547dfea"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:198863:exemplo_ou_diagnostico",
+        "inicio_utf16": 198863,
+        "fim_utf16": 199401,
+        "sha256": "7438f121e00f4c757b695c3de6f881d295128696b48bad8f5d387b0e6547dfea"
+      },
+      "contexto": {
+        "id": "base-balanco-fechado",
+        "sha256_anterior": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "sha256_r30": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-014",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:200739:exemplo_ou_diagnostico",
+        "inicio_utf16": 200739,
+        "fim_utf16": 201185,
+        "sha256": "b61c5b4de878da5b8b6e9cbbeb8529f50a523b04770dee30120a2911b5a890f5"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:202615:exemplo_ou_diagnostico",
+        "inicio_utf16": 202615,
+        "fim_utf16": 203061,
+        "sha256": "b61c5b4de878da5b8b6e9cbbeb8529f50a523b04770dee30120a2911b5a890f5"
+      },
+      "contexto": {
+        "id": "base-balanco-fechado",
+        "sha256_anterior": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "sha256_r30": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-015",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:204831:exemplo_ou_diagnostico",
+        "inicio_utf16": 204831,
+        "fim_utf16": 205163,
+        "sha256": "e1781267ff414825a63df07dbdf843a67b2cef64e939512501279c5e4b88d066"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:206707:exemplo_ou_diagnostico",
+        "inicio_utf16": 206707,
+        "fim_utf16": 207039,
+        "sha256": "e1781267ff414825a63df07dbdf843a67b2cef64e939512501279c5e4b88d066"
+      },
+      "contexto": {
+        "id": "base-expansao-livre",
+        "sha256_anterior": "f3405521cea64595e48e1b03da18afcb10d4017fe78f3d9b7009573dc46408cd",
+        "sha256_r30": "f3405521cea64595e48e1b03da18afcb10d4017fe78f3d9b7009573dc46408cd",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-016",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:207101:exemplo_ou_diagnostico",
+        "inicio_utf16": 207101,
+        "fim_utf16": 207432,
+        "sha256": "291b7132767797ff16e24b10d165d9f7a1a8f20acae14c8673f8c57f2be69d6d"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:208977:exemplo_ou_diagnostico",
+        "inicio_utf16": 208977,
+        "fim_utf16": 209308,
+        "sha256": "291b7132767797ff16e24b10d165d9f7a1a8f20acae14c8673f8c57f2be69d6d"
+      },
+      "contexto": {
+        "id": "base-calorimetria",
+        "sha256_anterior": "7c7e654b40f3d57c3d0d128ab5c48f9e9572f50a631c8123e45847df78228853",
+        "sha256_r30": "7c7e654b40f3d57c3d0d128ab5c48f9e9572f50a631c8123e45847df78228853",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-017",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:210197:exemplo_ou_diagnostico",
+        "inicio_utf16": 210197,
+        "fim_utf16": 210529,
+        "sha256": "c22b48ed504a399c3bd4b1e50df284133f02f79007a6abd20f6d00a3bbbe54d3"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:212073:exemplo_ou_diagnostico",
+        "inicio_utf16": 212073,
+        "fim_utf16": 212405,
+        "sha256": "c22b48ed504a399c3bd4b1e50df284133f02f79007a6abd20f6d00a3bbbe54d3"
+      },
+      "contexto": {
+        "id": "base-mistura-termica",
+        "sha256_anterior": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+        "sha256_r30": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-018",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:213594:exemplo_ou_diagnostico",
+        "inicio_utf16": 213594,
+        "fim_utf16": 213929,
+        "sha256": "d6ccb7539018a2f668cdd92558ee357604817d02c4189d549570f96435bd355d"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:215470:exemplo_ou_diagnostico",
+        "inicio_utf16": 215470,
+        "fim_utf16": 215805,
+        "sha256": "d6ccb7539018a2f668cdd92558ee357604817d02c4189d549570f96435bd355d"
+      },
+      "contexto": {
+        "id": "base-mistura-termica",
+        "sha256_anterior": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+        "sha256_r30": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-019",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:216152:exemplo_ou_diagnostico",
+        "inicio_utf16": 216152,
+        "fim_utf16": 216765,
+        "sha256": "03887766067d6ab87597dc063fb900d4da3ae0dc28dfe52fc334517b82cd31aa"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:218028:exemplo_ou_diagnostico",
+        "inicio_utf16": 218028,
+        "fim_utf16": 218641,
+        "sha256": "03887766067d6ab87597dc063fb900d4da3ae0dc28dfe52fc334517b82cd31aa"
+      },
+      "contexto": {
+        "id": "base-fase-calorimetria",
+        "sha256_anterior": "7db22e02be2741b1fb4be3f8c8642fad9a3d0a5bf99d363765d6ba377b9bdcf6",
+        "sha256_r30": "7db22e02be2741b1fb4be3f8c8642fad9a3d0a5bf99d363765d6ba377b9bdcf6",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-020",
+      "fonte_historica": "r25",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:223785:exemplo_ou_diagnostico",
+        "inicio_utf16": 223785,
+        "fim_utf16": 224209,
+        "sha256": "874c77143d5c996ab12370eeee5df3557864d427ff2e7583ee3de00fec6be223"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:225661:exemplo_ou_diagnostico",
+        "inicio_utf16": 225661,
+        "fim_utf16": 226085,
+        "sha256": "874c77143d5c996ab12370eeee5df3557864d427ff2e7583ee3de00fec6be223"
+      },
+      "contexto": {
+        "id": "base-balanco-transiente",
+        "sha256_anterior": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f",
+        "sha256_r30": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-021",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:225458:exemplo_ou_diagnostico",
+        "inicio_utf16": 225458,
+        "fim_utf16": 225789,
+        "sha256": "7d5ccbf2c453404e89dc85ca942ca8fc4af21feaa5c268cafd5d686d22aa80c5"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:229545:exemplo_ou_diagnostico",
+        "inicio_utf16": 229545,
+        "fim_utf16": 229876,
+        "sha256": "7d5ccbf2c453404e89dc85ca942ca8fc4af21feaa5c268cafd5d686d22aa80c5"
+      },
+      "contexto": {
+        "id": "base-misturador-correntes",
+        "sha256_anterior": "29175301d686504895499b382234322cd637d8489cda03c621a8ec3e1d0fae75",
+        "sha256_r30": "29175301d686504895499b382234322cd637d8489cda03c621a8ec3e1d0fae75",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-022",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:229093:exemplo_ou_diagnostico",
+        "inicio_utf16": 229093,
+        "fim_utf16": 229434,
+        "sha256": "2a487e5581c87ed5ba98f07fade1bf881a0164fe623e6bf0e213c9fe2af99488"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:233180:exemplo_ou_diagnostico",
+        "inicio_utf16": 233180,
+        "fim_utf16": 233521,
+        "sha256": "2a487e5581c87ed5ba98f07fade1bf881a0164fe623e6bf0e213c9fe2af99488"
+      },
+      "contexto": {
+        "id": "base-bocal-difusor",
+        "sha256_anterior": "1df05dec0f7ecd7cd98f8ac8fa2fe09c9a9271412e3af9457457639cc60449eb",
+        "sha256_r30": "1df05dec0f7ecd7cd98f8ac8fa2fe09c9a9271412e3af9457457639cc60449eb",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-023",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:231706:exemplo_ou_diagnostico",
+        "inicio_utf16": 231706,
+        "fim_utf16": 232076,
+        "sha256": "667cbf2950b67be9c64b08c6be139194f6a600f10e6e10c76b010e3e23845ec7"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:235793:exemplo_ou_diagnostico",
+        "inicio_utf16": 235793,
+        "fim_utf16": 236163,
+        "sha256": "667cbf2950b67be9c64b08c6be139194f6a600f10e6e10c76b010e3e23845ec7"
+      },
+      "contexto": {
+        "id": "base-valvula-fase",
+        "sha256_anterior": "754a458c2fcac18c359e71fc9fdf062b08940940573f615b5756e0ecc26456f3",
+        "sha256_r30": "754a458c2fcac18c359e71fc9fdf062b08940940573f615b5756e0ecc26456f3",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-024",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:340714:exemplo_ou_diagnostico",
+        "inicio_utf16": 340714,
+        "fim_utf16": 341052,
+        "sha256": "4090b8409d5ff3d50b54426b4bf42ccb73e4ab97316da5ca5209645b8a85c7c7"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:345523:exemplo_ou_diagnostico",
+        "inicio_utf16": 345523,
+        "fim_utf16": 345861,
+        "sha256": "4090b8409d5ff3d50b54426b4bf42ccb73e4ab97316da5ca5209645b8a85c7c7"
+      },
+      "contexto": {
+        "id": "base-carnot-prova",
+        "sha256_anterior": "21d73236cb2cb1e129daa15c48bdd780bdc79171782bb3f3ee3c4d45cef795c6",
+        "sha256_r30": "21d73236cb2cb1e129daa15c48bdd780bdc79171782bb3f3ee3c4d45cef795c6",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-025",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:343397:exemplo_ou_diagnostico",
+        "inicio_utf16": 343397,
+        "fim_utf16": 343815,
+        "sha256": "cfdb3bf17b79df7a67e26d9adb39be4b7a3e0675aae1119d22c12aefe3eba7f1"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:348206:exemplo_ou_diagnostico",
+        "inicio_utf16": 348206,
+        "fim_utf16": 348624,
+        "sha256": "cfdb3bf17b79df7a67e26d9adb39be4b7a3e0675aae1119d22c12aefe3eba7f1"
+      },
+      "contexto": {
+        "id": "base-exergia",
+        "sha256_anterior": "23ce04f24f08f852e88524c64f08f9f3ddc11a41a01ffedefacbead5e9d02a1d",
+        "sha256_r30": "23ce04f24f08f852e88524c64f08f9f3ddc11a41a01ffedefacbead5e9d02a1d",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-026",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:346090:exemplo_ou_diagnostico",
+        "inicio_utf16": 346090,
+        "fim_utf16": 346372,
+        "sha256": "21053305085722f13c8fc1dab485362473038e2aaf0386fdcd646528dda06e06"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:350899:exemplo_ou_diagnostico",
+        "inicio_utf16": 350899,
+        "fim_utf16": 351181,
+        "sha256": "21053305085722f13c8fc1dab485362473038e2aaf0386fdcd646528dda06e06"
+      },
+      "contexto": {
+        "id": "base-gibbs",
+        "sha256_anterior": "15d6533d14b70ecda54f9472aec8a20b85b6872f38b2f6f6e99087f2a653b232",
+        "sha256_r30": "15d6533d14b70ecda54f9472aec8a20b85b6872f38b2f6f6e99087f2a653b232",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-027",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:370173:exemplo_ou_diagnostico",
+        "inicio_utf16": 370173,
+        "fim_utf16": 373078,
+        "sha256": "1e852f1e2abf7b73fcefc5d2de09267597d0079c2333e637182ab985ba3b87d1"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:375452:exemplo_ou_diagnostico",
+        "inicio_utf16": 375452,
+        "fim_utf16": 378515,
+        "sha256": "79b68a3535544c50cce957e6eb1747ee37e9cac09b2bceaedb460ac6800c2a54"
+      },
+      "contexto": {
+        "id": "base-refrigeracao",
+        "sha256_anterior": "2221e77dbbfa11591bcfac47c254e42941ab8074da717ac90975118425277955",
+        "sha256_r30": "467b2324a8e742e6c0cb60565ccf3d74480f434d3fb044eefe5eb78f2377a4b7",
+        "alterado": true
+      },
+      "fragmento_alterado": true,
+      "contexto_alterado": true,
+      "alteracoes_mapa": [
+        {
+          "de": "r17",
+          "para": "r18",
+          "estado": "PAREADO_INTERNO_CONFERIR",
+          "sha256_antes": "1e852f1e2abf7b73fcefc5d2de09267597d0079c2333e637182ab985ba3b87d1",
+          "sha256_depois": "79b68a3535544c50cce957e6eb1747ee37e9cac09b2bceaedb460ac6800c2a54"
+        }
+      ],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-028",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:373078:exemplo_ou_diagnostico",
+        "inicio_utf16": 373078,
+        "fim_utf16": 378698,
+        "sha256": "39662e989f377c6cf34311b044c6de916732f22caf00b5985adfbd4a20ad3dd4"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:378515:exemplo_ou_diagnostico",
+        "inicio_utf16": 378515,
+        "fim_utf16": 384270,
+        "sha256": "e326ef248fcb01841fcb57b00e61018bfcb206fdba17a06c22a0cad20c548263"
+      },
+      "contexto": {
+        "id": "base-refrigeracao",
+        "sha256_anterior": "2221e77dbbfa11591bcfac47c254e42941ab8074da717ac90975118425277955",
+        "sha256_r30": "467b2324a8e742e6c0cb60565ccf3d74480f434d3fb044eefe5eb78f2377a4b7",
+        "alterado": true
+      },
+      "fragmento_alterado": true,
+      "contexto_alterado": true,
+      "alteracoes_mapa": [
+        {
+          "de": "r28",
+          "para": "r29",
+          "estado": "PAREADO_INTERNO_CONFERIR",
+          "sha256_antes": "39662e989f377c6cf34311b044c6de916732f22caf00b5985adfbd4a20ad3dd4",
+          "sha256_depois": "e326ef248fcb01841fcb57b00e61018bfcb206fdba17a06c22a0cad20c548263"
+        }
+      ],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-029",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:379228:exemplo_ou_diagnostico",
+        "inicio_utf16": 379228,
+        "fim_utf16": 379632,
+        "sha256": "72d9b64d03a52d49cc39ab883400f5019f8c1ed3ff5656cceebf203620bb7b0b"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:384800:exemplo_ou_diagnostico",
+        "inicio_utf16": 384800,
+        "fim_utf16": 385204,
+        "sha256": "72d9b64d03a52d49cc39ab883400f5019f8c1ed3ff5656cceebf203620bb7b0b"
+      },
+      "contexto": {
+        "id": "base-brayton-real",
+        "sha256_anterior": "9795a00e2a3363aff4d55a6ae06aef91b45a2fe328ae327d42865aeaf685f94c",
+        "sha256_r30": "9795a00e2a3363aff4d55a6ae06aef91b45a2fe328ae327d42865aeaf685f94c",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-030",
+      "fonte_historica": "r17",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:380628:exemplo_ou_diagnostico",
+        "inicio_utf16": 380628,
+        "fim_utf16": 380920,
+        "sha256": "e7d02e90ea64cef239ddd71e56cb0f6678b750370f0cfb70f1ee2697ab2817d5"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:386200:exemplo_ou_diagnostico",
+        "inicio_utf16": 386200,
+        "fim_utf16": 386492,
+        "sha256": "e7d02e90ea64cef239ddd71e56cb0f6678b750370f0cfb70f1ee2697ab2817d5"
+      },
+      "contexto": {
+        "id": "base-brayton-real",
+        "sha256_anterior": "9795a00e2a3363aff4d55a6ae06aef91b45a2fe328ae327d42865aeaf685f94c",
+        "sha256_r30": "9795a00e2a3363aff4d55a6ae06aef91b45a2fe328ae327d42865aeaf685f94c",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-031",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:389552:exemplo_ou_diagnostico",
+        "inicio_utf16": 389552,
+        "fim_utf16": 390636,
+        "sha256": "fdbd8e2cc5d4212af40051f854dca99420ae4ef7b1c887a82c9540fdae2a3d6a"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-ciclos-variantes",
+          "sha256_r28": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "sha256_r29": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "sha256_r30": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-031",
+        "juizo_local_r30": "Qin=3590, Qout=2000, W=1590 kJ/kg, η≈44,29% sem extração.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições. O balanço de Rankine usa trabalhos totais e não demonstra segunda lei nem estados reais.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-032",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:392786:exemplo_ou_diagnostico",
+        "inicio_utf16": 392786,
+        "fim_utf16": 393185,
+        "sha256": "323164d40792d4a4623044a12d0ba173756cf6c34380350bbcc77cd77090216b"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-ciclos-variantes",
+          "sha256_r28": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "sha256_r29": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "sha256_r30": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-032",
+        "juizo_local_r30": "y=290/2490≈0,1165; 500 exato com y não arredondado.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-033",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:413703:exemplo_ou_diagnostico",
+        "inicio_utf16": 413703,
+        "fim_utf16": 414054,
+        "sha256": "cb64ece00d51b66fef020660b43fa12b92ef178edf31db2bd3f3e9ea2a78090b"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-eficiencia-volumetrica",
+          "sha256_r28": "427530949bf62bda816f247341cfd1c9e07e086f47db13bb499a63e331b79025",
+          "sha256_r29": "427530949bf62bda816f247341cfd1c9e07e086f47db13bb499a63e331b79025",
+          "sha256_r30": "427530949bf62bda816f247341cfd1c9e07e086f47db13bb499a63e331b79025",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-033",
+        "juizo_local_r30": "3,5/5=0,70 para volumes nas mesmas condições de sucção.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-034",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:415492:exemplo_ou_diagnostico",
+        "inicio_utf16": 415492,
+        "fim_utf16": 415769,
+        "sha256": "980e75bf3228eeaafe818e395a84b12debedc4409debd1764d6553e2fc980ba1"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-calor-latente",
+          "sha256_r28": "bfc8a1480408d803b3b239d9fe20051b8c879efd9b332f144be1646ab2be7c2e",
+          "sha256_r29": "bfc8a1480408d803b3b239d9fe20051b8c879efd9b332f144be1646ab2be7c2e",
+          "sha256_r30": "bfc8a1480408d803b3b239d9fe20051b8c879efd9b332f144be1646ab2be7c2e",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-034",
+        "juizo_local_r30": "20/1000=0,020 kg/s para efeito refrigerante hipotético.",
+        "efeito_deltas_r29_r30": "A vazão 20/1000=0,020 kg/s depende da carga e do efeito refrigerante declarados; não usa COP, trabalho de eixo ou trabalho total do compressor.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-035",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:420078:exemplo_ou_diagnostico",
+        "inicio_utf16": 420078,
+        "fim_utf16": 420464,
+        "sha256": "61d283a4c30c4d83a15e4d9ee393601c5c539b4aee4a6fc3e8fb056466dc7489"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-balanco-co2",
+          "sha256_r28": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r29": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r30": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-035",
+        "juizo_local_r30": "G=0,24 m³/h e 400 ppm de excesso dão 600 m³/h em regime estacionário.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-036",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:420464:exemplo_ou_diagnostico",
+        "inicio_utf16": 420464,
+        "fim_utf16": 420778,
+        "sha256": "711b7c824b1ec6888746c220e3050c2b9d431041f3262bbe3b47f0c8cb6e2679"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-balanco-co2",
+          "sha256_r28": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r29": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r30": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-036",
+        "juizo_local_r30": "0,20/500=400 ppm acima de 450 ppm externos, total 850 ppm.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-037",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:423932:exemplo_ou_diagnostico",
+        "inicio_utf16": 423932,
+        "fim_utf16": 424220,
+        "sha256": "bbfa5c238aa5d155bf60414203040c65259b7f4fad7ca41efe2cd2759edd41a5"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-bomba-integrada",
+          "sha256_r28": "16294019cf9b42558971cec2f33f43ed3d6926a32fa57629456e24df8f734505",
+          "sha256_r29": "16294019cf9b42558971cec2f33f43ed3d6926a32fa57629456e24df8f734505",
+          "sha256_r30": "16294019cf9b42558971cec2f33f43ed3d6926a32fa57629456e24df8f734505",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-037",
+        "juizo_local_r30": "54 m³/h = 0,015 m³/s; 3 kW hidráulicos e 60% no eixo.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-038",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:428735:exemplo_ou_diagnostico",
+        "inicio_utf16": 428735,
+        "fim_utf16": 431669,
+        "sha256": "f82e47fce9b4a81803fca321445fd9e7a28f7e4ef02894f72ae4dea471981c73"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-interpolacao",
+          "sha256_r28": "23cb1616d086f405157d4dbccc694364a1985f8d78dd9cad57cac4f227d137a1",
+          "sha256_r29": "23cb1616d086f405157d4dbccc694364a1985f8d78dd9cad57cac4f227d137a1",
+          "sha256_r30": "23cb1616d086f405157d4dbccc694364a1985f8d78dd9cad57cac4f227d137a1",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-038",
+        "juizo_local_r30": "Interpolação na mesma região vapor superaquecido dá 2860 kJ/kg.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-039",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:439534:exemplo_ou_diagnostico",
+        "inicio_utf16": 439534,
+        "fim_utf16": 447203,
+        "sha256": "fc411913e4088f4b4842e0122f35daa30d2fba7d620af0d926c693cc93dde68e"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-entropia-escoamento",
+          "sha256_r28": "7c86184a37044b68219f4b84c444ce89ee400c46547b569e6b47ced86cec64d9",
+          "sha256_r29": "7c86184a37044b68219f4b84c444ce89ee400c46547b569e6b47ced86cec64d9",
+          "sha256_r30": "7c86184a37044b68219f4b84c444ce89ee400c46547b569e6b47ced86cec64d9",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-039",
+        "juizo_local_r30": "Duas correntes 1 kg/s dão Sger=−0,20+0,30=0,10 kW/K.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-040",
+      "fonte_historica": "ledger-r30-direto-r2",
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:449980:exemplo_ou_diagnostico",
+        "inicio_utf16": 449980,
+        "fim_utf16": 453413,
+        "sha256": "fff188ce7ed250b0322eabe9cb3308c6b55bf7324aebf489c8e7d06741319489"
+      },
+      "contextos_registrados": [
+        {
+          "id": "base-compressao-estagios",
+          "sha256_r28": "6e2513215659102bdc875a0f79cd9fc54451f41359b65ee56d02b22d0a9169b7",
+          "sha256_r29": "6e2513215659102bdc875a0f79cd9fc54451f41359b65ee56d02b22d0a9169b7",
+          "sha256_r30": "6e2513215659102bdc875a0f79cd9fc54451f41359b65ee56d02b22d0a9169b7",
+          "alterado_r28_r30": false
+        }
+      ],
+      "juizo_anterior": {
+        "id": "EX-040",
+        "juizo_local_r30": "√(1×16)=4 bar absolutos nas hipóteses de estágios equivalentes.",
+        "efeito_deltas_r29_r30": "Dados e base local deste exemplo permanecem; os deltas na refrigeração não alteram seu cálculo e suas condições.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-041",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:450530:exemplo_ou_diagnostico",
+        "inicio_utf16": 450530,
+        "fim_utf16": 450792,
+        "sha256": "aef5153fb27af1d61e215b3d3613fad7fcc9dd12830aeb2a43c2c6c2c0f08974"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:455006:exemplo_ou_diagnostico",
+        "inicio_utf16": 455006,
+        "fim_utf16": 455268,
+        "sha256": "aef5153fb27af1d61e215b3d3613fad7fcc9dd12830aeb2a43c2c6c2c0f08974"
+      },
+      "contexto": {
+        "id": "base-transferencia",
+        "sha256_anterior": "62b2d9e3c3928f8c3658f441758c655a70ea1faaea44d37a811914419e289ec7",
+        "sha256_r30": "62b2d9e3c3928f8c3658f441758c655a70ea1faaea44d37a811914419e289ec7",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-042",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:453991:exemplo_ou_diagnostico",
+        "inicio_utf16": 453991,
+        "fim_utf16": 454276,
+        "sha256": "08f56302b01d90e952d1f94500e32639ed555b58e81321c8fb1b95582770b4af"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:458467:exemplo_ou_diagnostico",
+        "inicio_utf16": 458467,
+        "fim_utf16": 458752,
+        "sha256": "08f56302b01d90e952d1f94500e32639ed555b58e81321c8fb1b95582770b4af"
+      },
+      "contexto": {
+        "id": "base-trocadores",
+        "sha256_anterior": "e3a891e5c67e0a92280ae9c78318f9d3d046c00605c857c3ebb250d5e09a02cc",
+        "sha256_r30": "e3a891e5c67e0a92280ae9c78318f9d3d046c00605c857c3ebb250d5e09a02cc",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-043",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:455181:exemplo_ou_diagnostico",
+        "inicio_utf16": 455181,
+        "fim_utf16": 455624,
+        "sha256": "405e810399123eb41cc0f85b592a10cd03754fab0af02e405479823b0c7579b0"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:459657:exemplo_ou_diagnostico",
+        "inicio_utf16": 459657,
+        "fim_utf16": 460100,
+        "sha256": "405e810399123eb41cc0f85b592a10cd03754fab0af02e405479823b0c7579b0"
+      },
+      "contexto": {
+        "id": "base-trocadores",
+        "sha256_anterior": "e3a891e5c67e0a92280ae9c78318f9d3d046c00605c857c3ebb250d5e09a02cc",
+        "sha256_r30": "e3a891e5c67e0a92280ae9c78318f9d3d046c00605c857c3ebb250d5e09a02cc",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-044",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:456698:exemplo_ou_diagnostico",
+        "inicio_utf16": 456698,
+        "fim_utf16": 457104,
+        "sha256": "2869b5919b0999bbbe10c87859f00b28425b5233d8c39a0360dea42197d5ac39"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:461174:exemplo_ou_diagnostico",
+        "inicio_utf16": 461174,
+        "fim_utf16": 461619,
+        "sha256": "e687047ecccf7001708151070b4c9f32cf020f7436b71d68c1ba4f96a22a6f82"
+      },
+      "contexto": {
+        "id": "base-radiacao-vacuo",
+        "sha256_anterior": "a6cd5681c17a5440d2f6ecb9f60e59119f0d0c1f6feb9ee5a85293aa3ce10e19",
+        "sha256_r30": "e3994818145ff1ef936119c9f20272d4aac70012004d0628e3dca62ab1fdc8e2",
+        "alterado": true
+      },
+      "fragmento_alterado": true,
+      "contexto_alterado": true,
+      "alteracoes_mapa": [
+        {
+          "de": "r21",
+          "para": "r22",
+          "estado": "PAREADO_INTERNO_CONFERIR",
+          "sha256_antes": "2869b5919b0999bbbe10c87859f00b28425b5233d8c39a0360dea42197d5ac39",
+          "sha256_depois": "e687047ecccf7001708151070b4c9f32cf020f7436b71d68c1ba4f96a22a6f82"
+        }
+      ],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-045",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:459298:exemplo_ou_diagnostico",
+        "inicio_utf16": 459298,
+        "fim_utf16": 459546,
+        "sha256": "c655642db9a18f0ccf97d9367c18a9e7b9738a249d71f073b036389c3644de30"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:463997:exemplo_ou_diagnostico",
+        "inicio_utf16": 463997,
+        "fim_utf16": 464245,
+        "sha256": "c655642db9a18f0ccf97d9367c18a9e7b9738a249d71f073b036389c3644de30"
+      },
+      "contexto": {
+        "id": "base-dilatacao",
+        "sha256_anterior": "c5118d0aa02dae4be96485ba237df2cc113e5252f78f6a06f71997e0071e0b09",
+        "sha256_r30": "c5118d0aa02dae4be96485ba237df2cc113e5252f78f6a06f71997e0071e0b09",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-046",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:460570:exemplo_ou_diagnostico",
+        "inicio_utf16": 460570,
+        "fim_utf16": 461005,
+        "sha256": "d7fc82a69bdc4bf9a24cebbd6665e2697f1a92dfa3869da604cab37adf6fa8c3"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:465657:exemplo_ou_diagnostico",
+        "inicio_utf16": 465657,
+        "fim_utf16": 466489,
+        "sha256": "b4d9dafa1f27c766cc44a698709d74f5fbe3ee09cc587c8def6e0709e2f36c55"
+      },
+      "contexto": {
+        "id": "base-geracao-face",
+        "sha256_anterior": "9ba96993d3d82a80bb901cd710cb40f00bfb5bb9fedad08ea592cc8d15743546",
+        "sha256_r30": "f788b25e902cf62ee1a72be265172dc18dfb2cd48fb826e3a336f2a5de2a78fd",
+        "alterado": true
+      },
+      "fragmento_alterado": true,
+      "contexto_alterado": true,
+      "alteracoes_mapa": [
+        {
+          "de": "r20",
+          "para": "r21",
+          "estado": "PAREADO_INTERNO_CONFERIR",
+          "sha256_antes": "d7fc82a69bdc4bf9a24cebbd6665e2697f1a92dfa3869da604cab37adf6fa8c3",
+          "sha256_depois": "b4d9dafa1f27c766cc44a698709d74f5fbe3ee09cc587c8def6e0709e2f36c55"
+        }
+      ],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-047",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:465227:exemplo_ou_diagnostico",
+        "inicio_utf16": 465227,
+        "fim_utf16": 465790,
+        "sha256": "dec11b70113935a4f763cde64bc6b371159284b364e370c6519a6a4f1fc72af2"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:470711:exemplo_ou_diagnostico",
+        "inicio_utf16": 470711,
+        "fim_utf16": 471274,
+        "sha256": "dec11b70113935a4f763cde64bc6b371159284b364e370c6519a6a4f1fc72af2"
+      },
+      "contexto": {
+        "id": "cobertura99-estado",
+        "sha256_anterior": "d8b7a8b53b7db7fcc0f3f1fd8b8a58c2f8d489e7583efd0f4c08596b542616cb",
+        "sha256_r30": "d8b7a8b53b7db7fcc0f3f1fd8b8a58c2f8d489e7583efd0f4c08596b542616cb",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-048",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:467348:exemplo_ou_diagnostico",
+        "inicio_utf16": 467348,
+        "fim_utf16": 467822,
+        "sha256": "7622931a3ec2c60092ba79a19e6775a3807ce149c25737559cb782cada9dd367"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:472832:exemplo_ou_diagnostico",
+        "inicio_utf16": 472832,
+        "fim_utf16": 473306,
+        "sha256": "7622931a3ec2c60092ba79a19e6775a3807ce149c25737559cb782cada9dd367"
+      },
+      "contexto": {
+        "id": "cobertura99-trabalho",
+        "sha256_anterior": "e9356e4155ae358b3b027e4e97673cd35a897f70237487b1ea493cd2b44938c9",
+        "sha256_r30": "e9356e4155ae358b3b027e4e97673cd35a897f70237487b1ea493cd2b44938c9",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-049",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:469710:exemplo_ou_diagnostico",
+        "inicio_utf16": 469710,
+        "fim_utf16": 470190,
+        "sha256": "ddbee308b1684a4eb8d5884a17a056582016563cc61ba735105eb0d433fe6acd"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:475194:exemplo_ou_diagnostico",
+        "inicio_utf16": 475194,
+        "fim_utf16": 475674,
+        "sha256": "ddbee308b1684a4eb8d5884a17a056582016563cc61ba735105eb0d433fe6acd"
+      },
+      "contexto": {
+        "id": "cobertura99-balancos",
+        "sha256_anterior": "4451335fe6fe7961c9651fe5488f717dfa0f8ae1a4e2fbc776897ec890f36a65",
+        "sha256_r30": "4451335fe6fe7961c9651fe5488f717dfa0f8ae1a4e2fbc776897ec890f36a65",
+        "alterado": false
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": false,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-050",
+      "fonte_historica": "r20",
+      "r_anterior": {
+        "id": "modulos/e1-termodinamica.html:471891:exemplo_ou_diagnostico",
+        "inicio_utf16": 471891,
+        "fim_utf16": 472258,
+        "sha256": "19cd301f12b11b01a5936ccbfef13355dde66ccb538d726641b4e0314ffd3881"
+      },
+      "r30": {
+        "id": "modulos/e1-termodinamica.html:477611:exemplo_ou_diagnostico",
+        "inicio_utf16": 477611,
+        "fim_utf16": 477978,
+        "sha256": "19cd301f12b11b01a5936ccbfef13355dde66ccb538d726641b4e0314ffd3881"
+      },
+      "contexto": {
+        "id": "cobertura99-limites",
+        "sha256_anterior": "bf4fb0e14c504c3e030f83b0cea8e460b4471ae0244934d50cf66417a5a41374",
+        "sha256_r30": "7dbf566277721141e8435129439c22c4c4ccd642d591f626bef748db839643e5",
+        "alterado": true
+      },
+      "fragmento_alterado": false,
+      "contexto_alterado": true,
+      "alteracoes_mapa": [],
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    }
+  ],
+  "limites": [
+    "Correspondência por mapas não revalida ciência, enunciado ou contexto.",
+    "Todos os 50 pendentes nesta triagem; o parecer anterior de 15 objetos permanece em sua própria base.",
+    "Mudanças não cobertas ou ambiguidades devem continuar pendentes."
+  ]
+}

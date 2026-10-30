@@ -1,0 +1,26 @@
+{
+  "snapshot_sha256": "c719adae3464fb56ed2b0ad7014e0721c0aab2da444fb484ec0b40c5c0c8fbd4",
+  "node": "v24.22.1",
+  "playwright": "1.62.1",
+  "available_in_path": [],
+  "browsers": {
+    "chromium": {
+      "executable": "/root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome",
+      "exists": false,
+      "launch": "falhou",
+      "reason": "browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell"
+    },
+    "firefox": {
+      "executable": "/root/.cache/ms-playwright/firefox-1538/firefox/firefox",
+      "exists": false,
+      "launch": "falhou",
+      "reason": "browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/firefox-1538/firefox/firefox"
+    },
+    "webkit": {
+      "executable": "/root/.cache/ms-playwright/webkit-2336/pw_run.sh",
+      "exists": false,
+      "launch": "falhou",
+      "reason": "browserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/webkit-2336/pw_run.sh"
+    }
+  }
+}

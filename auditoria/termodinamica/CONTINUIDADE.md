@@ -73,6 +73,8 @@ O [ledger de fichas r30](evidencias/QA-09/ledger-fichas-r30-r1/LEIA-ME.md) e o [
 
 O [ledger dos 50 exemplos r30](evidencias/QA-09/ledger-exemplos-r30-r1/LEIA-ME.md) e o [parecer independente](evidencias/QA-09/auditoria-ledger-exemplos-r30-next-formulas-20261030/parecer.md) reconciliam 15 exemplos já integrados e 35 adicionais com os mapas e pareceres identificados. Cinco fragmentos e seis contextos alterados foram reavaliados; EX028 teve três legendas alteradas, mas sua candidata opcional de enunciado não foi aplicada. O resultado é restrito à rastreabilidade dos exemplos e não encerra QA-09.
 
+A [triagem integrada r30](evidencias/QA-09/inventario-integracao-r30-r1/LEIA-ME.md) recebeu [auditoria estrutural independente](evidencias/QA-09/auditoria-inventario-integracao-r30/parecer.md): 11.409 registros sobrepostos em 162 grupos, com 187 vínculos exatos a juízos localizados e 11.222 registros sem esse vínculo nesta triagem. Pendência não prova ausência de revisão histórica, e as categorias não são porcentagem de aprendizagem nem de revisão científica. Referências, recursos e ativos permanecem separados. O [exame de navegador](evidencias/QA-09/navegador-r30/entrega.md) constatou falta dos executáveis dos três motores Playwright; teste real permanece pendente. Outros lotes localizados incluem [exergia](evidencias/QA-09/auditoria-exergia-r30-lote2-next-formulas-20261030/parecer.md) e [fontes](evidencias/QA-09/auditoria-fontes-r30-lote2/parecer.md), com limitações de acesso externo.
+
 Próximas ações dentro de QA-09:
 
 1. Reconciliar a fotografia e os pareceres atuais, incluindo as aplicações EX011/EX013 e das quatro correções de 30/10, e verificar eventuais mudanças desde este documento.
