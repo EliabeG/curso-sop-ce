@@ -486,3 +486,13 @@ Aplicadas candidatas aprovadas de Carnot e três flashcards; fotografia efetiva 
 ## QA-09 — pressão, substâncias, ciclos e fichas de máquinas na fotografia r28
 
 As condições das três bases e seis fichas foram delimitadas; os 197 artigos e seus registros foram preservados. A aplicação requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — refrigeração na fotografia r29
+
+Foram explicitados trabalho líquido não associado ao escoamento e as condições de balanço do ciclo, preservando os 197 artigos e seus registros. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — precisão da refrigeração na fotografia r30
+
+Igualdade exata requer saldo nulo dos demais trabalhos; saldo desprezível fundamenta uma aproximação. A revisão preserva os 197 artigos e requer auditoria independente.

@@ -1,0 +1,13 @@
+# QA-09 — candidata de precisão de refrigeração para r30
+
+**Estado: candidata não aplicada; aguardando auditoria independente.** Origina-se do parecer da aplicação r29 de `next_theory`: `auditoria/termodinamica/evidencias/QA-09/auditoria-aplicacao-r29-next-theory-20261030/parecer.md`, SHA-256 `8812b87f269417c335d5082a936251a239a9411fd2beb468bf1d6b109e80da4b`.
+
+Na base `base-refrigeracao`, propõe-se substituir a frase sobre a coincidência dos trabalhos pela redação: “O trabalho do compressor coincide com o de eixo recebido quando o saldo dos demais trabalhos não associados ao escoamento é nulo; se esse saldo for desprezível, a igualdade é aproximada.” Na ficha `formula-refrigeracao` propõe-se o mesmo esclarecimento, em suas duas ocorrências idênticas, uma no texto visível e outra no índice de busca `data-busca`. Não se alteram dados, equações ou condições físicas; não se aplica a candidata opcional EX028.
+
+Com os sinais de entrada positiva e saída negativa e mesma base temporal e de massa, o trabalho líquido recebido é o de eixo recebido mais o saldo das demais interações de trabalho não associadas ao escoamento. Assim, por exemplo, se o trabalho de eixo é 35 kJ/kg e o saldo adicional é zero, o líquido é exatamente 35; se o saldo é +0,01 kJ/kg, o líquido é 35,01, valor aproximadamente 35 quando essa diferença é desprezível para a precisão exigida. Parcelas adicionais podem se cancelar; desprezível depende da tolerância da análise. O exemplo não especifica desempenho de um equipamento real.
+
+## Identidade e prova
+
+A base r29 tem SHA-256 `f932d341a543f05b9f7b31b037cb28f21f8d4e9933536656475f99fd3d3ba7d5` (aula), `b839310edfa655e1da907757119beaeacdabd7d088211ac189c38c3dbeb38932` (formulário) e `f6237de0c999a66c1edbb74f18911d4bd13ba0352d305b32329f3d7f4fd05db8` (inventário QA). O manifesto das substituições e hashes hipotéticos tem SHA `586ef6cee0ddab40bfc8ab180af39a2f14a1f4d5af0b7a539f38cc062a1bb0c2`.
+
+O teste `verificar.mjs` SHA `9c20a426498466fd07d8d7c902e67a729818c36f9a1e9d30dd97d02229fae44c` foi executado da raiz do repositório, em memória e sem modificar o produto; resultado `resultado.json` SHA `3d047c0a0aa79c142127096ed6d3144f8bf93ab2089938d09b016a167712ccac`. Confere contagem e localização das três ocorrências, hashes, 197 artigos, 99 fichas não alvo, 734/191 MathML, IDs, links e atributos de acessibilidade selecionados. SHA hipotético da aula `c719adae3464fb56ed2b0ad7014e0721c0aab2da444fb484ec0b40c5c0c8fbd4`; formulário `949c44fc5b96703929770b2881383d449af890616d34b9ab10b998ca96c75749`. Não cria inventário nem mapa r30; a aplicação exige mecanismo próprio, fotografia e auditoria da versão efetiva. O teste não estabelece mérito científico, experiência real de navegação ou conclusão de QA-09.
