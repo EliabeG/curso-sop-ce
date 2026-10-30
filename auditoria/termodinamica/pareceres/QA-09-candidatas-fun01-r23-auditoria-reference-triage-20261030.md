@@ -1,0 +1,19 @@
+# QA-09 — parecer independente das três candidatas FUN-01, r23
+
+Data 30/10/2026. Auditor `/root/reference_triage`; Corretor `/root/next_theory`. **APROVADAS as três candidatas isoladas**, limitadas ao contêiner `fun01-preparacao-equilibrio` e à fotografia r23. Não aprovam aplicação, demais artigos ou QA-09 integral.
+
+## Exame científico
+
+- **Gases:** explicita mistura de gases ideais, temperatura absoluta e pressões parcial e de referência positivas, além da mesma convenção de estado padrão na comparação. A fórmula e o exemplo ficam no domínio apresentado na [aula MIT 3.020, pp. 2–3](https://ocw.mit.edu/courses/3-020-thermodynamics-of-materials-spring-2021/mit3_020s21_l13.pdf), consultada em 30/10/2026. As duas pressões parciais de A permanecem 20 kPa, dando diferença de potencial zero; isso não comprova equilíbrio de B.
+- **Líquido:** declara líquido puro, homogêneo, incompressível e isotérmico; identifica M como massa molar da substância, ρ como densidade de massa, g uniforme e z para cima. Nessas condições V̄=M/ρ, dμ=V̄dp e dp/dz=−ρg levam a d(μ+Mgz)/dz=0. O contramodelo anterior de espécie em mistura, para o qual MA/ρ=6 cm³/mol e V̄A=10 cm³/mol, fica fora desse domínio.
+- **Gravidade:** distingue F=U−TS intrínseca de Ftotal=F+Egrav, usa μ̃=μ+Mgz na transferência infinitesimal permitida e explica o cancelamento se as contribuições gravitacionais forem iguais. Evita somar duas vezes a energia gravitacional e mantém a distinção entre ponto estacionário e mínimo. No contraste anterior Δμintrínseco=−1 e MgΔz=+2 J/mol, o termo total é +1 J/mol. O [critério de potenciais de Tong, §4.4](https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S4.html#S4.SS4) foi consultado em 30/10/2026; o termo externo segue da convenção definida no curso. A presente avaliação não modifica ou reaprova automaticamente o problema aberto subsequente.
+
+## Identidade e combinação
+
+Fotografia r23 SHA `f847c5be0640039f1f6090407fc37f39b7833c7a97f1e5958d77f78e884ce85d`; inventário SHA `ae7cfa82b64f1118ed292f5c9e4d42cdf6f5871db8b13598b16506bf382a905e`; contêiner original UTF-16 107020–111548 SHA `6a58642fcfbbe49b936c53ea8be9c679fa45607ac3e200fcaf836e12bd1c7a2e`. As três candidatas são versões alternativas do **mesmo bloco original**, não três blocos que possam ser substituídos sucessivamente como arquivos inteiros.
+
+Na ordem gases/líquido/gravidade, manifestos SHA `797fe338ed7108cf2e3644868ffea7d7ce900bd88511dff26df8c79c6a996e1c`, `129a789ff993feb9419ea2a327bee46a83fd9acdb595f03d0ddde73a7246b027`, `a6be90eb5c2cc40229f7807bacd90afc5e7d8db9d8807e4c4bdf4e5f5f6e2a61`; análises SHA `23fcfbf972c8948a8dfe9c341b432ec8b7ca1a60e013dd974b2e3620bab417bf`, `fd330cdedd20c3971cd0ec483e2a6ffbb62e94c4bc2e1aef911fd07818093993`, `9e60d078050ce998f3ae14e3956e3616ffe800fe71a0106585146272c5f4f404`.
+
+O [verificador independente](../evidencias/QA-09/auditoria-candidatas-fun01-r23-reference-triage-20261030/verificar.py), SHA `1ed44448629e9dbecac6b4c5621774b7a92c5b902b2508e400b8da10b37b3424`, conferiu individualmente os candidatos e suas seis substituições únicas; as seis faixas originais são disjuntas. Aplicadas todas em memória ao mesmo original, o bloco resultante tem SHA `9e6c7edc5562eba7c10143cd0af90d4b61a8f6398abe96ffb39031e9a5a4e736` e o HTML hipotético combinado SHA `2e59d1d896056ecd05353eefe668bab18b8ab3aa5be89d3284c64aff678805f9`. Permanecem em ordem 197 artigos, 734 MathML, 1.435 href e 1.267 IDs. A simulação não grava produto; contagens por expressões regulares não são ensaio de navegador.
+
+Se forem aplicadas, a junção deve incorporar as seis substituições ao mesmo original e conferir o hash combinado, em vez de gravar as três versões completas uma após outra. A aplicação requer fotografia, reconciliação de inventário e auditoria independente da versão efetiva. Não houve teste com estudantes, leitor de tela ou navegador, nem exame integral das demais seções.

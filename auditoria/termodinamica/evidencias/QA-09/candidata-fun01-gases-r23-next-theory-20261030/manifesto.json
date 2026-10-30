@@ -1,0 +1,27 @@
+{
+  "id": "QA-09-candidata-fun01-gases-r23-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-resumo-glossario-r23-r1/resultado/depois-aula.html",
+  "fonte_sha256": "f847c5be0640039f1f6090407fc37f39b7833c7a97f1e5958d77f78e884ce85d",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r23.json",
+  "inventario_sha256": "ae7cfa82b64f1118ed292f5c9e4d42cdf6f5871db8b13598b16506bf382a905e",
+  "ancora": "fun01-preparacao-equilibrio",
+  "inicio_utf16": 107020,
+  "fim_utf16": 111548,
+  "original_sha256": "6a58642fcfbbe49b936c53ea8be9c679fa45607ac3e200fcaf836e12bd1c7a2e",
+  "candidata_sha256": "99826647c981aeb9787e8d31057800ce0acc653781f91aca4a429c4f07a5cf3b",
+  "substituicoes": [
+    {
+      "antes": "Mistura ideal e logaritmo.",
+      "depois": "Mistura de gases ideais e logaritmo."
+    },
+    {
+      "antes": "A pressão parcial de A é p_A = y_Ap. A relação do modelo é μ_A = μ_A°(T) + RT ln(p_A/p°).",
+      "depois": "A pressão parcial de A é p_A = y_Ap. Para temperatura absoluta positiva, pressão parcial p_A &gt; 0 e pressão de referência p° &gt; 0, a relação para gases ideais é μ_A = μ_A°(T) + RT ln(p_A/p°), com a mesma convenção de estado padrão ao comparar estados."
+    },
+    {
+      "antes": "Dois reservatórios grandes de mistura ideal, à mesma temperatura, apresentam:",
+      "depois": "Dois reservatórios grandes de mistura de gases ideais, à mesma temperatura, apresentam:"
+    }
+  ]
+}
