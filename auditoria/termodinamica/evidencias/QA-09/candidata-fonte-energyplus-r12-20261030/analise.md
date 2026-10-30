@@ -1,0 +1,19 @@
+# QA-09 — candidata para o vínculo EnergyPlus 24.1 em E1
+
+Data: 30/10/2026. Corretor automatizado `/root/reference_triage`. **Candidata isolada, não aplicada; aguarda auditoria independente.** A presente proposta resolve a disponibilidade observada de um vínculo da seção `fontes`; não encerra QA-09 nem autoriza alterar outros módulos.
+
+## Observação e identificação
+
+O índice 685 da coleção `referencias` em r12 aponta para `https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v24.1.0/EngineeringReference.pdf`, com título “EnergyPlus — balanço de CO₂, Engineering Reference, seção 2.5”. Em 30/10/2026, a abertura direta desta URL pela ferramenta de pesquisa web respondeu **HTTP 404**. A consulta de índice ainda apresenta conteúdo atribuído ao mesmo URL: não a considero leitura direta atual do PDF nem prova de indisponibilidade em todos os ambientes.
+
+O fragmento `<a>` original ocorre uma vez na aula, em `#fontes`, UTF-16 1300618–1300820. Aula SHA-256 `f76c39a3e1d8c349ebf0df72cc20a3ab21c68960c8451799bad90a9dcc4bd8c7`; inventário r12 SHA-256 `457a56300aab8f612ebb7f136c7c2f62520abb49c005c209a238925179248d0e`. O elemento original tem SHA-256 `478506a79ba58dcafb2637025e844fd8c3767f6e1146e634430ed01ca6747e5a`; a candidata `b7514dac2be1dfdb41a8751e56764c7bbab727e2c8f66e81bffd459c8b5b528e`. Estes hashes não incluem a quebra de linha final dos arquivos isolados. O [manifesto](manifesto.json) registra a base e os detalhes.
+
+## Destino candidato e alcance
+
+A candidata altera somente o `href` para a [seção Carbon Dioxide Predictor-Corrector da Engineering Reference, EnergyPlus 24.1](https://bigladdersoftware.com/epx/docs/24-1/engineering-reference/carbon-dioxide-predictor-corrector.html), mantendo integralmente texto visível, `target` e `rel`. A página abriu na ferramenta consultada, identifica explicitamente **Engineering Reference — EnergyPlus 24.1**, e apresenta balanço transiente de CO₂ com geração, acumulação e entradas/saídas, além da conversão de concentração para ppm. O conteúdo indexado da URL original menciona a seção **2.5** e o mesmo balanço; isso sustenta conservar o título, mas não representa confronto do PDF completo disponível por leitura direta. A página candidata é HTML mantida por Big Ladder Software, com crédito de documentação aos responsáveis indicados e licença EnergyPlus, não se alegando que seja o próprio domínio governamental nem um PDF byte a byte igual. É uma fonte técnica de apoio para o modelo; ela não comprova automaticamente os exemplos ou a validade de segurança de qualquer projeto de ventilação.
+
+## Verificações e impacto
+
+`verificar.mjs` é somente leitura e simula o delta em memória. Executado da raiz com `node auditoria/termodinamica/evidencias/QA-09/candidata-fonte-energyplus-r12-20261030/verificar.mjs`, passou: SHA de base e inventário, correspondência de índice/posição/contexto, ocorrência única, hash dos fragmentos, troca exata apenas no URL, atributos preservados, parser sem erro e 197 artigos idênticos na mesma ordem. O SHA do HTML hipotético resultante é `f19000a7ddb1f3552b9633b0efec266fb3f6c5e5065808505a2f65b2005aefbc`. É simulação, não aplicação, teste de navegador real ou validação do recurso externo pelo script.
+
+O endereço antigo também ocorre em `modulos/a4-qai-pmoc-comissionamento.html`; esse módulo está fora do escopo E1 e não é alterado por esta proposta. A mudança, se aplicada a E1, altera o SHA integral do HTML, desloca posições posteriores em UTF-16 e muda um registro de referência; exige inventário e mapa novos, validação dos vínculos, reconciliação e reavaliação dos aceites afetados, incluindo a identificação dos 197 artigos e o controle. O Auditor independente deve reabrir o URL e conferir conteúdo e título, identificar seus limites, confrontar as duas versões dos fragmentos e decidir sobre eventual aplicação; após ela, outra auditoria deve examinar o resultado efetivo. Não foi feita revisão humana, ensaio com estudantes ou certificação externa.

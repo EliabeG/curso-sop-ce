@@ -1,0 +1,17 @@
+# QA-09 — auditoria independente da candidata de referência EnergyPlus 24.1
+
+Data: 30/10/2026. Auditor automatizado `/root/next_theory`; Corretor `/root/reference_triage`. **Veredito localizado: APROVADA a candidata isolada para o vínculo de E1 na fotografia r12**, com as limitações de equivalência e acesso abaixo. Não houve aplicação ao produto nem aprovação global de QA-09.
+
+## Fonte e identidade
+
+Reabri o [PDF da URL original EnergyPlus 24.1](https://energyplus.net/assets/nrel_custom/pdfs/pdfs_v24.1.0/EngineeringReference.pdf) pela ferramenta web: a leitura direta retornou HTTP 404 nesta consulta. A busca indexada da mesma URL ainda expõe o título “2.5 Carbon Dioxide Predictor-Corrector” e a equação do balanço de massa, mas é material indexado, não acesso direto ao PDF completo nem prova de falha em todo ambiente.
+
+A [página candidata](https://bigladdersoftware.com/epx/docs/24-1/engineering-reference/carbon-dioxide-predictor-corrector.html) foi aberta diretamente; identifica “Engineering Reference — EnergyPlus 24.1” e “Carbon Dioxide Predictor-Corrector”. A equação apresentada contém acumulação, geração, trocas entre zonas, infiltração e ventilação e suprimento do sistema, com explicação do fator 10⁶ para ppm. Esses termos e a seção coincidem no trecho indexado do PDF antigo. Isso apoia a referência ao balanço de CO₂ e a manutenção de “seção 2.5” pelo vínculo com a versão PDF indexada. A página HTML não apresenta o número no título, está hospedada por Big Ladder Software e não demonstrei equivalência integral ou identidade byte a byte com o PDF. Ela é fonte de modelo técnico, não comprovação automática de segurança de projeto, valores dos exemplos ou de requisitos normativos.
+
+## Delta e impacto
+
+Base HTML r12 SHA-256 `f76c39a3e1d8c349ebf0df72cc20a3ab21c68960c8451799bad90a9dcc4bd8c7`; inventário r12 `457a56300aab8f612ebb7f136c7c2f62520abb49c005c209a238925179248d0e`. Manifesto da candidata SHA-256 `fb830c7f5b423b1c8e0ffb202af294de1261b0bdc1a90ca9c5871dee917dfaa1`, análise `2261760af3457fcea1afa2545cfd7a3179132c86fe8349b136d48676139b450d`. O índice 685 da coleção de referências é a única referência ao URL original no HTML de E1, seção `fontes`, intervalo UTF-16 1300618–1300820. Fragmento original SHA-256 `478506a79ba58dcafb2637025e844fd8c3767f6e1146e634430ed01ca6747e5a`, candidato `b7514dac2be1dfdb41a8751e56764c7bbab727e2c8f66e81bffd459c8b5b528e`.
+
+A conferência própria `evidencias/QA-09/auditoria-candidata-fonte-energyplus-r12-20261030/verificar.mjs`, SHA-256 `4ae304f5780c4ab39ca6a8cf040d5157e2de0855096c56f6fde7142dc461a565`, passou: ocorrência e intervalo conferem, e a substituição do URL produz exatamente o fragmento candidato, preservando texto, target e rel. Simulação em memória preserva 197 artigos e os 734 elementos MathML de E1 byte a byte; o HTML hipotético tem SHA-256 `f19000a7ddb1f3552b9633b0efec266fb3f6c5e5065808505a2f65b2005aefbc`. O verificador do Corretor também passou. A alteração estrita de URL não modifica conteúdo matemático ou artigos na simulação; isso não é teste em navegador nem avaliação integral de acessibilidade ou de todas as referências.
+
+O mesmo URL aparece em `modulos/a4-qai-pmoc-comissionamento.html`, fora do escopo desta candidata. Uma eventual aplicação em E1 requer nova fotografia, mapa e reconciliação de deslocamentos e referências, validação de vínculos e das dependências relevantes e auditoria independente da versão efetivamente aplicada. Não se presume encerramento de QA-09 ou liberação de outro ID.

@@ -1,0 +1,7 @@
+// Apenas leitura: verifica identidade na fotografia r12, não consulta rede.
+import fs from 'node:fs';import assert from 'node:assert/strict';import {parseHtml,sha256} from '../../../inventario/validar-inventario.mjs';
+const html=fs.readFileSync('modulos/e1-termodinamica.html','utf8');const idxBytes=fs.readFileSync('auditoria/termodinamica/evidencias/QA-09/inventario-r12.json');const data=JSON.parse(fs.readFileSync('auditoria/termodinamica/evidencias/QA-09/referencias-propriedades-r12-20261030/identidades.json'));
+assert.equal(sha256(html),'f76c39a3e1d8c349ebf0df72cc20a3ab21c68960c8451799bad90a9dcc4bd8c7');assert.equal(sha256(idxBytes),'457a56300aab8f612ebb7f136c7c2f62520abb49c005c209a238925179248d0e');
+const j=JSON.parse(idxBytes),tree=parseHtml(html);assert.deepEqual(tree.errors,[]);assert.deepEqual(data.map(r=>r.indice),[671,678,679,683,684,685,686,687]);
+for(const item of data){const {indice,sha256_elemento,...expected}=item;assert.deepEqual(j.referencias[indice],expected);let matches=tree.nodes.filter(n=>n.start===item.inicio_utf16&&n.end===item.fim_utf16);assert.equal(matches.length,1);let node=matches[0];assert.equal(node.tag,'a');assert.equal(node.attrs.href,item.valor);assert.equal(sha256(html.slice(node.start,node.end)),sha256_elemento);}
+console.log(JSON.stringify({ok:true,documento_sha256:sha256(html),inventario_sha256:sha256(idxBytes),referencias_verificadas:data.length,limites:'Identidade apenas; fontes externas, conteúdo, licença e disponibilidade não são avaliados pelo script.'},null,2));
