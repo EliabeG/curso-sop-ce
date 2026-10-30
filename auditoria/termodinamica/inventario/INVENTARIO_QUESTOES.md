@@ -446,3 +446,8 @@ Aplicadas candidatas aprovadas de notação e das fichas 61/80; fotografia efeti
 ## QA-09 — modelos de mistura e fase na fotografia r20
 
 Foram explicitados o balanço sensível em mistura térmica e o domínio do calor latente na etapa de fase. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — EX-046 e entropia da oficina na fotografia r21
+
+Foram explicitados a alimentação elétrica e o balanço de EX-046, e a fronteira da geração total de entropia na oficina. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
