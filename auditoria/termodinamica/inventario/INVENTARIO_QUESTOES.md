@@ -456,3 +456,8 @@ Foram explicitados a alimentação elétrica e o balanço de EX-046, e a frontei
 ## QA-09 — radiação, geração e D14 na fotografia r22
 
 Foram explicitadas condições da razão radiativa e o balanço de energia de geração térmica, incluindo a entrada elétrica em D14. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — resumo e glossário na fotografia r23
+
+Foram delimitados os modelos e bases no resumo e no glossário. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
