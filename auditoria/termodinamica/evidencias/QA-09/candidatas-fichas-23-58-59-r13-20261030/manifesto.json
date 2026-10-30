@@ -1,0 +1,43 @@
+{
+  "estado": "CANDIDATAS_ISOLADAS_NAO_APLICADAS",
+  "formulario_sha256": "5f3f31a4801f96a2b78b40c75d37392f6b16d264901ac313ac00458901970285",
+  "inventario_r13_sha256": "0df99b79bcc2350581fcdded72435d30d07858de237a549e6228ca73682f8d9b",
+  "itens": [
+    {
+      "ficha": 23,
+      "ancora": "formula-latente",
+      "inicio_utf16": 56223,
+      "fim_utf16": 58799,
+      "antes": "Vaporização completa de substância pura, de líquido a vapor saturados, a pressão fixa. Para Q: massa fechada, só trabalho pV. Para Q̇: escoamento permanente sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. Despreze variações cinética e potencial.",
+      "depois": "Vaporização completa de substância pura, de líquido a vapor saturados à mesma pressão termodinâmica p constante; hfg ≠ 0 para dividir. Para Q: sistema fechado, apenas trabalho de fronteira Wb = p(V₂ − V₁), sem outros trabalhos. Para Q̇: escoamento permanente sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. Despreze variações cinética e potencial.",
+      "original_sha256": "10cb9a203a56b482dac63cab1522161fb11cfd394ec7e3eefee31d04648e1a64",
+      "candidata_sha256": "71c1e3a992175f1c13cba14c580eaf250db6f5f147647932ef4c8f1ab3269a86",
+      "original_arquivo_sha256": "cb06f29e24293976052d8c005f1a75e0b987535bee9d01117afcbf8c1b2ff329",
+      "candidata_arquivo_sha256": "4ed46cb91706838cd46c2eefe60a6954185b4385d1dfbf479d1a4e7dd2c21627"
+    },
+    {
+      "ficha": 58,
+      "ancora": "formula-eficiencia",
+      "inicio_utf16": 138333,
+      "fim_utf16": 140436,
+      "antes": "QH e QL são magnitudes positivas do mesmo ciclo.",
+      "depois": "Mesmo ciclo e fronteira: QH é todo o calor recebido e QL todo o rejeitado, como magnitudes positivas. Para regime motor, Wliq &gt; 0. Não se restringe a dois reservatórios se QH e QL forem os totais.",
+      "original_sha256": "31fea25b43068a922c54a0337fd555bc3e3f4d51e5e13459f7ad7fe6b7bccc3c",
+      "candidata_sha256": "da5eccabb02eb33c3b689a5eb1dbf8b8a403f5680c96178d97811b07ff61315f",
+      "original_arquivo_sha256": "92d09ca9b5fec6c09488922aef3d690414d0c5ec5d6cbafa4df3d2143ac8ad1b",
+      "candidata_arquivo_sha256": "1a021f27b493f4c5bf07bc359fe52862a554436909ed92b8554c55b76bb6fd15"
+    },
+    {
+      "ficha": 59,
+      "ancora": "formula-cop-refrigerador",
+      "inicio_utf16": 140436,
+      "fim_utf16": 142098,
+      "antes": "Mesmo ciclo e fronteira; COP é adimensional e pode exceder 1.",
+      "depois": "Refrigerador acionado por trabalho, sem outra fonte de energia de acionamento; QL e Win na mesma fronteira e período, com Win &gt; 0. COP é adimensional e pode exceder 1.",
+      "original_sha256": "ae1dc353774cdcd213ba7b321b476e07b227bdc253c92b897df849cabef51d2e",
+      "candidata_sha256": "01431774d85f42da5c9e5432875512a5ecba403b9b36c82bc403547045ec8f3b",
+      "original_arquivo_sha256": "97bbe3015d566676e972359ee50dad90b6f48c8a819cd7d5c2600b0f66f19f9c",
+      "candidata_arquivo_sha256": "0e65fcce05848a73be768f6c7d0c7960896302831613d25ba03ef91137efbdb6"
+    }
+  ]
+}

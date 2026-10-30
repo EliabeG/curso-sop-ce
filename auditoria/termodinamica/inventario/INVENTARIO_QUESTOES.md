@@ -411,3 +411,13 @@ O parágrafo da solução diferencia redundância ρ/v de afirmação sobre a or
 ## QA-09 — vínculo EnergyPlus 24.1 e condições em fichas 88/99
 
 O vínculo de CO₂ foi atualizado para a seção HTML correspondente do EnergyPlus 24.1, e as fichas 88/99 tiveram hipóteses de regime permanente e de fontes térmicas explicitadas. Os 197 artigos e registros individuais foram preservados. Aplicação sujeita a auditoria independente e revalidação localizada; QA-09 integral continua em correção.
+
+
+## QA-09 — aplicação conjunta de seis candidatas na fotografia r14
+
+Foram explicitadas as hipóteses nas fichas 23, 58 e 59 e na base de eficiência isentrópica, identificadas as entalpias do diagnóstico 23 e contextualizada a referência OpenStax com contraponto MIT. Os 197 artigos e seus registros individuais foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral permanece aberto.
+
+
+## QA-09 — referência WIKA na fotografia r15
+
+O endereço WIKA da lista de fontes foi atualizado à página brasileira dos modelos 111.16 e 111.26. Os 197 artigos e seus registros individuais foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral permanece aberto.
