@@ -431,3 +431,8 @@ Aplicadas cinco candidatas aprovadas na aula e no formulário; fotografia efetiv
 ## QA-09 — aplicação intercooling r17, 30/10/2026
 
 Aplicada candidata aprovada em teoria; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver evidências em `auditoria/termodinamica/evidencias/QA-09/aplicacao-intercooling-r17-r1/`.
+
+
+## QA-09 — quatro correções localizadas na fotografia r18
+
+Foram explicitados balanços na ficha 60 e no exemplo 027, o efeito líquido de calor e trabalho na primeira lei e a temperatura local de fronteira na entropia de escoamento. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
