@@ -1,0 +1,24 @@
+{
+  "id": "QA-09-candidata-radiacao-pontes-r21-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-oficina-ex046-r21-r1/resultado/depois-aula.html",
+  "fonte_sha256": "239fb6d9f307170adbb74e389b798d1ff3c9b8e0d8d2d6d874457b8a65f40238",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r21.json",
+  "inventario_sha256": "d1d480c1c4ce0a31f9f4f0b8bf234be60c9867feae9336fbeefb06162e2826f1",
+  "ancora": "base-radiacao-vacuo",
+  "diagnostico": null,
+  "inicio_utf16": 455901,
+  "fim_utf16": 458431,
+  "original_sha256": "a6cd5681c17a5440d2f6ecb9f60e59119f0d0c1f6feb9ee5a85293aa3ce10e19",
+  "candidata_sha256": "e3994818145ff1ef936119c9f20272d4aac70012004d0628e3dca62ab1fdc8e2",
+  "substituicoes": [
+    {
+      "antes": "Com área, temperaturas e geometria mantidas nesse modelo, mudar ε de 0,60 para 0,30 deixa a perda radiativa em 50% da anterior.",
+      "depois": "Com área, temperaturas e geometria mantidas nesse modelo e superfície mais quente que o entorno, mudar ε de 0,60 para 0,30 deixa a perda radiativa em 50% da anterior."
+    },
+    {
+      "antes": "Além de manter esses fatores, é preciso manter as hipóteses de troca.",
+      "depois": "Além de manter esses fatores e as hipóteses de troca, a taxa líquida inicial deve ser diferente de zero para que essa razão esteja definida. Se as temperaturas forem iguais, a troca líquida é zero em ambos os casos e a razão das taxas não está definida."
+    }
+  ]
+}

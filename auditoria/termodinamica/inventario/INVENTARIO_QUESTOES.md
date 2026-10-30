@@ -451,3 +451,8 @@ Foram explicitados o balanço sensível em mistura térmica e o domínio do calo
 ## QA-09 — EX-046 e entropia da oficina na fotografia r21
 
 Foram explicitados a alimentação elétrica e o balanço de EX-046, e a fronteira da geração total de entropia na oficina. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — radiação, geração e D14 na fotografia r22
+
+Foram explicitadas condições da razão radiativa e o balanço de energia de geração térmica, incluindo a entrada elétrica em D14. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
