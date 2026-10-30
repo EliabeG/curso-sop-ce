@@ -1,0 +1,26 @@
+{
+  "base_sha256": "2d6b8fb2f9c99e04d22c19d7b32bbc3eb20577459d9132e506f9c0acef3f2fc2",
+  "inventario_sha256": "023c942e7a9fe65a38b28a0cf8db36a97fd5aa204e68215feaeb56ef168f863d",
+  "edicoes": [
+    {
+      "id": "combustao",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "inicio_utf16": 199954,
+      "fim_utf16": 200230,
+      "original_sha256": "6b0690f2cc7a68ed2c8d7d98d96cb65a3ffbb96d1e2f8f252c4fda062cac5d9e",
+      "candidata_sha256": "8de3b4d51c7ee7b3c55b4379526741a86a95f4ce14f5ca00fe0ad178a1c53bb5",
+      "origem": "Em pressão constante, havendo somente trabalho de expansão e condições adequadas ao balanço, Q = ΔH.",
+      "substituicao": "Em sistema fechado, com pressão termodinâmica p constante, variações de energia cinética e potencial desprezíveis e apenas trabalho de fronteira W = p(V₂ − V₁), segue Q = ΔH. A pressão que determina esse trabalho deve coincidir com a pressão p usada na entalpia."
+    },
+    {
+      "id": "vaporizacao",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "inicio_utf16": 405901,
+      "fim_utf16": 406892,
+      "original_sha256": "f54d7722c520f14cf734a7308366e8efe9c15c2954e7aa2727a8fbc2f95ad5d3",
+      "candidata_sha256": "04d26bdf44bfacbbaceff77f777a94f9b9ae8eaf825fb518f0dcec2ccaafc45a",
+      "origem": "a pressão constante, com apenas trabalho de fronteira pV e variações cinética/potencial desprezíveis, Q = ΔH",
+      "substituicao": "a pressão termodinâmica constante p, com apenas trabalho de fronteira W = p(V₂ − V₁) e variações cinética/potencial desprezíveis, Q = ΔH"
+    }
+  ]
+}

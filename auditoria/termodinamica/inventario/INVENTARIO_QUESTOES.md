@@ -397,3 +397,12 @@ Aplicação de candidatas revisadas; os 197 artigos e registros individuais fora
 ## QA-09 — aplicação localizada em flashcards, resumo e ficha 80
 
 Foram esclarecidas hipóteses em sete trechos de revisão e na ficha 80. Os 197 artigos e registros, 99 fichas não alvo e MathML do formulário foram preservados na verificação estática. Esta aplicação requer auditoria independente e não encerra QA-09.
+
+## QA-09 — aplicação localizada das hipóteses de pressão e fichas 40/67
+
+Foram esclarecidas hipóteses em trechos da aula e nas fichas 40/67. Os 197 artigos e registros, as 98 fichas não alvo e MathML do formulário foram preservados na verificação estática. Esta aplicação requer auditoria independente e não encerra QA-09.
+
+
+## QA-09 — FUN-01 P3: redação sobre origem das colunas
+
+O parágrafo da solução diferencia redundância ρ/v de afirmação sobre a origem instrumental dos dados; enunciado, dados e rubrica são preservados. Atualizou-se apenas o hash do artigo P3 no inventário oficial. A aplicação está sujeita a auditoria independente da versão efetiva e revalidação localizada de FUN-01, BAN-02, BAN-07 e BAN-08. QA-09 integral continua em correção.

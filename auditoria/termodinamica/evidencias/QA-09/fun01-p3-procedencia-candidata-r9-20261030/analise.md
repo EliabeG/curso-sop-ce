@@ -1,0 +1,21 @@
+# QA-09 — candidata isolada de procedência em FUN-01 P3
+
+Data: 30/10/2026. Corretor automatizado `/root/next_graphics`. **Candidata não aplicada; aguarda revisão independente.** A entrega responde ao parecer `QA-09-fun01-p3-procedencia-auditoria-independente-20261030.md`, veredito localizado AJUSTES OBRIGATÓRIOS. Nenhum HTML do curso ou inventário foi modificado nesta preparação.
+
+## Proposta e motivo
+
+Na solução de `fun01-e1-supercritico`, o enunciado apresenta colunas ρ e v=1/ρ produzidas pelo mesmo sensor; a relação torna as grandezas termodinamicamente dependentes, mas não documenta necessariamente o caminho de aquisição ou de cálculo interno. A frase atual “A identidade v=1/ρ torna essas duas colunas redundantes; uma é calculada da outra.” passa a “A identidade v=1/ρ torna essas duas colunas redundantes; uma pode ser calculada a partir da outra, sem que isso determine como as medições foram obtidas.”
+
+A redação preserva a igualdade exata e a redundância matemática. Não alega que ambas foram medidas de maneira independente nem que uma foi de fato calculada; diz que uma pode ser obtida da outra e que o procedimento instrumental não é demonstrado. Como contramodelo ilustrativo, ρ=800 kg/m³ e v=0,00125 m³/kg são valores nominais recíprocos que podem coincidir mesmo se estimados por princípios físicos diferentes. Isso não transforma as propriedades em coordenadas independentes nem é afirmação sobre o sensor hipotético do exercício. Se fossem valores medidos, a avaliação de consistência metrológica exigiria incertezas, não fornecidas aqui.
+
+## Identidade e simulação
+
+Base: aula SHA-256 `2d6b8fb2f9c99e04d22c19d7b32bbc3eb20577459d9132e506f9c0acef3f2fc2` e inventário r9 `023c942e7a9fe65a38b28a0cf8db36a97fd5aa204e68215feaeb56ef168f863d`. Artigo `fun01-e1-supercritico` em UTF-16 125803–131220, SHA-256 `2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7`; parágrafo em 129564–130109, original fragmento SHA-256 `7b13d7adbb3ec83f676edadbebf7a0246d139ff24bf4931350d7580708b47bd9`, candidata `ce23ebfff83d3172e72046551cf365a967a098b0640c01acb56480154ccd7015`. `original.html` e `candidata.html` terminam em uma quebra de linha que é excluída desses hashes; o [manifesto](manifesto.json) registra texto, limites e versão.
+
+`node auditoria/termodinamica/evidencias/QA-09/fun01-p3-procedencia-candidata-r9-20261030/verificar.mjs` (SHA-256 `2beadeea9234c7f99554c389279a4a21d194ed6dc7407bc134d4f7c07b4bb79a`) lê os dados sem gravação e gera a alteração apenas em memória. Verificou posição/contexto, unicidade, substituição literal e 197 IDs na mesma ordem: 196 artigos não alvo permaneceram idênticos e o artigo alvo foi reproduzido pela única troca. O resultado hipotético tem SHA-256 `8c69945abcdcd44ca8058851c03429f30dbf855ed418eebc567c4f86ab67f09c`. Pela reconstrução exata do artigo, enunciado, dados, campos, respostas restantes e rubrica são preservados na prévia. Isso não constitui teste de navegador, aplicação efetiva ou auditoria independente.
+
+## Impacto e condições para aplicação
+
+O problema é autoral e integra os 197 artigos, inclusive os inventários e revisões BAN-02/BAN-07/BAN-08 e a unidade FUN-01; não é transcrição nem gabarito de prova oficial. Uma edição real altera o hash do artigo alvo e o SHA do HTML; a coordenação deve atualizar o `fonte` do inventário oficial e a identidade/hash do item `fun01-e1-supercritico`, preservando os outros 196 registros e artigos, e refletir a revisão no inventário humano onde necessário. É preciso conferir os efeitos sobre os pareceres FUN-01/BAN-02/BAN-07/BAN-08 e evidências vinculadas, com revalidação localizada do conteúdo e dependências efetivamente afetados; não se transfere automaticamente o aceite de nenhum hash anterior.
+
+As posições r9 posteriores ao trecho deslocarão: congelar r9 e suas evidências, criar fotografia e mapa novos, reconciliar também referências e recursos, e não transferir o ledger por simples igualdade de hash. Após parecer independente favorável à candidata, qualquer aplicação deve revalidar enunciado/rubrica, fonte e integridade dos demais artigos, atualizar registros pertinentes, executar validador estrutural e verificar o comportamento aplicável, seguida de auditoria independente sobre a versão efetiva. Este documento não declara QA-09 concluído ou o próximo ID liberado.
