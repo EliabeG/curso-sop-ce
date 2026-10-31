@@ -77,7 +77,7 @@ A revisão desta rodada confrontou visualmente as Eqs. 7–1 a 7–19 e 7–21 a
 | 7-67 | 373 | Presente | modulos/e1-termodinamica-aprofundamento.html#vapor-bocal |
 | 7-68 | 375 | Equivalente | modulos/e1-termodinamica-aprofundamento.html#aprofundamento-exergia-escoamento — balanço de entropia em taxa com correntes, calor e geração; integral temporal dá a forma finita. |
 | 7-69 | 375 | Presente | modulos/e1-termodinamica-aprofundamento.html#desigualdade-clausius-entropia — definição ΔS=S₂−S₁. |
-| 7-70 | 375 | Equivalente | modulos/e1-termodinamica-aprofundamento.html#balancos-distribuidos — extensão da integral de propriedade extensiva ∫ρφ dV ao caso φ=s. |
+| 7-70 | 375 | Presente | modulos/e1-termodinamica-aprofundamento.html#desigualdade-clausius-entropia — integral ∫ρs dV para entropia armazenada, com equilíbrio local. |
 | 7-71 | 376 | Presente | modulos/e1-termodinamica-aprofundamento.html#desigualdade-clausius-entropia — transferência Q/Tb em contato de temperatura constante. |
 | 7-72 | 376 | Presente | modulos/e1-termodinamica-aprofundamento.html#desigualdade-clausius-entropia — integral δQ/Tb e soma de contatos. |
 | 7-73 | 376 | Equivalente | modulos/e1-termodinamica-aprofundamento.html#aprofundamento-exergia-escoamento — balanço de entropia inclui apenas calor e massa como transferências; trabalho não transporta entropia. |
@@ -148,7 +148,7 @@ A revisão desta rodada confrontou visualmente as Eqs. 7–1 a 7–19 e 7–21 a
 | 8-42 | 446 | Equivalente | modulos/e1-termodinamica-aprofundamento.html#aprofundamento-exergia-escoamento — derivada temporal do balanço, com massa zero e trabalho útil descontando p0 dV/dt. |
 | 8-43 | 447 | Presente | modulos/e1-termodinamica-aprofundamento.html#exergia-fechado — integral (1−T0/Tb)δQ, com trabalho útil e destruição. |
 | 8-44 | 457 | Equivalente | modulos/e1-termodinamica-aprofundamento.html#exergia-massa-fronteira-movel — Balanço em taxa é integrado no tempo, com valores locais; para fronteiras móveis a ressalva de fluxos relativos é essencial. |
-| 8-45 | 457 | Divergência na fonte | modulos/e1-termodinamica-aprofundamento.html#exergia-massa-fronteira-movel — A edição parece repetir a taxa da Eq. 8–46 apesar do texto apresentar versão integrada; o curso distingue formas integradas e de taxa. |
+| 8-45 | 457 | Presente | modulos/e1-termodinamica-aprofundamento.html#exergia-massa-fronteira-movel — A edição repete a forma em taxa da Eq. 8–46; o curso apresenta essa expressão e também a forma integrada. |
 | 8-46 | 457 | Presente | modulos/e1-termodinamica-aprofundamento.html#exergia-massa-fronteira-movel — Balanço em taxa com termo p₀dV/dt; fronteiras abertas móveis requerem fluxos relativos e contabilização da tração. |
 | 8-47 | 457 | Equivalente | modulos/e1-termodinamica-aprofundamento.html#exergia-massa-fronteira-movel — Balanço em taxa reduzido ao regime permanente e VC de volume fixo. |
 | 8-48 | 457 | Equivalente | modulos/e1-termodinamica-aprofundamento.html#exergia-massa-fronteira-movel — Balanço permanente reduzido a uma entrada e uma saída com ṁ único. |
