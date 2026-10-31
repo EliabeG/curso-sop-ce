@@ -1,0 +1,22 @@
+{
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "base_sha256": "2d6b8fb2f9c99e04d22c19d7b32bbc3eb20577459d9132e506f9c0acef3f2fc2",
+  "documento": "modulos/e1-termodinamica.html",
+  "inventario_qa09": "auditoria/termodinamica/evidencias/QA-09/inventario-r9.json",
+  "inventario_sha256": "023c942e7a9fe65a38b28a0cf8db36a97fd5aa204e68215feaeb56ef168f863d",
+  "artigo_id": "fun01-e1-supercritico",
+  "artigo_posicao_utf16": [
+    125803,
+    131220
+  ],
+  "artigo_sha256": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+  "paragrafo_posicao_utf16": [
+    129564,
+    130109
+  ],
+  "original_fragmento_sha256": "7b13d7adbb3ec83f676edadbebf7a0246d139ff24bf4931350d7580708b47bd9",
+  "candidata_fragmento_sha256": "ce23ebfff83d3172e72046551cf365a967a098b0640c01acb56480154ccd7015",
+  "texto_antes": "A identidade v=1/ρ torna essas duas colunas redundantes; uma é calculada da outra.",
+  "texto_depois": "A identidade v=1/ρ torna essas duas colunas redundantes; uma pode ser calculada a partir da outra, sem que isso determine como as medições foram obtidas.",
+  "observacao": "Arquivos isolados incluem quebra final; hashes de fragmento excluem a quebra. Sem modificação da aula."
+}

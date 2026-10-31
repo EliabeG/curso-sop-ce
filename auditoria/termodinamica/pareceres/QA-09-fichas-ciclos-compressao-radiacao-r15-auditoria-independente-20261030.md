@@ -1,0 +1,27 @@
+# QA-09 — auditoria independente de fichas de ciclos, compressão e radiação, r15
+
+Data: 30/10/2026. Auditor automatizado `/root/next_theory`; Corretor `/root/next_formulas`. **Veredito localizado: AJUSTES OBRIGATÓRIOS nas fichas 89 e 90 para identificar os trabalhos e estados; demais cinco sem divergência no escopo.** As contas conferem nos modelos indicados. Não se alterou produto e não se aprova QA-09 integral.
+
+## Identidade e método
+
+Formulário r15 SHA-256 `3ea110fda92c74253b69d89f5a6e62b288aa3bd99db6a51b54a6c67c8af82fce`; inventário `c8c9c3a3e141eba47a16e9f85c69f97c6e8b8a55aab689c6120ef1a0070c9d9c`. Entrega do Corretor SHA `bfdc4d36160291600ae641fa0ba5a61085f3a06670d8d3d71c6e3c9f95d9ce7d`; identidades `948f213048343dc1c83bd584ecdceba6539b4d89b1a6aa2d94065ec3d28322a2`. Li cada cartão, fórmulas MathML, condições e símbolos e reabri as fontes; os recálculos do Corretor foram reproduzidos. Verificador independente somente leitura `evidencias/QA-09/auditoria-fichas-ciclos-compressao-radiacao-r15-20261030/verificar.mjs`, SHA `cf94418ead2723b586e84ac18c0884f07255f43bc8cb9f92f6936dac26e2ff03`, valida identidades e aritmética; passou, assim como o do Corretor. Não é teste em navegador.
+
+## 89 e 90 — limites de trabalho e composição
+
+Em regime permanente com uma entrada e saída, gás ideal de composição fixa, compressão internamente reversível e ΔEc/ΔEp desprezíveis, `∫v dp` representa o trabalho específico **total não associado ao escoamento recebido**. Para apresentá-lo como trabalho de eixo, o cartão deve declarar que não há outros trabalhos não associados ao escoamento e que o trabalho referido é o total de eixo. A 89 diz “trabalho de eixo recebido” sem excluir outras modalidades; a 90 diz apenas “trabalho consumido”, sem o mesmo grau de definição. A 90 deve também declarar mesmo gás/composição fixa, como na 89. Ambas devem identificar p₁ como pressão absoluta de entrada e p₂ de saída, com p₂>p₁>0, na mesma unidade. A 89 já explicita a desigualdade; a 90 dá p absoluto e compressão, mas não associa os índices a cada estado. Isso delimita a interpretação isolada dos cartões e evita tomar a integral como valor de um único acionamento quando há outros.
+
+Contraste algébrico, não projeto de compressor: na isotérmica ideal R=0,287 kJ/(kg·K), T=300 K e p₂/p₁=4, o trabalho total não-fluxo recebido é 119,359944 kJ/kg. Se dois acionamentos de eixo reversíveis fornecerem 89,359944 e 30 kJ/kg respectivamente, o total continua 119,359944, mas o trabalho do primeiro eixo não é a fórmula. Com Q=−119,359944 kJ/kg e Δh=0, o balanço fecha; Δs=−R ln 4 e Q/T=Δs, de modo que não se força geração de entropia positiva por hipótese. O exemplo distingue um componente do total, não pretende demonstrar construção do equipamento. Na politrópica, o mesmo raciocínio distingue a integral de qualquer trabalho individual. [Purdue, ME200, pp. 68–70](https://www.purdue.edu/freeform/me200/wp-content/uploads/sites/29/2023/03/ME-200-Chapter-6.pdf) apresenta a relação para escoamento estacionário internamente reversível; não implica que trabalho de eixo isolado possa ignorar outros trabalhos externos.
+
+O cálculo politrópico para n=1,3 fornece 140,662226 kJ/kg, e n=0,8 fornece 100,872425 kJ/kg, ambos positivos para razão de pressão 4. A isotérmica dá 119,359944 kJ/kg. As duas expressões são corretas no domínio e convenção apropriados; internamente reversível não precisa ser adiabático.
+
+## Outras fichas
+
+| Número | Resultado localizado |
+|---|---|
+| 70 | Para gás ideal de composição fixa com cp e cv constantes e k=1,4, a relação isentrópica dá T₂=300×4^(2/7)=445,7983 K. As três fórmulas e seus expoentes MathML conferem. Isentropia de estados não prova que um processo real seja adiabático reversível. [NASA Glenn](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/isentrophic-compression/). |
+| 81 | Brayton simples ideal, duas isentrópicas e duas isobáricas, ciclo motor com calor positivo: para rp=8 e k=1,4, η=0,447955. Expoente `(k−1)/k` no MathML está correto. |
+| 82 | Otto **ar-padrão ideal** com cp/cv constantes é o modelo convencional com compressão e expansão isentrópicas e adição/rejeição isocóricas. O nome completo e a condição do cartão delimitam esse modelo; explicitar todas as quatro etapas seria esclarecimento útil, não considero ajuste obrigatório. Para r=8 e k=1,4, η=0,564725. |
+| 83 | Diesel ar-padrão com compressão/expansão isentrópicas, adição isobárica e rejeição isocórica; r>1, 1<rc<r e k>1 excluem a divisão indeterminada. Para r=18, rc=2 e k=1,4, η=0,631578. As relações 81–83 e hipóteses são confrontadas com [MIT OCW, equações 5.35, 5.36 e 5.122](https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/mitres-2-008su22_book.pdf); os números do curso não provêm da fonte. |
+| 96 | εσA(Ts⁴−Tamb⁴) é compatível com superfície cinza uniforme vendo entorno grande aproximadamente negro em meio não participante; fluxo positivo de superfície ao entorno. Com ε=0,8, σ=5,67×10⁻⁸, A=2 m², Ts=500 K e Tamb=300 K, Q̇=4935,168 W; sinal se inverte se Ts<Tamb. [NIST/NBS, seção A3](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir74-366.pdf) trata de troca radiativa em um caso específico; não generaliza a geometria arbitrária. |
+
+Os valores são fictícios e nominais. O ajuste requer candidata isolada, revisão independente e, caso aplicada, nova fotografia, mapa e auditoria do resultado. Não houve teste em navegador, leitor de tela, estudantes, revisão humana ou certificação externa. As conclusões não abrangem outras fichas ou toda a aula.

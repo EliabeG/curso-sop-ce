@@ -1,0 +1,11 @@
+# QA-09 — candidata isolada do resumo, r22
+
+30/10/2026. Corretor `/root/next_theory`. **Não aplicada; aguarda auditor independente.** Responde ao [parecer de resumo e glossário](../../../pareceres/QA-09-teoria-resumo-glossario-r22-auditoria-next-formulas-20261030.md).
+
+O quadro passa a explicitar: uma entrada e uma saída na turbina e na válvula; w da turbina como trabalho total não associado ao escoamento por massa; ausência de trabalho não associado ao escoamento na válvula. Para η, QH é todo o calor externo recebido positivo na fronteira e no ciclo, no modelo de única fonte quente. Para COP_R, W é o trabalho líquido total recebido positivo na mesma fronteira e ciclo, com acionamento por trabalho sem outra entrada energética de acionamento relevante. Carnot é operação motora reversível entre dois reservatórios, TH>TL>0. As equações, MathML, unidades e links permanecem.
+
+Contrastes da auditoria: múltiplas saídas com potência total 600 kW por entrada de 2 kg/s dão w=300 kJ/kg, em vez de 500 quando uma saída é ignorada; máquina com entradas térmicas 1000 e 500 kJ e trabalho 500 kJ tem rendimento 1/3, não 1/2. Ambas são contas hipotéticas e não uma instalação comprovada. Se W=0, COP_R não está definido. [MIT, energia em escoamento](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm); [MIT, ciclos de potência](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_5.htm).
+
+Fotografia r22 SHA `ddf6edd271e38eb318ff1756cfa60f5bc8632882357de2401c114479cb3a432f`; inventário SHA `6e68d5a9e5cfec73aa2a5ce24121ede1c3a155ca2a5783cf6f17ca95eee8061b`. Seção `resumo` UTF-16 1288716–1303056; original SHA `8e6bd15a3ad0e2371f0b088a481356160cc4a97171cfe30a8cceff480479f0bf`; candidata SHA `86b19db1acabe79adfc53f4b1226f5ff1c0b2c14d9018bd9a4b29d94a71e0809`. Arquivos isolados possuem quebra final excluída dos hashes; manifesto registra oito substituições literais.
+
+`node auditoria/termodinamica/evidencias/QA-09/candidata-resumo-r22-next-theory-20261030/verificar.mjs` passou: simulação em memória preserva 197 artigos, todos os 734 MathML e atributos inspecionados de IDs, links e ARIA; SHA do HTML hipotético `cae763b72459f12fc6bef8f3120b94e05192f09ed25eb6fad554194bc45a7317`. O teste não substitui revisão científica independente nem experiência de navegador. Qualquer aplicação exige reconciliação, fotografia e auditoria efetiva.

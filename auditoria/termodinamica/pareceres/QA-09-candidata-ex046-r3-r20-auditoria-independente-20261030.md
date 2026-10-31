@@ -1,0 +1,19 @@
+# QA-09 — auditoria independente da candidata EX-046 r3 sobre r20
+
+30/10/2026. Auditor `/root/planning`, distinto do Corretor `/root/next_examples`. **Parecer: APROVADA ISOLADAMENTE a candidata r3 para aplicação na fotografia identificada**, condicionada à execução protegida e auditoria própria da versão efetiva. Esta revisão não aplica o produto, não encerra QA-09 e não transfere aceites automaticamente.
+
+## Histórico e identidade
+
+A candidata inicial descrevia regime permanente de energia total e somente saída térmica, sem fonte energética atravessando a fronteira; geração térmica interna não cria energia total. O Corretor interrompeu sua aplicação. A r2 sofreu colisão de edição entre agentes: análise e arquivos efetivos exibiam hashes diferentes dos comunicados. Sua pasta ficou preservada no estado encontrado, mas a revisão anterior substituída não é recuperável a partir dela; não se confere aprovação ao pacote inconsistente. A r3 foi preparada em novo diretório e esta análise concerne exclusivamente a seus arquivos atuais.
+
+Aula r20 `b05a68731a6975755c0030c524e7915d7833aacb176f680b3890fe82efc803e7`, inventário r20 `e548f61cde56f676dd0c670924bd58e7012a2f80229231de6560cbb55831adf4`. Fragmento original SHA `d7fc82a69bdc4bf9a24cebbd6665e2697f1a92dfa3869da604cab37adf6fa8c3`, UTF-16 [460570,461005); candidata r3 `b4d9dafa1f27c766cc44a698709d74f5fbe3ee09cc587c8def6e0709e2f36c55`, manifesto `a453b56ec947c4d536ab7656543304afcb279acbb52a679cd95950a1dbc221e6`, análise `cb8901f6a5ed42afe9d3c0812ca4132316ac1e715cfc1193ff88413094e61428`. Os fragmentos não acrescentam quebra final. Executei o verificador do Corretor somente em leitura e meu verificador `auditoria/termodinamica/evidencias/QA-09/auditoria-candidata-ex046-r3-independente-20261030/verificar.py`, SHA `455a8e6db3dd55350cc02216c826529742673f66392b7504d16059ec8a23488f`: a substituição única em memória gera aula hipotética `f7b7a2c23f5e5704bd4d6c456fc431008f9261160a3300128df7a14f13008d24`, com 197 artigos e 734 MathML preservados. Não houve gravação do produto.
+
+## Ciência e suficiência
+
+A candidata especifica bloco fechado em regime permanente de energia total, trabalho elétrico de 1200 W entrando e totalmente convertido na geração térmica uniforme q‴, única saída térmica por convecção na face exposta de temperatura uniforme e nenhuma outra transferência de energia. A geração térmica é conversão da **mesma** alimentação elétrica, não uma segunda entrada para o balanço total.
+
+O volume é 3×2×1=6 m³, a área exposta 3×2=6 m² e a conversão térmica q‴V=200×6=1200 W. Com coeficiente 20 W/(m²·K) e ambiente a 20 °C, 1200=20×6×(Ts−20), logo Ts=30 °C. Para Q̇ positivo entrando e Ẇ positivo saindo, Q̇=−1200 W e Ẇ=−1200 W dão dE/dt=Q̇−Ẇ=0. Em balanço de energia térmica, a mesma energia aparece como q‴V e fecha com a saída de 1200 W; não se soma novamente o trabalho elétrico à geração. Um outro aporte de 120 W dissipado e não incluído no valor dado produziria Ts=31 °C, mas é excluído pela r3. O tratamento não indica medição ou validação de equipamento real.
+
+A r3 sana o achado: identifica a fonte energética, a fronteira e a hipótese que permite o resultado original, sem contar duas vezes a alimentação. A [primeira lei MIT](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_4.htm) sustenta o balanço total e [DOE, aquecimento elétrico por resistência](https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/FINAL%20Industrial%20Electrification%20Booklet.pdf) exemplifica conversão elétrica em energia térmica; os números do exercício são hipotéticos, não extraídos dessas fontes.
+
+A futura aplicação deve usar os hashes desta r3, a versão r20 e os demais pareceres de sua composição, congelar fotografia e mapa e obter auditor distinto da versão efetiva e dos impactos. Não houve navegador real, leitor de tela, alunos, revisão humana ou certificação externa; aceites antigos não são automaticamente transportados.

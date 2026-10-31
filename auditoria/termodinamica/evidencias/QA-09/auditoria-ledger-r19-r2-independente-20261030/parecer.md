@@ -1,0 +1,23 @@
+# QA-09 — auditoria independente da ponte do ledger r18→r19, revisão 2
+
+30/10/2026. Auditor automatizado `/root/next_graphics`, distinto do autor `/root/planning`. **APROVADA a integração localizada dos 18 objetos na fotografia r19**, sem aprovar outras ocorrências ou QA-09 integral. Auditei a ponte r18 e apoiei estruturalmente a aplicação r19; também fui Corretor de duas candidatas aplicadas na r18. Declaro esses vínculos: este parecer examina a nova ponte preparada por outro agente e seus efeitos sobre os 18 objetos, sem apresentar minhas atuações anteriores como auditorias independentes de mim mesmo.
+
+## Rastreio e correção da revisão
+
+O cabeçalho da tabela na r1 dizia r18, embora o conteúdo descrevesse r19. O autor preservou a r1 e gerou `ledger-r19-parcial-r2/`; confirmei que a reconciliação r2 difere da r1 **apenas** pela troca desse rótulo para r19. Ledger r2 SHA `df8b981a7c69260ca645b06df1b42857afae61a6566bb0cc56d0553b4224d587`; programa `ad96a03c58ed422a9cb1f8473c8df80e2a3c604acdb48f92ddf414b39c99ef8d`; reconciliação `6fefe6febc7b21137d7e60df9fd8b53e30cf7de751fcad922200ae7bf6a453fe`. Ela vincula ledger r18 `d53f1579b37eb2e48d9d91f9027df8b23d88b0d0a763f262e39509f3e4114256` e parecer da ponte `f3bdb6b2211b72d234dd9a2cbe9205930c0c923238e55013b45af78e5745884f`.
+
+Aula r18 `7f09b3f0e53e4f3ed69225adf3ce8e03fda93f132e78a1e884ca5757cc995cca` → r19 `9495c5a873dc67f6f1d6dd1919caa473f481a0bc029dbe97e3490adb1b530a65`; formulário r19 `694ee3d26e8f5679d565986cfb0ad8c10aa98667fc8ffb62a569a87679847a58`; inventário r19 `ca99e56b3a5930cdd4f49f4d41a61eca19facc141b63da94dcd3b65039d03c2f`. Reextraí 18 recortes por inventário, posição e hash e os comparei às identidades da r18; todos mantêm bytes. Conferi todos os links desses blocos e os 23 contêineres, que permanecem idênticos. A igualdade não aprova bases, pais, filhos ou fontes.
+
+## Efeitos e resultados
+
+Conferi os três deltas r18→r19: notação em `base-propriedades` e fichas 61/80. Delimitar maiúsculas/minúsculas aos pares V/v, U/u e H/h não muda a densidade ou o resultado de EX001; as fichas não fornecem dados aos 18 recortes. D12 utiliza o próprio balanço e a base `base-brayton-real`. A aplicação tem parecer científico próprio e apoio estrutural; este exame se restringe à interação com os objetos integrados.
+
+Conferi também a identidade e os efeitos sobre esses objetos das quatro alterações r17→r18 já revalidadas: primeira lei, entropia de escoamento, ficha 60 e EX027. O EX027 é distinto de D27; a distinção entre contribuição de calor e saldo Q−W é compatível com D17 e D26; D28 continua usando balanço de espécie, não de entropia. As quatro alterações foram verificadas nos snapshots e têm auditoria própria, não reaprovação integral aqui.
+
+Recalculei a tabela: EX001–005 dão 900 kg/m³, 110 °C e intervalo de 120 K, 70 na escala afim, título mássico 0,25 e 1 atm com R aproximado. D26 dá 1480 kJ/kg, 46,25% e 1720 kJ/kg; D27 0,20 e 2000 kW; D28 500 ppm/h inicialmente e 800 ppm no estado estacionário. D11 usa igualdade de potencial químico para componente comum com transferência permitida; D12 dá 30% e 75%; D13 queda de 30% com área e diferença média fixas; D14 28 °C como temperatura média da face. D15–17 dão 24, 45 e 42 °C no modelo sensível; D18 funde aproximadamente 0,126 kg e deixa 0,074 kg; D19 720 m³/h; D20 potência hidráulica 1500 W e eficiência de eixo 50%, sem determinar potência elétrica. Permanecem as hipóteses, condições de fronteira e limites explicitados na reconciliação; dados são nominais e primeira lei não prova viabilidade de segunda lei.
+
+## Testes e limites
+
+`python3 auditoria/termodinamica/evidencias/QA-09/auditoria-ledger-r19-r2-independente-20261030/verificar.py`, SHA `d1b2f364b77d614a56526670646d9558a6b8552b7c7ad4911620ef932d050b48`, passou para 18 blocos, 23 contextos, os sete deltas e correção documental r1→r2. Reproduziu o programa r2 em cópia mínima e recusou seis adulterações testadas: estado individual, remoção, estado padrão, aula, reconciliação e ledger r18. Usa frações para contas selecionadas; não verifica todas as possíveis alterações nem extrai automaticamente todos os dados dos enunciados.
+
+Os demais registros mantêm padrão `pendente_de_integracao`; as coleções de 11.400 ocorrências, 816 referências, 138 relações de recursos e seis ativos se sobrepõem, não sendo percentual de conclusão. Os 197 artigos permanecem sob tratamento separado. Fontes e hipóteses dos modelos estão nos relatórios anteriores e não são individualmente promovidas por esta ponte. Sem navegador, estudantes, leitor de tela, revisão humana ou certificação externa. QA-09 segue em correção.

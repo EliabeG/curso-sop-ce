@@ -1,0 +1,7 @@
+# QA-09 — achado na ponte de ledger r24→r26, revisão r1
+
+30/10/2026. Auditor automatizado `/root/next_graphics`, distinto de `/root/planning`. **NÃO APROVADA a reconciliação r1 em seu estado examinado**, escopo restrito à inconsistência identificada; o autor foi avisado antes do fechamento do LEIA-ME. Auditei a ponte r24 e prestei apoio estrutural às aplicações r25/r26; esses vínculos são declarados.
+
+Em `ledger-r26-parcial-r1/reconciliacao-18-r24-r26.md`, o parágrafo de efeitos r26 identifica “D15” como expansão livre de gás ideal com ΔS≈0,199 kJ/K, mas o D15 efetivo do ledger e da aula é a mistura de três porções de mesma capacidade a 12, 24 e 36 °C, com equilíbrio a 24 °C. A mesma tabela na própria reconciliação identifica D15 corretamente, logo o parágrafo e a tabela são contraditórios. A expansão livre pertence a outro exemplo, não identificado entre estes 18 diagnósticos; não se deve atribuir sua análise ao D15 nem transferir sua revisão sem vínculo. O problema é documental da reconciliação, não indicação de que o enunciado de D15 na aula tenha sido alterado.
+
+Recomenda-se preservar r1 e produzir uma r2 com identificação corrigida ou eliminar a frase fora de escopo, regenerar o ledger e os hashes e submetê-los a nova auditoria. O autor confirmou confusão com EX015 e está preparando r2. Esta ressalva isolada não é um exame completo de r1 nem transfere aprovação dos demais objetos. Não houve alteração do produto.

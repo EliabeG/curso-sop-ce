@@ -1,0 +1,43 @@
+{
+  "id": "QA-09-candidata-substancias-ciclos-r28",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-carnot-flashcards-r27-r1/resultado/depois-aula.html",
+  "fonte_sha256": "9af8e2c9ffe509e40594d086a9ef4ad75127fb4ca873efb305d3144e08f3fc49",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r27.json",
+  "inventario_sha256": "a58d7f0b0a5f097eef83ad83026ef49e801457b87f7cf2b2345c3dd915597c7c",
+  "parecer": "auditoria/termodinamica/evidencias/QA-09/auditoria-substancias-r28/parecer.md",
+  "parecer_sha256": "8d60a5559fe8dea5147e20dceb19ecdfb45a7fc1a88782f8be444e891e804d6e",
+  "edicoes": [
+    {
+      "id": "substancias",
+      "inicio_utf16": 45966,
+      "fim_utf16": 49877,
+      "original_sha256": "82d085cc1279c534bd3724d94e222676977cc703a1b2b08f1c5d64caf3e2a1af",
+      "candidata_sha256": "6816028c2bcf11908c0faa35740d01cb202f31675a7177e7cf53a3532ee80c3f",
+      "substituicoes": [
+        {
+          "antes": "Uma substância pura mantém composição química uniforme. Antes de consultar tabelas, compare a temperatura com a temperatura de saturação na pressão considerada, ",
+          "depois": "Uma substância pura mantém composição química uniforme. A tabela a seguir se aplica a estados fluidos em equilíbrio, quando existe coexistência líquido–vapor na pressão considerada, fora do ponto crítico e excluídas regiões sólidas ou outras transições. Nesse domínio, compare a temperatura com a temperatura de saturação líquido–vapor na pressão considerada, "
+        },
+        {
+          "antes": "Na mistura em equilíbrio, pressão e temperatura de saturação estão ligadas: elas não são duas propriedades independentes. Escolha a tabela da região correta e interpole apenas quando necessário.",
+          "depois": "Na coexistência líquido–vapor em equilíbrio, pressão e temperatura de saturação estão ligadas: elas não são duas propriedades independentes. Nesse caso, p e T sozinhos não distinguem líquido saturado, vapor saturado e misturas com diferentes frações; use uma propriedade independente adequada ou a fração de fase para identificar o estado. No ponto crítico as fases deixam de ser distintas e o título não se aplica; fora do domínio da tabela, examine o diagrama de fases e o modelo antes de classificar o estado. Escolha a tabela da região correta e interpole apenas quando necessário."
+        }
+      ]
+    },
+    {
+      "id": "ciclos",
+      "inicio_utf16": 361002,
+      "fim_utf16": 369881,
+      "original_sha256": "e9003e6a7fb1909ad6fe78833b6faa166bd3827a29f5d4647b14176eae47f175",
+      "candidata_sha256": "dec2961b31bba34de13223746c43ca72d7fcfbbcf35d2bc2f4c81fb0fe1316bd",
+      "substituicoes": [
+        {
+          "antes": "Ambos têm compressão e expansão isentrópicas nos modelos ar-padrão. A razão volumétrica de compressão é ",
+          "depois": "Ambos têm compressão e expansão isentrópicas nos modelos ar-padrão. Nas expressões fechadas abaixo, adote gás ideal de composição fixa com calores específicos constantes, de modo que k = c<sub>p</sub>/c<sub>v</sub> seja constante ao longo do ciclo. A razão volumétrica de compressão é "
+        }
+      ]
+    }
+  ],
+  "aula_combinada_hipotetica_sha256": "876e05056e5aa380ffc4d48247ff354510f9d237afb4c26ef67e3c82b81aa649"
+}

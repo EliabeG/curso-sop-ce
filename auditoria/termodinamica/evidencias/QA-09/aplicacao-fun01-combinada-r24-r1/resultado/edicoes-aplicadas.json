@@ -1,0 +1,57 @@
+[
+  {
+    "id": "fun01-preparacao-equilibrio",
+    "documento": "modulos/e1-termodinamica.html",
+    "inicio": 107020,
+    "fim": 111548,
+    "inicio_novo": 107020,
+    "fim_novo": 112143,
+    "delta": 595,
+    "original_sha256": "6a58642fcfbbe49b936c53ea8be9c679fa45607ac3e200fcaf836e12bd1c7a2e",
+    "candidata_sha256": "9e6c7edc5562eba7c10143cd0af90d4b61a8f6398abe96ffb39031e9a5a4e736",
+    "substituicoes": [
+      {
+        "pos": 1060,
+        "end": 1086,
+        "antes": "Mistura ideal e logaritmo.",
+        "depois": "Mistura de gases ideais e logaritmo.",
+        "origem": "candidata-fun01-gases-r23-next-theory-20261030"
+      },
+      {
+        "pos": 1096,
+        "end": 1185,
+        "antes": "A pressão parcial de A é p_A = y_Ap. A relação do modelo é μ_A = μ_A°(T) + RT ln(p_A/p°).",
+        "depois": "A pressão parcial de A é p_A = y_Ap. Para temperatura absoluta positiva, pressão parcial p_A &gt; 0 e pressão de referência p° &gt; 0, a relação para gases ideais é μ_A = μ_A°(T) + RT ln(p_A/p°), com a mesma convenção de estado padrão ao comparar estados.",
+        "origem": "candidata-fun01-gases-r23-next-theory-20261030"
+      },
+      {
+        "pos": 2013,
+        "end": 2090,
+        "antes": "Dois reservatórios grandes de mistura ideal, à mesma temperatura, apresentam:",
+        "depois": "Dois reservatórios grandes de mistura de gases ideais, à mesma temperatura, apresentam:",
+        "origem": "candidata-fun01-gases-r23-next-theory-20261030"
+      },
+      {
+        "pos": 2974,
+        "end": 3082,
+        "antes": "Para um líquido incompressível isotérmico, dμ = V̄ dp e V̄ = M/ρ. O balanço hidrostático produz dp/dz = −ρg;",
+        "depois": "Para um líquido puro, homogêneo e incompressível à temperatura constante, dμ = V̄ dp e V̄ = M/ρ, com M a massa molar da substância e ρ sua densidade de massa. Com g uniforme e z crescente para cima, o balanço hidrostático produz dp/dz = −ρg;",
+        "origem": "candidata-fun01-liquido-r23-next-theory-20261030"
+      },
+      {
+        "pos": 3584,
+        "end": 3816,
+        "antes": "Para as células com T e volumes fixos, a função apropriada é F = U − TS. Uma transferência infinitesimal de A, da região de origem para a de destino, altera F por (μ_A,destino − μ_A,origem)dn. O sentido espontâneo permitido reduz F.",
+        "depois": "Para o conjunto fechado de células com T e volumes fixos, a energia livre intrínseca é F = U − TS. Incluindo a energia potencial gravitacional externa, a função total é F_total = F + E_grav. Uma transferência infinitesimal permitida de A da origem para o destino altera F_total por (μ̃_A,destino − μ̃_A,origem)dn, usando os potenciais totais definidos acima. Se a contribuição gravitacional for igual nas duas regiões, ela se cancela. O sentido espontâneo permitido reduz a função total.",
+        "origem": "candidata-fun01-gravidade-r23-next-theory-20261030"
+      },
+      {
+        "pos": 3817,
+        "end": 3883,
+        "antes": "A igualdade dos potenciais químicos fornece um ponto estacionário;",
+        "depois": "A igualdade dos potenciais totais para a troca permitida fornece um ponto estacionário;",
+        "origem": "candidata-fun01-gravidade-r23-next-theory-20261030"
+      }
+    ]
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "id": "QA-09-candidata-ex010-equipamentos-r25-next-examples-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "ea0a7e3877c0a0250dac3d9c993c7922a03400929eb7a5dad39fcb27e3263c7e",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r25.json",
+  "inventario_sha256": "6798d317db30bd69435ed14862cc03cd0f0c6313e40408dd8831052285984116",
+  "ancora": "base-turbina-potencia",
+  "contexto": "Simplificações por equipamento",
+  "inicio_utf16": 180852,
+  "fim_utf16": 195551,
+  "original_sha256": "a9a8a163cb667a472acb0475a598541bf38353f6278153f4f590f4e58ae2588e",
+  "candidata_sha256": "74c5c0d0bf34eb8253ac30ed3c858ba3b4df6cd5a88b0608a96ee7479fc41d1a",
+  "html_hipotetico_sha256": "a05528748cf34195eeb5366484b16ce6f19f9668e91c5a1915ff5afe5a1cad36",
+  "substituicoes": [
+    {
+      "antes": "<h3>Simplificações por equipamento</h3>",
+      "depois": "<h3>Simplificações por equipamento</h3><p>Em cada relação, a fronteira inclui o equipamento indicado; quando o trabalho não associado ao escoamento é informado, ele representa o trabalho total nessa fronteira por unidade de massa atravessada. O trabalho de escoamento já está incluído em h.</p>"
+    },
+    {
+      "antes": "<td data-rotulo=\"Hipóteses principais\">Adiabática; variações cinética e potencial desprezíveis.</td>",
+      "depois": "<td data-rotulo=\"Hipóteses principais\">Uma única entrada e uma única saída; adiabática; variações cinética e potencial desprezíveis. Trabalho total não associado ao escoamento produzido.</td>"
+    },
+    {
+      "antes": "<td data-rotulo=\"Hipóteses principais\">Adiabático; variações cinética e potencial desprezíveis.</td>",
+      "depois": "<td data-rotulo=\"Hipóteses principais\">Uma única entrada e uma única saída; adiabático; variações cinética e potencial desprezíveis. Trabalho total não associado ao escoamento recebido.</td>"
+    },
+    {
+      "antes": "<td data-rotulo=\"Hipóteses principais\">Adiabático, sem trabalho; variação de altura desprezível.</td>",
+      "depois": "<td data-rotulo=\"Hipóteses principais\">Uma única entrada e uma única saída; adiabático, sem trabalho não associado ao escoamento; variação de altura desprezível.</td>"
+    },
+    {
+      "antes": "<td data-rotulo=\"Hipóteses principais\">Sem calor ou trabalho; variações cinética e potencial desprezíveis.</td>",
+      "depois": "<td data-rotulo=\"Hipóteses principais\">Uma única entrada e uma única saída; sem transferência de calor ou trabalho não associado ao escoamento; variações cinética e potencial desprezíveis.</td>"
+    },
+    {
+      "antes": "<td data-rotulo=\"Hipóteses principais\">Conjunto isolado do ambiente; sem trabalho; variações cinética e potencial desprezíveis.</td>",
+      "depois": "<td data-rotulo=\"Hipóteses principais\">Duas correntes sem mistura, uma entrada e uma saída para cada, sem outras correntes; sem calor externo ou trabalho não associado ao escoamento; variações cinética e potencial desprezíveis.</td>"
+    },
+    {
+      "antes": "<td data-rotulo=\"Hipóteses principais\">Regime permanente, adiabático reversível; líquido com v aproximadamente constante; variações cinética/potencial desprezíveis.</td>",
+      "depois": "<td data-rotulo=\"Hipóteses principais\">Regime permanente, uma única entrada e uma única saída; adiabático reversível; líquido com v aproximadamente constante; variações cinética/potencial desprezíveis. Trabalho total não associado ao escoamento recebido.</td>"
+    },
+    {
+      "antes": "Turbina adiabática, com variações de velocidade e altura desprezíveis.",
+      "depois": "Turbina em regime permanente e adiabática, com uma única entrada e uma única saída, mesma vazão em ambas, sem outras correntes e com variações de velocidade e altura desprezíveis. Determine o trabalho total produzido não associado ao escoamento por unidade de massa e a potência total correspondente."
+    },
+    {
+      "antes": "<p class=\"equacao-titulo\">Potência produzida</p>",
+      "depois": "<p class=\"equacao-titulo\">Potência total produzida não associada ao escoamento</p>"
+    }
+  ]
+}

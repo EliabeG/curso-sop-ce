@@ -1,0 +1,43 @@
+{
+  "inventario_sha256": "1ce69fc1ab71850abc3ab8dc3df82b04e78788b9e62a55919c609a708a7979b4",
+  "ocorrencias": 11409,
+  "tipos": {
+    "texto_direto": 9512,
+    "atributos_significativos": 807,
+    "secao": 32,
+    "tabela": 37,
+    "mathml": 711,
+    "equacao_contextualizada": 99,
+    "exemplo_ou_diagnostico": 78,
+    "figura": 8,
+    "caso_oficina": 4,
+    "flashcard": 21,
+    "ficha_formula": 100
+  },
+  "estados_inventario": {
+    "PENDENTE_TRIAGEM": 10319,
+    "PENDENTE": 1090
+  },
+  "referencias": 816,
+  "referencias_por_forma": {
+    "caminho_local_ou_outro": 138,
+    "fragmento_local": 606,
+    "externa_http": 72
+  },
+  "urls_http_distintas_exatas": 69,
+  "relacoes_recursos": 138,
+  "ativos_especificos": 6,
+  "ledger_r30_sha256": "58d31ac8b26366c543cc439b3b4dc0c7c9428d191949c8ac49d801b4a459dc12",
+  "objetos_ledger": 78,
+  "diagnosticos_ledger": 28,
+  "exemplos_ledger": 15,
+  "fichas_ledger": 22,
+  "pasta_QA09": {
+    "arquivos": 1559,
+    "bytes_aparentes": 494680112,
+    "limiar_duplicacao_bytes": 10000,
+    "grupos_sha_tamanho_duplicados": 55,
+    "bytes_aparentes_duplicados_acima_limiar": 106724959
+  },
+  "limitacao": "Contagens sobrepostas e fotografia de arquivo no instante; não são porcentagem de cobertura, nem economia automática em Git."
+}

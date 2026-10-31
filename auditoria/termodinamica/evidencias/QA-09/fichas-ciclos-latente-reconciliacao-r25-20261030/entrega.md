@@ -1,0 +1,27 @@
+# QA-09 — reconciliação de fichas de ciclos, latente e radiação r25
+
+30/10/2026. Corretor `/root/next_formulas`. **Aguardando Auditor independente; domínio do trabalho líquido na ficha 59 para julgamento.** Recorte 23, 58, 59, 70, 81–83, 89–90 e 96 já teve exame científico e auditorias r13/r15; 23/58/59 foram corrigidas na r14 e 89/90 na r16. Esta rodada reconcilia a r25, sem presumir aceite automático. Não altera produto nem encerra QA-09.
+
+## Identidade e teste
+
+Formulário r25 SHA `694ee3d26e8f5679d565986cfb0ad8c10aa98667fc8ffb62a569a87679847a58`, aula r25 SHA `ea0a7e3877c0a0250dac3d9c993c7922a03400929eb7a5dad39fcb27e3263c7e`, inventário r25 `6798d317db30bd69435ed14862cc03cd0f0c6313e40408dd8831052285984116`. Formulários preservados r14 `3ea110fda92c74253b69d89f5a6e62b288aa3bd99db6a51b54a6c67c8af82fce` e r16 `dea4923117d09fa77cabacb0b65816cbf6d57b724d88285003804a1f1440389d`: oito artigos r25 coincidem com r14; 89/90 mudaram na r16; todos dez coincidem com r16. Parecer de latente/COP r13 SHA `44ab40de21fa5bd2ed17f6a01692066609d620e4859ec69c7618d68c2a7d251f`, de ciclos/processos r15 `4dbf25c1a899fb3d1f392a5b00ffc7c467aecdc863b1de189db4212c440ce13e`, de aplicação r16 `b3ab31cab6aa71e2fedb4eeda8b800fc3fa926dc29d036d2636092516a6a62c3`.
+
+`identidades.json` SHA `c466f44ecbdec577c072565e6258e21dd929ad36a707e974992dc23c8d0da997` registra IDs, offsets UTF-16 e hashes; `verificar.mjs` SHA `fde9a469fb4935f1fe9b27b2b4b3741360a37b83808aa358a418b17703934272`, executado por `node auditoria/termodinamica/evidencias/QA-09/fichas-ciclos-latente-reconciliacao-r25-20261030/verificar.mjs`, retornou `ok=true`. Ele confere identidade, existência de dez destinos e contas, sem interpretar MathML ou demonstrar adequação de link. Valores abaixo são sintéticos, não medições.
+
+## Hipóteses e contas
+
+| Ficha | Verificação |
+|---|---|
+| 23 | Vaporização completa de substância pura saturada sob p constante: hfg=hg−hf; sistema fechado exige Wb=pΔV à mesma pressão sem outros trabalhos, e escoamento exige regime permanente sem trabalho não fluxo; ΔEc/ΔEp desprezíveis. Se hf=500 e hg=2500 kJ/kg, hfg=2000, m=2 kg dá Q=4000 kJ, Q̇=6000 kW dá ṁ=3 kg/s. Divisão exige hfg≠0. |
+| 58 | No mesmo ciclo e fronteira, QH é calor total recebido positivo e QL todo rejeitado; Wlíq=QH−QL e η=Wlíq/QH. Para QH=550, QL=300 kJ/ciclo, Wlíq=250 e η=5/11≈0,454545. Wlíq>0 para motor; não há necessidade de restringir dois reservatórios se calores forem totais. |
+| 59 | Refrigerador acionado por trabalho, sem outro acionamento energético relevante, COPR=QL/Win e Win>0 na mesma fronteira/período. **Ponto para Auditor:** a legenda atual chama Win “magnitude do trabalho consumido”, sem dizer expressamente **líquido total** como a ficha 60 após correção. Se houver 100 kJ de trabalho recebido e 20 kJ produzido no mesmo ciclo, QL=300 e QH=380, Win líquido=80 e COPR=3,75; usar entrada bruta 100 daria 3. O balanço fecha, e com reservatórios a 300/350 K, Sger=380/350−300/300≈0,085714 kJ/K>0. O caso é contraste sintético; avaliar se expressão atual já significa suficientemente líquido ou requer ajuste isolado. |
+| 70 | Gás ideal de composição fixa em estados isentrópicos com cp/cv constantes: T₂/T₁=(p₂/p₁)^((k−1)/k), pv^k constante e T₂/T₁=(v₁/v₂)^(k−1). T₁=300 K, p₂/p₁=4 e k=1,4 dão T₂≈445,7983 K; pressões e temperaturas absolutas. |
+| 81–83 | Modelos motores ar-padrão ideais com capacidades constantes. Para k=1,4, Brayton rp=8 dá η≈0,447955; Otto r=8 dá 0,564725; Diesel r=18, rc=2 dá 0,631578. Diesel exige r>1 e 1<rc<r, excluindo divisão zero. Números não projetam desempenho de motores reais. |
+| 89–90 | Compressão estacionária internamente reversível, uma entrada e saída, mesmo gás ideal, trabalho total não-fluxo apenas eixo, ΔEc/ΔEp desprezíveis e pressões absolutas p₂>p₁>0. Para R=0,287 kJ/(kg K), T₁=300 K, razão 4 e n=1,3, trabalho politrópico≈140,6622 kJ/kg; no isotérmico≈119,3599. A integral ∫v dp é trabalho recebido total, não necessariamente o de um único acionamento. |
+| 96 | Superfície pequena cinza uniforme com visão de entorno grande aproximadamente negro isotérmico, meio não participante: Q̇rad=εσA(Ts⁴−Tamb⁴). ε=0,8, σ=5,67×10⁻⁸, A=2 m², Ts=500 K, Tamb=300 K dão 4935,168 W; invertendo temperaturas inverte-se sinal. Geometria arbitrária exige análise radiativa adicional. |
+
+## Fontes e revisão
+
+[DOE, definição de COP usando trabalho líquido](https://www.energy.gov/cmei/femp/incorporate-minimum-efficiency-requirements-heating-and-cooling-products-federal); [MIT, entalpia e processo a pressão constante](https://web.mit.edu/16.unified/OldFiles/www/FALL/thermodynamics/notes/node17.html); [NASA, relações isentrópicas](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/isentrophic-compression/); [MIT, ciclos Otto/Diesel/Brayton](https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/mitres-2-008su22_book.pdf), equações 5.35, 5.36 e 5.122; [Purdue, trabalho politrópico e isotérmico](https://www.purdue.edu/freeform/me200/wp-content/uploads/sites/29/2023/03/ME-200-Chapter-6.pdf), pp. 68–70; [NIST/NBS, radiação em entorno distante](https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir74-366.pdf), seção A3. Fontes não são a origem dos dados sintéticos.
+
+Solicita-se Auditor distinto para identidade, MathML, hipóteses e fontes e, sobretudo, julgar a interpretação de Win na ficha 59. Não houve navegador, leitor de tela, alunos ou revisão humana; destinos e outras fichas não recebem aceite automático.

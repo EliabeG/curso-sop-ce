@@ -1,0 +1,20 @@
+{
+  "id": "QA-09-candidata-geracao-pontes-r21-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-oficina-ex046-r21-r1/resultado/depois-aula.html",
+  "fonte_sha256": "239fb6d9f307170adbb74e389b798d1ff3c9b8e0d8d2d6d874457b8a65f40238",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r21.json",
+  "inventario_sha256": "d1d480c1c4ce0a31f9f4f0b8bf234be60c9867feae9336fbeefb06162e2826f1",
+  "ancora": "base-geracao-face",
+  "diagnostico": null,
+  "inicio_utf16": 459553,
+  "fim_utf16": 462159,
+  "original_sha256": "8e6e5374b2f4391f0adead00b525910b44df4f5a5b121421b71594af61476fa3",
+  "candidata_sha256": "f788b25e902cf62ee1a72be265172dc18dfb2cd48fb826e3a336f2a5de2a78fd",
+  "substituicoes": [
+    {
+      "antes": "Em regime permanente não há acumulação de energia. Sem outros modos de saída, o calor gerado internamente deve sair pela superfície exposta.",
+      "depois": "Em regime térmico permanente, quando a única troca de calor é a saída pela superfície exposta, a energia convertida em geração térmica interna deve sair por essa superfície. Geração térmica é conversão, não criação de energia total. Para um bloco fechado com essa única saída energética, a permanência da energia total exige entrada energética de mesmo valor; se uma reserva se esgota, inclua sua variação no balanço. A fonte e a fronteira devem ser compatíveis com a primeira lei; não some a conversão como uma segunda entrada."
+    }
+  ]
+}

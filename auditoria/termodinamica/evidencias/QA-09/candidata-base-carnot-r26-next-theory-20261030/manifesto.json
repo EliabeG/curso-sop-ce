@@ -1,0 +1,19 @@
+{
+  "id": "QA-09-candidata-base-carnot-r26-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-fun02-ficha59-ex010-r26-r1/resultado/depois-aula.html",
+  "fonte_sha256": "afc7ff0aba80596aa8aa7a3eeb5b9a470948c7d866c6911911b9b00fb243bac2",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r26.json",
+  "inventario_sha256": "d73d6b239822b288329a75fc1f976419ccae7047d1bc74ba161102a529038241",
+  "ancora": "base-limite-carnot",
+  "inicio_utf16": 312840,
+  "fim_utf16": 319413,
+  "original_sha256": "510390ee33497cd22eeb65633460eba8de1f44a28cacce03100fa83c13e93509",
+  "candidata_sha256": "4f0c44cf7ad39f9b5db7555d439b31b1e4a8dad1171f7946cebb5459e30c17fa",
+  "substituicoes": [
+    {
+      "antes": "Todas as máquinas reversíveis entre as mesmas fontes têm a mesma eficiência; máquinas irreversíveis têm eficiência menor.",
+      "depois": "Para máquinas térmicas cíclicas entre apenas dois reservatórios, as reversíveis entre as mesmas fontes têm a mesma eficiência; as irreversíveis têm eficiência menor. As três relações abaixo usam dois reservatórios a temperaturas absolutas constantes T_H &gt; T_L &gt; 0: calor recebido positivo na máquina térmica e trabalho líquido recebido positivo no refrigerador e na bomba de calor."
+    }
+  ]
+}

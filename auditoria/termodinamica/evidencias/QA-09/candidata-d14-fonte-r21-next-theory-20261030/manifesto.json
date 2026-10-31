@@ -1,0 +1,24 @@
+{
+  "id": "QA-09-candidata-d14-fonte-r21-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-oficina-ex046-r21-r1/resultado/depois-aula.html",
+  "fonte_sha256": "239fb6d9f307170adbb74e389b798d1ff3c9b8e0d8d2d6d874457b8a65f40238",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r21.json",
+  "inventario_sha256": "d1d480c1c4ce0a31f9f4f0b8bf234be60c9867feae9336fbeefb06162e2826f1",
+  "ancora": "preparacao-questoes",
+  "diagnostico": 14,
+  "inicio_utf16": 533571,
+  "fim_utf16": 534219,
+  "original_sha256": "ac518b30e57fcbc1e99b461aeedf936b6ac549be41cda580c12b8182f6234e67",
+  "candidata_sha256": "17ac2a00684b3558d6bf1959f433c731e53594bd670e4e13c01b681f8626e2d9",
+  "substituicoes": [
+    {
+      "antes": "Um bloco de 2 m × 1 m × 1 m gera 60 W/m³; apenas a face de 2 m × 1 m está exposta; as demais faces são termicamente isoladas. Com h = 6 W/(m²·K) e ambiente a 18 °C, estime a temperatura média dessa face, em regime permanente, sem radiação.",
+      "depois": "Um bloco fechado de 2 m × 1 m × 1 m recebe 120 W de trabalho elétrico, integralmente convertido em geração térmica uniforme de 60 W/m³. Apenas a face de 2 m × 1 m está exposta; as demais faces são termicamente isoladas. Em regime permanente de energia total, sem outras interações de energia além da entrada elétrica e do calor convectivo pela face exposta, com h uniforme de 6 W/(m²·K) e ambiente a 18 °C, estime a temperatura média dessa face."
+    },
+    {
+      "antes": "As faces isoladas não entram na área convectiva.",
+      "depois": "As faces isoladas não entram na área convectiva. A geração térmica representa a conversão dos 120 W elétricos recebidos: não se somam as duas parcelas como aportes distintos."
+    }
+  ]
+}

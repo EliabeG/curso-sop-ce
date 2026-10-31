@@ -1,0 +1,19 @@
+# QA-09 — candidatas isoladas ficha 60 e EX-027, r17
+
+30/10/2026. Corretor `/root/next_formulas`. **Propostas isoladas, não aplicadas; aguardam Auditor independente.** Respondem aos achados da ficha 60 e EX-027; não encerram QA-09 nem alteram outros objetos.
+
+## Bases e achados
+
+Aula r17 SHA `6b0df1096d0b6de6995ffc51bf8489cb45ab954a7aabdeb3f48d068c9777c57c`, formulário SHA `dea4923117d09fa77cabacb0b65816cbf6d57b724d88285003804a1f1440389d` e inventário r17 SHA `b8eae39cc72cf807d7b84aad7e7a38423168b809231bc3b7f08c439d6d25163b`. O parecer atual de fichas `QA-09-fichas-unidades-modelos-balancos-r17-auditoria-independente-20261030.md` SHA `645641fefb6a5a8d401ac0fbd3a93d55672f190bf300be495347e4ca627dc57c` solicita explicitar domínio e trabalho líquido. Dois auditores escreveram versões distintas no mesmo caminho; a versão anterior reportada pelo outro Auditor não foi preservada nesse local, e não a tratamos como verificável. O parecer de EX-027 `QA-09-exemplos-021-030-r17-auditoria-independente-20261030.md` SHA `9c13cc19ee74fcbfbf5bc4bbf2dac21c3e4a7b6723c7824456473c421ddfe241` classifica a falta de identificação dos totais como ajuste obrigatório. EX-027 é ID histórico e corresponde ao bloco [370173,373078) em UTF-16, não a um ID HTML.
+
+## Propostas e contrastes
+
+**Ficha 60:** em condição e índice de busca, restringe ao mesmo ciclo, fronteira e período, trabalho líquido total recebido Win>0 e somente os calores QL da fonte fria e QH entregues à quente, sem outras interações energéticas relevantes. A legenda define ambas as magnitudes e `COPR=QL/Win`; mantém MathML e link da aula. Em um caso sintético, 100 kJ brutos de entrada e 20 kJ produzidos dão Win líquido=80 kJ. Com QL=300 e QH=380 kJ, COPBC=4,75 e COPR=3,75, enquanto usar entrada bruta dá 3,8 e viola a identidade pretendida. Win=0 produz razões indefinidas; esse é contraste algébrico de domínio, não alegação de bomba autônoma. Valores não descrevem equipamento construído.
+
+**EX-027:** especifica uma máquina térmica cíclica que recebe no total 1.000 kJ da fonte quente e rejeita no total 600 kJ à fria, com trabalho líquido como única outra transferência de energia pela fronteira. Assim, ΔE do ciclo é zero, Wlíq=400 kJ e η=40%, sem modificar números, etapas ou MathML. Contramodelo da ambiguidade anterior: ciclo recebe 1.000 kJ de fonte a 800 K e 200 kJ de outra a 600 K, rejeita 600 kJ a 300 K e entrega 600 kJ líquidos; energia fecha e Sger=600/300−1000/800−200/600=5/12 kJ/K>0. É construção sintética excluída pela nova hipótese, não caso do curso.
+
+## Identidade e simulação
+
+`manifesto.json` SHA `4a61b863e2acfe76c043d58322e695ad2139653199240737b56ed0c5c70c1c92` fixa fotografia, hashes de fragmento sem quebra terminal, offsets e deltas. `verificar.mjs` SHA `7a1b6ac85a6509b374731f64537d9dcb83d4df35fda83ec53b67fb3976589e4a` é somente leitura: reconstrói substituições, verifica duplicação no texto de busca e no cartão, preserva parser, IDs/links/ARIA e MathML; simulação preserva 99 fichas não alvo, 197 artigos da aula e 191/734 MathML. Formulário hipotético SHA `463c00149e36217404cf98bad4f5bed3db828c87d19d1c8e6038678193e9d895`; aula hipotética `36d46e4d240a5a79732faac3d7d2a7a0eab813ca01ac8cb3dd9d16552bb51f53`. Não é teste de navegador ou revisão científica. Alteração da base exige reconciliação; eventual aplicação exige nova fotografia, mapa e auditoria distinta da versão efetiva. Solicita-se revisão independente das duas candidatas e de seus limites.
+
+Adendo de rastreio: o segundo Auditor refez a avaliação após a colisão sob nome exclusivo `QA-09-fichas-unidades-modelos-balancos-r17-auditoria-next-theory-r2-20261030.md`, SHA `9c88d8910ef084d388ecc999319402f9473b996aba589f65027d684a094a6b40`; também confirma Win líquido positivo e definição de COPR. Essa reavaliação não reconstrói a versão anterior não preservada.

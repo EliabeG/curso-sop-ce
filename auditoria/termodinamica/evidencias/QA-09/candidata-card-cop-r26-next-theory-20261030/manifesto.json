@@ -1,0 +1,19 @@
+{
+  "id": "QA-09-candidata-card-cop-r26-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-fun02-ficha59-ex010-r26-r1/resultado/depois-aula.html",
+  "fonte_sha256": "afc7ff0aba80596aa8aa7a3eeb5b9a470948c7d866c6911911b9b00fb243bac2",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r26.json",
+  "inventario_sha256": "d73d6b239822b288329a75fc1f976419ccae7047d1bc74ba161102a529038241",
+  "ancora": "COP",
+  "inicio_utf16": 1270543,
+  "fim_utf16": 1270882,
+  "original_sha256": "d5fb4be0c7fa1fd59c1e33f62548d6699ae5ef10bd440c5c0f2960318039cafd",
+  "candidata_sha256": "d98cae1270200a3ee7c29ba84b52d11658169eb3bf2e39fed4b1f03246a92fac",
+  "substituicoes": [
+    {
+      "antes": "Em ciclo de refrigeração ou bomba de calor por compressão cujo acionamento é somente trabalho, COP é o calor útil dividido pelo trabalho de entrada: calor retirado da fonte fria no refrigerador ou entregue à fonte quente na bomba de calor.",
+      "depois": "Em ciclo de refrigeração ou bomba de calor por compressão cujo acionamento é somente trabalho, COP é o calor útil dividido pelo trabalho líquido total recebido, positivo, para a mesma fronteira e ciclo: calor retirado da fonte fria no refrigerador ou entregue à fonte quente na bomba de calor."
+    }
+  ]
+}

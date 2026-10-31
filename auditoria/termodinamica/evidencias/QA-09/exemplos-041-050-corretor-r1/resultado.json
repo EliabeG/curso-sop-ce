@@ -1,0 +1,101 @@
+{
+  "ocorrencias": [
+    {
+      "id": "EX-041",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 445929,
+      "fim_utf16": 446191,
+      "sha256": "aef5153fb27af1d61e215b3d3613fad7fcc9dd12830aeb2a43c2c6c2c0f08974"
+    },
+    {
+      "id": "EX-042",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 449390,
+      "fim_utf16": 449675,
+      "sha256": "08f56302b01d90e952d1f94500e32639ed555b58e81321c8fb1b95582770b4af"
+    },
+    {
+      "id": "EX-043",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 450580,
+      "fim_utf16": 451023,
+      "sha256": "405e810399123eb41cc0f85b592a10cd03754fab0af02e405479823b0c7579b0"
+    },
+    {
+      "id": "EX-044",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 452097,
+      "fim_utf16": 452503,
+      "sha256": "2869b5919b0999bbbe10c87859f00b28425b5233d8c39a0360dea42197d5ac39"
+    },
+    {
+      "id": "EX-045",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 454697,
+      "fim_utf16": 454945,
+      "sha256": "c655642db9a18f0ccf97d9367c18a9e7b9738a249d71f073b036389c3644de30"
+    },
+    {
+      "id": "EX-046",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 455969,
+      "fim_utf16": 456404,
+      "sha256": "d7fc82a69bdc4bf9a24cebbd6665e2697f1a92dfa3869da604cab37adf6fa8c3"
+    },
+    {
+      "id": "EX-048",
+      "secao": "cobertura99-transferencia",
+      "inicio_utf16": 462747,
+      "fim_utf16": 463221,
+      "sha256": "7622931a3ec2c60092ba79a19e6775a3807ce149c25737559cb782cada9dd367"
+    },
+    {
+      "id": "EX-050",
+      "secao": "cobertura99-transferencia",
+      "inicio_utf16": 467290,
+      "fim_utf16": 467657,
+      "sha256": "19cd301f12b11b01a5936ccbfef13355dde66ccb538d726641b4e0314ffd3881"
+    }
+  ],
+  "resultados": {
+    "EX-041": {
+      "q_W_m2": "150",
+      "Q_W": "300"
+    },
+    "EX-042": {
+      "Q_limpo_W": "80000",
+      "Q_alterado_W": "60000",
+      "reducao": "0.25"
+    },
+    "EX-043": {
+      "U_limpo": "5E+2",
+      "U_com_deposito": "333.3333333333333333333333333",
+      "razao_taxas": "0.6666666666666666666666666667"
+    },
+    "EX-044": {
+      "razao_radiacao": "0.5"
+    },
+    "EX-045": {
+      "delta_L_m": "0.008000"
+    },
+    "EX-046": {
+      "volume_m3": "6",
+      "area_m2": "6",
+      "geracao_W": "1200",
+      "diferenca_K": "10",
+      "T_superficie_C": "30"
+    },
+    "EX-048": {
+      "trabalho_ext_kJ": "30.0",
+      "trabalho_linear_kJ": "30.0"
+    },
+    "EX-050": {
+      "W_kJ": "600",
+      "Q_rejeitado_kJ": "400",
+      "eficiencia": "0.6",
+      "carnot": "0.5",
+      "S_ger_kJ_K": "-0.333333333333333333333333334"
+    }
+  },
+  "limite": "Identidade e contas numéricas apenas; sem auditoria independente nem aceite de QA-09."
+}

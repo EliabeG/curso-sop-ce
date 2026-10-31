@@ -1,0 +1,802 @@
+[
+  {
+    "numero": 1,
+    "id": "formula-variacao",
+    "juizo_local": "Variação é final menos inicial.",
+    "efeito_da_versao": "Contexto alterado em pressão média; dados desta ficha preservados; média difere de pressão local quando não uniforme.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 2,
+    "id": "formula-taxas",
+    "juizo_local": "Q/Δt é taxa média; condição declarada constante é suficiente.",
+    "efeito_da_versao": "Contexto alterado em pressão média; dados desta ficha preservados; média difere de pressão local quando não uniforme.",
+    "ressalva": "Δt>0; recomendação de explicitar domínio.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 3,
+    "id": "formula-conversoes",
+    "juizo_local": "1 kPa·m³=1 kJ e 1 cal termoquímica=4,184 J.",
+    "efeito_da_versao": "Contexto alterado em pressão média; dados desta ficha preservados; média difere de pressão local quando não uniforme.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 4,
+    "id": "formula-temperatura",
+    "juizo_local": "27 °C=300,15 K; intervalos têm mesma magnitude K/°C.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 5,
+    "id": "formula-pressao",
+    "juizo_local": "F⊥/A é pressão média ou uniforme, não valor local geral.",
+    "efeito_da_versao": "Contexto alterado em pressão média; dados desta ficha preservados; média difere de pressão local quando não uniforme.",
+    "ressalva": "Área positiva e força de pressão na mesma face e referência.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 6,
+    "id": "formula-densidade",
+    "juizo_local": "ρ=m/V e v=V/m para mesma amostra e estado.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": "Massa e volume positivos na aplicação usual.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 7,
+    "id": "formula-especificas",
+    "juizo_local": "u,h,s são grandezas totais correspondentes por massa.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": "Massa positiva na aplicação usual.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 8,
+    "id": "formula-span",
+    "juizo_local": "Span é limite superior menos inferior.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 9,
+    "id": "formula-escalas",
+    "juizo_local": "Escalas afins requerem intervalos não nulos e não necessariamente passam pela origem.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 10,
+    "id": "formula-percentual",
+    "juizo_local": "Percentual tem referência inicial positiva.",
+    "efeito_da_versao": "Contexto alterado em pressão média; dados desta ficha preservados; média difere de pressão local quando não uniforme.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 11,
+    "id": "formula-ppm-geracao",
+    "juizo_local": "1000 ppmv=0,001 e fontes de geração somam na mesma referência.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 12,
+    "id": "formula-mols",
+    "juizo_local": "n=m/M e R=Ru/M com unidades coerentes.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": "Massa molar positiva na aplicação usual.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 13,
+    "id": "formula-gas-ideal",
+    "juizo_local": "pV=mRT=nRuT para gás ideal e pressão/temperatura absolutas.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 14,
+    "id": "formula-dois-estados",
+    "juizo_local": "Dois estados mantêm quantidade e composição.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 15,
+    "id": "formula-restricoes",
+    "juizo_local": "Relações de processo exigem restrição e modelo declarados.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 16,
+    "id": "formula-compressibilidade",
+    "juizo_local": "Z=1 pontual não prova todas as propriedades ideais.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 17,
+    "id": "formula-calores-especificos",
+    "juizo_local": "cp−cv=R para gás ideal à mesma temperatura.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 18,
+    "id": "formula-energia-gas",
+    "juizo_local": "Δu=cvΔT e Δh=cpΔT em modelo ideal com capacidades constantes.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 19,
+    "id": "formula-cinetica-molecular",
+    "juizo_local": "3kBT/2 é apenas energia cinética translacional média por molécula.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 20,
+    "id": "formula-energia-c-variavel",
+    "juizo_local": "Δh=integral cp(T)dT em gás ideal de composição fixa.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 21,
+    "id": "formula-titulo",
+    "juizo_local": "x=mg/(mf+mg) com massa total positiva, limites saturados e fora do crítico.",
+    "efeito_da_versao": "Contexto substancias restringe coexistência líquido–vapor e crítico; fórmula permanece válida no domínio da ficha.",
+    "ressalva": "Massas não negativas e soma positiva; x=0/1 são limites.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 22,
+    "id": "formula-mistura",
+    "juizo_local": "y=yf+x(yg−yf), mesma saturação; inversão exige yg≠yf.",
+    "efeito_da_versao": "Contexto substancias restringe coexistência líquido–vapor e crítico; fórmula permanece válida no domínio da ficha.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 23,
+    "id": "formula-latente",
+    "juizo_local": "hfg=2500−500=2000 kJ/kg; 2 kg dão 4000 kJ em vaporização e trabalho sob hipóteses.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 24,
+    "id": "formula-interpolacao",
+    "juizo_local": "Interpolação na mesma região entre 100 e 200 dá 150 no ponto médio; intervalo não nulo.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 25,
+    "id": "formula-umidade",
+    "juizo_local": "Para mesma T e fase de referência, 0,30/0,75=0,40 na aproximação de ar ideal.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 26,
+    "id": "formula-capacidade-termica",
+    "juizo_local": "2×4,2×10=84 kJ com capacidade constante e trabalho desprezível.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 27,
+    "id": "formula-equilibrio-mistura",
+    "juizo_local": "(1×20+3×60)/4=50 °C em conjunto isolado; soma de capacidades positiva.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": "Recomendado explicitar soma de capacidades positiva; não houve erro no domínio físico usual.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 28,
+    "id": "formula-recipiente-mistura",
+    "juizo_local": "(100×20+100×40+2000)/200=40 °C; energia externa e recipiente contabilizados uma vez.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 29,
+    "id": "formula-fase-calorimetria",
+    "juizo_local": "2×2250=4500 kJ para mudança de fase nas hipóteses especificadas.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 30,
+    "id": "formula-energia-mecanica",
+    "juizo_local": "Massa 2 kg, velocidades 3→5 e g=10, alturas 2→5 dão ΔEC=16 J e ΔEP=60 J.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 31,
+    "id": "formula-balanco-fechado",
+    "juizo_local": "Primeira lei fechada ΔU+ΔEC+ΔEP=Q−W; Q entra e W sai positivos.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 32,
+    "id": "formula-u-final",
+    "juizo_local": "−30−(−180)=150 kJ; Ufinal=650 kJ quando energias mecânicas são desprezíveis.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 33,
+    "id": "formula-adiabatico",
+    "juizo_local": "Adiabático Q=0 leva ΔU=−W nas condições indicadas, não impõe W=0.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 34,
+    "id": "formula-fronteira",
+    "juizo_local": "Trabalho quase estático ∫p dV requer pressão da fronteira e convenção de sinais.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 35,
+    "id": "formula-isobarico",
+    "juizo_local": "100 kPa×(3−1)m³=200 kJ em pressão constante quase estática.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 36,
+    "id": "formula-isotermico",
+    "juizo_local": "0,287×300×ln2≈59,680 kJ no isotérmico ideal reversível e só fronteira.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 37,
+    "id": "formula-calor-processos",
+    "juizo_local": "2×0,718×100=143,6 e 2×1,005×100=201 kJ sob hipóteses dos processos.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 38,
+    "id": "formula-ciclo",
+    "juizo_local": "Retorno ao estado e sem variação mecânica líquida implicam Qlíq=Wlíq=400 kJ.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 39,
+    "id": "formula-expansao-livre",
+    "juizo_local": "Expansão livre ideal isolada: ΔS=0,287 ln2≈0,198933 kJ/K.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 40,
+    "id": "formula-reacao",
+    "juizo_local": "Inverter reação troca sinal da entalpia; Qp=ΔH sob trabalho pΔV e condições indicadas.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 41,
+    "id": "formula-entalpia",
+    "juizo_local": "100+200×0,5=200 kJ/kg; pv integra entalpia na base compatível.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 42,
+    "id": "formula-balanco-escoamento",
+    "juizo_local": "Δh=100, ΔEC=75 e ΔEP=0,1 kJ/kg dão q−w=175,1 kJ/kg.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 43,
+    "id": "formula-turbina",
+    "juizo_local": "Turbina 3000→2600: trabalho total não fluxo produzido 400 kJ/kg, uma entrada/saída, adiabática e ΔEC/ΔEP desprezíveis.",
+    "efeito_da_versao": "Alterada na r28; aplicação auditada define trabalho total não associado ao escoamento e condições de corrente; eixo apenas sob condição indicada.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 44,
+    "id": "formula-compressor",
+    "juizo_local": "Compressor 100→400: trabalho total não fluxo recebido 300 kJ/kg sob mesmas hipóteses.",
+    "efeito_da_versao": "Alterada na r28; aplicação auditada define trabalho total não associado ao escoamento e condições de corrente; eixo apenas sob condição indicada.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 45,
+    "id": "formula-bomba",
+    "juizo_local": "Bomba ideal: 0,001×600=0,6 kJ/kg total recebido sob v aproximadamente constante e condições do cartão.",
+    "efeito_da_versao": "Alterada na r28; aplicação auditada define trabalho total não associado ao escoamento e condições de corrente; eixo apenas sob condição indicada.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 46,
+    "id": "formula-valvula",
+    "juizo_local": "Válvula adiabática sem trabalho não fluxo e ΔEC/ΔEP desprezíveis tem h1≈h2.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 47,
+    "id": "formula-trocador-balanco",
+    "juizo_local": "Trocador sem calor externo ou trabalho: 2×(500−400)=200 kW transferidos.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 48,
+    "id": "formula-acumulacao-massa",
+    "juizo_local": "Acumulação de massa com 3 kg/s entrando e 1 saindo é 2 kg/s.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 49,
+    "id": "formula-acumulacao-energia",
+    "juizo_local": "50−10+3×100−1×150=190 kW no balanço transiente com EC/EP desprezíveis.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 50,
+    "id": "formula-intervalo-energia",
+    "juizo_local": "100−20+2×300−1×200=480 kJ no intervalo com entalpias representativas constantes.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 51,
+    "id": "formula-enchimento-tanque",
+    "juizo_local": "Tanque rígido evacuado: u2=hin e T2=1,25×320=400 K sob gás ideal, capacidades e referências compatíveis.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 52,
+    "id": "formula-co2-acumulacao",
+    "juizo_local": "Balanço de zona única bem misturada dá dCi/dt=0,0001 h⁻¹ para os dados sintéticos.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 53,
+    "id": "formula-co2-vazao",
+    "juizo_local": "0,02/(0,0008−0,0004)=50 m³/h em regime estacionário e vazões da mesma referência.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 54,
+    "id": "formula-renovacoes",
+    "juizo_local": "50/100=0,5 h⁻¹ para ar externo e volume positivo; não equivale à recirculação.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": "Recomendado explicitar volume positivo; recirculação não é renovação.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 55,
+    "id": "formula-bomba-potencia",
+    "juizo_local": "1000×9,81×0,01×10=981 W e 981/1400≈0,701 com eixo declarado.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 56,
+    "id": "formula-misturador-correntes",
+    "juizo_local": "(2×100+1×400)/3=200 kJ/kg em misturador adiabático sem trabalho.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 57,
+    "id": "formula-bocal-difusor",
+    "juizo_local": "√(100²+2000×75)=400 m/s em bocal adiabático, sem exigir reversibilidade.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 58,
+    "id": "formula-eficiencia",
+    "juizo_local": "900−300=600 kJ e η=2/3 para calor total e mesmo ciclo.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 59,
+    "id": "formula-cop-refrigerador",
+    "juizo_local": "QL=300 e Win total=100 dão COPR=3 com acionamento e fronteira especificados.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 60,
+    "id": "formula-cop-bomba-calor",
+    "juizo_local": "QH=400 e Win=100 dão COPBC=4=COPR+1 com as duas trocas térmicas declaradas.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 61,
+    "id": "formula-carnot",
+    "juizo_local": "Carnot 600/300 K dá ηmáx=0,5 em dois reservatórios fixos.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 62,
+    "id": "formula-limites-carnot",
+    "juizo_local": "QH=900 e 600/300 K dão Wmáx=450 e QL,mín=450 kJ.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 63,
+    "id": "formula-cop-carnot",
+    "juizo_local": "COPs reversíveis a 600/300 K são 1 e 2, com TH>TL>0.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 64,
+    "id": "formula-balanco-entropia",
+    "juizo_local": "100/300+0,1=13/30 kJ/K para o contato térmico e Sger declarados.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 65,
+    "id": "formula-entropia-isolado",
+    "juizo_local": "Conjunto isolado tem ΔS=Sger≥0, não cada parte separadamente.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 66,
+    "id": "formula-entropia-total",
+    "juizo_local": "−0,2+0,3=0,1 kJ/K para o conjunto isolado.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 67,
+    "id": "formula-calor-reversivel",
+    "juizo_local": "300×0,2=60 kJ/kg em trajetória reversível isotérmica de referência.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 68,
+    "id": "formula-entropia-tp",
+    "juizo_local": "Entropia do gás ideal em T,p com cp=1,0045 dá Δs≈0,0900434 kJ/(kg K).",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 69,
+    "id": "formula-entropia-tv",
+    "juizo_local": "Entropia do mesmo gás em T,v dá Δs≈0,0900434 kJ/(kg K).",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 70,
+    "id": "formula-isentro-gas",
+    "juizo_local": "Para k=1,4 e razão de pressão 2, T2/T1≈1,2190 na referência isentrópica.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 71,
+    "id": "formula-isentropica-turbina",
+    "juizo_local": "(3000−2600)/(3000−2500)=0,8 em turbina adiabática com mesma entrada e pressão final.",
+    "efeito_da_versao": "Alterada na r28; aplicação auditada define trabalho total não associado ao escoamento e condições de corrente; eixo apenas sob condição indicada.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 72,
+    "id": "formula-isentropica-compressor",
+    "juizo_local": "(300−100)/(350−100)=0,8 em compressor sob mesmas condições de referência.",
+    "efeito_da_versao": "Alterada na r28; aplicação auditada define trabalho total não associado ao escoamento e condições de corrente; eixo apenas sob condição indicada.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 73,
+    "id": "formula-entropia-vc",
+    "juizo_local": "0,2−30/300=0,1 kW/K de Sger para volume de controle estacionário.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 74,
+    "id": "formula-exergia",
+    "juizo_local": "300×0,1=30 kJ de exergia destruída para T0 constante e Sger total.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 75,
+    "id": "formula-identidades",
+    "juizo_local": "300×0,1−200×0,1=10 e 300×0,1+0,001×600=30,6 kJ/kg nas identidades de equilíbrio.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 76,
+    "id": "formula-entalpia-isentro",
+    "juizo_local": "v≈0,001 e Δp=600 dão Δh≈0,6 kJ/kg em isentrópica de composição fixa.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 77,
+    "id": "formula-gibbs-fases",
+    "juizo_local": "3 J/mol×0,5 mol=1,5 J na aproximação diferencial; igualdade de μ não prova estabilidade global.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 78,
+    "id": "formula-entropia-c-variavel",
+    "juizo_local": "0,8 ln(4/3)+0,001×100−0,287 ln2≈0,1312124 kJ/(kg K) em gás ideal.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 79,
+    "id": "formula-rankine",
+    "juizo_local": "(600−10)/2890≈0,20415 com trabalhos totais e Rankine simples sem extração.",
+    "efeito_da_versao": "Alterada na r28; aplicação auditada define trabalho total não associado ao escoamento e condições de corrente; eixo apenas sob condição indicada.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 80,
+    "id": "formula-brayton-liquido",
+    "juizo_local": "(600−200)/1000=0,40 com calor e trabalhos totais na fronteira comum.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 81,
+    "id": "formula-brayton-ideal",
+    "juizo_local": "Brayton rp=8,k=1,4 dá η≈0,44796 nas hipóteses do ciclo ideal.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 82,
+    "id": "formula-otto",
+    "juizo_local": "Otto r=8,k=1,4 dá η≈0,56472 no modelo ar-padrão com calores constantes.",
+    "efeito_da_versao": "Contexto ciclos exige calores constantes; modificações em refrigeração não mudam o modelo Otto/Diesel desta ficha.",
+    "ressalva": "Recomendado explicitar etapas Otto e r>1,k>1; não demonstrado erro sob convenção.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 83,
+    "id": "formula-diesel",
+    "juizo_local": "Diesel r=16,rc=2,k=1,4 dá η≈0,61380 com 1<rc<r.",
+    "efeito_da_versao": "Contexto ciclos exige calores constantes; modificações em refrigeração não mudam o modelo Otto/Diesel desta ficha.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 84,
+    "id": "formula-refrigeracao",
+    "juizo_local": "h1=400,h2=440,h3=h4=250 dão qL=150,wc=40,qH=190 e COPR=3,75.",
+    "efeito_da_versao": "Alterada na r29 e r30: compressor usa trabalho líquido total; igualdade exata ao eixo se saldo restante nulo, aproximada se desprezível.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 85,
+    "id": "formula-condensador",
+    "juizo_local": "QL=150 e Win líquido total=40 dão QH=190 no mesmo ciclo e fronteira.",
+    "efeito_da_versao": "Alterada na r29: QH=QL+Win total no mesmo ciclo e fronteira; alteração r30 de base não modifica sua ficha.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 86,
+    "id": "formula-extracao-aquecedor",
+    "juizo_local": "(500−100)/(2500−100)=1/6 de extração em misturador adiabático.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 87,
+    "id": "formula-volumetrica",
+    "juizo_local": "0,008/0,010=0,8 para volume admitido referido à sucção.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": "Recomendado volume deslocado positivo.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 88,
+    "id": "formula-intermediaria",
+    "juizo_local": "√(100×900)=300 kPa sob estágios equivalentes e resfriamento perfeito.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 89,
+    "id": "formula-politropico",
+    "juizo_local": "Compressão politrópica idealizada n=1,3 e p2/p1=4 dá ≈140,662 kJ/kg.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 90,
+    "id": "formula-compressao-isotermica",
+    "juizo_local": "RT ln4=0,287×300×ln4≈119,360 kJ/kg sob modelo isotérmico declarado.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 91,
+    "id": "formula-fourier",
+    "juizo_local": "Fourier dá fluxo +200 W/m² e taxa +400 W no sentido escolhido.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 92,
+    "id": "formula-gradiente",
+    "juizo_local": "(50−100)/0,05=−1000 K/m para parede estacionária sem geração.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": "Recomendado comprimento positivo.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 93,
+    "id": "formula-newton",
+    "juizo_local": "10×2×(60−40)=400 W da superfície ao fluido.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 94,
+    "id": "formula-ua",
+    "juizo_local": "500×2×0,8×40=32000 W com fator e área compatíveis.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 95,
+    "id": "formula-resistencias",
+    "juizo_local": "1/(0,1+0,02+0,05+0,01)=5,556 W/(m² K) para resistências planas.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": "Resistências finitas e divisores positivos no modelo.",
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 96,
+    "id": "formula-radiacao",
+    "juizo_local": "0,8×5,67e−8×2×(400⁴−300⁴)≈1587,6 W sob geometria declarada.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 97,
+    "id": "formula-razao-radiativa",
+    "juizo_local": "0,4/0,8=0,5 para mesmas condições e perda inicial não nula.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 98,
+    "id": "formula-dilatacao",
+    "juizo_local": "12e−6×2×50=0,0012 m em dilatação livre e linear.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 99,
+    "id": "formula-geracao",
+    "juizo_local": "q‴V=20 W e Ts=21 °C com alimentação contabilizada e demais faces isoladas.",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  },
+  {
+    "numero": 100,
+    "id": "formula-geometria",
+    "juizo_local": "0,2×0,3×0,5=0,03 m³ e 0,2×0,3=0,06 m².",
+    "efeito_da_versao": "Ficha e contexto vinculado permanecem iguais na r30; leitura e hipóteses do parecer histórico confrontadas com deltas.",
+    "ressalva": null,
+    "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+  }
+]

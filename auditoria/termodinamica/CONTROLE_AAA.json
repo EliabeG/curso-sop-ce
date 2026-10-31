@@ -10,7 +10,11 @@
     "auditor": "/root/auditor_ban07_final",
     "apoio_auditor_av": "/root/auditor_av_continuacao",
     "apoio_auditor_av_anterior": "/root/auditor_av",
-    "corretor_anterior": "/root/corretor_aaa"
+    "corretor_anterior": "/root/corretor_aaa",
+    "corretor_qa09_exemplos": "/root/corretor",
+    "auditor_qa09_exemplos": "/root/auditor",
+    "corretor_qa09_quatro_candidatas": "/root/qa_teoria",
+    "auditor_qa09_quatro_candidatas": "/root/qa_diagnosticos"
   },
   "itens": [
     {
@@ -2390,10 +2394,16 @@
     }
   ],
   "andamento_atual": {
-    "data": "2026-10-29",
-    "fase": "preflight_QA09",
+    "data": "2026-10-30",
+    "fase": "QA09_em_correcao",
     "estado": "em_execucao",
-    "em_exame": "QA-09: nove diagnósticos e quatro ajustes da oficina aplicados e auditados; candidatos EX011/013 revisados e não aplicados; recálculo do restante continua pendente.",
-    "proximo_ID": "Bloqueado até parecer APROVADO para QA-09 e liberação do coordenador."
+    "em_exame": "QA-09: correções de refrigeração e precisão aplicadas e auditadas na r30; recálculo, fontes, navegador e integração integral continuam pendentes.",
+    "entrega_localizada": "auditoria/termodinamica/evidencias/QA-09/aplicacao-precisao-r30/entrega-r30.md",
+    "parecer_localizado": "auditoria/termodinamica/evidencias/QA-09/auditoria-aplicacao-r30/parecer.md",
+    "parecer_sha256": "1917231655ba500425b0fb5254c3900cb621c9ab29a68d642921985c2cc995df",
+    "html_sha256": "c719adae3464fb56ed2b0ad7014e0721c0aab2da444fb484ec0b40c5c0c8fbd4",
+    "inventario_qa09": "auditoria/termodinamica/evidencias/QA-09/inventario-r30.json",
+    "proximo_ID": "Bloqueado até parecer APROVADO para QA-09 integral e liberação do coordenador.",
+    "formulario_sha256": "949c44fc5b96703929770b2881383d449af890616d34b9ab10b998ca96c75749"
   }
 }

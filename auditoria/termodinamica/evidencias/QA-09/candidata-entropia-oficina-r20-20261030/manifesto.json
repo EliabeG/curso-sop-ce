@@ -1,0 +1,27 @@
+{
+  "id": "QA-09-entropia-oficina-r20",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-mistura-fase-r20-r1/resultado/depois-aula.html",
+  "fonte_sha256": "b05a68731a6975755c0030c524e7915d7833aacb176f680b3890fe82efc803e7",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r20.json",
+  "inventario_sha256": "e548f61cde56f676dd0c670924bd58e7012a2f80229231de6560cbb55831adf4",
+  "ancora": "cobertura99-limites",
+  "inicio_utf16": 470827,
+  "fim_utf16": 472831,
+  "original_sha256": "bf4fb0e14c504c3e030f83b0cea8e460b4471ae0244934d50cf66417a5a41374",
+  "candidata_sha256": "7dbf566277721141e8435129439c22c4c4ccd642d591f626bef748db839643e5",
+  "substituicoes": [
+    {
+      "antes": "Em ciclo entre reservatórios, geração total S_gen = Q_L/T_L − Q_H/T_H, em kJ/K quando Q está em kJ. Viabilidade exige S_gen ≥ 0.",
+      "depois": "Para o conjunto formado pelo dispositivo, os dois reservatórios e suas interfaces, suponha que o dispositivo e as interfaces retornem ao estado inicial e não haja outras trocas de entropia com o exterior. A variação conjunta de entropia dos reservatórios é igual à geração total: S_gen = Q_L/T_L − Q_H/T_H, em kJ/K quando Q está em kJ. Viabilidade exige S_gen ≥ 0."
+    },
+    {
+      "antes": "Entre 500 K e 300 K, um ciclo recebe 900 kJ e produz 300 kJ. Encontre rejeição, rendimento e geração de entropia dos reservatórios; compare com o limite.",
+      "depois": "Entre dois reservatórios a 500 K e 300 K, um dispositivo completa um ciclo, recebe 900 kJ e produz 300 kJ. No conjunto do dispositivo, reservatórios e interfaces, estas retornam ao estado inicial e não há outras trocas de entropia com o exterior. Encontre rejeição, rendimento, variação conjunta de entropia dos reservatórios e geração total; compare com o limite."
+    },
+    {
+      "antes": "S_gen = 600/300 − 900/500 = 0,20 kJ/K. O modelo não viola as duas leis; isso não comprova sozinho o desempenho de um equipamento real.",
+      "depois": "A variação conjunta de entropia dos reservatórios é 600/300 − 900/500 = 0,20 kJ/K. Como o dispositivo e suas interfaces retornam ao estado inicial e o conjunto não troca entropia com o exterior, a geração total do conjunto é S_gen = 0,20 kJ/K. Isso não determina a geração interna de cada reservatório. O modelo não viola as duas leis; isso não comprova sozinho o desempenho de um equipamento real."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "tabelas": [
+    {
+      "nome": "fases",
+      "inicio_utf16": 46524,
+      "fim_utf16": 49664,
+      "tabela_sha256": "031b7ef930ce1afac685cbf1452d5a9d36cb312f6e076ee897028b70aa76d6f0",
+      "contexto_inicio_utf16": 45966,
+      "contexto_fim_utf16": 49877,
+      "contexto_sha256": "82d085cc1279c534bd3724d94e222676977cc703a1b2b08f1c5d64caf3e2a1af"
+    },
+    {
+      "nome": "otto-diesel",
+      "inicio_utf16": 361096,
+      "fim_utf16": 361647,
+      "tabela_sha256": "1bd0f43dae0d4c6dc9959e2dae469bde9deab205916da21054bf6e815e0402d6",
+      "contexto_inicio_utf16": 361002,
+      "contexto_fim_utf16": 369881,
+      "contexto_sha256": "e9003e6a7fb1909ad6fe78833b6faa166bd3827a29f5d4647b14176eae47f175"
+    }
+  ],
+  "modelo_hipotetico": {
+    "T1_K": 300.0,
+    "T2_K": 665.0241438447842,
+    "T3_K": 1200.0,
+    "T4_K": 584.2080560486525,
+    "qin_kJ_kg": 451.78840216048314,
+    "qout_kJ_kg": 212.13880615522788,
+    "eta_integral": 0.5304465428046281,
+    "k_na_entrada": 1.3997214484679665,
+    "eta_k_entrada": 0.5644725201087168
+  },
+  "sem_escrita_em_produto": true
+}

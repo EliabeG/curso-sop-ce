@@ -1,0 +1,23 @@
+# QA-09 — auditoria independente da ponte do ledger r17→r18
+
+Data: 30/10/2026. Auditor automatizado `/root/next_graphics`; autor da ponte `/root/planning`. **APROVADA a integração localizada dos 18 objetos na fotografia r18**, sem aprovar QA-09 integral ou outras ocorrências. Auditei a ponte r17 e fui Corretor das candidatas de primeira lei e entropia aplicadas na r18; também auditei isoladamente as candidatas de ficha 60/EX-027. Este parecer verifica o efeito das quatro mudanças sobre os 18 objetos e a nova integração de outro agente; não reapresenta como revisão independente de minha própria autoria o mérito integral daquelas candidatas ou aplicação.
+
+## Identidade e método
+
+Ledger r18 `ledger-r18-parcial-r1/ledger.json` SHA `d53f1579b37eb2e48d9d91f9027df8b23d88b0d0a763f262e39509f3e4114256`; gerador `ec5bb9b822ead4185b616273a94fa043bc3bb15c8d4e222797fd095c63eb76cc`; reconciliação `e2c6370d5293545a784945a1cacf1b8eaea224e9dab64024de1ae7fd55c43f20`. Vincula o ledger r17 `d373bebdaa89b08cfc5cd99c40901099c8d36e0eefd2314e92e466d3faec5a78` e meu parecer da ponte r17 `89a549b0b9752293655a08b4bf812a794452d5efdd2a66a304d085f673ad9795`. Parecer da aplicação r18 por `/root/planning` tem SHA `dc7cfd2a55c3e8b8abd8a75814f7a637cc4492cc2ef8a9bd8ec370ddb36b817b`.
+
+Snapshot r17 da aula `6b0df1096d0b6de6995ffc51bf8489cb45ab954a7aabdeb3f48d068c9777c57c`; aula r18 `7f09b3f0e53e4f3ed69225adf3ce8e03fda93f132e78a1e884ca5757cc995cca`; formulário r18 `463c00149e36217404cf98bad4f5bed3db828c87d19d1c8e6038678193e9d895`; inventário r18 `717f00621d1740b4c71aeb6e9f492a621489fc86b5c1cffca59cf9584a964acc`.
+
+Reextraí por posição e hash os 18 blocos, conferindo as identidades r17 na base anterior e r18 no inventário; os bytes dos blocos coincidem. Examinei todos os links dos diagnósticos e as bases dos exemplos; os 23 contêineres distintos coincidem em conteúdo e hash entre r17 e r18. Hash confirma identidade, não substitui releitura ou aprovação do contexto.
+
+## Efeito das alterações
+
+Conferi os hashes e intervalos dos quatro deltas aplicados: `base-primeira-lei`, `base-entropia-escoamento`, `ex027` e `ficha60`. A mudança na primeira lei distingue a contribuição de calor do saldo Q−W e é compatível com as contas dos 18; a de entropia explicita fluxo por área e temperatura local sem alterar o balanço de espécie em D28. O EX-027 corrigido é um exemplo de máquina térmica, diferente do **D27**, sobre mistura e turbina. A ficha 60 não está entre os 18 objetos nem é base necessária das contas. As mudanças, seus méritos individuais e demais dependências têm pareceres próprios; aqui não se faz aceitação integral dessas bases.
+
+Recalculei os resultados da ponte: EX001–005 dão 900 kg/m³, 110 °C/120 K, 70, título mássico 0,25 e 1 atm com constante aproximada, nas hipóteses documentadas. D26 dá 1480 kJ/kg, 46,25% e rejeição 1720 kJ/kg; D27 fração 0,20 e potência 2000 kW; D28 taxa inicial 500 ppm/h e estacionário 800 ppm sob mistura e balanço especificados. D11–14: equilíbrio químico nas condições de transferência permitida; D12 30% e 75%; D13 queda de taxa 30% nas condições fixadas; D14 temperatura média da face 28 °C. D15–17 dão 24, 45 e 42 °C no modelo sensível; D18 funde 0,126 kg e deixa 0,074 kg após arredondamento; D19 720 m³/h em regime estacionário bem misturado; D20 potência hidráulica 1500 W e eficiência de eixo 50%, sem determinar potência elétrica. As hipóteses completas, unidades e limites são os da reconciliação; a primeira lei isolada não comprova viabilidade pela segunda lei.
+
+## Ensaios e limites
+
+`python3 auditoria/termodinamica/evidencias/QA-09/auditoria-ledger-r18-independente-20261030/verificar.py`, SHA `a160ee3e65b2cfe8687eab1b2fd2e5f962d26abccab6ac4ccea73e47b0944a16`, passou para 18 objetos, 23 contextos e quatro deltas. Em cópia mínima também reproduziu o gerador e recusou seis adulterações: estado de objeto, exclusão, estado padrão, aula, reconciliação e ledger r17. Frações exatas verificam as contas selecionadas; o programa não extrai automaticamente todos os números nem substitui a leitura. Não foram testadas todas as adulterações possíveis.
+
+As quatro coleções têm padrão `pendente_de_integracao`; 11.400 ocorrências, 816 referências, 138 relações de recursos e seis ativos se sobrepõem e não indicam percentual de conclusão. A ponte não aprova automaticamente pais, filhos, bases, referências ou recursos; os 197 artigos seguem em tratamento separado. Fontes dos modelos são as documentadas nos pareceres r16/r17; não são aqui reclassificadas. Não houve navegador, estudantes, leitor de tela, revisão humana ou certificação externa. QA-09 permanece em correção.

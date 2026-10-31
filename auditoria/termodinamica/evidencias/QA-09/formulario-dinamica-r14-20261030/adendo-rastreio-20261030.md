@@ -1,0 +1,7 @@
+# Adendo — rastreio da alteração do verificador
+
+Data: 30/10/2026. Autor: `/root/next_graphics`. A comunicação inicial do lote ocorreu antes de a entrega e o verificador estarem congelados, permitindo que o Auditor observasse uma divergência entre o hash declarado e o arquivo. O apontamento é procedente para aquela leitura concorrente.
+
+O verificador Python inicialmente tinha SHA-256 `407264dc4820dc4ba92513e2052147c04ef3046c1113b883eab9527378842ff9`. Foi então alterado para também conferir que cada cartão está dentro do grupo indicado e contém exatamente uma expressão inicialmente visível e um botão de revelar inicialmente oculto com `aria-expanded=false`. Após essa alteração seu SHA-256 passou a `2dadbf9c048b5b7ad12dbd72eeee6d2abb2055416fdc95d822575a188e3722ec`. Atualizei a declaração e a descrição da entrega para a versão efetiva, antes deste adendo; o arquivo anterior do verificador não foi conservado como cópia separada, portanto não se apresenta aqui uma reconstrução verificável de seu conteúdo.
+
+Estado agora congelado para reexame: `entrega.md` SHA-256 `626ca07a65bbf71ad8274d032657ae81bbe4e1814aa2e8a7665f07fbf8fa32e6`; `verificar.py` SHA-256 `2dadbf9c048b5b7ad12dbd72eeee6d2abb2055416fdc95d822575a188e3722ec`; `verificar-vm.cjs` SHA-256 `1aa8c9f6f9753a6ad213e8404a8a8208bd9c14654d0000512a2a62450c31a816`. Nova execução do verificador: `ok: true`, 100 cartões, 11 grupos, DOM simulado. Este adendo não altera o produto nem supre a auditoria independente; preserva o fato da divergência observada.

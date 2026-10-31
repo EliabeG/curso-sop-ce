@@ -1,0 +1,11 @@
+# QA-09 — reauditoria da evidência congelada de formulário r14
+
+Data: 30/10/2026. Auditor `/root/next_formulas`; corretor `/root/next_graphics`. **Parecer: APROVADO NO RECORTE DE ENSAIO SIMULADO**, para os arquivos e hashes abaixo. Este parecer não é aprovação científica, de navegador real ou do QA-09 integral.
+
+Na observação anterior, a leitura do texto e o cálculo do hash da entrega ocorreram separadamente enquanto o corretor editava os arquivos; o parecer anterior associa incorretamente o SHA `626ca0…` ao texto antigo com SHA declarado `407264…`. O adendo do corretor explica a alteração concorrente, afirma que a versão anterior do verificador não foi preservada e descreve as mudanças. Não é possível reconstruir ou confirmar independentemente o conteúdo histórico ausente. A observação antiga de divergência permanece registrada, mas não caracteriza o estado agora congelado.
+
+Conferi a entrega atual SHA-256 `626ca07a65bbf71ad8274d032657ae81bbe4e1814aa2e8a7665f07fbf8fa32e6`: declara `verificar.py` SHA `2dadbf9c048b5b7ad12dbd72eeee6d2abb2055416fdc95d822575a188e3722ec` e `verificar-vm.cjs` SHA `1aa8c9f6f9753a6ad213e8404a8a8208bd9c14654d0000512a2a62450c31a816`, ambos confirmados pelos arquivos atuais. Adendo de rastreio SHA `1c384d9d7c2f7709f6098203f2eb81d20017d0dff38b77ee5907841aa4d3660b`. O formulário e o script de produção continuam com SHA respectivamente `3ea110fda92c74253b69d89f5a6e62b288aa3bd99db6a51b54a6c67c8af82fce` e `90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79`.
+
+Inspecionei os verificadores, executei novamente o Python e obtive `ok: true`, 100 cartões e 11 grupos. A contagem separada dos grupos foi 11, 9, 5, 4, 11, 17, 6, 15, 8, 4 e 10. Asserções exercitam buscas, filtro, ausência de resultados, limpeza, memorização, índice e solicitação de impressão, com o código de produção em DOM simulado.
+
+O resultado vale para esses casos e esses arquivos. Objetos simulados não provam construção do DOM em navegador, CSS, foco e impressão reais, acessibilidade, scripts compartilhados ou todas as combinações de busca. Não prova correspondência integral de cada índice ao conteúdo, mérito científico ou desempenho de alunos. Não houve alteração do produto pelo auditor.

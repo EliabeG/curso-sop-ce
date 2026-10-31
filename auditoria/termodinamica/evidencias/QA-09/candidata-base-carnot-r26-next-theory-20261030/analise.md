@@ -1,0 +1,11 @@
+# QA-09 — candidata isolada base-carnot, r26
+
+30/10/2026. Corretor `/root/next_theory`. **Não aplicada; aguarda Auditor independente.** Responde ao [parecer dos cartões](../../../pareceres/QA-09-reconciliacao-flashcards-r26-auditoria-next-examples-20261030.md).
+
+No início da base, o domínio comum às três relações é explicitado: dois reservatórios térmicos a temperaturas constantes TH>TL>0, calor recebido positivo para o motor e trabalho líquido recebido positivo para os COP. O enunciado do limite de eficiência distingue máquinas térmicas cíclicas reversíveis e irreversíveis entre as mesmas duas fontes. O qualificador anterior sobre COP de Carnot e COP real permanece. Esta candidata adicional responde à avaliação de clareza da base solicitada pela coordenação; requer auditoria própria.
+
+Fontes: [MIT, balanço de escoamento](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm), [MIT, limite de Carnot](https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/mitres-2-008su22_book.pdf), [DOE, outro acionamento de refrigeração](https://www.energy.gov/sites/default/files/2017/06/f35/CHP-Absorption%20Chiller-compliant.pdf). Os modelos sintéticos não são dados medidos dessas fontes.
+
+Fotografia r26 SHA `afc7ff0aba80596aa8aa7a3eeb5b9a470948c7d866c6911911b9b00fb243bac2`; inventário SHA `d73d6b239822b288329a75fc1f976419ccae7047d1bc74ba161102a529038241`. Fragmento `base-limite-carnot` UTF-16 [312840,319413), original SHA `510390ee33497cd22eeb65633460eba8de1f44a28cacce03100fa83c13e93509`, candidata `4f0c44cf7ad39f9b5db7555d439b31b1e4a8dad1171f7946cebb5459e30c17fa`. Arquivos isolados têm quebra final excluída dos hashes; manifesto registra uma substituição literal.
+
+`node auditoria/termodinamica/evidencias/QA-09/candidata-base-carnot-r26-next-theory-20261030/verificar.mjs` passou: simulação em memória preserva 197 artigos, 734 MathML e atributos inspecionados de identidade, links e ARIA; SHA do HTML hipotético `af76b85626e936c61e3f37550755951189f04e911c27f30ca14d5797b837dbaa`. A revisão do sentido, a composição das candidatas e a auditoria da versão eventualmente aplicada são independentes deste teste. Sem ensaio de navegador, leitor de tela ou alunos.

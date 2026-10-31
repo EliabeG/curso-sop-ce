@@ -1,0 +1,45 @@
+# QA-09 — classificação de referências FUN-01 na fotografia r9
+
+Data: 30/10/2026. Autor: agente automatizado `/root/reference_triage`, atuando como Corretor. **Aguardando auditoria independente.** Apenas referências 119–140 do inventário r9 de E1, indexadas a partir de zero, foram examinadas. Não se trata de aceite integral das fontes, dos cálculos da aula, dos artigos ou de QA-09.
+
+## Identidade e método
+
+O HTML `modulos/e1-termodinamica.html` examinado tem SHA-256 `2d6b8fb2f9c99e04d22c19d7b32bbc3eb20577459d9132e506f9c0acef3f2fc2`; inventário r9 `auditoria/termodinamica/evidencias/QA-09/inventario-r9.json`, `023c942e7a9fe65a38b28a0cf8db36a97fd5aa204e68215feaeb56ef168f863d`. Cada registro em [identidades.json](identidades.json) identifica documento, seção, âncora, offsets UTF-16, texto, destino e hash SHA-256 do elemento `<a>` completo. Os índices 136 e 137 têm mesmo hash de elemento e mesmo URL, mas contextos e posições diferentes: são referências distintas. IDs são válidos para esta fotografia; depois de editar o documento é necessário reconciliar por contexto, posição e hash, sem transferir parecer automaticamente.
+
+O [verificador](verificar.mjs) é somente leitura; executá-lo da raiz com `node auditoria/termodinamica/evidencias/QA-09/referencias-fun01-r9-20261030/verificar.mjs`. Confere os hashes fixos da base, inventário e 22 links; as oito âncoras locais existem uma vez e os dois arquivos locais existem. A saída comparável está em `identidades.json`. O teste **não acessa a rede** nem verifica semanticamente as fontes, o acesso visual, a licença ou o conteúdo das páginas destino. A comparação externa a seguir foi feita separadamente em 30/10/2026, por ferramenta de consulta web; resultado e limite são por URL, não uma garantia de disponibilidade para todos os usuários.
+
+## Navegação e recursos locais
+
+| Índice r9 | Tipo e destino | Resultado do exame localizado |
+|---:|---|---|
+| 119–123 | Navegação E1 para `#fun01-entrada`, `#fun01-equilibrio`, `#fun01-independencia`, `#fun01-fases`, `#fun01-problemas` | Cada destino existe uma vez na página; não são fontes ou cálculos adicionais. |
+| 124–126 | Navegação E1 para `#base-propriedades`, `#base-absolutas`, `#base-leitura-matematica` | Cada destino existe uma vez; não são fontes externas. |
+| 139 | Recurso didático local `assets/termodinamica/fun01-dados-v1.json` | Existe; contém dados hipotéticos identificados e as três linhas de propriedades de água. Seu conteúdo exige exame próprio; presença não é validação de todos os cálculos. |
+| 140 | Recurso de cálculo local `assets/termodinamica/fun01-calculos-v1.mjs` | Existe; o teste aqui calcula seu hash mas não executa o programa nem aprova sua saída. |
+
+Os hashes dos dois arquivos locais estão na saída. O arquivo de dados distingue propriedades NIST de parâmetros e leituras autorais. Não atribuir a instituições externas as leituras ou exemplos hipotéticos.
+
+## Fontes externas e verificações
+
+As citações abaixo são documentos disponibilizados pelo organismo autor, universidade ou editora identificada; “fonte institucional primária” indica a origem da definição/dado/formulação, enquanto “material didático” indica apoio pedagógico e não a pesquisa original. A consulta de cada URL não confirma o fragmento visual em navegador, propriedade intelectual ou autenticidade histórica de todas as versões.
+
+| Índice r9 | Referência e classificação | Resultado e alcance da consulta |
+|---:|---|---|
+| 127 | [MIT, definições §1.2](https://web.mit.edu/16.unified/www/SPRING/thermodynamics/notes/node10.html); material didático | A página foi acessada; seu sumário inclui sistema, estado e equilíbrio. Apoia a leitura conceitual, não comprova todas as afirmações da aula por si. |
+| 128 | [IUPAC, potencial químico C01032](https://goldbook.iupac.org/terms/view/C01032/html); terminologia institucional | A abertura direta pela ferramenta retornou HTTP 403; índice consultado identifica o termo e sua derivada de Gibbs com T, p e outras quantidades fixos. Acesso direto e apresentação ao aluno ficam **pendentes de verificação**. |
+| 129 | [IUPAC, equilíbrio químico C01023](https://goldbook.iupac.org/terms/view/C01023); terminologia institucional | A abertura direta retornou HTTP 403; resultado de índice identifica o termo e DOI. Acesso direto fica **pendente**; a classificação não comprova a afirmação ampliada sobre estabilidade. |
+| 130 | [Purdue, ME200, página impressa 15](https://www.purdue.edu/freeform/me200/wp-content/uploads/sites/29/2023/01/ME-200-Chapter-1.pdf#page=15); notas didáticas | PDF acessado: p. 15 impressa, página PDF 15, apresenta o postulado de duas propriedades intensivas independentes para substância simples compressível. A exclusão de coordenadas adicionais e restrições da aula devem ser julgadas no contexto. |
+| 131 | [MIT 2.43, aula 9, transcrição, pp. 6–7 do PDF](https://ocw.mit.edu/courses/2-43-advanced-thermodynamics-spring-2024/ocw_243_lecture09_2024mar05_v2_transcript.pdf); fonte didática | PDF acessado; nas páginas indicadas deriva a contagem de variáveis e condições de equilíbrio, identifica troca de espécies e ausência de reação na forma básica. As hipóteses de cada problema precisam de exame próprio. |
+| 132 | [ASHRAE Fundamentals 2025, cap. 2](https://handbook.ashrae.org/Handbooks/F25/IP/f25_ch02/f25_ch02_ip.aspx); manual técnico | Página acessada; seção de misturas discute pontos de bolha e orvalho e variação de composições. Ela não é por si prova da equação algébrica específica de mistura ideal da aula; consultar também 133. |
+| 133 | [University of Washington, CHEM452, §5.1, eq. 5.1](https://faculty.washington.edu/jcv2/CHEM452_WI2023/html/ideal_solutions_and_colligative_properties.html#raoult-s-law); material didático | Página acessada: apresenta a lei de Raoult e alerta para desvios. Equações de bolha/orvalho da aula usam também Dalton e balanço: examinar esses passos e limites separadamente. |
+| 134 | [IAPWS R7-97(2012), §3](https://iapws.org/technical-guidance/release/IF97-Rev.download#page=5); formulação institucional primária | A tentativa de abrir o download citado expirou. O [índice oficial IAPWS](https://iapws.org/technical-guidance/release/IF97-Rev) identifica a formulação. A busca indexada da [publicação oficial](https://iapws.org/public/documents/UWTF-/IF97-Rev.pdf) apresenta os valores 647,096 K e 22,064 MPa em §3, mas a abertura direta dessa cópia também expirou; **a página indicada não foi lida diretamente nesta consulta**. Os valores e o acesso da URL original permanecem sujeitos a conferência independente. |
+| 135 | [MIT 3.020, aula 13, p. 3 do PDF](https://ocw.mit.edu/courses/3-020-thermodynamics-of-materials-spring-2021/mit3_020s21_l13.pdf); notas didáticas | Documento acessado; p. 3 apresenta modelo de mistura de gases ideais, potencial químico e logaritmo de razão de pressões. Não prova aplicabilidade a mistura real. |
+| 136 | [Tong, §4.4](https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S4.html#S4.SS4); material didático | Página acessada: §4.4 apresenta diferencial de G com termo material. O trecho da aula sobre gravidade e hidrostática é uma derivação adicional; a consulta desta referência não valida esse passo automaticamente. |
+| 137 | [Tong, §4.4](https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S4.html#S4.SS4); material didático | Mesmo destino, outro contexto: §4.4 apresenta F, seu critério de equilíbrio e diferencial com termo material. O teste de estabilidade e o modelo de cada exercício mantêm revisão própria. |
+| 138 | [NISTIR 5078, tabela 2](https://www.nist.gov/document/nistir5078-tab2pdf); dados institucionais | PDF acessado, tabela de saturação por pressão, páginas impressas 11–12. As três linhas 0,10/0,15/0,20 MPa, T, h e volumes no JSON foram confrontadas com a tabela: os valores concordam após converter 1 cm³/g = 0,001 m³/kg. O confronto não valida interpolação nem outros estados. |
+
+Para índice 138, valores publicados da tabela de pressão são respectivamente: a 0,10 MPa, T=99,606 °C, h_f=417,50, h_g=2674,9 kJ/kg, v_f=1,04315 e v_g=1693,9 cm³/g; a 0,15 MPa, T=111,349 °C, h_f=467,13, h_g=2693,1, v_f=1,05273 e v_g=1159,3; a 0,20 MPa, T=120,210 °C, h_f=504,70, h_g=2706,2, v_f=1,06052 e v_g=885,68. Convertidos por 10⁻³, os volumes coincidem com o JSON. Exatidão aqui é a da transcrição e conversão de números exibidos pela fonte; não se afirma precisão instrumental ou incerteza experimental.
+
+## Pendências
+
+As fontes 128, 129 e 134 têm acesso direto não confirmado, pelos motivos acima; podem funcionar em outra rede ou navegador, por isso não são declaradas inexistentes. Não foram testados os fragmentos remotos em navegador real, os direitos de reprodução nem os 793 demais registros de referência. Referências, recursos e ocorrências textuais são classes que se sobrepõem; este levantamento não equivale a 22 cálculos, não fecha QA-09 e não atualiza o ledger histórico. O Auditor independente deve reproduzir a identificação e examinar cada classificação, a transcrição NIST e os limites do acesso externo.

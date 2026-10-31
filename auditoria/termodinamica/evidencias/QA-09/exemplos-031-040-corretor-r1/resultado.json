@@ -1,0 +1,122 @@
+{
+  "ocorrencias": [
+    {
+      "id": "EX-031",
+      "secao": "ciclos",
+      "inicio_utf16": 381086,
+      "fim_utf16": 381963,
+      "sha256": "fa0b22cc94dc24f3c4fc2493c719f30ab4a0484149f081b681497f81d73536e6"
+    },
+    {
+      "id": "EX-032",
+      "secao": "ciclos",
+      "inicio_utf16": 384113,
+      "fim_utf16": 384512,
+      "sha256": "323164d40792d4a4623044a12d0ba173756cf6c34380350bbcc77cd77090216b"
+    },
+    {
+      "id": "EX-033",
+      "secao": "aplicacoes",
+      "inicio_utf16": 405030,
+      "fim_utf16": 405381,
+      "sha256": "cb64ece00d51b66fef020660b43fa12b92ef178edf31db2bd3f3e9ea2a78090b"
+    },
+    {
+      "id": "EX-034",
+      "secao": "aplicacoes",
+      "inicio_utf16": 406791,
+      "fim_utf16": 407068,
+      "sha256": "980e75bf3228eeaafe818e395a84b12debedc4409debd1764d6553e2fc980ba1"
+    },
+    {
+      "id": "EX-035",
+      "secao": "aplicacoes",
+      "inicio_utf16": 411377,
+      "fim_utf16": 411763,
+      "sha256": "61d283a4c30c4d83a15e4d9ee393601c5c539b4aee4a6fc3e8fb056466dc7489"
+    },
+    {
+      "id": "EX-036",
+      "secao": "aplicacoes",
+      "inicio_utf16": 411763,
+      "fim_utf16": 412077,
+      "sha256": "711b7c824b1ec6888746c220e3050c2b9d431041f3262bbe3b47f0c8cb6e2679"
+    },
+    {
+      "id": "EX-037",
+      "secao": "aplicacoes",
+      "inicio_utf16": 415231,
+      "fim_utf16": 415519,
+      "sha256": "bbfa5c238aa5d155bf60414203040c65259b7f4fad7ca41efe2cd2759edd41a5"
+    },
+    {
+      "id": "EX-038",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 420034,
+      "fim_utf16": 422968,
+      "sha256": "f82e47fce9b4a81803fca321445fd9e7a28f7e4ef02894f72ae4dea471981c73"
+    },
+    {
+      "id": "EX-039",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 430457,
+      "fim_utf16": 438126,
+      "sha256": "fc411913e4088f4b4842e0122f35daa30d2fba7d620af0d926c693cc93dde68e"
+    },
+    {
+      "id": "EX-040",
+      "secao": "aprofundamento-aplicado",
+      "inicio_utf16": 440903,
+      "fim_utf16": 444336,
+      "sha256": "fff188ce7ed250b0322eabe9cb3308c6b55bf7324aebf489c8e7d06741319489"
+    }
+  ],
+  "resultados": {
+    "EX-031": {
+      "turbinas_kJ_kg": "1600",
+      "bomba_kJ_kg": "10",
+      "calor_recebido_kJ_kg": "3590",
+      "trabalho_liquido_kJ_kg": "1590",
+      "eficiencia_pct": "44.28969359331476323119777159",
+      "calor_rejeitado_kJ_kg": "2000"
+    },
+    "EX-032": {
+      "y": "0.1164658634538152610441767068",
+      "restante": "0.8835341365461847389558232932",
+      "mistura_kJ_kg": "500.0000000000000000000000000"
+    },
+    "EX-033": {
+      "eficiencia": "0.7"
+    },
+    "EX-034": {
+      "vazao_kg_s": "0.02"
+    },
+    "EX-035": {
+      "geracao_m3_h": "0.240",
+      "diferenca": "0.0004",
+      "vazao_m3_h": "6E+2"
+    },
+    "EX-036": {
+      "excesso_ppm": "400.0000",
+      "interno_ppm": "850.0000"
+    },
+    "EX-037": {
+      "vazao_m3_s": "0.015",
+      "potencia_hidraulica_W": "3000.000",
+      "eficiencia": "0.6"
+    },
+    "EX-038": {
+      "fracao": "0.3",
+      "entalpia_kJ_kg": "2860.0"
+    },
+    "EX-039": {
+      "geracao_kW_K": "0.1"
+    },
+    "EX-040": {
+      "p_intermediaria_bar": "4",
+      "razao_primeiro": "4",
+      "razao_segundo": "4"
+    }
+  },
+  "limite": "Contas e identidade; não valida o modelo físico completo nem corresponde a revisão independente."
+}

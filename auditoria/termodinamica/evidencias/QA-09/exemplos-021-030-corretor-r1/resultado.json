@@ -1,0 +1,124 @@
+{
+  "fonte_sha256": "200f9b773050594d762cc596a5a89297024b245fc4f504081fc77baaed3db95f",
+  "inventario_sha256": "5090b9897a4698e0ad090f45182afba5880361aabc9fd3c3bdf848d971a85a1a",
+  "identidade": [
+    {
+      "id_mapa": "EX-021",
+      "secao": "energia",
+      "inicio_utf16": 225021,
+      "fim_utf16": 225352,
+      "sha256_fragmento": "7d5ccbf2c453404e89dc85ca942ca8fc4af21feaa5c268cafd5d686d22aa80c5"
+    },
+    {
+      "id_mapa": "EX-022",
+      "secao": "energia",
+      "inicio_utf16": 228656,
+      "fim_utf16": 228997,
+      "sha256_fragmento": "2a487e5581c87ed5ba98f07fade1bf881a0164fe623e6bf0e213c9fe2af99488"
+    },
+    {
+      "id_mapa": "EX-023",
+      "secao": "energia",
+      "inicio_utf16": 231269,
+      "fim_utf16": 231639,
+      "sha256_fragmento": "667cbf2950b67be9c64b08c6be139194f6a600f10e6e10c76b010e3e23845ec7"
+    },
+    {
+      "id_mapa": "EX-024",
+      "secao": "segunda-lei",
+      "inicio_utf16": 338401,
+      "fim_utf16": 338739,
+      "sha256_fragmento": "4090b8409d5ff3d50b54426b4bf42ccb73e4ab97316da5ca5209645b8a85c7c7"
+    },
+    {
+      "id_mapa": "EX-025",
+      "secao": "segunda-lei",
+      "inicio_utf16": 341084,
+      "fim_utf16": 341502,
+      "sha256_fragmento": "cfdb3bf17b79df7a67e26d9adb39be4b7a3e0675aae1119d22c12aefe3eba7f1"
+    },
+    {
+      "id_mapa": "EX-026",
+      "secao": "segunda-lei",
+      "inicio_utf16": 343777,
+      "fim_utf16": 344059,
+      "sha256_fragmento": "21053305085722f13c8fc1dab485362473038e2aaf0386fdcd646528dda06e06"
+    },
+    {
+      "id_mapa": "EX-027",
+      "secao": "ciclos",
+      "inicio_utf16": 367508,
+      "fim_utf16": 370413,
+      "sha256_fragmento": "1e852f1e2abf7b73fcefc5d2de09267597d0079c2333e637182ab985ba3b87d1"
+    },
+    {
+      "id_mapa": "EX-028",
+      "secao": "ciclos",
+      "inicio_utf16": 370413,
+      "fim_utf16": 376033,
+      "sha256_fragmento": "39662e989f377c6cf34311b044c6de916732f22caf00b5985adfbd4a20ad3dd4"
+    },
+    {
+      "id_mapa": "EX-029",
+      "secao": "ciclos",
+      "inicio_utf16": 376563,
+      "fim_utf16": 376967,
+      "sha256_fragmento": "72d9b64d03a52d49cc39ab883400f5019f8c1ed3ff5656cceebf203620bb7b0b"
+    },
+    {
+      "id_mapa": "EX-030",
+      "secao": "ciclos",
+      "inicio_utf16": 377737,
+      "fim_utf16": 378029,
+      "sha256_fragmento": "e7d02e90ea64cef239ddd71e56cb0f6678b750370f0cfb70f1ee2697ab2817d5"
+    }
+  ],
+  "resultados": {
+    "EX-021": {
+      "h_saida_kJ_kg": "250",
+      "potencia_entrada_kW": "1000",
+      "potencia_saida_kW": "1000"
+    },
+    "EX-022": {
+      "velocidade_m_s": 287.22813232690146,
+      "delta_ec_kJ_kg": "40"
+    },
+    "EX-023": {
+      "titulo": "0.25"
+    },
+    "EX-024": {
+      "carnot": "0.5",
+      "trabalho_max_kJ": "300.0",
+      "rejeicao_min_kJ": "300",
+      "trabalho_proposto_kJ": "480",
+      "eficiencia_proposta": "0.8"
+    },
+    "EX-025": {
+      "exergia_destruida_kJ": "29.00"
+    },
+    "EX-026": {
+      "delta_h_kJ_kg": "0.800"
+    },
+    "EX-027": {
+      "trabalho_kJ": "400",
+      "eficiencia": "0.4"
+    },
+    "EX-028": {
+      "COP_refrigerador": "3",
+      "Q_quente_kJ": "800",
+      "COP_bomba_calor": "4"
+    },
+    "EX-029": {
+      "potencia_inicial_kW": "60",
+      "eficiencia_inicial": "0.4",
+      "potencia_final_kW": "45",
+      "eficiencia_final": "0.3"
+    },
+    "EX-030": {
+      "reducao": "0.25",
+      "eficiencia_inicial": "0.3",
+      "eficiencia_final": "0.4"
+    }
+  },
+  "observacao": "Verificação de identidade e aritmética apenas; não representa auditoria independente nem encerra QA-09."
+}

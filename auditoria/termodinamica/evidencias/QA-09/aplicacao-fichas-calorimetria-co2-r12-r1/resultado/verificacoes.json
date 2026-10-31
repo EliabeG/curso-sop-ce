@@ -1,0 +1,94 @@
+{
+  "estado": "AGUARDANDO_AUDITORIA_INDEPENDENTE",
+  "aula_sha256": "f76c39a3e1d8c349ebf0df72cc20a3ab21c68960c8451799bad90a9dcc4bd8c7",
+  "formulario_antes_sha256": "01d5d79639cd17dfcaea38479019cf719e2601f5b35d446ab562e50d381fa5c9",
+  "formulario_depois_sha256": "6857fd83e0b2e49c804903cff1dea4128a665ab22eb27bac4ab15d6c557ff756",
+  "inventario_r12_sha256": "457a56300aab8f612ebb7f136c7c2f62520abb49c005c209a238925179248d0e",
+  "mapa_sha256": "1c67bdda8f5996c6a230e4556277dbbfac270e64ec5b2ac0cabccdee4b3680ef",
+  "fichas_alteradas": [
+    "formula-equilibrio-mistura",
+    "formula-recipiente-mistura",
+    "formula-fase-calorimetria",
+    "formula-co2-acumulacao",
+    "formula-co2-vazao"
+  ],
+  "demais_fichas_inalteradas": 95,
+  "mathml_preservado": 191,
+  "artigos_preservados": 197,
+  "inventario_oficial_preservado": true,
+  "mapa": {
+    "status": "ok",
+    "r11": 11397,
+    "r12": 11397,
+    "referencias": 815,
+    "recursos": 138,
+    "classificacao": {
+      "PAREADO_EXTERNO": 11238,
+      "PAREADO_INTERNO_CONFERIR": 159
+    }
+  },
+  "validador": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1263,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "gerador": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r12.json",
+    "sha256": "457a56300aab8f612ebb7f136c7c2f62520abb49c005c209a238925179248d0e",
+    "resumo": {
+      "diagnosticos": 28,
+      "exemplos_incluindo_diagnosticos": 78,
+      "casos_oficina": 4,
+      "flashcards": 21,
+      "fichas": 100,
+      "mathml": 711,
+      "figuras": 8,
+      "textos_diretos": 9500,
+      "referencias": 815,
+      "recursos_unicos": 20
+    },
+    "documentos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "f76c39a3e1d8c349ebf0df72cc20a3ab21c68960c8451799bad90a9dcc4bd8c7",
+        "total_nos": 24117,
+        "nos_fora": 10837,
+        "artigos_excluidos": 197,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 21,
+          "tabela": 37,
+          "mathml": 520,
+          "equacao_contextualizada": 99,
+          "exemplo_ou_diagnostico": 78,
+          "figura": 8,
+          "caso_oficina": 4,
+          "flashcard": 21
+        }
+      },
+      {
+        "arquivo": "formulas/termodinamica.html",
+        "sha256": "6857fd83e0b2e49c804903cff1dea4128a665ab22eb27bac4ab15d6c557ff756",
+        "total_nos": 5452,
+        "nos_fora": 5452,
+        "artigos_excluidos": 0,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 11,
+          "ficha_formula": 100,
+          "mathml": 191
+        }
+      }
+    ]
+  },
+  "limites": [
+    "Sem navegador, revisão humana ou estudantes.",
+    "Operação não transacional; preserve snapshots em falha."
+  ]
+}

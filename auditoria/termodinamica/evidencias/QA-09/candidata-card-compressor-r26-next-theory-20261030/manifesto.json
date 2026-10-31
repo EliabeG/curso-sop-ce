@@ -1,0 +1,19 @@
+{
+  "id": "QA-09-candidata-card-compressor-r26-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-fun02-ficha59-ex010-r26-r1/resultado/depois-aula.html",
+  "fonte_sha256": "afc7ff0aba80596aa8aa7a3eeb5b9a470948c7d866c6911911b9b00fb243bac2",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r26.json",
+  "inventario_sha256": "d73d6b239822b288329a75fc1f976419ccae7047d1bc74ba161102a529038241",
+  "ancora": "compressor",
+  "inicio_utf16": 1276670,
+  "fim_utf16": 1279140,
+  "original_sha256": "3683542f1df835e34f1cb3d19f8891beeec1ae83574fcfb7e2aa508ffc30aaeb",
+  "candidata_sha256": "05251d61e3c93ff254cb9834fb211276819a44c3b234a3b3fc10be2fdce59f5b",
+  "substituicoes": [
+    {
+      "antes": "Razão do trabalho isentrópico de entrada pelo trabalho real de entrada, positivo: compressor adiabático em regime permanente, com uma entrada e uma saída e variações cinética e potencial desprezíveis. A referência isentrópica usa o mesmo estado de entrada e a mesma pressão de saída.",
+      "depois": "Razão do trabalho líquido total recebido não associado ao escoamento na referência pelo real, com aumentos de entalpia positivos: compressor adiabático em regime permanente, com uma entrada e uma saída e variações cinética e potencial desprezíveis. Compare a mesma substância de composição fixa, sem reação ou mistura, na mesma fronteira. A referência é adiabática e internamente reversível, com o mesmo estado de entrada e a mesma pressão de saída. Para interpretar como trabalho de eixo, despreze as demais modalidades de trabalho não associado ao escoamento."
+    }
+  ]
+}

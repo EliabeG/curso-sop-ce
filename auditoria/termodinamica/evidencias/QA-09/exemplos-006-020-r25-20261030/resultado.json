@@ -1,0 +1,449 @@
+{
+  "ok": true,
+  "identidades": [
+    {
+      "id": "EX-006",
+      "titulo": "Exemplo resolvido · Separar razão e aumento percentual",
+      "secao": "substancias",
+      "r7": {
+        "inicio": 78767,
+        "fim": 79064,
+        "sha256": "970c9a8833e77acc9698666061ad82bd30b67b3a14834b725651d5498925477d",
+        "contexto": {
+          "ancora": "base-gas-modelo",
+          "inicio": 77358,
+          "fim": 80913,
+          "sha256": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333"
+        }
+      },
+      "r25": {
+        "inicio": 78930,
+        "fim": 79227,
+        "sha256": "970c9a8833e77acc9698666061ad82bd30b67b3a14834b725651d5498925477d",
+        "contexto": {
+          "ancora": "base-gas-modelo",
+          "inicio": 77521,
+          "fim": 81076,
+          "sha256": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-007",
+      "titulo": "Exemplo resolvido · Uma razão com temperatura constante",
+      "secao": "substancias",
+      "r7": {
+        "inicio": 82289,
+        "fim": 82651,
+        "sha256": "c7c99c848fd6996e969d10ff02cfe899adf246f670e9fe9b6d9996e9c73e0633",
+        "contexto": {
+          "ancora": "base-umidade",
+          "inicio": 80913,
+          "fim": 82915,
+          "sha256": "8abffd37dfbfa4a223b0d49d2cec00e31b827fed0191f855d61823f4e05fa464"
+        }
+      },
+      "r25": {
+        "inicio": 82452,
+        "fim": 82814,
+        "sha256": "c7c99c848fd6996e969d10ff02cfe899adf246f670e9fe9b6d9996e9c73e0633",
+        "contexto": {
+          "ancora": "base-umidade",
+          "inicio": 81076,
+          "fim": 83078,
+          "sha256": "8abffd37dfbfa4a223b0d49d2cec00e31b827fed0191f855d61823f4e05fa464"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-008",
+      "titulo": "Exemplo resolvido · Tendência de transferência",
+      "secao": "substancias",
+      "r7": {
+        "inicio": 84926,
+        "fim": 85266,
+        "sha256": "6f8bc6349f77405cbe30e9bb2948a72fb851e48210d1092e9732891cbac8da37",
+        "contexto": {
+          "ancora": "base-equilibrio-fases",
+          "inicio": 82915,
+          "fim": 85488,
+          "sha256": "9dcee90f44c7cad186eeb40d4c890635ea943a985709b97fa5f68dfe2125d633"
+        }
+      },
+      "r25": {
+        "inicio": 85089,
+        "fim": 85429,
+        "sha256": "6f8bc6349f77405cbe30e9bb2948a72fb851e48210d1092e9732891cbac8da37",
+        "contexto": {
+          "ancora": "base-equilibrio-fases",
+          "inicio": 83078,
+          "fim": 85651,
+          "sha256": "9dcee90f44c7cad186eeb40d4c890635ea943a985709b97fa5f68dfe2125d633"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-009",
+      "titulo": "Exemplo resolvido · Integrar uma expressão linear",
+      "secao": "substancias",
+      "r7": {
+        "inicio": 88016,
+        "fim": 88400,
+        "sha256": "f3cd5c1a32226e578a7801f4e7e2b75cf1c362190f8658a2801e1518e4c1c056",
+        "contexto": {
+          "ancora": "base-calor-variavel",
+          "inicio": 85488,
+          "fim": 88858,
+          "sha256": "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de"
+        }
+      },
+      "r25": {
+        "inicio": 88179,
+        "fim": 88563,
+        "sha256": "f3cd5c1a32226e578a7801f4e7e2b75cf1c362190f8658a2801e1518e4c1c056",
+        "contexto": {
+          "ancora": "base-calor-variavel",
+          "inicio": 85651,
+          "fim": 89021,
+          "sha256": "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-010",
+      "titulo": "Exemplo resolvido · Turbina e potência",
+      "secao": "energia",
+      "r7": {
+        "inicio": 186363,
+        "fim": 193663,
+        "sha256": "6b8de18f7009c2e090fa9958088ee99f39ce40bf3895c4ef71115db686b5d030",
+        "contexto": {
+          "ancora": "base-turbina-potencia",
+          "inicio": 179002,
+          "fim": 193701,
+          "sha256": "a9a8a163cb667a472acb0475a598541bf38353f6278153f4f590f4e58ae2588e"
+        }
+      },
+      "r25": {
+        "inicio": 188213,
+        "fim": 195513,
+        "sha256": "6b8de18f7009c2e090fa9958088ee99f39ce40bf3895c4ef71115db686b5d030",
+        "contexto": {
+          "ancora": "base-turbina-potencia",
+          "inicio": 180852,
+          "fim": 195551,
+          "sha256": "a9a8a163cb667a472acb0475a598541bf38353f6278153f4f590f4e58ae2588e"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-011",
+      "titulo": "Exemplo resolvido · Tanque com agitador",
+      "secao": "energia",
+      "r7": {
+        "inicio": 194566,
+        "fim": 194863,
+        "sha256": "8ec6ce4013a1be49c569b5e3b8ab5e80b899cb9d250396be6023b1eecfa2d3c9",
+        "contexto": {
+          "ancora": "base-balanco-fechado",
+          "inicio": 193701,
+          "fim": 199642,
+          "sha256": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb"
+        }
+      },
+      "r25": {
+        "inicio": 196416,
+        "fim": 196713,
+        "sha256": "8ec6ce4013a1be49c569b5e3b8ab5e80b899cb9d250396be6023b1eecfa2d3c9",
+        "contexto": {
+          "ancora": "base-balanco-fechado",
+          "inicio": 195551,
+          "fim": 201492,
+          "sha256": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-012",
+      "titulo": "Exemplo resolvido · Energia final com calor em calorias",
+      "secao": "energia",
+      "r7": {
+        "inicio": 194863,
+        "fim": 195137,
+        "sha256": "dd7fb304ab302b97efbe4fc6363ca74557cce0d05ca16e4c29e40d52625668e7",
+        "contexto": {
+          "ancora": "base-balanco-fechado",
+          "inicio": 193701,
+          "fim": 199642,
+          "sha256": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb"
+        }
+      },
+      "r25": {
+        "inicio": 196713,
+        "fim": 196987,
+        "sha256": "dd7fb304ab302b97efbe4fc6363ca74557cce0d05ca16e4c29e40d52625668e7",
+        "contexto": {
+          "ancora": "base-balanco-fechado",
+          "inicio": 195551,
+          "fim": 201492,
+          "sha256": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-013",
+      "titulo": "Exemplo resolvido · Compressão e aquecimento: ligar energia a temperatura",
+      "secao": "energia",
+      "r7": {
+        "inicio": 195137,
+        "fim": 195675,
+        "sha256": "7438f121e00f4c757b695c3de6f881d295128696b48bad8f5d387b0e6547dfea",
+        "contexto": {
+          "ancora": "base-balanco-fechado",
+          "inicio": 193701,
+          "fim": 199642,
+          "sha256": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb"
+        }
+      },
+      "r25": {
+        "inicio": 196987,
+        "fim": 197525,
+        "sha256": "7438f121e00f4c757b695c3de6f881d295128696b48bad8f5d387b0e6547dfea",
+        "contexto": {
+          "ancora": "base-balanco-fechado",
+          "inicio": 195551,
+          "fim": 201492,
+          "sha256": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-014",
+      "titulo": "Exemplo resolvido · Estado não é caminho",
+      "secao": "energia",
+      "r7": {
+        "inicio": 198889,
+        "fim": 199335,
+        "sha256": "b61c5b4de878da5b8b6e9cbbeb8529f50a523b04770dee30120a2911b5a890f5",
+        "contexto": {
+          "ancora": "base-balanco-fechado",
+          "inicio": 193701,
+          "fim": 199642,
+          "sha256": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb"
+        }
+      },
+      "r25": {
+        "inicio": 200739,
+        "fim": 201185,
+        "sha256": "b61c5b4de878da5b8b6e9cbbeb8529f50a523b04770dee30120a2911b5a890f5",
+        "contexto": {
+          "ancora": "base-balanco-fechado",
+          "inicio": 195551,
+          "fim": 201492,
+          "sha256": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-015",
+      "titulo": "Exemplo resolvido · Entropia sem calor recebido",
+      "secao": "energia",
+      "r7": {
+        "inicio": 202819,
+        "fim": 203151,
+        "sha256": "e1781267ff414825a63df07dbdf843a67b2cef64e939512501279c5e4b88d066",
+        "contexto": {
+          "ancora": "base-expansao-livre",
+          "inicio": 200929,
+          "fim": 203158,
+          "sha256": "f3405521cea64595e48e1b03da18afcb10d4017fe78f3d9b7009573dc46408cd"
+        }
+      },
+      "r25": {
+        "inicio": 204831,
+        "fim": 205163,
+        "sha256": "e1781267ff414825a63df07dbdf843a67b2cef64e939512501279c5e4b88d066",
+        "contexto": {
+          "ancora": "base-expansao-livre",
+          "inicio": 202941,
+          "fim": 205170,
+          "sha256": "f3405521cea64595e48e1b03da18afcb10d4017fe78f3d9b7009573dc46408cd"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-016",
+      "titulo": "Exemplo resolvido · Dimensionar um aquecimento",
+      "secao": "energia",
+      "r7": {
+        "inicio": 205089,
+        "fim": 205420,
+        "sha256": "291b7132767797ff16e24b10d165d9f7a1a8f20acae14c8673f8c57f2be69d6d",
+        "contexto": {
+          "ancora": "base-calorimetria",
+          "inicio": 203158,
+          "fim": 205640,
+          "sha256": "7c7e654b40f3d57c3d0d128ab5c48f9e9572f50a631c8123e45847df78228853"
+        }
+      },
+      "r25": {
+        "inicio": 207101,
+        "fim": 207432,
+        "sha256": "291b7132767797ff16e24b10d165d9f7a1a8f20acae14c8673f8c57f2be69d6d",
+        "contexto": {
+          "ancora": "base-calorimetria",
+          "inicio": 205170,
+          "fim": 207652,
+          "sha256": "7c7e654b40f3d57c3d0d128ab5c48f9e9572f50a631c8123e45847df78228853"
+        }
+      },
+      "contexto_igual": true
+    },
+    {
+      "id": "EX-017",
+      "titulo": "Exemplo resolvido · Massas diferentes do mesmo líquido",
+      "secao": "energia",
+      "r7": {
+        "inicio": 207996,
+        "fim": 208328,
+        "sha256": "c22b48ed504a399c3bd4b1e50df284133f02f79007a6abd20f6d00a3bbbe54d3",
+        "contexto": {
+          "ancora": "base-mistura-termica",
+          "inicio": 205640,
+          "fim": 211965,
+          "sha256": "ee9bafa3d68b1ef06bd39268a717f2474472de6a981bd6b0423f85abcd9eef03"
+        }
+      },
+      "r25": {
+        "inicio": 210197,
+        "fim": 210529,
+        "sha256": "c22b48ed504a399c3bd4b1e50df284133f02f79007a6abd20f6d00a3bbbe54d3",
+        "contexto": {
+          "ancora": "base-mistura-termica",
+          "inicio": 207652,
+          "fim": 214166,
+          "sha256": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8"
+        }
+      },
+      "contexto_igual": false
+    },
+    {
+      "id": "EX-018",
+      "titulo": "Exemplo resolvido · O recipiente também participa",
+      "secao": "energia",
+      "r7": {
+        "inicio": 211393,
+        "fim": 211728,
+        "sha256": "d6ccb7539018a2f668cdd92558ee357604817d02c4189d549570f96435bd355d",
+        "contexto": {
+          "ancora": "base-mistura-termica",
+          "inicio": 205640,
+          "fim": 211965,
+          "sha256": "ee9bafa3d68b1ef06bd39268a717f2474472de6a981bd6b0423f85abcd9eef03"
+        }
+      },
+      "r25": {
+        "inicio": 213594,
+        "fim": 213929,
+        "sha256": "d6ccb7539018a2f668cdd92558ee357604817d02c4189d549570f96435bd355d",
+        "contexto": {
+          "ancora": "base-mistura-termica",
+          "inicio": 207652,
+          "fim": 214166,
+          "sha256": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8"
+        }
+      },
+      "contexto_igual": false
+    },
+    {
+      "id": "EX-019",
+      "titulo": "Exemplo resolvido · Fusão completa ou parcial?",
+      "secao": "energia",
+      "r7": {
+        "inicio": 213504,
+        "fim": 214117,
+        "sha256": "03887766067d6ab87597dc063fb900d4da3ae0dc28dfe52fc334517b82cd31aa",
+        "contexto": {
+          "ancora": "base-fase-calorimetria",
+          "inicio": 211965,
+          "fim": 214351,
+          "sha256": "ddaaf9583c9fb8a99341184b41a8886d7e85f543ee2abdd3955c011d92888d88"
+        }
+      },
+      "r25": {
+        "inicio": 216152,
+        "fim": 216765,
+        "sha256": "03887766067d6ab87597dc063fb900d4da3ae0dc28dfe52fc334517b82cd31aa",
+        "contexto": {
+          "ancora": "base-fase-calorimetria",
+          "inicio": 214166,
+          "fim": 216999,
+          "sha256": "7db22e02be2741b1fb4be3f8c8642fad9a3d0a5bf99d363765d6ba377b9bdcf6"
+        }
+      },
+      "contexto_igual": false
+    },
+    {
+      "id": "EX-020",
+      "titulo": "Exemplo resolvido · O gás chega a 300 K e termina a 420 K",
+      "secao": "energia",
+      "r7": {
+        "inicio": 221137,
+        "fim": 221561,
+        "sha256": "874c77143d5c996ab12370eeee5df3557864d427ff2e7583ee3de00fec6be223",
+        "contexto": {
+          "ancora": "base-balanco-transiente",
+          "inicio": 214351,
+          "fim": 221738,
+          "sha256": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f"
+        }
+      },
+      "r25": {
+        "inicio": 223785,
+        "fim": 224209,
+        "sha256": "874c77143d5c996ab12370eeee5df3557864d427ff2e7583ee3de00fec6be223",
+        "contexto": {
+          "ancora": "base-balanco-transiente",
+          "inicio": 216999,
+          "fim": 224386,
+          "sha256": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f"
+        }
+      },
+      "contexto_igual": true
+    }
+  ],
+  "calculos": {
+    "gas_razao": 1.7999999999999998,
+    "gas_percentual": 79.99999999999999,
+    "umidade": 0.7499999999999999,
+    "transferencia": 0.04,
+    "cp_integral": 196,
+    "cp_entrada": 192.00000000000003,
+    "turbina": 800,
+    "agitador": 210,
+    "caloria": 350,
+    "compressao": -3,
+    "gas_temp": 50,
+    "caminho1": 600,
+    "caminho2": 200,
+    "entropia": 0.1989332408207043,
+    "aquecimento": 252,
+    "aquecimento_t": 157.5,
+    "mistura": 50,
+    "recipiente": 44,
+    "fusao_T": 3.4126984126984135,
+    "fusao_parcial": 0.12574850299401197,
+    "tanque": 420
+  },
+  "limite": "Igualdade não transfere aceite. Cálculos nominais e hashes não examinam automaticamente contexto, fontes ou figura."
+}
