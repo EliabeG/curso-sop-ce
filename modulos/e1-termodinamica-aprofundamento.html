@@ -1424,7 +1424,7 @@
 <p>Na base de <strong>1 kmol de CO</strong>, uma câmara de mistura e reação recebe uma corrente de CO puro e uma corrente de ar ideal com 1 kmol de O₂ e 3,76 kmol de N₂. Ambas entram a 298,15 K e 100 kPa; os produtos saem a 100 kPa. Considere operação permanente, adiabática, sem trabalho e com energias cinética e potencial desprezíveis. O modelo impõe reação completa, sem dissociação nem NO<sub>x</sub>; o nitrogênio é inerte. Use <var>R</var><sub>u</sub> = 8,314 kJ/(kmol·K).</p>
 <p>O ambiente didático tem <var>T</var><sub>0</sub> = 298,15 K, <var>p</var><sub>0</sub> = 100 kPa e frações molares de O₂, N₂ e CO₂ iguais a 0,2100, 0,7896 e 0,0004, respectivamente. Os valores didáticos abaixo são coerentes com esse estado de referência; não constituem dados de projeto. Todas as entalpias de formação e entropias padrão são referidas a 298,15 K e 100 kPa.</p>
 <div class="tabela"><table><caption>Dados didáticos do modelo por espécie</caption><thead><tr><th scope="col">Espécie gasosa</th><th scope="col">h°<sub>f</sub> (kJ/kmol)</th><th scope="col">s° (kJ/(kmol·K))</th><th scope="col">c<sub>p</sub> (kJ/(kmol·K))</th></tr></thead><tbody>
-<tr><th scope="row">CO</th><td data-rotulo="h°f">−110.500</td><td data-rotulo="s°">197,70</td><td data-rotulo="cp">29,00</td></tr><tr><th scope="row">O₂</th><td data-rotulo="h°f">0</td><td data-rotulo="s°">205,15</td><td data-rotulo="cp">30,00</td></tr><tr><th scope="row">N₂</th><td data-rotulo="h°f">0</td><td data-rotulo="s°">191,61</td><td data-rotulo="cp">32,00</td></tr><tr><th scope="row">CO₂</th><td data-rotulo="h°f">−393.500</td><td data-rotulo="s°">213,79</td><td data-rotulo="cp">50,00</td></tr></tbody></table></div>
+<tr><th scope="row">CO</th><td data-rotulo="h°f (kJ/kmol)">−110.500</td><td data-rotulo="s° (kJ/(kmol·K))">197,70</td><td data-rotulo="cp (kJ/(kmol·K))">29,00</td></tr><tr><th scope="row">O₂</th><td data-rotulo="h°f (kJ/kmol)">0</td><td data-rotulo="s° (kJ/(kmol·K))">205,15</td><td data-rotulo="cp (kJ/(kmol·K))">30,00</td></tr><tr><th scope="row">N₂</th><td data-rotulo="h°f (kJ/kmol)">0</td><td data-rotulo="s° (kJ/(kmol·K))">191,61</td><td data-rotulo="cp (kJ/(kmol·K))">32,00</td></tr><tr><th scope="row">CO₂</th><td data-rotulo="h°f (kJ/kmol)">−393.500</td><td data-rotulo="s° (kJ/(kmol·K))">213,79</td><td data-rotulo="cp (kJ/(kmol·K))">50,00</td></tr></tbody></table></div>
 <ol>
 <li><strong>Átomos e base.</strong> CO + O₂ + 3,76 N₂ → CO₂ + 0,50 O₂ + 3,76 N₂. Há 5,26 kmol de produtos por kmol de CO. A reação de conversão é CO + ½ O₂ → CO₂; o oxigênio adicional é excesso não reagido.</li>
 <li><strong>Primeira lei.</strong> À referência, Δ<var>H</var><sup>°</sup><sub>reação</sub> = −393.500 − (−110.500) = −283.000 kJ/kmol de CO. A capacidade térmica total dos produtos no modelo constante é 50 + 0,5(30) + 3,76(32) = 185,32 kJ/(kmol de CO·K). Assim, 185,32(<var>T</var><sub>saída</sub> − 298,15) = 283.000 e <var>T</var><sub>saída</sub> ≈ <strong>1.825,24 K</strong>.</li>
@@ -2372,7 +2372,7 @@
 <h4>2. Caso resolvido — tubo em U com óleo e água</h4>
 <p>Um tubo em U contém água abaixo e óleo imiscível na parte superior do ramo esquerdo. A superfície do óleo está em contato com o gás A; a superfície da água no ramo direito está aberta à atmosfera. O tubo está em repouso. Tome <var>z</var> = 0 na interface óleo–água do ramo esquerdo: a superfície do óleo está em <var>z</var> = 0,400 m e a superfície livre da água à direita em <var>z</var> = 0,150 m. Use ρ<sub>óleo</sub> = 850 kg/m³, ρ<sub>água</sub> = 1.000 kg/m³, <var>g</var> = 9,81 m/s² e <var>p</var><sub>atm</sub> = 101,325 kPa absolutos. Despreze tensão superficial e a variação da pressão do gás entre a tomada e a superfície. Determine a pressão do gás.</p>
 <figure>
-<svg viewBox="0 0 560 410" role="img" aria-labelledby="manometro-titulo manometro-desc" style="max-width:100%;height:auto">
+<div role="region" tabindex="0" aria-label="Diagrama de manometria; role horizontalmente em telas estreitas" style="overflow-x:auto"><svg viewBox="0 0 560 410" role="img" aria-labelledby="manometro-titulo manometro-desc" style="display:block;width:100%;min-width:560px;height:auto;max-width:560px">
 <title id="manometro-titulo">Tubo em U com óleo sobre água</title>
 <desc id="manometro-desc">A interface óleo–água está no ramo esquerdo na cota zero. A superfície de óleo, exposta ao gás A, está 0,400 metro acima da interface. A superfície da água, no ramo direito e aberta à atmosfera, está 0,150 metro acima da interface. A água conecta os dois ramos pelo fundo.</desc>
 <path d="M120 260 V300 Q120 340 160 340 H260 Q300 340 300 300 V200" fill="none" stroke="#1670a9" stroke-width="26" stroke-linecap="butt"/>
@@ -2381,8 +2381,8 @@
 <path d="M145 260 H390" stroke="#555" stroke-width="1" stroke-dasharray="5 4"/>
 <text x="45" y="82" font-size="16">Gás A</text><text x="68" y="180" font-size="16">óleo</text><text x="189" y="360" font-size="16">água conectada</text><text x="320" y="194" font-size="16">atmosfera</text>
 <text x="320" y="215" font-size="15">z = 0,150 m</text><text x="145" y="104" font-size="15">z = 0,400 m</text><text x="145" y="252" font-size="15">interface: z = 0</text>
-</svg>
-<figcaption>Esquema didático: alturas verticais e regiões de fluido, sem escala geométrica rigorosa para dimensões do tubo.</figcaption>
+</svg></div>
+<figcaption>Esquema didático: alturas verticais e regiões de fluido, sem escala geométrica rigorosa para dimensões do tubo. Em telas estreitas, role horizontalmente para ver o diagrama completo.</figcaption>
 </figure>
 <ol>
 <li><strong>Percurso no óleo:</strong> descendo 0,400 m desde a superfície do óleo até a interface, <var>p</var><sub>int</sub> = <var>p</var><sub>A</sub> + 850(9,81)(0,400)/1.000 = <var>p</var><sub>A</sub> + 3,3354 kPa.</li>
