@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "scripts": [
+    "../assets/registro.js",
+    "../assets/curso.js"
+  ],
+  "inputs": {
+    "search": 2,
+    "checkbox": 2,
+    "radio": 581
+  },
+  "tags": {
+    "button": 321,
+    "select": 4,
+    "details": 261,
+    "canvas": 0,
+    "video": 0,
+    "iframe": 0
+  },
+  "downloads_fun": [
+    "../assets/termodinamica/fun01-dados-v1.json",
+    "../assets/termodinamica/fun01-calculos-v1.mjs",
+    "../assets/termodinamica/fun02-dados-v1.json",
+    "../assets/termodinamica/fun02-calculos-v1.mjs",
+    "../assets/termodinamica/fun02-dados-v1.json",
+    "../assets/termodinamica/fun02-calculos-v1.mjs"
+  ],
+  "limite": "Inspeção estática; não executa ações de navegador."
+}

@@ -1,0 +1,17 @@
+# QA-09 — auditoria independente da candidata de fonte OpenStax, r13
+
+Data: 30/10/2026. Auditor automatizado `/root/next_theory`; Corretor `/root/reference_triage`. **Veredito localizado: APROVADA como candidata isolada**, na fotografia e limites abaixo. Sem alteração de produto; não é aceite de QA-09 integral nem da futura aplicação.
+
+## Fonte, exceção e contexto
+
+Abri [OpenStax, University Physics 2, §3.4](https://openstax.org/books/university-physics-volume-2/pages/3-4-thermodynamic-processes): na subseção adiabática, a exposição admite processos quase estáticos ou não e afirma em termos gerais que a expansão realiza trabalho e reduz temperatura. A figura adjacente apresenta um pistão isolado que se desloca; ela ilustra um caso com trabalho, mas não restringe a frase geral a ele. A condição adiabática, isoladamente, não garante trabalho externo positivo nem queda de temperatura.
+
+Abri [MIT, §4.2](https://web.mit.edu/16.unified/www/FALL/thermodynamics/notes/node33.html): a expansão livre considerada ocorre em recinto isolado para um volume inicialmente vazio, sem movimento da fronteira externa; Q=W=0 e, para gás ideal, T é igual entre os estados de equilíbrio inicial e final. A candidata reproduz adequadamente as condições, também exclui outros trabalhos e despreza ΔEc/ΔEp, sem afirmar temperatura uniforme durante o transitório ou aplicar o resultado a gás real. Uma expansão adiabática contra carga pode realizar trabalho e resfriar um gás ideal; a exceção não nega esse caso. As fontes foram acessadas por ferramenta de pesquisa web em 30/10/2026; links podem mudar. Esta revisão não certifica direitos de reprodução nem disponibilidade futura.
+
+## Identidade, delta e impacto
+
+Aula r13 SHA-256 `f19000a7ddb1f3552b9633b0efec266fb3f6c5e5065808505a2f65b2005aefbc`, inventário r13 `0df99b79bcc2350581fcdded72435d30d07858de237a549e6228ca73682f8d9b`; análise candidata SHA `1dc1a6ec882b10502d97224b14547309383128fce25e76e7b9041a785af6fdff`, manifesto `7833e54b6527d2814c1cdbb191edd39e91de1bacfd084021dc5a329ef274885b`. O parágrafo original `37b90e79163a716c0b4e7693eca618655655d30d9f987568c76044d326839fc4` é único no intervalo 245623–246179 UTF-16. O candidato `f9e1e4bebdb5966ee15c710dbb8ad8bdbf96eeffed8995fed1af24b5528426b0` preserva seu conteúdo e link, e acrescenta somente a ressalva e o vínculo MIT antes do fechamento do parágrafo. O contexto de FUN-02 sobre trabalho ser função de caminho permanece intacto.
+
+O verificador independente `evidencias/QA-09/auditoria-candidata-fonte-openstax-r13-20261030/verificar.mjs`, SHA `878572b7a1d7ae7a1ca1c3430efdd2232d28678f59911cc65ba5db483b1a7374`, simula em memória: 197 artigos e todos os 734 MathML de E1 permanecem idênticos, os 1432 links originais e seus atributos href/target/rel continuam na ordem e aparece um novo link MIT com target e rel apropriados. HTML hipotético SHA `f4c9c2af55daf072fc60498f369960a90b01d853593ddda8cae846222d32946c`. O verificador do Corretor também passou. A contagem é de elementos `a` do parser, não de referências únicas; os metadados do inventário e deslocamentos precisam ser refeitos após a inserção.
+
+A candidata resolve a ressalva no próprio local de leitura, preservando a referência histórica. Eventual aplicação exige nova fotografia e mapa, reconciliação do novo link e demais referências/recursos, exame dos 197 artigos e reavaliação de FUN-02/BAN no escopo afetado, seguido de auditoria independente da versão aplicada. Não houve ensaio em navegador real, leitor de tela, estudo com estudantes ou revisão humana.

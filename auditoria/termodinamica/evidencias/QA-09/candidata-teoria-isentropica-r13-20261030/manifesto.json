@@ -1,0 +1,28 @@
+{
+  "id": "QA-09-teoria-isentropica-r13",
+  "estado": "CANDIDATA_ISOLADA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-energyplus-fichas-r13-r1/resultado/depois-aula.html",
+  "fonte_documento": "modulos/e1-termodinamica.html",
+  "sha256_fonte": "f19000a7ddb1f3552b9633b0efec266fb3f6c5e5065808505a2f65b2005aefbc",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r13.json",
+  "sha256_inventario": "0df99b79bcc2350581fcdded72435d30d07858de237a549e6228ca73682f8d9b",
+  "ancora": "base-isentropica",
+  "inicio_utf16": 331818,
+  "fim_utf16": 337684,
+  "original_sha256": "c8a1b942f070d194b11f44fc8f8d190cba5571cf668cba384de6864816558d7b",
+  "candidata_sha256": "2c95d8e5d8d90d01fe365ee214ec4664ccd4dc08cd2e108a66931011a777c17f",
+  "edicoes": [
+    {
+      "antes": "<h3 id=\"base-isentropica\">Eficiência isentrópica: cuidado com a ordem</h3>",
+      "depois": "<h3 id=\"base-isentropica\">Eficiência isentrópica: cuidado com a ordem</h3><p>Modelo para interpretar as razões como trabalhos específicos de eixo: equipamento em regime permanente, com uma entrada e uma saída, adiabático, sem outros trabalhos além do trabalho de eixo e com variações de energia cinética e potencial desprezíveis. Compare a saída real com uma referência adiabática e internamente reversível, a partir do mesmo estado de entrada e até a mesma pressão de saída. Na turbina, as quedas de entalpia real e de referência devem ser positivas; no compressor, os aumentos real e de referência devem ser positivos. As condições descrevem este modelo, não todos os equipamentos.</p>"
+    },
+    {
+      "antes": "A irreversibilidade reduz o trabalho produzido.",
+      "depois": "Nessa comparação adiabática, a irreversibilidade reduz o trabalho específico produzido pela turbina em relação ao de referência."
+    },
+    {
+      "antes": "A irreversibilidade aumenta o trabalho consumido.",
+      "depois": "Nessa comparação adiabática, a irreversibilidade aumenta o trabalho específico consumido pelo compressor em relação ao de referência."
+    }
+  ]
+}

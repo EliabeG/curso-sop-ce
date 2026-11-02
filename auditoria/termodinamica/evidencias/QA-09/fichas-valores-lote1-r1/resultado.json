@@ -1,0 +1,158 @@
+{
+  "id": "QA-09",
+  "estado": "AGUARDANDO_REVISAO_INDEPENDENTE",
+  "autor": "agente automatizado /root/qa_fichas",
+  "data": "2026-10-30",
+  "documento": "formulas/termodinamica.html",
+  "sha256_documento": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+  "identificadores": [
+    {
+      "ficha": "03",
+      "id": "formula-conversoes",
+      "offset_bytes": 8019,
+      "bytes": 5540,
+      "sha256_fragmento": "43d875446e0bcd01e95dbf2e90def6e13efb6ce62355a57e0b495f142fc3b738",
+      "mathml_texto_sem_espacos": [
+        "1kJ=103J",
+        "1kW=1kJ/s",
+        "1kPa⋅m3=1kJ",
+        "1L=10−3m3",
+        "1mm=10−3m",
+        "1cal=4,184J",
+        "1kcal=103cal=4,184kJ",
+        "1kPa=103Pa",
+        "1cm3=10−6m3"
+      ]
+    },
+    {
+      "ficha": "04",
+      "id": "formula-temperatura",
+      "offset_bytes": 13559,
+      "bytes": 2208,
+      "sha256_fragmento": "67887eafe354cad2529070dd9d4268d74c458c42912bc4805919c446f8e0ad0c",
+      "mathml_texto_sem_espacos": [
+        "T[K]=t[∘C]+273,15",
+        "ΔT[K]=Δt[∘C]"
+      ]
+    },
+    {
+      "ficha": "10",
+      "id": "formula-percentual",
+      "offset_bytes": 26526,
+      "bytes": 2616,
+      "sha256_fragmento": "b979cb5cbe386121bbf21dd201ac4f0e673d9cdb5128ec2f9605cde1bd0296a9",
+      "mathml_texto_sem_espacos": [
+        "aumento[%]=(X2X1−1)100",
+        "reducao[%]=(1−X2X1)100"
+      ]
+    },
+    {
+      "ficha": "11",
+      "id": "formula-ppm-geracao",
+      "offset_bytes": 29142,
+      "bytes": 2475,
+      "sha256_fragmento": "1e37a0d9af3d54540593f9c3ca54be84c1777c1c5ca3a4f1def78e1128d5c3c2",
+      "mathml_texto_sem_espacos": [
+        "C=Cppm10−6",
+        "G=NV˙CO2,pessoa"
+      ]
+    },
+    {
+      "ficha": "12",
+      "id": "formula-mols",
+      "offset_bytes": 31852,
+      "bytes": 3771,
+      "sha256_fragmento": "5ced9dcf1d3c229ce86bfd3e90ca808af2a71ef2e43f592eda5cf93b87715992",
+      "mathml_texto_sem_espacos": [
+        "n=mM",
+        "R=RuM",
+        "Ru≃8,314J/(mol⋅K)",
+        "Ru≃0,082atm⋅L/(mol⋅K)",
+        "1mol=6,02214076×1023entidades"
+      ]
+    },
+    {
+      "ficha": "19",
+      "id": "formula-cinetica-molecular",
+      "offset_bytes": 48652,
+      "bytes": 1922,
+      "sha256_fragmento": "8cdc92564eaae67b076cb532eb72a2c275ff9b7e7c821b65568a625876a2ccd1",
+      "mathml_texto_sem_espacos": [
+        "⟨Ecin,trans⟩=32kBT"
+      ]
+    },
+    {
+      "ficha": "25",
+      "id": "formula-umidade",
+      "offset_bytes": 61501,
+      "bytes": 3067,
+      "sha256_fragmento": "5b26cd6204381e0ca167ec0ff8fb6e90032650d4a6e565a1269e59fd880f4eea",
+      "mathml_texto_sem_espacos": [
+        "φ=pvpsat(T)",
+        "pv=φpsat(T)",
+        "pv,2pv,1=φ2φ1(T=cte)"
+      ]
+    },
+    {
+      "ficha": "30",
+      "id": "formula-energia-mecanica",
+      "offset_bytes": 74678,
+      "bytes": 2435,
+      "sha256_fragmento": "f38ae4a9a926f42e7d0456263de504044fba8bbb4c8e8d9afcaceca461d04a14",
+      "mathml_texto_sem_espacos": [
+        "ΔEC=m2(vel22−vel12)",
+        "ΔEP=mg(z2−z1)"
+      ]
+    },
+    {
+      "ficha": "42",
+      "id": "formula-balanco-escoamento",
+      "offset_bytes": 98433,
+      "bytes": 3047,
+      "sha256_fragmento": "f63f29455779a5419d5ed28ed68cbbde554a8dbfd7c8814c09985c11fc46e78a",
+      "mathml_texto_sem_espacos": [
+        "q−w=h2−h1+vel22−vel122000+g(z2−z1)1000"
+      ]
+    },
+    {
+      "ficha": "57",
+      "id": "formula-bocal-difusor",
+      "offset_bytes": 135631,
+      "bytes": 2678,
+      "sha256_fragmento": "1cf768e474439c0c7f35293c1ddf3901fce226ef97091baad613a07bdf4abdc7",
+      "mathml_texto_sem_espacos": [
+        "h1−h2=vel22−vel122000",
+        "vel2=vel12+2000(h1−h2)"
+      ]
+    },
+    {
+      "ficha": "60",
+      "id": "formula-cop-bomba-calor",
+      "offset_bytes": 142358,
+      "bytes": 2173,
+      "sha256_fragmento": "e0e6972adf000747077e456e696c70ffd206ce922b8857f2295521be5c7a1ac9",
+      "mathml_texto_sem_espacos": [
+        "COPBC=QHWin",
+        "COPBC=COPR+1"
+      ]
+    },
+    {
+      "ficha": "96",
+      "id": "formula-radiacao",
+      "offset_bytes": 230470,
+      "bytes": 2972,
+      "sha256_fragmento": "bb79add61a2d709d73db2848fc540aa4758d3bb16c5c83156d3319fcafd2241a",
+      "mathml_texto_sem_espacos": [
+        "Q˙rad=εσA(Ts4−Tamb4)",
+        "σ≃5,67×10−8W/(m2⋅K4)"
+      ]
+    }
+  ],
+  "resultados_referencia": {
+    "R_J_mol_K": "8.31446261815324",
+    "R_atm_L_mol_K": "0.0820573660809596841845546508759",
+    "sigma_W_m2_K4": "5.670374419E-8",
+    "atm_L_em_J": "101.325"
+  },
+  "limite": "Lote selecionado de fatores e constantes; não é inventário integral das fichas nem aceite de QA-09. Teste textual automatizado não substitui inspeção de MathML nem auditoria independente."
+}

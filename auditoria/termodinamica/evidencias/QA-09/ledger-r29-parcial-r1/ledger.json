@@ -1,0 +1,2865 @@
+{
+  "versao": "r29-parcial-r1",
+  "estado_global": "QA09_EM_CORRECAO_NAO_APROVADO",
+  "estado_ponte": "PENDENTE_REVALIDACAO_INDIVIDUAL_E_AUDITORIA",
+  "base_r28": {
+    "ledger": "auditoria/termodinamica/evidencias/QA-09/ledger-r28-parcial-r2/ledger.json",
+    "sha256": "518e6b952254773be5d95ba31e06607ba0a34562d6d90162f9b95d36f6fba000",
+    "parecer": "auditoria/termodinamica/evidencias/QA-09/auditoria-ledger-r28-r2-graficos/parecer.md",
+    "parecer_sha256": "b71c1480f31ffa456ae0c5b0c20ce4ccd01320dab3a251f39d75628dd37068bd"
+  },
+  "entrega_r29": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/aplicacao-refrigeracao-r29/entrega-r29.md",
+    "sha256": "7655fcafc54b9bde876402699ff1ef54ec2801458fd15eb019b65c31b1f9b73a"
+  },
+  "fotografias": {
+    "aula_r29": "f932d341a543f05b9f7b31b037cb28f21f8d4e9933536656475f99fd3d3ba7d5",
+    "formulario_r29": "b839310edfa655e1da907757119beaeacdabd7d088211ac189c38c3dbeb38932",
+    "inventario_r29": "f6237de0c999a66c1edbb74f18911d4bd13ba0352d305b32329f3d7f4fd05db8",
+    "mapa": "a05800b66c6d56aa791cb16a251007ee26c6d4fef50c2fe7b42a2a104e8b21ba"
+  },
+  "colecoes": {
+    "ocorrencias": {
+      "total": 11409,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "referencias": {
+      "total": 816,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "recursos": {
+      "total": 138,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "ativos_especificos": {
+      "total": 6,
+      "estado_padrao": "pendente_de_integracao"
+    }
+  },
+  "objetos": [
+    {
+      "id": "EX-001",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 39057,
+        "fim_utf16": 39383,
+        "sha256": "6a992834b2c455d4432b96b0d885fc7092fa3c034ced4947c7b2738ff78de535"
+      },
+      "r29": {
+        "inicio_utf16": 39057,
+        "fim_utf16": 39383,
+        "sha256": "6a992834b2c455d4432b96b0d885fc7092fa3c034ced4947c7b2738ff78de535"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-medidas",
+          "sha256_r28": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "sha256_r29": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "EX-001",
+        "juizo_local": "900 kg/m³ em ambas metades homogêneas.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:39057:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:39057:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "EX-002",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 41417,
+        "fim_utf16": 41620,
+        "sha256": "570d1bac8f5a29ec4350c974fbcc797810b3b5a6255f9a543c194c57eb9f96ae"
+      },
+      "r29": {
+        "inicio_utf16": 41417,
+        "fim_utf16": 41620,
+        "sha256": "570d1bac8f5a29ec4350c974fbcc797810b3b5a6255f9a543c194c57eb9f96ae"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-instrumentos",
+          "sha256_r28": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r29": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "EX-002",
+        "juizo_local": "−10+120=110 °C; span não é incerteza.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:41417:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:41417:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "EX-003",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 42132,
+        "fim_utf16": 42482,
+        "sha256": "0a78231e1675ba3b239b70b393c4136f645777d039bcfa5ba975b299c6426b39"
+      },
+      "r29": {
+        "inicio_utf16": 42132,
+        "fim_utf16": 42482,
+        "sha256": "0a78231e1675ba3b239b70b393c4136f645777d039bcfa5ba975b299c6426b39"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-instrumentos",
+          "sha256_r28": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r29": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "EX-003",
+        "juizo_local": "10+(30/40)×80=70; interpolação afim.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:42132:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:42132:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "EX-004",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 56081,
+        "fim_utf16": 61947,
+        "sha256": "25c4b655ec5aa4c0d743f6d52e378254643a4e06716b19b0333dbe515ab618f6"
+      },
+      "r29": {
+        "inicio_utf16": 56081,
+        "fim_utf16": 61947,
+        "sha256": "25c4b655ec5aa4c0d743f6d52e378254643a4e06716b19b0333dbe515ab618f6"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "titulo-ex004",
+          "sha256_r28": "9f03f42941073468e8a0844a7806e53a92903b8ee5523dadbad4ce33a9ea8079",
+          "sha256_r29": "9f03f42941073468e8a0844a7806e53a92903b8ee5523dadbad4ce33a9ea8079",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "EX-004",
+        "juizo_local": "(900−400)/(2400−400)=0,25; fração mássica em equilíbrio saturado.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:56081:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:56081:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "EX-005",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 79224,
+        "fim_utf16": 79468,
+        "sha256": "cf1e98634d3a42d137ab84e055555bb5bedb3962304fc7fbc8c58134a6b406c7"
+      },
+      "r29": {
+        "inicio_utf16": 79224,
+        "fim_utf16": 79468,
+        "sha256": "cf1e98634d3a42d137ab84e055555bb5bedb3962304fc7fbc8c58134a6b406c7"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "EX-005",
+        "juizo_local": "0,082×320/26,24=1 atm no modelo ideal.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:79224:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:79224:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D26",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 546579,
+        "fim_utf16": 547532,
+        "sha256": "a82e00538d8a780dddb23b2699f75fb915b546c308c12fd5d44f6d62a74f1e1a"
+      },
+      "r29": {
+        "inicio_utf16": 546961,
+        "fim_utf16": 547914,
+        "sha256": "a82e00538d8a780dddb23b2699f75fb915b546c308c12fd5d44f6d62a74f1e1a"
+      },
+      "links": [
+        "base-ciclos-variantes",
+        "base-rankine"
+      ],
+      "contextos": [
+        {
+          "id": "base-ciclos-variantes",
+          "sha256_r28": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "sha256_r29": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "alterado": false
+        },
+        {
+          "id": "base-rankine",
+          "sha256_r28": "fca1dd4747dc22625c4dd37c64b13c13cf0786611972601e302d60a3881388a7",
+          "sha256_r29": "fca1dd4747dc22625c4dd37c64b13c13cf0786611972601e302d60a3881388a7",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D26",
+        "juizo_local": "Wlíq=1480, Qin=3200, η=46,25%; energia não prova segunda lei.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas. Ficha 79 exige mesmas hipóteses de Rankine sem extração; não prova estados reais ou segunda lei.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:546579:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:546961:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D27",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 547532,
+        "fim_utf16": 548520,
+        "sha256": "f464a072c29b5744c8fff6663d902628d84e5f8a28f51c68306f3a8a8e242962"
+      },
+      "r29": {
+        "inicio_utf16": 547914,
+        "fim_utf16": 548902,
+        "sha256": "f464a072c29b5744c8fff6663d902628d84e5f8a28f51c68306f3a8a8e242962"
+      },
+      "links": [
+        "base-ciclos-variantes",
+        "base-misturador-correntes",
+        "base-turbina-potencia"
+      ],
+      "contextos": [
+        {
+          "id": "base-ciclos-variantes",
+          "sha256_r28": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "sha256_r29": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "alterado": false
+        },
+        {
+          "id": "base-misturador-correntes",
+          "sha256_r28": "29175301d686504895499b382234322cd637d8489cda03c621a8ec3e1d0fae75",
+          "sha256_r29": "29175301d686504895499b382234322cd637d8489cda03c621a8ec3e1d0fae75",
+          "alterado": false
+        },
+        {
+          "id": "base-turbina-potencia",
+          "sha256_r28": "74c5c0d0bf34eb8253ac30ed3c858ba3b4df6cd5a88b0608a96ee7479fc41d1a",
+          "sha256_r29": "74c5c0d0bf34eb8253ac30ed3c858ba3b4df6cd5a88b0608a96ee7479fc41d1a",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D27",
+        "juizo_local": "y=0,20 e W=2000 kW no modelo de turbina vinculada e vazões declaradas.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas. Fichas 43/71 distinguem trabalho total e eixo; não mudam os dados do modelo local da turbina.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:547532:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:547914:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D28",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 548520,
+        "fim_utf16": 549565,
+        "sha256": "d19ea80ff8c3ea479fc09548943bb1bed8c40d129ae265f24aec7f04cba162ed"
+      },
+      "r29": {
+        "inicio_utf16": 548902,
+        "fim_utf16": 549947,
+        "sha256": "d19ea80ff8c3ea479fc09548943bb1bed8c40d129ae265f24aec7f04cba162ed"
+      },
+      "links": [
+        "base-balanco-co2",
+        "base-balanco-transiente"
+      ],
+      "contextos": [
+        {
+          "id": "base-balanco-co2",
+          "sha256_r28": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r29": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "alterado": false
+        },
+        {
+          "id": "base-balanco-transiente",
+          "sha256_r28": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f",
+          "sha256_r29": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D28",
+        "juizo_local": "Taxa inicial 500 ppm/h no balanço dinâmico de zona única.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:548520:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:548902:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D11",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 535880,
+        "fim_utf16": 536619,
+        "sha256": "b03f1c142dc31638a159c7d145d770898d80eccbb10f6c6486c922e34d61891c"
+      },
+      "r29": {
+        "inicio_utf16": 536262,
+        "fim_utf16": 537001,
+        "sha256": "b03f1c142dc31638a159c7d145d770898d80eccbb10f6c6486c922e34d61891c"
+      },
+      "links": [
+        "base-equilibrio-fases",
+        "base-calor-latente"
+      ],
+      "contextos": [
+        {
+          "id": "base-equilibrio-fases",
+          "sha256_r28": "9dcee90f44c7cad186eeb40d4c890635ea943a985709b97fa5f68dfe2125d633",
+          "sha256_r29": "9dcee90f44c7cad186eeb40d4c890635ea943a985709b97fa5f68dfe2125d633",
+          "alterado": false
+        },
+        {
+          "id": "base-calor-latente",
+          "sha256_r28": "bfc8a1480408d803b3b239d9fe20051b8c879efd9b332f144be1646ab2be7c2e",
+          "sha256_r29": "bfc8a1480408d803b3b239d9fe20051b8c879efd9b332f144be1646ab2be7c2e",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D11",
+        "juizo_local": "Equilíbrio de fase: potencial químico, não densidade, nas condições declaradas.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:535880:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:536262:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D12",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 536619,
+        "fim_utf16": 537535,
+        "sha256": "2a5914ed4fd1abd6a5e0c92af1254bb7cb353eda23e4ba232d1f39ac04187d09"
+      },
+      "r29": {
+        "inicio_utf16": 537001,
+        "fim_utf16": 537917,
+        "sha256": "2a5914ed4fd1abd6a5e0c92af1254bb7cb353eda23e4ba232d1f39ac04187d09"
+      },
+      "links": [
+        "base-brayton-real",
+        "base-valvulas-compressor",
+        "base-eficiencia-volumetrica"
+      ],
+      "contextos": [
+        {
+          "id": "base-brayton-real",
+          "sha256_r28": "9795a00e2a3363aff4d55a6ae06aef91b45a2fe328ae327d42865aeaf685f94c",
+          "sha256_r29": "9795a00e2a3363aff4d55a6ae06aef91b45a2fe328ae327d42865aeaf685f94c",
+          "alterado": false
+        },
+        {
+          "id": "base-valvulas-compressor",
+          "sha256_r28": "b08f446eacd783eb0f0f7d95e0b84027a3bb533ae5141eef601ef5c925141e78",
+          "sha256_r29": "b08f446eacd783eb0f0f7d95e0b84027a3bb533ae5141eef601ef5c925141e78",
+          "alterado": false
+        },
+        {
+          "id": "base-eficiencia-volumetrica",
+          "sha256_r28": "427530949bf62bda816f247341cfd1c9e07e086f47db13bb499a63e331b79025",
+          "sha256_r29": "427530949bf62bda816f247341cfd1c9e07e086f47db13bb499a63e331b79025",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D12",
+        "juizo_local": "Rendimento 30%, eficiência volumétrica 75% na referência de sucção.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:536619:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:537001:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D13",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 537535,
+        "fim_utf16": 538234,
+        "sha256": "f632a9109e85568ba75dc475cc9c184359520812a962e4cf9874a6d133fbf140"
+      },
+      "r29": {
+        "inicio_utf16": 537917,
+        "fim_utf16": 538616,
+        "sha256": "f632a9109e85568ba75dc475cc9c184359520812a962e4cf9874a6d133fbf140"
+      },
+      "links": [
+        "base-trocadores",
+        "base-radiacao-vacuo"
+      ],
+      "contextos": [
+        {
+          "id": "base-trocadores",
+          "sha256_r28": "e3a891e5c67e0a92280ae9c78318f9d3d046c00605c857c3ebb250d5e09a02cc",
+          "sha256_r29": "e3a891e5c67e0a92280ae9c78318f9d3d046c00605c857c3ebb250d5e09a02cc",
+          "alterado": false
+        },
+        {
+          "id": "base-radiacao-vacuo",
+          "sha256_r28": "e3994818145ff1ef936119c9f20272d4aac70012004d0628e3dca62ab1fdc8e2",
+          "sha256_r29": "e3994818145ff1ef936119c9f20272d4aac70012004d0628e3dca62ab1fdc8e2",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D13",
+        "juizo_local": "U reduzida 30% reduz taxa 30% nas demais condições fixas.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:537535:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:537917:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D14",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 538234,
+        "fim_utf16": 539214,
+        "sha256": "17ac2a00684b3558d6bf1959f433c731e53594bd670e4e13c01b681f8626e2d9"
+      },
+      "r29": {
+        "inicio_utf16": 538616,
+        "fim_utf16": 539596,
+        "sha256": "17ac2a00684b3558d6bf1959f433c731e53594bd670e4e13c01b681f8626e2d9"
+      },
+      "links": [
+        "base-geracao-face"
+      ],
+      "contextos": [
+        {
+          "id": "base-geracao-face",
+          "sha256_r28": "f788b25e902cf62ee1a72be265172dc18dfb2cd48fb826e3a336f2a5de2a78fd",
+          "sha256_r29": "f788b25e902cf62ee1a72be265172dc18dfb2cd48fb826e3a336f2a5de2a78fd",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D14",
+        "juizo_local": "120 W e 28 °C; trabalho elétrico e geração não são contados duas vezes.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:538234:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:538616:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D15",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 539214,
+        "fim_utf16": 539923,
+        "sha256": "9ab4057c910696dc3cd65a11173b0e43c0a39435af075fb112b80d781a62013c"
+      },
+      "r29": {
+        "inicio_utf16": 539596,
+        "fim_utf16": 540305,
+        "sha256": "9ab4057c910696dc3cd65a11173b0e43c0a39435af075fb112b80d781a62013c"
+      },
+      "links": [
+        "base-calorimetria",
+        "base-mistura-termica"
+      ],
+      "contextos": [
+        {
+          "id": "base-calorimetria",
+          "sha256_r28": "7c7e654b40f3d57c3d0d128ab5c48f9e9572f50a631c8123e45847df78228853",
+          "sha256_r29": "7c7e654b40f3d57c3d0d128ab5c48f9e9572f50a631c8123e45847df78228853",
+          "alterado": false
+        },
+        {
+          "id": "base-mistura-termica",
+          "sha256_r28": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+          "sha256_r29": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D15",
+        "juizo_local": "Mistura de 12/24/36 °C dá 24 °C com capacidades iguais.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:539214:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:539596:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D16",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 539923,
+        "fim_utf16": 540420,
+        "sha256": "c532f8d68448e4171a0be85ed5fda8db65f3d2984dbc3e568793842aba4849f6"
+      },
+      "r29": {
+        "inicio_utf16": 540305,
+        "fim_utf16": 540802,
+        "sha256": "c532f8d68448e4171a0be85ed5fda8db65f3d2984dbc3e568793842aba4849f6"
+      },
+      "links": [
+        "base-mistura-termica"
+      ],
+      "contextos": [
+        {
+          "id": "base-mistura-termica",
+          "sha256_r28": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+          "sha256_r29": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D16",
+        "juizo_local": "Mistura 2 e 6 kJ/K dá 45 °C sem interações adicionais.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:539923:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:540305:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D17",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 540420,
+        "fim_utf16": 541047,
+        "sha256": "a91c10b174fea3b8d18ea9382e6a3e34404a645706424171164a86f15dc6f7e3"
+      },
+      "r29": {
+        "inicio_utf16": 540802,
+        "fim_utf16": 541429,
+        "sha256": "a91c10b174fea3b8d18ea9382e6a3e34404a645706424171164a86f15dc6f7e3"
+      },
+      "links": [
+        "base-mistura-termica",
+        "base-balanco-fechado"
+      ],
+      "contextos": [
+        {
+          "id": "base-mistura-termica",
+          "sha256_r28": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+          "sha256_r29": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+          "alterado": false
+        },
+        {
+          "id": "base-balanco-fechado",
+          "sha256_r28": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+          "sha256_r29": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D17",
+        "juizo_local": "Perda de 20 kJ dá 42 °C incluindo recipiente uma vez.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:540420:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:540802:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D18",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 541047,
+        "fim_utf16": 541670,
+        "sha256": "5d6ecc42c3790f16642342163647a88760466897f3a95cdc88b0aec1fc53578a"
+      },
+      "r29": {
+        "inicio_utf16": 541429,
+        "fim_utf16": 542052,
+        "sha256": "5d6ecc42c3790f16642342163647a88760466897f3a95cdc88b0aec1fc53578a"
+      },
+      "links": [
+        "base-fase-calorimetria"
+      ],
+      "contextos": [
+        {
+          "id": "base-fase-calorimetria",
+          "sha256_r28": "7db22e02be2741b1fb4be3f8c8642fad9a3d0a5bf99d363765d6ba377b9bdcf6",
+          "sha256_r29": "7db22e02be2741b1fb4be3f8c8642fad9a3d0a5bf99d363765d6ba377b9bdcf6",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D18",
+        "juizo_local": "42 kJ fundem 42/334 kg; gelo remanescente, equilíbrio a 0 °C.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:541047:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:541429:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D19",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 541670,
+        "fim_utf16": 542406,
+        "sha256": "9bb600fe48c6e15ed78eb6c2cff4091af810e917a668f15834fa565203de488a"
+      },
+      "r29": {
+        "inicio_utf16": 542052,
+        "fim_utf16": 542788,
+        "sha256": "9bb600fe48c6e15ed78eb6c2cff4091af810e917a668f15834fa565203de488a"
+      },
+      "links": [
+        "base-balanco-co2"
+      ],
+      "contextos": [
+        {
+          "id": "base-balanco-co2",
+          "sha256_r28": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r29": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D19",
+        "juizo_local": "0,36 m³/h dividido por 500 ppm dá 720 m³/h nas hipóteses.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:541670:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:542052:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "D20",
+      "tipo": "base",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 542406,
+        "fim_utf16": 542981,
+        "sha256": "ad1478f21da750ea01a02368d9a3461193b9b19354ec4eb913d2e22fff048a32"
+      },
+      "r29": {
+        "inicio_utf16": 542788,
+        "fim_utf16": 543363,
+        "sha256": "ad1478f21da750ea01a02368d9a3461193b9b19354ec4eb913d2e22fff048a32"
+      },
+      "links": [
+        "base-bomba-integrada"
+      ],
+      "contextos": [
+        {
+          "id": "base-bomba-integrada",
+          "sha256_r28": "16294019cf9b42558971cec2f33f43ed3d6926a32fa57629456e24df8f734505",
+          "sha256_r29": "16294019cf9b42558971cec2f33f43ed3d6926a32fa57629456e24df8f734505",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "base-18",
+      "juizo_r28": {
+        "id": "D20",
+        "juizo_local": "36 m³/h dá 1,5 kW hidráulicos, 50% no eixo.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas. Ficha 45 não altera rendimento hidráulico dado nem determina potência elétrica.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "par_inventario": {
+        "id_r28": "modulos/e1-termodinamica.html:542406:exemplo_ou_diagnostico",
+        "id_r29": "modulos/e1-termodinamica.html:542788:exemplo_ou_diagnostico",
+        "estado": "PAREADO_EXTERNO"
+      }
+    },
+    {
+      "id": "formula-variacao",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 4188,
+        "fim_utf16": 5847,
+        "sha256": "6e0f2abce8b2160327ec05d6c78ae3b81e27ae5f396f6aea36b18126f6941bb0"
+      },
+      "r29": {
+        "inicio_utf16": 4188,
+        "fim_utf16": 5847,
+        "sha256": "6e0f2abce8b2160327ec05d6c78ae3b81e27ae5f396f6aea36b18126f6941bb0"
+      },
+      "links": [
+        "base-leitura-matematica"
+      ],
+      "contextos": [
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-variacao",
+        "juizo_local": "Variação é final menos inicial.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-taxas",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 5847,
+        "fim_utf16": 7903,
+        "sha256": "fefa6b91d7cb5abdc509988f1abea2b4c7c603bd20803e398bd884209aa88af5"
+      },
+      "r29": {
+        "inicio_utf16": 5847,
+        "fim_utf16": 7903,
+        "sha256": "fefa6b91d7cb5abdc509988f1abea2b4c7c603bd20803e398bd884209aa88af5"
+      },
+      "links": [
+        "base-leitura-matematica"
+      ],
+      "contextos": [
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-taxas",
+        "juizo_local": "Q/Δt é taxa média; condição declarada constante é suficiente.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-conversoes",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 7903,
+        "fim_utf16": 13383,
+        "sha256": "43d875446e0bcd01e95dbf2e90def6e13efb6ce62355a57e0b495f142fc3b738"
+      },
+      "r29": {
+        "inicio_utf16": 7903,
+        "fim_utf16": 13383,
+        "sha256": "43d875446e0bcd01e95dbf2e90def6e13efb6ce62355a57e0b495f142fc3b738"
+      },
+      "links": [
+        "base-leitura-matematica",
+        "base-balanco-fechado"
+      ],
+      "contextos": [
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        },
+        {
+          "id": "base-balanco-fechado",
+          "sha256_r28": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+          "sha256_r29": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-conversoes",
+        "juizo_local": "1 kPa·m³=1 kJ e 1 cal termoquímica=4,184 J.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-temperatura",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 13383,
+        "fim_utf16": 15564,
+        "sha256": "67887eafe354cad2529070dd9d4268d74c458c42912bc4805919c446f8e0ad0c"
+      },
+      "r29": {
+        "inicio_utf16": 13383,
+        "fim_utf16": 15564,
+        "sha256": "67887eafe354cad2529070dd9d4268d74c458c42912bc4805919c446f8e0ad0c"
+      },
+      "links": [
+        "base-absolutas"
+      ],
+      "contextos": [
+        {
+          "id": "base-absolutas",
+          "sha256_r28": "32f469f265036fd9aca15e0b51a2a88f3e0570d5f936dd1241de80a2e41c9e3b",
+          "sha256_r29": "32f469f265036fd9aca15e0b51a2a88f3e0570d5f936dd1241de80a2e41c9e3b",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-temperatura",
+        "juizo_local": "27 °C=300,15 K; intervalos têm mesma magnitude K/°C.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-pressao",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 15564,
+        "fim_utf16": 17771,
+        "sha256": "8254d49fdad6ec483188db2f7125a7dedf1d435ac470c60a23652a0cefcb172c"
+      },
+      "r29": {
+        "inicio_utf16": 15564,
+        "fim_utf16": 17771,
+        "sha256": "8254d49fdad6ec483188db2f7125a7dedf1d435ac470c60a23652a0cefcb172c"
+      },
+      "links": [
+        "base-absolutas",
+        "base-leitura-matematica"
+      ],
+      "contextos": [
+        {
+          "id": "base-absolutas",
+          "sha256_r28": "32f469f265036fd9aca15e0b51a2a88f3e0570d5f936dd1241de80a2e41c9e3b",
+          "sha256_r29": "32f469f265036fd9aca15e0b51a2a88f3e0570d5f936dd1241de80a2e41c9e3b",
+          "alterado": false
+        },
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-pressao",
+        "juizo_local": "F⊥/A é pressão média ou uniforme, não valor local geral.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-densidade",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 17771,
+        "fim_utf16": 19417,
+        "sha256": "6ab8bf1e45cf2a677d394663e7a34c966fe088e9f8078da5a30c19af7722170d"
+      },
+      "r29": {
+        "inicio_utf16": 17771,
+        "fim_utf16": 19417,
+        "sha256": "6ab8bf1e45cf2a677d394663e7a34c966fe088e9f8078da5a30c19af7722170d"
+      },
+      "links": [
+        "base-medidas"
+      ],
+      "contextos": [
+        {
+          "id": "base-medidas",
+          "sha256_r28": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "sha256_r29": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-densidade",
+        "juizo_local": "ρ=m/V e v=V/m para mesma amostra e estado.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-especificas",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 19417,
+        "fim_utf16": 21306,
+        "sha256": "a3df5c592695c8c8cfb0f6f4e98e42c9e92515aaa52b03c611ed65b1b8e8c363"
+      },
+      "r29": {
+        "inicio_utf16": 19417,
+        "fim_utf16": 21306,
+        "sha256": "a3df5c592695c8c8cfb0f6f4e98e42c9e92515aaa52b03c611ed65b1b8e8c363"
+      },
+      "links": [
+        "base-propriedades"
+      ],
+      "contextos": [
+        {
+          "id": "base-propriedades",
+          "sha256_r28": "8488eb7a5e05b99667bb73014060743e6bfb685f855c918cbcac26cbfbb1ac3c",
+          "sha256_r29": "8488eb7a5e05b99667bb73014060743e6bfb685f855c918cbcac26cbfbb1ac3c",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-especificas",
+        "juizo_local": "u,h,s são grandezas totais correspondentes por massa.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-span",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 21306,
+        "fim_utf16": 23587,
+        "sha256": "c96d68f32b732981d3fccb936c25cbc4ced9561400e7478e537d6eea42d26f67"
+      },
+      "r29": {
+        "inicio_utf16": 21306,
+        "fim_utf16": 23587,
+        "sha256": "c96d68f32b732981d3fccb936c25cbc4ced9561400e7478e537d6eea42d26f67"
+      },
+      "links": [
+        "base-instrumentos"
+      ],
+      "contextos": [
+        {
+          "id": "base-instrumentos",
+          "sha256_r28": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r29": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-span",
+        "juizo_local": "Span é limite superior menos inferior.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-escalas",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 23587,
+        "fim_utf16": 26197,
+        "sha256": "5b8196140d9b25b01319c20f39a2f87a507b0c85be161c0f1351dd3153955355"
+      },
+      "r29": {
+        "inicio_utf16": 23587,
+        "fim_utf16": 26197,
+        "sha256": "5b8196140d9b25b01319c20f39a2f87a507b0c85be161c0f1351dd3153955355"
+      },
+      "links": [
+        "base-instrumentos"
+      ],
+      "contextos": [
+        {
+          "id": "base-instrumentos",
+          "sha256_r28": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r29": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-escalas",
+        "juizo_local": "Escalas afins requerem intervalos não nulos e não necessariamente passam pela origem.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-percentual",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 26197,
+        "fim_utf16": 28787,
+        "sha256": "b979cb5cbe386121bbf21dd201ac4f0e673d9cdb5128ec2f9605cde1bd0296a9"
+      },
+      "r29": {
+        "inicio_utf16": 26197,
+        "fim_utf16": 28787,
+        "sha256": "b979cb5cbe386121bbf21dd201ac4f0e673d9cdb5128ec2f9605cde1bd0296a9"
+      },
+      "links": [
+        "base-leitura-matematica"
+      ],
+      "contextos": [
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-percentual",
+        "juizo_local": "Percentual tem referência inicial positiva.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-ppm-geracao",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 28787,
+        "fim_utf16": 31194,
+        "sha256": "1e37a0d9af3d54540593f9c3ca54be84c1777c1c5ca3a4f1def78e1128d5c3c2"
+      },
+      "r29": {
+        "inicio_utf16": 28787,
+        "fim_utf16": 31194,
+        "sha256": "1e37a0d9af3d54540593f9c3ca54be84c1777c1c5ca3a4f1def78e1128d5c3c2"
+      },
+      "links": [
+        "base-balanco-co2"
+      ],
+      "contextos": [
+        {
+          "id": "base-balanco-co2",
+          "sha256_r28": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r29": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-ppm-geracao",
+        "juizo_local": "1000 ppmv=0,001 e fontes de geração somam na mesma referência.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-mols",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 31429,
+        "fim_utf16": 35169,
+        "sha256": "5ced9dcf1d3c229ce86bfd3e90ca808af2a71ef2e43f592eda5cf93b87715992"
+      },
+      "r29": {
+        "inicio_utf16": 31429,
+        "fim_utf16": 35169,
+        "sha256": "5ced9dcf1d3c229ce86bfd3e90ca808af2a71ef2e43f592eda5cf93b87715992"
+      },
+      "links": [
+        "base-gas-modelo"
+      ],
+      "contextos": [
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-mols",
+        "juizo_local": "n=m/M e R=Ru/M com unidades coerentes.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-gas-ideal",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 35169,
+        "fim_utf16": 36943,
+        "sha256": "cf046561b9a75319f3b0386f64cd3d4dc0e314ad4aa345b1485fbed778bd3fa2"
+      },
+      "r29": {
+        "inicio_utf16": 35169,
+        "fim_utf16": 36943,
+        "sha256": "cf046561b9a75319f3b0386f64cd3d4dc0e314ad4aa345b1485fbed778bd3fa2"
+      },
+      "links": [
+        "base-gas-modelo"
+      ],
+      "contextos": [
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-gas-ideal",
+        "juizo_local": "pV=mRT=nRuT para gás ideal e pressão/temperatura absolutas.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-dois-estados",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 36943,
+        "fim_utf16": 39138,
+        "sha256": "b1b0f9e9411109938d921eaad247735a2ce7c4223d448564ad0699bd242b5fd2"
+      },
+      "r29": {
+        "inicio_utf16": 36943,
+        "fim_utf16": 39138,
+        "sha256": "b1b0f9e9411109938d921eaad247735a2ce7c4223d448564ad0699bd242b5fd2"
+      },
+      "links": [
+        "base-gas-modelo"
+      ],
+      "contextos": [
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-dois-estados",
+        "juizo_local": "Dois estados mantêm quantidade e composição.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-restricoes",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 39138,
+        "fim_utf16": 41969,
+        "sha256": "d8acfe11cbd87b81fc594f5cd991f63a8639f0e9bcfda1dedb242f953c69ea65"
+      },
+      "r29": {
+        "inicio_utf16": 39138,
+        "fim_utf16": 41969,
+        "sha256": "d8acfe11cbd87b81fc594f5cd991f63a8639f0e9bcfda1dedb242f953c69ea65"
+      },
+      "links": [
+        "base-gas-modelo"
+      ],
+      "contextos": [
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-restricoes",
+        "juizo_local": "Relações de processo exigem restrição e modelo declarados.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-compressibilidade",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 41969,
+        "fim_utf16": 44073,
+        "sha256": "6be199146531e2223bf363040ae081032f0e9c41536c1ec02299f708f1b0d4f9"
+      },
+      "r29": {
+        "inicio_utf16": 41969,
+        "fim_utf16": 44073,
+        "sha256": "6be199146531e2223bf363040ae081032f0e9c41536c1ec02299f708f1b0d4f9"
+      },
+      "links": [
+        "base-gas-modelo"
+      ],
+      "contextos": [
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-compressibilidade",
+        "juizo_local": "Z=1 pontual não prova todas as propriedades ideais.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-calores-especificos",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 44073,
+        "fim_utf16": 45825,
+        "sha256": "8e613f5d782057a765ce3c412777b6e1d7ec342039c9e27df5aaf17e6279a217"
+      },
+      "r29": {
+        "inicio_utf16": 44073,
+        "fim_utf16": 45825,
+        "sha256": "8e613f5d782057a765ce3c412777b6e1d7ec342039c9e27df5aaf17e6279a217"
+      },
+      "links": [
+        "base-gas-energia"
+      ],
+      "contextos": [
+        {
+          "id": "base-gas-energia",
+          "sha256_r28": "a44f30b844520b9feacb8a73858b06a0f05b4428533886a7b982a0c926972ef9",
+          "sha256_r29": "a44f30b844520b9feacb8a73858b06a0f05b4428533886a7b982a0c926972ef9",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-calores-especificos",
+        "juizo_local": "cp−cv=R para gás ideal à mesma temperatura.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-energia-gas",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 45825,
+        "fim_utf16": 48017,
+        "sha256": "d8d3db2305c0e9ce8c007d43c12dd13c0c74500d25c25fc40b3048b7594ae2fa"
+      },
+      "r29": {
+        "inicio_utf16": 45825,
+        "fim_utf16": 48017,
+        "sha256": "d8d3db2305c0e9ce8c007d43c12dd13c0c74500d25c25fc40b3048b7594ae2fa"
+      },
+      "links": [
+        "base-gas-energia"
+      ],
+      "contextos": [
+        {
+          "id": "base-gas-energia",
+          "sha256_r28": "a44f30b844520b9feacb8a73858b06a0f05b4428533886a7b982a0c926972ef9",
+          "sha256_r29": "a44f30b844520b9feacb8a73858b06a0f05b4428533886a7b982a0c926972ef9",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-energia-gas",
+        "juizo_local": "Δu=cvΔT e Δh=cpΔT em modelo ideal com capacidades constantes.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-cinetica-molecular",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 48017,
+        "fim_utf16": 49915,
+        "sha256": "8cdc92564eaae67b076cb532eb72a2c275ff9b7e7c821b65568a625876a2ccd1"
+      },
+      "r29": {
+        "inicio_utf16": 48017,
+        "fim_utf16": 49915,
+        "sha256": "8cdc92564eaae67b076cb532eb72a2c275ff9b7e7c821b65568a625876a2ccd1"
+      },
+      "links": [
+        "base-molecular"
+      ],
+      "contextos": [
+        {
+          "id": "base-molecular",
+          "sha256_r28": "4d53ee61ed2d7fb77d98ec9f79a1ede61f09da0664140302e530dfd48afff21c",
+          "sha256_r29": "4d53ee61ed2d7fb77d98ec9f79a1ede61f09da0664140302e530dfd48afff21c",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-cinetica-molecular",
+        "juizo_local": "3kBT/2 é apenas energia cinética translacional média por molécula.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-energia-c-variavel",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 49915,
+        "fim_utf16": 52104,
+        "sha256": "3548046185f19e3dae670fe09bc96e765c803d0b6da5f2c0a91ababac4343003"
+      },
+      "r29": {
+        "inicio_utf16": 49915,
+        "fim_utf16": 52104,
+        "sha256": "3548046185f19e3dae670fe09bc96e765c803d0b6da5f2c0a91ababac4343003"
+      },
+      "links": [
+        "base-calor-variavel"
+      ],
+      "contextos": [
+        {
+          "id": "base-calor-variavel",
+          "sha256_r28": "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de",
+          "sha256_r29": "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-energia-c-variavel",
+        "juizo_local": "Δh=integral cp(T)dT em gás ideal de composição fixa.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-titulo",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 52340,
+        "fim_utf16": 54159,
+        "sha256": "12a0fb5c8bac71b5464ffd1d4b9036f08a6bb355ed1d5cc5b24737ba86c621cf"
+      },
+      "r29": {
+        "inicio_utf16": 52340,
+        "fim_utf16": 54159,
+        "sha256": "12a0fb5c8bac71b5464ffd1d4b9036f08a6bb355ed1d5cc5b24737ba86c621cf"
+      },
+      "links": [
+        "substancias"
+      ],
+      "contextos": [
+        {
+          "id": "substancias",
+          "sha256_r28": "79b3b4d0828671a5b42f2f9d8b8eef0c850f721082a32af29ac73bc37c4788c7",
+          "sha256_r29": "79b3b4d0828671a5b42f2f9d8b8eef0c850f721082a32af29ac73bc37c4788c7",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-titulo",
+        "juizo_local": "x=mg/(mf+mg) com massa total positiva, limites saturados e fora do crítico.",
+        "efeito_deltas": "Base restringe coexistência fluida, fase e crítico; este caso usa mistura saturada ou rejeita título inválido, compatível com restrição.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "formula-mistura",
+      "tipo": "ficha",
+      "arquivo": "formulas/termodinamica.html",
+      "r28": {
+        "inicio_utf16": 54159,
+        "fim_utf16": 56223,
+        "sha256": "ffc556a5b32aa167056373b92e825a9c45e600c9faf60e10e426f1d204852216"
+      },
+      "r29": {
+        "inicio_utf16": 54159,
+        "fim_utf16": 56223,
+        "sha256": "ffc556a5b32aa167056373b92e825a9c45e600c9faf60e10e426f1d204852216"
+      },
+      "links": [
+        "substancias"
+      ],
+      "contextos": [
+        {
+          "id": "substancias",
+          "sha256_r28": "79b3b4d0828671a5b42f2f9d8b8eef0c850f721082a32af29ac73bc37c4788c7",
+          "sha256_r29": "79b3b4d0828671a5b42f2f9d8b8eef0c850f721082a32af29ac73bc37c4788c7",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "formula-mistura",
+        "juizo_local": "y=yf+x(yg−yf), mesma saturação; inversão exige yg≠yf.",
+        "efeito_deltas": "Base restringe coexistência fluida, fase e crítico; este caso usa mistura saturada ou rejeita título inválido, compatível com restrição.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "figura-r27-1",
+      "tipo": "figura_svg",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 173409,
+        "fim_utf16": 174471,
+        "sha256": "382679b6d7c5a390a660ba6d004bd90e31a7b40c5199a0134f6f4c94df68d677"
+      },
+      "r29": {
+        "inicio_utf16": 173409,
+        "fim_utf16": 174471,
+        "sha256": "382679b6d7c5a390a660ba6d004bd90e31a7b40c5199a0134f6f4c94df68d677"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "figura-r27-1",
+        "juizo_local": "Ciclo horário p–V: trabalho líquido +200 kJ sob interpretação quase estática.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "contexto_figura": {
+        "sha256_r28": "441d2087acd5de31fe6956694fa013e41405702a4dec082f9c15c4af5edfe26c",
+        "sha256_r29": "441d2087acd5de31fe6956694fa013e41405702a4dec082f9c15c4af5edfe26c",
+        "alterado": false
+      }
+    },
+    {
+      "id": "figura-r27-2",
+      "tipo": "figura_svg",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 201144,
+        "fim_utf16": 202614,
+        "sha256": "eac47b40277fcad7474a4e766a905babeea45796f91031303cb36e32ed557703"
+      },
+      "r29": {
+        "inicio_utf16": 201144,
+        "fim_utf16": 202614,
+        "sha256": "eac47b40277fcad7474a4e766a905babeea45796f91031303cb36e32ed557703"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "figura-r27-2",
+        "juizo_local": "Caminhos p–V: 600 e 200 kJ; mesma temperatura apenas para mesmo gás ideal e massa.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "contexto_figura": {
+        "sha256_r28": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "sha256_r29": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+        "alterado": false
+      }
+    },
+    {
+      "id": "figura-r27-3",
+      "tipo": "figura_svg",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 212405,
+        "fim_utf16": 213725,
+        "sha256": "e9e3a1ac563e8c82462083d29ed4dbd7df725ef9ccc725c9f5d733af022ac282"
+      },
+      "r29": {
+        "inicio_utf16": 212405,
+        "fim_utf16": 213725,
+        "sha256": "e9e3a1ac563e8c82462083d29ed4dbd7df725ef9ccc725c9f5d733af022ac282"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "figura-r27-3",
+        "juizo_local": "Mistura: (1×20+3×60)/4=50 °C com capacidades constantes e isolamento.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "contexto_figura": {
+        "sha256_r28": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+        "sha256_r29": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+        "alterado": false
+      }
+    },
+    {
+      "id": "figura-r27-4",
+      "tipo": "figura_svg",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 409694,
+        "fim_utf16": 411048,
+        "sha256": "ad673ba3750acb066643ddaeff915bf69e0cb23972b909f732b0dc51161290c7"
+      },
+      "r29": {
+        "inicio_utf16": 410076,
+        "fim_utf16": 411430,
+        "sha256": "ad673ba3750acb066643ddaeff915bf69e0cb23972b909f732b0dc51161290c7"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "figura-r27-4",
+        "juizo_local": "Compressor: compressão, descarga, reexpansão e admissão em sequência esquemática.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria",
+      "contexto_figura": {
+        "sha256_r28": "b08f446eacd783eb0f0f7d95e0b84027a3bb533ae5141eef601ef5c925141e78",
+        "sha256_r29": "b08f446eacd783eb0f0f7d95e0b84027a3bb533ae5141eef601ef5c925141e78",
+        "alterado": false
+      }
+    },
+    {
+      "id": "fun01-objetivos",
+      "tipo": "bloco_teoria",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 90771,
+        "fim_utf16": 92093,
+        "sha256": "999acac3f3f2c9eac594e4468c8f265e2a981f7244cf2671b3d7a67eedd60678"
+      },
+      "r29": {
+        "inicio_utf16": 90771,
+        "fim_utf16": 92093,
+        "sha256": "999acac3f3f2c9eac594e4468c8f265e2a981f7244cf2671b3d7a67eedd60678"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "fun01-objetivos",
+        "juizo_local": "Objetivos de restrições e equilíbrio são parciais, sem certificação integral.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "fun01-entrada",
+      "tipo": "bloco_teoria",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 92094,
+        "fim_utf16": 93795,
+        "sha256": "e07c1062616fb496db85a84ca9c223174d5cfdd00458f36ea02e9a0f063629f3"
+      },
+      "r29": {
+        "inicio_utf16": 92094,
+        "fim_utf16": 93795,
+        "sha256": "e07c1062616fb496db85a84ca9c223174d5cfdd00458f36ea02e9a0f063629f3"
+      },
+      "links": [
+        "base-propriedades",
+        "base-absolutas",
+        "base-leitura-matematica"
+      ],
+      "contextos": [
+        {
+          "id": "base-propriedades",
+          "sha256_r28": "8488eb7a5e05b99667bb73014060743e6bfb685f855c918cbcac26cbfbb1ac3c",
+          "sha256_r29": "8488eb7a5e05b99667bb73014060743e6bfb685f855c918cbcac26cbfbb1ac3c",
+          "alterado": false
+        },
+        {
+          "id": "base-absolutas",
+          "sha256_r28": "32f469f265036fd9aca15e0b51a2a88f3e0570d5f936dd1241de80a2e41c9e3b",
+          "sha256_r29": "32f469f265036fd9aca15e0b51a2a88f3e0570d5f936dd1241de80a2e41c9e3b",
+          "alterado": false
+        },
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "fun01-entrada",
+        "juizo_local": "0,012/4=0,003 m³/kg; 3/5=0,60 molar; limites e independência declarados.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "fun01-parecer",
+      "tipo": "bloco_teoria",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 115835,
+        "fim_utf16": 117496,
+        "sha256": "f5a41941645486e3672e6bd7c6fea5be46b61b4b51ade8bfaf7f26c37fcc4bdd"
+      },
+      "r29": {
+        "inicio_utf16": 115835,
+        "fim_utf16": 117496,
+        "sha256": "f5a41941645486e3672e6bd7c6fea5be46b61b4b51ade8bfaf7f26c37fcc4bdd"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "fun01-parecer",
+        "juizo_local": "ρv=1 é coerência da mesma amostra, não prova de fase ou calibração.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "fun01-problemas",
+      "tipo": "bloco_teoria",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 117497,
+        "fim_utf16": 118006,
+        "sha256": "5c64656f2708769997300502847f3a533a22864bc8c95a3300a25fdec69dcbbf"
+      },
+      "r29": {
+        "inicio_utf16": 117497,
+        "fim_utf16": 118006,
+        "sha256": "5c64656f2708769997300502847f3a533a22864bc8c95a3300a25fdec69dcbbf"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "fun01-problemas",
+        "juizo_local": "8/10 é referência pedagógica não calibrada; somas das quatro rubricas 10.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "fun02-objetivos",
+      "tipo": "bloco_teoria",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 237723,
+        "fim_utf16": 239040,
+        "sha256": "1ddee9e8484a7c44ab3619e6f97f503b5fe50fa42484a1697328f08dec202870"
+      },
+      "r29": {
+        "inicio_utf16": 237723,
+        "fim_utf16": 239040,
+        "sha256": "1ddee9e8484a7c44ab3619e6f97f503b5fe50fa42484a1697328f08dec202870"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "fun02-objetivos",
+        "juizo_local": "Diferencia parcial, caminho e integrabilidade; escopo declarado.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "fun02-problemas",
+      "tipo": "bloco_teoria",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 258270,
+        "fim_utf16": 259048,
+        "sha256": "85d9a6d965187feb06acc76469ef416593e2c8c5c92948a662113815e68bf9db"
+      },
+      "r29": {
+        "inicio_utf16": 258270,
+        "fim_utf16": 259048,
+        "sha256": "85d9a6d965187feb06acc76469ef416593e2c8c5c92948a662113815e68bf9db"
+      },
+      "links": [],
+      "contextos": [],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "fun02-problemas",
+        "juizo_local": "8/10 é referência pedagógica não calibrada; três rubricas somam 10.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "av-e1-06",
+      "tipo": "artigo_grafico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 991467,
+        "fim_utf16": 995519,
+        "sha256": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d"
+      },
+      "r29": {
+        "inicio_utf16": 991849,
+        "fim_utf16": 995901,
+        "sha256": "89dc4205deb6e31424ecf39c1abc0a270339b7200d33d281f528f7c28762e87d"
+      },
+      "links": [
+        "base-leitura-matematica",
+        "base-instrumentos"
+      ],
+      "contextos": [
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        },
+        {
+          "id": "base-instrumentos",
+          "sha256_r28": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r29": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "av-e1-06",
+        "juizo_local": "Pares afins dados implicam X=50; figura esquemática admite clareza editorial.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base. Preservada sugestão de clareza editorial sobre os pares e a figura.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "av-e1-30",
+      "tipo": "artigo_grafico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 1077375,
+        "fim_utf16": 1081958,
+        "sha256": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01"
+      },
+      "r29": {
+        "inicio_utf16": 1077757,
+        "fim_utf16": 1082340,
+        "sha256": "b15d6dd6aa44531627bb9a953e5d572a383804b557bb38df3869b581420c3b01"
+      },
+      "links": [
+        "base-leitura-matematica",
+        "base-trabalho-fronteira",
+        "base-gas-energia",
+        "base-balanco-fechado"
+      ],
+      "contextos": [
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        },
+        {
+          "id": "base-trabalho-fronteira",
+          "sha256_r28": "441d2087acd5de31fe6956694fa013e41405702a4dec082f9c15c4af5edfe26c",
+          "sha256_r29": "441d2087acd5de31fe6956694fa013e41405702a4dec082f9c15c4af5edfe26c",
+          "alterado": false
+        },
+        {
+          "id": "base-gas-energia",
+          "sha256_r28": "a44f30b844520b9feacb8a73858b06a0f05b4428533886a7b982a0c926972ef9",
+          "sha256_r29": "a44f30b844520b9feacb8a73858b06a0f05b4428533886a7b982a0c926972ef9",
+          "alterado": false
+        },
+        {
+          "id": "base-balanco-fechado",
+          "sha256_r28": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+          "sha256_r29": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "av-e1-30",
+        "juizo_local": "Gás ideal isotérmico fechado: ΔU=0 e W=Q=300 kJ sob hipóteses.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "av-e1-37",
+      "tipo": "artigo_grafico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 1104580,
+        "fim_utf16": 1108952,
+        "sha256": "b741f7c26e317df09eaf7984e2065f881464ffc7367202fa2968b4ce30efe928"
+      },
+      "r29": {
+        "inicio_utf16": 1104962,
+        "fim_utf16": 1109334,
+        "sha256": "b741f7c26e317df09eaf7984e2065f881464ffc7367202fa2968b4ce30efe928"
+      },
+      "links": [
+        "base-leitura-matematica",
+        "base-exergia"
+      ],
+      "contextos": [
+        {
+          "id": "base-leitura-matematica",
+          "sha256_r28": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "sha256_r29": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0",
+          "alterado": false
+        },
+        {
+          "id": "base-exergia",
+          "sha256_r28": "23ce04f24f08f852e88524c64f08f9f3ddc11a41a01ffedefacbead5e9d02a1d",
+          "sha256_r29": "23ce04f24f08f852e88524c64f08f9f3ddc11a41a01ffedefacbead5e9d02a1d",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "av-e1-37",
+        "juizo_local": "T0Sger=300×0,20=60 kJ no ambiente de referência.",
+        "efeito_deltas": "Base alterada só qualifica pressão média; relação e hipótese deste objeto permanecem válidas; não confere aceite integral da base.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D06",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 532919,
+        "fim_utf16": 533438,
+        "sha256": "c81bcd183b4118a4e1821542d5b71325f1bb44509c081143d3f89b9eb17e425c"
+      },
+      "r29": {
+        "inicio_utf16": 533301,
+        "fim_utf16": 533820,
+        "sha256": "c81bcd183b4118a4e1821542d5b71325f1bb44509c081143d3f89b9eb17e425c"
+      },
+      "links": [
+        "base-balanco-fechado"
+      ],
+      "contextos": [
+        {
+          "id": "base-balanco-fechado",
+          "sha256_r28": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+          "sha256_r29": "e3b1df3efdff5d189b33dd706d1b94f83207280f346bf657970918aeed2d7dbb",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D06",
+        "juizo_local": "−30−(−180)=150 kJ e Ufinal=650 kJ.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D07",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 533438,
+        "fim_utf16": 533984,
+        "sha256": "23aad629190743ccfee8bbea730b1a29ba305db94f45789547f449be6aae3fb8"
+      },
+      "r29": {
+        "inicio_utf16": 533820,
+        "fim_utf16": 534366,
+        "sha256": "23aad629190743ccfee8bbea730b1a29ba305db94f45789547f449be6aae3fb8"
+      },
+      "links": [
+        "base-expansao-livre"
+      ],
+      "contextos": [
+        {
+          "id": "base-expansao-livre",
+          "sha256_r28": "f3405521cea64595e48e1b03da18afcb10d4017fe78f3d9b7009573dc46408cd",
+          "sha256_r29": "f3405521cea64595e48e1b03da18afcb10d4017fe78f3d9b7009573dc46408cd",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D07",
+        "juizo_local": "Expansão livre: Q=W=ΔU=0; T igual para ideal, S cresce.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D08",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 533984,
+        "fim_utf16": 534491,
+        "sha256": "e17e2343bbb13dc336bdf20be1ce0b8a3eb9fb9a9323034f4af73fd60f69d8fe"
+      },
+      "r29": {
+        "inicio_utf16": 534366,
+        "fim_utf16": 534873,
+        "sha256": "e17e2343bbb13dc336bdf20be1ce0b8a3eb9fb9a9323034f4af73fd60f69d8fe"
+      },
+      "links": [
+        "base-termoquimica"
+      ],
+      "contextos": [
+        {
+          "id": "base-termoquimica",
+          "sha256_r28": "4eb200663af71a191ec684d940e66eec601219488b60238a245e684cb68af648",
+          "sha256_r29": "4eb200663af71a191ec684d940e66eec601219488b60238a245e684cb68af648",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D08",
+        "juizo_local": "Reação inversa ΔH=+30 kJ; PCS inclui condensação segundo referência.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D09",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 534491,
+        "fim_utf16": 535255,
+        "sha256": "ea5b9c8b4c01bbc1846f6364b463f204c68a7c6d6ea799714b19a54100860d53"
+      },
+      "r29": {
+        "inicio_utf16": 534873,
+        "fim_utf16": 535637,
+        "sha256": "ea5b9c8b4c01bbc1846f6364b463f204c68a7c6d6ea799714b19a54100860d53"
+      },
+      "links": [
+        "base-carnot-prova",
+        "base-entropia"
+      ],
+      "contextos": [
+        {
+          "id": "base-carnot-prova",
+          "sha256_r28": "21d73236cb2cb1e129daa15c48bdd780bdc79171782bb3f3ee3c4d45cef795c6",
+          "sha256_r29": "21d73236cb2cb1e129daa15c48bdd780bdc79171782bb3f3ee3c4d45cef795c6",
+          "alterado": false
+        },
+        {
+          "id": "base-entropia",
+          "sha256_r28": "3a42d1f246191f62e01f4563f3883ae4d317022492621258fa00cec5657061d3",
+          "sha256_r29": "3a42d1f246191f62e01f4563f3883ae4d317022492621258fa00cec5657061d3",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D09",
+        "juizo_local": "Carnot 1−300/900=2/3; rejeição mínima 300 kJ.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D10",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 535255,
+        "fim_utf16": 535880,
+        "sha256": "ceb10e781e7592d5dddbb9ad668aa88f976bb2693017bcbb63638a08a6c55d9c"
+      },
+      "r29": {
+        "inicio_utf16": 535637,
+        "fim_utf16": 536262,
+        "sha256": "ceb10e781e7592d5dddbb9ad668aa88f976bb2693017bcbb63638a08a6c55d9c"
+      },
+      "links": [
+        "base-exergia",
+        "base-gibbs"
+      ],
+      "contextos": [
+        {
+          "id": "base-exergia",
+          "sha256_r28": "23ce04f24f08f852e88524c64f08f9f3ddc11a41a01ffedefacbead5e9d02a1d",
+          "sha256_r29": "23ce04f24f08f852e88524c64f08f9f3ddc11a41a01ffedefacbead5e9d02a1d",
+          "alterado": false
+        },
+        {
+          "id": "base-gibbs",
+          "sha256_r28": "15d6533d14b70ecda54f9472aec8a20b85b6872f38b2f6f6e99087f2a653b232",
+          "sha256_r29": "15d6533d14b70ecda54f9472aec8a20b85b6872f38b2f6f6e99087f2a653b232",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D10",
+        "juizo_local": "Exergia destruída 42 kJ; Δh≈0,60 kJ/kg com ds=0 e v constante.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D21",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 542981,
+        "fim_utf16": 543594,
+        "sha256": "08717431d6f258728f63490380fcf96a6de7363191a2c874c2c7b595ef7475f6"
+      },
+      "r29": {
+        "inicio_utf16": 543363,
+        "fim_utf16": 543976,
+        "sha256": "08717431d6f258728f63490380fcf96a6de7363191a2c874c2c7b595ef7475f6"
+      },
+      "links": [
+        "base-balanco-transiente"
+      ],
+      "contextos": [
+        {
+          "id": "base-balanco-transiente",
+          "sha256_r28": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f",
+          "sha256_r29": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D21",
+        "juizo_local": "Tanque rígido adiabático vazio: T2=1,25×320=400 K.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D22",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 543594,
+        "fim_utf16": 544106,
+        "sha256": "3e5156b9614be86d149d3154889aada0abc3f9f2d7e20c597b09b781e02ea88e"
+      },
+      "r29": {
+        "inicio_utf16": 543976,
+        "fim_utf16": 544488,
+        "sha256": "3e5156b9614be86d149d3154889aada0abc3f9f2d7e20c597b09b781e02ea88e"
+      },
+      "links": [
+        "base-calor-variavel"
+      ],
+      "contextos": [
+        {
+          "id": "base-calor-variavel",
+          "sha256_r28": "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de",
+          "sha256_r29": "26e3fb8bf391caa4840a092edc386f55979fded03d0fa6771af94120c800b2de",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D22",
+        "juizo_local": "Integral cp(T) dá 115 kJ/kg; cp inicial constante daria 110.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D23",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 544106,
+        "fim_utf16": 545024,
+        "sha256": "7ff95d0d97ccbf5c2fa3475c0d5d4019fb2657686e4daebc3d55536fc9b66d10"
+      },
+      "r29": {
+        "inicio_utf16": 544488,
+        "fim_utf16": 545406,
+        "sha256": "7ff95d0d97ccbf5c2fa3475c0d5d4019fb2657686e4daebc3d55536fc9b66d10"
+      },
+      "links": [
+        "base-misturador-correntes",
+        "base-balanco-transiente"
+      ],
+      "contextos": [
+        {
+          "id": "base-misturador-correntes",
+          "sha256_r28": "29175301d686504895499b382234322cd637d8489cda03c621a8ec3e1d0fae75",
+          "sha256_r29": "29175301d686504895499b382234322cd637d8489cda03c621a8ec3e1d0fae75",
+          "alterado": false
+        },
+        {
+          "id": "base-balanco-transiente",
+          "sha256_r28": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f",
+          "sha256_r29": "4e66fe8d0b1a3cfb2aed7bb4748e5e7994a009df217efa55f6a53ec62a55df8f",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D23",
+        "juizo_local": "(2×100+1×400+30)/3=210 kJ/kg; referências compatíveis.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D24",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 545024,
+        "fim_utf16": 545730,
+        "sha256": "a86feea2983a3c008e11db251a908fce3402af0f7b5cc0d3a33a5aaee3033fbf"
+      },
+      "r29": {
+        "inicio_utf16": 545406,
+        "fim_utf16": 546112,
+        "sha256": "a86feea2983a3c008e11db251a908fce3402af0f7b5cc0d3a33a5aaee3033fbf"
+      },
+      "links": [
+        "base-bocal-difusor"
+      ],
+      "contextos": [
+        {
+          "id": "base-bocal-difusor",
+          "sha256_r28": "1df05dec0f7ecd7cd98f8ac8fa2fe09c9a9271412e3af9457457639cc60449eb",
+          "sha256_r29": "1df05dec0f7ecd7cd98f8ac8fa2fe09c9a9271412e3af9457457639cc60449eb",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D24",
+        "juizo_local": "v2=√(100²+2×1000×75)=400 m/s; sem exigir reversibilidade.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D25",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 545730,
+        "fim_utf16": 546579,
+        "sha256": "f5284077b97afe5280e5635e09a6434640dfb4f805a0010b09ff33139e5c9be0"
+      },
+      "r29": {
+        "inicio_utf16": 546112,
+        "fim_utf16": 546961,
+        "sha256": "f5284077b97afe5280e5635e09a6434640dfb4f805a0010b09ff33139e5c9be0"
+      },
+      "links": [
+        "base-valvula-fase",
+        "substancias"
+      ],
+      "contextos": [
+        {
+          "id": "base-valvula-fase",
+          "sha256_r28": "754a458c2fcac18c359e71fc9fdf062b08940940573f615b5756e0ecc26456f3",
+          "sha256_r29": "754a458c2fcac18c359e71fc9fdf062b08940940573f615b5756e0ecc26456f3",
+          "alterado": false
+        },
+        {
+          "id": "substancias",
+          "sha256_r28": "79b3b4d0828671a5b42f2f9d8b8eef0c850f721082a32af29ac73bc37c4788c7",
+          "sha256_r29": "79b3b4d0828671a5b42f2f9d8b8eef0c850f721082a32af29ac73bc37c4788c7",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D25",
+        "juizo_local": "(1000−500)/(2500−500)=0,25; h=2700 dá 1,10 inadmissível para título.",
+        "efeito_deltas": "Base restringe coexistência fluida, fase e crítico; este caso usa mistura saturada ou rejeita título inválido, compatível com restrição.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D01",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 530122,
+        "fim_utf16": 530691,
+        "sha256": "a3a7267bc9169ae0293ec449143d14f82144612793631c5a33537d7f71511896"
+      },
+      "r29": {
+        "inicio_utf16": 530504,
+        "fim_utf16": 531073,
+        "sha256": "a3a7267bc9169ae0293ec449143d14f82144612793631c5a33537d7f71511896"
+      },
+      "links": [
+        "base-medidas"
+      ],
+      "contextos": [
+        {
+          "id": "base-medidas",
+          "sha256_r28": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "sha256_r29": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D01",
+        "juizo_local": "Divisão homogênea em quatro partes conserva ρ e T.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D02",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 530691,
+        "fim_utf16": 531283,
+        "sha256": "5b08c714ad542c5600f719f98de0a8503f1cf50ce691fdb2f0c58ec64da167f9"
+      },
+      "r29": {
+        "inicio_utf16": 531073,
+        "fim_utf16": 531665,
+        "sha256": "5b08c714ad542c5600f719f98de0a8503f1cf50ce691fdb2f0c58ec64da167f9"
+      },
+      "links": [
+        "base-instrumentos"
+      ],
+      "contextos": [
+        {
+          "id": "base-instrumentos",
+          "sha256_r28": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "sha256_r29": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D02",
+        "juizo_local": "−20+150=130 °C; Bourdon mede pressão sem referência especificada.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D03",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 531283,
+        "fim_utf16": 531780,
+        "sha256": "6fd490b0cff43fea858d50beaa6fdc80161e2833c6bd6b73aa316aebcdbb2a6d"
+      },
+      "r29": {
+        "inicio_utf16": 531665,
+        "fim_utf16": 532162,
+        "sha256": "6fd490b0cff43fea858d50beaa6fdc80161e2833c6bd6b73aa316aebcdbb2a6d"
+      },
+      "links": [
+        "base-gas-modelo"
+      ],
+      "contextos": [
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D03",
+        "juizo_local": "353,15/293,15≈1,20467 em gás ideal e volume fixo.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D04",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 531780,
+        "fim_utf16": 532400,
+        "sha256": "9118d8379790c653f6349fbcb6aabe2579e744d660e851614947abe326f5563a"
+      },
+      "r29": {
+        "inicio_utf16": 532162,
+        "fim_utf16": 532782,
+        "sha256": "9118d8379790c653f6349fbcb6aabe2579e744d660e851614947abe326f5563a"
+      },
+      "links": [
+        "base-molecular",
+        "base-gas-modelo"
+      ],
+      "contextos": [
+        {
+          "id": "base-molecular",
+          "sha256_r28": "4d53ee61ed2d7fb77d98ec9f79a1ede61f09da0664140302e530dfd48afff21c",
+          "sha256_r29": "4d53ee61ed2d7fb77d98ec9f79a1ede61f09da0664140302e530dfd48afff21c",
+          "alterado": false
+        },
+        {
+          "id": "base-gas-modelo",
+          "sha256_r28": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "sha256_r29": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D04",
+        "juizo_local": "Partículas também se movem em sólidos e líquidos; alta pressão não garante idealidade.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "D05",
+      "tipo": "diagnostico",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 532400,
+        "fim_utf16": 532919,
+        "sha256": "d5ec3a9b054e4bfff87766699524a5650626779710e12b4e443aad5e01ced4e0"
+      },
+      "r29": {
+        "inicio_utf16": 532782,
+        "fim_utf16": 533301,
+        "sha256": "d5ec3a9b054e4bfff87766699524a5650626779710e12b4e443aad5e01ced4e0"
+      },
+      "links": [
+        "base-umidade"
+      ],
+      "contextos": [
+        {
+          "id": "base-umidade",
+          "sha256_r28": "8abffd37dfbfa4a223b0d49d2cec00e31b827fed0191f855d61823f4e05fa464",
+          "sha256_r29": "8abffd37dfbfa4a223b0d49d2cec00e31b827fed0191f855d61823f4e05fa464",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "D05",
+        "juizo_local": "0,30/0,75=0,40 no modelo da base de ar ideal e fator desprezado.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas. A aproximação de umidade vem da base e não do enunciado isolado.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-031",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 389128,
+        "fim_utf16": 390212,
+        "sha256": "fdbd8e2cc5d4212af40051f854dca99420ae4ef7b1c887a82c9540fdae2a3d6a"
+      },
+      "r29": {
+        "inicio_utf16": 389510,
+        "fim_utf16": 390594,
+        "sha256": "fdbd8e2cc5d4212af40051f854dca99420ae4ef7b1c887a82c9540fdae2a3d6a"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-ciclos-variantes",
+          "sha256_r28": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "sha256_r29": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-031",
+        "juizo_local": "Qin=3590, Qout=2000, W=1590 kJ/kg, η≈44,29% sem extração.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas. Ficha 79 exige mesmas hipóteses de Rankine sem extração; não prova estados reais ou segunda lei.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-032",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 392362,
+        "fim_utf16": 392761,
+        "sha256": "323164d40792d4a4623044a12d0ba173756cf6c34380350bbcc77cd77090216b"
+      },
+      "r29": {
+        "inicio_utf16": 392744,
+        "fim_utf16": 393143,
+        "sha256": "323164d40792d4a4623044a12d0ba173756cf6c34380350bbcc77cd77090216b"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-ciclos-variantes",
+          "sha256_r28": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "sha256_r29": "7628014cf26268ba5dd27b7647ac9f89210ea977eba53e556e7c4efd8cd28198",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-032",
+        "juizo_local": "y=290/2490≈0,1165; 500 exato com y não arredondado.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-033",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 413279,
+        "fim_utf16": 413630,
+        "sha256": "cb64ece00d51b66fef020660b43fa12b92ef178edf31db2bd3f3e9ea2a78090b"
+      },
+      "r29": {
+        "inicio_utf16": 413661,
+        "fim_utf16": 414012,
+        "sha256": "cb64ece00d51b66fef020660b43fa12b92ef178edf31db2bd3f3e9ea2a78090b"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-eficiencia-volumetrica",
+          "sha256_r28": "427530949bf62bda816f247341cfd1c9e07e086f47db13bb499a63e331b79025",
+          "sha256_r29": "427530949bf62bda816f247341cfd1c9e07e086f47db13bb499a63e331b79025",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-033",
+        "juizo_local": "3,5/5=0,70 para volumes nas mesmas condições de sucção.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-034",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 415068,
+        "fim_utf16": 415345,
+        "sha256": "980e75bf3228eeaafe818e395a84b12debedc4409debd1764d6553e2fc980ba1"
+      },
+      "r29": {
+        "inicio_utf16": 415450,
+        "fim_utf16": 415727,
+        "sha256": "980e75bf3228eeaafe818e395a84b12debedc4409debd1764d6553e2fc980ba1"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-calor-latente",
+          "sha256_r28": "bfc8a1480408d803b3b239d9fe20051b8c879efd9b332f144be1646ab2be7c2e",
+          "sha256_r29": "bfc8a1480408d803b3b239d9fe20051b8c879efd9b332f144be1646ab2be7c2e",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-034",
+        "juizo_local": "20/1000=0,020 kg/s para efeito refrigerante hipotético.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-035",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 419654,
+        "fim_utf16": 420040,
+        "sha256": "61d283a4c30c4d83a15e4d9ee393601c5c539b4aee4a6fc3e8fb056466dc7489"
+      },
+      "r29": {
+        "inicio_utf16": 420036,
+        "fim_utf16": 420422,
+        "sha256": "61d283a4c30c4d83a15e4d9ee393601c5c539b4aee4a6fc3e8fb056466dc7489"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-balanco-co2",
+          "sha256_r28": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r29": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-035",
+        "juizo_local": "G=0,24 m³/h e 400 ppm de excesso dão 600 m³/h em regime estacionário.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-036",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 420040,
+        "fim_utf16": 420354,
+        "sha256": "711b7c824b1ec6888746c220e3050c2b9d431041f3262bbe3b47f0c8cb6e2679"
+      },
+      "r29": {
+        "inicio_utf16": 420422,
+        "fim_utf16": 420736,
+        "sha256": "711b7c824b1ec6888746c220e3050c2b9d431041f3262bbe3b47f0c8cb6e2679"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-balanco-co2",
+          "sha256_r28": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "sha256_r29": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-036",
+        "juizo_local": "0,20/500=400 ppm acima de 450 ppm externos, total 850 ppm.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-037",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 423508,
+        "fim_utf16": 423796,
+        "sha256": "bbfa5c238aa5d155bf60414203040c65259b7f4fad7ca41efe2cd2759edd41a5"
+      },
+      "r29": {
+        "inicio_utf16": 423890,
+        "fim_utf16": 424178,
+        "sha256": "bbfa5c238aa5d155bf60414203040c65259b7f4fad7ca41efe2cd2759edd41a5"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-bomba-integrada",
+          "sha256_r28": "16294019cf9b42558971cec2f33f43ed3d6926a32fa57629456e24df8f734505",
+          "sha256_r29": "16294019cf9b42558971cec2f33f43ed3d6926a32fa57629456e24df8f734505",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-037",
+        "juizo_local": "54 m³/h = 0,015 m³/s; 3 kW hidráulicos e 60% no eixo.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas. Ficha 45 não altera rendimento hidráulico dado nem determina potência elétrica.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-038",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 428311,
+        "fim_utf16": 431245,
+        "sha256": "f82e47fce9b4a81803fca321445fd9e7a28f7e4ef02894f72ae4dea471981c73"
+      },
+      "r29": {
+        "inicio_utf16": 428693,
+        "fim_utf16": 431627,
+        "sha256": "f82e47fce9b4a81803fca321445fd9e7a28f7e4ef02894f72ae4dea471981c73"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-interpolacao",
+          "sha256_r28": "23cb1616d086f405157d4dbccc694364a1985f8d78dd9cad57cac4f227d137a1",
+          "sha256_r29": "23cb1616d086f405157d4dbccc694364a1985f8d78dd9cad57cac4f227d137a1",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-038",
+        "juizo_local": "Interpolação na mesma região vapor superaquecido dá 2860 kJ/kg.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-039",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 439110,
+        "fim_utf16": 446779,
+        "sha256": "fc411913e4088f4b4842e0122f35daa30d2fba7d620af0d926c693cc93dde68e"
+      },
+      "r29": {
+        "inicio_utf16": 439492,
+        "fim_utf16": 447161,
+        "sha256": "fc411913e4088f4b4842e0122f35daa30d2fba7d620af0d926c693cc93dde68e"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-entropia-escoamento",
+          "sha256_r28": "7c86184a37044b68219f4b84c444ce89ee400c46547b569e6b47ced86cec64d9",
+          "sha256_r29": "7c86184a37044b68219f4b84c444ce89ee400c46547b569e6b47ced86cec64d9",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-039",
+        "juizo_local": "Duas correntes 1 kg/s dão Sger=−0,20+0,30=0,10 kW/K.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    },
+    {
+      "id": "EX-040",
+      "tipo": "exemplo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "r28": {
+        "inicio_utf16": 449556,
+        "fim_utf16": 452989,
+        "sha256": "fff188ce7ed250b0322eabe9cb3308c6b55bf7324aebf489c8e7d06741319489"
+      },
+      "r29": {
+        "inicio_utf16": 449938,
+        "fim_utf16": 453371,
+        "sha256": "fff188ce7ed250b0322eabe9cb3308c6b55bf7324aebf489c8e7d06741319489"
+      },
+      "links": [],
+      "contextos": [
+        {
+          "id": "base-compressao-estagios",
+          "sha256_r28": "6e2513215659102bdc875a0f79cd9fc54451f41359b65ee56d02b22d0a9169b7",
+          "sha256_r29": "6e2513215659102bdc875a0f79cd9fc54451f41359b65ee56d02b22d0a9169b7",
+          "alterado": false
+        }
+      ],
+      "origem_ledger": "adicional-60",
+      "juizo_r28": {
+        "id": "EX-040",
+        "juizo_local": "√(1×16)=4 bar absolutos nas hipóteses de estágios equivalentes.",
+        "efeito_deltas": "Links/contextos rastreados deste objeto não mudaram; conferidos modelo e hipóteses do próprio recorte frente aos nove deltas.",
+        "estado": "revalidado_pelo_integrador_pendente_de_auditoria_independente"
+      },
+      "estado": "pendente_revalidacao_individual_e_auditoria"
+    }
+  ],
+  "limites": [
+    "Confronto estrutural não transfere aceites: 78 objetos permanecem pendentes até reavaliação individual e auditoria.",
+    "Nenhuma referência, recurso, pai ou filho é aprovado por esta ponte.",
+    "A aplicação r29 aguarda parecer independente."
+  ]
+}

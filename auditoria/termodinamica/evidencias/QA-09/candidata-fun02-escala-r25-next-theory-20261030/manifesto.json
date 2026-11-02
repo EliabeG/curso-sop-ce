@@ -1,0 +1,19 @@
+{
+  "id": "QA-09-candidata-fun02-escala-r25-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-fun01-fases-r25-r1/resultado/depois-aula.html",
+  "fonte_sha256": "ea0a7e3877c0a0250dac3d9c993c7922a03400929eb7a5dad39fcb27e3263c7e",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r25.json",
+  "inventario_sha256": "6798d317db30bd69435ed14862cc03cd0f0c6313e40408dd8831052285984116",
+  "ancora": "fun02-entrada",
+  "inicio_utf16": 237165,
+  "fim_utf16": 238954,
+  "original_sha256": "410031cc3a11314eb1daa9af0de7068ee779ea1bc76c1d38c632a4785a70ff94",
+  "candidata_sha256": "11bfbcbcc09a03c859f6ee6fd34114a08c2ce9496e5044eb8dc02591e0660d0c",
+  "substituicoes": [
+    {
+      "antes": "Duplicar n, mantendo o mesmo percurso de T e V, duplica p, U, Q e W no modelo ideal adotado, mas não a capacidade molar c<sub>v,m</sub>.",
+      "depois": "No modelo de gás ideal de composição fixa, com referência extensiva coerente para U e o trabalho de fronteira p dV como única modalidade de trabalho, duplicar n mantendo o mesmo percurso de T e V duplica p, U, Q e W, mas não a capacidade molar c<sub>v,m</sub>."
+    }
+  ]
+}

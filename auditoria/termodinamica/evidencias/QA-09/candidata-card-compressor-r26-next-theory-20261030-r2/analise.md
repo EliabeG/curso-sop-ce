@@ -1,0 +1,11 @@
+# QA-09 — candidata r2 do cartão de compressor, r26
+
+30/10/2026. Corretor `/root/next_theory`; **não aplicada; aguarda reexame independente**. Substitui conceitualmente a candidata r1, preservada em `candidata-card-compressor-r26-next-theory-20261030`. A r2 responde à observação do Auditor `/root/next_examples`: a razão de diferenças de entalpia representa trabalhos líquidos totais não associados ao escoamento **por unidade de massa**; razões de potências só coincidem quando as vazões de referência e real são iguais.
+
+O cartão mantém regime permanente adiabático com uma entrada e uma saída, variações cinética/potencial desprezíveis, mesma substância e composição fixa, sem reação/mistura, mesma fronteira, aumentos de entalpia positivos e referência adiabática internamente reversível com mesmo estado inicial e pressão final. Para a razão de trabalho de eixo, outras modalidades de trabalho não-fluxo devem ser desprezíveis. As expressões, legendas MathML e recursos são preservados.
+
+Contraste sugerido pelo Auditor: wref=30 e wreal=40 kJ/kg dão razão específica 0,75. Com vazões de 1 e 2 kg/s, as potências são 30 e 80 kW e sua razão é 0,375. O contraste ilustra a distinção, sem alegar que os dois arranjos sejam uma mesma instalação real. [MIT, balanço de escoamento](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm).
+
+Fotografia r26 `afc7ff0aba80596aa8aa7a3eeb5b9a470948c7d866c6911911b9b00fb243bac2`, inventário `d73d6b239822b288329a75fc1f976419ccae7047d1bc74ba161102a529038241`. Cartão [1276670,1279140) UTF-16; SHA original `3683542f1df835e34f1cb3d19f8891beeec1ae83574fcfb7e2aa508ffc30aaeb`, candidata r2 `16a6e7ebac4ad2759dfd1e7cb8cf461dae8ef04f37d82e81cb51532f87e420fe`. Fragmentos isolados têm quebra final excluída dos hashes; manifesto registra uma substituição literal da fotografia original.
+
+`node auditoria/termodinamica/evidencias/QA-09/candidata-card-compressor-r26-next-theory-20261030-r2/verificar.mjs` passou; simulação em memória preserva 197 artigos, 734 MathML e atributos inspecionados; HTML hipotético SHA `cfe0ddf5ee59ccf30f9d378b4e05baf63ae19507329f37df2876954517d2dd72`. A verificação não substitui avaliação científica independente, navegador ou auditoria da aplicação efetiva.

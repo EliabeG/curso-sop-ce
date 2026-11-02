@@ -1,0 +1,104 @@
+{
+  "edicao": {
+    "id": "fun01-p3-procedencia",
+    "documento": "modulos/e1-termodinamica.html",
+    "artigo_id": "fun01-e1-supercritico",
+    "inicio_utf16": 129564,
+    "fim_utf16": 130109,
+    "inicio_novo_utf16": 129564,
+    "fim_novo_utf16": 130180,
+    "delta_utf16": 71,
+    "original_fragmento_sha256": "7b13d7adbb3ec83f676edadbebf7a0246d139ff24bf4931350d7580708b47bd9",
+    "candidata_fragmento_sha256": "ce23ebfff83d3172e72046551cf365a967a098b0640c01acb56480154ccd7015",
+    "artigo_antes_sha256": "2fad0e042fb945eb44d0f2abe2c4e64322434195395fa4e5c084f17854f432a7",
+    "artigo_depois_sha256": "ab2d00867b0f11bc75810b84c74f8347e308fbf26b07f62de8fc11e0eb378c4d",
+    "html_antes_sha256": "a8bed8a91a36a1c1f41cd75e3c1858fecb4e14a506e582ad1fdb186d275805e3",
+    "html_depois_sha256": "f76c39a3e1d8c349ebf0df72cc20a3ab21c68960c8451799bad90a9dcc4bd8c7",
+    "parecer_candidata": "auditoria/termodinamica/pareceres/QA-09-fun01-p3-procedencia-candidata-auditoria-independente-20261030.md",
+    "limite": "Substituição única; enunciado, dados, demais textos e rubrica do artigo mantidos por reconstrução exata."
+  },
+  "inventario_r11_sha256": "720f2b9ace69ab8f07be685d5205040569cc72814f67d51d44786872469c07d7",
+  "mapa_sha256": "3c50f64d7f5a318edfc7544c2f2c628ca8789d45efdef8dcb08c88eac027cc3a",
+  "gerador": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r11.json",
+    "sha256": "720f2b9ace69ab8f07be685d5205040569cc72814f67d51d44786872469c07d7",
+    "resumo": {
+      "diagnosticos": 28,
+      "exemplos_incluindo_diagnosticos": 78,
+      "casos_oficina": 4,
+      "flashcards": 21,
+      "fichas": 100,
+      "mathml": 711,
+      "figuras": 8,
+      "textos_diretos": 9500,
+      "referencias": 815,
+      "recursos_unicos": 20
+    },
+    "documentos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "f76c39a3e1d8c349ebf0df72cc20a3ab21c68960c8451799bad90a9dcc4bd8c7",
+        "total_nos": 24117,
+        "nos_fora": 10837,
+        "artigos_excluidos": 197,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 21,
+          "tabela": 37,
+          "mathml": 520,
+          "equacao_contextualizada": 99,
+          "exemplo_ou_diagnostico": 78,
+          "figura": 8,
+          "caso_oficina": 4,
+          "flashcard": 21
+        }
+      },
+      {
+        "arquivo": "formulas/termodinamica.html",
+        "sha256": "01d5d79639cd17dfcaea38479019cf719e2601f5b35d446ab562e50d381fa5c9",
+        "total_nos": 5452,
+        "nos_fora": 5452,
+        "artigos_excluidos": 0,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 11,
+          "ficha_formula": 100,
+          "mathml": 191
+        }
+      }
+    ]
+  },
+  "mapa": {
+    "ok": true,
+    "pares": 11397,
+    "classificacao": {
+      "PAREADO_EXTERNO": 11396,
+      "PAREADO_ANCESTRAL_CONFERIR": 1
+    },
+    "referencias": 815,
+    "recursos": 138,
+    "artigos_alterados": 1
+  },
+  "validador": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1263,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "limites": [
+    "Sem teste de navegador ou de estudantes; revalidação e auditoria independentes pendentes.",
+    "Em falha após escrita, preservar snapshots e verificar estado antes de qualquer ação."
+  ],
+  "estado": "ENSAIO_EM_COPIA_DESCARTAVEL_NAO_APLICADO_NO_PRODUTO",
+  "testes_de_bloqueio": [
+    "Sem --apply rejeitado em cópia",
+    "Destino r11 existente rejeitado em cópia",
+    "Aula adulterada rejeitada antes de qualquer gravação em cópia"
+  ],
+  "nota": "Resultado da execução em cópia local; não é auditoria independente nem aplicação real."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "exemplos-r28-candidata-ex028-r27-next-examples-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "modulos/e1-termodinamica.html",
+  "fonte_sha256": "9af8e2c9ffe509e40594d086a9ef4ad75127fb4ca873efb305d3144e08f3fc49",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r27.json",
+  "inventario_sha256": "a58d7f0b0a5f097eef83ad83026ef49e801457b87f7cf2b2345c3dd915597c7c",
+  "ancora": "EX-028",
+  "secao": "ciclos",
+  "inicio_utf16": 377206,
+  "fim_utf16": 382826,
+  "original_sha256": "39662e989f377c6cf34311b044c6de916732f22caf00b5985adfbd4a20ad3dd4",
+  "candidata_sha256": "2e706e6dc922e20194ce79781d896523b42662f0023778b77203646d743c99a1",
+  "html_hipotetico_sha256": "a963103e62a3f44c0a25c415e01920f47f7a4fd93d8061dc1df1af843ff32c39",
+  "substituicoes": [
+    {
+      "antes": "Um refrigerador retira 600 kJ consumindo 200 kJ de trabalho.",
+      "depois": "Em um ciclo de refrigeração, o calor total retirado da fonte fria é 600 kJ e o trabalho líquido total recebido é 200 kJ. A única outra transferência de energia na mesma fronteira e ciclo é o calor rejeitado à fonte quente."
+    }
+  ]
+}

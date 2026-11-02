@@ -1,0 +1,17 @@
+# QA-09 — candidatas isoladas para teoria de ciclos, r15
+
+Data: 30/10/2026. Corretor automatizado `/root/next_theory`. **Candidatas não aplicadas; aguardam revisão independente.** Respondem às três ressalvas do [parecer de ciclos](../auditoria-teoria-ciclos-r15-20261030/parecer.md), SHA `fc5e23ef414ba7a2daa84d92c4b4a06c52bf8578738ab3128f65e72d9fb65582`. Não se encerra QA-09 nem se libera outro ID.
+
+## Condições propostas
+
+- `base-eficiencia-cop`: acrescenta o modelo de refrigerador/bomba de calor com trabalho líquido positivo como único acionamento, calor retirado QL e entregue QH no mesmo período/fronteira, sem outras entradas ou saídas de energia. Assim QH=QL+W e a relação de COPs seguinte tem o domínio correto. O calor QL da fonte fria permanece como efeito útil, não é eliminado. Um refrigerador por absorção com calor adicional de acionamento requer outra definição e balanço; [DOE, absorção](https://www.energy.gov/sites/default/files/2017/06/f35/CHP-Absorption%20Chiller-compliant.pdf) descreve a distinção.
+- `base-limite-carnot`: troca a afirmação genérica de que temperaturas próximas melhoram o COP pela variação específica do **COP de Carnot**, explicitando TH>TL>0 e que se mantém uma das temperaturas constante. Aproximar somente a diferença absoluta enquanto ambas variam não garante aumento: por exemplo TH/TL 400/300 K dá 3, e 100/20 K dá 0,25 apesar de a diferença cair de 100 para 80 K. O contramodelo do Auditor mostra COP real 0,9→0,6 enquanto o limite reversível cresce 1→3, com Sger>0 em ambos os casos. A comparação do limite de eficiência térmica é preservada.
+- `base-brayton-real`: explicita, para cada componente, mesma composição fixa e mesmo estado de entrada/pressão de saída, sem mistura/reação; regime permanente, uma entrada e saída, máquinas reais e referências adiabáticas, só trabalho de eixo e energias cinética/potencial desprezíveis. As frases relativas à irreversibilidade ficam vinculadas à mesma comparação. Não diz que o equipamento real é sempre adiabático. [MIT, §6.9](https://web.mit.edu/16.unified/OldFiles/www/SPRING/thermodynamics/notes/node51.html) apresenta eficiência adiabática no modelo específico; o contramodelo com calor recebido e Sger>0 consta do parecer.
+
+## Identidade e simulação
+
+Cópia r15 `evidencias/QA-09/aplicacao-wika-r15-r1/resultado/depois-aula.html` SHA `f6c461f1d6039ea47dc7e97f9ad734bb0ea3fcb902f01ffdbf18d18d88e08d0e`; inventário r15 SHA `c8c9c3a3e141eba47a16e9f85c69f97c6e8b8a55aab689c6120ef1a0070c9d9c`. O `manifesto.json` identifica os três contêineres, posições UTF-16 e substituições únicas; arquivos de fragmento incluem uma quebra final excluída do hash. A simulação resultante, sem aplicação, tem SHA `55754bfc631da9010e3c9afc73e3c458e349b535c429fe98abe28998897aab23`.
+
+`verificar.mjs` lê a fotografia, inventário e fragmentos; reconstrói as quatro substituições em três blocos na memória e verifica que 197 artigos e 734 elementos MathML, bem como IDs, referências, atributos de acessibilidade e recursos, permanecem idênticos. Executado com `ok=true`; não grava produto. Também reproduz os balanços/entropias de contraste. Os textos, fontes e hipóteses devem ser avaliados por Auditor distinto; não houve navegador real ou ensaio com estudantes.
+
+A eventual aplicação deve gerar nova fotografia e mapa, reconciliar posições, referências e recursos, verificar 197 artigos e reavaliar os aceites dependentes no alcance afetado. A versão aplicada precisa de auditoria independente. Não houve revisão humana ou certificação externa.

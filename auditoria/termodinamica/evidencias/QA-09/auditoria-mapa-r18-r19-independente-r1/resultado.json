@@ -1,0 +1,98 @@
+{
+  "ok": true,
+  "contagens": {
+    "PAREADO_EXTERNO": 11279,
+    "PAREADO_CONTEXTO_ANCESTRAL_CONFERIR": 3,
+    "PAREADO_INTERNO_CONFERIR": 118
+  },
+  "pares_internos_hash_diferente": 10,
+  "mudancas_internas": [
+    {
+      "edicao": "base-propriedades",
+      "tipo": "equacao_contextualizada",
+      "tag": "div",
+      "antes": null,
+      "depois": null
+    },
+    {
+      "edicao": "base-propriedades",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Letras maiúsculas indicam valores totais; letras minúsculas, valores por unidade de massa.",
+      "depois": "Nos pares V/v, U/u e H/h desta fórmula, V, U e H representam grandezas totais; v, u e h, valores por unidade de massa. Outras letras seguem definições próprias: m é massa total, p é pressão e T é temperatura."
+    },
+    {
+      "edicao": "formula-carnot",
+      "tipo": "ficha_formula",
+      "tag": "article",
+      "antes": null,
+      "depois": null
+    },
+    {
+      "edicao": "formula-carnot",
+      "tipo": "atributos_significativos",
+      "tag": "article",
+      "antes": {
+        "data-grupo": "segunda-lei",
+        "data-busca": "Limite de rendimento de Carnot Eficiência, COP e Carnot TH: fonte quente; TL: fria (K); η: rendimento; ηC: limite reversível. Máquina cíclica entre dois reservatórios; TH > TL > 0. \\eta_C=1-\\frac{T_L}{T_H} \\eta\\leq\\eta_C"
+      },
+      "depois": {
+        "data-grupo": "segunda-lei",
+        "data-busca": "Limite de rendimento de Carnot Eficiência, COP e Carnot TH e TL: temperaturas absolutas dos reservatórios quente e frio (K); QH: calor total recebido da fonte quente; η: trabalho líquido produzido dividido por QH; ηC: limite reversível. Rendimentos adimensionais. Máquina térmica motora cíclica, trocando calor somente com dois reservatórios; TH > TL > 0. O calor total recebido QH > 0 e o trabalho líquido produzido são avaliados na mesma fronteira e período. \\eta_C=1-\\frac{T_L}{T_H} \\eta\\leq\\eta_C"
+      }
+    },
+    {
+      "edicao": "formula-carnot",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Máquina cíclica entre dois reservatórios; TH > TL > 0.",
+      "depois": "Máquina térmica motora cíclica, trocando calor somente com dois reservatórios; TH > TL > 0. O calor total recebido QH > 0 e o trabalho líquido produzido são avaliados na mesma fronteira e período."
+    },
+    {
+      "edicao": "formula-carnot",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "TH: fonte quente; TL: fria (K); η: rendimento; ηC: limite reversível.",
+      "depois": "TH e TL: temperaturas absolutas dos reservatórios quente e frio (K); QH: calor total recebido da fonte quente; η: trabalho líquido produzido dividido por QH; ηC: limite reversível. Rendimentos adimensionais."
+    },
+    {
+      "edicao": "formula-brayton-liquido",
+      "tipo": "ficha_formula",
+      "tag": "article",
+      "antes": null,
+      "depois": null
+    },
+    {
+      "edicao": "formula-brayton-liquido",
+      "tipo": "atributos_significativos",
+      "tag": "article",
+      "antes": {
+        "data-grupo": "ciclos",
+        "data-busca": "Brayton: trabalho líquido e rendimento Ciclos de potência e refrigeração Ẇt: turbina; Ẇc: compressor, magnitude consumida; Q̇in: calor externo recebido (kW). Sem outros consumos; também vale com energias por ciclo ou por kg, em uma única base. Para η como rendimento motor: Q̇in > 0 e Ẇt > Ẇc. \\dot W_{\\mathrm{liq}}=\\dot W_t-\\dot W_c \\eta=\\frac{\\dot W_t-\\dot W_c}{\\dot Q_{\\mathrm{in}}}"
+      },
+      "depois": {
+        "data-grupo": "ciclos",
+        "data-busca": "Brayton: trabalho líquido e rendimento Ciclos de potência e refrigeração Ẇt: potência total produzida pela turbina; Ẇc: potência total consumida pelo compressor; Q̇in: taxa total de calor externo recebido; magnitudes em kW, na mesma fronteira e base. Ciclo motor, mesma fronteira e período: apenas os trabalhos da turbina e do compressor e os calores externos recebido e rejeitado, sem outras interações energéticas relevantes. Q̇in > 0 e Ẇt > Ẇc. Também vale com energias por ciclo ou por kg, em uma única base. \\dot W_{\\mathrm{liq}}=\\dot W_t-\\dot W_c \\eta=\\frac{\\dot W_t-\\dot W_c}{\\dot Q_{\\mathrm{in}}}"
+      }
+    },
+    {
+      "edicao": "formula-brayton-liquido",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Sem outros consumos; também vale com energias por ciclo ou por kg, em uma única base. Para η como rendimento motor: Q̇in > 0 e Ẇt > Ẇc.",
+      "depois": "Ciclo motor, mesma fronteira e período: apenas os trabalhos da turbina e do compressor e os calores externos recebido e rejeitado, sem outras interações energéticas relevantes. Q̇in > 0 e Ẇt > Ẇc. Também vale com energias por ciclo ou por kg, em uma única base."
+    },
+    {
+      "edicao": "formula-brayton-liquido",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Ẇt: turbina; Ẇc: compressor, magnitude consumida; Q̇in: calor externo recebido (kW).",
+      "depois": "Ẇt: potência total produzida pela turbina; Ẇc: potência total consumida pelo compressor; Q̇in: taxa total de calor externo recebido; magnitudes em kW, na mesma fronteira e base."
+    }
+  ],
+  "adicionados": [],
+  "refs": 816,
+  "recursos": 138,
+  "artigos": 197,
+  "limite": "Pares estruturais não transferem aceites; comparação de contexto não é avaliação científica."
+}

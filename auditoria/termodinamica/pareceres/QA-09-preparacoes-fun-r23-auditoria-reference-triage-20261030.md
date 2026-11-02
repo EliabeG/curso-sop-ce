@@ -1,0 +1,27 @@
+# QA-09 — parecer independente das preparações FUN-01/FUN-02, r23
+
+Data 30/10/2026. Auditor `/root/reference_triage`; Corretor `/root/next_theory`. **TRÊS AJUSTES LOCALIZADOS OBRIGATÓRIOS** na preparação `fun01-preparacao-equilibrio`; nenhum dos três demonstra erro automático no problema ou rubrica que a seguem. O parecer não altera produto, não aprova FUN integralmente e não encerra QA-09.
+
+## Potencial químico de gás ideal
+
+A expressão μA=μA°(T)+RT ln(pA/p°) com pA=yAp é introduzida como “mistura ideal”, sem definir fase. É a forma adequada para **mistura de gases ideais**, com mesma convenção de estado padrão, T e pressões pertinentes positivas; “mistura ideal” também pode designar solução líquida ideal e não basta para utilizar a mesma expressão de pressão parcial. A [aula MIT 3.020, pp. 2–3 do PDF](https://ocw.mit.edu/courses/3-020-thermodynamics-of-materials-spring-2021/mit3_020s21_l13.pdf) explicita gases e estado padrão. A [teoria de soluções MIT](https://ocw.mit.edu/courses/3-20-materials-at-equilibrium-sma-5111-fall-2003/764ba46faf34fb6f2439c6b52eb37fb9_mixtures.pdf) também descreve soluções líquidas. Recomenda-se nomear o modelo gasoso, positividade da pressão parcial e de referência e aplicar a mesma especificação ao exemplo; não alterar dados nem estender a fórmula a qualquer fase.
+
+Conferência: pA=80×0,250=160×0,125=20 kPa; à mesma T e referência, ΔμA=0. Admitindo mistura binária, pB=60 e 140 kPa. Igualdade de μA não garante equilíbrio da espécie B; seletividade de barreira limita os processos possíveis.
+
+## Líquido puro e volume molar
+
+A relação dμ=V̄dp com V̄=M/ρ na passagem hidrostática deve declarar **líquido puro, homogêneo e incompressível**, massa molar da espécie e temperatura constante; em mistura uma espécie usa volume molar parcial e variações de composição podem acrescentar termos. O contramodelo do Corretor é consistente como modelo sintético aditivo: 1 mol de cada espécie com volumes parciais de 10 e 20 cm³/mol e massas molares 10 e 40 g/mol dá ρ=50/30=5/3 g/cm³, enquanto MA/ρ=6 cm³/mol difere de V̄A=10 cm³/mol. Estes números não são dados experimentais. Em mistura, a derivada (∂μi/∂p)T,composição=V̄i não autoriza substituir V̄i por Mi/ρ da mistura.
+
+Com líquido puro, ρ constante, g uniforme e z crescente para cima, dp/dz=−ρg e dμ/dz=(M/ρ)(−ρg)=−Mg, de modo que μ+Mgz é constante. Recomenda-se explicitar essas hipóteses e manter separados potencial intrínseco e contribuição externa; a passagem não constitui regra universal para misturas ou temperatura variável.
+
+## Gravidade na variação de F
+
+A preparação define μ como intrínseco e μ̃=μ+Mgz, mas mais adiante apresenta ΔF=(μdest−μorig)dn sem informar condições de altura ou exclusão da energia gravitacional. Se F inclui essa energia e uma espécie de massa molar M é transferida de origem a destino, mantendo as demais restrições apropriadas, a contribuição gravitacional adicional é Mg(z_dest−z_orig)dn e os potenciais relevantes são μ̃. A expressão apenas com μ intrínseco é adequada quando a diferença gravitacional é nula ou desprezada, ou quando F exclui explicitamente tal energia; não se deve acrescentar Mgz de novo se μ já o incorpora.
+
+O contraste contábil informado é correto: Δμintrínseco=−1 J/mol, M=0,1 kg/mol, g=10 m/s² e Δz=2 m dão contribuição +2 J/mol e variação total +1 J/mol por mol transferido. Ele não demonstra que os dados representem sistema real ou uma trajetória observada. Recomenda-se qualificar a equação junto ao ponto em que é ensinada e distinguir sinais de variação infinitesimal de uma mudança finita; preservar o critério de estabilidade e as restrições da atividade. [Tong, §4.4](https://www.damtp.cam.ac.uk/user/tong/statphys/statmechhtml/S4.html#S4.SS4), sustenta a discussão de potenciais e condições de mínimo; o termo gravitacional segue da convenção definida na própria preparação.
+
+## Demais verificações e rastreabilidade
+
+Em FUN-02, ∂Φ/∂ζ=240 J/mol para ζ=T/(400 K) equivale a ∂Φ/∂T=0,600 J/(mol K) quando as mesmas coordenadas restantes são mantidas. Para ω=(x−1/2)y dx e percurso anti-horário, a integral no quadrado unitário é zero e no retângulo [0,1/2]×[0,1] é 1/8; um laço nulo não demonstra exatidão global. A [University of Washington, diferenciais](https://faculty.washington.edu/jcv2/CHEM452_WI2023/html/appendix_differentials.html) apoia a notação das variáveis fixas; a [OpenStax §6.3](https://openstax.org/books/calculus-volume-3/pages/6-3-conservative-vector-fields) discute domínio, campos conservativos e integração. O texto da Washington, isoladamente, simplifica o teste de derivadas cruzadas e não substitui o exame de regularidade e domínio apropriado.
+
+Entrega auditada SHA `56288af5fcdfd96314d3976e5091aff34bf011fcb767b153ce3b5cd7e6769507`; fotografia r23 SHA `f847c5be0640039f1f6090407fc37f39b7833c7a97f1e5958d77f78e884ce85d`, inventário r23 SHA `ae7cfa82b64f1118ed292f5c9e4d42cdf6f5871db8b13598b16506bf382a905e`. O [verificador independente](../evidencias/QA-09/auditoria-preparacoes-fun-r23-reference-triage-20261030/verificar.py), SHA `193e49281e9bce16ba12a347b8bf0ed3e7b291ce639d4e4cdb73ce80f1d30d63`, confirmou os dois intervalos e hashes UTF-16 e a aritmética dos exemplos e contramodelos; não consulta rede nem avalia física automaticamente. Fontes abertas via ferramenta web em 30/10/2026. Não houve navegador do curso, leitor de tela ou estudantes. Candidatas e aplicação requerem autor e auditor distintos, além de reconciliação da versão efetiva.

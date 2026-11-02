@@ -1,0 +1,21 @@
+# QA-09 — auditoria independente da candidata EX-010 e equipamentos r25
+
+30/10/2026. Auditor `/root/planning`, distinto do Corretor `/root/next_examples`. Eu também identifiquei a ressalva original do exemplo; essa participação prévia é declarada. **Parecer: APROVADA ISOLADAMENTE a candidata na fotografia r25.** Não aplica o produto, não aprova automaticamente a versão futura, o restante da aula ou QA-09 integral.
+
+## Exame científico
+
+O enunciado candidato de EX-010 determina regime permanente, uma única entrada e saída com mesma vazão, ausência de outras correntes, turbina adiabática, energias cinética e potencial desprezíveis e trabalho **total** produzido não associado ao escoamento. A entalpia inclui trabalho de escoamento. Assim w=h₁−h₂=3000−2600=400 kJ/kg e Ẇ=2×400=800 kW. O contramodelo anterior de entrada 2 kg/s e duas saídas de 1 kg/s, com h₃=2000 kJ/kg e potência total 1400 kW, é excluído pela hipótese de uma única saída; os valores propostos continuam nominais.
+
+A tabela mantém regime permanente no cabeçalho. Para turbina e compressor, especifica uma entrada/saída, adiabaticidade, energias cinética/potencial desprezíveis e trabalho total não associado ao escoamento produzido ou recebido; nessas condições as relações h₁−h₂ e h₂−h₁ aplicam-se por massa. O bocal tem uma entrada/saída, adiabaticidade, nenhum trabalho não associado ao escoamento e variação de altura desprezível; a queda de entalpia acompanha a mudança de energia cinética. A válvula explicita uma entrada/saída, ausência de transferência térmica e de trabalho não associado ao escoamento, e energias cinética/potencial desprezíveis, de modo que h₁≈h₂.
+
+Para o **trocador**, a fronteira cobre o conjunto de duas correntes **sem mistura**, uma entrada e saída de cada, sem outras correntes, transferência de calor externa ou trabalho não associado ao escoamento; variações cinética/potencial desprezíveis. Não se impõe uma única corrente ao conjunto nem se proíbe o calor interno entre elas. Por exemplo, uma corrente de 1 kg/s com Δh=−100 kJ/kg e outra de 2 kg/s com Δh=+50 kJ/kg têm saldo −100+100=0 kW; ambas trocam energia internamente apesar da ausência de calor externo. A bomba ideal mantém uma entrada/saída, adiabaticidade reversível, líquido com v aproximadamente constante e energias cinética/potencial desprezíveis: ds=0, dh=v dp e o trabalho total recebido por massa é aproximadamente vΔp. Esses modelos não são regras para todos os equipamentos reais.
+
+O [MIT, equação de energia em escoamento](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm) distingue trabalho de escoamento embutido na entalpia do trabalho externo, em apoio ao domínio examinado. Os dados e o exemplo do trocador acima são hipotéticos, não extraídos da fonte.
+
+## Identidade e simulação
+
+Aula r25 SHA `ea0a7e3877c0a0250dac3d9c993c7922a03400929eb7a5dad39fcb27e3263c7e`, inventário `6798d317db30bd69435ed14862cc03cd0f0c6313e40408dd8831052285984116`; análise da candidata `fa5b318a2a6f6097fecef49079be5c0f89290aac5e871c8038c42ad0d287a7fa`; manifesto `9374290e0e6203e356e71b3d87b4e8df9aa714e4c5f04556a9aa2113f01c2da7`. Contêiner original e candidato sem quebra terminal têm hashes `a9a8a163cb667a472acb0475a598541bf38353f6278153f4f590f4e58ae2588e` e `74c5c0d0bf34eb8253ac30ed3c858ba3b4df6cd5a88b0608a96ee7479fc41d1a`.
+
+Meu verificador de leitura `auditoria/termodinamica/evidencias/QA-09/auditoria-candidata-ex010-equipamentos-r25-independente-r1/verificar.py`, SHA `a770d1f4a6b52aaa3f75598b00302f05ac7b5d2a50e463000fa9d082d39516ef`, reconstituiu as nove substituições, conferiu recorte UTF-16 e aula hipotética `a05528748cf34195eeb5366484b16ce6f19f9668e91c5a1915ff5afe5a1cad36`, preservação de 197 artigos, 734 MathML e atributos ID/href/src/ARIA, e os balanços do exemplo e do trocador. Executei também o verificador do Corretor em leitura. Nenhum produto foi escrito nesta auditoria.
+
+A proposta sana a ressalva localizada identificada em `QA-09-exemplos-006-020-r25-auditoria-independente-20261030.md`, sem alterar os dados ou resultados do exemplo. Qualquer aplicação requer foto e mapa novos, reconciliação de dependências e auditoria independente da versão efetiva. Sem navegador real, leitor de tela, estudantes, revisão humana ou certificação externa.

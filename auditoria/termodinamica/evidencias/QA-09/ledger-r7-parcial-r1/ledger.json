@@ -1,0 +1,279 @@
+{
+  "versao": "r7-parcial-r1",
+  "data": "2026-10-30",
+  "estado_global": "QA09_EM_CORRECAO_NAO_APROVADO",
+  "fotografia": {
+    "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r7.json",
+    "inventario_sha256": "5090b9897a4698e0ad090f45182afba5880361aabc9fd3c3bdf848d971a85a1a",
+    "documentos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "200f9b773050594d762cc596a5a89297024b245fc4f504081fc77baaed3db95f",
+        "total_nos": 24116,
+        "nos_fora": 10836,
+        "artigos_excluidos": 197,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 21,
+          "tabela": 37,
+          "mathml": 520,
+          "equacao_contextualizada": 99,
+          "exemplo_ou_diagnostico": 78,
+          "figura": 8,
+          "caso_oficina": 4,
+          "flashcard": 21
+        }
+      },
+      {
+        "arquivo": "formulas/termodinamica.html",
+        "sha256": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+        "total_nos": 5452,
+        "nos_fora": 5452,
+        "artigos_excluidos": 0,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 11,
+          "ficha_formula": 100,
+          "mathml": 191
+        }
+      }
+    ]
+  },
+  "regra_padrao": "Cada elemento em cada coleção está pendente de integração neste ledger, exceto para a identidade, escopo e versão do registro explícito correspondente; ausência de registro não afirma que nenhuma revisão histórica exista. Não herdar aprovação por nó ancestral ou filho, hash igual, outra coleção, outra versão ou alegada semelhança. Qualquer mudança de fonte, inventário ou parecer encerra validade desta fotografia e exige reconciliação e revisão de impacto.",
+  "colecoes": {
+    "ocorrencias": {
+      "quantidade_fotografia": 11396,
+      "estado_sem_registro": "pendente",
+      "identidade": "índice base zero na coleção do inventário fixado por SHA-256; para ocorrências conferir também id, arquivo, seção, âncora, posição e hash do fragmento; para referências e recursos confrontar todos os metadados do registro",
+      "regras": "Não agregar contagens de coleções sobrepostas nem interpretá-las como número de cálculos."
+    },
+    "referencias": {
+      "quantidade_fotografia": 815,
+      "estado_sem_registro": "pendente",
+      "identidade": "índice base zero na coleção do inventário fixado por SHA-256; para ocorrências conferir também id, arquivo, seção, âncora, posição e hash do fragmento; para referências e recursos confrontar todos os metadados do registro",
+      "regras": "Não agregar contagens de coleções sobrepostas nem interpretá-las como número de cálculos."
+    },
+    "recursos": {
+      "quantidade_fotografia": 138,
+      "estado_sem_registro": "pendente",
+      "identidade": "índice base zero na coleção do inventário fixado por SHA-256; para ocorrências conferir também id, arquivo, seção, âncora, posição e hash do fragmento; para referências e recursos confrontar todos os metadados do registro",
+      "regras": "Não agregar contagens de coleções sobrepostas nem interpretá-las como número de cálculos."
+    },
+    "ativos_especificos": {
+      "quantidade_fotografia": 6,
+      "estado_sem_registro": "pendente",
+      "identidade": "índice base zero na coleção do inventário fixado por SHA-256; para ocorrências conferir também id, arquivo, seção, âncora, posição e hash do fragmento; para referências e recursos confrontar todos os metadados do registro",
+      "regras": "Não agregar contagens de coleções sobrepostas nem interpretá-las como número de cálculos."
+    }
+  },
+  "artigos_ban08": {
+    "quantidade_identificada": 197,
+    "tratamento": "Identificadores segregados do inventário QA-09 e sujeitos às evidências próprias de BAN-08; não são cobertura de QA-09 nem autorizam transferência automática de aceites."
+  },
+  "estados_permitidos": [
+    "pendente",
+    "conferido_no_escopo_localizado",
+    "nao_aplicavel_justificado",
+    "achado_aberto"
+  ],
+  "registros_explicitamente_revisados": [
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 2214,
+      "id_inventario": "modulos/e1-termodinamica.html:194566:exemplo_ou_diagnostico",
+      "id_historico": "EX-011",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "energia",
+      "ancora": "energia",
+      "inicio_utf16": 194566,
+      "fim_utf16": 194863,
+      "sha256_fragmento": "8ec6ce4013a1be49c569b5e3b8ab5e80b899cb9d250396be6023b1eecfa2d3c9",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-exemplos-011-013-auditoria-independente-r1.md",
+      "parecer_sha256": "30971b46f9ffe605dd355d2b5b244ef9ef6e806a4d9292759985db167ca62471"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 2220,
+      "id_inventario": "modulos/e1-termodinamica.html:195137:exemplo_ou_diagnostico",
+      "id_historico": "EX-013",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "energia",
+      "ancora": "energia",
+      "inicio_utf16": 195137,
+      "fim_utf16": 195675,
+      "sha256_fragmento": "7438f121e00f4c757b695c3de6f881d295128696b48bad8f5d387b0e6547dfea",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-exemplos-011-013-auditoria-independente-r1.md",
+      "parecer_sha256": "30971b46f9ffe605dd355d2b5b244ef9ef6e806a4d9292759985db167ca62471"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 2632,
+      "id_inventario": "modulos/e1-termodinamica.html:225021:exemplo_ou_diagnostico",
+      "id_historico": "EX-021",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "energia",
+      "ancora": "energia",
+      "inicio_utf16": 225021,
+      "fim_utf16": 225352,
+      "sha256_fragmento": "7d5ccbf2c453404e89dc85ca942ca8fc4af21feaa5c268cafd5d686d22aa80c5",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 2686,
+      "id_inventario": "modulos/e1-termodinamica.html:228656:exemplo_ou_diagnostico",
+      "id_historico": "EX-022",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "energia",
+      "ancora": "energia",
+      "inicio_utf16": 228656,
+      "fim_utf16": 228997,
+      "sha256_fragmento": "2a487e5581c87ed5ba98f07fade1bf881a0164fe623e6bf0e213c9fe2af99488",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 2720,
+      "id_inventario": "modulos/e1-termodinamica.html:231269:exemplo_ou_diagnostico",
+      "id_historico": "EX-023",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "energia",
+      "ancora": "energia",
+      "inicio_utf16": 231269,
+      "fim_utf16": 231639,
+      "sha256_fragmento": "667cbf2950b67be9c64b08c6be139194f6a600f10e6e10c76b010e3e23845ec7",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 3629,
+      "id_inventario": "modulos/e1-termodinamica.html:338401:exemplo_ou_diagnostico",
+      "id_historico": "EX-024",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "segunda-lei",
+      "ancora": "segunda-lei",
+      "inicio_utf16": 338401,
+      "fim_utf16": 338739,
+      "sha256_fragmento": "4090b8409d5ff3d50b54426b4bf42ccb73e4ab97316da5ca5209645b8a85c7c7",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 3653,
+      "id_inventario": "modulos/e1-termodinamica.html:341084:exemplo_ou_diagnostico",
+      "id_historico": "EX-025",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "segunda-lei",
+      "ancora": "segunda-lei",
+      "inicio_utf16": 341084,
+      "fim_utf16": 341502,
+      "sha256_fragmento": "cfdb3bf17b79df7a67e26d9adb39be4b7a3e0675aae1119d22c12aefe3eba7f1",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 3669,
+      "id_inventario": "modulos/e1-termodinamica.html:343777:exemplo_ou_diagnostico",
+      "id_historico": "EX-026",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "segunda-lei",
+      "ancora": "segunda-lei",
+      "inicio_utf16": 343777,
+      "fim_utf16": 344059,
+      "sha256_fragmento": "21053305085722f13c8fc1dab485362473038e2aaf0386fdcd646528dda06e06",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 4109,
+      "id_inventario": "modulos/e1-termodinamica.html:367508:exemplo_ou_diagnostico",
+      "id_historico": "EX-027",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "ciclos",
+      "ancora": "ciclos",
+      "inicio_utf16": 367508,
+      "fim_utf16": 370413,
+      "sha256_fragmento": "1e852f1e2abf7b73fcefc5d2de09267597d0079c2333e637182ab985ba3b87d1",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 4161,
+      "id_inventario": "modulos/e1-termodinamica.html:370413:exemplo_ou_diagnostico",
+      "id_historico": "EX-028",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "ciclos",
+      "ancora": "ciclos",
+      "inicio_utf16": 370413,
+      "fim_utf16": 376033,
+      "sha256_fragmento": "39662e989f377c6cf34311b044c6de916732f22caf00b5985adfbd4a20ad3dd4",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 4264,
+      "id_inventario": "modulos/e1-termodinamica.html:376563:exemplo_ou_diagnostico",
+      "id_historico": "EX-029",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "ciclos",
+      "ancora": "ciclos",
+      "inicio_utf16": 376563,
+      "fim_utf16": 376967,
+      "sha256_fragmento": "72d9b64d03a52d49cc39ab883400f5019f8c1ed3ff5656cceebf203620bb7b0b",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 4270,
+      "id_inventario": "modulos/e1-termodinamica.html:377737:exemplo_ou_diagnostico",
+      "id_historico": "EX-030",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "ciclos",
+      "ancora": "ciclos",
+      "inicio_utf16": 377737,
+      "fim_utf16": 378029,
+      "sha256_fragmento": "e7d02e90ea64cef239ddd71e56cb0f6678b750370f0cfb70f1ee2697ab2817d5",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "Cálculos e modelos do bloco conforme parecer; não abrange nós ancestrais, filhos, figuras, referências ou recursos automaticamente.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-exemplos-021-030-auditoria-independente-r1.md",
+      "parecer_sha256": "e9ebf7ffcb7a3a6325e6aac93efabac08b3ede3b96c736d23e3426182c43ac74"
+    }
+  ],
+  "limites": [
+    "Estas linhas não encerram QA-09; registram apenas o escopo localizado dos pareceres vinculados.",
+    "Referências, recursos e ativos têm coleções separadas e permanecem pendentes aqui; não implica que sejam atividades adicionais.",
+    "Os registros do inventário se sobrepõem e não contam contas distintas.",
+    "Este arquivo não comprova testes em navegador, revisão humana, eficácia ou aprendizagem."
+  ]
+}

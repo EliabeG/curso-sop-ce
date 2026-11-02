@@ -1,0 +1,83 @@
+{
+  "estado": "AGUARDANDO_AUDITORIA_INDEPENDENTE",
+  "html_antes": "57b13f0d6386764f1cc46ce543013b0eb75f7bfa97ffbd63ea331f38bfc5af8c",
+  "html_depois": "2d6b8fb2f9c99e04d22c19d7b32bbc3eb20577459d9132e506f9c0acef3f2fc2",
+  "formulario_antes": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+  "formulario_depois": "cda652563a79c49a6c3d527ad1400c7f7597d33c9b8523ed8a26047b25c69feb",
+  "artigos": 197,
+  "fichas_preservadas": 99,
+  "mathml_formulario": 191,
+  "geracao": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r9.json",
+    "sha256": "023c942e7a9fe65a38b28a0cf8db36a97fd5aa204e68215feaeb56ef168f863d",
+    "resumo": {
+      "diagnosticos": 28,
+      "exemplos_incluindo_diagnosticos": 78,
+      "casos_oficina": 4,
+      "flashcards": 21,
+      "fichas": 100,
+      "mathml": 711,
+      "figuras": 8,
+      "textos_diretos": 9500,
+      "referencias": 815,
+      "recursos_unicos": 20
+    },
+    "documentos": [
+      {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "sha256": "2d6b8fb2f9c99e04d22c19d7b32bbc3eb20577459d9132e506f9c0acef3f2fc2",
+        "total_nos": 24117,
+        "nos_fora": 10837,
+        "artigos_excluidos": 197,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 21,
+          "tabela": 37,
+          "mathml": 520,
+          "equacao_contextualizada": 99,
+          "exemplo_ou_diagnostico": 78,
+          "figura": 8,
+          "caso_oficina": 4,
+          "flashcard": 21
+        }
+      },
+      {
+        "arquivo": "formulas/termodinamica.html",
+        "sha256": "cda652563a79c49a6c3d527ad1400c7f7597d33c9b8523ed8a26047b25c69feb",
+        "total_nos": 5452,
+        "nos_fora": 5452,
+        "artigos_excluidos": 0,
+        "erros_parser": [],
+        "contagens_objetos": {
+          "secao": 11,
+          "ficha_formula": 100,
+          "mathml": 191
+        }
+      }
+    ]
+  },
+  "mapa": {
+    "status": "ok",
+    "r8": 11396,
+    "r9": 11397,
+    "referencias": 815,
+    "recursos": 138,
+    "classificacao": {
+      "PAREADO_EXTERNO": 11200,
+      "PAREADO_INTERNO_CONFERIR": 196,
+      "ADICIONADO_OU_REESTRUTURADO": 1
+    }
+  },
+  "validador": {
+    "ok": true,
+    "curso": "E1",
+    "itens_registrados": 197,
+    "artigos_encontrados": 197,
+    "recursos_verificados": 29,
+    "links_locais_verificados": 1263,
+    "erros": [],
+    "avisos": [],
+    "alcance": "Estrutura, cobertura e integridade documental. Não certifica mérito científico, nível avançado, gabaritos ou aprendizagem."
+  },
+  "limite": "Verificação estrutural; não substitui auditoria independente, teste em navegador ou aceite integral QA-09."
+}

@@ -1,0 +1,23 @@
+// Exame independente da proposta, em memória e sem gravação.
+import fs from 'node:fs';
+import {parseHtml,isInventoryArticle,sha256} from '../../../inventario/validar-inventario.mjs';
+const dir='auditoria/termodinamica/evidencias/QA-09/candidata-diagnostico23-r13-20261030/';
+const html=fs.readFileSync('modulos/e1-termodinamica.html','utf8');
+const bytes=fs.readFileSync('auditoria/termodinamica/evidencias/QA-09/inventario-r13.json');
+const inv=JSON.parse(bytes),original=fs.readFileSync(dir+'original-r13.html','utf8'),candidate=fs.readFileSync(dir+'candidata.html','utf8');
+const check=(v,m)=>{if(!v)throw Error(m)};
+check(sha256(html)==='f19000a7ddb1f3552b9633b0efec266fb3f6c5e5065808505a2f65b2005aefbc'&&sha256(bytes)==='0df99b79bcc2350581fcdded72435d30d07858de237a549e6228ca73682f8d9b','fotografia');
+const found=inv.ocorrencias.filter(o=>o.diagnostico===23&&o.tipo==='exemplo_ou_diagnostico');
+check(found.length===1&&found[0].secao==='preparacao-questoes'&&found[0].inicio_utf16===534074&&found[0].fim_utf16===534884,'identidade');
+check(sha256(original)==='e5e87b30397cc0394b10b1194461e7bf64fd0e831184d4b91eeae0d234cd5073'&&sha256(candidate)==='7ff95d0d97ccbf5c2fa3475c0d5d4019fb2657686e4daebc3d55536fc9b66d10','hash fragmentos');
+check(html.slice(found[0].inicio_utf16,found[0].fim_utf16)===original&&html.split(original).length===2&&!html.includes(candidate),'posição/ocorrência');
+const old='Duas correntes entram em regime permanente: 2 kg/s a 100 kJ/kg e 1 kg/s a 400 kJ/kg.';
+const fresh='Duas correntes entram em regime permanente: a primeira tem vazão mássica de 2 kg/s e entalpia específica de 100 kJ/kg; a segunda tem vazão mássica de 1 kg/s e entalpia específica de 400 kJ/kg.';
+check(original.split(old).length===2&&original.replace(old,fresh)===candidate,'delta');
+const proposal=html.replace(original,candidate),a=parseHtml(html),b=parseHtml(proposal);
+check(!a.errors.length&&!b.errors.length,'parser');
+const arts=(d,s)=>d.nodes.filter(isInventoryArticle).map(n=>[n.attrs.id,s.slice(n.start,n.end)]);
+const A=arts(a,html),B=arts(b,proposal);check(A.length===197&&JSON.stringify(A)===JSON.stringify(B),'artigos');
+const h1=100*1.005/.718,h2=400*1.005/.718,hm=(2*h1+h2)/3;
+check((2*100+400)/3===200&&(2*100+400+30)/3===210&&Math.abs(hm-279.9442896935933)<1e-9,'balanços');
+console.log(JSON.stringify({ok:true,artigos_inalterados:197,solucao:{adiabatico:200,calor:210},contramodelo:{h1,h2,hm},limite:'Proposta em memória; não confirma aplicação nem navegador.'},null,2));

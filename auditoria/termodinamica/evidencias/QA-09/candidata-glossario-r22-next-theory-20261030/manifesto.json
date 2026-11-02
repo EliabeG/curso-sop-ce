@@ -1,0 +1,23 @@
+{
+  "id": "QA-09-candidata-glossario-r22-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-pontes-d14-r22-r1/resultado/depois-aula.html",
+  "fonte_sha256": "ddf6edd271e38eb318ff1756cfa60f5bc8632882357de2401c114479cb3a432f",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r22.json",
+  "inventario_sha256": "6e68d5a9e5cfec73aa2a5ce24121ede1c3a155ca2a5783cf6f17ca95eee8061b",
+  "ancora": "glossario",
+  "inicio_utf16": 1285927,
+  "fim_utf16": 1288715,
+  "original_sha256": "9348a83d7a739d23a454f8a3ca8810f4891f09fd762dd69b3fa1aa5895a5cf01",
+  "candidata_sha256": "40e448e1d3c7d1294f9332b1ff780f1f5fd7566da772210c06e4e8f1c93e429c",
+  "substituicoes": [
+    {
+      "antes": "<dt>COP</dt><dd>Calor útil transportado dividido pelo trabalho consumido.</dd>",
+      "depois": "<dt>COP</dt><dd>Para refrigerador ou bomba de calor acionados por trabalho, sem outra entrada energética de acionamento relevante, calor útil transportado dividido pelo trabalho líquido total recebido, positivo, na mesma fronteira e período.</dd>"
+    },
+    {
+      "antes": "<dt>Compressibilidade</dt><dd>Medida de afastamento do comportamento de gás ideal por Z.</dd>",
+      "depois": "<dt>Fator de compressibilidade</dt><dd>Grandeza adimensional Z que indica o desvio da relação pressão–volume–temperatura do gás ideal; não é a compressibilidade isotérmica.</dd>"
+    }
+  ]
+}

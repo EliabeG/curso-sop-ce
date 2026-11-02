@@ -385,3 +385,114 @@ Foram explicitadas as condições dos balanços, preservando as resoluções e o
 ## QA-09 — aplicação localizada na oficina 8.1
 
 Quatro blocos da oficina tiveram a atribuição de temperatura e as condições de balanço esclarecidas; os 197 artigos foram preservados. O JSON aponta à fotografia efetiva, e a [entrega](../evidencias/QA-09/aplicacao-oficina-r1/entrega-r1.md) registra hashes, limites e versões. A aplicação requer auditoria independente; QA-09 não está aprovado.
+
+## QA-09 — aplicação localizada dos exemplos 011 e 013
+
+Os exemplos de tanque e compressão explicitam exclusividade de trabalho e calor líquido, preservando as soluções. Os 197 artigos e registros individuais mantêm-se idênticos; o JSON aponta à nova fotografia. A [entrega](../evidencias/QA-09/aplicacao-exemplos-011-013-r1/entrega-r1.md) registra a versão, os testes e os limites. A aplicação aguarda auditoria independente e não aprova QA-09.
+
+## QA-09 — aplicação localizada de correções de conteúdo
+
+Aplicação de candidatas revisadas; os 197 artigos e registros individuais foram preservados. Consulte as edições e sua revisão na pasta `aplicacao-razao-percentual-r1`. A aplicação requer auditoria independente e não encerra QA-09.
+
+## QA-09 — aplicação localizada em flashcards, resumo e ficha 80
+
+Foram esclarecidas hipóteses em sete trechos de revisão e na ficha 80. Os 197 artigos e registros, 99 fichas não alvo e MathML do formulário foram preservados na verificação estática. Esta aplicação requer auditoria independente e não encerra QA-09.
+
+## QA-09 — aplicação localizada das hipóteses de pressão e fichas 40/67
+
+Foram esclarecidas hipóteses em trechos da aula e nas fichas 40/67. Os 197 artigos e registros, as 98 fichas não alvo e MathML do formulário foram preservados na verificação estática. Esta aplicação requer auditoria independente e não encerra QA-09.
+
+
+## QA-09 — FUN-01 P3: redação sobre origem das colunas
+
+O parágrafo da solução diferencia redundância ρ/v de afirmação sobre a origem instrumental dos dados; enunciado, dados e rubrica são preservados. Atualizou-se apenas o hash do artigo P3 no inventário oficial. A aplicação está sujeita a auditoria independente da versão efetiva e revalidação localizada de FUN-01, BAN-02, BAN-07 e BAN-08. QA-09 integral continua em correção.
+
+
+## QA-09 — vínculo EnergyPlus 24.1 e condições em fichas 88/99
+
+O vínculo de CO₂ foi atualizado para a seção HTML correspondente do EnergyPlus 24.1, e as fichas 88/99 tiveram hipóteses de regime permanente e de fontes térmicas explicitadas. Os 197 artigos e registros individuais foram preservados. Aplicação sujeita a auditoria independente e revalidação localizada; QA-09 integral continua em correção.
+
+
+## QA-09 — aplicação conjunta de seis candidatas na fotografia r14
+
+Foram explicitadas as hipóteses nas fichas 23, 58 e 59 e na base de eficiência isentrópica, identificadas as entalpias do diagnóstico 23 e contextualizada a referência OpenStax com contraponto MIT. Os 197 artigos e seus registros individuais foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral permanece aberto.
+
+
+## QA-09 — referência WIKA na fotografia r15
+
+O endereço WIKA da lista de fontes foi atualizado à página brasileira dos modelos 111.16 e 111.26. Os 197 artigos e seus registros individuais foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral permanece aberto.
+
+
+## QA-09 — aplicação conjunta r16, 30/10/2026
+
+Aplicadas cinco candidatas aprovadas na aula e no formulário; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver evidências em `auditoria/termodinamica/evidencias/QA-09/aplicacao-conjunta-r16-r1/`.
+
+
+## QA-09 — aplicação intercooling r17, 30/10/2026
+
+Aplicada candidata aprovada em teoria; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver evidências em `auditoria/termodinamica/evidencias/QA-09/aplicacao-intercooling-r17-r1/`.
+
+
+## QA-09 — quatro correções localizadas na fotografia r18
+
+Foram explicitados balanços na ficha 60 e no exemplo 027, o efeito líquido de calor e trabalho na primeira lei e a temperatura local de fronteira na entropia de escoamento. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — aplicação notação e fichas r19, 30/10/2026
+
+Aplicadas candidatas aprovadas de notação e das fichas 61/80; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver `auditoria/termodinamica/evidencias/QA-09/aplicacao-notacao-fichas-r19-r1/`.
+
+
+## QA-09 — modelos de mistura e fase na fotografia r20
+
+Foram explicitados o balanço sensível em mistura térmica e o domínio do calor latente na etapa de fase. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — EX-046 e entropia da oficina na fotografia r21
+
+Foram explicitados a alimentação elétrica e o balanço de EX-046, e a fronteira da geração total de entropia na oficina. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — radiação, geração e D14 na fotografia r22
+
+Foram explicitadas condições da razão radiativa e o balanço de energia de geração térmica, incluindo a entrada elétrica em D14. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — resumo e glossário na fotografia r23
+
+Foram delimitados os modelos e bases no resumo e no glossário. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — equilíbrio FUN-01 na fotografia r24
+
+Foram delimitados os modelos de gases e líquido e o potencial total com gravidade em FUN-01. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — equilíbrio de fases FUN-01 na fotografia r25
+
+Foram explicitados o domínio da regra de alavanca e o caso degenerado em equilíbrio de fases. Os 197 artigos e seus registros foram preservados. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — FUN-02, ficha 59 e EX-010 na fotografia r26
+
+Foram delimitadas hipóteses de quatro bases FUN-02, do COP de refrigeração e da tabela de equipamentos com EX-010. Os 197 artigos e registros foram preservados. A aplicação requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — aplicação Carnot e flashcards r27, 30/10/2026
+
+Aplicadas candidatas aprovadas de Carnot e três flashcards; fotografia efetiva e efeitos aguardam auditoria independente. Os 197 registros permanecem inalterados. Ver `auditoria/termodinamica/evidencias/QA-09/aplicacao-carnot-flashcards-r27-r1/`.
+
+
+## QA-09 — pressão, substâncias, ciclos e fichas de máquinas na fotografia r28
+
+As condições das três bases e seis fichas foram delimitadas; os 197 artigos e seus registros foram preservados. A aplicação requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — refrigeração na fotografia r29
+
+Foram explicitados trabalho líquido não associado ao escoamento e as condições de balanço do ciclo, preservando os 197 artigos e seus registros. A versão requer auditoria independente e revalidação localizada; QA-09 integral continua aberto.
+
+
+## QA-09 — precisão da refrigeração na fotografia r30
+
+Igualdade exata requer saldo nulo dos demais trabalhos; saldo desprezível fundamenta uma aproximação. A revisão preserva os 197 artigos e requer auditoria independente.

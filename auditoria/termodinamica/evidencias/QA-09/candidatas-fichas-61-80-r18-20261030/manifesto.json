@@ -1,0 +1,45 @@
+{
+  "estado": "CANDIDATAS_NAO_APLICADAS_AGUARDA_AUDITOR",
+  "formulario_sha256": "463c00149e36217404cf98bad4f5bed3db828c87d19d1c8e6038678193e9d895",
+  "inventario_sha256": "717f00621d1740b4c71aeb6e9f492a621489fc86b5c1cffca59cf9584a964acc",
+  "parecer": "auditoria/termodinamica/pareceres/QA-09-fichas-equipamentos-r18-auditoria-next-theory-20261030.md",
+  "parecer_sha256": "d23acb6f5e90b541874cb22c310efd493bb802398e2514d8fbc7604fb844b684",
+  "itens": [
+    {
+      "ficha": 61,
+      "id": "formula-carnot",
+      "mudancas": [
+        {
+          "antes": "Máquina cíclica entre dois reservatórios; TH &gt; TL &gt; 0.",
+          "depois": "Máquina térmica motora cíclica, trocando calor somente com dois reservatórios; TH &gt; TL &gt; 0. O calor total recebido QH &gt; 0 e o trabalho líquido produzido são avaliados na mesma fronteira e período."
+        },
+        {
+          "antes": "TH: fonte quente; TL: fria (K); η: rendimento; ηC: limite reversível.",
+          "depois": "TH e TL: temperaturas absolutas dos reservatórios quente e frio (K); QH: calor total recebido da fonte quente; η: trabalho líquido produzido dividido por QH; ηC: limite reversível. Rendimentos adimensionais."
+        }
+      ],
+      "inicio_utf16": 145574,
+      "fim_utf16": 147233,
+      "original_sha256": "4f5cd7d17704f79c01f737677d21dc563f9ca73233fee1cbfad69712ef462c0a",
+      "candidata_sha256": "95fcbfe9aa724d80b1d7431bdfbc49344db90e1ff08af3ca73bcda07616e90a1"
+    },
+    {
+      "ficha": 80,
+      "id": "formula-brayton-liquido",
+      "mudancas": [
+        {
+          "antes": "Sem outros consumos; também vale com energias por ciclo ou por kg, em uma única base. Para η como rendimento motor: Q̇in &gt; 0 e Ẇt &gt; Ẇc.",
+          "depois": "Ciclo motor, mesma fronteira e período: apenas os trabalhos da turbina e do compressor e os calores externos recebido e rejeitado, sem outras interações energéticas relevantes. Q̇in &gt; 0 e Ẇt &gt; Ẇc. Também vale com energias por ciclo ou por kg, em uma única base."
+        },
+        {
+          "antes": "Ẇt: turbina; Ẇc: compressor, magnitude consumida; Q̇in: calor externo recebido (kW).",
+          "depois": "Ẇt: potência total produzida pela turbina; Ẇc: potência total consumida pelo compressor; Q̇in: taxa total de calor externo recebido; magnitudes em kW, na mesma fronteira e base."
+        }
+      ],
+      "inicio_utf16": 191679,
+      "fim_utf16": 194163,
+      "original_sha256": "9dcaed2872d4754bb8151aae1ada14a4c45a07557e6ed70ec5569b8c4cfc0897",
+      "candidata_sha256": "5fcb198473da684abc94697149b2984f6328add92f40b4a29fc5211f48e6cf07"
+    }
+  ]
+}

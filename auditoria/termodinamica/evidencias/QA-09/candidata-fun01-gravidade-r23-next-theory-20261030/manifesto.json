@@ -1,0 +1,23 @@
+{
+  "id": "QA-09-candidata-fun01-gravidade-r23-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-resumo-glossario-r23-r1/resultado/depois-aula.html",
+  "fonte_sha256": "f847c5be0640039f1f6090407fc37f39b7833c7a97f1e5958d77f78e884ce85d",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r23.json",
+  "inventario_sha256": "ae7cfa82b64f1118ed292f5c9e4d42cdf6f5871db8b13598b16506bf382a905e",
+  "ancora": "fun01-preparacao-equilibrio",
+  "inicio_utf16": 107020,
+  "fim_utf16": 111548,
+  "original_sha256": "6a58642fcfbbe49b936c53ea8be9c679fa45607ac3e200fcaf836e12bd1c7a2e",
+  "candidata_sha256": "6a413a6a6e7beaca0f82c6618db02357ba4741718c958bffbecceafb540253cc",
+  "substituicoes": [
+    {
+      "antes": "Para as células com T e volumes fixos, a função apropriada é F = U − TS. Uma transferência infinitesimal de A, da região de origem para a de destino, altera F por (μ_A,destino − μ_A,origem)dn. O sentido espontâneo permitido reduz F.",
+      "depois": "Para o conjunto fechado de células com T e volumes fixos, a energia livre intrínseca é F = U − TS. Incluindo a energia potencial gravitacional externa, a função total é F_total = F + E_grav. Uma transferência infinitesimal permitida de A da origem para o destino altera F_total por (μ̃_A,destino − μ̃_A,origem)dn, usando os potenciais totais definidos acima. Se a contribuição gravitacional for igual nas duas regiões, ela se cancela. O sentido espontâneo permitido reduz a função total."
+    },
+    {
+      "antes": "A igualdade dos potenciais químicos fornece um ponto estacionário;",
+      "depois": "A igualdade dos potenciais totais para a troca permitida fornece um ponto estacionário;"
+    }
+  ]
+}

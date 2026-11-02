@@ -1,0 +1,9 @@
+# QA-09 — triagem provisória da ponte r28→r29
+
+30/10/2026. `/root/planning`. **Todos os 78 objetos permanecem pendentes**: esta triagem somente estrutural não transfere os juízos da r28. Preserva o ledger r28 r2 SHA `518e6b952254773be5d95ba31e06607ba0a34562d6d90162f9b95d36f6fba000` e seu parecer independente SHA `b71c1480f31ffa456ae0c5b0c20ce4ccd01320dab3a251f39d75628dd37068bd`.
+
+O script extraiu as fotos r28/r29 congeladas, conferiu o mapa de 11.409 pares e os 18 objetos individuais com ocorrência no inventário. Os 78 fragmentos, contextos registrados e quatro entornos de figuras são idênticos; não houve conclusão científica ou integração. As coleções seguem com estado padrão pendente e QA-09 aberto.
+
+O parecer da aplicação `auditoria-aplicacao-r29-next-theory-20261030/parecer.md`, SHA `8812b87f269417c335d5082a936251a239a9411fd2beb468bf1d6b109e80da4b`, aprovou a aplicação estruturalmente e recomendou ajuste no texto efetivo para distinguir igualdade exata quando o saldo de outros trabalhos é zero e igualdade aproximada quando é desprezível. Sua entrega relata que a aplicação autorizada foi executada antes do ensaio por erro de diretório; o ensaio posterior é retrospectivo. A coordenação decidiu corrigir a precisão na futura r30 e reconciliar diretamente r28→r30. Esta r1 provisória não integra r29 ou antecipa a correção.
+
+`node auditoria/termodinamica/evidencias/QA-09/ledger-r29-parcial-r1/ledger.mjs --verificar auditoria/termodinamica/evidencias/QA-09/ledger-r29-parcial-r1/ledger.json` é somente leitura e exige a fotografia ativa r29; após sua substituição por outra versão não rode contra a base divergente. Script SHA `b141edd0e2e6f2547166cd9bc0d0022a200b1de067b2faaf69273702022b4046`; ledger SHA `d326dbf4591aea1d38733a0bc561f870d57fbc66531431e9e179d0d46aef8a96`. Apenas verificação positiva executada nesta triagem; não houve testes negativos nem Auditor independente desta r1.

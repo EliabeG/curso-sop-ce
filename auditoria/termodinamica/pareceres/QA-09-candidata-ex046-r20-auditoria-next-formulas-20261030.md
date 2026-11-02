@@ -1,0 +1,15 @@
+# QA-09 — auditoria independente da candidata EX-046 r20
+
+30/10/2026. Auditor `/root/next_formulas`; corretor `/root/next_examples`. **APROVADA ISOLADAMENTE** a proposta do exemplo no modelo térmico abaixo. Sou autor do parecer que levantou o achado; esta revisão é distinta do corretor da candidata, mas não substitui avaliação humana ou auditoria futura da versão efetiva. Nenhum produto foi alterado nesta revisão e QA-09 continua aberto.
+
+## Balanço e domínio
+
+A proposta estabelece regime permanente, q‴ como geração térmica interna total contabilizada uma vez e como única transferência de energia pela fronteira o calor convectivo que sai pela face exposta. Isso exclui trabalho elétrico ou de outro tipo que cruze a fronteira como termo adicional, assim como perdas adicionais. Sob esse **modelo de balanço térmico com fonte volumétrica interna**, área/coeficiente/temperaturas conforme contexto e hA>0, q‴V=hA(Ts−T∞). A fonte térmica especificada é termo interno de conversão/geração, não deve ser contada simultaneamente como aporte externo; a abstração não determina o mecanismo microscópico da geração nem certifica um dispositivo real.
+
+V=3×2×1=6 m³; face A=3×2=6 m²; q‴V=200×6=1200 W; hA=20×6=120 W/K; Ts=20+1200/120=30 °C. A expressão, números e solução anteriores permanecem. Em contraste, se 120 W de trabalho independente atravessassem a fronteira e fossem dissipados sem já figurar na geração q‴, o balanço térmico precisaria contabilizar 1320 W de aporte e levaria a 31 °C; esse caso viola a candidata, não lhe atribui um erro. Se o trabalho já estiver representado em q‴, somá-lo outra vez é dupla contagem. [DOE, fundamentos de transferência de calor](https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1012-92_VOL2.pdf) fundamenta a convecção; os dados nominais são do exercício.
+
+## Identidade e teste
+
+Confirmei aula r20 `b05a68731a6975755c0030c524e7915d7833aacb176f680b3890fe82efc803e7`, inventário `e548f61cde56f676dd0c670924bd58e7012a2f80229231de6560cbb55831adf4`, análise `4341358123c5b2ab9fe4813fbde71dc712e288311ab39efd6dad0301a53b82c7`, manifesto `0d95ec9ad831fa4b53e2061cb77bc64460f88b163e1d28e839525035c7cbd4a2`, original `d7fc82a69bdc4bf9a24cebbd6665e2697f1a92dfa3869da604cab37adf6fa8c3`, candidata `7b1aebc53a61f0d2223b869cd541faa91a324a117d81a60a4527594f3cf199b1` e verificador `1d14f77024f3a703022a96f53c07e2ea927ec5bbb94b7fc981fda74b4e289ce6`. Li o delta único e executei o verificador somente leitura: posição e identidade do exemplo, parser, 197 artigos, 734 MathML e atributos de IDs/links/ARIA preservados; HTML hipotético SHA `585d4a3c87e4bd0ed6ec4cb2272d20262c2467e24a4c1b5875673dbc41eccb64`. O exemplo é um bloco histórico fora dos artigos; a sentença acrescentada preserva dados e solução.
+
+A aprovação é restrita ao texto proposto e fotografia conferida; ela não valida toda a base ou figura, recursos externos, legibilidade, impressão ou aprendizagem. Se a fotografia mudar antes de eventual aplicação, reconciliar de novo; após aplicação gerar inventário/mapa e exigir auditor independente da versão efetiva. Não houve teste de navegador, leitor de tela, alunos ou revisão humana.

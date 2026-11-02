@@ -1,0 +1,215 @@
+{
+  "versao": "r9-parcial-r1",
+  "data": "2026-10-30",
+  "estado_global": "QA09_EM_CORRECAO_NAO_APROVADO",
+  "fotografia": {
+    "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r9.json",
+    "inventario_sha256": "023c942e7a9fe65a38b28a0cf8db36a97fd5aa204e68215feaeb56ef168f863d",
+    "documentos": {
+      "modulos/e1-termodinamica.html": "2d6b8fb2f9c99e04d22c19d7b32bbc3eb20577459d9132e506f9c0acef3f2fc2",
+      "formulas/termodinamica.html": "cda652563a79c49a6c3d527ad1400c7f7597d33c9b8523ed8a26047b25c69feb"
+    }
+  },
+  "fontes": {
+    "configuracao": "auditoria/termodinamica/evidencias/QA-09/aplicacao-flashcards-ficha80-r1/config-r2.json",
+    "configuracao_sha256": "017b14761832e5b371ffc24fa6cccb807f1bb6b2a41b9d160a46d636be1c067a",
+    "edicoes": "auditoria/termodinamica/evidencias/QA-09/aplicacao-flashcards-ficha80-r1/edicoes-aplicadas.json",
+    "edicoes_sha256": "5f75701d8a19898a6068a942d5af2680a9d0a8ea4165f6452ba86a23eba91eaa",
+    "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+    "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+  },
+  "regra_padrao": "Pendente de integração neste ledger, não afirma que faltem revisões históricas. Não herdar aprovação entre nós, coleções, dependências ou versões. Mudanças da fotografia exigem reconciliação e revisão.",
+  "colecoes": {
+    "ocorrencias": {
+      "quantidade_fotografia": 11397,
+      "estado_sem_registro": "pendente",
+      "identidade": "Índice base zero e campos da ocorrência na fotografia r9, incluindo documento, seção, âncora, posição e hash."
+    },
+    "referencias": {
+      "quantidade_fotografia": 815,
+      "estado_sem_registro": "pendente",
+      "identidade": "Índice base zero e todos os metadados do registro na coleção fixada pela fotografia r9."
+    },
+    "recursos": {
+      "quantidade_fotografia": 138,
+      "estado_sem_registro": "pendente",
+      "identidade": "Índice base zero e todos os metadados do registro na coleção fixada pela fotografia r9."
+    },
+    "ativos_especificos": {
+      "quantidade_fotografia": 6,
+      "estado_sem_registro": "pendente",
+      "identidade": "Índice base zero e todos os metadados do registro na coleção fixada pela fotografia r9."
+    }
+  },
+  "artigos_ban08": {
+    "quantidade_identificada": 197,
+    "tratamento": "Segregados; evidências BAN-08 não são automaticamente cobertura QA-09."
+  },
+  "estados_permitidos": [
+    "pendente",
+    "conferido_no_escopo_localizado",
+    "nao_aplicavel_justificado",
+    "achado_aberto"
+  ],
+  "registros_explicitamente_revisados": [
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 10646,
+      "id_inventario": "formulas/termodinamica.html:188405:ficha_formula",
+      "id_edicao": "ficha-080",
+      "arquivo": "formulas/termodinamica.html",
+      "secao": "ciclos",
+      "ancora": "formula-brayton-liquido",
+      "tag": "article",
+      "tipo": "ficha_formula",
+      "inicio_utf16": 188405,
+      "fim_utf16": 190889,
+      "sha256_ocorrencia": "9dcaed2872d4754bb8151aae1ada14a4c45a07557e6ed70ec5569b8c4cfc0897",
+      "sha256_fragmento_html": "9dcaed2872d4754bb8151aae1ada14a4c45a07557e6ed70ec5569b8c4cfc0897",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "A alteração identificada neste bloco foi examinada no parecer; não abrange automaticamente todas as afirmações, filhos, ancestrais, fontes ou dependências.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+      "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 7077,
+      "id_inventario": "modulos/e1-termodinamica.html:1261323:flashcard",
+      "id_edicao": "cop",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "flashcards",
+      "ancora": "flashcards",
+      "tag": "details",
+      "tipo": "flashcard",
+      "inicio_utf16": 1261323,
+      "fim_utf16": 1261662,
+      "sha256_ocorrencia": "d5fb4be0c7fa1fd59c1e33f62548d6699ae5ef10bd440c5c0f2960318039cafd",
+      "sha256_fragmento_html": "d5fb4be0c7fa1fd59c1e33f62548d6699ae5ef10bd440c5c0f2960318039cafd",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "A alteração identificada neste bloco foi examinada no parecer; não abrange automaticamente todas as afirmações, filhos, ancestrais, fontes ou dependências.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+      "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 7161,
+      "id_inventario": "modulos/e1-termodinamica.html:1266119:flashcard",
+      "id_edicao": "valvula",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "flashcards",
+      "ancora": "flashcards",
+      "tag": "details",
+      "tipo": "flashcard",
+      "inicio_utf16": 1266119,
+      "fim_utf16": 1267450,
+      "sha256_ocorrencia": "ed581a881c6c321528a4f060aee7a410528a4e74e955bd3f7208196439985ef1",
+      "sha256_fragmento_html": "ed581a881c6c321528a4f060aee7a410528a4e74e955bd3f7208196439985ef1",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "A alteração identificada neste bloco foi examinada no parecer; não abrange automaticamente todas as afirmações, filhos, ancestrais, fontes ou dependências.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+      "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 7182,
+      "id_inventario": "modulos/e1-termodinamica.html:1267450:flashcard",
+      "id_edicao": "compressor",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "flashcards",
+      "ancora": "flashcards",
+      "tag": "details",
+      "tipo": "flashcard",
+      "inicio_utf16": 1267450,
+      "fim_utf16": 1269920,
+      "sha256_ocorrencia": "3683542f1df835e34f1cb3d19f8891beeec1ae83574fcfb7e2aa508ffc30aaeb",
+      "sha256_fragmento_html": "3683542f1df835e34f1cb3d19f8891beeec1ae83574fcfb7e2aa508ffc30aaeb",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "A alteração identificada neste bloco foi examinada no parecer; não abrange automaticamente todas as afirmações, filhos, ancestrais, fontes ou dependências.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+      "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 7231,
+      "id_inventario": "modulos/e1-termodinamica.html:1270126:flashcard",
+      "id_edicao": "pressao-entrada-saida",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "flashcards",
+      "ancora": "flashcards",
+      "tag": "details",
+      "tipo": "flashcard",
+      "inicio_utf16": 1270126,
+      "fim_utf16": 1272887,
+      "sha256_ocorrencia": "9bcafd2e58f5302ad7e191a85201089be19eef830ee19834743d9bd017a07ee0",
+      "sha256_fragmento_html": "9bcafd2e58f5302ad7e191a85201089be19eef830ee19834743d9bd017a07ee0",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "A alteração identificada neste bloco foi examinada no parecer; não abrange automaticamente todas as afirmações, filhos, ancestrais, fontes ou dependências.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+      "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 7274,
+      "id_inventario": "modulos/e1-termodinamica.html:1272887:flashcard",
+      "id_edicao": "pressao-1-3",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "flashcards",
+      "ancora": "flashcards",
+      "tag": "details",
+      "tipo": "flashcard",
+      "inicio_utf16": 1272887,
+      "fim_utf16": 1274994,
+      "sha256_ocorrencia": "87614877fe961b9ef8ee8c93ecdc0600f831cde700864b1d50ced7adbebb58b5",
+      "sha256_fragmento_html": "87614877fe961b9ef8ee8c93ecdc0600f831cde700864b1d50ced7adbebb58b5",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "A alteração identificada neste bloco foi examinada no parecer; não abrange automaticamente todas as afirmações, filhos, ancestrais, fontes ou dependências.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+      "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 7299,
+      "id_inventario": "modulos/e1-termodinamica.html:1274994:flashcard",
+      "id_edicao": "trocador",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "flashcards",
+      "ancora": "flashcards",
+      "tag": "details",
+      "tipo": "flashcard",
+      "inicio_utf16": 1274994,
+      "fim_utf16": 1276451,
+      "sha256_ocorrencia": "76df1e61d560ded1aa22aedf761a54041b5f20cd1534754087be25356d2ea70c",
+      "sha256_fragmento_html": "76df1e61d560ded1aa22aedf761a54041b5f20cd1534754087be25356d2ea70c",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "A alteração identificada neste bloco foi examinada no parecer; não abrange automaticamente todas as afirmações, filhos, ancestrais, fontes ou dependências.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+      "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+    },
+    {
+      "colecao": "ocorrencias",
+      "indice_base_zero": 7467,
+      "id_inventario": "modulos/e1-termodinamica.html:1284899:texto",
+      "id_edicao": "resumo",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "secao": "resumo",
+      "ancora": "resumo",
+      "tag": "li",
+      "tipo": "texto_direto",
+      "inicio_utf16": 1284899,
+      "fim_utf16": 1285212,
+      "sha256_ocorrencia": "e06d6851e02380af6c7e1f7d52ea04edbb58d5bf8731316f5e2fdbf30127a115",
+      "sha256_fragmento_html": "157535fb990ff134a40d24237b00af8513ee704ee0b867bc19153d89464ee07a",
+      "estado": "conferido_no_escopo_localizado",
+      "alcance": "A alteração identificada neste bloco foi examinada no parecer; não abrange automaticamente todas as afirmações, filhos, ancestrais, fontes ou dependências.",
+      "parecer": "auditoria/termodinamica/pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md",
+      "parecer_sha256": "ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a"
+    }
+  ],
+  "limites": [
+    "Somente os oito deltas revalidados no parecer r9 estão representados; os demais registros permanecem pendentes de integração.",
+    "O registro de um bloco não aprova automaticamente nós internos nem todo o bloco; o alcance é o definido pelo parecer.",
+    "As contagens se sobrepõem, não são contagem de cálculos nem percentual de progresso.",
+    "Referências, recursos, ativos e registros históricos de outras versões não são automaticamente classificados.",
+    "Não demonstra teste em navegador real, revisão humana, aprendizagem nem aceite integral QA-09."
+  ]
+}

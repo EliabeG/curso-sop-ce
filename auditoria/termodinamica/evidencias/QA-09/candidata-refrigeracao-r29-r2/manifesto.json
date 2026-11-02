@@ -1,0 +1,94 @@
+{
+  "id": "QA-09-candidata-refrigeracao-r29-r2",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fotografia": "r28",
+  "fontes": {
+    "aula": {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/aplicacao-conjunta-r28/resultado/depois-aula.html",
+      "sha256": "d7294e8ed772cf4530788586d693a6cdfbf1ef6fa05c69afbc984efc46e353d8"
+    },
+    "formulario": {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/aplicacao-conjunta-r28/resultado/depois-formulario.html",
+      "sha256": "3157c9b114f3156e5517440d30b91ee8a4efdebcd95be8bd0c7a588f04dead46"
+    }
+  },
+  "inventario": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r28.json",
+    "sha256": "0a7a12fbf0cd2a0898bcebfdfa7ae98c850bdb0bf7d2b34eea06cc6a8d9afb44"
+  },
+  "parecer": {
+    "arquivo": "auditoria/termodinamica/evidencias/QA-09/auditoria-formulas-r28-lote5/parecer.md",
+    "sha256": "5693d5a9fafb2cf9029bf5892db781e2e26734a90a69bc9ced2060b61e4a29c4"
+  },
+  "edicoes": [
+    {
+      "id": "base-refrigeracao",
+      "documento": "modulos/e1-termodinamica.html",
+      "inicio_utf16": 370901,
+      "fim_utf16": 383884,
+      "original_sha256": "cffc3aa7e5c04aca69bb2b0e2716858f11e33f9a6806c9b8bf8e6661b1881305",
+      "candidata_sha256": "c82889e9487fb8454a2acad51c764307fe7b7a78c4b2a46ac2146b9435575deb",
+      "substituicoes": [
+        {
+          "antes": "As três primeiras são magnitudes: trabalho recebido, calor absorvido e calor rejeitado.",
+          "depois": "As três primeiras são magnitudes: trabalho líquido total não associado ao escoamento recebido pelo compressor, calor absorvido e calor rejeitado. O trabalho do compressor coincide com o de eixo recebido quando o saldo dos demais trabalhos não associados ao escoamento é nulo ou desprezível.",
+          "quantidade": 1
+        },
+        {
+          "antes": "O COP divide o calor útil pelo trabalho recebido positivo.",
+          "depois": "O COP divide o calor útil pelo trabalho líquido total recebido positivo, na mesma fronteira e período.",
+          "quantidade": 1
+        },
+        {
+          "antes": "Magnitude do trabalho consumido pelo ciclo de refrigeração ou pela bomba de calor.",
+          "depois": "Trabalho líquido total recebido pelo ciclo de refrigeração ou pela bomba de calor, positivo: entradas menos saídas de trabalho.",
+          "quantidade": 3
+        }
+      ]
+    },
+    {
+      "id": "formula-refrigeracao",
+      "documento": "formulas/termodinamica.html",
+      "inicio_utf16": 205030,
+      "fim_utf16": 208377,
+      "original_sha256": "cb9dcd50f4ca7442a1c0f4a85fcd9b6659f9ef7136e9e3d997dc76a773437c06",
+      "candidata_sha256": "22a2076b9ffbdf15619b2b9702907e3329d9ca22efe4f6f2d67bff95342e384c",
+      "substituicoes": [
+        {
+          "antes": "qL: calor absorvido; qH: rejeitado; wc: trabalho consumido, magnitudes em kJ/kg.",
+          "depois": "qL: calor absorvido; qH: rejeitado; wc: trabalho líquido total não associado ao escoamento recebido pelo compressor, positivo; grandezas em kJ/kg.",
+          "quantidade": 2
+        },
+        {
+          "antes": "Desprezar trocas nas ligações. wc&gt;0.",
+          "depois": "Desprezar trocas nas ligações. wc&gt;0; corresponde ao trabalho de eixo recebido quando o saldo dos demais trabalhos não associados ao escoamento é nulo ou desprezível.",
+          "quantidade": 2
+        }
+      ]
+    },
+    {
+      "id": "formula-condensador",
+      "documento": "formulas/termodinamica.html",
+      "inicio_utf16": 208377,
+      "fim_utf16": 210081,
+      "original_sha256": "073599882f469b948804fe638a6d6fcb0e2e5c851556ce698328a48de4d13ba4",
+      "candidata_sha256": "25aab2b3dc4091eaf11f18579ccc18b70b69e8fe9a654dbae83200c600d3014c",
+      "substituicoes": [
+        {
+          "antes": "Ẇin: potência consumida, magnitudes em kW.",
+          "depois": "Ẇin: potência líquida total recebida pelo ciclo, entradas menos saídas de trabalho, positiva; magnitudes em kW.",
+          "quantidade": 2
+        },
+        {
+          "antes": "Ciclo permanente, sem outras perdas/trocas ou consumos relevantes.",
+          "depois": "Ciclo permanente, mesma fronteira e período: apenas Q̇L recebido, Q̇H rejeitado e Ẇin líquido recebido, sem outras interações energéticas relevantes.",
+          "quantidade": 2
+        }
+      ]
+    }
+  ],
+  "sha_hipotetico": {
+    "aula": "f932d341a543f05b9f7b31b037cb28f21f8d4e9933536656475f99fd3d3ba7d5",
+    "formulario": "b839310edfa655e1da907757119beaeacdabd7d088211ac189c38c3dbeb38932"
+  }
+}

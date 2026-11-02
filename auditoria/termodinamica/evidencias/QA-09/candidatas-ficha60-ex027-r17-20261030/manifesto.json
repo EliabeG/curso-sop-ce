@@ -1,0 +1,45 @@
+{
+  "estado": "CANDIDATAS_NAO_APLICADAS_AGUARDAM_PARECERES",
+  "fotografia": {
+    "aula_sha256": "6b0df1096d0b6de6995ffc51bf8489cb45ab954a7aabdeb3f48d068c9777c57c",
+    "formulario_sha256": "dea4923117d09fa77cabacb0b65816cbf6d57b724d88285003804a1f1440389d",
+    "inventario_sha256": "b8eae39cc72cf807d7b84aad7e7a38423168b809231bc3b7f08c439d6d25163b"
+  },
+  "itens": [
+    {
+      "id": "ficha60",
+      "arquivo": "formulas/termodinamica.html",
+      "inicio_utf16": 142822,
+      "fim_utf16": 144990,
+      "original_sha256": "e0e6972adf000747077e456e696c70ffd206ce922b8857f2295521be5c7a1ac9",
+      "candidata_sha256": "0f0ba526e56c47a84722a4a4c48e9cf014224cc2fff0128cbfe1249896454884",
+      "mudancas": [
+        {
+          "antes": "Mesmo ciclo e fronteira, sem outras trocas relevantes.",
+          "depois": "Mesmo ciclo, fronteira e período: trabalho líquido total recebido Win &gt; 0 e apenas os calores QL retirado da fonte fria e QH entregue à fonte quente, sem outras interações energéticas relevantes.",
+          "ocorrencias": 2
+        },
+        {
+          "antes": "QH: calor entregue à fonte quente; Win: trabalho consumido (mesma unidade).",
+          "depois": "QH: magnitude do calor entregue à fonte quente; QL: magnitude do calor retirado da fonte fria; Win: trabalho líquido total recebido, positivo; todos na mesma unidade e ciclo. COPR=QL/Win: COP de refrigeração do mesmo ciclo.",
+          "ocorrencias": 2
+        }
+      ]
+    },
+    {
+      "id": "ex027",
+      "arquivo": "modulos/e1-termodinamica.html",
+      "inicio_utf16": 370173,
+      "fim_utf16": 373078,
+      "original_sha256": "1e852f1e2abf7b73fcefc5d2de09267597d0079c2333e637182ab985ba3b87d1",
+      "candidata_sha256": "79b68a3535544c50cce957e6eb1747ee37e9cac09b2bceaedb460ac6800c2a54",
+      "mudancas": [
+        {
+          "antes": "Uma máquina recebe 1.000 kJ por ciclo e rejeita 600 kJ.",
+          "depois": "Uma máquina térmica em ciclo recebe, no total, 1.000 kJ de calor da fonte quente e rejeita, no total, 600 kJ de calor à fonte fria. O trabalho líquido é a única outra transferência de energia através da fronteira.",
+          "ocorrencias": 1
+        }
+      ]
+    }
+  ]
+}

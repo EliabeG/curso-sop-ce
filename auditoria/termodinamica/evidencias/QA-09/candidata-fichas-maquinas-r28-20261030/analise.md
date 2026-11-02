@@ -1,0 +1,20 @@
+# QA-09 — candidatas isoladas das fichas 43–45, 71, 72 e 79
+
+30/10/2026. Corretor `/root/next_formulas`. **Não aplicadas; aguardam auditoria independente.** Base r27 `aplicacao-carnot-flashcards-r27-r1/resultado/depois-formulario.html`, SHA-256 `16329b7369c4ba927f5f7da30551f86934aad1f6a6e55627443dea5cb9fe0c02`. `r28` nomeia o lote de propostas, não a fotografia do produto. Atende aos pareceres independentes lote 23–44 SHA `b3c36446bf2029156c9ecf070403c2406fc4c042aa31a494fd0150ba09b24a84`, lote 45–66 SHA `6dc6c4799449b6656fa6bebf443fd488645dd000501b49955aa2380aade773e5` e lote 67–83 SHA `7bd66dc4b66a636d3ed8645149b0aaf794161096489da45ad058c35c8ddc9094` registrados com caminhos e hashes no manifesto.
+
+## Proposta e justificativa
+
+- 43 e 44: acrescentam uma entrada/uma saída, definem os índices h1/h2 e especificam trabalho e potência líquidos totais não associados ao escoamento, respectivamente produzidos/recebidos. Esses totais correspondem ao trabalho de eixo se não houver outros trabalhos não de escoamento.
+- 45: o mesmo esclarecimento para bomba ideal, com pressões absolutas de entrada/saída e p2>p1>0, preservando a hipótese adiabática reversível, v aproximadamente constante e variações mecânicas desprezíveis. O modelo se refere a trabalho líquido total não de escoamento, sem proibir outra modalidade de trabalho.
+- 71/72: explicitam uma entrada e saída, mesmo fluido e composição fixa, sem reação ou mistura, comparação da mesma entrada e pressão de saída e referência adiabática internamente reversível. Diferenças de entalpia representam os trabalhos líquidos totais não de escoamento; a associação com eixo exige não haver outros trabalhos dessa categoria. Os denominadores originais permanecem positivos.
+- 79: define wt e wb como totais líquidos não associados ao escoamento por massa, produzidos pela turbina e recebidos pela bomba. Identificação com eixo exige ausência de outros trabalhos dessa categoria; mantém caldeira/condensador sem trabalho não de escoamento.
+
+Os campos `data-busca` acompanham os textos e símbolos visíveis. Títulos, fórmulas MathML, IDs, ícones, links e os outros 94 cartões são preservados. Restrições anteriores não foram removidas. As candidatas são fragmentos, não aplicação no HTML do produto.
+
+## Contramodelos e alcance
+
+Para turbina adiabática de uma entrada e uma saída, com ΔEC/ΔEP desprezíveis e h1−h2=500 kJ/kg, 400 kJ/kg de eixo produzido e 100 kJ/kg de trabalho elétrico produzido somam 500, mas eixo sozinho é 400. Em bomba ideal, v=0,001 m³/kg e Δp=600 kPa dão 0,6 kJ/kg de trabalho líquido total recebido; possíveis parcelas 0,4 de eixo e 0,2 elétrico somam 0,6, mas não se pode atribuir todo o valor a uma parcela. São balanços contábeis idealizados, não relatos de equipamento existente. Para eficiência de turbina, se total real/ideal é 400/500=0,8, mas o eixo real/ideal é 300/500=0,6 devido a outras saídas de trabalho, interpretar a razão de entalpias como eficiência de eixo sem hipótese adicional não é válido. Balanços de escoamento e separação de trabalho são descritos em [MIT, equação de energia](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm); [Purdue ME 200, pp. 68–71](https://www.purdue.edu/freeform/me200/wp-content/uploads/sites/29/2023/03/ME-200-Chapter-6.pdf) discute trabalho reversível em escoamento.
+
+## Identidade e ensaio
+
+`manifesto.json` SHA `c8e9722f71bf08f28c0d97191a3c300f47a89054b9c9bc2bfd1682e3d4100be9` fixa recortes originais/candidatos, fotografias e deltas; `verificar.mjs` SHA `cb51840788b9d7081d18f14f657b0c9ede66ef121fc5806408b59df51004c16a` testa em memória sem gravar produto: `node auditoria/termodinamica/evidencias/QA-09/candidata-fichas-maquinas-r28-20261030/verificar.mjs` retornou `ok:true`. HTML hipotético SHA `3157c9b114f3156e5517440d30b91ee8a4efdebcd95be8bd0c7a588f04dead46`, 100 cartões, 94 não alvo idênticos, 191 blocos MathML, links e SVG preservados. Verificação estrutural não substitui revisão científica nem teste de navegador/leitor de tela. Alteração da base exige reconciliação e futura aplicação exige auditoria própria. Solicita-se Auditor distinto.

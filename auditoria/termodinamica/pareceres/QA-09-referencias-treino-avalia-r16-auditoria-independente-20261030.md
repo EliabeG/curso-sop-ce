@@ -1,0 +1,16 @@
+# QA-09 — auditoria independente de referências do treino Avalia r16
+
+Data: 30/10/2026. Auditor `/root/next_formulas`; corretor `/root/next_graphics`. **Parecer: APROVADO NO RECORTE VERIFICÁVEL, com acessos à SOP e listagem da Avalia inconclusivos.** Isto não comprova a situação atual ou histórica de edital, vigência legal completa, autenticidade binária do caderno em terceiro, correção dos exercícios, nem QA-09 integral.
+
+## Identidade local
+
+Confirmei a aula r16 SHA `55754bfc631da9010e3c9afc73e3c458e349b535c429fe98abe28998897aab23`, inventário r16 SHA `2c4d4da464488f7eab06b6d56d32d83b27fdbb542aaa1d847a412d18c955cbcd`, entrega SHA `27112926d21fa8c7a2a3ce72f185149982a6af1055a2eec70b8baa55e4a0b164` e verificador SHA `4d4bc6720b6cb5741493131874859badeefcd25fd4eb7177174c0e20b930cf52`. Inspecionei e executei o verificador somente leitura: confirmou hashes, contexto, quatro recortes e respectivas URLs no inventário; `ok=true`. O bloco local identifica o caderno como Civil/EMURC, não SOP, qualifica o vínculo com a lei como escolha editorial e data de 10/10/2026 a observação de não localização nas páginas então consultadas. Não pude reconstituir aquele estado histórico, e essa frase não confirma o estado atual.
+
+## Fontes e limites
+
+- A [cópia do caderno EMURC 2025, Engenheiro Civil](https://arquivos.qconcursos.com/prova/arquivo_prova/140354/avalia-2025-emurc-de-vitoria-da-conquista-ba-engenheiro-civil-prova.pdf) abriu com 20 páginas e informa divulgação pela Avalia. Conferi itens 4, 52, 68 e 73; examinei imagens das páginas 3 e 12, inclusive gráfico e respostas de cinco alternativas no item 52. É hospedagem de terceiro, sem comparação binária com exemplar oficial nesta auditoria. Exemplifica formatos presentes, não frequência futura ou conteúdo de mecânica e SOP.
+- A [LC 269/2021 na Assembleia do Ceará](https://www2.al.ce.gov.br/legislativo/ementario/lc269.htm) abriu e seu anexo II aborda atribuições de Engenharia Mecânica, incluindo climatização, exaustão, gases e equipamentos. A página registra que não substitui o Diário Oficial e contém alterações; não verifico exaustivamente vigência, consolidação ou edital. A lei não é programa de prova.
+- A [página de editais da SOP](https://www.ce.gov.br/sop/editais-e-publicacoes-2/) retornou 502 nesta consulta. A [categoria concurso da SOP](https://www.ce.gov.br/sop/categoria/concurso/) também retornou 502 na minha tentativa, embora o corretor tenha relatado abertura em sua consulta. Tais respostas podem depender de tempo, rede e ferramenta; não demonstram falha universal, remoção ou inexistência de edital.
+- A [lista de novos concursos da Avalia](https://www.avalia.org.br/concursos/status/novos) abriu, mas a extração acessível à ferramenta mostrou cabeçalho/tabela sem resultados de concursos. Isso não prova lista completa ou ausência de edital. A consulta do corretor registra o mesmo limite.
+
+As fontes remotas foram confrontadas em 30/10/2026, sem preservar cópias binárias. Não houve teste do curso em navegador, leitor de tela, estudantes ou revisão humana. O parecer não exige mudar uma URL com base apenas numa falha de acesso e não resolve a conferência de um edital, que deve ser feita em publicação oficial disponível.

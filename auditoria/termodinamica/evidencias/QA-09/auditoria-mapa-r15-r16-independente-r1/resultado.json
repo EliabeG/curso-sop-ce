@@ -1,0 +1,113 @@
+{
+  "ok": true,
+  "contagens": {
+    "PAREADO_EXTERNO": 11021,
+    "PAREADO_CONTEXTO_ANCESTRAL_CONFERIR": 3,
+    "PAREADO_INTERNO_CONFERIR": 375,
+    "ADICIONADO_OU_REESTRUTURADO": 1
+  },
+  "pares_internos_hash_diferente": 11,
+  "mudancas_internas": [
+    {
+      "edicao": "base-limite-carnot",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Aproximar as temperaturas das fontes melhora o COP de refrigeração. Para a máquina térmica, aumentar ou reduzir eleva o limite de eficiência.",
+      "depois": "Aumentar TL mantendo TH fixa, ou reduzir TH mantendo TL fixa, eleva o COP de Carnot de refrigeração, desde que TH > TL > 0. Essa conclusão é sobre o limite reversível; não garante melhora do COP real. Para a máquina térmica, aumentar ou reduzir eleva o limite de eficiência."
+    },
+    {
+      "edicao": "base-brayton-real",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Para as mesmas condições de entrada, razão de pressões e temperatura de entrada da turbina, irreversibilidades elevam o trabalho exigido pelo compressor e reduzem o produzido pela turbina perante as referências isentrópicas. No modelo ideal, aquecimento e resfriamento são isobáricos; em dispositivos reais passivos, o escoamento normalmente sofre . Um trocador passivo não deve ser tratado como dispositivo que eleva a pressão disponível do gás.",
+      "depois": "Compare cada componente real com sua referência isentrópica: mesmo fluido de composição fixa, sem reação ou mistura, mesmo estado de entrada e mesma pressão de saída; regime permanente, uma entrada e uma saída, componentes reais e de referência adiabáticos, apenas trabalho de eixo e variações cinética e potencial desprezíveis. Nesse modelo, irreversibilidades elevam o trabalho específico exigido pelo compressor e reduzem o produzido pela turbina. No modelo ideal, aquecimento e resfriamento são isobáricos; em dispositivos reais passivos, o escoamento normalmente sofre . Um trocador passivo não deve ser tratado como dispositivo que eleva a pressão disponível do gás."
+    },
+    {
+      "edicao": "base-brayton-real",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Nas referências adiabáticas, com velocidades e alturas desprezíveis, o compressor consome h₂ − h₁ por kg e a turbina produz h₃ − h₄. Irreversibilidades aumentam a temperatura de saída do compressor e reduzem a queda de entalpia aproveitável na turbina sob as mesmas condições de comparação. Isso explica a redução de trabalho líquido.",
+      "depois": "Na mesma comparação adiabática, com velocidades e alturas desprezíveis, o compressor consome h₂ − h₁ por kg e a turbina produz h₃ − h₄. Irreversibilidades aumentam a temperatura de saída do compressor e reduzem a queda de entalpia aproveitável na turbina sob as mesmas condições de comparação. Isso explica a redução de trabalho líquido."
+    },
+    {
+      "edicao": "formula-politropico",
+      "tipo": "ficha_formula",
+      "tag": "article",
+      "antes": null,
+      "depois": null
+    },
+    {
+      "edicao": "formula-politropico",
+      "tipo": "atributos_significativos",
+      "tag": "article",
+      "antes": {
+        "data-grupo": "compressores",
+        "data-busca": "Compressão politrópica: trabalho consumido Compressores np: expoente politrópico adimensional, não quantidade de matéria; R: constante específica do gás (kJ/(kg·K)); T₁: temperatura de entrada (K); p₁/p₂: pressões absolutas na mesma unidade; win: trabalho de eixo recebido por massa, positivo (kJ/kg). Gás ideal de composição fixa em compressão estacionária internamente reversível, pv^np constante com np constante >0 e np≠1; p₂>p₁>0; ΔEC/ΔEP desprezíveis. \\begin{aligned}w_{\\mathrm{in}}={}&\\frac{n_p}{n_p-1}RT_1\\\\&\\times\\left[\\left(\\frac{p_2}{p_1}\\right)^{(n_p-1)/n_p}-1\\right]\\end{aligned}"
+      },
+      "depois": {
+        "data-grupo": "compressores",
+        "data-busca": "Compressão politrópica: trabalho consumido Compressores np: expoente politrópico adimensional, não quantidade de matéria; R: constante específica do gás (kJ/(kg·K)); T₁: temperatura de entrada (K); p₁/p₂: pressões absolutas de entrada/saída na mesma unidade; win: trabalho total de eixo recebido por massa, positivo (kJ/kg). Mesmo gás ideal de composição fixa em compressão estacionária internamente reversível, uma entrada e uma saída; pv^np constante com np constante >0 e np≠1; p₂>p₁>0; ΔEC/ΔEP desprezíveis. O trabalho total não associado ao escoamento é apenas de eixo. \\begin{aligned}w_{\\mathrm{in}}={}&\\frac{n_p}{n_p-1}RT_1\\\\&\\times\\left[\\left(\\frac{p_2}{p_1}\\right)^{(n_p-1)/n_p}-1\\right]\\end{aligned}"
+      }
+    },
+    {
+      "edicao": "formula-politropico",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Gás ideal de composição fixa em compressão estacionária internamente reversível, pv^np constante com np constante >0 e np≠1; p₂>p₁>0; ΔEC/ΔEP desprezíveis.",
+      "depois": "Mesmo gás ideal de composição fixa em compressão estacionária internamente reversível, uma entrada e uma saída; pv^np constante com np constante >0 e np≠1; p₂>p₁>0; ΔEC/ΔEP desprezíveis. O trabalho total não associado ao escoamento é apenas de eixo."
+    },
+    {
+      "edicao": "formula-politropico",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "np: expoente politrópico adimensional, não quantidade de matéria; R: constante específica do gás (kJ/(kg·K)); T₁: temperatura de entrada (K); p₁/p₂: pressões absolutas na mesma unidade; win: trabalho de eixo recebido por massa, positivo (kJ/kg).",
+      "depois": "np: expoente politrópico adimensional, não quantidade de matéria; R: constante específica do gás (kJ/(kg·K)); T₁: temperatura de entrada (K); p₁/p₂: pressões absolutas de entrada/saída na mesma unidade; win: trabalho total de eixo recebido por massa, positivo (kJ/kg)."
+    },
+    {
+      "edicao": "formula-compressao-isotermica",
+      "tipo": "ficha_formula",
+      "tag": "article",
+      "antes": null,
+      "depois": null
+    },
+    {
+      "edicao": "formula-compressao-isotermica",
+      "tipo": "atributos_significativos",
+      "tag": "article",
+      "antes": {
+        "data-grupo": "compressores",
+        "data-busca": "Limite isotérmico: trabalho consumido Compressores R: kJ/(kg·K); T: K; p: absoluta; win: kJ/kg, positivo na compressão. Gás ideal em escoamento permanente, compressão isotérmica internamente reversível; ΔEC/ΔEP desprezíveis. w_{\\mathrm{in}}=RT\\ln\\left(\\frac{p_2}{p_1}\\right)"
+      },
+      "depois": {
+        "data-grupo": "compressores",
+        "data-busca": "Limite isotérmico: trabalho consumido Compressores R: constante específica do gás (kJ/(kg·K)); T: temperatura absoluta (K); p₁/p₂: pressões absolutas de entrada/saída na mesma unidade; win: trabalho total de eixo recebido por massa, positivo (kJ/kg). Mesmo gás ideal de composição fixa em escoamento permanente, uma entrada e uma saída, compressão isotérmica internamente reversível; p₂>p₁>0; ΔEC/ΔEP desprezíveis. O trabalho total não associado ao escoamento é apenas de eixo. w_{\\mathrm{in}}=RT\\ln\\left(\\frac{p_2}{p_1}\\right)"
+      }
+    },
+    {
+      "edicao": "formula-compressao-isotermica",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "Gás ideal em escoamento permanente, compressão isotérmica internamente reversível; ΔEC/ΔEP desprezíveis.",
+      "depois": "Mesmo gás ideal de composição fixa em escoamento permanente, uma entrada e uma saída, compressão isotérmica internamente reversível; p₂>p₁>0; ΔEC/ΔEP desprezíveis. O trabalho total não associado ao escoamento é apenas de eixo."
+    },
+    {
+      "edicao": "formula-compressao-isotermica",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "antes": "R: kJ/(kg·K); T: K; p: absoluta; win: kJ/kg, positivo na compressão.",
+      "depois": "R: constante específica do gás (kJ/(kg·K)); T: temperatura absoluta (K); p₁/p₂: pressões absolutas de entrada/saída na mesma unidade; win: trabalho total de eixo recebido por massa, positivo (kJ/kg)."
+    }
+  ],
+  "adicionados": [
+    {
+      "edicao": "base-eficiencia-cop",
+      "tipo": "texto_direto",
+      "tag": "p",
+      "texto": "Para os indicadores do refrigerador e da bomba de calor abaixo, considere ciclo acionado somente por trabalho líquido W > 0, com QL retirado da fonte fria e QH entregue à fonte quente, na mesma fronteira e período, sem outros aportes ou rejeições de energia. Assim, QH = QL + W; a relação entre COPs abaixo vale para esse modelo."
+    }
+  ],
+  "refs": 816,
+  "recursos": 138,
+  "artigos": 197,
+  "limite": "Pares estruturais não transferem aceites; comparação de contexto não é avaliação científica."
+}

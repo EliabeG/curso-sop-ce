@@ -1,0 +1,419 @@
+{
+  "versao": "r16-parcial-r1",
+  "data": "2026-10-30",
+  "estado_global": "QA09_EM_CORRECAO_NAO_APROVADO",
+  "fotografia": {
+    "modulos/e1-termodinamica.html": "55754bfc631da9010e3c9afc73e3c458e349b535c429fe98abe28998897aab23",
+    "formulas/termodinamica.html": "dea4923117d09fa77cabacb0b65816cbf6d57b724d88285003804a1f1440389d",
+    "auditoria/termodinamica/evidencias/QA-09/inventario-r16.json": "2c4d4da464488f7eab06b6d56d32d83b27fdbb542aaa1d847a412d18c955cbcd"
+  },
+  "colecoes": {
+    "ocorrencias": {
+      "total": 11400,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "referencias": {
+      "total": 816,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "recursos": {
+      "total": 138,
+      "estado_padrao": "pendente_de_integracao"
+    },
+    "ativos_especificos": {
+      "total": 6,
+      "estado_padrao": "pendente_de_integracao"
+    }
+  },
+  "registros_explicitamente_revisados": [
+    {
+      "id_local": "EX-001",
+      "colecao": "ocorrencias",
+      "indice_base_zero": 535,
+      "identidade_r16": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "fundamentos",
+        "ancora": "fundamentos",
+        "tag": "div",
+        "inicio_utf16": 38690,
+        "fim_utf16": 39016,
+        "linha": 40,
+        "id": "modulos/e1-termodinamica.html:38690:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "6a992834b2c455d4432b96b0d885fc7092fa3c034ced4947c7b2738ff78de535",
+        "trecho": "Exemplo resolvido · Uma propriedade que não muda ao dividir a amostra Uma amostra de 9 kg ocupa 0,010 m³: ρ = 9/0,010 = 900 kg/m³. Cada metade tem 4,5 kg e 0,005 m³, portanto a mesma densidade. Sua energia interna total cai pela metade, mas sua energia interna por kg permanece igual.",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "identidade_r9": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "fundamentos",
+        "ancora": "fundamentos",
+        "tag": "div",
+        "inicio_utf16": 38690,
+        "fim_utf16": 39016,
+        "linha": 40,
+        "id": "modulos/e1-termodinamica.html:38690:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "6a992834b2c455d4432b96b0d885fc7092fa3c034ced4947c7b2738ff78de535",
+        "trecho": "Exemplo resolvido · Uma propriedade que não muda ao dividir a amostra Uma amostra de 9 kg ocupa 0,010 m³: ρ = 9/0,010 = 900 kg/m³. Cada metade tem 4,5 kg e 0,005 m³, portanto a mesma densidade. Sua energia interna total cai pela metade, mas sua energia interna por kg permanece igual.",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Somente dados, resultados e hipóteses individualizados no relatório de reconciliação; não se aprova automaticamente o contexto nem registros descendentes.",
+      "contexto": {
+        "id": "base-medidas",
+        "sha256": "9ec26f2a8b0472711e69319a31d1878257d753ddc930c1f5d748f09ff452d2db"
+      },
+      "parecer_historico": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "parecer_historico_sha256": "3105042743d37cca09eb65659d43865104f2342537808438eb312cc08d210e06",
+      "auditor_historico": "/root/next_graphics",
+      "reconciliacao": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "reconciliacao_sha256": "0d60c27750ad5fba5991881480c2c6e25f3f30444681b8aa4aada0a89e8122b6",
+      "responsavel_revalidacao": "/root/planning"
+    },
+    {
+      "id_local": "EX-002",
+      "colecao": "ocorrencias",
+      "indice_base_zero": 553,
+      "identidade_r16": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "fundamentos",
+        "ancora": "fundamentos",
+        "tag": "div",
+        "inicio_utf16": 41050,
+        "fim_utf16": 41253,
+        "linha": 42,
+        "id": "modulos/e1-termodinamica.html:41050:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "570d1bac8f5a29ec4350c974fbcc797810b3b5a6255f9a543c194c57eb9f96ae",
+        "trecho": "Exemplo resolvido · Faixa de um transmissor Um sensor começa em −10 °C e tem span de 120 °C. Seu limite superior é −10 + 120 = 110 °C; a faixa é de −10 a 110 °C.",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "identidade_r9": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "fundamentos",
+        "ancora": "fundamentos",
+        "tag": "div",
+        "inicio_utf16": 41050,
+        "fim_utf16": 41253,
+        "linha": 42,
+        "id": "modulos/e1-termodinamica.html:41050:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "570d1bac8f5a29ec4350c974fbcc797810b3b5a6255f9a543c194c57eb9f96ae",
+        "trecho": "Exemplo resolvido · Faixa de um transmissor Um sensor começa em −10 °C e tem span de 120 °C. Seu limite superior é −10 + 120 = 110 °C; a faixa é de −10 a 110 °C.",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Somente dados, resultados e hipóteses individualizados no relatório de reconciliação; não se aprova automaticamente o contexto nem registros descendentes.",
+      "contexto": {
+        "id": "base-instrumentos",
+        "sha256": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70"
+      },
+      "parecer_historico": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "parecer_historico_sha256": "3105042743d37cca09eb65659d43865104f2342537808438eb312cc08d210e06",
+      "auditor_historico": "/root/next_graphics",
+      "reconciliacao": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "reconciliacao_sha256": "0d60c27750ad5fba5991881480c2c6e25f3f30444681b8aa4aada0a89e8122b6",
+      "responsavel_revalidacao": "/root/planning"
+    },
+    {
+      "id_local": "EX-003",
+      "colecao": "ocorrencias",
+      "indice_base_zero": 562,
+      "identidade_r16": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "fundamentos",
+        "ancora": "fundamentos",
+        "tag": "div",
+        "inicio_utf16": 41765,
+        "fim_utf16": 42115,
+        "linha": 42,
+        "id": "modulos/e1-termodinamica.html:41765:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "0a78231e1675ba3b239b70b393c4136f645777d039bcfa5ba975b299c6426b39",
+        "trecho": "Exemplo resolvido · Interpolar uma leitura Se X = 10 corresponde a Y = 0 e X = 90 a Y = 40, uma leitura Y = 30 percorreu 30/40 = 0,75 do intervalo. Logo, X = 10 + 0,75 × (90 − 10) = 70. Em um desenho de termômetros, identifique os dois pares correspondentes; não compare apenas as alturas sem ler as escalas.",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "identidade_r9": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "fundamentos",
+        "ancora": "fundamentos",
+        "tag": "div",
+        "inicio_utf16": 41765,
+        "fim_utf16": 42115,
+        "linha": 42,
+        "id": "modulos/e1-termodinamica.html:41765:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "0a78231e1675ba3b239b70b393c4136f645777d039bcfa5ba975b299c6426b39",
+        "trecho": "Exemplo resolvido · Interpolar uma leitura Se X = 10 corresponde a Y = 0 e X = 90 a Y = 40, uma leitura Y = 30 percorreu 30/40 = 0,75 do intervalo. Logo, X = 10 + 0,75 × (90 − 10) = 70. Em um desenho de termômetros, identifique os dois pares correspondentes; não compare apenas as alturas sem ler as escalas.",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Somente dados, resultados e hipóteses individualizados no relatório de reconciliação; não se aprova automaticamente o contexto nem registros descendentes.",
+      "contexto": {
+        "id": "base-instrumentos",
+        "sha256": "b3c0e3d23219f8da2d815afa35bf328178617539300505de961cc6c26f37ad70"
+      },
+      "parecer_historico": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "parecer_historico_sha256": "3105042743d37cca09eb65659d43865104f2342537808438eb312cc08d210e06",
+      "auditor_historico": "/root/next_graphics",
+      "reconciliacao": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "reconciliacao_sha256": "0d60c27750ad5fba5991881480c2c6e25f3f30444681b8aa4aada0a89e8122b6",
+      "responsavel_revalidacao": "/root/planning"
+    },
+    {
+      "id_local": "EX-004",
+      "colecao": "ocorrencias",
+      "indice_base_zero": 765,
+      "identidade_r16": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "substancias",
+        "ancora": "substancias",
+        "tag": "div",
+        "inicio_utf16": 55124,
+        "fim_utf16": 60990,
+        "linha": 49,
+        "id": "modulos/e1-termodinamica.html:55124:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "25c4b655ec5aa4c0d743f6d52e378254643a4e06716b19b0333dbe515ab618f6",
+        "trecho": "Exemplo resolvido · Título a partir da entalpia Mistura saturada com h f = 400 k J / k g , h g = 2 400 k J / k g e h = 900 k J / k g . Nesta fórmula h f Entalpia específica do líquido saturado. Unidade: kJ/kg. h g Entalpia específica do vapor saturado. Unidade: kJ/kg. h Entalpia específica da mistura líquido–vapor. Unidade: kJ/kg. Isole o título: M",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "identidade_r9": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "substancias",
+        "ancora": "substancias",
+        "tag": "div",
+        "inicio_utf16": 55124,
+        "fim_utf16": 60990,
+        "linha": 49,
+        "id": "modulos/e1-termodinamica.html:55124:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "25c4b655ec5aa4c0d743f6d52e378254643a4e06716b19b0333dbe515ab618f6",
+        "trecho": "Exemplo resolvido · Título a partir da entalpia Mistura saturada com h f = 400 k J / k g , h g = 2 400 k J / k g e h = 900 k J / k g . Nesta fórmula h f Entalpia específica do líquido saturado. Unidade: kJ/kg. h g Entalpia específica do vapor saturado. Unidade: kJ/kg. h Entalpia específica da mistura líquido–vapor. Unidade: kJ/kg. Isole o título: M",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Somente dados, resultados e hipóteses individualizados no relatório de reconciliação; não se aprova automaticamente o contexto nem registros descendentes.",
+      "contexto": {
+        "id": "titulo-ex004",
+        "sha256": "9f03f42941073468e8a0844a7806e53a92903b8ee5523dadbad4ce33a9ea8079"
+      },
+      "parecer_historico": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "parecer_historico_sha256": "3105042743d37cca09eb65659d43865104f2342537808438eb312cc08d210e06",
+      "auditor_historico": "/root/next_graphics",
+      "reconciliacao": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "reconciliacao_sha256": "0d60c27750ad5fba5991881480c2c6e25f3f30444681b8aa4aada0a89e8122b6",
+      "responsavel_revalidacao": "/root/planning"
+    },
+    {
+      "id_local": "EX-005",
+      "colecao": "ocorrencias",
+      "indice_base_zero": 1159,
+      "identidade_r16": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "substancias",
+        "ancora": "substancias",
+        "tag": "div",
+        "inicio_utf16": 78267,
+        "fim_utf16": 78511,
+        "linha": 50,
+        "id": "modulos/e1-termodinamica.html:78267:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "cf1e98634d3a42d137ab84e055555bb5bedb3962304fc7fbc8c58134a6b406c7",
+        "trecho": "Exemplo resolvido · Escolher unidades compatíveis Um gás com n = 1 mol, T = 320 K e V = 26,24 L tem p = 1 × 0,082 × 320/26,24 = 1 atm. Não converta somente o volume para m³ mantendo Rᵤ em atm·L/(mol·K).",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "identidade_r9": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "substancias",
+        "ancora": "substancias",
+        "tag": "div",
+        "inicio_utf16": 78267,
+        "fim_utf16": 78511,
+        "linha": 50,
+        "id": "modulos/e1-termodinamica.html:78267:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "cf1e98634d3a42d137ab84e055555bb5bedb3962304fc7fbc8c58134a6b406c7",
+        "trecho": "Exemplo resolvido · Escolher unidades compatíveis Um gás com n = 1 mol, T = 320 K e V = 26,24 L tem p = 1 × 0,082 × 320/26,24 = 1 atm. Não converta somente o volume para m³ mantendo Rᵤ em atm·L/(mol·K).",
+        "estado": "PENDENTE",
+        "observacao": null
+      },
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Somente dados, resultados e hipóteses individualizados no relatório de reconciliação; não se aprova automaticamente o contexto nem registros descendentes.",
+      "contexto": {
+        "id": "base-gas-modelo",
+        "sha256": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333"
+      },
+      "parecer_historico": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "parecer_historico_sha256": "3105042743d37cca09eb65659d43865104f2342537808438eb312cc08d210e06",
+      "auditor_historico": "/root/next_graphics",
+      "reconciliacao": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "reconciliacao_sha256": "0d60c27750ad5fba5991881480c2c6e25f3f30444681b8aa4aada0a89e8122b6",
+      "responsavel_revalidacao": "/root/planning"
+    },
+    {
+      "id_local": "D26",
+      "colecao": "ocorrencias",
+      "indice_base_zero": 6835,
+      "identidade_r16": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "preparacao-questoes",
+        "ancora": "preparacao-questoes",
+        "tag": "div",
+        "inicio_utf16": 538652,
+        "fim_utf16": 539605,
+        "linha": 469,
+        "id": "modulos/e1-termodinamica.html:538652:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "a82e00538d8a780dddb23b2699f75fb915b546c308c12fd5d44f6d62a74f1e1a",
+        "trecho": "26. Dois estágios e dois fornecimentos de calor Um ciclo sem extrações tem trabalhos produzidos de 600 e 900 kJ/kg, consumo de bomba de 20 kJ/kg, calor externo recebido na caldeira de 2.400 e no reaquecedor de 800 kJ/kg. Esses são todos os trabalhos do ciclo e todo o calor externo recebido, referidos à mesma massa; considere a rejeição como a única",
+        "estado": "PENDENTE",
+        "observacao": "diagnóstico da seção 8.2",
+        "diagnostico": 26
+      },
+      "identidade_r9": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "preparacao-questoes",
+        "ancora": "preparacao-questoes",
+        "tag": "div",
+        "inicio_utf16": 536073,
+        "fim_utf16": 537026,
+        "linha": 469,
+        "id": "modulos/e1-termodinamica.html:536073:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "a82e00538d8a780dddb23b2699f75fb915b546c308c12fd5d44f6d62a74f1e1a",
+        "trecho": "26. Dois estágios e dois fornecimentos de calor Um ciclo sem extrações tem trabalhos produzidos de 600 e 900 kJ/kg, consumo de bomba de 20 kJ/kg, calor externo recebido na caldeira de 2.400 e no reaquecedor de 800 kJ/kg. Esses são todos os trabalhos do ciclo e todo o calor externo recebido, referidos à mesma massa; considere a rejeição como a única",
+        "estado": "PENDENTE",
+        "observacao": "diagnóstico da seção 8.2",
+        "diagnostico": 26
+      },
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Somente dados, resultados e hipóteses individualizados no relatório de reconciliação; não se aprova automaticamente o contexto nem registros descendentes.",
+      "contexto": {
+        "id": "balanço explícito no próprio D26",
+        "sha256": "a82e00538d8a780dddb23b2699f75fb915b546c308c12fd5d44f6d62a74f1e1a"
+      },
+      "parecer_historico": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "parecer_historico_sha256": "3105042743d37cca09eb65659d43865104f2342537808438eb312cc08d210e06",
+      "auditor_historico": "/root/next_graphics",
+      "reconciliacao": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "reconciliacao_sha256": "0d60c27750ad5fba5991881480c2c6e25f3f30444681b8aa4aada0a89e8122b6",
+      "responsavel_revalidacao": "/root/planning"
+    },
+    {
+      "id_local": "D27",
+      "colecao": "ocorrencias",
+      "indice_base_zero": 6843,
+      "identidade_r16": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "preparacao-questoes",
+        "ancora": "preparacao-questoes",
+        "tag": "div",
+        "inicio_utf16": 539605,
+        "fim_utf16": 540593,
+        "linha": 469,
+        "id": "modulos/e1-termodinamica.html:539605:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "f464a072c29b5744c8fff6663d902628d84e5f8a28f51c68306f3a8a8e242962",
+        "trecho": "27. Extração muda a vazão do estágio seguinte Num aquecedor aberto nas hipóteses ensinadas, hágua = 300, hextração = 2.300 e hsaída = 700 kJ/kg. A vazão principal é 10 kg/s. Qual fração é extraída? Um estágio posterior de turbina em regime permanente, adiabático e com variações de energia cinética e potencial desprezíveis recebe o restante e tem qu",
+        "estado": "PENDENTE",
+        "observacao": "diagnóstico da seção 8.2",
+        "diagnostico": 27
+      },
+      "identidade_r9": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "preparacao-questoes",
+        "ancora": "preparacao-questoes",
+        "tag": "div",
+        "inicio_utf16": 537026,
+        "fim_utf16": 538014,
+        "linha": 469,
+        "id": "modulos/e1-termodinamica.html:537026:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "f464a072c29b5744c8fff6663d902628d84e5f8a28f51c68306f3a8a8e242962",
+        "trecho": "27. Extração muda a vazão do estágio seguinte Num aquecedor aberto nas hipóteses ensinadas, hágua = 300, hextração = 2.300 e hsaída = 700 kJ/kg. A vazão principal é 10 kg/s. Qual fração é extraída? Um estágio posterior de turbina em regime permanente, adiabático e com variações de energia cinética e potencial desprezíveis recebe o restante e tem qu",
+        "estado": "PENDENTE",
+        "observacao": "diagnóstico da seção 8.2",
+        "diagnostico": 27
+      },
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Somente dados, resultados e hipóteses individualizados no relatório de reconciliação; não se aprova automaticamente o contexto nem registros descendentes.",
+      "contexto": {
+        "id": "base-misturador-correntes",
+        "sha256": "29175301d686504895499b382234322cd637d8489cda03c621a8ec3e1d0fae75"
+      },
+      "parecer_historico": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "parecer_historico_sha256": "3105042743d37cca09eb65659d43865104f2342537808438eb312cc08d210e06",
+      "auditor_historico": "/root/next_graphics",
+      "reconciliacao": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "reconciliacao_sha256": "0d60c27750ad5fba5991881480c2c6e25f3f30444681b8aa4aada0a89e8122b6",
+      "responsavel_revalidacao": "/root/planning"
+    },
+    {
+      "id_local": "D28",
+      "colecao": "ocorrencias",
+      "indice_base_zero": 6852,
+      "identidade_r16": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "preparacao-questoes",
+        "ancora": "preparacao-questoes",
+        "tag": "div",
+        "inicio_utf16": 540593,
+        "fim_utf16": 541638,
+        "linha": 469,
+        "id": "modulos/e1-termodinamica.html:540593:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "d19ea80ff8c3ea479fc09548943bb1bed8c40d129ae265f24aec7f04cba162ed",
+        "trecho": "28. CO₂ logo depois da mudança de ocupação Dados hipotéticos de ambiente bem misturado: V = 200 m³, vazão exterior = 500 m³/h, Ci = 600 ppm, Ce = 400 ppm. A ocupação muda e G passa a 0,20 m³/h. Além de G, não há outras fontes, reações ou remoções de CO₂ nem trocas de ar com outras zonas; os volumes são referidos às mesmas condições. Qual é a taxa i",
+        "estado": "PENDENTE",
+        "observacao": "diagnóstico da seção 8.2",
+        "diagnostico": 28
+      },
+      "identidade_r9": {
+        "arquivo": "modulos/e1-termodinamica.html",
+        "secao": "preparacao-questoes",
+        "ancora": "preparacao-questoes",
+        "tag": "div",
+        "inicio_utf16": 538014,
+        "fim_utf16": 539059,
+        "linha": 469,
+        "id": "modulos/e1-termodinamica.html:538014:exemplo_ou_diagnostico",
+        "tipo": "exemplo_ou_diagnostico",
+        "sha256_fragmento": "d19ea80ff8c3ea479fc09548943bb1bed8c40d129ae265f24aec7f04cba162ed",
+        "trecho": "28. CO₂ logo depois da mudança de ocupação Dados hipotéticos de ambiente bem misturado: V = 200 m³, vazão exterior = 500 m³/h, Ci = 600 ppm, Ce = 400 ppm. A ocupação muda e G passa a 0,20 m³/h. Além de G, não há outras fontes, reações ou remoções de CO₂ nem trocas de ar com outras zonas; os volumes são referidos às mesmas condições. Qual é a taxa i",
+        "estado": "PENDENTE",
+        "observacao": "diagnóstico da seção 8.2",
+        "diagnostico": 28
+      },
+      "estado": "conferido_no_escopo_localizado",
+      "escopo": "Somente dados, resultados e hipóteses individualizados no relatório de reconciliação; não se aprova automaticamente o contexto nem registros descendentes.",
+      "contexto": {
+        "id": "base-balanco-co2",
+        "sha256": "ba291f67e38e109fafdc21d96ab47c55992022dd52c31b999ef6cb3922b6a212"
+      },
+      "parecer_historico": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "parecer_historico_sha256": "3105042743d37cca09eb65659d43865104f2342537808438eb312cc08d210e06",
+      "auditor_historico": "/root/next_graphics",
+      "reconciliacao": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "reconciliacao_sha256": "0d60c27750ad5fba5991881480c2c6e25f3f30444681b8aa4aada0a89e8122b6",
+      "responsavel_revalidacao": "/root/planning"
+    }
+  ],
+  "limites": [
+    "A integração deste lote aguarda auditor independente. Demais ocorrências, referências, recursos e ativos permanecem pendentes de integração, sem apagar revisões históricas.",
+    "Os oito blocos são avaliados exclusivamente no alcance do relatório; nós subordinados e contextos permanecem pendentes como registros separados.",
+    "A igualdade de hash é apenas verificação de identidade; a revalidação individual examinou condições, contas e fontes no relatório.",
+    "As coleções se sobrepõem; não são contagem de cálculos nem percentual de conclusão.",
+    "Os 197 artigos são tratados separadamente; nenhum aceite é automaticamente estendido a esta fotografia."
+  ]
+}

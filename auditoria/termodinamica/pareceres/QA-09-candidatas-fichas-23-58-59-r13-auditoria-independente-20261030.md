@@ -1,0 +1,17 @@
+# QA-09 — auditoria independente das candidatas 23, 58 e 59, r13
+
+Data: 30/10/2026. Auditor automatizado `/root/next_theory`; Corretor `/root/next_formulas`. **Veredito localizado: APROVADAS como candidatas isoladas**, na fotografia e nos limites abaixo. Não se aplicou o produto; este parecer não encerra QA-09 nem substitui a auditoria da versão efetiva.
+
+## Identidade e testes
+
+Formulário r13 SHA-256 `5f3f31a4801f96a2b78b40c75d37392f6b16d264901ac313ac00458901970285`, inventário r13 `0df99b79bcc2350581fcdded72435d30d07858de237a549e6228ca73682f8d9b`; análise da candidata `dec40a0090a5c74ed545081664f21b1da6c42450bc5099ef70018ab1c0dee36c`, manifesto `022da69abe52611ff6ba66676aea8220865b8ce60d840fb9bbf368ff8af2b39e`. Conferi as três condições efetivas, MathML, símbolos, busca e vínculos, em comparação com `QA-09-fichas-latente-cop-r13-auditoria-independente-20261030.md`.
+
+O verificador próprio `evidencias/QA-09/auditoria-candidatas-fichas-23-58-59-r13-20261030/verificar.mjs`, SHA `2538f6422ec44266817f3e8cdc410cf8c722f00d0d81282daf2fdfa8543457e0`, confronta posições e hashes com o inventário, substituições das duas ocorrências, e simula em memória: 100 fichas na mesma ordem, 97 não alvo idênticas, todos os 191 elementos MathML idênticos e atributos de identificação, vínculos e ARIA preservados. O verificador do Corretor também passou. Há entidades HTML para sinal maior nos trechos visível e de busca, sem desvio semântico detectado; não houve teste real de navegador ou acessibilidade.
+
+## Mérito e limites
+
+- **23:** a pressão termodinâmica p é constante e comum aos estados saturados; no sistema fechado está explícito `Wb=p(V₂−V₁)` e ausência de outros trabalhos, e hfg≠0 é requerido para divisão. A hipótese de escoamento permanente permanece distinta e exclui trabalho não associado ao escoamento, inclusive elétrico; ΔEc e ΔEp são desprezíveis em ambos. Logo, no caso fechado, Q=ΔU+pΔV=ΔH=mhfg. [MIT](https://web.mit.edu/10.213/oldpages/f99/supp/readings/qdh/index.html) deriva Q=ΔH para um caso reversível suficiente; a candidata especifica o trabalho necessário sem tornar a reversibilidade completa uma condição universal.
+- **58:** QH e QL passam a designar, respectivamente, todos os calores recebidos e rejeitados no mesmo ciclo e fronteira, como magnitudes positivas, com Wlíq>0 para regime motor. O contramodelo anterior com duas entradas soma 500+50=550 kJ e rejeita 300 kJ; Wlíq=250 kJ e rendimento=250/550≈45,45%. A fórmula continua válida para mais de dois reservatórios quando seus calores são totalizados.
+- **59:** COPR=QL/Win é delimitado a refrigerador acionado por trabalho, sem outra fonte de energia de acionamento, com mesma fronteira/período e Win>0. Calor QL da fonte fria segue como efeito útil, não como fonte extra de acionamento. O contraste do refrigerador por absorção com 600 kJ retirados, 1000 kJ térmicos e 40 kJ de trabalho distingue COP térmico 0,6 da outra razão por trabalho 15; [DOE](https://www.energy.gov/sites/default/files/2017/06/f35/CHP-Absorption%20Chiller-compliant.pdf) descreve acionamento térmico e COP de absorção.
+
+As modificações respondem aos apontamentos do parecer anterior sem exigir dois reservatórios ou reversibilidade geral. Não se verificou toda a aula, navegador real, leitor de tela, ensaio com alunos ou revisão humana. Uma eventual aplicação exige nova fotografia e mapa, reconciliação de posições e dependências, testes de busca e revelação, reavaliação localizada de FOR-01 e auditoria independente da versão aplicada.

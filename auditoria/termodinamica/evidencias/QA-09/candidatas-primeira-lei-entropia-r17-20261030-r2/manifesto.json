@@ -1,0 +1,46 @@
+{
+  "estado": "CANDIDATAS_NAO_APLICADAS",
+  "aula_sha256": "6b0df1096d0b6de6995ffc51bf8489cb45ab954a7aabdeb3f48d068c9777c57c",
+  "inventario_r17_sha256": "b8eae39cc72cf807d7b84aad7e7a38423168b809231bc3b7f08c439d6d25163b",
+  "aula_hipotetica_sha256": "b233fb4298cb7b4d6829c1e7ae3bd75819d88048db1cc5a0ea3b4168b834870b",
+  "itens": [
+    {
+      "id": "base-primeira-lei",
+      "inicio_utf16": 157256,
+      "fim_utf16": 162652,
+      "original_sha256": "332677c5d3ea50033ff1c6145ba8d6d039c5b98299d830e4b7d3435f67d2fdca",
+      "candidata_sha256": "415c39abbefe84139c5b8bcd82f5523c26353ba2181fd844912354fbe9858704",
+      "mudancas": [
+        {
+          "antes": "Receber calor aumenta a energia do sistema; produzir trabalho representa energia que sai.",
+          "depois": "O calor recebido contribui positivamente para a variação da energia total; o trabalho realizado pelo sistema contribui negativamente. O saldo é Q − W. A variação da energia interna coincide com a da energia total quando as variações cinética e potencial forem desprezíveis."
+        }
+      ]
+    },
+    {
+      "id": "base-entropia-escoamento",
+      "inicio_utf16": 426459,
+      "fim_utf16": 441261,
+      "original_sha256": "ecd08e62bcdc7799132b011fe111dfae8948487b8203559cd085918c95fd35ef",
+      "candidata_sha256": "7c86184a37044b68219f4b84c444ce89ee400c46547b569e6b47ced86cec64d9",
+      "mudancas": [
+        {
+          "antes": "Taxa de calor que atravessa a fronteira no ponto j; positiva quando entra.",
+          "depois": "Taxa de calor que atravessa a parcela j da fronteira; positiva quando entra no volume de controle."
+        },
+        {
+          "antes": "Temperatura absoluta da fronteira no mesmo ponto j de transferência de calor.",
+          "depois": "Temperatura absoluta, do lado do volume de controle, na parcela j da fronteira, considerada uniforme."
+        },
+        {
+          "antes": "Índice que identifica cada ponto de transferência de calor pela fronteira.",
+          "depois": "Índice que identifica cada parcela de fronteira com temperatura uniforme."
+        },
+        {
+          "antes": "Os somatórios contabilizam entradas, saídas e transferências de calor. ",
+          "depois": "Os somatórios contabilizam entradas, saídas e transferências de calor. Cada parcela j deve ter temperatura uniforme no lado do volume de controle. Se a temperatura variar na fronteira, integre o fluxo local de calor por unidade de área dividido pela temperatura absoluta local sobre a área de troca, ou divida a fronteira em parcelas isotérmicas adequadas. Use o sinal positivo para calor que entra. "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# QA-09 — auditoria independente do resumo e glossário r23
+
+30/10/2026. Auditor `/root/planning`; executor `/root/next_examples`. **Parecer: APROVADA ISOLADAMENTE a aplicação de resumo e glossário, no alcance a seguir.** Não encerra QA-09 nem aprova integralmente os demais conteúdos.
+
+## Ciência da versão efetiva
+
+No **resumo**, a turbina é permanente e adiabática, com uma entrada/saída e variações cinética/potencial desprezíveis; w representa trabalho total não associado ao escoamento por massa, positivo saindo. A válvula tem uma entrada e uma saída, sem calor ou trabalho não associado ao escoamento e com essas mesmas variações desprezíveis, justificando h₁≈h₂. Em equipamento com múltiplas saídas a simplificação não é automática: 600 kW totais por 2 kg/s de entrada dão 300 kJ/kg, e ignorar fluxo energético de uma saída pode produzir outro resultado.
+
+A eficiência de máquina motora usa trabalho líquido produzido e **calor externo total** recebido positivo na mesma fronteira e ciclo, sob única fonte quente de entrada. Uma máquina com 500 kJ de trabalho e entradas de 1000+500 kJ tem η=1/3, não 1/2. O COP de refrigeração usa calor útil da fonte fria e trabalho líquido total positivo recebido no mesmo ciclo, sem outro acionamento energético relevante; W=0 não define a razão. O limite 1−TL/TH é apresentado para operação motora reversível entre somente dois reservatórios, TH>TL>0. Os exemplos de contraste são hipotéticos, não dados de instalações. [MIT, energia em escoamento](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm) e [MIT, ciclos de potência](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_5.htm) sustentam os modelos em seus respectivos alcances.
+
+No **glossário**, COP de refrigerador ou bomba de calor acionados por trabalho usa trabalho líquido total recebido positivo na mesma fronteira e período, sem excluir o calor útil retirado da fonte fria. O verbete Z identifica o fator adimensional de compressibilidade relativo à relação p–V–T ideal, distinto da compressibilidade isotérmica κT=−(1/V)(∂V/∂p)T. Para gás ideal, Z=1 e κT=1/p: a 100 e 200 kPa, κT vale 0,01 e 0,005 kPa⁻¹. Um estado com Z=1 isoladamente não demonstra que todas as propriedades sejam ideais. O [manual NIST REFPROP 8](https://www.nist.gov/system/files/documents/srd/REFPROP8_manua3.htm) lista separadamente fator Z e compressibilidade isotérmica; a referência é à edição consultada, não a uma especificação atual de software.
+
+## Identidade e preservação
+
+Aula r22 `ddf6edd271e38eb318ff1756cfa60f5bc8632882357de2401c114479cb3a432f` → r23 `f847c5be0640039f1f6090407fc37f39b7833c7a97f1e5958d77f78e884ce85d`; formulário preservado `694ee3d26e8f5679d565986cfb0ad8c10aa98667fc8ffb62a569a87679847a58`. Inventário r23 `ae7cfa82b64f1118ed292f5c9e4d42cdf6f5871db8b13598b16506bf382a905e`, mapa `9a3c42d4f075f6a686b969a34d82ae439270fd50d49f25458b1d494caa205dd0`, entrega `e7c1056904b6ab472f30fe8d91d1250b0a9e9d03694865f3644138847c279936`.
+
+Meu verificador somente leitura `auditoria/termodinamica/evidencias/QA-09/auditoria-aplicacao-resumo-glossario-r23-independente-r1/verificar.py`, SHA `f39c28a6ce71abc29ee07a17a9c143024198a0e2f003a7d264218d57874ecb11`, reconstruiu a aula efetiva a partir das duas candidatas e verificou a unidade UTF-16 entre seções, 197 artigos e registros, 734 MathML e formulário inteiro. O validador oficial passou para 197 itens/artigos, 1.263 links locais e 29 recursos, sem erros/avisos. O teste local não valida acesso remoto ou ciência integral.
+
+Apoio estrutural de `/root/next_graphics`, `auditoria/termodinamica/evidencias/QA-09/apoio-aplicacao-r23-independente-20261030/parecer.md`, SHA `fdfef5cea2e2b5a398598d873418066aa9a1594b013afcb83eb446ea9e46de4f`, conferiu a bijeção de 11.400 pares, com 296 internos, 816 referências e 138 relações de recursos; seus vínculos anteriores são declarados. A igualdade dos 197 artigos/registros demonstra ausência de edição direta dos escopos BAN/FUN, sem reauditar gabaritos; formulário integralmente preservado não implica aprovação geral FOR-01. Os demais aceites requerem análise de contexto e dependências na r23, não simples transferência por hash.
+
+Não houve navegador real, leitor de tela, estudantes, revisão humana ou certificação externa. A matriz de cobertura e QA-09 permanecem abertos.

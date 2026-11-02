@@ -1,0 +1,19 @@
+{
+  "id": "QA-09-candidata-card-carnot-r26-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-fun02-ficha59-ex010-r26-r1/resultado/depois-aula.html",
+  "fonte_sha256": "afc7ff0aba80596aa8aa7a3eeb5b9a470948c7d866c6911911b9b00fb243bac2",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r26.json",
+  "inventario_sha256": "d73d6b239822b288329a75fc1f976419ccae7047d1bc74ba161102a529038241",
+  "ancora": "Carnot",
+  "inicio_utf16": 1273686,
+  "fim_utf16": 1275339,
+  "original_sha256": "46685d5f37428e0aceeb8c6cb82ff09dffb2aa8cbd017917198b9cddfd8bec3d",
+  "candidata_sha256": "5cc3267143f6202669e5a69f1f237eb9ecb7aa55ea33cdaae2363ba3ea429fe0",
+  "substituicoes": [
+    {
+      "antes": ", sempre com temperaturas absolutas.",
+      "depois": ", para máquina térmica reversível operando apenas entre dois reservatórios de temperaturas absolutas constantes T_H &gt; T_L &gt; 0."
+    }
+  ]
+}

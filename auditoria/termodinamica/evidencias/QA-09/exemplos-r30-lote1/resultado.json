@@ -1,0 +1,71 @@
+{
+  "estado": "REVISAO_LOCAL_AGUARDANDO_AUDITOR",
+  "aula_sha256": "c719adae3464fb56ed2b0ad7014e0721c0aab2da444fb484ec0b40c5c0c8fbd4",
+  "itens": [
+    {
+      "id": "temperatura",
+      "contexto": "base-absolutas",
+      "inicio_utf16": 31409,
+      "fim_utf16": 31525,
+      "sha256": "1cd50c914938f7ffd649862fca2f0614c86249af04fd8ef7dfe763ee6b2b9951",
+      "sha256_contexto": "32f469f265036fd9aca15e0b51a2a88f3e0570d5f936dd1241de80a2e41c9e3b"
+    },
+    {
+      "id": "gas-rigido",
+      "contexto": "base-gas-modelo",
+      "inicio_utf16": 80066,
+      "fim_utf16": 80371,
+      "sha256": "2cddaad62c28cb565eb970d9c21488aa7ba2a6f7086646505b088a88418b3c8f",
+      "sha256_contexto": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333"
+    },
+    {
+      "id": "gas-isotermico",
+      "contexto": "base-gas-modelo",
+      "inicio_utf16": 80066,
+      "fim_utf16": 80371,
+      "sha256": "2cddaad62c28cb565eb970d9c21488aa7ba2a6f7086646505b088a88418b3c8f",
+      "sha256_contexto": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333"
+    },
+    {
+      "id": "fator-z",
+      "contexto": "base-gas-modelo",
+      "inicio_utf16": 80929,
+      "fim_utf16": 81237,
+      "sha256": "ee04dd6c757853167563b0cb977f316696b00ce75a08aefdbf1beba86fc08cb2",
+      "sha256_contexto": "eac52ff635952b4f0fac43b907bcdb76401d66c9e1eb4cc9cb04a92da1ce2333"
+    },
+    {
+      "id": "exergia",
+      "contexto": "base-exergia",
+      "inicio_utf16": 349452,
+      "fim_utf16": 349922,
+      "sha256": "c296ede80c2b7d242d7ae4592fd00e70047b468373c8de5775c02aed46f1526a",
+      "sha256_contexto": "23ce04f24f08f852e88524c64f08f9f3ddc11a41a01ffedefacbead5e9d02a1d"
+    },
+    {
+      "id": "energia-variacao",
+      "contexto": "base-leitura-matematica",
+      "inicio_utf16": 36113,
+      "fim_utf16": 36250,
+      "sha256": "1d0de4fb3522118e14fe90df77dab7cc0c2fa6894e693fc3e57bfcd7e23b44fb",
+      "sha256_contexto": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0"
+    },
+    {
+      "id": "tempo-potencia",
+      "contexto": "base-leitura-matematica",
+      "inicio_utf16": 36628,
+      "fim_utf16": 36822,
+      "sha256": "17de7c32a99677c3147eeb03b6d1766ad0e356b6d15e01df8c0e3678b543bd48",
+      "sha256_contexto": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0"
+    },
+    {
+      "id": "percentual",
+      "contexto": "base-leitura-matematica",
+      "inicio_utf16": 36423,
+      "fim_utf16": 36628,
+      "sha256": "96b658b0b27f4e4d9f14a146a926906219078f252461bfaaf5d3bb639f891739",
+      "sha256_contexto": "ab0ba4e1a7987da8310584579cb39198001fbe1c77a974d4e75d236408664cf0"
+    }
+  ],
+  "verificacoes_aritmeticas": 8
+}

@@ -1,0 +1,17 @@
+# QA-09 — apoio estrutural independente da aplicação r19
+
+Data: 30/10/2026. Auditor automatizado `/root/next_graphics`, distinto do executor `/root/next_formulas`. **Apoio estrutural favorável para a fotografia r19**, sem substituir julgamento científico e veredito do Auditor principal `/root/planning`. Não encerra QA-09 nem transfere automaticamente aceites anteriores.
+
+## Reconstrução e mapa
+
+Entrega `aplicacao-notacao-fichas-r19-r1/entrega-r19.md`, SHA `4f8db79bf6967998eec9dad88a4a03258bfc782d369757e3b2e64aaaad9f7c36`. A aula mudou de SHA `7f09b3f0e53e4f3ed69225adf3ce8e03fda93f132e78a1e884ca5757cc995cca` para `9495c5a873dc67f6f1d6dd1919caa473f481a0bc029dbe97e3490adb1b530a65`; formulário de `463c00149e36217404cf98bad4f5bed3db828c87d19d1c8e6038678193e9d895` para `694ee3d26e8f5679d565986cfb0ad8c10aa98667fc8ffb62a569a87679847a58`. Fotos posteriores em `resultado/` são iguais aos arquivos efetivos.
+
+A partir das fotos r18, das três candidatas identificadas por seus manifestos e do registro de edições SHA `925a4ab4981eb855569c2f8e065501091b8190e177594428130e40a6d3fdd610`, reconstruí em memória os dois arquivos efetivos byte a byte. Os três blocos são `base-propriedades`, `formula-carnot` e `formula-brayton-liquido`; a reconstrução confirma identidade e alcance dos deltas, não a suficiência científica das hipóteses.
+
+Inventário r18 SHA `717f00621d1740b4c71aeb6e9f492a621489fc86b5c1cffca59cf9584a964acc`; r19 `ca99e56b3a5930cdd4f49f4d41a61eca19facc141b63da94dcd3b65039d03c2f`; mapa `42c39e8093294c19a12526262140056fc0e2da71120c48e142cab3cd06ed9be5`. O mapa cobre cada um dos 11.400 registros de cada versão exatamente uma vez, e os hashes registrados correspondem aos inventários: 11.279 pares externos têm hash igual; três contextos ancestrais com hash alterado contêm edição; 118 pares internos foram verificados por documento, tipo, tag, seção, âncora e pertença ao bloco. Os internos distribuem-se em 55/25/38; respectivamente 2/4/4 hashes diferem. Li os dez registros alterados: na aula são o texto de notação e sua equação contextualizada; em cada ficha são contêiner, atributos, condição e símbolos. Correspondência por sequência/contexto não é revalidação científica automática.
+
+## Preservação e testes
+
+Os **197 artigos** comparados individualmente mantêm bytes e hashes; os 197 registros oficiais e os demais campos mantêm-se, exceto a fonte que aponta à nova aula. A nota anterior permanece prefixo da nota atual. As **98 fichas não alvo** são iguais byte a byte; 734 MathML da aula e 191 do formulário são iguais em ordem. Comparei os campos das **816 referências** e das **138 relações de recursos**; hashes de recursos distintos das duas páginas alteradas permanecem iguais, enquanto os dois documentos registram seus hashes atualizados. Essa conferência é documental e não prova disponibilidade remota ou qualidade das fontes.
+
+O validador canônico executado na árvore efetiva retornou `ok=true`, 197 artigos/itens, 1.263 links locais, 29 recursos e nenhum erro ou aviso. `python3 auditoria/termodinamica/evidencias/QA-09/apoio-aplicacao-r19-independente-20261030/verificar.py`, SHA `81d264e2b1332d2d74939067f8e458b30a5bb168e0ac740b1f531fb0024815b5`, reproduz a análise somente leitura e passou. O teste usa inventários fornecidos e não prova que capturem integralmente o conteúdo ou que a renderização esteja correta. Não houve navegador real, leitor de tela, alunos ou revisão humana; QA-09 permanece em correção.

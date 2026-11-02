@@ -1,0 +1,13 @@
+# QA-09 — auditoria independente do ensaio de formulário r14
+
+Data: 30/10/2026. Auditor `/root/next_formulas`; corretor `/root/next_graphics`. **Parecer: AJUSTES OBRIGATÓRIOS NA EVIDÊNCIA**, pela divergência do hash declarado do script Python. A falha não demonstra erro no produto nem nos comportamentos ensaiados; impede aceitar a integridade do pacote como entregue. Não é aprovação científica ou de QA-09.
+
+## Identidade e integridade
+
+Confirmei o formulário SHA `3ea110fda92c74253b69d89f5a6e62b288aa3bd99db6a51b54a6c67c8af82fce`, o ativo de produção `assets/formulario-e1.js` SHA `90102be814345ef26326011df263dc75e98ceaf983f6be2f4f57ab43848a2a79`, o inventário r14 SHA `6505b06f3f3ef15bc2904f8a604f6e1f0fa6cf22af822394b2c2a871437b6175` e o ensaio JS SHA `1aa8c9f6f9753a6ad213e8404a8a8208bd9c14654d0000512a2a62450c31a816`. A entrega examinada tem SHA `626ca07a65bbf71ad8274d032657ae81bbe4e1814aa2e8a7665f07fbf8fa32e6` e declara para `verificar.py` o SHA `407264dc4820dc4ba92513e2052147c04ef3046c1113b883eab9527378842ff9`; o arquivo efetivamente examinado e executado tem SHA `2dadbf9c048b5b7ad12dbd72eeee6d2abb2055416fdc95d822575a188e3722ec`. O corretor deve identificar a origem da divergência, registrar o hash correto e apresentar uma entrega reconciliada para nova revisão; não presumir causa nem sobrescrever esta observação histórica.
+
+## Testes e alcance
+
+Inspecionei os dois scripts antes da execução: o Python lê HTML e script, verifica seus hashes, extrai os dados e chama a VM; o ensaio executa o código de produção em objetos que imitam chamadas selecionadas de DOM, sem escrita em produto. Reproduzi `ok: true`, 100 cartões e 11 grupos. Uma contagem independente com `HTMLParser` confirmou os grupos 11, 9, 5, 4, 11, 17, 6, 15, 8, 4 e 10, total 100. Os testes verificam os resultados relatados de busca Carnot, filtro de assunto, normalização de ENTROPIA, resultado vazio, limpeza, estados de memorização, índice e solicitação de impressão, todos no DOM simulado.
+
+O ensaio constrói elementos e eventos fictícios: não demonstra a criação real do DOM, estilos, foco real, impressão, leitura acessível, integração com `registro.js` e `curso.js` nem todas as buscas. Também não compara integralmente texto e índice de busca de cada cartão, não verifica mérito físico ou nível avançado, e não substitui navegador real ou testes de usuários. O código de formulário examinado filtra e alterna exibição, sem cálculo termodinâmico nele próprio; isso não caracteriza outros ativos. O arquivo de formulário atual conserva o hash r14, mas não se transfere esta conclusão automaticamente a outros arquivos ou versões.

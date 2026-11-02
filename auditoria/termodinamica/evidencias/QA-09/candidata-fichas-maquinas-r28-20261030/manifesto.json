@@ -1,0 +1,123 @@
+{
+  "fotografia": "r27",
+  "formulario": "auditoria/termodinamica/evidencias/QA-09/aplicacao-carnot-flashcards-r27-r1/resultado/depois-formulario.html",
+  "formulario_sha256": "16329b7369c4ba927f5f7da30551f86934aad1f6a6e55627443dea5cb9fe0c02",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r27.json",
+  "inventario_sha256": "a58d7f0b0a5f097eef83ad83026ef49e801457b87f7cf2b2345c3dd915597c7c",
+  "pareceres": [
+    {
+      "path": "auditoria/termodinamica/evidencias/QA-09/auditoria-formulas-r28-lote2-next-theory-20261030/parecer.md",
+      "sha256": "b3c36446bf2029156c9ecf070403c2406fc4c042aa31a494fd0150ba09b24a84"
+    },
+    {
+      "path": "auditoria/termodinamica/evidencias/QA-09/auditoria-formulas-r28-lote3/parecer.md",
+      "sha256": "6dc6c4799449b6656fa6bebf443fd488645dd000501b49955aa2380aade773e5"
+    },
+    {
+      "path": "auditoria/termodinamica/evidencias/QA-09/auditoria-formulas-r28-lote4-next-theory-20261030/parecer.md",
+      "sha256": "7bd66dc4b66a636d3ed8645149b0aaf794161096489da45ad058c35c8ddc9094"
+    }
+  ],
+  "itens": [
+    {
+      "ficha": 43,
+      "ancora": "formula-turbina",
+      "inicio_utf16": 101654,
+      "fim_utf16": 103547,
+      "original_sha256": "182a62bb6375c540decc519554737f603af8bce3fd107d8449947ac8597b65db",
+      "candidata_sha256": "369579fbc104ef34808c6263c7a63ed539e3b254da83893b72cb8b1a1cd1032a",
+      "mudancas": [
+        {
+          "antes": "Regime permanente, adiabática; variações de velocidade e altura desprezíveis.",
+          "depois": "Regime permanente, adiabática, com uma entrada e uma saída; variações de velocidade e altura desprezíveis. O total corresponde ao trabalho de eixo se não houver outros trabalhos não associados ao escoamento."
+        },
+        {
+          "antes": "wt: kJ/kg; h: kJ/kg; ṁ: kg/s; Ẇt: kW, magnitude produzida.",
+          "depois": "wt: trabalho líquido total não associado ao escoamento produzido (kJ/kg); h₁ e h₂: entalpias na entrada e saída (kJ/kg); ṁ: kg/s; Ẇt: potência líquida total produzida (kW)."
+        }
+      ]
+    },
+    {
+      "ficha": 44,
+      "ancora": "formula-compressor",
+      "inicio_utf16": 103547,
+      "fim_utf16": 105617,
+      "original_sha256": "0c146e2e05e866792fc2971e9f33689aded787182b419ff1328e6092d24c8d65",
+      "candidata_sha256": "3c0a49e29005ed4845c0fa16ee09b640d62bbc60d7fbf68939f57659f8349669",
+      "mudancas": [
+        {
+          "antes": "Regime permanente, adiabático; variações de velocidade e altura desprezíveis.",
+          "depois": "Regime permanente, adiabático, com uma entrada e uma saída; variações de velocidade e altura desprezíveis. O total corresponde ao trabalho de eixo se não houver outros trabalhos não associados ao escoamento."
+        },
+        {
+          "antes": "win: magnitude recebida (kJ/kg); h: kJ/kg; ṁ: kg/s; Ẇin: kW.",
+          "depois": "win: trabalho líquido total não associado ao escoamento recebido (kJ/kg); h₁ e h₂: entalpias na entrada e saída (kJ/kg); ṁ: kg/s; Ẇin: potência líquida total recebida (kW)."
+        }
+      ]
+    },
+    {
+      "ficha": 45,
+      "ancora": "formula-bomba",
+      "inicio_utf16": 105617,
+      "fim_utf16": 107727,
+      "original_sha256": "c4454c12e59ddc5a7158a8c55b75e038aa8d524249d3f93ad866614753219f16",
+      "candidata_sha256": "620f05fe7de2b61742b94094627a928e33366e03e83f840e224a65ff33374e67",
+      "mudancas": [
+        {
+          "antes": "Regime permanente, adiabático reversível; v aproximadamente constante; ΔEC/ΔEP desprezíveis.",
+          "depois": "Regime permanente, adiabático reversível, com uma entrada e uma saída; p₂&gt;p₁&gt;0; v aproximadamente constante; ΔEC/ΔEP desprezíveis. O total corresponde ao trabalho de eixo se não houver outros trabalhos não associados ao escoamento."
+        },
+        {
+          "antes": "wb,s: consumo ideal (kJ/kg); v: m³/kg; p: kPa; ṁ: kg/s; Ẇb,s: kW.",
+          "depois": "wb,s: trabalho líquido total ideal não associado ao escoamento recebido (kJ/kg); v: m³/kg; p₁ e p₂: pressões absolutas na entrada e saída (kPa); ṁ: kg/s; Ẇb,s: potência líquida total ideal recebida (kW)."
+        }
+      ]
+    },
+    {
+      "ficha": 71,
+      "ancora": "formula-isentropica-turbina",
+      "inicio_utf16": 169526,
+      "fim_utf16": 171752,
+      "original_sha256": "d3d4e80310f3a3da350b852c1bc297bb8243a6b741d89aff57a94dbee66633d6",
+      "candidata_sha256": "ccefe6409dea92daa2c89facd016d1007903c6aaca39f78c0e9020cdcbf60e61",
+      "mudancas": [
+        {
+          "antes": "Turbina em regime permanente, adiabática, com ΔEC/ΔEP desprezíveis. Comparar a mesma entrada e mesma pressão de saída; referência s isentrópica. Denominador h₁−h₂,s&gt;0.",
+          "depois": "Turbina em regime permanente, adiabática, com uma entrada e uma saída e ΔEC/ΔEP desprezíveis. Compare a mesma entrada e pressão de saída, mesmo fluido e composição fixa, sem reação ou mistura; referência adiabática e internamente reversível. As diferenças de entalpia representam trabalhos líquidos totais não associados ao escoamento, iguais aos de eixo se não houver outros trabalhos dessa categoria. Denominador h₁−h₂,s&gt;0."
+        }
+      ]
+    },
+    {
+      "ficha": 72,
+      "ancora": "formula-isentropica-compressor",
+      "inicio_utf16": 171752,
+      "fim_utf16": 173956,
+      "original_sha256": "ea97869190b73ba09ad1f7a34f642926304ade00804390e0d752587a4a5e5aa6",
+      "candidata_sha256": "24f24eaf241c71f622bc05de985f18b210e45a330d2829ba6985d652f4ef7c72",
+      "mudancas": [
+        {
+          "antes": "Compressor em regime permanente, adiabático, com ΔEC/ΔEP desprezíveis. Mesma entrada e pressão de saída na referência isentrópica; h₂,real−h₁&gt;0.",
+          "depois": "Compressor em regime permanente, adiabático, com uma entrada e uma saída e ΔEC/ΔEP desprezíveis. Compare a mesma entrada e pressão de saída, mesmo fluido e composição fixa, sem reação ou mistura; referência adiabática e internamente reversível. As diferenças de entalpia representam trabalhos líquidos totais não associados ao escoamento, iguais aos de eixo se não houver outros trabalhos dessa categoria. h₂,real−h₁&gt;0."
+        }
+      ]
+    },
+    {
+      "ficha": 79,
+      "ancora": "formula-rankine",
+      "inicio_utf16": 189032,
+      "fim_utf16": 192437,
+      "original_sha256": "c6304dd9d00a08538c7642b345621808fe2d99defd29c7b1bddc3c5ffd7aeadf",
+      "candidata_sha256": "48d819ed0e4743515ba055a797da33d937060e7a70310574bf2eb9b10e6f58ec",
+      "mudancas": [
+        {
+          "antes": "wt: trabalho produzido; wb: consumido; qin/qout: calor recebido/rejeitado, magnitudes em kJ/kg.",
+          "depois": "wt e wb: trabalhos líquidos totais não associados ao escoamento, respectivamente produzido pela turbina e recebido pela bomba; qin/qout: calor recebido/rejeitado, magnitudes em kJ/kg."
+        },
+        {
+          "antes": "Rankine simples sem extrações, mesma vazão, regime permanente e ΔEC/ΔEP desprezíveis; bomba/turbina adiabáticas. Caldeira/condensador sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. qin&gt;0 e trabalho líquido positivo.",
+          "depois": "Rankine simples sem extrações, mesma vazão, regime permanente e ΔEC/ΔEP desprezíveis; bomba/turbina adiabáticas. Seus trabalhos totais correspondem aos de eixo se não houver outros trabalhos não associados ao escoamento. Caldeira/condensador sem qualquer trabalho não associado ao escoamento, recebido ou fornecido, inclusive elétrico; pv já integra h. qin&gt;0 e trabalho líquido positivo."
+        }
+      ]
+    }
+  ]
+}

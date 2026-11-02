@@ -1,0 +1,24 @@
+{
+  "estado": "CANDIDATA_NAO_APLICADA_AGUARDA_AUDITOR",
+  "formulario": "formulas/termodinamica.html",
+  "formulario_sha256": "694ee3d26e8f5679d565986cfb0ad8c10aa98667fc8ffb62a569a87679847a58",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r25.json",
+  "inventario_sha256": "6798d317db30bd69435ed14862cc03cd0f0c6313e40408dd8831052285984116",
+  "parecer": "auditoria/termodinamica/pareceres/QA-09-fichas-ciclos-latente-r25-auditoria-reference-triage-20261030.md",
+  "parecer_sha256": "b06fe883ee647a10a12c5e4f01a1a910373db8d933aa40bf8151de24eb96da08",
+  "ancora": "formula-cop-refrigerador",
+  "inicio_utf16": 140942,
+  "fim_utf16": 142822,
+  "original_sha256": "01431774d85f42da5c9e5432875512a5ecba403b9b36c82bc403547045ec8f3b",
+  "candidata_sha256": "4766d58c6dfa016a7593bfcab77ec4a052da7edce7a4a218fbf312380c2d4578",
+  "mudancas": [
+    {
+      "antes": "Refrigerador acionado por trabalho, sem outra fonte de energia de acionamento; QL e Win na mesma fronteira e período, com Win &gt; 0. COP é adimensional e pode exceder 1.",
+      "depois": "Refrigerador acionado por trabalho, sem outra fonte de energia de acionamento; QL e trabalho líquido total recebido Win &gt; 0 no mesmo ciclo, fronteira e período. COP é adimensional e pode exceder 1."
+    },
+    {
+      "antes": "QL: calor retirado da fonte fria; Win: magnitude do trabalho consumido (mesma unidade).",
+      "depois": "QL: magnitude do calor retirado da fonte fria; Win: trabalho líquido total recebido, entradas menos saídas de trabalho, positivo; ambos na mesma unidade."
+    }
+  ]
+}

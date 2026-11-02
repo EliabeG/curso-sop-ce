@@ -1,0 +1,19 @@
+{
+  "id": "QA-09-candidata-fun02-trabalho-r25-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-fun01-fases-r25-r1/resultado/depois-aula.html",
+  "fonte_sha256": "ea0a7e3877c0a0250dac3d9c993c7922a03400929eb7a5dad39fcb27e3263c7e",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r25.json",
+  "inventario_sha256": "6798d317db30bd69435ed14862cc03cd0f0c6313e40408dd8831052285984116",
+  "ancora": "fun02-processos",
+  "inicio_utf16": 243580,
+  "fim_utf16": 248914,
+  "original_sha256": "3f4e203a7e6bbdd2c43f3a19b25a645adfa498b93946ef3a66ec8c66bc58cf00",
+  "candidata_sha256": "e3905ea3ea7116cb31257572eced5f5b0f55d60056b73780aaca51cf4aba7419",
+  "substituicoes": [
+    {
+      "antes": "Nos modelos desta unidade o pistão não tem atrito, as cargas são ajustadas no limite de equilíbrio mecânico e a pressão na fronteira coincide com a pressão uniforme p do gás; assim δW=p dV.",
+      "depois": "Nos modelos de pistão desta unidade, o trabalho de fronteira é a única modalidade de trabalho, o pistão não tem atrito, as cargas são ajustadas no limite de equilíbrio mecânico e a pressão na fronteira coincide com a pressão uniforme p do gás; assim o trabalho total é δW=p dV."
+    }
+  ]
+}

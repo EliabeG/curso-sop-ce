@@ -1,0 +1,27 @@
+{
+  "id": "QA-09-candidata-fase-calorimetria-r19-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-notacao-fichas-r19-r1/resultado/depois-aula.html",
+  "fonte_sha256": "9495c5a873dc67f6f1d6dd1919caa473f481a0bc029dbe97e3490adb1b530a65",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r19.json",
+  "inventario_sha256": "ca99e56b3a5930cdd4f49f4d41a61eca19facc141b63da94dcd3b65039d03c2f",
+  "ancora": "base-fase-calorimetria",
+  "inicio_utf16": 212704,
+  "fim_utf16": 215090,
+  "original_sha256": "ddaaf9583c9fb8a99341184b41a8886d7e85f543ee2abdd3955c011d92888d88",
+  "candidata_sha256": "7db22e02be2741b1fb4be3f8c8642fad9a3d0a5bf99d363765d6ba377b9bdcf6",
+  "substituicoes": [
+    {
+      "antes": "Em uma mudança de fase à pressão indicada, a energia pode mudar sem variar a temperatura. O calor latente específico ℓ depende da substância, da transição e das condições.",
+      "depois": "Em uma mudança de fase de substância pura em equilíbrio, à pressão e temperatura constantes da etapa, a energia pode mudar sem variar a temperatura. O calor latente específico ℓ depende da substância, da transição e das condições."
+    },
+    {
+      "antes": "m: massa que efetivamente muda de fase (kg); ℓ: calor latente específico (J/kg ou kJ/kg); |Qfase|: magnitude da energia (J ou kJ).",
+      "depois": "m: massa que efetivamente muda de fase (kg); ℓ: magnitude da diferença de entalpia específica entre as fases em equilíbrio (J/kg ou kJ/kg); |Qfase|: magnitude do calor transferido na etapa (J ou kJ). A expressão vale aqui para sistema fechado de massa fixa, sem parcela sensível, com variações de energia cinética e potencial desprezíveis e apenas trabalho de fronteira Wb = pΔV. Nestas condições, o calor da etapa é igual à variação de entalpia; em outras condições, o balanço deve ser refeito."
+    },
+    {
+      "antes": "Se duas fases continuarem coexistindo em equilíbrio à pressão dada, a temperatura é a de transição.",
+      "depois": "Se duas fases de uma substância pura continuarem coexistindo em equilíbrio à pressão dada, a temperatura é a de transição."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "QA-09-candidata-resumo-r22-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-pontes-d14-r22-r1/resultado/depois-aula.html",
+  "fonte_sha256": "ddf6edd271e38eb318ff1756cfa60f5bc8632882357de2401c114479cb3a432f",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r22.json",
+  "inventario_sha256": "6e68d5a9e5cfec73aa2a5ce24121ede1c3a155ca2a5783cf6f17ca95eee8061b",
+  "ancora": "resumo",
+  "inicio_utf16": 1288716,
+  "fim_utf16": 1303056,
+  "original_sha256": "8e6bd15a3ad0e2371f0b088a481356160cc4a97171cfe30a8cceff480479f0bf",
+  "candidata_sha256": "86b19db1acabe79adfc53f4b1226f5ff1c0b2c14d9018bd9a4b29d94a71e0809",
+  "substituicoes": [
+    {
+      "antes": "Trabalho por unidade de massa; positivo quando sai.",
+      "depois": "Trabalho total não associado ao escoamento por unidade de massa; positivo quando sai."
+    },
+    {
+      "antes": "Regime permanente, adiabática; variações cinética e potencial desprezíveis.",
+      "depois": "Regime permanente, uma entrada e uma saída, adiabática; variações cinética e potencial desprezíveis."
+    },
+    {
+      "antes": "Regime permanente, sem calor ou trabalho; variações cinética e potencial desprezíveis.",
+      "depois": "Regime permanente, uma entrada e uma saída, sem transferência de calor ou trabalho não associado ao escoamento; variações cinética e potencial desprezíveis."
+    },
+    {
+      "antes": "Magnitude do calor recebido da fonte quente pela máquina térmica.",
+      "depois": "Calor total recebido externamente no ciclo, positivo; neste modelo, da única fonte quente."
+    },
+    {
+      "antes": "Trabalho líquido e calor recebido no mesmo ciclo.",
+      "depois": "Trabalho líquido produzido e calor total externo recebido positivo na mesma fronteira e ciclo; única fonte quente de entrada de calor."
+    },
+    {
+      "antes": "Magnitude do trabalho consumido pelo ciclo de refrigeração ou pela bomba de calor.",
+      "depois": "Trabalho líquido total recebido pelo ciclo de refrigeração, positivo, na mesma fronteira e ciclo."
+    },
+    {
+      "antes": "Calor retirado da fonte fria e trabalho consumido.",
+      "depois": "Calor útil retirado da fonte fria e trabalho líquido total recebido positivo na mesma fronteira e ciclo; acionamento por trabalho, sem outra entrada energética de acionamento relevante."
+    },
+    {
+      "antes": "Duas fontes; temperaturas absolutas.",
+      "depois": "Operação motora reversível entre apenas dois reservatórios; temperaturas absolutas T_H &gt; T_L &gt; 0."
+    }
+  ]
+}

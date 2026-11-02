@@ -1,0 +1,175 @@
+{
+  "estado": "AGUARDANDO_AUDITORIA_INDEPENDENTE",
+  "data": "2026-10-30",
+  "autor": "agente automatizado /root/qa_fichas",
+  "documento": "formulas/termodinamica.html",
+  "sha256_documento": "c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0",
+  "identificadores": [
+    {
+      "ficha": "43",
+      "id": "formula-turbina",
+      "offset_bytes": 101480,
+      "bytes": 1916,
+      "sha256_fragmento": "182a62bb6375c540decc519554737f603af8bce3fd107d8449947ac8597b65db",
+      "mathml_texto_sem_espacos": [
+        "wt=h1−h2",
+        "W˙t=m˙(h1−h2)"
+      ]
+    },
+    {
+      "ficha": "44",
+      "id": "formula-compressor",
+      "offset_bytes": 103396,
+      "bytes": 2093,
+      "sha256_fragmento": "0c146e2e05e866792fc2971e9f33689aded787182b419ff1328e6092d24c8d65",
+      "mathml_texto_sem_espacos": [
+        "win=h2−h1",
+        "W˙in=m˙(h2−h1)"
+      ]
+    },
+    {
+      "ficha": "45",
+      "id": "formula-bomba",
+      "offset_bytes": 105489,
+      "bytes": 2146,
+      "sha256_fragmento": "c4454c12e59ddc5a7158a8c55b75e038aa8d524249d3f93ad866614753219f16",
+      "mathml_texto_sem_espacos": [
+        "wb,s≃v(p2−p1)",
+        "W˙b,s≃m˙v(p2−p1)"
+      ]
+    },
+    {
+      "ficha": "46",
+      "id": "formula-valvula",
+      "offset_bytes": 107635,
+      "bytes": 1483,
+      "sha256_fragmento": "bde74bd12cccb9d883f5d245213ad29468956a36491260783cda6fd86711ae4c",
+      "mathml_texto_sem_espacos": [
+        "h1≃h2"
+      ]
+    },
+    {
+      "ficha": "61",
+      "id": "formula-carnot",
+      "offset_bytes": 144531,
+      "bytes": 1681,
+      "sha256_fragmento": "4f5cd7d17704f79c01f737677d21dc563f9ca73233fee1cbfad69712ef462c0a",
+      "mathml_texto_sem_espacos": [
+        "ηC=1−TLTH",
+        "η≤ηC"
+      ]
+    },
+    {
+      "ficha": "62",
+      "id": "formula-limites-carnot",
+      "offset_bytes": 146212,
+      "bytes": 2757,
+      "sha256_fragmento": "13c0728cb3a6fb2715e3d4ce219b4d65fecea436f5642d6477d14885350dba81",
+      "mathml_texto_sem_espacos": [
+        "Wmax=QH(1−TLTH)",
+        "QL,min=QHTLTH"
+      ]
+    },
+    {
+      "ficha": "63",
+      "id": "formula-cop-carnot",
+      "offset_bytes": 148969,
+      "bytes": 2545,
+      "sha256_fragmento": "10a50156938587c3d2f687721f562eb01bbdc257093743054d143f04f4742114",
+      "mathml_texto_sem_espacos": [
+        "COPR,C=TLTH−TL",
+        "COPBC,C=THTH−TL"
+      ]
+    },
+    {
+      "ficha": "71",
+      "id": "formula-isentropica-turbina",
+      "offset_bytes": 167806,
+      "bytes": 2307,
+      "sha256_fragmento": "d3d4e80310f3a3da350b852c1bc297bb8243a6b741d89aff57a94dbee66633d6",
+      "mathml_texto_sem_espacos": [
+        "ηt=h1−h2,realh1−h2,s"
+      ]
+    },
+    {
+      "ficha": "72",
+      "id": "formula-isentropica-compressor",
+      "offset_bytes": 170113,
+      "bytes": 2283,
+      "sha256_fragmento": "ea97869190b73ba09ad1f7a34f642926304ade00804390e0d752587a4a5e5aa6",
+      "mathml_texto_sem_espacos": [
+        "ηc=h2,s−h1h2,real−h1"
+      ]
+    },
+    {
+      "ficha": "79",
+      "id": "formula-rankine",
+      "offset_bytes": 187768,
+      "bytes": 3454,
+      "sha256_fragmento": "c6304dd9d00a08538c7642b345621808fe2d99defd29c7b1bddc3c5ffd7aeadf",
+      "mathml_texto_sem_espacos": [
+        "wt=h3−h4,wb=h2−h1",
+        "qin=h3−h2,qout=h4−h1",
+        "η=wt−wbqin"
+      ]
+    },
+    {
+      "ficha": "80",
+      "id": "formula-brayton-liquido",
+      "offset_bytes": 191222,
+      "bytes": 2397,
+      "sha256_fragmento": "be53d6d4b8ef9305ad4392713fd7ce2c59379393187d06bf0234116ffc431ea5",
+      "mathml_texto_sem_espacos": [
+        "W˙liq=W˙t−W˙c",
+        "η=W˙t−W˙cQ˙in"
+      ]
+    },
+    {
+      "ficha": "84",
+      "id": "formula-refrigeracao",
+      "offset_bytes": 200406,
+      "bytes": 3407,
+      "sha256_fragmento": "cb9dcd50f4ca7442a1c0f4a85fcd9b6659f9ef7136e9e3d997dc76a773437c06",
+      "mathml_texto_sem_espacos": [
+        "qL=h1−h4,wc=h2−h1",
+        "qH=h2−h3,h3≃h4",
+        "COPR=h1−h4h2−h1"
+      ]
+    },
+    {
+      "ficha": "85",
+      "id": "formula-condensador",
+      "offset_bytes": 203813,
+      "bytes": 1720,
+      "sha256_fragmento": "073599882f469b948804fe638a6d6fcb0e2e5c851556ce698328a48de4d13ba4",
+      "mathml_texto_sem_espacos": [
+        "Q˙H=Q˙L+W˙in"
+      ]
+    },
+    {
+      "ficha": "86",
+      "id": "formula-extracao-aquecedor",
+      "offset_bytes": 205533,
+      "bytes": 2599,
+      "sha256_fragmento": "5aabf01829a3286ea9ec1e866d11046e552bda7bda249119fbdfe18ab8885041",
+      "mathml_texto_sem_espacos": [
+        "y=hsaida−haguahextracao−hagua"
+      ]
+    }
+  ],
+  "checagens_artificiais": {
+    "turbina": true,
+    "compressor": true,
+    "bomba": true,
+    "valvula": true,
+    "carnot": true,
+    "cop_carnot": true,
+    "isentropica_turbina": true,
+    "isentropica_compressor": true,
+    "rankine": true,
+    "brayton": true,
+    "refrigeracao": true,
+    "mistura": true
+  },
+  "limites": "Valores hipotéticos criados para teste; não são exemplos do curso, dados experimentais ou prova de estados de uma substância. Texto MathML linearizado não é a árvore completa; QA-09 permanece pendente."
+}

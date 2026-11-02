@@ -1,0 +1,43 @@
+{
+  "estado": "CANDIDATAS_ISOLADAS_NAO_APLICADAS",
+  "formulario_sha256": "01d5d79639cd17dfcaea38479019cf719e2601f5b35d446ab562e50d381fa5c9",
+  "inventario_r11_sha256": "720f2b9ace69ab8f07be685d5205040569cc72814f67d51d44786872469c07d7",
+  "itens": [
+    {
+      "ficha": 27,
+      "ancora": "formula-equilibrio-mistura",
+      "inicio_utf16": 65979,
+      "fim_utf16": 68322,
+      "antes": "Conjunto isolado; capacidades constantes; sem trabalho relevante, reação ou mudança de fase. Despreze energia de mistura e variações cinética/potencial.",
+      "depois": "Conjunto isolado de sólidos/líquidos em uma fase; capacidades apropriadas constantes representam ΔUᵢ ≈ CᵢΔTᵢ. Despreze efeitos de pressão/deformação, energia de mistura e ΔEC/ΔEP; sem trabalho relevante, reação ou mudança de fase. Inclua o recipiente uma vez ou despreze sua capacidade.",
+      "original_sha256": "b9aa8457fe442e010290407fcb55a3aada6d7eed7d269a483f54261996c3e9da",
+      "candidata_sha256": "d87a5892d8c87adde7c5d54922011f87f668e2e48de41cdeafa38c4d021338da",
+      "original_arquivo_sha256": "faecc7fe2e0d6517f92b38c5bed6078e850c1e48c406265bf4408a19ad32f8df",
+      "candidata_arquivo_sha256": "5497592ae4aba3af5c148263454c0410e7b41896f631f38d3195bb6390a4643c"
+    },
+    {
+      "ficha": 28,
+      "ancora": "formula-recipiente-mistura",
+      "inicio_utf16": 68322,
+      "fim_utf16": 71439,
+      "antes": "Capacidades constantes; sem reação ou mudança de fase; energia de mistura e variações cinética/potencial desprezíveis. Inclua o recipiente uma vez e as trocas externas com sinal.",
+      "depois": "Porções e recipiente de sólidos/líquidos em uma fase; capacidades apropriadas constantes representam ΔUᵢ ≈ CᵢΔTᵢ. Despreze efeitos de pressão/deformação, energia de mistura e ΔEC/ΔEP; sem reação ou mudança de fase. Inclua o recipiente uma vez; Eext = Qext − Wext já inclui o trabalho externo, sem duplicá-lo.",
+      "original_sha256": "a3355e76287a8e8f87817509e29108b37e10c568ebce95455b22144e3ec9c3f3",
+      "candidata_sha256": "3ea56e027f75aad056fd4624ab13c0837eade4a23ddc46c1f3f210aad6fd4e1b",
+      "original_arquivo_sha256": "8342e8c2d31ae5a08f5cb664335eda96d6d8683ee36a844a4b3796046047ba90",
+      "candidata_arquivo_sha256": "32487af9ad24712aefce3c404efdf2fc89f81f4c83c59fcd7b85e99a3a08b603"
+    },
+    {
+      "ficha": 29,
+      "ancora": "formula-fase-calorimetria",
+      "inicio_utf16": 71439,
+      "fim_utf16": 73411,
+      "antes": "Mudança de fase a pressão fixa, só trabalho de fronteira e variações cinética/potencial desprezíveis; fusão/vaporização recebem calor, suas inversas o liberam.",
+      "depois": "Sistema fechado; substância pura em equilíbrio entre fases à mesma temperatura e pressão termodinâmica p, apenas mudança de fase sem aquecimento sensível. Só trabalho de fronteira Wb = p(V₂ − V₁), sem outros trabalhos, e ΔEC/ΔEP desprezíveis. ℓ é a magnitude da diferença de entalpia específica entre as fases. Fusão/vaporização recebem calor, suas inversas o liberam.",
+      "original_sha256": "0078e83717dcae01c63197b1d2e8176d13d1f0b361ce599c4e1ba6590ce5e2a3",
+      "candidata_sha256": "45d9ee34feedd637d5fd44554023008f1eb99b011bb22356f1e9a62ffd431e8c",
+      "original_arquivo_sha256": "cc7c9132ecd8b465259558ab4a1b89e6fce779e6af077e6be19a394ead147ecc",
+      "candidata_arquivo_sha256": "947ac9be3aae03920a43299a26da4d4d48f68628cdb5f8e4f15c0871949f3bd1"
+    }
+  ]
+}

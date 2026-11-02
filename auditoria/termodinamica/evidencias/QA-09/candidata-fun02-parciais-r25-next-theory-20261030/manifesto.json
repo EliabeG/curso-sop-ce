@@ -1,0 +1,19 @@
+{
+  "id": "QA-09-candidata-fun02-parciais-r25-next-theory-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-fun01-fases-r25-r1/resultado/depois-aula.html",
+  "fonte_sha256": "ea0a7e3877c0a0250dac3d9c993c7922a03400929eb7a5dad39fcb27e3263c7e",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r25.json",
+  "inventario_sha256": "6798d317db30bd69435ed14862cc03cd0f0c6313e40408dd8831052285984116",
+  "ancora": "fun02-parciais",
+  "inicio_utf16": 238955,
+  "fim_utf16": 240480,
+  "original_sha256": "33791e35d3185d5f40dba65bcae931e5cf84575ebe23200cc57628bf5d4b9e3f",
+  "candidata_sha256": "a9737bdb18847b7de96de465f84e4dbce7c560c695441bcd18a4afcef433708d",
+  "substituicoes": [
+    {
+      "antes": "Só se dV=0 o segundo termo desaparece por restrição do processo; só se o modelo tiver U independente de V ele desaparece em qualquer percurso.",
+      "depois": "Se dV=0, o segundo termo desaparece por restrição do processo. Ele também pode desaparecer em um caminho particular com dV≠0 se o coeficiente (∂U/∂V)<sub>T,n</sub> for nulo ao longo desse caminho; isso não implica independência global de V. Se o modelo tiver U independente de V na região, o termo desaparece em qualquer percurso nessa região."
+    }
+  ]
+}

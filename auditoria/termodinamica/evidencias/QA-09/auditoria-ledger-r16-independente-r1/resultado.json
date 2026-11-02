@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "oito_registros": true,
+  "mutacoes_rejeitadas": [
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/aplicacao-pressao-fichas-r10-r1/antes-aula.html",
+      "rejeitado": true
+    },
+    {
+      "arquivo": "modulos/e1-termodinamica.html",
+      "rejeitado": true
+    },
+    {
+      "arquivo": "formulas/termodinamica.html",
+      "rejeitado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r9.json",
+      "rejeitado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/inventario-r16.json",
+      "rejeitado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/pareceres/QA-09-exemplos001-005-diagnosticos26-28-r9-auditoria-independente-20261030.md",
+      "rejeitado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/reconciliacao-ex001-005-d26-28.md",
+      "rejeitado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/inventario/validar-inventario.mjs",
+      "rejeitado": true
+    },
+    {
+      "arquivo": "auditoria/termodinamica/evidencias/QA-09/ledger-r16-parcial-r1/ledger.json",
+      "rejeitado": true
+    }
+  ],
+  "limite": "Ensaio de mutações individuais; programa alterado ou ataque coordenado não examinado."
+}

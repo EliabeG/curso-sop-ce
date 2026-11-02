@@ -1,0 +1,47 @@
+{
+  "estado": "CANDIDATA_NAO_APLICADA_AGUARDA_AUDITOR",
+  "formulario": "formulas/termodinamica.html",
+  "formulario_sha256": "3ea110fda92c74253b69d89f5a6e62b288aa3bd99db6a51b54a6c67c8af82fce",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r15.json",
+  "inventario_sha256": "c8c9c3a3e141eba47a16e9f85c69f97c6e8b8a55aab689c6120ef1a0070c9d9c",
+  "parecer": "auditoria/termodinamica/pareceres/QA-09-fichas-ciclos-compressao-radiacao-r15-auditoria-independente-20261030.md",
+  "parecer_sha256": "4dbf25c1a899fb3d1f392a5b00ffc7c467aecdc863b1de189db4212c440ce13e",
+  "itens": [
+    {
+      "ficha": 89,
+      "ancora": "formula-politropico",
+      "mudancas": [
+        {
+          "antes": "Gás ideal de composição fixa em compressão estacionária internamente reversível, pv^np constante com np constante &gt;0 e np≠1; p₂&gt;p₁&gt;0; ΔEC/ΔEP desprezíveis.",
+          "depois": "Mesmo gás ideal de composição fixa em compressão estacionária internamente reversível, uma entrada e uma saída; pv^np constante com np constante &gt;0 e np≠1; p₂&gt;p₁&gt;0; ΔEC/ΔEP desprezíveis. O trabalho total não associado ao escoamento é apenas de eixo."
+        },
+        {
+          "antes": "p₁/p₂: pressões absolutas na mesma unidade; win: trabalho de eixo recebido por massa, positivo (kJ/kg).",
+          "depois": "p₁/p₂: pressões absolutas de entrada/saída na mesma unidade; win: trabalho total de eixo recebido por massa, positivo (kJ/kg)."
+        }
+      ],
+      "inicio_utf16": 213000,
+      "fim_utf16": 216142,
+      "original_sha256": "91881f7785f5e195bc3dccc1418f93ea39fb3152ae8ed7b3ff1f9eff85071b49",
+      "candidata_sha256": "1e218e6c825658a0e94ee6419c3ab90f62b3ffde95402cff6c55ac02f89c01ed"
+    },
+    {
+      "ficha": 90,
+      "ancora": "formula-compressao-isotermica",
+      "mudancas": [
+        {
+          "antes": "Gás ideal em escoamento permanente, compressão isotérmica internamente reversível; ΔEC/ΔEP desprezíveis.",
+          "depois": "Mesmo gás ideal de composição fixa em escoamento permanente, uma entrada e uma saída, compressão isotérmica internamente reversível; p₂&gt;p₁&gt;0; ΔEC/ΔEP desprezíveis. O trabalho total não associado ao escoamento é apenas de eixo."
+        },
+        {
+          "antes": "R: kJ/(kg·K); T: K; p: absoluta; win: kJ/kg, positivo na compressão.",
+          "depois": "R: constante específica do gás (kJ/(kg·K)); T: temperatura absoluta (K); p₁/p₂: pressões absolutas de entrada/saída na mesma unidade; win: trabalho total de eixo recebido por massa, positivo (kJ/kg)."
+        }
+      ],
+      "inicio_utf16": 216142,
+      "fim_utf16": 217932,
+      "original_sha256": "0dcf693d5afbaa5fd65de8cedfcfd4a2748c15fdd9900d3befe30a2dec53942e",
+      "candidata_sha256": "4506f600cc4bd17bd509d6453d6369f7ae6148209ec0b32f83b33e1ced931f62"
+    }
+  ]
+}

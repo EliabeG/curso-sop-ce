@@ -1,0 +1,28 @@
+# QA-09 — reconciliação e revisão de fichas de equipamentos r18
+
+30/10/2026. Corretor `/root/next_formulas`. **Aguardando Auditor independente; pontos de domínio das fichas 61 e 80 para adjudicação.** As 14 fichas 43–46, 61–63, 71–72, 79–80 e 84–86 tinham exame e parecer de equipamento lote 3 na r8; não são lote historicamente inédito. Esta entrega confronta integralmente as relações, condições, valores e suas identidades na r18, sem transferir aceite antigo automaticamente. Não altera produto nem encerra QA-09.
+
+## Identidades e histórico
+
+Aula não é objeto deste lote. Formulário r18 SHA `463c00149e36217404cf98bad4f5bed3db828c87d19d1c8e6038678193e9d895`, inventário r18 SHA `717f00621d1740b4c71aeb6e9f492a621489fc86b5c1cffca59cf9584a964acc`. Formulário r8 preservado SHA `c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0` e r9 SHA `cda652563a79c49a6c3d527ad1400c7f7597d33c9b8523ed8a26047b25c69feb`. Treze artigos são byte a byte idênticos à r8; o artigo 80 mudou de r8 para r9 em aplicação com [parecer independente](../../../pareceres/QA-09-aplicacao-flashcards-ficha80-auditoria-independente-20261030.md), SHA `ad70d72cbe61ea89058406728517008aa379620dcfbb7b05f6cc13cda4e6852a`. Todos os 14 artigos r18 são idênticos aos correspondentes r9. O parecer de lote r8 tem SHA `a6c6ad90a8f0c621d4d394cc7aad5a7d174ef533717de06b2d375ff1609c15a8`.
+
+`identidades.json` SHA `1b6739e1536fc4eae5ec951b7cda3af06c3e9524c1862949c49f99e1ca817ada` contém IDs, posições UTF-16 e hashes nas três fotos. `verificar.mjs` SHA `a4b504d5adf6a22625cf9ac9b51bd96478ca60f4a8d457251c93ddcb7ac09c20`, executável da raiz com `node auditoria/termodinamica/evidencias/QA-09/fichas-equipamentos-reconciliacao-r18-20261030/verificar.mjs`, confirma identidades e contas, sem interpretar MathML, conferir modelos nem gravar produto. Foi executado com `ok=true`. Os números abaixo são hipotéticos, não propriedades medidas.
+
+## Relações e testes
+
+| Ficha | Modelo e recálculo |
+|---|---|
+| 43–44 | Escoamento estacionário, adiabático, ΔEc/ΔEp desprezíveis: trabalho não associado ao escoamento de turbina wt=h₁−h₂ e de compressor win=h₂−h₁; potência pela vazão. h=(600,400) gera wt=200 kJ/kg; h=(100,180) gera win=80 kJ/kg. Para 2 kg/s, 400 e 160 kW, respectivamente. |
+| 45–46 | Bomba de líquido v≈constante no limite adiabático reversível: wb,s≈vΔp; 0,001 m³/kg×1000 kPa=1 kJ/kg. Válvula permanente adiabática, sem outros trabalhos e ΔEc/ΔEp desprezíveis: h₂≈h₁; não implica reversibilidade ou temperatura constante. |
+| 61–63 | Carnot entre dois reservatórios fixos, TH>TL>0, para máquina **motora** com calor recebido positivo: η≤1−TL/TH. Para 600/300 K, ηC=0,5 e QH=1000 kJ dá Wmáx=QL,min=500 kJ. Ciclos reversos movidos a trabalho: COPR=1 e COPBC=2. **Ponto para Auditor:** a 61 diz “máquina cíclica entre dois reservatórios” e “rendimento”, mas não escreve explicitamente motor e QH>0; verificar se o contexto basta ao domínio da desigualdade. |
+| 71–72 | Comparação adiabática de mesma entrada/pressão de saída, ΔEc/ΔEp desprezíveis e referência isentrópica: turbina `(600−400)/(600−350)=0,8`; compressor `(160−100)/(180−100)=0,75`. Fichas excluem denominador nulo e definem índices; entalpias exemplificativas não demonstram que estados são realizáveis. |
+| 79 | Rankine simples sem extrações, vazão única, bomba/turbina adiabáticas, trocadores sem trabalho não-fluxo: h=(100,110,500,300) kJ/kg dá wt=200, wb=10, qin=390, qout=200 e η=190/390=19/39≈0,48718; qin−qout=190. qin>0 e trabalho líquido positivo explicitados. |
+| 80 | η=(Ẇt−Ẇc)/Q̇in; sem outros consumos e Q̇in>0, Ẇt>Ẇc para motor, 1000,400,1200 kW dão η=0,5. **Ponto para Auditor:** cartão chama Q̇in “calor externo recebido” sem dizer se é total de entradas de calor nem explicitar outras trocas de energia; verificar se o nome do ciclo e contexto já são suficientes. Ilustração: 1000 kJ de calor a 800 K mais 100 kJ a 600 K, rejeição 600 kJ a 300 K e trabalho líquido 500 kJ fecham energia e Sger=600/300−1000/800−100/600=7/12 kJ/K>0. Razão sobre 1000 dá 0,5, mas eficiência sobre entrada total 1100 é 5/11; é contramodelo **apenas** se Q̇in puder denotar uma entrada parcial, não prova defeito se o símbolo denotar total. |
+| 84–85 | Compressão de vapor simples com hipóteses do cartão: h=(400,450,250,250) kJ/kg dá qL=150, wc=50, qH=200 e COPR=3; ciclo sem outras trocas/consumos, 150+50=200 kW. Denominador wc>0, mesma vazão e base, trocadores/válvula sem trabalho não-fluxo. |
+| 86 | Misturador permanente, adiabático, sem trabalho e ΔEc/ΔEp desprezíveis: y=(hsaída−hágua)/(hextração−hágua); para 500,210,2700 kJ/kg, y=290/2490=29/249≈0,116466. Denominador não nulo, y entre 0 e 1 e entalpias na mesma base; pressões devem permitir mistura. |
+
+## Fontes e limites
+
+[MIT, primeira lei de volumes de controle](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_6.htm) sustenta balanços e separação do trabalho de escoamento; [DOE, fundamentos e ciclos](https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1012-92_VOL1.pdf), pp. impressas 85–89, trata limites e ciclo Rankine. [UBC, ciclos de Carnot](https://pressbooks.bccampus.ca/thermo1/chapter/6-4-carnot-cycles/) apresenta limites de motor e ciclo reverso. Os dados artificiais acima não são atribuídos às fontes. 
+
+Solicita-se Auditor distinto para MathML, hipóteses, fontes, identidade r8/r9/r18 e julgamento específico das fichas 61/80. Identidade de fragmento não certifica contextos ou dependências; não houve navegador, leitor de tela, alunos, revisão humana ou certificação externa. O fato de todos os números de fichas aparecerem em algum lote não equivale a aceitação integral das 100.

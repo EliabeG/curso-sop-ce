@@ -1,0 +1,24 @@
+# QA-09 — verificação localizada de coeficientes das fichas de ciclos e processos
+
+Data: 30/10/2026. Autor: agente automatizado `/root/qa_fichas`. Estado: **aguardando auditoria independente**. Documento `formulas/termodinamica.html`, SHA-256 `c27422b409a0a755448982c4074c6d6967fd3e91d7eae20274e218530f5c37b0`. Este lote examina seis fichas (70, 81–83, 89–90), suas constantes e expoentes no modelo explicitado; não é a triagem completa das 100 fichas. `resultado.json` registra identificação individual, posição em bytes, tamanho e SHA-256 dos artigos, assim como o texto linearizado das expressões. Posições só valem para esta fotografia. Índices, limites, diagramas e demais expressões fora do recorte continuam por verificar.
+
+Os exemplos numéricos abaixo foram **inventados para testar a álgebra**, não são exercícios da aula nem dados medidos. Os valores de k, estados e calor específico constante são modelos artificiais; não representam dados validados de ar real em altas temperaturas. A tolerância numérica do script é `1e−12` absoluta e não significa precisão experimental. Este material não altera o produto e não encerra QA-09.
+
+## Derivação e testes
+
+| Ficha | Conferência do fator ou expoente | Teste aritmético, resultado e condições |
+|---|---|---|
+| 70 `formula-isentro-gas` | Para gás ideal de composição fixa com calores específicos constantes, `0 = cp ln(T₂/T₁) − R ln(p₂/p₁)` e `R/cp = (k−1)/k`; logo `T₂/T₁=(p₂/p₁)^((k−1)/k)`. Da forma em volume, `T₂/T₁=(v₁/v₂)^(k−1)` e `p v^k=constante`. | Com k=1,5, p₂/p₁=8 e v₁/v₂=4, ambas as razões de temperatura são 2 e a pressão vale `4^1,5=8`. Sequência isentrópica de estados de equilíbrio, conforme ficha. |
+| 81 `formula-brayton-ideal` | Com dois trechos isentrópicos e duas isobáricas, `T₂/T₁=T₃/T₄=a=rp^((k−1)/k)`. Como `qin=cp(T₃−T₂)` e `qout=cp(T₄−T₁)`, `qout/qin=1/a` e `η=1−1/a`. | Para k=1,5, rp=8 e T=(300,600,1200,600) K, o cálculo por estados e a ficha dão η=0,5. Mesmo cp constante em todo o ciclo e calor adicionado positivo. |
+| 82 `formula-otto` | Nos dois trechos isentrópicos, `T₂/T₁=T₃/T₄=r^(k−1)`. Como adição e rejeição ocorrem em volume constante, `qout/qin=(T₄−T₁)/(T₃−T₂)=1/r^(k−1)` e `η=1−1/r^(k−1)`. | Para k=1,5, r=16 e T=(300,1200,2400,600) K, as duas rotas dão η=0,75. Modelo ar-padrão, capacidades constantes, duas isentrópicas e duas isocóricas. |
+| 83 `formula-diesel` | Da compressão, `T₂=T₁r^(k−1)`; na adição isobárica `T₃=T₂rc`; da expansão isentrópica `T₄=T₁rc^k`. Assim `qout=cv T₁(rc^k−1)` e `qin=cp T₁r^(k−1)(rc−1)`, reproduzindo `η=1−(rc^k−1)/[r^(k−1)k(rc−1)]`. | Para k=1,5, r=16, rc=4 e T=(300,1200,4800,2400) K, `η=1−2100/(1,5×3600)=11/18≈0,611111`; fórmula concorda. As condições `r>1`, `k>1`, `1<rc<r` são da ficha. |
+| 89 `formula-politropico` | No escoamento permanente internamente reversível com ΔEC/ΔEP desprezíveis, `win=∫₁² v dp`. Com `p v^n=constante` e `p₁v₁=RT₁`, integrar fornece `n/(n−1)RT₁[(p₂/p₁)^((n−1)/n)−1]`. | Com n=2, p₂/p₁=4 e RT₁=100 kJ/kg, integral e fórmula dão `200 kJ/kg`. A ficha exige `n>0`, `n≠1`, pressão absoluta crescente. A expressão não é o trabalho de fronteira de massa fechada. |
+| 90 `formula-compressao-isotermica` | Para o mesmo contexto de escoamento reversível isotérmico de gás ideal, `v=RT/p` e `∫v dp=RT ln(p₂/p₁)`. É também o limite n→1 da integral politrópica sob as condições indicadas. | Com RT=100 kJ/kg e p₂/p₁=e, `win=100 kJ/kg`. Pressões absolutas positivas e razão adimensional. |
+
+## Fontes e verificações
+
+Consulta em 30/10/2026. Os balanços para Otto e Brayton e as idealizações de ciclo estão em [MIT OpenCourseWare, capítulo 5](https://ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_5.htm); a formulação de Diesel em termos de r, rc e k está no material docente de [Brigham Young University](https://ignite.byu.edu/che433/lectures/lecture_06_thermo2/slides.html). As deduções e os casos numéricos acima são próprios, a partir dos modelos e não uma transcrição de exercício externo.
+
+Na raiz do repositório, execute `python3 auditoria/termodinamica/evidencias/QA-09/fichas-ciclos-processos-lote2-r1/verificar.py`; requer Python 3 e `lxml`, lê somente a fotografia e escreve em stdout. O script conferiu os seis IDs, texto MathML linearizado e casos numéricos; ele **não valida sozinho a árvore MathML**. As frações, potências e índices foram examinados na marcação das fichas e precisam de revisão independente. Script SHA-256 `82d12f69e184f1ec31cf880006f2b844ea7fcbd0cdda3d4b09ca380cac0c18d0`; resultado SHA-256 `f8ad48d09362c76b9253e7f6ce81efaa742802f9ccc961c3232b5d4d8b2b21a4`.
+
+Nenhum erro identificado no recorte. Esta é avaliação do Corretor, não um parecer; não houve teste em navegador, revisão humana, prática com estudantes ou certificação externa. A auditoria QA-09 e a classificação global do curso continuam pendentes.

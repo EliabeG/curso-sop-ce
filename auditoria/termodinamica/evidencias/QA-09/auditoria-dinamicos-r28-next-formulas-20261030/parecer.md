@@ -1,0 +1,25 @@
+# QA-09 — auditoria independente dos módulos dinâmicos, fotografia r27
+
+30/10/2026. Auditor `/root/next_formulas`. **APROVADO NO RECORTE**, com limite de generalização identificado abaixo; este parecer não aprova interface completa, ciência integral nem versão posterior. O nome `dinamicos-r28` é do lote, não da fotografia examinada.
+
+## Identidade e reprodução isolada
+
+Entrega examinada SHA-256 `d6feb5a83219d0310ff5da021c6ea83e9b46760ef70354b1b6b96ef9955abed6`; `inventariar.py` `82f2ff6ed418a8efffb6988b4c84200597e1867b03f143502658542c9f968b06`; `inventario.json` `e4a89d00b1a812da0efa31bf9b366d2f42fe82c5eec66a926dae6a3e62cfe9d5`; `verificar.mjs` `df0eef93dc9f7f236def4b10ccba26913d0abc280c878d9664978dba646c9282`. Conferi por `git show 093eef7:<caminho> | sha256sum` cada um dos seis arquivos de scripts/dados do pacote e o HTML da aula. Seus hashes coincidem com os declarados pelo verificador e com a foto da aula preservada, `9af8e2c9ffe509e40594d086a9ef4ad75127fb4ca873efb305d3144e08f3fc49`.
+
+Inspecionei ambos os scripts antes de executá-los: enviam resultado à saída padrão, leem arquivos e não gravam evidências. Reproduzi-os também em diretório temporário isolado, criando por `git archive 093eef7` cópia dos seis arquivos de produto, copiando a foto e os três artefatos de teste necessários, sem modificar a árvore compartilhada. `node .../dinamicos-r28/verificar.mjs` terminou com `ok:true`; a saída de `python3 .../dinamicos-r28/inventariar.py` foi idêntica ao manifesto por `diff` (código 0). Resultado estático: 581 radio, duas buscas, duas caixas de seleção, 321 botões, quatro selects, 261 details, dois scripts externos, sem canvas/vídeo/iframe nem input number/range. Isso é inventário de marcação, não quantidade de funcionalidades ou questões testadas.
+
+Os módulos executados são os arquivos reais do pacote, não uma reimplementação do algoritmo. FUN-01 retornou 28 e FUN-02 49 nomes de testes internos; ambos os módulos lançam erro ao falhar uma dessas verificações. O verificador também testa dois IDs incompatíveis e amostras das saídas numéricas; inspeção da lista de testes não mostra cobertura exaustiva das entradas, interações ou modelos. O rótulo “testes internos passam” vale para as execuções nominais inspecionadas.
+
+## Checagem localizada e contramodelo
+
+Para FUN-01, os dados do pacote dão v=0,9/2=0,45 m³/kg; a linha 0,2 MPa dá x=(0,45−0,00106052)/(0,88568−0,00106052)≈0,507494 e h≈1621,949 kJ/kg. As faixas [h−1,h+1] e [1800−2,1800+2] kJ/kg não se sobrepõem. No lote II da mistura ideal, p=80 kPa, pAsat=150 e pBsat=50: xA=0,3, yA=0,5625, β=(0,4−0,3)/(0,5625−0,3)=8/21. Essas contas usam os modelos e dados fornecidos, não estabelecem propriedades universais.
+
+No FUN-02, a execução selecionada reproduziu seis caminhos, cinco aceitos e um rejeitado, ΔU=1870,65 J por caminho e ciclo W=Q≈765,352 J; compressão com expoente 1,5 tem W≈−4988,4 J, Q≈−1247,1 J e ΔS≈−2,8814 J/K. Os ensaios de integrabilidade retornaram κ=0,2, ciclo amplo aproximadamente zero e ciclo esquerdo −20 ln 2 J/mol. São resultados do conjunto de dados e rotinas, não validação independente de todos os caminhos físicos possíveis.
+
+Repeti separadamente no diretório temporário a alteração exclusivamente em memória do lote IV: p=50 kPa igual a pBsat, mantendo pAsat=150. Saída real: xA=0, yA=0; **ambos** `beta_para_z_035` e `beta_para_z_050` são `Infinity`; após `JSON.stringify`, ambos aparecem como `null`. O verificador do lote afirma explicitamente `Infinity` e serialização apenas para `beta_para_z_035`; minha verificação adicional cobriu ambos. No modelo ideal indicado, a regra da alavanca requer zA=(1−β)xA+βyA, portanto não há β finito para zA=0,35 ou 0,50 quando xA=yA=0. [MIT, mistura binária e regra da alavanca](https://ocw.mit.edu/courses/5-60-thermodynamics-kinetics-spring-2008/315a50f11a4a8fbf750c26cb672a2946_5_60_lecture21.pdf), pp. 2–4 do PDF, sustenta o balanço de fases. A saída não finita e sua serialização foram também observadas diretamente no Node.
+
+O próprio módulo documenta pacote didático específico, não biblioteca geral. A alteração do JSON está fora do pacote nominal; seus dados originais têm p=80 e denominador 0,2625. Por isso a evidência sustenta **limite de reutilização/ausência de guarda**, não defeito demonstrado no uso nominal nem obrigação de suportar JSON arbitrário. Se o contrato passar a aceitar variantes, deve rejeitar ou diagnosticar a degenerescência e incompatibilidade; alternativamente, restringir claramente a utilização ao pacote nominal. A entrega apresenta essa distinção corretamente.
+
+## Limites da conclusão
+
+O inventário verifica apenas HTML estático. Os testes executam módulos em Node, não testam cliques, teclado, estado do DOM, pontuação, armazenamento real, navegação, tecnologias assistivas ou experiência de alunos. A ausência de calculadora embutida está delimitada à inspeção realizada e não comprova inexistência de todo caminho dinâmico. A aprovação é deste recorte e da fotografia r27; não revalida produto posterior. Não houve alteração dos scripts, evidências examinadas ou produto.

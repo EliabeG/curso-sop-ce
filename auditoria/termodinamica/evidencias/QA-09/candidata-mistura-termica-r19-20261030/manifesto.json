@@ -1,0 +1,19 @@
+{
+  "id": "QA-09-candidata-mistura-termica-r19-20261030",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fonte": "auditoria/termodinamica/evidencias/QA-09/aplicacao-notacao-fichas-r19-r1/resultado/depois-aula.html",
+  "fonte_sha256": "9495c5a873dc67f6f1d6dd1919caa473f481a0bc029dbe97e3490adb1b530a65",
+  "inventario": "auditoria/termodinamica/evidencias/QA-09/inventario-r19.json",
+  "inventario_sha256": "ca99e56b3a5930cdd4f49f4d41a61eca19facc141b63da94dcd3b65039d03c2f",
+  "ancora": "base-mistura-termica",
+  "inicio_utf16": 206379,
+  "fim_utf16": 212704,
+  "original_sha256": "ee9bafa3d68b1ef06bd39268a717f2474472de6a981bd6b0423f85abcd9eef03",
+  "candidata_sha256": "d27c7e2b5fd3010da4106225de835a4ef3bb3435e5a171b552cbb41ab52b83c8",
+  "substituicoes": [
+    {
+      "antes": "Capacidades constantes e positivas; sistema isolado, sem trabalho relevante, reação ou mudança de fase.",
+      "depois": "Capacidades constantes e positivas; conjunto fechado e isolado, sem trabalho relevante, reação ou mudança de fase. Admite-se que a soma das parcelas sensíveis Ci(Tf − Ti) represente a variação de energia do conjunto, com contribuição de mistura e efeitos de pressão e deformação desprezíveis."
+    }
+  ]
+}

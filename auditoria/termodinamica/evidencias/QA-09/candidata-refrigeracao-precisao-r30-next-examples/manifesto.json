@@ -1,0 +1,26 @@
+{
+  "id": "QA-09-candidata-refrigeracao-precisao-r30-next-examples",
+  "estado": "CANDIDATA_NAO_APLICADA",
+  "fotografia": "r29",
+  "inventario_r29_sha256": "f6237de0c999a66c1edbb74f18911d4bd13ba0352d305b32329f3d7f4fd05db8",
+  "edicoes": [
+    {
+      "documento": "modulos/e1-termodinamica.html",
+      "sha_base": "f932d341a543f05b9f7b31b037cb28f21f8d4e9933536656475f99fd3d3ba7d5",
+      "id_contexto": "base-refrigeracao",
+      "antes": "O trabalho do compressor coincide com o de eixo recebido quando o saldo dos demais trabalhos não associados ao escoamento é nulo ou desprezível.",
+      "depois": "O trabalho do compressor coincide com o de eixo recebido quando o saldo dos demais trabalhos não associados ao escoamento é nulo; se esse saldo for desprezível, a igualdade é aproximada.",
+      "quantidade": 1,
+      "sha_hipotetico": "c719adae3464fb56ed2b0ad7014e0721c0aab2da444fb484ec0b40c5c0c8fbd4"
+    },
+    {
+      "documento": "formulas/termodinamica.html",
+      "sha_base": "b839310edfa655e1da907757119beaeacdabd7d088211ac189c38c3dbeb38932",
+      "id_contexto": "formula-refrigeracao",
+      "antes": "corresponde ao trabalho de eixo recebido quando o saldo dos demais trabalhos não associados ao escoamento é nulo ou desprezível.",
+      "depois": "coincide com o trabalho de eixo recebido quando o saldo dos demais trabalhos não associados ao escoamento é nulo; se esse saldo for desprezível, a igualdade é aproximada.",
+      "quantidade": 2,
+      "sha_hipotetico": "949c44fc5b96703929770b2881383d449af890616d34b9ab10b998ca96c75749"
+    }
+  ]
+}
