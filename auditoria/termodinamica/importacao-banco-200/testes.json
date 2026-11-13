@@ -1,0 +1,28 @@
+{
+  "browser": "Chromium real via Playwright",
+  "viewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "checks": [
+    "200 artigos / 1.000 alternativas",
+    "gabaritos certos e errados",
+    "refazer",
+    "persistência após recarga",
+    "filtros assunto/volume/pendentes",
+    "busca e estado vazio",
+    "sem erros JS",
+    "sem overflow horizontal no celular",
+    "comentário e tabela sem JS",
+    "IDs únicos e recursos locais",
+    "197 artigos anteriores idênticos",
+    "validador canônico: ok=true"
+  ],
+  "limites": "Não é revisão científica dos 200 cálculos nem teste com estudantes."
+}
