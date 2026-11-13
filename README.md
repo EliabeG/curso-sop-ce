@@ -6,6 +6,10 @@ Material preparatório independente para a Superintendência de Obras Públicas 
 
 O site contém 31 módulos, com teoria, exemplos resolvidos, questões comentadas, revisão e simulado. Termodinâmica inclui dois bancos adicionais de 80 questões cada e uma página com 100 fichas de fórmulas. Transferência de Calor inclui alicerces, roteiro de vídeo histórico, aprofundamento, 40 questões reais com resoluções e cadernos completos, 80 questões autorais no estilo Avalia, 20 diagnósticos e um formulário com 80 fichas. Os 30 exercícios e 21 flashcards anteriores do E2 foram preservados.
 
+**200 questões autorais de Termodinâmica:** https://eliabeg.github.io/curso-sop-ce/modulos/e1-termodinamica-200-questoes.html
+
+Banco complementar Rumo à SOP: questões 1–200, alternativas interativas, gabaritos comentados, filtros e quatro PDFs originais. Suas respostas são armazenadas separadamente dos bancos anteriores e da exportação geral.
+
 **Transferência de Calor:** https://eliabeg.github.io/curso-sop-ce/modulos/e2-transferencia-de-calor.html
 
 **Fórmulas do E2:** https://eliabeg.github.io/curso-sop-ce/formulas/transferencia-de-calor.html

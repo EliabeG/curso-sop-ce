@@ -1,0 +1,13 @@
+/* Estilos exclusivos do banco complementar E1; a interatividade usa curso.js. */
+.banco-autoral-200 { max-width: 76rem; }
+.banco-autoral-200 .cr-lista { max-width: 62rem; margin-inline: auto; }
+.banco-autoral-200 .cr-figura { max-width: 100%; }
+.banco-autoral-200 .cr-figura img { display: block; max-width: 100%; height: auto; background: white; }
+.banco-autoral-200 .cr-figura figcaption { margin-top: .75rem; line-height: 1.6; }
+.banco-autoral-200 .tabela-rolagem { max-width: 100%; overflow-x: auto; }
+.banco-autoral-200 table { width: 100%; }
+.banco-autoral-200 caption { text-align: left; font-weight: 600; padding-block: .5rem; }
+.banco-autoral-200 th, .banco-autoral-200 td { min-width: 6rem; }
+.pg-modulo main.pagina.banco-autoral-200 { display: block; }
+.banco-autoral-200 > .box { margin-block: 1.5rem; }
+.banco-autoral-200 > section { margin-block: 2rem; }
